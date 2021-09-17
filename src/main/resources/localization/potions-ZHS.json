@@ -1,0 +1,79 @@
+{
+  "shadowverse:SatanPotion": {
+    "NAME": "罐装地狱",
+    "DESCRIPTIONS": [
+      "从 #b3 张随机启示录、冥河牌中选择 #b1 张加入手中，其本回合耗能变为 #b0 。",
+      "从 #b3 张随机启示录、冥河牌中选择 #b2 张加入手中，其本回合耗能变为 #b0 。"
+    ]
+  },
+  "shadowverse:ElfPotion": {
+    "NAME": "瓶中妖精",
+    "DESCRIPTIONS": [
+      "增加 #b",
+      " 张 #y妖精+ 到手中。"
+    ]
+  },
+  "shadowverse:BoostPotion": {
+    "NAME": "增幅药水",
+    "DESCRIPTIONS": [
+      "发动 #b",
+      " 次 #y魔力增幅 。"
+    ]
+  },
+  "shadowverse:EarthPotion": {
+    "NAME": "土之精华",
+    "DESCRIPTIONS": [
+      "获得 #b",
+      " 层 #y土之印记 。"
+    ]
+  },
+  "shadowverse:KeepPotion": {
+    "NAME": "魔力补充剂",
+    "DESCRIPTIONS": [
+      "本场战斗中每回合结束时保留 #b",
+      " 张牌。"
+    ]
+  },
+  "shadowverse:CemeteryPotion": {
+    "NAME": "灵魂药水",
+    "DESCRIPTIONS": [
+      "获得 #b",
+      " 点 #y墓地 。"
+    ]
+  },
+  "shadowverse:ReanimatePotion": {
+    "NAME": "召还药水",
+    "DESCRIPTIONS": [
+      " #y亡者召还 #b3 。",
+      " #y亡者召还 #b3 两次。"
+    ]
+  },
+  "shadowverse:RosePotion": {
+    "NAME": "精炼蔷薇",
+    "DESCRIPTIONS": [
+      "增加 #b",
+      " 张 #y蔷薇的猛击+ 到手中。"
+    ]
+  },
+  "shadowverse:NaterranPotion": {
+    "NAME": "马纳提取液",
+    "DESCRIPTIONS": [
+      "增加 #b",
+      " 张 #y那塔拉的大树 到手中。"
+    ]
+  },
+  "shadowverse:BatPotion": {
+    "NAME": "瓶中蝙蝠",
+    "DESCRIPTIONS": [
+      "增加 #b",
+      " 张 #y林地蝙蝠+ 到手中。"
+    ]
+  },
+  "shadowverse:EpitaphPotion": {
+    "NAME": "契约药水",
+    "DESCRIPTIONS": [
+      "你视为 复仇 、 狂乱 、 渴望 、 #b",
+      " 回合。"
+    ]
+  }
+}

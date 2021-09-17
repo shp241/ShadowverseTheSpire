@@ -1,0 +1,10 @@
+{
+  "modid": "shadowverse",
+  "name": "Shadowverse",
+  "author_list": ["Fang"],
+  "description": "szbmod",
+  "version": "0.6.9",
+  "sts_version": "12-22-2020",
+  "mts_version": "3.21.0",
+  "dependencies": ["basemod","stslib","LazyManKits"]
+}

@@ -1,0 +1,270 @@
+{
+  "shadowverse:FriendOfTruth": {
+    "NAME": "诚实之友",
+    "FLAVOR": "暴露汝之本质、本能、及真实吧！",
+    "DESCRIPTIONS": [
+      "战斗开始时，手牌、抽牌堆全部发动 #b1 次 魔力增幅 ，在你的手牌中增加 #b1 张 #y小刀 。"
+    ]
+  },
+  "shadowverse:Eleanor": {
+    "NAME": "天外之友·爱莲娜",
+    "FLAVOR": "我是天外之花——也是你的友人。我会为了我自己，也为了你高傲地绽放！这就是我，爱莲娜·葛萝莉娅！",
+    "DESCRIPTIONS": [
+      "前 #b3 回合开始时，随机在手牌中增加 #b1 张耗能为 #b0 的 #y转化的魔法 、 #y二重炼成术 、 #y风怒之术 。"
+    ]
+  },
+  "shadowverse:EnchantedLibrary": {
+    "NAME": "魔法图书馆",
+    "FLAVOR": "图书馆内请保持肃静，否则书本的心情会变坏。──魔法图书馆公告",
+    "DESCRIPTIONS": [
+      "前 #b2 回合开始时，从抽牌堆中选择 #b1 张 #y技能牌 加入手中。"
+    ]
+  },
+  "shadowverse:EarthEssenceRelic": {
+    "NAME": "土之魔片",
+    "FLAVOR": "从实验出来的知识，会将魔法引向新高度。",
+    "DESCRIPTIONS": [
+      "战斗开始时，获得 #b1 层 土之印记 。"
+    ]
+  },
+  "shadowverse:Mysteria": {
+    "NAME": "魔法始祖·马纳历亚",
+    "FLAVOR": "无论何时，魔法将与你们同在──",
+    "DESCRIPTIONS": [
+      "战斗开始时，在你的抽牌堆中增加 #b1 张 #y魔法始祖·马纳历亚 ，获得 #b",
+      " 点 力量 。"
+    ]
+  },
+  "shadowverse:Genius": {
+    "NAME": "超天才",
+    "FLAVOR": "你将在第8回合败北！",
+    "DESCRIPTIONS": [
+      "第8回合结束时，对全体敌人造成 #b61 点伤害。"
+    ]
+  },
+  "shadowverse:MissLethal": {
+    "NAME": "错斩",
+    "FLAVOR": "总之先解场。",
+    "DESCRIPTIONS": [
+      "在每回合开始时获得 #b1 点能量。回合开始时，当有非 爪牙 敌人生命值低于五分之一时，该敌人获得 无实体 。"
+    ]
+  },
+  "shadowverse:Offensive": {
+    "NAME": "先手印记",
+    "FLAVOR": "您为先手，不更换手牌。",
+    "DESCRIPTIONS": [
+      "首回合的第一张 #y技能牌 将被打出 #b2 次。"
+    ]
+  },
+  "shadowverse:NeutralBook": {
+    "NAME": "中立手册",
+    "FLAVOR": " ",
+    "DESCRIPTIONS": [
+      "战斗结束后可从3张随机中立牌中选择一张加入卡组。每层仅限3次。"
+    ]
+  },
+  "shadowverse:BlackPinya": {
+    "NAME": "黑皮喵",
+    "FLAVOR": "皮喵！",
+    "DESCRIPTIONS": [
+      "你觉得自己有开腔的欲望。",
+      "@皮喵皮皮！@"
+    ]
+  },
+  "shadowverse:GoldPinya": {
+    "NAME": "金皮喵",
+    "FLAVOR": "皮喵皮喵！",
+    "DESCRIPTIONS": [
+      "回合开始时，随机从 #y顺从的骏马 、 #y机动二轮车 、 #y魔导装甲车 中生成一张加入手中。"
+    ]
+  },
+  "shadowverse:KMR1": {
+    "NAME": "平衡性调整1",
+    "FLAVOR": "为了增加环境的流动性，我们决定施行平衡性调整。",
+    "DESCRIPTIONS": [
+      "战斗开始时，所有敌人获得 #b8 点 格挡 。"
+    ]
+  },
+  "shadowverse:KMR2": {
+    "NAME": "平衡性调整2",
+    "FLAVOR": "为了增加环境的流动性，我们决定施行平衡性调整。",
+    "DESCRIPTIONS": [
+      "战斗开始时，所有敌人获得 #b1 点 力量 。"
+    ]
+  },
+  "shadowverse:Offensive2": {
+    "NAME": "先手印记",
+    "FLAVOR": "您为先手，不更换手牌。",
+    "DESCRIPTIONS": [
+      "回合内每使用 #b5 张牌，对全体敌人造成 #b2 点伤害。"
+    ]
+  },
+  "shadowverse:SixMark": {
+    "NAME": "六连星刻印",
+    "FLAVOR": "无须畏惧，生命绝不会灭绝，只要熬过那永恒即可。",
+    "DESCRIPTIONS": [
+      "回合开始时，给予全体敌人 易伤 、 虚弱 、 #y肋脖 、 #y本回合力量-1 、 #y以手拒之 、 中毒 中的随机一种未给予过的负面效果。"
+    ]
+  },
+  "shadowverse:ArisaBOSS": {
+    "NAME": "女王缇达尼亚斯",
+    "FLAVOR": "我的箭矢将会贯穿你！",
+    "DESCRIPTIONS": [
+      "拾起时替换 #y先手印记 。 NL 回合内使用第 #b6 张牌时获得 [E] 。"
+    ]
+  },
+  "shadowverse:NiouKyuu": {
+    "NAME": "二王弓",
+    "FLAVOR": "绽放凛然威严，凝视久远的二重光辉。其矢可绝灾厄之种，守天之宁静。",
+    "DESCRIPTIONS": [
+      "战斗开始时给予全体敌人1层 #y天冲之正鹄 。"
+    ]
+  },
+  "shadowverse:LymagaWeapon": {
+    "NAME": "咎满返归",
+    "FLAVOR": "被至高大剑［咎满返归」所斩裂之人，其身躯将被荆棘吞噬，归还大地。",
+    "DESCRIPTIONS": [
+      "回合开始时，增加1张耗能为0的 #y密林守卫者 到手中。"
+    ]
+  },
+  "shadowverse:GlassOfIC": {
+    "NAME": "经济之神的红墨镜",
+    "FLAVOR": "我可是伟大的神啊！",
+    "DESCRIPTIONS": [
+      "每当失去生命时，对全体敌人造成等额伤害。"
+    ]
+  },
+  "shadowverse:KyoukaBOSS": {
+    "NAME": "宇宙之蓝法杖",
+    "FLAVOR": "宇宙蓝色闪光！！",
+    "DESCRIPTIONS": [
+      "拾起时替换 #y先手印记 。 NL 回合开始时将1张 #y智慧之光 加入手中。"
+    ]
+  },
+  "shadowverse:Mimori": {
+    "NAME": "虽然很平凡",
+    "FLAVOR": "诶哆……请多指教！",
+    "DESCRIPTIONS": [
+      "造成伤害提高 #b10% ，承受伤害减少 #b10% 。回合结束时如果已使用的卡牌数为5以上则增加 #b10% (最多可叠加5次)。如果受到伤害则减少 #b10% 。"
+    ]
+  },
+  "shadowverse:KuonWeapon": {
+    "NAME": "密罗略决",
+    "FLAVOR": "吾乃五行，杂鱼退散！",
+    "DESCRIPTIONS": [
+      "战斗开始时，增加1张 #y式神使役之术 到手中。"
+    ]
+  },
+  "shadowverse:GeassRelic": {
+    "NAME": "绝对生存指令",
+    "FLAVOR": "活下去！",
+    "DESCRIPTIONS": [
+      "每场战斗一次，受到致死伤害时，该伤害变为0，获得 #b5 点 力量 和 敏捷 ， #b25 点 格挡 。"
+    ]
+  },
+  "shadowverse:Offensive3": {
+    "NAME": "先手印记",
+    "FLAVOR": "您为先手，不更换手牌。",
+    "DESCRIPTIONS": [
+      "回合开始时， #y死灵术3 \b将一张 #y僵尸 加入手中。"
+    ]
+  },
+  "shadowverse:BurialGround": {
+    "NAME": "集团埋葬地",
+    "FLAVOR": "死亡正在不断地往此聚集。",
+    "DESCRIPTIONS": [
+      "回合结束时，获得 #b1 点 墓地 。"
+    ]
+  },
+  "shadowverse:LunaBOSS": {
+    "NAME": "露娜的朋友",
+    "FLAVOR": "可以和露娜做朋友吗?",
+    "DESCRIPTIONS": [
+      "拾起时替换 #y先手印记 。回合开始时， #y死灵术4 \b将一张 #y巫妖 加入手中。"
+    ]
+  },
+  "shadowverse:Todoroki": {
+    "NAME": "巨镰·轰",
+    "FLAVOR": "话语生功罪，唯有沉默可创造平等。",
+    "DESCRIPTIONS": [
+      "战斗开始时，全体敌人失去一种正面效果（优先失去 人工制品 ）。"
+    ]
+  },
+  "shadowverse:TailRelic": {
+    "NAME": "大妖狐的面具",
+    "FLAVOR": "生命如梦，众人皆影。荣华似幻，还真是有趣。",
+    "DESCRIPTIONS": [
+      "战斗开始时，增加 #b1 张 #y一尾狐 到抽牌堆中。本局游戏累计打出过 #b9 张 #y一尾狐 时，改为增加 #b1 张 #y大妖狐·吟雪 到你的卡组中并使这个遗物失效。"
+    ]
+  },
+  "shadowverse:InfernalCrown": {
+    "NAME": "奈落之冠",
+    "FLAVOR": "死者即为空洞的容器，被死神啜饮而干的可怜之杯。注满而起舞吧。",
+    "DESCRIPTIONS": [
+      "第2回合开始时亡者召还 #b3 ，第3回合开始时亡者召还 #b4 ，第4回合开始时亡者召还 #b5 。"
+    ]
+  },
+  "shadowverse:Alice": {
+    "NAME": "特别的偶像",
+    "FLAVOR": "爱丽丝的演出要开始咯~",
+    "DESCRIPTIONS": [
+      "发动 死灵术 时，对全体敌人造成 #b3 点伤害。"
+    ]
+  },
+  "shadowverse:Offensive4": {
+    "NAME": "先手印记",
+    "FLAVOR": "您为先手，不更换手牌。",
+    "DESCRIPTIONS": [
+      "战斗结束， #y复仇 则回复 #b7 点生命，未 #y复仇 则回复 #b4 点生命。"
+    ]
+  },
+  "shadowverse:IriaBOSS": {
+    "NAME": "暗斧夜之牙",
+    "FLAVOR": "尽管臣服于妾身伟大的力量之下吧！",
+    "DESCRIPTIONS": [
+      "回合开始时失去 #b2 点生命。回合结束时回复 #b4 点生命。"
+    ]
+  },
+  "shadowverse:LustRelic": {
+    "NAME": "抱拥之翼",
+    "FLAVOR": "爱意相融，情意相交。沉溺在欲望之中，水乳交融吧。",
+    "DESCRIPTIONS": [
+      "战斗开始时，获得 #y虹吸 。"
+    ]
+  },
+  "shadowverse:Lusia": {
+    "NAME": "我没有兴趣",
+    "FLAVOR": "影之诗不过是道具而已。",
+    "DESCRIPTIONS": [
+      "进入 #y复仇 时，获得 [E] 。"
+    ]
+  },
+  "shadowverse:Pendant": {
+    "NAME": "夜之王的吊坠",
+    "FLAVOR": "尽管来取悦我吧！",
+    "DESCRIPTIONS": [
+      "回合开始时， 复仇 则获得 #b1 点 力量 。 狂乱 则获得 #b7 点 格挡 。 渴望 则抽 #b1 张牌。"
+    ]
+  },
+  "shadowverse:BerserkRelic": {
+    "NAME": "提特迦玛利",
+    "FLAVOR": "悬挂活剥，将一切吃干抹净！",
+    "DESCRIPTIONS": [
+      "进入 狂乱 时，回复 #b7 点生命。"
+    ]
+  },
+  "shadowverse:LonePromise": {
+    "NAME": "约定的花朵",
+    "FLAVOR": "取代颈部刻印的  ――是向冰冷肌肤所赠予的饯别花朵。  而相伴的螺丝则为华丽舞踏过的回忆。",
+    "DESCRIPTIONS": [
+      "前 #b2 回合开始时，增加 #b1 张 #y修复模式 到手中。第 #b2 回合开始时额外抽 #b1 张牌。"
+    ]
+  },
+  "shadowverse:RevelrySeed": {
+    "NAME": "斗争之种",
+    "FLAVOR": "可不要让我感到无趣哦？",
+    "DESCRIPTIONS": [
+      "你和全体敌人初始获得 #b3 点 力量 。"
+    ]
+  }
+}
