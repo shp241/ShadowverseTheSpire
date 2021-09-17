@@ -28,8 +28,8 @@ import shadowverse.characters.Nemesis;
 
    public BlitzArtifact() {
      super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.ENEMY);
-     this.baseDamage = 14;
-     this.baseMagicNumber = 14;
+     this.baseDamage = 11;
+     this.baseMagicNumber = 11;
      this.magicNumber = this.baseMagicNumber;
      this.exhaust = true;
      this.tags.add(AbstractShadowversePlayer.Enums.ARTIFACT);

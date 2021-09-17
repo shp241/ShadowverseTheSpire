@@ -19,6 +19,7 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.stances.AbstractStance;
 import com.megacrit.cardcrawl.stances.NeutralStance;
 import shadowverse.Shadowverse;
+import shadowverse.action.TreAction;
 import shadowverse.powers.AvaricePower;
 import shadowverse.powers.Cemetery;
 import shadowverse.powers.VengeanceHealthPower;
@@ -219,6 +220,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
 
     @Override
     public void applyStartOfTurnPreDrawCards() {
+        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new TreAction());
         super.applyStartOfTurnPreDrawCards();
         this.drawAmt=0;
         this.wrathThisTurn = 0;

@@ -395,7 +395,7 @@
   },
   "shadowverse:DualAngle": {
     "NAME": "双翼天使",
-    "DESCRIPTION": "机械 。 NL 自然 。 NL 获得 !B! 点 格挡 。 NL 如果手中其他 机械 牌张数为2张以上则造成 !D! 点伤害。 NL 如果手中其他 自然 牌张数为2以上则回复2点生命。 NL *量产器械 NL *那塔拉的大树 NL 抉择 选择一张加入手中。"
+    "DESCRIPTION": "机械 · 自然 。 NL 获得 !B! 点 格挡 。 NL 如果手中其他 机械 牌张数为2张以上则造成 !D! 点伤害。 NL 如果手中其他 自然 牌张数为2以上则回复2点生命。 NL *量产器械 NL *那塔拉的大树 NL 抉择 选择一张加入手中。"
   },
   "shadowverse:Ghios": {
     "NAME": "稜镜虹辉·济欧司",
@@ -489,8 +489,8 @@
   },
   "shadowverse:Machinus": {
     "NAME": "钢铁与大地之神",
-    "DESCRIPTION": "融合 ：\b 机械 或 自然 ，每融合1张，增加7点伤害，从抽牌堆中将1张 自然 或 机械 卡牌加入手中。如果这张卡片与 机械 卡及 自然 卡进行融合 ，则使上述抽取到手牌中的卡片耗能-1。 NL 造成 !D! 点伤害。 NL 获得 !B! 点格挡。",
-    "UPGRADE_DESCRIPTION":"融合 ：\b 机械 或 自然 ，每融合1张，增加9点伤害，从抽牌堆中将1张 自然 或 机械 卡牌加入手中。如果这张卡片与 机械 卡及 自然 卡进行融合 ，则使上述抽取到手牌中的卡片耗能-1。 NL 造成 !D! 点伤害。 NL 获得 !B! 点格挡。"
+    "DESCRIPTION": "机械 · 自然 。 NL 融合 ：\b 机械 或 自然 ，每融合1张，增加7点伤害，打出时从抽牌堆中将1张 自然 或 机械 卡牌加入手中。如果这张卡片与 机械 卡及 自然 卡进行融合 ，则使上述抽取到手牌中的卡片耗能-1。 NL 造成 !D! 点伤害。 NL 获得 !B! 点格挡。",
+    "UPGRADE_DESCRIPTION":"机械 · 自然 。 NL 融合 ：\b 机械 或 自然 ，每融合1张，增加9点伤害，打出时从抽牌堆中将1张 自然 或 机械 卡牌加入手中。如果这张卡片与 机械 卡及 自然 卡进行融合 ，则使上述抽取到手牌中的卡片耗能-1。 NL 造成 !D! 点伤害。 NL 获得 !B! 点格挡。"
   },
   "shadowverse:WitchSnap": {
     "NAME": "魔法的一击",
@@ -1743,7 +1743,7 @@
     "UPGRADE_DESCRIPTION": "机械 。 NL 获得 !B! 点 格挡 。 NL 如果本场战斗已打出的 机械 非技能牌数量为7以上，增加1张 *原初之一+ 到手中。",
     "EXTENDED_DESCRIPTION": [
       " NL (已打出",
-      " 张 机械 非技能。)"
+      " 张 机械 非技能牌。)"
     ]
   },
   "shadowverse:Mono2": {
@@ -2043,7 +2043,7 @@
   },
   "shadowverse:StrikeFormGolem": {
     "NAME": "攻击型巨像",
-    "DESCRIPTION": "创造物 。 NL 造成 !D! 点伤害。 NL 爆能强化 2 \b造成伤害翻倍 NL 消耗 。"
+    "DESCRIPTION": "创造物 。 NL 这张牌视为 打击 牌。 NL 造成 !D! 点伤害。 NL 爆能强化 2 \b造成伤害翻倍 NL 消耗 。"
   },
   "shadowverse:SpineArtifact": {
     "NAME": "斯碧涅的创造物",
@@ -2056,5 +2056,298 @@
   "shadowverse:MagisteelLion": {
     "NAME": "魔铁狂狮",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加 !M! 张 *解析的创造物 到抽牌堆中。"
+  },
+  "shadowverse:Acceleratium": {
+    "NAME": "加速装置",
+    "DESCRIPTION": "倒计时 3 \b失去这个效果。 NL 每当打出 创造物 牌时，获得 [E] 。 NL 每打出2张 创造物 牌时增加1张 *虚空 到弃牌堆中。"
+  },
+  "shadowverse:AugmentationBestowal": {
+    "NAME": "机械的解放",
+    "DESCRIPTION": "本回合内每当打出 创造物 牌时，获得 [E] 并抽 !M! 张牌。 NL 虚无 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"本回合内每当打出 创造物 牌时，获得 [E] 并抽 !M! 张牌。 NL 消耗 。"
+  },
+  "shadowverse:ParadigmShift": {
+    "NAME": "典范转移",
+    "DESCRIPTION": "保留 。 NL 本回合内每当打出 创造物 牌时，耗能减少 [E] 。 NL 抉择 ：从本回合耗能为0的 *守御的创造物 、 *锋锐的创造物 、*迅袭的创造物 中选择1张加入手中。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"保留 。 NL 本回合内每当打出 创造物 牌时，耗能减少 [E] 。 NL 抉择 ：从本回合耗能为0的 *守御的创造物+ 、 *锋锐的创造物+ 、*迅袭的创造物+ 中选择1张加入手中。 NL 消耗 。"
+  },
+  "shadowverse:Automation": {
+    "NAME": "自动化",
+    "DESCRIPTION": "抉择 ： NL 从 *解析的创造物 、 *古老的创造物 、 *神秘的创造物 、 *绚烂的创造物 中选择2种分别加入2张到抽牌堆中。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"抉择 ： NL 从 *解析的创造物 、 *古老的创造物 、 *神秘的创造物 、 *绚烂的创造物 中选择2种分别加入2张到抽牌堆中。"
+  },
+  "shadowverse:Synchronization": {
+    "NAME": "创造物的同步",
+    "DESCRIPTION": "抉择 ： NL 从 *解析的创造物 、 *增殖的创造物 、 *绚烂的创造物 、 *典范转移 中选择1张加入手牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"抉择 ： NL 从 *解析的创造物 、 *增殖的创造物 、 *绚烂的创造物 、 *典范转移 中选择1张加入手牌。"
+  },
+  "shadowverse:ArtifactScan": {
+    "NAME": "创造物扫描",
+    "DESCRIPTION": "从消耗堆中将随机2种 创造物 牌的同名卡加入手中。 NL 如果本场战斗已打出过的 创造物 种类为6以上，这些卡牌本回合的耗能变为0。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION":"从消耗堆中将随机2种 创造物 牌的同名卡加入手中。 NL 如果本场战斗已打出过的 创造物 种类为6以上，这些卡牌本回合的耗能变为0。"
+  },
+  "shadowverse:Biofabrication": {
+    "NAME": "生命量产",
+    "DESCRIPTION": "选择手中的1张 创造物 牌 本回合耗能减少 [E] 。 NL 增加 !M! 张该牌的同名卡到抽牌堆中。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION":"选择手中的1张 创造物 牌 本回合耗能减少 [E] 。 NL 增加 !M! 张该牌的同名卡到抽牌堆中。"
+  },
+  "shadowverse:Icarus": {
+    "NAME": "伊卡洛斯",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加 !M! 张 *古老的创造物 到抽牌堆中。"
+  },
+  "shadowverse:IronStaffMechanic": {
+    "NAME": "铁杖机械士",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加 !M! 张 *神秘的创造物 到抽牌堆中。"
+  },
+  "shadowverse:KnowerOfHistory": {
+    "NAME": "博学的史学家",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加 !M! 张 *精奥的创造物 到抽牌堆中。"
+  },
+  "shadowverse:RoboticUser": {
+    "NAME": "机械工学少女",
+    "DESCRIPTION": "机械 。 NL 获得 !B! 点 格挡 。 NL 增加1张 *典范转移 到手中。"
+  },
+  "shadowverse:ArtifactCall": {
+    "NAME": "创造物的呼唤",
+    "DESCRIPTION": "从抽牌堆中随机加入 !M! 张 创造物 牌 到手中。 NL 共鸣 额外加入1张。"
+  },
+  "shadowverse:NilpotentEntity": {
+    "NAME": "虚数物体",
+    "DESCRIPTION": "倒计时 1 \b失去这个能力。 NL 受到为4以上的伤害转变为3。 NL 如果手中有 创造物 牌，随机舍弃1张并增加1回合倒计时数。 NL 虚无 。"
+  },
+  "shadowverse:DeusExMachina": {
+    "NAME": "机械降神",
+    "DESCRIPTION": "每当打出 创造物 牌时，获得 [E] 。 NL 回合结束时，如果 共鸣 则下回合额外抽2 张牌。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION":"每当打出 创造物 牌时，获得 [E] 。 NL 回合结束时，如果 共鸣 则下回合额外抽2 张牌。"
+  },
+  "shadowverse:NewOrder": {
+    "NAME": "外界之理",
+    "DESCRIPTION": "消耗抽牌堆中所有牌。 NL 分别增加10张 *神秘的创造物 、 *绚烂的创造物 、 *精奥的创造物 到抽牌堆中。"
+  },
+  "shadowverse:Tolerance": {
+    "NAME": "至高无上·宽容",
+    "DESCRIPTION": "保留 。 NL 当这张牌被 保留 时，耗能减少本回合打出的攻击牌的耗能+1的合计值。 NL 造成 !D! 点伤害。 NL 给予 !M! 层 易伤 和 虚弱 。"
+  },
+  "shadowverse:Enforcer": {
+    "NAME": "机械兵",
+    "DESCRIPTION": "机械 。 NL 如果手中有其他 机械 牌，造成 !D! 点伤害。 NL 谢幕曲 打出或被 消耗 时，增加1张 *生产器械 和 *修复模式 到手中。"
+  },
+  "shadowverse:MegaEnforcer": {
+    "NAME": "大型机械兵",
+    "DESCRIPTION": "机械 。 NL 获得 !B! 点 格挡 。 NL 如果手中有其他 机械 牌，造成 !D! 点伤害并抽1张牌。 NL 如果手中其他 机械 牌数量为2以上，升级所有手牌并增加1张 *奇迹 到手中。"
+  },
+  "shadowverse:Invasion": {
+    "NAME": "战栗的侵略",
+    "DESCRIPTION": "机械 。 NL 对全体敌人造成 !D! 点伤害。 NL 爆能强化 3 \b增加1张 *阻断的触手 和 *蹂躏的触手 到手中，随机将1张 机械 牌从抽牌堆加入手中。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"机械 。 NL 对全体敌人造成 !D! 点伤害。 NL 爆能强化 3 \b增加1张 *阻断的触手+ 和 *蹂躏的触手+ 到手中，随机将1张 机械 牌从抽牌堆加入手中。 NL 消耗 。"
+  },
+  "shadowverse:Armadillo": {
+    "NAME": "装甲铠鼠",
+    "DESCRIPTION": "机械 。 NL 获得 !B! 点 格挡 。 NL 谢幕曲 打出或被 消耗 时，增加1张 *生产器械 和 *修复模式 到手中。"
+  },
+  "shadowverse:AerialCraft": {
+    "NAME": "空翔战机",
+    "DESCRIPTION": "机械 。 NL 造成 !D! 点伤害。 NL 如果造成的伤害未被 格挡，则手中的 机械牌 本回合耗能减少1。 NL 爆能强化 3 \b伤害翻倍。"
+  },
+  "shadowverse:LasershellTortoise": {
+    "NAME": "歼炮巨龟",
+    "DESCRIPTION": "机械 · 自然 。 NL 获得 !B! 点 格挡 。 NL 选择手中1张 机械 或 自然 卡，其本回合耗能变为0。"
+  },
+  "shadowverse:Bearminator": {
+    "NAME": "灭裂机爪熊",
+    "DESCRIPTION": "机械 · 自然 。 NL 造成 !D! 点伤害。 NL 回合结束时，如果有剩余能量，对全体敌人造成 !M! 点伤害。"
+  },
+  "shadowverse:Prototype": {
+    "NAME": "试作型机械兵",
+    "DESCRIPTION": "机械 。 NL 获得 !B! 点 格挡 。 NL 增加 !M! 张 *增殖的创造物 到抽牌堆中。"
+  },
+  "shadowverse:MagnaGiant": {
+    "NAME": "神伟的巨人",
+    "DESCRIPTION": "机械 。 NL 激奏 0 \b从抽牌堆中随机将1张 机械 牌加入手中。  NL  NL --------------------- NL  NL  获得 !B! 点 格挡 。 NL 对全体敌人造成本场战斗已打出的 机械 非技能牌数量的 !M! 倍伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已打出",
+      " 张 机械 非技能牌。)"
+    ]
+  },
+  "shadowverse:MagnaZero": {
+    "NAME": "神伟之始",
+    "DESCRIPTION": "机械 。 NL 对全体敌人造成 !D! 点伤害。 NL 本场战斗中由非 共鸣 转变为 共鸣 的次数为10以上则额外造成 !M! 点伤害。 NL 20次以上则伤害翻倍。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (非 共鸣 转变为 共鸣 的次数为",
+      " 。)"
+    ]
+  },
+  "shadowverse:Yuwan": {
+    "NAME": "次元超克者·伊昂",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 消耗一张手牌，增加1张该牌的复制品到抽牌堆中，抽1张牌。 NL 如果本场战斗由非 共鸣 转变为 共鸣 的次数为5以上，下回合开始时对随机敌人造成 !M! 点伤害。 NL 如果为10次以上，再造成一次伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (非 共鸣 转变为 共鸣 的次数为",
+      " 。)"
+    ]
+  },
+  "shadowverse:Nexus": {
+    "NAME": "肃清模式",
+    "DESCRIPTION": "进入肃清模式。 NL 如果战斗中存在已肃清对象，你在本场战斗造成的伤害提升对应的数值。 NL 斩杀 时，将敌人加入已肃清列表。"
+  },
+  "shadowverse:Nerva": {
+    "NAME": "安宁模式",
+    "DESCRIPTION": "进入安宁模式。 NL 受到来自安宁对象的伤害减少对应安宁次数。 NL 斩杀 时，将敌人加入已安宁列表。"
+  },
+  "shadowverse:Paracelsus": {
+    "NAME": "帕拉塞尓苏斯",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抉择 ： NL 从 *攻击型巨像 、 *防御型巨像 中选择1张加入手中。"
+  },
+  "shadowverse:Windup": {
+    "NAME": "转动发条",
+    "DESCRIPTION": "增加 !M! 张 *悬丝傀儡 到手中。 NL 共鸣 额外增加1张。"
+  },
+  "shadowverse:PuppeteerStrings": {
+    "NAME": "人偶师的线",
+    "DESCRIPTION": "对全体敌人造成 !D! 点伤害。 NL 增加 !M! 张 *悬丝傀儡 到手中。"
+  },
+  "shadowverse:InfinityPuppeteer": {
+    "NAME": "无尽的人偶师",
+    "DESCRIPTION": "增加 !M! 张 *悬丝傀儡 到抽牌堆中。 NL 每回合开始额外抽1张牌。",
+    "UPGRADE_DESCRIPTION":"固有 。 NL 增加 !M! 张 *悬丝傀儡 到抽牌堆中。 NL 每回合开始额外抽1张牌。"
+  },
+  "shadowverse:WhiteArtifact": {
+    "NAME": "圣白破坏的创造物",
+    "DESCRIPTION": "创造物 。 NL 保留 。 NL 每当打出带有 消耗 的攻击牌时耗能减少 [E] 。 NL 回合开始时获得 !M! 点 格挡 。 NL 增加1张 *暗黑破坏的创造物 到手中。 NL 这张卡不能被 消耗 。"
+  },
+  "shadowverse:BlackArtifact": {
+    "NAME": "暗黑破坏的创造物",
+    "DESCRIPTION": "创造物 。 NL 保留 。 NL 每当打出带有 消耗 的攻击牌时耗能减少 [E] 。 NL 回合开始时对全体敌人造成 !M! 点伤害。 NL 如果有 *圣白破坏的创造物 则造成伤害翻倍。 NL 这张卡不能被 消耗 。"
+  },
+  "shadowverse:OmenOfDestruction": {
+    "NAME": "破坏绝杰·里榭娜",
+    "DESCRIPTION": "获得 !M! 层 人工制品 。 NL 增加1张 *圣白破坏的创造 物到手中。",
+    "UPGRADE_DESCRIPTION":"固有 。 NL 获得 !M! 层 人工制品 。 NL 增加1张 *圣白破坏的创造 物到手中。"
+  },
+  "shadowverse:Licht": {
+    "NAME": "齿轮运行者·里希特",
+    "DESCRIPTION": "每当打出 *悬丝傀儡 时获得 !M! 点 格挡 。 NL 增加1张 *悬丝傀儡 到手中。"
+  },
+  "shadowverse:PuppetRoom": {
+    "NAME": "人偶房",
+    "DESCRIPTION": "倒计时 !M! \b失去这个效果。 NL 打出与回合开始时，增加1张 *悬丝傀儡 到手中。"
+  },
+  "shadowverse:Victoria": {
+    "NAME": "维多利亚",
+    "DESCRIPTION": "造成 !D! 点伤害2次。 NL 消耗 。"
+  },
+  "shadowverse:Roid": {
+    "NAME": "罗伊德",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 消耗 。"
+  },
+  "shadowverse:HeartlessBattle": {
+    "NAME": "无心的决斗",
+    "DESCRIPTION": "抉择 ：将1张 *罗伊德 或 *维多利亚 加入手中。 NL 增加1张 *悬丝傀儡 到手中。",
+    "UPGRADE_DESCRIPTION":"抉择 ：将1张 *罗伊德+ 或 *维多利亚+ 加入手中。 NL 增加1张 *悬丝傀儡+ 到手中。"
+  },
+  "shadowverse:YuwanFury": {
+    "NAME": "伊昂的愤怒",
+    "DESCRIPTION": "增加1张本回合耗能为0的 *古老的创造物 和 *神秘的创造物 到手中。"
+  },
+  "shadowverse:BelphometCrackdown": {
+    "NAME": "贝尔冯特的弹压",
+    "DESCRIPTION": "从 *杀戮女神·提西福涅 、 *灾乱女神·阿莱克托 、 *愤怒女神·墨盖拉 中随机增加1张到手中，并赋予其保留。"
+  },
+  "shadowverse:RebelAgainstFate": {
+    "NAME": "反叛命运",
+    "DESCRIPTION": "抉择 ： NL 增加1张本回合耗能为0的 *古老的创造物 和 *神秘的创造物 到手中。 NL 从 *杀戮女神·提西福涅 、 *灾乱女神·阿莱克托 、 *愤怒女神·墨盖拉 中随机增加1张到手中，并赋予其保留。 NL 共鸣 改为发动2种效果。 NL 消耗 。"
+  },
+  "shadowverse:PurgationBlade": {
+    "NAME": "肃清的一刀",
+    "DESCRIPTION": "获得消耗堆中攻击牌数量的 力量 。 NL 消耗 。"
+  },
+  "shadowverse:Maisha": {
+    "NAME": "肃清的英雄·梅西亚",
+    "DESCRIPTION": "抽 !M! 张牌。 NL 增加1张 *肃清的一刀 到手中。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"抽 !M! 张牌。 NL 增加1张 *肃清的一刀+ 到手中。 NL 消耗 。"
+  },
+  "shadowverse:Metaproduction": {
+    "NAME": "创造术",
+    "DESCRIPTION": "增加1张 *解析的创造物 到抽牌堆中。 NL 下回合额外抽 !M! 张牌。"
+  },
+  "shadowverse:DeviceTuner": {
+    "NAME": "器具调整师",
+    "DESCRIPTION": "选择手中一张 创造物 牌，增加1张同名卡到手中。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION":"选择手中一张 创造物 牌，增加1张同名卡到手中。"
+  },
+  "shadowverse:ApostleOfDestruction": {
+    "NAME": "破坏的使徒",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 选择手中一张牌 消耗 ，增加1张耗能减1的同名卡到手中。"
+  },
+  "shadowverse:DiscipleOfDestruction": {
+    "NAME": "破坏的信徒",
+    "DESCRIPTION": "消耗1张牌。 NL 抽 !M! 张牌。"
+  },
+  "shadowverse:StringMaster": {
+    "NAME": "线偶大师",
+    "DESCRIPTION": "每当打出 *悬丝傀儡 时，增加2张 *悬丝傀儡 到手中。 NL （一回合仅限一次）"
+  },
+  "shadowverse:Concentrate": {
+    "NAME": "全神贯注",
+    "DESCRIPTION": "抽1张牌。 NL 回合结束时，如果有剩余能量，下回合开始时获得5点 格挡 ，额外抽 !M! 张牌。"
+  },
+  "shadowverse:DominateFortress": {
+    "NAME": "要塞主宰者",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 共鸣 获得 格挡 翻倍。"
+  },
+  "shadowverse:GadgetUser": {
+    "NAME": "装置研发者",
+    "DESCRIPTION": "丢弃1张牌，抽 !M! 张牌。 NL 增加1张 *古老的创造物 到手中。",
+    "UPGRADE_DESCRIPTION":"丢弃2张牌，抽 !M! 张牌。 NL 增加1张 *古老的创造物 到手中。"
+  },
+  "shadowverse:Karula": {
+    "NAME": "武艺至尊·伽尔拉",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 回合结束时，如果有剩余能量，则获得 !M! 点 力量 和 敏捷 ，给予随机敌人3层 易伤 和 虚弱 。"
+  },
+  "shadowverse:CurseOfPurgation": {
+    "NAME": "肃清的诅咒",
+    "DESCRIPTION": "无法被 消耗 。 NL 当被从卡组移除时，你死亡。 NL 当打出第8张以上牌时，本回合抽牌时失去2点生命。"
+  },
+  "shadowverse:Uno": {
+    "NAME": "提线傀儡·舞诺",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得1层 残影 。 NL 消耗 。"
+  },
+  "shadowverse:Due": {
+    "NAME": "提线傀儡·朵叶",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 回合开始时，如果消耗堆中同时存在 *提线傀儡·舞诺 和这张牌，则从消耗堆中移除两者并加入1张本回合耗能为0的 *提线傀儡·托蕾 到手中。 NL 消耗 。"
+  },
+  "shadowverse:Tre": {
+    "NAME": "提线傀儡·托蕾",
+    "DESCRIPTION": "造成 !D! 点伤害2次。 NL 谢幕曲 当这张牌被 消耗 时，增加1张 *提线傀儡·舞诺 和 *提线傀儡·朵叶 到弃牌堆中。 NL 消耗 。"
+  },
+  "shadowverse:Orchid1": {
+    "NAME": "复仇的人偶·奥琪丝",
+    "DESCRIPTION": "消耗 手中的 *悬丝傀儡 。 NL 增加1张 *提线人偶·朵叶 到手中，增加 消耗 数量-1张 *提线人偶·托蕾 到手中。",
+    "UPGRADE_DESCRIPTION":"消耗 手中的 *悬丝傀儡 。 NL 增加1张 *提线人偶·朵叶+ 到手中，加 消耗 数量-1张 *提线人偶·托蕾+ 到手中。"
+  },
+  "shadowverse:Orchid2": {
+    "NAME": "坚毅的人偶·奥琪丝",
+    "DESCRIPTION": "消耗 手中1张 *悬丝傀儡 。 NL 增加1张 *罗伊德 到手中。 NL 回复3点生命。",
+    "UPGRADE_DESCRIPTION":"消耗 手中1张 *悬丝傀儡 。 NL 增加1张 *罗伊德+ 到手中。 NL 回复3点生命"
+  },
+  "shadowverse:Orchid": {
+    "NAME": "人偶少女·奥琪丝",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果手中的 *悬丝傀儡 数量为2以下，增加3张 *悬丝傀儡 到手中。 NL 否则， 抉择 ：\b从 *坚毅的人偶·奥琪丝 、 *复仇的人偶·奥琪丝 中选择1种效果发动。",
+    "UPGRADE_DESCRIPTION":"获得 !B! 点 格挡 。 NL 如果手中的 *悬丝傀儡 数量为2以下，增加3张 *悬丝傀儡 到手中。 NL 否则， 抉择 ：\b从 *坚毅的人偶·奥琪丝+ 、 *复仇的人偶·奥琪丝+ 中选择1种效果发动。"
+  },
+  "shadowverse:OrchidNeo": {
+    "NAME": "连结之心·奥琪丝",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抉择 ：\b增加1张 *罗伊德 到手中，获得1点力量 和 敏捷 、 增加1张 *提线傀儡·舞诺 和 *提线傀儡·朵叶 到手中。 NL 如果手中有 *悬丝傀儡 ，选择1张 消耗 并增加1张 *提线傀儡·托蕾 到手中。"
+  },
+  "shadowverse:MagiTrainCard": {
+    "NAME": "魔导列车",
+    "DESCRIPTION": "操纵 2。 NL 获得 !B! 点 格挡 。 NL 给予全体敌人 !M! 层 虚弱 和 易伤 。 NL 消耗 *混沌支配者·艾希连德凛克 以外的所有手牌。"
+  },
+  "shadowverse:ICCard": {
+    "NAME": "混沌支配者·艾希连德凛克",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张 *魔导列车 到手中。 NL 如果耗能不为0，增加1张 *死之索偿 到手中。 NL 瞬念召唤 回合开始时如果消耗堆中的攻击牌为20张以上，则加入手中，耗能变为0。"
+  },
+  "shadowverse:DeathPenalty": {
+    "NAME": "死之索偿",
+    "DESCRIPTION": "随机敌人本回合失去 !M! 点 力量 。 NL 获得 !M! 金币。 NL 消耗 。"
   }
 }

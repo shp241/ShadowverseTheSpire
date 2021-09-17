@@ -32,7 +32,7 @@ import shadowverse.powers.PrimeArtifactPower;
    public PrimeArtifact() {
      super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.ENEMY);
      this.baseDamage = 20;
-     this.baseBlock = 20;
+     this.baseBlock = 15;
      this.magicNumber = this.baseMagicNumber;
      this.exhaust = true;
      this.tags.add(AbstractShadowversePlayer.Enums.ARTIFACT);

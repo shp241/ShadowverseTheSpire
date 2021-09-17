@@ -25,7 +25,7 @@ import shadowverse.characters.Nemesis;
 
    public MysticArtifact() {
      super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.SELF);
-     this.baseBlock = 12;
+     this.baseBlock = 9;
      this.baseMagicNumber = 1;
      this.magicNumber = this.baseMagicNumber;
      this.exhaust = true;

@@ -266,5 +266,12 @@
     "DESCRIPTIONS": [
       "你和全体敌人初始获得 #b3 点 力量 。"
     ]
+  },
+  "shadowverse:Offensive5": {
+    "NAME": "先手印记",
+    "FLAVOR": "您为先手，不更换手牌。",
+    "DESCRIPTIONS": [
+      "本场战斗第一次由非 #y共鸣 转变为 #y共鸣 时，选择进入 #r肃清模式 或 #b安宁模式。 NL "
+    ]
   }
 }

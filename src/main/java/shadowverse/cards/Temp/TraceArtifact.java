@@ -24,7 +24,7 @@ import shadowverse.characters.Nemesis;
 
    public TraceArtifact() {
      super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.SELF);
-     this.baseBlock = 8;
+     this.baseBlock = 6;
      this.exhaust = true;
      this.tags.add(AbstractShadowversePlayer.Enums.ARTIFACT);
    }

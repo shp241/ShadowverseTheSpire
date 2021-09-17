@@ -26,7 +26,7 @@ import shadowverse.characters.Nemesis;
 
    public AncientArtifact() {
      super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.ENEMY);
-     this.baseDamage = 12;
+     this.baseDamage = 8;
      this.exhaust = true;
      this.tags.add(AbstractShadowversePlayer.Enums.ARTIFACT);
    }

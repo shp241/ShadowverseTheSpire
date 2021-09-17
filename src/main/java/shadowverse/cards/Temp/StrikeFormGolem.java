@@ -30,9 +30,10 @@ import shadowverse.characters.Nemesis;
 
    public StrikeFormGolem() {
      super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.ENEMY);
-     this.baseDamage = 15;
+     this.baseDamage = 12;
      this.exhaust = true;
      this.tags.add(AbstractShadowversePlayer.Enums.ARTIFACT);
+     this.tags.add(CardTags.STRIKE);
    }
  
    

@@ -27,7 +27,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
    public AnalyzeArtifact() {
      super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.ENEMY);
-     this.baseDamage = 6;
+     this.baseDamage = 5;
      this.baseMagicNumber = 1;
      this.magicNumber = this.baseMagicNumber;
      this.exhaust = true;

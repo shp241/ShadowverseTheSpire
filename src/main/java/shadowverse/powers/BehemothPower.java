@@ -46,7 +46,7 @@ import shadowverse.effect.RedLaserBeamEffect;
    public void atEndOfTurnPreEndTurnCards(boolean isPlayer) {
      if (isPlayer) {
        flash();
-       addToBot((AbstractGameAction)new VFXAction(this.owner, (AbstractGameEffect)new RedLaserBeamEffect(this.owner.dialogX, this.owner.dialogY), 0.1F));
+       addToBot((AbstractGameAction)new VFXAction(this.owner, (AbstractGameEffect)new RedLaserBeamEffect(this.owner.dialogX, this.owner.dialogY,this.owner.flipHorizontal), 0.1F));
        addToBot((AbstractGameAction)new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE));
      } 
    }

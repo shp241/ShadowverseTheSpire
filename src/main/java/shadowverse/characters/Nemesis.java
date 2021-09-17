@@ -22,6 +22,7 @@ import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import shadowverse.cards.Basic.*;
+import shadowverse.cards.Curse.CurseOfPurgation;
 
 import java.util.ArrayList;
 
@@ -67,14 +68,15 @@ public class Nemesis extends AbstractShadowversePlayer{
         }
         starterDeck.add(DimensionCut.ID);
         starterDeck.add(MagisteelLion.ID);
+        starterDeck.add(CurseOfPurgation.ID);
         return starterDeck;
     }
 
     @Override
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add("shadowverse:Offensive3");
-        UnlockTracker.markRelicAsSeen("shadowverse:Offensive3");
+        retVal.add("shadowverse:Offensive5");
+        UnlockTracker.markRelicAsSeen("shadowverse:Offensive5");
         return retVal;
     }
 
@@ -102,7 +104,7 @@ public class Nemesis extends AbstractShadowversePlayer{
 
     @Override
     public AbstractCard getStartCardForEvent() {
-        return (AbstractCard)new UndyingResentment();
+        return (AbstractCard)new MagisteelLion();
     }
 
     @Override

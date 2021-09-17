@@ -24,6 +24,7 @@ public class ResonanceAction extends AbstractGameAction {
                 addToBot((AbstractGameAction)new ChangeStanceAction((AbstractStance)new Resonance()));
                 if (AbstractDungeon.player instanceof AbstractShadowversePlayer)
                     ((AbstractShadowversePlayer) AbstractDungeon.player).resonanceCount++;
+                System.out.println("共鸣了"+((AbstractShadowversePlayer) AbstractDungeon.player).resonanceCount);
             }else if (AbstractDungeon.player.drawPile.group.size()%2!=0&&AbstractDungeon.player.stance.ID.equals(Resonance.STANCE_ID)){
                 addToBot((AbstractGameAction)new ChangeStanceAction((AbstractStance)new NeutralStance()));
             }

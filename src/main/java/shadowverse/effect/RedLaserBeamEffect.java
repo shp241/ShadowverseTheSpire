@@ -18,31 +18,32 @@ public class RedLaserBeamEffect extends AbstractGameEffect {
 
     private float y;
 
-    private static final float DUR = 2.0F;
+    private static final float DUR = 1.0F;
 
     private static TextureAtlas.AtlasRegion img;
 
-    private boolean playedSfx = false;
+    private boolean playedSfx = false, flipHorizontal = false;
 
-    public RedLaserBeamEffect(float x, float y) {
+    public RedLaserBeamEffect(float x, float y, boolean flipHorizontal) {
         if (img == null)
             img = ImageMaster.vfxAtlas.findRegion("combat/laserThick");
+        this.flipHorizontal = flipHorizontal;
         this.x = x;
         this.y = y;
-        this.color = Color.RED.cpy();
-        this.duration = 2.0F;
-        this.startingDuration = 2.0F;
+        this.color = Color.FIREBRICK.cpy();
+        this.duration = 1.0F;
+        this.startingDuration = 1.0F;
     }
 
     public void update() {
         if (!this.playedSfx) {
-            AbstractDungeon.effectsQueue.add(new BorderLongFlashEffect(Color.RED));
+            AbstractDungeon.effectsQueue.add(new BorderLongFlashEffect(Color.FIREBRICK));
             this.playedSfx = true;
             CardCrawlGame.screenShake.rumble(2.0F);
         }
         this.duration -= Gdx.graphics.getDeltaTime();
         if (this.duration > this.startingDuration / 2.0F) {
-            this.color.a = Interpolation.pow2In.apply(1.0F, 0.0F, this.duration - 1.0F);
+            this.color.a = Interpolation.pow2In.apply(1.0F, 0.0F, this.duration - 0.5F);
         } else {
             this.color.a = Interpolation.pow2Out.apply(0.0F, 1.0F, this.duration);
         }
@@ -52,12 +53,44 @@ public class RedLaserBeamEffect extends AbstractGameEffect {
 
     public void render(SpriteBatch sb) {
         sb.setBlendFunction(770, 1);
-        sb.setColor(new Color(0.0F, 0.0F, 0.0F, this.color.a));
-        sb.draw((TextureRegion)img, this.x, this.y - (img.packedHeight / 2), 0.0F, img.packedHeight / 2.0F, img.packedWidth, img.packedHeight, this.scale * 2.0F + MathUtils.random(-0.05F, 0.05F), this.scale * 1.5F + MathUtils.random(-0.1F, 0.1F), MathUtils.random(186.0F, 189.0F));
-        sb.draw((TextureRegion)img, this.x, this.y - (img.packedHeight / 2), 0.0F, img.packedHeight / 2.0F, img.packedWidth, img.packedHeight, this.scale * 2.0F + MathUtils.random(-0.05F, 0.05F), this.scale * 1.5F + MathUtils.random(-0.1F, 0.1F), MathUtils.random(186.0F, 189.0F));
-        sb.setColor(this.color);
-        sb.draw((TextureRegion)img, this.x, this.y - (img.packedHeight / 2), 0.0F, img.packedHeight / 2.0F, img.packedWidth, img.packedHeight, this.scale * 2.0F, this.scale / 2.0F, MathUtils.random(187.0F, 188.0F));
-        sb.draw((TextureRegion)img, this.x, this.y - (img.packedHeight / 2), 0.0F, img.packedHeight / 2.0F, img.packedWidth, img.packedHeight, this.scale * 2.0F, this.scale / 2.0F, MathUtils.random(187.0F, 188.0F));
+        sb.setColor(new Color(0.5F, 0.7F, 1.0F, this.color.a));
+        if (!this.flipHorizontal) {
+            sb.draw((TextureRegion)img, this.x, this.y - (img.packedHeight / 2), 0.0F, img.packedHeight / 2.0F, img.packedWidth, img.packedHeight, this.scale * 2.0F +
+
+                            MathUtils.random(-0.05F, 0.05F), this.scale * 1.5F +
+                            MathUtils.random(-0.1F, 0.1F),
+                    MathUtils.random(-4.0F, 4.0F));
+            sb.draw((TextureRegion)img, this.x, this.y - (img.packedHeight / 2), 0.0F, img.packedHeight / 2.0F, img.packedWidth, img.packedHeight, this.scale * 2.0F +
+
+                            MathUtils.random(-0.05F, 0.05F), this.scale * 1.5F +
+                            MathUtils.random(-0.1F, 0.1F),
+                    MathUtils.random(-4.0F, 4.0F));
+            sb.setColor(this.color);
+            sb.draw((TextureRegion)img, this.x, this.y - (img.packedHeight / 2), 0.0F, img.packedHeight / 2.0F, img.packedWidth, img.packedHeight, this.scale * 2.0F, this.scale / 2.0F,
+
+                    MathUtils.random(-2.0F, 2.0F));
+            sb.draw((TextureRegion)img, this.x, this.y - (img.packedHeight / 2), 0.0F, img.packedHeight / 2.0F, img.packedWidth, img.packedHeight, this.scale * 2.0F, this.scale / 2.0F,
+
+                    MathUtils.random(-2.0F, 2.0F));
+        } else {
+            sb.draw((TextureRegion)img, this.x, this.y - (img.packedHeight / 2), 0.0F, img.packedHeight / 2.0F, img.packedWidth, img.packedHeight, this.scale * 2.0F +
+
+                            MathUtils.random(-0.05F, 0.05F), this.scale * 1.5F +
+                            MathUtils.random(-0.1F, 0.1F),
+                    MathUtils.random(186.0F, 189.0F));
+            sb.draw((TextureRegion)img, this.x, this.y - (img.packedHeight / 2), 0.0F, img.packedHeight / 2.0F, img.packedWidth, img.packedHeight, this.scale * 2.0F +
+
+                            MathUtils.random(-0.05F, 0.05F), this.scale * 1.5F +
+                            MathUtils.random(-0.1F, 0.1F),
+                    MathUtils.random(186.0F, 189.0F));
+            sb.setColor(this.color);
+            sb.draw((TextureRegion)img, this.x, this.y - (img.packedHeight / 2), 0.0F, img.packedHeight / 2.0F, img.packedWidth, img.packedHeight, this.scale * 2.0F, this.scale / 2.0F,
+
+                    MathUtils.random(187.0F, 188.0F));
+            sb.draw((TextureRegion)img, this.x, this.y - (img.packedHeight / 2), 0.0F, img.packedHeight / 2.0F, img.packedWidth, img.packedHeight, this.scale * 2.0F, this.scale / 2.0F,
+
+                    MathUtils.random(187.0F, 188.0F));
+        }
         sb.setBlendFunction(770, 771);
     }
 

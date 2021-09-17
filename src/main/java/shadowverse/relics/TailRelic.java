@@ -21,7 +21,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
    public static final String IMG = "img/relics/TailRelic.png";
    public static final String OUTLINE_IMG = "img/relics/outline/TailRelic_Outline.png";
    public static AbstractCard c = (AbstractCard)new OneTailFox();
-   private boolean check = true;
+   private static boolean check = true;
 
    public TailRelic() {
      super(ID, ImageMaster.loadImage(IMG), RelicTier.SHOP, LandingSound.MAGICAL);

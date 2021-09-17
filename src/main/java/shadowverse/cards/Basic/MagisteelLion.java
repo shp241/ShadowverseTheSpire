@@ -25,7 +25,7 @@ import shadowverse.characters.Nemesis;
 
    public MagisteelLion() {
      super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.BASIC, CardTarget.SELF);
-     this.baseBlock = 5;
+     this.baseBlock = 4;
      this.baseMagicNumber = 1;
      this.magicNumber = this.baseMagicNumber;
      this.cardsToPreview = (AbstractCard)new AnalyzeArtifact();
@@ -35,7 +35,7 @@ import shadowverse.characters.Nemesis;
    public void upgrade() {
      if (!this.upgraded) {
        upgradeName();
-       upgradeBlock(3);
+       upgradeBlock(2);
        upgradeMagicNumber(1);
      } 
    }

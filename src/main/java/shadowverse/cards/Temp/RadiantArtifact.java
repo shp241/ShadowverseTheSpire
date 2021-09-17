@@ -30,7 +30,7 @@
 
    public RadiantArtifact() {
      super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.ENEMY);
-     this.baseDamage = 28;
+     this.baseDamage = 22;
      this.baseMagicNumber = 1;
      this.magicNumber = this.baseMagicNumber;
      this.exhaust = true;

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="Maven: bin:BaseMod:1.0">
+        <CLASSES>
+          <root url="jar://F:/Steam/steamapps/workshop/content/646570/1605833019/BaseMod.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Maven: bin:SlayTheSpire:1.0">
+        <CLASSES>
+          <root url="jar://F:/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Maven: bin:ModTheSpire:1.0">
+        <CLASSES>
+          <root url="jar://F:/Steam/steamapps/workshop/content/646570/1605060445/ModTheSpire.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Maven: come.evacipated.cardcrawl:stslib:1.17.2">
+        <CLASSES>
+          <root url="jar://F:/Steam/steamapps/workshop/content/646570/1609158507/StSLib.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Maven: rs.lazymankits:lazymankits:1.1.32">
+        <CLASSES>
+          <root url="jar://F:/Steam/steamapps/workshop/content/646570/2554005913/[STS]Lazy Man's Kits.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>

@@ -788,5 +788,113 @@
       "回合开始时 #b",
       " 张 #y精奥的创造物 到手中。"
     ]
+  },
+  "shadowverse:AcceleratiumPower": {
+    "NAME": "加速装置",
+    "DESCRIPTIONS": [
+      "每当打出 #y创造物 牌时，获得 [E] 。每打出 #b2 张 #y创造物 牌时增加 #b1 张 #y虚空 到弃牌堆中。 #b",
+      " 回合后失去本效果。"
+    ]
+  },
+  "shadowverse:AugmentationBestowalPower": {
+    "NAME": "机械的解放",
+    "DESCRIPTIONS": [
+      "每当打出 #y创造物 牌时，获得 #b",
+      " 点能量，抽 #b",
+      " 张牌。"
+    ]
+  },
+  "shadowverse:NilpotentPower": {
+    "NAME": "虚数物体",
+    "DESCRIPTIONS": [
+      "#b",
+      " 回合内，受到的 #b4 点以上的伤害转变为3。"
+    ]
+  },
+  "shadowverse:DeusExMachinaPower": {
+    "NAME": "机械降神",
+    "DESCRIPTIONS": [
+      "每当打出 #y创造物 牌时，获得 [E] 。回合结束时，如果 #y共鸣 则下回合额外抽 #b2 张牌。"
+    ]
+  },
+  "shadowverse:BearminatorPower": {
+    "NAME": "灭裂机爪熊",
+    "DESCRIPTIONS": [
+      "回合结束时，如果有剩余能量，对全体敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "shadowverse:YuwanPower": {
+    "NAME": "次元超克者·伊昂",
+    "DESCRIPTIONS": [
+      "回合开始时，如果本场战斗由非 #y共鸣 转变为 #y共鸣 的次数为 #b5 以上，对随机敌人造成 #b",
+      " 点伤害。如果为 #b10 以上，再造成一次伤害。"
+    ]
+  },
+  "shadowverse:NexusPower": {
+    "NAME": "肃清模式",
+    "DESCRIPTIONS": [
+      "如果战斗中存在已肃清的敌人，你在本场战斗造成的伤害提升对应的数值。 NL "
+    ]
+  },
+  "shadowverse:NervaPower": {
+    "NAME": "安宁模式",
+    "DESCRIPTIONS": [
+      "你在本场战斗中受到来自以下敌人的伤害减少对应值。 NL "
+    ]
+  },
+  "shadowverse:WhiteArtifactPower": {
+    "NAME": "圣白破坏的创造物",
+    "DESCRIPTIONS": [
+      "回合开始时，获得 #b",
+      " 点格挡。"
+    ]
+  },
+  "shadowverse:BlackArtifactPower": {
+    "NAME": "暗黑破坏的创造物",
+    "DESCRIPTIONS": [
+      "回合开始时，对全体敌人 #b",
+      " 点伤害。如果有 #y圣白破坏的创造物 ，伤害翻倍。"
+    ]
+  },
+  "shadowverse:LichtPower": {
+    "NAME": "齿轮运行者·里希特",
+    "DESCRIPTIONS": [
+      "每当使用 #y悬丝傀儡 ，获得 #b",
+      " 点格挡。"
+    ]
+  },
+  "shadowverse:PuppetRoomPower": {
+    "NAME": "人偶房",
+    "DESCRIPTIONS": [
+      "回合开始时增加 #b1 张 #y悬丝傀儡 到手中。减少1层本能力。"
+    ]
+  },
+  "shadowverse:StringMasterPower": {
+    "NAME": "线偶大师",
+    "DESCRIPTIONS": [
+      "每当使用 #y悬丝傀儡 ，增加 #b",
+      " 张 #y悬丝傀儡 到手中。（一回合仅限一次）"
+    ]
+  },
+  "shadowverse:ConcentratePower": {
+    "NAME": "全神贯注",
+    "DESCRIPTIONS": [
+      "如果本回合结束时有剩余能量，下回合开始额外抽 #b",
+      " 张牌，获得 #b5 点格挡。"
+    ]
+  },
+  "shadowverse:KarulaPower": {
+    "NAME": "武艺至尊·伽尔拉",
+    "DESCRIPTIONS": [
+      "如果本回合结束时有剩余能量，获得 #b",
+      " 点 #y力量 和 #y敏捷 ，给予随机敌人 #b3 层 #y易伤 和 #y虚弱 。"
+    ]
+  },
+  "shadowverse:DrawLoseHealthPower": {
+    "NAME": "肃清的诅咒",
+    "DESCRIPTIONS": [
+      "抽牌时失去 #b2 点生命。"
+    ]
   }
 }
