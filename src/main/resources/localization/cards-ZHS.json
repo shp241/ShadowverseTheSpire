@@ -2296,8 +2296,8 @@
   },
   "shadowverse:GadgetUser": {
     "NAME": "装置研发者",
-    "DESCRIPTION": "丢弃1张牌，抽 !M! 张牌。 NL 增加1张 *古老的创造物 到手中。",
-    "UPGRADE_DESCRIPTION":"丢弃2张牌，抽 !M! 张牌。 NL 增加1张 *古老的创造物 到手中。"
+    "DESCRIPTION": "丢弃1张牌，抽 !M! 张牌 NL 增加1张 *古老的创造物 到手中。",
+    "UPGRADE_DESCRIPTION":"丢弃2张牌，抽 !M! 张牌 NL 增加1张 *古老的创造物 到手中。"
   },
   "shadowverse:Karula": {
     "NAME": "武艺至尊·伽尔拉",
@@ -2340,7 +2340,7 @@
   },
   "shadowverse:MagiTrainCard": {
     "NAME": "魔导列车",
-    "DESCRIPTION": "操纵 2。 NL 获得 !B! 点 格挡 。 NL 给予全体敌人 !M! 层 虚弱 和 易伤 。 NL 消耗 *混沌支配者·艾希连德凛克 以外的所有手牌。"
+    "DESCRIPTION": "保留 。 NL 操纵 2。 NL 获得 !B! 点 格挡 。 NL 给予全体敌人 !M! 层 虚弱 和 易伤 。 NL 消耗 *混沌支配者·艾希连德凛克 以外的所有手牌。"
   },
   "shadowverse:ICCard": {
     "NAME": "混沌支配者·艾希连德凛克",
@@ -2349,5 +2349,18 @@
   "shadowverse:DeathPenalty": {
     "NAME": "死之索偿",
     "DESCRIPTION": "随机敌人本回合失去 !M! 点 力量 。 NL 获得 !M! 金币。 NL 消耗 。"
+  },
+  "shadowverse:UnnamedDetermination": {
+    "NAME": "无名的决意",
+    "DESCRIPTION": "升级 所有手牌。 NL 如果消耗堆中的攻击牌为10张以上，抽 !M! 张牌。"
+  },
+  "shadowverse:Noa": {
+    "NAME": "复仇的人偶师·诺亚",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 增加1张 *悬丝傀儡 到手中。 NL 使手中所有 *悬丝傀儡 增加 !M! 点伤害。"
+  },
+  "shadowverse:MindDivider": {
+    "NAME": "精神分割者",
+    "DESCRIPTION": "获得手中攻击牌数量的 [E] 。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION":"获得手中攻击牌数量的 [E] 。"
   }
 }

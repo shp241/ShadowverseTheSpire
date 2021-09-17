@@ -569,6 +569,9 @@ import java.util.HashMap;
     reflectedMap.put("Orchid2", new Sfx("sounds/Orchid2.wav"));
     reflectedMap.put("Orchid", new Sfx("sounds/Orchid.wav"));
     reflectedMap.put("OrchidNeo", new Sfx("sounds/OrchidNeo.wav"));
+    reflectedMap.put("UnnamedDetermination", new Sfx("sounds/UnnamedDetermination.wav"));
+    reflectedMap.put("Noa", new Sfx("sounds/Noa.wav"));
+    reflectedMap.put("MindDivider", new Sfx("sounds/MindDivider.wav"));
 /*     */   }
 /*     */ 
 /*     */   
@@ -1146,6 +1149,9 @@ import java.util.HashMap;
               BaseMod.addCard((AbstractCard)new MagiTrainCard());
               BaseMod.addCard((AbstractCard)new ICCard());
               BaseMod.addCard((AbstractCard)new DeathPenalty());
+              BaseMod.addCard((AbstractCard)new UnnamedDetermination());
+              BaseMod.addCard((AbstractCard)new Noa());
+              BaseMod.addCard((AbstractCard)new MindDivider());
 /* 276 */     logger.info("Success");
 /*     */   }
 /*     */ 

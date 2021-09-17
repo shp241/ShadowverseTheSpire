@@ -36,6 +36,7 @@
      this.baseBlock = 27;
      this.baseMagicNumber = 3;
      this.magicNumber = this.baseMagicNumber;
+     this.selfRetain = true;
      this.predicate = card -> {
          return card.type==CardType.ATTACK&&card.costForTurn>=2;
      };
