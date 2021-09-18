@@ -186,15 +186,15 @@ public class Orchid extends CustomCard implements BranchableUpgradeCard{
                     break;
                 case 1:
                     addToBot((AbstractGameAction)new SFXAction("OrchidNeo"));
-                    addToBot((AbstractGameAction)new LinkHeartChoiceAction());
                     addToBot((AbstractGameAction)new SelectCardsInHandAction(1,TEXT[0],false,false, card -> {
-                        return card instanceof Puppet;
+                        return card.cardID.equals(Puppet.ID);
                     }, abstractCards ->{
                         for (AbstractCard c:abstractCards){
                             addToBot((AbstractGameAction)new ExhaustSpecificCardAction(c,abstractPlayer.hand));
                             addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new Tre()));
                         }
                     } ));
+                    addToBot((AbstractGameAction)new LinkHeartChoiceAction());
                     break;
                 default:
                     break;

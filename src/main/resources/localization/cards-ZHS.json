@@ -2348,7 +2348,7 @@
   },
   "shadowverse:DeathPenalty": {
     "NAME": "死之索偿",
-    "DESCRIPTION": "随机敌人本回合失去 !M! 点 力量 。 NL 获得 !M! 金币。 NL 消耗 。"
+    "DESCRIPTION": "随机敌人本回合失去 !M! 点 力量 。 NL 这个敌人死亡时获得10点金币。 NL 消耗 。"
   },
   "shadowverse:UnnamedDetermination": {
     "NAME": "无名的决意",
@@ -2362,5 +2362,25 @@
     "NAME": "精神分割者",
     "DESCRIPTION": "获得手中攻击牌数量的 [E] 。 NL 虚无 。",
     "UPGRADE_DESCRIPTION":"获得手中攻击牌数量的 [E] 。"
+  },
+  "shadowverse:Ines": {
+    "NAME": "暗云巫女·叶涅司",
+    "DESCRIPTION": "由非 共鸣 转变为 共鸣 时，对全体敌人造成 !M! 点伤害。"
+  },
+  "shadowverse:DollsOwner": {
+    "NAME": "持偶者",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加 !M! 张 *悬丝傀儡 到手中。"
+  },
+  "shadowverse:DestructionRefrain": {
+    "NAME": "破坏的歌声",
+    "DESCRIPTION": "消耗1张牌。 NL 对全体敌人造成那张牌耗能的 !M! 倍伤害。"
+  },
+  "shadowverse:Modest": {
+    "NAME": "至高无上·谦恭",
+    "DESCRIPTION": "回合结束时，对随机敌人造成已 消耗 过的 创造物 种类的 !M! 倍伤害。"
+  },
+  "shadowverse:Ralmia": {
+    "NAME": "音速机构·菈菈米娅",
+    "DESCRIPTION": "机械 · 创造物 。 NL 造成 !D! 点伤害。 NL 如果打出创造物，这张卡获得以下效果： NL 「如果剩余耗能为2以上，造成伤害时额外消耗2点能量，使伤害增加消耗堆中 创造物种类的倍数。」"
   }
 }

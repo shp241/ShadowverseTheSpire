@@ -23,6 +23,8 @@ import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import shadowverse.cards.Basic.*;
 import shadowverse.cards.Curse.CurseOfPurgation;
+import shadowverse.cards.Rare.Modest;
+import shadowverse.cards.Rare.Ralmia;
 
 import java.util.ArrayList;
 

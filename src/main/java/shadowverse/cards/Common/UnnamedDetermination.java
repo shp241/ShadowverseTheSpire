@@ -13,8 +13,8 @@ import shadowverse.action.GetEPAction;
 import shadowverse.characters.Nemesis;
 
 public class UnnamedDetermination extends CustomCard {
-    public static final String ID = "shadowverse:UnnamedDetermination ";
-    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:UnnamedDetermination ");
+    public static final String ID = "shadowverse:UnnamedDetermination";
+    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:UnnamedDetermination");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/UnnamedDetermination.png";

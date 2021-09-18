@@ -896,5 +896,26 @@
     "DESCRIPTIONS": [
       "抽牌时失去 #b2 点生命。"
     ]
+  },
+  "shadowverse:InesPower": {
+    "NAME": "暗云巫女·叶涅司",
+    "DESCRIPTIONS": [
+      "由非 #y共鸣 转变为 #y共鸣 时，对全体敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "shadowverse:DeathPenaltyPower": {
+    "NAME": "死之索偿",
+    "DESCRIPTIONS": [
+      "死亡时获得 #b10 金币。"
+    ]
+  },
+  "shadowverse:ModestPower": {
+    "NAME": "至高无上·谦恭",
+    "DESCRIPTIONS": [
+      "回合结束时，对随机敌人造成 #b",
+      " 点伤害。（已消耗的创造物种类为 #b",
+      " 种）"
+    ]
   }
 }

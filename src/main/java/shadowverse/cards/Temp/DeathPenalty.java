@@ -21,6 +21,7 @@
  import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
  import com.megacrit.cardcrawl.vfx.combat.ShockWaveEffect;
  import shadowverse.characters.Nemesis;
+ import shadowverse.powers.DeathPenaltyPower;
 
 
  public class DeathPenalty
@@ -51,9 +52,9 @@
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
        addToBot((AbstractGameAction)new SFXAction("IC4"));
        addToBot((AbstractGameAction)new VFXAction((AbstractCreature)abstractPlayer, (AbstractGameEffect)new ShockWaveEffect(abstractPlayer.hb.cX, this.hb.cY, Settings.GREEN_TEXT_COLOR, ShockWaveEffect.ShockWaveType.CHAOTIC), 1.0F));
-       addToBot((AbstractGameAction)new GainGoldAction(this.magicNumber));
        AbstractMonster m = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
        if (m != null){
+           addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)abstractPlayer, (AbstractPower)new DeathPenaltyPower((AbstractCreature)m)));
            addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)abstractPlayer, (AbstractPower)new StrengthPower((AbstractCreature)m, -this.magicNumber), -this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
            if (!m.hasPower("Artifact")) {
                addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)abstractPlayer, (AbstractPower)new GainStrengthPower((AbstractCreature)m, this.magicNumber), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));

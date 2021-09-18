@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -27,7 +28,6 @@ public class CurseOfPurgation extends CustomCard {
 
     public CurseOfPurgation() {
         super(ID, NAME, IMG_PATH, -2, DESCRIPTION, CardType.CURSE, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.NONE);
-        this.isEthereal = true;
     }
 
     @Override
@@ -35,8 +35,7 @@ public class CurseOfPurgation extends CustomCard {
     }
 
     public void onRemoveFromMasterDeck() {
-        addToBot((AbstractGameAction)new LoseHPAction(p, p, 99999));
-        CardCrawlGame.sound.play("BLOOD_SWISH");
+        AbstractDungeon.player.damage(new DamageInfo(null, 999));
     }
 
     @Override

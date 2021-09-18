@@ -572,6 +572,13 @@ import java.util.HashMap;
     reflectedMap.put("UnnamedDetermination", new Sfx("sounds/UnnamedDetermination.wav"));
     reflectedMap.put("Noa", new Sfx("sounds/Noa.wav"));
     reflectedMap.put("MindDivider", new Sfx("sounds/MindDivider.wav"));
+    reflectedMap.put("Ines", new Sfx("sounds/Ines.wav"));
+    reflectedMap.put("InesPower", new Sfx("sounds/InesPower.wav"));
+    reflectedMap.put("DollsOwner", new Sfx("sounds/DollsOwner.wav"));
+    reflectedMap.put("DestructionRefrain", new Sfx("sounds/DestructionRefrain.wav"));
+    reflectedMap.put("Modest", new Sfx("sounds/Modest.wav"));
+    reflectedMap.put("Ralmia", new Sfx("sounds/Ralmia.wav"));
+    reflectedMap.put("Ralmia_EH", new Sfx("sounds/Ralmia_EH.wav"));
 /*     */   }
 /*     */ 
 /*     */   
@@ -1152,6 +1159,11 @@ import java.util.HashMap;
               BaseMod.addCard((AbstractCard)new UnnamedDetermination());
               BaseMod.addCard((AbstractCard)new Noa());
               BaseMod.addCard((AbstractCard)new MindDivider());
+              BaseMod.addCard((AbstractCard)new Ines());
+              BaseMod.addCard((AbstractCard)new DollsOwner());
+              BaseMod.addCard((AbstractCard)new DestructionRefrain());
+              BaseMod.addCard((AbstractCard)new Modest());
+              BaseMod.addCard((AbstractCard)new Ralmia());
 /* 276 */     logger.info("Success");
 /*     */   }
 /*     */ 
