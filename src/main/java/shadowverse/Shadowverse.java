@@ -53,7 +53,8 @@ import java.util.HashMap;
             public static final Color NECRO_PURPLE = CardHelper.getColor(71, 26, 106);
             public static final Color VAMPIRE_SCARLET = CardHelper.getColor(107, 50, 55);
             public static final Color NEMESIS_SKY = CardHelper.getColor(18, 108, 146);
-/*     */   
+            public static final Color ROYAL_YELLOW = CardHelper.getColor(152, 156, 1);
+/*     */
 /*  38 */   public static final Logger logger = LogManager.getLogger(Shadowverse.class.getName());
 /*     */   
 /*     */   public static boolean Enhance(int EH) {
@@ -80,6 +81,7 @@ import java.util.HashMap;
               BaseMod.addColor(Necromancer.Enums.COLOR_PURPLE, NECRO_PURPLE, NECRO_PURPLE, NECRO_PURPLE, NECRO_PURPLE, NECRO_PURPLE, NECRO_PURPLE, NECRO_PURPLE, "img/512necro/bg_attack_default_gray.png", "img/512necro/bg_skill_default_gray.png", "img/512necro/bg_power_default_gray.png", "img/512necro/card_default_gray_orb.png", "img/1024necro/bg_attack_default_gray.png", "img/1024necro/bg_skill_default_gray.png", "img/1024necro/bg_power_default_gray.png", "img/1024necro/card_default_gray_orb.png", "img/512necro/card_small_orb.png");
               BaseMod.addColor(Vampire.Enums.COLOR_SCARLET, VAMPIRE_SCARLET, VAMPIRE_SCARLET, VAMPIRE_SCARLET, VAMPIRE_SCARLET, VAMPIRE_SCARLET, VAMPIRE_SCARLET, VAMPIRE_SCARLET, "img/512vamp/bg_attack_default_gray.png", "img/512vamp/bg_skill_default_gray.png", "img/512vamp/bg_power_default_gray.png", "img/512vamp/card_default_gray_orb.png", "img/1024vamp/bg_attack_default_gray.png", "img/1024vamp/bg_skill_default_gray.png", "img/1024vamp/bg_power_default_gray.png", "img/1024vamp/card_default_gray_orb.png", "img/512vamp/card_small_orb.png");
               BaseMod.addColor(Nemesis.Enums.COLOR_SKY, NEMESIS_SKY, NEMESIS_SKY, NEMESIS_SKY, NEMESIS_SKY, NEMESIS_SKY, NEMESIS_SKY, NEMESIS_SKY, "img/512nemesis/bg_attack_default_gray.png", "img/512nemesis/bg_skill_default_gray.png", "img/512nemesis/bg_power_default_gray.png", "img/512nemesis/card_default_gray_orb.png", "img/1024nemesis/bg_attack_default_gray.png", "img/1024nemesis/bg_skill_default_gray.png", "img/1024nemesis/bg_power_default_gray.png", "img/1024nemesis/card_default_gray_orb.png", "img/512nemesis/card_small_orb.png");
+              BaseMod.addColor(Royal.Enums.COLOR_YELLOW, ROYAL_YELLOW, ROYAL_YELLOW, ROYAL_YELLOW, ROYAL_YELLOW, ROYAL_YELLOW, ROYAL_YELLOW, ROYAL_YELLOW, "img/512royal/bg_attack_default_gray.png", "img/512royal/bg_skill_default_gray.png", "img/512royal/bg_power_default_gray.png", "img/512royal/card_default_gray_orb.png", "img/1024nemesis/bg_attack_default_gray.png", "img/1024nemesis/bg_skill_default_gray.png", "img/1024nemesis/bg_power_default_gray.png", "img/1024nemesis/card_default_gray_orb.png", "img/512royal/card_small_orb.png");
 /*  60 */     logger.info("Success subscribe");
 /*     */   }
 /*     */   public static void initialize() {
@@ -578,7 +580,12 @@ import java.util.HashMap;
     reflectedMap.put("DestructionRefrain", new Sfx("sounds/DestructionRefrain.wav"));
     reflectedMap.put("Modest", new Sfx("sounds/Modest.wav"));
     reflectedMap.put("Ralmia", new Sfx("sounds/Ralmia.wav"));
-    reflectedMap.put("Ralmia_EH", new Sfx("sounds/Ralmia_EH.wav"));
+    reflectedMap.put("Royal_Hurt", new Sfx("sounds/Royal_Hurt.wav"));
+    reflectedMap.put("Royal_Hurt1", new Sfx("sounds/Royal_Hurt1.wav"));
+    reflectedMap.put("Royal_Hurt2", new Sfx("sounds/Royal_Hurt2.wav"));
+    reflectedMap.put("Royal_Hurt3", new Sfx("sounds/Royal_Hurt3.wav"));
+    reflectedMap.put("Royal_Hurt4", new Sfx("sounds/Royal_Hurt4.wav"));
+    reflectedMap.put("Royal_Selected", new Sfx("sounds/Royal_Selected.wav"));
 /*     */   }
 /*     */ 
 /*     */   
@@ -1175,6 +1182,7 @@ import java.util.HashMap;
               BaseMod.addCharacter((AbstractPlayer)new Necromancer(("Necromancer")),"img/character/Necromancer/button.png","img/character/Necromancer/background.png",Necromancer.Enums.Necromancer);
               BaseMod.addCharacter((AbstractPlayer)new Vampire(("Vamp")),"img/character/Vampire/button.png","img/character/Vampire/background.png",Vampire.Enums.Vampire);
               BaseMod.addCharacter((AbstractPlayer)new Nemesis(("Nemesis")),"img/character/Nemesis/button.png","img/character/Nemesis/background.png",Nemesis.Enums.Nemesis);
+              BaseMod.addCharacter((AbstractPlayer)new Royal(("Royal")),"img/character/Royal/button.png","img/character/Royal/background.png",Royal.Enums.Royal);
 /*     */   }
 /*     */ }
 
