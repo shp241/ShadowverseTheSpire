@@ -56,7 +56,7 @@ import java.util.HashMap;
             public static final Color ROYAL_YELLOW = CardHelper.getColor(152, 156, 1);
 /*     */
 /*  38 */   public static final Logger logger = LogManager.getLogger(Shadowverse.class.getName());
-/*     */   
+/*     */
 /*     */   public static boolean Enhance(int EH) {
 /*  41 */     boolean res = false;
 /*  42 */     if (EnergyPanel.getCurrentEnergy() >= EH) {
@@ -64,7 +64,7 @@ import java.util.HashMap;
 /*     */     }
 /*  45 */     return res;
 /*     */   }
-/*     */   
+/*     */
 /*     */   public static boolean Accelerate(AbstractCard card) {
 /*  49 */     boolean res = false;
 /*  50 */     if (EnergyPanel.getCurrentEnergy() < card.cost) {
@@ -72,7 +72,7 @@ import java.util.HashMap;
 /*     */     }
 /*  53 */     return res;
 /*     */   }
-/*     */   
+/*     */
 /*     */   public Shadowverse() {
 /*  57 */     logger.info("Subscribing");
 /*  58 */     BaseMod.subscribe((ISubscriber)this);
@@ -89,12 +89,12 @@ import java.util.HashMap;
 /*  64 */     Shadowverse shadowverse = new Shadowverse();
 /*  65 */     logger.info("Initialization success");
 /*     */   }
-/*     */   
+/*     */
 /*     */   private static String loadJson(String jsonPath) {
 /*  69 */     return Gdx.files.internal(jsonPath).readString(String.valueOf(StandardCharsets.UTF_8));
 /*     */   }
-/*     */ 
-/*     */   
+/*     */
+/*     */
 /*     */   public void receiveEditKeywords() {
 /*  74 */     logger.info("Adding Keywords");
 /*  75 */     String keywordsPath = "localization/keywords-" + Settings.language + ".json";
@@ -106,15 +106,15 @@ import java.util.HashMap;
 /*  81 */       Keyword key = var4[var6];
 /*  82 */       logger.info("Loading keyword : " + key.NAMES[0]);
 /*  83 */       BaseMod.addKeyword(key.NAMES, key.DESCRIPTION);
-/*     */     } 
+/*     */     }
 /*  85 */     logger.info("Keywords setting finished.");
 /*     */   }
-/*     */   
+/*     */
 /*     */   private HashMap<String, Sfx> getSoundsMap() {
 /*  89 */     return (HashMap<String, Sfx>) ReflectionHacks.getPrivate(CardCrawlGame.sound, SoundMaster.class, "map");
 /*     */   }
-/*     */ 
-/*     */   
+/*     */
+/*     */
 /*     */   public void receivePostInitialize() {
               BaseMod.addEvent(PinyaEvent.ID,PinyaEvent.class);
               BaseMod.addEvent(GemFortune.ID,GemFortune.class, TheCity.ID);
@@ -587,8 +587,8 @@ import java.util.HashMap;
     reflectedMap.put("Royal_Hurt4", new Sfx("sounds/Royal_Hurt4.wav"));
     reflectedMap.put("Royal_Selected", new Sfx("sounds/Royal_Selected.wav"));
 /*     */   }
-/*     */ 
-/*     */   
+/*     */
+/*     */
 /*     */   public void receiveEditRelics() {
 /* 158 */     BaseMod.addRelicToCustomPool((AbstractRelic)new FriendOfTruth(), Witchcraft.Enums.COLOR_BLUE);
 /* 159 */     BaseMod.addRelicToCustomPool((AbstractRelic)new Eleanor(), Witchcraft.Enums.COLOR_BLUE);
@@ -630,15 +630,15 @@ import java.util.HashMap;
               BaseMod.addRelicToCustomPool((AbstractRelic)new RevelrySeed(),Vampire.Enums.COLOR_SCARLET);
               BaseMod.addRelicToCustomPool((AbstractRelic)new Offensive5(),Nemesis.Enums.COLOR_SKY);
 /*     */   }
-/*     */   
+/*     */
 /*     */   class Keywords
 /*     */   {
 /*     */     Keyword[] keywords;
 /*     */   }
-/*     */   
+/*     */
 /*     */   public void receiveEditStrings() {
 /* 173 */     logger.info("Adding Strings");
-/*     */     
+/*     */
 /* 175 */     String cardsPath = "localization/cards-" + Settings.language + ".json";
 /* 176 */     String characterPath = "localization/character-" + Settings.language + ".json";
 /* 177 */     String powerPath = "localization/powers-" + Settings.language + ".json";
@@ -647,6 +647,7 @@ import java.util.HashMap;
               String eventPath = "localization/events-" + Settings.language + ".json";
               String monsterPath = "localization/monsters-" + Settings.language + ".json";
               String potionPath = "localization/potions-" + Settings.language + ".json";
+              String orbPath = "localization/orbs-" + Settings.language + ".json";
 /* 179 */     BaseMod.loadCustomStringsFile(CardStrings.class, cardsPath);
 /* 180 */     BaseMod.loadCustomStringsFile(CharacterStrings.class, characterPath);
 /* 181 */     BaseMod.loadCustomStringsFile(PowerStrings.class, powerPath);
@@ -655,10 +656,11 @@ import java.util.HashMap;
               BaseMod.loadCustomStringsFile(EventStrings.class,eventPath);
               BaseMod.loadCustomStringsFile(MonsterStrings.class,monsterPath);
               BaseMod.loadCustomStringsFile(PotionStrings.class,potionPath);
+              BaseMod.loadCustomStringsFile(OrbStrings.class,orbPath);
 /* 183 */     logger.info("Success");
 /*     */   }
-/*     */ 
-/*     */   
+/*     */
+/*     */
 /*     */   public void receiveEditCards() {
 /* 188 */     logger.info("Adding cards");
 /* 189 */     BaseMod.addCard((AbstractCard)new Strike_W());
@@ -1171,10 +1173,13 @@ import java.util.HashMap;
               BaseMod.addCard((AbstractCard)new DestructionRefrain());
               BaseMod.addCard((AbstractCard)new Modest());
               BaseMod.addCard((AbstractCard)new Ralmia());
+              BaseMod.addCard((AbstractCard)new Defend_R());
+              BaseMod.addCard((AbstractCard)new Strike_R());
+              BaseMod.addCard((AbstractCard)new OathlessKnight());
 /* 276 */     logger.info("Success");
 /*     */   }
-/*     */ 
-/*     */   
+/*     */
+/*     */
 /*     */   public void receiveEditCharacters() {
 /* 281 */     logger.info("Adding char");
 /* 282 */     BaseMod.addCharacter((AbstractPlayer)new Witchcraft("Witchcraft"), "img/character/Witchcraft/button1.png", "img/character/Witchcraft/background.png", Witchcraft.Enums.WITCHCRAFT);
@@ -1185,6 +1190,7 @@ import java.util.HashMap;
               BaseMod.addCharacter((AbstractPlayer)new Royal(("Royal")),"img/character/Royal/button.png","img/character/Royal/background.png",Royal.Enums.Royal);
 /*     */   }
 /*     */ }
+
 
 
 /* Location:              F:\Steam\steamapps\common\SlayTheSpire\mods\shadowverseMod.jar!\shadowverse\shadowverse.Shadowverse.class

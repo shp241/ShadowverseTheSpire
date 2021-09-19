@@ -2382,5 +2382,17 @@
   "shadowverse:Ralmia": {
     "NAME": "音速机构·菈菈米娅",
     "DESCRIPTION": "机械 · 创造物 。 NL 造成 !D! 点伤害。 NL 如果打出创造物，这张卡获得以下效果： NL 「如果剩余耗能为2以上，造成伤害时额外消耗2点能量，使伤害增加消耗堆中 创造物种类的倍数。」"
+  },
+  "shadowverse:Strike_R": {
+    "NAME": "打击",
+    "DESCRIPTION": "造成 !D! 点伤害。"
+  },
+  "shadowverse:Defend_R": {
+    "NAME": "防御",
+    "DESCRIPTION": "获得 !B! 点格挡。"
+  },
+  "shadowverse:OathlessKnight": {
+    "NAME": "背水一战的骑士",
+    "DESCRIPTION": "造成 !D! 点伤害，召唤一个骑士。"
   }
 }

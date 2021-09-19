@@ -21,10 +21,7 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
-import shadowverse.cards.Basic.DarkGeneral;
-import shadowverse.cards.Basic.Defend_V;
-import shadowverse.cards.Basic.RazoryClaw;
-import shadowverse.cards.Basic.Strike_V;
+import shadowverse.cards.Basic.*;
 
 import java.util.ArrayList;
 
@@ -63,13 +60,12 @@ public class Royal extends AbstractShadowversePlayer {
         ArrayList<String> starterDeck = new ArrayList<>();
         int i;
         for (i = 0; i < 5; i++) {
-            starterDeck.add(Strike_V.ID);
+            starterDeck.add(Strike_R.ID);
         }
         for (i = 0; i < 5; i++) {
-            starterDeck.add(Defend_V.ID);
+            starterDeck.add(Defend_R.ID);
         }
-        starterDeck.add(RazoryClaw.ID);
-        starterDeck.add(DarkGeneral.ID);
+        starterDeck.add(OathlessKnight.ID);
         return starterDeck;
     }
 
