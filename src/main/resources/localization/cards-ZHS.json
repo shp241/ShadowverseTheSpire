@@ -2394,5 +2394,28 @@
   "shadowverse:OathlessKnight": {
     "NAME": "背水一战的骑士",
     "DESCRIPTION": "造成 !D! 点伤害，召唤一个骑士。"
+  },
+  "shadowverse:GildedBoots": {
+    "NAME": "黄金之靴",
+    "DESCRIPTION": "号令最右侧随从。 NL 消耗",
+    "UPGRADE_DESCRIPTION": "号令最右侧随从两次。 NL 消耗"
+  },
+  "shadowverse:GildedNecklace": {
+    "NAME": "黄金首饰",
+    "DESCRIPTION": "使最右侧随从获得 NL +1/+1。 NL 消耗",
+    "UPGRADE_DESCRIPTION": "使最右侧随从获得+1/+1。 NL 消耗"
+  },
+  "shadowverse:GildedBlade": {
+    "NAME": "黄金短剑",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 消耗"
+  },
+  "shadowverse:GildedGoblet": {
+    "NAME": "黄金之杯",
+    "DESCRIPTION": "获得 !B! 点格挡。 NL 消耗"
+  },
+  "shadowverse:GrandAcquisition": {
+    "NAME": "绚烂的劫夺",
+    "DESCRIPTION": " NL 抉择 NL 从 *黄金短剑 、 *黄金之杯 、 *黄金之靴 、 *黄金首饰 中选择1张加入手中。 NL 爆能强化 3 \b改为全部加入手牌， 获得 [E] [E] 。 NL 消耗",
+    "UPGRADE_DESCRIPTION": " NL 抉择 NL 从 *黄金短剑 、 *黄金之杯 、 *黄金之靴 、 *黄金首饰 中选择1张加入手中。 NL 爆能强化 3 \b改为全部加入手牌， NL 获得 [E] [E] 。"
   }
 }

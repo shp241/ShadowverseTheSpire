@@ -35,6 +35,16 @@ public abstract class Minion extends AbstractOrb {
 
     public abstract void effect();
 
+    public void order() {
+        effect();
+    }
+
+    public void buff(int a, int d) {
+        this.attack += a;
+        this.defense += d;
+        AbstractDungeon.actionManager.addToBottom(new RemoveMinionAction());
+    }
+
     @Override
     public void onEvoke() {
         for (int i = 0; i < defense; i++) {

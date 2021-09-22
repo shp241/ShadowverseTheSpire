@@ -22,6 +22,7 @@ import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import shadowverse.cards.Basic.*;
+import shadowverse.cards.Common.GrandAcquisition;
 
 import java.util.ArrayList;
 
@@ -66,6 +67,7 @@ public class Royal extends AbstractShadowversePlayer {
             starterDeck.add(Defend_R.ID);
         }
         starterDeck.add(OathlessKnight.ID);
+        starterDeck.add(GrandAcquisition.ID);
         return starterDeck;
     }
 

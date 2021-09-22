@@ -1176,6 +1176,11 @@ import java.util.HashMap;
               BaseMod.addCard((AbstractCard)new Defend_R());
               BaseMod.addCard((AbstractCard)new Strike_R());
               BaseMod.addCard((AbstractCard)new OathlessKnight());
+              BaseMod.addCard((AbstractCard)new GildedBlade());
+              BaseMod.addCard((AbstractCard)new GildedGoblet());
+              BaseMod.addCard((AbstractCard)new GildedNecklace());
+              BaseMod.addCard((AbstractCard)new GildedBoots());
+              BaseMod.addCard((AbstractCard)new GrandAcquisition());
 /* 276 */     logger.info("Success");
 /*     */   }
 /*     */

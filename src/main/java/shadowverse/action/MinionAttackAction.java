@@ -37,14 +37,14 @@ public class MinionAttackAction extends AbstractGameAction {
 //                    speedTime = 0.0F;
 //                }
                 this.info.output = AbstractOrb.applyLockOn(m, this.info.base);
-                this.addToTop(new DamageAction(m, this.info, AttackEffect.NONE, true));
+                this.addToTop(new DamageAction(m, this.info, AbstractGameAction.AttackEffect.SLASH_VERTICAL, true));
             }
         } else {
             float speedTime = 0.2F / (float) AbstractDungeon.player.orbs.size();
             if (Settings.FAST_MODE) {
                 speedTime = 0.0F;
             }
-            this.addToTop(new DamageAllEnemiesAction(AbstractDungeon.player, DamageInfo.createDamageMatrix(this.info.base, true, true), DamageInfo.DamageType.THORNS, AttackEffect.NONE));
+            this.addToTop(new DamageAllEnemiesAction(AbstractDungeon.player, DamageInfo.createDamageMatrix(this.info.base, true, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE));
             this.addToBot(new VFXAction(AbstractDungeon.player, new CleaveEffect(), speedTime));
             this.addToTop(new SFXAction("ATTACK_HEAVY"));
         }
