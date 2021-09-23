@@ -629,6 +629,7 @@ import java.util.HashMap;
               BaseMod.addRelicToCustomPool((AbstractRelic)new LonePromise(),Vampire.Enums.COLOR_SCARLET);
               BaseMod.addRelicToCustomPool((AbstractRelic)new RevelrySeed(),Vampire.Enums.COLOR_SCARLET);
               BaseMod.addRelicToCustomPool((AbstractRelic)new Offensive5(),Nemesis.Enums.COLOR_SKY);
+              BaseMod.addRelicToCustomPool((AbstractRelic)new Offensive6(),Royal.Enums.COLOR_YELLOW);
 /*     */   }
 /*     */
 /*     */   class Keywords
@@ -1181,6 +1182,13 @@ import java.util.HashMap;
               BaseMod.addCard((AbstractCard)new GildedNecklace());
               BaseMod.addCard((AbstractCard)new GildedBoots());
               BaseMod.addCard((AbstractCard)new GrandAcquisition());
+              BaseMod.addCard((AbstractCard)new SageCommander());
+              BaseMod.addCard((AbstractCard)new DanceOfUsurpation());
+              BaseMod.addCard((AbstractCard)new UsurpingSpineblade());
+              BaseMod.addCard((AbstractCard)new WeeMerchantsAppraisal());
+              BaseMod.addCard((AbstractCard)new DiscipleOfUsurpation());
+              BaseMod.addCard((AbstractCard)new ApostleOfUsurpation());
+              BaseMod.addCard((AbstractCard)new Octrice());
 /* 276 */     logger.info("Success");
 /*     */   }
 /*     */

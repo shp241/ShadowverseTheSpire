@@ -1,6 +1,7 @@
 package shadowverse.cards.Common;
 
 import basemod.abstracts.CustomCard;
+import com.badlogic.gdx.Gdx;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.watcher.ChooseOneAction;
@@ -14,6 +15,7 @@ import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.action.ChoiceAction2;
 import shadowverse.cards.Temp.*;
+import shadowverse.cards.Uncommon.ProphecyOfBoons;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 
@@ -27,6 +29,17 @@ public class GrandAcquisition extends CustomCard {
     public static final String IMG_PATH = "img/cards/GrandAcquisition.png";
     public static final int ENHANCE = 3;
     private boolean doubleCheck = false;
+    private float rotationTimer;
+    private int previewIndex;
+
+    public static ArrayList<AbstractCard> returnProphecy() {
+        ArrayList<AbstractCard> list = new ArrayList<>();
+        list.add(new GildedBlade());
+        list.add(new GildedNecklace());
+        list.add(new GildedGoblet());
+        list.add(new GildedBoots());
+        return list;
+    }
 
     public GrandAcquisition() {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.NONE);
@@ -34,6 +47,23 @@ public class GrandAcquisition extends CustomCard {
         this.tags.add(AbstractShadowversePlayer.Enums.ENHANCE);
     }
 
+    @Override
+    public void update() {
+        super.update();
+        if (this.hb.hovered) {
+            if (this.rotationTimer <= 0.0F) {
+                this.rotationTimer = 2.0F;
+                this.cardsToPreview = returnProphecy().get(previewIndex).makeCopy();
+                if (this.previewIndex == returnProphecy().size() - 1) {
+                    this.previewIndex = 0;
+                } else {
+                    this.previewIndex++;
+                }
+            } else {
+                this.rotationTimer -= Gdx.graphics.getDeltaTime();
+            }
+        }
+    }
 
     @Override
     public void upgrade() {
@@ -112,7 +142,7 @@ public class GrandAcquisition extends CustomCard {
             addToBot(new MakeTempCardInHandAction(new GildedNecklace()));
             addToBot(new GainEnergyAction(2));
         } else {
-            addToBot(new ChoiceAction2(new GildedBlade(),new GildedGoblet(),new GildedBoots(),new GildedNecklace()));
+            addToBot(new ChoiceAction2(new GildedBlade(), new GildedGoblet(), new GildedBoots(), new GildedNecklace()));
         }
     }
 

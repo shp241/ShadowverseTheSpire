@@ -22,7 +22,9 @@ import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import shadowverse.cards.Basic.*;
-import shadowverse.cards.Common.GrandAcquisition;
+import shadowverse.cards.Common.*;
+import shadowverse.cards.Rare.Octrice;
+import shadowverse.cards.Uncommon.ApostleOfUsurpation;
 
 import java.util.ArrayList;
 
@@ -67,15 +69,22 @@ public class Royal extends AbstractShadowversePlayer {
             starterDeck.add(Defend_R.ID);
         }
         starterDeck.add(OathlessKnight.ID);
+        starterDeck.add(SageCommander.ID);
         starterDeck.add(GrandAcquisition.ID);
+        starterDeck.add(DanceOfUsurpation.ID);
+        starterDeck.add(UsurpingSpineblade.ID);
+        starterDeck.add(WeeMerchantsAppraisal.ID);
+        starterDeck.add(DiscipleOfUsurpation.ID);
+        starterDeck.add(ApostleOfUsurpation.ID);
+        starterDeck.add(Octrice.ID);
         return starterDeck;
     }
 
     @Override
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add("shadowverse:Offensive4");
-        UnlockTracker.markRelicAsSeen("shadowverse:Offensive4");
+        retVal.add("shadowverse:Offensive6");
+        UnlockTracker.markRelicAsSeen("shadowverse:Offensive6");
         return retVal;
     }
 

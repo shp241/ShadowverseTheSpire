@@ -2393,7 +2393,7 @@
   },
   "shadowverse:OathlessKnight": {
     "NAME": "背水一战的骑士",
-    "DESCRIPTION": "造成 !D! 点伤害，召唤一个骑士。"
+    "DESCRIPTION": "造成 !D! 点伤害，召唤一个 *骑士。"
   },
   "shadowverse:GildedBoots": {
     "NAME": "黄金之靴",
@@ -2403,7 +2403,7 @@
   "shadowverse:GildedNecklace": {
     "NAME": "黄金首饰",
     "DESCRIPTION": "使最右侧随从获得 NL +1/+1。 NL 消耗",
-    "UPGRADE_DESCRIPTION": "使最右侧随从获得+1/+1。 NL 消耗"
+    "UPGRADE_DESCRIPTION": "使最右侧随从获得 NL +1/+2。 NL 消耗"
   },
   "shadowverse:GildedBlade": {
     "NAME": "黄金短剑",
@@ -2415,7 +2415,36 @@
   },
   "shadowverse:GrandAcquisition": {
     "NAME": "绚烂的劫夺",
-    "DESCRIPTION": " NL 抉择 NL 从 *黄金短剑 、 *黄金之杯 、 *黄金之靴 、 *黄金首饰 中选择1张加入手中。 NL 爆能强化 3 \b改为全部加入手牌， 获得 [E] [E] 。 NL 消耗",
-    "UPGRADE_DESCRIPTION": " NL 抉择 NL 从 *黄金短剑 、 *黄金之杯 、 *黄金之靴 、 *黄金首饰 中选择1张加入手中。 NL 爆能强化 3 \b改为全部加入手牌， NL 获得 [E] [E] 。"
+    "DESCRIPTION": "抉择 NL 从 *黄金短剑 、 *黄金之杯 、 *黄金之靴 、 *黄金首饰 中选择1张加入手中。 NL 爆能强化 3 \b改为全部加入手牌， NL 获得 [E] [E] 。 NL 消耗",
+    "UPGRADE_DESCRIPTION": "抉择 NL 从 *黄金短剑 、 *黄金之杯 、 *黄金之靴 、 *黄金首饰 中选择1张加入手中。 NL 爆能强化 3 \b改为全部加入手牌， NL 获得 [E] [E] 。"
+  },
+  "shadowverse:SageCommander": {
+    "NAME": "睿智指挥官",
+    "DESCRIPTION": "获得 !B! 点格挡,使所有随从获得+1/+1。"
+  },
+  "shadowverse:DanceOfUsurpation": {
+    "NAME": "强夺之舞",
+    "DESCRIPTION": "对全体敌人造成 !D! 点伤害，随机将2张财宝牌加入手牌。"
+  },
+  "shadowverse:UsurpingSpineblade": {
+    "NAME": "强夺的蛇剑",
+    "DESCRIPTION": "造成 !D! 点伤害，随机将1张财宝牌加入手牌。"
+  },
+  "shadowverse:WeeMerchantsAppraisal": {
+    "NAME": "商人的鉴定",
+    "DESCRIPTION": "抽 !M! 张牌，将 *黄金之杯 、 *黄金首饰 加入手中。"
+  },
+  "shadowverse:DiscipleOfUsurpation": {
+    "NAME": "强夺的信徒",
+    "DESCRIPTION": "每使用一张财宝牌，获得 !M! 点护甲。"
+  },
+  "shadowverse:ApostleOfUsurpation": {
+    "NAME": "强夺的使徒",
+    "DESCRIPTION": "每使用一张财宝牌，对随机敌人造成 !M! 点伤害。"
+  },
+  "shadowverse:Octrice": {
+    "NAME": "强夺灾杰·奥克托丽丝",
+    "DESCRIPTION": "使敌人失去2点 力量，获得2点 力量。获得 !M! 金币。 NL 消耗",
+    "UPGRADE_DESCRIPTION": "使敌人失去2点 力量，获得2点 力量。获得 !M! 金币。 NL 随机将2张财宝牌加入手牌。 NL 消耗"
   }
 }

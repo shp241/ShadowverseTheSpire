@@ -917,5 +917,19 @@
       " 点伤害。（已消耗的创造物种类为 #b",
       " 种）"
     ]
+  },
+  "shadowverse:DiscipleOfUsurpationPower": {
+    "NAME": "强夺的信徒",
+    "DESCRIPTIONS": [
+      "每当打出 #y财宝 牌时，获得 #b",
+      "点格挡。"
+    ]
+  },
+  "shadowverse:ApostleOfUsurpationPower": {
+    "NAME": "强夺的使徒",
+    "DESCRIPTIONS": [
+      "每当打出 #y财宝 牌时，对随机敌人造成 #b",
+      "点伤害。"
+    ]
   }
 }
