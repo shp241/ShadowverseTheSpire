@@ -580,6 +580,8 @@ import java.util.HashMap;
     reflectedMap.put("DestructionRefrain", new Sfx("sounds/DestructionRefrain.wav"));
     reflectedMap.put("Modest", new Sfx("sounds/Modest.wav"));
     reflectedMap.put("Ralmia", new Sfx("sounds/Ralmia.wav"));
+    reflectedMap.put("OmniscientKaiser", new Sfx("sounds/OmniscientKaiser.wav"));
+    reflectedMap.put("OmniscientKaiser_Acc", new Sfx("sounds/OmniscientKaiser_Acc.wav"));
     reflectedMap.put("Royal_Hurt", new Sfx("sounds/Royal_Hurt.wav"));
     reflectedMap.put("Royal_Hurt1", new Sfx("sounds/Royal_Hurt1.wav"));
     reflectedMap.put("Royal_Hurt2", new Sfx("sounds/Royal_Hurt2.wav"));
@@ -1174,6 +1176,9 @@ import java.util.HashMap;
               BaseMod.addCard((AbstractCard)new DestructionRefrain());
               BaseMod.addCard((AbstractCard)new Modest());
               BaseMod.addCard((AbstractCard)new Ralmia());
+              BaseMod.addCard((AbstractCard)new Concentrate());
+              BaseMod.addCard((AbstractCard)new TechnologyMana());
+              BaseMod.addCard((AbstractCard)new OmniscientKaiser());
               BaseMod.addCard((AbstractCard)new Defend_R());
               BaseMod.addCard((AbstractCard)new Strike_R());
               BaseMod.addCard((AbstractCard)new OathlessKnight());
@@ -1189,6 +1194,7 @@ import java.util.HashMap;
               BaseMod.addCard((AbstractCard)new DiscipleOfUsurpation());
               BaseMod.addCard((AbstractCard)new ApostleOfUsurpation());
               BaseMod.addCard((AbstractCard)new Octrice());
+
 /* 276 */     logger.info("Success");
 /*     */   }
 /*     */

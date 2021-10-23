@@ -3,6 +3,7 @@ package shadowverse.cards.Common;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.unique.ArmamentsAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -36,7 +37,7 @@ public class UnnamedDetermination extends CustomCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot((AbstractGameAction) new SFXAction("UnnamedDetermination "));
-        addToBot((AbstractGameAction)new GetEPAction(true,1));
+        addToBot((AbstractGameAction)new ArmamentsAction(true));
         int count = 0;
         for (AbstractCard c:p.exhaustPile.group){
             if (c.type==CardType.ATTACK)
