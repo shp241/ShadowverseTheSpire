@@ -26,6 +26,9 @@ import shadowverse.cards.Curse.CurseOfPurgation;
 import shadowverse.cards.Rare.Modest;
 import shadowverse.cards.Rare.OmniscientKaiser;
 import shadowverse.cards.Rare.Ralmia;
+import shadowverse.cards.Rare.Spine;
+import shadowverse.cards.Uncommon.CannonHermitCrab;
+import shadowverse.cards.Uncommon.Miriam;
 
 import java.util.ArrayList;
 

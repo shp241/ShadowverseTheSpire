@@ -36,7 +36,7 @@ public class OmniscientKaiser_Acc extends CustomCard {
     public static final String[] TEXT = (CardCrawlGame.languagePack.getUIString("shadowverse:applyEffect")).TEXT;
 
     public OmniscientKaiser_Acc() {
-        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.ALL);
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.ALL);
         this.baseBlock = 21;
         this.baseDamage = 49;
         this.isMultiDamage = true;

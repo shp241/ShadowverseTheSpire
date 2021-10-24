@@ -918,6 +918,20 @@
       " 种）"
     ]
   },
+  "shadowverse:SpinePower": {
+    "NAME": "神秘守门人·斯碧涅",
+    "DESCRIPTIONS": [
+      "每当打出 #y创造物 卡牌时，对随机敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "shadowverse:MiriamPower": {
+    "NAME": "反逆之命·米莉亚姆",
+    "DESCRIPTIONS": [
+      "本回合内每当消耗 #y创造物 卡牌时，对全体敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
   "shadowverse:DiscipleOfUsurpationPower": {
     "NAME": "强夺的信徒",
     "DESCRIPTIONS": [
