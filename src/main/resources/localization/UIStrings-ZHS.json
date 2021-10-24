@@ -33,5 +33,10 @@
     "TEXT": [
       "选择一张牌赋予效果"
     ]
+  },
+  "shadowverse:MistolinaBayleonAction": {
+    "TEXT": [
+      "选择一张能力牌来消耗"
+    ]
   }
 }

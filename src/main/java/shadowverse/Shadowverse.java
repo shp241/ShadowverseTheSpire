@@ -1205,6 +1205,13 @@ import java.util.HashMap;
               BaseMod.addCard((AbstractCard)new DiscipleOfUsurpation());
               BaseMod.addCard((AbstractCard)new ApostleOfUsurpation());
               BaseMod.addCard((AbstractCard)new Octrice());
+              BaseMod.addCard((AbstractCard)new DramaticRetreat());
+              BaseMod.addCard((AbstractCard)new ShieldPhalanx());
+              BaseMod.addCard((AbstractCard)new EmpressOfSerenity());
+              BaseMod.addCard((AbstractCard)new TemperedMana());
+              BaseMod.addCard((AbstractCard)new Mars());
+              BaseMod.addCard((AbstractCard)new MistolinaBayleon());
+              BaseMod.addCard((AbstractCard)new Sera());
 
 /* 276 */     logger.info("Success");
 /*     */   }

@@ -3,9 +3,11 @@ package shadowverse.cards.Uncommon;
 import basemod.abstracts.CustomCard;
 import com.badlogic.gdx.Gdx;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.cards.Temp.GildedBlade;
@@ -37,7 +39,7 @@ public class ApostleOfUsurpation  extends CustomCard {
 
     public ApostleOfUsurpation() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
-        this.baseMagicNumber = 3;
+        this.baseMagicNumber = 5;
         this.magicNumber = this.baseMagicNumber;
     }
 
@@ -63,7 +65,8 @@ public class ApostleOfUsurpation  extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeMagicNumber(1);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 
@@ -71,6 +74,11 @@ public class ApostleOfUsurpation  extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         addToBot(new ApplyPowerAction(p, p, new ApostleOfUsurpationPower(p, this.magicNumber)));
+        if (this.upgraded) {
+            int r1 = AbstractDungeon.cardRandomRng.random(3);
+            AbstractCard c1 = returnProphecy().get(r1);
+            addToBot(new MakeTempCardInHandAction(c1));
+        }
     }
 
 

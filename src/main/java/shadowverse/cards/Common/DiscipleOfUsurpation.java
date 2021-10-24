@@ -43,7 +43,7 @@ public class DiscipleOfUsurpation  extends CustomCard {
 
     public DiscipleOfUsurpation() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF);
-        this.baseMagicNumber = 2;
+        this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
     }
 

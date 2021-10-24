@@ -2466,11 +2466,43 @@
   },
   "shadowverse:ApostleOfUsurpation": {
     "NAME": "强夺的使徒",
-    "DESCRIPTION": "每使用一张财宝牌，对随机敌人造成 !M! 点伤害。"
+    "DESCRIPTION": "每使用一张财宝牌，对随机敌人造成 !M! 点伤害。",
+    "UPGRADE_DESCRIPTION": "每使用一张财宝牌，对随机敌人造成 !M! 点伤害。NL 随机将1张财宝牌加入手牌。"
   },
   "shadowverse:Octrice": {
     "NAME": "强夺灾杰·奥克托丽丝",
     "DESCRIPTION": "使敌人失去2点 力量，获得2点 力量。获得 !M! 金币。 NL 消耗",
     "UPGRADE_DESCRIPTION": "使敌人失去2点 力量，获得2点 力量。获得 !M! 金币。 NL 随机将2张财宝牌加入手牌。 NL 消耗"
+  },
+  "shadowverse:Mars": {
+    "NAME": "沉默的炎将·玛尔斯",
+    "DESCRIPTION": "每召唤一个随从，使其获得+ !M! /+ !M! 。",
+    "UPGRADE_DESCRIPTION": "每召唤一个随从，使其获得+ !M! /+ !M! 。 NL 固有"
+  },
+  "shadowverse:Sera": {
+    "NAME": "曙光少女·赛拉",
+    "DESCRIPTION": "获得 !B! 点格挡。获得1层人工制品。 NL 消耗",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡。获得1层人工制品。 NL 召唤3个 *战盾卫士。 NL 消耗"
+  },
+  "shadowverse:MistolinaBayleon": {
+    "NAME": "光耀导引·米丝特莉娜与贝里昂",
+    "DESCRIPTION": "造成 !D! 点伤害，获得 !B! 点格挡。 NL 若手牌中有能力牌，选择并消耗一张，造成的伤害+ !M! ， NL 若为 *那塔拉的大树 再获得 [E] 。"
+  },
+  "shadowverse:TemperedMana": {
+    "NAME": "勇气玛纳",
+    "DESCRIPTION": "自然 。 NL 增加一张 *那塔拉的大树 到手中。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "自然 。 NL 增加一张 *那塔拉的大树 到手中。"
+  },
+  "shadowverse:EmpressOfSerenity": {
+    "NAME": "安宁的女王",
+    "DESCRIPTION": "造成 !D! 点伤害，召唤一个 *战盾卫士 。"
+  },
+  "shadowverse:ShieldPhalanx": {
+    "NAME": "坚盾战阵",
+    "DESCRIPTION": "召唤一个 *战盾卫士 和一个 *骑士 。"
+  },
+  "shadowverse:DramaticRetreat": {
+    "NAME": "壮烈的撤退",
+    "DESCRIPTION": "选择弃牌堆中一张攻击牌，将其洗入抽牌堆，其下一次打出时的消耗变为0点。 NL 抽 !M! 张牌。"
   }
 }

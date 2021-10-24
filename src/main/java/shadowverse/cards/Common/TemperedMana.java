@@ -2,28 +2,27 @@ package shadowverse.cards.Common;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import shadowverse.cards.Temp.NaterranGreatTree;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
-import shadowverse.orbs.Knight;
-import shadowverse.orbs.ShieldGuardian;
 
-public class ShieldPhalanx extends CustomCard {
-    public static final String ID = "shadowverse:ShieldPhalanx";
-    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+public class TemperedMana extends CustomCard {
+    public static final String ID = "shadowverse:TemperedMana";
+    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:TemperedMana");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/ShieldPhalanx.png";
+    public static final String IMG_PATH = "img/cards/TemperedMana.png";
 
-    public ShieldPhalanx() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
+    public TemperedMana() {
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF);
+        this.cardsToPreview = new NaterranGreatTree();
+        this.tags.add(AbstractShadowversePlayer.Enums.NATURAL);
         this.exhaust = true;
     }
 
@@ -32,23 +31,23 @@ public class ShieldPhalanx extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            this.exhaust = false;
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
-            this.exhaust = true;
         }
     }
 
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new ShieldGuardian()));
-        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Knight()));
+        AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
+        addToBot(new MakeTempCardInHandAction(c, 1));
     }
 
 
     @Override
     public AbstractCard makeCopy() {
-        return new ShieldPhalanx();
+        return new TemperedMana();
     }
 }
 

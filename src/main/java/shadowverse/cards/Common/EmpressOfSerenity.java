@@ -1,11 +1,9 @@
-package shadowverse.cards.Uncommon;
-
+package shadowverse.cards.Common;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
-import com.megacrit.cardcrawl.actions.defect.IncreaseMaxOrbAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -13,23 +11,20 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import shadowverse.characters.AbstractShadowversePlayer;
-import shadowverse.characters.Nemesis;
 import shadowverse.characters.Royal;
-import shadowverse.orbs.CannonHermitCrabOrb;
 import shadowverse.orbs.Knight;
+import shadowverse.orbs.ShieldGuardian;
 
-
-public class CannonHermitCrab extends CustomCard {
-    public static final String ID = "shadowverse:CannonHermitCrab";
+public class EmpressOfSerenity  extends CustomCard {
+    public static final String ID = "shadowverse:EmpressOfSerenity";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/CannonHermitCrab.png";
+    public static final String IMG_PATH = "img/cards/EmpressOfSerenity.png";
 
-    public CannonHermitCrab() {
-        super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.UNCOMMON, CardTarget.SELF);
-        this.tags.add(AbstractShadowversePlayer.Enums.NATURAL);
+    public EmpressOfSerenity() {
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
+        this.baseDamage = 6;
     }
 
 
@@ -37,24 +32,21 @@ public class CannonHermitCrab extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBaseCost(2);
+            upgradeDamage(3);
         }
     }
 
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (abstractPlayer.maxOrbs<5){
-            int toIncrease = 5-abstractPlayer.maxOrbs;
-            addToBot((AbstractGameAction)new IncreaseMaxOrbAction(toIncrease));
-        }
-        addToBot((AbstractGameAction) new ChannelAction(new CannonHermitCrabOrb()));
+        addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new ShieldGuardian()));
     }
 
 
     @Override
     public AbstractCard makeCopy() {
-        return new CannonHermitCrab();
+        return new EmpressOfSerenity();
     }
 }
 

@@ -70,13 +70,6 @@ public class Royal extends AbstractShadowversePlayer {
         }
         starterDeck.add(OathlessKnight.ID);
         starterDeck.add(SageCommander.ID);
-        starterDeck.add(GrandAcquisition.ID);
-        starterDeck.add(DanceOfUsurpation.ID);
-        starterDeck.add(UsurpingSpineblade.ID);
-        starterDeck.add(WeeMerchantsAppraisal.ID);
-        starterDeck.add(DiscipleOfUsurpation.ID);
-        starterDeck.add(ApostleOfUsurpation.ID);
-        starterDeck.add(Octrice.ID);
         return starterDeck;
     }
 
