@@ -34,7 +34,7 @@ public class ShieldPhalanx extends CustomCard {
             upgradeName();
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
-            this.exhaust = true;
+            this.exhaust = false;
         }
     }
 

@@ -2499,7 +2499,8 @@
   },
   "shadowverse:ShieldPhalanx": {
     "NAME": "坚盾战阵",
-    "DESCRIPTION": "召唤一个 *战盾卫士 和一个 *骑士 。"
+    "DESCRIPTION": "召唤一个 *战盾卫士 和一个 *骑士 。 NL 消耗 ",
+    "UPGRADE_DESCRIPTION":"召唤一个 *战盾卫士 和一个 *骑士 。"
   },
   "shadowverse:DramaticRetreat": {
     "NAME": "壮烈的撤退",
