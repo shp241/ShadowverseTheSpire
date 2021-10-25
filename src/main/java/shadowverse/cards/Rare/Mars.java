@@ -20,6 +20,7 @@ public class Mars extends CustomCard {
 
     public Mars() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.SELF);
+        this.magicNumber = this.baseMagicNumber = 1;
     }
 
     @Override

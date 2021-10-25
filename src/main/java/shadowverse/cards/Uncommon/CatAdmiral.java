@@ -1,4 +1,4 @@
-package shadowverse.cards.Common;
+package shadowverse.cards.Uncommon;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -12,22 +12,24 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import com.megacrit.cardcrawl.orbs.Frost;
 import shadowverse.characters.Royal;
-import shadowverse.orbs.FrontguardGeneral;
-import shadowverse.orbs.Knight;
+import shadowverse.orbs.HeavyKnight;
 import shadowverse.orbs.Minion;
 import shadowverse.orbs.ShieldGuardian;
 
-public class ShieldPhalanx extends CustomCard {
-    public static final String ID = "shadowverse:ShieldPhalanx";
+import java.util.Iterator;
+
+public class CatAdmiral extends CustomCard {
+    public static final String ID = "shadowverse:CatAdmiral";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/ShieldPhalanx.png";
+    public static final String IMG_PATH = "img/cards/CatAdmiral.png";
 
-    public ShieldPhalanx() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
-        this.exhaust = true;
+    public CatAdmiral() {
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        this.baseDamage = 8;
     }
 
 
@@ -37,19 +39,7 @@ public class ShieldPhalanx extends CustomCard {
             upgradeName();
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
-            this.exhaust = false;
         }
-    }
-
-
-    @Override
-    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (rally()>=15){
-            AbstractDungeon.actionManager.addToBottom(new ChannelAction(new FrontguardGeneral()));
-        }else{
-            AbstractDungeon.actionManager.addToBottom(new ChannelAction(new ShieldGuardian()));
-        }
-        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Knight()));
     }
 
     public int rally() {
@@ -70,7 +60,21 @@ public class ShieldPhalanx extends CustomCard {
     }
 
     @Override
+    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+        if (this.upgraded) {
+            AbstractDungeon.actionManager.addToBottom(new ChannelAction(new ShieldGuardian()));
+            AbstractDungeon.actionManager.addToBottom(new ChannelAction(new HeavyKnight()));
+        }
+        addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+    }
+
+
+    @Override
     public void applyPowers() {
+        this.baseDamage = 8;
+        if (rally() >= 7) {
+            this.baseDamage *= 2;
+        }
         super.applyPowers();
         if (this.upgraded) {
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
@@ -91,10 +95,22 @@ public class ShieldPhalanx extends CustomCard {
         this.initializeDescription();
     }
 
+    @Override
+    public void calculateCardDamage(AbstractMonster mo) {
+        super.calculateCardDamage(mo);
+        this.rawDescription = cardStrings.DESCRIPTION;
+        if (this.upgraded) {
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+        } else {
+            this.rawDescription = cardStrings.DESCRIPTION;
+        }
+        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + rally() + cardStrings.EXTENDED_DESCRIPTION[1];
+        this.initializeDescription();
+    }
 
     @Override
     public AbstractCard makeCopy() {
-        return new ShieldPhalanx();
+        return new CatAdmiral();
     }
 }
 

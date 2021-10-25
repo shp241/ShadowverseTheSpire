@@ -45,6 +45,8 @@ public abstract class Minion extends AbstractOrb {
         AbstractDungeon.actionManager.addToBottom(new RemoveMinionAction());
     }
 
+    public void onRemove(){}
+
     @Override
     public void onEvoke() {
         for (int i = 0; i < defense; i++) {

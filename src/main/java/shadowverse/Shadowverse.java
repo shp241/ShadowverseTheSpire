@@ -1212,6 +1212,9 @@ import java.util.HashMap;
               BaseMod.addCard((AbstractCard)new Mars());
               BaseMod.addCard((AbstractCard)new MistolinaBayleon());
               BaseMod.addCard((AbstractCard)new Sera());
+              BaseMod.addCard((AbstractCard)new FrenziedCorpsmaster());
+              BaseMod.addCard((AbstractCard)new CatAdmiral());
+              BaseMod.addCard((AbstractCard)new FortressStrategist());
 
 /* 276 */     logger.info("Success");
 /*     */   }

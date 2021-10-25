@@ -33,8 +33,11 @@ public class MinionBuffAction extends AbstractGameAction {
                 }
             }
         } else {
-            if (p.orbs.get(0) instanceof Minion) {
-                ((Minion) p.orbs.get(0)).buff(a, d);
+            for (int i = 0; i < p.orbs.size(); i++) {
+                if (p.orbs.get(i) instanceof Minion) {
+                    ((Minion) p.orbs.get(i)).buff(a, d);
+                    break;
+                }
             }
         }
         this.isDone = true;

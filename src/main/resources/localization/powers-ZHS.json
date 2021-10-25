@@ -953,5 +953,12 @@
       "/+ #b",
       "。"
     ]
+  },
+  "shadowverse:FortressStrategistPower": {
+    "NAME": "王城司令官",
+    "DESCRIPTIONS": [
+      "每当打出技能牌时，随机升级 #b",
+      "张牌。"
+    ]
   }
 }

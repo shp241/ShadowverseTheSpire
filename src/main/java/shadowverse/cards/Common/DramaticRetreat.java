@@ -1,18 +1,13 @@
 package shadowverse.cards.Common;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsInHandAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import shadowverse.action.BounceAction;
-import shadowverse.action.DramaticRetreatAction;
-import shadowverse.characters.Elf;
 import shadowverse.characters.Royal;
 
 public class DramaticRetreat extends CustomCard {
@@ -58,9 +53,14 @@ public class DramaticRetreat extends CustomCard {
     }
 
     @Override
-    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot(new DramaticRetreatAction(1));
-        addToBot(new DrawCardAction(abstractPlayer, this.magicNumber));
+    public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SelectCardsInHandAction(1, TEXT[0], false, false, card -> card.type == CardType.POWER, abstractCards -> {
+            for (AbstractCard c : abstractCards) {
+                p.hand.moveToDeck(c, true);
+                c.freeToPlayOnce = true;
+            }
+        }));
+        addToBot(new DrawCardAction(p, this.magicNumber));
     }
 
 
