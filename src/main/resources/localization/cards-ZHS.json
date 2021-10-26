@@ -2486,7 +2486,7 @@
   },
   "shadowverse:MistolinaBayleon": {
     "NAME": "光耀导引·米丝特莉娜与贝里昂",
-    "DESCRIPTION": "造成 !D! 点伤害， NL 获得 !B! 点格挡。 NL 若手牌中有能力牌，选择消耗一张，造成的伤害+ !M! ， NL 若为 *那塔拉的大树 获得 [E] 。"
+    "DESCRIPTION": "造成 !D! 点伤害， NL 获得 !B! 点格挡。 NL 若手牌中有能力牌， NL 选择消耗一张，造成的伤害+ !M! ， NL 若为 *那塔拉的大树 获得 [E] 。"
   },
   "shadowverse:TemperedMana": {
     "NAME": "勇气玛纳",
@@ -2499,8 +2499,8 @@
   },
   "shadowverse:ShieldPhalanx": {
     "NAME": "坚盾战阵",
-    "DESCRIPTION": "召唤一个 *战盾卫士 和一个 *骑士 。 NL 协作 15：由 *战盾卫士 改为 *铁卫战将。 NL 消耗 ",
-    "UPGRADE_DESCRIPTION": "召唤一个 *战盾卫士 和一个 *骑士 。 NL 协作 15：由 *战盾卫士 改为 *铁卫战将。",
+    "DESCRIPTION": "召唤一个 *战盾卫士 和一个 *骑士 。 NL 协作 15：由 *战盾卫士 改为 *铁卫战将。 NL 消耗  NL ",
+    "UPGRADE_DESCRIPTION": "召唤一个 *战盾卫士 和一个 *骑士 。 NL 协作 15：由 *战盾卫士 改为 *铁卫战将。 NL ",
     "EXTENDED_DESCRIPTION": [
       "（协作数：",
       ")"
@@ -2508,7 +2508,7 @@
   },
   "shadowverse:DramaticRetreat": {
     "NAME": "壮烈的撤退",
-    "DESCRIPTION": "选择手牌中一张攻击牌，将其洗入抽牌堆，其下一次打出时的消耗变为0点。 NL 抽 !M! 张牌。",
+    "DESCRIPTION": "选择1张攻击牌， NL 将其洗入抽牌堆， NL 其下一次打出时的消耗变为0点。 NL 抽 !M! 张牌。",
     "EXTENDED_DESCRIPTION": [
       "没有攻击牌"
     ]
@@ -2524,7 +2524,7 @@
   },
   "shadowverse:FrenziedCorpsmaster": {
     "NAME": "绝灭之士兵长",
-    "DESCRIPTION": "获得 !B! 点格挡。 NL 对全体敌人造成协作数两倍的伤害。 NL 激奏 2 \b 召唤一个 *铁甲骑士 和一个 *重装骑士 。 NL ",
+    "DESCRIPTION": "获得 !B! 点格挡。 NL 对全体敌人造成协作数两倍的伤害。 NL 激奏 2 \b  召唤一个 *铁甲骑士 和一个 *重装骑士 。 NL ",
     "EXTENDED_DESCRIPTION": [
       "（造成",
       "点伤害)"

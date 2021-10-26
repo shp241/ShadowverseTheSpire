@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.MathHelper;
+import com.megacrit.cardcrawl.helpers.TipHelper;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.orbs.EmptyOrbSlot;
 import shadowverse.action.RemoveMinionAction;
@@ -37,6 +38,34 @@ public abstract class Minion extends AbstractOrb {
 
     public void order() {
         effect();
+    }
+
+    @Override
+    public void update() {
+        this.updateDescription();
+        this.hb.update();
+        if (this.hb.hovered) {
+            TipHelper.renderGenericTip(this.tX + 96.0F * Settings.scale, this.tY + 64.0F * Settings.scale, this.name, this.description);
+        }
+
+        this.fontScale = MathHelper.scaleLerpSnap(this.fontScale, 0.7F);
+    }
+
+    @Override
+    public void updateAnimation() {
+        this.bobEffect.update();
+        this.cX = MathHelper.orbLerpSnap(this.cX, AbstractDungeon.player.animX + this.tX);
+        this.cY = MathHelper.orbLerpSnap(this.cY, AbstractDungeon.player.animY + this.tY);
+        if (this.channelAnimTimer != 0.0F) {
+            this.channelAnimTimer -= Gdx.graphics.getDeltaTime();
+            if (this.channelAnimTimer < 0.0F) {
+                this.channelAnimTimer = 0.0F;
+            }
+        }
+
+        this.c.a = Interpolation.pow2In.apply(1.0F, 0.01F, this.channelAnimTimer / 0.5F);
+        this.scale = Interpolation.swingIn.apply(Settings.scale, 0.01F, this.channelAnimTimer / 0.5F);
+        this.updateDescription();
     }
 
     public void buff(int a, int d) {
@@ -71,9 +100,9 @@ public abstract class Minion extends AbstractOrb {
         if (this.defense > this.baseDefense) {
             FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.defense), this.cX + NUM_X_OFFSET, this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET, new Color(0.2F, 1.0F, 0.2F, this.c.a), this.fontScale);
         } else if (this.defense < this.baseDefense) {
-            FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.defense), this.cX + NUM_X_OFFSET, this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET, new Color(1.0F, 1.0F, 1.0F, this.c.a), this.fontScale);
-        } else {
             FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.defense), this.cX + NUM_X_OFFSET, this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET, new Color(1.0F, 0.2F, 0.2F, this.c.a), this.fontScale);
+        } else {
+            FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.defense), this.cX + NUM_X_OFFSET, this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET, new Color(1.0F,1.0F, 1.0F,  this.c.a), this.fontScale);
         }
         if (this.attack > this.baseAttack) {
             FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.attack), this.cX - NUM_X_OFFSET, this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET, new Color(0.2F, 1.0F, 0.2F, this.c.a), this.fontScale);

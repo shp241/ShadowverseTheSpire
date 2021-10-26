@@ -19,7 +19,7 @@ public class SageCommander extends CustomCard {
     public static final String IMG_PATH = "img/cards/SageCommander.png";
 
     public SageCommander() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.BASIC, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.BASIC, CardTarget.SELF);
         this.baseBlock = 8;
     }
 

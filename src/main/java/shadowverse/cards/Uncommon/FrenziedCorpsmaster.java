@@ -52,7 +52,7 @@ public class FrenziedCorpsmaster extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(10);
+            upgradeBlock(5);
         }
     }
 

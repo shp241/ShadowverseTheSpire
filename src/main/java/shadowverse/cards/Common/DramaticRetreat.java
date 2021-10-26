@@ -3,11 +3,14 @@ package shadowverse.cards.Common;
 import basemod.abstracts.CustomCard;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsInHandAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import shadowverse.action.DramaticRetreatAction;
 import shadowverse.characters.Royal;
 
 public class DramaticRetreat extends CustomCard {
@@ -39,7 +42,7 @@ public class DramaticRetreat extends CustomCard {
             return false;
         }
         boolean hasAttack = false;
-        for (AbstractCard c : p.discardPile.group) {
+        for (AbstractCard c : p.hand.group) {
             if (c.type == AbstractCard.CardType.ATTACK) {
                 hasAttack = true;
                 break;
@@ -54,10 +57,9 @@ public class DramaticRetreat extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new SelectCardsInHandAction(1, TEXT[0], false, false, card -> card.type == CardType.POWER, abstractCards -> {
+        addToBot(new SelectCardsInHandAction(1, TEXT[0], false, false, card -> card.type == CardType.ATTACK, abstractCards -> {
             for (AbstractCard c : abstractCards) {
-                p.hand.moveToDeck(c, true);
-                c.freeToPlayOnce = true;
+                addToBot(new DramaticRetreatAction(c,p.hand));
             }
         }));
         addToBot(new DrawCardAction(p, this.magicNumber));

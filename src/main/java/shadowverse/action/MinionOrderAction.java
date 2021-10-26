@@ -21,5 +21,6 @@ public class MinionOrderAction extends AbstractGameAction {
                 break;
             }
         }
+        this.isDone = true;
     }
 }

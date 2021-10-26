@@ -26,7 +26,7 @@ public class ShieldPhalanx extends CustomCard {
     public static final String IMG_PATH = "img/cards/ShieldPhalanx.png";
 
     public ShieldPhalanx() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF);
         this.exhaust = true;
     }
 
