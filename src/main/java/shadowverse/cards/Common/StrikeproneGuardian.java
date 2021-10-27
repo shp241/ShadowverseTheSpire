@@ -1,35 +1,34 @@
-package shadowverse.cards.Temp;
+package shadowverse.cards.Common;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
-import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import shadowverse.action.DrawPileToHandAction_Tag;
-import shadowverse.characters.AbstractShadowversePlayer;
-import shadowverse.characters.Nemesis;
+import shadowverse.characters.Royal;
 import shadowverse.orbs.HeavyKnight;
 import shadowverse.orbs.Minion;
-import shadowverse.orbs.SteelcladKnight;
+import shadowverse.orbs.ShieldGuardian;
 
-public class FrenziedCorpsmaster_Acc  extends CustomCard {
-    public static final String ID = "shadowverse:FrenziedCorpsmaster_Acc";
-    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:FrenziedCorpsmaster");
+public class StrikeproneGuardian extends CustomCard {
+    public static final String ID = "shadowverse:StrikeproneGuardian";
+    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/FrenziedCorpsmaster.png";
+    public static final String IMG_PATH = "img/cards/StrikeproneGuardian.png";
 
-    public FrenziedCorpsmaster_Acc() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.SELF);
-        this.baseBlock = 12;
-        this.baseDamage = 0;
-        this.isMultiDamage = true;
+    public StrikeproneGuardian() {
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        this.baseBlock = 8;
+        this.baseMagicNumber = this.magicNumber = 6;
     }
 
 
@@ -37,7 +36,7 @@ public class FrenziedCorpsmaster_Acc  extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(4);
+            upgradeBlock(2);
         }
     }
 
@@ -59,23 +58,32 @@ public class FrenziedCorpsmaster_Acc  extends CustomCard {
     }
 
     @Override
+    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+        if (rally() > 7) {
+            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(abstractPlayer, abstractPlayer, this.block + this.magicNumber));
+        } else {
+            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
+        }
+    }
+
+
+    @Override
     public void applyPowers() {
         super.applyPowers();
-        this.baseDamage = rally() * 2;
         this.rawDescription = cardStrings.DESCRIPTION;
-        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + this.baseDamage + cardStrings.EXTENDED_DESCRIPTION[1];
+        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + rally() + cardStrings.EXTENDED_DESCRIPTION[1];
         this.initializeDescription();
     }
 
     @Override
-    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new SteelcladKnight()));
-        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new HeavyKnight()));
+    public void onMoveToDiscard() {
+        this.rawDescription = cardStrings.DESCRIPTION;
+        this.initializeDescription();
     }
-
 
     @Override
     public AbstractCard makeCopy() {
-        return new FrenziedCorpsmaster_Acc();
+        return new StrikeproneGuardian();
     }
 }
+

@@ -21,8 +21,10 @@ public class RemoveMinionAction extends AbstractGameAction {
         AbstractPlayer p = AbstractDungeon.player;
         if (!p.orbs.isEmpty()) {
             for (int n = 0; n < p.orbs.size(); n++) {
+                if ((p.orbs.get(n) instanceof Minion)) {
+                }
                 if ((p.orbs.get(n) instanceof Minion) && ((Minion) p.orbs.get(n)).defense <= 0) {
-                    ((Minion) p.orbs.get(n)).onRemove();
+//                    ((Minion) p.orbs.get(n)).onRemove();
                     AbstractOrb orbSlot = new EmptyOrbSlot((p.orbs.get(0)).cX, p.orbs.get(0).cY);
                     int i;
                     for (i = 1; i < p.orbs.size(); ++i) {

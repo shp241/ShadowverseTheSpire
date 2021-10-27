@@ -37,12 +37,12 @@ public class FrenziedCorpsmaster extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/FrenziedCorpsmaster.png";
-    public static final int ACCELERATE = 2;
+    public static final int ACCELERATE = 1;
     public boolean doubleCheck = false;
 
     public FrenziedCorpsmaster() {
-        super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
-        this.baseBlock = 15;
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
+        this.baseBlock = 12;
         this.baseDamage = 0;
         this.isMultiDamage = true;
     }
@@ -52,7 +52,7 @@ public class FrenziedCorpsmaster extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(5);
+            upgradeBlock(4);
         }
     }
 

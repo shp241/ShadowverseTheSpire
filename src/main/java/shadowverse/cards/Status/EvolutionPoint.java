@@ -1,39 +1,37 @@
-package shadowverse.cards.Common;
+package shadowverse.cards.Status;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import com.megacrit.cardcrawl.actions.unique.ArmamentsAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import shadowverse.characters.Royal;
-import shadowverse.orbs.Knight;
-import shadowverse.orbs.ShieldGuardian;
+import shadowverse.characters.AbstractShadowversePlayer;
 
-public class EmpressOfSerenity extends CustomCard {
-    public static final String ID = "shadowverse:EmpressOfSerenity";
-    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+public class EvolutionPoint extends CustomCard {
+    public static final String ID = "shadowverse:EvolutionPoint";
+    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:EvolutionPoint");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/EmpressOfSerenity.png";
+    public static final String IMG_PATH = "img/cards/EvolutionPoint.png";
 
-    public EmpressOfSerenity() {
-        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF);
-        this.baseMagicNumber = this.magicNumber = 3;
-        this.exhaust = true;
+    public EvolutionPoint() {
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.STATUS, CardColor.COLORLESS, CardRarity.COMMON, CardTarget.SELF);
+        this.baseMagicNumber = 1;
+        this.magicNumber = this.baseMagicNumber;
     }
-
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
-            upgradeName();
-            this.isInnate = true;
+            this.upgradeName();
+            this.selfRetain = true;
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }
@@ -42,15 +40,11 @@ public class EmpressOfSerenity extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        for (int i = 0; i < this.magicNumber; i++) {
-            AbstractDungeon.actionManager.addToBottom(new ChannelAction(new ShieldGuardian()));
-        }
+        this.addToBot(new ArmamentsAction(false));
     }
-
 
     @Override
     public AbstractCard makeCopy() {
-        return new EmpressOfSerenity();
+        return new EvolutionPoint();
     }
 }
-

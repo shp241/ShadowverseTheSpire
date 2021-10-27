@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
+import shadowverse.cards.Status.EvolutionPoint;
 import shadowverse.cards.Temp.*;
 import shadowverse.characters.Nemesis;
 import shadowverse.characters.Royal;
@@ -34,6 +35,7 @@ public class WeeMerchantsAppraisal extends CustomCard {
         ArrayList<AbstractCard> list = new ArrayList<>();
         list.add(new GildedGoblet());
         list.add(new GildedNecklace());
+        list.add(new EvolutionPoint());
         return list;
     }
 
@@ -65,16 +67,20 @@ public class WeeMerchantsAppraisal extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeMagicNumber(1);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
     }
 
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        addToBot(new DrawCardAction(p, this.magicNumber));
+        addToBot(new MakeTempCardInHandAction(new EvolutionPoint()));
         addToBot(new MakeTempCardInHandAction(new GildedGoblet()));
         addToBot(new MakeTempCardInHandAction(new GildedNecklace()));
+        if (this.upgraded) {
+            addToBot(new DrawCardAction(p, this.magicNumber));
+        }
     }
 
 

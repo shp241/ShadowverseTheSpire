@@ -40,8 +40,9 @@ public class MistolinaBayleon extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(3);
-            upgradeBlock(3);
+            upgradeDamage(2);
+            upgradeBlock(6);
+            upgradeMagicNumber(5);
         }
     }
 
@@ -54,7 +55,7 @@ public class MistolinaBayleon extends CustomCard {
                 if (c instanceof NaterranGreatTree) {
                     this.addToTop(new GainEnergyAction(1));
                 }
-                addToBot(new ExhaustSpecificCardAction(c,p.hand));
+                addToBot(new ExhaustSpecificCardAction(c, p.hand));
             }
         }));
         addToBot(new DamageAction(abstractMonster, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));

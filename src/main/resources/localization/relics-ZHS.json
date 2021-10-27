@@ -280,5 +280,19 @@
     "DESCRIPTIONS": [
       "回合开始时，若你没有随从，召唤一个 #y骑士。"
     ]
+  },
+  "shadowverse:OliviasBlessing": {
+    "NAME": "奥莉薇的祝福",
+    "FLAVOR": "进化？我也想……",
+    "DESCRIPTIONS": [
+      "在前 #b3 个回合开始时，增加 #b1 张 #y奇迹 和 #b1 张 #y进化点 到手中。"
+    ]
+  },
+  "shadowverse:WindGodsBlessing": {
+    "NAME": "风神的祝福",
+    "FLAVOR": "风不止息。",
+    "DESCRIPTIONS": [
+      "协作 #b10 :回合结束时，使所有随从获得+ #b1 /+ #b1 。"
+    ]
   }
 }

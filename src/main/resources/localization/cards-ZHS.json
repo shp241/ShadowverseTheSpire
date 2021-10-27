@@ -2419,7 +2419,7 @@
   },
   "shadowverse:OathlessKnight": {
     "NAME": "背水一战的骑士",
-    "DESCRIPTION": "造成 !D! 点伤害，召唤一个 *骑士。"
+    "DESCRIPTION": "造成 !D! 点伤害， NL 召唤一个 *骑士 。"
   },
   "shadowverse:GildedBoots": {
     "NAME": "黄金之靴",
@@ -2458,7 +2458,8 @@
   },
   "shadowverse:WeeMerchantsAppraisal": {
     "NAME": "商人的鉴定",
-    "DESCRIPTION": "抽 !M! 张牌，将 *黄金之杯 、 *黄金首饰 加入手中。"
+    "DESCRIPTION": "将 *进化点 、 *黄金之杯 、 *黄金首饰 加入手中。",
+    "UPGRADE_DESCRIPTION": "将 *进化点 、 *黄金之杯 、 *黄金首饰 加入手中。 NL 抽 !M! 张牌。"
   },
   "shadowverse:DiscipleOfUsurpation": {
     "NAME": "强夺的信徒",
@@ -2482,7 +2483,7 @@
   "shadowverse:Sera": {
     "NAME": "曙光少女·赛拉",
     "DESCRIPTION": "获得 !B! 点格挡。获得1层人工制品。 NL 消耗",
-    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡。获得1层人工制品。 NL 召唤3个 *战盾卫士。 NL 消耗"
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡。获得1层人工制品。 NL 召唤 !M! 个 *战盾卫士 ，回复 !M! 点生命。 NL 消耗"
   },
   "shadowverse:MistolinaBayleon": {
     "NAME": "光耀导引·米丝特莉娜与贝里昂",
@@ -2495,12 +2496,13 @@
   },
   "shadowverse:EmpressOfSerenity": {
     "NAME": "安宁的女王",
-    "DESCRIPTION": "造成 !D! 点伤害，召唤一个 *战盾卫士 。"
+    "DESCRIPTION": "召唤 !M! 个 *战盾卫士 。 NL 消耗",
+    "UPGRADE_DESCRIPTION": "固有 。 NL 召唤 !M! 个 *战盾卫士 。 NL 消耗"
   },
   "shadowverse:ShieldPhalanx": {
     "NAME": "坚盾战阵",
-    "DESCRIPTION": "召唤一个 *战盾卫士 和一个 *骑士 。 NL 协作 15：由 *战盾卫士 改为 *铁卫战将。 NL 消耗  NL ",
-    "UPGRADE_DESCRIPTION": "召唤一个 *战盾卫士 和一个 *骑士 。 NL 协作 15：由 *战盾卫士 改为 *铁卫战将。 NL ",
+    "DESCRIPTION": "召唤一个 *战盾卫士  NL 和一个 *骑士 。 NL 协作 15：由 *战盾卫士 改为 *铁卫战将 。 NL 消耗  NL ",
+    "UPGRADE_DESCRIPTION": "召唤一个 *战盾卫士  NL 和一个 *骑士 。 NL 协作 15：由 *战盾卫士 改为 *铁卫战将 。 NL ",
     "EXTENDED_DESCRIPTION": [
       "（协作数：",
       ")"
@@ -2516,7 +2518,7 @@
   "shadowverse:CatAdmiral": {
     "NAME": "俏猫上将",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 协作 7：伤害翻倍。 NL ",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 协作 7：伤害翻倍。 NL 召唤一个 *战盾卫士 和一个 *重装骑士 。 NL ",
+    "UPGRADE_DESCRIPTION": "使用后解除升级。 NL 造成 !D! 点伤害。 NL 协作 7：伤害翻倍。 NL 召唤一个 *战盾卫士 和一个 *重装骑士 。 NL ",
     "EXTENDED_DESCRIPTION": [
       "（协作数：",
       ")"
@@ -2524,7 +2526,7 @@
   },
   "shadowverse:FrenziedCorpsmaster": {
     "NAME": "绝灭之士兵长",
-    "DESCRIPTION": "获得 !B! 点格挡。 NL 对全体敌人造成协作数两倍的伤害。 NL 激奏 2 \b  召唤一个 *铁甲骑士 和一个 *重装骑士 。 NL ",
+    "DESCRIPTION": "获得 !B! 点格挡。 NL 对全体敌人造成协作数两倍的伤害。 NL 激奏 2 \b  召唤一个 *铁甲骑士 NL 和一个 *重装骑士 。 NL ",
     "EXTENDED_DESCRIPTION": [
       "（造成",
       "点伤害)"
@@ -2532,6 +2534,64 @@
   },
   "shadowverse:FortressStrategist": {
     "NAME": "王城司令官",
-    "DESCRIPTION": "每当你使用技能牌时，随机升级 !M! 张牌。"
+    "DESCRIPTION": "每当你使用技能牌时，随机升级 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "固有 。 NL 每当你使用技能牌时，随机升级 !M! 张牌。 "
+  },
+  "shadowverse:EvolutionPoint": {
+    "NAME": "进化点",
+    "DESCRIPTION": "升级 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "保留 。NL 升级 !M! 张牌。 "
+  },
+  "shadowverse:EnragedGeneral": {
+    "NAME": "愤怒的将军",
+    "DESCRIPTION": "获得等同于你随从个数的 [E] ，失去一个随从栏位。"
+  },
+  "shadowverse:LuminousMage": {
+    "NAME": "鲁米那斯法师",
+    "DESCRIPTION": "回合开始时，将 !M! 张 *进化点 置入手牌。",
+    "UPGRADE_DESCRIPTION": "固有 。 NL 回合开始时，将 !M! 张 *进化点 置入手牌。 "
+  },
+  "shadowverse:PrudentGeneral": {
+    "NAME": "静寂的元帅",
+    "DESCRIPTION": "虚无",
+    "UPGRADE_DESCRIPTION": "回合结束时，召唤 !M! 个 *铁甲骑士。"
+  },
+  "shadowverse:DualbladeKnight": {
+    "NAME": "双剑骑士",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 [E] 。 NL 协作 7：升级这张牌。 NL ",
+    "UPGRADE_DESCRIPTION": "使用后解除升级。 NL 造成 !D! 点伤害。 NL 获得 [E]  [E] 。",
+    "EXTENDED_DESCRIPTION": [
+      "（协作数：",
+      ")"
+    ]
+  },
+  "shadowverse:StrikeproneGuardian": {
+    "NAME": "奋击卫士",
+    "DESCRIPTION": "获得 !B! 点格挡。 NL 协作 7：额外获得 !M! 点格挡。 NL ",
+    "EXTENDED_DESCRIPTION": [
+      "（协作数：",
+      ")"
+    ]
+  },
+  "shadowverse:MonochromeEndgame": {
+    "NAME": "黑白终局",
+    "DESCRIPTION": " *英勇之王·伊梅拉 NL *高雅女王·玛格娜丝 NL 抉择 \b召唤一个到场上。 NL 消耗",
+    "UPGRADE_DESCRIPTION": "召唤 *英勇之王·伊梅拉 、 *高雅女王·玛格娜丝 。 NL 消耗"
+  },
+  "shadowverse:QueenHemera_Card": {
+    "NAME": "英勇之王·伊梅拉",
+    "DESCRIPTION": "召唤 *英勇之王·伊梅拉 。 NL 消耗"
+  },
+  "shadowverse:QueenMagnus_Card": {
+    "NAME": "英勇之王·伊梅拉",
+    "DESCRIPTION": "召唤 *高雅女王·玛格娜丝 。 NL 消耗"
+  },
+  "shadowverse:FlyingMessengerSquirrel": {
+    "NAME": "鼯鼠传令兵",
+    "DESCRIPTION": "抽 !M! 张牌。 NL 协作 7：额外抽1张牌。",
+    "EXTENDED_DESCRIPTION": [
+      "（协作数：",
+      ")"
+    ]
   }
 }

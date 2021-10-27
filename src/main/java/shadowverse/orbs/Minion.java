@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.helpers.MathHelper;
 import com.megacrit.cardcrawl.helpers.TipHelper;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.orbs.EmptyOrbSlot;
+import shadowverse.action.MinionBuffAction;
 import shadowverse.action.RemoveMinionAction;
 
 import java.util.Collections;
@@ -63,23 +64,23 @@ public abstract class Minion extends AbstractOrb {
             }
         }
 
-        this.c.a = Interpolation.pow2In.apply(1.0F, 0.01F, this.channelAnimTimer / 0.5F);
-        this.scale = Interpolation.swingIn.apply(Settings.scale, 0.01F, this.channelAnimTimer / 0.5F);
+        this.c.a = Interpolation.pow2In.apply(1.0F, 0.01F, 0.0F);
+        this.scale = Interpolation.swingIn.apply(Settings.scale, 0.01F, 0.0F);
         this.updateDescription();
     }
 
     public void buff(int a, int d) {
         this.attack += a;
         this.defense += d;
-        AbstractDungeon.actionManager.addToBottom(new RemoveMinionAction());
     }
 
-    public void onRemove(){}
+    public void onRemove() {
+    }
 
     @Override
     public void onEvoke() {
         for (int i = 0; i < defense; i++) {
-            effect();
+            this.effect();
         }
         this.defense = 0;
         AbstractDungeon.actionManager.addToBottom(new RemoveMinionAction());
@@ -87,8 +88,9 @@ public abstract class Minion extends AbstractOrb {
 
     @Override
     public void onEndOfTurn() {
-        effect();
-        this.defense -= 1;
+        this.effect();
+        AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(0, -1, this));
+        this.updateDescription();
         AbstractDungeon.actionManager.addToBottom(new RemoveMinionAction());
     }
 
@@ -102,7 +104,7 @@ public abstract class Minion extends AbstractOrb {
         } else if (this.defense < this.baseDefense) {
             FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.defense), this.cX + NUM_X_OFFSET, this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET, new Color(1.0F, 0.2F, 0.2F, this.c.a), this.fontScale);
         } else {
-            FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.defense), this.cX + NUM_X_OFFSET, this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET, new Color(1.0F,1.0F, 1.0F,  this.c.a), this.fontScale);
+            FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.defense), this.cX + NUM_X_OFFSET, this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET, new Color(1.0F, 1.0F, 1.0F, this.c.a), this.fontScale);
         }
         if (this.attack > this.baseAttack) {
             FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.attack), this.cX - NUM_X_OFFSET, this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET, new Color(0.2F, 1.0F, 0.2F, this.c.a), this.fontScale);

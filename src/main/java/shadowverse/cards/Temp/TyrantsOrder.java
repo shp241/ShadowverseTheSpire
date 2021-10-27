@@ -1,9 +1,10 @@
-package shadowverse.cards.Common;
+package shadowverse.cards.Temp;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -11,21 +12,22 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import shadowverse.action.TyrantsOrderAction;
 import shadowverse.characters.Royal;
-import shadowverse.orbs.Knight;
-import shadowverse.orbs.ShieldGuardian;
+import shadowverse.orbs.Minion;
 
-public class EmpressOfSerenity extends CustomCard {
-    public static final String ID = "shadowverse:EmpressOfSerenity";
+public class TyrantsOrder extends CustomCard {
+    public static final String ID = "shadowverse:TyrantsOrder";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/EmpressOfSerenity.png";
+    public static final String IMG_PATH = "img/cards/TyrantsOrder.png";
 
-    public EmpressOfSerenity() {
-        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF);
-        this.baseMagicNumber = this.magicNumber = 3;
+    public TyrantsOrder() {
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.ENEMY);
         this.exhaust = true;
+        this.baseMagicNumber = this.magicNumber = 30;
     }
 
 
@@ -33,24 +35,20 @@ public class EmpressOfSerenity extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.isInnate = true;
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            this.initializeDescription();
+            upgradeMagicNumber(20);
         }
     }
-
 
     @Override
-    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        for (int i = 0; i < this.magicNumber; i++) {
-            AbstractDungeon.actionManager.addToBottom(new ChannelAction(new ShieldGuardian()));
-        }
+    public void use(AbstractPlayer p, AbstractMonster m) {
+        this.addToBot(new TyrantsOrderAction(p,m,this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
     }
-
 
     @Override
     public AbstractCard makeCopy() {
-        return new EmpressOfSerenity();
+        return new TyrantsOrder();
     }
 }
+
+
 

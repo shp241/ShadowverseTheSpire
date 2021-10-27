@@ -1,5 +1,6 @@
 package shadowverse.orbs;
 
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -8,14 +9,14 @@ import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import shadowverse.action.MinionAttackAction;
 
-public class SteelcladKnight  extends Minion {
+public class SteelcladKnight extends Minion {
 
     // Standard ID/Description
     public static final String ORB_ID = "shadowverse:SteelcladKnight";
     private static final OrbStrings orbString = CardCrawlGame.languagePack.getOrbString(ORB_ID);
     public static final String[] DESCRIPTIONS = orbString.DESCRIPTION;
-    private static final int ATTACK = 2;
-    private static final int DEFENSE = 2;
+    private static final int ATTACK = 1;
+    private static final int DEFENSE = 1;
 
     public SteelcladKnight() {
         // The passive/evoke description we pass in here, specifically, don't matter
@@ -26,14 +27,14 @@ public class SteelcladKnight  extends Minion {
         this.ID = ORB_ID;
         this.img = ImageMaster.loadImage("img/orbs/SteelcladKnight.png");
         this.name = orbString.NAME;
-        this.passiveAmount = this.basePassiveAmount = this.attack = this.baseAttack = ATTACK;
-        this.evokeAmount = this.baseEvokeAmount = this.defense = this.baseDefense = DEFENSE;
+        this.attack = this.baseAttack = ATTACK;
+        this.defense = this.baseDefense = DEFENSE;
         this.updateDescription();
     }
 
     @Override
     public void updateDescription() { // Set the on-hover description of the orb
-        description = DESCRIPTIONS[0] + "3*" + this.attack + "=" + 3 * this.attack + DESCRIPTIONS[1];
+        description = DESCRIPTIONS[0] + "3*" + this.attack + "=" + 3 * this.attack + DESCRIPTIONS[1] + "3*" + this.attack + "=" + 3 * this.attack + DESCRIPTIONS[2];
     }
 
 
@@ -51,9 +52,10 @@ public class SteelcladKnight  extends Minion {
     public void effect() {
         int damage = this.attack * 3;
         if (AbstractDungeon.player.hasPower("Electro")) {
-            AbstractDungeon.actionManager.addToTop(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS), true));
+            AbstractDungeon.actionManager.addToBottom(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS), true));
         } else {
-            AbstractDungeon.actionManager.addToTop(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS), false));
+            AbstractDungeon.actionManager.addToBottom(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS), false));
         }
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, this.attack * 3));
     }
 }

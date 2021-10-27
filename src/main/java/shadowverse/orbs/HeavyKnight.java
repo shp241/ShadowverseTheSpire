@@ -1,12 +1,13 @@
 package shadowverse.orbs;
 
-import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import shadowverse.action.MinionAttackAction;
+import com.megacrit.cardcrawl.powers.WeakPower;
 
 public class HeavyKnight extends Minion {
 
@@ -26,14 +27,14 @@ public class HeavyKnight extends Minion {
         this.ID = ORB_ID;
         this.img = ImageMaster.loadImage("img/orbs/HeavyKnight.png");
         this.name = orbString.NAME;
-        this.passiveAmount = this.basePassiveAmount = this.attack = this.baseAttack = ATTACK;
-        this.evokeAmount = this.baseEvokeAmount = this.defense = this.baseDefense = DEFENSE;
+        this.attack = this.baseAttack = ATTACK;
+        this.defense = this.baseDefense = DEFENSE;
         this.updateDescription();
     }
 
     @Override
     public void updateDescription() { // Set the on-hover description of the orb
-        description = DESCRIPTIONS[0] + "3*" + this.attack + "=" + 3 * this.attack + DESCRIPTIONS[1];
+        description = DESCRIPTIONS[0] + this.attack + DESCRIPTIONS[1];
     }
 
 
@@ -49,11 +50,15 @@ public class HeavyKnight extends Minion {
 
     @Override
     public void effect() {
-        int damage = this.attack * 3;
         if (AbstractDungeon.player.hasPower("Electro")) {
-            AbstractDungeon.actionManager.addToTop(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS), true));
+            for (AbstractCreature m : AbstractDungeon.getMonsters().monsters) {
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, AbstractDungeon.player, new WeakPower(m, this.attack, false), this.attack));
+            }
         } else {
-            AbstractDungeon.actionManager.addToTop(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS), false));
+            AbstractCreature m = AbstractDungeon.getRandomMonster();
+            if (m != null) {
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, AbstractDungeon.player, new WeakPower(m, this.attack, false), this.attack));
+            }
         }
     }
 }

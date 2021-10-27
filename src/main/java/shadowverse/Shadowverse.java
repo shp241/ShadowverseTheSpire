@@ -31,6 +31,7 @@ import shadowverse.cards.Curse.Geass;
 import shadowverse.cards.Neutral.*;
 import shadowverse.cards.Rare.*;
 import shadowverse.cards.Status.BelphometStatus;
+import shadowverse.cards.Status.EvolutionPoint;
 import shadowverse.cards.Temp.Mysteria;
 import shadowverse.cards.Temp.*;
 import shadowverse.cards.Uncommon.*;
@@ -640,6 +641,8 @@ import java.util.HashMap;
               BaseMod.addRelicToCustomPool((AbstractRelic)new RevelrySeed(),Vampire.Enums.COLOR_SCARLET);
               BaseMod.addRelicToCustomPool((AbstractRelic)new Offensive5(),Nemesis.Enums.COLOR_SKY);
               BaseMod.addRelicToCustomPool((AbstractRelic)new Offensive6(),Royal.Enums.COLOR_YELLOW);
+              BaseMod.addRelicToCustomPool((AbstractRelic)new OliviasBlessing(),Royal.Enums.COLOR_YELLOW);
+              BaseMod.addRelicToCustomPool((AbstractRelic)new WindGodsBlessing(),Royal.Enums.COLOR_YELLOW);
 /*     */   }
 /*     */
 /*     */   class Keywords
@@ -1215,6 +1218,16 @@ import java.util.HashMap;
               BaseMod.addCard((AbstractCard)new FrenziedCorpsmaster());
               BaseMod.addCard((AbstractCard)new CatAdmiral());
               BaseMod.addCard((AbstractCard)new FortressStrategist());
+              BaseMod.addCard((AbstractCard)new EvolutionPoint());
+              BaseMod.addCard((AbstractCard)new EnragedGeneral());
+              BaseMod.addCard((AbstractCard)new LuminousMage());
+              BaseMod.addCard((AbstractCard)new PrudentGeneral());
+              BaseMod.addCard((AbstractCard)new DualbladeKnight());
+              BaseMod.addCard((AbstractCard)new StrikeproneGuardian());
+              BaseMod.addCard((AbstractCard)new MonochromeEndgame());
+              BaseMod.addCard((AbstractCard)new QueenHemera_Card());
+              BaseMod.addCard((AbstractCard)new QueenMagnus_Card());
+              BaseMod.addCard((AbstractCard)new FlyingMessengerSquirrel());
 
 /* 276 */     logger.info("Success");
 /*     */   }

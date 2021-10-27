@@ -30,8 +30,8 @@ public class CannonHermitCrabOrb extends Minion {
         this.ID = ORB_ID;
         this.img = ImageMaster.loadImage("img/orbs/CannonHermitCrabOrb.png");
         this.name = orbString.NAME;
-        this.passiveAmount = this.basePassiveAmount = this.attack = this.baseAttack = ATTACK;
-        this.evokeAmount = this.baseEvokeAmount = this.defense = this.baseDefense = DEFENSE;
+        this.attack = this.baseAttack = ATTACK;
+        this.defense = this.baseDefense = DEFENSE;
         this.updateDescription();
     }
 
@@ -39,8 +39,8 @@ public class CannonHermitCrabOrb extends Minion {
         this.ID = ORB_ID;
         this.img = ImageMaster.loadImage("img/orbs/CannonHermitCrabOrb.png");
         this.name = orbString.NAME;
-        this.passiveAmount = this.basePassiveAmount = this.attack = this.baseAttack = attack;
-        this.evokeAmount = this.baseEvokeAmount = this.defense = this.baseDefense = defense;
+        this.attack = this.baseAttack = attack;
+        this.defense = this.baseDefense = defense;
         this.updateDescription();
     }
 

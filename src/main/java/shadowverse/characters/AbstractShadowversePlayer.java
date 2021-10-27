@@ -19,12 +19,15 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.stances.AbstractStance;
 import com.megacrit.cardcrawl.stances.NeutralStance;
 import shadowverse.Shadowverse;
+import shadowverse.action.RemoveMinionAction;
 import shadowverse.action.TreAction;
 import shadowverse.powers.AvaricePower;
 import shadowverse.powers.Cemetery;
 import shadowverse.powers.VengeanceHealthPower;
 import shadowverse.powers.WrathPower;
 import shadowverse.stance.Vengeance;
+
+import java.util.Iterator;
 
 public abstract class AbstractShadowversePlayer extends CustomPlayer{
 
@@ -237,6 +240,11 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
         if ((this.currentHealth <= this.maxHealth / 2.0F||this.maxHealth==1)&& !(this instanceof Nemesis)) {
             AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ChangeStanceAction((AbstractStance) new Vengeance()));
         }
+    }
+
+    @Override
+    public void applyEndOfTurnTriggers() {
+        super.applyEndOfTurnTriggers();
     }
 
 

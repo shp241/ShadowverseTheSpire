@@ -2,8 +2,10 @@ package shadowverse.cards.Rare;
 
 import basemod.abstracts.CustomCard;
 import com.badlogic.gdx.Gdx;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -25,7 +27,7 @@ import shadowverse.orbs.ShieldGuardian;
 
 import java.util.ArrayList;
 
-public class Sera  extends CustomCard {
+public class Sera extends CustomCard {
     public static final String ID = "shadowverse:Sera";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Sera");
     public static final String NAME = cardStrings.NAME;
@@ -33,8 +35,9 @@ public class Sera  extends CustomCard {
     public static final String IMG_PATH = "img/cards/Sera.png";
 
     public Sera() {
-        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.SELF);
         this.baseBlock = 12;
+        this.baseMagicNumber = this.magicNumber = 3;
         this.exhaust = true;
     }
 
@@ -53,9 +56,10 @@ public class Sera  extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
         this.addToBot(new ApplyPowerAction(p, p, new ArtifactPower(p, 1), 1));
         if (this.upgraded) {
-            AbstractDungeon.actionManager.addToBottom(new ChannelAction(new ShieldGuardian()));
-            AbstractDungeon.actionManager.addToBottom(new ChannelAction(new ShieldGuardian()));
-            AbstractDungeon.actionManager.addToBottom(new ChannelAction(new ShieldGuardian()));
+            for (int i = 0; i < this.magicNumber; i++) {
+                AbstractDungeon.actionManager.addToBottom(new ChannelAction(new ShieldGuardian()));
+                addToBot(new HealAction(p, p, 1));
+            }
         }
     }
 

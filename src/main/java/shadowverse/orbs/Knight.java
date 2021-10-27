@@ -26,8 +26,8 @@ public class Knight extends Minion {
         this.ID = ORB_ID;
         this.img = ImageMaster.loadImage("img/orbs/Knight.png");
         this.name = orbString.NAME;
-        this.passiveAmount = this.basePassiveAmount = this.attack = this.baseAttack = ATTACK;
-        this.evokeAmount = this.baseEvokeAmount = this.defense = this.baseDefense = DEFENSE;
+        this.attack = this.baseAttack = ATTACK;
+        this.defense = this.baseDefense = DEFENSE;
         this.updateDescription();
     }
 
@@ -51,9 +51,9 @@ public class Knight extends Minion {
     public void effect() {
         int damage = this.attack * 3;
         if (AbstractDungeon.player.hasPower("Electro")) {
-            AbstractDungeon.actionManager.addToTop(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS), true));
+            AbstractDungeon.actionManager.addToBottom(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS), true));
         } else {
-            AbstractDungeon.actionManager.addToTop(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS), false));
+            AbstractDungeon.actionManager.addToBottom(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS), false));
         }
     }
 }

@@ -960,5 +960,19 @@
       "每当打出技能牌时，随机升级 #b",
       "张牌。"
     ]
+  },
+  "shadowverse:LuminousMagePower": {
+    "NAME": "鲁米那斯法师",
+    "DESCRIPTIONS": [
+      "回合开始时，将 #b",
+      "张 #y进化点 置入手牌。"
+    ]
+  },
+  "shadowverse:PrudentGeneralPower": {
+    "NAME": "静寂的元帅",
+    "DESCRIPTIONS": [
+      "回合结束时，召唤 #b",
+      "个 #y铁甲骑士。"
+    ]
   }
 }
