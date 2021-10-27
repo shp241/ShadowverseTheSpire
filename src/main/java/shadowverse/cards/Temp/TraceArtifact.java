@@ -33,7 +33,7 @@ import shadowverse.characters.Nemesis;
    public void upgrade() {
      if (!this.upgraded) {
        upgradeName();
-       upgradeDamage(2);
+       upgradeBlock(2);
      }
    }
 

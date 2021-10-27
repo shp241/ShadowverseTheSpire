@@ -29,6 +29,7 @@ import shadowverse.cards.Rare.Ralmia;
 import shadowverse.cards.Rare.Spine;
 import shadowverse.cards.Uncommon.CannonHermitCrab;
 import shadowverse.cards.Uncommon.Miriam;
+import shadowverse.cards.Uncommon.ServantOfDarkness;
 
 import java.util.ArrayList;
 

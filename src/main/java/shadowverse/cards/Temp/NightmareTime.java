@@ -4,8 +4,10 @@ import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.LoseHPAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.tempCards.Miracle;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -13,7 +15,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DrawPower;
-import shadowverse.action.GetEPAction;
+import shadowverse.cards.Status.EvolutionPoint;
 import shadowverse.characters.Vampire;
 
 public class NightmareTime extends CustomCard {
@@ -43,7 +45,8 @@ public class NightmareTime extends CustomCard {
         addToBot((AbstractGameAction)new SFXAction("NightmareTime"));
         addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p, (AbstractPower)new DrawPower((AbstractCreature)p, this.magicNumber), this.magicNumber));
         addToBot((AbstractGameAction)new LoseHPAction(p,p,1));
-        addToBot((AbstractGameAction)new GetEPAction(true,1));
+        addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new EvolutionPoint()));
+        addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new Miracle()));
     }
 
 

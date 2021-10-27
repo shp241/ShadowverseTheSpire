@@ -321,7 +321,7 @@
   },
   "shadowverse:Cagliostro": {
     "NAME": "开辟的炼金术师·卡莉欧斯托萝",
-    "DESCRIPTION": "获得 !B! 点格挡。 NL 获得1层 土之印记 。 NL 土之秘术 增加一张 *魔创炼金 到手中。 NL 爆能强化 2  在本场战斗中 升级 手牌中的所有牌，增加1张 *奇迹 到手中。"
+    "DESCRIPTION": "获得 !B! 点格挡。 NL 获得1层 土之印记 。 NL 土之秘术 增加一张 *魔创炼金 到手中。 NL 爆能强化 2  增加1张 *进化点 和 *奇迹 到手中。"
   },
   "shadowverse:MadcapConjuration": {
     "NAME": "乱无章法的嵌合",
@@ -448,7 +448,7 @@
   },
   "shadowverse:WrathfulIcefiend": {
     "NAME": "狂怒的冰魔",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 在本场战斗中 升级 手牌中的所有牌,增加2张 *奇迹 到手中。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 在本场战斗中 升级 手牌中的所有牌,增加2张 *进化点 到手中。"
   },
   "shadowverse:HellBeast": {
     "NAME": "异端的冥兽",
@@ -1005,7 +1005,7 @@
   },
   "shadowverse:Aerin": {
     "NAME": "冰晶光芒·艾琳",
-    "DESCRIPTION": "获得 !B! 点格挡。 NL 回复3点生命 。 NL 爆能强化 3  \b在本场战斗中 升级 手牌中的所有牌，增加1张 *奇迹 到手中。"
+    "DESCRIPTION": "获得 !B! 点格挡。 NL 回复3点生命 。 NL 爆能强化 3  \b增加1张 *进化点 和 *奇迹 到手中。"
   },
   "shadowverse:Metera": {
     "NAME": "天赋的射手·梅缇拉",
@@ -1538,8 +1538,8 @@
   },
   "shadowverse:Luna": {
     "NAME": "友魂少女·露娜",
-    "DESCRIPTION": "增加1张 *露娜的玩偶 和 *死灵的诱惑 到手中。 NL 死灵术 6 \b升级所有手牌，将1张 *奇迹 加入手中。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "增加1张 *露娜的玩偶+ 和 *死灵的诱惑+ 到手中。 NL 死灵术 6 \b升级所有手牌，将1张 *奇迹 加入手中。 NL 消耗 。"
+    "DESCRIPTION": "增加1张 *露娜的玩偶 和 *死灵的诱惑 到手中。 NL 死灵术 6 \b将1张 *进化点 和 *奇迹 加入手中。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "增加1张 *露娜的玩偶+ 和 *死灵的诱惑+ 到手中。 NL 死灵术 6 \b将1张 *进化点 和 *奇迹 加入手中。 NL 消耗 。"
   },
   "shadowverse:UnionMagic": {
     "NAME": "联合魔法",
@@ -1732,7 +1732,7 @@
   },
   "shadowverse:MechashotDevil": {
     "NAME": "机巧魔护士",
-    "DESCRIPTION": "机械 。 NL 获得 !B! 点 格挡 。 NL 如果手中有 机械 牌则每回合开始时增加1张 *生产器械 到手中。 NL 如果本场战斗已打出的 机械 非技能牌数量为10以上，升级所有手牌并将1张 *奇迹 加入手中。"
+    "DESCRIPTION": "机械 。 NL 获得 !B! 点 格挡 。 NL 如果手中有 机械 牌则每回合开始时增加1张 *生产器械 到手中。 NL 如果本场战斗已打出的 机械 非技能牌数量为10以上，将1张 *进化点 和 *奇迹 加入手中。"
   },
   "shadowverse:ArmoredBat": {
     "NAME": "钢翼夜蝠",
@@ -1854,7 +1854,7 @@
   },
   "shadowverse:NightmareTime": {
     "NAME": "梦魇时分",
-    "DESCRIPTION": "每回合开始时额外抽 !M! 张牌。 NL 失去1点生命，升级所有手牌，增加1张 *奇迹 到手中。 NL 消耗 。"
+    "DESCRIPTION": "每回合开始时额外抽 !M! 张牌。 NL 失去1点生命，增加1张 *进化点 和 *奇迹 到手中。 NL 消耗 。"
   },
   "shadowverse:BloodyNail": {
     "NAME": "血腥利爪",
@@ -1918,7 +1918,7 @@
   },
   "shadowverse:ShadowDevil": {
     "NAME": "暗影恶魔·摩里亚娜",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 复仇 升级所有手牌，增加2张 *奇迹 到手中。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 复仇 增加2张 *进化点 和 *奇迹 到手中。"
   },
   "shadowverse:MaskedMayhem": {
     "NAME": "蒙面斗士·莎兰婕亚",
@@ -2139,7 +2139,7 @@
   },
   "shadowverse:MegaEnforcer": {
     "NAME": "大型机械兵",
-    "DESCRIPTION": "机械 。 NL 获得 !B! 点 格挡 。 NL 如果手中有其他 机械 牌，造成 !D! 点伤害并抽1张牌。 NL 如果手中其他 机械 牌数量为2以上，升级所有手牌并增加1张 *奇迹 到手中。"
+    "DESCRIPTION": "机械 。 NL 获得 !B! 点 格挡 。 NL 如果手中有其他 机械 牌，造成 !D! 点伤害并抽1张牌。 NL 如果手中其他 机械 牌数量为2以上，增加1张 *进化点 和 *奇迹 到手中。"
   },
   "shadowverse:Invasion": {
     "NAME": "战栗的侵略",
@@ -2189,14 +2189,6 @@
       " NL (非 共鸣 转变为 共鸣 的次数为",
       " 。)"
     ]
-  },
-  "shadowverse:Nexus": {
-    "NAME": "肃清模式",
-    "DESCRIPTION": "进入肃清模式。 NL 如果战斗中存在已肃清对象，你在本场战斗造成的伤害提升对应的数值。 NL 斩杀 时，将敌人加入已肃清列表。"
-  },
-  "shadowverse:Nerva": {
-    "NAME": "安宁模式",
-    "DESCRIPTION": "进入安宁模式。 NL 受到来自安宁对象的伤害减少对应安宁次数。 NL 斩杀 时，将敌人加入已安宁列表。"
   },
   "shadowverse:Paracelsus": {
     "NAME": "帕拉塞尓苏斯",
@@ -2357,7 +2349,7 @@
   },
   "shadowverse:UnnamedDetermination": {
     "NAME": "无名的决意",
-    "DESCRIPTION": "升级 所有手牌。 NL 如果消耗堆中的攻击牌为10张以上，抽 !M! 张牌。"
+    "DESCRIPTION": "增加1张 *进化点 和 *奇迹 到手中。 NL 如果消耗堆中的攻击牌为10张以上，抽 !M! 张牌。"
   },
   "shadowverse:Noa": {
     "NAME": "复仇的人偶师·诺亚",
@@ -2408,6 +2400,19 @@
   "shadowverse:CannonHermitCrab": {
     "NAME": "加农炮寄居蟹",
     "DESCRIPTION": "自然 。 NL 增加能量球栏位直到5个。 NL 召唤一个 加农炮寄居蟹 。"
+  },
+  "shadowverse:MultiarmedArtifact": {
+    "NAME": "多臂的创造物",
+    "DESCRIPTION": "创造物 。 NL 获得 !B! 点 格挡 。 NL 如果消耗堆中的创造物种类为6以上，额外获得 !B! 点 格挡 并对随机敌人造成 !D! 点伤害。"
+  },
+  "shadowverse:ArtifactImpulse": {
+    "NAME": "创造物冲击",
+    "DESCRIPTION": "如果消耗堆中的创造物种类为5以下，增加1张 *古老的创造物 到手中。 NL 6种以上则对随机敌人造成 !D! 点伤害。"
+  },
+  "shadowverse:ServantOfDarkness": {
+    "NAME": "暗狱使者·贾斯珀",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张 *防御型巨像 到手中。",
+    "UPGRADE_DESCRIPTION":"获得 !B! 点 格挡 。 NL 增加1张耗能为0的 *防御型巨像 到手中。 NL 增加1张耗能为0的 *攻击型巨像 到手中。"
   },
   "shadowverse:Strike_R": {
     "NAME": "打击",
@@ -2539,8 +2544,8 @@
   },
   "shadowverse:EvolutionPoint": {
     "NAME": "进化点",
-    "DESCRIPTION": "升级 !M! 张牌。",
-    "UPGRADE_DESCRIPTION": "保留 。NL 升级 !M! 张牌。 "
+    "DESCRIPTION": "升级 !M! 张非技能牌。",
+    "UPGRADE_DESCRIPTION": "保留 。NL 升级 !M! 张非技能牌。 "
   },
   "shadowverse:EnragedGeneral": {
     "NAME": "愤怒的将军",

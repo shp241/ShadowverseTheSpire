@@ -7,6 +7,7 @@
  import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
  import com.megacrit.cardcrawl.actions.utility.SFXAction;
  import com.megacrit.cardcrawl.cards.AbstractCard;
+ import com.megacrit.cardcrawl.cards.tempCards.Miracle;
  import com.megacrit.cardcrawl.characters.AbstractPlayer;
  import com.megacrit.cardcrawl.core.AbstractCreature;
  import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -16,7 +17,7 @@
  import com.megacrit.cardcrawl.powers.AbstractPower;
  import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
  import shadowverse.Shadowverse;
- import shadowverse.action.GetEPAction;
+ import shadowverse.cards.Status.EvolutionPoint;
  import shadowverse.cards.Temp.ArsMagna;
  import shadowverse.characters.AbstractShadowversePlayer;
  import shadowverse.characters.Witchcraft;
@@ -123,7 +124,8 @@
      addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, this.block));
      addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new EarthEssence((AbstractCreature)abstractPlayer, 1), 1));
      if (this.costForTurn == 2 && Shadowverse.Enhance(2)) {
-         addToBot((AbstractGameAction)new GetEPAction(true,1));
+         addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new EvolutionPoint()));
+         addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new Miracle()));
      }
    }
  

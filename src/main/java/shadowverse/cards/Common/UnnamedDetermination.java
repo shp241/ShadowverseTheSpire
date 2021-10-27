@@ -3,14 +3,16 @@ package shadowverse.cards.Common;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.unique.ArmamentsAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.tempCards.Miracle;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import shadowverse.action.GetEPAction;
+import shadowverse.cards.Status.EvolutionPoint;
 import shadowverse.characters.Nemesis;
 
 public class UnnamedDetermination extends CustomCard {
@@ -37,7 +39,8 @@ public class UnnamedDetermination extends CustomCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot((AbstractGameAction) new SFXAction("UnnamedDetermination "));
-        addToBot((AbstractGameAction)new ArmamentsAction(true));
+        addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new EvolutionPoint()));
+        addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new Miracle()));
         int count = 0;
         for (AbstractCard c:p.exhaustPile.group){
             if (c.type==CardType.ATTACK)
