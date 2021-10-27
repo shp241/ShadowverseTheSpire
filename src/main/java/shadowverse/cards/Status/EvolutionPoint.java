@@ -46,7 +46,7 @@ public class EvolutionPoint extends CustomCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot((AbstractGameAction)new SelectCardsInHandAction(1,TEXT[0],false,false,card -> {
-            return card.type!=CardType.ATTACK;
+            return card.type!=CardType.SKILL&&card.canUpgrade();
         }, abstractCards ->{
             for (AbstractCard c:abstractCards){
                 c.upgrade();
