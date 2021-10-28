@@ -34,7 +34,7 @@ public class SteelcladKnight extends Minion {
 
     @Override
     public void updateDescription() { // Set the on-hover description of the orb
-        description = DESCRIPTIONS[0] + "3*" + this.attack + "=" + 3 * this.attack + DESCRIPTIONS[1] + "3*" + this.attack + "=" + 3 * this.attack + DESCRIPTIONS[2];
+        description = DESCRIPTIONS[0] + "5*" + this.attack + "=" + 5 * this.attack + DESCRIPTIONS[1];
     }
 
 
@@ -50,12 +50,11 @@ public class SteelcladKnight extends Minion {
 
     @Override
     public void effect() {
-        int damage = this.attack * 3;
+        int damage = this.attack * 5;
         if (AbstractDungeon.player.hasPower("Electro")) {
-            AbstractDungeon.actionManager.addToBottom(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS), true));
+            AbstractDungeon.actionManager.addToTop(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS), true));
         } else {
-            AbstractDungeon.actionManager.addToBottom(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS), false));
+            AbstractDungeon.actionManager.addToTop(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS), false));
         }
-        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, this.attack * 3));
     }
 }

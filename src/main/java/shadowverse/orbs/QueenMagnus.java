@@ -1,14 +1,20 @@
 package shadowverse.orbs;
 
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.tempCards.Miracle;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import com.megacrit.cardcrawl.powers.EnergizedPower;
 import shadowverse.action.MinionAttackAction;
+import shadowverse.action.MinionBuffAction;
+import shadowverse.action.RemoveMinionAction;
 
 public class QueenMagnus extends Minion {
 
@@ -50,14 +56,34 @@ public class QueenMagnus extends Minion {
     }
 
     @Override
+    public void onEvoke() {
+        for (int i = 0; i < defense; i++) {
+            this.effect();
+            AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
+        }
+        this.defense = 0;
+        AbstractDungeon.actionManager.addToBottom(new RemoveMinionAction());
+    }
+
+    @Override
+    public void onEndOfTurn() {
+        if (this.defense > 0) {
+            AbstractCreature p = AbstractDungeon.player;
+            this.effect();
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new EnergizedPower(p, 1), 1));
+            AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(0, -1, this));
+            this.updateDescription();
+        }
+    }
+
+    @Override
     public void effect() {
         int damage = this.attack * 3;
         if (AbstractDungeon.player.hasPower("Electro")) {
-            AbstractDungeon.actionManager.addToBottom(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS), true));
+            AbstractDungeon.actionManager.addToTop(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS), true));
         } else {
-            AbstractDungeon.actionManager.addToBottom(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS), false));
+            AbstractDungeon.actionManager.addToTop(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS), false));
         }
-        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Miracle()));
     }
 }
 

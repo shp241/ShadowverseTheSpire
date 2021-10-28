@@ -1,8 +1,7 @@
-package shadowverse.cards.Common;
+package shadowverse.cards.Uncommon;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -11,10 +10,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import shadowverse.characters.Royal;
-import shadowverse.orbs.FrontguardGeneral;
-import shadowverse.orbs.Knight;
 import shadowverse.orbs.Minion;
-import shadowverse.orbs.ShieldGuardian;
 
 public class FlyingMessengerSquirrel extends CustomCard {
     public static final String ID = "shadowverse:FlyingMessengerSquirrel";
@@ -24,7 +20,7 @@ public class FlyingMessengerSquirrel extends CustomCard {
     public static final String IMG_PATH = "img/cards/FlyingMessengerSquirrel.png";
 
     public FlyingMessengerSquirrel() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
         this.baseMagicNumber = this.magicNumber = 1;
     }
 
@@ -40,9 +36,7 @@ public class FlyingMessengerSquirrel extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for (int i = 0; i < this.magicNumber; i++) {
-            addToBot(new DrawCardAction(p, this.magicNumber));
-        }
+        addToBot(new DrawCardAction(p, 2));
         if (rally() >= 10) {
             addToBot(new DrawCardAction(p, this.magicNumber));
         }

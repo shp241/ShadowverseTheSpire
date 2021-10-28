@@ -8,8 +8,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import shadowverse.cards.Status.EvolutionPoint;
-import shadowverse.orbs.HeavyKnight;
 import shadowverse.orbs.SteelcladKnight;
 
 public class PrudentGeneralPower extends AbstractPower {
@@ -32,7 +30,9 @@ public class PrudentGeneralPower extends AbstractPower {
     public void atEndOfTurn(boolean isPlayer) {
         if (isPlayer && !AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
             this.flash();
-            this.addToBot(new ChannelAction(new SteelcladKnight()));
+            for (int i = 0; i < this.amount; i++) {
+                this.addToBot(new ChannelAction(new SteelcladKnight()));
+            }
         }
 
     }

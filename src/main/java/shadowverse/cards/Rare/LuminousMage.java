@@ -1,4 +1,4 @@
-package shadowverse.cards.Common;
+package shadowverse.cards.Rare;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -19,7 +19,7 @@ public class LuminousMage extends CustomCard {
     public static final String IMG_PATH = "img/cards/LuminousMage.png";
 
     public LuminousMage() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.SELF);
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.cardsToPreview = new EvolutionPoint();

@@ -18,7 +18,7 @@ public class FortressStrategist extends CustomCard {
     public static final String IMG_PATH = "img/cards/FortressStrategist.png";
 
     public FortressStrategist() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
     }
@@ -27,6 +27,7 @@ public class FortressStrategist extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+//            upgradeBaseCost(1);
             this.isInnate = true;
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             this.initializeDescription();

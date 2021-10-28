@@ -1,23 +1,14 @@
-package shadowverse.cards.Common;
+package shadowverse.cards.Uncommon;
 
 import basemod.abstracts.CustomCard;
-import com.badlogic.gdx.Gdx;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
-import com.megacrit.cardcrawl.actions.defect.DecreaseMaxOrbAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import shadowverse.cards.Status.EvolutionPoint;
-import shadowverse.cards.Temp.GildedGoblet;
-import shadowverse.cards.Temp.GildedNecklace;
 import shadowverse.characters.Royal;
 import shadowverse.orbs.Minion;
-
-import java.util.ArrayList;
 
 public class EnragedGeneral extends CustomCard {
     public static final String ID = "shadowverse:EnragedGeneral";
@@ -27,9 +18,10 @@ public class EnragedGeneral extends CustomCard {
     public static final String IMG_PATH = "img/cards/EnragedGeneral.png";
 
     public EnragedGeneral() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.NONE);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.NONE);
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
+        this.exhaust = true;
     }
 
     @Override
@@ -50,7 +42,7 @@ public class EnragedGeneral extends CustomCard {
             }
         }
         this.addToTop(new GainEnergyAction(m));
-        this.addToBot(new DecreaseMaxOrbAction(1));
+//        this.addToBot(new DecreaseMaxOrbAction(1));
     }
 
 

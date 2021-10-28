@@ -17,10 +17,9 @@ public class WindGodsBlessing extends CustomRelic {
     public static final String ID = "shadowverse:WindGodsBlessing";
     public static final String IMG = "img/relics/WindGodsBlessing.png";
     public static final String OUTLINE_IMG = "img/relics/outline/WindGodsBlessing_Outline.png";
-    public boolean lifeCheck;
 
     public WindGodsBlessing() {
-        super("shadowverse:WindGodsBlessing", ImageMaster.loadImage("img/relics/WindGodsBlessing.png"), RelicTier.RARE, LandingSound.SOLID);
+        super("shadowverse:WindGodsBlessing", ImageMaster.loadImage("img/relics/WindGodsBlessing.png"), RelicTier.UNCOMMON, LandingSound.SOLID);
     }
 
     public int rally() {
@@ -56,9 +55,12 @@ public class WindGodsBlessing extends CustomRelic {
         if (rally() != this.counter) {
             this.counter = rally();
         }
-        if (this.counter >= 10) {
+        if (!this.grayscale && this.counter >= 10) {
             flash();
             addToBot(new MinionBuffAction(1, 1, true));
+            flash();
+            this.counter = -1;
+            this.grayscale = true;
         }
     }
 

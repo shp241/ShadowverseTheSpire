@@ -51,9 +51,9 @@ public class Knight extends Minion {
     public void effect() {
         int damage = this.attack * 3;
         if (AbstractDungeon.player.hasPower("Electro")) {
-            AbstractDungeon.actionManager.addToBottom(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS), true));
+            AbstractDungeon.actionManager.addToTop(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS), true));
         } else {
-            AbstractDungeon.actionManager.addToBottom(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS), false));
+            AbstractDungeon.actionManager.addToTop(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS), false));
         }
     }
 }

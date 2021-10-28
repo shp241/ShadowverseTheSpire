@@ -1,10 +1,11 @@
-package shadowverse.cards.Common;
+package shadowverse.cards.Uncommon;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -13,22 +14,24 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import shadowverse.action.SunnyDayEncounterAction;
+import shadowverse.cards.Temp.NaterranGreatTree;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
-import shadowverse.orbs.HeavyKnight;
 import shadowverse.orbs.Minion;
-import shadowverse.orbs.ShieldGuardian;
 
-public class StrikeproneGuardian extends CustomCard {
-    public static final String ID = "shadowverse:StrikeproneGuardian";
+public class SunnyDayEncounter extends CustomCard {
+    public static final String ID = "shadowverse:SunnyDayEncounter";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/StrikeproneGuardian.png";
+    public static final String IMG_PATH = "img/cards/SunnyDayEncounter.png";
 
-    public StrikeproneGuardian() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
-        this.baseBlock = 8;
-        this.baseMagicNumber = this.magicNumber = 4;
+    public SunnyDayEncounter() {
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.NONE);
+        this.magicNumber = this.baseMagicNumber = 1;
+        this.cardsToPreview = new NaterranGreatTree();
+        this.tags.add(AbstractShadowversePlayer.Enums.NATURAL);
     }
 
 
@@ -36,7 +39,7 @@ public class StrikeproneGuardian extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(3);
+            upgradeBaseCost(0);
         }
     }
 
@@ -58,11 +61,10 @@ public class StrikeproneGuardian extends CustomCard {
     }
 
     @Override
-    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (rally() > 7) {
-            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(abstractPlayer, abstractPlayer, this.block + this.magicNumber));
-        } else {
-            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
+    public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SunnyDayEncounterAction());
+        if (rally() >= 7) {
+            this.addToTop(new GainEnergyAction(1));
         }
     }
 
@@ -83,7 +85,7 @@ public class StrikeproneGuardian extends CustomCard {
 
     @Override
     public AbstractCard makeCopy() {
-        return new StrikeproneGuardian();
+        return new SunnyDayEncounter();
     }
 }
 

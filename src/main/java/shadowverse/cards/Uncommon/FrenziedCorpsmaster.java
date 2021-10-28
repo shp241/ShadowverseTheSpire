@@ -23,7 +23,7 @@ import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import com.megacrit.cardcrawl.vfx.combat.SweepingBeamEffect;
 import shadowverse.Shadowverse;
 import shadowverse.action.DrawPileToHandAction_Tag;
-import shadowverse.cards.Temp.MagnaGiant_Acc;
+import shadowverse.cards.Temp.FrenziedCorpsmaster_Acc;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 import shadowverse.orbs.HeavyKnight;
@@ -42,7 +42,7 @@ public class FrenziedCorpsmaster extends CustomCard {
 
     public FrenziedCorpsmaster() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
-        this.baseBlock = 12;
+        this.baseBlock = 8;
         this.baseDamage = 0;
         this.isMultiDamage = true;
     }
@@ -83,7 +83,7 @@ public class FrenziedCorpsmaster extends CustomCard {
 //            addToBot(new SFXAction("FrenziedCorpsmaster"));
             addToBot(new GainBlockAction(p, this.block));
             this.baseDamage = rally() * 2;
-            this.calculateCardDamage((AbstractMonster) null);
+            this.calculateCardDamage(null);
             addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
             addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE, true));
         }
@@ -112,7 +112,6 @@ public class FrenziedCorpsmaster extends CustomCard {
     public void calculateCardDamage(AbstractMonster mo) {
         super.calculateCardDamage(mo);
         this.rawDescription = cardStrings.DESCRIPTION;
-        this.rawDescription = cardStrings.DESCRIPTION;
         this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + this.baseDamage + cardStrings.EXTENDED_DESCRIPTION[1];
         this.initializeDescription();
     }
@@ -120,7 +119,7 @@ public class FrenziedCorpsmaster extends CustomCard {
     @Override
     public void atTurnStart() {
         if (AbstractDungeon.player.hand.group.contains(this)) {
-            if (EnergyPanel.getCurrentEnergy() < 3) {
+            if (EnergyPanel.getCurrentEnergy() < 2) {
                 setCostForTurn(ACCELERATE);
                 this.type = CardType.SKILL;
             } else {
@@ -154,7 +153,7 @@ public class FrenziedCorpsmaster extends CustomCard {
 
     @Override
     public void triggerOnGainEnergy(int e, boolean dueToCard) {
-        if (EnergyPanel.getCurrentEnergy() >= 3 && this.type != CardType.ATTACK) {
+        if (EnergyPanel.getCurrentEnergy() >= 2 && this.type != CardType.ATTACK) {
             resetAttributes();
             this.type = CardType.ATTACK;
             applyPowers();
@@ -177,8 +176,8 @@ public class FrenziedCorpsmaster extends CustomCard {
     public AbstractCard makeSameInstanceOf() {
         AbstractCard card = null;
         if (Shadowverse.Accelerate(this) && this.type == CardType.SKILL) {
-            card = (new MagnaGiant_Acc()).makeStatEquivalentCopy();
-            card.uuid = (new MagnaGiant_Acc()).uuid;
+            card = (new FrenziedCorpsmaster_Acc()).makeStatEquivalentCopy();
+            card.uuid = (new FrenziedCorpsmaster_Acc()).uuid;
         } else {
             card = makeStatEquivalentCopy();
             card.uuid = this.uuid;

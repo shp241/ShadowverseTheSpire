@@ -2487,22 +2487,26 @@
   },
   "shadowverse:MistolinaBayleon": {
     "NAME": "光耀导引·米丝特莉娜与贝里昂",
-    "DESCRIPTION": "造成 !D! 点伤害， NL 获得 !B! 点格挡。 NL 若手牌中有能力牌， NL 选择消耗一张，造成的伤害+ !M! ， NL 若为 *那塔拉的大树 获得 [E] 。"
+    "DESCRIPTION": "自然 。 NL 造成 !D! 点伤害， NL 获得 !B! 点格挡。 NL 若手牌中有能力牌， NL 选择消耗一张， NL 造成的伤害+ !M! ， NL 若为 *那塔拉的大树 获得 [E] 。"
   },
   "shadowverse:TemperedMana": {
     "NAME": "勇气玛纳",
     "DESCRIPTION": "自然 。 NL 增加一张 *那塔拉的大树 到手中。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "自然 。 NL 增加一张 *那塔拉的大树 到手中。"
   },
+  "shadowverse:WhitePaladin": {
+    "NAME": "白银圣骑士",
+    "DESCRIPTION": "召唤等同于敌人个数的 *战盾卫士 。 NL 消耗",
+    "UPGRADE_DESCRIPTION": "固有 。 NL 召唤等同于敌人个数的 *战盾卫士 。 NL 消耗"
+  },
   "shadowverse:EmpressOfSerenity": {
     "NAME": "安宁的女王",
-    "DESCRIPTION": "召唤 !M! 个 *战盾卫士 。 NL 消耗",
-    "UPGRADE_DESCRIPTION": "固有 。 NL 召唤 !M! 个 *战盾卫士 。 NL 消耗"
+    "DESCRIPTION": "造成 !D! 点伤害，召唤1个 *战盾卫士 。 NL 爆能强化 2 \b再额外召唤2个 *战盾卫士 。"
   },
   "shadowverse:ShieldPhalanx": {
     "NAME": "坚盾战阵",
-    "DESCRIPTION": "召唤一个 *战盾卫士  NL 和一个 *骑士 。 NL 协作 15：由 *战盾卫士 改为 *铁卫战将 。 NL 消耗  NL ",
-    "UPGRADE_DESCRIPTION": "召唤一个 *战盾卫士  NL 和一个 *骑士 。 NL 协作 15：由 *战盾卫士 改为 *铁卫战将 。 NL ",
+    "DESCRIPTION": "召唤一个 *战盾卫士 NL 和一个 *骑士 。 NL 协作 15：由 *战盾卫士 改为 *铁卫战将 。 NL 消耗 NL ",
+    "UPGRADE_DESCRIPTION": "召唤一个 *战盾卫士 NL 和一个 *骑士 。 NL 协作 15：由 *战盾卫士 改为 *铁卫战将 。 NL ",
     "EXTENDED_DESCRIPTION": [
       "（协作数：",
       ")"
@@ -2526,7 +2530,7 @@
   },
   "shadowverse:FrenziedCorpsmaster": {
     "NAME": "绝灭之士兵长",
-    "DESCRIPTION": "获得 !B! 点格挡。 NL 对全体敌人造成协作数两倍的伤害。 NL 激奏 2 \b  召唤一个 *铁甲骑士 NL 和一个 *重装骑士 。 NL ",
+    "DESCRIPTION": "获得 !B! 点格挡。 NL 对全体敌人造成协作数两倍的伤害。 NL 激奏 1 \b  召唤一个 *铁甲骑士 NL 和一个 *重装骑士 。 NL ",
     "EXTENDED_DESCRIPTION": [
       "（造成",
       "点伤害)"
@@ -2539,12 +2543,12 @@
   },
   "shadowverse:EvolutionPoint": {
     "NAME": "进化点",
-    "DESCRIPTION": "升级 !M! 张牌。",
-    "UPGRADE_DESCRIPTION": "保留 。NL 升级 !M! 张牌。 "
+    "DESCRIPTION": "虚无 。 NL 升级 !M! 张攻击或能力牌。 NL 消耗",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 升级 !M! 张攻击或能力牌。 NL 消耗"
   },
   "shadowverse:EnragedGeneral": {
     "NAME": "愤怒的将军",
-    "DESCRIPTION": "获得等同于你随从个数的 [E] ，失去一个随从栏位。"
+    "DESCRIPTION": "获得等同于你随从个数的 [E]  NL 消耗"
   },
   "shadowverse:LuminousMage": {
     "NAME": "鲁米那斯法师",
@@ -2559,7 +2563,7 @@
   "shadowverse:DualbladeKnight": {
     "NAME": "双剑骑士",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 [E] 。 NL 协作 7：升级这张牌。 NL ",
-    "UPGRADE_DESCRIPTION": "使用后解除升级。 NL 造成 !D! 点伤害。 NL 获得 [E]  [E] 。",
+    "UPGRADE_DESCRIPTION": "使用后解除升级。 NL 造成 !D! 点伤害。 NL 获得 [E] [E] 。",
     "EXTENDED_DESCRIPTION": [
       "（协作数：",
       ")"
@@ -2588,10 +2592,86 @@
   },
   "shadowverse:FlyingMessengerSquirrel": {
     "NAME": "鼯鼠传令兵",
-    "DESCRIPTION": "抽 !M! 张牌。 NL 协作 7：额外抽1张牌。",
+    "DESCRIPTION": "抽2张牌。 NL 协作 10：额外抽 !M! 张牌。",
     "EXTENDED_DESCRIPTION": [
       "（协作数：",
       ")"
+    ]
+  },
+  "shadowverse:BrothersUnited": {
+    "NAME": "勇武的团结",
+    "DESCRIPTION": "自然 。 NL 造成 !D! 点伤害。 NL 增加一张 *那塔拉的大树 到手中。 NL 协作 7：额外造成 !M! 点伤害。 NL ",
+    "EXTENDED_DESCRIPTION": [
+      "（协作数：",
+      ")"
+    ]
+  },
+  "shadowverse:HonorableThief": {
+    "NAME": "诚实的侠客",
+    "DESCRIPTION": "造成 !D! 点伤害，给予 !M! 层 *虚弱。 NL 增加一张 *黄金之靴 到手中。 NL 协作 7：升级这张牌。 NL ",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，给予 !M! 层 *虚弱。 NL 增加一张 *黄金之靴 到手中。",
+    "EXTENDED_DESCRIPTION": [
+      "（协作数：",
+      ")"
+    ]
+  },
+  "shadowverse:FloralFencer": {
+    "NAME": "华丽的花园剑士",
+    "DESCRIPTION": "造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION": "使用后解除升级。 NL 造成 !D! 点伤害。 NL 召唤一个 *骑士 NL 和一个 *铁甲骑士 。"
+  },
+  "shadowverse:SunnyDayEncounter": {
+    "NAME": "向阳的邂逅",
+    "DESCRIPTION": "自然 。 NL 抽 !M! 张攻击牌。 NL 如果手牌中有 自然 牌则 NL 增加一张 *那塔拉的大树 到手中。 NL 协作 7：获得 [E] 。 NL ",
+    "EXTENDED_DESCRIPTION": [
+      "（协作数：",
+      ")"
+    ]
+  },
+  "shadowverse:WarriorWing": {
+    "NAME": "白翼战神·埃特尔",
+    "DESCRIPTION": "选择抽牌堆中的1张攻击牌或能力牌，将其置入手牌。",
+    "UPGRADE_DESCRIPTION": "使用后解除升级。 NL 选择抽牌堆中的1张攻击牌或能力牌，将其置入手牌。 NL 使所有随从获得+0/+1。"
+  },
+  "shadowverse:Alyaska": {
+    "NAME": "战争商人·阿尔亚斯卡",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 打出其他非打击攻击牌后升级。",
+    "UPGRADE_DESCRIPTION": "使用后解除升级。 造成 !D! 点伤害。 NL 将一张 *究极兵器 置入手牌。"
+  },
+  "shadowverse:ExterminusWeapon": {
+    "NAME": "究极兵器",
+    "DESCRIPTION": "可升级任意次。 NL 对所有敌人造成 !D! 点伤害。 NL 消耗"
+  },
+  "shadowverse:RadicalGunslinger": {
+    "NAME": "激进的神枪手",
+    "DESCRIPTION": "给予 !M! 层易伤，造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION": "使用后解除升级。 NL 给予 !M! 层易伤，造成 !D! 点伤害。 NL 增加一张 *顺从的骏马 到手中。"
+  },
+  "shadowverse:Mirin": {
+    "NAME": "武士梦想家·米琳",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 奥义 3：额外造成一次伤害。 NL 解放奥义 6：再额外造成一次伤害。",
+    "EXTENDED_DESCRIPTION": [
+      "造成 !D! 点伤害。 NL 奥义",
+      "：额外造成一次伤害。 NL 解放奥义",
+      "：再额外造成一次伤害。"
+    ]
+  },
+  "shadowverse:Seofon": {
+    "NAME": "天星剑王·席耶提",
+    "DESCRIPTION": "造成 !D! 点伤害，抽1张牌。 NL 奥义 3：升级所有卡牌。 NL 解放奥义 6：获得1层缓冲。",
+    "EXTENDED_DESCRIPTION": [
+      "造成 !D! 点伤害，抽1张牌。 NL 奥义",
+      "：升级所有卡牌。 NL 解放奥义",
+      "：获得1层缓冲。"
+    ]
+  },
+  "shadowverse:Eahta": {
+    "NAME": "刀神·奥克托",
+    "DESCRIPTION": "造成 !D! 点伤害两次。 NL 奥义 3：使所有皇家护卫攻击牌本回合中消耗-2。 NL 解放奥义 6：改为使所有皇家护卫攻击牌本场战斗消耗-2。",
+    "EXTENDED_DESCRIPTION": [
+      "造成 !D! 点伤害两次。 NL 奥义",
+      "：使所有皇家护卫攻击牌本回合中消耗-2。 NL 解放奥义",
+      "：改为使所有皇家护卫攻击牌本场战斗消耗-2。"
     ]
   }
 }

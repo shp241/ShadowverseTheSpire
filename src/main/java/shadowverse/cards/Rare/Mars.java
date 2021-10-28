@@ -19,7 +19,7 @@ public class Mars extends CustomCard {
     public static final String IMG_PATH = "img/cards/Mars.png";
 
     public Mars() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.SELF);
         this.magicNumber = this.baseMagicNumber = 1;
     }
 

@@ -105,7 +105,7 @@ public class Royal extends AbstractShadowversePlayer {
 
     @Override
     public AbstractCard getStartCardForEvent() {
-        return (AbstractCard) new RazoryClaw();
+        return (AbstractCard) new SageCommander();
     }
 
     @Override

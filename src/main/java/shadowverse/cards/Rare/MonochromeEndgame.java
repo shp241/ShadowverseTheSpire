@@ -37,7 +37,7 @@ public class MonochromeEndgame extends CustomCard {
     public static final String IMG_PATH = "img/cards/MonochromeEndgame.png";
 
     public MonochromeEndgame() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.NONE);
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.NONE);
         this.exhaust = true;
     }
 

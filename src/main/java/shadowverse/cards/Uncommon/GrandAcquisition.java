@@ -1,10 +1,9 @@
-package shadowverse.cards.Common;
+package shadowverse.cards.Uncommon;
 
 import basemod.abstracts.CustomCard;
 import com.badlogic.gdx.Gdx;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
-import com.megacrit.cardcrawl.actions.watcher.ChooseOneAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -15,7 +14,6 @@ import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.action.ChoiceAction2;
 import shadowverse.cards.Temp.*;
-import shadowverse.cards.Uncommon.ProphecyOfBoons;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 
@@ -42,7 +40,7 @@ public class GrandAcquisition extends CustomCard {
     }
 
     public GrandAcquisition() {
-        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.NONE);
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.NONE);
         this.exhaust = true;
         this.tags.add(AbstractShadowversePlayer.Enums.ENHANCE);
     }

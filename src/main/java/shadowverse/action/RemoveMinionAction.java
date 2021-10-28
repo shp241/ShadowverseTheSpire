@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.orbs.EmptyOrbSlot;
 import shadowverse.orbs.Minion;
 
+import java.util.ArrayList;
 import java.util.Collections;
 
 public class RemoveMinionAction extends AbstractGameAction {
@@ -21,20 +22,24 @@ public class RemoveMinionAction extends AbstractGameAction {
         AbstractPlayer p = AbstractDungeon.player;
         if (!p.orbs.isEmpty()) {
             for (int n = 0; n < p.orbs.size(); n++) {
-                if ((p.orbs.get(n) instanceof Minion)) {
-                }
                 if ((p.orbs.get(n) instanceof Minion) && ((Minion) p.orbs.get(n)).defense <= 0) {
-//                    ((Minion) p.orbs.get(n)).onRemove();
-                    AbstractOrb orbSlot = new EmptyOrbSlot((p.orbs.get(0)).cX, p.orbs.get(0).cY);
-                    int i;
-                    for (i = 1; i < p.orbs.size(); ++i) {
-                        Collections.swap(p.orbs, i, i - 1);
-                    }
-                    p.orbs.set(p.orbs.size() - 1, orbSlot);
-                    for (i = 0; i < p.orbs.size(); ++i) {
-                        p.orbs.get(i).setSlot(i, p.maxOrbs);
+                    ((Minion) p.orbs.get(n)).onRemove();
+                    AbstractOrb orbSlot = new EmptyOrbSlot((p.orbs.get(n)).cX, p.orbs.get(n).cY);
+                    p.orbs.set(n, orbSlot);
+                }
+            }
+            for (int n = 0; n < p.orbs.size(); n++) {
+                if (p.orbs.get(n) instanceof EmptyOrbSlot) {
+                    for (int i = n; i < p.orbs.size(); i++) {
+                        if (!(p.orbs.get(i) instanceof EmptyOrbSlot)) {
+                            Collections.swap(p.orbs, i, n);
+                            break;
+                        }
                     }
                 }
+            }
+            for (int n = 0; n < p.orbs.size(); n++) {
+                p.orbs.get(n).setSlot(n, p.maxOrbs);
             }
         }
         this.isDone = true;

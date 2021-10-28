@@ -2,9 +2,10 @@ package shadowverse.cards.Common;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -13,22 +14,24 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import com.megacrit.cardcrawl.powers.WeakPower;
+import shadowverse.cards.Temp.GildedBoots;
+import shadowverse.cards.Temp.NaterranGreatTree;
 import shadowverse.characters.Royal;
-import shadowverse.orbs.HeavyKnight;
 import shadowverse.orbs.Minion;
-import shadowverse.orbs.ShieldGuardian;
 
-public class DualbladeKnight extends CustomCard {
-    public static final String ID = "shadowverse:DualbladeKnight";
+public class HonorableThief extends CustomCard {
+    public static final String ID = "shadowverse:HonorableThief";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/DualbladeKnight.png";
+    public static final String IMG_PATH = "img/cards/HonorableThief.png";
 
-    public DualbladeKnight() {
+    public HonorableThief() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
-        this.baseDamage = 8;
-        this.baseMagicNumber = this.magicNumber = 1;
+        this.baseDamage = 7;
+        this.magicNumber = this.baseMagicNumber = 1;
+        this.cardsToPreview = new GildedBoots();
     }
 
 
@@ -36,34 +39,8 @@ public class DualbladeKnight extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeMagicNumber(1);
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            initializeDescription();
+            this.upgradeDamage(3);
         }
-    }
-
-    public void degrade() {
-        if (this.upgraded) {
-            degradeName();
-            degradeMagicNumber(1);
-            this.rawDescription = cardStrings.DESCRIPTION;
-            initializeDescription();
-            this.superFlash();
-            this.applyPowers();
-        }
-    }
-
-    protected void degradeMagicNumber(int amount) {
-        this.baseMagicNumber -= amount;
-        this.magicNumber = this.baseMagicNumber;
-        this.upgradedMagicNumber = false;
-    }
-
-    public void degradeName() {
-        --this.timesUpgraded;
-        this.upgraded = false;
-        this.name = NAME;
-        this.initializeTitle();
     }
 
     public int rally() {
@@ -84,10 +61,11 @@ public class DualbladeKnight extends CustomCard {
     }
 
     @Override
-    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        this.addToTop(new GainEnergyAction(this.magicNumber));
-        addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        this.degrade();
+    public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new ApplyPowerAction(m, p, new WeakPower(m, this.magicNumber, false), this.magicNumber));
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
+        addToBot(new MakeTempCardInHandAction(c, 1));
     }
 
 
@@ -131,7 +109,7 @@ public class DualbladeKnight extends CustomCard {
 
     @Override
     public AbstractCard makeCopy() {
-        return new DualbladeKnight();
+        return new HonorableThief();
     }
 }
 

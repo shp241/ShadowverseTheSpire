@@ -52,12 +52,12 @@ public class HeavyKnight extends Minion {
     public void effect() {
         if (AbstractDungeon.player.hasPower("Electro")) {
             for (AbstractCreature m : AbstractDungeon.getMonsters().monsters) {
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, AbstractDungeon.player, new WeakPower(m, this.attack, false), this.attack));
+                AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(m, AbstractDungeon.player, new WeakPower(m, this.attack, false), this.attack));
             }
         } else {
             AbstractCreature m = AbstractDungeon.getRandomMonster();
             if (m != null) {
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, AbstractDungeon.player, new WeakPower(m, this.attack, false), this.attack));
+                AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(m, AbstractDungeon.player, new WeakPower(m, this.attack, false), this.attack));
             }
         }
     }

@@ -245,6 +245,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
     @Override
     public void applyEndOfTurnTriggers() {
         super.applyEndOfTurnTriggers();
+        AbstractDungeon.actionManager.addToBottom(new RemoveMinionAction());
     }
 
 

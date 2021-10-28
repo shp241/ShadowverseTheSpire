@@ -35,7 +35,7 @@ public class CannonHermitCrabOrb extends Minion {
         this.updateDescription();
     }
 
-    public CannonHermitCrabOrb(int attack,int defense) {
+    public CannonHermitCrabOrb(int attack, int defense) {
         this.ID = ORB_ID;
         this.img = ImageMaster.loadImage("img/orbs/CannonHermitCrabOrb.png");
         this.name = orbString.NAME;
@@ -46,7 +46,7 @@ public class CannonHermitCrabOrb extends Minion {
 
     @Override
     public void updateDescription() { // Set the on-hover description of the orb
-        description = DESCRIPTIONS[0] +  this.attack + DESCRIPTIONS[1] + this.defense + DESCRIPTIONS[2];
+        description = DESCRIPTIONS[0] + this.attack + DESCRIPTIONS[1] + this.defense + DESCRIPTIONS[2];
     }
 
 
@@ -63,16 +63,16 @@ public class CannonHermitCrabOrb extends Minion {
     @Override
     public void onEndOfTurn() {
         super.onEndOfTurn();
-        if (AbstractDungeon.player.stance.ID.equals(Resonance.STANCE_ID)||AbstractDungeon.player.hasPower(NaterranTree.POWER_ID)){
-            int atk = this.attack%2==0?this.attack/2:this.attack/2+1;
-            int def = this.defense%2==0?this.defense/2:this.defense/2+1;
-            AbstractDungeon.actionManager.addToBottom(new ChannelAction(new CannonHermitCrabOrb(atk,def)));
+        if (AbstractDungeon.player.stance.ID.equals(Resonance.STANCE_ID) || AbstractDungeon.player.hasPower(NaterranTree.POWER_ID)) {
+            int atk = this.attack % 2 == 0 ? this.attack / 2 : this.attack / 2 + 1;
+            int def = this.defense % 2 == 0 ? this.defense / 2 : this.defense / 2 + 1;
+            AbstractDungeon.actionManager.addToBottom(new ChannelAction(new CannonHermitCrabOrb(atk, def)));
         }
     }
 
     @Override
     public void effect() {
-        AbstractDungeon.actionManager.addToTop(new GainBlockAction(AbstractDungeon.player,this.defense));
+        AbstractDungeon.actionManager.addToTop(new GainBlockAction(AbstractDungeon.player, this.defense));
         int damage = this.attack;
         if (AbstractDungeon.player.hasPower("Electro")) {
             AbstractDungeon.actionManager.addToTop(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS), true));
