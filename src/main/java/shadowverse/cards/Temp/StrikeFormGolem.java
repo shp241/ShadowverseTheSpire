@@ -55,7 +55,7 @@ import shadowverse.characters.Nemesis;
    public void applyPowers() {
      if (Shadowverse.Enhance(2))
        setCostForTurn(2);
-     else
+     else if (this.costForTurn>0)
        resetAttributes();
      super.applyPowers();
    }

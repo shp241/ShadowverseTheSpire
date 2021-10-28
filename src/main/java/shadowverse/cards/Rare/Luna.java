@@ -6,12 +6,13 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.tempCards.Miracle;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import shadowverse.action.GetEPAction;
 import shadowverse.action.NecromanceAction;
+import shadowverse.cards.Status.EvolutionPoint;
 import shadowverse.cards.Temp.LunaDoll;
 import shadowverse.cards.Temp.NecroTemptation;
 import shadowverse.characters.Necromancer;
@@ -78,7 +79,10 @@ public class Luna
         addToBot((AbstractGameAction) new SFXAction("Luna"));
         addToBot((AbstractGameAction) new MakeTempCardInHandAction(doll));
         addToBot((AbstractGameAction) new MakeTempCardInHandAction(temptation));
-        addToBot((AbstractGameAction)new NecromanceAction(6,null,(AbstractGameAction)new GetEPAction(true,1)));
+        addToBot((AbstractGameAction)new NecromanceAction(6,null,new AbstractGameAction[]{
+                (AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new EvolutionPoint()),
+                (AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new Miracle())
+        }));
     }
 
 

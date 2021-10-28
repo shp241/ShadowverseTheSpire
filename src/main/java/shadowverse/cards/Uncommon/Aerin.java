@@ -4,9 +4,11 @@
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.HealAction;
-import com.megacrit.cardcrawl.actions.utility.SFXAction;
+ import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+ import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
+ import com.megacrit.cardcrawl.cards.tempCards.Miracle;
+ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -14,8 +16,8 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
-import shadowverse.action.GetEPAction;
-import shadowverse.characters.AbstractShadowversePlayer;
+ import shadowverse.cards.Status.EvolutionPoint;
+ import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Elf;
 
  public class Aerin
@@ -102,7 +104,8 @@ import shadowverse.characters.Elf;
        addToBot((AbstractGameAction)new HealAction(abstractPlayer,abstractPlayer,3));
      addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, this.block));
      if (this.costForTurn == 3 && Shadowverse.Enhance(3)) {
-       addToBot((AbstractGameAction)new GetEPAction(true,1));
+         addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new EvolutionPoint()));
+         addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new Miracle()));
      }
    }
  

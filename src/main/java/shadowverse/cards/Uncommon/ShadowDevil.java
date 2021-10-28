@@ -4,13 +4,15 @@
  import basemod.abstracts.CustomCard;
  import com.megacrit.cardcrawl.actions.AbstractGameAction;
  import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+ import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
  import com.megacrit.cardcrawl.actions.utility.SFXAction;
  import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
+ import com.megacrit.cardcrawl.cards.tempCards.Miracle;
+ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
- import shadowverse.action.GetEPAction;
+ import shadowverse.cards.Status.EvolutionPoint;
  import shadowverse.characters.Vampire;
  import shadowverse.powers.EpitaphPower;
  import shadowverse.stance.Vengeance;
@@ -43,7 +45,8 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
        addToBot((AbstractGameAction)new SFXAction("ShadowDevil"));
        addToBot((AbstractGameAction)new GainBlockAction(p,this.block));
        if (p.hasPower(EpitaphPower.POWER_ID)||p.stance.ID.equals(Vengeance.STANCE_ID)){
-           addToBot((AbstractGameAction)new GetEPAction(true,2));
+           addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new EvolutionPoint(),2));
+           addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new Miracle(),2));
        }
    }
  

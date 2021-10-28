@@ -60,6 +60,9 @@ public class Tolerance extends CustomCard {
         this.modifyCostForCombat(-this.costToReduce);
     }
 
+    public void onMoveToDiscard() {
+        this.costToReduce = 0;
+    }
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot((AbstractGameAction) new SFXAction("Tolerance"));

@@ -831,18 +831,6 @@
       " 点伤害。如果为 #b10 以上，再造成一次伤害。"
     ]
   },
-  "shadowverse:NexusPower": {
-    "NAME": "肃清模式",
-    "DESCRIPTIONS": [
-      "如果战斗中存在已肃清的敌人，你在本场战斗造成的伤害提升对应的数值。 NL "
-    ]
-  },
-  "shadowverse:NervaPower": {
-    "NAME": "安宁模式",
-    "DESCRIPTIONS": [
-      "你在本场战斗中受到来自以下敌人的伤害减少对应值。 NL "
-    ]
-  },
   "shadowverse:WhiteArtifactPower": {
     "NAME": "圣白破坏的创造物",
     "DESCRIPTIONS": [

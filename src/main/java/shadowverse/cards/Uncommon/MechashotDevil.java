@@ -4,16 +4,18 @@
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.utility.SFXAction;
+ import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+ import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
+ import com.megacrit.cardcrawl.cards.tempCards.Miracle;
+ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
- import shadowverse.action.GetEPAction;
+ import shadowverse.cards.Status.EvolutionPoint;
  import shadowverse.cards.Temp.ProductMachine;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Vampire;
@@ -64,7 +66,8 @@ import shadowverse.powers.NextTurnProduct;
          }
      }
      if (mThisCombat>=10){
-         addToBot((AbstractGameAction)new GetEPAction(true,1));
+         addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new EvolutionPoint()));
+         addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new Miracle()));
      }
    }
  
