@@ -89,13 +89,13 @@ public class Eahta extends CustomCard {
     @Override
     public void applyPowers() {
         super.applyPowers();
-        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + (this.magicNumber - 3) + cardStrings.EXTENDED_DESCRIPTION[1] + this.magicNumber + cardStrings.EXTENDED_DESCRIPTION[2];
+        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + (this.magicNumber - 4) + cardStrings.EXTENDED_DESCRIPTION[1] + this.magicNumber + cardStrings.EXTENDED_DESCRIPTION[2];
         this.initializeDescription();
     }
 
     @Override
     public void onMoveToDiscard() {
-        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + (this.magicNumber - 3) + cardStrings.EXTENDED_DESCRIPTION[1] + this.magicNumber + cardStrings.EXTENDED_DESCRIPTION[2];
+        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + (this.magicNumber - 4) + cardStrings.EXTENDED_DESCRIPTION[1] + this.magicNumber + cardStrings.EXTENDED_DESCRIPTION[2];
         this.initializeDescription();
     }
 

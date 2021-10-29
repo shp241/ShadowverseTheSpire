@@ -2653,7 +2653,7 @@
   },
   "shadowverse:ExterminusWeapon": {
     "NAME": "究极兵器",
-    "DESCRIPTION": "可升级任意次。 NL 对所有敌人造成 !D! 点伤害。 NL 消耗"
+    "DESCRIPTION": "可升级任意次。 NL 保留 NL 对所有敌人造成 !D! 点伤害。 NL 保留时升级。 NL 消耗"
   },
   "shadowverse:RadicalGunslinger": {
     "NAME": "激进的神枪手",
@@ -2680,10 +2680,10 @@
   },
   "shadowverse:Eahta": {
     "NAME": "刀神·奥克托",
-    "DESCRIPTION": "造成 !D! 点伤害两次。 NL 奥义 4：使所有皇家护卫攻击牌本回合中消耗-2。 NL 解放奥义 8：改为使所有皇家护卫攻击牌本回合中消耗-2。",
+    "DESCRIPTION": "造成 !D! 点伤害两次。 NL 奥义 4：使手牌中所有皇家护卫攻击牌本回合中消耗-2。 NL 解放奥义 8：改为使所有皇家护卫攻击牌本回合中消耗-2。",
     "EXTENDED_DESCRIPTION": [
       "造成 !D! 点伤害两次。 NL 奥义",
-      "：使所有皇家护卫攻击牌本回合中消耗-2。 NL 解放奥义",
+      "：使手牌中所有皇家护卫攻击牌本回合中消耗-2。 NL 解放奥义",
       "：改为使所有皇家护卫攻击牌本回合中消耗-2。"
     ]
   }

@@ -26,7 +26,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import shadowverse.cards.Basic.*;
 import shadowverse.cards.Common.*;
-import shadowverse.cards.Rare.LuminousMage;
+import shadowverse.cards.Uncommon.LuminousMage;
 import shadowverse.cards.Curse.CurseOfPurgation;
 import shadowverse.cards.Curse.Geass;
 import shadowverse.cards.Neutral.*;

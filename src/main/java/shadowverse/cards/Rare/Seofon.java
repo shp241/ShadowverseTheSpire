@@ -78,13 +78,13 @@ public class Seofon extends CustomCard {
         if (this.upgraded && this.magicNumber <= 0) {
             this.exhaust = true;
         }
-        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + (this.magicNumber - 3) + cardStrings.EXTENDED_DESCRIPTION[1] + this.magicNumber + cardStrings.EXTENDED_DESCRIPTION[2];
+        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + (this.magicNumber - 4) + cardStrings.EXTENDED_DESCRIPTION[1] + this.magicNumber + cardStrings.EXTENDED_DESCRIPTION[2];
         this.initializeDescription();
     }
 
     @Override
     public void onMoveToDiscard() {
-        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + (this.magicNumber - 3) + cardStrings.EXTENDED_DESCRIPTION[1] + this.magicNumber + cardStrings.EXTENDED_DESCRIPTION[2];
+        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + (this.magicNumber - 4) + cardStrings.EXTENDED_DESCRIPTION[1] + this.magicNumber + cardStrings.EXTENDED_DESCRIPTION[2];
         this.initializeDescription();
     }
 

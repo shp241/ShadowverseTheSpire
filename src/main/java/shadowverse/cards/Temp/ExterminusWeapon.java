@@ -29,10 +29,11 @@ public class ExterminusWeapon extends CustomCard {
     }
 
     public ExterminusWeapon(int upgrades) {
-        super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
+        super(ID, NAME, IMG_PATH, 5, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
         this.baseDamage = 50;
         this.isMultiDamage = true;
         this.timesUpgraded = upgrades;
+        this.selfRetain = true;
         this.exhaust = true;
     }
 
@@ -57,6 +58,13 @@ public class ExterminusWeapon extends CustomCard {
         addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
     }
 
+
+    @Override
+    public void onRetained() {
+        super.onRetained();
+        this.upgrade();
+        this.superFlash();
+    }
 
     @Override
     public AbstractCard makeCopy() {
