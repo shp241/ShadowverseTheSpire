@@ -3,10 +3,12 @@ package shadowverse.cards.Common;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -27,8 +29,8 @@ public class EmpressOfSerenity  extends CustomCard {
     private boolean doubleCheck = false;
 
     public EmpressOfSerenity() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
-        this.baseDamage = 6;
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF);
+        this.baseBlock = 7;
         this.tags.add(AbstractShadowversePlayer.Enums.ENHANCE);
     }
 
@@ -99,7 +101,7 @@ public class EmpressOfSerenity  extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
         AbstractDungeon.actionManager.addToBottom(new ChannelAction(new ShieldGuardian()));
         if (Shadowverse.Enhance(ENHANCE) && this.costForTurn == ENHANCE) {
             AbstractDungeon.actionManager.addToBottom(new ChannelAction(new ShieldGuardian()));

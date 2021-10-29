@@ -1246,6 +1246,13 @@ import java.util.HashMap;
               BaseMod.addCard((AbstractCard)new Mirin());
               BaseMod.addCard((AbstractCard)new Seofon());
               BaseMod.addCard((AbstractCard)new Eahta());
+              BaseMod.addCard((AbstractCard)new StrokeOfConviction());
+              BaseMod.addCard((AbstractCard)new ErikasSleight());
+              BaseMod.addCard((AbstractCard)new MistolinasSwordplay());
+              BaseMod.addCard((AbstractCard)new BayleonsCommand());
+              BaseMod.addCard((AbstractCard)new FrontlineInstructor());
+              BaseMod.addCard((AbstractCard)new RoyalBanner());
+              BaseMod.addCard((AbstractCard)new LuxbladeArriet());
 
 /* 276 */     logger.info("Success");
 /*     */   }

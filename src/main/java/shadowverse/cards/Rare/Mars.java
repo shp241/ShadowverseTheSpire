@@ -19,18 +19,20 @@ public class Mars extends CustomCard {
     public static final String IMG_PATH = "img/cards/Mars.png";
 
     public Mars() {
-        super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.SELF);
         this.magicNumber = this.baseMagicNumber = 1;
+        this.isEthereal = true;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-//            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-//            initializeDescription();
-//            this.isInnate = true;
-            this.upgradeBaseCost(2);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            initializeDescription();
+            this.isInnate = true;
+            this.isEthereal = false;
+//            this.upgradeBaseCost(2);
         }
     }
 

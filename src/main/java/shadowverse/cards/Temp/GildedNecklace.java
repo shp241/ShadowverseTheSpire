@@ -22,6 +22,7 @@ public class GildedNecklace extends CustomCard {
     public GildedNecklace() {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.NONE);
         this.exhaust = true;
+        this.magicNumber = this.baseMagicNumber = 1;
     }
 
 
@@ -29,18 +30,13 @@ public class GildedNecklace extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            initializeDescription();
+            this.upgradeMagicNumber(1);
         }
     }
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (!this.upgraded) {
-            addToBot(new MinionBuffAction(1, 1));
-        } else {
-            addToBot(new MinionBuffAction(1, 2));
-        }
+        addToBot(new MinionBuffAction(1, this.magicNumber));
     }
 
 

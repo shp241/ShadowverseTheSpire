@@ -1,9 +1,10 @@
-package shadowverse.cards.Common;
+package shadowverse.cards.Uncommon;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -12,20 +13,20 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import shadowverse.action.MinionBuffAction;
 import shadowverse.characters.Royal;
 import shadowverse.orbs.Minion;
 
-public class FlyingMessengerSquirrel extends CustomCard {
-    public static final String ID = "shadowverse:FlyingMessengerSquirrel";
+public class FrontlineInstructor extends CustomCard {
+    public static final String ID = "shadowverse:FrontlineInstructor";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/FlyingMessengerSquirrel.png";
+    public static final String IMG_PATH = "img/cards/FrontlineInstructor.png";
 
-    public FlyingMessengerSquirrel() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
-        this.baseMagicNumber = this.magicNumber = 1;
-        this.baseDamage = 8;
+    public FrontlineInstructor() {
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        this.baseBlock = 8;
     }
 
 
@@ -33,17 +34,18 @@ public class FlyingMessengerSquirrel extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(3);
+            upgradeBlock(3);
         }
     }
 
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        addToBot(new DrawCardAction(p, this.magicNumber));
+        addToBot(new GainBlockAction(p, p, this.block));
         if (rally() >= 10) {
-            addToBot(new DrawCardAction(p, this.magicNumber));
+            addToBot(new MinionBuffAction(1, 1, true));
+        } else {
+            addToBot(new MinionBuffAction(1, 1));
         }
     }
 
@@ -67,21 +69,15 @@ public class FlyingMessengerSquirrel extends CustomCard {
     @Override
     public void applyPowers() {
         super.applyPowers();
-        this.rawDescription = cardStrings.DESCRIPTION;
-        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + rally() + cardStrings.EXTENDED_DESCRIPTION[1];
-        this.initializeDescription();
-    }
-
-    @Override
-    public void onMoveToDiscard() {
-        this.rawDescription = cardStrings.DESCRIPTION;
-        this.initializeDescription();
+        if (rally() >= 10) {
+            this.exhaust = true;
+        }
     }
 
 
     @Override
     public AbstractCard makeCopy() {
-        return new FlyingMessengerSquirrel();
+        return new FrontlineInstructor();
     }
 }
 

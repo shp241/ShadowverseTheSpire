@@ -962,5 +962,11 @@
       "回合结束时，召唤 #b",
       "个 #y铁甲骑士。"
     ]
+  },
+  "shadowverse:RoyalBannerPower": {
+    "NAME": "皇家御用战旗",
+    "DESCRIPTIONS": [
+      "每当召唤 #y随从 时，使其获得+1/+0。回合开始时这个能力减少 #b1 层。"
+    ]
   }
 }

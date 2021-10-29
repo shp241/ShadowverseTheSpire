@@ -230,7 +230,7 @@
   },
   "shadowverse:ChainLightning": {
     "NAME": "连锁雷击",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果自己的其他手牌张数为3以下时， NL 则会增加1张没有升级的这张牌的复制品到手中。 NL 消耗"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果自己的其他手牌张数为3以下时， NL 则会增加1张没有升级的这张牌的复制品到手中。 NL 消耗 。"
   },
   "shadowverse:Runie": {
     "NAME": "决意预言者·露妮",
@@ -695,7 +695,7 @@
   },
   "shadowverse:RapidFire": {
     "NAME": "迅枪连击",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果本场战斗已使用的 *迅枪连击 为3张以上(不包含本牌)，则对全体敌人造成 !D! 点伤害。 NL 消耗。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果本场战斗已使用的 *迅枪连击 为3张以上(不包含本牌)，则对全体敌人造成 !D! 点伤害。 NL 消耗 。"
   },
   "shadowverse:Maiser": {
     "NAME": "疾速英雄·麦哲",
@@ -2412,7 +2412,7 @@
   "shadowverse:ServantOfDarkness": {
     "NAME": "暗狱使者·贾斯珀",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张 *防御型巨像 到手中。",
-    "UPGRADE_DESCRIPTION":"获得 !B! 点 格挡 。 NL 增加1张耗能为0的 *防御型巨像 到手中。 NL 增加1张耗能为0的 *攻击型巨像 到手中。"
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张耗能为0的 *防御型巨像 到手中。 NL 增加1张耗能为0的 *攻击型巨像 到手中。"
   },
   "shadowverse:Strike_R": {
     "NAME": "打击",
@@ -2424,29 +2424,27 @@
   },
   "shadowverse:OathlessKnight": {
     "NAME": "背水一战的骑士",
-    "DESCRIPTION": "造成 !D! 点伤害， NL 召唤一个 *骑士 。"
+    "DESCRIPTION": "造成 !D! 点伤害， NL 召唤一个 骑士 。"
   },
   "shadowverse:GildedBoots": {
     "NAME": "黄金之靴",
-    "DESCRIPTION": "号令最右侧随从。 NL 消耗",
-    "UPGRADE_DESCRIPTION": "号令最右侧随从两次。 NL 消耗"
+    "DESCRIPTION": "号令最右侧随从 !M! 次。 NL 消耗 。"
   },
   "shadowverse:GildedNecklace": {
     "NAME": "黄金首饰",
-    "DESCRIPTION": "使最右侧随从获得 NL +1/+1。 NL 消耗",
-    "UPGRADE_DESCRIPTION": "使最右侧随从获得 NL +1/+2。 NL 消耗"
+    "DESCRIPTION": "使最右侧随从获得 NL +1/+ !M! 。 NL 消耗 。"
   },
   "shadowverse:GildedBlade": {
     "NAME": "黄金短剑",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 消耗"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 消耗 。"
   },
   "shadowverse:GildedGoblet": {
     "NAME": "黄金之杯",
-    "DESCRIPTION": "获得 !B! 点格挡。 NL 消耗"
+    "DESCRIPTION": "获得 !B! 点格挡。 NL 消耗 。"
   },
   "shadowverse:GrandAcquisition": {
     "NAME": "绚烂的劫夺",
-    "DESCRIPTION": "抉择 NL 从 *黄金短剑 、 *黄金之杯 、 *黄金之靴 、 *黄金首饰 中选择1张加入手中。 NL 爆能强化 3 \b改为全部加入手牌， NL 获得 [E] [E] 。 NL 消耗",
+    "DESCRIPTION": "抉择 NL 从 *黄金短剑 、 *黄金之杯 、 *黄金之靴 、 *黄金首饰 中选择1张加入手中。 NL 爆能强化 3 \b改为全部加入手牌， NL 获得 [E] [E] 。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "抉择 NL 从 *黄金短剑 、 *黄金之杯 、 *黄金之靴 、 *黄金首饰 中选择1张加入手中。 NL 爆能强化 3 \b改为全部加入手牌， NL 获得 [E] [E] 。"
   },
   "shadowverse:SageCommander": {
@@ -2477,22 +2475,22 @@
   },
   "shadowverse:Octrice": {
     "NAME": "强夺灾杰·奥克托丽丝",
-    "DESCRIPTION": "使敌人失去2点 力量，获得2点 力量。获得 !M! 金币。 NL 消耗",
-    "UPGRADE_DESCRIPTION": "使敌人失去2点 力量，获得2点 力量。获得 !M! 金币。 NL 随机将2张财宝牌加入手牌。 NL 消耗"
+    "DESCRIPTION": "使敌人失去2点 力量，获得2点 力量。获得 !M! 金币。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "使敌人失去2点 力量，获得2点 力量。获得 !M! 金币。 NL 随机将2张财宝牌加入手牌。 NL 消耗 。"
   },
   "shadowverse:Mars": {
     "NAME": "沉默的炎将·玛尔斯",
-    "DESCRIPTION": "每召唤一个随从，使其获得+ !M! /+ !M! 。",
+    "DESCRIPTION": "每召唤一个随从，使其获得+ !M! /+ !M! 。 NL 虚无",
     "UPGRADE_DESCRIPTION": "每召唤一个随从，使其获得+ !M! /+ !M! 。 NL 固有"
   },
   "shadowverse:Sera": {
     "NAME": "曙光少女·赛拉",
-    "DESCRIPTION": "获得 !B! 点格挡。获得1层人工制品。 NL 消耗",
-    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡。获得1层人工制品。 NL 召唤 !M! 个 *战盾卫士 ，回复 !M! 点生命。 NL 消耗"
+    "DESCRIPTION": "获得 !B! 点格挡。获得1层人工制品。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡。获得1层人工制品。 NL 召唤3个 战盾卫士 ，回复 !M! 点生命。 NL 消耗 。"
   },
   "shadowverse:MistolinaBayleon": {
     "NAME": "光耀导引·米丝特莉娜与贝里昂",
-    "DESCRIPTION": "自然 。 NL 造成 !D! 点伤害， NL 获得 !B! 点格挡。 NL 若手牌中有能力牌， NL 选择消耗一张， NL 造成的伤害+ !M! ， NL 若为 *那塔拉的大树 获得 [E] 。"
+    "DESCRIPTION": "自然 。 NL 造成 !D! 点伤害， NL 获得 !B! 点格挡。 NL 若手牌中有能力牌， NL 选择消耗一张， NL 本局对战中造成的伤害+ !M! ， NL 若为 *那塔拉的大树 获得 [E] 。"
   },
   "shadowverse:TemperedMana": {
     "NAME": "勇气玛纳",
@@ -2501,17 +2499,17 @@
   },
   "shadowverse:WhitePaladin": {
     "NAME": "白银圣骑士",
-    "DESCRIPTION": "召唤等同于敌人个数的 *战盾卫士 。 NL 消耗",
-    "UPGRADE_DESCRIPTION": "固有 。 NL 召唤等同于敌人个数的 *战盾卫士 。 NL 消耗"
+    "DESCRIPTION": "召唤等同于敌人个数的 战盾卫士 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "固有 。 NL 召唤等同于敌人个数的 战盾卫士 。 NL 消耗 。"
   },
   "shadowverse:EmpressOfSerenity": {
     "NAME": "安宁的女王",
-    "DESCRIPTION": "造成 !D! 点伤害，召唤1个 *战盾卫士 。 NL 爆能强化 2 \b再额外召唤2个 *战盾卫士 。"
+    "DESCRIPTION": "获得 !B! 点格挡，召唤1个 战盾卫士 。 NL 爆能强化 2 \b再额外召唤2个 战盾卫士 。"
   },
   "shadowverse:ShieldPhalanx": {
     "NAME": "坚盾战阵",
-    "DESCRIPTION": "召唤一个 *战盾卫士 NL 和一个 *骑士 。 NL 协作 15：由 *战盾卫士 改为 *铁卫战将 。 NL 消耗 NL ",
-    "UPGRADE_DESCRIPTION": "召唤一个 *战盾卫士 NL 和一个 *骑士 。 NL 协作 15： 消耗 ，由 *战盾卫士 改为 *铁卫战将 。 NL ",
+    "DESCRIPTION": "召唤一个 战盾卫士 NL 和一个 骑士 。 NL 协作 15： 消耗 NL ",
+    "UPGRADE_DESCRIPTION": "召唤一个 战盾卫士 NL 和一个 骑士 。 NL 协作 15： 消耗 ，由 战盾卫士 改为 铁卫战将 。 NL ",
     "EXTENDED_DESCRIPTION": [
       "（协作数：",
       ")"
@@ -2519,7 +2517,7 @@
   },
   "shadowverse:DramaticRetreat": {
     "NAME": "壮烈的撤退",
-    "DESCRIPTION": "选择1张攻击牌， NL 将其洗入抽牌堆， NL 其下一次打出时的消耗变为0点。 NL 抽 !M! 张牌。",
+    "DESCRIPTION": "抽 !M! 张牌。 NL 选择1张攻击牌， NL 将其洗入抽牌堆， NL 其下一次打出时的消耗变为0点。",
     "EXTENDED_DESCRIPTION": [
       "没有攻击牌"
     ]
@@ -2527,7 +2525,7 @@
   "shadowverse:CatAdmiral": {
     "NAME": "俏猫上将",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 协作 7：伤害翻倍。 NL ",
-    "UPGRADE_DESCRIPTION": "使用后解除升级。 NL 造成 !D! 点伤害。 NL 协作 7：伤害翻倍。 NL 召唤一个 *战盾卫士 和一个 *重装骑士 。 NL ",
+    "UPGRADE_DESCRIPTION": "使用后解除升级。 NL 造成 !D! 点伤害。 NL 协作 7：伤害翻倍。 NL 召唤一个 战盾卫士 和一个 重装骑士 。 NL ",
     "EXTENDED_DESCRIPTION": [
       "（协作数：",
       ")"
@@ -2535,7 +2533,7 @@
   },
   "shadowverse:FrenziedCorpsmaster": {
     "NAME": "绝灭之士兵长",
-    "DESCRIPTION": "获得 !B! 点格挡。 NL 对全体敌人造成协作数两倍的伤害。 NL 激奏 1 \b  召唤一个 *铁甲骑士 NL 和一个 *重装骑士 。 NL ",
+    "DESCRIPTION": "获得 !B! 点格挡。 NL 对全体敌人造成协作数两倍的伤害。 NL 激奏 1 \b  召唤一个 铁甲骑士 NL 和一个 重装骑士 。 NL ",
     "EXTENDED_DESCRIPTION": [
       "（造成",
       "点伤害)"
@@ -2548,12 +2546,12 @@
   },
   "shadowverse:EvolutionPoint": {
     "NAME": "进化点",
-    "DESCRIPTION": "虚无 。 NL 升级 !M! 张攻击或能力牌。 NL 消耗",
-    "UPGRADE_DESCRIPTION": "保留 。 NL 升级 !M! 张攻击或能力牌。 NL 消耗"
+    "DESCRIPTION": "虚无 。 NL 升级 !M! 张攻击或能力牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 升级 !M! 张攻击或能力牌。 NL 消耗 。"
   },
   "shadowverse:EnragedGeneral": {
     "NAME": "愤怒的将军",
-    "DESCRIPTION": "获得等同于你随从个数的 [E]  NL 消耗"
+    "DESCRIPTION": "获得等同于你随从个数的 [E]  NL 消耗 。"
   },
   "shadowverse:LuminousMage": {
     "NAME": "鲁米那斯法师",
@@ -2563,7 +2561,7 @@
   "shadowverse:PrudentGeneral": {
     "NAME": "静寂的元帅",
     "DESCRIPTION": "虚无",
-    "UPGRADE_DESCRIPTION": "回合结束时，召唤 !M! 个 *铁甲骑士。"
+    "UPGRADE_DESCRIPTION": "回合结束时，召唤 !M! 个 铁甲骑士 。"
   },
   "shadowverse:DualbladeKnight": {
     "NAME": "双剑骑士",
@@ -2584,16 +2582,16 @@
   },
   "shadowverse:MonochromeEndgame": {
     "NAME": "黑白终局",
-    "DESCRIPTION": " *英勇之王·伊梅拉 NL *高雅女王·玛格娜丝 NL 抉择 \b召唤一个到场上。 NL 消耗",
-    "UPGRADE_DESCRIPTION": "召唤 *英勇之王·伊梅拉 、 *高雅女王·玛格娜丝 。 NL 消耗"
+    "DESCRIPTION": " 英勇之王·伊梅拉 NL 高雅女王·玛格娜丝 NL 抉择 \b召唤一个到场上。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "召唤 英勇之王·伊梅拉 、 高雅女王·玛格娜丝 。 NL 消耗 。"
   },
   "shadowverse:QueenHemera_Card": {
     "NAME": "英勇之王·伊梅拉",
-    "DESCRIPTION": "召唤 *英勇之王·伊梅拉 。 NL 消耗"
+    "DESCRIPTION": "召唤 英勇之王·伊梅拉 。 NL 消耗 。"
   },
   "shadowverse:QueenMagnus_Card": {
     "NAME": "高雅女王·玛格娜丝",
-    "DESCRIPTION": "召唤 *高雅女王·玛格娜丝 。 NL 消耗"
+    "DESCRIPTION": "召唤 高雅女王·玛格娜丝 。 NL 消耗 。"
   },
   "shadowverse:PompousSummons": {
     "NAME": "任性的差遣",
@@ -2631,7 +2629,7 @@
   "shadowverse:FloralFencer": {
     "NAME": "华丽的花园剑士",
     "DESCRIPTION": "造成 !D! 点伤害。",
-    "UPGRADE_DESCRIPTION": "使用后解除升级。 NL 造成 !D! 点伤害。 NL 召唤一个 *骑士 NL 和一个 *铁甲骑士 。"
+    "UPGRADE_DESCRIPTION": "使用后解除升级。 NL 造成 !D! 点伤害。 NL 召唤一个 骑士 NL 和一个 铁甲骑士 。"
   },
   "shadowverse:SunnyDayEncounter": {
     "NAME": "向阳的邂逅",
@@ -2648,12 +2646,12 @@
   },
   "shadowverse:Alyaska": {
     "NAME": "战争商人·阿尔亚斯卡",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 打出其他非打击攻击牌后升级。",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 抽到时将一张 *进化点 置入手牌",
     "UPGRADE_DESCRIPTION": "使用后解除升级。 造成 !D! 点伤害。 NL 将一张 *究极兵器 置入手牌。"
   },
   "shadowverse:ExterminusWeapon": {
     "NAME": "究极兵器",
-    "DESCRIPTION": "可升级任意次。 NL 保留 NL 对所有敌人造成 !D! 点伤害。 NL 保留时升级。 NL 消耗"
+    "DESCRIPTION": "可升级任意次。 NL 保留 NL 对所有敌人造成 !D! 点伤害。 NL 保留时升级。 NL 消耗 。"
   },
   "shadowverse:RadicalGunslinger": {
     "NAME": "激进的神枪手",
@@ -2662,7 +2660,7 @@
   },
   "shadowverse:Mirin": {
     "NAME": "武士梦想家·米琳",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 奥义 3：额外造成一次伤害。 NL 解放奥义 6：再额外造成一次伤害。",
+    "DESCRIPTION": "升级时降低奥义数。 NL 造成 !D! 点伤害。 NL 奥义 3：额外造成一次伤害。 NL 解放奥义 6：再额外造成一次伤害。",
     "EXTENDED_DESCRIPTION": [
       "造成 !D! 点伤害。 NL 奥义",
       "：额外造成一次伤害。 NL 解放奥义",
@@ -2671,7 +2669,7 @@
   },
   "shadowverse:Seofon": {
     "NAME": "天星剑王·席耶提",
-    "DESCRIPTION": "造成 !D! 点伤害，抽1张牌。 NL 奥义 4：升级所有卡牌。 NL 解放奥义 8： 消耗 ，获得1层 无实体 。",
+    "DESCRIPTION": "升级时降低奥义数。 NL 造成 !D! 点伤害，抽1张牌。 NL 奥义 4：升级所有卡牌。 NL 解放奥义 8： 消耗 ，获得1层 无实体 。",
     "EXTENDED_DESCRIPTION": [
       "造成 !D! 点伤害，抽1张牌。 NL 奥义",
       "：升级所有卡牌。 NL 解放奥义",
@@ -2680,11 +2678,52 @@
   },
   "shadowverse:Eahta": {
     "NAME": "刀神·奥克托",
-    "DESCRIPTION": "造成 !D! 点伤害两次。 NL 奥义 4：使手牌中所有皇家护卫攻击牌本回合中消耗-2。 NL 解放奥义 8：改为使所有皇家护卫攻击牌本回合中消耗-2。",
+    "DESCRIPTION": "升级时降低奥义数。 NL 造成 !D! 点伤害两次。 NL 奥义 4：使手牌中所有皇家护卫攻击牌本回合中消耗-2。 NL 解放奥义 8：改为使所有皇家护卫攻击牌本回合中消耗-2。",
     "EXTENDED_DESCRIPTION": [
       "造成 !D! 点伤害两次。 NL 奥义",
       "：使手牌中所有皇家护卫攻击牌本回合中消耗-2。 NL 解放奥义",
       "：改为使所有皇家护卫攻击牌本回合中消耗-2。"
+    ]
+  },
+  "shadowverse:StrokeOfConviction": {
+    "NAME": "信念之剑闪",
+    "DESCRIPTION": "抉择 NL 召唤2个 迅捷的剑士 、 NL 随机对一个敌人造成 !D! 点伤害、 NL 使所有随从获得+1/+1。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "召唤2个 迅捷的剑士 ， NL 随机对一个敌人造成 !D! 点伤害， NL 使所有随从获得+1/+1。 NL 消耗 。"
+  },
+  "shadowverse:ErikasSleight": {
+    "NAME": "艾莉卡的剑技",
+    "DESCRIPTION": "召唤2个 迅捷的剑士 。 NL 消耗 。"
+  },
+  "shadowverse:MistolinasSwordplay": {
+    "NAME": "米丝特莉娜的剑刃",
+    "DESCRIPTION": "随机对一个敌人造成 !D! 点伤害。 NL 消耗 。"
+  },
+  "shadowverse:BayleonsCommand": {
+    "NAME": "贝里昂的号令",
+    "DESCRIPTION": "使所有随从获得+1/+1。 NL 消耗 。"
+  },
+  "shadowverse:FrontlineInstructor": {
+    "NAME": "前线教官",
+    "DESCRIPTION": "获得 !B! 点格挡，使最右侧随从获得 NL +1/+1。 NL 协作 10： 消耗 改为使所有随从获得+1/+1。",
+    "EXTENDED_DESCRIPTION": [
+      "（协作数：",
+      ")"
+    ]
+  },
+  "shadowverse:RoyalBanner": {
+    "NAME": "皇家御用战旗",
+    "DESCRIPTION": "倒计时 !M! \b每召唤一个随从，使其获得+1/+0。"
+  },
+  "shadowverse:LuxbladeArriet": {
+    "NAME": "煌剑战士·亨莉雅妲",
+    "DESCRIPTION": "多次升级以获得效果。 NL +1：获得 !B! 点格挡， 保留 。 NL +2：获得 [E] [E] ， 固有 。 NL +3：获得1点 力量 和 敏捷 。 NL +4：抽牌直到上限。 NL +5：回复 !M! 点生命值。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "获得 !B! 点格挡， 保留 。 NL ",
+      "获得 [E] [E] ， 固有 。 NL ",
+      "获得1点 力量 和 敏捷 。 NL ",
+      "抽牌直到上限。 NL ",
+      "回复 !M! 点生命值。 NL ",
+      "消耗 。"
     ]
   }
 }

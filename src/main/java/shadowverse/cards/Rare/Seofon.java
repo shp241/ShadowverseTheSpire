@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.BufferPower;
+import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
 import com.megacrit.cardcrawl.powers.IntangiblePower;
 import shadowverse.characters.Elf;
 import shadowverse.characters.Royal;
@@ -68,7 +69,7 @@ public class Seofon extends CustomCard {
             this.addToBot(new ApotheosisAction());
         }
         if (this.magicNumber <= 0) {
-            this.addToBot(new ApplyPowerAction(p, p, new IntangiblePower(p, 1), 1));
+            this.addToBot(new ApplyPowerAction(p, p, new IntangiblePlayerPower(p, 1), 1));
         }
     }
 

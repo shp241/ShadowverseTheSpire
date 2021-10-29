@@ -37,7 +37,7 @@ public class Sera extends CustomCard {
     public Sera() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.SELF);
         this.baseBlock = 12;
-        this.baseMagicNumber = this.magicNumber = 3;
+        this.baseMagicNumber = this.magicNumber = 6;
         this.exhaust = true;
     }
 
@@ -56,9 +56,9 @@ public class Sera extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
         this.addToBot(new ApplyPowerAction(p, p, new ArtifactPower(p, 1), 1));
         if (this.upgraded) {
-            for (int i = 0; i < this.magicNumber; i++) {
+            for (int i = 0; i < 3; i++) {
                 AbstractDungeon.actionManager.addToBottom(new ChannelAction(new ShieldGuardian()));
-                addToBot(new HealAction(p, p, 1));
+                addToBot(new HealAction(p, p, 2));
             }
         }
     }

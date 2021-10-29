@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.tempCards.Miracle;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import shadowverse.action.MinionBuffAction;
@@ -51,12 +52,16 @@ public class WindGodsBlessing extends CustomRelic {
     }
 
     @Override
+    public void onPlayCard(AbstractCard c, AbstractMonster m) {
+        this.counter = rally();
+    }
+
+    @Override
     public void onPlayerEndTurn() {
         if (rally() != this.counter) {
             this.counter = rally();
         }
         if (!this.grayscale && this.counter >= 10) {
-            flash();
             addToBot(new MinionBuffAction(1, 1, true));
             flash();
             this.counter = -1;

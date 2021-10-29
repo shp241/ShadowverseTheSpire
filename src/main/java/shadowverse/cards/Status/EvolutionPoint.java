@@ -1,26 +1,14 @@
 package shadowverse.cards.Status;
 
-import basemod.abstracts.AbstractCardModifier;
 import basemod.abstracts.CustomCard;
-import basemod.helpers.CardModifierManager;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsInHandAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.UpgradeSpecificCardAction;
-import com.megacrit.cardcrawl.actions.unique.ArmamentsAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import shadowverse.cards.Temp.NaterranGreatTree;
-import shadowverse.cardmods.ImmoralDesireMod2;
-import shadowverse.characters.AbstractShadowversePlayer;
 
 public class EvolutionPoint extends CustomCard {
     public static final String ID = "shadowverse:EvolutionPoint";

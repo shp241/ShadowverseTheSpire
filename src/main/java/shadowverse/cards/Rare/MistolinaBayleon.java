@@ -59,6 +59,7 @@ public class MistolinaBayleon extends CustomCard {
                 addToBot(new ExhaustSpecificCardAction(c, p.hand));
             }
         }));
+        this.calculateCardDamage(abstractMonster);
         addToBot(new DamageAction(abstractMonster, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
     }
