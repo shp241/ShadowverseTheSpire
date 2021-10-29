@@ -37,6 +37,7 @@ public class SunnyDayEncounterAction extends AbstractGameAction {
         for (AbstractCard tempCard : p.hand.group) {
             if (tempCard.hasTag(AbstractShadowversePlayer.Enums.NATURAL)) {
                 addToBot(new MakeTempCardInHandAction(new NaterranGreatTree(), 1));
+                break;
             }
         }
         p.hand.refreshHandLayout();

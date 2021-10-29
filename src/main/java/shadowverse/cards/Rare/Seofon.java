@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.BufferPower;
+import com.megacrit.cardcrawl.powers.IntangiblePower;
 import shadowverse.characters.Elf;
 import shadowverse.characters.Royal;
 
@@ -28,9 +29,9 @@ public class Seofon extends CustomCard {
         this(0);
     }
     public Seofon(int upgrades) {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ALL_ENEMY);
-        this.baseDamage = 10;
-        this.baseMagicNumber = 6;
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ENEMY);
+        this.baseDamage = 9;
+        this.baseMagicNumber = 8;
         this.magicNumber = this.baseMagicNumber;
         this.timesUpgraded = upgrades;
     }
@@ -63,17 +64,20 @@ public class Seofon extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         addToBot(new DrawCardAction(p, 1));
-        if (this.magicNumber <= 3) {
+        if (this.magicNumber <= 4) {
             this.addToBot(new ApotheosisAction());
         }
         if (this.magicNumber <= 0) {
-            this.addToBot(new ApplyPowerAction(p, p, new BufferPower(p, 1), 1));
+            this.addToBot(new ApplyPowerAction(p, p, new IntangiblePower(p, 1), 1));
         }
     }
 
     @Override
     public void applyPowers() {
         super.applyPowers();
+        if (this.upgraded && this.magicNumber <= 0) {
+            this.exhaust = true;
+        }
         this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + (this.magicNumber - 3) + cardStrings.EXTENDED_DESCRIPTION[1] + this.magicNumber + cardStrings.EXTENDED_DESCRIPTION[2];
         this.initializeDescription();
     }

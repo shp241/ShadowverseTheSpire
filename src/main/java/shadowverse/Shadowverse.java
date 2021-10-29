@@ -1234,6 +1234,7 @@ import java.util.HashMap;
               BaseMod.addCard((AbstractCard)new QueenHemera_Card());
               BaseMod.addCard((AbstractCard)new QueenMagnus_Card());
               BaseMod.addCard((AbstractCard)new FlyingMessengerSquirrel());
+              BaseMod.addCard((AbstractCard)new PompousSummons());
               BaseMod.addCard((AbstractCard)new BrothersUnited());
               BaseMod.addCard((AbstractCard)new HonorableThief());
               BaseMod.addCard((AbstractCard)new FloralFencer());

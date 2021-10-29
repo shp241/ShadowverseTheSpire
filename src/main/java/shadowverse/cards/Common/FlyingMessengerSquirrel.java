@@ -1,8 +1,11 @@
-package shadowverse.cards.Uncommon;
+package shadowverse.cards.Common;
 
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -20,8 +23,9 @@ public class FlyingMessengerSquirrel extends CustomCard {
     public static final String IMG_PATH = "img/cards/FlyingMessengerSquirrel.png";
 
     public FlyingMessengerSquirrel() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF);
         this.baseMagicNumber = this.magicNumber = 1;
+        this.baseDamage = 8;
     }
 
 
@@ -29,14 +33,15 @@ public class FlyingMessengerSquirrel extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeMagicNumber(1);
+            upgradeDamage(2);
         }
     }
 
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DrawCardAction(p, 2));
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        addToBot(new DrawCardAction(p, this.magicNumber));
         if (rally() >= 10) {
             addToBot(new DrawCardAction(p, this.magicNumber));
         }
@@ -79,4 +84,5 @@ public class FlyingMessengerSquirrel extends CustomCard {
         return new FlyingMessengerSquirrel();
     }
 }
+
 

@@ -25,7 +25,7 @@ public class Alyaska extends CustomCard {
     public static final String IMG_PATH = "img/cards/Alyaska.png";
 
     public Alyaska() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, AbstractCard.CardType.ATTACK, Royal.Enums.COLOR_YELLOW, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ENEMY);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, AbstractCard.CardType.ATTACK, Royal.Enums.COLOR_YELLOW, AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.ENEMY);
         this.baseDamage = 10;
         this.cardsToPreview = new ExterminusWeapon();
     }

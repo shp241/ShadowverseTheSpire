@@ -31,7 +31,7 @@ public class Mirin extends CustomCard {
     }
 
     public Mirin(int upgrades) {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ENEMY);
         this.baseDamage = 9;
         this.baseMagicNumber = 6;
         this.magicNumber = this.baseMagicNumber;

@@ -27,9 +27,9 @@ public class Eahta extends CustomCard {
         this(0);
     }
     public Eahta(int upgrades) {
-        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ALL_ENEMY);
-        this.baseDamage = 10;
-        this.baseMagicNumber = 6;
+        super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ENEMY);
+        this.baseDamage = 15;
+        this.baseMagicNumber = 8;
         this.magicNumber = this.baseMagicNumber;
         this.timesUpgraded = upgrades;
     }
@@ -63,28 +63,20 @@ public class Eahta extends CustomCard {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         if (this.magicNumber <= 0) {
-            for (AbstractCard c : p.hand.group) {
-                if (c.color == Royal.Enums.COLOR_YELLOW && (c.type == CardType.ATTACK || c.type == CardType.SKILL && c.hasTag(AbstractShadowversePlayer.Enums.ACCELERATE))) {
-                    addToBot(new ReduceCostAction(c));
-                    addToBot(new ReduceCostAction(c));
-                    c.flash();
-                }
-            }
             for (AbstractCard c : p.drawPile.group) {
                 if (c.color == Royal.Enums.COLOR_YELLOW && (c.type == CardType.ATTACK || c.type == CardType.SKILL && c.hasTag(AbstractShadowversePlayer.Enums.ACCELERATE))) {
-                    addToBot(new ReduceCostAction(c));
-                    addToBot(new ReduceCostAction(c));
+                    addToBot(new ReduceCostForTurnAction(c, 2));
                     c.flash();
                 }
             }
             for (AbstractCard c : p.discardPile.group) {
                 if (c.color == Royal.Enums.COLOR_YELLOW && (c.type == CardType.ATTACK || c.type == CardType.SKILL && c.hasTag(AbstractShadowversePlayer.Enums.ACCELERATE))) {
-                    addToBot(new ReduceCostAction(c));
-                    addToBot(new ReduceCostAction(c));
+                    addToBot(new ReduceCostForTurnAction(c, 2));
                     c.flash();
                 }
             }
-        } else if (this.magicNumber <= 3) {
+        }
+        if (this.magicNumber <= 4) {
             for (AbstractCard c : p.hand.group) {
                 if (c.color == Royal.Enums.COLOR_YELLOW && (c.type == CardType.ATTACK || c.type == CardType.SKILL && c.hasTag(AbstractShadowversePlayer.Enums.ACCELERATE))) {
                     addToBot(new ReduceCostForTurnAction(c, 2));

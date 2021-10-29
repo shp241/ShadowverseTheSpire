@@ -2511,7 +2511,7 @@
   "shadowverse:ShieldPhalanx": {
     "NAME": "坚盾战阵",
     "DESCRIPTION": "召唤一个 *战盾卫士 NL 和一个 *骑士 。 NL 协作 15：由 *战盾卫士 改为 *铁卫战将 。 NL 消耗 NL ",
-    "UPGRADE_DESCRIPTION": "召唤一个 *战盾卫士 NL 和一个 *骑士 。 NL 协作 15：由 *战盾卫士 改为 *铁卫战将 。 NL ",
+    "UPGRADE_DESCRIPTION": "召唤一个 *战盾卫士 NL 和一个 *骑士 。 NL 协作 15： 消耗 ，由 *战盾卫士 改为 *铁卫战将 。 NL ",
     "EXTENDED_DESCRIPTION": [
       "（协作数：",
       ")"
@@ -2592,12 +2592,20 @@
     "DESCRIPTION": "召唤 *英勇之王·伊梅拉 。 NL 消耗"
   },
   "shadowverse:QueenMagnus_Card": {
-    "NAME": "英勇之王·伊梅拉",
+    "NAME": "高雅女王·玛格娜丝",
     "DESCRIPTION": "召唤 *高雅女王·玛格娜丝 。 NL 消耗"
+  },
+  "shadowverse:PompousSummons": {
+    "NAME": "任性的差遣",
+    "DESCRIPTION": "抽2张牌。 NL 协作 10：额外抽 !M! 张牌。",
+    "EXTENDED_DESCRIPTION": [
+      "（协作数：",
+      ")"
+    ]
   },
   "shadowverse:FlyingMessengerSquirrel": {
     "NAME": "鼯鼠传令兵",
-    "DESCRIPTION": "抽2张牌。 NL 协作 10：额外抽 !M! 张牌。",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 抽1张牌。 NL 协作 10：额外抽 !M! 张牌。",
     "EXTENDED_DESCRIPTION": [
       "（协作数：",
       ")"
@@ -2663,20 +2671,20 @@
   },
   "shadowverse:Seofon": {
     "NAME": "天星剑王·席耶提",
-    "DESCRIPTION": "造成 !D! 点伤害，抽1张牌。 NL 奥义 3：升级所有卡牌。 NL 解放奥义 6：获得1层缓冲。",
+    "DESCRIPTION": "造成 !D! 点伤害，抽1张牌。 NL 奥义 4：升级所有卡牌。 NL 解放奥义 8： 消耗 ，获得1层 无实体 。",
     "EXTENDED_DESCRIPTION": [
       "造成 !D! 点伤害，抽1张牌。 NL 奥义",
       "：升级所有卡牌。 NL 解放奥义",
-      "：获得1层缓冲。"
+      "： 消耗 ，获得1层 无实体 。"
     ]
   },
   "shadowverse:Eahta": {
     "NAME": "刀神·奥克托",
-    "DESCRIPTION": "造成 !D! 点伤害两次。 NL 奥义 3：使所有皇家护卫攻击牌本回合中消耗-2。 NL 解放奥义 6：改为使所有皇家护卫攻击牌本场战斗消耗-2。",
+    "DESCRIPTION": "造成 !D! 点伤害两次。 NL 奥义 4：使所有皇家护卫攻击牌本回合中消耗-2。 NL 解放奥义 8：改为使所有皇家护卫攻击牌本回合中消耗-2。",
     "EXTENDED_DESCRIPTION": [
       "造成 !D! 点伤害两次。 NL 奥义",
       "：使所有皇家护卫攻击牌本回合中消耗-2。 NL 解放奥义",
-      "：改为使所有皇家护卫攻击牌本场战斗消耗-2。"
+      "：改为使所有皇家护卫攻击牌本回合中消耗-2。"
     ]
   }
 }

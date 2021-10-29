@@ -1,7 +1,7 @@
 package shadowverse.cards.Uncommon;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -10,21 +10,18 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import shadowverse.characters.Royal;
-import shadowverse.orbs.FrontguardGeneral;
-import shadowverse.orbs.Knight;
 import shadowverse.orbs.Minion;
-import shadowverse.orbs.ShieldGuardian;
 
-public class ShieldPhalanx extends CustomCard {
-    public static final String ID = "shadowverse:ShieldPhalanx";
+public class PompousSummons extends CustomCard {
+    public static final String ID = "shadowverse:PompousSummons";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/ShieldPhalanx.png";
+    public static final String IMG_PATH = "img/cards/PompousSummons.png";
 
-    public ShieldPhalanx() {
+    public PompousSummons() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
-        this.exhaust = true;
+        this.baseMagicNumber = this.magicNumber = 1;
     }
 
 
@@ -32,21 +29,17 @@ public class ShieldPhalanx extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            initializeDescription();
-            this.exhaust = false;
+            upgradeMagicNumber(1);
         }
     }
 
 
     @Override
-    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (rally() >= 15) {
-            AbstractDungeon.actionManager.addToBottom(new ChannelAction(new FrontguardGeneral()));
-        } else {
-            AbstractDungeon.actionManager.addToBottom(new ChannelAction(new ShieldGuardian()));
+    public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new DrawCardAction(p, 2));
+        if (rally() >= 10) {
+            addToBot(new DrawCardAction(p, this.magicNumber));
         }
-        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Knight()));
     }
 
     public int rally() {
@@ -69,32 +62,21 @@ public class ShieldPhalanx extends CustomCard {
     @Override
     public void applyPowers() {
         super.applyPowers();
-        if (this.upgraded) {
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-        } else {
-            this.rawDescription = cardStrings.DESCRIPTION;
-        }
-        if (this.upgraded && rally() >= 15) {
-            this.exhaust = true;
-        }
+        this.rawDescription = cardStrings.DESCRIPTION;
         this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + rally() + cardStrings.EXTENDED_DESCRIPTION[1];
         this.initializeDescription();
     }
 
     @Override
     public void onMoveToDiscard() {
-        if (this.upgraded) {
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-        } else {
-            this.rawDescription = cardStrings.DESCRIPTION;
-        }
+        this.rawDescription = cardStrings.DESCRIPTION;
         this.initializeDescription();
     }
 
 
     @Override
     public AbstractCard makeCopy() {
-        return new ShieldPhalanx();
+        return new PompousSummons();
     }
 }
 
