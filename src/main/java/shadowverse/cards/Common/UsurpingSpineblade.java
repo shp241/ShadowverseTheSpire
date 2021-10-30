@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -75,6 +76,7 @@ public class UsurpingSpineblade  extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
+        addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         addToBot(new DamageAction(abstractMonster, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         int r1 = AbstractDungeon.cardRandomRng.random(3);
         AbstractCard c1 = returnProphecy().get(r1);

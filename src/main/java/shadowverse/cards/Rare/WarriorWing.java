@@ -3,7 +3,8 @@ package shadowverse.cards.Rare;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -57,6 +58,11 @@ public class WarriorWing extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+        if (this.upgraded) {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Ev"));
+        } else {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        }
         addToBot(new WarriorWingAction(1));
         if (this.upgraded) {
             AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(0, 1, true));

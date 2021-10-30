@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.unique.ApotheosisAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -25,16 +26,25 @@ public class Seofon extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Seofon.png";
+    public boolean triggered;
 
     public Seofon() {
         this(0);
     }
+
     public Seofon(int upgrades) {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ENEMY);
         this.baseDamage = 9;
         this.baseMagicNumber = 8;
         this.magicNumber = this.baseMagicNumber;
         this.timesUpgraded = upgrades;
+        this.triggered = false;
+    }
+
+    @Override
+    public void resetAttributes() {
+        super.resetAttributes();
+        this.triggered = false;
     }
 
     @Override
@@ -63,12 +73,20 @@ public class Seofon extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        if (this.magicNumber <= 0) {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_SSA"));
+        } else if (this.magicNumber <= 4) {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_SA"));
+        } else {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        }
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         addToBot(new DrawCardAction(p, 1));
         if (this.magicNumber <= 4) {
             this.addToBot(new ApotheosisAction());
         }
-        if (this.magicNumber <= 0) {
+        if (!this.triggered && this.magicNumber <= 0) {
+            this.triggered = true;
             this.addToBot(new ApplyPowerAction(p, p, new IntangiblePlayerPower(p, 1), 1));
         }
     }
@@ -76,18 +94,16 @@ public class Seofon extends CustomCard {
     @Override
     public void applyPowers() {
         super.applyPowers();
-        if (this.upgraded && this.magicNumber <= 0) {
-            this.exhaust = true;
-        }
-        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + (this.magicNumber - 4) + cardStrings.EXTENDED_DESCRIPTION[1] + this.magicNumber + cardStrings.EXTENDED_DESCRIPTION[2];
+        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + Math.max(0, this.magicNumber - 4) + cardStrings.EXTENDED_DESCRIPTION[1] + Math.max(0, this.magicNumber) + cardStrings.EXTENDED_DESCRIPTION[2];
         this.initializeDescription();
     }
 
     @Override
     public void onMoveToDiscard() {
-        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + (this.magicNumber - 4) + cardStrings.EXTENDED_DESCRIPTION[1] + this.magicNumber + cardStrings.EXTENDED_DESCRIPTION[2];
+        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + Math.max(0, this.magicNumber - 4) + cardStrings.EXTENDED_DESCRIPTION[1] + Math.max(0, this.magicNumber) + cardStrings.EXTENDED_DESCRIPTION[2];
         this.initializeDescription();
     }
+
 
     @Override
     public AbstractCard makeCopy() {

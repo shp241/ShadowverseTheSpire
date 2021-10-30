@@ -4,6 +4,7 @@ import basemod.abstracts.CustomCard;
 import com.badlogic.gdx.Gdx;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -73,6 +74,7 @@ public class ApostleOfUsurpation  extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
+        addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         addToBot(new ApplyPowerAction(p, p, new ApostleOfUsurpationPower(p, this.magicNumber)));
         if (this.upgraded) {
             int r1 = AbstractDungeon.cardRandomRng.random(3);

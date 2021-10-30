@@ -4,7 +4,7 @@ import basemod.abstracts.CustomRelic;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -42,7 +42,7 @@ public class Offensive6 extends CustomRelic {
         flash();
         AbstractPlayer p = AbstractDungeon.player;
         if (p.orbs.get(0) instanceof EmptyOrbSlot) {
-            AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Knight()));
+            AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new Knight()));
         }
     }
 

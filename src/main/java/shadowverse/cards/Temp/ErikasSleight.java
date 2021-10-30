@@ -1,7 +1,8 @@
 package shadowverse.cards.Temp;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -32,14 +33,16 @@ public class ErikasSleight extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Quickblader()));
-        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Quickblader()));
+        addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new Quickblader()));
+        AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new Quickblader()));
     }
 
     @Override
     public void onChoseThisOption() {
-        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Quickblader()));
-        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Quickblader()));
+        addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new Quickblader()));
+        AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new Quickblader()));
     }
 
 

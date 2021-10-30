@@ -5,7 +5,8 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.tempCards.Miracle;
@@ -62,6 +63,11 @@ public class Alyaska extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+        if (this.upgraded) {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Ev"));
+        } else {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        }
         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         if (this.upgraded) {
             AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
@@ -73,6 +79,7 @@ public class Alyaska extends CustomCard {
     @Override
     public void triggerWhenDrawn() {
         if (!this.upgraded) {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "")+"_Eff"));
             this.addToTop(new MakeTempCardInHandAction(new EvolutionPoint(), 1));
         }
     }

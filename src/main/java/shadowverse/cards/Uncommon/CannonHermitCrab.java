@@ -4,7 +4,7 @@ package shadowverse.cards.Uncommon;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.actions.defect.IncreaseMaxOrbAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -48,7 +48,7 @@ public class CannonHermitCrab extends CustomCard {
             int toIncrease = 5-abstractPlayer.maxOrbs;
             addToBot((AbstractGameAction)new IncreaseMaxOrbAction(toIncrease));
         }
-        addToBot((AbstractGameAction) new ChannelAction(new CannonHermitCrabOrb()));
+        addToBot((AbstractGameAction) new MinionSummonAction(new CannonHermitCrabOrb()));
     }
 
 

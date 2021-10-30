@@ -1,7 +1,8 @@
 package shadowverse.cards.Uncommon;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -19,7 +20,7 @@ public class WhitePaladin extends CustomCard {
     public static final String IMG_PATH = "img/cards/WhitePaladin.png";
 
     public WhitePaladin() {
-        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
         this.exhaust = true;
     }
 
@@ -28,17 +29,16 @@ public class WhitePaladin extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.isInnate = true;
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            this.initializeDescription();
+            this.upgradeBaseCost(0);
         }
     }
 
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        for (int i = 0; i < AbstractDungeon.getMonsters().monsters.size(); i++) {
-            AbstractDungeon.actionManager.addToBottom(new ChannelAction(new ShieldGuardian()));
+        addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        for (int i = 0; i < 3; i++) {
+            AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new ShieldGuardian()));
         }
     }
 

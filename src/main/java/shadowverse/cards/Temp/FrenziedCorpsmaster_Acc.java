@@ -2,7 +2,7 @@ package shadowverse.cards.Temp;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -69,8 +69,9 @@ public class FrenziedCorpsmaster_Acc  extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new SteelcladKnight()));
-        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new HeavyKnight()));
+        addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new SteelcladKnight()));
+        AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new HeavyKnight()));
     }
 
 

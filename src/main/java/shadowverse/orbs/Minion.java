@@ -5,7 +5,8 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Interpolation;
 import com.badlogic.gdx.math.MathUtils;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import shadowverse.action.MinionSummonAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -79,6 +80,7 @@ public abstract class Minion extends AbstractOrb {
 
     @Override
     public void onEvoke() {
+        AbstractDungeon.actionManager.addToTop(new SFXAction(this.ID.replace("shadowverse:", "") + "_Atk"));
         for (int i = 0; i < defense; i++) {
             this.effect();
         }
@@ -89,10 +91,16 @@ public abstract class Minion extends AbstractOrb {
     @Override
     public void onEndOfTurn() {
         if (this.defense > 0) {
+            AbstractDungeon.actionManager.addToTop(new SFXAction(this.ID.replace("shadowverse:", "") + "_Atk"));
             this.effect();
             AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(0, -1, this));
             this.updateDescription();
         }
+    }
+
+    @Override
+    public void playChannelSFX() { // When you channel this orb, the ATTACK_FIRE effect plays ("Fwoom").
+        AbstractDungeon.actionManager.addToTop(new SFXAction(this.ID.replace("shadowverse:", "")));
     }
 
     // Render the orb.

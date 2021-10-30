@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.status.VoidCard;
@@ -53,7 +54,8 @@ public class DiscipleOfUsurpationPower extends AbstractPower {
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card instanceof GildedBlade || card instanceof GildedBoots || card instanceof GildedGoblet || card instanceof GildedNecklace) {
             flash();
-            addToBot((AbstractGameAction)new GainBlockAction(this.owner,this.amount));
+            addToBot(new SFXAction("DiscipleOfUsurpation_Pow"));
+            addToBot(new GainBlockAction(this.owner,this.amount));
         }
     }
 

@@ -1,7 +1,7 @@
 package shadowverse.orbs;
 
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
@@ -37,10 +37,7 @@ public class QueenHemera extends Minion {
     }
 
 
-    @Override
-    public void playChannelSFX() { // When you channel this orb, the ATTACK_FIRE effect plays ("Fwoom").
-        CardCrawlGame.sound.play("ATTACK_FIRE", 0.1f);
-    }
+
 
     @Override
     public AbstractOrb makeCopy() {
@@ -50,6 +47,6 @@ public class QueenHemera extends Minion {
     @Override
     public void effect() {
         AbstractDungeon.actionManager.addToTop(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, this.attack * 3));
-        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Knight()));
+        AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new Knight()));
     }
 }

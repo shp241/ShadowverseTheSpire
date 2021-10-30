@@ -1,7 +1,7 @@
 package shadowverse.cards.Uncommon;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -21,10 +21,19 @@ public class ShieldPhalanx extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/ShieldPhalanx.png";
+    public boolean triggered;
+
 
     public ShieldPhalanx() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
         this.exhaust = true;
+        this.triggered = false;
+    }
+
+    @Override
+    public void resetAttributes() {
+        super.resetAttributes();
+        this.triggered = false;
     }
 
 
@@ -41,12 +50,13 @@ public class ShieldPhalanx extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (rally() >= 15) {
-            AbstractDungeon.actionManager.addToBottom(new ChannelAction(new FrontguardGeneral()));
+        if (!this.triggered && rally() >= 15) {
+            this.triggered = true;
+            AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new FrontguardGeneral()));
         } else {
-            AbstractDungeon.actionManager.addToBottom(new ChannelAction(new ShieldGuardian()));
+            AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new ShieldGuardian()));
         }
-        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Knight()));
+        AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new Knight()));
     }
 
     public int rally() {
@@ -73,9 +83,6 @@ public class ShieldPhalanx extends CustomCard {
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
         } else {
             this.rawDescription = cardStrings.DESCRIPTION;
-        }
-        if (this.upgraded && rally() >= 15) {
-            this.exhaust = true;
         }
         this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + rally() + cardStrings.EXTENDED_DESCRIPTION[1];
         this.initializeDescription();

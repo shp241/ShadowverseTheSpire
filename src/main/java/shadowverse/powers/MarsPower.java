@@ -3,6 +3,7 @@ package shadowverse.powers;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -45,6 +46,7 @@ public class MarsPower extends AbstractPower {
     @Override
     public void onChannel(AbstractOrb orb) {
         if (orb instanceof Minion) {
+            addToBot(new SFXAction("Mars_Pow"));
             ((Minion) orb).buff(this.amount, this.amount);
         }
     }

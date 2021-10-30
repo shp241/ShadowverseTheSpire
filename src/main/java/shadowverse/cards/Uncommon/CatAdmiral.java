@@ -3,7 +3,8 @@ package shadowverse.cards.Uncommon;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -79,8 +80,13 @@ public class CatAdmiral extends CustomCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         if (this.upgraded) {
-            AbstractDungeon.actionManager.addToBottom(new ChannelAction(new ShieldGuardian()));
-            AbstractDungeon.actionManager.addToBottom(new ChannelAction(new HeavyKnight()));
+            addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Ev"));
+        } else {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        }
+        if (this.upgraded) {
+            AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new ShieldGuardian()));
+            AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new HeavyKnight()));
         }
         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         this.degrade();

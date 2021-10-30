@@ -2,6 +2,7 @@ package shadowverse.cards.Uncommon;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -37,6 +38,7 @@ public class FortressStrategist extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
+        addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         addToBot(new ApplyPowerAction(p, p, new FortressStrategistPower(p, this.magicNumber)));
     }
 

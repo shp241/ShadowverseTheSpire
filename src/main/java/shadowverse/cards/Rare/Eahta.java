@@ -4,6 +4,7 @@ import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.unique.ApotheosisAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -26,6 +27,7 @@ public class Eahta extends CustomCard {
     public Eahta() {
         this(0);
     }
+
     public Eahta(int upgrades) {
         super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ENEMY);
         this.baseDamage = 15;
@@ -60,6 +62,13 @@ public class Eahta extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        if (this.magicNumber <= 0) {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_SSA"));
+        } else if (this.magicNumber <= 4) {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_SA"));
+        } else {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        }
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         if (this.magicNumber <= 0) {
@@ -89,13 +98,13 @@ public class Eahta extends CustomCard {
     @Override
     public void applyPowers() {
         super.applyPowers();
-        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + (this.magicNumber - 4) + cardStrings.EXTENDED_DESCRIPTION[1] + this.magicNumber + cardStrings.EXTENDED_DESCRIPTION[2];
+        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + Math.max(0, this.magicNumber - 4) + cardStrings.EXTENDED_DESCRIPTION[1] + Math.max(0, this.magicNumber) + cardStrings.EXTENDED_DESCRIPTION[2];
         this.initializeDescription();
     }
 
     @Override
     public void onMoveToDiscard() {
-        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + (this.magicNumber - 4) + cardStrings.EXTENDED_DESCRIPTION[1] + this.magicNumber + cardStrings.EXTENDED_DESCRIPTION[2];
+        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + Math.max(0, this.magicNumber - 4) + cardStrings.EXTENDED_DESCRIPTION[1] + Math.max(0, this.magicNumber) + cardStrings.EXTENDED_DESCRIPTION[2];
         this.initializeDescription();
     }
 

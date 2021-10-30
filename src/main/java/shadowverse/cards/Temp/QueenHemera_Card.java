@@ -1,7 +1,7 @@
 package shadowverse.cards.Temp;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -31,12 +31,12 @@ public class QueenHemera_Card extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new QueenHemera()));
+        AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new QueenHemera()));
     }
 
     @Override
     public void onChoseThisOption() {
-        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new QueenHemera()));
+        AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new QueenHemera()));
     }
 
 

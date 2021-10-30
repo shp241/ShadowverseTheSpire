@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -77,10 +77,12 @@ public class FrenziedCorpsmaster extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (Shadowverse.Accelerate(this) && this.type == CardType.SKILL) {
 //            addToBot(new SFXAction("FrenziedCorpsmaster_Acc"));
-            AbstractDungeon.actionManager.addToBottom(new ChannelAction(new SteelcladKnight()));
-            AbstractDungeon.actionManager.addToBottom(new ChannelAction(new HeavyKnight()));
+            addToBot(new SFXAction(ID.replace("shadowverse:", "")+"_Acc"));
+            AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new SteelcladKnight()));
+            AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new HeavyKnight()));
         } else {
 //            addToBot(new SFXAction("FrenziedCorpsmaster"));
+            addToBot(new SFXAction(ID.replace("shadowverse:", "")));
             addToBot(new GainBlockAction(p, this.block));
             this.baseDamage = rally() * 2;
             this.calculateCardDamage(null);

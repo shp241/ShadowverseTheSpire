@@ -7,7 +7,8 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -37,7 +38,7 @@ public class Sera extends CustomCard {
     public Sera() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.SELF);
         this.baseBlock = 12;
-        this.baseMagicNumber = this.magicNumber = 6;
+        this.baseMagicNumber = this.magicNumber = 3;
         this.exhaust = true;
     }
 
@@ -53,12 +54,17 @@ public class Sera extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        if (this.upgraded) {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Ev"));
+        } else {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        }
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
         this.addToBot(new ApplyPowerAction(p, p, new ArtifactPower(p, 1), 1));
         if (this.upgraded) {
             for (int i = 0; i < 3; i++) {
-                AbstractDungeon.actionManager.addToBottom(new ChannelAction(new ShieldGuardian()));
-                addToBot(new HealAction(p, p, 2));
+                AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new ShieldGuardian()));
+                addToBot(new HealAction(p, p, 1));
             }
         }
     }

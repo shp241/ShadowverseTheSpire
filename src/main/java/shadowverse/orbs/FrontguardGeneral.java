@@ -2,13 +2,15 @@ package shadowverse.orbs;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import shadowverse.action.MinionSummonAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import com.megacrit.cardcrawl.powers.NextTurnBlockPower;
 import com.megacrit.cardcrawl.powers.PlatedArmorPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
@@ -18,7 +20,7 @@ public class FrontguardGeneral extends Minion {
     public static final String ORB_ID = "shadowverse:FrontguardGeneral";
     private static final OrbStrings orbString = CardCrawlGame.languagePack.getOrbString(ORB_ID);
     public static final String[] DESCRIPTIONS = orbString.DESCRIPTION;
-    private static final int ATTACK = 3;
+    private static final int ATTACK = 4;
     private static final int DEFENSE = 5;
 
     public FrontguardGeneral() {
@@ -40,12 +42,6 @@ public class FrontguardGeneral extends Minion {
         description = DESCRIPTIONS[0] + "3*" + this.attack + "=" + 3 * this.attack + DESCRIPTIONS[1] + this.attack + DESCRIPTIONS[2];
     }
 
-
-    @Override
-    public void playChannelSFX() { // When you channel this orb, the ATTACK_FIRE effect plays ("Fwoom").
-        CardCrawlGame.sound.play("ATTACK_FIRE", 0.1f);
-    }
-
     @Override
     public AbstractOrb makeCopy() {
         return new FrontguardGeneral();
@@ -55,7 +51,8 @@ public class FrontguardGeneral extends Minion {
     public void effect() {
         AbstractPlayer p = AbstractDungeon.player;
         AbstractDungeon.actionManager.addToTop(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, 3 * this.attack));
-        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p, p, new PlatedArmorPower(p, this.attack), this.attack));
+        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p, p, new NextTurnBlockPower(p, this.attack), this.attack));
+
     }
 
 }

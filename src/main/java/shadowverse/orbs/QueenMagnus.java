@@ -45,10 +45,7 @@ public class QueenMagnus extends Minion {
     }
 
 
-    @Override
-    public void playChannelSFX() { // When you channel this orb, the ATTACK_FIRE effect plays ("Fwoom").
-        CardCrawlGame.sound.play("ATTACK_FIRE", 0.1f);
-    }
+
 
     @Override
     public AbstractOrb makeCopy() {

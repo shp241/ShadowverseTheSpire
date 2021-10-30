@@ -4,6 +4,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.UpgradeRandomCardAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -48,6 +49,7 @@ public class FortressStrategistPower  extends AbstractPower {
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card.type== AbstractCard.CardType.SKILL) {
             flash();
+            addToBot(new SFXAction("FortressStrategist_Pow"));
             for (int i = 0; i < this.amount; i++) {
                 this.addToBot(new UpgradeRandomCardAction());
             }

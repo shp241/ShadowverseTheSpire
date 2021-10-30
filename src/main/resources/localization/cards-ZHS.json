@@ -2449,7 +2449,7 @@
   },
   "shadowverse:SageCommander": {
     "NAME": "睿智指挥官",
-    "DESCRIPTION": "获得 !B! 点格挡,使所有随从获得+1/+1。"
+    "DESCRIPTION": "获得 !B! 点格挡,使所有随从获得+1/+0。"
   },
   "shadowverse:DanceOfUsurpation": {
     "NAME": "强夺之舞",
@@ -2499,8 +2499,7 @@
   },
   "shadowverse:WhitePaladin": {
     "NAME": "白银圣骑士",
-    "DESCRIPTION": "召唤等同于敌人个数的 战盾卫士 。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "固有 。 NL 召唤等同于敌人个数的 战盾卫士 。 NL 消耗 。"
+    "DESCRIPTION": "召唤3个 战盾卫士 。 NL 消耗 。"
   },
   "shadowverse:EmpressOfSerenity": {
     "NAME": "安宁的女王",
@@ -2508,8 +2507,8 @@
   },
   "shadowverse:ShieldPhalanx": {
     "NAME": "坚盾战阵",
-    "DESCRIPTION": "召唤一个 战盾卫士 NL 和一个 骑士 。 NL 协作 15： 消耗 NL ",
-    "UPGRADE_DESCRIPTION": "召唤一个 战盾卫士 NL 和一个 骑士 。 NL 协作 15： 消耗 ，由 战盾卫士 改为 铁卫战将 。 NL ",
+    "DESCRIPTION": "召唤一个 战盾卫士 NL 和一个 骑士 。 NL ",
+    "UPGRADE_DESCRIPTION": "召唤一个 战盾卫士 NL 和一个 骑士 。 NL 限定 协作 15：由 战盾卫士 改为 铁卫战将 。 NL ",
     "EXTENDED_DESCRIPTION": [
       "（协作数：",
       ")"
@@ -2669,11 +2668,11 @@
   },
   "shadowverse:Seofon": {
     "NAME": "天星剑王·席耶提",
-    "DESCRIPTION": "升级时降低奥义数。 NL 造成 !D! 点伤害，抽1张牌。 NL 奥义 4：升级所有卡牌。 NL 解放奥义 8： 消耗 ，获得1层 无实体 。",
+    "DESCRIPTION": "升级时降低奥义数。 NL 造成 !D! 点伤害，抽1张牌。 NL 奥义 4：升级所有卡牌。 NL 限定 解放奥义 8：获得1层 无实体 。",
     "EXTENDED_DESCRIPTION": [
       "造成 !D! 点伤害，抽1张牌。 NL 奥义",
-      "：升级所有卡牌。 NL 解放奥义",
-      "： 消耗 ，获得1层 无实体 。"
+      "：升级所有卡牌。 NL 限定 解放奥义",
+      "：获得1层 无实体 。"
     ]
   },
   "shadowverse:Eahta": {
@@ -2704,7 +2703,7 @@
   },
   "shadowverse:FrontlineInstructor": {
     "NAME": "前线教官",
-    "DESCRIPTION": "获得 !B! 点格挡，使最右侧随从获得 NL +1/+1。 NL 协作 10： 消耗 改为使所有随从获得+1/+1。",
+    "DESCRIPTION": "获得 !B! 点格挡，使最右侧随从获得 NL +1/+0。 NL 限定 协作 10：改为使所有随从获得+1/+1。",
     "EXTENDED_DESCRIPTION": [
       "（协作数：",
       ")"
@@ -2721,9 +2720,14 @@
       "获得 !B! 点格挡， 保留 。 NL ",
       "获得 [E] [E] ， 固有 。 NL ",
       "获得1点 力量 和 敏捷 。 NL ",
-      "抽牌直到上限。 NL ",
+      "抽牌到7张。 NL ",
       "回复 !M! 点生命值。 NL ",
       "消耗 。"
     ]
+  },
+  "shadowverse:Charlotta": {
+    "NAME": "小小的圣骑士·夏绿蒂",
+    "DESCRIPTION": "获得 !B! 点 格挡。",
+    "UPGRADE_DESCRIPTION": "使用后解除升级。 NL 获得 !B! 点 格挡，获得 !M! 点 敏捷 。"
   }
 }

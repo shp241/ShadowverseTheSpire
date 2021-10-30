@@ -3,7 +3,8 @@ package shadowverse.cards.Rare;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.AttackDamageRandomEnemyAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.actions.watcher.ChooseOneAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -46,11 +47,12 @@ public class StrokeOfConviction extends CustomCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         if (this.upgraded) {
-            AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Quickblader()));
-            AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Quickblader()));
+            AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new Quickblader()));
+            AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new Quickblader()));
             AbstractDungeon.actionManager.addToBottom(new AttackDamageRandomEnemyAction(this, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
             AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(1, 1, true));
         } else {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "")));
             ArrayList<AbstractCard> stanceChoices = new ArrayList<>();
             stanceChoices.add(new ErikasSleight());
             stanceChoices.add(new MistolinasSwordplay());

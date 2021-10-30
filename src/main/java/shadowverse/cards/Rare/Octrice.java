@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -82,6 +83,11 @@ public class Octrice extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        if (this.upgraded) {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Ev"));
+        } else {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        }
         addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, 2), 2));
         addToBot(new ApplyPowerAction(m, p, new StrengthPower(m, -2), -2));
         AbstractDungeon.effectList.add(new RainingGoldEffect(this.magicNumber));

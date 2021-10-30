@@ -4,7 +4,7 @@ import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.actions.watcher.ChooseOneAction;
@@ -54,8 +54,8 @@ public class MonochromeEndgame extends CustomCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         if (this.upgraded) {
-            AbstractDungeon.actionManager.addToBottom(new ChannelAction(new QueenHemera()));
-            AbstractDungeon.actionManager.addToBottom(new ChannelAction(new QueenMagnus()));
+            AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new QueenHemera()));
+            AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new QueenMagnus()));
         } else {
             ArrayList<AbstractCard> stanceChoices = new ArrayList<>();
             stanceChoices.add(new QueenHemera_Card());

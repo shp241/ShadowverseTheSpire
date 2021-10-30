@@ -4,6 +4,7 @@ import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.unique.ExpertiseAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -31,7 +32,7 @@ public class LuxbladeArriet extends CustomCard {
     public LuxbladeArriet(int upgrades) {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.SELF);
         this.baseBlock = 10;
-        this.baseMagicNumber = 10;
+        this.baseMagicNumber = 5;
         this.magicNumber = this.baseMagicNumber;
         this.timesUpgraded = upgrades;
         this.exhaust = true;
@@ -39,9 +40,9 @@ public class LuxbladeArriet extends CustomCard {
 
     @Override
     public void upgrade() {
-        this.isInnate = true;
+        this.selfRetain = true;
         if (this.timesUpgraded >= 1) {
-            this.selfRetain = true;
+            this.isInnate = true;
         }
         this.timesUpgraded++;
         this.upgraded = true;
@@ -56,6 +57,7 @@ public class LuxbladeArriet extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         if (this.timesUpgraded >= 1) {
             addToBot(new GainBlockAction(p, p, this.block));
         }
@@ -67,7 +69,7 @@ public class LuxbladeArriet extends CustomCard {
             addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, 1), 1));
         }
         if (this.timesUpgraded >= 4) {
-            this.addToBot(new ExpertiseAction(p, 10));
+            this.addToBot(new ExpertiseAction(p, 7));
         }
         if (this.timesUpgraded >= 5) {
             addToBot(new HealAction(p, p, this.magicNumber));
@@ -79,21 +81,21 @@ public class LuxbladeArriet extends CustomCard {
         super.applyPowers();
         this.rawDescription = "";
         if (this.timesUpgraded >= 1) {
-            this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0];
+            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0];
         }
         if (this.timesUpgraded >= 2) {
-            this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[1];
+            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[1];
         }
         if (this.timesUpgraded >= 3) {
-            this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[2];
+            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[2];
         }
         if (this.timesUpgraded >= 4) {
-            this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[3];
+            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[3];
         }
         if (this.timesUpgraded >= 5) {
-            this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[4];
+            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[4];
         }
-        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[5];
+        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[5];
         this.initializeDescription();
     }
 
@@ -101,21 +103,21 @@ public class LuxbladeArriet extends CustomCard {
     public void onMoveToDiscard() {
         this.rawDescription = "";
         if (this.timesUpgraded >= 1) {
-            this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0];
+            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0];
         }
         if (this.timesUpgraded >= 2) {
-            this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[1];
+            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[1];
         }
         if (this.timesUpgraded >= 3) {
-            this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[2];
+            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[2];
         }
         if (this.timesUpgraded >= 4) {
-            this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[3];
+            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[3];
         }
         if (this.timesUpgraded >= 5) {
-            this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[4];
+            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[4];
         }
-        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[5];
+        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[5];
         this.initializeDescription();
     }
 

@@ -2,7 +2,7 @@ package shadowverse.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -31,7 +31,7 @@ public class PrudentGeneralPower extends AbstractPower {
         if (isPlayer && !AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
             this.flash();
             for (int i = 0; i < this.amount; i++) {
-                this.addToBot(new ChannelAction(new SteelcladKnight()));
+                this.addToBot(new MinionSummonAction(new SteelcladKnight()));
             }
         }
 
