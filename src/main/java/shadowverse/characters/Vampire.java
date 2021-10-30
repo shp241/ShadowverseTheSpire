@@ -25,6 +25,7 @@ import shadowverse.cards.Basic.DarkGeneral;
 import shadowverse.cards.Basic.Defend_V;
 import shadowverse.cards.Basic.RazoryClaw;
 import shadowverse.cards.Basic.Strike_V;
+import shadowverse.cards.Rare.NightVampire;
 
 import java.util.ArrayList;
 

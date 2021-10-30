@@ -191,7 +191,6 @@ public class Spine extends CustomCard implements BranchableUpgradeCard{
                 Spine.this.initializeTitle();
                 Spine.this.baseBlock = 2;
                 Spine.this.upgradedBlock = true;
-                Spine.this.exhaust = true;
                 Spine.this.tags.add(AbstractShadowversePlayer.Enums.ACCELERATE);
                 Spine.this.rawDescription = cardStrings2.DESCRIPTION;
                 Spine.this.initializeDescription();
@@ -229,6 +228,7 @@ public class Spine extends CustomCard implements BranchableUpgradeCard{
                     }else {
                         addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
                         addToBot((AbstractGameAction)new SFXAction("Spine2"));
+                        addToTop((AbstractGameAction)new ExhaustSpecificCardAction(this, AbstractDungeon.player.hand));
                         ArrayList<AbstractCard> list = new ArrayList<>();
                         ArrayList<String> dup = new ArrayList<>();
                         for (AbstractCard c: abstractPlayer.exhaustPile.group){
