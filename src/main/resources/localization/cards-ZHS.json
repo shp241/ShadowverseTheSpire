@@ -2414,6 +2414,63 @@
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张 *防御型巨像 到手中。",
     "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张耗能为0的 *防御型巨像 到手中。 NL 增加1张耗能为0的 *攻击型巨像 到手中。"
   },
+  "shadowverse:GenesisArtifact": {
+    "NAME": "创世的创造物",
+    "DESCRIPTION": "创造物 。 NL 获得 !B! 点 格挡 。 NL 增加1张耗能为0的 *守卫的创造物 和 *防御的创造物 到手中。 NL 如果消耗堆中的 创造物 种类为6以上，增加2张 *加农炮创造物 到手中。",
+    "UPGRADE_DESCRIPTION": "创造物 。 NL 获得 !B! 点 格挡 。 NL 增加1张耗能为0的 *守卫的创造物+ 和 *防御的创造物+ 到手中。 NL 如果消耗堆中的 创造物 种类为6以上，增加2张 *加农炮创造物+ 到手中。"
+  },
+  "shadowverse:GuardArtifact": {
+    "NAME": "守卫的创造物",
+    "DESCRIPTION": "创造物 。 NL 获得 !B! 点 格挡 。 NL 获得 !M! 层 人工制品 。 NL 消耗 。"
+  },
+  "shadowverse:DefectArtifact": {
+    "NAME": "防御的创造物",
+    "DESCRIPTION": "创造物 。 NL 获得 !B! 点 格挡 。 NL 获得 !M! 层 能力伤害无效 。 NL 消耗 。"
+  },
+  "shadowverse:CannonArtifact": {
+    "NAME": "加农炮创造物",
+    "DESCRIPTION": "创造物 。 NL 造成 !D! 点伤害。 NL 对随机敌人造成手牌中 创造物 卡数量 !M! 倍的伤害。 NL 消耗 。"
+  },
+  "shadowverse:Zwei": {
+    "NAME": "杀戮人偶·紫薇",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张 *维多利亚 到手中。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张 *维多利亚+ 到手中。"
+  },
+  "shadowverse:Zwei2": {
+    "NAME": "回响之心·紫薇",
+    "DESCRIPTION": "激奏 1 \b增加2张 *悬丝傀儡 到手中。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 增加1张 *维多利亚 到手中。 NL 增加2张 *悬丝傀儡 到手中。 "
+  },
+  "shadowverse:Wretches": {
+    "NAME": "异形",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 谢幕曲 当这张牌被 消耗 时，增加1张 *机动二轮车 到手中。 NL 消耗 。"
+  },
+  "shadowverse:VoidRealize": {
+    "NAME": "虚像具现",
+    "DESCRIPTION": "保留 。 NL 增加3张 *异形 到手中。 NL 如果消耗堆中攻击牌的数量为20以上，这些 *异形 的伤害翻倍。 NL 消耗 。"
+  },
+  "shadowverse:Illganeau": {
+    "NAME": "缥缈虚无·伊璐凯诺",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 谢幕曲 当这张牌被 消耗 时，增加1张复制品到手中，获得1点 敏捷 。 NL 如果 敏捷 为3以上，改为增加1张 *虚像具现 到手中。 NL 消耗 。"
+  },
+  "shadowverse:NightVampire": {
+    "NAME": "夜天吸血鬼",
+    "DESCRIPTION": "增加2张 *林地蝙蝠 到手中。 NL *林地蝙蝠 的基础伤害翻倍。 NL 未 狂乱 时打出 *林地蝙蝠 失去1点生命。 NL 狂乱 时打出 *林地蝙蝠 回复2点生命并给予2层 中毒 。",
+    "UPGRADE_DESCRIPTION": "固有 。 NL 增加2张 *林地蝙蝠 到手中。 NL *林地蝙蝠 的基础伤害翻倍。 NL 未 狂乱 时打出 *林地蝙蝠 失去1点生命。 NL 狂乱 时打出 *林地蝙蝠 回复2点生命并给予2层 中毒 。"
+  },
+  "shadowverse:ShadowCommander": {
+    "NAME": "暗影指挥官",
+    "DESCRIPTION": "造成目标本回合对你的攻击伤害。 NL 增加1张 *暗影士兵 到手中。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "造成目标本回合对你的攻击伤害2次。 NL 增加1张 *暗影士兵 到手中。 NL 消耗 。"
+  },
+  "shadowverse:ShadowSoldier": {
+    "NAME": "暗影士兵",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得1层 残影 。 NL 消耗 。"
+  },
+  "shadowverse:BrandOfMorningStar": {
+    "NAME": "灾祸刻印",
+    "DESCRIPTION": "一回合一次， 消耗 攻击牌时，增加1张 *暗影士兵 到手中。 NL 如果消耗堆中的攻击牌数量为15以上，改为增加1张 *暗影指挥官 到手中。",
+    "UPGRADE_DESCRIPTION": "固有 。 NL 一回合一次， 消耗 攻击牌时，增加1张 *暗影士兵 到手中。 NL 如果消耗堆中的攻击牌数量为15以上，改为增加1张 *暗影指挥官 到手中。"
+  },
   "shadowverse:Strike_R": {
     "NAME": "打击",
     "DESCRIPTION": "造成 !D! 点伤害。"

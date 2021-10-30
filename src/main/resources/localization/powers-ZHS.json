@@ -920,6 +920,25 @@
       " 点伤害。"
     ]
   },
+  "shadowverse:DisableEffectDamagePower": {
+    "NAME": "能力伤害无效",
+    "DESCRIPTIONS": [
+      "#b",
+      " 回合内因能力受到的伤害无效。"
+    ]
+  },
+  "shadowverse:NightVampirePower": {
+    "NAME": "夜天吸血鬼",
+    "DESCRIPTIONS": [
+      " #y林地蝙蝠 的基础伤害翻倍。未 狂乱 时打出 #y林地蝙蝠 失去1点生命。 狂乱 时打出 #y林地蝙蝠 会给予 #b2 层 中毒 并回复 #b2 点生命。"
+    ]
+  },
+  "shadowverse:BrandOfMorningStarPower": {
+    "NAME": "灾祸刻印",
+    "DESCRIPTIONS": [
+      "一回合一次，消耗攻击牌时增加 #b1 张 #y暗影士兵 到手中。 如果消耗堆中的攻击牌数量为 #b15 以上，改为增加 #b1 张 #y暗影指挥官 到手中。"
+    ]
+  },
   "shadowverse:DiscipleOfUsurpationPower": {
     "NAME": "强夺的信徒",
     "DESCRIPTIONS": [
