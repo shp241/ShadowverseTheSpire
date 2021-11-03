@@ -3,6 +3,7 @@ package shadowverse.orbs;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.tempCards.Miracle;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -54,6 +55,7 @@ public class QueenMagnus extends Minion {
 
     @Override
     public void onEvoke() {
+        AbstractDungeon.actionManager.addToTop(new SFXAction(this.ID.replace("shadowverse:", "") + "_Atk"));
         for (int i = 0; i < defense; i++) {
             this.effect();
             AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
@@ -65,6 +67,7 @@ public class QueenMagnus extends Minion {
     @Override
     public void onEndOfTurn() {
         if (this.defense > 0) {
+            AbstractDungeon.actionManager.addToTop(new SFXAction(this.ID.replace("shadowverse:", "") + "_Atk"));
             AbstractCreature p = AbstractDungeon.player;
             this.effect();
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new EnergizedPower(p, 1), 1));

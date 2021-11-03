@@ -17,6 +17,7 @@ public class PrudentGeneral extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/PrudentGeneral.png";
+    public static final String IMG_PATH_EV = "img/cards/PrudentGeneral_Ev.png";
 
     public PrudentGeneral() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
@@ -29,6 +30,8 @@ public class PrudentGeneral extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            this.textureImg = IMG_PATH_EV;
+                        this.loadCardImage(IMG_PATH_EV);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             this.initializeDescription();
             this.isEthereal = false;

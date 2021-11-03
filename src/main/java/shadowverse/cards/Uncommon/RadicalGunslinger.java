@@ -27,6 +27,7 @@ public class RadicalGunslinger extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/RadicalGunslinger.png";
+    public static final String IMG_PATH_EV = "img/cards/RadicalGunslinger_Ev.png";
 
     public RadicalGunslinger() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, AbstractCard.CardType.ATTACK, Royal.Enums.COLOR_YELLOW, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY);
@@ -40,6 +41,8 @@ public class RadicalGunslinger extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            this.textureImg = IMG_PATH_EV;
+                        this.loadCardImage(IMG_PATH_EV);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
@@ -48,6 +51,8 @@ public class RadicalGunslinger extends CustomCard {
     public void degrade() {
         if (this.upgraded) {
             degradeName();
+            this.textureImg = IMG_PATH;
+            this.loadCardImage(IMG_PATH);
             this.rawDescription = cardStrings.DESCRIPTION;
             initializeDescription();
             this.superFlash();

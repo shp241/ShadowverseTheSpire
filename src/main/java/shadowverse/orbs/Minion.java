@@ -80,7 +80,6 @@ public abstract class Minion extends AbstractOrb {
 
     @Override
     public void onEvoke() {
-        AbstractDungeon.actionManager.addToTop(new SFXAction(this.ID.replace("shadowverse:", "") + "_Atk"));
         for (int i = 0; i < defense; i++) {
             this.effect();
         }
@@ -91,7 +90,6 @@ public abstract class Minion extends AbstractOrb {
     @Override
     public void onEndOfTurn() {
         if (this.defense > 0) {
-            AbstractDungeon.actionManager.addToTop(new SFXAction(this.ID.replace("shadowverse:", "") + "_Atk"));
             this.effect();
             AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(0, -1, this));
             this.updateDescription();

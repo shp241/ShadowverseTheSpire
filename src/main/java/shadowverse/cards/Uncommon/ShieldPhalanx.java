@@ -26,14 +26,12 @@ public class ShieldPhalanx extends CustomCard {
 
     public ShieldPhalanx() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
-        this.exhaust = true;
         this.triggered = false;
     }
 
     @Override
     public void resetAttributes() {
         super.resetAttributes();
-        this.triggered = false;
     }
 
 
@@ -43,7 +41,6 @@ public class ShieldPhalanx extends CustomCard {
             upgradeName();
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
-            this.exhaust = false;
         }
     }
 

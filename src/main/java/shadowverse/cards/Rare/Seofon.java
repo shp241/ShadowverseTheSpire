@@ -44,7 +44,6 @@ public class Seofon extends CustomCard {
     @Override
     public void resetAttributes() {
         super.resetAttributes();
-        this.triggered = false;
     }
 
     @Override

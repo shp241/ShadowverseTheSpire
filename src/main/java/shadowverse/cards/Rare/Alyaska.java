@@ -1,11 +1,13 @@
 package shadowverse.cards.Rare;
 
 import basemod.abstracts.CustomCard;
+import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -27,6 +29,7 @@ public class Alyaska extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Alyaska.png";
+    public static final String IMG_PATH_EV = "img/cards/Alyaska_Ev.png";
 
     public Alyaska() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, AbstractCard.CardType.ATTACK, Royal.Enums.COLOR_YELLOW, AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.ENEMY);
@@ -39,6 +42,8 @@ public class Alyaska extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            this.textureImg = IMG_PATH_EV;
+            this.loadCardImage(IMG_PATH_EV);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
@@ -47,6 +52,8 @@ public class Alyaska extends CustomCard {
     public void degrade() {
         if (this.upgraded) {
             degradeName();
+            this.textureImg = IMG_PATH;
+            this.loadCardImage(IMG_PATH);
             this.rawDescription = cardStrings.DESCRIPTION;
             initializeDescription();
             this.superFlash();
@@ -79,7 +86,7 @@ public class Alyaska extends CustomCard {
     @Override
     public void triggerWhenDrawn() {
         if (!this.upgraded) {
-            addToBot(new SFXAction(ID.replace("shadowverse:", "")+"_Eff"));
+            addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Eff"));
             this.addToTop(new MakeTempCardInHandAction(new EvolutionPoint(), 1));
         }
     }

@@ -22,6 +22,7 @@ public class DualbladeKnight extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/DualbladeKnight.png";
+    public static final String IMG_PATH_EV = "img/cards/DualbladeKnight_Ev.png";
 
     public DualbladeKnight() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ENEMY);
@@ -35,6 +36,8 @@ public class DualbladeKnight extends CustomCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeMagicNumber(1);
+            this.textureImg = IMG_PATH_EV;
+                        this.loadCardImage(IMG_PATH_EV);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
@@ -44,6 +47,8 @@ public class DualbladeKnight extends CustomCard {
         if (this.upgraded) {
             degradeName();
             degradeMagicNumber(1);
+            this.textureImg = IMG_PATH;
+            this.loadCardImage(IMG_PATH);
             this.rawDescription = cardStrings.DESCRIPTION;
             initializeDescription();
             this.superFlash();

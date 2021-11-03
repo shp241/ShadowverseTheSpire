@@ -2772,7 +2772,7 @@
   },
   "shadowverse:LuxbladeArriet": {
     "NAME": "煌剑战士·亨莉雅妲",
-    "DESCRIPTION": "多次升级以获得效果。 NL +1：获得 !B! 点格挡， 保留 。 NL +2：获得 [E] [E] ， 固有 。 NL +3：获得1点 力量 和 敏捷 。 NL +4：抽牌直到上限。 NL +5：回复 !M! 点生命值。 NL 消耗 。",
+    "DESCRIPTION": "多次升级以获得效果。 NL +1：获得 !B! 点格挡， 保留 。 NL +2：获得 [E] [E] ， 固有 。 NL +3：获得1点 力量 和 敏捷 。 NL +4：抽牌到7张。 NL +5：回复 !M! 点生命值。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
       "获得 !B! 点格挡， 保留 。 NL ",
       "获得 [E] [E] ， 固有 。 NL ",

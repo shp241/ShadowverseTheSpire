@@ -39,7 +39,7 @@ import java.util.List;
      list.add(new ProphecyOfDoom());
      return list;
    }
-   
+
    public Runie() {
      super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.RARE, CardTarget.ALL_ENEMY);
      this.baseDamage = 15;
@@ -67,11 +67,11 @@ import java.util.List;
          }
      }
    }
-   
+
    public void upgrade() {
      ((UpgradeBranch)((BranchableUpgradeCard)this).possibleBranches().get(chosenBranch())).upgrade();
    }
-   
+
    public void triggerOnOtherCardPlayed(AbstractCard c) {
      if (chosenBranch()!=1){
        if (c.type == CardType.SKILL) {
@@ -81,8 +81,8 @@ import java.util.List;
        }
      }
    }
- 
-   
+
+
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      switch (chosenBranch()){
        case 0:
@@ -120,21 +120,20 @@ import java.util.List;
          break;
      }
    }
- 
-   
+
+
    public void applyPowers() {
+     super.applyPowers();
      if (chosenBranch()!=1){
-       super.applyPowers();
-       int count = this.magicNumber;
        this.rawDescription = cardStrings.DESCRIPTION;
-       this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + count;
+       this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + this.magicNumber;
        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[1];
        initializeDescription();
      }
    }
- 
- 
-   
+
+
+
    public AbstractCard makeCopy() {
      return (AbstractCard)new Runie();
    }

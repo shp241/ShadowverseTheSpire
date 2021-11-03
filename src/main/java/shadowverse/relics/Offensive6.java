@@ -4,6 +4,7 @@ import basemod.abstracts.CustomRelic;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
+import shadowverse.action.MinionBuffAction;
 import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -55,6 +56,13 @@ public class Offensive6 extends CustomRelic {
     @Override
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
         this.counter = rally();
+    }
+
+    @Override
+    public void onPlayerEndTurn() {
+        if (rally() != this.counter) {
+            this.counter = rally();
+        }
     }
 
     public int rally() {

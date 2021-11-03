@@ -23,6 +23,7 @@ public class FloralFencer extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/FloralFencer.png";
+    public static final String IMG_PATH_EV = "img/cards/FloralFencer_Ev.png";
 
     public FloralFencer() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, AbstractCard.CardType.ATTACK, Royal.Enums.COLOR_YELLOW, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ENEMY);
@@ -34,6 +35,8 @@ public class FloralFencer extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            this.textureImg = IMG_PATH_EV;
+            this.loadCardImage(IMG_PATH_EV);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
@@ -42,6 +45,8 @@ public class FloralFencer extends CustomCard {
     public void degrade() {
         if (this.upgraded) {
             degradeName();
+            this.textureImg = IMG_PATH;
+            this.loadCardImage(IMG_PATH);
             this.rawDescription = cardStrings.DESCRIPTION;
             initializeDescription();
             this.superFlash();

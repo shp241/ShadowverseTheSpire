@@ -1,12 +1,15 @@
 package shadowverse.orbs;
 
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import shadowverse.action.MinionBuffAction;
 import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import shadowverse.action.RemoveMinionAction;
 
 public class QueenHemera extends Minion {
 
@@ -37,7 +40,25 @@ public class QueenHemera extends Minion {
     }
 
 
+    @Override
+    public void onEvoke() {
+        AbstractDungeon.actionManager.addToTop(new SFXAction(this.ID.replace("shadowverse:", "") + "_Atk"));
+        for (int i = 0; i < defense; i++) {
+            this.effect();
+        }
+        this.defense = 0;
+        AbstractDungeon.actionManager.addToBottom(new RemoveMinionAction());
+    }
 
+    @Override
+    public void onEndOfTurn() {
+        if (this.defense > 0) {
+            AbstractDungeon.actionManager.addToTop(new SFXAction(this.ID.replace("shadowverse:", "") + "_Atk"));
+            this.effect();
+            AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(0, -1, this));
+            this.updateDescription();
+        }
+    }
 
     @Override
     public AbstractOrb makeCopy() {

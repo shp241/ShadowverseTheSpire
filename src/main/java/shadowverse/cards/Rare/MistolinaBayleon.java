@@ -52,14 +52,19 @@ public class MistolinaBayleon extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         addToBot(new SelectCardsInHandAction(1, TEXT[0], false, false, card -> card.type == CardType.POWER, abstractCards -> {
             for (AbstractCard c : abstractCards) {
-                this.baseDamage += this.magicNumber;
                 if (c instanceof NaterranGreatTree) {
                     this.addToTop(new GainEnergyAction(1));
                 }
                 addToBot(new ExhaustSpecificCardAction(c, p.hand));
             }
         }));
-        this.calculateCardDamage(abstractMonster);
+        for (AbstractCard c : p.hand.group) {
+            if (c.type==CardType.POWER){
+                this.baseDamage += this.magicNumber;
+                this.damage += this.magicNumber;
+                break;
+            }
+        }
         addToBot(new DamageAction(abstractMonster, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
     }

@@ -33,6 +33,7 @@ public class Octrice extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Octrice.png";
+    public static final String IMG_PATH_EV = "img/cards/Octrice_Ev.png";
     private float rotationTimer;
     private int previewIndex;
 
@@ -75,6 +76,8 @@ public class Octrice extends CustomCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeMagicNumber(5);
+            this.textureImg = IMG_PATH_EV;
+            this.loadCardImage(IMG_PATH_EV);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }

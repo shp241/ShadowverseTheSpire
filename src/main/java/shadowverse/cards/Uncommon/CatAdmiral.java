@@ -27,6 +27,7 @@ public class CatAdmiral extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/CatAdmiral.png";
+    public static final String IMG_PATH_EV = "img/cards/CatAdmiral_Ev.png";
 
     public CatAdmiral() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ENEMY);
@@ -38,6 +39,8 @@ public class CatAdmiral extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            this.textureImg = IMG_PATH_EV;
+                        this.loadCardImage(IMG_PATH_EV);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
@@ -46,6 +49,8 @@ public class CatAdmiral extends CustomCard {
     public void degrade() {
         if (this.upgraded) {
             degradeName();
+            this.textureImg = IMG_PATH;
+            this.loadCardImage(IMG_PATH);
             this.rawDescription = cardStrings.DESCRIPTION;
             initializeDescription();
             this.superFlash();

@@ -28,7 +28,7 @@ public class FrontlineInstructor extends CustomCard {
 
 
     public FrontlineInstructor() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
         this.baseBlock = 7;
         this.triggered = false;
     }
@@ -36,7 +36,6 @@ public class FrontlineInstructor extends CustomCard {
     @Override
     public void resetAttributes() {
         super.resetAttributes();
-        this.triggered = false;
     }
 
 
@@ -76,6 +75,14 @@ public class FrontlineInstructor extends CustomCard {
             }
         }
         return rally;
+    }
+
+    @Override
+    public void applyPowers() {
+        super.applyPowers();
+        this.rawDescription = cardStrings.DESCRIPTION;
+        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + rally() + cardStrings.EXTENDED_DESCRIPTION[1];
+        this.initializeDescription();
     }
 
 

@@ -52,7 +52,7 @@ public class LuxbladeArriet extends CustomCard {
 
     @Override
     public boolean canUpgrade() {
-        return this.timesUpgraded <= 5;
+        return this.timesUpgraded < 5;
     }
 
     @Override
