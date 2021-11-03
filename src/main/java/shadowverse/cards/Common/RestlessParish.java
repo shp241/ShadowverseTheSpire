@@ -96,7 +96,7 @@ import java.util.ArrayList;
              addToBot((AbstractGameAction)new ChooseOneAction(stanceChoices));
          }else {
              addToBot((AbstractGameAction)new LoseHPAction(p,p,1));
-             addToBot((AbstractGameAction)new ApplyPowerAction(p,p,(AbstractPower)new DrawCardNextTurnPower(p,1),1));
+             addToBot((AbstractGameAction)new ApplyPowerAction(p,p,(AbstractPower)new DrawCardNextTurnPower(p,magicNumber),magicNumber));
          }
    }
  

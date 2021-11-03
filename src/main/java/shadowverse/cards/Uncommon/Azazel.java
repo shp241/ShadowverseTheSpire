@@ -48,7 +48,7 @@ import shadowverse.stance.Vengeance;
      addToBot((AbstractGameAction)new SFXAction("Azazel"));
        int half = AbstractDungeon.player.maxHealth/2;
        int current = AbstractDungeon.player.currentHealth;
-       if (current>half){
+       if (current>half&&current>1){
            AbstractDungeon.player.currentHealth = half;
            AbstractDungeon.player.update();
        }

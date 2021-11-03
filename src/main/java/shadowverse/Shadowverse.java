@@ -856,6 +856,7 @@ import java.util.HashMap;
         BaseMod.addRelicToCustomPool((AbstractRelic) new RevelrySeed(), Vampire.Enums.COLOR_SCARLET);
         BaseMod.addRelicToCustomPool((AbstractRelic) new Offensive5(), Nemesis.Enums.COLOR_SKY);
         BaseMod.addRelicToCustomPool((AbstractRelic) new NemesisBOSS(), Nemesis.Enums.COLOR_SKY);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new ArtsMaster(),Nemesis.Enums.COLOR_SKY);
         BaseMod.addRelicToCustomPool((AbstractRelic) new Offensive6(), Royal.Enums.COLOR_YELLOW);
         BaseMod.addRelicToCustomPool((AbstractRelic) new OliviasBlessing(), Royal.Enums.COLOR_YELLOW);
         BaseMod.addRelicToCustomPool((AbstractRelic) new WindGodsBlessing(), Royal.Enums.COLOR_YELLOW);
