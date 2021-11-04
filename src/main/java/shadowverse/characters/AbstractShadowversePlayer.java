@@ -186,6 +186,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
         this.mysteriaCount = 0;
         this.wrathCount = 0;
         this.drawAmt = 0;
+        this.wrathThisTurn = 0;
         this.resonanceCount = 0;
     }
 

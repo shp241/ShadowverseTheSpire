@@ -69,10 +69,12 @@ public class SatanPotion extends CustomPotion {
     public  void ChoiceSatanCard(){
         ArrayList<AbstractCard> l = new ArrayList<AbstractCard>();
         AbstractCard[] card = new AbstractCard[3];
+        ArrayList<String> dup = new ArrayList<>();
         while (true){
             AbstractCard c = returnCocytusCard(AbstractDungeon.cardRandomRng).makeCopy();
-            if (!l.contains(c)){
+            if (!dup.contains(c.cardID)){
                 l.add(c);
+                dup.add(c.cardID);
             }
             if (l.size() >= 3){
                 break;

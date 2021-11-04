@@ -200,6 +200,7 @@ import java.util.HashMap;
         BaseMod.addPotion(NaterranPotion.class, Color.FOREST, Color.BROWN, Color.FOREST, NaterranPotion.POTION_ID);
         BaseMod.addPotion(BatPotion.class, Color.SCARLET, Color.BLACK, Color.SCARLET, BatPotion.POTION_ID, Vampire.Enums.Vampire);
         BaseMod.addPotion(EpitaphPotion.class, Color.SCARLET, Color.GOLDENROD, Color.SCARLET, EpitaphPotion.POTION_ID, Vampire.Enums.Vampire);
+        BaseMod.addPotion(ArtifactPotion.class, Color.CYAN, Color.CLEAR, Color.CYAN, RosePotion.POTION_ID, Nemesis.Enums.Nemesis);
         /*  94 */
         HashMap<String, Sfx> reflectedMap = getSoundsMap();
         /*  95 */
@@ -857,6 +858,9 @@ import java.util.HashMap;
         BaseMod.addRelicToCustomPool((AbstractRelic) new Offensive5(), Nemesis.Enums.COLOR_SKY);
         BaseMod.addRelicToCustomPool((AbstractRelic) new NemesisBOSS(), Nemesis.Enums.COLOR_SKY);
         BaseMod.addRelicToCustomPool((AbstractRelic) new ArtsMaster(),Nemesis.Enums.COLOR_SKY);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new WhiteRelic(),Nemesis.Enums.COLOR_SKY);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new BlackRelic(),Nemesis.Enums.COLOR_SKY);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new Knife(),Nemesis.Enums.COLOR_SKY);
         BaseMod.addRelicToCustomPool((AbstractRelic) new Offensive6(), Royal.Enums.COLOR_YELLOW);
         BaseMod.addRelicToCustomPool((AbstractRelic) new OliviasBlessing(), Royal.Enums.COLOR_YELLOW);
         BaseMod.addRelicToCustomPool((AbstractRelic) new WindGodsBlessing(), Royal.Enums.COLOR_YELLOW);

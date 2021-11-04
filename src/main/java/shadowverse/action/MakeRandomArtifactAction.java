@@ -12,11 +12,11 @@ import shadowverse.characters.AbstractShadowversePlayer;
 
 import java.util.ArrayList;
 
-public class TechnolordAction extends AbstractGameAction {
+public class MakeRandomArtifactAction extends AbstractGameAction {
     private boolean retrieveCard = false;
 
-    public TechnolordAction() {
-        this.actionType = AbstractGameAction.ActionType.CARD_MANIPULATION;
+    public MakeRandomArtifactAction() {
+        this.actionType = ActionType.CARD_MANIPULATION;
         this.duration = Settings.ACTION_DUR_FAST;
     }
 
@@ -50,10 +50,10 @@ public class TechnolordAction extends AbstractGameAction {
             AbstractCard.CardRarity cardRarity;
             boolean dupe = false;
             int roll = AbstractDungeon.cardRandomRng.random(99);
-            if (roll < 80) {
-                cardRarity = AbstractCard.CardRarity.SPECIAL;
-            } else if (roll < 85) {
+            if (roll < 55) {
                 cardRarity = AbstractCard.CardRarity.COMMON;
+            } else if (roll < 85) {
+                cardRarity = AbstractCard.CardRarity.UNCOMMON;
             } else {
                 cardRarity = AbstractCard.CardRarity.RARE;
             }
@@ -64,7 +64,7 @@ public class TechnolordAction extends AbstractGameAction {
                     break;
                 }
             }
-            if (!dupe&&tmp.hasTag(AbstractShadowversePlayer.Enums.MACHINE))
+            if (!dupe&&tmp.hasTag(AbstractShadowversePlayer.Enums.ARTIFACT))
                 derp.add(tmp.makeCopy());
         }
         return derp;
