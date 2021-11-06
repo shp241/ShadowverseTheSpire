@@ -47,7 +47,10 @@ import shadowverse.characters.Nemesis;
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      addToBot((AbstractGameAction)new SFXAction("Noa"));
-     addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+     AbstractCard pup = this.cardsToPreview.makeStatEquivalentCopy();
+     pup.baseDamage += this.magicNumber;
+     pup.applyPowers();
+     addToBot((AbstractGameAction)new MakeTempCardInHandAction(pup));
      addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
      for (AbstractCard c : AbstractDungeon.player.hand.group) {
        if (c instanceof Puppet) {

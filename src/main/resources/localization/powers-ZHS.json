@@ -933,6 +933,13 @@
       " #y林地蝙蝠 的基础伤害翻倍。未 狂乱 时打出 #y林地蝙蝠 失去1点生命。 狂乱 时打出 #y林地蝙蝠 会给予 #b2 层 中毒 并回复 #b2 点生命。"
     ]
   },
+  "shadowverse:TheWheelOfFortunePower": {
+    "NAME": "惨祸的圆环",
+    "DESCRIPTIONS": [
+      "接下来的 #b",
+      " 个回合内，回合开始前从以下3种效果中发动一种未发动过的效果：「失去 #b2 点力量」「眩晕 #b1 回合」「增加 #b1 张 #y解析的创造物 到你的手中」。"
+    ]
+  },
   "shadowverse:BrandOfMorningStarPower": {
     "NAME": "灾祸刻印",
     "DESCRIPTIONS": [

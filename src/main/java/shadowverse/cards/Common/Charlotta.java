@@ -10,8 +10,10 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import shadowverse.characters.Royal;
+import shadowverse.powers.DisableEffectDamagePower;
 
 public class Charlotta extends CustomCard {
     public static final String ID = "shadowverse:Charlotta";
@@ -76,6 +78,7 @@ public class Charlotta extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
         if (this.upgraded) {
             addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, this.magicNumber), this.magicNumber));
+            addToBot(new ApplyPowerAction(p,p,(AbstractPower)new DisableEffectDamagePower(p,1),1));
             this.degrade();
         }
     }

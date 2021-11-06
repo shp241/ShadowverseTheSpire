@@ -2,6 +2,7 @@
 
 
  import basemod.abstracts.CustomRelic;
+ import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.BetterOnApplyPowerPower;
  import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.OnReceivePowerPower;
  import com.megacrit.cardcrawl.actions.AbstractGameAction;
  import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
@@ -17,7 +18,7 @@
 
 
  public class BerserkRelic
-   extends CustomRelic implements OnReceivePowerPower
+   extends CustomRelic implements BetterOnApplyPowerPower
  {
    public static final String ID = "shadowverse:BerserkRelic";
    public static final String IMG = "img/relics/BerserkRelic.png";
@@ -31,20 +32,14 @@
      return this.DESCRIPTIONS[0];
    }
 
-   public void onChangeStance(AbstractStance prevStance, AbstractStance newStance) {
-       if (newStance.ID.equals(Vengeance.STANCE_ID)){
-           addToBot((AbstractGameAction)new GainEnergyAction(1));
-       }
-   }
-
-
    public AbstractRelic makeCopy() {
      return (AbstractRelic)new BerserkRelic();
    }
 
+
      @Override
-     public boolean onReceivePower(AbstractPower abstractPower, AbstractCreature abstractCreature, AbstractCreature abstractCreature1) {
-       if (abstractPower.ID.equals(WrathPower.POWER_ID)){
+     public boolean betterOnApplyPower(AbstractPower abstractPower, AbstractCreature abstractCreature, AbstractCreature abstractCreature1) {
+       if (abstractPower instanceof WrathPower){
            addToBot((AbstractGameAction)new HealAction(AbstractDungeon.player,AbstractDungeon.player,7));
        }
          return true;

@@ -2471,6 +2471,32 @@
     "DESCRIPTION": "一回合一次， 消耗 攻击牌时，增加1张 *暗影士兵 到手中。 NL 如果消耗堆中的攻击牌数量为15以上，改为增加1张 *暗影指挥官 到手中。",
     "UPGRADE_DESCRIPTION": "固有 。 NL 一回合一次， 消耗 攻击牌时，增加1张 *暗影士兵 到手中。 NL 如果消耗堆中的攻击牌数量为15以上，改为增加1张 *暗影指挥官 到手中。"
   },
+  "shadowverse:TheWheelOfFortune": {
+    "NAME": "《命运之轮》·斯洛士",
+    "DESCRIPTION": "非 共鸣 获得1点 力量 和 敏捷 ，给予全体敌人3层 虚弱 。 NL 共鸣 给予全体敌人以下效果：3回合内，回合开始前从以下3种效果中发动一种未发动过的效果：「失去2点 力量 」「 眩晕 1回合」「增加1张 *解析的创造物 到你的手中」。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION": "获得1点 力量 和 敏捷 ，给予全体敌人3层 虚弱 和以下效果：3回合内，回合开始前从以下3种效果中发动一种未发动过的效果：「失去2点 力量 」「 眩晕 1回合」「增加1张 *解析的创造物 到你的手中」。 NL 虚无 。"
+  },
+  "shadowverse:Scavenge": {
+    "NAME": "废品的拣选",
+    "DESCRIPTION": "从弃牌堆中选择 !M! 张攻击牌加入手中。 NL 消耗 。"
+  },
+  "shadowverse:EnhancedPuppet": {
+    "NAME": "改良型·悬丝傀儡",
+    "DESCRIPTION": "这张卡也视为 *悬丝傀儡 。 NL 造成 !D! 点伤害。 NL 虚无 。 NL 消耗 。"
+  },
+  "shadowverse:RevisedExperiment": {
+    "NAME": "改良实验",
+    "DESCRIPTION": "增加1张 *改良型·悬丝傀儡 到手中。",
+    "UPGRADE_DESCRIPTION": "增加1张 *改良型·悬丝傀儡+ 到手中。"
+  },
+  "shadowverse:Sleipnir": {
+    "NAME": "斯莱普尼尔",
+    "DESCRIPTION": "保留 。 NL 操纵 1。 NL 造成 !D! 点伤害，获得 !B! 点 格挡 。 NL 给予 !M! 层 易伤 和 虚弱 ，获得1层 残影 。"
+  },
+  "shadowverse:Odin": {
+    "NAME": "黄昏战神·奥丁",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得1层 无实体 。 NL 增加1张 *斯莱普尼尔 到手中。 NL 消耗 。"
+  },
   "shadowverse:Strike_R": {
     "NAME": "打击",
     "DESCRIPTION": "造成 !D! 点伤害。"
@@ -2702,8 +2728,8 @@
   },
   "shadowverse:Alyaska": {
     "NAME": "战争商人·阿尔亚斯卡",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 抽到时将一张 *进化点 置入手牌",
-    "UPGRADE_DESCRIPTION": "打出后解除升级。 造成 !D! 点伤害。 NL 将一张 *究极兵器 置入手牌。"
+    "DESCRIPTION": "获得1层 能力伤害无效 。 NL 造成 !D! 点伤害。 NL 抽到时将一张 *进化点 置入手牌",
+    "UPGRADE_DESCRIPTION": "使用后解除升级。 NL 获得1层 能力伤害无效 。 NL 造成 !D! 点伤害。 NL 将一张 *究极兵器 置入手牌。"
   },
   "shadowverse:ExterminusWeapon": {
     "NAME": "究极兵器",
@@ -2785,7 +2811,7 @@
   "shadowverse:Charlotta": {
     "NAME": "小小的圣骑士·夏绿蒂",
     "DESCRIPTION": "获得 !B! 点 格挡。",
-    "UPGRADE_DESCRIPTION": "打出后解除升级。 NL 获得 !B! 点 格挡，获得 !M! 点 敏捷 。"
+    "UPGRADE_DESCRIPTION": "使用后解除升级。 NL 获得 !B! 点 格挡，获得 !M! 点 敏捷 。 NL 获得1层 能力伤害无效 。"
   },
   "shadowverse:Latham": {
     "NAME": "高洁的骑士·雷瑟姆",

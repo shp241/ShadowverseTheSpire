@@ -43,6 +43,7 @@ public class BrandOfMorningStar extends AbstractNeutralCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            this.isInnate = true;
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
