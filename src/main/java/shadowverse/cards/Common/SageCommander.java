@@ -1,4 +1,4 @@
-package shadowverse.cards.Basic;
+package shadowverse.cards.Common;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
@@ -20,8 +20,8 @@ public class SageCommander extends CustomCard {
     public static final String IMG_PATH = "img/cards/SageCommander.png";
 
     public SageCommander() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.BASIC, CardTarget.SELF);
-        this.baseBlock = 5;
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF);
+        this.baseBlock = 16;
     }
 
 
@@ -29,7 +29,7 @@ public class SageCommander extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(3);
+            upgradeBlock(4);
         }
     }
 
@@ -38,7 +38,7 @@ public class SageCommander extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
-        AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(1, 0, true));
+        AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(0, 1, true));
     }
 
 

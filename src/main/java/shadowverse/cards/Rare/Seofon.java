@@ -35,7 +35,7 @@ public class Seofon extends CustomCard {
     public Seofon(int upgrades) {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ENEMY);
         this.baseDamage = 9;
-        this.baseMagicNumber = 8;
+        this.baseMagicNumber = 6;
         this.magicNumber = this.baseMagicNumber;
         this.timesUpgraded = upgrades;
         this.triggered = false;
@@ -74,14 +74,14 @@ public class Seofon extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (this.magicNumber <= 0) {
             addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_SSA"));
-        } else if (this.magicNumber <= 4) {
+        } else if (this.magicNumber <= 3) {
             addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_SA"));
         } else {
             addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         }
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         addToBot(new DrawCardAction(p, 1));
-        if (this.magicNumber <= 4) {
+        if (this.magicNumber <= 3) {
             this.addToBot(new ApotheosisAction());
         }
         if (!this.triggered && this.magicNumber <= 0) {
@@ -93,13 +93,13 @@ public class Seofon extends CustomCard {
     @Override
     public void applyPowers() {
         super.applyPowers();
-        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + Math.max(0, this.magicNumber - 4) + cardStrings.EXTENDED_DESCRIPTION[1] + Math.max(0, this.magicNumber) + cardStrings.EXTENDED_DESCRIPTION[2];
+        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + Math.max(0, this.magicNumber - 3) + cardStrings.EXTENDED_DESCRIPTION[1] + Math.max(0, this.magicNumber) + cardStrings.EXTENDED_DESCRIPTION[2];
         this.initializeDescription();
     }
 
     @Override
     public void onMoveToDiscard() {
-        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + Math.max(0, this.magicNumber - 4) + cardStrings.EXTENDED_DESCRIPTION[1] + Math.max(0, this.magicNumber) + cardStrings.EXTENDED_DESCRIPTION[2];
+        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + Math.max(0, this.magicNumber - 3) + cardStrings.EXTENDED_DESCRIPTION[1] + Math.max(0, this.magicNumber) + cardStrings.EXTENDED_DESCRIPTION[2];
         this.initializeDescription();
     }
 

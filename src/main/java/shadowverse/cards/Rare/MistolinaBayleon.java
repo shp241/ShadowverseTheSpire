@@ -33,7 +33,7 @@ public class MistolinaBayleon extends CustomCard {
         this.tags.add(AbstractShadowversePlayer.Enums.NATURAL);
         this.baseDamage = 8;
         this.baseBlock = 12;
-        this.baseMagicNumber = 10;
+        this.baseMagicNumber = 8;
         this.magicNumber = this.baseMagicNumber;
     }
 
@@ -43,7 +43,7 @@ public class MistolinaBayleon extends CustomCard {
             upgradeName();
             upgradeDamage(2);
             upgradeBlock(6);
-            upgradeMagicNumber(5);
+            upgradeMagicNumber(2);
         }
     }
 
@@ -53,7 +53,7 @@ public class MistolinaBayleon extends CustomCard {
         addToBot(new SelectCardsInHandAction(1, TEXT[0], false, false, card -> card.type == CardType.POWER, abstractCards -> {
             for (AbstractCard c : abstractCards) {
                 if (c instanceof NaterranGreatTree) {
-                    this.addToTop(new GainEnergyAction(1));
+                    this.addToTop(new GainEnergyAction(2));
                 }
                 addToBot(new ExhaustSpecificCardAction(c, p.hand));
             }
@@ -62,6 +62,8 @@ public class MistolinaBayleon extends CustomCard {
             if (c.type==CardType.POWER){
                 this.baseDamage += this.magicNumber;
                 this.damage += this.magicNumber;
+                this.baseBlock += this.magicNumber;
+                this.block += this.magicNumber;
                 break;
             }
         }

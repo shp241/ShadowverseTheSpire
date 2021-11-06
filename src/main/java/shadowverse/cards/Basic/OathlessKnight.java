@@ -28,8 +28,8 @@ public class OathlessKnight extends CustomCard {
     public static final String IMG_PATH = "img/cards/OathlessKnight.png";
 
     public OathlessKnight() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.BASIC, CardTarget.ENEMY);
-        this.baseDamage = 6;
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.BASIC, CardTarget.ENEMY);
+        this.baseDamage = 4;
     }
 
 

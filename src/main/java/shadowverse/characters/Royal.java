@@ -23,8 +23,6 @@ import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import shadowverse.cards.Basic.*;
 import shadowverse.cards.Common.*;
-import shadowverse.cards.Rare.Octrice;
-import shadowverse.cards.Uncommon.ApostleOfUsurpation;
 
 import java.util.ArrayList;
 
@@ -69,7 +67,7 @@ public class Royal extends AbstractShadowversePlayer {
             starterDeck.add(Defend_R.ID);
         }
         starterDeck.add(OathlessKnight.ID);
-        starterDeck.add(SageCommander.ID);
+        starterDeck.add(FloralFencer.ID);
         return starterDeck;
     }
 
@@ -105,7 +103,7 @@ public class Royal extends AbstractShadowversePlayer {
 
     @Override
     public AbstractCard getStartCardForEvent() {
-        return (AbstractCard) new SageCommander();
+        return (AbstractCard) new FloralFencer();
     }
 
     @Override
