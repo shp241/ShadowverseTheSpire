@@ -3,11 +3,13 @@ package shadowverse.cards.Rare;
 import basemod.abstracts.CustomCard;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -22,6 +24,7 @@ import shadowverse.cards.Temp.ExterminusWeapon;
 import shadowverse.characters.Royal;
 import shadowverse.orbs.Knight;
 import shadowverse.orbs.SteelcladKnight;
+import shadowverse.powers.DisableEffectDamagePower;
 
 public class Alyaska extends CustomCard {
     public static final String ID = "shadowverse:Alyaska";
@@ -75,6 +78,7 @@ public class Alyaska extends CustomCard {
         } else {
             addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         }
+        addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new DisableEffectDamagePower(abstractPlayer,1),1));
         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         if (this.upgraded) {
             AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();

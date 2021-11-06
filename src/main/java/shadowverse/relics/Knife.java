@@ -50,6 +50,8 @@
 
      public void onLoseHp(int damageAmount) {
        this.counter--;
+       if (this.counter<0)
+           this.counter=0;
      }
 
      public void onVictory() {
