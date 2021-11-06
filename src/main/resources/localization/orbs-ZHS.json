@@ -57,6 +57,21 @@
     ],
     "NAME": "迅捷的剑士"
   },
+  "shadowverse:Viking": {
+    "DESCRIPTION": [
+      "#y被动： 在你的回合结束时，给予随机敌人 #b",
+      " 层 #y易伤， #b",
+      " 点伤害并失去 #b1 点生命值。 NL #y激发： 重复被动效果直到生命值为 #b0 。"
+    ],
+    "NAME": "航海家"
+  },
+  "shadowverse:Pirate": {
+    "DESCRIPTION": [
+      "#y被动： 在你的回合结束时，获得 #b",
+      " 点格挡并失去 #b1 点生命值。 NL #y激发： 重复被动效果直到生命值为 #b0 。"
+    ],
+    "NAME": "海盗"
+  },
   "shadowverse:CannonHermitCrabOrb": {
     "DESCRIPTION": [
       "#y被动： 在你的回合结束时，对随机敌人造成 #b",

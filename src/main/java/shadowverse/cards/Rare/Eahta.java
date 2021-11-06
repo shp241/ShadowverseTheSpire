@@ -31,7 +31,7 @@ public class Eahta extends CustomCard {
     public Eahta(int upgrades) {
         super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ENEMY);
         this.baseDamage = 15;
-        this.baseMagicNumber = 8;
+        this.baseMagicNumber = 6;
         this.magicNumber = this.baseMagicNumber;
         this.timesUpgraded = upgrades;
     }
@@ -64,7 +64,7 @@ public class Eahta extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (this.magicNumber <= 0) {
             addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_SSA"));
-        } else if (this.magicNumber <= 4) {
+        } else if (this.magicNumber <= 3) {
             addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_SA"));
         } else {
             addToBot(new SFXAction(ID.replace("shadowverse:", "")));
@@ -85,7 +85,7 @@ public class Eahta extends CustomCard {
                 }
             }
         }
-        if (this.magicNumber <= 4) {
+        if (this.magicNumber <= 3) {
             for (AbstractCard c : p.hand.group) {
                 if (c.color == Royal.Enums.COLOR_YELLOW && (c.type == CardType.ATTACK || c.type == CardType.SKILL && c.hasTag(AbstractShadowversePlayer.Enums.ACCELERATE))) {
                     addToBot(new ReduceCostForTurnAction(c, 2));
@@ -98,13 +98,13 @@ public class Eahta extends CustomCard {
     @Override
     public void applyPowers() {
         super.applyPowers();
-        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + Math.max(0, this.magicNumber - 4) + cardStrings.EXTENDED_DESCRIPTION[1] + Math.max(0, this.magicNumber) + cardStrings.EXTENDED_DESCRIPTION[2];
+        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + Math.max(0, this.magicNumber - 3) + cardStrings.EXTENDED_DESCRIPTION[1] + Math.max(0, this.magicNumber) + cardStrings.EXTENDED_DESCRIPTION[2];
         this.initializeDescription();
     }
 
     @Override
     public void onMoveToDiscard() {
-        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + Math.max(0, this.magicNumber - 4) + cardStrings.EXTENDED_DESCRIPTION[1] + Math.max(0, this.magicNumber) + cardStrings.EXTENDED_DESCRIPTION[2];
+        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + Math.max(0, this.magicNumber - 3) + cardStrings.EXTENDED_DESCRIPTION[1] + Math.max(0, this.magicNumber) + cardStrings.EXTENDED_DESCRIPTION[2];
         this.initializeDescription();
     }
 
