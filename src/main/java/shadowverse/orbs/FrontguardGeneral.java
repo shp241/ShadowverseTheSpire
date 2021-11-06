@@ -20,8 +20,8 @@ public class FrontguardGeneral extends Minion {
     public static final String ORB_ID = "shadowverse:FrontguardGeneral";
     private static final OrbStrings orbString = CardCrawlGame.languagePack.getOrbString(ORB_ID);
     public static final String[] DESCRIPTIONS = orbString.DESCRIPTION;
-    private static final int ATTACK = 4;
-    private static final int DEFENSE = 5;
+    private static final int ATTACK = 5;
+    private static final int DEFENSE = 6;
 
     public FrontguardGeneral() {
         // The passive/evoke description we pass in here, specifically, don't matter
@@ -39,7 +39,7 @@ public class FrontguardGeneral extends Minion {
 
     @Override
     public void updateDescription() { // Set the on-hover description of the orb
-        description = DESCRIPTIONS[0] + "3*" + this.attack + "=" + 3 * this.attack + DESCRIPTIONS[1] + this.attack + DESCRIPTIONS[2];
+        description = DESCRIPTIONS[0] + "2*" + this.attack + "=" + 2 * this.attack + DESCRIPTIONS[1] + this.attack + DESCRIPTIONS[2];
     }
 
     @Override

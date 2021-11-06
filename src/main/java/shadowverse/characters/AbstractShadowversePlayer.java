@@ -35,6 +35,8 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
         @SpireEnum
         public static AbstractCard.CardTags MACHINE;
         @SpireEnum
+        public static AbstractCard.CardTags LEVIN;
+        @SpireEnum
         public static AbstractCard.CardTags ACCELERATE;
         @SpireEnum
         public static AbstractCard.CardTags CRYSTALLIZE;

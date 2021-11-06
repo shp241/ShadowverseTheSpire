@@ -1,6 +1,7 @@
 package shadowverse.cards.Uncommon;
 
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -27,6 +28,7 @@ public class ShieldPhalanx extends CustomCard {
     public ShieldPhalanx() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
         this.triggered = false;
+        this.baseBlock = 4;
     }
 
     @Override
@@ -39,6 +41,7 @@ public class ShieldPhalanx extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            this.upgradeBlock(2);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
@@ -47,6 +50,7 @@ public class ShieldPhalanx extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+        addToBot(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
         if (!this.triggered && rally() >= 15) {
             this.triggered = true;
             AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new FrontguardGeneral()));

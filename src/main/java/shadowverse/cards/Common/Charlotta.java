@@ -25,8 +25,8 @@ public class Charlotta extends CustomCard {
 
     public Charlotta() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF);
-        this.baseBlock = 8;
-        this.baseMagicNumber = this.magicNumber = 2;
+        this.baseBlock = 9;
+        this.baseMagicNumber = this.magicNumber = 1;
     }
 
 

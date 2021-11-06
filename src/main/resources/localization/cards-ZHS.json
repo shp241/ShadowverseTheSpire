@@ -2536,11 +2536,11 @@
   },
   "shadowverse:DanceOfUsurpation": {
     "NAME": "强夺之舞",
-    "DESCRIPTION": "对全体敌人造成 !D! 点伤害，随机将2张财宝牌加入手牌。"
+    "DESCRIPTION": "对全体敌人造成 !D! 点伤害，随机将2张 财宝牌 加入手牌。"
   },
   "shadowverse:UsurpingSpineblade": {
     "NAME": "强夺的蛇剑",
-    "DESCRIPTION": "造成 !D! 点伤害，随机将1张财宝牌加入手牌。"
+    "DESCRIPTION": "造成 !D! 点伤害，随机将1张 财宝牌 加入手牌。"
   },
   "shadowverse:WeeMerchantsAppraisal": {
     "NAME": "商人的鉴定",
@@ -2549,22 +2549,22 @@
   },
   "shadowverse:DiscipleOfUsurpation": {
     "NAME": "强夺的信徒",
-    "DESCRIPTION": "每使用一张财宝牌，获得 !M! 点护甲。"
+    "DESCRIPTION": "每使用一张 财宝牌 ，获得 !M! 点护甲。"
   },
   "shadowverse:ApostleOfUsurpation": {
     "NAME": "强夺的使徒",
-    "DESCRIPTION": "每使用一张财宝牌，对随机敌人造成 !M! 点伤害。",
-    "UPGRADE_DESCRIPTION": "每使用一张财宝牌，对随机敌人造成 !M! 点伤害。NL 随机将1张财宝牌加入手牌。"
+    "DESCRIPTION": "每使用一张 财宝牌 ，对随机敌人造成 !M! 点伤害。",
+    "UPGRADE_DESCRIPTION": "每使用一张 财宝牌 ，对随机敌人造成 !M! 点伤害。NL 随机将1张 财宝牌 加入手牌。"
   },
   "shadowverse:Octrice": {
     "NAME": "强夺灾杰·奥克托丽丝",
     "DESCRIPTION": "使敌人失去2点 力量，获得2点 力量。获得 !M! 金币。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "使敌人失去2点 力量，获得2点 力量。获得 !M! 金币。 NL 随机将2张财宝牌加入手牌。 NL 消耗 。"
+    "UPGRADE_DESCRIPTION": "使敌人失去2点 力量，获得2点 力量。获得 !M! 金币。 NL 随机将2张 财宝牌 加入手牌。 NL 消耗 。"
   },
   "shadowverse:Mars": {
     "NAME": "沉默的炎将·玛尔斯",
     "DESCRIPTION": "每召唤一个随从，使其获得+ !M! /+ !M! 。 NL 虚无",
-    "UPGRADE_DESCRIPTION": "固有 NL 每召唤一个随从，使其获得+ !M! /+ !M! 。"
+    "UPGRADE_DESCRIPTION": "每召唤一个随从，使其获得+ !M! /+ !M! 。"
   },
   "shadowverse:Sera": {
     "NAME": "曙光少女·赛拉",
@@ -2573,7 +2573,7 @@
   },
   "shadowverse:MistolinaBayleon": {
     "NAME": "光耀导引·米丝特莉娜与贝里昂",
-    "DESCRIPTION": "自然 。 NL 造成 !D! 点伤害， NL 获得 !B! 点格挡。 NL 若手牌中有能力牌， NL 选择消耗一张， NL 本局对战中造成的伤害和格挡+ !M! ， NL 若为 *那塔拉的大树 获得 [E] [E] 。"
+    "DESCRIPTION": "自然 。 NL 造成 !D! 点伤害，获得 !B! 点格挡。若手牌中有能力牌，选择消耗一张，本局对战中造成的伤害和格挡+ !M! ，若为 *那塔拉的大树 获得 [E] [E] 。"
   },
   "shadowverse:TemperedMana": {
     "NAME": "勇气玛纳",
@@ -2590,8 +2590,8 @@
   },
   "shadowverse:ShieldPhalanx": {
     "NAME": "坚盾战阵",
-    "DESCRIPTION": "召唤一个 战盾卫士 NL 和一个 骑士 。 NL ",
-    "UPGRADE_DESCRIPTION": "召唤一个 战盾卫士 NL 和一个 骑士 。 NL 限定 协作 15：由 战盾卫士 改为 铁卫战将 。 NL ",
+    "DESCRIPTION": "获得 !B! 点格挡。 NL 召唤一个 战盾卫士 NL 和一个 骑士 。 NL ",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡。 NL 召唤一个 战盾卫士 NL 和一个 骑士 。 NL 限定 协作 15：由 战盾卫士 改为 铁卫战将 。 NL ",
     "EXTENDED_DESCRIPTION": [
       "（协作数：",
       ")"
@@ -2815,21 +2815,21 @@
   },
   "shadowverse:Latham": {
     "NAME": "高洁的骑士·雷瑟姆",
-    "DESCRIPTION": "每当你使用一张攻击牌，召唤1个骑士。 NL 此效果无法叠加。 NL 虚无",
-    "UPGRADE_DESCRIPTION": "每当你使用一张攻击牌，召唤1个骑士。 NL 此效果无法叠加。"
+    "DESCRIPTION": "每当你使用一张攻击牌，召唤1个 骑士 。 NL 此效果无法叠加。 NL 虚无",
+    "UPGRADE_DESCRIPTION": "每当你使用一张攻击牌，召唤1个 骑士 。 NL 此效果无法叠加。"
   },
   "shadowverse:Alwida": {
-    "NAME": "海盗女王·雅尔莉妲",
-    "DESCRIPTION": "每回合限 !M! 次，每当你使用财宝牌，召唤1个海盗和1个航海家。"
+    "NAME": "海贼女王·雅尔莉妲",
+    "DESCRIPTION": "每回合限 !M! 次，每当你使用 财宝牌 ，召唤1个 航海家 和1个 维京战士 。"
   },
   "shadowverse:Patrick": {
     "NAME": "战犀骑士·帕特里克",
-    "DESCRIPTION": "自然 。 NL 获得 !B! 点格挡，如果你的随从个数不多于1个，获得 [E] [E] 。 NL 抽1张 自然 牌。"
+    "DESCRIPTION": "自然 。 NL 获得 !B! 点格挡，如果你的随从个数不多于1个，获得 [E] [E] 。 NL 抽1张 自然 牌，增加一张 *那塔拉的大树 到手中。"
   },
   "shadowverse:Johann": {
     "NAME": "纯铁英雄·约翰",
-    "DESCRIPTION": "机械 。 NL 造成 !D! 点伤害。 NL 每打出一张 机械 牌在本局对战中消耗-1。 NL 使手牌中其他机械卡消耗-1。",
-    "UPGRADE_DESCRIPTION": "机械 。 NL 造成 !D! 点伤害。 NL 每打出一张 机械 牌在本局对战中消耗-1。 NL 使手牌中其他机械卡消耗-1。 NL 保留"
+    "DESCRIPTION": "机械 。 NL 造成 !D! 点伤害。 NL 每打出一张 机械 牌在本局对战中消耗-1。 NL 本回合中使用机械牌时获得 !M! 点格挡。",
+    "UPGRADE_DESCRIPTION": "机械 。 NL 造成 !D! 点伤害。 NL 每打出一张 机械 牌在本局对战中消耗-1。 NL 本回合中使用机械牌时获得 !M! 点格挡。 NL 保留"
   },
   "shadowverse:Grayson": {
     "NAME": "迅猛驭剑士·格雷森",
@@ -2864,14 +2864,14 @@
   "shadowverse:LevinArcher": {
     "NAME": "雷维翁弓箭手",
     "DESCRIPTION": "雷维翁 。 NL 造成 !D! 点伤害，给予 !M! 层 易伤。",
-    "UPGRADE_DESCRIPTION": "雷维翁 。 NL 打出后解除升级。 NL 造成 !D! 点伤害2次，给予 !M! 层 易伤。"
+    "UPGRADE_DESCRIPTION": "雷维翁 。 NL 打出后解除升级。 NL 造成 !D! 点伤害，给予 !M! 层 易伤2次。"
   },
   "shadowverse:Lounes": {
     "NAME": "雷维翁见习兵·璐涅丝",
-    "DESCRIPTION": "雷维翁 。 NL 造成 !D! 点伤害，手牌中每有1张 雷维翁 牌，获得1次 !D! 点格挡。 NL 爆能强化 1 \b再造成一次伤害。"
+    "DESCRIPTION": "雷维翁 。 NL 造成 !D! 点伤害，手牌中每有1张 雷维翁 牌，获得1次 !B! 点格挡。 NL 爆能强化 1 \b再造成一次伤害。"
   },
   "shadowverse:Cybercannoneer": {
-    "NAME": "机械",
+    "NAME": "加农炮破坏者",
     "DESCRIPTION": "机械 。 NL 造成 !D! 点伤害，将 !M! 张 *生产机械 置入手牌。"
   },
   "shadowverse:StampedingFortress": {
@@ -2881,24 +2881,25 @@
   },
   "shadowverse:MeetTheLevinSisters": {
     "NAME": "雷维翁姐妹登场！",
-    "DESCRIPTION": "雷维翁 。 NL 抉择 NL 从 * 、 * 、 * 中选择1张加入手中。 NL 消耗。",
-    "UPGRADE_DESCRIPTION": "雷维翁 。 NL 将 * 、 * 、 * 加入手牌。 NL 消耗。"
+    "DESCRIPTION": "雷维翁 。 NL 抉择 NL 从 *雷维翁副团长·玛姆 、 *雷维翁魔法师·蜜姆 、 *雷维翁武斗家·梅姆 中选择1张加入手中。 NL 消耗。",
+    "UPGRADE_DESCRIPTION": "雷维翁 。 NL 将 *雷维翁副团长·玛姆 、 *雷维翁魔法师·蜜姆 、 *雷维翁武斗家·梅姆 加入手牌。 NL 消耗。"
   },
   "shadowverse:Mina": {
     "NAME": "雷维翁副团长·玛姆",
-    "DESCRIPTION": "雷维翁 。 NL 造成 !D! 点伤害，抽 !M! 张雷维翁牌。"
+    "DESCRIPTION": "雷维翁 。 NL 造成 !D! 点伤害，选择抽牌堆中的1张 雷维翁 牌，将其置入手牌并在本回合中 保留 。"
   },
   "shadowverse:Mona": {
     "NAME": "雷维翁魔法师·蜜姆",
-    "DESCRIPTION": "雷维翁 。 NL 获得 !B! 点 格挡，获得 [E] [E]。"
+    "DESCRIPTION": "雷维翁 。 NL 获得 !B! 点 格挡，获得 [E] 。 NL 如果手牌中有其他 雷维翁 牌，再获得 [E] 。"
   },
   "shadowverse:Mena": {
     "NAME": "雷维翁武斗家·梅姆",
-    "DESCRIPTION": "雷维翁 。 NL 造成 !D! 点伤害，给予 !M! 层 易伤 和 虚弱。"
+    "DESCRIPTION": "雷维翁 。 NL 造成 !D! 点伤害。 NL 如果手牌中有其他 雷维翁 牌，给予 !M! 层 易伤 和 虚弱。"
   },
   "shadowverse:Nahtnaught": {
     "NAME": "咒箱女王·娜哈特·娜哈特",
-    "DESCRIPTION": "将1张 *暴君谕令 置入手牌。 NL 爆能强化 2 \b生成2个 娜哈特的私兵 到敌方。"
+    "DESCRIPTION": "将1张 *暴君谕令 置入手牌。 NL 爆能强化 2 \b生成2个 娜哈特的私兵 到敌方。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "固有 。 NL 将1张 *暴君谕令 置入手牌。 NL 爆能强化 2 \b生成2个 娜哈特的私兵 到敌方。 NL 消耗 。"
   },
   "shadowverse:TyrantsOrder": {
     "NAME": "暴君谕令",

@@ -808,7 +808,34 @@ import java.util.HashMap;
         reflectedMap.put("WarriorWing", new Sfx("sounds/WarriorWing.wav"));
         reflectedMap.put("WarriorWing_Ev", new Sfx("sounds/WarriorWing_Ev.wav"));
         reflectedMap.put("WhitePaladin", new Sfx("sounds/WhitePaladin.wav"));
-
+        reflectedMap.put("Albert", new Sfx("sounds/Albert.wav"));
+        reflectedMap.put("Alwida", new Sfx("sounds/Alwida.wav"));
+        reflectedMap.put("Alwida_Pow", new Sfx("sounds/Alwida_Pow.wav"));
+        reflectedMap.put("Cybercannoneer", new Sfx("sounds/Cybercannoneer.wav"));
+        reflectedMap.put("Grayson", new Sfx("sounds/Grayson.wav"));
+        reflectedMap.put("Jeno", new Sfx("sounds/Jeno.wav"));
+        reflectedMap.put("Johann", new Sfx("sounds/Johann.wav"));
+        reflectedMap.put("Latham", new Sfx("sounds/Latham.wav"));
+        reflectedMap.put("LevinArcher", new Sfx("sounds/LevinArcher.wav"));
+        reflectedMap.put("LevinArcher_Ev", new Sfx("sounds/LevinArcher_Ev.wav"));
+        reflectedMap.put("LevinBeastmaster", new Sfx("sounds/LevinBeastmaster.wav"));
+        reflectedMap.put("LevinBeastmaster_Ev", new Sfx("sounds/LevinBeastmaster_Ev.wav"));
+        reflectedMap.put("LevinScholar", new Sfx("sounds/LevinScholar.wav"));
+        reflectedMap.put("Lounes", new Sfx("sounds/Lounes.wav"));
+        reflectedMap.put("Lounes_Eh", new Sfx("sounds/Lounes_Eh.wav"));
+        reflectedMap.put("Mena", new Sfx("sounds/Mena.wav"));
+        reflectedMap.put("Mina", new Sfx("sounds/Mina.wav"));
+        reflectedMap.put("Mona", new Sfx("sounds/Mona.wav"));
+        reflectedMap.put("Nahtnaught", new Sfx("sounds/Nahtnaught.wav"));
+        reflectedMap.put("Patrick", new Sfx("sounds/Patrick.wav"));
+        reflectedMap.put("Pirate", new Sfx("sounds/Pirate.wav"));
+        reflectedMap.put("Pirate_Atk", new Sfx("sounds/Pirate_Atk.wav"));
+        reflectedMap.put("StampedingFortress", new Sfx("sounds/StampedingFortress.wav"));
+        reflectedMap.put("Viking", new Sfx("sounds/Viking.wav"));
+        reflectedMap.put("Viking_Atk", new Sfx("sounds/Viking_Atk.wav"));
+        reflectedMap.put("WhiteTiger", new Sfx("sounds/WhiteTiger.wav"));
+        reflectedMap.put("Nahtnaught_Eh", new Sfx("sounds/Nahtnaught_Eh.wav"));
+        reflectedMap.put("TyrantsOrder", new Sfx("sounds/TyrantsOrder.wav"));
         /*     */
     }
 
@@ -870,6 +897,7 @@ import java.util.HashMap;
         BaseMod.addRelicToCustomPool((AbstractRelic) new Offensive6(), Royal.Enums.COLOR_YELLOW);
         BaseMod.addRelicToCustomPool((AbstractRelic) new OliviasBlessing(), Royal.Enums.COLOR_YELLOW);
         BaseMod.addRelicToCustomPool((AbstractRelic) new WindGodsBlessing(), Royal.Enums.COLOR_YELLOW);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new Conscription(), Royal.Enums.COLOR_YELLOW);
         /*     */
     }
 
@@ -1603,6 +1631,27 @@ import java.util.HashMap;
         BaseMod.addCard((AbstractCard) new LuxbladeArriet());
         BaseMod.addCard((AbstractCard) new EmpressOfSerenity());
         BaseMod.addCard((AbstractCard) new Charlotta());
+        BaseMod.addCard((AbstractCard) new Latham());
+        BaseMod.addCard((AbstractCard) new Alwida());
+        BaseMod.addCard((AbstractCard) new Patrick());
+        BaseMod.addCard((AbstractCard) new Johann());
+        BaseMod.addCard((AbstractCard) new Grayson());
+        BaseMod.addCard((AbstractCard) new Albert());
+        BaseMod.addCard((AbstractCard) new LevinScholar());
+        BaseMod.addCard((AbstractCard) new GloriousCore());
+        BaseMod.addCard((AbstractCard) new LevinBeastmaster());
+        BaseMod.addCard((AbstractCard) new WhiteTiger());
+        BaseMod.addCard((AbstractCard) new Jeno());
+        BaseMod.addCard((AbstractCard) new LevinArcher());
+        BaseMod.addCard((AbstractCard) new Lounes());
+        BaseMod.addCard((AbstractCard) new Cybercannoneer());
+        BaseMod.addCard((AbstractCard) new StampedingFortress());
+        BaseMod.addCard((AbstractCard) new MeetTheLevinSisters());
+        BaseMod.addCard((AbstractCard) new Mina());
+        BaseMod.addCard((AbstractCard) new Mona());
+        BaseMod.addCard((AbstractCard) new Mena());
+        BaseMod.addCard((AbstractCard) new Nahtnaught());
+        BaseMod.addCard((AbstractCard) new TyrantsOrder());
 
         /* 276 */
         logger.info("Success");

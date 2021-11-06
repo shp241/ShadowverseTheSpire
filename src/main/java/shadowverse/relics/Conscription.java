@@ -16,8 +16,8 @@ import shadowverse.orbs.Minion;
 
 public class Conscription extends CustomRelic {
     public static final String ID = "shadowverse:Conscription";
-    public static final String IMG = "img/relics/Offensive.png";
-    public static final String OUTLINE_IMG = "img/relics/outline/Offensive_Outline.png";
+    public static final String IMG = "img/relics/Conscription.png";
+    public static final String OUTLINE_IMG = "img/relics/outline/Conscription_Outline.png";
 
     public Conscription() {
         super(ID, ImageMaster.loadImage(IMG), RelicTier.COMMON, LandingSound.CLINK);

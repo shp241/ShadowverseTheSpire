@@ -994,5 +994,53 @@
     "DESCRIPTIONS": [
       "每当召唤 #y随从 时，使其获得+1/+0。回合开始时这个能力减少 #b1 层。"
     ]
+  },
+  "shadowverse:AlwidaPower": {
+    "NAME": "海贼女王·雅尔莉妲",
+    "DESCRIPTIONS": [
+      "每回合限 #b",
+      "次，每当你使用财宝牌，召唤1个 航海家 和1个 维京战士 。"
+    ]
+  },
+  "shadowverse:GloriousCorePower": {
+    "NAME": "荣耀之核",
+    "DESCRIPTIONS": [
+      "使用 *进化点 时，使所有随从获得+ #b",
+      "/+ #b",
+      "。"
+    ]
+  },
+  "shadowverse:GraysonDrawnPower": {
+    "NAME": "迅猛驭剑士·格雷森",
+    "DESCRIPTIONS": [
+      "本回合中每当打出 机械 牌时，获得 [E] 。"
+    ]
+  },
+  "shadowverse:GraysonPower": {
+    "NAME": "迅猛驭剑士·格雷森",
+    "DESCRIPTIONS": [
+      "每当打出 机械 牌时，对全体敌人造成 #b",
+      "点伤害。"
+    ]
+  },
+  "shadowverse:JenoPower": {
+    "NAME": "雷维翁猛者·杰诺",
+    "DESCRIPTIONS": [
+      "雷维翁 卡牌造成的伤害和获得的格挡增加 #b",
+      "点。"
+    ]
+  },
+  "shadowverse:JohannPower": {
+    "NAME": "纯铁英雄·约翰",
+    "DESCRIPTIONS": [
+      "使用机械牌时获得 #b",
+      "点格挡。"
+    ]
+  },
+  "shadowverse:LathamPower": {
+    "NAME": "高洁的骑士·雷瑟姆",
+    "DESCRIPTIONS": [
+      "每当你使用一张攻击牌，召唤1个 骑士 。"
+    ]
   }
 }

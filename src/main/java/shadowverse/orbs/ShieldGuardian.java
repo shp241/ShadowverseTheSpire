@@ -34,7 +34,7 @@ public class ShieldGuardian  extends Minion {
 
     @Override
     public void updateDescription() { // Set the on-hover description of the orb
-        description = DESCRIPTIONS[0] + "3*" + this.attack + "=" + 3 * this.attack + DESCRIPTIONS[1];
+        description = DESCRIPTIONS[0] + "2*" + this.attack + "=" + 2 * this.attack + DESCRIPTIONS[1];
     }
 
 
