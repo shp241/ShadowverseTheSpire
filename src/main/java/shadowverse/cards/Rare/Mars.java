@@ -31,7 +31,7 @@ public class Mars extends CustomCard {
             upgradeName();
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
-//            this.isInnate = true;
+            this.isInnate = true;
             this.isEthereal = false;
 //            this.upgradeBaseCost(2);
         }
