@@ -37,6 +37,7 @@ public class Armadillo
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.COMMON, CardTarget.SELF);
         this.baseBlock = 5;
         this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
+        this.tags.add(AbstractShadowversePlayer.Enums.NATURAL);
         this.tags.add(AbstractShadowversePlayer.Enums.LASTWORD);
     }
 

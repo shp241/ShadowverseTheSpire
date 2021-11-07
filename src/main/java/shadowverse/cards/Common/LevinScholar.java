@@ -22,7 +22,7 @@ public class LevinScholar extends CustomCard {
 
     public LevinScholar() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF);
-        this.baseBlock = 12;
+        this.baseBlock = 15;
         this.baseMagicNumber = this.magicNumber = 2;
         this.tags.add(AbstractShadowversePlayer.Enums.LEVIN);
     }

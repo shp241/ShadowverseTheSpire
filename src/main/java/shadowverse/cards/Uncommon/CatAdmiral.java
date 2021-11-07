@@ -39,8 +39,9 @@ public class CatAdmiral extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            upgradeDamage(4);
             this.textureImg = IMG_PATH_EV;
-                        this.loadCardImage(IMG_PATH_EV);
+            this.loadCardImage(IMG_PATH_EV);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
@@ -92,6 +93,7 @@ public class CatAdmiral extends CustomCard {
         if (this.upgraded) {
             AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new ShieldGuardian()));
             AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new HeavyKnight()));
+            addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         }
         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         this.degrade();
@@ -100,10 +102,6 @@ public class CatAdmiral extends CustomCard {
 
     @Override
     public void applyPowers() {
-        this.baseDamage = 8;
-        if (rally() >= 7) {
-            this.baseDamage *= 2;
-        }
         super.applyPowers();
         if (this.upgraded) {
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
@@ -126,7 +124,6 @@ public class CatAdmiral extends CustomCard {
 
     @Override
     public void calculateCardDamage(AbstractMonster mo) {
-        super.calculateCardDamage(mo);
         if (this.upgraded) {
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
         } else {

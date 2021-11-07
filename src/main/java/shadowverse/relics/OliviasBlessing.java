@@ -53,7 +53,8 @@ public class OliviasBlessing extends CustomRelic implements BetterClickableRelic
             AbstractCard c = new Miracle();
             addToBot(new MakeTempCardInHandAction(c.makeStatEquivalentCopy(), 1));
             c = new EvolutionPoint();
-            addToBot(new MakeTempCardInHandAction(c.makeStatEquivalentCopy(), 1));
+            c.upgrade();
+            addToBot(new MakeTempCardInHandAction(c, 1));
         }
         if (this.counter == 0) {
             flash();

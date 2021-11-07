@@ -26,7 +26,7 @@ public class FlyingMessengerSquirrel extends CustomCard {
     public FlyingMessengerSquirrel() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
         this.baseMagicNumber = this.magicNumber = 1;
-        this.baseDamage = 8;
+        this.baseDamage = 9;
     }
 
 

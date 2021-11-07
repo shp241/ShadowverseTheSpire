@@ -108,8 +108,10 @@ public class Nahtnaught extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (Shadowverse.Enhance(ENHANCE) && this.costForTurn == ENHANCE) {
             addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Eh"));
-            addToBot(new SpawnMonsterAction(new Henchman(-100 - 185.0F * 1, MathUtils.random(-5.0F, 25.0F)), true));
-            addToBot(new SpawnMonsterAction(new Henchman(-100 - 185.0F * 2, MathUtils.random(-5.0F, 25.0F)), true));
+            Henchman h1=new Henchman(-300 - 185.0F * 1, MathUtils.random(-5.0F, 25.0F));
+            Henchman h2=new Henchman(-300 - 185.0F * 2, MathUtils.random(-5.0F, 25.0F));
+            addToBot(new SpawnMonsterAction(h1, true));
+            addToBot(new SpawnMonsterAction(h2, true));
         } else {
             addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         }

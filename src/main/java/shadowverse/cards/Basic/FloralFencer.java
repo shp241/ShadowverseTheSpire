@@ -33,6 +33,7 @@ public class FloralFencer extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            upgradeDamage(3);
             this.textureImg = IMG_PATH_EV;
             this.loadCardImage(IMG_PATH_EV);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;

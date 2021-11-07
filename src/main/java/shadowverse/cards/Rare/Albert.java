@@ -26,7 +26,7 @@ public class Albert extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Albert.png";
-    public static final int ENHANCE = 3;
+    public static final int ENHANCE = 2;
     private boolean doubleCheck = false;
 
     public Albert() {

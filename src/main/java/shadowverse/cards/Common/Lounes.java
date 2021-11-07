@@ -40,8 +40,8 @@ public class Lounes extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(1);
-            upgradeDamage(2);
+            upgradeBlock(2);
+            upgradeDamage(3);
         }
     }
 

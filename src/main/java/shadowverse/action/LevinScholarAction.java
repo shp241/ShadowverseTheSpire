@@ -32,9 +32,11 @@ public class LevinScholarAction extends AbstractGameAction {
         }
         if (list != null && !list.isEmpty()) {
             Collections.shuffle(list);
+            list.get(0).retain = true;
             this.p.drawPile.moveToHand(list.get(0), this.p.drawPile);
             if (list.size() >= 2) {
                 Collections.shuffle(list);
+                list.get(1).retain = true;
                 this.p.drawPile.moveToHand(list.get(1), this.p.drawPile);
             }
         }

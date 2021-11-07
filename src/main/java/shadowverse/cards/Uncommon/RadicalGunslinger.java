@@ -31,7 +31,7 @@ public class RadicalGunslinger extends CustomCard {
 
     public RadicalGunslinger() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, AbstractCard.CardType.ATTACK, Royal.Enums.COLOR_YELLOW, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY);
-        this.baseDamage = 3;
+        this.baseDamage = 5;
         this.magicNumber = this.baseMagicNumber = 1;
         this.cardsToPreview = new Horse();
     }
@@ -41,8 +41,9 @@ public class RadicalGunslinger extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            upgradeDamage(3);
             this.textureImg = IMG_PATH_EV;
-                        this.loadCardImage(IMG_PATH_EV);
+            this.loadCardImage(IMG_PATH_EV);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }

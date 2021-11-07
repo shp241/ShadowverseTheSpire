@@ -29,7 +29,7 @@ public class Mena extends CustomCard {
     public Mena() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.ENEMY);
         this.baseDamage = 8;
-        this.baseMagicNumber = this.magicNumber = 1;
+        this.baseMagicNumber = this.magicNumber = 2;
         this.tags.add(AbstractShadowversePlayer.Enums.LEVIN);
     }
 

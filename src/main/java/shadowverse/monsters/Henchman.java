@@ -71,7 +71,7 @@ public class Henchman extends CustomMonster {
 
     @Override
     protected void getMove(int num) {
-        setMove(START, (byte) 1, Intent.ATTACK, this.damage.get(0).base, this.shootAmt, true);
+        setMove(START, (byte) 1, Intent.ATTACK, this.damage.get(0).base, this.shootAmt, false);
     }
 
     @Override

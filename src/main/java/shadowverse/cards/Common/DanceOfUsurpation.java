@@ -42,7 +42,7 @@ public class DanceOfUsurpation extends CustomCard {
 
     public DanceOfUsurpation() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ALL_ENEMY);
-        this.baseDamage = 10;
+        this.baseDamage = 15;
         this.isMultiDamage = true;
     }
 

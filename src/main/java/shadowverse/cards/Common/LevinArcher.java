@@ -29,7 +29,7 @@ public class LevinArcher extends CustomCard {
     public static final String IMG_PATH_EV = "img/cards/LevinArcher_Ev.png";
 
     public LevinArcher() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
         this.tags.add(AbstractShadowversePlayer.Enums.LEVIN);
         this.baseDamage = 7;
         this.baseMagicNumber = this.magicNumber = 1;
@@ -39,6 +39,7 @@ public class LevinArcher extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            this.upgradeDamage(3);
             this.textureImg = IMG_PATH_EV;
             this.loadCardImage(IMG_PATH_EV);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;

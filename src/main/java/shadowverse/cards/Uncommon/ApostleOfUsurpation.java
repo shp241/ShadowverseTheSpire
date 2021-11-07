@@ -40,7 +40,7 @@ public class ApostleOfUsurpation  extends CustomCard {
 
     public ApostleOfUsurpation() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
-        this.baseMagicNumber = 5;
+        this.baseMagicNumber = 6;
         this.magicNumber = this.baseMagicNumber;
     }
 

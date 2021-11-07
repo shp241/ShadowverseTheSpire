@@ -31,7 +31,7 @@ public class HonorableThief extends CustomCard {
     public HonorableThief() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
         this.baseDamage = 7;
-        this.magicNumber = this.baseMagicNumber = 1;
+        this.magicNumber = this.baseMagicNumber = 2;
         this.cardsToPreview = new GildedBoots();
     }
 

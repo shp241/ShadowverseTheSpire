@@ -25,8 +25,8 @@ public class Charlotta extends CustomCard {
 
     public Charlotta() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF);
-        this.baseBlock = 9;
-        this.baseMagicNumber = this.magicNumber = 1;
+        this.baseBlock = 8;
+        this.baseMagicNumber = this.magicNumber = 2;
     }
 
 
@@ -34,7 +34,6 @@ public class Charlotta extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(2);
             this.textureImg = IMG_PATH_EV;
             this.loadCardImage(IMG_PATH_EV);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
@@ -46,7 +45,6 @@ public class Charlotta extends CustomCard {
     public void degrade() {
         if (this.upgraded) {
             degradeName();
-            degradeBlock(2);
             this.textureImg = IMG_PATH;
             this.loadCardImage(IMG_PATH);
             this.rawDescription = cardStrings.DESCRIPTION;
@@ -54,11 +52,6 @@ public class Charlotta extends CustomCard {
             this.superFlash();
             this.applyPowers();
         }
-    }
-
-    protected void degradeBlock(int amount) {
-        this.baseBlock -= amount;
-        this.upgradedBlock = false;
     }
 
     public void degradeName() {

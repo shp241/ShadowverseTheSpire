@@ -21,7 +21,7 @@ import shadowverse.characters.Royal;
 import shadowverse.orbs.Knight;
 import shadowverse.orbs.SteelcladKnight;
 
-public class StampedingFortress  extends CustomCard {
+public class StampedingFortress extends CustomCard {
     public static final String ID = "shadowverse:StampedingFortress";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:StampedingFortress");
     public static final String NAME = cardStrings.NAME;
@@ -35,6 +35,7 @@ public class StampedingFortress  extends CustomCard {
         this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
         this.baseDamage = 6;
         this.baseBlock = 6;
+        this.baseMagicNumber = this.magicNumber = 3;
         this.cardsToPreview = new ProductMachine();
     }
 
@@ -42,6 +43,8 @@ public class StampedingFortress  extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            upgradeDamage(3);
+            upgradeBlock(3);
             this.textureImg = IMG_PATH_EV;
             this.loadCardImage(IMG_PATH_EV);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;

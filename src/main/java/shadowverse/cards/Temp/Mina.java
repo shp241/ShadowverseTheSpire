@@ -24,8 +24,8 @@ public class Mina extends CustomCard {
     public static final String IMG_PATH = "img/cards/Mina.png";
 
     public Mina() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.ENEMY);
-        this.baseDamage = 8;
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.ENEMY);
+        this.baseDamage = 6;
         this.tags.add(AbstractShadowversePlayer.Enums.LEVIN);
     }
 

@@ -60,10 +60,10 @@ public class Royal extends AbstractShadowversePlayer {
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> starterDeck = new ArrayList<>();
         int i;
-        for (i = 0; i < 5; i++) {
+        for (i = 0; i < 4; i++) {
             starterDeck.add(Strike_R.ID);
         }
-        for (i = 0; i < 5; i++) {
+        for (i = 0; i < 4; i++) {
             starterDeck.add(Defend_R.ID);
         }
         starterDeck.add(OathlessKnight.ID);
