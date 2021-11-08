@@ -1375,6 +1375,10 @@
     "NAME": "生死逆转",
     "DESCRIPTION": "亡者召还 自己的本回合数。"
   },
+  "shadowverse:RegenerateSpirit": {
+    "NAME": "灵魂再生",
+    "DESCRIPTION": "亡者召还 1。 NL 爆能强化2 额外发动 亡者召还 2。"
+  },
   "shadowverse:BoneChimera": {
     "NAME": "骸骨奇美拉",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 谢幕曲 当这张牌被 消耗 时，增加 !M! 张 *骸骨士兵 到手中。"
@@ -2034,6 +2038,10 @@
     "NAME": "守御的创造物",
     "DESCRIPTION": "创造物 。 NL 获得 !B! 点格挡。 NL 消耗 。"
   },
+  "shadowverse:EnProtectArtifact": {
+    "NAME": "守御的创造物",
+    "DESCRIPTION": "创造物 。 NL 获得 !B! 点格挡。 NL 给予敌人 !M! 层 虚弱 。 NL 消耗 。"
+  },
   "shadowverse:EdgeArtifact": {
     "NAME": "锋锐的创造物",
     "DESCRIPTION": "创造物 。 NL 造成 !D! 点伤害。 NL 回复造成伤害的生命。 NL 消耗 。"
@@ -2380,6 +2388,10 @@
     "NAME": "音速机构·菈菈米娅",
     "DESCRIPTION": "机械 · 创造物 。 NL 造成 !D! 点伤害。 NL 如果打出创造物，这张卡获得以下效果： NL 「如果剩余耗能为2以上，造成伤害时额外消耗2点能量，使伤害增加消耗堆中 创造物种类的倍数。」"
   },
+  "shadowverse:EnRalmia": {
+    "NAME": "音速机构·菈菈米娅",
+    "DESCRIPTION": "机械 · 创造物 。 NL 造成 !D! 点伤害。 NL 本回合每打出1张创造物获得 !M! 点力量 。这张卡受5倍力量影响。"
+  },
   "shadowverse:OmniscientKaiser": {
     "NAME": "霸瞳皇帝",
     "DESCRIPTION": "激奏 0 \b选择1张手牌， 消耗 这张卡以外的手牌，抽被 消耗 的张数等量的卡。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 对全体敌人造成 !D! 点伤害。 NL 获得1层 残影 。 NL 消耗 。",
@@ -2478,7 +2490,7 @@
   },
   "shadowverse:Scavenge": {
     "NAME": "废品的拣选",
-    "DESCRIPTION": "从弃牌堆中选择 !M! 张攻击牌加入手中。 NL 消耗 。"
+    "DESCRIPTION": "从消耗堆中选择 !M! 张攻击牌加入手中。 NL 消耗 。"
   },
   "shadowverse:EnhancedPuppet": {
     "NAME": "改良型·悬丝傀儡",
@@ -2496,6 +2508,90 @@
   "shadowverse:Odin": {
     "NAME": "黄昏战神·奥丁",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 获得1层 无实体 。 NL 增加1张 *斯莱普尼尔 到手中。 NL 消耗 。"
+  },
+  "shadowverse:EnRadiantAngel": {
+    "NAME": "光辉天使",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 回复 !M! 点生命 。 NL 下回合额外抽1张牌。"
+  },
+  "shadowverse:EnAncientLionSpirit": {
+    "NAME": "远古圣狮之魂",
+    "DESCRIPTION": "对全体敌人造成 !D! 点伤害。"
+  },
+  "shadowverse:EnPriestOfTheCudgel": {
+    "NAME": "铁锤的僧侣",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 层 易伤 。 NL 消耗 你抽牌堆顶部的一张牌。"
+  },
+  "shadowverse:EnArdentSister": {
+    "NAME": "充满热诚的修女",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 本回合每打出1张牌获得 !M! 点 力量 。"
+  },
+  "shadowverse:EnHeavenlyHound": {
+    "NAME": "天界忠犬",
+    "DESCRIPTION": "获得 !B! 点 格挡。 NL 获得 !M! 层 多层护甲 。"
+  },
+  "shadowverse:EnDarkPriest": {
+    "NAME": "暗黑牧师",
+    "DESCRIPTION": "获得 !B! 点 格挡。 NL 给予 !M! 层 虚弱 和 脆弱 。"
+  },
+  "shadowverse:EnThemisDecree": {
+    "NAME": "忒弥斯的审判",
+    "DESCRIPTION": "消耗 敌人的抽牌堆中的所有攻击牌。 NL 消耗 。"
+  },
+  "shadowverse:SacredLion": {
+    "NAME": "神圣之狮",
+    "DESCRIPTION": "获得 !B! 点 格挡。 NL 获得1层 缓冲 。 NL 本回合受到攻击时对攻击者造成 !M! 点伤害 。 NL 将1张 *狮子的祝福 加入敌人的手中。"
+  },
+  "shadowverse:LionBless": {
+    "NAME": "狮子的祝福",
+    "DESCRIPTION": "从本场战斗中打出过的攻击牌中随机将1张加入手中，这张卡本回合耗能为0。 NL 给予敌人36点 格挡 、1层 缓冲 、6层火焰屏障。 NL 虚无 。 NL 消耗 。"
+  },
+  "shadowverse:EnHereticalInquiry": {
+    "NAME": "咏唱：异端审判",
+    "DESCRIPTION": "随机将 !M! 张诅咒牌加入敌人的抽牌堆。"
+  },
+  "shadowverse:EnAcolyteLight": {
+    "NAME": "破邪圣光",
+    "DESCRIPTION": "若敌人格挡为20以下，移除敌人的 格挡 。 NL 否则造成20点伤害。 NL 回复移除 格挡 的生命。"
+  },
+  "shadowverse:EnSacredPlea": {
+    "NAME": "咏唱：神圣祈祷",
+    "DESCRIPTION": "下回合抽 !M! 张牌。"
+  },
+  "shadowverse:EnLucifer": {
+    "NAME": "路西法",
+    "DESCRIPTION": "抉择 ：回复 !M! 点生命或对全体敌人造成 !D! 点伤害。"
+  },
+  "shadowverse:EnMagisteelLion": {
+    "NAME": "魔铁狂狮",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加2张 *解析的创造物 到抽牌堆中。"
+  },
+  "shadowverse:EnAnalyzeArtifact": {
+    "NAME": "解析的创造物",
+    "DESCRIPTION": "创造物 。 NL 造成 !D! 点伤害。 NL 下回合额外抽1张牌。 NL 消耗 。"
+  },
+  "shadowverse:TheGreatCreation": {
+    "NAME": "伟大的创造",
+    "DESCRIPTION": "获得 !M! 点 力量 和 敏捷 。 NL 增加1张 *古老的创造物 到手中。"
+  },
+  "shadowverse:EnAncientAmplifier": {
+    "NAME": "古代增幅器",
+    "DESCRIPTION": "给予敌人「回合结束时将 !M! 张随机牌加入抽牌堆，每回合减少1张。」效果，持续 !M! 回合。"
+  },
+  "shadowverse:EnMysticArtifact": {
+    "NAME": "神秘的创造物",
+    "DESCRIPTION": "创造物 。 NL 获得 !B! 点 格挡 。 NL 下回合额外抽1张牌。"
+  },
+  "shadowverse:EnGenesisArtifact": {
+    "NAME": "创世的创造物",
+    "DESCRIPTION": "创造物 。 NL 获得 !B! 点 格挡 。 NL 增加1张 *守卫的创造物 和 *防御的创造物 到手中。 NL 增加2张 *加农炮创造物到抽牌堆中。"
+  },
+  "shadowverse:EnSpineLucille": {
+    "NAME": "神秘的遗物·斯碧涅&露琪儿",
+    "DESCRIPTION": "创造物 。 NL 对全体敌人造成 !D! 点伤害"
+  },
+  "shadowverse:DeathNotePower": {
+    "NAME": "亡者之王的记事本",
+    "DESCRIPTION": "倒计时 !M! \b失去这个能力。 NL 回合结束时，随机打出一张抽牌堆中耗能最高且不大于你的能量上限的攻击牌。"
   },
   "shadowverse:Strike_R": {
     "NAME": "打击",

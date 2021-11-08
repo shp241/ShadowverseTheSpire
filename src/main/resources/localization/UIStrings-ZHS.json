@@ -38,5 +38,13 @@
     "TEXT": [
       "选择一张能力牌来消耗"
     ]
+  },
+  "shadowverse:EnergyPanelTip": {
+    "TEXT": [
+      "敌人当前的能量。打出卡牌需要能量。"
+    ],
+    "EXTRA_TEXT": [
+      "能量"
+    ]
   }
 }

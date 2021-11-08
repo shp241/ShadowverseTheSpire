@@ -28,8 +28,10 @@ public class ReanimateAction extends AbstractGameAction {
     public void update() {
         for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
             if (c.type == AbstractCard.CardType.ATTACK && c.cost <= this.amount) {
-                AbstractCard tmp = c.makeStatEquivalentCopy();
+                AbstractCard tmp = c.makeCopy();
                 tmp.resetAttributes();
+                if (c.upgraded)
+                    tmp.upgrade();
                 list.add(tmp);
             }
         }

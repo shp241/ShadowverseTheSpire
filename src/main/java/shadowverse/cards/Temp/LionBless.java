@@ -1,0 +1,69 @@
+ package shadowverse.cards.Temp;
+
+
+ import basemod.abstracts.CustomCard;
+ import charbosses.powers.cardpowers.EnemyFlameBarrierPower;
+ import com.megacrit.cardcrawl.actions.AbstractGameAction;
+ import com.megacrit.cardcrawl.actions.common.*;
+ import com.megacrit.cardcrawl.cards.AbstractCard;
+ import com.megacrit.cardcrawl.cards.DamageInfo;
+ import com.megacrit.cardcrawl.characters.AbstractPlayer;
+ import com.megacrit.cardcrawl.core.AbstractCreature;
+ import com.megacrit.cardcrawl.core.CardCrawlGame;
+ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+ import com.megacrit.cardcrawl.localization.CardStrings;
+ import com.megacrit.cardcrawl.monsters.AbstractMonster;
+ import com.megacrit.cardcrawl.powers.AbstractPower;
+ import com.megacrit.cardcrawl.powers.BufferPower;
+
+ import java.util.ArrayList;
+ import java.util.Collections;
+ import java.util.List;
+
+
+ public class LionBless
+   extends CustomCard
+ {
+   public static final String ID = "shadowverse:LionBless";
+   public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:LionBless");
+   public static final String NAME = cardStrings.NAME;
+   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+   public static final String IMG_PATH = "img/cards/LionBless.png";
+
+   public LionBless() {
+     super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ENEMY);
+     this.exhaust = true;
+     this.isEthereal = true;
+   }
+ 
+   
+   public void upgrade() {
+     if (!this.upgraded) {
+       upgradeName();
+     } 
+   }
+ 
+   
+   public void use(AbstractPlayer abstractPlayer, AbstractMonster m) {
+       addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)m, (AbstractCreature)m, 36));
+       addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)m, (AbstractPower)new BufferPower((AbstractCreature)m, 1), 1));
+       addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)m, (AbstractPower)new EnemyFlameBarrierPower((AbstractCreature)m, this.magicNumber), this.magicNumber));
+       List<AbstractCard> list = new ArrayList<>();
+       for (AbstractCard c: AbstractDungeon.actionManager.cardsPlayedThisCombat){
+           if (c.type==CardType.ATTACK)
+               list.add(c);
+       }
+       if (list.size()>0){
+           Collections.shuffle(list);
+           AbstractCard card = list.get(0);
+           card.setCostForTurn(0);
+           addToBot((AbstractGameAction)new MakeTempCardInHandAction(card));
+       }
+   }
+ 
+   
+   public AbstractCard makeCopy() {
+     return (AbstractCard)new LionBless();
+   }
+ }
+

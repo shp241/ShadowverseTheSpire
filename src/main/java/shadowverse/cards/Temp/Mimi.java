@@ -28,7 +28,7 @@ import shadowverse.characters.Necromancer;
 
    public Mimi() {
      super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Necromancer.Enums.COLOR_PURPLE, CardRarity.SPECIAL, CardTarget.ENEMY);
-     this.baseDamage = 6;
+     this.baseDamage = 5;
      this.baseMagicNumber = 3;
      this.magicNumber = this.baseMagicNumber;
      this.tags.add(AbstractShadowversePlayer.Enums.LASTWORD);

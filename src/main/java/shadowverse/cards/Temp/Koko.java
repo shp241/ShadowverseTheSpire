@@ -27,7 +27,7 @@ import shadowverse.characters.Necromancer;
 
    public Koko() {
      super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Necromancer.Enums.COLOR_PURPLE, CardRarity.SPECIAL, CardTarget.SELF);
-     this.baseBlock = 5;
+     this.baseBlock = 4;
      this.baseMagicNumber = 2;
      this.magicNumber = this.baseMagicNumber;
      this.tags.add(AbstractShadowversePlayer.Enums.LASTWORD);
