@@ -5,6 +5,7 @@ import basemod.BaseMod;
 import basemod.ReflectionHacks;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
+import charbosses.bosses.KMR.KMR;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
@@ -18,6 +19,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.Exordium;
 import com.megacrit.cardcrawl.dungeons.TheBeyond;
 import com.megacrit.cardcrawl.dungeons.TheCity;
+import com.megacrit.cardcrawl.dungeons.TheEnding;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.monsters.MonsterInfo;
@@ -182,7 +184,11 @@ import java.util.HashMap;
         BaseMod.addMonster(Iceschillendrig.ID, Iceschillendrig::new);
         BaseMod.addMonster(VincentBOSS.ID, VincentBOSS::new);
         BaseMod.addMonster(Lelouch.ID, () -> new Lelouch());
+        BaseMod.addMonster(KMR.ID,KMR::new);
         BaseMod.addEvent(LelouchCollaboration.ID, LelouchCollaboration.class, TheBeyond.ID);
+        BaseMod.addBoss(TheEnding.ID,KMR.ID,"img/monsters/UI/KMR.png", "img/monsters/UI/KMR_Outline.png");
+        BaseMod.addBoss(TheEnding.ID,KMR.ID,"img/monsters/UI/KMR.png", "img/monsters/UI/KMR_Outline.png");
+        BaseMod.addBoss(TheEnding.ID,KMR.ID,"img/monsters/UI/KMR.png", "img/monsters/UI/KMR_Outline.png");
         BaseMod.addBoss(TheBeyond.ID, Iceschillendrig.ID, "img/monsters/UI/IC.png", "img/monsters/UI/IC_Outline.png");
         BaseMod.addBoss(TheBeyond.ID, Belphomet.ID, "img/monsters/UI/Belphomet.png", "img/monsters/UI/Belphomet_Outline.png");
         BaseMod.addBoss(TheBeyond.ID, VincentBOSS.ID, "img/monsters/UI/VincentBOSS.png", "img/monsters/UI/VincentBOSS_Outline.png");
@@ -205,125 +211,66 @@ import java.util.HashMap;
         BaseMod.addPotion(EpitaphPotion.class, Color.SCARLET, Color.GOLDENROD, Color.SCARLET, EpitaphPotion.POTION_ID, Vampire.Enums.Vampire);
         BaseMod.addPotion(ArtifactPotion.class, Color.CYAN, Color.CLEAR, Color.CYAN, RosePotion.POTION_ID, Nemesis.Enums.Nemesis);
         BaseMod.addPotion(RevisedPotion.class, Color.BROWN, Color.BROWN, Color.BROWN, RevisedPotion.POTION_ID, Nemesis.Enums.Nemesis);
-        /*  94 */
+
         HashMap<String, Sfx> reflectedMap = getSoundsMap();
-        /*  95 */
         reflectedMap.put("spell_boost", new Sfx("sounds/spell_boost2.wav"));
-        /*  96 */
         reflectedMap.put("EarthEssence", new Sfx("sounds/EarthEssence.wav"));
-        /*  97 */
         reflectedMap.put("witch_selected", new Sfx("sounds/witch_selected.wav"));
-        /*  98 */
         reflectedMap.put("OmenOfTruth", new Sfx("sounds/OmenOfTruth.wav"));
-        /*  99 */
         reflectedMap.put("DimensionalWitch", new Sfx("sounds/DimensionalWitch.wav"));
-        /* 100 */
         reflectedMap.put("DimensionShift", new Sfx("sounds/DimensionShift.wav"));
-        /* 101 */
         reflectedMap.put("ZealotOfTruth", new Sfx("sounds/ZealotOfTruth.wav"));
-        /* 102 */
         reflectedMap.put("MysticSeeker", new Sfx("sounds/MysticSeeker.wav"));
-        /* 103 */
         reflectedMap.put("EdictOfTruth", new Sfx("sounds/EdictOfTruth.wav"));
-        /* 104 */
         reflectedMap.put("Lou", new Sfx("sounds/Lou.wav"));
-        /* 105 */
         reflectedMap.put("TruthsAdjudication", new Sfx("sounds/TruthsAdjudication.wav"));
-        /* 106 */
         reflectedMap.put("MasterMageLevi", new Sfx("sounds/MasterMageLevi.wav"));
-        /* 107 */
         reflectedMap.put("PiousInstructor", new Sfx("sounds/PiousInstructor.wav"));
-        /* 108 */
         reflectedMap.put("PiousInstructorPower", new Sfx("sounds/PiousInstructorPower.wav"));
-        /* 109 */
         reflectedMap.put("Clarke", new Sfx("sounds/Clarke.wav"));
-        /* 110 */
         reflectedMap.put("Clarke_Accelerate", new Sfx("sounds/Clarke_Accelerate.wav"));
-        /* 111 */
         reflectedMap.put("Faust", new Sfx("sounds/Faust.wav"));
-        /* 112 */
         reflectedMap.put("FaustPower", new Sfx("sounds/FaustPower.wav"));
-        /* 113 */
         reflectedMap.put("Magisa", new Sfx("sounds/Magisa.wav"));
-        /* 114 */
         reflectedMap.put("Chaos", new Sfx("sounds/Chaos.wav"));
-        /* 115 */
         reflectedMap.put("Runie", new Sfx("sounds/Runie.wav"));
-        /* 116 */
         reflectedMap.put("ForbiddenDarkMage", new Sfx("sounds/ForbiddenDarkMage.wav"));
-        /* 117 */
         reflectedMap.put("DarkMagePower", new Sfx("sounds/DarkMagePower.wav"));
-        /* 118 */
         reflectedMap.put("JetBroomWitch", new Sfx("sounds/JetBroomWitch.wav"));
-        /* 119 */
         reflectedMap.put("TetrasMettle", new Sfx("sounds/TetrasMettle.wav"));
-        /* 120 */
         reflectedMap.put("IsabellesConjuration", new Sfx("sounds/IsabellesConjuration.wav"));
-        /* 121 */
         reflectedMap.put("SorceryInSolidarity", new Sfx("sounds/SorceryInSolidarity.wav"));
-        /* 122 */
         reflectedMap.put("MechabookSorcerer", new Sfx("sounds/MechabookSorcerer.wav"));
-        /* 123 */
         reflectedMap.put("SonicFour", new Sfx("sounds/SonicFour.wav"));
-        /* 124 */
         reflectedMap.put("Tetra", new Sfx("sounds/Tetra.wav"));
-        /* 125 */
         reflectedMap.put("MechastaffSorcerer", new Sfx("sounds/MechastaffSorcerer.wav"));
-        /* 126 */
         reflectedMap.put("ArsMagna", new Sfx("sounds/ArsMagna.wav"));
-        /* 127 */
         reflectedMap.put("Cagliostro1", new Sfx("sounds/Cagliostro1.wav"));
-        /* 128 */
         reflectedMap.put("Cagliostro2", new Sfx("sounds/Cagliostro2.wav"));
-        /* 129 */
         reflectedMap.put("Awakened", new Sfx("sounds/Awakened.wav"));
-        /* 130 */
         reflectedMap.put("ErasmusPower", new Sfx("sounds/ErasmusPower.wav"));
-        /* 131 */
         reflectedMap.put("Erasmus", new Sfx("sounds/Erasmus.wav"));
-        /* 132 */
         reflectedMap.put("Oz", new Sfx("sounds/Oz.wav"));
-        /* 133 */
         reflectedMap.put("OzPower", new Sfx("sounds/OzPower.wav"));
-        /* 134 */
         reflectedMap.put("Geoelementist", new Sfx("sounds/Geoelementist.wav"));
-        /* 135 */
         reflectedMap.put("Stormelementalist", new Sfx("sounds/Stormelementalist.wav"));
-        /* 136 */
         reflectedMap.put("Pyromancer", new Sfx("sounds/Pyromancer.wav"));
-        /* 137 */
         reflectedMap.put("Riley", new Sfx("sounds/Riley.wav"));
-        /* 138 */
         reflectedMap.put("DualAngle", new Sfx("sounds/DualAngle.wav"));
-        /* 139 */
         reflectedMap.put("Ghios", new Sfx("sounds/Ghios.wav"));
-        /* 140 */
         reflectedMap.put("OmenOfOne", new Sfx("sounds/OmenOfOne.wav"));
-        /* 141 */
         reflectedMap.put("Mysteria", new Sfx("sounds/Mysteria.wav"));
-        /* 142 */
         reflectedMap.put("EarthFall", new Sfx("sounds/EarthFall.wav"));
-        /* 143 */
         reflectedMap.put("InfernalSurge", new Sfx("sounds/InfernalSurge.wav"));
-        /* 144 */
         reflectedMap.put("InfernalGaze", new Sfx("sounds/InfernalGaze.wav"));
-        /* 145 */
         reflectedMap.put("HeavenFall", new Sfx("sounds/HeavenFall.wav"));
-        /* 146 */
         reflectedMap.put("Flamelord", new Sfx("sounds/Flamelord.wav"));
-        /* 147 */
         reflectedMap.put("ViciousCommander", new Sfx("sounds/ViciousCommander.wav"));
-        /* 148 */
         reflectedMap.put("WrathfulIcefiend", new Sfx("sounds/WrathfulIcefiend.wav"));
-        /* 149 */
         reflectedMap.put("HellBeast", new Sfx("sounds/HellBeast.wav"));
-        /* 150 */
         reflectedMap.put("Satan", new Sfx("sounds/Satan.wav"));
-        /* 151 */
         reflectedMap.put("Satan_Accelerate", new Sfx("sounds/Satan_Accelerate.wav"));
-        /* 152 */
         reflectedMap.put("EmbodimentOfCocytus", new Sfx("sounds/EmbodimentOfCocytus.wav"));
-        /* 153 */
         reflectedMap.put("Eleanor", new Sfx("sounds/Eleanor.wav"));
         reflectedMap.put("JudgmentWord", new Sfx("sounds/JudgmentWord.wav"));
         reflectedMap.put("Vincent", new Sfx("sounds/Vincent.wav"));
@@ -725,6 +672,16 @@ import java.util.HashMap;
         reflectedMap.put("TheWheelOfFortune2", new Sfx("sounds/TheWheelOfFortune2.wav"));
         reflectedMap.put("TheWheelOfFortunePower", new Sfx("sounds/TheWheelOfFortunePower.wav"));
         reflectedMap.put("Odin", new Sfx("sounds/Odin.wav"));
+        reflectedMap.put("RadiantAngel", new Sfx("sounds/RadiantAngel.wav"));
+        reflectedMap.put("PriestOfTheCudgel", new Sfx("sounds/PriestOfTheCudgel.wav"));
+        reflectedMap.put("ArdentSister", new Sfx("sounds/ArdentSister.wav"));
+        reflectedMap.put("DarkPriest", new Sfx("sounds/DarkPriest.wav"));
+        reflectedMap.put("Lucifer", new Sfx("sounds/Lucifer.wav"));
+        reflectedMap.put("Lucifer2", new Sfx("sounds/Lucifer2.wav"));
+        reflectedMap.put("KMR1", new Sfx("sounds/KMR1.wav"));
+        reflectedMap.put("KMR2", new Sfx("sounds/KMR2.wav"));
+        reflectedMap.put("SpineLucille", new Sfx("sounds/SpineLucille.wav"));
+        reflectedMap.put("GrandBattle", new Sfx("sounds/GrandBattle.wav"));
         reflectedMap.put("Royal_Hurt", new Sfx("sounds/Royal_Hurt.wav"));
         reflectedMap.put("Royal_Hurt1", new Sfx("sounds/Royal_Hurt1.wav"));
         reflectedMap.put("Royal_Hurt2", new Sfx("sounds/Royal_Hurt2.wav"));
@@ -1287,6 +1244,7 @@ import java.util.HashMap;
         BaseMod.addCard((AbstractCard) new ApostleOfSilence());
         BaseMod.addCard((AbstractCard) new DiscipleOfSilence());
         BaseMod.addCard((AbstractCard) new DeathParty());
+        BaseMod.addCard((AbstractCard) new DeathNote());
         BaseMod.addCard((AbstractCard) new FoulTempest());
         BaseMod.addCard((AbstractCard) new Zombie());
         BaseMod.addCard((AbstractCard) new Litch());
@@ -1342,6 +1300,7 @@ import java.util.HashMap;
         BaseMod.addCard((AbstractCard) new OmenOfSilence());
         BaseMod.addCard((AbstractCard) new Gremory());
         BaseMod.addCard((AbstractCard) new Aisha());
+        BaseMod.addCard((AbstractCard) new RegenerateSpirit());
         BaseMod.addCard((AbstractCard) new Hades());
         BaseMod.addCard((AbstractCard) new Mimi());
         BaseMod.addCard((AbstractCard) new Koko());

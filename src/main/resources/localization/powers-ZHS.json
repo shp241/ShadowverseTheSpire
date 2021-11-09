@@ -940,10 +940,31 @@
       " 个回合内，回合开始前从以下3种效果中发动一种未发动过的效果：「失去 #b2 点力量」「眩晕 #b1 回合」「增加 #b1 张 #y解析的创造物 到你的手中」。"
     ]
   },
+  "shadowverse:DeathNote": {
+    "NAME": "亡者之王的记事本",
+    "DESCRIPTIONS": [
+      "接下来的 #b",
+      " 个回合内，随机打出一张抽牌堆中耗能最高且不大于你的能量上限的攻击牌。"
+    ]
+  },
+  "shadowverse:AncientAmplifierPower": {
+    "NAME": "古代增幅器",
+    "DESCRIPTIONS": [
+      "回合结束时，增加 #b",
+      " 张随机牌到你的抽牌堆中。这个效果回合开始时减少1层。"
+    ]
+  },
   "shadowverse:BrandOfMorningStarPower": {
     "NAME": "灾祸刻印",
     "DESCRIPTIONS": [
       "一回合一次，消耗攻击牌时增加 #b1 张 #y暗影士兵 到手中。 如果消耗堆中的攻击牌数量为 #b15 以上，改为增加 #b1 张 #y暗影指挥官 到手中。"
+    ]
+  },
+  "shadowverse:LionSanctuaryPower": {
+    "NAME": "狮子的圣域",
+    "DESCRIPTIONS": [
+      "不会受到负面效果影响。受到攻击时，对攻击者造成 #b",
+      " 点伤害。"
     ]
   },
   "shadowverse:DiscipleOfUsurpationPower": {

@@ -31,6 +31,19 @@ public class DisableEffectDamagePower extends AbstractPower {
         return damage;
     }
 
+    @Override
+    public int onAttackedToChangeDamage(DamageInfo info, int damageAmount) {
+        if (info.type== DamageInfo.DamageType.THORNS)
+            damageAmount=0;
+        return damageAmount;
+    }
+
+    public int onAttacked(DamageInfo info, int damageAmount) {
+        if (info.type== DamageInfo.DamageType.THORNS)
+            return 0;
+        return damageAmount;
+    }
+
     public void atStartOfTurn() {
         addToTop((AbstractGameAction)new ReducePowerAction(this.owner, this.owner, this.ID, 1));
         updateDescription();
