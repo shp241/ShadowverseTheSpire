@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.action.MinaAction;
+import shadowverse.cards.Rare.Albert;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 
@@ -22,6 +23,8 @@ public class Mina extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Mina.png";
+    public static final String IMG_PATH_EV = "img/cards/Mina_Ev.png";
+
 
     public Mina() {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.ENEMY);
@@ -35,13 +38,28 @@ public class Mina extends CustomCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeDamage(3);
+            this.textureImg = IMG_PATH_EV;
+            this.loadCardImage(IMG_PATH_EV);
         }
     }
 
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        boolean co = false;
+        for (AbstractCard c : abstractPlayer.hand.group) {
+            if (c instanceof Albert) {
+                co = true;
+                break;
+            }
+        }
+        if (co) {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Co"));
+        } else if (this.upgraded) {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Ev"));
+        } else {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        }
         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         addToBot(new MinaAction(1));
     }

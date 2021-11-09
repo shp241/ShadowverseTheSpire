@@ -24,6 +24,7 @@ public class WhiteTiger extends CustomCard {
         this.baseBlock = 8;
         this.tags.add(AbstractShadowversePlayer.Enums.LEVIN);
         this.selfRetain = true;
+        this.exhaust = true;
     }
 
 

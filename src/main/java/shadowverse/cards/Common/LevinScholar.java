@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.action.LevinScholarAction;
+import shadowverse.cards.Rare.Albert;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 
@@ -39,7 +40,18 @@ public class LevinScholar extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        boolean co = false;
+        for (AbstractCard c : abstractPlayer.hand.group) {
+            if (c instanceof Albert) {
+                co = true;
+                break;
+            }
+        }
+        if (co) {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Co"));
+        } else {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        }
         addToBot(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
         addToBot(new LevinScholarAction());
     }

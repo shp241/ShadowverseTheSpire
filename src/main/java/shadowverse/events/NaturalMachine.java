@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.vfx.RainingGoldEffect;
+import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import shadowverse.cards.Common.*;
 import shadowverse.cards.Neutral.*;
 import shadowverse.cards.Rare.*;
@@ -41,6 +42,8 @@ public class NaturalMachine extends AbstractImageEvent {
 
     public static final String[] OPTIONS = eventStrings.OPTIONS;
 
+    private boolean pickCard = false;
+
     private int screenNum = 0;
 
     private int healAmt;
@@ -57,12 +60,29 @@ public class NaturalMachine extends AbstractImageEvent {
     }
 
     @Override
+    public void update() {
+        super.update();
+        if (this.pickCard && !AbstractDungeon.isScreenUp && !AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
+            for (int i = 0; i < 3; i++) {
+                AbstractCard c = AbstractDungeon.gridSelectScreen.selectedCards.get(i).makeCopy();
+                AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(c, (float) Settings.WIDTH / (i * 2.0F), (float) Settings.HEIGHT / 2.0F));
+            }
+            AbstractDungeon.gridSelectScreen.selectedCards.clear();
+        }
+
+    }
+
+    @Override
     protected void buttonEffect(int buttonPressed) {
         switch (this.screenNum) {
             case 0:
                 switch (buttonPressed) {
                     case 0:
                         this.screenNum = 1;
+                        this.pickCard = true;
+                        this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
+                        this.imageEventText.updateDialogOption(0, OPTIONS[4]);
+                        this.imageEventText.clearRemainingOptions();
                         AbstractPlayer p = AbstractDungeon.player;
                         CardGroup white = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
                         CardGroup blue = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
@@ -166,13 +186,13 @@ public class NaturalMachine extends AbstractImageEvent {
                         blue.shuffle();
                         gold.shuffle();
                         CardGroup group1 = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
-                        for (int i = 0; i < 4; i++) {
+                        for (int i = 0; i < 6; i++) {
                             group1.addToBottom(gold.getNCardFromTop(i));
                         }
-                        for (int i = 0; i < 6; i++) {
+                        for (int i = 0; i < 7; i++) {
                             group1.addToBottom(blue.getNCardFromTop(i));
                         }
-                        for (int i = 0; i < 10; i++) {
+                        for (int i = 0; i < 7; i++) {
                             group1.addToBottom(white.getNCardFromTop(i));
                         }
                         AbstractDungeon.gridSelectScreen.open(group1, 3, OPTIONS[3], false);
@@ -180,17 +200,11 @@ public class NaturalMachine extends AbstractImageEvent {
                     default:
                         this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
                         AbstractDungeon.player.heal(this.healAmt, true);
-                        this.screenNum = 2;
+                        this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[4]);
                         this.imageEventText.clearRemainingOptions();
                         return;
                 }
-            case 1:
-                this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
-                this.screenNum = 2;
-                this.imageEventText.updateDialogOption(0, OPTIONS[4]);
-                this.imageEventText.clearRemainingOptions();
-                break;
             default:
                 this.openMap();
         }

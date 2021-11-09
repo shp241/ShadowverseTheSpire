@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.action.MinionSummonAction;
+import shadowverse.cards.Rare.Albert;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 import shadowverse.orbs.ShieldGuardian;
@@ -40,8 +41,8 @@ public class Lounes extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(2);
-            upgradeDamage(3);
+            upgradeBlock(1);
+            upgradeDamage(2);
         }
     }
 
@@ -52,16 +53,6 @@ public class Lounes extends CustomCard {
             setCostForTurn(ENHANCE);
             applyPowers();
         }
-    }
-
-    @Override
-    public void applyPowers() {
-        if (Shadowverse.Enhance(ENHANCE)) {
-            setCostForTurn(ENHANCE);
-        } else {
-            resetAttributes();
-        }
-        super.applyPowers();
     }
 
     @Override
@@ -102,19 +93,66 @@ public class Lounes extends CustomCard {
         applyPowers();
     }
 
+    public int levins() {
+        AbstractPlayer abstractPlayer = AbstractDungeon.player;
+        int l = 0;
+        for (AbstractCard c : abstractPlayer.hand.group) {
+            if (c.hasTag(AbstractShadowversePlayer.Enums.LEVIN)) {
+                l++;
+            }
+        }
+        return l;
+    }
+
+    @Override
+    public void applyPowers() {
+        if (Shadowverse.Enhance(ENHANCE)) {
+            setCostForTurn(ENHANCE);
+        } else {
+            resetAttributes();
+        }
+        super.applyPowers();
+        this.rawDescription = cardStrings.DESCRIPTION;
+        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + levins() + cardStrings.EXTENDED_DESCRIPTION[1];
+        this.initializeDescription();
+    }
+
+    @Override
+    public void onMoveToDiscard() {
+        this.rawDescription = cardStrings.DESCRIPTION;
+        this.initializeDescription();
+    }
+
+    @Override
+    public void calculateCardDamage(AbstractMonster mo) {
+        super.calculateCardDamage(mo);
+        this.rawDescription = cardStrings.DESCRIPTION;
+        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + levins() + cardStrings.EXTENDED_DESCRIPTION[1];
+        this.initializeDescription();
+    }
+
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (Shadowverse.Enhance(ENHANCE) && this.costForTurn == ENHANCE) {
+        boolean co = false;
+        for (AbstractCard c : abstractPlayer.hand.group) {
+            if (c instanceof Albert) {
+                co = true;
+                break;
+            }
+        }
+        if (co) {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Co"));
+        } else if (Shadowverse.Enhance(ENHANCE) && this.costForTurn == ENHANCE) {
             addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Eh"));
-            addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         } else {
             addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         }
+        if (Shadowverse.Enhance(ENHANCE) && this.costForTurn == ENHANCE) {
+            addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        }
         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        for (AbstractCard c : abstractPlayer.hand.group) {
-            if (c.hasTag(AbstractShadowversePlayer.Enums.LEVIN)) {
-                addToBot(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
-            }
+        for (int i = 0; i < levins(); i++) {
+            addToBot(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
         }
     }
 

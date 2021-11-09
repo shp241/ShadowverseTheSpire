@@ -829,6 +829,9 @@ import java.util.HashMap;
         reflectedMap.put("Mena", new Sfx("sounds/Mena.wav"));
         reflectedMap.put("Mina", new Sfx("sounds/Mina.wav"));
         reflectedMap.put("Mona", new Sfx("sounds/Mona.wav"));
+        reflectedMap.put("Mena_Ev", new Sfx("sounds/Mena_Ev.wav"));
+        reflectedMap.put("Mina_Ev", new Sfx("sounds/Mina_Ev.wav"));
+        reflectedMap.put("Mona_Ev", new Sfx("sounds/Mona_Ev.wav"));
         reflectedMap.put("Nahtnaught", new Sfx("sounds/Nahtnaught.wav"));
         reflectedMap.put("Patrick", new Sfx("sounds/Patrick.wav"));
         reflectedMap.put("Pirate", new Sfx("sounds/Pirate.wav"));
@@ -839,6 +842,13 @@ import java.util.HashMap;
         reflectedMap.put("WhiteTiger", new Sfx("sounds/WhiteTiger.wav"));
         reflectedMap.put("Nahtnaught_Eh", new Sfx("sounds/Nahtnaught_Eh.wav"));
         reflectedMap.put("TyrantsOrder", new Sfx("sounds/TyrantsOrder.wav"));
+        reflectedMap.put("Jeno_Co", new Sfx("sounds/Jeno_Co.wav"));
+        reflectedMap.put("LevinBeastmaster_Co", new Sfx("sounds/LevinBeastmaster_Co.wav"));
+        reflectedMap.put("LevinScholar_Co", new Sfx("sounds/LevinScholar_Co.wav"));
+        reflectedMap.put("Lounes_Co", new Sfx("sounds/Lounes_Co.wav"));
+        reflectedMap.put("Mena_Co", new Sfx("sounds/Mena_Co.wav"));
+        reflectedMap.put("Mina_Co", new Sfx("sounds/Mina_Co.wav"));
+        reflectedMap.put("Mona_Co", new Sfx("sounds/Mona_Co.wav"));
         /*     */
     }
 

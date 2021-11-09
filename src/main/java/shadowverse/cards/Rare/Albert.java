@@ -26,7 +26,7 @@ public class Albert extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Albert.png";
-    public static final int ENHANCE = 2;
+    public static final int ENHANCE = 3;
     private boolean doubleCheck = false;
 
     public Albert() {
@@ -105,6 +105,7 @@ public class Albert extends CustomCard {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         if (Shadowverse.Enhance(ENHANCE) && this.costForTurn == ENHANCE) {
+            addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
             List<AbstractCard> temp = new ArrayList<>();
             for (AbstractCard c : p.drawPile.group) {
                 if (c.hasTag(AbstractShadowversePlayer.Enums.LEVIN)) {
@@ -112,11 +113,10 @@ public class Albert extends CustomCard {
                 }
             }
             for (AbstractCard c : temp) {
-                if (c.costForTurn > 0) {
-                    c.costForTurn = 0;
-                    c.isCostModifiedForTurn = true;
+                if (p.hand.size() < 10) {
+                    c.freeToPlayOnce = true;
+                    p.drawPile.moveToHand(c, p.drawPile);
                 }
-                p.drawPile.moveToHand(c, p.drawPile);
             }
             temp = new ArrayList<>();
             for (AbstractCard c : p.discardPile.group) {
@@ -125,11 +125,10 @@ public class Albert extends CustomCard {
                 }
             }
             for (AbstractCard c : temp) {
-                if (c.costForTurn > 0) {
-                    c.costForTurn = 0;
-                    c.isCostModifiedForTurn = true;
+                if (p.hand.size() < 10) {
+                    c.freeToPlayOnce = true;
+                    p.drawPile.moveToHand(c, p.drawPile);
                 }
-                p.drawPile.moveToHand(c, p.discardPile);
             }
         }
     }

@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import shadowverse.cards.Rare.Albert;
 import shadowverse.cards.Status.EvolutionPoint;
 import shadowverse.cards.Temp.WhiteTiger;
 import shadowverse.characters.AbstractShadowversePlayer;
@@ -33,7 +34,6 @@ public class LevinBeastmaster extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(2);
             this.textureImg = IMG_PATH_EV;
             this.loadCardImage(IMG_PATH_EV);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
@@ -62,7 +62,16 @@ public class LevinBeastmaster extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (this.upgraded) {
+        boolean co = false;
+        for (AbstractCard c : abstractPlayer.hand.group) {
+            if (c instanceof Albert) {
+                co = true;
+                break;
+            }
+        }
+        if (co) {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Co"));
+        } else if (this.upgraded) {
             addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Ev"));
         } else {
             addToBot(new SFXAction(ID.replace("shadowverse:", "")));

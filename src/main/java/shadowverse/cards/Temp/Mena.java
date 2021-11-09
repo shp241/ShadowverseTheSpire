@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
+import shadowverse.cards.Rare.Albert;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 
@@ -25,6 +26,8 @@ public class Mena extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Mena.png";
+    public static final String IMG_PATH_EV = "img/cards/Mena_Ev.png";
+
 
     public Mena() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.ENEMY);
@@ -40,13 +43,28 @@ public class Mena extends CustomCard {
             upgradeName();
             upgradeDamage(3);
             upgradeMagicNumber(1);
+            this.textureImg = IMG_PATH_EV;
+            this.loadCardImage(IMG_PATH_EV);
         }
     }
 
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        boolean co = false;
+        for (AbstractCard c : abstractPlayer.hand.group) {
+            if (c instanceof Albert) {
+                co = true;
+                break;
+            }
+        }
+        if (co) {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Co"));
+        } else if (this.upgraded) {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Ev"));
+        } else {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        }
         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         for (AbstractCard c : abstractPlayer.hand.group) {
             if (c.hasTag(AbstractShadowversePlayer.Enums.LEVIN) && c != this) {

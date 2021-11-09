@@ -6,14 +6,16 @@ import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import shadowverse.action.MinionSummonAction;
 import shadowverse.cards.Temp.GildedBlade;
 import shadowverse.cards.Temp.GildedBoots;
 import shadowverse.cards.Temp.GildedGoblet;
 import shadowverse.cards.Temp.GildedNecklace;
-import shadowverse.orbs.Minion;
+import shadowverse.orbs.*;
 
 public class AlwidaPower extends AbstractPower {
     public static final String POWER_ID = "shadowverse:AlwidaPower";
@@ -54,7 +56,8 @@ public class AlwidaPower extends AbstractPower {
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (this.triggeredThisTurn < this.amount && (card instanceof GildedBlade || card instanceof GildedNecklace || card instanceof GildedGoblet || card instanceof GildedBoots)) {
             this.triggeredThisTurn++;
-
+            AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new Pirate()));
+            AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new Viking()));
         }
     }
 }

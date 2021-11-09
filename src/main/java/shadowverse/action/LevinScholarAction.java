@@ -30,15 +30,22 @@ public class LevinScholarAction extends AbstractGameAction {
                 list.add(c);
             }
         }
+        AbstractCard c1 = null;
+        AbstractCard c2 = null;
         if (list != null && !list.isEmpty()) {
             Collections.shuffle(list);
-            list.get(0).retain = true;
-            this.p.drawPile.moveToHand(list.get(0), this.p.drawPile);
+            c1 = list.get(0);
             if (list.size() >= 2) {
-                Collections.shuffle(list);
-                list.get(1).retain = true;
-                this.p.drawPile.moveToHand(list.get(1), this.p.drawPile);
+                c2 = list.get(1);
             }
+        }
+        if (c1 != null && p.hand.size() < 10) {
+            c1.retain = true;
+            this.p.drawPile.moveToHand(c1, this.p.drawPile);
+        }
+        if (c2 != null && p.hand.size() < 10) {
+            c2.retain = true;
+            this.p.drawPile.moveToHand(c2, this.p.drawPile);
         }
         p.hand.refreshHandLayout();
         p.hand.applyPowers();

@@ -2837,7 +2837,7 @@
   },
   "shadowverse:Albert": {
     "NAME": "雷维翁英雄·阿尔贝尔",
-    "DESCRIPTION": "雷维翁 。 NL 造成 !D! 点伤害。 NL 爆能强化 2 \b将所有抽牌堆、弃牌堆中的 雷维翁 攻击牌置入手牌，并在本回合中消耗变为0。"
+    "DESCRIPTION": "雷维翁 。 NL 造成 !D! 点伤害。 NL 爆能强化 3 \b额外造成一次伤害，将所有抽牌堆、弃牌堆中的 雷维翁 攻击牌置入手牌，这些牌下次打出消耗变为0。"
   },
   "shadowverse:LevinScholar": {
     "NAME": "雷维翁的探索者",
@@ -2868,7 +2868,11 @@
   },
   "shadowverse:Lounes": {
     "NAME": "雷维翁见习兵·璐涅丝",
-    "DESCRIPTION": "雷维翁 。 NL 造成 !D! 点伤害，手牌中每有1张 雷维翁 牌，获得1次 !B! 点格挡。 NL 爆能强化 1 \b再造成一次伤害。"
+    "DESCRIPTION": "雷维翁 。 NL 造成 !D! 点伤害，手牌中每有1张 雷维翁 牌，获得1次 !B! 点格挡。 NL 爆能强化 1 \b再造成一次伤害。",
+    "EXTENDED_DESCRIPTION": [
+      "（其他雷维翁卡牌数：",
+      ")"
+    ]
   },
   "shadowverse:Cybercannoneer": {
     "NAME": "加农炮破坏者",

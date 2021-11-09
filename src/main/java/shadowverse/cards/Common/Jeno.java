@@ -8,6 +8,8 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import shadowverse.cards.Rare.Albert;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 import shadowverse.powers.JenoPower;
 
@@ -21,6 +23,7 @@ public class Jeno extends CustomCard {
     public Jeno() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF);
         this.magicNumber = this.baseMagicNumber = 4;
+        this.tags.add(AbstractShadowversePlayer.Enums.LEVIN);
     }
 
     @Override
@@ -34,7 +37,18 @@ public class Jeno extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        boolean co = false;
+        for (AbstractCard c : p.hand.group) {
+            if (c instanceof Albert) {
+                co = true;
+                break;
+            }
+        }
+        if (co) {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Co"));
+        } else {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        }
         addToBot(new ApplyPowerAction(p, p, new JenoPower(p, this.magicNumber)));
     }
 
