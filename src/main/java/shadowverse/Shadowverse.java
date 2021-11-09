@@ -679,6 +679,7 @@ import java.util.HashMap;
         reflectedMap.put("Lucifer", new Sfx("sounds/Lucifer.wav"));
         reflectedMap.put("Lucifer2", new Sfx("sounds/Lucifer2.wav"));
         reflectedMap.put("AbsoluteOne", new Sfx("sounds/AbsoluteOne.wav"));
+        reflectedMap.put("MoonAlmiraj", new Sfx("sounds/MoonAlmiraj.wav"));
         reflectedMap.put("KMR1", new Sfx("sounds/KMR1.wav"));
         reflectedMap.put("KMR2", new Sfx("sounds/KMR2.wav"));
         reflectedMap.put("SpineLucille", new Sfx("sounds/SpineLucille.wav"));
