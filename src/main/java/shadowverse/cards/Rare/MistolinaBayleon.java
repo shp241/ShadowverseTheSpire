@@ -5,6 +5,7 @@ import com.badlogic.gdx.Gdx;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsInHandAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.*;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -50,6 +51,7 @@ public class MistolinaBayleon extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
+        addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         addToBot(new SelectCardsInHandAction(1, TEXT[0], false, false, card -> card.type == CardType.POWER, abstractCards -> {
             for (AbstractCard c : abstractCards) {
                 if (c instanceof NaterranGreatTree) {

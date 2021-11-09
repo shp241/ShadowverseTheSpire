@@ -28,7 +28,7 @@ public class Cybercannoneer extends CustomCard {
     public Cybercannoneer() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
         this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
-        this.baseDamage = 9;
+        this.baseDamage = 6;
         this.baseMagicNumber = this.magicNumber = 2;
         this.cardsToPreview = new ProductMachine();
     }

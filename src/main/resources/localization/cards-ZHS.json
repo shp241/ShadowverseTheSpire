@@ -2916,7 +2916,8 @@
   },
   "shadowverse:Alwida": {
     "NAME": "海贼女王·雅尔莉妲",
-    "DESCRIPTION": "每回合限 !M! 次，每当你使用 财宝牌 ，召唤1个 航海家 和1个 维京战士 。"
+    "DESCRIPTION": "每回合限 !M! 次，每当你使用 财宝牌 ，召唤1个 航海家 和1个 维京战士 。 NL 虚无",
+    "UPGRADE_DESCRIPTION": "每回合限 !M! 次，每当你使用 财宝牌 ，召唤1个 航海家 和1个 维京战士 。"
   },
   "shadowverse:Patrick": {
     "NAME": "战犀骑士·帕特里克",
@@ -2951,7 +2952,7 @@
   },
   "shadowverse:WhiteTiger": {
     "NAME": "圣兽白虎",
-    "DESCRIPTION": "雷维翁 。 NL 获得 !B! 点 格挡 。 NL 保留 。"
+    "DESCRIPTION": "雷维翁 。 NL 获得 !B! 点 格挡 。 NL 消耗 。 NL 保留 。"
   },
   "shadowverse:Jeno": {
     "NAME": "雷维翁猛者·杰诺",

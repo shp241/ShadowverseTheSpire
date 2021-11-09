@@ -52,10 +52,12 @@ public class Nemesis extends AbstractShadowversePlayer{
     private static final int HAND_SIZE = 5;
     private static final int ORB_SLOTS = 0;
     private static final int ASCENSION_MAX_HP_LOSS = 5;
+    public static shadowverse.animation.AbstractAnimation bigAnimation = new shadowverse.animation.AbstractAnimation("img/animation/Nemesis/class_808.atlas", "img/animation/Nemesis/class_808.json", com.megacrit.cardcrawl.core.Settings.M_W / 1600.0F, com.megacrit.cardcrawl.core.Settings.M_W / 2.0F, com.megacrit.cardcrawl.core.Settings.M_H / 2.0F, 0F, 0F);
 
     public Nemesis(String name) {
         super(name, Enums.Nemesis, null, null, null, (AbstractAnimation)new SpriterAnimation("img/character/Nemesis/images/NewProject.autosave.autosave.scml"));
         initializeClass(null, Nm_SHOULDER_2, Nm_SHOULDER_2, Nm_CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
+        bigAnimation.setVisible(false);
     }
 
     @Override
@@ -180,5 +182,8 @@ public class Nemesis extends AbstractShadowversePlayer{
             }
             CardCrawlGame.sound.playA(sound, 0.0F);
         }
+    }
+    public static shadowverse.animation.AbstractAnimation getBigAnimation() {
+        return bigAnimation;
     }
 }

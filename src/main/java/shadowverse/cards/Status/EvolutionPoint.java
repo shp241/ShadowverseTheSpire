@@ -2,13 +2,16 @@ package shadowverse.cards.Status;
 
 import basemod.abstracts.CustomCard;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsInHandAction;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.UpgradeSpecificCardAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import shadowverse.action.AnimationAction;
+import shadowverse.characters.*;
 
 public class EvolutionPoint extends CustomCard {
     public static final String ID = "shadowverse:EvolutionPoint";
@@ -40,13 +43,32 @@ public class EvolutionPoint extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SelectCardsInHandAction(1,TEXT[0],false,false,card -> {
-            return card.type!=CardType.SKILL&&card.canUpgrade();
-        }, abstractCards ->{
-            for (AbstractCard c:abstractCards){
+        addToBot(new SelectCardsInHandAction(1, TEXT[0], false, false, card -> card.type != CardType.SKILL && card.canUpgrade(), abstractCards -> {
+            for (AbstractCard c : abstractCards) {
+                int roll = AbstractDungeon.cardRandomRng.random(3);
+                if (abstractPlayer.chosenClass == Witchcraft.Enums.WITCHCRAFT) {
+                    addToBot(new SFXAction("Witchcraft_Evolve" + roll % 3));
+                    addToBot(new AnimationAction(Witchcraft.getBigAnimation(), "extra", 3.0F));
+                } else if (abstractPlayer.chosenClass == Elf.Enums.Elf) {
+                    addToBot(new SFXAction("Elf_Evolve" + roll % 3));
+                    addToBot(new AnimationAction(Elf.getBigAnimation(), "extra", 3.0F));
+                } else if (abstractPlayer.chosenClass == Necromancer.Enums.Necromancer) {
+                    addToBot(new SFXAction("Necromancer_Evolve" + roll % 3));
+                    addToBot(new AnimationAction(Necromancer.getBigAnimation(), "extra", 3.0F));
+                } else if (abstractPlayer.chosenClass == Vampire.Enums.Vampire) {
+                    addToBot(new SFXAction("Vampire_Evolve" + roll % 3));
+                    addToBot(new AnimationAction(Vampire.getBigAnimation(), "extra", 3.0F));
+                } else if (abstractPlayer.chosenClass == Nemesis.Enums.Nemesis) {
+                    addToBot(new SFXAction("Nemesis_Evolve" + roll % 3));
+                    addToBot(new AnimationAction(Nemesis.getBigAnimation(), "extra", 3.0F));
+                } else if (abstractPlayer.chosenClass == Royal.Enums.Royal) {
+                    addToBot(new SFXAction("Royal_Evolve" + roll % 3));
+                    addToBot(new AnimationAction(Royal.getBigAnimation(), "extra", 3.0F));
+                }
+
                 addToBot(new UpgradeSpecificCardAction(c));
             }
-        } ));
+        }));
     }
 
     @Override

@@ -259,4 +259,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
             AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ChangeStanceAction((AbstractStance)new NeutralStance()));
     }
 
+    public static shadowverse.animation.AbstractAnimation getBigAnimation(){
+        return null;
+    }
 }

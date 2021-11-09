@@ -13,8 +13,8 @@ public class Pirate extends Minion {
     public static final String ORB_ID = "shadowverse:Pirate";
     private static final OrbStrings orbString = CardCrawlGame.languagePack.getOrbString(ORB_ID);
     public static final String[] DESCRIPTIONS = orbString.DESCRIPTION;
-    private static final int ATTACK = 1;
-    private static final int DEFENSE = 2;
+    private static final int ATTACK = 2;
+    private static final int DEFENSE = 3;
 
     public Pirate() {
         // The passive/evoke description we pass in here, specifically, don't matter

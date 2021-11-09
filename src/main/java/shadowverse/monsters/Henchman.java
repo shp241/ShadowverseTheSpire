@@ -48,8 +48,8 @@ public class Henchman extends CustomMonster {
             setHp(A_2_HP_MIN, A_2_HP_MAX);
         }
         if (AbstractDungeon.ascensionLevel >= 17) {
-            this.shootDmg = 6;
-            this.shootAmt = 2;
+            this.shootDmg = 8;
+            this.shootAmt = 1;
         } else if (AbstractDungeon.ascensionLevel >= 2) {
             this.shootDmg = 6;
             this.shootAmt = 1;

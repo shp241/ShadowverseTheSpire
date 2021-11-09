@@ -26,7 +26,7 @@ public class Charlotta extends CustomCard {
     public Charlotta() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF);
         this.baseBlock = 8;
-        this.baseMagicNumber = this.magicNumber = 2;
+        this.baseMagicNumber = this.magicNumber = 1;
     }
 
 
@@ -34,6 +34,7 @@ public class Charlotta extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            upgradeBlock(1);
             this.textureImg = IMG_PATH_EV;
             this.loadCardImage(IMG_PATH_EV);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
@@ -71,7 +72,7 @@ public class Charlotta extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
         if (this.upgraded) {
             addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, this.magicNumber), this.magicNumber));
-            addToBot(new ApplyPowerAction(p,p,(AbstractPower)new DisableEffectDamagePower(p,1),1));
+            addToBot(new ApplyPowerAction(p, p, (AbstractPower) new DisableEffectDamagePower(p, 1), 1));
             this.degrade();
         }
     }

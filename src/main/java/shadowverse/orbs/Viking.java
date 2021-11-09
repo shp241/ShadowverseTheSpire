@@ -17,8 +17,8 @@ public class Viking  extends Minion {
     public static final String ORB_ID = "shadowverse:Viking";
     private static final OrbStrings orbString = CardCrawlGame.languagePack.getOrbString(ORB_ID);
     public static final String[] DESCRIPTIONS = orbString.DESCRIPTION;
-    private static final int ATTACK = 2;
-    private static final int DEFENSE = 1;
+    private static final int ATTACK = 3;
+    private static final int DEFENSE = 2;
 
     public Viking() {
         // The passive/evoke description we pass in here, specifically, don't matter

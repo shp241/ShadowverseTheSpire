@@ -39,6 +39,7 @@ public class Alwida extends CustomCard {
     public Alwida() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.SELF);
         this.magicNumber = this.baseMagicNumber = 1;
+        this.isEthereal = true;
     }
 
     @Override
@@ -63,7 +64,10 @@ public class Alwida extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.upgradeBaseCost(1);
+//            this.upgradeBaseCost(1);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            initializeDescription();
+            this.isEthereal = false;
         }
     }
 
@@ -71,7 +75,7 @@ public class Alwida extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
-        addToBot(new ApplyPowerAction(p, p, new AlwidaPower(p,this.magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new AlwidaPower(p, this.magicNumber)));
     }
 
 

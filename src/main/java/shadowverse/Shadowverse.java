@@ -806,6 +806,24 @@ import java.util.HashMap;
         reflectedMap.put("Mena_Co", new Sfx("sounds/Mena_Co.wav"));
         reflectedMap.put("Mina_Co", new Sfx("sounds/Mina_Co.wav"));
         reflectedMap.put("Mona_Co", new Sfx("sounds/Mona_Co.wav"));
+        reflectedMap.put("Royal_Evolve0", new Sfx("sounds/Royal_Evolve0.wav"));
+        reflectedMap.put("Royal_Evolve1", new Sfx("sounds/Royal_Evolve1.wav"));
+        reflectedMap.put("Royal_Evolve2", new Sfx("sounds/Royal_Evolve2.wav"));
+        reflectedMap.put("Elf_Evolve0", new Sfx("sounds/Elf_Evolve0.wav"));
+        reflectedMap.put("Elf_Evolve1", new Sfx("sounds/Elf_Evolve1.wav"));
+        reflectedMap.put("Elf_Evolve2", new Sfx("sounds/Elf_Evolve2.wav"));
+        reflectedMap.put("Necromancer_Evolve0", new Sfx("sounds/Necromancer_Evolve0.wav"));
+        reflectedMap.put("Necromancer_Evolve1", new Sfx("sounds/Necromancer_Evolve1.wav"));
+        reflectedMap.put("Necromancer_Evolve2", new Sfx("sounds/Necromancer_Evolve2.wav"));
+        reflectedMap.put("Nemesis_Evolve0", new Sfx("sounds/Nemesis_Evolve0.wav"));
+        reflectedMap.put("Nemesis_Evolve1", new Sfx("sounds/Nemesis_Evolve1.wav"));
+        reflectedMap.put("Nemesis_Evolve2", new Sfx("sounds/Nemesis_Evolve2.wav"));
+        reflectedMap.put("Vampire_Evolve0", new Sfx("sounds/Vampire_Evolve0.wav"));
+        reflectedMap.put("Vampire_Evolve1", new Sfx("sounds/Vampire_Evolve1.wav"));
+        reflectedMap.put("Vampire_Evolve2", new Sfx("sounds/Vampire_Evolve2.wav"));
+        reflectedMap.put("Witchcraft_Evolve0", new Sfx("sounds/Witchcraft_Evolve0.wav"));
+        reflectedMap.put("Witchcraft_Evolve1", new Sfx("sounds/Witchcraft_Evolve1.wav"));
+        reflectedMap.put("Witchcraft_Evolve2", new Sfx("sounds/Witchcraft_Evolve2.wav"));
         /*     */
     }
 

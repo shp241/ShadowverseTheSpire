@@ -108,7 +108,7 @@ public class Albert extends CustomCard {
             addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
             List<AbstractCard> temp = new ArrayList<>();
             for (AbstractCard c : p.drawPile.group) {
-                if (c.hasTag(AbstractShadowversePlayer.Enums.LEVIN)) {
+                if (c.hasTag(AbstractShadowversePlayer.Enums.LEVIN) && !(c instanceof Albert)) {
                     temp.add(c);
                 }
             }
@@ -120,7 +120,7 @@ public class Albert extends CustomCard {
             }
             temp = new ArrayList<>();
             for (AbstractCard c : p.discardPile.group) {
-                if (c.hasTag(AbstractShadowversePlayer.Enums.LEVIN)) {
+                if (c.hasTag(AbstractShadowversePlayer.Enums.LEVIN) && !(c instanceof Albert)) {
                     temp.add(c);
                 }
             }
@@ -130,6 +130,8 @@ public class Albert extends CustomCard {
                     p.drawPile.moveToHand(c, p.drawPile);
                 }
             }
+            p.hand.refreshHandLayout();
+            p.hand.applyPowers();
         }
     }
 
