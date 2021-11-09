@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import shadowverse.characters.AbstractShadowversePlayer;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -28,10 +29,8 @@ public class ReanimateAction extends AbstractGameAction {
     public void update() {
         for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
             if (c.type == AbstractCard.CardType.ATTACK && c.cost <= this.amount) {
-                AbstractCard tmp = c.makeCopy();
+                AbstractCard tmp = c.makeSameInstanceOf();
                 tmp.resetAttributes();
-                if (c.upgraded)
-                    tmp.upgrade();
                 list.add(tmp);
             }
         }
@@ -40,10 +39,12 @@ public class ReanimateAction extends AbstractGameAction {
                 costTmp.add(c.cost);
             }
             int max = Collections.max(costTmp);
-            for (AbstractCard finalCard : list){
-             if (finalCard.cost == max){
-                 finalList.add(finalCard);
-             }
+            for (AbstractCard finalCard : list) {
+                if (finalCard.cost == max) {
+                    if (finalList.size()>0&&finalCard.hasTag(AbstractShadowversePlayer.Enums.ACCELERATE))
+                        continue;
+                    finalList.add(finalCard);
+                }
             }
             Collections.shuffle(finalList);
             AbstractCard tempCard = finalList.get(0);

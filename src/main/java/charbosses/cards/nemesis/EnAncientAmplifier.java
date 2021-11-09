@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.ClashEffect;
+import shadowverse.characters.Nemesis;
 import shadowverse.powers.AncientAmplifierPower;
 
 public class EnAncientAmplifier extends AbstractBossCard {
@@ -24,7 +25,7 @@ public class EnAncientAmplifier extends AbstractBossCard {
     public static final String IMG_PATH = "img/cards/AncientAmplifier.png";
 
     public EnAncientAmplifier() {
-        super(ID, cardStrings.NAME, IMG_PATH, 0, cardStrings.DESCRIPTION, CardType.POWER, CardColor.COLORLESS, CardRarity.COMMON, CardTarget.ENEMY, AbstractMonster.Intent.STRONG_DEBUFF);
+        super(ID, cardStrings.NAME, IMG_PATH, 0, cardStrings.DESCRIPTION, CardType.POWER, Nemesis.Enums.COLOR_SKY, CardRarity.COMMON, CardTarget.ENEMY, AbstractMonster.Intent.STRONG_DEBUFF);
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
     }

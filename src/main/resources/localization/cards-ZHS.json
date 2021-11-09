@@ -1375,9 +1375,34 @@
     "NAME": "生死逆转",
     "DESCRIPTION": "亡者召还 自己的本回合数。"
   },
+  "shadowverse:AbsoluteJudgment": {
+    "NAME": "绝对制裁",
+    "DESCRIPTION": "给予 !M! 层 易伤 。 NL 下一次受到的伤害变为0。 NL 消耗 。"
+  },
+  "shadowverse:AbsoluteOne": {
+    "NAME": "绝对之一",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 不再受到能力伤害。 NL 每回合开始时将1张 *绝对制裁 加入手中。 NL 消耗 。"
+  },
+  "shadowverse:EnAcceleratium": {
+    "NAME": "加速装置",
+    "DESCRIPTION": "下回合获得 !M! 点能量。"
+  },
+  "shadowverse:ShadowMode": {
+    "NAME": "暗影模式",
+    "DESCRIPTION": "获得1层 无实体 。"
+  },
+  "shadowverse:BlackenedScripture": {
+    "NAME": "漆黑法典",
+    "DESCRIPTION": "给予 !M! 层 虚弱 和 脆弱 。"
+  },
+  "shadowverse:EnMoonAlmiraj": {
+    "NAME": "黑天月兔妖",
+    "DESCRIPTION": "造成 !D! 点伤害，回复造成伤害的生命。 NL 获得 !B! 点 格挡 。"
+  },
   "shadowverse:RegenerateSpirit": {
     "NAME": "灵魂再生",
-    "DESCRIPTION": "亡者召还 1。 NL 爆能强化2 额外发动 亡者召还 2。"
+    "DESCRIPTION": "亡者召还 1。 NL 爆能强化2 额外发动 亡者召还 2。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION":"亡者召还 1。 NL 爆能强化2 额外发动 亡者召还 2。"
   },
   "shadowverse:BoneChimera": {
     "NAME": "骸骨奇美拉",
@@ -2589,7 +2614,7 @@
     "NAME": "神秘的遗物·斯碧涅&露琪儿",
     "DESCRIPTION": "创造物 。 NL 对全体敌人造成 !D! 点伤害"
   },
-  "shadowverse:DeathNotePower": {
+  "shadowverse:DeathNote": {
     "NAME": "亡者之王的记事本",
     "DESCRIPTION": "倒计时 !M! \b失去这个能力。 NL 回合结束时，随机打出一张抽牌堆中耗能最高且不大于你的能量上限的攻击牌。"
   },
