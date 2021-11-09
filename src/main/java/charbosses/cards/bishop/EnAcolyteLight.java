@@ -28,11 +28,11 @@ public class EnAcolyteLight extends AbstractBossCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction)new HealAction((AbstractCreature)m, (AbstractCreature)m, p.currentBlock));
-        if (p.currentBlock<=20){
-            addToBot((AbstractGameAction)new RemoveAllBlockAction((AbstractCreature)p, (AbstractCreature)m));
-        }else {
-            addToBot((AbstractGameAction)new DamageAction((AbstractCreature)p, new DamageInfo((AbstractCreature)m, 20, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.POISON));
+        addToBot((AbstractGameAction) new HealAction((AbstractCreature) m, (AbstractCreature) m, Math.min(p.currentBlock, 20)));
+        if (p.currentBlock <= 20) {
+            addToBot((AbstractGameAction) new RemoveAllBlockAction((AbstractCreature) p, (AbstractCreature) m));
+        } else {
+            addToBot((AbstractGameAction) new DamageAction((AbstractCreature) p, new DamageInfo((AbstractCreature) m, 20, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.POISON));
         }
     }
 
@@ -44,6 +44,6 @@ public class EnAcolyteLight extends AbstractBossCard {
     }
 
     public AbstractCard makeCopy() {
-        return (AbstractCard)new EnAcolyteLight();
+        return (AbstractCard) new EnAcolyteLight();
     }
 }

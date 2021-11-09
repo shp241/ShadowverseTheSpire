@@ -5,6 +5,8 @@ import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
+import java.util.HashMap;
+
 /**
  * Created by Keeper on 2019/3/16.
  */
@@ -14,12 +16,19 @@ public class GifAnimation{
 
     public GifDecoder gdec;
 
+    public static HashMap<String, Animation<TextureRegion>> cache = new HashMap<>();
+
     public GifAnimation(String filePath) {
         create(filePath);
     }
 
     public void create(String filePath) {
-        animation = GifDecoder.loadGIFAnimation(Animation.PlayMode.LOOP, Gdx.files.internal(filePath).read(), this);
+        if (cache.containsKey(filePath)) {
+            animation = cache.get(filePath);
+        } else {
+            animation = GifDecoder.loadGIFAnimation(Animation.PlayMode.LOOP, Gdx.files.internal(filePath).read(), this);
+            cache.put(filePath, animation);
+        }
     }
 
     public void render(SpriteBatch sb, final float x, final float y, final float width, final float height) {

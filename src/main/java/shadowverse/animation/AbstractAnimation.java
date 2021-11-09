@@ -199,7 +199,7 @@ public class AbstractAnimation {
     }
 
 
-    protected void loadAnimation(String atlasUrl, String skeletonUrl, float scale) {
+    public void loadAnimation(String atlasUrl, String skeletonUrl, float scale) {
         this.atlas = new TextureAtlas(Gdx.files.internal(atlasUrl));
         SkeletonJson json = new SkeletonJson(this.atlas);
 
@@ -211,6 +211,13 @@ public class AbstractAnimation {
         this.state = new AnimationState(this.stateData);
 
         img = null;
+    }
+
+    public static void changeAnimation(AbstractAnimation animation, AnimationLoader loader) {
+        animation.atlas = loader.atlas;
+        animation.skeleton = loader.skeleton;
+        animation.stateData = loader.stateData;
+        animation.state = loader.state;
     }
 
     protected void loadImg(String imgUrl) {

@@ -1,5 +1,6 @@
 package charbosses.cards.nemesis;
 
+import charbosses.bosses.KMR.KMR;
 import charbosses.cards.AbstractBossCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -13,6 +14,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.WeakPower;
+import shadowverse.action.AnimationAction;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Nemesis;
 import shadowverse.powers.AbsoluteOnePower;
@@ -35,6 +37,7 @@ public class AbsoluteOne extends AbstractBossCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot((AbstractGameAction)new SFXAction("AbsoluteOne"));
+//        addToBot(new AnimationAction(KMR.bigAnimation, "extra", 3.0F, false));
         addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)m, (AbstractCreature)m, this.block));
         addToBot((AbstractGameAction)new ApplyPowerAction(m,m,(AbstractPower)new AbsoluteOnePower(m)));
     }

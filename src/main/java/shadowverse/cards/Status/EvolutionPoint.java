@@ -48,22 +48,22 @@ public class EvolutionPoint extends CustomCard {
                 int roll = AbstractDungeon.cardRandomRng.random(3);
                 if (abstractPlayer.chosenClass == Witchcraft.Enums.WITCHCRAFT) {
                     addToBot(new SFXAction("Witchcraft_Evolve" + roll % 3));
-                    addToBot(new AnimationAction(Witchcraft.getBigAnimation(), "extra", 3.0F));
+                    addToBot(new AnimationAction(Witchcraft.getBigAnimation(), "extra", 2.833F));
                 } else if (abstractPlayer.chosenClass == Elf.Enums.Elf) {
                     addToBot(new SFXAction("Elf_Evolve" + roll % 3));
-                    addToBot(new AnimationAction(Elf.getBigAnimation(), "extra", 3.0F));
+                    addToBot(new AnimationAction(Elf.getBigAnimation(), "extra", 2.833F));
                 } else if (abstractPlayer.chosenClass == Necromancer.Enums.Necromancer) {
                     addToBot(new SFXAction("Necromancer_Evolve" + roll % 3));
-                    addToBot(new AnimationAction(Necromancer.getBigAnimation(), "extra", 3.0F));
+                    addToBot(new AnimationAction(Necromancer.getBigAnimation(), "extra", 2.833F));
                 } else if (abstractPlayer.chosenClass == Vampire.Enums.Vampire) {
                     addToBot(new SFXAction("Vampire_Evolve" + roll % 3));
-                    addToBot(new AnimationAction(Vampire.getBigAnimation(), "extra", 3.0F));
+                    addToBot(new AnimationAction(Vampire.getBigAnimation(), "extra", 2.833F));
                 } else if (abstractPlayer.chosenClass == Nemesis.Enums.Nemesis) {
                     addToBot(new SFXAction("Nemesis_Evolve" + roll % 3));
-                    addToBot(new AnimationAction(Nemesis.getBigAnimation(), "extra", 3.0F));
+                    addToBot(new AnimationAction(Nemesis.getBigAnimation(), "extra", 2.833F));
                 } else if (abstractPlayer.chosenClass == Royal.Enums.Royal) {
                     addToBot(new SFXAction("Royal_Evolve" + roll % 3));
-                    addToBot(new AnimationAction(Royal.getBigAnimation(), "extra", 3.0F));
+                    addToBot(new AnimationAction(Royal.getBigAnimation(), "extra", 2.833F));
                 }
 
                 addToBot(new UpgradeSpecificCardAction(c));

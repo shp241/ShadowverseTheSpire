@@ -34,7 +34,7 @@ public class OliviasBlessing extends CustomRelic implements BetterClickableRelic
 
     @Override
     public void atBattleStart() {
-        this.counter = 3;
+        this.counter = 5;
         this.triggeredThisTurn = false;
         addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
     }
@@ -67,6 +67,20 @@ public class OliviasBlessing extends CustomRelic implements BetterClickableRelic
         this.counter = -1;
         this.grayscale = false;
     }
+
+    @Override
+    public void obtain() {
+        if (AbstractDungeon.player.hasRelic(Offensive6.ID)) {
+            instantObtain(AbstractDungeon.player, 0, false);
+        } else {
+            super.obtain();
+        }
+    }
+    @Override
+    public boolean canSpawn(){
+        return AbstractDungeon.player.hasRelic(Offensive6.ID);
+    }
+
 
 
     @Override

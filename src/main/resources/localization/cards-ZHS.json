@@ -2798,7 +2798,7 @@
   },
   "shadowverse:PompousSummons": {
     "NAME": "任性的差遣",
-    "DESCRIPTION": "抽2张牌。 NL 协作 10：额外抽 !M! 张牌。",
+    "DESCRIPTION": "抽 !M! 张牌。 NL 协作 10：额外抽1张牌。",
     "EXTENDED_DESCRIPTION": [
       "（协作数：",
       ")"

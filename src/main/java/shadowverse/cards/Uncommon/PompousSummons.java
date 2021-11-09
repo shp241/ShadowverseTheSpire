@@ -21,7 +21,7 @@ public class PompousSummons extends CustomCard {
 
     public PompousSummons() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
-        this.baseMagicNumber = this.magicNumber = 1;
+        this.baseMagicNumber = this.magicNumber = 2;
     }
 
 
@@ -36,9 +36,9 @@ public class PompousSummons extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DrawCardAction(p, 2));
+        addToBot(new DrawCardAction(p, this.magicNumber));
         if (rally() >= 10) {
-            addToBot(new DrawCardAction(p, this.magicNumber));
+            addToBot(new DrawCardAction(p, 1));
         }
     }
 

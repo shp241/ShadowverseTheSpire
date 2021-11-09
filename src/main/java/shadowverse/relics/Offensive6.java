@@ -1,6 +1,8 @@
 package shadowverse.relics;
 
 import basemod.abstracts.CustomRelic;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
@@ -26,13 +28,15 @@ import shadowverse.orbs.Minion;
 
 import java.util.ArrayList;
 
-public class Offensive6 extends CustomRelic {
+public class Offensive6 extends CustomRelic implements BetterClickableRelic<Offensive6> {
     public static final String ID = "shadowverse:Offensive6";
     public static final String IMG = "img/relics/Offensive.png";
     public static final String OUTLINE_IMG = "img/relics/outline/Offensive_Outline.png";
+    public boolean lifeCheck;
+    private boolean triggeredThisTurn;
 
     public Offensive6() {
-        super(ID, ImageMaster.loadImage(IMG), RelicTier.SPECIAL, LandingSound.CLINK);
+        super(ID, new Texture(Gdx.files.internal(IMG)), RelicTier.BOSS, LandingSound.SOLID);
     }
 
     @Override
@@ -42,31 +46,37 @@ public class Offensive6 extends CustomRelic {
 
     @Override
     public void atBattleStart() {
-        this.counter = 0;
+        this.counter = 3;
+        this.triggeredThisTurn = false;
         addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
     }
 
     @Override
     public void atTurnStart() {
-        if (!this.grayscale) {
-            this.counter++;
+        this.triggeredThisTurn = false;
+    }
+
+    @Override
+    public void onEachRightClick() {
+        if (!this.grayscale && !this.triggeredThisTurn) {
+            this.counter--;
+            this.triggeredThisTurn = true;
             flash();
             AbstractCard c = new EvolutionPoint();
-            addToBot(new MakeTempCardInHandAction(c.makeStatEquivalentCopy(), 1));
+            addToBot(new MakeTempCardInHandAction(c, 1));
         }
-        if (this.counter == 3) {
+        if (this.counter == 0) {
             flash();
-            this.counter = -1;
             this.grayscale = true;
         }
     }
-
 
     @Override
     public void onVictory() {
         this.counter = -1;
         this.grayscale = false;
     }
+
 
     @Override
     public AbstractRelic makeCopy() {

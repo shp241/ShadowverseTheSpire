@@ -24,10 +24,14 @@ public class AnimationAction extends AbstractGameAction {
     }
 
     public AnimationAction(AbstractAnimation animation, String animationName, float duration) {
+        this(animation, animationName, duration, true);
+    }
+
+    public AnimationAction(AbstractAnimation animation, String animationName, float duration, boolean canSkip) {
         this.actionType = ActionType.SPECIAL;
         this.animation = animation;
         this.animationName = animationName;
-        if (Settings.DISABLE_EFFECTS) {
+        if (Settings.DISABLE_EFFECTS && canSkip) {
             this.duration = 0.0F;
         } else {
             this.duration = duration;

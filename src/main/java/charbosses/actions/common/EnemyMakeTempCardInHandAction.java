@@ -106,6 +106,7 @@
              AbstractDungeon.effectList.add(new EnemyShowCardAndAddToHandEffect(makeNewCard()));
            } 
          }
+         break;
        case 2:
          if (handAmt == 1) {
            AbstractDungeon.effectList.add(new EnemyShowCardAndAddToHandEffect(makeNewCard(), Settings.WIDTH / 2.0F - PADDING + AbstractCard.IMG_WIDTH * 0.5F, Settings.HEIGHT / 2.0F));
@@ -114,10 +115,11 @@
          else if (handAmt == 2) {
            AbstractDungeon.effectList.add(new EnemyShowCardAndAddToHandEffect(makeNewCard(), Settings.WIDTH / 2.0F + PADDING + AbstractCard.IMG_WIDTH, Settings.HEIGHT / 2.0F));
            AbstractDungeon.effectList.add(new EnemyShowCardAndAddToHandEffect(makeNewCard(), Settings.WIDTH / 2.0F - PADDING + AbstractCard.IMG_WIDTH, Settings.HEIGHT / 2.0F));
-         } 
- 
- 
-       
+         }
+
+
+         break;
+
        case 3:
          if (handAmt == 1) {
            AbstractDungeon.effectList.add(new EnemyShowCardAndAddToHandEffect(makeNewCard(), Settings.WIDTH / 2.0F - PADDING + AbstractCard.IMG_WIDTH, Settings.HEIGHT / 2.0F));
@@ -132,7 +134,9 @@
            for (int j = 0; j < this.amount; j++) {
              AbstractDungeon.effectList.add(new EnemyShowCardAndAddToHandEffect(makeNewCard()));
            }
-         } 
+         }
+         break;
+
      } 
  
  

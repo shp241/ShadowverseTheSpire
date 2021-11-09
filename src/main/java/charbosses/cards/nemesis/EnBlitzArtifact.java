@@ -29,11 +29,13 @@ public class EnBlitzArtifact extends AbstractBossCard {
         this.tags.add(AbstractShadowversePlayer.Enums.ARTIFACT);
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
+        this.isMultiDamage = true;
+        this.intentMultiAmt = 2;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         for (int i = 0; i < this.magicNumber; i++)
-            addToBot((AbstractGameAction)new DamageAction((AbstractCreature)p, new DamageInfo((AbstractCreature)m, this.damage), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+            addToBot((AbstractGameAction) new DamageAction((AbstractCreature) p, new DamageInfo((AbstractCreature) m, this.damage), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
     }
 
     public void upgrade() {
@@ -44,6 +46,6 @@ public class EnBlitzArtifact extends AbstractBossCard {
     }
 
     public AbstractCard makeCopy() {
-        return (AbstractCard)new EnBlitzArtifact();
+        return (AbstractCard) new EnBlitzArtifact();
     }
 }
