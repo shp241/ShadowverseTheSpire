@@ -22,6 +22,8 @@ import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.InflameEffect;
 import shadowverse.characters.Nemesis;
 
+import java.util.ArrayList;
+
 public class TheGreatCreation extends AbstractBossCard {
     public static final String ID = "shadowverse:TheGreatCreation";
 
@@ -48,6 +50,10 @@ public class TheGreatCreation extends AbstractBossCard {
             upgradeName();
             upgradeMagicNumber(1);
         }
+    }
+
+    public int getPriority(ArrayList<AbstractCard> hand) {
+        return 100;
     }
 
     public AbstractCard makeCopy() {

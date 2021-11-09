@@ -940,7 +940,13 @@
       " 个回合内，回合开始前从以下3种效果中发动一种未发动过的效果：「失去 #b2 点力量」「眩晕 #b1 回合」「增加 #b1 张 #y解析的创造物 到你的手中」。"
     ]
   },
-  "shadowverse:DeathNote": {
+  "shadowverse:AbsoluteOnePower": {
+    "NAME": "绝对之一",
+    "DESCRIPTIONS": [
+      "因能力受到的伤害变为 #b0 。回合开始时将 #y1 张 #y绝对制裁 加入手中。"
+    ]
+  },
+  "shadowverse:DeathNotePower": {
     "NAME": "亡者之王的记事本",
     "DESCRIPTIONS": [
       "接下来的 #b",
