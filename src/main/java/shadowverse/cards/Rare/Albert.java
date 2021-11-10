@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
+import shadowverse.action.AlbertAction;
 import shadowverse.cards.Status.EvolutionPoint;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
@@ -106,32 +107,7 @@ public class Albert extends CustomCard {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         if (Shadowverse.Enhance(ENHANCE) && this.costForTurn == ENHANCE) {
             addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-            List<AbstractCard> temp = new ArrayList<>();
-            for (AbstractCard c : p.drawPile.group) {
-                if (c.hasTag(AbstractShadowversePlayer.Enums.LEVIN) && !(c instanceof Albert)) {
-                    temp.add(c);
-                }
-            }
-            for (AbstractCard c : temp) {
-                if (p.hand.size() < 10) {
-                    c.freeToPlayOnce = true;
-                    p.drawPile.moveToHand(c, p.drawPile);
-                }
-            }
-            temp = new ArrayList<>();
-            for (AbstractCard c : p.discardPile.group) {
-                if (c.hasTag(AbstractShadowversePlayer.Enums.LEVIN) && !(c instanceof Albert)) {
-                    temp.add(c);
-                }
-            }
-            for (AbstractCard c : temp) {
-                if (p.hand.size() < 10) {
-                    c.freeToPlayOnce = true;
-                    p.drawPile.moveToHand(c, p.drawPile);
-                }
-            }
-            p.hand.refreshHandLayout();
-            p.hand.applyPowers();
+            addToBot(new AlbertAction());
         }
     }
 

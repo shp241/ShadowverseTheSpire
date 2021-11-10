@@ -1402,7 +1402,7 @@
   "shadowverse:RegenerateSpirit": {
     "NAME": "灵魂再生",
     "DESCRIPTION": "亡者召还 1。 NL 爆能强化2 额外发动 亡者召还 2。 NL 虚无 。",
-    "UPGRADE_DESCRIPTION":"亡者召还 1。 NL 爆能强化2 额外发动 亡者召还 2。"
+    "UPGRADE_DESCRIPTION": "亡者召还 1。 NL 爆能强化2 额外发动 亡者召还 2。"
   },
   "shadowverse:BoneChimera": {
     "NAME": "骸骨奇美拉",
@@ -2568,7 +2568,7 @@
   },
   "shadowverse:WUP": {
     "NAME": "那塔拉崩坏",
-    "DESCRIPTION": "机械 · 自然 。 NL 当这张牌被抽到时，增加1张 *贝尔冯特的弹压 到手中。 NL 如果卡组中有 机械 或 自然 卡，额外增加1张。"
+    "DESCRIPTION": "机械 · 自然 。 NL 当这张牌被抽到时，增加1张 *贝尔冯特的弹压 到手中。 NL 如果手牌中没有其他 机械 或 自然 卡，额外增加1张。"
   },
   "shadowverse:Death": {
     "NAME": "死神",
@@ -2901,11 +2901,11 @@
   },
   "shadowverse:Eahta": {
     "NAME": "刀神·奥克托",
-    "DESCRIPTION": "升级时降低奥义数。 NL 造成 !D! 点伤害两次。 NL 奥义 3：使手牌中所有皇家护卫攻击牌本回合中消耗-2。 NL 解放奥义 6：改为使所有皇家护卫攻击牌本回合中消耗-2。",
+    "DESCRIPTION": "升级时降低奥义数。 NL 造成 !D! 点伤害两次。 NL 奥义 3：使手牌中所有皇家护卫攻击牌本回合中消耗-2。 NL 限定 解放奥义 6：使所有皇家护卫攻击牌本局对战中消耗-2。",
     "EXTENDED_DESCRIPTION": [
       "造成 !D! 点伤害两次。 NL 奥义",
-      "：使手牌中所有皇家护卫攻击牌本回合中消耗-2。 NL 解放奥义",
-      "：改为使所有皇家护卫攻击牌本回合中消耗-2。"
+      "：使手牌中所有皇家护卫攻击牌本回合中消耗-2。 NL 限定 解放奥义",
+      "：使所有皇家护卫攻击牌本局对战中消耗-2。"
     ]
   },
   "shadowverse:StrokeOfConviction": {
@@ -3018,12 +3018,12 @@
   },
   "shadowverse:Cybercannoneer": {
     "NAME": "加农炮破坏者",
-    "DESCRIPTION": "机械 。 NL 造成 !D! 点伤害，将 !M! 张 *生产机械 置入手牌。"
+    "DESCRIPTION": "机械 。 NL 造成 !D! 点伤害。 NL 爆能强化 1 \b将 !M! 张 *生产机械 置入手牌。"
   },
   "shadowverse:StampedingFortress": {
     "NAME": "虐袭城塞",
     "DESCRIPTION": "机械 。 NL 造成 !D! 点伤害，获得 !B! 点 格挡。",
-    "UPGRADE_DESCRIPTION": "机械 。 NL 打出后解除升级 。 NL 造成 !D! 点伤害，获得 !B! 点 格挡，将 !M! 张 *生产机械 置入手牌。"
+    "UPGRADE_DESCRIPTION": "机械 。 NL 打出后解除升级 。 NL 造成 !D! 点伤害，获得 !B! 点 格挡。 NL 如果手牌中有其他 机械 牌，将 !M! 张 *生产机械 置入手牌。"
   },
   "shadowverse:MeetTheLevinSisters": {
     "NAME": "雷维翁姐妹登场！",

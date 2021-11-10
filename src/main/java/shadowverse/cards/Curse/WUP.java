@@ -32,12 +32,16 @@ public class WUP extends CustomCard {
 
 
     @Override
-    public void triggerWhenDrawn(){
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(new BelphometStatus()));
-        for (AbstractCard c:AbstractDungeon.player.masterDeck.group){
-            if (c.hasTag(AbstractShadowversePlayer.Enums.MACHINE)||c.hasTag(AbstractShadowversePlayer.Enums.NATURAL)){
-                addToBot((AbstractGameAction)new MakeTempCardInHandAction(new BelphometStatus()));
+    public void triggerWhenDrawn() {
+        addToBot((AbstractGameAction) new MakeTempCardInHandAction(new BelphometStatus()));
+        boolean has = false;
+        for (AbstractCard c : AbstractDungeon.player.hand.group) {
+            if (c != this && (c.hasTag(AbstractShadowversePlayer.Enums.MACHINE) || c.hasTag(AbstractShadowversePlayer.Enums.NATURAL))) {
+                has = true;
             }
+        }
+        if (!has) {
+            addToBot((AbstractGameAction) new MakeTempCardInHandAction(new BelphometStatus()));
         }
     }
 
@@ -47,7 +51,7 @@ public class WUP extends CustomCard {
     }
 
     @Override
-    public AbstractCard makeCopy(){
+    public AbstractCard makeCopy() {
         return new WUP();
     }
 }

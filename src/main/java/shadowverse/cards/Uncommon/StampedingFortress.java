@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.action.MinionSummonAction;
+import shadowverse.cards.Status.BelphometStatus;
 import shadowverse.cards.Temp.ProductMachine;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
@@ -43,8 +44,8 @@ public class StampedingFortress extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(3);
-            upgradeBlock(3);
+            upgradeDamage(1);
+            upgradeBlock(1);
             this.textureImg = IMG_PATH_EV;
             this.loadCardImage(IMG_PATH_EV);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
@@ -82,7 +83,15 @@ public class StampedingFortress extends CustomCard {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         addToBot(new GainBlockAction(p, p, this.block));
         if (this.upgraded) {
-            this.addToTop(new MakeTempCardInHandAction(new ProductMachine(), 3));
+            boolean has = false;
+            for (AbstractCard c : AbstractDungeon.player.hand.group) {
+                if (c != this && (c.hasTag(AbstractShadowversePlayer.Enums.MACHINE) )) {
+                    has = true;
+                }
+            }
+            if (has) {
+                this.addToTop(new MakeTempCardInHandAction(new ProductMachine(), 3));
+            }
             this.degrade();
         }
     }

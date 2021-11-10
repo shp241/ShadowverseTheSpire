@@ -93,6 +93,8 @@ public class CatAdmiral extends CustomCard {
         if (this.upgraded) {
             AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new ShieldGuardian()));
             AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new HeavyKnight()));
+        }
+        if (rally() >= 7) {
             addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         }
         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
