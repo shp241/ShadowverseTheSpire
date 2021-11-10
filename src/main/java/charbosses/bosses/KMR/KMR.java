@@ -50,7 +50,7 @@ public class KMR
 
 
     public KMR() {
-        super(NAME, ID, 1000, -4.0F, -16.0F, 220.0F, 290.0F, null, 0.0F, -20.0F, AbstractPlayer.PlayerClass.IRONCLAD);
+        super(NAME, ID, 1000, -4.0F, -16.0F, 220.0F, 400.0F, null, 0.0F, -20.0F, AbstractPlayer.PlayerClass.IRONCLAD);
         this.energyOrb = (EnergyOrbInterface) new EnergyOrbRed();
         this.energy = new EnemyEnergyManager(5);
         this.animation = new SpriterAnimation("img/monsters/KMR/KMR.scml");
@@ -81,12 +81,15 @@ public class KMR
         (AbstractDungeon.getCurrRoom()).cannotLose = true;
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SFXAction("KMR1"));
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new TalkAction((AbstractCreature) this, DIALOG[0]));
-        if (AbstractDungeon.ascensionLevel >= 19) {
-            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) this, (AbstractCreature) this, (AbstractPower) new InvinciblePower((AbstractCreature) this, 300), 300));
-        } else if (AbstractDungeon.ascensionLevel >= 4) {
-            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) this, (AbstractCreature) this, (AbstractPower) new InvinciblePower((AbstractCreature) this, 405), 405));
-        } else {
+        if (AbstractDungeon.ascensionLevel >= 20) {
+            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) this, (AbstractCreature) this, (AbstractPower) new InvinciblePower((AbstractCreature) this, 400), 400));
+        }
+        else if (AbstractDungeon.ascensionLevel >= 19) {
             AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) this, (AbstractCreature) this, (AbstractPower) new InvinciblePower((AbstractCreature) this, 500), 500));
+        } else if (AbstractDungeon.ascensionLevel >= 4) {
+            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) this, (AbstractCreature) this, (AbstractPower) new InvinciblePower((AbstractCreature) this, 625), 625));
+        } else {
+            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) this, (AbstractCreature) this, (AbstractPower) new InvinciblePower((AbstractCreature) this, 650), 650));
         }
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) this, (AbstractCreature) this, (AbstractPower) new LionSanctuaryPower((AbstractCreature) this, 3), 3));
         this.chosenArchetype.addedPreBattle();

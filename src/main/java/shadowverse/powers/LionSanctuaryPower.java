@@ -5,6 +5,7 @@ import charbosses.cards.bishop.SacredLion;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.patches.NeutralPowertypePatch;
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.BetterOnApplyPowerPower;
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.OnReceivePowerPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -15,7 +16,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-public class LionSanctuaryPower extends AbstractPower implements BetterOnApplyPowerPower {
+public class LionSanctuaryPower extends AbstractPower implements OnReceivePowerPower {
     public static final String POWER_ID = "shadowverse:LionSanctuaryPower";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings("shadowverse:LionSanctuaryPower");
     public static final String NAME = powerStrings.NAME;
@@ -52,10 +53,16 @@ public class LionSanctuaryPower extends AbstractPower implements BetterOnApplyPo
         return damageAmount;
     }
 
+
     @Override
-    public boolean betterOnApplyPower(AbstractPower abstractPower, AbstractCreature abstractCreature, AbstractCreature abstractCreature1) {
+    public boolean onReceivePower(AbstractPower abstractPower, AbstractCreature abstractCreature, AbstractCreature abstractCreature1) {
         if (abstractPower.type==PowerType.DEBUFF)
             return false;
         return true;
+    }
+
+    @Override
+    public int onReceivePowerStacks(AbstractPower power, AbstractCreature target, AbstractCreature source, int stackAmount) {
+        return OnReceivePowerPower.super.onReceivePowerStacks(power, target, source, stackAmount);
     }
 }

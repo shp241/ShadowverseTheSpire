@@ -56,7 +56,7 @@ import shadowverse.stance.Vengeance;
    public void upgrade() {
      if (!this.upgraded) {
        upgradeName();
-       if ((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&AbstractDungeon.player.hasPower(NightVampirePower.POWER_ID)){
+       if (AbstractDungeon.player!=null&&AbstractDungeon.getCurrRoom()!=null&&(AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&AbstractDungeon.player.hasPower(NightVampirePower.POWER_ID)){
          upgradeDamage(4);
        }else {
          upgradeDamage(2);

@@ -54,6 +54,7 @@
            addToList(cardsList, (AbstractCard)new EnBlitzArtifact(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnMagisteelLion(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new ShadowMode(),extraUpgrades);
+           addToList(cardsList, (AbstractCard)new EnCannonArtifact(),extraUpgrades);
            this.turn++;
            break;
          case 3:
@@ -61,7 +62,7 @@
            addToList(cardsList, (AbstractCard)new EnSpineLucille(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnAcceleratium(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnProtectArtifact(),extraUpgrades);
-           addToList(cardsList, (AbstractCard)new EnAncientAmplifier(),extraUpgrades);
+           addToList(cardsList, (AbstractCard)new EnCannonArtifact(),extraUpgrades);
            this.turn++;
            break;
          case 4:
@@ -80,7 +81,7 @@
            addToList(cardsList, (AbstractCard)new TheGreatCreation(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnSpineLucille(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnMagisteelLion(),extraUpgrades);
-           addToList(cardsList, (AbstractCard)new ShadowMode(),extraUpgrades);
+           addToList(cardsList, (AbstractCard)new EnCannonArtifact(),extraUpgrades);
            this.turn++;
            break;
          case 1:
