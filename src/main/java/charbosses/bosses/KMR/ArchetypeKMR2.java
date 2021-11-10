@@ -36,9 +36,9 @@
          case 0:
            addToList(cardsList, (AbstractCard)new AbsoluteOne(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnAncientAmplifier(), extraUpgrades);
+           addToList(cardsList, (AbstractCard)new EnAcceleratium(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnMagisteelLion(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnMysticArtifact(),extraUpgrades);
-           addToList(cardsList, (AbstractCard)new EnAcceleratium(),extraUpgrades);
            this.turn++;
            break;
          case 1:

@@ -90,13 +90,13 @@
          case 1:
            addToList(cardsList, (AbstractCard)new EnPriestOfTheCudgel(), extraUpgrades);
            addToList(cardsList, (AbstractCard)new SacredLion(),extraUpgrades);
-           addToList(cardsList, (AbstractCard)new EnHeavenlyHound());
+           addToList(cardsList, (AbstractCard)new EnHeavenlyHound(),extraUpgrades);
            this.turn++;
            break;
          case 2:
-           addToList(cardsList, (AbstractCard)new EnAcolyteLight());
-           addToList(cardsList, (AbstractCard)new EnLucifer());
-           addToList(cardsList, (AbstractCard)new EnDarkPriest());
+           addToList(cardsList, (AbstractCard)new EnAcolyteLight(),extraUpgrades);
+           addToList(cardsList, (AbstractCard)new EnLucifer(),extraUpgrades);
+           addToList(cardsList, (AbstractCard)new EnDarkPriest(),extraUpgrades);
            this.turn++;
            this.turn = 0;
            break;

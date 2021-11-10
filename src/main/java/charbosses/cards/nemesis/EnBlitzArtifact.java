@@ -24,13 +24,13 @@ public class EnBlitzArtifact extends AbstractBossCard {
     public static final String IMG_PATH = "img/cards/BlitzArtifact.png";
 
     public EnBlitzArtifact() {
-        super(ID, cardStrings.NAME, IMG_PATH, 0, cardStrings.DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.ENEMY, AbstractMonster.Intent.ATTACK);
+        super(ID, cardStrings.NAME, IMG_PATH, 2, cardStrings.DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.ENEMY, AbstractMonster.Intent.ATTACK);
         this.baseDamage = 16;
         this.tags.add(AbstractShadowversePlayer.Enums.ARTIFACT);
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
         this.isMultiDamage = true;
-        this.intentMultiAmt = 2;
+        this.intentMultiAmt = this.magicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

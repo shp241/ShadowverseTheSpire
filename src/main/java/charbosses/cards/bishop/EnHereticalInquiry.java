@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.curses.Normality;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
@@ -32,6 +33,9 @@ public class EnHereticalInquiry extends AbstractBossCard {
         addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new ClashEffect(p.hb.cX, p.hb.cY), 0.1F));
         for (int i=0;i<this.magicNumber;i++){
             AbstractCard c = CardLibrary.getCurse();
+            if (c instanceof Normality){
+                c = CardLibrary.getCurse();
+            }
             addToBot((AbstractGameAction)new MakeTempCardInDrawPileAction(c,1,true,true,false));
         }
     }

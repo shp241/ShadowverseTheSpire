@@ -3,6 +3,7 @@ package shadowverse.powers;
 import charbosses.actions.common.EnemyMakeTempCardInHandAction;
 import charbosses.cards.nemesis.AbsoluteJudgment;
 import com.badlogic.gdx.graphics.Texture;
+import com.evacipated.cardcrawl.mod.stslib.patches.NeutralPowertypePatch;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -22,7 +23,7 @@ public class AbsoluteOnePower extends AbstractPower {
         this.ID = POWER_ID;
         this.owner = owner;
         this.amount = -1;
-        this.type = PowerType.BUFF;
+        this.type = NeutralPowertypePatch.NEUTRAL;
         updateDescription();
         this.img = new Texture("img/powers/AbsoluteOnePower.png");
     }
