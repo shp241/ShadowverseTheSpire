@@ -3,6 +3,7 @@
 
  import basemod.abstracts.CustomCard;
  import charbosses.powers.cardpowers.EnemyFlameBarrierPower;
+ import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
  import com.megacrit.cardcrawl.actions.AbstractGameAction;
  import com.megacrit.cardcrawl.actions.common.*;
  import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -45,20 +46,16 @@
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster m) {
-       addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)m, (AbstractCreature)m, 36));
-       addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)m, (AbstractPower)new BufferPower((AbstractCreature)m, 1), 1));
+       addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)m, (AbstractCreature)m, 24));
        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)m, (AbstractPower)new EnemyFlameBarrierPower((AbstractCreature)m, this.magicNumber), this.magicNumber));
-       List<AbstractCard> list = new ArrayList<>();
-       for (AbstractCard c: AbstractDungeon.actionManager.cardsPlayedThisCombat){
-           if (c.type==CardType.ATTACK)
-               list.add(c);
-       }
-       if (list.size()>0){
-           Collections.shuffle(list);
-           AbstractCard card = list.get(0);
-           card.setCostForTurn(0);
-           addToBot((AbstractGameAction)new MakeTempCardInHandAction(card));
-       }
+       addToBot((AbstractGameAction)new MoveCardsAction(abstractPlayer.hand,abstractPlayer.exhaustPile, card -> {
+           return card.type==CardType.ATTACK;
+       },abstractCards -> {
+           for (AbstractCard c:abstractCards){
+               c.setCostForTurn(0);
+               c.applyPowers();
+           }
+       }));
    }
  
    

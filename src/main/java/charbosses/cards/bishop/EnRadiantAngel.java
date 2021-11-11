@@ -27,7 +27,7 @@ public class EnRadiantAngel extends AbstractBossCard {
         super(ID, cardStrings.NAME, IMG_PATH, 2, cardStrings.DESCRIPTION, AbstractCard.CardType.ATTACK, CardColor.COLORLESS, CardRarity.COMMON, CardTarget.SELF, AbstractMonster.Intent.DEFEND_BUFF);
         this.baseMagicNumber = 30;
         this.magicNumber = this.baseMagicNumber;
-        this.baseBlock = 24;
+        this.baseBlock = 18;
         this.tags.add(AbstractCard.CardTags.HEALING);
     }
 
@@ -41,7 +41,7 @@ public class EnRadiantAngel extends AbstractBossCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(12);
+            upgradeBlock(6);
         }
     }
 

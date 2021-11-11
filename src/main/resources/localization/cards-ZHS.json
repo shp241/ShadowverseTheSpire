@@ -1377,7 +1377,7 @@
   },
   "shadowverse:AbsoluteJudgment": {
     "NAME": "绝对制裁",
-    "DESCRIPTION": "给予 !M! 层 易伤 。 NL 下一次受到的伤害变为0。 NL 消耗 。"
+    "DESCRIPTION": "若敌人没有 易伤 ，给予 !M! 层 易伤 。 NL 若有，降低敌人1点 力量 。 NL 下一次受到的伤害变为0。 NL 消耗 。"
   },
   "shadowverse:AbsoluteOne": {
     "NAME": "绝对之一",
@@ -2415,7 +2415,7 @@
   },
   "shadowverse:EnRalmia": {
     "NAME": "音速机构·菈菈米娅",
-    "DESCRIPTION": "机械 · 创造物 。 NL 造成 !D! 点伤害。 NL 本回合每打出1张创造物获得 !M! 点力量 。这张卡受5倍力量影响。"
+    "DESCRIPTION": "机械 · 创造物 。 NL 造成 !D! 点伤害。 NL 本回合每打出1张创造物获得 !M! 点力量 。这张卡受4倍力量影响。"
   },
   "shadowverse:OmniscientKaiser": {
     "NAME": "霸瞳皇帝",
@@ -2572,15 +2572,31 @@
   },
   "shadowverse:Death": {
     "NAME": "死神",
-    "DESCRIPTION": "回合结束时，如果手中只有这张牌，你死亡。"
+    "DESCRIPTION": "回合结束时，如果抽牌堆张数为0，你死亡。"
   },
   "shadowverse:Altersphere": {
     "NAME": "次元扭曲",
     "DESCRIPTION": "打出牌时，消耗随机1张手牌，并将1张随机牌加入手中。 NL 虚无 。"
   },
-  "shadowverse:OmenOfTen": {
-    "NAME": "十祸绝杰",
-    "DESCRIPTION": "抽牌堆中有重复的牌时你不能出牌。 NL 打出非 消耗 牌时洗牌。 NL 打出牌时你会开腔。 NL 打出时跳过双方的回合。 NL 被抽到时失去1点生命，对随机敌人造成3点伤害。 NL 被抽到时失去6点生命上限。 NL 打出后每回合结束时失去1点生命。 NL 被抽到时获得8点金币。 NL 打出后丢弃所有手牌，增加7张 *小刀 到手中。 NL 打出后失去4点生命，获得4点 力量 。"
+  "shadowverse:Rowen": {
+    "NAME": "微笑绝杰·罗文",
+    "DESCRIPTION": "回合结束时，增加1张 *黑龙的诅咒到手中。"
+  },
+  "shadowverse:CurseOfBlackDragon": {
+    "NAME": "黑龙的诅咒",
+    "DESCRIPTION": "保留 。 NL 回合结束时，失去1点生命。"
+  },
+  "shadowverse:ShadowBahmut": {
+    "NAME": "暗影巴哈姆特",
+    "DESCRIPTION": "造成 !D! 点无法防御的伤害。 NL 使敌人失去 力量 和 敏捷 以外的所有正面效果。 NL 消灭所有 爪牙 敌人。"
+  },
+  "shadowverse:KMRsPresent": {
+    "NAME": "木村唯人的赠礼",
+    "DESCRIPTION": "保留。 NL 抉择：选择1张 *传说卡 加入手中。 NL 消耗。"
+  },
+  "shadowverse:ShadowversePain": {
+    "NAME": "影之诗不过是折磨你们的工具",
+    "DESCRIPTION": "每当打出影之诗牌时，失去1点生命。"
   },
   "shadowverse:SacredLion": {
     "NAME": "神圣之狮",
@@ -2588,7 +2604,7 @@
   },
   "shadowverse:LionBless": {
     "NAME": "狮子的祝福",
-    "DESCRIPTION": "从本场战斗中打出过的攻击牌中随机将1张加入手中，这张卡本回合耗能为0。 NL 给予敌人36点 格挡 、1层 缓冲 、6层火焰屏障。 NL 虚无 。 NL 消耗 。"
+    "DESCRIPTION": "从消耗堆中将1张攻击牌加入手中，这张卡本回合耗能为0。 NL 给予敌人24点 格挡 、6层火焰屏障。 NL 虚无 。 NL 消耗 。"
   },
   "shadowverse:EnHereticalInquiry": {
     "NAME": "咏唱：异端审判",

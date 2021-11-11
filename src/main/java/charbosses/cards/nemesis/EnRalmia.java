@@ -58,10 +58,10 @@ public class EnRalmia extends AbstractBossCard {
     public void calculateCardDamage(AbstractMonster mo) {
         AbstractPower strength = this.owner.getPower("Strength");
         if (strength != null)
-            strength.amount *= 5;
+            strength.amount *= 4;
         super.calculateCardDamage(mo);
         if (strength != null)
-            strength.amount /= 5;
+            strength.amount /= 4;
     }
 
     public void upgrade() {

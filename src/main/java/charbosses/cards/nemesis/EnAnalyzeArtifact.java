@@ -28,7 +28,7 @@ public class EnAnalyzeArtifact extends AbstractBossCard {
 
     public EnAnalyzeArtifact() {
         super(ID, cardStrings.NAME, IMG_PATH, 0, cardStrings.DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.ENEMY, AbstractMonster.Intent.ATTACK_BUFF);
-        this.baseDamage = 12;
+        this.baseDamage = 8;
         this.tags.add(AbstractShadowversePlayer.Enums.ARTIFACT);
         this.exhaust = true;
     }
@@ -41,7 +41,7 @@ public class EnAnalyzeArtifact extends AbstractBossCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(6);
+            upgradeDamage(4);
         }
     }
 

@@ -37,7 +37,7 @@ public class EnAncientArtifact extends AbstractBossCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(6);
+            upgradeDamage(4);
         }
     }
 

@@ -27,7 +27,7 @@ public class EnGuardArtifact extends AbstractBossCard {
 
     public EnGuardArtifact() {
         super(ID, cardStrings.NAME, IMG_PATH, 0, cardStrings.DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.SELF, AbstractMonster.Intent.DEFEND_BUFF);
-        this.baseBlock = 15;
+        this.baseBlock = 12;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
@@ -41,7 +41,7 @@ public class EnGuardArtifact extends AbstractBossCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(6);
+            upgradeBlock(3);
         }
     }
 

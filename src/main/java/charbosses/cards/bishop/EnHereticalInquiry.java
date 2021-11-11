@@ -32,9 +32,10 @@ public class EnHereticalInquiry extends AbstractBossCard {
         ArrayList<AbstractCard> list = new ArrayList<>();
         list.add(new KMRGaze());
         list.add(new Altersphere());
-        list.add(new OmenOfTen());
         list.add(new WUP());
         list.add(new Death());
+        list.add(new Rowen());
+        list.add(new ShadowversePain());
         return list;
     }
 

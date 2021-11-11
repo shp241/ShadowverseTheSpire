@@ -27,7 +27,7 @@ public class EnMagisteelLion extends AbstractBossCard {
 
     public EnMagisteelLion() {
         super(ID, cardStrings.NAME, IMG_PATH, 1, cardStrings.DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.COMMON, CardTarget.SELF, AbstractMonster.Intent.DEFEND_BUFF);
-        this.baseBlock = 12;
+        this.baseBlock = 8;
         this.cardsToPreview = new EnAnalyzeArtifact();
     }
 
@@ -39,7 +39,7 @@ public class EnMagisteelLion extends AbstractBossCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(6);
+            upgradeBlock(3);
         }
     }
 

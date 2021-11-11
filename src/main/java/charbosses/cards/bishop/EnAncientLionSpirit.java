@@ -29,7 +29,7 @@ public class EnAncientLionSpirit extends AbstractBossCard {
 
     public EnAncientLionSpirit() {
         super(ID, cardStrings.NAME, IMG_PATH, 2, cardStrings.DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.COMMON, CardTarget.ALL_ENEMY, AbstractMonster.Intent.ATTACK);
-        this.baseDamage = 20;
+        this.baseDamage = 16;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -40,7 +40,7 @@ public class EnAncientLionSpirit extends AbstractBossCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(6);
+            upgradeDamage(4);
         }
     }
 

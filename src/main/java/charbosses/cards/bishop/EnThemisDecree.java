@@ -30,7 +30,7 @@ public class EnThemisDecree extends AbstractBossCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new GrandFinalEffect(), 0.7F));
-        for (AbstractCard c:p.discardPile.group){
+        for (AbstractCard c:p.drawPile.group){
             if (c.type==CardType.ATTACK)
                 addToBot((AbstractGameAction)new ExhaustSpecificCardAction(c,p.drawPile));
         }

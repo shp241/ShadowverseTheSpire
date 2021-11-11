@@ -27,7 +27,7 @@ public class EnDarkPriest extends AbstractBossCard {
         super(ID, cardStrings.NAME, IMG_PATH, 1, cardStrings.DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.COMMON, CardTarget.ENEMY, AbstractMonster.Intent.DEFEND_DEBUFF);
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
-        this.baseBlock = 15;
+        this.baseBlock = 10;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

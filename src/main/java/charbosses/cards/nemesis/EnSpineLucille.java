@@ -27,7 +27,7 @@ public class EnSpineLucille extends AbstractBossCard {
 
     public EnSpineLucille() {
         super(ID, cardStrings.NAME, IMG_PATH, 1, cardStrings.DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.RARE, CardTarget.ALL_ENEMY, AbstractMonster.Intent.ATTACK);
-        this.baseDamage = 54;
+        this.baseDamage = 42;
         this.tags.add(AbstractShadowversePlayer.Enums.ARTIFACT);
     }
 
@@ -40,7 +40,7 @@ public class EnSpineLucille extends AbstractBossCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(6);
+            upgradeDamage(9);
         }
     }
 

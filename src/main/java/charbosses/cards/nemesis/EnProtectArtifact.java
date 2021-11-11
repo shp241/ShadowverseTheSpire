@@ -28,7 +28,7 @@ public class EnProtectArtifact extends AbstractBossCard {
         super(ID, cardStrings.NAME, IMG_PATH, 2, cardStrings.DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.COMMON, CardTarget.ENEMY, AbstractMonster.Intent.DEFEND_DEBUFF);
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
-        this.baseBlock = 36;
+        this.baseBlock = 30;
         this.tags.add(AbstractShadowversePlayer.Enums.ARTIFACT);
     }
 

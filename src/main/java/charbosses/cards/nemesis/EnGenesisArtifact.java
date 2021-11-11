@@ -26,7 +26,7 @@ public class EnGenesisArtifact extends AbstractBossCard {
 
     public EnGenesisArtifact() {
         super(ID, cardStrings.NAME, IMG_PATH, 2, cardStrings.DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.RARE, CardTarget.SELF, AbstractMonster.Intent.DEFEND_BUFF);
-        this.baseBlock = 20;
+        this.baseBlock = 12;
         this.exhaust = true;
         this.tags.add(AbstractShadowversePlayer.Enums.ARTIFACT);
         this.cardsToPreview = new CannonArtifact();
@@ -36,7 +36,6 @@ public class EnGenesisArtifact extends AbstractBossCard {
         addToBot((AbstractGameAction)new GainBlockAction(m,this.block));
         addToBot((AbstractGameAction)new EnemyMakeTempCardInHandAction(new EnDefectArtifact()));
         addToBot((AbstractGameAction)new EnemyMakeTempCardInHandAction(new EnGuardArtifact()));
-        addToBot((AbstractGameAction)new EnemyMakeTempCardInDrawPileAction(this.cardsToPreview.makeStatEquivalentCopy(),2,true,true,false));
     }
 
     public void upgrade() {

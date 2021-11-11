@@ -27,7 +27,7 @@ public class EnDefectArtifact extends AbstractBossCard {
 
     public EnDefectArtifact() {
         super(ID, cardStrings.NAME, IMG_PATH, 0, cardStrings.DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.SELF, AbstractMonster.Intent.DEFEND_BUFF);
-        this.baseDamage = 6;
+        this.baseDamage = 4;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(AbstractShadowversePlayer.Enums.ARTIFACT);
@@ -42,7 +42,7 @@ public class EnDefectArtifact extends AbstractBossCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(6);
+            upgradeDamage(4);
             upgradeMagicNumber(1);
         }
     }

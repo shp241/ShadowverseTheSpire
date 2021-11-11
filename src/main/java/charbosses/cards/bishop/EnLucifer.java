@@ -26,8 +26,8 @@ public class EnLucifer extends AbstractBossCard {
 
     public EnLucifer() {
         super(ID, cardStrings.NAME, IMG_PATH, 3, cardStrings.DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.RARE, CardTarget.ALL, AbstractMonster.Intent.UNKNOWN);
-        this.baseDamage = 40;
-        this.baseMagicNumber = 40;
+        this.baseDamage = 30;
+        this.baseMagicNumber = 30;
         this.magicNumber = this.baseMagicNumber;
     }
 

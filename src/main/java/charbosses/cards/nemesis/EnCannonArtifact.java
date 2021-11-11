@@ -28,7 +28,7 @@ public class EnCannonArtifact extends AbstractBossCard {
 
     public EnCannonArtifact() {
         super(ID, cardStrings.NAME, IMG_PATH, 0, cardStrings.DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.ENEMY, AbstractMonster.Intent.ATTACK_BUFF);
-        this.baseDamage = 10;
+        this.baseDamage = 8;
         this.baseMagicNumber = 4;
         this.tags.add(AbstractShadowversePlayer.Enums.ARTIFACT);
         this.exhaust = true;
@@ -48,7 +48,7 @@ public class EnCannonArtifact extends AbstractBossCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(4);
+            upgradeDamage(2);
             upgradeMagicNumber(2);
         }
     }

@@ -27,7 +27,7 @@ public class EnHeavenlyHound extends AbstractBossCard {
         super(ID, cardStrings.NAME, IMG_PATH, 1, cardStrings.DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.COMMON, CardTarget.SELF, AbstractMonster.Intent.DEFEND_BUFF);
         this.baseMagicNumber = 4;
         this.magicNumber = this.baseMagicNumber;
-        this.baseBlock = 12;
+        this.baseBlock = 8;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

@@ -31,7 +31,7 @@ public class EnArdentSister extends AbstractBossCard {
 
     public EnArdentSister() {
         super(ID, cardStrings.NAME, IMG_PATH, 1, cardStrings.DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.COMMON, CardTarget.ENEMY, AbstractMonster.Intent.ATTACK_BUFF);
-        this.baseDamage = 8;
+        this.baseDamage = 6;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
     }
@@ -53,7 +53,7 @@ public class EnArdentSister extends AbstractBossCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(4);
+            upgradeDamage(2);
             upgradeMagicNumber(1);
         }
     }

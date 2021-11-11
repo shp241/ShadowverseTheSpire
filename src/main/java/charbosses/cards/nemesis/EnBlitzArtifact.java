@@ -25,7 +25,7 @@ public class EnBlitzArtifact extends AbstractBossCard {
 
     public EnBlitzArtifact() {
         super(ID, cardStrings.NAME, IMG_PATH, 2, cardStrings.DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.ENEMY, AbstractMonster.Intent.ATTACK);
-        this.baseDamage = 16;
+        this.baseDamage = 12;
         this.tags.add(AbstractShadowversePlayer.Enums.ARTIFACT);
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
@@ -41,7 +41,7 @@ public class EnBlitzArtifact extends AbstractBossCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(4);
+            upgradeDamage(2);
         }
     }
 
