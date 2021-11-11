@@ -15,14 +15,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class AlbertAction  extends AbstractGameAction {
+public class AlbertDrawAction extends AbstractGameAction {
     public static final float DURATION = Settings.ACTION_DUR_MED;
     private ArrayList<AbstractCard> list = new ArrayList<AbstractCard>();
     private ArrayList<String> nameTmp = new ArrayList<>();
     private ArrayList<AbstractCard> finalList = new ArrayList<AbstractCard>();
     private AbstractPlayer p = AbstractDungeon.player;
 
-    public AlbertAction(int amount){
+    public AlbertDrawAction(int amount){
         this.p = AbstractDungeon.player;
         setValues((AbstractCreature) this.p, (AbstractCreature) this.p, amount);
         this.actionType = ActionType.CARD_MANIPULATION;
@@ -34,15 +34,18 @@ public class AlbertAction  extends AbstractGameAction {
     public void update() {
         if (this.duration == Settings.ACTION_DUR_MED) {
             if (this.p.drawPile.isEmpty()) {
+                addToBot(new AlbertDiscardAction(11 - p.hand.group.size()));
                 this.isDone = true;
                 return;
             }
             CardGroup tmp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
             for (AbstractCard c : this.p.drawPile.group) {
-                if ((c.hasTag(AbstractShadowversePlayer.Enums.LEVIN)&& c.cardID != Albert.ID && c.type == AbstractCard.CardType.ATTACK))
+                if ((c.hasTag(AbstractShadowversePlayer.Enums.LEVIN)&& c.cardID != Albert.ID && c.type == AbstractCard.CardType.ATTACK)) {
                     tmp.addToRandomSpot(c);
+                }
             }
             if (tmp.size() == 0) {
+                addToBot(new AlbertDiscardAction(11 - p.hand.group.size()));
                 this.isDone = true;
                 return;
             }
@@ -69,8 +72,10 @@ public class AlbertAction  extends AbstractGameAction {
                         AbstractDungeon.player.hand.refreshHandLayout();
                         AbstractDungeon.player.hand.applyPowers();
                     }
+                    addToBot(new AlbertDiscardAction(11 - p.hand.group.size()));
                     this.isDone = true;
                 }
+                addToBot(new AlbertDiscardAction(11 - p.hand.group.size()));
                 tickDuration();
             }
         }

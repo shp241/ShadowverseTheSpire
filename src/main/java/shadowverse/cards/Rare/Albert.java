@@ -13,13 +13,9 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
-import shadowverse.action.AlbertAction;
-import shadowverse.cards.Status.EvolutionPoint;
+import shadowverse.action.AlbertDrawAction;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Albert extends CustomCard {
     public static final String ID = "shadowverse:Albert";
@@ -107,8 +103,7 @@ public class Albert extends CustomCard {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         if (Shadowverse.Enhance(ENHANCE) && this.costForTurn == ENHANCE) {
             addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-            int i = p.hand.group.size();
-            addToBot(new AlbertAction(11-i));
+            addToBot(new AlbertDrawAction(11 - p.hand.group.size()));
         }
     }
 
