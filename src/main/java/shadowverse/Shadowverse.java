@@ -1662,6 +1662,14 @@ import java.util.HashMap;
         BaseMod.addCard((AbstractCard) new Mena());
         BaseMod.addCard((AbstractCard) new Nahtnaught());
         BaseMod.addCard((AbstractCard) new TyrantsOrder());
+        BaseMod.addCard((AbstractCard) new Leonidas());
+        BaseMod.addCard((AbstractCard) new LevinJustice());
+        BaseMod.addCard((AbstractCard) new YuriusLevinDuke());
+        BaseMod.addCard((AbstractCard) new CaptainWalfrid());
+        BaseMod.addCard((AbstractCard) new Reinhardt());
+        BaseMod.addCard((AbstractCard) new Garven());
+        BaseMod.addCard((AbstractCard) new Kagemitsu());
+        BaseMod.addCard((AbstractCard) new Alexander());
 
         /* 276 */
         logger.info("Success");
