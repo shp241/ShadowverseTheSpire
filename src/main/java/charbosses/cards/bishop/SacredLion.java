@@ -28,7 +28,7 @@ public class SacredLion extends AbstractBossCard {
         super(ID, cardStrings.NAME, IMG_PATH, 2, cardStrings.DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.RARE, CardTarget.SELF, AbstractMonster.Intent.DEFEND_BUFF);
         this.baseMagicNumber = 6;
         this.magicNumber = this.baseMagicNumber;
-        this.baseBlock = 36;
+        this.baseBlock = 30;
         this.cardsToPreview = (AbstractCard)new LionBless();
     }
 
@@ -42,7 +42,7 @@ public class SacredLion extends AbstractBossCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(12);
+            upgradeBlock(6);
             upgradeMagicNumber(2);
         }
     }

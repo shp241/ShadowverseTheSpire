@@ -12,12 +12,10 @@ import com.megacrit.cardcrawl.actions.ClearCardQueueAction;
 import com.megacrit.cardcrawl.actions.animations.ShoutAction;
 import com.megacrit.cardcrawl.actions.animations.TalkAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.ChangeStateAction;
-import com.megacrit.cardcrawl.actions.common.HealAction;
-import com.megacrit.cardcrawl.actions.common.SetMoveAction;
+import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.unique.CanLoseAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -35,6 +33,7 @@ import com.megacrit.cardcrawl.ui.panels.energyorb.EnergyOrbRed;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.IntenseZoomEffect;
 import shadowverse.action.AnimationAction;
+import shadowverse.cards.Temp.KMRsPresent;
 import shadowverse.characters.Witchcraft;
 import shadowverse.powers.LionSanctuaryPower;
 
@@ -50,7 +49,7 @@ public class KMR
 
 
     public KMR() {
-        super(NAME, ID, 1000, -4.0F, -16.0F, 220.0F, 400.0F, null, 0.0F, -20.0F, AbstractPlayer.PlayerClass.IRONCLAD);
+        super(NAME, ID, 500, -4.0F, -16.0F, 220.0F, 400.0F, null, 0.0F, -20.0F, AbstractPlayer.PlayerClass.IRONCLAD);
         this.energyOrb = (EnergyOrbInterface) new EnergyOrbRed();
         this.energy = new EnemyEnergyManager(5);
         this.animation = new SpriterAnimation("img/monsters/KMR/KMR.scml");
@@ -81,17 +80,15 @@ public class KMR
         (AbstractDungeon.getCurrRoom()).cannotLose = true;
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SFXAction("KMR1"));
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new TalkAction((AbstractCreature) this, DIALOG[0]));
-        if (AbstractDungeon.ascensionLevel >= 20) {
+        if (AbstractDungeon.ascensionLevel >= 19) {
+            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) this, (AbstractCreature) this, (AbstractPower) new InvinciblePower((AbstractCreature) this, 300), 300));
+        } else if (AbstractDungeon.ascensionLevel >= 4) {
+            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) this, (AbstractCreature) this, (AbstractPower) new InvinciblePower((AbstractCreature) this, 350), 350));
+        } else {
             AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) this, (AbstractCreature) this, (AbstractPower) new InvinciblePower((AbstractCreature) this, 400), 400));
         }
-        else if (AbstractDungeon.ascensionLevel >= 19) {
-            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) this, (AbstractCreature) this, (AbstractPower) new InvinciblePower((AbstractCreature) this, 500), 500));
-        } else if (AbstractDungeon.ascensionLevel >= 4) {
-            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) this, (AbstractCreature) this, (AbstractPower) new InvinciblePower((AbstractCreature) this, 625), 625));
-        } else {
-            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) this, (AbstractCreature) this, (AbstractPower) new InvinciblePower((AbstractCreature) this, 650), 650));
-        }
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) this, (AbstractCreature) this, (AbstractPower) new LionSanctuaryPower((AbstractCreature) this, 3), 3));
+        AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new MakeTempCardInHandAction((AbstractCard)new KMRsPresent()));
         this.chosenArchetype.addedPreBattle();
     }
 
@@ -111,11 +108,11 @@ public class KMR
         switch (key) {
             case "REBIRTH":
                 if (AbstractDungeon.ascensionLevel >= 19) {
-                    this.maxHealth = 2000;
+                    this.maxHealth = 1000;
                 } else if (AbstractDungeon.ascensionLevel >= 4) {
-                    this.maxHealth = 1750;
+                    this.maxHealth = 900;
                 } else {
-                    this.maxHealth = 1500;
+                    this.maxHealth = 800;
                 }
                 this.halfDead = false;
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ShoutAction((AbstractCreature) this, DIALOG[1]));

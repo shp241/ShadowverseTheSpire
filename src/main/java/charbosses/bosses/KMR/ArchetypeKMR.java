@@ -1,6 +1,8 @@
  package charbosses.bosses.KMR;
  import charbosses.bosses.AbstractCharBoss;
  import charbosses.cards.bishop.*;
+ import charbosses.cards.nemesis.EnBlackenedScripture;
+ import charbosses.cards.nemesis.EnMoonAlmiraj;
  import com.megacrit.cardcrawl.actions.AbstractGameAction;
  import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
  import com.megacrit.cardcrawl.actions.utility.SFXAction;
@@ -16,9 +18,9 @@
    public ArchetypeKMR() {
      super("KMR_BISHOP", "KMR_BISHOP");
      if (AbstractDungeon.ascensionLevel >= 19){
-       this.maxHPModifier += 500;
+       this.maxHPModifier += 300;
      }else if (AbstractDungeon.ascensionLevel >= 4){
-       this.maxHPModifier += 250;
+       this.maxHPModifier += 200;
      }
      this.actNum = 4;
    }
@@ -82,14 +84,15 @@
      } else {
        switch (this.turn) {
          case 0:
-           addToList(cardsList, (AbstractCard)new EnRadiantAngel(),extraUpgrades);
+           addToList(cardsList, (AbstractCard)new SacredLion(),extraUpgrades);
+           addToList(cardsList, (AbstractCard)new EnMoonAlmiraj(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnDarkPriest(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnArdentSister(),extraUpgrades);
            this.turn++;
            break;
          case 1:
            addToList(cardsList, (AbstractCard)new EnPriestOfTheCudgel(), extraUpgrades);
-           addToList(cardsList, (AbstractCard)new SacredLion(),extraUpgrades);
+           addToList(cardsList, (AbstractCard)new EnRadiantAngel(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnHeavenlyHound(),extraUpgrades);
            this.turn++;
            break;
@@ -99,6 +102,11 @@
            addToList(cardsList, (AbstractCard)new EnDarkPriest(),extraUpgrades);
            this.turn++;
            this.turn = 0;
+           break;
+         case 3:
+           addToList(cardsList, (AbstractCard)new SacredLion(),extraUpgrades);
+           addToList(cardsList, (AbstractCard)new EnBlackenedScripture(),extraUpgrades);
+           addToList(cardsList, (AbstractCard)new EnArdentSister(),extraUpgrades);
            break;
        } 
      } 

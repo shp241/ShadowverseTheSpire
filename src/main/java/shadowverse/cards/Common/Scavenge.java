@@ -42,7 +42,7 @@ public class Scavenge
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         addToBot((AbstractGameAction)new MoveCardsAction(p.hand,p.exhaustPile,card -> {
             return card.type==CardType.ATTACK;
-        },abstractCards -> {}));
+        },this.magicNumber,abstractCards -> {}));
     }
 
 

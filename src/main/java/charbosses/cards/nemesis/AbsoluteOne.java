@@ -30,7 +30,7 @@ public class AbsoluteOne extends AbstractBossCard {
 
     public AbsoluteOne() {
         super(ID, cardStrings.NAME, IMG_PATH, 3, cardStrings.DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.RARE, CardTarget.SELF, AbstractMonster.Intent.MAGIC);
-        this.baseBlock = 80;
+        this.baseBlock = 50;
         this.cardsToPreview = new AbsoluteJudgment();
         this.exhaust = true;
     }
@@ -45,7 +45,7 @@ public class AbsoluteOne extends AbstractBossCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(20);
+            upgradeBlock(30);
         }
     }
 

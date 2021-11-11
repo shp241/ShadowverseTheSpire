@@ -27,7 +27,7 @@ public class EnMysticArtifact extends AbstractBossCard {
 
     public EnMysticArtifact() {
         super(ID, cardStrings.NAME, IMG_PATH, 1, cardStrings.DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.COMMON, CardTarget.SELF, AbstractMonster.Intent.DEFEND_BUFF);
-        this.baseBlock = 24;
+        this.baseBlock = 18;
         this.tags.add(AbstractShadowversePlayer.Enums.ARTIFACT);
     }
 
@@ -39,7 +39,7 @@ public class EnMysticArtifact extends AbstractBossCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(12);
+            upgradeBlock(6);
         }
     }
 

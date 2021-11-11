@@ -107,7 +107,8 @@ public class Albert extends CustomCard {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         if (Shadowverse.Enhance(ENHANCE) && this.costForTurn == ENHANCE) {
             addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-            addToBot(new AlbertAction());
+            int i = p.hand.group.size();
+            addToBot(new AlbertAction(11-i));
         }
     }
 

@@ -38,6 +38,7 @@ public class WUP extends CustomCard {
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
             if (c != this && (c.hasTag(AbstractShadowversePlayer.Enums.MACHINE) || c.hasTag(AbstractShadowversePlayer.Enums.NATURAL))) {
                 has = true;
+                break;
             }
         }
         if (!has) {
