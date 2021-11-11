@@ -2673,7 +2673,7 @@
   },
   "shadowverse:SageCommander": {
     "NAME": "睿智指挥官",
-    "DESCRIPTION": "获得 !B! 点格挡,使所有随从获得+0/+1。"
+    "DESCRIPTION": "获得 !B! 点格挡,使所有随从获得+1/+0。"
   },
   "shadowverse:DanceOfUsurpation": {
     "NAME": "强夺之舞",
@@ -2901,7 +2901,7 @@
   },
   "shadowverse:Eahta": {
     "NAME": "刀神·奥克托",
-    "DESCRIPTION": "升级时降低奥义数。 NL 造成 !D! 点伤害两次。 NL 奥义 3：使手牌中所有皇家护卫攻击牌本回合中消耗-2。 NL 限定 解放奥义 6：使所有皇家护卫攻击牌本局对战中消耗-2。",
+    "DESCRIPTION": "升级时降低奥义数。 NL 造成 !D! 点伤害两次。 NL 奥义 3：使手牌中所有皇家护卫攻击牌本回合中消耗-2。 NL 限定 解放奥义 9：使所有皇家护卫攻击牌本局对战中消耗-2。",
     "EXTENDED_DESCRIPTION": [
       "造成 !D! 点伤害两次。 NL 奥义",
       "：使手牌中所有皇家护卫攻击牌本回合中消耗-2。 NL 限定 解放奥义",
@@ -3018,7 +3018,7 @@
   },
   "shadowverse:Cybercannoneer": {
     "NAME": "加农炮破坏者",
-    "DESCRIPTION": "机械 。 NL 造成 !D! 点伤害。 NL 爆能强化 1 \b将 !M! 张 *生产机械 置入手牌。"
+    "DESCRIPTION": "机械 。 NL 造成 !D! 点伤害。 NL 爆能强化 2 \b将 !M! 张 *生产机械 置入手牌。"
   },
   "shadowverse:StampedingFortress": {
     "NAME": "虐袭城塞",
@@ -3050,5 +3050,48 @@
   "shadowverse:TyrantsOrder": {
     "NAME": "暴君谕令",
     "DESCRIPTION": "选择1个敌人，对其他敌人造成等同于这个敌人生命值的伤害。 NL （上限 !M! 点）"
+  },
+  "shadowverse:Leonidas": {
+    "NAME": "列奥尼达",
+    "DESCRIPTION": "三回合后，每回合开始时获得!M!层每召唤一个随从，使其获得+1/+1。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION": "三回合后，每回合开始时获得!M!层每召唤一个随从，使其获得+1/+1。"
+  },
+  "shadowverse:LevinJustice": {
+    "NAME": "雷维翁的正义",
+    "DESCRIPTION": "雷维翁 。 NL 造成本局对战中已打出的 雷维翁 卡牌两倍的伤害。 NL 将 *雷维翁公爵·尤里乌斯 置入手牌。",
+    "EXTENDED_DESCRIPTION": [
+      "（造成",
+      "点伤害)"
+    ]
+  },
+  "shadowverse:YuriusLevinDuke": {
+    "NAME": "雷维翁公爵·尤里乌斯",
+    "DESCRIPTION": "雷维翁 。 NL 获得 !M! 层 荆棘 。"
+  },
+  "shadowverse:CaptainWalfrid": {
+    "NAME": "骑空团总长·瓦佛利特",
+    "DESCRIPTION": "获得每召唤一个随从，使其获得+ !M! /+ !M! 能力。"
+  },
+  "shadowverse:Reinhardt": {
+    "NAME": "改革者·莱恩哈尔特",
+    "DESCRIPTION": "受到攻击时，获得 !M! 点 力量 和 敏捷 。受到伤害后失去这个效果并回复 5 点生命值。",
+    "UPGRADE_DESCRIPTION": "受到攻击时，获得 !M! 点 力量 和 敏捷 。受到伤害后失去这个效果并回复 5 点生命值。 NL 保留 。"
+  },
+  "shadowverse:Garven": {
+    "NAME": "终击铁腕·加尔瓦",
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次。 NL 本局对战中每打出过一个兵种（ 机械 、 自然 、 雷维翁 、 马纳历亚 、 创造物 ）的卡牌便额外造成一次伤害。",
+    "EXTENDED_DESCRIPTION": [
+      "（造成伤害次数：",
+      ")"
+    ]
+  },
+  "shadowverse:Kagemitsu": {
+    "NAME": "不败剑圣·景光",
+    "DESCRIPTION": "可以升级任意次。 NL 造成 !D! 点伤害。 NL 消耗 。 NL 斩杀 时，升级此牌。"
+  },
+  "shadowverse:Alexander": {
+    "NAME": "亚历山大",
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 !M! 次。"
   }
 }

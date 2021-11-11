@@ -84,14 +84,15 @@ public class NaturalMachine extends AbstractImageEvent {
                         this.imageEventText.updateDialogOption(0, OPTIONS[4]);
                         this.imageEventText.clearRemainingOptions();
                         AbstractPlayer p = AbstractDungeon.player;
+                        CardGroup colorless = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
                         CardGroup white = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
                         CardGroup blue = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
                         CardGroup gold = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
-                        blue.addToBottom(new DualAngle());
-                        blue.addToBottom(new NaterranFuture());
-                        gold.addToBottom(new Mother());
-                        gold.addToBottom(new Technolord());
-                        gold.addToBottom(new Machinus());
+                        colorless.addToBottom(new DualAngle());
+                        colorless.addToBottom(new NaterranFuture());
+                        colorless.addToBottom(new Mother());
+                        colorless.addToBottom(new Technolord());
+                        colorless.addToBottom(new Machinus());
                         if (p.chosenClass != Witchcraft.Enums.WITCHCRAFT) {
                             white.addToBottom(new Geoelementist());
                             blue.addToBottom(new Stormelementalist());
@@ -182,6 +183,7 @@ public class NaturalMachine extends AbstractImageEvent {
                             gold.addToBottom(new Johann());
                             gold.addToBottom(new Grayson());
                         }
+                        colorless.shuffle();
                         white.shuffle();
                         blue.shuffle();
                         gold.shuffle();
@@ -189,11 +191,14 @@ public class NaturalMachine extends AbstractImageEvent {
                         for (int i = 0; i < 6; i++) {
                             group1.addToBottom(gold.getNCardFromTop(i));
                         }
-                        for (int i = 0; i < 7; i++) {
+                        for (int i = 0; i < 6; i++) {
                             group1.addToBottom(blue.getNCardFromTop(i));
                         }
-                        for (int i = 0; i < 7; i++) {
+                        for (int i = 0; i < 6; i++) {
                             group1.addToBottom(white.getNCardFromTop(i));
+                        }
+                        for (int i = 0; i < 2; i++) {
+                            group1.addToBottom(colorless.getNCardFromTop(i));
                         }
                         AbstractDungeon.gridSelectScreen.open(group1, 3, OPTIONS[3], false);
                         return;

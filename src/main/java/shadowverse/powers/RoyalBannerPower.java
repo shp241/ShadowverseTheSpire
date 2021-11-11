@@ -51,7 +51,6 @@ public class RoyalBannerPower extends AbstractPower {
             addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
         }
         updateDescription();
-        updateDescription();
     }
 
     @Override

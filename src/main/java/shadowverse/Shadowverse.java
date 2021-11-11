@@ -825,6 +825,15 @@ import java.util.HashMap;
         reflectedMap.put("Witchcraft_Evolve0", new Sfx("sounds/Witchcraft_Evolve0.wav"));
         reflectedMap.put("Witchcraft_Evolve1", new Sfx("sounds/Witchcraft_Evolve1.wav"));
         reflectedMap.put("Witchcraft_Evolve2", new Sfx("sounds/Witchcraft_Evolve2.wav"));
+        reflectedMap.put("Alexander", new Sfx("sounds/Alexander.wav"));
+        reflectedMap.put("CaptainWalfrid", new Sfx("sounds/CaptainWalfrid.wav"));
+        reflectedMap.put("Garven", new Sfx("sounds/Garven.wav"));
+        reflectedMap.put("Kagemitsu", new Sfx("sounds/Kagemitsu.wav"));
+        reflectedMap.put("Leonidas", new Sfx("sounds/Leonidas.wav"));
+        reflectedMap.put("Reinhardt", new Sfx("sounds/Reinhardt.wav"));
+        reflectedMap.put("Reinhardt_Pow", new Sfx("sounds/Reinhardt_Pow.wav"));
+        reflectedMap.put("YuriusLevinDuke", new Sfx("sounds/YuriusLevinDuke.wav"));
+        reflectedMap.put("YuriusLevinDuke_Co", new Sfx("sounds/YuriusLevinDuke_Co.wav"));
         /*     */
     }
 

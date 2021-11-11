@@ -1064,10 +1064,39 @@
       "点格挡。"
     ]
   },
-  "shadowverse:LathamPower": {
-    "NAME": "高洁的骑士·雷瑟姆",
+  "shadowverse:ReinhardtPower": {
+    "NAME": "改革者·莱恩哈尔特",
     "DESCRIPTIONS": [
-      "每当你使用一张攻击牌，召唤1个 骑士 。"
+      "受到攻击时，获得 #b ",
+      "点 力量 和 敏捷 。 NL 受到伤害后失去这个效果并回复 5 点生命值。"
+    ]
+  },
+  "shadowverse:CaptainWalfridPower": {
+    "NAME": "骑空团总长·瓦佛利特",
+    "DESCRIPTIONS": [
+      "每当召唤 #y随从 时，使其获得+ #b",
+      "/+ #b",
+      "。"
+    ]
+  },
+  "shadowverse:LeonidasWaitPower": {
+    "NAME": "列奥尼达",
+    "DESCRIPTIONS": [
+      "回合开始时这个能力减少 #b1 层。 NL 失去这个能力时获得 #b1 层 #y列奥尼达的遗志 。"
+    ]
+  },
+  "shadowverse:LeonidasPower": {
+    "NAME": "列奥尼达的遗志",
+    "DESCRIPTIONS": [
+      "回合开始时，获得 #b1 层 #y列奥尼达的光辉 。"
+    ]
+  },
+  "shadowverse:LeonidasBuffPower": {
+    "NAME": "列奥尼达的光辉",
+    "DESCRIPTIONS": [
+      "每当召唤 #y随从 时，使其获得+ #b",
+      "/+ #b",
+      "。"
     ]
   }
 }
