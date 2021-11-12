@@ -20,6 +20,7 @@ import shadowverse.cards.Temp.Horse;
 import shadowverse.characters.Royal;
 import shadowverse.orbs.Knight;
 import shadowverse.orbs.SteelcladKnight;
+import shadowverse.relics.KagemitsuSword;
 
 public class RadicalGunslinger extends CustomCard {
     public static final String ID = "shadowverse:RadicalGunslinger";
@@ -81,6 +82,9 @@ public class RadicalGunslinger extends CustomCard {
             AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
             addToBot(new MakeTempCardInHandAction(c, 1));
             this.degrade();
+            if(p.hasRelic(KagemitsuSword.ID)){
+                this.upgrade();
+            }
         }
     }
 

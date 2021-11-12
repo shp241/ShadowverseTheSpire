@@ -20,6 +20,7 @@ import shadowverse.cards.Status.EvolutionPoint;
 import shadowverse.cards.Temp.WhiteTiger;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
+import shadowverse.relics.KagemitsuSword;
 
 public class LevinArcher extends CustomCard {
     public static final String ID = "shadowverse:LevinArcher";
@@ -85,6 +86,9 @@ public class LevinArcher extends CustomCard {
                 }
             }
             this.degrade();
+            if(abstractPlayer.hasRelic(KagemitsuSword.ID)){
+                this.upgrade();
+            }
         }
     }
 

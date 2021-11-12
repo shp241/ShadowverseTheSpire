@@ -21,6 +21,7 @@ import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 import shadowverse.orbs.Knight;
 import shadowverse.orbs.SteelcladKnight;
+import shadowverse.relics.KagemitsuSword;
 
 public class StampedingFortress extends CustomCard {
     public static final String ID = "shadowverse:StampedingFortress";
@@ -93,6 +94,9 @@ public class StampedingFortress extends CustomCard {
                 this.addToTop(new MakeTempCardInHandAction(new ProductMachine(), 3));
             }
             this.degrade();
+            if(p.hasRelic(KagemitsuSword.ID)){
+                this.upgrade();
+            }
         }
     }
 

@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import shadowverse.characters.Royal;
 import shadowverse.powers.DisableEffectDamagePower;
+import shadowverse.relics.KagemitsuSword;
 
 public class Charlotta extends CustomCard {
     public static final String ID = "shadowverse:Charlotta";
@@ -74,6 +75,9 @@ public class Charlotta extends CustomCard {
             addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, this.magicNumber), this.magicNumber));
             addToBot(new ApplyPowerAction(p, p, (AbstractPower) new DisableEffectDamagePower(p, 1), 1));
             this.degrade();
+            if(p.hasRelic(KagemitsuSword.ID)){
+                this.upgrade();
+            }
         }
     }
 

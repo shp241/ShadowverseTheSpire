@@ -18,6 +18,7 @@ import shadowverse.characters.Royal;
 import shadowverse.orbs.HeavyKnight;
 import shadowverse.orbs.Minion;
 import shadowverse.orbs.ShieldGuardian;
+import shadowverse.relics.KagemitsuSword;
 
 import java.util.Iterator;
 
@@ -99,6 +100,9 @@ public class CatAdmiral extends CustomCard {
         }
         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         this.degrade();
+        if(abstractPlayer.hasRelic(KagemitsuSword.ID)){
+            this.upgrade();
+        }
     }
 
 

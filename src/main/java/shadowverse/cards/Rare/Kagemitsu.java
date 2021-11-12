@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import shadowverse.action.KagemitsuAction;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 
@@ -51,7 +52,7 @@ public class Kagemitsu extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
-        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        addToBot(new KagemitsuAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), this));
     }
 
     @Override

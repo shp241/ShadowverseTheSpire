@@ -17,6 +17,7 @@ import shadowverse.action.WarriorWingAction;
 import shadowverse.characters.Royal;
 import shadowverse.orbs.Knight;
 import shadowverse.orbs.SteelcladKnight;
+import shadowverse.relics.KagemitsuSword;
 
 public class WarriorWing extends CustomCard {
     public static final String ID = "shadowverse:WarriorWing";
@@ -72,6 +73,9 @@ public class WarriorWing extends CustomCard {
         if (this.upgraded) {
             AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(0, 1, true));
             this.degrade();
+            if(abstractPlayer.hasRelic(KagemitsuSword.ID)){
+                this.upgrade();
+            }
         }
     }
 

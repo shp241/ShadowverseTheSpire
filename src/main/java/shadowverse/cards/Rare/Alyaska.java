@@ -25,6 +25,7 @@ import shadowverse.characters.Royal;
 import shadowverse.orbs.Knight;
 import shadowverse.orbs.SteelcladKnight;
 import shadowverse.powers.DisableEffectDamagePower;
+import shadowverse.relics.KagemitsuSword;
 
 public class Alyaska extends CustomCard {
     public static final String ID = "shadowverse:Alyaska";
@@ -84,6 +85,9 @@ public class Alyaska extends CustomCard {
             AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
             addToBot(new MakeTempCardInHandAction(c, 1));
             this.degrade();
+            if(abstractPlayer.hasRelic(KagemitsuSword.ID)){
+                this.upgrade();
+            }
         }
     }
 

@@ -33,6 +33,7 @@ public class Alexander extends CustomCard {
             upgradeName();
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
+            this.upgradeDamage(1);
             this.isEthereal = false;
         }
     }

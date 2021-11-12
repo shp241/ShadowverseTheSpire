@@ -35,7 +35,8 @@ public class LevinJustice extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeMagicNumber(1);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 
@@ -53,7 +54,13 @@ public class LevinJustice extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.baseDamage = levins() * 2;
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        addToBot(new MakeTempCardInHandAction(new YuriusLevinDuke()));
+        AbstractCard c = new YuriusLevinDuke();
+        if (this.upgraded) {
+            c.cost = 0;
+            c.costForTurn = 0;
+            c.isCostModified = true;
+        }
+        addToBot(new MakeTempCardInHandAction(c));
     }
 
     @Override

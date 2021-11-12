@@ -2582,7 +2582,7 @@
     "NAME": "微笑绝杰·罗文",
     "DESCRIPTION": "回合结束时，增加1张 *黑龙的诅咒到手中。"
   },
-  "shadowverse:CurseOfBlackDragon": {
+  "shadowverse:CurseOfTheBlackDragon": {
     "NAME": "黑龙的诅咒",
     "DESCRIPTION": "保留 。 NL 回合结束时，失去1点生命。"
   },
@@ -3075,6 +3075,7 @@
   "shadowverse:LevinJustice": {
     "NAME": "雷维翁的正义",
     "DESCRIPTION": "雷维翁 。 NL 造成本局对战中已打出的 雷维翁 卡牌两倍的伤害。 NL 将 *雷维翁公爵·尤里乌斯 置入手牌。",
+    "UPGRADE_DESCRIPTION": "雷维翁 。 NL 造成本局对战中已打出的 雷维翁 卡牌两倍的伤害。 NL 将 *雷维翁公爵·尤里乌斯 置入手牌，其消耗变为0。",
     "EXTENDED_DESCRIPTION": [
       "（造成",
       "点伤害)"
@@ -3086,7 +3087,7 @@
   },
   "shadowverse:CaptainWalfrid": {
     "NAME": "骑空团总长·瓦佛利特",
-    "DESCRIPTION": "获得每召唤一个随从，使其获得+ !M! /+ !M! 能力。"
+    "DESCRIPTION": "每召唤一个随从，使其获得+ !M! /+ !M! 。 NL 将一张 *骑空团总长·瓦佛利特 置入弃牌堆。"
   },
   "shadowverse:Reinhardt": {
     "NAME": "改革者·莱恩哈尔特",
@@ -3109,5 +3110,22 @@
     "NAME": "亚历山大",
     "DESCRIPTION": "造成 !D! 点伤害 !M! 次。 NL 虚无 。",
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 !M! 次。"
+  },
+  "shadowverse:MirrorImage": {
+    "NAME": "分身之术",
+    "DESCRIPTION": "复制手牌中一张攻击牌或能力牌，其获得 消耗 和 虚无 。"
+  },
+  "shadowverse:Valse": {
+    "NAME": "魔导狙击手·瓦路兹",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 抉择 NL 从 *净化之圣弹 、 *毁灭之魔弹 中选择1张加入手中。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 抉择 NL 从 *净化之圣弹 、 *毁灭之魔弹 中选择1张加入手中，并使其获得 保留 。"
+  },
+  "shadowverse:HolyPurebomb": {
+    "NAME": "净化之圣弹",
+    "DESCRIPTION": "消耗 手牌中所有诅咒牌和状态牌。 NL 消耗 。"
+  },
+  "shadowverse:FatalSpellbomb": {
+    "NAME": "毁灭之魔弹",
+    "DESCRIPTION": "造成 !D! 点体力流失。 NL 消耗 。"
   }
 }

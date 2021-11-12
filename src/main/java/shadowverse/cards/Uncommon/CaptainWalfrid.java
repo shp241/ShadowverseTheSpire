@@ -2,6 +2,7 @@ package shadowverse.cards.Uncommon;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -19,7 +20,7 @@ public class CaptainWalfrid extends CustomCard {
     public static final String IMG_PATH = "img/cards/CaptainWalfrid.png";
 
     public CaptainWalfrid() {
-        super(ID, NAME, IMG_PATH, 5, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 5, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.SELF);
         this.magicNumber = this.baseMagicNumber = 2;
     }
 
@@ -36,6 +37,7 @@ public class CaptainWalfrid extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         addToBot(new ApplyPowerAction(p, p, new CaptainWalfridPower(p, this.magicNumber),this.magicNumber));
+        addToBot(new MakeTempCardInDiscardAction(new CaptainWalfrid(), 1));
     }
 
 

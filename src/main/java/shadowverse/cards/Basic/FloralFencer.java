@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.characters.Royal;
 import shadowverse.orbs.*;
+import shadowverse.relics.KagemitsuSword;
 
 public class FloralFencer extends CustomCard {
     public static final String ID = "shadowverse:FloralFencer";
@@ -72,6 +73,9 @@ public class FloralFencer extends CustomCard {
             AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new Knight()));
             AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new SteelcladKnight()));
             this.degrade();
+            if(abstractPlayer.hasRelic(KagemitsuSword.ID)){
+                this.upgrade();
+            }
         }
     }
 

@@ -14,6 +14,7 @@ import shadowverse.cards.Status.EvolutionPoint;
 import shadowverse.cards.Temp.WhiteTiger;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
+import shadowverse.relics.KagemitsuSword;
 
 public class LevinBeastmaster extends CustomCard {
     public static final String ID = "shadowverse:LevinBeastmaster";
@@ -81,6 +82,9 @@ public class LevinBeastmaster extends CustomCard {
         if (this.upgraded) {
             this.addToTop(new MakeTempCardInHandAction(new WhiteTiger(), 2));
             this.degrade();
+            if(abstractPlayer.hasRelic(KagemitsuSword.ID)){
+                this.upgrade();
+            }
         }
     }
 

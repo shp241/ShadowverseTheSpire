@@ -3,48 +3,41 @@ package shadowverse.cards.Common;
 import basemod.abstracts.CustomCard;
 import com.badlogic.gdx.Gdx;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
-import shadowverse.cards.Temp.GildedBlade;
-import shadowverse.cards.Temp.GildedBoots;
-import shadowverse.cards.Temp.GildedGoblet;
-import shadowverse.cards.Temp.GildedNecklace;
+import shadowverse.action.ChoiceAction2;
+import shadowverse.cards.Temp.*;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 
 import java.util.ArrayList;
 
-public class UsurpingSpineblade  extends CustomCard {
-    public static final String ID = "shadowverse:UsurpingSpineblade";
-    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:UsurpingSpineblade");
+public class Valse extends CustomCard {
+    public static final String ID = "shadowverse:Valse";
+    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Valse");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/UsurpingSpineblade.png";
+    public static final String IMG_PATH = "img/cards/Valse.png";
     private float rotationTimer;
     private int previewIndex;
 
     public static ArrayList<AbstractCard> returnProphecy() {
         ArrayList<AbstractCard> list = new ArrayList<>();
-        list.add(new GildedBlade());
-        list.add(new GildedNecklace());
-        list.add(new GildedGoblet());
-        list.add(new GildedBoots());
+        list.add(new HolyPurebomb());
+        list.add(new FatalSpellbomb());
         return list;
     }
 
-    public UsurpingSpineblade() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
-        this.baseDamage = 8;
+    public Valse() {
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
+        this.damage = 4;
     }
 
     @Override
@@ -69,23 +62,29 @@ public class UsurpingSpineblade  extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(3);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            initializeDescription();
+            upgradeDamage(2);
         }
     }
 
-
     @Override
-    public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
+    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
-        addToBot(new DamageAction(abstractMonster, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        int r1 = AbstractDungeon.cardRandomRng.random(3);
-        AbstractCard c1 = returnProphecy().get(r1);
-        addToBot(new MakeTempCardInHandAction(c1));
+        addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        AbstractCard c1 = new HolyPurebomb();
+        AbstractCard c2 = new FatalSpellbomb();
+        if (this.upgraded) {
+            c1.selfRetain = true;
+            c2.selfRetain = true;
+        }
+        addToBot(new ChoiceAction2(c1, c2));
+
     }
 
 
     @Override
     public AbstractCard makeCopy() {
-        return new UsurpingSpineblade();
+        return new Valse();
     }
 }

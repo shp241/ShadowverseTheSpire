@@ -835,6 +835,9 @@ import java.util.HashMap;
         reflectedMap.put("Reinhardt_Pow", new Sfx("sounds/Reinhardt_Pow.wav"));
         reflectedMap.put("YuriusLevinDuke", new Sfx("sounds/YuriusLevinDuke.wav"));
         reflectedMap.put("YuriusLevinDuke_Co", new Sfx("sounds/YuriusLevinDuke_Co.wav"));
+        reflectedMap.put("FatalSpellbomb", new Sfx("sounds/FatalSpellbomb.wav"));
+        reflectedMap.put("HolyPurebomb", new Sfx("sounds/HolyPurebomb.wav"));
+        reflectedMap.put("Valse", new Sfx("sounds/Valse.wav"));
         /*     */
     }
 
@@ -897,6 +900,9 @@ import java.util.HashMap;
         BaseMod.addRelicToCustomPool((AbstractRelic) new OliviasBlessing(), Royal.Enums.COLOR_YELLOW);
         BaseMod.addRelicToCustomPool((AbstractRelic) new WindGodsBlessing(), Royal.Enums.COLOR_YELLOW);
         BaseMod.addRelicToCustomPool((AbstractRelic) new Conscription(), Royal.Enums.COLOR_YELLOW);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new KagemitsuSword(), Royal.Enums.COLOR_YELLOW);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new Spineblade(), Royal.Enums.COLOR_YELLOW);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new ValhoreanDealer(), Royal.Enums.COLOR_YELLOW);
         /*     */
     }
 
@@ -1670,6 +1676,10 @@ import java.util.HashMap;
         BaseMod.addCard((AbstractCard) new Garven());
         BaseMod.addCard((AbstractCard) new Kagemitsu());
         BaseMod.addCard((AbstractCard) new Alexander());
+        BaseMod.addCard((AbstractCard) new MirrorImage());
+        BaseMod.addCard((AbstractCard) new Valse());
+        BaseMod.addCard((AbstractCard) new HolyPurebomb());
+        BaseMod.addCard((AbstractCard) new FatalSpellbomb());
 
         /* 276 */
         logger.info("Success");

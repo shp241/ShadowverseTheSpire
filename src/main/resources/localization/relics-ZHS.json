@@ -343,5 +343,26 @@
     "DESCRIPTIONS": [
       "回合开始时，若你没有随从，召唤一个 骑士 。"
 	  ]
+  },
+  "shadowverse:Spineblade": {
+    "NAME": "强夺的蛇剑",
+    "FLAVOR": "饱受饥饿吧。 NL 当你感到饥寒交迫时，就去掠夺吧。 NL 如此一来，世界将会继续运转。",
+    "DESCRIPTIONS": [
+      "使用 财宝牌 时，抽1张牌。"
+	  ]
+  },
+  "shadowverse:ValhoreanDealer": {
+    "NAME": "瓦罗纳商贩",
+    "FLAVOR": "对不起——饶了我吧——",
+    "DESCRIPTIONS": [
+      "右击时花费 #b30 金币，更换任意张手牌。"
+	  ]
+  },
+  "shadowverse:KagemitsuSword": {
+    "NAME": "景光的宝剑",
+    "FLAVOR": "自名为和平的剑鞘中，感谢您让吾拔出此刀。 NL ——不败剑圣·景光",
+    "DESCRIPTIONS": [
+      "所有 打出后解除升级 的卡牌在打出后自动升级。"
+	  ]
   }
 }

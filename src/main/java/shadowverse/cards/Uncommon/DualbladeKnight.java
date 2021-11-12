@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import shadowverse.characters.Royal;
 import shadowverse.orbs.Minion;
+import shadowverse.relics.KagemitsuSword;
 
 public class DualbladeKnight extends CustomCard {
     public static final String ID = "shadowverse:DualbladeKnight";
@@ -97,6 +98,9 @@ public class DualbladeKnight extends CustomCard {
         this.addToTop(new GainEnergyAction(this.magicNumber));
         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         this.degrade();
+        if(abstractPlayer.hasRelic(KagemitsuSword.ID)){
+            this.upgrade();
+        }
     }
 
 
