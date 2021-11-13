@@ -39,12 +39,16 @@ public class MirrorImage extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot(new SelectCardsInHandAction(1, TEXT[0], false, false, card -> (card.type == CardType.SKILL || card.type == CardType.POWER) && !card.hasTag(CardTags.HEALING), abstractCards -> {
+        addToBot(new SelectCardsInHandAction(1, TEXT[0], false, false, card -> (card.type == CardType.ATTACK || card.type == CardType.POWER) && !card.hasTag(CardTags.HEALING), abstractCards -> {
             for (AbstractCard c : abstractCards) {
-                AbstractCard cc = c.makeCopy();
-                cc.exhaust = true;
-                cc.isEthereal = true;
-                addToBot(new MakeTempCardInHandAction(cc));
+                AbstractCard tmp = c.makeStatEquivalentCopy();
+                tmp.exhaustOnUseOnce = true;
+                tmp.exhaust = true;
+                tmp.isEthereal = true;
+                tmp.rawDescription += " NL 虚无 。 NL 消耗 。";
+                tmp.initializeDescription();
+                tmp.applyPowers();
+                abstractPlayer.hand.addToTop(tmp);
             }
         }));
     }

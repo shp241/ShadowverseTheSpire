@@ -28,7 +28,11 @@ public class KagemitsuAction extends AbstractGameAction {
         this.setValues(target, info);
         this.actionType = ActionType.DAMAGE;
         this.duration = Settings.ACTION_DUR_MED;
-        this.theCard = card;
+        for(AbstractCard c:AbstractDungeon.player.masterDeck.group){
+            if (c.uuid.equals(card.uuid)) {
+                this.theCard = c;
+            }
+        }
     }
 
 

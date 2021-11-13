@@ -21,7 +21,7 @@ public class ValhoreanDealer extends CustomRelic implements BetterClickableRelic
     private boolean triggeredThisTurn;
 
     public ValhoreanDealer() {
-        super(ID, new Texture(Gdx.files.internal(IMG)), RelicTier.UNCOMMON, LandingSound.SOLID);
+        super(ID, new Texture(Gdx.files.internal(IMG)), RelicTier.SPECIAL, LandingSound.SOLID);
     }
 
     @Override
@@ -34,7 +34,7 @@ public class ValhoreanDealer extends CustomRelic implements BetterClickableRelic
     public void onEachRightClick() {
         AbstractPlayer p = AbstractDungeon.player;
         if (p.gold >= 30) {
-            p.gold -= 30;
+            p.loseGold(30);
             this.addToBot(new GamblingChipAction(p));
         }
     }

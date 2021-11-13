@@ -30,7 +30,7 @@ public class Kagemitsu extends CustomCard {
 
     public Kagemitsu(int upgrades) {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ENEMY);
-        this.baseDamage = 8;
+        this.baseDamage = 6;
         this.timesUpgraded = upgrades;
         this.exhaust = true;
     }
@@ -38,7 +38,7 @@ public class Kagemitsu extends CustomCard {
     @Override
     public void upgrade() {
         this.timesUpgraded++;
-        this.upgradeDamage(8);
+        this.upgradeDamage(6);
         this.upgraded = true;
         this.name = cardStrings.NAME + "+" + this.timesUpgraded;
         initializeTitle();

@@ -43,7 +43,7 @@ public class TyrantsOrder extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
-        this.addToBot(new TyrantsOrderAction(p, m, this.magicNumber, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
+        this.addToBot(new TyrantsOrderAction(p, m, this.magicNumber, DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE));
     }
 
     @Override

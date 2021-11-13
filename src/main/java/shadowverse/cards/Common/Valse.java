@@ -37,7 +37,7 @@ public class Valse extends CustomCard {
 
     public Valse() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
-        this.damage = 4;
+        this.baseDamage = 4;
     }
 
     @Override
@@ -74,12 +74,17 @@ public class Valse extends CustomCard {
         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         AbstractCard c1 = new HolyPurebomb();
         AbstractCard c2 = new FatalSpellbomb();
-        if (this.upgraded) {
-            c1.selfRetain = true;
-            c2.selfRetain = true;
-        }
         addToBot(new ChoiceAction2(c1, c2));
-
+        if (this.upgraded) {
+            for (AbstractCard c : abstractPlayer.hand.group) {
+                if (c instanceof HolyPurebomb || c instanceof FatalSpellbomb) {
+                    c.selfRetain = true;
+                    c.rawDescription += " NL 虚无 。 NL 消耗 。";
+                    c.initializeDescription();
+                    c.applyPowers();
+                }
+            }
+        }
     }
 
 
