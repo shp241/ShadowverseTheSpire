@@ -74,6 +74,10 @@ public class Henchman extends CustomMonster {
         setMove(START, (byte) 1, Intent.ATTACK, this.damage.get(0).base, this.shootAmt, false);
     }
 
+    public void getMove() {
+        getMove(1);
+    }
+
     @Override
     public void die() {
         AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Horse()));

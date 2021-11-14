@@ -1022,11 +1022,17 @@
       "每当召唤 #y随从 时，使其获得+1/+0。回合开始时这个能力减少 #b1 层。"
     ]
   },
+  "shadowverse:LathamPower": {
+    "NAME": "高洁的骑士·雷瑟姆",
+    "DESCRIPTIONS": [
+      "使用攻击牌时，召唤1个 骑士 。"
+    ]
+  },
   "shadowverse:AlwidaPower": {
     "NAME": "海贼女王·雅尔莉妲",
     "DESCRIPTIONS": [
       "每回合限 #b",
-      "次，每当你使用财宝牌，召唤1个 航海家 和1个 维京战士 。"
+      " 次，每当你使用财宝牌，召唤1个 航海家 和1个 维京战士 。"
     ]
   },
   "shadowverse:GloriousCorePower": {

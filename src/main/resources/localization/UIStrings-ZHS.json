@@ -4,6 +4,11 @@
       "将一张中立牌加入你的牌组"
     ]
   },
+  "shadowverse:ClassReward": {
+    "TEXT": [
+      "将一张牌加入你的牌组"
+    ]
+  },
   "shadowverse:ChooseToReduceCost": {
     "TEXT": [
       "降低耗能"

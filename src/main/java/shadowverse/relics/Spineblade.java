@@ -23,7 +23,7 @@ public class Spineblade extends CustomRelic {
     public static final String OUTLINE_IMG = "img/relics/outline/Spineblade_Outline.png";
 
     public Spineblade() {
-        super(ID, ImageMaster.loadImage(IMG), RelicTier.RARE, LandingSound.CLINK);
+        super(ID, ImageMaster.loadImage(IMG), RelicTier.UNCOMMON, LandingSound.CLINK);
     }
 
     @Override

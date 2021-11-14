@@ -51,7 +51,7 @@ public class ShieldPhalanx extends CustomCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
-        if (!this.triggered && rally() >= 15) {
+        if (!this.triggered && this.upgraded && rally() >= 15) {
             this.triggered = true;
             AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new FrontguardGeneral()));
         } else {

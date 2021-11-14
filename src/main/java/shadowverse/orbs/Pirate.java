@@ -45,6 +45,6 @@ public class Pirate extends Minion {
 
     @Override
     public void effect() {
-        AbstractDungeon.actionManager.addToTop(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, this.attack * 3));
+        AbstractDungeon.actionManager.addToTop(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, this.attack * 2));
     }
 }

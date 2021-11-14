@@ -20,7 +20,7 @@ public class Conscription extends CustomRelic {
     public static final String OUTLINE_IMG = "img/relics/outline/Conscription_Outline.png";
 
     public Conscription() {
-        super(ID, ImageMaster.loadImage(IMG), RelicTier.COMMON, LandingSound.CLINK);
+        super(ID, ImageMaster.loadImage(IMG), RelicTier.SHOP, LandingSound.SOLID);
     }
 
     @Override

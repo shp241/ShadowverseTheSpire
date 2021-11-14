@@ -11,7 +11,7 @@ public class KagemitsuSword extends CustomRelic {
     public static final String OUTLINE_IMG = "img/relics/outline/KagemitsuSword_Outline.png";
 
     public KagemitsuSword() {
-        super(ID, new Texture(Gdx.files.internal(IMG)), RelicTier.UNCOMMON, LandingSound.SOLID);
+        super(ID, new Texture(Gdx.files.internal(IMG)), RelicTier.RARE, LandingSound.SOLID);
     }
 
     @Override

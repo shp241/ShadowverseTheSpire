@@ -40,7 +40,7 @@ public class WeeMerchantsAppraisal extends CustomCard {
     }
 
     public WeeMerchantsAppraisal() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.NONE);
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.NONE);
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
     }

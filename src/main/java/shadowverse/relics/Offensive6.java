@@ -36,7 +36,7 @@ public class Offensive6 extends CustomRelic implements BetterClickableRelic<Offe
     private boolean triggeredThisTurn;
 
     public Offensive6() {
-        super(ID, new Texture(Gdx.files.internal(IMG)), RelicTier.BOSS, LandingSound.SOLID);
+        super(ID, new Texture(Gdx.files.internal(IMG)), RelicTier.STARTER, LandingSound.SOLID);
     }
 
     @Override

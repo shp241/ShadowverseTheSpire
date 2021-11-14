@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.action.ChoiceAction2;
+import shadowverse.action.ValseAction;
 import shadowverse.cards.Temp.*;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
@@ -74,17 +75,7 @@ public class Valse extends CustomCard {
         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         AbstractCard c1 = new HolyPurebomb();
         AbstractCard c2 = new FatalSpellbomb();
-        addToBot(new ChoiceAction2(c1, c2));
-        if (this.upgraded) {
-            for (AbstractCard c : abstractPlayer.hand.group) {
-                if (c instanceof HolyPurebomb || c instanceof FatalSpellbomb) {
-                    c.selfRetain = true;
-                    c.rawDescription += " NL 虚无 。 NL 消耗 。";
-                    c.initializeDescription();
-                    c.applyPowers();
-                }
-            }
-        }
+        addToBot(new ValseAction(c1, c2));
     }
 
 

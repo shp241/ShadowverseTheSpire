@@ -175,8 +175,8 @@ import java.util.HashMap;
     public void receivePostInitialize() {
         BaseMod.addEvent(PinyaEvent.ID, PinyaEvent.class);
         BaseMod.addEvent(GemFortune.ID, GemFortune.class, TheCity.ID);
-        BaseMod.addEvent(NaturalMachine.ID, NaturalMachine.class, TheCity.ID);
-        BaseMod.addEvent(SellCard.ID, SellCard.class, Exordium.ID);
+        BaseMod.addEvent(NaturalMachine.ID, NaturalMachine.class, Exordium.ID);
+        BaseMod.addEvent(SellCard.ID, SellCard.class, TheCity.ID);
         BaseMod.addMonster(Belphomet.ID, Belphomet::new);
         BaseMod.addMonster(Iceschillendrig.ID, Iceschillendrig::new);
         BaseMod.addMonster(VincentBOSS.ID, VincentBOSS::new);
@@ -864,6 +864,7 @@ import java.util.HashMap;
         BaseMod.addRelic((AbstractRelic) new GeassRelic(), RelicType.SHARED);
         BaseMod.addRelic((AbstractRelic) new NeutralBook(), RelicType.SHARED);
         BaseMod.addRelic((AbstractRelic) new ValhoreanDealer(), RelicType.SHARED);
+        BaseMod.addRelic((AbstractRelic) new AlterplaneArbiter(), RelicType.SHARED);
         BaseMod.addRelicToCustomPool((AbstractRelic) new Offensive2(), Elf.Enums.COLOR_GREEN);
         BaseMod.addRelicToCustomPool((AbstractRelic) new SixMark(), Elf.Enums.COLOR_GREEN);
         BaseMod.addRelicToCustomPool((AbstractRelic) new ArisaBOSS(), Elf.Enums.COLOR_GREEN);
@@ -901,6 +902,8 @@ import java.util.HashMap;
         BaseMod.addRelicToCustomPool((AbstractRelic) new Conscription(), Royal.Enums.COLOR_YELLOW);
         BaseMod.addRelicToCustomPool((AbstractRelic) new KagemitsuSword(), Royal.Enums.COLOR_YELLOW);
         BaseMod.addRelicToCustomPool((AbstractRelic) new Spineblade(), Royal.Enums.COLOR_YELLOW);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new Durandal(), Royal.Enums.COLOR_YELLOW);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new EndlessUsurpation(), Royal.Enums.COLOR_YELLOW);
         /*     */
     }
 

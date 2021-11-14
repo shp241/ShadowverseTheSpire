@@ -39,7 +39,7 @@ public class Grayson  extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
-        addToBot(new ApplyPowerAction(p, p, new GraysonPower(p,this.magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new GraysonPower(p,this.magicNumber),this.magicNumber));
     }
 
     @Override

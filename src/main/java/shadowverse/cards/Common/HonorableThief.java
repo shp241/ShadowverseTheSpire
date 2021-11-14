@@ -29,9 +29,9 @@ public class HonorableThief extends CustomCard {
     public static final String IMG_PATH = "img/cards/HonorableThief.png";
 
     public HonorableThief() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
-        this.baseDamage = 7;
-        this.magicNumber = this.baseMagicNumber = 2;
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
+        this.baseDamage = 3;
+        this.magicNumber = this.baseMagicNumber = 1;
         this.cardsToPreview = new GildedBoots();
     }
 
@@ -40,7 +40,8 @@ public class HonorableThief extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.upgradeDamage(3);
+            upgradeMagicNumber(1);
+            upgradeDamage(2);
         }
     }
 

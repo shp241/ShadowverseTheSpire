@@ -17,7 +17,7 @@ public class MinionOrderAction extends AbstractGameAction {
         AbstractPlayer p = AbstractDungeon.player;
         for (int i = 0; i < p.orbs.size(); i++) {
             if (p.orbs.get(i) instanceof Minion) {
-                ((Minion) p.orbs.get(0)).order();
+                ((Minion) p.orbs.get(i)).order();
                 break;
             }
         }
