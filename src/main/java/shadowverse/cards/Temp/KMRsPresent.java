@@ -3,6 +3,7 @@
 
 
 import basemod.abstracts.CustomCard;
+import com.badlogic.gdx.Gdx;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
@@ -21,7 +22,12 @@ import com.megacrit.cardcrawl.powers.MinionPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.WeightyImpactEffect;
+import shadowverse.action.ChoiceAction;
+import shadowverse.cards.Rare.DeadSoulTaker;
 import shadowverse.characters.Witchcraft;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 
  public class KMRsPresent
@@ -32,6 +38,18 @@ import shadowverse.characters.Witchcraft;
    public static final String NAME = cardStrings.NAME;
    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
    public static final String IMG_PATH = "img/cards/KMRsPresent.png";
+   private float rotationTimer;
+   private int previewIndex;
+   public static ArrayList<AbstractCard> returnChoice() {
+     ArrayList<AbstractCard> list = new ArrayList<>();
+     list.add(new ShadowBahmut());
+     list.add(new ShiningValkyrie());
+     list.add(new SevensForceSorcerer());
+     list.add(new DeadSoulTaker());
+     list.add(new AbyssDoomLord());
+     return list;
+   }
+
 
    public KMRsPresent() {
      super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.SELF);
@@ -46,10 +64,26 @@ import shadowverse.characters.Witchcraft;
        upgradeName();
      } 
    }
- 
+
+   public void update() {
+     super.update();
+     if (this.hb.hovered)
+       if (this.rotationTimer <= 0.0F) {
+         this.rotationTimer = 2.0F;
+         this.cardsToPreview = (AbstractCard)returnChoice().get(previewIndex).makeCopy();
+         if (this.previewIndex == returnChoice().size() - 1) {
+           this.previewIndex = 0;
+         } else {
+           this.previewIndex++;
+         }
+       } else {
+         this.rotationTimer -= Gdx.graphics.getDeltaTime();
+       }
+   }
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-       addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+     AbstractCard[] list = returnChoice().toArray(new AbstractCard[returnChoice().size()]);
+     addToBot((AbstractGameAction)new ChoiceAction(list));
    }
  
    

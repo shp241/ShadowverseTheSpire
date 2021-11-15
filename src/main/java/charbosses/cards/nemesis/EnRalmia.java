@@ -31,7 +31,7 @@ public class EnRalmia extends AbstractBossCard {
     public EnRalmia() {
         super(ID, cardStrings.NAME, IMG_PATH, 1, cardStrings.DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.RARE, CardTarget.ENEMY, AbstractMonster.Intent.ATTACK_BUFF);
         this.baseDamage = 8;
-        this.baseMagicNumber = 2;
+        this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(AbstractShadowversePlayer.Enums.ARTIFACT);
         this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);

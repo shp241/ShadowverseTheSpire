@@ -36,6 +36,7 @@ public class EnHereticalInquiry extends AbstractBossCard {
         list.add(new Death());
         list.add(new Rowen());
         list.add(new ShadowversePain());
+        list.add(new Betray());
         return list;
     }
 

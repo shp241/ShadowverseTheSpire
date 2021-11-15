@@ -39,16 +39,9 @@ public class EnArdentSister extends AbstractBossCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot((AbstractGameAction)new SFXAction("ArdentSister"));
         addToBot((AbstractGameAction)new DamageAction((AbstractCreature)p, new DamageInfo((AbstractCreature)m, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        addToBot((AbstractGameAction)new ApplyPowerAction(m,m,(AbstractPower)new StrengthPower(m,this.magicNumber),this.magicNumber));
     }
 
-    @Override
-    public void triggerOnOtherCardPlayed(AbstractCard c) {
-        for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-            if (!mo.isDeadOrEscaped()) {
-                addToBot((AbstractGameAction)new ApplyPowerAction(mo,mo,(AbstractPower)new StrengthPower(mo,this.magicNumber),this.magicNumber));
-            }
-        }
-    }
 
     public void upgrade() {
         if (!this.upgraded) {

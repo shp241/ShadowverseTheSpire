@@ -85,7 +85,6 @@
        switch (this.turn) {
          case 0:
            addToList(cardsList, (AbstractCard)new SacredLion(),extraUpgrades);
-           addToList(cardsList, (AbstractCard)new EnMoonAlmiraj(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnDarkPriest(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnArdentSister(),extraUpgrades);
            this.turn++;
@@ -104,7 +103,7 @@
            this.turn = 0;
            break;
          case 3:
-           addToList(cardsList, (AbstractCard)new SacredLion(),extraUpgrades);
+           addToList(cardsList, (AbstractCard)new EnMoonAlmiraj(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnBlackenedScripture(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnArdentSister(),extraUpgrades);
            break;

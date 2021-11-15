@@ -2,28 +2,25 @@ package shadowverse.cards.Curse;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class Rowen extends CustomCard {
-    public static final String ID = "shadowverse:Rowen";
-    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Rowen");
+public class Betray extends CustomCard {
+    public static final String ID = "shadowverse:Betray";
+    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Betray");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/Rowen.png";
+    public static final String IMG_PATH = "img/cards/Betray.png";
 
-    public Rowen() {
+    public Betray() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.CURSE, CardColor.CURSE, CardRarity.SPECIAL, CardTarget.NONE);
-        this.cardsToPreview = new CurseOfTheBlackDragon();
+        this.exhaust = true;
     }
 
     @Override
@@ -32,16 +29,15 @@ public class Rowen extends CustomCard {
 
     @Override
     public void triggerOnEndOfPlayerTurn() {
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+        addToBot((AbstractGameAction)new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
     }
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("Rowen"));
     }
 
     @Override
     public AbstractCard makeCopy(){
-        return new Rowen();
+        return new Betray();
     }
 }

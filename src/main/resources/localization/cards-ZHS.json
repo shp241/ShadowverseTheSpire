@@ -2534,6 +2534,11 @@
     "NAME": "黄昏战神·奥丁",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 获得1层 无实体 。 NL 增加1张 *斯莱普尼尔 到手中。 NL 消耗 。"
   },
+  "shadowverse:SevensForceSorcerer": {
+    "NAME": "七彩之力召唤师",
+    "DESCRIPTION": "一回合内打出共7张技能牌后消灭所有敌人并失去此效果。",
+    "UPGRADE_DESCRIPTION": "一回合内打出共7张技能牌后消灭所有敌人并失去此效果。 NL 使手中所有耗能为1以下的技能牌本回合耗能变为0。"
+  },
   "shadowverse:EnRadiantAngel": {
     "NAME": "光辉天使",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 回复 !M! 点生命 。 NL 下回合额外抽1张牌。"
@@ -2548,7 +2553,7 @@
   },
   "shadowverse:EnArdentSister": {
     "NAME": "充满热诚的修女",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 本回合每打出1张牌获得 !M! 点 力量 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !M! 点 力量 。"
   },
   "shadowverse:EnHeavenlyHound": {
     "NAME": "天界忠犬",
@@ -2590,6 +2595,18 @@
     "NAME": "暗影巴哈姆特",
     "DESCRIPTION": "造成 !D! 点无法防御的伤害。 NL 使敌人失去 力量 和 敏捷 以外的所有正面效果。 NL 消灭所有 爪牙 敌人。"
   },
+  "shadowverse:ShiningValkyrie": {
+    "NAME": "闪耀女武神",
+    "DESCRIPTION": "增加 !M! 张 *妖精 到手中。 NL 每当打出 *妖精 时，获得2点 力量 和1点 敏捷 。"
+  },
+  "shadowverse:DeadSoulTaker": {
+    "NAME": "死亡狩魂者",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 从消耗堆中将1张攻击牌本回合耗能变为0加入手中。 NL 死灵术 10 \b随机将本场战斗已打出的攻击牌以耗能为0且 消耗 的形式加入手中直到手牌上限。"
+  },
+  "shadowverse:AbyssDoomLord": {
+    "NAME": "深渊毁灭领主",
+    "DESCRIPTION": "消耗任意张手牌。 NL 造成 !D! 点伤害。 NL 失去生命直至1点。 NL 对全体敌人造成失去生命的2倍伤害。 NL 本回合你受到的伤害变为0。 NL 消耗 。"
+  },
   "shadowverse:KMRsPresent": {
     "NAME": "木村唯人的赠礼",
     "DESCRIPTION": "保留。 NL 抉择：选择1张 *传说卡 加入手中。 NL 消耗。"
@@ -2597,6 +2614,10 @@
   "shadowverse:ShadowversePain": {
     "NAME": "影之诗不过是折磨你们的工具",
     "DESCRIPTION": "每当打出影之诗牌时，失去1点生命。"
+  },
+  "shadowverse:Betray": {
+    "NAME": "影之诗背叛了我！",
+    "DESCRIPTION": "回合结束时，增加1张复制品到弃牌堆。 NL 消耗 。"
   },
   "shadowverse:SacredLion": {
     "NAME": "神圣之狮",
