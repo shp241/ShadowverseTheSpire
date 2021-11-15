@@ -45,30 +45,30 @@ public abstract class Minion extends AbstractOrb {
     @Override
     public void update() {
         this.updateDescription();
-        this.hb.update();
-        if (this.hb.hovered) {
-            TipHelper.renderGenericTip(this.tX + 96.0F * Settings.scale, this.tY + 64.0F * Settings.scale, this.name, this.description);
-        }
-
-        this.fontScale = MathHelper.scaleLerpSnap(this.fontScale, 0.7F);
+//        this.hb.update();
+//        if (this.hb.hovered) {
+//            TipHelper.renderGenericTip(this.tX + 96.0F * Settings.scale, this.tY + 64.0F * Settings.scale, this.name, this.description);
+//        }
+//
+//        this.fontScale = MathHelper.scaleLerpSnap(this.fontScale, 0.7F);
     }
 
-    @Override
-    public void updateAnimation() {
-        this.bobEffect.update();
-        this.cX = MathHelper.orbLerpSnap(this.cX, AbstractDungeon.player.animX + this.tX);
-        this.cY = MathHelper.orbLerpSnap(this.cY, AbstractDungeon.player.animY + this.tY);
-        if (this.channelAnimTimer != 0.0F) {
-            this.channelAnimTimer -= Gdx.graphics.getDeltaTime();
-            if (this.channelAnimTimer < 0.0F) {
-                this.channelAnimTimer = 0.0F;
-            }
-        }
-
-        this.c.a = Interpolation.pow2In.apply(1.0F, 0.01F, 0.0F);
-        this.scale = Interpolation.swingIn.apply(Settings.scale, 0.01F, 0.0F);
-        this.updateDescription();
-    }
+//    @Override
+//    public void updateAnimation() {
+//        this.bobEffect.update();
+//        this.cX = MathHelper.orbLerpSnap(this.cX, AbstractDungeon.player.animX + this.tX);
+//        this.cY = MathHelper.orbLerpSnap(this.cY, AbstractDungeon.player.animY + this.tY);
+//        if (this.channelAnimTimer != 0.0F) {
+//            this.channelAnimTimer -= Gdx.graphics.getDeltaTime();
+//            if (this.channelAnimTimer < 0.0F) {
+//                this.channelAnimTimer = 0.0F;
+//            }
+//        }
+//
+//        this.c.a = Interpolation.pow2In.apply(1.0F, 0.01F, 0.0F);
+//        this.scale = Interpolation.swingIn.apply(Settings.scale, 0.01F, 0.0F);
+//        this.updateDescription();
+//    }
 
     public void buff(int a, int d) {
         this.attack += a;
@@ -104,8 +104,12 @@ public abstract class Minion extends AbstractOrb {
     // Render the orb.
     @Override
     public void render(SpriteBatch sb) {
-        sb.draw(img, cX - 48.0f, cY - 48.0f + bobEffect.y, 48.0f, 48.0f, 96.0f, 96.0f, scale, scale, 0, 0, 0, 96, 96, false, false);
-        sb.draw(img, cX - 48.0f, cY - 48.0f + bobEffect.y, 48.0f, 48.0f, 96.0f, 96.0f, scale, scale, 0, 0, 0, 96, 96, false, false);
+        this.shineColor.a = this.c.a / 2.0F;
+        sb.setColor(this.shineColor);
+        sb.draw(this.img, this.cX - 48.0F, this.cY - 48.0F + this.bobEffect.y, 48.0F, 48.0F, 96.0F, 96.0F, this.scale + MathUtils.sin(this.angle / 12.566371F) * 0.04F * Settings.scale, this.scale, this.angle, 0, 0, 96, 96, false, false);
+        sb.setBlendFunction(770, 1);
+        sb.draw(this.img, this.cX - 48.0F, this.cY - 48.0F + this.bobEffect.y, 48.0F, 48.0F, 96.0F, 96.0F, this.scale, this.scale + MathUtils.sin(this.angle / 12.566371F) * 0.04F * Settings.scale, -this.angle, 0, 0, 96, 96, false, false);
+        sb.setBlendFunction(770, 771);
         if (this.defense > this.baseDefense) {
             FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.defense), this.cX + NUM_X_OFFSET, this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET, new Color(0.2F, 1.0F, 0.2F, this.c.a), this.fontScale);
         } else if (this.defense < this.baseDefense) {

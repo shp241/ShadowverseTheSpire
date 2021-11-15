@@ -47,6 +47,8 @@ import shadowverse.relics.*;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 
+import static com.badlogic.gdx.graphics.Color.YELLOW;
+
 /*     */
 /*     */
 @SpireInitializer
@@ -208,6 +210,9 @@ import java.util.HashMap;
         BaseMod.addPotion(EpitaphPotion.class, Color.SCARLET, Color.GOLDENROD, Color.SCARLET, EpitaphPotion.POTION_ID, Vampire.Enums.Vampire);
         BaseMod.addPotion(ArtifactPotion.class, Color.CYAN, Color.CLEAR, Color.CYAN, RosePotion.POTION_ID, Nemesis.Enums.Nemesis);
         BaseMod.addPotion(RevisedPotion.class, Color.BROWN, Color.BROWN, Color.BROWN, RevisedPotion.POTION_ID, Nemesis.Enums.Nemesis);
+        BaseMod.addPotion(BuffPotion.class, Color.RED, Color.RED, YELLOW, BuffPotion.POTION_ID, Royal.Enums.Royal);
+        BaseMod.addPotion(EvolutionPotion.class, Color.YELLOW, Color.YELLOW, null, EvolutionPotion.POTION_ID, Royal.Enums.Royal);
+        BaseMod.addPotion(MinionPotion.class, Color.YELLOW, Color.WHITE, null, MinionPotion.POTION_ID, Royal.Enums.Royal);
 
         HashMap<String, Sfx> reflectedMap = getSoundsMap();
         reflectedMap.put("spell_boost", new Sfx("sounds/spell_boost2.wav"));
@@ -869,6 +874,7 @@ import java.util.HashMap;
         BaseMod.addRelic((AbstractRelic) new NeutralBook(), RelicType.SHARED);
         BaseMod.addRelic((AbstractRelic) new ValhoreanDealer(), RelicType.SHARED);
         BaseMod.addRelic((AbstractRelic) new AlterplaneArbiter(), RelicType.SHARED);
+        BaseMod.addRelic((AbstractRelic) new Tree(), RelicType.SHARED);
         BaseMod.addRelicToCustomPool((AbstractRelic) new Offensive2(), Elf.Enums.COLOR_GREEN);
         BaseMod.addRelicToCustomPool((AbstractRelic) new SixMark(), Elf.Enums.COLOR_GREEN);
         BaseMod.addRelicToCustomPool((AbstractRelic) new ArisaBOSS(), Elf.Enums.COLOR_GREEN);
@@ -1599,6 +1605,7 @@ import java.util.HashMap;
         BaseMod.addCard((AbstractCard)new KMRsPresent());
         BaseMod.addCard((AbstractCard)new SevensForceSorcerer());
         BaseMod.addCard((AbstractCard)new ShiningValkyrie());
+        BaseMod.addCard((AbstractCard)new LegendSwordCommander());
         BaseMod.addCard((AbstractCard)new DeadSoulTaker());
         BaseMod.addCard((AbstractCard)new AbyssDoomLord());
         BaseMod.addCard((AbstractCard) new Defend_R());

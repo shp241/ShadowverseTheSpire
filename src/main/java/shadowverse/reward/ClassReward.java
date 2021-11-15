@@ -21,13 +21,11 @@ public class ClassReward extends CustomReward {
     public ClassReward(AbstractCard.CardColor color) {
         super(ImageMaster.loadImage("img/reward/placeholder.png"), TEXT[0], RewardType.CARD);
         this.group = new CardGroup(CardGroup.CardGroupType.CARD_POOL);
-        System.out.println(color);
         for (AbstractCard q : CardLibrary.getAllCards()) {
             if (q.color == color) {
                 this.group.addToBottom(q.makeCopy());
             }
         }
-        System.out.println(this.group.getCardNames());
         this.cards.clear();
         this.cards.addAll(getCards());
     }

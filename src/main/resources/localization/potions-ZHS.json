@@ -88,5 +88,27 @@
     "DESCRIPTIONS": [
       "消耗手中所有 #y悬丝傀儡 ，增加消耗张数的 #y改良型·悬丝傀儡+ 到手中。"
     ]
+  },
+  "shadowverse:BuffPotion": {
+    "NAME": "团结药水",
+    "DESCRIPTIONS": [
+      "使所有随从获得+ #b",
+      " + #b",
+      " 。"
+    ]
+  },
+  "shadowverse:EvolutionPotion": {
+    "NAME": "进化药水",
+    "DESCRIPTIONS": [
+      "增加 #b",
+      " 张 #y进化点+ 到手中。"
+    ]
+  },
+  "shadowverse:MinionPotion": {
+    "NAME": "召唤药水",
+    "DESCRIPTIONS": [
+      "随机召唤 #b",
+      " 个随从。"
+    ]
   }
 }

@@ -369,7 +369,7 @@
     "NAME": "无尽劫掠",
     "FLAVOR": "掠夺一切，取回所有吧。那些奇珍异宝打从一开始就属于我们。那，我们就不客气地全部收下了。",
     "DESCRIPTIONS": [
-      "回合开始时，随机获得2张 财宝牌 。"
+      "回合开始时，随机获得1张 财宝牌 。"
     ]
   },
   "shadowverse:Durandal": {
@@ -377,6 +377,13 @@
     "FLAVOR": "这把与英雄结契的不灭圣剑，经理百战也不曾折损刀身，甚至无法熔毁。不论何时，它的银白光芒都是如此的耀眼夺目。",
     "DESCRIPTIONS": [
       "对战开始时，获得2层 #y缓冲 。"
+    ]
+  },
+  "shadowverse:Tree": {
+    "NAME": "那塔拉的大树",
+    "FLAVOR": "好大一棵树。",
+    "DESCRIPTIONS": [
+      "回合开始时，获得1张 #y那塔拉的大树 。"
     ]
   },
   "shadowverse:AlterplaneArbiter": {

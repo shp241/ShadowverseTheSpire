@@ -13,15 +13,15 @@
   },
   "shadowverse:Defend_W": {
     "NAME": "防御",
-    "DESCRIPTION": "获得 !B! 点格挡。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。"
   },
   "shadowverse:Defend_N": {
     "NAME": "防御",
-    "DESCRIPTION": "获得 !B! 点格挡。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。"
   },
   "shadowverse:Defend_Nm": {
     "NAME": "防御",
-    "DESCRIPTION": "获得 !B! 点格挡。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。"
   },
   "shadowverse:Insight": {
     "NAME": "智慧之光",
@@ -72,11 +72,11 @@
   },
   "shadowverse:DimensionalWitch": {
     "NAME": "次元魔女·多萝西",
-    "DESCRIPTION": "魔力增幅  \b耗能减少1 [E] 。 NL 消耗 NL 获得 !B! 点格挡。 NL 消耗 所有手牌并抽5张牌，发动 !M! 次 魔力增幅 。"
+    "DESCRIPTION": "魔力增幅  \b耗能减少1 [E] 。 NL 消耗 NL 获得 !B! 点 格挡 。 NL 消耗 所有手牌并抽5张牌，发动 !M! 次 魔力增幅 。"
   },
   "shadowverse:DimensionalWitch2": {
     "NAME": "无限魔女·多萝西",
-    "DESCRIPTION": "魔力增幅  \b耗能减少1 [E] 。 NL 消耗 NL 获得 !B! 点格挡。 NL 抽取直到没有 魔力增幅 的牌，使抽取的卡发动 !M! 次 魔力增幅 。"
+    "DESCRIPTION": "魔力增幅  \b耗能减少1 [E] 。 NL 消耗 NL 获得 !B! 点 格挡 。 NL 抽取直到没有 魔力增幅 的牌，使抽取的卡发动 !M! 次 魔力增幅 。"
   },
   "shadowverse:MysticSeeker": {
     "NAME": "神托的妖童·阿露露梅娅",
@@ -147,7 +147,7 @@
   },
   "shadowverse:ConjureGuardian": {
     "NAME": "守护者炼成术",
-    "DESCRIPTION": "消耗 。 NL 获得 !B! 点格挡 。"
+    "DESCRIPTION": "消耗 。 NL 获得 !B! 点 格挡 。"
   },
   "shadowverse:GolemAssault": {
     "NAME": "巨像突袭",
@@ -177,18 +177,18 @@
   },
   "shadowverse:OrichalcumGolem": {
     "NAME": "奥利哈刚巨像",
-    "DESCRIPTION": " 激奏 0 \b 土之秘术 X \b由 NL 「获得6点 格挡 」、「在你的手牌中增加一张 *真理的术式 」、「对随机敌人造成 !D! 点伤害」 NL 之中，随机发动1种能力。此行动将进行X次。 NL X为你的 土之印记 层数。 NL  NL --------------------- NL  NL 获得 !B! 点格挡。 NL 下个回合获得2层 土之印记 。",
-    "UPGRADE_DESCRIPTION": " 激奏 0 \b 土之秘术 X \b由 NL 「获得8点 格挡 」、「在你的手牌中增加一张 *真理的术式+ 」、「对随机敌人造成 !D! 点伤害」 NL 之中，随机发动1种能力。此行动将进行X次。 NL X为你的 土之印记 层数。 NL  NL --------------------- NL  NL 获得 !B! 点格挡。 NL 下个回合获得2层 土之印记 。"
+    "DESCRIPTION": " 激奏 0 \b 土之秘术 X \b由 NL 「获得6点 格挡 」、「在你的手牌中增加一张 *真理的术式 」、「对随机敌人造成 !D! 点伤害」 NL 之中，随机发动1种能力。此行动将进行X次。 NL X为你的 土之印记 层数。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 下个回合获得2层 土之印记 。",
+    "UPGRADE_DESCRIPTION": " 激奏 0 \b 土之秘术 X \b由 NL 「获得8点 格挡 」、「在你的手牌中增加一张 *真理的术式+ 」、「对随机敌人造成 !D! 点伤害」 NL 之中，随机发动1种能力。此行动将进行X次。 NL X为你的 土之印记 层数。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 下个回合获得2层 土之印记 。"
   },
   "shadowverse:OrichalcumGolem_Accelerate": {
     "NAME": "奥利哈刚巨像",
-    "DESCRIPTION": " 激奏 0 \b 土之秘术 X \b由 NL 「获得6点 格挡 」、「在你的手牌中增加一张 *真理的术式 」、「对随机敌人造成 !D! 点伤害」 NL 之中，随机发动1种能力。此行动将进行X次。 NL X为你的 土之印记 层数。 NL  NL --------------------- NL  NL 获得 !B! 点格挡。 NL 下个回合获得2层 土之印记 。",
-    "UPGRADE_DESCRIPTION": " 激奏 0 \b 土之秘术 X \b由 NL 「获得8点 格挡 」、「在你的手牌中增加一张 *真理的术式+ 」、「对随机敌人造成 !D! 点伤害」 NL 之中，随机发动1种能力。此行动将进行X次。 NL X为你的 土之印记 层数。 NL  NL --------------------- NL  NL 获得 !B! 点格挡。 NL 下个回合获得2层 土之印记 。"
+    "DESCRIPTION": " 激奏 0 \b 土之秘术 X \b由 NL 「获得6点 格挡 」、「在你的手牌中增加一张 *真理的术式 」、「对随机敌人造成 !D! 点伤害」 NL 之中，随机发动1种能力。此行动将进行X次。 NL X为你的 土之印记 层数。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 下个回合获得2层 土之印记 。",
+    "UPGRADE_DESCRIPTION": " 激奏 0 \b 土之秘术 X \b由 NL 「获得8点 格挡 」、「在你的手牌中增加一张 *真理的术式+ 」、「对随机敌人造成 !D! 点伤害」 NL 之中，随机发动1种能力。此行动将进行X次。 NL X为你的 土之印记 层数。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 下个回合获得2层 土之印记 。"
   },
   "shadowverse:DwarfAlchemist": {
     "NAME": "矮人炼金术师",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得 1 层 土之印记 。",
-    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡。 NL 获得1层 土之印记 。 NL  随机将你抽牌堆中1张有 土之秘术 效果的牌加入你的手牌。"
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得1层 土之印记 。 NL  随机将你抽牌堆中1张有 土之秘术 效果的牌加入你的手牌。"
   },
   "shadowverse:WitchsCauldron": {
     "NAME": "魔女的坩埚",
@@ -234,7 +234,7 @@
   },
   "shadowverse:Runie": {
     "NAME": "决意预言者·露妮",
-    "DESCRIPTION": "发动 魔力增幅 。 NL  魔力增幅  \b次数为1以上时，抽1张牌。 NL 3以上时，对随机敌人造成 !D! 点伤害。 NL 5以上时 再对随机敌人造成 !D! 点伤害，获得 !B! 点格挡，回复3点生命。 NL 7以上时，增3张这张牌的复制品到手中。 NL 消耗 。",
+    "DESCRIPTION": "发动 魔力增幅 。 NL  魔力增幅  \b次数为1以上时，抽1张牌。 NL 3以上时，对随机敌人造成 !D! 点伤害。 NL 5以上时 再对随机敌人造成 !D! 点伤害，获得 !B! 点 格挡 ，回复3点生命。 NL 7以上时，增3张这张牌的复制品到手中。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
       " NL (当前 魔力增幅 次数为",
       ")"
@@ -259,11 +259,11 @@
   },
   "shadowverse:ProductMachine": {
     "NAME": "生产器械",
-    "DESCRIPTION": "保留 。 NL  机械 。 NL 获得 !B! 点格挡。 NL 消耗 。"
+    "DESCRIPTION": "保留 。 NL  机械 。 NL 获得 !B! 点 格挡 。 NL 消耗 。"
   },
   "shadowverse:JetBroomWitch": {
     "NAME": "喷射巫师",
-    "DESCRIPTION": "机械 。 NL 获得 !B! 点格挡。 NL *生产器械 NL *修复模式 NL 抉择 \b增加一张所指定的卡牌到手中。"
+    "DESCRIPTION": "机械 。 NL 获得 !B! 点 格挡 。 NL *生产器械 NL *修复模式 NL 抉择 \b增加一张所指定的卡牌到手中。"
   },
   "shadowverse:TetrasMettle": {
     "NAME": "坦忒菈的反叛",
@@ -300,16 +300,16 @@
   },
   "shadowverse:Tetra": {
     "NAME": "苍蓝反叛者·坦忒菈",
-    "DESCRIPTION": "机械 。 NL 获得 !B! 点格挡 。 NL 增加一张 *修复模式 到手中。 NL 增加一张 *苍奏之四 到手中。",
-    "UPGRADE_DESCRIPTION": "机械 。 NL 获得 !B! 点格挡 。 NL 增加一张 *修复模式 到手中。 NL 增加一张 *苍奏之四+ 到手中。"
+    "DESCRIPTION": "机械 。 NL 获得 !B! 点 格挡 。 NL 增加一张 *修复模式 到手中。 NL 增加一张 *苍奏之四 到手中。",
+    "UPGRADE_DESCRIPTION": "机械 。 NL 获得 !B! 点 格挡 。 NL 增加一张 *修复模式 到手中。 NL 增加一张 *苍奏之四+ 到手中。"
   },
   "shadowverse:Tetra2": {
     "NAME": "伊莎贝尔之友·坦忒菈",
-    "DESCRIPTION": "机械 。 NL 获得 !B! 点格挡 。 NL 获得1层 人工制品 。 NL 回合开始时，如果手中没有 *苍奏之四 ，增加1张 *苍奏之四 到手中。"
+    "DESCRIPTION": "机械 。 NL 获得 !B! 点 格挡 。 NL 获得1层 人工制品 。 NL 回合开始时，如果手中没有 *苍奏之四 ，增加1张 *苍奏之四 到手中。"
   },
   "shadowverse:Tetra3": {
     "NAME": "清澄的苍蓝·坦忒菈",
-    "DESCRIPTION": "机械 。 NL 获得 !B! 点格挡 。 NL 增加3张 *苍奏之四 到手中。 NL 获得 [E] 。"
+    "DESCRIPTION": "机械 。 NL 获得 !B! 点 格挡 。 NL 增加3张 *苍奏之四 到手中。 NL 获得 [E] 。"
   },
   "shadowverse:MechastaffSorcerer": {
     "NAME": "机装术师",
@@ -321,7 +321,7 @@
   },
   "shadowverse:Cagliostro": {
     "NAME": "开辟的炼金术师·卡莉欧斯托萝",
-    "DESCRIPTION": "获得 !B! 点格挡。 NL 获得1层 土之印记 。 NL 土之秘术 增加一张 *魔创炼金 到手中。 NL 爆能强化 2  增加1张 *进化点 和 *奇迹 到手中。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得1层 土之印记 。 NL 土之秘术 增加一张 *魔创炼金 到手中。 NL 爆能强化 2  增加1张 *进化点 和 *奇迹 到手中。"
   },
   "shadowverse:MadcapConjuration": {
     "NAME": "乱无章法的嵌合",
@@ -399,7 +399,7 @@
   },
   "shadowverse:Ghios": {
     "NAME": "稜镜虹辉·济欧司",
-    "DESCRIPTION": "保留 。 NL 被保留时 魔力增幅 次数为3以上，则所有生命值低于10的敌人生命值变为0。 NL 次数为7以上，则获得8点 格挡 和1层 残影 。 NL 次数为9以上，全体敌人失去2点 力量 。 NL 次数为12以上，此卡耗能变为0。 NL 造成 !D! 点伤害，获得 !B! 点格挡。 NL 消耗 。",
+    "DESCRIPTION": "保留 。 NL 被保留时 魔力增幅 次数为3以上，则所有生命值低于10的敌人生命值变为0。 NL 次数为7以上，则获得8点 格挡 和1层 残影 。 NL 次数为9以上，全体敌人失去2点 力量 。 NL 次数为12以上，此卡耗能变为0。 NL 造成 !D! 点伤害，获得 !B! 点 格挡 。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
       " NL (当前 魔力增幅 次数为",
       ")"
@@ -489,8 +489,8 @@
   },
   "shadowverse:Machinus": {
     "NAME": "钢铁与大地之神",
-    "DESCRIPTION": "机械 · 自然 。 NL 融合 ：\b 机械 或 自然 ，每融合1张，增加7点伤害，打出时从抽牌堆中将1张 自然 或 机械 卡牌加入手中。如果这张卡片与 机械 卡及 自然 卡进行融合 ，则使上述抽取到手牌中的卡片耗能-1。 NL 造成 !D! 点伤害。 NL 获得 !B! 点格挡。",
-    "UPGRADE_DESCRIPTION": "机械 · 自然 。 NL 融合 ：\b 机械 或 自然 ，每融合1张，增加9点伤害，打出时从抽牌堆中将1张 自然 或 机械 卡牌加入手中。如果这张卡片与 机械 卡及 自然 卡进行融合 ，则使上述抽取到手牌中的卡片耗能-1。 NL 造成 !D! 点伤害。 NL 获得 !B! 点格挡。"
+    "DESCRIPTION": "机械 · 自然 。 NL 融合 ：\b 机械 或 自然 ，每融合1张，增加7点伤害，打出时从抽牌堆中将1张 自然 或 机械 卡牌加入手中。如果这张卡片与 机械 卡及 自然 卡进行融合 ，则使上述抽取到手牌中的卡片耗能-1。 NL 造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。",
+    "UPGRADE_DESCRIPTION": "机械 · 自然 。 NL 融合 ：\b 机械 或 自然 ，每融合1张，增加9点伤害，打出时从抽牌堆中将1张 自然 或 机械 卡牌加入手中。如果这张卡片与 机械 卡及 自然 卡进行融合 ，则使上述抽取到手牌中的卡片耗能-1。 NL 造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。"
   },
   "shadowverse:WitchSnap": {
     "NAME": "魔法的一击",
@@ -506,7 +506,7 @@
   },
   "shadowverse:Zeus": {
     "NAME": "至高之神·宙斯",
-    "DESCRIPTION": "可以被多次 升级 。 NL 从下列能力之中，随机发动1种能力。此行动将进行 !M! X次。 NL 「回复5点生命值」 NL 「移除所有敌人的格挡并获得3点力量」 NL 「对全体敌人造成 !D! 点伤害」 NL 「全体敌人获得2层 虚弱 和4层 中毒」 NL 「获得 !B! 点格挡」 NL 消耗 。"
+    "DESCRIPTION": "可以被多次 升级 。 NL 从下列能力之中，随机发动1种能力。此行动将进行 !M! X次。 NL 「回复5点生命值」 NL 「移除所有敌人的格挡并获得3点力量」 NL 「对全体敌人造成 !D! 点伤害」 NL 「全体敌人获得2层 虚弱 和4层 中毒」 NL 「获得 !B! 点 格挡」 NL 消耗 。"
   },
   "shadowverse:StarBright": {
     "NAME": "星辉女神",
@@ -925,8 +925,8 @@
   },
   "shadowverse:MiracleOfLove": {
     "NAME": "爱之奇迹",
-    "DESCRIPTION": " *愤怒的森之野兽 NL *心善的森之美女 NL 抉择 \b对随机敌人造成 !D! 点伤害，本回合已使用卡牌数为2以上(不包含本牌)则伤害翻倍、获得 !B! 点 格挡，本回合已使用卡牌数为2以上(不包含本牌)则 格挡 翻倍。 NL 爆能强化 2 \b改为发动2种效果。",
-    "UPGRADE_DESCRIPTION": " *愤怒的森之野兽+ NL *心善的森之美女+ NL 抉择 \b对随机敌人造成 !D! 点伤害，本回合已使用卡牌数为2以上(不包含本牌)则伤害翻倍、获得 !B! 点 格挡，本回合已使用卡牌数为2以上(不包含本牌)则 格挡 翻倍。 NL 爆能强化 2 \b改为发动2种效果。"
+    "DESCRIPTION": " *愤怒的森之野兽 NL *心善的森之美女 NL 抉择 \b对随机敌人造成 !D! 点伤害，本回合已使用卡牌数为2以上(不包含本牌)则伤害翻倍、获得 !B! 点 格挡 ，本回合已使用卡牌数为2以上(不包含本牌)则 格挡 翻倍。 NL 爆能强化 2 \b改为发动2种效果。",
+    "UPGRADE_DESCRIPTION": " *愤怒的森之野兽+ NL *心善的森之美女+ NL 抉择 \b对随机敌人造成 !D! 点伤害，本回合已使用卡牌数为2以上(不包含本牌)则伤害翻倍、获得 !B! 点 格挡 ，本回合已使用卡牌数为2以上(不包含本牌)则 格挡 翻倍。 NL 爆能强化 2 \b改为发动2种效果。"
   },
   "shadowverse:ResolveOfSekka": {
     "NAME": "九尾的决意",
@@ -1005,7 +1005,7 @@
   },
   "shadowverse:Aerin": {
     "NAME": "冰晶光芒·艾琳",
-    "DESCRIPTION": "获得 !B! 点格挡。 NL 回复3点生命 。 NL 爆能强化 3  \b增加1张 *进化点 和 *奇迹 到手中。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 回复3点生命 。 NL 爆能强化 3  \b增加1张 *进化点 和 *奇迹 到手中。"
   },
   "shadowverse:Metera": {
     "NAME": "天赋的射手·梅缇拉",
@@ -1016,7 +1016,7 @@
   },
   "shadowverse:BlossomTreant": {
     "NAME": "盛樱巨树",
-    "DESCRIPTION": "获得 !B! 点格挡。 NL 下回合额外抽1张牌。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 下回合额外抽1张牌。"
   },
   "shadowverse:BeetleWarrior": {
     "NAME": "天虫战士",
@@ -1597,7 +1597,7 @@
   },
   "shadowverse:Defend_V": {
     "NAME": "防御",
-    "DESCRIPTION": "获得 !B! 点格挡。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。"
   },
   "shadowverse:RazoryClaw": {
     "NAME": "利爪的一击",
@@ -1630,7 +1630,7 @@
   },
   "shadowverse:SpiderWebImp": {
     "NAME": "蛛网恶魔",
-    "DESCRIPTION": "获得 !B! 点格挡。 NL 未 复仇 则失去2点生命。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 未 复仇 则失去2点生命。"
   },
   "shadowverse:DemonicAssault": {
     "NAME": "恶魔突击",
@@ -1638,7 +1638,7 @@
   },
   "shadowverse:AntelopeWarrior": {
     "NAME": "角羚战士",
-    "DESCRIPTION": "获得 !B! 点格挡。 NL 未 狂乱 则失去1点生命。 NL 狂乱 则回复3点生命。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 未 狂乱 则失去1点生命。 NL 狂乱 则回复3点生命。"
   },
   "shadowverse:HellSpearWarrior": {
     "NAME": "凶枪战士",
@@ -1798,7 +1798,7 @@
   },
   "shadowverse:Neun": {
     "NAME": "拂晓吸血鬼·诺因",
-    "DESCRIPTION": "机械 。 NL 获得 !B! 点格挡。 NL 破坏 1张牌，增加2张 *生产器械 到手中。 NL 如果本场战斗已使用的 机械 非技能牌为10张以上，则接下来打 机械 牌时获得 2层 金属化。"
+    "DESCRIPTION": "机械 。 NL 获得 !B! 点 格挡 。 NL 破坏 1张牌，增加2张 *生产器械 到手中。 NL 如果本场战斗已使用的 机械 非技能牌为10张以上，则接下来打 机械 牌时获得 2层 金属化。"
   },
   "shadowverse:CreepingMadness": {
     "NAME": "不详的侵蚀",
@@ -1921,11 +1921,11 @@
   },
   "shadowverse:Vanpi1": {
     "NAME": "血色女王·斑比",
-    "DESCRIPTION": "造成 !D! 点伤害，给予3层中毒。 NL 获得 !B! 点 格挡。 NL 增加1张 *林地蝙蝠 到手中。 NL 消耗 。"
+    "DESCRIPTION": "造成 !D! 点伤害，给予3层中毒。 NL 获得 !B! 点 格挡 。 NL 增加1张 *林地蝙蝠 到手中。 NL 消耗 。"
   },
   "shadowverse:Vanpi2": {
     "NAME": "仁慈女王·斑比",
-    "DESCRIPTION": "造成 !D! 点伤害，回复造成伤害的生命。 NL 获得 !B! 点 格挡。 NL 增加1张 *林地蝙蝠 到手中。 NL 消耗 。"
+    "DESCRIPTION": "造成 !D! 点伤害，回复造成伤害的生命。 NL 获得 !B! 点 格挡 。 NL 增加1张 *林地蝙蝠 到手中。 NL 消耗 。"
   },
   "shadowverse:Vanpi": {
     "NAME": "暗夜公主·斑比",
@@ -1972,7 +1972,7 @@
   },
   "shadowverse:Archdemon": {
     "NAME": "鏖杀的大恶魔",
-    "DESCRIPTION": "激奏 0 \b抽1张牌， *鏖杀的大恶魔 本场战斗耗能减少1。 NL  NL ----------------- NL  NL 造成 !D! 点伤害。 NL 本回合受到攻击时，如果未失去格挡，则下回合获得 !M! 点 格挡 并对攻击者造成 !M! 点伤害。"
+    "DESCRIPTION": "激奏 0 \b抽1张牌， *鏖杀的大恶魔 本场战斗耗能减少1。 NL  NL ----------------- NL  NL 造成 !D! 点伤害。 NL 本回合受到攻击时，如果未失去格挡 ，则下回合获得 !M! 点 格挡 并对攻击者造成 !M! 点伤害。"
   },
   "shadowverse:Executioner": {
     "NAME": "魔界处刑人",
@@ -2045,7 +2045,7 @@
   },
   "shadowverse:MysticArtifact": {
     "NAME": "神秘的创造物",
-    "DESCRIPTION": "创造物 。 NL 获得 !B! 点格挡。 NL 抽 !M! 张牌。 NL 消耗 。"
+    "DESCRIPTION": "创造物 。 NL 获得 !B! 点 格挡 。 NL 抽 !M! 张牌。 NL 消耗 。"
   },
   "shadowverse:RadiantArtifact": {
     "NAME": "绚烂的创造物",
@@ -2053,7 +2053,7 @@
   },
   "shadowverse:TraceArtifact": {
     "NAME": "增殖的创造物",
-    "DESCRIPTION": "创造物 。 NL 获得 !B! 点格挡2次。 NL 消耗 。"
+    "DESCRIPTION": "创造物 。 NL 获得 !B! 点 格挡2次。 NL 消耗 。"
   },
   "shadowverse:PrimeArtifact": {
     "NAME": "精奥的创造物",
@@ -2061,11 +2061,11 @@
   },
   "shadowverse:ProtectArtifact": {
     "NAME": "守御的创造物",
-    "DESCRIPTION": "创造物 。 NL 获得 !B! 点格挡。 NL 消耗 。"
+    "DESCRIPTION": "创造物 。 NL 获得 !B! 点 格挡 。 NL 消耗 。"
   },
   "shadowverse:EnProtectArtifact": {
     "NAME": "守御的创造物",
-    "DESCRIPTION": "创造物 。 NL 获得 !B! 点格挡。 NL 给予敌人 !M! 层 虚弱 。 NL 消耗 。"
+    "DESCRIPTION": "创造物 。 NL 获得 !B! 点 格挡 。 NL 给予敌人 !M! 层 虚弱 。 NL 消耗 。"
   },
   "shadowverse:EdgeArtifact": {
     "NAME": "锋锐的创造物",
@@ -2077,7 +2077,7 @@
   },
   "shadowverse:GuardFormGolem": {
     "NAME": "防御型巨像",
-    "DESCRIPTION": "创造物 。 NL 获得 !B! 点格挡。 NL 爆能强化 2 \b获得格挡翻倍 NL 消耗 。"
+    "DESCRIPTION": "创造物 。 NL 获得 !B! 点 格挡 。 NL 爆能强化 2 \b获得格挡翻倍 NL 消耗 。"
   },
   "shadowverse:StrikeFormGolem": {
     "NAME": "攻击型巨像",
@@ -2185,7 +2185,7 @@
   },
   "shadowverse:AerialCraft": {
     "NAME": "空翔战机",
-    "DESCRIPTION": "机械 。 NL 造成 !D! 点伤害。 NL 如果造成的伤害未被 格挡，则手中的 机械牌 本回合耗能减少1。 NL 爆能强化 3 \b伤害翻倍。"
+    "DESCRIPTION": "机械 。 NL 造成 !D! 点伤害。 NL 如果造成的伤害未被 格挡 ，则手中的 机械牌 本回合耗能减少1。 NL 爆能强化 3 \b伤害翻倍。"
   },
   "shadowverse:LasershellTortoise": {
     "NAME": "歼炮巨龟",
@@ -2557,11 +2557,11 @@
   },
   "shadowverse:EnHeavenlyHound": {
     "NAME": "天界忠犬",
-    "DESCRIPTION": "获得 !B! 点 格挡。 NL 获得 !M! 层 多层护甲 。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得 !M! 层 多层护甲 。"
   },
   "shadowverse:EnDarkPriest": {
     "NAME": "暗黑牧师",
-    "DESCRIPTION": "获得 !B! 点 格挡。 NL 给予 !M! 层 虚弱 和 脆弱 。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 给予 !M! 层 虚弱 和 脆弱 。"
   },
   "shadowverse:EnThemisDecree": {
     "NAME": "忒弥斯的审判",
@@ -2599,6 +2599,10 @@
     "NAME": "闪耀女武神",
     "DESCRIPTION": "增加 !M! 张 *妖精 到手中。 NL 每当打出 *妖精 时，获得2点 力量 和1点 敏捷 。"
   },
+  "shadowverse:LegendSwordCommander": {
+    "NAME": "传说之剑指挥官",
+    "DESCRIPTION": "回合开始时， 格挡 不会消失。 NL 回合结束时，获得 !M! 点 格挡 。"
+  },
   "shadowverse:DeadSoulTaker": {
     "NAME": "死亡狩魂者",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 从消耗堆中将1张攻击牌本回合耗能变为0加入手中。 NL 死灵术 10 \b随机将本场战斗已打出的攻击牌以耗能为0且 消耗 的形式加入手中直到手牌上限。"
@@ -2613,7 +2617,7 @@
   },
   "shadowverse:ShadowversePain": {
     "NAME": "影之诗不过是折磨你们的工具",
-    "DESCRIPTION": "每当打出影之诗牌时，受到2点伤害。"
+    "DESCRIPTION": "每当打出影之诗牌时，失去1点生命。"
   },
   "shadowverse:Betray": {
     "NAME": "影之诗背叛了我！",
@@ -2621,7 +2625,7 @@
   },
   "shadowverse:SacredLion": {
     "NAME": "神圣之狮",
-    "DESCRIPTION": "获得 !B! 点 格挡。 NL 获得1层 缓冲 。 NL 本回合受到攻击时对攻击者造成 !M! 点伤害 。 NL 将1张 *狮子的祝福 加入敌人的手中。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得1层 缓冲 。 NL 本回合受到攻击时对攻击者造成 !M! 点伤害 。 NL 将1张 *狮子的祝福 加入敌人的手中。"
   },
   "shadowverse:LionBless": {
     "NAME": "狮子的祝福",
@@ -2681,7 +2685,7 @@
   },
   "shadowverse:Defend_R": {
     "NAME": "防御",
-    "DESCRIPTION": "获得 !B! 点格挡。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。"
   },
   "shadowverse:OathlessKnight": {
     "NAME": "背水一战的骑士",
@@ -2701,7 +2705,7 @@
   },
   "shadowverse:GildedGoblet": {
     "NAME": "黄金之杯",
-    "DESCRIPTION": "获得 !B! 点格挡。 NL 消耗 。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 消耗 。"
   },
   "shadowverse:GrandAcquisition": {
     "NAME": "绚烂的劫夺",
@@ -2710,7 +2714,7 @@
   },
   "shadowverse:SageCommander": {
     "NAME": "睿智指挥官",
-    "DESCRIPTION": "获得 !B! 点格挡,使所有随从获得+0/+1。"
+    "DESCRIPTION": "获得 !B! 点 格挡,使所有随从获得+0/+1。"
   },
   "shadowverse:DanceOfUsurpation": {
     "NAME": "强夺之舞",
@@ -2746,12 +2750,12 @@
   },
   "shadowverse:Sera": {
     "NAME": "曙光少女·赛拉",
-    "DESCRIPTION": "获得 !B! 点格挡。获得1层人工制品。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡。获得1层人工制品。 NL 召唤3个 战盾卫士 ，回复 !M! 点生命。 NL 消耗 。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。获得1层人工制品。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。获得1层人工制品。 NL 召唤3个 战盾卫士 ，回复 !M! 点生命。 NL 消耗 。"
   },
   "shadowverse:MistolinaBayleon": {
     "NAME": "光耀导引·米丝特莉娜与贝里昂",
-    "DESCRIPTION": "自然 。 NL 造成 !D! 点伤害，获得 !B! 点格挡。若手牌中有能力牌，选择消耗一张，本局对战中造成的伤害和格挡+ !M! ，若为 *那塔拉的大树 获得 [E] [E] 。"
+    "DESCRIPTION": "自然 。 NL 造成 !D! 点伤害，获得 !B! 点 格挡 。若手牌中有能力牌，选择消耗一张，本局对战中造成的伤害和 格挡 + !M! ，若为 *那塔拉的大树 获得 [E] [E] 。"
   },
   "shadowverse:TemperedMana": {
     "NAME": "勇气玛纳",
@@ -2764,12 +2768,12 @@
   },
   "shadowverse:EmpressOfSerenity": {
     "NAME": "安宁的女王",
-    "DESCRIPTION": "获得 !B! 点格挡，召唤1个 战盾卫士 。 NL 爆能强化 2 \b再额外召唤2个 战盾卫士 。"
+    "DESCRIPTION": "获得 !B! 点 格挡 ，召唤1个 战盾卫士 。 NL 爆能强化 2 \b再额外召唤2个 战盾卫士 。"
   },
   "shadowverse:ShieldPhalanx": {
     "NAME": "坚盾战阵",
-    "DESCRIPTION": "获得 !B! 点格挡。 NL 召唤一个 战盾卫士 NL 和一个 骑士 。 NL ",
-    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡。 NL 召唤一个 战盾卫士 NL 和一个 骑士 。 NL 限定 协作 15：由 战盾卫士 改为 铁卫战将 。 NL ",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 召唤一个 战盾卫士 NL 和一个 骑士 。 NL ",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 召唤一个 战盾卫士 NL 和一个 骑士 。 NL 限定 协作 15：由 战盾卫士 改为 铁卫战将 。 NL ",
     "EXTENDED_DESCRIPTION": [
       "（协作数：",
       ")"
@@ -2793,7 +2797,7 @@
   },
   "shadowverse:FrenziedCorpsmaster": {
     "NAME": "绝灭之士兵长",
-    "DESCRIPTION": "获得 !B! 点格挡。 NL 对全体敌人造成协作数两倍的伤害。 NL 激奏 1 \b  召唤一个 铁甲骑士 NL 和一个 重装骑士 。 NL ",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 对全体敌人造成协作数两倍的伤害。 NL 激奏 1 \b  召唤一个 铁甲骑士 NL 和一个 重装骑士 。 NL ",
     "EXTENDED_DESCRIPTION": [
       "（造成",
       "点伤害)"
@@ -2834,7 +2838,7 @@
   },
   "shadowverse:StrikeproneGuardian": {
     "NAME": "奋击卫士",
-    "DESCRIPTION": "获得 !B! 点格挡。 NL 协作 7：额外获得 !M! 点格挡。 NL ",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 协作 7：额外获得 !M! 点 格挡 。 NL ",
     "EXTENDED_DESCRIPTION": [
       "（协作数：",
       ")"
@@ -2964,7 +2968,7 @@
   },
   "shadowverse:FrontlineInstructor": {
     "NAME": "前线教官",
-    "DESCRIPTION": "获得 !B! 点格挡，使最右侧随从获得 NL +1/+0。 NL 限定 协作 10：改为使所有随从获得+1/+1。",
+    "DESCRIPTION": "获得 !B! 点 格挡 ，使最右侧随从获得 NL +1/+0。 NL 限定 协作 10：改为使所有随从获得+1/+1。",
     "EXTENDED_DESCRIPTION": [
       "（协作数：",
       ")"
@@ -2976,9 +2980,9 @@
   },
   "shadowverse:LuxbladeArriet": {
     "NAME": "煌剑战士·亨莉雅妲",
-    "DESCRIPTION": "多次升级以获得效果。 NL +1：获得 !B! 点格挡， 保留 。 NL +2：获得 [E] [E] ， 固有 。 NL +3：获得1点 力量 和 敏捷 。 NL +4：抽牌到7张。 NL +5：回复 !M! 点生命值。 NL 消耗 。",
+    "DESCRIPTION": "多次升级以获得效果。 NL +1：获得 !B! 点 格挡 ， 保留 。 NL +2：获得 [E] [E] ， 固有 。 NL +3：获得1点 力量 和 敏捷 。 NL +4：抽牌到7张。 NL +5：回复 !M! 点生命值。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
-      "获得 !B! 点格挡， 保留 。 NL ",
+      "获得 !B! 点 格挡 ， 保留 。 NL ",
       "获得 [E] [E] ， 固有 。 NL ",
       "获得1点 力量 和 敏捷 。 NL ",
       "抽牌到7张。 NL ",
@@ -2988,8 +2992,8 @@
   },
   "shadowverse:Charlotta": {
     "NAME": "小小的圣骑士·夏绿蒂",
-    "DESCRIPTION": "获得 !B! 点 格挡。",
-    "UPGRADE_DESCRIPTION": "打出后解除升级 。 NL 获得 !B! 点 格挡，获得 !M! 点 敏捷 。 NL 获得1层 能力伤害无效 。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。",
+    "UPGRADE_DESCRIPTION": "打出后解除升级 。 NL 获得 !B! 点 格挡 ，获得 !M! 点 敏捷 。 NL 获得1层 能力伤害无效 。"
   },
   "shadowverse:Latham": {
     "NAME": "高洁的骑士·雷瑟姆",
@@ -3003,12 +3007,12 @@
   },
   "shadowverse:Patrick": {
     "NAME": "战犀骑士·帕特里克",
-    "DESCRIPTION": "自然 。 NL 获得 !B! 点格挡，如果你的随从个数不多于1个，获得 [E] [E] 。 NL 抽1张 自然 牌，增加一张 *那塔拉的大树 到手中。"
+    "DESCRIPTION": "自然 。 NL 获得 !B! 点 格挡 ，如果你的随从个数不多于1个，获得 [E] [E] 。 NL 抽1张 自然 牌，增加一张 *那塔拉的大树 到手中。"
   },
   "shadowverse:Johann": {
     "NAME": "纯铁英雄·约翰",
-    "DESCRIPTION": "机械 。 NL 造成 !D! 点伤害。本回合中使用机械牌时获得 !M! 点格挡。 NL 每打出一张 机械 牌耗能-1。",
-    "UPGRADE_DESCRIPTION": "机械 。 NL 造成 !D! 点伤害。本回合中使用机械牌时获得 !M! 点格挡。 NL 每打出一张 机械 牌耗能-1。 NL 保留"
+    "DESCRIPTION": "机械 。 NL 造成 !D! 点伤害。本回合中使用机械牌时获得 !M! 点 格挡 。 NL 每打出一张 机械 牌耗能-1。",
+    "UPGRADE_DESCRIPTION": "机械 。 NL 造成 !D! 点伤害。本回合中使用机械牌时获得 !M! 点 格挡 。 NL 每打出一张 机械 牌耗能-1。 NL 保留"
   },
   "shadowverse:Grayson": {
     "NAME": "迅猛驭剑士·格雷森",
@@ -3038,7 +3042,7 @@
   },
   "shadowverse:Jeno": {
     "NAME": "雷维翁猛者·杰诺",
-    "DESCRIPTION": "雷维翁 。 NL 雷维翁 卡牌造成的伤害和获得的格挡增加 !M! 点。"
+    "DESCRIPTION": "雷维翁 。 NL 雷维翁 卡牌造成的伤害和获得的 格挡 增加 !M! 点。"
   },
   "shadowverse:LevinArcher": {
     "NAME": "雷维翁弓箭手",
@@ -3047,7 +3051,7 @@
   },
   "shadowverse:Lounes": {
     "NAME": "雷维翁见习兵·璐涅丝",
-    "DESCRIPTION": "雷维翁 。 NL 造成 !D! 点伤害，手牌中每有1张 雷维翁 牌，获得1次 !B! 点格挡。 NL 爆能强化 1 \b再造成一次伤害。",
+    "DESCRIPTION": "雷维翁 。 NL 造成 !D! 点伤害，手牌中每有1张 雷维翁 牌，获得1次 !B! 点 格挡 。 NL 爆能强化 1 \b再造成一次伤害。",
     "EXTENDED_DESCRIPTION": [
       "（其他雷维翁卡牌数：",
       ")"
@@ -3059,8 +3063,8 @@
   },
   "shadowverse:StampedingFortress": {
     "NAME": "虐袭城塞",
-    "DESCRIPTION": "机械 。 NL 造成 !D! 点伤害，获得 !B! 点 格挡。",
-    "UPGRADE_DESCRIPTION": "机械 。 NL 打出后解除升级 。 NL 造成 !D! 点伤害，获得 !B! 点 格挡。 NL 如果手牌中有其他 机械 牌，将 !M! 张 *生产机械 置入手牌。"
+    "DESCRIPTION": "机械 。 NL 造成 !D! 点伤害，获得 !B! 点 格挡 。",
+    "UPGRADE_DESCRIPTION": "机械 。 NL 打出后解除升级 。 NL 造成 !D! 点伤害，获得 !B! 点 格挡 。 NL 如果手牌中有其他 机械 牌，将 !M! 张 *生产机械 置入手牌。"
   },
   "shadowverse:MeetTheLevinSisters": {
     "NAME": "雷维翁姐妹登场！",
@@ -3073,7 +3077,7 @@
   },
   "shadowverse:Mona": {
     "NAME": "雷维翁魔法师·蜜姆",
-    "DESCRIPTION": "雷维翁 。 NL 获得 !B! 点 格挡，获得 [E] 。 NL 如果手牌中有其他 雷维翁 牌，再获得 [E] 。"
+    "DESCRIPTION": "雷维翁 。 NL 获得 !B! 点 格挡 ，获得 [E] 。 NL 如果手牌中有其他 雷维翁 牌，再获得 [E] 。"
   },
   "shadowverse:Mena": {
     "NAME": "雷维翁武斗家·梅姆",

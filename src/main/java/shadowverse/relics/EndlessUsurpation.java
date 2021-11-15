@@ -44,11 +44,8 @@ public class EndlessUsurpation extends CustomRelic {
     public void atTurnStart() {
         AbstractPlayer p = AbstractDungeon.player;
         int r1 = AbstractDungeon.cardRandomRng.random(3);
-        int r2 = AbstractDungeon.cardRandomRng.random(2);
         AbstractCard c1 = returnProphecy().get(r1);
-        AbstractCard c2 = returnProphecy().get((r1 + r2 + 1) % 4);
         addToBot(new MakeTempCardInHandAction(c1));
-        addToBot(new MakeTempCardInHandAction(c2));
     }
 
     @Override

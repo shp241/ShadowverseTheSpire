@@ -44,6 +44,7 @@ import java.util.Arrays;
      ArrayList<AbstractCard> list = new ArrayList<>();
      list.add(new ShadowBahmut());
      list.add(new ShiningValkyrie());
+     list.add(new LegendSwordCommander());
      list.add(new SevensForceSorcerer());
      list.add(new DeadSoulTaker());
      list.add(new AbyssDoomLord());

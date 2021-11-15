@@ -35,7 +35,7 @@ public class ShadowversePain extends CustomCard {
     public void triggerOnOtherCardPlayed(AbstractCard c) {
         AbstractPlayer p = AbstractDungeon.player;
         if (c.cardID.contains("shadowverse")) {
-            addToBot(new DamageAction(p, new DamageInfo(p, 2, DamageInfo.DamageType.THORNS)));
+            addToBot((AbstractGameAction)new LoseHPAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)AbstractDungeon.player, 1));
         }
     }
 
