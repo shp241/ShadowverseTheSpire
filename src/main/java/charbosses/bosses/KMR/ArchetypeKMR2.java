@@ -45,8 +45,8 @@
            addToList(cardsList, (AbstractCard)new TheGreatCreation(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnGenesisArtifact(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnBlackenedScripture(),extraUpgrades);
-           addToList(cardsList, (AbstractCard)new EnRalmia(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnProtectArtifact(), extraUpgrades);
+           addToList(cardsList, (AbstractCard)new MysticArtifact(),extraUpgrades);
            this.turn++;
            break;
          case 2:
@@ -54,14 +54,12 @@
            addToList(cardsList, (AbstractCard)new EnBlitzArtifact(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnMagisteelLion(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new ShadowMode(),extraUpgrades);
-           addToList(cardsList, (AbstractCard)new EnCannonArtifact(),extraUpgrades);
            this.turn++;
            break;
          case 3:
-           addToList(cardsList, (AbstractCard)new EnMoonAlmiraj(),extraUpgrades);
-           addToList(cardsList, (AbstractCard)new EnSpineLucille(),extraUpgrades);
-           addToList(cardsList, (AbstractCard)new EnAcceleratium(),extraUpgrades);
+           addToList(cardsList, (AbstractCard)new EnBlitzArtifact(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnProtectArtifact(),extraUpgrades);
+           addToList(cardsList, (AbstractCard)new EnAcceleratium(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnCannonArtifact(),extraUpgrades);
            this.turn++;
            break;
@@ -69,7 +67,7 @@
            addToList(cardsList, (AbstractCard)new EnEdgeArtifact(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnGenesisArtifact(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnRalmia(),extraUpgrades);
-           addToList(cardsList, (AbstractCard)new EnLucifer(),extraUpgrades);
+           addToList(cardsList, (AbstractCard)new EnMysticArtifact(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnBlackenedScripture(),extraUpgrades);
            this.turn = 0;
            this.looped = true;
@@ -81,12 +79,12 @@
            addToList(cardsList, (AbstractCard)new TheGreatCreation(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnSpineLucille(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnMagisteelLion(),extraUpgrades);
-           addToList(cardsList, (AbstractCard)new EnCannonArtifact(),extraUpgrades);
+           addToList(cardsList, (AbstractCard)new EnMysticArtifact(),extraUpgrades);
            this.turn++;
            break;
          case 1:
            addToList(cardsList, (AbstractCard)new EnBlackenedScripture(),extraUpgrades);
-           addToList(cardsList, (AbstractCard)new EnMysticArtifact(),extraUpgrades);
+           addToList(cardsList, (AbstractCard)new EnCannonArtifact(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnProtectArtifact(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnBlitzArtifact(),extraUpgrades);
            this.turn++;

@@ -973,6 +973,26 @@
       " 点伤害。"
     ]
   },
+  "shadowverse:SevensForceSorcererPower": {
+    "NAME": "七彩之力召唤师",
+    "DESCRIPTIONS": [
+      "打出 #b",
+      " 张技能牌后，消灭所有敌人并失去此效果。"
+    ]
+  },
+  "shadowverse:ShiningValkyriePower": {
+    "NAME": "闪耀女武神",
+    "DESCRIPTIONS": [
+      "每回合开始增加 #b1 张 #y妖精 到手中。每当打出 #y妖精 时，获得 #b2 点 力量 和 #b1 点 敏捷 。"
+    ]
+  },
+  "shadowverse:AbyssDoomLordPower": {
+    "NAME": "深渊毁灭领主",
+    "DESCRIPTIONS": [
+      " #b",
+      " 回合内，你受到的伤害变为0。"
+    ]
+  },
   "shadowverse:DiscipleOfUsurpationPower": {
     "NAME": "强夺的信徒",
     "DESCRIPTIONS": [

@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.common.SuicideAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
+import com.megacrit.cardcrawl.actions.watcher.JudgementAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -64,11 +65,24 @@ public class ShadowBahmut
                 addToBot((AbstractGameAction) new SuicideAction(mo));
             }
         }
-    }
-
-
-    public AbstractCard makeCopy() {
-        return (AbstractCard) new ShadowBahmut();
-    }
-}
+       if (abstractMonster != null)
+           addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new WeightyImpactEffect(abstractMonster.hb.cX, abstractMonster.hb.cY)));
+       addToBot((AbstractGameAction)new WaitAction(0.8F));
+       if (abstractMonster.currentHealth>this.damage){
+           abstractMonster.currentHealth-=this.damage;
+       }else {
+           addToBot((AbstractGameAction)new JudgementAction((AbstractCreature)abstractMonster, this.damage));
+       }
+       for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
+           if (!mo.isDeadOrEscaped() && mo.hasPower(MinionPower.POWER_ID)) {
+               addToBot((AbstractGameAction) new SuicideAction(mo));
+           }
+       }
+   }
+ 
+   
+   public AbstractCard makeCopy() {
+     return (AbstractCard)new ShadowBahmut();
+   }
+ }
 
