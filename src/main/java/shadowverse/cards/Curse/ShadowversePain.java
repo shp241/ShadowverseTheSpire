@@ -2,10 +2,12 @@ package shadowverse.cards.Curse;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -31,8 +33,10 @@ public class ShadowversePain extends CustomCard {
 
     @Override
     public void triggerOnOtherCardPlayed(AbstractCard c) {
-        if (c.cardID.indexOf("shadowverse")!=-1)
-            addToBot((AbstractGameAction)new LoseHPAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)AbstractDungeon.player, 1));
+        AbstractPlayer p = AbstractDungeon.player;
+        if (c.cardID.contains("shadowverse")) {
+            addToBot(new DamageAction(p, new DamageInfo(p, 2, DamageInfo.DamageType.THORNS)));
+        }
     }
 
     @Override
@@ -40,7 +44,7 @@ public class ShadowversePain extends CustomCard {
     }
 
     @Override
-    public AbstractCard makeCopy(){
+    public AbstractCard makeCopy() {
         return new ShadowversePain();
     }
 }

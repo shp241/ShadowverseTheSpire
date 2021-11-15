@@ -1,5 +1,4 @@
- package shadowverse.cards.Temp;
- 
+package shadowverse.cards.Temp;
 
 
 import basemod.abstracts.CustomCard;
@@ -27,50 +26,49 @@ import shadowverse.characters.Witchcraft;
 import shadowverse.orbs.Minion;
 
 
- public class ShadowBahmut
-   extends CustomCard
- {
-   public static final String ID = "shadowverse:ShadowBahmut";
-   public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:ShadowBahmut");
-   public static final String NAME = cardStrings.NAME;
-   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-   public static final String IMG_PATH = "img/cards/ShadowBahmut.png";
+public class ShadowBahmut
+        extends CustomCard {
+    public static final String ID = "shadowverse:ShadowBahmut";
+    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:ShadowBahmut");
+    public static final String NAME = cardStrings.NAME;
+    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String IMG_PATH = "img/cards/ShadowBahmut.png";
 
-   public ShadowBahmut() {
-     super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ENEMY);
-     this.baseDamage = 80;
-   }
- 
-   
-   public void upgrade() {
-     if (!this.upgraded) {
-       upgradeName();
-       upgradeDamage(20);
-     } 
-   }
- 
-   
-   public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-       for (AbstractPower pow : abstractMonster.powers){
-             if (pow.type != AbstractPower.PowerType.DEBUFF && pow.ID!="Invincible" &&pow.ID!="Mode Shift"&&pow.ID!="Split"&&pow.ID!="Unawakened"&&pow.ID!="Life Link"&&pow.ID!="Fading"&&pow.ID!="Stasis"&&pow.ID!="Minion"&&pow.ID!="Shifting"
-                 && pow.ID != StrengthPower.POWER_ID && pow.ID != DexterityPower.POWER_ID){
-                 addToBot((AbstractGameAction) new RemoveSpecificPowerAction(pow.owner,abstractPlayer,pow.ID));
-             }
+    public ShadowBahmut() {
+        super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ENEMY);
+        this.baseDamage = 80;
+    }
+
+
+    public void upgrade() {
+        if (!this.upgraded) {
+            upgradeName();
+            upgradeDamage(20);
         }
-       if (abstractMonster != null)
-           addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new WeightyImpactEffect(abstractMonster.hb.cX, abstractMonster.hb.cY)));
-       addToBot((AbstractGameAction)new WaitAction(0.8F));
-       abstractMonster.currentHealth-=this.damage;
-       for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-           if (!mo.isDeadOrEscaped() && mo.hasPower(MinionPower.POWER_ID)) {
-               addToBot((AbstractGameAction) new SuicideAction(mo));
-           }
-       }
-   }
- 
-   
-   public AbstractCard makeCopy() {
-     return (AbstractCard)new ShadowBahmut();
-   }
- }
+    }
+
+
+    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+        for (AbstractPower pow : abstractMonster.powers) {
+            if (pow.type != AbstractPower.PowerType.DEBUFF && pow.ID != "Invincible" && pow.ID != "Mode Shift" && pow.ID != "Split" && pow.ID != "Unawakened" && pow.ID != "Life Link" && pow.ID != "Fading" && pow.ID != "Stasis" && pow.ID != "Minion" && pow.ID != "Shifting"
+                    && pow.ID != StrengthPower.POWER_ID && pow.ID != DexterityPower.POWER_ID) {
+                addToBot((AbstractGameAction) new RemoveSpecificPowerAction(pow.owner, abstractPlayer, pow.ID));
+            }
+        }
+        if (abstractMonster != null)
+            addToBot((AbstractGameAction) new VFXAction((AbstractGameEffect) new WeightyImpactEffect(abstractMonster.hb.cX, abstractMonster.hb.cY)));
+        addToBot((AbstractGameAction) new WaitAction(0.8F));
+        abstractMonster.currentHealth -= Math.min(this.damage, abstractMonster.currentHealth - 1);
+        for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
+            if (!mo.isDeadOrEscaped() && mo.hasPower(MinionPower.POWER_ID)) {
+                addToBot((AbstractGameAction) new SuicideAction(mo));
+            }
+        }
+    }
+
+
+    public AbstractCard makeCopy() {
+        return (AbstractCard) new ShadowBahmut();
+    }
+}
 

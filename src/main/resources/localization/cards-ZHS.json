@@ -2596,7 +2596,7 @@
   },
   "shadowverse:ShadowversePain": {
     "NAME": "影之诗不过是折磨你们的工具",
-    "DESCRIPTION": "每当打出影之诗牌时，失去1点生命。"
+    "DESCRIPTION": "每当打出影之诗牌时，受到2点伤害。"
   },
   "shadowverse:SacredLion": {
     "NAME": "神圣之狮",

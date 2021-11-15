@@ -23,7 +23,7 @@ public class MirrorImage extends CustomCard {
     public static final String[] TEXT = CardCrawlGame.languagePack.getUIString("ArmamentsAction").TEXT;
 
     public MirrorImage() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
     }

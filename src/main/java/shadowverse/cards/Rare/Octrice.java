@@ -48,6 +48,7 @@ public class Octrice extends CustomCard {
 
     public Octrice() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ENEMY);
+        this.tags.add(CardTags.HEALING);
         this.baseMagicNumber = 10;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;

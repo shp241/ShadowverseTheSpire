@@ -31,6 +31,7 @@ public class LuxbladeArriet extends CustomCard {
 
     public LuxbladeArriet(int upgrades) {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.SELF);
+        this.tags.add(CardTags.HEALING);
         this.baseBlock = 10;
         this.baseMagicNumber = 5;
         this.magicNumber = this.baseMagicNumber;

@@ -11,15 +11,16 @@ import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToHandEffect;
 import java.util.ArrayList;
 
 public class ValseAction
-        extends DiscoveryAction
-{
+        extends DiscoveryAction {
     private ArrayList<AbstractCard> card = new ArrayList<>();
     private boolean retrieveCard = false;
+    private boolean upgrade = false;
 
-    public ValseAction(AbstractCard... card) {
+    public ValseAction(boolean upgrade, AbstractCard... card) {
         this.actionType = ActionType.CARD_MANIPULATION;
         this.duration = Settings.ACTION_DUR_FAST;
         this.amount = 1;
+        this.upgrade = upgrade;
         for (AbstractCard c : card) {
             this.card.add(c);
         }
@@ -47,14 +48,16 @@ public class ValseAction
                 }
                 disCard.current_x = -1000.0F * Settings.xScale;
                 disCard2.current_x = -1000.0F * Settings.xScale + AbstractCard.IMG_HEIGHT_S;
-                disCard.selfRetain = true;
-                disCard.rawDescription += " NL 虚无 。 NL 消耗 。";
-                disCard.initializeDescription();
-                disCard.applyPowers();
-                disCard2.selfRetain = true;
-                disCard2.rawDescription += " NL 虚无 。 NL 消耗 。";
-                disCard2.initializeDescription();
-                disCard2.applyPowers();
+                if (this.upgrade) {
+                    disCard.selfRetain = true;
+                    disCard.rawDescription += " NL 保留 。";
+                    disCard.initializeDescription();
+                    disCard.applyPowers();
+                    disCard2.selfRetain = true;
+                    disCard2.rawDescription += " NL 保留 。";
+                    disCard2.initializeDescription();
+                    disCard2.applyPowers();
+                }
                 if (this.amount == 1) {
                     if (AbstractDungeon.player.hand.size() < 10) {
                         AbstractDungeon.effectList.add(new ShowCardAndAddToHandEffect(disCard, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));

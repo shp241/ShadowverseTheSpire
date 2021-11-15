@@ -28,7 +28,7 @@ public class CurseOfTheBlackDragon extends CustomCard {
     }
 
     @Override
-    public void triggerOnEndOfPlayerTurn() {
+    public void onRetained() {
         addToBot((AbstractGameAction)new LoseHPAction((AbstractCreature) AbstractDungeon.player, (AbstractCreature)AbstractDungeon.player, 1));
     }
 

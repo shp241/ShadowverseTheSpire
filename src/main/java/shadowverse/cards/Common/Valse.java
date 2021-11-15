@@ -38,7 +38,7 @@ public class Valse extends CustomCard {
 
     public Valse() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
-        this.baseDamage = 4;
+        this.baseDamage = 6;
     }
 
     @Override
@@ -75,7 +75,7 @@ public class Valse extends CustomCard {
         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         AbstractCard c1 = new HolyPurebomb();
         AbstractCard c2 = new FatalSpellbomb();
-        addToBot(new ValseAction(c1, c2));
+        addToBot(new ValseAction(this.upgraded, c1, c2));
     }
 
 
