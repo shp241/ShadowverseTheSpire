@@ -5,10 +5,6 @@
  import charbosses.cards.nemesis.*;
  import com.megacrit.cardcrawl.cards.AbstractCard;
  import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
- import shadowverse.cards.Rare.GenesisArtifact;
- import shadowverse.cards.Rare.Ralmia;
- import shadowverse.cards.Temp.GuardArtifact;
- import shadowverse.cards.Temp.MysticArtifact;
 
  import java.util.ArrayList;
 
@@ -46,7 +42,7 @@
            addToList(cardsList, (AbstractCard)new EnGenesisArtifact(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnBlackenedScripture(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnProtectArtifact(), extraUpgrades);
-           addToList(cardsList, (AbstractCard)new MysticArtifact(),extraUpgrades);
+           addToList(cardsList, (AbstractCard)new EnMysticArtifact(),extraUpgrades);
            this.turn++;
            break;
          case 2:

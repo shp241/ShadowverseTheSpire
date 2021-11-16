@@ -216,14 +216,22 @@
     "NAME": "阻断的触手：谢幕曲",
     "DESCRIPTIONS": [
       "死亡时，回复 #y贝尔冯特·阿德莱特 #b",
-      "点生命值。增加1张 #y马纳之力 到手中。"
+      " 点生命值。增加1张 #y马纳之力 到手中。"
     ]
   },
   "shadowverse:chushouExplosionPower": {
     "NAME": "蹂躏的触手：谢幕曲",
     "DESCRIPTIONS": [
       "死亡时，造成 #b",
-      "点伤害。增加1张 #y马纳之力 到手中。"
+      " 点伤害。增加1张 #y马纳之力 到手中。"
+    ]
+  },
+  "shadowverse:WorldEliminatorLastWordPower": {
+    "NAME": "世界消除者：谢幕曲",
+    "DESCRIPTIONS": [
+      "死亡时，造成 #b",
+      " 点伤害。回复 #y莱昂·奥朗什 #b",
+      " 点生命值。"
     ]
   },
   "shadowverse:ManaBarrier": {

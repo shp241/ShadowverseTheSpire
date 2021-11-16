@@ -684,6 +684,7 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("MoonAlmiraj", new Sfx("sounds/MoonAlmiraj.wav"));
         reflectedMap.put("KMR1", new Sfx("sounds/KMR1.wav"));
         reflectedMap.put("KMR2", new Sfx("sounds/KMR2.wav"));
+        reflectedMap.put("KMR3", new Sfx("sounds/KMR3.wav"));
         reflectedMap.put("Rowen", new Sfx("sounds/Rowen.wav"));
         reflectedMap.put("SevensForceSorcerer", new Sfx("sounds/SevensForceSorcerer.wav"));
         reflectedMap.put("ShiningValkyrie", new Sfx("sounds/ShiningValkyrie.wav"));

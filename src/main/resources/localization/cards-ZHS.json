@@ -2623,6 +2623,26 @@
     "NAME": "影之诗背叛了我！",
     "DESCRIPTION": "回合结束时，增加1张复制品到弃牌堆。 NL 消耗 。"
   },
+  "shadowverse:CalamityMode": {
+    "NAME": "灾厄模式",
+    "DESCRIPTION": "使你的卡组转变为灾厄卡组。 NL 消耗 。"
+  },
+  "shadowverse:JusticeTyrant": {
+    "NAME": "正义暴君",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 召唤4只 *世界消除者 。 NL 增加1张 *进化点 到敌人手中。 NL 使敌人下回合抽牌数减少1。"
+  },
+  "shadowverse:ShangrilaBreaker": {
+    "NAME": "乐园破坏者",
+    "DESCRIPTION": "造成 !D! 点伤害10次。 NL 获得 !B! 点 格挡 。"
+  },
+  "shadowverse:CalamityEnd": {
+    "NAME": "灾厄终结",
+    "DESCRIPTION": "消灭敌人。"
+  },
+  "shadowverse:EnDeath": {
+    "NAME": "死神",
+    "DESCRIPTION": "抽到这张牌时，你死亡。"
+  },
   "shadowverse:SacredLion": {
     "NAME": "神圣之狮",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得1层 缓冲 。 NL 本回合受到攻击时对攻击者造成 !M! 点伤害 。 NL 将1张 *狮子的祝福 加入敌人的手中。"

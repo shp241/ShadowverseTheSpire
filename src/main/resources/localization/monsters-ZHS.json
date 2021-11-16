@@ -29,6 +29,14 @@
     "DIALOG": [
     ]
   },
+  "shadowverse:WorldEliminator": {
+    "MOVES": [
+      ""
+    ],
+    "NAME": "世界消除者",
+    "DIALOG": [
+    ]
+  },
   "shadowverse:Iceschillendrig": {
     "MOVES": [
       "死亡刑罚"
@@ -148,7 +156,8 @@
     "NAME": "莱昂·奥朗什",
     "DIALOG": [
       "~我会手下留情的，你能承受得住吗？ ~",
-      "@你可要好好回应我的期待啊！@"
+      "@你可要好好回应我的期待啊！@",
+      "~我可是神！我可是支配者！我可是人类的顶点！ ~"
     ]
   }
 }

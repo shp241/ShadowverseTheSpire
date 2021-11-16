@@ -45,6 +45,7 @@ public class KMR
     private static final MonsterStrings monsterStrings = CardCrawlGame.languagePack.getMonsterStrings("shadowverse:KMR");
     public static final String NAME = monsterStrings.NAME;
     public static final String[] DIALOG = monsterStrings.DIALOG;
+    private boolean secondPhase = true;
 //    public static shadowverse.animation.AbstractAnimation bigAnimation = new shadowverse.animation.AbstractAnimation("img/animation/KMR/class_3208.atlas", "img/animation/KMR/class_3208.json", com.megacrit.cardcrawl.core.Settings.M_W / 1600.0F, com.megacrit.cardcrawl.core.Settings.M_W / 2.0F, com.megacrit.cardcrawl.core.Settings.M_H / 2.0F, 0F, 0F);
 
 
@@ -95,7 +96,11 @@ public class KMR
     public void takeTurn() {
         if (this.nextMove == 20) {
             AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new VFXAction((AbstractCreature) this, (AbstractGameEffect) new IntenseZoomEffect(this.hb.cX, this.hb.cY, true), 0.05F, true));
-            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ChangeStateAction(this, "REBIRTH"));
+            if (this.secondPhase){
+                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ChangeStateAction(this, "REBIRTH"));
+            }else {
+                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ChangeStateAction(this, "CALAMITY"));
+            }
             setMove((byte) 0, Intent.NONE);
         } else {
             super.takeTurn();
@@ -125,6 +130,24 @@ public class KMR
                 this.chosenArchetype.addedPreBattle();
 //                addToBot(new AnimationAction(bigAnimation, "extra", 3.0F, false));
                 break;
+            case "CALAMITY":
+                if (AbstractDungeon.ascensionLevel >= 19) {
+                    this.maxHealth = 1000;
+                } else if (AbstractDungeon.ascensionLevel >= 4) {
+                    this.maxHealth = 900;
+                } else {
+                    this.maxHealth = 800;
+                }
+                this.halfDead = false;
+                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ShoutAction((AbstractCreature) this, DIALOG[2]));
+                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SFXAction("KMR3"));
+                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new HealAction((AbstractCreature) this, (AbstractCreature) this, this.maxHealth));
+                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new CanLoseAction());
+                AbstractBossDeckArchetype archetype3 = new ArchetypeKMR3();
+                archetype3.initialize();
+                this.chosenArchetype = archetype3;
+                this.chosenArchetype.addedPreBattle();
+                break;
             default:
                 break;
         }
@@ -135,9 +158,10 @@ public class KMR
 
     public void damage(DamageInfo info) {
         super.damage(info);
-        if (this.currentHealth <= 0 && !this.halfDead) {
+        if (this.currentHealth <= 0 && !this.halfDead &&this.secondPhase) {
             if ((AbstractDungeon.getCurrRoom()).cannotLose == true) {
                 this.halfDead = true;
+                this.secondPhase = false;
                 for (AbstractPower p : this.powers)
                     p.onDeath();
                 for (AbstractRelic r : AbstractDungeon.player.relics)
@@ -151,9 +175,24 @@ public class KMR
                 setMove((byte) 20, AbstractMonster.Intent.UNKNOWN);
                 createIntent();
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SetMoveAction(this, (byte) 20, AbstractMonster.Intent.UNKNOWN));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new CanLoseAction());
                 applyPowers();
             }
+        }else if (this.currentHealth <= 0 && !this.halfDead && !this.secondPhase){
+            for (AbstractPower p : this.powers)
+                p.onDeath();
+            for (AbstractRelic r : AbstractDungeon.player.relics)
+                r.onMonsterDeath(this);
+            addToTop((AbstractGameAction) new ClearCardQueueAction());
+            for (Iterator<AbstractPower> s = this.powers.iterator(); s.hasNext(); ) {
+                AbstractPower p = s.next();
+                if (p.type == AbstractPower.PowerType.DEBUFF || p.ID.equals(InvinciblePower.POWER_ID))
+                    s.remove();
+            }
+            setMove((byte) 20, AbstractMonster.Intent.UNKNOWN);
+            createIntent();
+            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SetMoveAction(this, (byte) 20, AbstractMonster.Intent.UNKNOWN));
+            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new CanLoseAction());
+            applyPowers();
         }
     }
 

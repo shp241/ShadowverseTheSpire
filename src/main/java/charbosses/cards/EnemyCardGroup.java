@@ -175,7 +175,7 @@
        int cardsinrow = Math.min(this.group.size() - 10 * (int)Math.floor((i / 10.0F)), 10);
        float widthspacing = AbstractCard.IMG_WIDTH_S + 100.0F * Settings.scale;
        c.target_x = Settings.WIDTH * 0.9F - (cardsinrow + 0.5F) * widthspacing * 0.35F + widthspacing * 0.35F * (i % 10);
-       c.target_y = Settings.HEIGHT * 0.56F + AbstractCard.IMG_HEIGHT_S * 0.35F * ((float)Math.floor((i / 10.0F)) + ((this.group.size() > 10) ? 0.0F : 1.0F));
+       c.target_y = Settings.HEIGHT * 0.76F + AbstractCard.IMG_HEIGHT_S * 0.35F * ((float)Math.floor((i / 10.0F)) + ((this.group.size() > 10) ? 0.0F : 1.0F));
        if (((AbstractBossCard)c).hov2 && c.hb.hovered && (
          hoveredcard == null || hov2holder == c)) {
          hoveredcard = c;

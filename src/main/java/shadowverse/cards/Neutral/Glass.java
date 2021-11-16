@@ -37,7 +37,7 @@ public class Glass extends AbstractNeutralCard{
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot((AbstractGameAction)new SFXAction("Glass"));
         if (abstractPlayer.hasPower("shadowverse:FlamePower")){
-            addToTop((AbstractGameAction)new ReducePowerAction(abstractPlayer, abstractPlayer, "shadowverse:FlamePower", 1));
+            addToTop((AbstractGameAction)new ReducePowerAction(abstractPlayer, abstractPlayer, "shadowverse:FlamePower", 2));
             addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new FlameNGlassPower((AbstractCreature)abstractPlayer, 1), 1));
         }else
         addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new GlassPower((AbstractCreature)abstractPlayer, this.magicNumber), this.magicNumber));

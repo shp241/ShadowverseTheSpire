@@ -44,11 +44,14 @@ public class Altersphere extends CustomCard {
 
     @Override
     public void triggerOnOtherCardPlayed(AbstractCard c) {
-        int rnd = AbstractDungeon.cardRandomRng.random(AbstractDungeon.player.hand.size() - 1);
-        AbstractCard toExhaust = null;
-        toExhaust = AbstractDungeon.player.hand.group.get(rnd);
-        addToBot((AbstractGameAction) new ExhaustSpecificCardAction(toExhaust, AbstractDungeon.player.hand));
-        addToBot((AbstractGameAction) new MakeTempCardInHandAction(group.getRandomCard(true)));
+        int size = AbstractDungeon.player.hand.group.size() - 1;
+        if (size>0){
+            int rnd = AbstractDungeon.cardRandomRng.random(size);
+            AbstractCard toExhaust = null;
+            toExhaust = AbstractDungeon.player.hand.group.get(rnd);
+            addToBot((AbstractGameAction) new ExhaustSpecificCardAction(toExhaust, AbstractDungeon.player.hand));
+            addToBot((AbstractGameAction) new MakeTempCardInHandAction(group.getRandomCard(true)));
+        }
     }
 
     @Override

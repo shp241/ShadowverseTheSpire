@@ -32,7 +32,7 @@ public class Flame extends AbstractNeutralCard{
     @Override
     public void upgrade() {
         if(!this.upgraded){
-            upgradeMagicNumber(1);
+            upgradeMagicNumber(2);
             upgradeName();
         }
     }
