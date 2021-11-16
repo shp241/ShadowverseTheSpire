@@ -123,7 +123,6 @@ public class KMR
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ShoutAction((AbstractCreature) this, DIALOG[1]));
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SFXAction("KMR2"));
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new HealAction((AbstractCreature) this, (AbstractCreature) this, this.maxHealth));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new CanLoseAction());
                 AbstractBossDeckArchetype archetype = new ArchetypeKMR2();
                 archetype.initialize();
                 this.chosenArchetype = archetype;
