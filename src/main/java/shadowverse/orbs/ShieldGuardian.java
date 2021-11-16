@@ -47,6 +47,6 @@ public class ShieldGuardian  extends Minion {
 
     @Override
     public void effect() {
-        AbstractDungeon.actionManager.addToTop(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, this.attack * 2));
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, this.attack * 2));
     }
 }

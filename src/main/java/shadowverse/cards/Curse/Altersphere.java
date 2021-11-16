@@ -23,19 +23,18 @@ public class Altersphere extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Altersphere.png";
 
-    public static CardGroup group = null;
+    public CardGroup group;
 
     public Altersphere() {
         super(ID, NAME, IMG_PATH, -2, DESCRIPTION, CardType.CURSE, CardColor.CURSE, CardRarity.SPECIAL, CardTarget.NONE);
         this.isEthereal = true;
-        if (group == null) {
-            group = new CardGroup(CardGroup.CardGroupType.CARD_POOL);
-            for (AbstractCard q : CardLibrary.getAllCards()) {
-                if (q.cardID.contains("shadowverse") && q.rarity != CardRarity.SPECIAL) {
-                    group.addToBottom(q.makeCopy());
-                }
+        group = new CardGroup(CardGroup.CardGroupType.CARD_POOL);
+        for (AbstractCard q : CardLibrary.getAllCards()) {
+            if (q.cardID.contains("shadowverse") && q.rarity != CardRarity.SPECIAL) {
+                group.addToBottom(q.makeCopy());
             }
         }
+
     }
 
     @Override

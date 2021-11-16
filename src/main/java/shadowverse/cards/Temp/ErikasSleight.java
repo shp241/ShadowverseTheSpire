@@ -21,7 +21,7 @@ public class ErikasSleight extends CustomCard {
     public static final String IMG_PATH = "img/cards/ErikasSleight.png";
 
     public ErikasSleight() {
-        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, -2, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.SELF);
         this.exhaust = true;
     }
 

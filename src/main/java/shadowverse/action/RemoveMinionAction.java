@@ -1,12 +1,15 @@
 package shadowverse.action;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.orbs.EmptyOrbSlot;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import shadowverse.orbs.Minion;
+import shadowverse.powers.Cemetery;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -24,6 +27,7 @@ public class RemoveMinionAction extends AbstractGameAction {
             for (int n = 0; n < p.orbs.size(); n++) {
                 if ((p.orbs.get(n) instanceof Minion) && ((Minion) p.orbs.get(n)).defense <= 0) {
                     ((Minion) p.orbs.get(n)).onRemove();
+                    addToBot((AbstractGameAction)new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,(AbstractPower)new Cemetery(AbstractDungeon.player,1),1));
                     AbstractOrb orbSlot = new EmptyOrbSlot((p.orbs.get(n)).cX, p.orbs.get(n).cY);
                     p.orbs.set(n, orbSlot);
                 }

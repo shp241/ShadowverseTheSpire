@@ -38,6 +38,7 @@ public class Sera extends CustomCard {
 
     public Sera() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.SELF);
+        this.tags.add(CardTags.HEALING);
         this.baseBlock = 12;
         this.baseMagicNumber = this.magicNumber = 3;
         this.exhaust = true;

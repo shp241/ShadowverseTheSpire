@@ -46,7 +46,7 @@
       "NAMES": [
         "机械"
       ],
-      "DESCRIPTION": ""
+      "DESCRIPTION": "兵种。 NL 以 #y生产机械 、 #y修复模式 为代表，普遍擅长制造衍生牌。"
     },
     {
       "NAMES": [
@@ -64,19 +64,19 @@
       "NAMES": [
         "自然"
       ],
-      "DESCRIPTION": ""
+      "DESCRIPTION": "兵种。 NL 以 #y那塔拉的大树 为核心，触发额外效果。"
     },
     {
       "NAMES": [
         "创造物"
       ],
-      "DESCRIPTION": ""
+      "DESCRIPTION": "兵种。 NL #y复仇者 特有，与多种 #y创造物 配合发挥特效，说书代表。"
     },
     {
       "NAMES": [
         "那塔拉的大树"
       ],
-      "DESCRIPTION": "如果已有此能力，则打出 *那塔拉的大树 时抽1张牌。 "
+      "DESCRIPTION": "如果已有此能力，则打出 #y那塔拉的大树 时抽1张牌。 "
     },
     {
       "NAMES": [
@@ -88,13 +88,13 @@
       "NAMES": [
         "马纳历亚"
       ],
-      "DESCRIPTION": ""
+      "DESCRIPTION": "兵种。 NL #y巫师 特有，背景为马纳历亚学院相关，代表人物为 #y安 和 #y古蕾娅 。"
     },
     {
       "NAMES": [
         "雷维翁"
       ],
-      "DESCRIPTION": ""
+      "DESCRIPTION": "兵种。 NL #y皇家护卫 代表，背景为雷维翁骑士团，团长为 #y阿尔贝尔 。"
     },
     {
       "NAMES": [
@@ -281,6 +281,12 @@
         "财宝牌"
       ],
       "DESCRIPTION": "指 #y黄金短剑 、 #y黄金之杯 、 #y黄金之靴 、 #y黄金首饰 。"
+    },
+    {
+      "NAMES": [
+        "号令"
+      ],
+      "DESCRIPTION": "触发随从的 #y被动 效果。"
     },
     {
       "NAMES": [
