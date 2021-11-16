@@ -42,7 +42,7 @@ public class QueenHemera extends Minion {
 
     @Override
     public void onEvoke() {
-        AbstractDungeon.actionManager.addToTop(new SFXAction(this.ID.replace("shadowverse:", "") + "_Atk"));
+        AbstractDungeon.actionManager.addToBottom(new SFXAction(this.ID.replace("shadowverse:", "") + "_Atk"));
         for (int i = 0; i < defense; i++) {
             this.effect();
         }
@@ -53,7 +53,7 @@ public class QueenHemera extends Minion {
     @Override
     public void onEndOfTurn() {
         if (this.defense > 0) {
-            AbstractDungeon.actionManager.addToTop(new SFXAction(this.ID.replace("shadowverse:", "") + "_Atk"));
+            AbstractDungeon.actionManager.addToBottom(new SFXAction(this.ID.replace("shadowverse:", "") + "_Atk"));
             this.effect();
             AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(0, -1, this));
             this.updateDescription();
@@ -67,7 +67,7 @@ public class QueenHemera extends Minion {
 
     @Override
     public void effect() {
-        AbstractDungeon.actionManager.addToTop(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, this.attack * 2));
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, this.attack * 2));
         AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new Knight()));
     }
 }

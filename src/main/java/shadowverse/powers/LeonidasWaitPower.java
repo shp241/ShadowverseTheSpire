@@ -38,6 +38,7 @@ public class LeonidasWaitPower extends AbstractPower {
             flash();
             addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
             addToBot(new ApplyPowerAction(this.owner, this.owner, new LeonidasPower(this.owner)));
+            addToBot(new ApplyPowerAction(this.owner, this.owner, new LeonidasBuffPower(this.owner,1),1));
         }
         updateDescription();
     }

@@ -50,8 +50,8 @@ public class FrontguardGeneral extends Minion {
     @Override
     public void effect() {
         AbstractPlayer p = AbstractDungeon.player;
-        AbstractDungeon.actionManager.addToTop(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, 2 * this.attack));
-        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p, p, new NextTurnBlockPower(p, this.attack), this.attack));
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, 2 * this.attack));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new NextTurnBlockPower(p, this.attack), this.attack));
 
     }
 
