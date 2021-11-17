@@ -29,14 +29,16 @@ public class ShangrilaBreaker extends AbstractBossCard {
         super(ID, cardStrings.NAME, IMG_PATH, 3, cardStrings.DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.ENEMY, AbstractMonster.Intent.ATTACK);
         this.baseDamage = 1;
         this.baseBlock = 25;
+        this.baseMagicNumber = 10;
+        this.magicNumber = this.baseMagicNumber;
         this.isMultiDamage = true;
-        this.intentMultiAmt = 10;
+        this.intentMultiAmt = this.magicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot((AbstractGameAction)new GainBlockAction(m,this.block));
-        addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new BloodShotEffect(m.hb.cX, m.hb.cY, p.hb.cX, p.hb.cY, 10), 0.25F));
-        for (int i = 0; i < 10; i++)
+        addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new BloodShotEffect(m.hb.cX, m.hb.cY, p.hb.cX, p.hb.cY, this.magicNumber), 0.25F));
+        for (int i = 0; i < this.magicNumber; i++)
             addToBot((AbstractGameAction) new DamageAction((AbstractCreature) p, new DamageInfo((AbstractCreature) m, this.damage), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
     }
 
