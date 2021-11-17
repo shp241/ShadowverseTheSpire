@@ -39,13 +39,13 @@
 
      @Override
      public void atBattleStart(){
-       if (this.counter<3){
-           addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new Shiv()));
+       if (this.counter>=6){
+             addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new Tolerance()));
        }else if (this.counter>=3){
-           addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new Discovery()));
-       }else if (this.counter>=6){
-           addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new Tolerance()));
-       }
+             addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new Discovery()));
+       }else {
+             addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new Shiv()));
+         }
      }
 
      public void onLoseHp(int damageAmount) {

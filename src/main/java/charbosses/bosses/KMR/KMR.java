@@ -120,6 +120,7 @@ public class KMR
                     this.maxHealth = 800;
                 }
                 this.halfDead = false;
+                this.secondPhase = false;
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ShoutAction((AbstractCreature) this, DIALOG[1]));
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SFXAction("KMR2"));
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new HealAction((AbstractCreature) this, (AbstractCreature) this, this.maxHealth));
@@ -160,7 +161,6 @@ public class KMR
         if (this.currentHealth <= 0 && !this.halfDead &&this.secondPhase) {
             if ((AbstractDungeon.getCurrRoom()).cannotLose == true) {
                 this.halfDead = true;
-                this.secondPhase = false;
                 for (AbstractPower p : this.powers)
                     p.onDeath();
                 for (AbstractRelic r : AbstractDungeon.player.relics)
@@ -176,23 +176,15 @@ public class KMR
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SetMoveAction(this, (byte) 20, AbstractMonster.Intent.UNKNOWN));
                 applyPowers();
             }
-        }else if (this.currentHealth <= 0 && !this.halfDead && !this.secondPhase){
-            for (AbstractPower p : this.powers)
-                p.onDeath();
-            for (AbstractRelic r : AbstractDungeon.player.relics)
-                r.onMonsterDeath(this);
-            addToTop((AbstractGameAction) new ClearCardQueueAction());
-            for (Iterator<AbstractPower> s = this.powers.iterator(); s.hasNext(); ) {
-                AbstractPower p = s.next();
-                if (p.type == AbstractPower.PowerType.DEBUFF || p.ID.equals(InvinciblePower.POWER_ID))
-                    s.remove();
-            }
-            setMove((byte) 20, AbstractMonster.Intent.UNKNOWN);
-            createIntent();
-            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SetMoveAction(this, (byte) 20, AbstractMonster.Intent.UNKNOWN));
-            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new CanLoseAction());
-            applyPowers();
         }
+        if(!this.secondPhase){
+                for (Iterator<AbstractPower> s = this.powers.iterator(); s.hasNext(); ) {
+                    AbstractPower p = s.next();
+                    if (p.type == AbstractPower.PowerType.DEBUFF || p.ID.equals(InvinciblePower.POWER_ID))
+                        s.remove();
+                }
+        }
+
     }
 
 

@@ -448,7 +448,7 @@
   },
   "shadowverse:WrathfulIcefiend": {
     "NAME": "狂怒的冰魔",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 在本场战斗中 升级 手牌中的所有牌,增加2张 *进化点 到手中。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加2张 *进化点 到手中。"
   },
   "shadowverse:HellBeast": {
     "NAME": "异端的冥兽",
