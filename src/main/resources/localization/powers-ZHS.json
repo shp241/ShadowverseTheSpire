@@ -371,14 +371,20 @@
       "无法打出 #y能力牌 。"
     ]
   },
+  "shadowverse:ManaPower": {
+    "NAME": "魔力",
+    "DESCRIPTIONS": [
+      "你可以依靠 #g魔力 来抵御文森特的言语。回合内打出第 #b12 张牌时提高 #b1 层魔力，当你有 #b1 层以上的魔力时，抵御一次文森特的消除能力。"
+    ]
+  },
   "shadowverse:JudgmentWordPower": {
     "NAME": "宣判之词",
     "DESCRIPTIONS": [
-      "回合开始时，轮流获得 #y无法打出能力牌 、 #y无法造成伤害 、 #y无法获得格挡 、 #y邪咒 （一回合）。"
+      "回合开始时，轮流获得 #y无法造成伤害 、 #y无法打出能力牌 、 #y邪咒 （一回合） 、 #y无法获得格挡 。(回合结束时有剩余能量获得 #b1 层 #y人工制品 )"
     ]
   },
   "shadowverse:RapidFirePower": {
-    "NAME": "迅枪连击：瞄准",
+    "NAME": "集中火力",
     "DESCRIPTIONS": [
       "每打出 #b3 张牌，受到 #b",
       " 点伤害。"

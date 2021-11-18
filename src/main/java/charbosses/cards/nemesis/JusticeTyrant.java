@@ -40,10 +40,10 @@ public class JusticeTyrant extends AbstractBossCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
 //        addToBot(new AnimationAction(KMR.bigAnimation, "extra", 3.0F, false));
         addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)m, (AbstractCreature)m, this.block));
-        AbstractMonster m1 = new WorldEliminator(-70.0F + -135.0F * 1, MathUtils.random(-25.0F, 5.0F));
-        AbstractMonster m2 = new WorldEliminator(-70.0F + -135.0F * 2, MathUtils.random(-25.0F, 5.0F));
-        AbstractMonster m3 = new WorldEliminator(-70.0F + -135.0F * 1, MathUtils.random(35.0F, 65.0F));
-        AbstractMonster m4 = new WorldEliminator(-70.0F + -135.0F * 2, MathUtils.random(35.0F, 65.0F));
+        AbstractMonster m1 = new WorldEliminator(-70.0F + -185.0F * 1, MathUtils.random(-45.0F, 0.0F));
+        AbstractMonster m2 = new WorldEliminator(-70.0F + -185.0F * 2, MathUtils.random(-45.0F, 0.0F));
+        AbstractMonster m3 = new WorldEliminator(-70.0F + -185.0F * 1, MathUtils.random(25.0F, 55.0F));
+        AbstractMonster m4 = new WorldEliminator(-70.0F + -185.0F * 2, MathUtils.random(25.0F, 55.0F));
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new SpawnMonsterAction(m1, true));
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new SpawnMonsterAction(m2, true));
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new SpawnMonsterAction(m3, true));

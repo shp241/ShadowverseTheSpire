@@ -40,7 +40,7 @@ public class EnHereticalInquiry extends AbstractBossCard {
         return list;
     }
 
-    public static AbstractCard returnRndCurse(Random rng) {
+    public AbstractCard returnRndCurse(Random rng) {
         return rndCurse().get(rng.random(rndCurse().size() - 1));
     }
 

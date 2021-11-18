@@ -49,7 +49,6 @@ public class RapidFirePower
         if (count%3==0){
             flash();
             addToBot((AbstractGameAction)new DamageAction(this.owner, new DamageInfo(this.source, this.amount, DamageInfo.DamageType.THORNS),AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-            addToBot((AbstractGameAction)new SFXAction("RapidFire"));
         }
     }
 

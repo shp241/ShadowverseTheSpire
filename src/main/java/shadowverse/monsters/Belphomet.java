@@ -239,7 +239,7 @@ public class Belphomet extends CustomMonster {
             setMove((byte)1, AbstractMonster.Intent.UNKNOWN);
             return;
         }
-        if (i<50&&this.turnsTaken >= 3 && !lastMove((byte)4)) {
+        if (i<40&&this.turnsTaken >= 3 && !lastMove((byte)4)) {
             setMove((byte)4, AbstractMonster.Intent.STRONG_DEBUFF);
             return;
         }
@@ -247,7 +247,7 @@ public class Belphomet extends CustomMonster {
             setMove((byte)6, AbstractMonster.Intent.UNKNOWN);
             return;
         }
-        if (i <= 65 && !lastTwoMoves((byte)2)) {
+        if (i <= 65 && i>=40 && !lastMove((byte)2)) {
             setMove((byte)2, Intent.ATTACK_DEBUFF, ((DamageInfo)this.damage.get(0)).base, 3, true);
             return;
         }

@@ -2585,11 +2585,15 @@
   },
   "shadowverse:Rowen": {
     "NAME": "微笑绝杰·罗文",
-    "DESCRIPTION": "回合结束时，增加1张 *黑龙的诅咒到手中。"
+    "DESCRIPTION": "回合结束时，增加1张 *黑龙的诅咒 到手中。"
   },
   "shadowverse:CurseOfTheBlackDragon": {
     "NAME": "黑龙的诅咒",
     "DESCRIPTION": "保留 。 NL 回合结束时，失去1点生命。"
+  },
+  "shadowverse:FreezePower": {
+    "NAME": "冻结",
+    "DESCRIPTION": "你抽到的牌耗能增加 #b1 。"
   },
   "shadowverse:ShadowBahmut": {
     "NAME": "暗影巴哈姆特",
