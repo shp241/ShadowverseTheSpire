@@ -35,6 +35,7 @@ import com.megacrit.cardcrawl.vfx.combat.IntenseZoomEffect;
 import shadowverse.action.AnimationAction;
 import shadowverse.cards.Temp.KMRsPresent;
 import shadowverse.characters.Witchcraft;
+import shadowverse.powers.AbsoluteOnePower;
 import shadowverse.powers.LionSanctuaryPower;
 
 import java.util.Iterator;
@@ -131,6 +132,11 @@ public class KMR
 //                addToBot(new AnimationAction(bigAnimation, "extra", 3.0F, false));
                 break;
             case "CALAMITY":
+                for (Iterator<AbstractPower> s = this.powers.iterator(); s.hasNext(); ) {
+                    AbstractPower p = s.next();
+                    if (p.type == AbstractPower.PowerType.DEBUFF || p.ID.equals(InvinciblePower.POWER_ID) || p.ID.equals(AbsoluteOnePower.POWER_ID))
+                        s.remove();
+                }
                 if (AbstractDungeon.ascensionLevel >= 19) {
                     this.maxHealth = 1000;
                 } else if (AbstractDungeon.ascensionLevel >= 4) {
@@ -158,7 +164,7 @@ public class KMR
 
     public void damage(DamageInfo info) {
         super.damage(info);
-        if (this.currentHealth <= 0 && !this.halfDead &&this.secondPhase) {
+        if (this.currentHealth <= 0 && !this.halfDead) {
             if ((AbstractDungeon.getCurrRoom()).cannotLose == true) {
                 this.halfDead = true;
                 for (AbstractPower p : this.powers)
@@ -177,14 +183,6 @@ public class KMR
                 applyPowers();
             }
         }
-        if(!this.secondPhase){
-                for (Iterator<AbstractPower> s = this.powers.iterator(); s.hasNext(); ) {
-                    AbstractPower p = s.next();
-                    if (p.type == AbstractPower.PowerType.DEBUFF || p.ID.equals(InvinciblePower.POWER_ID))
-                        s.remove();
-                }
-        }
-
     }
 
 

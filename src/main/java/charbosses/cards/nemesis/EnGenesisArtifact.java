@@ -34,8 +34,8 @@ public class EnGenesisArtifact extends AbstractBossCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot((AbstractGameAction)new GainBlockAction(m,this.block));
-        addToBot((AbstractGameAction)new EnemyMakeTempCardInHandAction(new EnDefectArtifact()));
-        addToBot((AbstractGameAction)new EnemyMakeTempCardInHandAction(new EnGuardArtifact()));
+        addToBot((AbstractGameAction)new EnemyMakeTempCardInHandAction(new EnDefectArtifact(),1));
+        addToBot((AbstractGameAction)new EnemyMakeTempCardInHandAction(new EnGuardArtifact(),1));
     }
 
     public void upgrade() {

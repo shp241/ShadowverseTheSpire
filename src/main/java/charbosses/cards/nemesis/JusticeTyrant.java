@@ -42,8 +42,8 @@ public class JusticeTyrant extends AbstractBossCard {
         addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)m, (AbstractCreature)m, this.block));
         AbstractMonster m1 = new WorldEliminator(-70.0F + -185.0F * 1, MathUtils.random(-45.0F, 0.0F));
         AbstractMonster m2 = new WorldEliminator(-70.0F + -185.0F * 2, MathUtils.random(-45.0F, 0.0F));
-        AbstractMonster m3 = new WorldEliminator(-70.0F + -185.0F * 1, MathUtils.random(25.0F, 55.0F));
-        AbstractMonster m4 = new WorldEliminator(-70.0F + -185.0F * 2, MathUtils.random(25.0F, 55.0F));
+        AbstractMonster m3 = new WorldEliminator(-70.0F + -185.0F * 1, MathUtils.random(105.0F, 135.0F));
+        AbstractMonster m4 = new WorldEliminator(-70.0F + -185.0F * 2, MathUtils.random(105.0F, 135.0F));
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new SpawnMonsterAction(m1, true));
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new SpawnMonsterAction(m2, true));
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new SpawnMonsterAction(m3, true));
