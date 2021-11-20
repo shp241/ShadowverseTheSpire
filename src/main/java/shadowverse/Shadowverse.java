@@ -852,6 +852,7 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("FatalSpellbomb", new Sfx("sounds/FatalSpellbomb.wav"));
         reflectedMap.put("HolyPurebomb", new Sfx("sounds/HolyPurebomb.wav"));
         reflectedMap.put("Valse", new Sfx("sounds/Valse.wav"));
+        reflectedMap.put("Royal_Victory", new Sfx("sounds/Royal_Victory.wav"));
         /*     */
     }
 
