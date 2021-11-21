@@ -1,0 +1,55 @@
+{
+  "shadowverse:NeutralReward": {
+    "TEXT": [
+      "将一张中立牌加入你的牌组"
+    ]
+  },
+  "shadowverse:ClassReward": {
+    "TEXT": [
+      "将一张牌加入你的牌组"
+    ]
+  },
+  "shadowverse:ChooseToReduceCost": {
+    "TEXT": [
+      "降低耗能"
+    ]
+  },
+  "shadowverse:Burial": {
+    "TEXT": [
+      "葬送"
+    ]
+  },
+  "shadowverse:AndrealphusMod": {
+    "TEXT": [
+      " NL 谢幕曲 当这张牌被 消耗 时抽1张牌。"
+    ]
+  },
+  "shadowverse:ImmoralDesireMod1": {
+    "TEXT": [
+      " NL 谢幕曲 当这张牌被 消耗 时对全体敌人造成这张卡的基础伤害的伤害。"
+    ]
+  },
+  "shadowverse:ImmoralDesireMod2": {
+    "TEXT": [
+      " NL 谢幕曲 当这张牌被 消耗 时获得张牌的基础 格挡 的 临时生命 。"
+    ]
+  },
+  "shadowverse:applyEffect": {
+    "TEXT": [
+      "选择一张牌赋予效果"
+    ]
+  },
+  "shadowverse:MistolinaBayleonAction": {
+    "TEXT": [
+      "选择一张能力牌来消耗"
+    ]
+  },
+  "shadowverse:EnergyPanelTip": {
+    "TEXT": [
+      "敌人当前的能量。打出卡牌需要能量。"
+    ],
+    "EXTRA_TEXT": [
+      "能量"
+    ]
+  }
+}
