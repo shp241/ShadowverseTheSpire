@@ -21,6 +21,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
+import shadowverse.characters.Bishop;
 
 public class EnArdentSister extends AbstractBossCard {
     public static final String ID = "shadowverse:EnArdentSister";
@@ -30,7 +31,7 @@ public class EnArdentSister extends AbstractBossCard {
     public static final String IMG_PATH = "img/cards/ArdentSister.png";
 
     public EnArdentSister() {
-        super(ID, cardStrings.NAME, IMG_PATH, 1, cardStrings.DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.COMMON, CardTarget.ENEMY, AbstractMonster.Intent.ATTACK_BUFF);
+        super(ID, cardStrings.NAME, IMG_PATH, 1, cardStrings.DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.ENEMY, AbstractMonster.Intent.ATTACK_BUFF);
         this.baseDamage = 6;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;

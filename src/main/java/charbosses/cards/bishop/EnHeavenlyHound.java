@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.PlatedArmorPower;
+import shadowverse.characters.Bishop;
 
 public class EnHeavenlyHound extends AbstractBossCard {
     public static final String ID = "shadowverse:EnHeavenlyHound";
@@ -24,7 +25,7 @@ public class EnHeavenlyHound extends AbstractBossCard {
     public static final String IMG_PATH = "img/cards/HeavenlyHound.png";
 
     public EnHeavenlyHound() {
-        super(ID, cardStrings.NAME, IMG_PATH, 1, cardStrings.DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.COMMON, CardTarget.SELF, AbstractMonster.Intent.DEFEND_BUFF);
+        super(ID, cardStrings.NAME, IMG_PATH, 1, cardStrings.DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.SELF, AbstractMonster.Intent.DEFEND_BUFF);
         this.baseMagicNumber = 4;
         this.magicNumber = this.baseMagicNumber;
         this.baseBlock = 8;

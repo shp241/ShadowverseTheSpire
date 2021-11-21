@@ -19,6 +19,7 @@ import com.megacrit.cardcrawl.vfx.combat.ClashEffect;
 import com.megacrit.cardcrawl.vfx.combat.GrandFinalEffect;
 import shadowverse.cards.Curse.*;
 import shadowverse.cards.Temp.*;
+import shadowverse.characters.Bishop;
 
 import java.util.ArrayList;
 
@@ -45,7 +46,7 @@ public class EnHereticalInquiry extends AbstractBossCard {
     }
 
     public EnHereticalInquiry() {
-        super(ID, cardStrings.NAME, IMG_PATH, 1, cardStrings.DESCRIPTION, CardType.POWER, CardColor.COLORLESS, CardRarity.COMMON, CardTarget.ENEMY, AbstractMonster.Intent.STRONG_DEBUFF);
+        super(ID, cardStrings.NAME, IMG_PATH, 1, cardStrings.DESCRIPTION, CardType.POWER, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.ENEMY, AbstractMonster.Intent.STRONG_DEBUFF);
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
     }

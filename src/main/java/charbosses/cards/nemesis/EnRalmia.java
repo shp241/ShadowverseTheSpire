@@ -68,7 +68,6 @@ public class EnRalmia extends AbstractBossCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeDamage(4);
-            upgradeMagicNumber(1);
         }
     }
 

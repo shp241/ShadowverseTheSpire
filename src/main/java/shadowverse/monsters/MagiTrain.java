@@ -94,18 +94,18 @@ public class MagiTrain extends CustomMonster {
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new WaitAction(0.8F));
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new DamageAction((AbstractCreature)AbstractDungeon.player, this.damage
                         .get(0), AbstractGameAction.AttackEffect.SMASH));
-                setMove(STICKY_NAME, (byte)3, AbstractMonster.Intent.STRONG_DEBUFF);
+                setMove(PREP_NAME, (byte)2, AbstractMonster.Intent.UNKNOWN);
                 break;
             case 2:
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ShoutAction((AbstractCreature)this, DIALOG[0], 1.0F, 2.0F));
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ShakeScreenAction(0.3F, ScreenShake.ShakeDur.LONG, ScreenShake.ShakeIntensity.LOW));
-                setMove(SLAM_NAME, (byte)1, AbstractMonster.Intent.ATTACK, ((DamageInfo)this.damage.get(0)).base);
+                setMove(STICKY_NAME, (byte)3, AbstractMonster.Intent.STRONG_DEBUFF);
                 break;
             case 3:
                 addToBot((AbstractGameAction)new SFXAction("MagiTrain"));
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)this, (AbstractPower)new WeakPower((AbstractCreature)AbstractDungeon.player, 2, true), 2));
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)this, (AbstractPower)new VulnerablePower((AbstractCreature)AbstractDungeon.player, 2, true), 2));
-                setMove(PREP_NAME, (byte)2, AbstractMonster.Intent.UNKNOWN);
+                setMove(SLAM_NAME, (byte)1, AbstractMonster.Intent.ATTACK, ((DamageInfo)this.damage.get(0)).base);
                 break;
         }
     }
@@ -114,7 +114,7 @@ public class MagiTrain extends CustomMonster {
     protected void getMove(int num) {
         if (this.firstTurn) {
             this.firstTurn = false;
-            setMove(STICKY_NAME, (byte)3, AbstractMonster.Intent.STRONG_DEBUFF);
+            setMove(STICKY_NAME, (byte)2, AbstractMonster.Intent.STRONG_DEBUFF);
             return;
         }
     }

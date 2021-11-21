@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import com.megacrit.cardcrawl.vfx.combat.GrandFinalEffect;
+import shadowverse.characters.Bishop;
 
 public class EnThemisDecree extends AbstractBossCard {
     public static final String ID = "shadowverse:EnThemisDecree";
@@ -24,7 +25,7 @@ public class EnThemisDecree extends AbstractBossCard {
     public static final String IMG_PATH = "img/cards/ThemisDecree.png";
 
     public EnThemisDecree() {
-        super(ID, cardStrings.NAME, IMG_PATH, 2, cardStrings.DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY, AbstractMonster.Intent.MAGIC);
+        super(ID, cardStrings.NAME, IMG_PATH, 2, cardStrings.DESCRIPTION, CardType.SKILL, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY, AbstractMonster.Intent.MAGIC);
         this.exhaust = true;
     }
 

@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import shadowverse.characters.Bishop;
 
 public class EnRadiantAngel extends AbstractBossCard {
     public static final String ID = "shadowverse:EnRadiantAngel";
@@ -24,7 +25,7 @@ public class EnRadiantAngel extends AbstractBossCard {
     public static final String IMG_PATH = "img/cards/RadiantAngel.png";
 
     public EnRadiantAngel() {
-        super(ID, cardStrings.NAME, IMG_PATH, 2, cardStrings.DESCRIPTION, AbstractCard.CardType.ATTACK, CardColor.COLORLESS, CardRarity.COMMON, CardTarget.SELF, AbstractMonster.Intent.DEFEND_BUFF);
+        super(ID, cardStrings.NAME, IMG_PATH, 2, cardStrings.DESCRIPTION, AbstractCard.CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.SELF, AbstractMonster.Intent.DEFEND_BUFF);
         this.baseMagicNumber = 30;
         this.magicNumber = this.baseMagicNumber;
         this.baseBlock = 18;

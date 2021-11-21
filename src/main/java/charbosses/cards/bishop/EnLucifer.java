@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
+import shadowverse.characters.Bishop;
 
 public class EnLucifer extends AbstractBossCard {
     public static final String ID = "shadowverse:EnLucifer";

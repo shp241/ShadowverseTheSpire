@@ -51,5 +51,15 @@
     "EXTRA_TEXT": [
       "能量"
     ]
+  },
+  "shadowverse:AmuletText": {
+    "TEXT": [
+      "我不能再放置护符了。"
+    ]
+  },
+  "shadowverse:ReduceCountDown": {
+    "TEXT": [
+      "选择卡牌减少倒计时。"
+    ]
   }
 }

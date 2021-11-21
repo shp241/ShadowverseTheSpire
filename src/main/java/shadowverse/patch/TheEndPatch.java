@@ -24,14 +24,4 @@ public class TheEndPatch {
             return SpireReturn.Return(null);
         }
     }
-
-    private static Field[] getAllFields(Class<?> clazz) {
-        List<Field> fieldList = new ArrayList<>();
-        while (clazz != null){
-            fieldList.addAll(new ArrayList<>(Arrays.asList(clazz.getDeclaredFields())));
-            clazz = clazz.getSuperclass();
-        }
-        Field[] fields = new Field[fieldList.size()];
-        return fieldList.toArray(fields);
-    }
 }

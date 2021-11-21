@@ -134,7 +134,7 @@ public class KMR
             case "CALAMITY":
                 for (Iterator<AbstractPower> s = this.powers.iterator(); s.hasNext(); ) {
                     AbstractPower p = s.next();
-                    if (p.type == AbstractPower.PowerType.DEBUFF || p.ID.equals(InvinciblePower.POWER_ID) || p.ID.equals(AbsoluteOnePower.POWER_ID))
+                    if (p.type == AbstractPower.PowerType.DEBUFF || p.ID.equals(AbsoluteOnePower.POWER_ID))
                         s.remove();
                 }
                 if (AbstractDungeon.ascensionLevel >= 19) {
@@ -145,6 +145,7 @@ public class KMR
                     this.maxHealth = 800;
                 }
                 this.halfDead = false;
+                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) this, (AbstractCreature) this, (AbstractPower) new InvinciblePower((AbstractCreature) this, 200), 200));
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ShoutAction((AbstractCreature) this, DIALOG[2]));
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SFXAction("KMR3"));
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new HealAction((AbstractCreature) this, (AbstractCreature) this, this.maxHealth));
