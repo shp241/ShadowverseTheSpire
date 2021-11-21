@@ -34,7 +34,8 @@ public class FlyingMessengerSquirrel extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(3);
+            upgradeDamage(2);
+            upgradeMagicNumber(1);
         }
     }
 

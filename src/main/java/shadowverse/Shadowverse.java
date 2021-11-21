@@ -853,6 +853,12 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("HolyPurebomb", new Sfx("sounds/HolyPurebomb.wav"));
         reflectedMap.put("Valse", new Sfx("sounds/Valse.wav"));
         reflectedMap.put("Royal_Victory", new Sfx("sounds/Royal_Victory.wav"));
+        reflectedMap.put("DreadHound", new Sfx("sounds/DreadHound.wav"));
+        reflectedMap.put("Ernesta", new Sfx("sounds/Ernesta.wav"));
+        reflectedMap.put("Ernesta_Ev", new Sfx("sounds/Ernesta_Ev.wav"));
+        reflectedMap.put("Ilmisuna", new Sfx("sounds/Ilmisuna.wav"));
+        reflectedMap.put("Ilmisuna_Ev", new Sfx("sounds/Ilmisuna_Ev.wav"));
+        reflectedMap.put("MasterDealer", new Sfx("sounds/MasterDealer.wav"));
         /*     */
     }
 
@@ -1705,6 +1711,11 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCard((AbstractCard) new Valse());
         BaseMod.addCard((AbstractCard) new HolyPurebomb());
         BaseMod.addCard((AbstractCard) new FatalSpellbomb());
+        BaseMod.addCard((AbstractCard) new Ernesta());
+        BaseMod.addCard((AbstractCard) new DreadHound());
+        BaseMod.addCard((AbstractCard) new Ilmisuna());
+        BaseMod.addCard((AbstractCard) new MasterDealer());
+        BaseMod.addCard((AbstractCard) new EleganceInAction());
 
         /* 276 */
         logger.info("Success");

@@ -2760,7 +2760,7 @@
   "shadowverse:ApostleOfUsurpation": {
     "NAME": "强夺的使徒",
     "DESCRIPTION": "每使用一张 财宝牌 ，对随机敌人造成 !M! 点伤害。",
-    "UPGRADE_DESCRIPTION": "每使用一张 财宝牌 ，对随机敌人造成 !M! 点伤害。NL 随机将1张 财宝牌 加入手牌。"
+    "UPGRADE_DESCRIPTION": "每使用一张 财宝牌 ，对随机敌人造成 !M! 点伤害。 NL 随机将1张 财宝牌 加入手牌。"
   },
   "shadowverse:Octrice": {
     "NAME": "强夺灾杰·奥克托丽丝",
@@ -2934,7 +2934,7 @@
   },
   "shadowverse:Alyaska": {
     "NAME": "战争商人·阿尔亚斯卡",
-    "DESCRIPTION": "获得1层 能力伤害无效 。 NL 造成 !D! 点伤害。 NL 抽到时将一张 *进化点 置入手牌",
+    "DESCRIPTION": "获得1层 能力伤害无效 。 NL 造成 !D! 点伤害。 NL 抽到时将一张 *进化点 置入手牌。",
     "UPGRADE_DESCRIPTION": "打出后解除升级 。 NL 获得1层 能力伤害无效 。 NL 造成 !D! 点伤害。 NL 将一张 *究极兵器 置入手牌。"
   },
   "shadowverse:ExterminusWeapon": {
@@ -3171,10 +3171,40 @@
   },
   "shadowverse:HolyPurebomb": {
     "NAME": "净化之圣弹",
-    "DESCRIPTION": "消耗 手牌中所有诅咒牌和状态牌。 NL 消耗 。"
+    "DESCRIPTION": "消耗 手牌中所有诅咒牌和状态牌。 NL 使目标失去一种 正面效果 。 NL 消耗 。"
   },
   "shadowverse:FatalSpellbomb": {
     "NAME": "毁灭之魔弹",
     "DESCRIPTION": "造成 !D! 点体力流失。 NL 消耗 。"
+  },
+  "shadowverse:Ernesta": {
+    "NAME": "武器商人·艾尔涅斯塔",
+    "DESCRIPTION": "协作 10：将1张 *恐惧猎犬 加入手牌。",
+    "UPGRADE_DESCRIPTION": "打出后解除升级 。 NL 选择1张手牌，将其消耗，抽1张牌。",
+    "EXTENDED_DESCRIPTION": [
+      "（协作数：",
+      ")"
+    ]
+  },
+  "shadowverse:DreadHound": {
+    "NAME": "恐惧猎犬",
+    "DESCRIPTION": "造成 !D! 点体力流失，获得 !B! 点 格挡 。 NL 消耗 。"
+  },
+  "shadowverse:Ilmisuna": {
+    "NAME": "动乱商人·伊尔米斯娜",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 协作 10：抽到时将一张 *进化点 置入手牌。",
+    "UPGRADE_DESCRIPTION": "打出后解除升级 。 NL 获得 !B! 点 格挡 。 NL 选择1张手牌，将其消耗，抽1张牌。",
+    "EXTENDED_DESCRIPTION": [
+      "（协作数：",
+      ")"
+    ]
+  },
+  "shadowverse:MasterDealer": {
+    "NAME": "首席商贩·阿尔亚斯卡",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 选择1张手牌，消耗其余的牌，抽等量的牌。"
+  },
+  "shadowverse:EleganceInAction": {
+    "NAME": "意外失足",
+    "DESCRIPTION": "抽1张牌，如果是攻击牌召唤1个 重装骑士 ，否则随机造成 !D! 点伤害。 NL 爆能强化 1 \b改为抽 !M! 张牌。"
   }
 }

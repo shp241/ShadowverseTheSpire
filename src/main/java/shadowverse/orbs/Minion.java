@@ -45,30 +45,30 @@ public abstract class Minion extends AbstractOrb {
     @Override
     public void update() {
         this.updateDescription();
-//        this.hb.update();
-//        if (this.hb.hovered) {
-//            TipHelper.renderGenericTip(this.tX + 96.0F * Settings.scale, this.tY + 64.0F * Settings.scale, this.name, this.description);
-//        }
-//
-//        this.fontScale = MathHelper.scaleLerpSnap(this.fontScale, 0.7F);
+        this.hb.update();
+        if (this.hb.hovered) {
+            TipHelper.renderGenericTip(this.tX + 96.0F * Settings.scale, this.tY + 64.0F * Settings.scale, this.name, this.description);
+        }
+
+        this.fontScale = MathHelper.scaleLerpSnap(this.fontScale, 0.7F);
     }
 
-//    @Override
-//    public void updateAnimation() {
-//        this.bobEffect.update();
-//        this.cX = MathHelper.orbLerpSnap(this.cX, AbstractDungeon.player.animX + this.tX);
-//        this.cY = MathHelper.orbLerpSnap(this.cY, AbstractDungeon.player.animY + this.tY);
-//        if (this.channelAnimTimer != 0.0F) {
-//            this.channelAnimTimer -= Gdx.graphics.getDeltaTime();
-//            if (this.channelAnimTimer < 0.0F) {
-//                this.channelAnimTimer = 0.0F;
-//            }
-//        }
-//
-//        this.c.a = Interpolation.pow2In.apply(1.0F, 0.01F, 0.0F);
-//        this.scale = Interpolation.swingIn.apply(Settings.scale, 0.01F, 0.0F);
-//        this.updateDescription();
-//    }
+    @Override
+    public void updateAnimation() {
+        this.bobEffect.update();
+        this.cX = MathHelper.orbLerpSnap(this.cX, AbstractDungeon.player.animX + this.tX);
+        this.cY = MathHelper.orbLerpSnap(this.cY, AbstractDungeon.player.animY + this.tY);
+        if (this.channelAnimTimer != 0.0F) {
+            this.channelAnimTimer -= Gdx.graphics.getDeltaTime();
+            if (this.channelAnimTimer < 0.0F) {
+                this.channelAnimTimer = 0.0F;
+            }
+        }
+
+        this.c.a = Interpolation.pow2In.apply(1.0F, 0.01F, 0.0F);
+        this.scale = Interpolation.swingIn.apply(Settings.scale, 0.01F, 0.0F);
+        this.updateDescription();
+    }
 
     public void buff(int a, int d) {
         this.attack += a;

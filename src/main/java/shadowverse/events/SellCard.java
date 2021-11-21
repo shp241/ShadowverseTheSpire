@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.relics.SpiritPoop;
 import com.megacrit.cardcrawl.vfx.RainingGoldEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.PurgeCardEffect;
 import shadowverse.cards.Rare.Alyaska;
+import shadowverse.cards.Uncommon.MasterDealer;
 
 public class SellCard extends AbstractImageEvent {
     public static final String ID = "SellCard";
@@ -43,7 +44,7 @@ public class SellCard extends AbstractImageEvent {
         AbstractPlayer p = AbstractDungeon.player;
         boolean has = false;
         for (AbstractCard c : p.masterDeck.group) {
-            if (c instanceof Alyaska) {
+            if (c instanceof Alyaska || c instanceof MasterDealer) {
                 has = true;
             }
         }

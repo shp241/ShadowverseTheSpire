@@ -4,6 +4,7 @@ import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -11,6 +12,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import shadowverse.cards.Status.EvolutionPoint;
 import shadowverse.characters.Royal;
 
@@ -25,7 +27,7 @@ public class HolyPurebomb extends CustomCard {
     public static final String IMG_PATH = "img/cards/HolyPurebomb.png";
 
     public HolyPurebomb() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.NONE);
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.ENEMY);
         this.exhaust = true;
     }
 
@@ -34,7 +36,7 @@ public class HolyPurebomb extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBaseCost(0);
+            upgradeBaseCost(1);
         }
     }
 
@@ -51,7 +53,18 @@ public class HolyPurebomb extends CustomCard {
         for (AbstractCard c : temp) {
             addToBot(new ExhaustSpecificCardAction(c, abstractPlayer.hand));
         }
+        if(abstractMonster.hasPower("Artifact")){
+            addToBot((AbstractGameAction) new RemoveSpecificPowerAction(abstractMonster,abstractPlayer,"Artifact"));
+        }else {
+            for (AbstractPower pow : abstractMonster.powers){
+                if (pow.type == AbstractPower.PowerType.BUFF && pow.ID!="Invincible" &&pow.ID!="Mode Shift"&&pow.ID!="Split"&&pow.ID!="Unawakened"&&pow.ID!="Life Link"&&pow.ID!="Fading"&&pow.ID!="Stasis"&&pow.ID!="Minion"&&pow.ID!="Shifting"&&pow.ID!="shadowverse:chushouHealPower"){
+                    addToBot((AbstractGameAction) new RemoveSpecificPowerAction(pow.owner,abstractPlayer,pow.ID));
+                    break;
+                }
+            }
+        }
     }
+
 
 
     @Override

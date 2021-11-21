@@ -1,4 +1,4 @@
-package shadowverse.cards.Uncommon;
+package shadowverse.cards.Common;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -20,8 +20,8 @@ public class PompousSummons extends CustomCard {
     public static final String IMG_PATH = "img/cards/PompousSummons.png";
 
     public PompousSummons() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
-        this.baseMagicNumber = this.magicNumber = 2;
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF);
+        this.baseMagicNumber = this.magicNumber = 1;
     }
 
 
@@ -36,9 +36,9 @@ public class PompousSummons extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DrawCardAction(p, this.magicNumber));
+        addToBot(new DrawCardAction(p, 2));
         if (rally() >= 10) {
-            addToBot(new DrawCardAction(p, 1));
+            addToBot(new DrawCardAction(p, this.magicNumber));
         }
     }
 
