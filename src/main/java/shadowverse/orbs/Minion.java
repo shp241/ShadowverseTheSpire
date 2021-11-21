@@ -98,7 +98,9 @@ public abstract class Minion extends AbstractOrb {
 
     @Override
     public void playChannelSFX() { // When you channel this orb, the ATTACK_FIRE effect plays ("Fwoom").
-        AbstractDungeon.actionManager.addToTop(new SFXAction(this.ID.replace("shadowverse:", "")));
+        if(!Settings.DISABLE_EFFECTS){
+            AbstractDungeon.actionManager.addToTop(new SFXAction(this.ID.replace("shadowverse:", "")));
+        }
     }
 
     // Render the orb.

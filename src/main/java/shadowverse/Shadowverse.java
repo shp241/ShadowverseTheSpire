@@ -16,14 +16,15 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.dungeons.*;
+import com.megacrit.cardcrawl.dungeons.Exordium;
+import com.megacrit.cardcrawl.dungeons.TheBeyond;
+import com.megacrit.cardcrawl.dungeons.TheCity;
+import com.megacrit.cardcrawl.dungeons.TheEnding;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.monsters.MonsterInfo;
-import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
-import com.megacrit.cardcrawl.vfx.ThoughtBubble;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import shadowverse.cards.Basic.*;
@@ -40,7 +41,6 @@ import shadowverse.cards.Uncommon.*;
 import shadowverse.characters.*;
 import shadowverse.events.*;
 import shadowverse.monsters.*;
-import shadowverse.orbs.AmuletOrb;
 import shadowverse.potions.*;
 import shadowverse.relics.*;
 
@@ -49,58 +49,65 @@ import java.util.HashMap;
 
 import static com.badlogic.gdx.graphics.Color.YELLOW;
 
-
+/*     */
+/*     */
 @SpireInitializer
-    public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscriber, EditStringsSubscriber, EditKeywordsSubscriber, EditCharactersSubscriber, EditRelicsSubscriber {
-    public static final Color WITCH_BLUE = CardHelper.getColor(46, 71, 81);
+/*     */ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscriber, EditStringsSubscriber, EditKeywordsSubscriber, EditCharactersSubscriber, EditRelicsSubscriber {
+    /*  36 */   public static final Color WITCH_BLUE = CardHelper.getColor(46, 71, 81);
     public static final Color ELF_GREEN = CardHelper.getColor(197, 220, 88);
     public static final Color NECRO_PURPLE = CardHelper.getColor(71, 26, 106);
     public static final Color VAMPIRE_SCARLET = CardHelper.getColor(107, 50, 55);
     public static final Color NEMESIS_SKY = CardHelper.getColor(18, 108, 146);
     public static final Color ROYAL_YELLOW = CardHelper.getColor(152, 156, 1);
-    public static final Color BISHOP_WHITE = CardHelper.getColor(239, 236, 186);
-    public static final Logger logger = LogManager.getLogger(Shadowverse.class.getName());
+    /*     */
+    /*  38 */   public static final Logger logger = LogManager.getLogger(Shadowverse.class.getName());
 
-
+    /*     */
+    /*     */
     public static boolean Enhance(int EH) {
+        /*  41 */
         boolean res = false;
+        /*  42 */
         if (EnergyPanel.getCurrentEnergy() >= EH) {
+            /*  43 */
             res = true;
+            /*     */
         }
+        /*  45 */
         return res;
+        /*     */
     }
 
-
+    /*     */
+    /*     */
     public static boolean Accelerate(AbstractCard card) {
+        /*  49 */
         boolean res = false;
+        /*  50 */
         if (EnergyPanel.getCurrentEnergy() < card.cost) {
+            /*  51 */
             res = true;
+            /*     */
         }
+        /*  53 */
         return res;
+        /*     */
     }
 
-    public static boolean canSpawnAmuletOrb() {
-        if (AbstractDungeon.player.hasEmptyOrb() || (AbstractDungeon.player.masterMaxOrbs == 0 && AbstractDungeon.player.maxOrbs == 0))
-            return true;
-        for (AbstractOrb o : AbstractDungeon.player.orbs) {
-            if (!(o instanceof AmuletOrb))
-                return true;
-        }
-        UIStrings UI_STRINGS = CardCrawlGame.languagePack.getUIString("shadowverse:AmuletText");
-        AbstractDungeon.effectList.add(new ThoughtBubble(AbstractDungeon.player.dialogX, AbstractDungeon.player.dialogY, 2.0F, UI_STRINGS.TEXT[0], true));
-        return false;
-    }
-
+    /*     */
+    /*     */
     public Shadowverse() {
+        /*  57 */
         logger.info("Subscribing");
+        /*  58 */
         BaseMod.subscribe((ISubscriber) this);
+        /*  59 */
         BaseMod.addColor(Witchcraft.Enums.COLOR_BLUE, WITCH_BLUE, WITCH_BLUE, WITCH_BLUE, WITCH_BLUE, WITCH_BLUE, WITCH_BLUE, WITCH_BLUE, "img/512card/bg_attack_default_gray.png", "img/512card/bg_skill_default_gray.png", "img/512card/bg_power_default_gray.png", "img/512card/card_default_gray_orb.png", "img/1024card/bg_attack_default_gray.png", "img/1024card/bg_skill_default_gray.png", "img/1024card/bg_power_default_gray.png", "img/1024card/card_default_gray_orb.png", "img/512card/card_small_orb.png");
         BaseMod.addColor(Elf.Enums.COLOR_GREEN, ELF_GREEN, ELF_GREEN, ELF_GREEN, ELF_GREEN, ELF_GREEN, ELF_GREEN, ELF_GREEN, "img/512elf/bg_attack_default_gray.png", "img/512elf/bg_skill_default_gray.png", "img/512elf/bg_power_default_gray.png", "img/512elf/card_default_gray_orb.png", "img/1024elf/bg_attack_default_gray.png", "img/1024elf/bg_skill_default_gray.png", "img/1024elf/bg_power_default_gray.png", "img/1024elf/card_default_gray_orb.png", "img/512elf/card_small_orb.png");
         BaseMod.addColor(Necromancer.Enums.COLOR_PURPLE, NECRO_PURPLE, NECRO_PURPLE, NECRO_PURPLE, NECRO_PURPLE, NECRO_PURPLE, NECRO_PURPLE, NECRO_PURPLE, "img/512necro/bg_attack_default_gray.png", "img/512necro/bg_skill_default_gray.png", "img/512necro/bg_power_default_gray.png", "img/512necro/card_default_gray_orb.png", "img/1024necro/bg_attack_default_gray.png", "img/1024necro/bg_skill_default_gray.png", "img/1024necro/bg_power_default_gray.png", "img/1024necro/card_default_gray_orb.png", "img/512necro/card_small_orb.png");
         BaseMod.addColor(Vampire.Enums.COLOR_SCARLET, VAMPIRE_SCARLET, VAMPIRE_SCARLET, VAMPIRE_SCARLET, VAMPIRE_SCARLET, VAMPIRE_SCARLET, VAMPIRE_SCARLET, VAMPIRE_SCARLET, "img/512vamp/bg_attack_default_gray.png", "img/512vamp/bg_skill_default_gray.png", "img/512vamp/bg_power_default_gray.png", "img/512vamp/card_default_gray_orb.png", "img/1024vamp/bg_attack_default_gray.png", "img/1024vamp/bg_skill_default_gray.png", "img/1024vamp/bg_power_default_gray.png", "img/1024vamp/card_default_gray_orb.png", "img/512vamp/card_small_orb.png");
         BaseMod.addColor(Nemesis.Enums.COLOR_SKY, NEMESIS_SKY, NEMESIS_SKY, NEMESIS_SKY, NEMESIS_SKY, NEMESIS_SKY, NEMESIS_SKY, NEMESIS_SKY, "img/512nemesis/bg_attack_default_gray.png", "img/512nemesis/bg_skill_default_gray.png", "img/512nemesis/bg_power_default_gray.png", "img/512nemesis/card_default_gray_orb.png", "img/1024nemesis/bg_attack_default_gray.png", "img/1024nemesis/bg_skill_default_gray.png", "img/1024nemesis/bg_power_default_gray.png", "img/1024nemesis/card_default_gray_orb.png", "img/512nemesis/card_small_orb.png");
         BaseMod.addColor(Royal.Enums.COLOR_YELLOW, ROYAL_YELLOW, ROYAL_YELLOW, ROYAL_YELLOW, ROYAL_YELLOW, ROYAL_YELLOW, ROYAL_YELLOW, ROYAL_YELLOW, "img/512royal/bg_attack_default_gray.png", "img/512royal/bg_skill_default_gray.png", "img/512royal/bg_power_default_gray.png", "img/512royal/card_default_gray_orb.png", "img/1024royal/bg_attack_default_gray.png", "img/1024royal/bg_skill_default_gray.png", "img/1024royal/bg_power_default_gray.png", "img/1024royal/card_default_gray_orb.png", "img/512royal/card_small_orb.png");
-        BaseMod.addColor(Bishop.Enums.COLOR_WHITE, BISHOP_WHITE, BISHOP_WHITE, BISHOP_WHITE, BISHOP_WHITE, BISHOP_WHITE, BISHOP_WHITE, BISHOP_WHITE, "img/512bishop/bg_attack_default_gray.png", "img/512bishop/bg_skill_default_gray.png", "img/512bishop/bg_power_default_gray.png", "img/512bishop/card_default_gray_orb.png", "img/1024bishop/bg_attack_default_gray.png", "img/1024bishop/bg_skill_default_gray.png", "img/1024bishop/bg_power_default_gray.png", "img/1024bishop/card_default_gray_orb.png", "img/512bishop/card_small_orb.png");
         /*  60 */
         logger.info("Success subscribe");
         /*     */
@@ -845,11 +852,6 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("FatalSpellbomb", new Sfx("sounds/FatalSpellbomb.wav"));
         reflectedMap.put("HolyPurebomb", new Sfx("sounds/HolyPurebomb.wav"));
         reflectedMap.put("Valse", new Sfx("sounds/Valse.wav"));
-        reflectedMap.put("Bishop_Selected", new Sfx("sounds/Bishop_Selected.wav"));
-        reflectedMap.put("Bishop_Hurt", new Sfx("sounds/Bishop_Hurt.wav"));
-        reflectedMap.put("Bishop_Hurt2", new Sfx("sounds/Bishop_Hurt2.wav"));
-        reflectedMap.put("Bishop_Hurt3", new Sfx("sounds/Bishop_Hurt3.wav"));
-        reflectedMap.put("Bishop_Hurt4", new Sfx("sounds/Bishop_Hurt4.wav"));
         /*     */
     }
 
@@ -1702,12 +1704,7 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCard((AbstractCard) new Valse());
         BaseMod.addCard((AbstractCard) new HolyPurebomb());
         BaseMod.addCard((AbstractCard) new FatalSpellbomb());
-        BaseMod.addCard((AbstractCard) new Strike_B());
-        BaseMod.addCard((AbstractCard) new Defend_B());
-        BaseMod.addCard((AbstractCard) new BlackenedScripture());
-        BaseMod.addCard((AbstractCard) new PriestOfTheCudgel());
-        BaseMod.addCard((AbstractCard) new SacredPlea());
-        BaseMod.addCard((AbstractCard) new HallowedDogma());
+
         /* 276 */
         logger.info("Success");
         /*     */
@@ -1726,7 +1723,6 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCharacter((AbstractPlayer) new Vampire(("Vamp")), "img/character/Vampire/button.png", "img/character/Vampire/background.png", Vampire.Enums.Vampire);
         BaseMod.addCharacter((AbstractPlayer) new Nemesis(("Nemesis")), "img/character/Nemesis/button.png", "img/character/Nemesis/background.png", Nemesis.Enums.Nemesis);
         BaseMod.addCharacter((AbstractPlayer) new Royal(("Royal")), "img/character/Royal/button.png", "img/character/Royal/background.png", Royal.Enums.Royal);
-        BaseMod.addCharacter((AbstractPlayer) new Bishop(("Bishop")), "img/character/Bishop/button.png", "img/character/Bishop/background.png", Bishop.Enums.Bishop);
         /*     */
     }
     /*     */

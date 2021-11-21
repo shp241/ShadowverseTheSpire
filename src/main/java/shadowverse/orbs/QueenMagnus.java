@@ -65,6 +65,11 @@ public class QueenMagnus extends Minion {
     }
 
     @Override
+    public void playChannelSFX() { // When you channel this orb, the ATTACK_FIRE effect plays ("Fwoom").
+        AbstractDungeon.actionManager.addToTop(new SFXAction(this.ID.replace("shadowverse:", "")));
+    }
+
+    @Override
     public void onEndOfTurn() {
         if (this.defense > 0) {
             AbstractDungeon.actionManager.addToBottom(new SFXAction(this.ID.replace("shadowverse:", "") + "_Atk"));

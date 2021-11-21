@@ -1,0 +1,83 @@
+{
+  "shadowverse:Knight": {
+    "DESCRIPTION": [
+      "#y被动： 在你的回合结束时，对随机敌人造成 #b",
+      " 点伤害并失去 #b1 点生命值。 NL #y激发： 重复被动效果直到生命值为 #b0 。"
+    ],
+    "NAME": "骑士"
+  },
+  "shadowverse:HeavyKnight": {
+    "DESCRIPTION": [
+      "#y被动： 在你的回合结束时，给予随机敌人 #b",
+      " 层 #y虚弱 并失去 #b1 点生命值。 NL #y激发： 重复被动效果直到生命值为 #b0 。"
+    ],
+    "NAME": "重装骑士"
+  },
+  "shadowverse:SteelcladKnight": {
+    "DESCRIPTION": [
+      "#y被动： 在你的回合结束时，对随机敌人造成 #b",
+      " 点伤害并失去 #b1 点生命值。 NL #y激发： 重复被动效果直到生命值为 #b0 。"
+    ],
+    "NAME": "铁甲骑士"
+  },
+  "shadowverse:ShieldGuardian": {
+    "DESCRIPTION": [
+      "#y被动： 在你的回合结束时，获得 #b",
+      " 点格挡并失去 #b1 点生命值。 NL #y激发： 重复被动效果直到生命值为 #b0 。"
+    ],
+    "NAME": "战盾卫士"
+  },
+  "shadowverse:FrontguardGeneral": {
+    "DESCRIPTION": [
+      "#y被动： 在你的回合结束时，获得 #b",
+      " 点格挡，下回合获得 #b",
+      " 点格挡并失去 #b1 点生命值。 NL #y激发： 重复被动效果直到生命值为 #b0 。"
+    ],
+    "NAME": "铁卫战将"
+  },
+  "shadowverse:QueenHemera": {
+    "DESCRIPTION": [
+      "#y被动： 在你的回合结束时，获得 #b",
+      " 点格挡，召唤 #b1 个骑士并失去 #b1 点生命值。 NL #y激发： 重复被动效果直到生命值为 #b0 。"
+    ],
+    "NAME": "英勇之王·伊梅拉"
+  },
+  "shadowverse:QueenMagnus": {
+    "DESCRIPTION": [
+      "#y被动： 在你的回合结束时，对随机敌人造成 #b",
+      " 点伤害并失去 #b1 点生命值，下个回合开始时获得 #b1 点费用。 NL #y激发： 重复被动效果直到生命值为 #b0 ，改为即时获得费用。"
+    ],
+    "NAME": "高雅女王·玛格娜丝"
+  },
+  "shadowverse:Quickblader": {
+    "DESCRIPTION": [
+      "#y被动： 在你的回合结束时，给予随机敌人 #b",
+      " 层 #y易伤， #b",
+      " 点伤害并失去 #b1 点生命值。 NL #y激发： 重复被动效果直到生命值为 #b0 。"
+    ],
+    "NAME": "迅捷的剑士"
+  },
+  "shadowverse:Viking": {
+    "DESCRIPTION": [
+      "#y被动： 在你的回合结束时，给予随机敌人 #b",
+      " 层 #y易伤， #b",
+      " 点伤害并失去 #b1 点生命值。 NL #y激发： 重复被动效果直到生命值为 #b0 。"
+    ],
+    "NAME": "维京战士"
+  },
+  "shadowverse:Pirate": {
+    "DESCRIPTION": [
+      "#y被动： 在你的回合结束时，获得 #b",
+      " 点格挡并失去 #b1 点生命值。 NL #y激发： 重复被动效果直到生命值为 #b0 。"
+    ],
+    "NAME": "航海家"
+  },
+  "shadowverse:CannonHermitCrabOrb": {
+    "DESCRIPTION": [
+      "#y被动： 在你的回合结束时，对随机敌人造成 #b",
+      " 点伤害并失去 #b1 点生命值。获得 #b",
+      " 点格挡。如果 #y共鸣 或有 #y那塔拉的大树 则生成一个伤害和生命值为当前一半的 #y加农炮寄居蟹 。 NL #y激发： 重复造成伤害和获得格挡直到生命值为 #b0 。"
+    ],
+    "NAME": "加农炮寄居蟹"
+  }
+}

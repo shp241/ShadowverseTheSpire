@@ -2,6 +2,7 @@ package shadowverse.orbs;
 
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import com.megacrit.cardcrawl.core.Settings;
 import shadowverse.action.MinionBuffAction;
 import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -39,6 +40,10 @@ public class QueenHemera extends Minion {
         description = DESCRIPTIONS[0] + "3*" + this.attack + "=" + 3 * this.attack + DESCRIPTIONS[1];
     }
 
+    @Override
+    public void playChannelSFX() { // When you channel this orb, the ATTACK_FIRE effect plays ("Fwoom").
+            AbstractDungeon.actionManager.addToTop(new SFXAction(this.ID.replace("shadowverse:", "")));
+    }
 
     @Override
     public void onEvoke() {
