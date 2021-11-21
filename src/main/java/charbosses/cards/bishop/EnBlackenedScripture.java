@@ -1,9 +1,7 @@
-package charbosses.cards.nemesis;
+package charbosses.cards.bishop;
 
 import charbosses.cards.AbstractBossCard;
-import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -12,19 +10,18 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.*;
-import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
-import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
+import shadowverse.characters.Bishop;
 import shadowverse.characters.Nemesis;
 
 public class EnBlackenedScripture extends AbstractBossCard {
     public static final String ID = "shadowverse:EnBlackenedScripture";
 
-    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:BlackenedScripture");
+    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:EnBlackenedScripture");
 
     public static final String IMG_PATH = "img/cards/BlackenedScripture.png";
 
     public EnBlackenedScripture() {
-        super(ID, cardStrings.NAME, IMG_PATH, 1, cardStrings.DESCRIPTION, CardType.SKILL, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.ENEMY, AbstractMonster.Intent.STRONG_DEBUFF);
+        super(ID, cardStrings.NAME, IMG_PATH, 1, cardStrings.DESCRIPTION, CardType.SKILL, Bishop.Enums.COLOR_WHITE, CardRarity.SPECIAL, CardTarget.ENEMY, AbstractMonster.Intent.STRONG_DEBUFF);
         this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
     }

@@ -20,6 +20,7 @@ import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
+import shadowverse.characters.Bishop;
 
 public class EnPriestOfTheCudgel extends AbstractBossCard {
     public static final String ID = "shadowverse:EnPriestOfTheCudgel";
@@ -29,7 +30,7 @@ public class EnPriestOfTheCudgel extends AbstractBossCard {
     public static final String IMG_PATH = "img/cards/PriestOfTheCudgel.png";
 
     public EnPriestOfTheCudgel() {
-        super(ID, cardStrings.NAME, IMG_PATH, 2, cardStrings.DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.COMMON, CardTarget.ENEMY, AbstractMonster.Intent.ATTACK_DEBUFF);
+        super(ID, cardStrings.NAME, IMG_PATH, 2, cardStrings.DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.ENEMY, AbstractMonster.Intent.ATTACK_DEBUFF);
         this.baseDamage = 12;
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;

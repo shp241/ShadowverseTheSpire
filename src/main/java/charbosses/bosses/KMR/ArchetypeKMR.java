@@ -1,16 +1,10 @@
  package charbosses.bosses.KMR;
  import charbosses.bosses.AbstractCharBoss;
  import charbosses.cards.bishop.*;
- import charbosses.cards.nemesis.EnBlackenedScripture;
+ import charbosses.cards.bishop.EnBlackenedScripture;
  import charbosses.cards.nemesis.EnMoonAlmiraj;
- import com.megacrit.cardcrawl.actions.AbstractGameAction;
- import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
- import com.megacrit.cardcrawl.actions.utility.SFXAction;
  import com.megacrit.cardcrawl.cards.AbstractCard;
- import com.megacrit.cardcrawl.core.AbstractCreature;
  import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
- import com.megacrit.cardcrawl.powers.AbstractPower;
- import com.megacrit.cardcrawl.powers.InvinciblePower;
 
  import java.util.ArrayList;
  
@@ -54,8 +48,8 @@
            break;
          case 2:
            addToList(cardsList, (AbstractCard)new EnRadiantAngel(),extraUpgrades);
+           addToList(cardsList, (AbstractCard)new EnBlackenedScripture(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnAncientLionSpirit(),extraUpgrades);
-           addToList(cardsList, (AbstractCard)new EnArdentSister(),extraUpgrades);
            this.turn++;
            break;
          case 3:
@@ -68,9 +62,9 @@
          case 4:
            addToList(cardsList, (AbstractCard)new EnHereticalInquiry(), extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnLucifer(), extraUpgrades);
-           addToList(cardsList, (AbstractCard)new EnArdentSister(), extraUpgrades);
            addToList(cardsList,(AbstractCard) new EnDarkPriest(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnHeavenlyHound(), extraUpgrades);
+           addToList(cardsList, (AbstractCard)new EnArdentSister(), extraUpgrades);
            this.turn++;
            break;
          case 5:
@@ -105,7 +99,7 @@
          case 3:
            addToList(cardsList, (AbstractCard)new EnMoonAlmiraj(),extraUpgrades);
            addToList(cardsList, (AbstractCard)new EnBlackenedScripture(),extraUpgrades);
-           addToList(cardsList, (AbstractCard)new EnArdentSister(),extraUpgrades);
+           addToList(cardsList, (AbstractCard)new EnHeavenlyHound(),extraUpgrades);
            break;
        } 
      } 

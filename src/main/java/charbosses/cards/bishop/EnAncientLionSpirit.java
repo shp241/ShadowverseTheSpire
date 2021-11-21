@@ -19,6 +19,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
+import shadowverse.characters.Bishop;
 
 public class EnAncientLionSpirit extends AbstractBossCard {
     public static final String ID = "shadowverse:EnAncientLionSpirit";
@@ -28,7 +29,7 @@ public class EnAncientLionSpirit extends AbstractBossCard {
     public static final String IMG_PATH = "img/cards/AncientLionSpirit.png";
 
     public EnAncientLionSpirit() {
-        super(ID, cardStrings.NAME, IMG_PATH, 2, cardStrings.DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.COMMON, CardTarget.ALL_ENEMY, AbstractMonster.Intent.ATTACK);
+        super(ID, cardStrings.NAME, IMG_PATH, 2, cardStrings.DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.ALL_ENEMY, AbstractMonster.Intent.ATTACK);
         this.baseDamage = 16;
     }
 

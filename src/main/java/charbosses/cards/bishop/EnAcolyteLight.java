@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
+import shadowverse.characters.Bishop;
 
 public class EnAcolyteLight extends AbstractBossCard {
     public static final String ID = "shadowverse:EnAcolyteLight";
@@ -24,7 +25,7 @@ public class EnAcolyteLight extends AbstractBossCard {
     public static final String IMG_PATH = "img/cards/AcolyteLight.png";
 
     public EnAcolyteLight() {
-        super(ID, cardStrings.NAME, IMG_PATH, 2, cardStrings.DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.COMMON, CardTarget.ENEMY, AbstractMonster.Intent.MAGIC);
+        super(ID, cardStrings.NAME, IMG_PATH, 2, cardStrings.DESCRIPTION, CardType.SKILL, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.ENEMY, AbstractMonster.Intent.MAGIC);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

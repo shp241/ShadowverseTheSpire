@@ -27,7 +27,7 @@ public class EnEdgeArtifact extends AbstractBossCard {
 
     public EnEdgeArtifact() {
         super(ID, cardStrings.NAME, IMG_PATH, 2, cardStrings.DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.ENEMY, AbstractMonster.Intent.ATTACK);
-        this.baseDamage = 20;
+        this.baseDamage = 16;
         this.tags.add(AbstractShadowversePlayer.Enums.ARTIFACT);
     }
 

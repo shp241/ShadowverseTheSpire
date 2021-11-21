@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.FrailPower;
 import com.megacrit.cardcrawl.powers.PlatedArmorPower;
 import com.megacrit.cardcrawl.powers.WeakPower;
+import shadowverse.characters.Bishop;
 
 public class EnDarkPriest extends AbstractBossCard {
     public static final String ID = "shadowverse:EnDarkPriest";
@@ -24,7 +25,7 @@ public class EnDarkPriest extends AbstractBossCard {
     public static final String IMG_PATH = "img/cards/DarkPriest.png";
 
     public EnDarkPriest() {
-        super(ID, cardStrings.NAME, IMG_PATH, 1, cardStrings.DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.COMMON, CardTarget.ENEMY, AbstractMonster.Intent.DEFEND_DEBUFF);
+        super(ID, cardStrings.NAME, IMG_PATH, 1, cardStrings.DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.ENEMY, AbstractMonster.Intent.DEFEND_DEBUFF);
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
         this.baseBlock = 10;

@@ -11,6 +11,10 @@
     "NAME": "打击",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
+  "shadowverse:Strike_B": {
+    "NAME": "打击",
+    "DESCRIPTION": "造成 !D! 点伤害。"
+  },
   "shadowverse:Defend_W": {
     "NAME": "防御",
     "DESCRIPTION": "获得 !B! 点 格挡 。"
@@ -20,6 +24,10 @@
     "DESCRIPTION": "获得 !B! 点 格挡 。"
   },
   "shadowverse:Defend_Nm": {
+    "NAME": "防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。"
+  },
+  "shadowverse:Defend_B": {
     "NAME": "防御",
     "DESCRIPTION": "获得 !B! 点 格挡 。"
   },
@@ -1391,7 +1399,7 @@
     "NAME": "暗影模式",
     "DESCRIPTION": "获得1层 无实体 。"
   },
-  "shadowverse:BlackenedScripture": {
+  "shadowverse:EnBlackenedScripture": {
     "NAME": "漆黑法典",
     "DESCRIPTION": "给予 !M! 层 虚弱 和 脆弱 。"
   },
@@ -3206,5 +3214,22 @@
   "shadowverse:EleganceInAction": {
     "NAME": "意外失足",
     "DESCRIPTION": "抽1张牌，如果是攻击牌召唤1个 重装骑士 ，否则随机造成 !D! 点伤害。 NL 爆能强化 1 \b改为抽 !M! 张牌。"
+  },
+  "shadowverse:BlackenedScripture": {
+    "NAME": "漆黑法典",
+    "DESCRIPTION": "给予 !M! 层 虚弱 和 脆弱 。 NL 消灭生命值为 !D! 以下的敌人。"
+  },
+  "shadowverse:PriestOfTheCudgel": {
+    "NAME": "持矛锤的僧侣",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 层 易伤 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 层 易伤 。 NL 消灭生命值为15以下的敌人。"
+  },
+  "shadowverse:SacredPlea": {
+    "NAME": "吟唱：神圣祈祷",
+    "DESCRIPTION": "倒计时 1 NL 抽 !M! 张牌。"
+  },
+  "shadowverse:HallowedDogma": {
+    "NAME": "崇高的教理",
+    "DESCRIPTION": "选择1张张护符减少2 倒计时 。 NL 抽 !M! 张牌。"
   }
 }

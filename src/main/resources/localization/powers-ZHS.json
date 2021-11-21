@@ -390,6 +390,12 @@
       " 点伤害。"
     ]
   },
+  "shadowverse:FreezePower": {
+    "NAME": "冻结",
+    "DESCRIPTIONS": [
+      "你抽到的牌耗能+1。"
+    ]
+  },
   "shadowverse:AlectorPower": {
     "NAME": "破坏杖·库多拉贾",
     "DESCRIPTIONS": [

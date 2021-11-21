@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.BufferPower;
 import com.megacrit.cardcrawl.powers.PlatedArmorPower;
 import shadowverse.cards.Temp.LionBless;
+import shadowverse.characters.Bishop;
 
 public class SacredLion extends AbstractBossCard {
     public static final String ID = "shadowverse:SacredLion";
@@ -25,7 +26,7 @@ public class SacredLion extends AbstractBossCard {
     public static final String IMG_PATH = "img/cards/SacredLion.png";
 
     public SacredLion() {
-        super(ID, cardStrings.NAME, IMG_PATH, 2, cardStrings.DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.RARE, CardTarget.SELF, AbstractMonster.Intent.DEFEND_BUFF);
+        super(ID, cardStrings.NAME, IMG_PATH, 2, cardStrings.DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.SELF, AbstractMonster.Intent.DEFEND_BUFF);
         this.baseMagicNumber = 6;
         this.magicNumber = this.baseMagicNumber;
         this.baseBlock = 30;

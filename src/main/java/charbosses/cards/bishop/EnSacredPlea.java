@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import shadowverse.characters.Bishop;
 
 public class EnSacredPlea extends AbstractBossCard {
     public static final String ID = "shadowverse:EnSacredPlea";
@@ -23,7 +24,7 @@ public class EnSacredPlea extends AbstractBossCard {
     public static final String IMG_PATH = "img/cards/SacredPlea.png";
 
     public EnSacredPlea() {
-        super(ID, cardStrings.NAME, IMG_PATH, 0, cardStrings.DESCRIPTION, CardType.POWER, CardColor.COLORLESS, CardRarity.COMMON, CardTarget.SELF, AbstractMonster.Intent.BUFF);
+        super(ID, cardStrings.NAME, IMG_PATH, 0, cardStrings.DESCRIPTION, CardType.POWER, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.SELF, AbstractMonster.Intent.BUFF);
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
     }

@@ -87,18 +87,18 @@ public class Iceschillendrig extends CustomMonster {
         if (AbstractDungeon.ascensionLevel >= 19) {
             this.debuffAmount = 4;
             this.bloodHitCount = 7;
-            this.Dmg = 50;
+            this.Dmg = 40;
         } else if (AbstractDungeon.ascensionLevel >= 4) {
             this.bloodHitCount = 7;
             this.debuffAmount = 3;
-            this.Dmg = 47;
+            this.Dmg = 37;
         } else {
             this.bloodHitCount = 5;
             this.debuffAmount = 3;
-            this.Dmg = 44;
+            this.Dmg = 35;
         }
         this.damage.add(new DamageInfo((AbstractCreature)this, this.Dmg));
-        this.damage.add(new DamageInfo((AbstractCreature)this, 3));
+        this.damage.add(new DamageInfo((AbstractCreature)this, 2));
     }
 
     @Override
@@ -118,7 +118,7 @@ public class Iceschillendrig extends CustomMonster {
         } else {
             AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)this, (AbstractPower)new ArtifactPower((AbstractCreature)m, 2)));
         }
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)this, (AbstractPower)new InvinciblePower((AbstractCreature)m, 90), 90));
+        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)this, (AbstractPower)new InvinciblePower((AbstractCreature)m, 120), 120));
 
     }
 
@@ -211,7 +211,7 @@ public class Iceschillendrig extends CustomMonster {
             usedPenalty = true;
             return;
         }
-        if (i <= 65) {
+        if (i <= 70) {
             if (!lastMove((byte)2)){
                 setMove((byte)2, Intent.ATTACK, ((DamageInfo)this.damage.get(1)).base, this.bloodHitCount, true);
                 return;
