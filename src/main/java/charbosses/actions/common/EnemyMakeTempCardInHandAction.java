@@ -102,7 +102,6 @@
            if (this.isOtherCardInCenter) {
              AbstractDungeon.effectList.add(new EnemyShowCardAndAddToHandEffect(makeNewCard(), Settings.WIDTH / 2.0F - PADDING + AbstractCard.IMG_WIDTH, Settings.HEIGHT / 2.0F));
            } else {
-             
              AbstractDungeon.effectList.add(new EnemyShowCardAndAddToHandEffect(makeNewCard()));
            } 
          }
@@ -138,12 +137,7 @@
          break;
 
      } 
- 
- 
-     
-     for (int i = 0; i < handAmt; i++) {
-       AbstractDungeon.effectList.add(new EnemyShowCardAndAddToHandEffect(makeNewCard(), MathUtils.random(Settings.WIDTH * 0.2F, Settings.WIDTH * 0.8F), MathUtils.random(Settings.HEIGHT * 0.3F, Settings.HEIGHT * 0.7F)));
-     }
+
    }
  
  

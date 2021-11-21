@@ -46,7 +46,7 @@ import shadowverse.characters.AbstractShadowversePlayer;
    public void triggerOnOtherCardPlayed(AbstractCard c) {
      if (AbstractDungeon.player.hasPower("Burst")||AbstractDungeon.player.hasPower("Double Tap")||AbstractDungeon.player.hasPower("Amplified")) {
        doubleCheck = true;
-       if (EnergyPanel.getCurrentEnergy() - c.costForTurn < this.cost) {
+       if (EnergyPanel.getCurrentEnergy() - c.costForTurn < 3) {
          setCostForTurn(1);
          this.type = CardType.SKILL;
          applyPowers();
@@ -55,7 +55,7 @@ import shadowverse.characters.AbstractShadowversePlayer;
        if (doubleCheck) {
          doubleCheck = false;
        }else {
-         if (EnergyPanel.getCurrentEnergy() - c.costForTurn < this.cost) {
+         if (EnergyPanel.getCurrentEnergy() - c.costForTurn < 3) {
            setCostForTurn(1);
            this.type = CardType.SKILL;
            applyPowers();

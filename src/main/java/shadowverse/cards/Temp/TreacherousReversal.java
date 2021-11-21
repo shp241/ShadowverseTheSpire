@@ -1,6 +1,7 @@
 package shadowverse.cards.Temp;
 
 import basemod.abstracts.CustomCard;
+import charbosses.bosses.KMR.KMR;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
@@ -19,6 +20,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
 import com.megacrit.cardcrawl.powers.NoDrawPower;
 import com.megacrit.cardcrawl.vfx.SpotlightPlayerEffect;
+import shadowverse.cards.Curse.Death;
 import shadowverse.characters.Elf;
 
 public class TreacherousReversal extends CustomCard {
@@ -83,6 +85,16 @@ public class TreacherousReversal extends CustomCard {
             addToBot((AbstractGameAction)new MakeTempCardInDrawPileAction(tmp, 1, true, true));
         }
         AbstractCard v = new VictoryCard();
-        addToBot((AbstractGameAction)new MakeTempCardInDrawPileAction(v, 1, false, false, true));
+        boolean isKMR = false;
+        for (AbstractMonster m : (AbstractDungeon.getMonsters()).monsters) {
+            if (m instanceof KMR){
+                isKMR = true;
+            }
+        }
+        if (isKMR){
+            addToBot((AbstractGameAction)new MakeTempCardInDrawPileAction(new Death(), 1, false, false, true));
+        }else {
+            addToBot((AbstractGameAction)new MakeTempCardInDrawPileAction(v, 1, false, false, true));
+        }
     }
 }
