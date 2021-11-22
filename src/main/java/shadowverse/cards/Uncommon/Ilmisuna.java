@@ -125,6 +125,12 @@ public class Ilmisuna extends CustomCard {
             }));
         }
         addToBot(new GainBlockAction(p, p, this.block));
+        if (this.upgraded) {
+            this.degrade();
+            if (p.hasRelic(KagemitsuSword.ID)) {
+                this.upgrade();
+            }
+        }
     }
 
 
