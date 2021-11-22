@@ -46,11 +46,13 @@ public class Cernunnos extends CustomCard {
         addToBot((AbstractGameAction) new BurialAction(1, (AbstractGameAction) new DrawCardAction(this.magicNumber)));
         addToBot((AbstractGameAction) new SFXAction("Cernunnos"));
         addToBot((AbstractGameAction) new GainEnergyAction(2));
-        addToBot((AbstractGameAction) new ReanimateAction(this.magicNumber));
-        if (abstractPlayer instanceof AbstractShadowversePlayer){
-           if (((AbstractShadowversePlayer)abstractPlayer).necromanceCount>=20){
-               addToBot((AbstractGameAction) new ReanimateAction(5));
-           }
+        if (this.costForTurn>0){
+            addToBot((AbstractGameAction) new ReanimateAction(this.magicNumber));
+            if (abstractPlayer instanceof AbstractShadowversePlayer){
+                if (((AbstractShadowversePlayer)abstractPlayer).necromanceCount>=20){
+                    addToBot((AbstractGameAction) new ReanimateAction(5));
+                }
+            }
         }
     }
 
