@@ -119,6 +119,12 @@ public class Ernesta extends CustomCard {
                 addToBot(new MakeTempCardInHandAction(new DreadHound()));
             }
         }
+        if (this.upgraded) {
+            this.degrade();
+            if(p.hasRelic(KagemitsuSword.ID)){
+                this.upgrade();
+            }
+        }
     }
 
 

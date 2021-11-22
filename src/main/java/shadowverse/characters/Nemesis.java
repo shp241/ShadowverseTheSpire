@@ -58,6 +58,7 @@ public class Nemesis extends AbstractShadowversePlayer{
         super(name, Enums.Nemesis, null, null, null, (AbstractAnimation)new SpriterAnimation("img/character/Nemesis/images/NewProject.autosave.autosave.scml"));
         initializeClass(null, Nm_SHOULDER_2, Nm_SHOULDER_2, Nm_CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
         bigAnimation.setVisible(false);
+        bigAnimation.skeleton.setSkin("skin_01");
     }
 
     @Override
