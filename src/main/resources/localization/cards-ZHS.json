@@ -3231,5 +3231,38 @@
   "shadowverse:HallowedDogma": {
     "NAME": "崇高的教理",
     "DESCRIPTION": "选择1张张护符减少2 倒计时 。 NL 抽 !M! 张牌。"
+  },
+  "shadowverse:ImaginationRealized": {
+    "NAME": "想象的具现化",
+    "DESCRIPTION": "抽3张牌，使这些牌本回合耗能变为0。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "抽3张牌，使这些牌本场战斗耗能变为0。 NL 消耗 。"
+  },
+  "shadowverse:GuildAssembly": {
+    "NAME": "公会会议",
+    "DESCRIPTION": "固有 ，可被 升级 多次。 NL 抽1张牌。 NL +1：再抽1张牌 。 NL +2：获得 !B! 点 格挡 。 NL +3：获得2点 力量 和 敏捷 。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "再抽1张牌。 NL ",
+      "获得 !B! 点 格挡 。 NL ",
+      "获得2点 力量 和 敏捷 。 NL ",
+      "消耗 。"
+    ]
+  },
+  "shadowverse:MysterianWisdom": {
+    "NAME": "马纳历亚的睿智",
+    "DESCRIPTION": "选择手中的1张牌 消耗 。 NL 增加1张 *马纳历亚的魔弹 和 *马纳历亚的防阵 到手中。",
+    "UPGRADE_DESCRIPTION": "选择手中的1张牌 消耗 ，增加1张这张牌的复制品到抽牌堆。 NL 增加1张 *马纳历亚的魔弹 和 *马纳历亚的防阵 到手中。"
+  },
+  "shadowverse:DuskshadeBat": {
+    "NAME": "幽暗蝙蝠",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 渴望 抽1张牌，获得 [E] 。 NL 狂乱 抽1张牌，获得 [E] 。 NL 复仇 抽1张牌，获得 [E] 。"
+  },
+  "shadowverse:Cernunnos": {
+    "NAME": "科尔努诺斯",
+    "DESCRIPTION": "葬送 1张牌，抽 !M! 张牌。 NL 获得 [E] [E] 。 NL 亡者召还 !M! 。 NL 如果本场战斗已使用的 死灵术 为20以上， 亡者召还 5。"
+  },
+  "shadowverse:MiracleHarvest": {
+    "NAME": "奇迹果实",
+    "DESCRIPTION": "增加1张 *妖精 到手中。 NL 如果本场战斗已使用的 *妖精 为5以上，升级这张 *妖精 。 NL 如果为10以上，抽 !M! 张牌，获得 [E] 。",
+    "UPGRADE_DESCRIPTION": "增加1张 *妖精 到手中。 NL 如果本场战斗已使用的 *妖精 为5以上，升级这张 *妖精 。 NL 如果为10以上，抽 !M! 张牌，获得 [E] [E] 。"
   }
 }

@@ -46,8 +46,10 @@ import shadowverse.characters.Bishop;
  
    
    public void use(AbstractPlayer p, AbstractMonster m) {
-     addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)p, (AbstractPower)new WeakPower((AbstractCreature)m, this.magicNumber, false), this.magicNumber));
-     addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)p, (AbstractPower)new FrailPower((AbstractCreature)m, this.magicNumber, false), this.magicNumber));
+     if (m != null && !m.isDeadOrEscaped()) {
+       addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)p, (AbstractPower)new WeakPower((AbstractCreature)m, this.magicNumber, false), this.magicNumber));
+       addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)p, (AbstractPower)new FrailPower((AbstractCreature)m, this.magicNumber, false), this.magicNumber));
+     }
      addToBot((AbstractGameAction)new JudgementAction((AbstractCreature)m, this.damage));
    }
  

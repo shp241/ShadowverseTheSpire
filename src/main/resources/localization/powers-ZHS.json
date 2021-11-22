@@ -625,7 +625,7 @@
   "shadowverse:DrainPower": {
     "NAME": "虹吸",
     "DESCRIPTIONS": [
-      "回复下一次造成伤害的生命值。（最高 #b20 ，下回合开始时失去这个效果）"
+      "回复下一次造成伤害的生命值。（最高 #b30 ，下回合开始时失去这个效果）"
     ]
   },
   "shadowverse:AzazelPower": {

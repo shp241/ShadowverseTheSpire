@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.powers.Cemetery;
 import shadowverse.powers.GremoryPower;
 import shadowverse.powers.GremoryUsedPower;
@@ -58,6 +59,9 @@ public class NecromanceAction extends AbstractGameAction {
             if (this.p.hasRelic(Alice.ID)){
                 addToBot((AbstractGameAction)new DamageAllEnemiesAction(null,
                         DamageInfo.createDamageMatrix(3, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+            }
+            if (this.p instanceof AbstractShadowversePlayer){
+                ((AbstractShadowversePlayer)p).necromanceCount += this.necromance;
             }
         }
         else{

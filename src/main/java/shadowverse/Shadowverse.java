@@ -857,6 +857,8 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("Ilmisuna", new Sfx("sounds/Ilmisuna.wav"));
         reflectedMap.put("Ilmisuna_Ev", new Sfx("sounds/Ilmisuna_Ev.wav"));
         reflectedMap.put("MasterDealer", new Sfx("sounds/MasterDealer.wav"));
+        reflectedMap.put("GuildAssembly", new Sfx("sounds/GuildAssembly.wav"));
+        reflectedMap.put("Cernunnos", new Sfx("sounds/Cernunnos.wav"));
         /*     */
     }
 
@@ -1720,6 +1722,12 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCard((AbstractCard) new PriestOfTheCudgel());
         BaseMod.addCard((AbstractCard) new SacredPlea());
         BaseMod.addCard((AbstractCard) new HallowedDogma());
+        BaseMod.addCard((AbstractCard) new ImaginationRealized());
+        BaseMod.addCard((AbstractCard) new GuildAssembly());
+        BaseMod.addCard((AbstractCard) new MysterianWisdom());
+        BaseMod.addCard((AbstractCard) new DuskshadeBat());
+        BaseMod.addCard((AbstractCard) new Cernunnos());
+        BaseMod.addCard((AbstractCard) new MiracleHarvest());
         /* 276 */
         logger.info("Success");
         /*     */

@@ -36,8 +36,8 @@ public class DrainPower extends AbstractPower {
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
         if (target instanceof AbstractMonster){
             int amt = damageAmount;
-            if (amt>20)
-                amt=20;
+            if (amt>30)
+                amt=30;
             addToBot((AbstractGameAction)new HealAction(info.owner, info.owner, amt));
             addToBot((AbstractGameAction)new RemoveSpecificPowerAction(this.owner,info.owner,this));
         }

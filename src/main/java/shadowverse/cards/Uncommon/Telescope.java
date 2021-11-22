@@ -25,7 +25,7 @@
    public static final String IMG_PATH = "img/cards/Telescope.png";
    
    public Telescope() {
-     super("shadowverse:Telescope", NAME, "img/cards/Telescope.png", 1, DESCRIPTION, CardType.POWER, Witchcraft.Enums.COLOR_BLUE, CardRarity.UNCOMMON, CardTarget.SELF);
+     super("shadowverse:Telescope", NAME, "img/cards/Telescope.png", 0, DESCRIPTION, CardType.POWER, Witchcraft.Enums.COLOR_BLUE, CardRarity.UNCOMMON, CardTarget.SELF);
      this.baseMagicNumber = 1;
      this.magicNumber = this.baseMagicNumber;
      this.tags.add(AbstractShadowversePlayer.Enums.EARTH_RITE);
