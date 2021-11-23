@@ -43,38 +43,22 @@ import shadowverse.cards.Temp.ForestBat;
    private void updateExistingForestBat() {
      for (AbstractCard c : AbstractDungeon.player.hand.group) {
        if (c instanceof ForestBat) {
-         if (!c.upgraded) {
-           c.baseDamage = 4 + this.amount;
-           continue;
-         }
-         c.baseDamage = 6 + this.amount;
+         c.baseDamage += this.amount;
        }
      }
      for (AbstractCard c : AbstractDungeon.player.drawPile.group) {
        if (c instanceof ForestBat) {
-         if (!c.upgraded) {
-           c.baseDamage = 4 + this.amount;
-           continue;
-         }
-         c.baseDamage = 6 + this.amount;
+         c.baseDamage += this.amount;
        }
      }
      for (AbstractCard c : AbstractDungeon.player.discardPile.group) {
        if (c instanceof ForestBat) {
-         if (!c.upgraded) {
-           c.baseDamage = 4 + this.amount;
-           continue;
-         }
-         c.baseDamage = 6 + this.amount;
+         c.baseDamage += this.amount;
        }
      }
      for (AbstractCard c : AbstractDungeon.player.exhaustPile.group) {
        if (c instanceof ForestBat) {
-         if (!c.upgraded) {
-           c.baseDamage = 4 + this.amount;
-           continue;
-         }
-         c.baseDamage = 6 + this.amount;
+         c.baseDamage+= this.amount;
        }
      }
    }
@@ -82,11 +66,7 @@ import shadowverse.cards.Temp.ForestBat;
    public void onDrawOrDiscard() {
      for (AbstractCard c : AbstractDungeon.player.hand.group) {
        if (c instanceof ForestBat) {
-         if (!c.upgraded) {
-           c.baseDamage = 4 + this.amount;
-           continue;
-         }
-         c.baseDamage = 6 + this.amount;
+         c.baseDamage+= this.amount;
        }
      }
    }

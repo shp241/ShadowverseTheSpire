@@ -17,6 +17,9 @@ import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import shadowverse.action.ReturnAmuletToDiscardAction;
 import shadowverse.action.StasisEvokeIfRoomInHandAction;
 import shadowverse.cards.AbstractAmuletCard;
+import shadowverse.cards.Neutral.NaterranFuture;
+import shadowverse.cards.Temp.NaterranGreatTree;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.effect.AddCardToStasisEffect;
 
 public class AmuletOrb extends AbstractOrb {
@@ -47,9 +50,10 @@ public class AmuletOrb extends AbstractOrb {
         this.channelAnimTimer = 0.5F;
         if (card instanceof AbstractAmuletCard) {
             this.basePassiveAmount = ((AbstractAmuletCard) card).countDown;
-        }else {
+        }else if(card.type == AbstractCard.CardType.CURSE){
             this.basePassiveAmount = 3;
-        }
+        }else
+            this.basePassiveAmount = 0;
         this.passiveAmount = this.basePassiveAmount;
         this.baseEvokeAmount = this.basePassiveAmount;
         this.evokeAmount = this.baseEvokeAmount;
@@ -73,6 +77,7 @@ public class AmuletOrb extends AbstractOrb {
         }
     }
 
+    @Override
     public void onStartOfTurn() {
         super.onStartOfTurn();
 
@@ -85,16 +90,19 @@ public class AmuletOrb extends AbstractOrb {
             this.evokeAmount--;
             updateDescription();
         }
-        if (this.passiveAmount <= 0)
+        if (this.passiveAmount <= 0 && !(this.amulet instanceof NaterranGreatTree))
             AbstractDungeon.actionManager.addToTop((AbstractGameAction) new StasisEvokeIfRoomInHandAction(this));
     }
 
     public void onEvoke() {
-        if (this.amulet instanceof AbstractAmuletCard)
+        if (this.amulet instanceof AbstractAmuletCard && !this.amulet.hasTag(AbstractShadowversePlayer.Enums.AMULET_FOR_ONECE))
             AbstractDungeon.actionManager.addToTop((AbstractGameAction)new ReturnAmuletToDiscardAction(this.amulet));
-        if (this.passiveAmount <= 0) {
+        if (this.passiveAmount <= 0 && !(this.amulet instanceof NaterranGreatTree)) {
             if (this.amulet instanceof AbstractAmuletCard){
                 ((AbstractAmuletCard) this.amulet).onEvoke(this);
+                if (AbstractDungeon.player instanceof AbstractShadowversePlayer){
+                    ((AbstractShadowversePlayer)AbstractDungeon.player).amuletCount++;
+                }
                 this.amulet.superFlash(Color.GOLDENROD);
             }
         }
@@ -153,7 +161,7 @@ public class AmuletOrb extends AbstractOrb {
 
     public void renderActual(SpriteBatch sb) {
         this.amulet.render(sb);
-        if (!this.hb.hovered){
+        if (!this.hb.hovered && !(this.amulet instanceof NaterranGreatTree)){
             renderText(sb);
         }
         this.hb.render(sb);

@@ -9,7 +9,7 @@ public class ReturnAmuletToDiscardAction extends AbstractGameAction {
 
     public ReturnAmuletToDiscardAction(AbstractCard card) {
         this.card = card;
-        this.actionType = AbstractGameAction.ActionType.DAMAGE;
+        this.actionType = ActionType.CARD_MANIPULATION;
     }
 
     public void update() {

@@ -95,7 +95,7 @@ import java.util.List;
                  Faust.this.initializeTitle();
                  Faust.this.rawDescription = cardStrings2.DESCRIPTION;
                  Faust.this.initializeDescription();
-                 Faust.this.baseMagicNumber = 16;
+                 Faust.this.baseMagicNumber = 20;
                  Faust.this.magicNumber = Faust.this.baseMagicNumber;
                  Faust.this.upgradedMagicNumber = true;
                  Faust.this.rarity = CardRarity.UNCOMMON;

@@ -66,7 +66,7 @@ import shadowverse.characters.Vampire;
 
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new WaitAction(0.8F));
+     addToBot((AbstractGameAction)new WaitAction(0.6F));
      calculateCardDamage(abstractMonster);
        addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new ClashEffect(abstractMonster.hb.cX, abstractMonster.hb.cY), 0.1F));
      addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));

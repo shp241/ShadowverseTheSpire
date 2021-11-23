@@ -859,6 +859,12 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("MasterDealer", new Sfx("sounds/MasterDealer.wav"));
         reflectedMap.put("GuildAssembly", new Sfx("sounds/GuildAssembly.wav"));
         reflectedMap.put("Cernunnos", new Sfx("sounds/Cernunnos.wav"));
+        reflectedMap.put("HolyEnchanter", new Sfx("sounds/HolyEnchanter.wav"));
+        reflectedMap.put("PunishmentSniper", new Sfx("sounds/PunishmentSniper.wav"));
+        reflectedMap.put("SeraphLapis", new Sfx("sounds/SeraphLapis.wav"));
+        reflectedMap.put("Ra", new Sfx("sounds/Ra.wav"));
+        reflectedMap.put("OmenOfRepose", new Sfx("sounds/OmenOfRepose.wav"));
+        reflectedMap.put("Agnes", new Sfx("sounds/Agnes.wav"));
         /*     */
     }
 
@@ -928,6 +934,7 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addRelicToCustomPool((AbstractRelic) new Spineblade(), Royal.Enums.COLOR_YELLOW);
         BaseMod.addRelicToCustomPool((AbstractRelic) new Durandal(), Royal.Enums.COLOR_YELLOW);
         BaseMod.addRelicToCustomPool((AbstractRelic) new EndlessUsurpation(), Royal.Enums.COLOR_YELLOW);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new Offensive7(), Bishop.Enums.COLOR_WHITE);
         /*     */
     }
 
@@ -1728,6 +1735,21 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCard((AbstractCard) new DuskshadeBat());
         BaseMod.addCard((AbstractCard) new Cernunnos());
         BaseMod.addCard((AbstractCard) new MiracleHarvest());
+        BaseMod.addCard((AbstractCard) new HolyFlameTiger());
+        BaseMod.addCard((AbstractCard) new HolyFalcon());
+        BaseMod.addCard((AbstractCard) new BeastCallAria());
+        BaseMod.addCard((AbstractCard) new MoriaeEncomium());
+        BaseMod.addCard((AbstractCard) new ThemisDecree());
+        BaseMod.addCard((AbstractCard) new JusticeMana());
+        BaseMod.addCard((AbstractCard) new HolyEnchanter());
+        BaseMod.addCard((AbstractCard) new PunishmentSniper());
+        BaseMod.addCard((AbstractCard) new SeraphLapis());
+        BaseMod.addCard((AbstractCard) new RenascentSeraph());
+        BaseMod.addCard((AbstractCard) new AwakenedSeraph());
+        BaseMod.addCard((AbstractCard) new EnstatuedSeraph());
+        BaseMod.addCard((AbstractCard) new Ra());
+        BaseMod.addCard((AbstractCard) new OmenOfRepose());
+        BaseMod.addCard((AbstractCard) new Agnes());
         /* 276 */
         logger.info("Success");
         /*     */

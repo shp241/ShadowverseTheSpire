@@ -76,7 +76,7 @@ public class GuildAssembly extends CustomCard {
         if (this.timesUpgraded >= 3) {
             this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[2];
         }
-        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[5];
+        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[3];
         this.initializeDescription();
     }
 
@@ -92,7 +92,7 @@ public class GuildAssembly extends CustomCard {
         if (this.timesUpgraded >= 3) {
             this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[2];
         }
-        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[5];
+        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[3];
         this.initializeDescription();
     }
 

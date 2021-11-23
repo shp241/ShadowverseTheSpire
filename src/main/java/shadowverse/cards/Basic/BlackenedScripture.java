@@ -3,7 +3,9 @@
 
 
 import basemod.abstracts.CustomCard;
+import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.watcher.JudgementAction;
@@ -17,6 +19,8 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.FrailPower;
 import com.megacrit.cardcrawl.powers.WeakPower;
+import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
+import com.megacrit.cardcrawl.vfx.combat.MiracleEffect;
 import shadowverse.characters.Bishop;
 
 
@@ -47,6 +51,7 @@ import shadowverse.characters.Bishop;
    
    public void use(AbstractPlayer p, AbstractMonster m) {
      if (m != null && !m.isDeadOrEscaped()) {
+       addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new MiracleEffect(Color.SKY.cpy(),Color.WHITE.cpy(),"HEAL_3")));
        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)p, (AbstractPower)new WeakPower((AbstractCreature)m, this.magicNumber, false), this.magicNumber));
        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)p, (AbstractPower)new FrailPower((AbstractCreature)m, this.magicNumber, false), this.magicNumber));
      }

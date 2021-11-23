@@ -863,6 +863,11 @@
     "DESCRIPTION": "自然 。 NL 增加一张 *那塔拉的大树 到手中。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "自然 。 NL 增加一张 *那塔拉的大树 到手中。"
   },
+  "shadowverse:JusticeMana": {
+    "NAME": "正义玛纳",
+    "DESCRIPTION": "自然 。 NL 增加一张 *那塔拉的大树 到手中。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "自然 。 NL 增加一张 *那塔拉的大树 到手中。"
+  },
   "shadowverse:TechnologyMana": {
     "NAME": "科技马纳",
     "DESCRIPTION": "自然 。 NL 增加一张 *那塔拉的大树 到手中。 NL 消耗 。",
@@ -3264,5 +3269,62 @@
     "NAME": "奇迹果实",
     "DESCRIPTION": "增加1张 *妖精 到手中。 NL 如果本场战斗已使用的 *妖精 为5以上，升级这张 *妖精 。 NL 如果为10以上，抽 !M! 张牌，获得 [E] 。",
     "UPGRADE_DESCRIPTION": "增加1张 *妖精 到手中。 NL 如果本场战斗已使用的 *妖精 为5以上，升级这张 *妖精 。 NL 如果为10以上，抽 !M! 张牌，获得 [E] [E] 。"
+  },
+  "shadowverse:HolyFalcon": {
+    "NAME": "神圣猎鹰",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 消耗 。"
+  },
+  "shadowverse:HolyFlameTiger": {
+    "NAME": "圣炎猛虎",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 消耗 。"
+  },
+  "shadowverse:BeastCallAria": {
+    "NAME": "吟唱：野兽公主的呼唤",
+    "DESCRIPTION": "倒计时 2 NL 增加1张 *神圣猎鹰 和 *圣炎猛虎 到手中。",
+    "UPGRADE_DESCRIPTION": "倒计时 2 NL 增加1张 *神圣猎鹰+ 和 *圣炎猛虎+ 到手中。"
+  },
+  "shadowverse:MoriaeEncomium": {
+    "NAME": "愚神礼赞",
+    "DESCRIPTION": "抽 !M! 张牌，增加1张 *苦恼 到抽牌堆中。 NL 倒计时 1 NL 给予随机敌人 !M! 层 易伤 。"
+  },
+  "shadowverse:ThemisDecree": {
+    "NAME": "忒弥斯的审判",
+    "DESCRIPTION": "消耗手中所有非技能或非能力牌。 NL 给予全体敌人 !M! 层 虚弱 和 易伤 。 NL 消耗 。"
+  },
+  "shadowverse:HolyEnchanter": {
+    "NAME": "着魔的圣骑士",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抽自身 格挡 数量除以这张牌的 格挡 张牌。"
+  },
+  "shadowverse:PunishmentSniper": {
+    "NAME": "伐罪狙击手",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 造成 !D! 点伤害。 NL (本场战斗每触发1张护符本伤害+ !M! )"
+  },
+  "shadowverse:SeraphLapis": {
+    "NAME": "光耀的炽天使·拉碧丝",
+    "DESCRIPTION": "圣祝 。 NL 倒计时 1 NL 获得本场战斗的胜利。"
+  },
+  "shadowverse:RenascentSeraph": {
+    "NAME": "复苏的炽天使",
+    "DESCRIPTION": "圣祝 。 NL 倒计时 1 NL 增加1张 *光耀的炽天使·拉碧丝 到手中。"
+  },
+  "shadowverse:AwakenedSeraph": {
+    "NAME": "觉醒的炽天使",
+    "DESCRIPTION": "圣祝 。 NL 倒计时 1 NL 增加1张 *复苏的炽天使 到手中。"
+  },
+  "shadowverse:EnstatuedSeraph": {
+    "NAME": "被封印的炽天使",
+    "DESCRIPTION": "圣祝 。 NL 倒计时 1 NL 增加1张 *觉醒的炽天使 到手中。"
+  },
+  "shadowverse:Ra": {
+    "NAME": "光辉显世·拉",
+    "DESCRIPTION": "回合结束时对全体敌人造成 !M! 点伤害。 NL 这个伤害每回合会增加 !M! 点。"
+  },
+  "shadowverse:OmenOfRepose": {
+    "NAME": "安息绝杰·玛文",
+    "DESCRIPTION": "回复1点生命，下回合额外抽1张牌。 NL 使所有护符倒计时减少1。 NL 下回合如果未打出过攻击牌，受到的4以上的伤害变为3。 NL 跳过双方回合。 NL 消耗 。 "
+  },
+  "shadowverse:Agnes": {
+    "NAME": "复仇的白刃·阿尼耶丝",
+    "DESCRIPTION": "自然 。 NL 每打出1张护符牌，耗能减少1。 NL 每打出1张 *那塔拉的大树 ，耗能减少2。 NL 造成 !D! 点伤害。"
   }
 }

@@ -1144,5 +1144,19 @@
       "/+ #b",
       "。"
     ]
+  },
+  "shadowverse:RaPower": {
+    "NAME": "光辉显世·拉",
+    "DESCRIPTIONS": [
+      "回合结束时对全体敌人造成 #b",
+      " 点 伤害。"
+    ]
+  },
+  "shadowverse:RealmOfReposePower": {
+    "NAME": "安息的领域",
+    "DESCRIPTIONS": [
+      " #b",
+      " 回合内，如果你没有打出过攻击牌，受到的 #b4 以上的伤害变为 #b3 。"
+    ]
   }
 }

@@ -59,6 +59,8 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
         public static AbstractCard.CardTags LASTWORD;
         @SpireEnum
         public static AbstractCard.CardTags ARTIFACT;
+        @SpireEnum
+        public static AbstractCard.CardTags AMULET_FOR_ONECE;
 
         @SpirePatch(clz = AttackFromDeckToHandAction.class, method = "update")
         public static class ActionPatch {
@@ -175,6 +177,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
     public int wrathThisTurn = 0;
     public int resonanceCount = 0;
     public int necromanceCount = 0;
+    public int amuletCount = 0;
 
     public AbstractShadowversePlayer(String name, PlayerClass playerClass, String[] orbTextures, String orbVfxPath, float[] layerSpeeds, AbstractAnimation animation) {
         super(name, playerClass, orbTextures, orbVfxPath, layerSpeeds, animation);
@@ -192,6 +195,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
         this.wrathThisTurn = 0;
         this.resonanceCount = 0;
         this.necromanceCount = 0;
+        this.amuletCount = 0;
     }
 
     public void useCard(AbstractCard c, AbstractMonster monster, int energyOnUse) {

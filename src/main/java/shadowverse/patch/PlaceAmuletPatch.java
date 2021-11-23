@@ -12,6 +12,9 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.action.PlaceAmulet;
 import shadowverse.cards.AbstractAmuletCard;
+import shadowverse.cards.Temp.NaterranGreatTree;
+import shadowverse.characters.Bishop;
+import shadowverse.powers.NaterranTree;
 
 public class PlaceAmuletPatch {
     @SpirePatch(clz = AbstractPlayer.class, method = "useCard")
@@ -19,6 +22,10 @@ public class PlaceAmuletPatch {
         @SpirePostfixPatch
         public static void placeA(AbstractPlayer p, AbstractCard c, AbstractMonster monster, int energyOnUse) {
             if (c instanceof AbstractAmuletCard){
+                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new RealWaitAction(0.6F));
+                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new PlaceAmulet(c,p.hand));
+            }
+            if (p instanceof Bishop && c instanceof NaterranGreatTree && !p.hasPower(NaterranTree.POWER_ID)){
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new RealWaitAction(0.6F));
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new PlaceAmulet(c,p.hand));
             }

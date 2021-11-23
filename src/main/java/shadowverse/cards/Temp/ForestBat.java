@@ -44,10 +44,11 @@ import shadowverse.stance.Vengeance;
      super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Vampire.Enums.COLOR_SCARLET, CardRarity.SPECIAL, CardTarget.ENEMY);
      if (AbstractDungeon.player != null && AbstractDungeon.player.hasPower("shadowverse:OldBloodKingPower")){
        this.baseDamage = 4 + (AbstractDungeon.player.getPower("shadowverse:OldBloodKingPower")).amount;
-     } else if (AbstractDungeon.player != null && AbstractDungeon.player.hasPower(NightVampirePower.POWER_ID)){
-       this.baseDamage = 8;
-     }else {
+     } else {
        this.baseDamage = 4;
+     }
+     if (AbstractDungeon.player != null && AbstractDungeon.player.hasPower(NightVampirePower.POWER_ID)){
+       this.baseDamage += this.baseDamage;
      }
      this.exhaust = true;
    }
@@ -56,11 +57,7 @@ import shadowverse.stance.Vengeance;
    public void upgrade() {
      if (!this.upgraded) {
        upgradeName();
-       if (AbstractDungeon.player!=null&&AbstractDungeon.getCurrRoom()!=null&&(AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&AbstractDungeon.player.hasPower(NightVampirePower.POWER_ID)){
-         upgradeDamage(4);
-       }else {
-         upgradeDamage(2);
-       }
+       upgradeDamage(2);
      } 
    }
  

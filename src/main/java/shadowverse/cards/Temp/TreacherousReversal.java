@@ -85,16 +85,6 @@ public class TreacherousReversal extends CustomCard {
             addToBot((AbstractGameAction)new MakeTempCardInDrawPileAction(tmp, 1, true, true));
         }
         AbstractCard v = new VictoryCard();
-        boolean isKMR = false;
-        for (AbstractMonster m : (AbstractDungeon.getMonsters()).monsters) {
-            if (m instanceof KMR){
-                isKMR = true;
-            }
-        }
-        if (isKMR){
-            addToBot((AbstractGameAction)new MakeTempCardInDrawPileAction(new Death(), 1, false, false, true));
-        }else {
-            addToBot((AbstractGameAction)new MakeTempCardInDrawPileAction(v, 1, false, false, true));
-        }
+        addToBot((AbstractGameAction)new MakeTempCardInDrawPileAction(v, 1, false, false, true));
     }
 }

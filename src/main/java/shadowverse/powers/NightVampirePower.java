@@ -30,38 +30,22 @@ public class NightVampirePower extends AbstractPower {
     private void updateExistingBat() {
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
             if (c instanceof ForestBat) {
-                if (!c.upgraded) {
-                    c.baseDamage = 8;
-                    continue;
-                }
-                c.baseDamage = 12;
+                c.baseDamage += c.baseDamage;
             }
         }
         for (AbstractCard c : AbstractDungeon.player.drawPile.group) {
             if (c instanceof ForestBat) {
-                if (!c.upgraded) {
-                    c.baseDamage = 8;
-                    continue;
-                }
-                c.baseDamage = 12;
+                c.baseDamage += c.baseDamage;
             }
         }
         for (AbstractCard c : AbstractDungeon.player.discardPile.group) {
             if (c instanceof ForestBat) {
-                if (!c.upgraded) {
-                    c.baseDamage = 8;
-                    continue;
-                }
-                c.baseDamage = 12;
+                c.baseDamage += c.baseDamage;
             }
         }
         for (AbstractCard c : AbstractDungeon.player.exhaustPile.group) {
             if (c instanceof ForestBat) {
-                if (!c.upgraded) {
-                    c.baseDamage = 8;
-                    continue;
-                }
-                c.baseDamage = 12;
+                c.baseDamage += c.baseDamage;
             }
         }
     }
@@ -69,11 +53,7 @@ public class NightVampirePower extends AbstractPower {
     public void onDrawOrDiscard() {
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
             if (c instanceof ForestBat) {
-                if (!c.upgraded) {
-                    c.baseDamage = 8;
-                    continue;
-                }
-                c.baseDamage = 12;
+                c.baseDamage += c.baseDamage;
             }
         }
     }

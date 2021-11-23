@@ -60,15 +60,14 @@ public class Bishop extends AbstractShadowversePlayer{
         }
         starterDeck.add(BlackenedScripture.ID);
         starterDeck.add(PriestOfTheCudgel.ID);
-        starterDeck.add(SacredPlea.ID);
         return starterDeck;
     }
 
     @Override
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add("shadowverse:Offensive4");
-        UnlockTracker.markRelicAsSeen("shadowverse:Offensive4");
+        retVal.add("shadowverse:Offensive7");
+        UnlockTracker.markRelicAsSeen("shadowverse:Offensive7");
         return retVal;
     }
 

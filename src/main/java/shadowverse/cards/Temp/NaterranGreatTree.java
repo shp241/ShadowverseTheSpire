@@ -8,7 +8,8 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.localization.CardStrings;
+ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import shadowverse.characters.AbstractShadowversePlayer;
@@ -55,6 +56,9 @@ import shadowverse.powers.NaterranTree;
        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new NaterranTree((AbstractCreature)abstractPlayer)));
      } else {
        addToBot((AbstractGameAction)new DrawCardAction((AbstractCreature)abstractPlayer, this.magicNumber));
+       if (AbstractDungeon.player instanceof AbstractShadowversePlayer){
+         ((AbstractShadowversePlayer)AbstractDungeon.player).amuletCount++;
+       }
      } 
    }
  
