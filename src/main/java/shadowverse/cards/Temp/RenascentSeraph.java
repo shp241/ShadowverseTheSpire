@@ -59,6 +59,10 @@ public class RenascentSeraph extends AbstractAmuletCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            upgradeBaseCost(2);
+            this.cardsToPreview.upgrade();
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 

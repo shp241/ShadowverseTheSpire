@@ -29,6 +29,7 @@ public class VictoryCard extends CustomCard {
 
     public VictoryCard() {
         super(ID, NAME, IMG_PATH, -2, DESCRIPTION, CardType.STATUS, CardColor.COLORLESS, CardRarity.COMMON, CardTarget.NONE);
+        this.isEthereal = true;
     }
 
     @Override

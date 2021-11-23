@@ -91,6 +91,7 @@ public class SeraphLapis extends AbstractAmuletCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            upgradeBaseCost(2);
         }
     }
 
