@@ -88,6 +88,21 @@ public class SeraphLapis extends AbstractAmuletCard {
     }
 
     @Override
+    public int onHeal(int healAmount, AmuletOrb paramOrb) {
+        return 0;
+    }
+
+    @Override
+    public void onOtherCardPlayed(AbstractCard c, AmuletOrb paramOrb) {
+
+    }
+
+    @Override
+    public void onGainedBlock(int blockAmt, AmuletOrb paramOrb) {
+
+    }
+
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();

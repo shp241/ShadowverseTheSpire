@@ -3274,8 +3274,16 @@
     "NAME": "神圣猎鹰",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 消耗 。"
   },
+  "shadowverse:RegalFalcon": {
+    "NAME": "壮丽大神隼",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 消耗 。"
+  },
   "shadowverse:HolyFlameTiger": {
     "NAME": "圣炎猛虎",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 消耗 。"
+  },
+  "shadowverse:HolywingDragon": {
+    "NAME": "圣翼白龙",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 消耗 。"
   },
   "shadowverse:BeastCallAria": {
@@ -3297,7 +3305,7 @@
   },
   "shadowverse:PunishmentSniper": {
     "NAME": "伐罪狙击手",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 造成 !D! 点伤害。 NL (本场战斗每触发1张护符本伤害+ !M! )"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 造成 !D! 点伤害。 NL (本场战斗已触发的护符数量的一半 !M! 倍)"
   },
   "shadowverse:SeraphLapis": {
     "NAME": "光耀的炽天使·拉碧丝",
@@ -3329,5 +3337,69 @@
   "shadowverse:Agnes": {
     "NAME": "复仇的白刃·阿尼耶丝",
     "DESCRIPTION": "自然 。 NL 每打出1张护符牌，耗能减少1。 NL 每打出1张 *那塔拉的大树 ，耗能减少2。 NL 造成 !D! 点伤害。"
+  },
+  "shadowverse:WhitefangTemple": {
+    "NAME": "吟唱：白牙神殿",
+    "DESCRIPTION": "圣祝 \b倒计时 6 NL 增加1张 *圣翼白龙 到手中。 NL 每当回复生命时， 倒计时 减少1。 NL 回合开始时回复1点生命。",
+    "UPGRADE_DESCRIPTION":"圣祝 \b倒计时 6 NL 增加1张 *圣翼白龙+ 到手中。 NL 每当回复生命时， 倒计时 减少1。 NL 回合开始时回复1点生命。"
+  },
+  "shadowverse:ElanaPrayer": {
+    "NAME": "耶拉的祈祷",
+    "DESCRIPTION": "每当回复生命时，获得1点 力量 和 敏捷 。"
+  },
+  "shadowverse:Elana": {
+    "NAME": "清纯祈祷者·耶拉",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张 *耶拉的祈祷 到手中。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张 *耶拉的祈祷+ 到手中。 NL 消耗 。"
+  },
+  "shadowverse:IronknuckleNun": {
+    "NAME": "铁腕女修士",
+    "DESCRIPTION": "机械 。 NL 获得 !B! 点 格挡 。 NL 获得 !M! 层 多重护甲 。 NL 增加1张 *修复模式 到手中。"
+  },
+  "shadowverse:RadiantAngel": {
+    "NAME": "光辉天使",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 回复 !M! 点生命。 NL 抽1张牌。"
+  },
+  "shadowverse:GodLovingSmite": {
+    "NAME": "神爱的一击",
+    "DESCRIPTION": "对随机敌人造成 !D! 点伤害。 NL 使所有护符 倒计时 减少1。"
+  },
+  "shadowverse:HolyCavalier": {
+    "NAME": "圣骑兵",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得 !M! 层 多重护甲 。 NL 消耗 。"
+  },
+  "shadowverse:HallowedCave": {
+    "NAME": "洞窟圣堂",
+    "DESCRIPTION": "圣祝 。 NL 打出时增加1张 *圣骑兵 到手中 。 NL 回合开始时增加1张 *圣骑兵 到手中。 NL 倒计时 2 \b失去这个效果。",
+    "UPGRADE_DESCRIPTION":"圣祝 。 NL 打出时增加1张 *圣骑兵 到手中 。 NL 回合开始时增加1张 *圣骑兵 到手中。 NL 倒计时 3 \b失去这个效果。"
+  },
+  "shadowverse:HolyHector": {
+    "NAME": "圣将军·赫克托",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得2点 临时力量 。 NL 如果 墓地 数量为9以上，增加2张 *圣骑兵 到手中。",
+    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害。 NL 获得2点 临时力量 。 NL 如果 墓地 数量为9以上，增加2张 *圣骑兵+ 到手中。"
+  },
+  "shadowverse:AcolyteLight": {
+    "NAME": "破邪圣光",
+    "DESCRIPTION": "移除敌人的 格挡 。 NL 回复移除数量的生命值。 NL 虚无 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"移除敌人的 格挡 。 NL 回复移除数量的生命值。 NL 消耗 。"
+  },
+  "shadowverse:TempleOfHeresy": {
+    "NAME": "邪教神殿",
+    "DESCRIPTION": "增加1张随机诅咒牌到抽牌堆中 。 NL 圣祝 \b 倒计时 6。 NL 从耗能为0的 *撒旦 或 *冰狱之王·撒旦 中随机增加1张到手牌中。 NL 回合开始时，护符栏位每有1张诅咒牌， 倒计时 减少1。",
+    "UPGRADE_DESCRIPTION":"固有 。 NL 增加1张随机诅咒牌到抽牌堆中。 NL 圣祝 \b 倒计时 6。 NL 从耗能为0的 *撒旦 或 *冰狱之王·撒旦 中随机增加1张到手牌中。 NL 回合开始时，护符栏位每有1张诅咒牌， 倒计时 减少1。"
+  },
+  "shadowverse:Abdiel": {
+    "NAME": "亚必迭",
+    "DESCRIPTION": "一回合一次，打出非技能主教牌时，获得 [E] ，增加1张 *进化点+ 到手中。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION":"一回合一次，打出非技能主教牌时，获得 [E] ，增加1张 *进化点+ 到手中。"
+  },
+  "shadowverse:DivineBirdSong": {
+    "NAME": "吟唱：神鸟之笛",
+    "DESCRIPTION": "倒计时 2 NL 增加1张 *壮丽的大神隼 到手中。",
+    "UPGRADE_DESCRIPTION":"倒计时 2 NL 增加1张 *壮丽的大神隼+ 到手中。"
+  },
+  "shadowverse:Wilbert": {
+    "NAME": "尊荣骑士·维尔伯特",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 给予自身「受到攻击时，如果有 格挡 ，对攻击者造成其最大生命值5%（不会低于6点）的伤害。」效果。 NL 谢幕曲 下回合开始时，增加 !M! 张 *圣骑兵 到手中。"
   }
 }

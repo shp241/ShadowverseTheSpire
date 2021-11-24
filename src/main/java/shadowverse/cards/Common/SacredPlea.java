@@ -2,6 +2,7 @@ package shadowverse.cards.Common;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -38,6 +39,22 @@ public class SacredPlea extends AbstractAmuletCard {
     public void endOfTurn(AmuletOrb paramOrb) {
 
     }
+
+    @Override
+    public int onHeal(int healAmount, AmuletOrb paramOrb) {
+        return 0;
+    }
+
+    @Override
+    public void onOtherCardPlayed(AbstractCard c, AmuletOrb paramOrb) {
+
+    }
+
+    @Override
+    public void onGainedBlock(int blockAmt, AmuletOrb paramOrb) {
+
+    }
+
 
     @Override
     public void upgrade() {

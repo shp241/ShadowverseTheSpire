@@ -28,6 +28,11 @@ public abstract class AbstractAmuletCard extends CustomCard {
 
     public abstract void endOfTurn(AmuletOrb paramOrb);
 
+    public abstract int onHeal(int healAmount,AmuletOrb paramOrb);
+
+    public abstract void onOtherCardPlayed(AbstractCard c,AmuletOrb paramOrb);
+
+    public abstract void onGainedBlock(int blockAmt,AmuletOrb paramOrb);
 
     protected void upgradeBaseCountDown(int newCountDown) {
         this.countDown = newCountDown;

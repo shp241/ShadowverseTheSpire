@@ -25,6 +25,7 @@ import com.megacrit.cardcrawl.powers.PoisonPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.BiteEffect;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Vampire;
 import shadowverse.powers.EpitaphPower;
 import shadowverse.powers.NightVampirePower;
@@ -60,10 +61,32 @@ import shadowverse.stance.Vengeance;
        upgradeDamage(2);
      } 
    }
- 
+
+   public void applyPowers() {
+     AbstractShadowversePlayer w = (AbstractShadowversePlayer) AbstractDungeon.player;
+     if(w.hasPower(NightVampirePower.POWER_ID)){
+       int realBaseDamage = this.baseDamage;
+       this.baseDamage = this.baseDamage * 2;
+       super.applyPowers();
+       this.baseDamage = realBaseDamage;
+       this.isDamageModified = (this.damage != this.baseDamage);
+     }
+   }
+
+   public void calculateCardDamage(AbstractMonster mo) {
+     AbstractShadowversePlayer w = (AbstractShadowversePlayer)AbstractDungeon.player;
+     if(w.hasPower(NightVampirePower.POWER_ID)){
+       int realBaseDamage = this.baseDamage;
+       this.baseDamage = this.baseDamage * 2;
+       super.calculateCardDamage(mo);
+       this.baseDamage = realBaseDamage;
+       this.isDamageModified = (this.damage != this.baseDamage);
+     }
+   }
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new BiteEffect(abstractMonster.hb.cX, abstractMonster.hb.cY - 40.0F * Settings.scale, Color.SCARLET.cpy()), 0.2F));
+     calculateCardDamage(abstractMonster);
      addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
      if (abstractPlayer.hasPower(NightVampirePower.POWER_ID)){
        addToBot((AbstractGameAction)new SFXAction("NightVampirePower"));

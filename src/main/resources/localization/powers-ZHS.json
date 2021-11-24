@@ -1158,5 +1158,24 @@
       " #b",
       " 回合内，如果你没有打出过攻击牌，受到的 #b4 以上的伤害变为 #b3 。"
     ]
+  },
+  "shadowverse:AbdielPower": {
+    "NAME": "亚必迭",
+    "DESCRIPTIONS": [
+      "一回合一次，打出 #y非技能主教牌 时，获得 [E] ，增加1张 #y进化点+ 到手中。"
+    ]
+  },
+  "shadowverse:WilbertPower": {
+    "NAME": "尊荣骑士·维尔伯特",
+    "DESCRIPTIONS": [
+      "受到攻击时，如果你有格挡，对攻击者造成其最大生命值 #b5% (不会低于 #6 点)的伤害。"
+    ]
+  },
+  "shadowverse:NextTurnHC": {
+    "NAME": "尊荣骑士·维尔伯特：谢幕曲",
+    "DESCRIPTIONS": [
+      "回合开始时，增加 #b",
+      " 张 #y圣骑兵 到手中。"
+    ]
   }
 }

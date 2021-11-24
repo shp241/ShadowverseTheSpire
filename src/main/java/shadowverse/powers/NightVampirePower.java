@@ -24,39 +24,8 @@ public class NightVampirePower extends AbstractPower {
         this.type = PowerType.BUFF;
         updateDescription();
         this.img = new Texture("img/powers/NightVampirePower.png");
-        updateExistingBat();
     }
 
-    private void updateExistingBat() {
-        for (AbstractCard c : AbstractDungeon.player.hand.group) {
-            if (c instanceof ForestBat) {
-                c.baseDamage += c.baseDamage;
-            }
-        }
-        for (AbstractCard c : AbstractDungeon.player.drawPile.group) {
-            if (c instanceof ForestBat) {
-                c.baseDamage += c.baseDamage;
-            }
-        }
-        for (AbstractCard c : AbstractDungeon.player.discardPile.group) {
-            if (c instanceof ForestBat) {
-                c.baseDamage += c.baseDamage;
-            }
-        }
-        for (AbstractCard c : AbstractDungeon.player.exhaustPile.group) {
-            if (c instanceof ForestBat) {
-                c.baseDamage += c.baseDamage;
-            }
-        }
-    }
-
-    public void onDrawOrDiscard() {
-        for (AbstractCard c : AbstractDungeon.player.hand.group) {
-            if (c instanceof ForestBat) {
-                c.baseDamage += c.baseDamage;
-            }
-        }
-    }
     
     public void updateDescription() {
         this.description = DESCRIPTIONS[0];

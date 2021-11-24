@@ -12,11 +12,13 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
  import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import shadowverse.characters.AbstractShadowversePlayer;
-import shadowverse.powers.NaterranTree;
+ import shadowverse.cards.AbstractNoCountDownAmulet;
+ import shadowverse.characters.AbstractShadowversePlayer;
+ import shadowverse.orbs.AmuletOrb;
+ import shadowverse.powers.NaterranTree;
  
  public class NaterranGreatTree
-   extends CustomCard
+   extends CustomCard implements AbstractNoCountDownAmulet
  {
    public static final String ID = "shadowverse:NaterranGreatTree";
    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:NaterranGreatTree");
@@ -66,5 +68,36 @@ import shadowverse.powers.NaterranTree;
    public AbstractCard makeCopy() {
      return (AbstractCard)new NaterranGreatTree();
    }
+
+   @Override
+   public void onStartOfTurn(AmuletOrb paramOrb) {
+
+   }
+
+   @Override
+   public void onEvoke(AmuletOrb paramOrb) {
+
+   }
+
+   @Override
+   public void endOfTurn(AmuletOrb paramOrb) {
+
+   }
+
+   @Override
+   public void onGainedBlock(int blockAmt, AmuletOrb paramOrb) {
+
+   }
+
+   @Override
+   public void onOtherCardPlayed(AbstractCard c, AmuletOrb paramOrb) {
+
+   }
+
+   @Override
+   public int onHeal(int healAmount, AmuletOrb paramOrb) {
+     return 0;
+   }
+
  }
 

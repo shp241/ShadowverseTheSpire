@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.actions.common.SuicideAction;
 import com.megacrit.cardcrawl.actions.unique.CanLoseAction;
 import com.megacrit.cardcrawl.actions.utility.HideHealthBarAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -52,6 +53,21 @@ public class RenascentSeraph extends AbstractAmuletCard {
 
     @Override
     public void endOfTurn(AmuletOrb paramOrb) {
+
+    }
+
+    @Override
+    public int onHeal(int healAmount, AmuletOrb paramOrb) {
+        return 0;
+    }
+
+    @Override
+    public void onOtherCardPlayed(AbstractCard c, AmuletOrb paramOrb) {
+
+    }
+
+    @Override
+    public void onGainedBlock(int blockAmt, AmuletOrb paramOrb) {
 
     }
 

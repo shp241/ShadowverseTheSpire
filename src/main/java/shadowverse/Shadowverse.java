@@ -865,6 +865,11 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("Ra", new Sfx("sounds/Ra.wav"));
         reflectedMap.put("OmenOfRepose", new Sfx("sounds/OmenOfRepose.wav"));
         reflectedMap.put("Agnes", new Sfx("sounds/Agnes.wav"));
+        reflectedMap.put("Elana", new Sfx("sounds/Elana.wav"));
+        reflectedMap.put("IronknuckleNun", new Sfx("sounds/IronknuckleNun.wav"));
+        reflectedMap.put("HolyHector", new Sfx("sounds/HolyHector.wav"));
+        reflectedMap.put("Abdiel", new Sfx("sounds/Abdiel.wav"));
+        reflectedMap.put("Wilbert", new Sfx("sounds/Wilbert.wav"));
         /*     */
     }
 
@@ -1750,6 +1755,21 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCard((AbstractCard) new Ra());
         BaseMod.addCard((AbstractCard) new OmenOfRepose());
         BaseMod.addCard((AbstractCard) new Agnes());
+        BaseMod.addCard((AbstractCard) new HolywingDragon());
+        BaseMod.addCard((AbstractCard) new WhitefangTemple());
+        BaseMod.addCard((AbstractCard) new ElanaPrayer());
+        BaseMod.addCard((AbstractCard) new Elana());
+        BaseMod.addCard((AbstractCard) new IronknuckleNun());
+        BaseMod.addCard((AbstractCard) new RadiantAngel());
+        BaseMod.addCard((AbstractCard) new GodLovingSmite());
+        BaseMod.addCard((AbstractCard) new HallowedCave());
+        BaseMod.addCard((AbstractCard) new HolyHector());
+        BaseMod.addCard((AbstractCard) new AcolyteLight());
+        BaseMod.addCard((AbstractCard) new TempleOfHeresy());
+        BaseMod.addCard((AbstractCard) new Abdiel());
+        BaseMod.addCard((AbstractCard) new RegalFalcon());
+        BaseMod.addCard((AbstractCard) new DivineBirdSong());
+        BaseMod.addCard((AbstractCard) new Wilbert());
         /* 276 */
         logger.info("Success");
         /*     */

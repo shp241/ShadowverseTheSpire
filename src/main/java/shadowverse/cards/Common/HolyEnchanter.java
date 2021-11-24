@@ -42,8 +42,10 @@ import shadowverse.characters.Bishop;
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      addToBot((AbstractGameAction)new SFXAction("HolyEnchanter"));
      addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
-     addToBot((AbstractGameAction)new DrawCardAction(1));
-     addToBot((AbstractGameAction)new DrawCardAction(abstractPlayer.currentBlock/this.block));
+     if (this.block>0){
+       addToBot((AbstractGameAction)new DrawCardAction(1));
+       addToBot((AbstractGameAction)new DrawCardAction(abstractPlayer.currentBlock/this.block));
+     }
    }
  
    

@@ -2,27 +2,15 @@ package shadowverse.action;
 
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.screens.CardRewardScreen;
-import com.megacrit.cardcrawl.vfx.cardManip.ExhaustCardEffect;
-import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDiscardEffect;
-import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToHandEffect;
 import com.megacrit.cardcrawl.vfx.combat.LightFlareParticleEffect;
+import shadowverse.cards.AbstractNoCountDownAmulet;
 import shadowverse.orbs.AmuletOrb;
-import shadowverse.powers.CarnivalNecromancerPower;
-import shadowverse.powers.Cemetery;
-import shadowverse.powers.EverdarkStrixPower;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -51,6 +39,10 @@ public class ReduceCountDownAction extends AbstractGameAction {
             for (AbstractOrb o : this.p.orbs) {
                 if (!(o instanceof AmuletOrb)) {
                     this.cannotChose.add(o);
+                }else {
+                    if (((AmuletOrb) o).amulet instanceof AbstractNoCountDownAmulet){
+                        this.cannotChose.add(o);
+                    }
                 }
             }
             if (this.cannotChose.size() == this.p.orbs.size()) {
@@ -96,7 +88,9 @@ public class ReduceCountDownAction extends AbstractGameAction {
             if (o instanceof AmuletOrb){
                 AbstractCard c = ((AmuletOrb) o).amulet;
                 this.map.put(c,i);
-                derp.add(c);
+                if (!(c instanceof AbstractNoCountDownAmulet)){
+                    derp.add(c);
+                }
             }
         }
         return derp;

@@ -34,8 +34,8 @@
      @Override
      public void onCardDraw(AbstractCard drawnCard) {
          if (drawnCard.type == AbstractCard.CardType.CURSE && Shadowverse.canSpawnAmuletOrb()){
-             addToBot((AbstractGameAction)new PlaceAmulet(drawnCard,AbstractDungeon.player.hand));
-             addToBot((AbstractGameAction)new DrawCardAction(1));
+             addToTop((AbstractGameAction)new PlaceAmulet(drawnCard,AbstractDungeon.player.hand));
+             addToTop((AbstractGameAction)new DrawCardAction(1));
          }
      }
 

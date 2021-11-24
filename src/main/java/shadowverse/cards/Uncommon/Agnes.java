@@ -60,7 +60,7 @@
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      addToBot((AbstractGameAction)new SFXAction("Agnes"));
-     addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+     addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
      this.cost = BASE_COST;
    }
  
