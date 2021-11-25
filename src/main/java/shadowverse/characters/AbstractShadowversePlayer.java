@@ -253,7 +253,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
 
     public void applyStartOfCombatLogic() {
         super.applyStartOfCombatLogic();
-        this.canHeal = this.currentHealth;
+        this.canHeal = this.currentHealth+12;
         if ((this.currentHealth <= this.maxHealth / 2.0F||this.maxHealth==1)&& !(this instanceof Nemesis)) {
             AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ChangeStanceAction((AbstractStance) new Vengeance()));
         }
@@ -270,65 +270,12 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
         AbstractDungeon.actionManager.addToBottom(new RemoveMinionAction());
     }
 
-    @Override
-    public void heal(int healAmount, boolean showEffect) {
-        if (Settings.isEndless && this.isPlayer && AbstractDungeon.player.hasBlight("FullBelly")) {
-            healAmount /= 2;
-            if (healAmount < 1) {
-                healAmount = 1;
-            }
-        }
-
-        if (!this.isDying) {
-            Iterator var3 = AbstractDungeon.player.relics.iterator();
-
-            AbstractRelic r2;
-            while(var3.hasNext()) {
-                r2 = (AbstractRelic)var3.next();
-                if (this.isPlayer) {
-                    healAmount = r2.onPlayerHeal(healAmount);
-                }
-            }
-
-            AbstractPower p;
-            for(var3 = this.powers.iterator(); var3.hasNext(); healAmount = p.onHeal(healAmount)) {
-                p = (AbstractPower)var3.next();
-            }
-            if ((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT && this.currentHealth+healAmount>this.canHeal){
-                healAmount = this.canHeal - this.currentHealth;
-            }
-            this.currentHealth += healAmount;
-            if (this.currentHealth > this.maxHealth) {
-                this.currentHealth = this.maxHealth;
-            }
-
-            if ((float)this.currentHealth > (float)this.maxHealth / 2.0F && this.isBloodied) {
-                this.isBloodied = false;
-                var3 = AbstractDungeon.player.relics.iterator();
-
-                while(var3.hasNext()) {
-                    r2 = (AbstractRelic)var3.next();
-                    r2.onNotBloodied();
-                }
-            }
-
-            if (healAmount >= 0) {
-                if (showEffect && this.isPlayer) {
-                    AbstractDungeon.topPanel.panelHealEffect();
-                    AbstractDungeon.effectsQueue.add(new HealEffect(this.hb.cX - this.animX, this.hb.cY, healAmount));
-                }
-
-                this.healthBarUpdatedEvent();
-            }
-
-        }
-    }
-
-
 
     @Override
     public void heal(int healAmount){
-        this.heal(healAmount, true);
+        if (healAmount+this.currentHealth>this.canHeal)
+            healAmount=this.canHeal-this.currentHealth;
+        super.heal(healAmount);
         if (this.currentHealth > this.maxHealth / 2&&!this.hasPower(VengeanceHealthPower.POWER_ID))
             AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ChangeStanceAction((AbstractStance)new NeutralStance()));
     }

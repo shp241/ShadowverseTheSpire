@@ -39,7 +39,7 @@ public class MirrorImage extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot(new SelectCardsInHandAction(1, TEXT[0], false, false, card -> (card.type == CardType.ATTACK || card.type == CardType.POWER) && card.hasTag(AbstractShadowversePlayer.Enums.LEGEND), abstractCards -> {
+        addToBot(new SelectCardsInHandAction(1, TEXT[0], false, false, card -> (card.type == CardType.ATTACK || card.type == CardType.POWER) && !card.hasTag(AbstractShadowversePlayer.Enums.LEGEND) && !card.hasTag(CardTags.HEALING), abstractCards -> {
             for (AbstractCard c : abstractCards) {
                 AbstractCard tmp = c.makeStatEquivalentCopy();
                 tmp.exhaustOnUseOnce = true;
