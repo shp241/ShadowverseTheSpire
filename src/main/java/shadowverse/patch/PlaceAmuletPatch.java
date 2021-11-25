@@ -24,7 +24,7 @@ public class PlaceAmuletPatch {
     public static class placeCardPatch {
         @SpirePostfixPatch
         public static void placeA(AbstractPlayer p, AbstractCard c, AbstractMonster monster, int energyOnUse) {
-            if (c instanceof AbstractAmuletCard){
+            if (c instanceof AbstractAmuletCard || (c instanceof AbstractCrystalizeCard && c.type== AbstractCard.CardType.POWER)){
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new RealWaitAction(0.6F));
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new PlaceAmulet(c,p.hand));
             }

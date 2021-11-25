@@ -48,7 +48,7 @@ import shadowverse.characters.Bishop;
      AbstractShadowversePlayer w = (AbstractShadowversePlayer) AbstractDungeon.player;
      if(w.amuletCount > 0){
        int realBaseDamage = this.baseDamage;
-       this.baseDamage = (int) (Math.ceil(w.amuletCount/2) * this.magicNumber);
+       this.baseDamage = (w.amuletCount%2==0?w.amuletCount/2:w.amuletCount/2+1) * this.magicNumber;
        super.applyPowers();
        this.baseDamage = realBaseDamage;
        this.isDamageModified = (this.damage != this.baseDamage);
@@ -58,7 +58,7 @@ import shadowverse.characters.Bishop;
    public void calculateCardDamage(AbstractMonster mo) {
      AbstractShadowversePlayer w = (AbstractShadowversePlayer)AbstractDungeon.player;
      int realBaseDamage = this.baseDamage;
-     this.baseDamage = (int) (Math.ceil(w.amuletCount/2) * this.magicNumber);
+     this.baseDamage = (w.amuletCount%2==0?w.amuletCount/2:w.amuletCount/2+1) * this.magicNumber;
      super.calculateCardDamage(mo);
      this.baseDamage = realBaseDamage;
      this.isDamageModified = (this.damage != this.baseDamage);

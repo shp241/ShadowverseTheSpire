@@ -3235,7 +3235,10 @@
   },
   "shadowverse:HallowedDogma": {
     "NAME": "崇高的教理",
-    "DESCRIPTION": "选择1张张护符减少2 倒计时 。 NL 抽 !M! 张牌。"
+    "DESCRIPTION": "选择1张张护符减少2 倒计时 。 NL 抽 !M! 张牌。",
+    "EXTENDED_DESCRIPTION": [
+      "没有可以加速的护符！"
+    ]
   },
   "shadowverse:ImaginationRealized": {
     "NAME": "想象的具现化",
@@ -3340,8 +3343,8 @@
   },
   "shadowverse:WhitefangTemple": {
     "NAME": "吟唱：白牙神殿",
-    "DESCRIPTION": "圣祝 \b倒计时 6 NL 增加1张 *圣翼白龙 到手中。 NL 每当回复生命时， 倒计时 减少1。 NL 回合开始时回复1点生命。",
-    "UPGRADE_DESCRIPTION":"圣祝 \b倒计时 6 NL 增加1张 *圣翼白龙+ 到手中。 NL 每当回复生命时， 倒计时 减少1。 NL 回合开始时回复1点生命。"
+    "DESCRIPTION": "圣祝 \b倒计时 6 NL 增加1张 *圣翼白龙 到手中。 NL 每当回复生命时， 倒计时 减少1。 NL 回合结束时回复1点生命。",
+    "UPGRADE_DESCRIPTION":"圣祝 \b倒计时 6 NL 增加1张 *圣翼白龙+ 到手中。 NL 每当回复生命时， 倒计时 减少1。 NL 回合结束时回复1点生命。"
   },
   "shadowverse:ElanaPrayer": {
     "NAME": "耶拉的祈祷",
@@ -3385,8 +3388,8 @@
   },
   "shadowverse:TempleOfHeresy": {
     "NAME": "邪教神殿",
-    "DESCRIPTION": "增加1张随机诅咒牌到抽牌堆中 。 NL 圣祝 \b 倒计时 6。 NL 从耗能为0的 *撒旦 或 *冰狱之王·撒旦 中随机增加1张到手牌中。 NL 回合开始时，护符栏位每有1张诅咒牌， 倒计时 减少1。",
-    "UPGRADE_DESCRIPTION":"固有 。 NL 增加1张随机诅咒牌到抽牌堆中。 NL 圣祝 \b 倒计时 6。 NL 从耗能为0的 *撒旦 或 *冰狱之王·撒旦 中随机增加1张到手牌中。 NL 回合开始时，护符栏位每有1张诅咒牌， 倒计时 减少1。"
+    "DESCRIPTION": "增加1张 *恶魔崇拜 到抽牌堆中 。 NL 圣祝 \b 倒计时 6。 NL 从耗能为0的 *撒旦 或 *冰狱之王·撒旦 中随机增加1张到手牌中。 NL 回合开始时，护符栏位每有1张诅咒牌， 倒计时 减少1。",
+    "UPGRADE_DESCRIPTION":"固有 。 NL 增加1张 *恶魔崇拜 到抽牌堆中。 NL 圣祝 \b 倒计时 6。 NL 从耗能为0的 *撒旦 或 *冰狱之王·撒旦 中随机增加1张到手牌中。 NL 回合开始时，护符栏位每有1张诅咒牌， 倒计时 减少1。"
   },
   "shadowverse:Abdiel": {
     "NAME": "亚必迭",
@@ -3401,5 +3404,63 @@
   "shadowverse:Wilbert": {
     "NAME": "尊荣骑士·维尔伯特",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 给予自身「受到攻击时，如果有 格挡 ，对攻击者造成其最大生命值5%（不会低于6点）的伤害。」效果。 NL 谢幕曲 下回合开始时，增加 !M! 张 *圣骑兵 到手中。 NL 消耗 。"
+  },
+  "shadowverse:Indulgence": {
+    "NAME": "赎罪券",
+    "DESCRIPTION": "支付12点金币 消耗 1张手牌。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "没钱啦！"
+    ]
+  },
+  "shadowverse:Anvelt": {
+    "NAME": "双炮神罚·安维尔特",
+    "DESCRIPTION": "结晶 0 \b倒计时 7 NL 每次获得格挡时 倒计时 减少1。 NL  NL --------------------- NL  NL 打出或 倒计时 结束时，获得 !B! 点 格挡 ，对全体敌人造成 !D! 点伤害2次。"
+  },
+  "shadowverse:EvilWorship": {
+    "NAME": "恶魔崇拜",
+    "DESCRIPTION": "每回合结束时获得1点 力量 ，失去1点 敏捷 。 NL 消耗 。"
+  },
+  "shadowverse:DirtyPriest": {
+    "NAME": "渎职的神父",
+    "DESCRIPTION": "结晶 0 \b倒计时 2 NL 回合开始时增加1张 *赎罪券 到手中。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 分别往抽牌堆、手牌、弃牌堆中加入1张 *赎罪券 。"
+  },
+  "shadowverse:Tenko": {
+    "NAME": "天狐神社",
+    "DESCRIPTION": "每当回复生命时，对随机敌人造成 !M! 点伤害。"
+  },
+  "shadowverse:PegasusSculpture": {
+    "NAME": "贝卡萨斯的结晶像",
+    "DESCRIPTION": "倒计时 4 NL 每回合结束时回复1点生命。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION":"倒计时 4 NL 每回合结束时回复1点生命。"
+  },
+  "shadowverse:BenevolentBlight": {
+    "NAME": "仁爱光芒",
+    "DESCRIPTION": "对全体敌人造成 !D! 点伤害，回复 !M! 点生命，抽1张牌。 NL 爆能强化 3 \b翻倍上述效果。"
+  },
+  "shadowverse:RobowingPrecant": {
+    "NAME": "机械腕祈祷师",
+    "DESCRIPTION": "机械 。 NL 造成 !D! 点伤害。 NL 增加1张 *修复模式 到手中。 NL 如果本回合已使用过 机械 牌，给予 !M! 层 中毒 。"
+  },
+  "shadowverse:HeavenlyKnight": {
+    "NAME": "天耀战骑",
+    "DESCRIPTION": "这张卡受 !M! 倍 敏捷 影响。 NL 获得 !B! 点 格挡 。 NL 造成等量 格挡 数量的伤害。"
+  },
+  "shadowverse:SummitTemple": {
+    "NAME": "峰顶的教会",
+    "DESCRIPTION": "打出和出牌时会将你的 力量 转变为 敏捷 。",
+    "UPGRADE_DESCRIPTION":"固有 。 NL 打出和出牌时将你的 力量 转变为 敏捷 。"
+  },
+  "shadowverse:Charaton": {
+    "NAME": "炎冰祭司·卡拉特",
+    "DESCRIPTION": "造成 !D! 点伤害X次，获得X点能量。 NL X为本场战斗已触发的护符数量。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (造成",
+      " 次伤害。 NL 获得 ",
+      " 点能量。"
+    ]
+  },
+  "shadowverse:TarnishedGrail": {
+    "NAME": "不洁的圣杯",
+    "DESCRIPTION": "对全体敌人造成 !D! 点伤害。 NL 增加2张 *恶魔崇拜 到弃牌堆中。 NL 倒计时 1 \b从 *撒旦的仆从 、 *沉默的魔将 、 *狄斯的制裁 、 *阿斯塔罗特的宣判 中随机将3张加入手中。"
   }
 }

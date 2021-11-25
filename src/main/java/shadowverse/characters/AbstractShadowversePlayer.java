@@ -2,6 +2,7 @@ package shadowverse.characters;
 
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.AbstractAnimation;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePostfixPatch;
@@ -12,12 +13,15 @@ import com.megacrit.cardcrawl.actions.unique.LoseEnergyAction;
 import com.megacrit.cardcrawl.actions.watcher.ChangeStanceAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.stances.AbstractStance;
 import com.megacrit.cardcrawl.stances.NeutralStance;
+import com.megacrit.cardcrawl.vfx.combat.HealEffect;
 import shadowverse.Shadowverse;
 import shadowverse.action.RemoveMinionAction;
 import shadowverse.action.TreAction;
@@ -61,6 +65,8 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
         public static AbstractCard.CardTags ARTIFACT;
         @SpireEnum
         public static AbstractCard.CardTags AMULET_FOR_ONECE;
+        @SpireEnum
+        public static AbstractCard.CardTags LEGEND;
 
         @SpirePatch(clz = AttackFromDeckToHandAction.class, method = "update")
         public static class ActionPatch {
@@ -178,6 +184,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
     public int resonanceCount = 0;
     public int necromanceCount = 0;
     public int amuletCount = 0;
+    public int canHeal = 0;
 
     public AbstractShadowversePlayer(String name, PlayerClass playerClass, String[] orbTextures, String orbVfxPath, float[] layerSpeeds, AbstractAnimation animation) {
         super(name, playerClass, orbTextures, orbVfxPath, layerSpeeds, animation);
@@ -246,9 +253,15 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
 
     public void applyStartOfCombatLogic() {
         super.applyStartOfCombatLogic();
+        this.canHeal = this.currentHealth;
         if ((this.currentHealth <= this.maxHealth / 2.0F||this.maxHealth==1)&& !(this instanceof Nemesis)) {
             AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ChangeStanceAction((AbstractStance) new Vengeance()));
         }
+    }
+
+    @Override
+    public void renderPowerTips(SpriteBatch sb) {
+        super.renderPowerTips(sb);
     }
 
     @Override
@@ -257,10 +270,65 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
         AbstractDungeon.actionManager.addToBottom(new RemoveMinionAction());
     }
 
+    @Override
+    public void heal(int healAmount, boolean showEffect) {
+        if (Settings.isEndless && this.isPlayer && AbstractDungeon.player.hasBlight("FullBelly")) {
+            healAmount /= 2;
+            if (healAmount < 1) {
+                healAmount = 1;
+            }
+        }
+
+        if (!this.isDying) {
+            Iterator var3 = AbstractDungeon.player.relics.iterator();
+
+            AbstractRelic r2;
+            while(var3.hasNext()) {
+                r2 = (AbstractRelic)var3.next();
+                if (this.isPlayer) {
+                    healAmount = r2.onPlayerHeal(healAmount);
+                }
+            }
+
+            AbstractPower p;
+            for(var3 = this.powers.iterator(); var3.hasNext(); healAmount = p.onHeal(healAmount)) {
+                p = (AbstractPower)var3.next();
+            }
+            if ((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT && this.currentHealth+healAmount>this.canHeal){
+                healAmount = this.canHeal - this.currentHealth;
+            }
+            this.currentHealth += healAmount;
+            if (this.currentHealth > this.maxHealth) {
+                this.currentHealth = this.maxHealth;
+            }
+
+            if ((float)this.currentHealth > (float)this.maxHealth / 2.0F && this.isBloodied) {
+                this.isBloodied = false;
+                var3 = AbstractDungeon.player.relics.iterator();
+
+                while(var3.hasNext()) {
+                    r2 = (AbstractRelic)var3.next();
+                    r2.onNotBloodied();
+                }
+            }
+
+            if (healAmount >= 0) {
+                if (showEffect && this.isPlayer) {
+                    AbstractDungeon.topPanel.panelHealEffect();
+                    AbstractDungeon.effectsQueue.add(new HealEffect(this.hb.cX - this.animX, this.hb.cY, healAmount));
+                }
+
+                this.healthBarUpdatedEvent();
+            }
+
+        }
+    }
+
+
 
     @Override
     public void heal(int healAmount){
-        super.heal(healAmount);
+        this.heal(healAmount, true);
         if (this.currentHealth > this.maxHealth / 2&&!this.hasPower(VengeanceHealthPower.POWER_ID))
             AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ChangeStanceAction((AbstractStance)new NeutralStance()));
     }

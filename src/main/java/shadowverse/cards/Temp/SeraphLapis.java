@@ -1,11 +1,9 @@
 package shadowverse.cards.Temp;
 
 import charbosses.bosses.KMR.KMR;
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.SuicideAction;
 import com.megacrit.cardcrawl.actions.unique.CanLoseAction;
 import com.megacrit.cardcrawl.actions.utility.HideHealthBarAction;
@@ -26,8 +24,6 @@ import shadowverse.cards.AbstractAmuletCard;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
-
-import java.util.ArrayList;
 
 public class SeraphLapis extends AbstractAmuletCard {
     public static final String ID = "shadowverse:SeraphLapis";

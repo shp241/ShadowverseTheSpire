@@ -2,6 +2,9 @@ package shadowverse.cards.Uncommon;
 
 import com.badlogic.gdx.Gdx;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
+import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -11,36 +14,45 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
+import com.megacrit.cardcrawl.vfx.combat.WhirlwindEffect;
 import shadowverse.cards.AbstractAmuletCard;
 import shadowverse.cards.Curse.EvilWorship;
 import shadowverse.cards.Neutral.OldSatan;
 import shadowverse.cards.Neutral.Satan;
+import shadowverse.cards.Temp.Astaroth;
+import shadowverse.cards.Temp.Dis;
+import shadowverse.cards.Temp.Servant;
+import shadowverse.cards.Temp.SilentRider;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
 
 import java.util.ArrayList;
 
-public class TempleOfHeresy extends AbstractAmuletCard {
-    public static final String ID = "shadowverse:TempleOfHeresy";
-    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:TempleOfHeresy");
+public class TarnishedGrail extends AbstractAmuletCard {
+    public static final String ID = "shadowverse:TarnishedGrail";
+    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:TarnishedGrail");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/TempleOfHeresy.png";
+    public static final String IMG_PATH = "img/cards/TarnishedGrail.png";
     private float rotationTimer;
     private int previewIndex;
     public static ArrayList<AbstractCard> returnChoice() {
         ArrayList<AbstractCard> list = new ArrayList<>();
-        list.add(new Satan());
-        list.add(new OldSatan());
+        list.add(new Servant());
+        list.add(new SilentRider());
+        list.add(new Dis());
+        list.add(new Astaroth());
         list.add(new EvilWorship());
         return list;
     }
 
-    public TempleOfHeresy() {
-        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.SELF);
-        this.countDown = 6;
-        this.tags.add(AbstractShadowversePlayer.Enums.AMULET_FOR_ONECE);
+    public TarnishedGrail() {
+        super(ID, NAME, IMG_PATH, 3, DESCRIPTION, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.ALL);
+        this.countDown = 1;
+        this.baseDamage = 12;
+        this.isMultiDamage = true;
     }
     public void update() {
         super.update();
@@ -62,30 +74,20 @@ public class TempleOfHeresy extends AbstractAmuletCard {
 
     @Override
     public void onStartOfTurn(AmuletOrb paramOrb) {
-        for (AbstractOrb o:AbstractDungeon.player.orbs){
-            if (o instanceof AmuletOrb){
-                if (((AmuletOrb) o).amulet.type == CardType.CURSE){
-                    if (paramOrb.passiveAmount > 0) {
-                        paramOrb.passiveAmount--;
-                        paramOrb.evokeAmount--;
-                        paramOrb.updateDescription();
-                    }
-                    if (paramOrb.passiveAmount <= 0){
-                        break;
-                    }
-                }
-            }
-        }
+
     }
 
     @Override
     public void onEvoke(AmuletOrb paramOrb) {
-        AbstractCard stan = returnChoice().get(AbstractDungeon.cardRandomRng.random(1)).makeStatEquivalentCopy();
-        stan.costForTurn = 0;
-        stan.isCostModifiedForTurn = true;
-        stan.cost = 0;
-        stan.isCostModified = true;
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(stan));
+        int rnd = AbstractDungeon.cardRandomRng.random(3);
+        int rnd2 = rnd+1>3?0:rnd+1;
+        int rnd3 = rnd2+1>3?0:rnd2+1;
+        AbstractCard c1 = returnChoice().get(rnd);
+        AbstractCard c2 = returnChoice().get(rnd2);
+        AbstractCard c3 = returnChoice().get(rnd3);
+        addToBot((AbstractGameAction)new MakeTempCardInHandAction(c1));
+        addToBot((AbstractGameAction)new MakeTempCardInHandAction(c2));
+        addToBot((AbstractGameAction)new MakeTempCardInHandAction(c3));
     }
 
     @Override
@@ -111,14 +113,14 @@ public class TempleOfHeresy extends AbstractAmuletCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.isInnate = true;
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            initializeDescription();
+            upgradeBaseCost(2);
         }
     }
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new MakeTempCardInDrawPileAction(new EvilWorship(),1,true,true,false));
+        addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new WhirlwindEffect(), 0.1F));
+        addToBot(new DamageAllEnemiesAction(abstractPlayer, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
+        addToBot((AbstractGameAction)new MakeTempCardInDiscardAction(new EvilWorship(),2));
     }
 }

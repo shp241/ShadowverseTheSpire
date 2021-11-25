@@ -48,7 +48,7 @@ public class AriasWhirlwind extends CustomCard {
             count++;
         }
         count--;
-        addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new WhirlwindEffect(), 0.0F));
+        addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new WhirlwindEffect(), 0.1F));
         addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)p, DamageInfo.createDamageMatrix(this.magicNumber*count, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE, true));
         addToBot((AbstractGameAction)new MakeTempCardInDiscardAction((AbstractCard)new Dazed(), 2));
     }

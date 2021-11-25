@@ -8,6 +8,7 @@ import basemod.interfaces.*;
 import charbosses.bosses.KMR.KMR;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.audio.Sfx;
@@ -870,6 +871,13 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("HolyHector", new Sfx("sounds/HolyHector.wav"));
         reflectedMap.put("Abdiel", new Sfx("sounds/Abdiel.wav"));
         reflectedMap.put("Wilbert", new Sfx("sounds/Wilbert.wav"));
+        reflectedMap.put("Anvelt", new Sfx("sounds/Anvelt.wav"));
+        reflectedMap.put("Anvelt_Acc", new Sfx("sounds/Anvelt_Acc.wav"));
+        reflectedMap.put("DirtyPriest", new Sfx("sounds/DirtyPriest.wav"));
+        reflectedMap.put("DirtyPriest_Acc", new Sfx("sounds/DirtyPriest_Acc.wav"));
+        reflectedMap.put("RobowingPrecant", new Sfx("sounds/RobowingPrecant.wav"));
+        reflectedMap.put("HeavenlyKnight", new Sfx("sounds/HeavenlyKnight.wav"));
+        reflectedMap.put("Charaton", new Sfx("sounds/Charaton.wav"));
         /*     */
     }
 
@@ -1770,6 +1778,18 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCard((AbstractCard) new RegalFalcon());
         BaseMod.addCard((AbstractCard) new DivineBirdSong());
         BaseMod.addCard((AbstractCard) new Wilbert());
+        BaseMod.addCard((AbstractCard) new Indulgence());
+        BaseMod.addCard((AbstractCard) new Anvelt());
+        BaseMod.addCard((AbstractCard) new EvilWorship());
+        BaseMod.addCard((AbstractCard) new DirtyPriest());
+        BaseMod.addCard((AbstractCard) new Tenko());
+        BaseMod.addCard((AbstractCard) new PegasusSculpture());
+        BaseMod.addCard((AbstractCard) new BenevolentBlight());
+        BaseMod.addCard((AbstractCard) new RobowingPrecant());
+        BaseMod.addCard((AbstractCard) new HeavenlyKnight());
+        BaseMod.addCard((AbstractCard) new SummitTemple());
+        BaseMod.addCard((AbstractCard) new Charaton());
+        BaseMod.addCard((AbstractCard) new TarnishedGrail());
         /* 276 */
         logger.info("Success");
         /*     */

@@ -1,43 +1,37 @@
-package shadowverse.cards.Uncommon;
+package shadowverse.cards.Common;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.HealAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import shadowverse.action.StasisEvokeIfRoomInHandAction;
 import shadowverse.cards.AbstractAmuletCard;
-import shadowverse.cards.AbstractNoCountDownAmulet;
-import shadowverse.cards.Temp.HolywingDragon;
-import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
 
-public class WhitefangTemple extends AbstractAmuletCard {
-    public static final String ID = "shadowverse:WhitefangTemple";
-    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:WhitefangTemple");
+public class PegasusSculpture extends AbstractAmuletCard {
+    public static final String ID = "shadowverse:PegasusSculpture";
+    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:PegasusSculpture");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/WhitefangTemple.png";
+    public static final String IMG_PATH = "img/cards/PegasusSculpture.png";
 
-    public WhitefangTemple() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.NONE);
-        this.countDown = 6;
-        this.cardsToPreview = new HolywingDragon();
-        this.tags.add(AbstractShadowversePlayer.Enums.AMULET_FOR_ONECE);
+    public PegasusSculpture() {
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.NONE);
+        this.countDown = 4;
+        this.isEthereal = true;
     }
 
     @Override
     public void onStartOfTurn(AmuletOrb paramOrb) {
+
     }
 
     @Override
     public void onEvoke(AmuletOrb paramOrb) {
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
     }
 
     @Override
@@ -47,7 +41,6 @@ public class WhitefangTemple extends AbstractAmuletCard {
 
     @Override
     public int onHeal(int healAmount, AmuletOrb paramOrb) {
-        paramOrb.onStartOfTurn();
         return healAmount;
     }
 
@@ -65,7 +58,7 @@ public class WhitefangTemple extends AbstractAmuletCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.cardsToPreview.upgrade();
+            this.isEthereal = false;
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }

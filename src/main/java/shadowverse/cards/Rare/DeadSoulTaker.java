@@ -37,6 +37,7 @@ import shadowverse.characters.Elf;
    public DeadSoulTaker() {
      super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.ATTACK, Necromancer.Enums.COLOR_PURPLE, CardRarity.SPECIAL, CardTarget.SELF);
      this.baseBlock = 45;
+       this.tags.add(AbstractShadowversePlayer.Enums.LEGEND);
    }
  
    
@@ -54,7 +55,7 @@ import shadowverse.characters.Elf;
        addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new BorderFlashEffect(Color.PURPLE, true),1.0f));
        addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
        addToBot((AbstractGameAction)new MoveCardsAction(abstractPlayer.hand,abstractPlayer.exhaustPile, card -> {
-           return card.type==CardType.ATTACK;
+           return card.type==CardType.ATTACK && card.cardID!=this.cardID;
        },abstractCards -> {
            for (AbstractCard c:abstractCards){
                c.setCostForTurn(0);

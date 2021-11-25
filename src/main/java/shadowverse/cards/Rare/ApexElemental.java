@@ -15,6 +15,7 @@
  import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
  import com.megacrit.cardcrawl.localization.CardStrings;
  import com.megacrit.cardcrawl.monsters.AbstractMonster;
+ import com.megacrit.cardcrawl.orbs.AbstractOrb;
  import com.megacrit.cardcrawl.powers.AbstractPower;
  import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
  import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
@@ -25,7 +26,8 @@ import shadowverse.cards.Temp.ApexElemental_Accelerate;
  import shadowverse.cards.Temp.NaterranGreatTree;
  import shadowverse.characters.AbstractShadowversePlayer;
  import shadowverse.characters.Witchcraft;
- 
+ import shadowverse.orbs.AmuletOrb;
+
  public class ApexElemental
    extends CustomCard {
    public static final String ID = "shadowverse:ApexElemental";
@@ -122,6 +124,15 @@ public void onMoveToDiscard() {
      } 
      if (Shadowverse.Accelerate((AbstractCard)this) && this.type == CardType.SKILL) {
        if (powerExists) {
+           for (AbstractOrb o:abstractPlayer.orbs){
+               if (o instanceof AmuletOrb){
+                   if (((AmuletOrb) o).amulet instanceof NaterranGreatTree){
+                       abstractPlayer.orbs.remove(o);
+                       AbstractDungeon.player.orbs.add(0, o);
+                       AbstractDungeon.player.evokeOrb();
+                   }
+               }
+           }
          addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, 9, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
          addToBot((AbstractGameAction)new RemoveSpecificPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, "shadowverse:NaterranTree"));
          addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, 1));

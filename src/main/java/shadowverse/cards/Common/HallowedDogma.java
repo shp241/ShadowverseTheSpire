@@ -13,8 +13,11 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import shadowverse.action.ReduceCountDownAction;
+import shadowverse.cards.AbstractCrystalizeCard;
 import shadowverse.characters.Bishop;
+import shadowverse.orbs.AmuletOrb;
 
 
  public class HallowedDogma
@@ -44,8 +47,19 @@ import shadowverse.characters.Bishop;
      addToBot((AbstractGameAction)new ReduceCountDownAction(2));
      addToBot((AbstractGameAction)new DrawCardAction(this.magicNumber));
    }
- 
- 
+
+   public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+     boolean canUse = super.canUse(p, m);
+     if (!canUse)
+       return false;
+     for (AbstractOrb o : p.orbs) {
+       if (!(o instanceof AmuletOrb) && !(o instanceof AbstractCrystalizeCard)) {
+         canUse = false;
+         this.cantUseMessage = cardStrings.EXTENDED_DESCRIPTION[0];
+       }
+     }
+     return canUse;
+   }
    
    public AbstractCard makeCopy() {
      return (AbstractCard)new HallowedDogma();

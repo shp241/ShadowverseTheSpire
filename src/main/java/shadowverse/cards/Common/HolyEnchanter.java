@@ -26,7 +26,7 @@ import shadowverse.characters.Bishop;
    public static final String IMG_PATH = "img/cards/HolyEnchanter.png";
 
    public HolyEnchanter() {
-     super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.SELF);
+     super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.SELF);
      this.baseBlock = 6;
    }
  
@@ -34,7 +34,7 @@ import shadowverse.characters.Bishop;
    public void upgrade() {
      if (!this.upgraded) {
        upgradeName();
-       upgradeBlock(3);
+       upgradeBaseCost(1);
      } 
    }
  

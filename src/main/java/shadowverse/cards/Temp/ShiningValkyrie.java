@@ -17,6 +17,7 @@
  import com.megacrit.cardcrawl.powers.AbstractPower;
  import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
  import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
+ import shadowverse.characters.AbstractShadowversePlayer;
  import shadowverse.characters.Elf;
  import shadowverse.characters.Witchcraft;
  import shadowverse.powers.SevensForceSorcererPower;
@@ -35,6 +36,7 @@
      this.baseMagicNumber = 1;
      this.magicNumber = this.baseMagicNumber;
      this.cardsToPreview = new Fairy();
+       this.tags.add(AbstractShadowversePlayer.Enums.LEGEND);
    }
  
    

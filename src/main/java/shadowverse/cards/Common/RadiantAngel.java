@@ -26,7 +26,7 @@ public class RadiantAngel
 
     public RadiantAngel() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.SELF);
-        this.baseBlock = 10;
+        this.baseBlock = 8;
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
     }

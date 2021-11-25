@@ -17,6 +17,7 @@
  import com.megacrit.cardcrawl.powers.AbstractPower;
  import com.megacrit.cardcrawl.powers.DoubleTapPower;
  import com.megacrit.cardcrawl.vfx.RainbowCardEffect;
+ import shadowverse.characters.AbstractShadowversePlayer;
  import shadowverse.characters.Elf;
  import shadowverse.characters.Witchcraft;
  import shadowverse.powers.SevensForceSorcererPower;
@@ -31,6 +32,7 @@
 
    public SevensForceSorcerer() {
      super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.POWER, Witchcraft.Enums.COLOR_BLUE, CardRarity.SPECIAL, CardTarget.SELF);
+       this.tags.add(AbstractShadowversePlayer.Enums.LEGEND);
    }
  
    

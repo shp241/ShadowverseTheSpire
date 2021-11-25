@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.BarricadePower;
 import com.megacrit.cardcrawl.powers.MetallicizePower;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 
 public class LegendSwordCommander extends CustomCard {
@@ -23,6 +24,7 @@ public class LegendSwordCommander extends CustomCard {
         super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.SELF);
         this.magicNumber = this.baseMagicNumber = 10;
         this.isEthereal = true;
+        this.tags.add(AbstractShadowversePlayer.Enums.LEGEND);
     }
 
     @Override

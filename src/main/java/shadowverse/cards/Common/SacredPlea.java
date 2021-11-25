@@ -20,7 +20,7 @@ public class SacredPlea extends AbstractAmuletCard {
 
     public SacredPlea() {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.NONE);
-        this.baseMagicNumber = 3;
+        this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
         this.countDown = 1;
     }

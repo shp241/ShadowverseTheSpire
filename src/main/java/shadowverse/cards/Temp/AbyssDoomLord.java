@@ -32,6 +32,7 @@ import shadowverse.characters.Nemesis;
      super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Vampire.Enums.COLOR_SCARLET, CardRarity.SPECIAL, CardTarget.ENEMY);
      this.baseDamage = 80;
      this.exhaust = true;
+       this.tags.add(AbstractShadowversePlayer.Enums.LEGEND);
    }
  
    

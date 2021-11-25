@@ -36,12 +36,11 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
  
    
    public void upgrade() {
-     if (!this.upgraded) {
-       upgradeName();
-       upgradeMagicNumber(1);
-     } 
    }
- 
+
+   public boolean canUpgrade() {
+     return false;
+   }
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      boolean powerExists = false;
