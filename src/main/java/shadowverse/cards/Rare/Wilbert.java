@@ -40,6 +40,7 @@ public class Wilbert
         this.magicNumber = this.baseMagicNumber;
         this.cardsToPreview = new HolyCavalier();
         this.tags.add(AbstractShadowversePlayer.Enums.LASTWORD);
+        this.exhaust = true;
     }
 
 

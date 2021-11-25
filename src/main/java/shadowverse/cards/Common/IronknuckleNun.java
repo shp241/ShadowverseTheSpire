@@ -30,10 +30,11 @@ public class IronknuckleNun
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/IronknuckleNun.png";
+    private boolean trigger;
 
     public IronknuckleNun() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.SELF);
-        this.baseBlock = 4;
+        this.baseBlock = 5;
         this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
         this.cardsToPreview = (AbstractCard)new RepairMode();
         this.baseMagicNumber = 2;
@@ -53,7 +54,10 @@ public class IronknuckleNun
         addToBot((AbstractGameAction)new SFXAction("IronknuckleNun"));
         addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, this.block));
         addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
-        addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new PlatedArmorPower(abstractPlayer,this.magicNumber),this.magicNumber));
+        if (!this.trigger){
+            this.trigger = true;
+            addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new PlatedArmorPower(abstractPlayer,this.magicNumber),this.magicNumber));
+        }
     }
 
 

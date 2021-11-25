@@ -70,6 +70,8 @@ import shadowverse.stance.Vengeance;
        super.applyPowers();
        this.baseDamage = realBaseDamage;
        this.isDamageModified = (this.damage != this.baseDamage);
+     }else {
+       super.applyPowers();
      }
    }
 
@@ -81,6 +83,8 @@ import shadowverse.stance.Vengeance;
        super.calculateCardDamage(mo);
        this.baseDamage = realBaseDamage;
        this.isDamageModified = (this.damage != this.baseDamage);
+     }else{
+       super.calculateCardDamage(mo);
      }
    }
    

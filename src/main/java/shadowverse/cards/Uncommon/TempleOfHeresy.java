@@ -85,7 +85,7 @@ public class TempleOfHeresy extends AbstractAmuletCard {
 
     @Override
     public void onEvoke(AmuletOrb paramOrb) {
-        AbstractCard stan = returnChoice().get(AbstractDungeon.cardRandomRng.random(1)).cardsToPreview;
+        AbstractCard stan = returnChoice().get(AbstractDungeon.cardRandomRng.random(1)).makeStatEquivalentCopy();
         stan.costForTurn = 0;
         stan.isCostModifiedForTurn = true;
         stan.cost = 0;

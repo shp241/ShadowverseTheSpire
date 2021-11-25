@@ -3354,7 +3354,7 @@
   },
   "shadowverse:IronknuckleNun": {
     "NAME": "铁腕女修士",
-    "DESCRIPTION": "机械 。 NL 获得 !B! 点 格挡 。 NL 获得 !M! 层 多重护甲 。 NL 增加1张 *修复模式 到手中。"
+    "DESCRIPTION": "机械 。 NL 获得 !B! 点 格挡 。 NL 限定 获得 !M! 层 多重护甲 。 NL 增加1张 *修复模式 到手中。"
   },
   "shadowverse:RadiantAngel": {
     "NAME": "光辉天使",
@@ -3400,6 +3400,6 @@
   },
   "shadowverse:Wilbert": {
     "NAME": "尊荣骑士·维尔伯特",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 给予自身「受到攻击时，如果有 格挡 ，对攻击者造成其最大生命值5%（不会低于6点）的伤害。」效果。 NL 谢幕曲 下回合开始时，增加 !M! 张 *圣骑兵 到手中。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 给予自身「受到攻击时，如果有 格挡 ，对攻击者造成其最大生命值5%（不会低于6点）的伤害。」效果。 NL 谢幕曲 下回合开始时，增加 !M! 张 *圣骑兵 到手中。 NL 消耗 。"
   }
 }
