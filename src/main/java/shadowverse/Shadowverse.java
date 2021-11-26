@@ -878,6 +878,8 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("RobowingPrecant", new Sfx("sounds/RobowingPrecant.wav"));
         reflectedMap.put("HeavenlyKnight", new Sfx("sounds/HeavenlyKnight.wav"));
         reflectedMap.put("Charaton", new Sfx("sounds/Charaton.wav"));
+        reflectedMap.put("SkullFane", new Sfx("sounds/SkullFane.wav"));
+        reflectedMap.put("HereticPriest", new Sfx("sounds/HereticPriest.wav"));
         /*     */
     }
 
@@ -1790,6 +1792,10 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCard((AbstractCard) new SummitTemple());
         BaseMod.addCard((AbstractCard) new Charaton());
         BaseMod.addCard((AbstractCard) new TarnishedGrail());
+        BaseMod.addCard((AbstractCard) new SkullFane());
+        BaseMod.addCard((AbstractCard) new HealingPrayer());
+        BaseMod.addCard((AbstractCard) new HereticPriest());
+        BaseMod.addCard((AbstractCard) new DarkOffering());
         /* 276 */
         logger.info("Success");
         /*     */

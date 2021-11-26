@@ -84,7 +84,7 @@ public class Ilmisuna extends CustomCard {
 
     @Override
     public void triggerWhenDrawn() {
-        if (rally() >= 10) {
+        if (rally() >= 11) {
             addToBot(new MakeTempCardInHandAction(new EvolutionPoint()));
         }
     }

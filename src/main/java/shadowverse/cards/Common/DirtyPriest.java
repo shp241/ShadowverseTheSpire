@@ -29,7 +29,6 @@ public class DirtyPriest
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/DirtyPriest.png";
-    private boolean canCrystalize = true;
 
     public DirtyPriest() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.SELF);
@@ -48,14 +47,12 @@ public class DirtyPriest
     @Override
     public void applyPowers() {
         super.applyPowers();
-        if (EnergyPanel.getCurrentEnergy()>=2 && !this.canCrystalize){
-            this.canCrystalize = true;
+        if (EnergyPanel.getCurrentEnergy()>=2){
             if (this.costForTurn>0 && this.type == CardType.POWER){
                 this.type = CardType.ATTACK;
                 resetAttributes();
             }
-        }else if (EnergyPanel.getCurrentEnergy()<2 && this.canCrystalize){
-            this.canCrystalize = false;
+        }else if (EnergyPanel.getCurrentEnergy()<2){
             if (this.costForTurn>=2 && this.type == CardType.ATTACK){
                 this.type = CardType.POWER;
                 this.costForTurn = 0;
@@ -67,14 +64,12 @@ public class DirtyPriest
     @Override
     public void onMoveToDiscard() {
         super.onMoveToDiscard();
-        this.canCrystalize = true;
         this.type = CardType.ATTACK;
         resetAttributes();
     }
 
     public void triggerOnGainEnergy(int e, boolean dueToCard) {
         if (EnergyPanel.getCurrentEnergy() >= 2 && this.type != CardType.ATTACK) {
-            this.canCrystalize = false;
             resetAttributes();
             this.type = CardType.ATTACK;
             applyPowers();

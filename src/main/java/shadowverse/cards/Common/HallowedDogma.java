@@ -53,7 +53,10 @@ import shadowverse.orbs.AmuletOrb;
      if (!canUse)
        return false;
      for (AbstractOrb o : p.orbs) {
-       if (!(o instanceof AmuletOrb) && !(o instanceof AbstractCrystalizeCard)) {
+       if (o instanceof AmuletOrb || o instanceof AbstractCrystalizeCard) {
+         canUse = true;
+         break;
+       }else {
          canUse = false;
          this.cantUseMessage = cardStrings.EXTENDED_DESCRIPTION[0];
        }

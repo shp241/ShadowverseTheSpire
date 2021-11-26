@@ -1177,5 +1177,11 @@
       "回合开始时，增加 #b",
       " 张 #y圣骑兵 到手中。"
     ]
+  },
+  "shadowverse:HereticPriestPower": {
+    "NAME": "邪教神父",
+    "DESCRIPTIONS": [
+      "每当抽到诅咒牌时，额外抽 #b1 张卡。"
+    ]
   }
 }

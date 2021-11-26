@@ -33,7 +33,6 @@ public class Anvelt
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Anvelt.png";
-    private boolean canCrystalize = true;
 
     public Anvelt() {
         super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.ALL);
@@ -54,14 +53,12 @@ public class Anvelt
     @Override
     public void applyPowers() {
         super.applyPowers();
-        if (EnergyPanel.getCurrentEnergy()>=4 && !this.canCrystalize){
-            this.canCrystalize = true;
+        if (EnergyPanel.getCurrentEnergy()>=4){
             if (this.costForTurn>0 && this.type == CardType.POWER){
                 this.type = CardType.ATTACK;
                 resetAttributes();
             }
-        }else if (EnergyPanel.getCurrentEnergy()<4 && this.canCrystalize){
-            this.canCrystalize = false;
+        }else if (EnergyPanel.getCurrentEnergy()<4 ){
             if (this.costForTurn>=4 && this.type == CardType.ATTACK){
                 this.type = CardType.POWER;
                 this.costForTurn = 0;
@@ -73,14 +70,12 @@ public class Anvelt
     @Override
     public void onMoveToDiscard() {
         super.onMoveToDiscard();
-        this.canCrystalize = true;
         this.type = CardType.ATTACK;
         resetAttributes();
     }
 
     public void triggerOnGainEnergy(int e, boolean dueToCard) {
         if (EnergyPanel.getCurrentEnergy() >= 4 && this.type != CardType.ATTACK) {
-            this.canCrystalize = false;
             resetAttributes();
             this.type = CardType.ATTACK;
             applyPowers();

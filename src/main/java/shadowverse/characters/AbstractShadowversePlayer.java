@@ -184,7 +184,6 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
     public int resonanceCount = 0;
     public int necromanceCount = 0;
     public int amuletCount = 0;
-    public int canHeal = 0;
 
     public AbstractShadowversePlayer(String name, PlayerClass playerClass, String[] orbTextures, String orbVfxPath, float[] layerSpeeds, AbstractAnimation animation) {
         super(name, playerClass, orbTextures, orbVfxPath, layerSpeeds, animation);
@@ -253,7 +252,6 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
 
     public void applyStartOfCombatLogic() {
         super.applyStartOfCombatLogic();
-        this.canHeal = this.currentHealth+12;
         if ((this.currentHealth <= this.maxHealth / 2.0F||this.maxHealth==1)&& !(this instanceof Nemesis)) {
             AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ChangeStanceAction((AbstractStance) new Vengeance()));
         }
@@ -273,8 +271,6 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
 
     @Override
     public void heal(int healAmount){
-        if (healAmount+this.currentHealth>this.canHeal)
-            healAmount=this.canHeal-this.currentHealth;
         super.heal(healAmount);
         if (this.currentHealth > this.maxHealth / 2&&!this.hasPower(VengeanceHealthPower.POWER_ID))
             AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ChangeStanceAction((AbstractStance)new NeutralStance()));

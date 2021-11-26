@@ -3462,5 +3462,26 @@
   "shadowverse:TarnishedGrail": {
     "NAME": "不洁的圣杯",
     "DESCRIPTION": "对全体敌人造成 !D! 点伤害。 NL 增加2张 *恶魔崇拜 到弃牌堆中。 NL 倒计时 1 \b从 *撒旦的仆从 、 *沉默的魔将 、 *狄斯的制裁 、 *阿斯塔罗特的宣判 中随机将3张加入手中。"
+  },
+  "shadowverse:SkullFane": {
+    "NAME": "白骨圣堂主教",
+    "DESCRIPTION": "被抽到时，护符栏位中每有一张诅咒耗能减少1。 NL 打出护符卡时，耗能减少1。 NL 激发你的所有护符和充能球，每有一张诅咒获得 !D! 点 格挡 和 !M! 点 力量 。"
+  },
+  "shadowverse:Tribunal": {
+    "NAME": "神魔审判所",
+    "DESCRIPTION": "给予随机敌人 !M! 层 虚弱 。 NL 将1张 *恶魔崇拜 加入抽牌堆。 NL 倒计时 2 \b给予随机敌人 !M! 层 易伤 。 NL 将1张 *净化 加入手中。",
+    "UPGRADE_DESCRIPTION":"给予随机敌人 !M! 层 虚弱 。 NL 将1张 *恶魔崇拜 加入抽牌堆。 NL 倒计时 2 \b给予随机敌人 !M! 层 易伤 。 NL 将1张 *净化+ 加入手中。"
+  },
+  "shadowverse:HealingPrayer": {
+    "NAME": "治愈祷告",
+    "DESCRIPTION": "回复3点生命。 NL 使所有护符倒计时减少 !M! 。"
+  },
+  "shadowverse:HereticPriest": {
+    "NAME": "邪教神父",
+    "DESCRIPTION": "每当抽到诅咒牌时，额外抽 !M! 张牌。 NL 增加3张 *恶魔崇拜 到弃牌堆中。"
+  },
+  "shadowverse:DarkOffering": {
+    "NAME": "暗黑供奉",
+    "DESCRIPTION": "选择1张诅咒牌置入护符区。 NL 获得 [E] [E] 。"
   }
 }

@@ -61,5 +61,10 @@
     "TEXT": [
       "选择卡牌减少倒计时。"
     ]
+  },
+  "shadowverse:PlaceCardToAmuletZone": {
+    "TEXT": [
+      "选择卡牌置入护符区。"
+    ]
   }
 }

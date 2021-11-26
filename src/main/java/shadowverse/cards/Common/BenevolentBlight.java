@@ -23,6 +23,7 @@ import shadowverse.cards.Temp.GildedBlade;
 import shadowverse.cards.Temp.GildedBoots;
 import shadowverse.cards.Temp.GildedGoblet;
 import shadowverse.cards.Temp.GildedNecklace;
+import shadowverse.characters.Bishop;
 import shadowverse.characters.Royal;
 
 import java.util.ArrayList;
@@ -37,8 +38,8 @@ public class BenevolentBlight extends CustomCard {
 
 
     public BenevolentBlight() {
-        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ALL_ENEMY);
-        this.baseDamage = 9;
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.SKILL, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.ALL_ENEMY);
+        this.baseDamage = 7;
         this.isMultiDamage = true;
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
@@ -50,7 +51,7 @@ public class BenevolentBlight extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(3);
+            upgradeDamage(2);
             upgradeMagicNumber(1);
         }
     }
