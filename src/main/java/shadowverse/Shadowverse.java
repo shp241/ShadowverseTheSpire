@@ -1793,6 +1793,7 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCard((AbstractCard) new Charaton());
         BaseMod.addCard((AbstractCard) new TarnishedGrail());
         BaseMod.addCard((AbstractCard) new SkullFane());
+        BaseMod.addCard((AbstractCard) new Tribunal());
         BaseMod.addCard((AbstractCard) new HealingPrayer());
         BaseMod.addCard((AbstractCard) new HereticPriest());
         BaseMod.addCard((AbstractCard) new DarkOffering());
