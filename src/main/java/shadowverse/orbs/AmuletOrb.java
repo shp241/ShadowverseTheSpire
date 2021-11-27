@@ -16,6 +16,7 @@ import shadowverse.action.StasisEvokeIfRoomInHandAction;
 import shadowverse.cards.AbstractAmuletCard;
 import shadowverse.cards.AbstractCrystalizeCard;
 import shadowverse.cards.AbstractNoCountDownAmulet;
+import shadowverse.cards.Uncommon.GoldenCity;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.effect.AddCardToStasisEffect;
 
@@ -45,6 +46,7 @@ public class AmuletOrb extends AbstractOrb {
         this.amulet.beginGlowing();
         this.name = orbString.NAME + this.amulet.name;
         this.channelAnimTimer = 0.5F;
+
         if (card instanceof AbstractAmuletCard) {
             this.basePassiveAmount = ((AbstractAmuletCard) card).countDown;
         }else if (card instanceof AbstractCrystalizeCard){
@@ -56,6 +58,15 @@ public class AmuletOrb extends AbstractOrb {
         this.passiveAmount = this.basePassiveAmount;
         this.baseEvokeAmount = this.basePassiveAmount;
         this.evokeAmount = this.baseEvokeAmount;
+        if (this.passiveAmount<=0&& !(this.amulet instanceof AbstractNoCountDownAmulet)){
+            if (this.amulet instanceof AbstractAmuletCard)
+                ((AbstractAmuletCard) this.amulet).onEvoke(null);
+            if (this.amulet instanceof AbstractCrystalizeCard)
+                ((AbstractCrystalizeCard) this.amulet).onEvoke(null);
+            if ((this.amulet instanceof AbstractAmuletCard || this.amulet instanceof AbstractCrystalizeCard) && !this.amulet.hasTag(AbstractShadowversePlayer.Enums.AMULET_FOR_ONECE))
+                AbstractDungeon.actionManager.addToTop((AbstractGameAction)new ReturnAmuletToDiscardAction(this.amulet));
+            return;
+        }
         updateDescription();
         initialize(source, selfStasis);
     }
@@ -148,6 +159,13 @@ public class AmuletOrb extends AbstractOrb {
         }
         AbstractDungeon.effectsQueue.add(this.stasisStartEffect);
         this.amulet.retain = false;
+        for (AbstractOrb o:AbstractDungeon.player.orbs){
+            if (o instanceof AmuletOrb){
+                if (((AmuletOrb) o).amulet instanceof GoldenCity){
+                    this.onStartOfTurn();
+                }
+            }
+        }
     }
 
     public void update() {

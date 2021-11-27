@@ -39,7 +39,6 @@ public class SkullFane
 
     public SkullFane() {
         super(ID, NAME, IMG_PATH, 7, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.SELF);
-        this.isEthereal = true;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.baseBlock = 4;

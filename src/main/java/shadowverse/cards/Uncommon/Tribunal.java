@@ -104,8 +104,7 @@ public class Tribunal extends AbstractAmuletCard {
     @Override
     public void upgrade() {
         if (!this.upgraded) {
-            upgradeName();
-            this.cardsToPreview.upgrade();
+            upgradeName();;
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             upgradeMagicNumber(1);
             initializeDescription();

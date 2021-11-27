@@ -68,6 +68,38 @@ public class Anvelt
     }
 
     @Override
+    public void triggerWhenDrawn() {
+        if (EnergyPanel.getCurrentEnergy()>=4){
+            if (this.costForTurn>0 && this.type == CardType.POWER){
+                this.type = CardType.ATTACK;
+                resetAttributes();
+            }
+        }else if (EnergyPanel.getCurrentEnergy()<4 ){
+            if (this.costForTurn>=4 && this.type == CardType.ATTACK){
+                this.type = CardType.POWER;
+                this.costForTurn = 0;
+                this.isCostModifiedForTurn = true;
+            }
+        }
+    }
+
+    @Override
+    public void triggerOnOtherCardPlayed(AbstractCard c) {
+        if (EnergyPanel.getCurrentEnergy()>=4){
+            if (this.costForTurn>0 && this.type == CardType.POWER){
+                this.type = CardType.ATTACK;
+                resetAttributes();
+            }
+        }else if (EnergyPanel.getCurrentEnergy()<4 ){
+            if (this.costForTurn>=4 && this.type == CardType.ATTACK){
+                this.type = CardType.POWER;
+                this.costForTurn = 0;
+                this.isCostModifiedForTurn = true;
+            }
+        }
+    }
+
+    @Override
     public void onMoveToDiscard() {
         super.onMoveToDiscard();
         this.type = CardType.ATTACK;

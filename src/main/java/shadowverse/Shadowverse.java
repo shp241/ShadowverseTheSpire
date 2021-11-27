@@ -880,6 +880,9 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("Charaton", new Sfx("sounds/Charaton.wav"));
         reflectedMap.put("SkullFane", new Sfx("sounds/SkullFane.wav"));
         reflectedMap.put("HereticPriest", new Sfx("sounds/HereticPriest.wav"));
+        reflectedMap.put("UnlikelyFellowship", new Sfx("sounds/UnlikelyFellowship.wav"));
+        reflectedMap.put("Selena", new Sfx("sounds/Selena.wav"));
+        reflectedMap.put("HeavenFire", new Sfx("sounds/HeavenFire.wav"));
         /*     */
     }
 
@@ -1797,6 +1800,10 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCard((AbstractCard) new HealingPrayer());
         BaseMod.addCard((AbstractCard) new HereticPriest());
         BaseMod.addCard((AbstractCard) new DarkOffering());
+        BaseMod.addCard((AbstractCard) new UnlikelyFellowship());
+        BaseMod.addCard((AbstractCard) new HeavenFire());
+        BaseMod.addCard((AbstractCard) new Selena());
+        BaseMod.addCard((AbstractCard) new GoldenCity());
         /* 276 */
         logger.info("Success");
         /*     */

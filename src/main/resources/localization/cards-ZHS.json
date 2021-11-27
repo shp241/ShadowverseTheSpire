@@ -3465,7 +3465,7 @@
   },
   "shadowverse:SkullFane": {
     "NAME": "白骨圣堂主教",
-    "DESCRIPTION": "被抽到时，护符栏位中每有一张诅咒耗能减少1。 NL 打出护符卡时，耗能减少1。 NL 激发你的所有护符和充能球，每有一张诅咒获得 !D! 点 格挡 和 !M! 点 力量 。"
+    "DESCRIPTION": "被抽到时，护符栏位中每有一张诅咒耗能减少1。 NL 打出护符卡时，耗能减少1。 NL 触发并移除你的所有护符，每有一张诅咒获得 !D! 点 格挡 和 !M! 点 力量 。"
   },
   "shadowverse:Tribunal": {
     "NAME": "神魔审判所",
@@ -3483,5 +3483,23 @@
   "shadowverse:DarkOffering": {
     "NAME": "暗黑供奉",
     "DESCRIPTION": "选择1张诅咒牌置入护符区。 NL 获得 [E] [E] 。"
+  },
+  "shadowverse:UnlikelyFellowship": {
+    "NAME": "笨拙的信赖",
+    "DESCRIPTION": "目标本回合失去 !M! 点 力量 。 NL 选择1张护符减少 !M! 倒计时 。"
+  },
+  "shadowverse:HeavenFire": {
+    "NAME": "圣祝射击",
+    "DESCRIPTION": "对随机敌人造成 !D! 点伤害。 NL 对全体敌人造成 !M! 点伤害。 NL 给予自身「一回合一次，打出护符牌时增加1张 *圣祝射击 到手中」效果。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"对随机敌人造成 !D! 点伤害。 NL 对全体敌人造成 !M! 点伤害。 NL 给予自身「一回合一次，打出护符牌时增加1张 *圣祝射击+ 到手中」效果。 NL 消耗 。"
+  },
+  "shadowverse:Selena": {
+    "NAME": "炽熔霜糖·圣里奈",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果护符区的护符数量为1以上，增加1张 *圣祝射击 到手中。 NL 2以上，获得 [E] 。 NL 3以上，对全体敌人造成 !D! 点伤害。 NL 4以上，所有护符 倒计时 减少3。",
+    "UPGRADE_DESCRIPTION":"获得 !B! 点 格挡 。 NL 如果护符区的护符数量为1以上，增加1张 *圣祝射击+ 到手中。 NL 2以上，获得 [E] 。 NL 3以上，对全体敌人造成 !D! 点伤害。 NL 4以上，所有护符 倒计时 减少3"
+  },
+  "shadowverse:GoldenCity": {
+    "NAME": "黄金都市",
+    "DESCRIPTION": "瞬念召唤 回合结束时如果剩余能量为1以上，将这张牌置入到护符区。 NL 打出的护符 倒计时 减少1。"
   }
 }
