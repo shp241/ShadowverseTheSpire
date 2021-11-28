@@ -52,6 +52,6 @@ public class HeavenFirePower extends AbstractPower {
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0];
+        this.description = DESCRIPTIONS[0]+(this.upgraded?HeavenFire.NAME+"+":HeavenFire.NAME)+DESCRIPTIONS[1];
     }
 }

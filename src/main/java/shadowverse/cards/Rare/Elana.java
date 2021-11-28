@@ -34,7 +34,7 @@ public class Elana
     public static final String IMG_PATH = "img/cards/Elana.png";
 
     public Elana() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.SELF);
         this.exhaust = true;
         this.baseBlock = 8;
         this.cardsToPreview = new ElanaPrayer();
@@ -44,7 +44,6 @@ public class Elana
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(3);
             this.cardsToPreview.upgrade();
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();

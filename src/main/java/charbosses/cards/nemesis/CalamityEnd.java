@@ -1,10 +1,12 @@
 package charbosses.cards.nemesis;
 
+import charbosses.actions.RealWaitAction;
 import charbosses.cards.AbstractBossCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import com.megacrit.cardcrawl.actions.watcher.JudgementAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -14,6 +16,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
+import com.megacrit.cardcrawl.vfx.combat.GrandFinalEffect;
 import com.megacrit.cardcrawl.vfx.combat.HeartBuffEffect;
 import shadowverse.characters.Nemesis;
 
@@ -31,8 +34,9 @@ public class CalamityEnd extends AbstractBossCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot((AbstractGameAction)new SFXAction("CalamityEnd"));
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new VFXAction((AbstractGameEffect)new HeartBuffEffect(m.hb.cX, m.hb.cY)));
-        p.currentHealth -= 99999;
-        addToBot((AbstractGameAction) new DamageAction((AbstractCreature) p, new DamageInfo((AbstractCreature) m, 9999), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new GrandFinalEffect()));
+        addToBot((AbstractGameAction)new RealWaitAction(0.3F));
+        addToBot((AbstractGameAction)new JudgementAction(p,99999));
     }
 
     public void upgrade() {

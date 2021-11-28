@@ -19,6 +19,7 @@ import com.megacrit.cardcrawl.powers.GainStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import shadowverse.action.ReduceCountDownAction;
 import shadowverse.cards.AbstractCrystalizeCard;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
 
@@ -35,6 +36,8 @@ import shadowverse.orbs.AmuletOrb;
      super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.ENEMY);
      this.baseMagicNumber = 1;
      this.magicNumber = this.baseMagicNumber;
+     this.exhaust = true;
+     this.tags.add(AbstractShadowversePlayer.Enums.NATURAL);
    }
  
    

@@ -44,7 +44,7 @@ import shadowverse.orbs.AmuletOrb;
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToTop((AbstractGameAction)new ReduceCountDownAction(2));
+     addToBot((AbstractGameAction)new ReduceCountDownAction(2));
      addToBot((AbstractGameAction)new DrawCardAction(this.magicNumber));
    }
 

@@ -1,5 +1,6 @@
 package shadowverse.action;
 import charbosses.actions.RealWaitAction;
+import com.evacipated.cardcrawl.mod.stslib.actions.defect.EvokeSpecificOrbAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
@@ -39,10 +40,7 @@ public class PlaceAmulet extends AbstractGameAction {
             if (!AbstractDungeon.player.hasEmptyOrb())
                 for (AbstractOrb o : AbstractDungeon.player.orbs) {
                     if (!(o instanceof AmuletOrb)) {
-                        AbstractDungeon.player.orbs.remove(o);
-                        AbstractDungeon.player.orbs.add(0, o);
-                        AbstractDungeon.player.evokeOrb();
-                        break;
+                        addToBot((AbstractGameAction)new EvokeSpecificOrbAction(o));
                     }
                 }
             AbstractDungeon.actionManager.addToTop((AbstractGameAction)new WaitAction(0.1F));

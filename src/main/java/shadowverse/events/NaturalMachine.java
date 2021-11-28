@@ -183,6 +183,17 @@ public class NaturalMachine extends AbstractImageEvent {
                             gold.addToBottom(new Johann());
                             gold.addToBottom(new Grayson());
                         }
+                        if (p.chosenClass !=Bishop.Enums.Bishop){
+                            white.addToBottom(new JusticeMana());
+                            white.addToBottom(new AngelRat());
+                            white.addToBottom(new RobowingPrecant());
+                            white.addToBottom(new IronknuckleNun());
+                            white.addToBottom(new UnlikelyFellowship());
+                            blue.addToBottom(new Agnes());
+                            blue.addToBottom(new RobowhipReverend());
+                            gold.addToBottom(new Vice());
+                            gold.addToBottom(new Limonia());
+                        }
                         colorless.shuffle();
                         white.shuffle();
                         blue.shuffle();

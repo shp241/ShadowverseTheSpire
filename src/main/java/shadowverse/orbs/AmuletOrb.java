@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
@@ -44,7 +45,11 @@ public class AmuletOrb extends AbstractOrb {
         card.targetAngle = 0.0F;
         this.amulet = card;
         this.amulet.beginGlowing();
-        this.name = orbString.NAME + this.amulet.name;
+        if (card instanceof AbstractNoCountDownAmulet){
+            this.name = this.amulet.name;
+        }else {
+            this.name = orbString.NAME + this.amulet.name;
+        }
         this.channelAnimTimer = 0.5F;
 
         if (card instanceof AbstractAmuletCard) {
@@ -58,15 +63,6 @@ public class AmuletOrb extends AbstractOrb {
         this.passiveAmount = this.basePassiveAmount;
         this.baseEvokeAmount = this.basePassiveAmount;
         this.evokeAmount = this.baseEvokeAmount;
-        if (this.passiveAmount<=0&& !(this.amulet instanceof AbstractNoCountDownAmulet)){
-            if (this.amulet instanceof AbstractAmuletCard)
-                ((AbstractAmuletCard) this.amulet).onEvoke(null);
-            if (this.amulet instanceof AbstractCrystalizeCard)
-                ((AbstractCrystalizeCard) this.amulet).onEvoke(null);
-            if ((this.amulet instanceof AbstractAmuletCard || this.amulet instanceof AbstractCrystalizeCard) && !this.amulet.hasTag(AbstractShadowversePlayer.Enums.AMULET_FOR_ONECE))
-                AbstractDungeon.actionManager.addToTop((AbstractGameAction)new ReturnAmuletToDiscardAction(this.amulet));
-            return;
-        }
         updateDescription();
         initialize(source, selfStasis);
     }
@@ -87,6 +83,9 @@ public class AmuletOrb extends AbstractOrb {
         }
         if (this.amulet instanceof AbstractCrystalizeCard){
             ((AbstractCrystalizeCard)this.amulet).endOfTurn(this);
+        }
+        if (this.amulet instanceof AbstractNoCountDownAmulet){
+            ((AbstractNoCountDownAmulet)this.amulet).endOfTurn(this);
         }
     }
 
@@ -159,10 +158,12 @@ public class AmuletOrb extends AbstractOrb {
         }
         AbstractDungeon.effectsQueue.add(this.stasisStartEffect);
         this.amulet.retain = false;
-        for (AbstractOrb o:AbstractDungeon.player.orbs){
-            if (o instanceof AmuletOrb){
-                if (((AmuletOrb) o).amulet instanceof GoldenCity){
-                    this.onStartOfTurn();
+        if (!(this.amulet instanceof GoldenCity)){
+            for (AbstractOrb o:AbstractDungeon.player.orbs){
+                if (o instanceof AmuletOrb){
+                    if (((AmuletOrb) o).amulet instanceof GoldenCity){
+                        this.onStartOfTurn();
+                    }
                 }
             }
         }
@@ -192,6 +193,19 @@ public class AmuletOrb extends AbstractOrb {
         this.amulet.render(sb);
         if (!this.hb.hovered && !(this.amulet instanceof AbstractNoCountDownAmulet)){
             renderText(sb);
+        }else if (this.amulet.hasTag(AbstractShadowversePlayer.Enums.MINION)){
+            if (this.amulet.block > this.amulet.baseBlock) {
+                FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.amulet.block), this.cX + NUM_X_OFFSET, this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET, new Color(0.2F, 1.0F, 0.2F, this.c.a), this.fontScale);
+            } else if (this.amulet.block < this.amulet.baseBlock) {
+                FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.amulet.block), this.cX + NUM_X_OFFSET, this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET, new Color(1.0F, 0.2F, 0.2F, this.c.a), this.fontScale);
+            } else {
+                FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.amulet.block), this.cX + NUM_X_OFFSET, this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET, new Color(1.0F, 1.0F, 1.0F, this.c.a), this.fontScale);
+            }
+            if (this.amulet.damage > this.amulet.baseDamage) {
+                FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.amulet.damage), this.cX - NUM_X_OFFSET, this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET, new Color(0.2F, 1.0F, 0.2F, this.c.a), this.fontScale);
+            } else {
+                FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.amulet.damage), this.cX - NUM_X_OFFSET, this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET, new Color(1.0F, 1.0F, 1.0F, this.c.a), this.fontScale);
+            }
         }
         this.hb.render(sb);
     }

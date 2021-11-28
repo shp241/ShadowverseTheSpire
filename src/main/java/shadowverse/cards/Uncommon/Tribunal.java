@@ -48,6 +48,8 @@ public class Tribunal extends AbstractAmuletCard {
     public Tribunal() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.NONE);
         this.countDown = 2;
+        this.baseMagicNumber = 2;
+        this.magicNumber = this.baseMagicNumber;
     }
 
     public void update() {
@@ -74,7 +76,11 @@ public class Tribunal extends AbstractAmuletCard {
 
     @Override
     public void onEvoke(AmuletOrb paramOrb) {
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(new Purity()));
+        AbstractCard p = new Purity();
+        if (this.upgraded){
+            p.upgrade();
+        }
+        addToBot((AbstractGameAction)new MakeTempCardInHandAction(p));
         AbstractCreature m = (AbstractCreature) AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
         if (m != null){
             addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new VerticalImpactEffect(m.hb.cX + m.hb.width / 4.0F, m.hb.cY - m.hb.height / 4.0F)));
@@ -117,7 +123,7 @@ public class Tribunal extends AbstractAmuletCard {
         AbstractCreature m = (AbstractCreature) AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
         if (m != null){
             addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new VerticalImpactEffect(m.hb.cX + m.hb.width / 4.0F, m.hb.cY - m.hb.height / 4.0F)));
-            addToBot((AbstractGameAction)new ApplyPowerAction(m,abstractPlayer,(AbstractPower)new WeakPower(m,3,false),3));
+            addToBot((AbstractGameAction)new ApplyPowerAction(m,abstractPlayer,(AbstractPower)new WeakPower(m,this.magicNumber,false),this.magicNumber));
         }
     }
 }

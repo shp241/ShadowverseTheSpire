@@ -47,7 +47,9 @@ public class MarsPower extends AbstractPower {
     public void onChannel(AbstractOrb orb) {
         if (orb instanceof Minion) {
             addToBot(new SFXAction("Mars_Pow"));
-            ((Minion) orb).buff(this.amount, this.amount);
+            if (orb instanceof Minion) {
+                ((Minion) orb).buff(this.amount, this.amount);
+            }
         }
     }
 }

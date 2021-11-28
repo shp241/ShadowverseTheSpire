@@ -24,6 +24,7 @@ public class HealingPrayer extends CustomCard {
     public HealingPrayer() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.SELF);
         this.baseMagicNumber = 1;
+        this.exhaust = true;
     }
 
 

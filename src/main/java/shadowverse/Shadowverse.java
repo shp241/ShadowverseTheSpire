@@ -883,6 +883,20 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("UnlikelyFellowship", new Sfx("sounds/UnlikelyFellowship.wav"));
         reflectedMap.put("Selena", new Sfx("sounds/Selena.wav"));
         reflectedMap.put("HeavenFire", new Sfx("sounds/HeavenFire.wav"));
+        reflectedMap.put("RobowhipReverend", new Sfx("sounds/RobowhipReverend.wav"));
+        reflectedMap.put("RobowhipReverendPower", new Sfx("sounds/RobowhipReverendPower.wav"));
+        reflectedMap.put("HeavenlyAegis", new Sfx("sounds/HeavenlyAegis.wav"));
+        reflectedMap.put("Limonia", new Sfx("sounds/Limonia.wav"));
+        reflectedMap.put("SalvationLimonia", new Sfx("sounds/SalvationLimonia.wav"));
+        reflectedMap.put("Vice", new Sfx("sounds/Vice.wav"));
+        reflectedMap.put("VicePower", new Sfx("sounds/VicePower.wav"));
+        reflectedMap.put("KLT", new Sfx("sounds/KLT.wav"));
+        reflectedMap.put("DDK", new Sfx("sounds/DDK.wav"));
+        reflectedMap.put("TheUntrueGod", new Sfx("sounds/TheUntrueGod.wav"));
+        reflectedMap.put("MarkUnleashed", new Sfx("sounds/MarkUnleashed.wav"));
+        reflectedMap.put("MarkOfBalance", new Sfx("sounds/MarkOfBalance.wav"));
+        reflectedMap.put("Marlone", new Sfx("sounds/Marlone.wav"));
+        reflectedMap.put("Marlone2", new Sfx("sounds/Marlone2.wav"));
         /*     */
     }
 
@@ -1804,6 +1818,17 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCard((AbstractCard) new HeavenFire());
         BaseMod.addCard((AbstractCard) new Selena());
         BaseMod.addCard((AbstractCard) new GoldenCity());
+        BaseMod.addCard((AbstractCard) new RobowhipReverend());
+        BaseMod.addCard((AbstractCard) new HeavenlyAegis());
+        BaseMod.addCard((AbstractCard) new SalvationLimonia());
+        BaseMod.addCard((AbstractCard) new Limonia());
+        BaseMod.addCard((AbstractCard) new Vice());
+        BaseMod.addCard((AbstractCard) new KLT());
+        BaseMod.addCard((AbstractCard) new TheUntrueGod());
+        BaseMod.addCard((AbstractCard) new AngelRat());
+        BaseMod.addCard((AbstractCard) new MarkUnleashed());
+        BaseMod.addCard((AbstractCard) new MarkOfBalance());
+        BaseMod.addCard((AbstractCard) new Marlone());
         /* 276 */
         logger.info("Success");
         /*     */

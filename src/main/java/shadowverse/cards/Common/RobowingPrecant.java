@@ -34,6 +34,7 @@ import shadowverse.characters.Bishop;
      super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.ENEMY);
      this.baseDamage = 6;
      this.baseMagicNumber = 3;
+     this.magicNumber = this.baseMagicNumber;
      this.cardsToPreview = new RepairMode();
      this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
    }

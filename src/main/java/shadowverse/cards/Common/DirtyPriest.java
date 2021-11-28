@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.SweepingBeamEffect;
+import shadowverse.Shadowverse;
 import shadowverse.action.PlaceAmulet;
 import shadowverse.cards.AbstractCrystalizeCard;
 import shadowverse.cards.Curse.Indulgence;
@@ -29,6 +30,7 @@ public class DirtyPriest
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/DirtyPriest.png";
+    public boolean doubleCheck = false;
 
     public DirtyPriest() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.SELF);
@@ -44,67 +46,50 @@ public class DirtyPriest
         }
     }
 
-    @Override
-    public void applyPowers() {
-        super.applyPowers();
-        if (EnergyPanel.getCurrentEnergy()>=2){
-            if (this.costForTurn>0 && this.type == CardType.POWER){
-                this.type = CardType.ATTACK;
-                resetAttributes();
-            }
-        }else if (EnergyPanel.getCurrentEnergy()<2){
-            if (this.costForTurn>=2 && this.type == CardType.ATTACK){
-                this.type = CardType.POWER;
-                this.costForTurn = 0;
-                this.isCostModifiedForTurn = true;
-            }
-        }
-    }
-    @Override
-    public void triggerWhenDrawn() {
-        if (EnergyPanel.getCurrentEnergy()>=4){
-            if (this.costForTurn>0 && this.type == CardType.POWER){
-                this.type = CardType.ATTACK;
-                resetAttributes();
-            }
-        }else if (EnergyPanel.getCurrentEnergy()<4 ){
-            if (this.costForTurn>=4 && this.type == CardType.ATTACK){
-                this.type = CardType.POWER;
-                this.costForTurn = 0;
-                this.isCostModifiedForTurn = true;
-            }
-        }
-    }
-
-    @Override
     public void triggerOnOtherCardPlayed(AbstractCard c) {
-        if (EnergyPanel.getCurrentEnergy()>=4){
-            if (this.costForTurn>0 && this.type == CardType.POWER){
-                this.type = CardType.ATTACK;
-                resetAttributes();
-            }
-        }else if (EnergyPanel.getCurrentEnergy()<4 ){
-            if (this.costForTurn>=4 && this.type == CardType.ATTACK){
+        if (AbstractDungeon.player.hasPower("Burst")||AbstractDungeon.player.hasPower("Double Tap")||AbstractDungeon.player.hasPower("Amplified")) {
+            doubleCheck = true;
+            if (EnergyPanel.getCurrentEnergy() - c.costForTurn < this.cost) {
+                setCostForTurn(0);
                 this.type = CardType.POWER;
-                this.costForTurn = 0;
-                this.isCostModifiedForTurn = true;
+                applyPowers();
+            }
+        }else {
+            if (doubleCheck) {
+                doubleCheck = false;
+            }else {
+                if (EnergyPanel.getCurrentEnergy() - c.costForTurn < this.cost) {
+                    setCostForTurn(0);
+                    this.type = CardType.POWER;
+                    applyPowers();
+                }
             }
         }
-    }
-
-    @Override
-    public void onMoveToDiscard() {
-        super.onMoveToDiscard();
-        this.type = CardType.ATTACK;
-        resetAttributes();
     }
 
     public void triggerOnGainEnergy(int e, boolean dueToCard) {
-        if (EnergyPanel.getCurrentEnergy() >= 2 && this.type != CardType.ATTACK) {
+        if (EnergyPanel.getCurrentEnergy() >= 3 && this.type != CardType.ATTACK) {
             resetAttributes();
             this.type = CardType.ATTACK;
             applyPowers();
         }
+    }
+
+    public void triggerWhenDrawn() {
+        if (Shadowverse.Accelerate((AbstractCard)this)) {
+            super.triggerWhenDrawn();
+            setCostForTurn(0);
+            this.type = CardType.POWER;
+        } else {
+            this.type = CardType.ATTACK;
+        }
+        applyPowers();
+    }
+
+    public void onMoveToDiscard() {
+        resetAttributes();
+        this.type = CardType.ATTACK;
+        applyPowers();
     }
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {

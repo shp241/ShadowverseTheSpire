@@ -1181,7 +1181,50 @@
   "shadowverse:HereticPriestPower": {
     "NAME": "邪教神父",
     "DESCRIPTIONS": [
-      "每当抽到诅咒牌时，额外抽 #b1 张卡。"
+      "每当抽到诅咒牌时，额外抽 #b",
+      " 张牌。"
+    ]
+  },
+  "shadowverse:HeavenFirePower": {
+    "NAME": "圣祝射击",
+    "DESCRIPTIONS": [
+      "一回合一次，本回合如果使用过护符卡，增加 #b1 张 #y",
+      " 到手中。"
+    ]
+  },
+  "shadowverse:RobowhipReverendPower": {
+    "NAME": "机械鞭僧侣",
+    "DESCRIPTIONS": [
+      "本回合每回复1次生命，获得 #b",
+      " 点 敏捷 。如果手中有机械攻击牌，额外获得 #b",
+      " 点 力量 。"
+    ]
+  },
+  "shadowverse:HeavenlyAegisPower": {
+    "NAME": "天耀盾甲",
+    "DESCRIPTIONS": [
+      "不会受到负面效果影响。"
+    ]
+  },
+  "shadowverse:LimoniaPower": {
+    "NAME": "残缺的圣女·莉莫涅姆",
+    "DESCRIPTIONS": [
+      "打出机械攻击牌时，增加 #b1 张 #y莉莫涅姆的救济 到手中。",
+      "打出机械攻击牌时，增加 #b1 张 #y莉莫涅姆的救济+ 到手中。"
+    ]
+  },
+  "shadowverse:VicePower": {
+    "NAME": "机指狂人·伊维尔",
+    "DESCRIPTIONS": [
+      "打出机械攻击牌时，失去 #b2 点生命，获得 #b",
+      " 点 力量 。"
+    ]
+  },
+  "shadowverse:DDKPower": {
+    "NAME": "圣弓使者·库鲁特",
+    "DESCRIPTIONS": [
+      "回复生命时，对全体敌人造成 #b",
+      " 点伤害。"
     ]
   }
 }

@@ -32,7 +32,8 @@ public class AlterplaneArbiter extends CustomRelic {
             Necromancer.Enums.COLOR_PURPLE,
             Vampire.Enums.COLOR_SCARLET,
             Nemesis.Enums.COLOR_SKY,
-            Royal.Enums.COLOR_YELLOW
+            Royal.Enums.COLOR_YELLOW,
+            Bishop.Enums.COLOR_WHITE
     };
     public static AbstractPlayer.PlayerClass[] CLASSES = {
             Witchcraft.Enums.WITCHCRAFT,
@@ -40,7 +41,8 @@ public class AlterplaneArbiter extends CustomRelic {
             Necromancer.Enums.Necromancer,
             Vampire.Enums.Vampire,
             Nemesis.Enums.Nemesis,
-            Royal.Enums.Royal
+            Royal.Enums.Royal,
+            Bishop.Enums.Bishop
     };
 
     public AlterplaneArbiter() {
@@ -66,6 +68,8 @@ public class AlterplaneArbiter extends CustomRelic {
                 s += this.DESCRIPTIONS[7] + this.DESCRIPTIONS[2];
             } else if (COLORS[this.counter] == Royal.Enums.COLOR_YELLOW) {
                 s += this.DESCRIPTIONS[8] + this.DESCRIPTIONS[2];
+            }else if (COLORS[this.counter] == Bishop.Enums.COLOR_WHITE){
+                s += this.DESCRIPTIONS[9] + this.DESCRIPTIONS[2];
             }
         }
         return s;
@@ -92,12 +96,12 @@ public class AlterplaneArbiter extends CustomRelic {
     public void onEquip() {
         AbstractPlayer p = AbstractDungeon.player;
         while (true) {
-            this.counter = AbstractDungeon.miscRng.random(5);
+            this.counter = AbstractDungeon.miscRng.random(6);
             if (CLASSES[this.counter] != p.chosenClass) {
                 break;
             }
         }
-        if (CLASSES[this.counter] == Royal.Enums.Royal) {
+        if (CLASSES[this.counter] == Royal.Enums.Royal && CLASSES[this.counter] == Bishop.Enums.Bishop) {
             AbstractDungeon.player.masterMaxOrbs = 5;
         }
         for (PowerTip t : this.tips) {

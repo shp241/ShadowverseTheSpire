@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.vfx.combat.LightFlareParticleEffect;
 import shadowverse.cards.AbstractAmuletCard;
 import shadowverse.cards.AbstractNoCountDownAmulet;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.orbs.AmuletOrb;
 
 public class SkullFaneAction extends AbstractGameAction {
@@ -40,29 +41,12 @@ public class SkullFaneAction extends AbstractGameAction {
             }
             if (orbCount>0){
                 addToBot((AbstractGameAction)new GainBlockAction(AbstractDungeon.player,orbCount*this.block));
-                addToBot((AbstractGameAction)new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,(AbstractPower)new StrengthPower(AbstractDungeon.player,orbCount*this.block)));
+                addToBot((AbstractGameAction)new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,(AbstractPower)new StrengthPower(AbstractDungeon.player,orbCount*this.str)));
             }
             for (AbstractOrb orb : AbstractDungeon.player.orbs) {
-                if (orb instanceof AmuletOrb){
-                    if (!(((AmuletOrb) orb).amulet instanceof AbstractNoCountDownAmulet)){
-                        for (int i=0;i<this.amount;i++){
-                            if (orb.passiveAmount > 0) {
-                                orb.passiveAmount--;
-                                orb.evokeAmount--;
-                                orb.updateDescription();
-                            }
-                            for (int j = 0; j < 10; j++)
-                                AbstractDungeon.effectsQueue.add(new LightFlareParticleEffect(orb.tX, orb.tY, Color.YELLOW));
-                            if (orb.passiveAmount <= 0){
-                                AbstractDungeon.actionManager.addToTop((AbstractGameAction) new StasisEvokeIfRoomInHandAction((AmuletOrb) orb));
-                                break;
-                            }
-                        }
-                    }else {
-                        AbstractDungeon.player.orbs.remove(orb);
-                        AbstractDungeon.player.orbs.add(0, orb);
-                        AbstractDungeon.player.evokeOrb();
-                    }
+                if (orb instanceof AmuletOrb &&!((AmuletOrb) orb).amulet.hasTag(AbstractShadowversePlayer.Enums.MINION)){
+                    orb.passiveAmount = 0;
+                    AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new StasisEvokeIfRoomInHandAction((AmuletOrb) orb));
                 }
             }
 

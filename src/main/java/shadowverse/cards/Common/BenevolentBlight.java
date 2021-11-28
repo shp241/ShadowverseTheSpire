@@ -43,6 +43,7 @@ public class BenevolentBlight extends CustomCard {
         this.isMultiDamage = true;
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
+        this.exhaust = true;
     }
 
 

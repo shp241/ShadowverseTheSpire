@@ -1,6 +1,7 @@
 package shadowverse.cards.Uncommon;
 
 import basemod.abstracts.CustomCard;
+import charbosses.actions.RealWaitAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
@@ -82,11 +83,17 @@ public class GoldenCity extends AbstractEndTurnInvocationCard implements Abstrac
     @Override
     public void atEndOfTurn(boolean isPlayer) {
         if (isPlayer){
-            if (EnergyPanel.getCurrentEnergy()>this.cost){
-                if (AbstractDungeon.player.discardPile.contains((AbstractCard)this)) {
-                    addToBot((AbstractGameAction)new PlaceAmulet(this,AbstractDungeon.player.discardPile));
-                } else if (AbstractDungeon.player.drawPile.contains((AbstractCard)this)) {
-                    addToBot((AbstractGameAction)new PlaceAmulet(this,AbstractDungeon.player.drawPile));
+            if (AbstractDungeon.player.hasEmptyOrb()){
+                if (EnergyPanel.getCurrentEnergy()>this.cost){
+                    if (AbstractDungeon.player.discardPile.contains((AbstractCard)this)) {
+                        addToBot((AbstractGameAction)new DiscardToHandAction((AbstractCard)this));
+                        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new RealWaitAction(0.6F));
+                        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new PlaceAmulet(this,AbstractDungeon.player.hand));
+                    } else if (AbstractDungeon.player.drawPile.contains((AbstractCard)this)) {
+                        addToBot((AbstractGameAction)new InvocationAction(this));
+                        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new RealWaitAction(0.6F));
+                        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new PlaceAmulet(this,AbstractDungeon.player.hand));
+                    }
                 }
             }
         }
