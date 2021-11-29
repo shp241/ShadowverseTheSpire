@@ -70,7 +70,7 @@ public class Selena
         if (amt>1)
             addToBot((AbstractGameAction)new GainEnergyAction(1));
         if (amt>2)
-            addToBot((AbstractGameAction)new DamageRandomEnemyAction((DamageInfo)new DamageInfo(p,this.damage, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.FIRE));
+            addToBot((AbstractGameAction)new DamageAllEnemiesAction(p,this.damage,this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE));
         if (amt>3)
             addToBot((AbstractGameAction)new ReduceAllCountDownAction(3));
     }

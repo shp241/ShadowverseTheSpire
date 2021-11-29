@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -44,7 +45,8 @@ import shadowverse.cards.Temp.NecroAnimals;
      this.description = DESCRIPTIONS[0]+this.amount+DESCRIPTIONS[1];
    }
 
-   public void onPlayCard(AbstractCard card, AbstractMonster m) {
+   @Override
+   public void onUseCard(AbstractCard card, UseCardAction action) {
      if (card instanceof NaterranGreatTree){
        addToBot((AbstractGameAction)new SFXAction("LubellePower"));
        addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new NecroAnimals(),this.amount));

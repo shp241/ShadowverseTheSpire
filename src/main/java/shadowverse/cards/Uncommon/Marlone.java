@@ -81,7 +81,7 @@ public class Marlone extends CustomCard implements BranchableUpgradeCard {
                         addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new ClashEffect(mo.hb.cX, mo.hb.cY), 0.1F));
                     }
                 }
-                addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)p, DamageInfo.createDamageMatrix((this.damage-atkAmt*5)*monsterAmt, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE, true));
+                addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)p, DamageInfo.createDamageMatrix((this.damage-atkAmt*5)*monsterAmt, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE, true));
         }
     }
 
@@ -115,7 +115,7 @@ public class Marlone extends CustomCard implements BranchableUpgradeCard {
                 Marlone.this.textureImg = IMG_PATH2;
                 Marlone.this.loadCardImage(IMG_PATH2);
                 Marlone.this.name = cardStrings2.NAME;
-                Marlone.this.baseDamage = 30;
+                Marlone.this.baseDamage = 20;
                 Marlone.this.upgradedDamage = true;
                 Marlone.this.initializeTitle();
                 Marlone.this.rawDescription = cardStrings2.DESCRIPTION;

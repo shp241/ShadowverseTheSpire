@@ -4,6 +4,7 @@ import basemod.abstracts.CustomCard;
 import charbosses.actions.RealWaitAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
+import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.actions.utility.DiscardToHandAction;
@@ -31,6 +32,8 @@ public class GoldenCity extends AbstractEndTurnInvocationCard implements Abstrac
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/GoldenCity.png";
+    public static boolean dupCheck = true;
+
 
 
     public GoldenCity() {
@@ -48,6 +51,11 @@ public class GoldenCity extends AbstractEndTurnInvocationCard implements Abstrac
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
 
+    }
+
+    @Override
+    public void atTurnStart(){
+        dupCheck = true;
     }
 
     @Override
@@ -84,15 +92,14 @@ public class GoldenCity extends AbstractEndTurnInvocationCard implements Abstrac
     public void atEndOfTurn(boolean isPlayer) {
         if (isPlayer){
             if (AbstractDungeon.player.hasEmptyOrb()){
-                if (EnergyPanel.getCurrentEnergy()>this.cost){
+                if (EnergyPanel.getCurrentEnergy()>this.cost && dupCheck){
+                    dupCheck = false;
                     if (AbstractDungeon.player.discardPile.contains((AbstractCard)this)) {
-                        addToBot((AbstractGameAction)new DiscardToHandAction((AbstractCard)this));
-                        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new RealWaitAction(0.6F));
-                        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new PlaceAmulet(this,AbstractDungeon.player.hand));
+                        addToBot((AbstractGameAction)new ExhaustSpecificCardAction(this,AbstractDungeon.player.discardPile));
+                        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new PlaceAmulet(this.makeStatEquivalentCopy(),null));
                     } else if (AbstractDungeon.player.drawPile.contains((AbstractCard)this)) {
-                        addToBot((AbstractGameAction)new InvocationAction(this));
-                        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new RealWaitAction(0.6F));
-                        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new PlaceAmulet(this,AbstractDungeon.player.hand));
+                        addToBot((AbstractGameAction)new ExhaustSpecificCardAction(this,AbstractDungeon.player.drawPile));
+                        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new PlaceAmulet(this.makeStatEquivalentCopy(),null));
                     }
                 }
             }

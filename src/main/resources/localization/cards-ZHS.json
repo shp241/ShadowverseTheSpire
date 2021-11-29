@@ -3513,8 +3513,8 @@
   },
   "shadowverse:SalvationLimonia": {
     "NAME": "莉莫涅姆的救济",
-    "DESCRIPTION": "机械 。 NL 选择1张主教攻击牌或机械攻击牌耗能减少1。 NL 如果本场战斗已打出的 *莉莫涅姆的救济 为4以上，增加1张 *天耀盾甲 到手中。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION":"机械 。 NL 保留 。 NL 选择1张主教攻击牌或机械攻击牌耗能减少1。 NL 如果本场战斗已打出的 *莉莫涅姆的救济 为4以上，增加1张 *天耀盾甲 到手中。 NL 消耗 "
+    "DESCRIPTION": "机械 。 NL 选择1张主教攻击牌或机械攻击牌耗能减少1。 NL 如果本场战斗已打出的 *莉莫涅姆的救济 为第5张，增加1张 *天耀盾甲 到手中。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"机械 。 NL 保留 。 NL 选择1张主教攻击牌或机械攻击牌耗能减少1。 NL 如果本场战斗已打出的 *莉莫涅姆的救济 为第5张，增加1张 *天耀盾甲 到手中。 NL 消耗 "
   },
   "shadowverse:Limonia": {
     "NAME": "残缺的圣女·莉莫涅姆",
@@ -3523,7 +3523,7 @@
   },
   "shadowverse:Vice": {
     "NAME": "机指狂人·伊维尔",
-    "DESCRIPTION": "机械 。 NL 增加2张本回合耗能为0的 *铁腕女修士 到手中。 NL 每当打出 机械 攻击牌时，失去2点生命，获得 !M! 点 力量 。"
+    "DESCRIPTION": "机械 。 NL 增加2张本回合耗能为0的 *铁腕女修士 到手中。 NL 每当打出 机械 攻击牌时，失去2点生命，获得 !M! 点 力量 。 NL 虚无 。"
   },
   "shadowverse:KLT": {
     "NAME": "圣弓使者·库鲁特",
@@ -3554,5 +3554,44 @@
   "shadowverse:Marlone2": {
     "NAME": "平稳制定者·马龙",
     "DESCRIPTION": "对全体敌人造成 !D! 点伤害。 NL 手中每有1张攻击牌本伤害减少5点。 NL 每有一个敌人本伤害增加 !D! 点。"
+  },
+  "shadowverse:HolyShieldLion": {
+    "NAME": "圣盾天狮",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 消耗 。"
+  },
+  "shadowverse:HolyPlateLion": {
+    "NAME": "圣铠天狮",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 消耗 。"
+  },
+  "shadowverse:HolyKingLion": {
+    "NAME": "圣王天狮",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。 NL 消耗 。"
+  },
+  "shadowverse:LionCrystal": {
+    "NAME": "圣狮结晶",
+    "DESCRIPTION": "爆能强化 2 \b增加1张 消耗 且没有爆能效果的 *圣狮结晶 到手中。 NL 增加1张 *圣盾天狮 到手中。 NL 如果本场战斗已打出的 *圣狮结晶 为3张以上，改为 *圣铠天狮 。 NL 如果为6张以上，改为 *圣王天狮。",
+    "UPGRADE_DESCRIPTION": "爆能强化 2 \b增加1张 消耗 且没有爆能效果的 *圣狮结晶+ 到手中。 NL 增加1张 *圣盾天狮+ 到手中。 NL 如果本场战斗已打出的 *圣狮结晶 为3张以上，改为 *圣铠天狮+ 。 NL 如果为6张以上，改为 *圣王天狮+。"
+  },
+  "shadowverse:LionCrystalCopy": {
+    "NAME": "圣狮结晶",
+    "DESCRIPTION": "增加1张 *圣盾天狮 到手中。 NL 如果本场战斗已打出的 *圣狮结晶 为3张以上，改为 *圣铠天狮 。 NL 如果为6张以上，改为 *圣王天狮。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "增加1张 *圣盾天狮+ 到手中。 NL 如果本场战斗已打出的 *圣狮结晶 为3张以上，改为 *圣铠天狮+ 。 NL 如果为6张以上，改为 *圣王天狮+。 NL 消耗 。"
+  },
+  "shadowverse:LionTemple": {
+    "NAME": "圣狮神殿",
+    "DESCRIPTION": "每当打出 *圣狮结晶 时，获得 [E] 。 NL 这个效果一回合最多触发5次。",
+    "UPGRADE_DESCRIPTION": "增加1张 消耗 且没有爆能效果的 *圣狮结晶 到手中。 NL 每当打出 *圣狮结晶 时，获得 [E] 。 NL 这个效果一回合最多触发5次。"
+  },
+  "shadowverse:PeaceWeaver": {
+    "NAME": "和平的推动者",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张 消耗 且没有爆能效果的 *圣狮结晶 到手中。"
+  },
+  "shadowverse:PrismSwing": {
+    "NAME": "圣光棱杖击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 增加1张 消耗 且没有爆能效果的 *圣狮结晶 到手中。"
+  },
+  "shadowverse:SalvationLion": {
+    "NAME": "救济圣狮",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得 !M! 层 多重护甲 。 NL 增加1张 消耗 且没有爆能效果的 *圣狮结晶 到手中。"
   }
 }

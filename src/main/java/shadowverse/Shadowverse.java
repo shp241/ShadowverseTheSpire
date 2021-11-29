@@ -897,6 +897,8 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("MarkOfBalance", new Sfx("sounds/MarkOfBalance.wav"));
         reflectedMap.put("Marlone", new Sfx("sounds/Marlone.wav"));
         reflectedMap.put("Marlone2", new Sfx("sounds/Marlone2.wav"));
+        reflectedMap.put("PrismSwing", new Sfx("sounds/PrismSwing.wav"));
+        reflectedMap.put("PeaceWeaver", new Sfx("sounds/PeaceWeaver.wav"));
         /*     */
     }
 
@@ -1829,6 +1831,14 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCard((AbstractCard) new MarkUnleashed());
         BaseMod.addCard((AbstractCard) new MarkOfBalance());
         BaseMod.addCard((AbstractCard) new Marlone());
+        BaseMod.addCard((AbstractCard) new HolyShieldLion());
+        BaseMod.addCard((AbstractCard) new HolyPlateLion());
+        BaseMod.addCard((AbstractCard) new HolyKingLion());
+        BaseMod.addCard((AbstractCard) new LionCrystal());
+        BaseMod.addCard((AbstractCard) new LionTemple());
+        BaseMod.addCard((AbstractCard) new PeaceWeaver());
+        BaseMod.addCard((AbstractCard) new PrismSwing());
+        BaseMod.addCard((AbstractCard) new SalvationLion());
         /* 276 */
         logger.info("Success");
         /*     */

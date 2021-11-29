@@ -62,7 +62,7 @@ public class SalvationLimonia extends CustomCard {
                 count++;
             }
         }
-        if (count >= 5){
+        if (count == 5){
             addToBot((AbstractGameAction)new MakeTempCardInHandAction(new HeavenlyAegis()));
         }
     }

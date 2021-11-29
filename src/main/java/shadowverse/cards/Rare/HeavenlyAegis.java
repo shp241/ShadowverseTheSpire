@@ -39,7 +39,7 @@ public class HeavenlyAegis
     public static final String IMG_PATH = "img/cards/HeavenlyAegis.png";
 
     public HeavenlyAegis() {
-        super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.POWER, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.SELF);
         this.tags.add(AbstractShadowversePlayer.Enums.MINION);
         this.baseDamage = 8;
         this.baseBlock = 8;

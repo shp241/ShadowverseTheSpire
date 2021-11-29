@@ -13,6 +13,8 @@
  import com.megacrit.cardcrawl.localization.CardStrings;
  import com.megacrit.cardcrawl.monsters.AbstractMonster;
  import shadowverse.cards.AbstractAmuletCard;
+ import shadowverse.cards.AbstractCrystalizeCard;
+ import shadowverse.cards.AbstractNoCountDownAmulet;
  import shadowverse.cards.Temp.NaterranGreatTree;
  import shadowverse.characters.AbstractShadowversePlayer;
  import shadowverse.characters.Bishop;
@@ -35,7 +37,7 @@
  
    
    public void triggerOnOtherCardPlayed(AbstractCard c) {
-     if (c instanceof AbstractAmuletCard) {
+     if (c instanceof AbstractAmuletCard || (c instanceof AbstractCrystalizeCard && c.type==CardType.POWER) || c instanceof AbstractNoCountDownAmulet) {
        flash();
        addToBot((AbstractGameAction)new SFXAction("spell_boost"));
        addToBot((AbstractGameAction)new ReduceCostAction((AbstractCard)this));
@@ -43,7 +45,6 @@
      if (c instanceof NaterranGreatTree){
          flash();
          addToBot((AbstractGameAction)new SFXAction("spell_boost"));
-         addToBot((AbstractGameAction)new ReduceCostAction((AbstractCard)this));
          addToBot((AbstractGameAction)new ReduceCostAction((AbstractCard)this));
      }
    }

@@ -5,6 +5,7 @@ import charbosses.cards.AbstractBossCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.InstantKillAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.actions.watcher.JudgementAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -36,7 +37,7 @@ public class CalamityEnd extends AbstractBossCard {
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new VFXAction((AbstractGameEffect)new HeartBuffEffect(m.hb.cX, m.hb.cY)));
         addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new GrandFinalEffect()));
         addToBot((AbstractGameAction)new RealWaitAction(0.3F));
-        addToBot((AbstractGameAction)new JudgementAction(p,99999));
+        addToTop((AbstractGameAction)new InstantKillAction(p));
     }
 
     public void upgrade() {

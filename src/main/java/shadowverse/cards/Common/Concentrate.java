@@ -22,7 +22,7 @@ public class Concentrate
     public static final String IMG_PATH = "img/cards/Concentrate.png";
 
     public Concentrate() {
-        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.COMMON, CardTarget.NONE);
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Nemesis.Enums.COLOR_SKY, CardRarity.COMMON, CardTarget.NONE);
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
     }

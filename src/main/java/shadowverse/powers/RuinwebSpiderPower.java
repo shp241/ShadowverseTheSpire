@@ -4,6 +4,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.actions.watcher.SkipEnemiesTurnAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -57,7 +58,8 @@ public class RuinwebSpiderPower
         updateDescription();
     }
 
-    public void onPlayCard(AbstractCard card, AbstractMonster m) {
+    @Override
+    public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card.type == AbstractCard.CardType.POWER) {
             this.amount -= 1;
             if (this.amount == 0) {
@@ -71,5 +73,6 @@ public class RuinwebSpiderPower
             updateDescription();
         }
     }
+
 }
 

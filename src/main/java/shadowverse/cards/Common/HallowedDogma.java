@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import shadowverse.action.ReduceCountDownAction;
+import shadowverse.cards.AbstractAmuletCard;
 import shadowverse.cards.AbstractCrystalizeCard;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
@@ -53,7 +54,8 @@ import shadowverse.orbs.AmuletOrb;
      if (!canUse)
        return false;
      for (AbstractOrb o : p.orbs) {
-       if (o instanceof AmuletOrb || o instanceof AbstractCrystalizeCard) {
+       if (o instanceof AmuletOrb) {
+         if (((AmuletOrb) o).amulet instanceof AbstractAmuletCard || ((AmuletOrb) o).amulet instanceof AbstractCrystalizeCard || ((AmuletOrb) o).amulet.type==CardType.CURSE)
          canUse = true;
          break;
        }else {
