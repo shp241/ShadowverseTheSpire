@@ -161,7 +161,7 @@ public class AmuletOrb extends AbstractOrb {
         if (!(this.amulet instanceof GoldenCity)){
             for (AbstractOrb o:AbstractDungeon.player.orbs){
                 if (o instanceof AmuletOrb){
-                    if (((AmuletOrb) o).amulet instanceof GoldenCity){
+                    if (((AmuletOrb) o).amulet instanceof GoldenCity && this.passiveAmount>0){
                         this.onStartOfTurn();
                     }
                 }

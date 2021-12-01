@@ -148,7 +148,7 @@ public class LionCrystal extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         int count = 0;
         for (AbstractCard c:AbstractDungeon.actionManager.cardsPlayedThisCombat){
-            if (c instanceof LionCrystal || c instanceof LionCrystalCopy)
+            if (c.cardID.contains("shadowverse:LionCrystal"))
                 count++;
         }
         if (count>5){

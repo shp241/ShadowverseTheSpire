@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import shadowverse.cards.Rare.DeadSoulTaker;
+import shadowverse.cards.Rare.Jatelant;
 import shadowverse.cards.Rare.PrimalGigant;
 
 import java.util.ArrayList;
@@ -27,11 +28,10 @@ public class PrimalGigantAction extends AbstractGameAction {
     public void update() {
         for (AbstractCard c:AbstractDungeon.actionManager.cardsPlayedThisCombat){
             if (c.type == AbstractCard.CardType.ATTACK){
-                if (tmp.contains(c.cardID)||c instanceof PrimalGigant||c instanceof DeadSoulTaker) {
+                if (tmp.contains(c.cardID)||c instanceof PrimalGigant||c instanceof DeadSoulTaker || c instanceof Jatelant) {
                     continue;
                 }
                 tmp.add(c.cardID);
-
                 list.add(c);
             }
         }

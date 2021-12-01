@@ -70,7 +70,7 @@ public class LionCrystalCopy extends CustomCard {
     public void triggerOnGlowCheck() {
         int count = 0;
         for (AbstractCard c:AbstractDungeon.actionManager.cardsPlayedThisCombat){
-            if (c instanceof LionCrystal || c instanceof LionCrystalCopy)
+            if (c.cardID.contains("shadowverse:LionCrystal"))
                 count++;
         }
         if (count > 5) {
@@ -84,7 +84,7 @@ public class LionCrystalCopy extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         int count = 0;
         for (AbstractCard c:AbstractDungeon.actionManager.cardsPlayedThisCombat){
-            if (c instanceof LionCrystalCopy || c instanceof LionCrystalCopy)
+            if (c.cardID.contains("shadowverse:LionCrystal"))
                 count++;
         }
         if (count>5){

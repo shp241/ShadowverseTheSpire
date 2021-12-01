@@ -189,10 +189,12 @@ public class NaturalMachine extends AbstractImageEvent {
                             white.addToBottom(new RobowingPrecant());
                             white.addToBottom(new IronknuckleNun());
                             white.addToBottom(new UnlikelyFellowship());
+                            white.addToBottom(new SneakAttack());
                             blue.addToBottom(new Agnes());
                             blue.addToBottom(new RobowhipReverend());
                             gold.addToBottom(new Vice());
                             gold.addToBottom(new Limonia());
+                            gold.addToBottom(new MusePrincess());
                         }
                         colorless.shuffle();
                         white.shuffle();

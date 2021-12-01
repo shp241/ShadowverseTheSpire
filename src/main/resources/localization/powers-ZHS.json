@@ -1226,5 +1226,25 @@
       "回复生命时，对全体敌人造成 #b",
       " 点伤害。"
     ]
+  },
+  "shadowverse:TheStrengthPower": {
+    "NAME": "《力量》·索菲娜",
+    "DESCRIPTIONS": [
+      "受到的伤害减少 #b",
+      " 点。"
+    ]
+  },
+  "shadowverse:QueenOfHopePower": {
+    "NAME": "希望女王·莉迪耶尔",
+    "DESCRIPTIONS": [
+      "每当回复生命时抽 #b",
+      " 张牌。"
+    ]
+  },
+  "shadowverse:MusePrincessPower": {
+    "NAME": "灵鼠公主·蜜尔菲",
+    "DESCRIPTIONS": [
+      "打出 #y那塔拉的大树 时，如果手中没有 #y灵鼠族小小骑士 ，增加 #b1 张到手中。"
+    ]
   }
 }

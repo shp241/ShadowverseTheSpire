@@ -899,6 +899,21 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("Marlone2", new Sfx("sounds/Marlone2.wav"));
         reflectedMap.put("PrismSwing", new Sfx("sounds/PrismSwing.wav"));
         reflectedMap.put("PeaceWeaver", new Sfx("sounds/PeaceWeaver.wav"));
+        reflectedMap.put("Munyaru", new Sfx("sounds/Munyaru.wav"));
+        reflectedMap.put("SneakAttack", new Sfx("sounds/SneakAttack.wav"));
+        reflectedMap.put("MunyaruRaid", new Sfx("sounds/MunyaruRaid.wav"));
+        reflectedMap.put("ErisPrayer", new Sfx("sounds/ErisPrayer.wav"));
+        reflectedMap.put("MajorPrayers", new Sfx("sounds/MajorPrayers.wav"));
+        reflectedMap.put("RealmOfRepose", new Sfx("sounds/RealmOfRepose.wav"));
+        reflectedMap.put("Jatelant", new Sfx("sounds/Jatelant.wav"));
+        reflectedMap.put("TheStrength", new Sfx("sounds/TheStrength.wav"));
+        reflectedMap.put("TheStrength_Acc", new Sfx("sounds/TheStrength_Acc.wav"));
+        reflectedMap.put("QueenOfHope", new Sfx("sounds/QueenOfHope.wav"));
+        reflectedMap.put("QueenOfHopePower", new Sfx("sounds/QueenOfHopePower.wav"));
+        reflectedMap.put("Muse", new Sfx("sounds/Muse.wav"));
+        reflectedMap.put("MusePrincess", new Sfx("sounds/MusePrincess.wav"));
+        reflectedMap.put("MusePrincess_EH", new Sfx("sounds/MusePrincess_EH.wav"));
+        reflectedMap.put("MusePrincessPower", new Sfx("sounds/MusePrincessPower.wav"));
         /*     */
     }
 
@@ -1839,6 +1854,19 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCard((AbstractCard) new PeaceWeaver());
         BaseMod.addCard((AbstractCard) new PrismSwing());
         BaseMod.addCard((AbstractCard) new SalvationLion());
+        BaseMod.addCard((AbstractCard) new Munyaru());
+        BaseMod.addCard((AbstractCard) new SneakAttack());
+        BaseMod.addCard((AbstractCard) new ErisPrayer());
+        BaseMod.addCard((AbstractCard) new MunyaruRaid());
+        BaseMod.addCard((AbstractCard) new MajorPrayers());
+        BaseMod.addCard((AbstractCard) new RealmOfRepose());
+        BaseMod.addCard((AbstractCard) new Jatelant());
+        BaseMod.addCard((AbstractCard) new SomnolentStrength());
+        BaseMod.addCard((AbstractCard) new TheStrength());
+        BaseMod.addCard((AbstractCard) new QueenOfHope());
+        BaseMod.addCard((AbstractCard) new SacredCounter());
+        BaseMod.addCard((AbstractCard) new Muse());
+        BaseMod.addCard((AbstractCard) new MusePrincess());
         /* 276 */
         logger.info("Success");
         /*     */

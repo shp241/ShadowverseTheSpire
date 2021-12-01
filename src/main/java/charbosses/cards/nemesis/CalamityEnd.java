@@ -38,6 +38,7 @@ public class CalamityEnd extends AbstractBossCard {
         addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new GrandFinalEffect()));
         addToBot((AbstractGameAction)new RealWaitAction(0.3F));
         addToTop((AbstractGameAction)new InstantKillAction(p));
+        addToBot((AbstractGameAction)new DamageAction((AbstractCreature)p, new DamageInfo((AbstractCreature)m, 99999, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
     }
 
     public void upgrade() {

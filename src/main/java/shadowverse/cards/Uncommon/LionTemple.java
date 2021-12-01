@@ -52,7 +52,7 @@ public class LionTemple extends CustomCard implements AbstractNoCountDownAmulet{
 
     @Override
     public void onStartOfTurn(AmuletOrb paramOrb) {
-        this.count = 5;
+
     }
 
     @Override
@@ -60,9 +60,10 @@ public class LionTemple extends CustomCard implements AbstractNoCountDownAmulet{
 
     }
 
+
     @Override
     public void endOfTurn(AmuletOrb paramOrb) {
-
+        this.count = 5;
     }
 
     @Override
@@ -73,7 +74,7 @@ public class LionTemple extends CustomCard implements AbstractNoCountDownAmulet{
     @Override
     public void onOtherCardPlayed(AbstractCard c, AmuletOrb paramOrb) {
         if (this.count>0){
-            if (c instanceof LionCrystal || c instanceof LionCrystalCopy){
+            if (c.cardID.contains("shadowverse:LionCrystal")){
                 count--;
                 addToBot((AbstractGameAction)new GainEnergyAction(1));
             }

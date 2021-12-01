@@ -45,7 +45,7 @@ public class KLT extends CustomCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeDamage(2);
-            upgradeMagicNumber(1);
+            upgradeMagicNumber(2);
         }
     }
 

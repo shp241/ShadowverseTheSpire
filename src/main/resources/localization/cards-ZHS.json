@@ -3592,6 +3592,67 @@
   },
   "shadowverse:SalvationLion": {
     "NAME": "救济圣狮",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得 !M! 层 多重护甲 。 NL 增加1张 消耗 且没有爆能效果的 *圣狮结晶 到手中。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得 !M! 层 多重护甲 。 NL 增加1张本回合耗能为0 消耗 且没有爆能效果的 *圣狮结晶 到手中。"
+  },
+  "shadowverse:Munyaru": {
+    "NAME": "森林参谋长·喵鲁",
+    "DESCRIPTION": "自然 。 NL 造成 !B! 点伤害。 NL 造成 !D! 点伤害。 NL 消耗 。"
+  },
+  "shadowverse:SneakAttack": {
+    "NAME": "喵鲁登场",
+    "DESCRIPTION": "自然 · 倒计时 2 NL 回合开始时如果有 那塔拉的大树 倒计时 减1。 NL 增加1张 *森林参谋长·喵鲁 到手中。",
+    "UPGRADE_DESCRIPTION": "自然 · 倒计时 2 NL 回合开始时如果有 那塔拉的大树 倒计时 减1。 NL 增加1张 *森林参谋长·喵鲁+ 到手中。"
+  },
+  "shadowverse:ErisPrayer": {
+    "NAME": "伊莉斯的祈祷",
+    "DESCRIPTION": "抽 !M! 张牌。"
+  },
+  "shadowverse:MunyaruRaid": {
+    "NAME": "喵鲁的跃动",
+    "DESCRIPTION": "增加1张 *森林参谋长·喵鲁 到手中。",
+    "UPGRADE_DESCRIPTION": "增加1张 *森林参谋长·喵鲁+ 到手中。"
+  },
+  "shadowverse:MajorPrayers": {
+    "NAME": "拥覆的祈愿",
+    "DESCRIPTION": "抉择 NL 增加1张 *森林参谋长·喵鲁 到手中。 NL 抽 !M! 张牌。 NL 如果护符区的护符数量为2以上，改为发动2种效果。",
+    "UPGRADE_DESCRIPTION": "抉择 NL 增加1张 *森林参谋长·喵鲁+ 到手中。 NL 抽 !M! 张牌。 NL 如果护符区的护符数量为2以上，改为发动2种效果。"
+  },
+  "shadowverse:RealmOfRepose": {
+    "NAME": "安息的领域",
+    "DESCRIPTION": "回合内如果没有打出过攻击牌，受到的4以上的伤害变为3。 NL 倒计时 2 NL 失去这个效果。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION": "回合内如果没有打出过攻击牌，受到的4以上的伤害变为3。 NL 倒计时 2 NL 失去这个效果。"
+  },
+  "shadowverse:Jatelant": {
+    "NAME": "荣华加护神·亚忒朗图",
+    "DESCRIPTION": "根据本场战斗已触发的护符数量获得对应效果。 NL 1,4,7,10,13获得 !M! 点金币。 NL 2,5,8,11,14对全体敌人造成 !D! 点伤害一次，回复3点生命。 NL 3,6,9,12从本场战斗中已打出的攻击牌中增加1张耗能为0 消耗 虚无 的攻击牌到手中。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已触发",
+      "  张。)"
+    ]
+  },
+  "shadowverse:SomnolentStrength": {
+    "NAME": "虚脱的刚腕",
+    "DESCRIPTION": "圣祝 · 倒计时 2 NL 回合结束时获得 !M! 点 敏捷 。 NL 倒计时 结束时随机敌人失去 !M! 点力量。"
+  },
+  "shadowverse:TheStrength": {
+    "NAME": "《力量》·索菲娜",
+    "DESCRIPTION": "激奏 1 \b放置一张 *虚脱的刚腕 到护符区，消耗 。 NL  NL --------------------- NL  NL 获得 !M! 点 力量 和 敏捷 。 NL 受到的伤害减少你拥有的 力量 点。"
+  },
+  "shadowverse:QueenOfHope": {
+    "NAME": "希望女王·莉迪耶尔",
+    "DESCRIPTION": "每当回复生命时，抽 !M! 张牌。"
+  },
+  "shadowverse:SacredCounter": {
+    "NAME": "崇高的反击",
+    "DESCRIPTION": "如果敌人当前意图为攻击且你的 格挡 大于敌人造成的伤害，造成你的 格挡 的伤害。",
+    "EXTENDED_DESCRIPTION":[ " NL （造成 !D! 点伤害。）"]
+  },
+  "shadowverse:Muse": {
+    "NAME": "灵鼠族小小骑士",
+    "DESCRIPTION": "自然 。 NL 造成 !D! 点伤害，获得 !B! 点 格挡 。 NL 如果在已有 那塔拉的大树 时打出 *那塔拉的大树 ，伤害和 格挡 增加 !M! 点。"
+  },
+  "shadowverse:MusePrincess": {
+    "NAME": "灵鼠公主·蜜尔菲",
+    "DESCRIPTION": "自然 。 NL 获得 !B! 点 格挡 。 NL  增加1张 *那塔拉的大树 到手中。 NL 爆能强化 3 \b改为3张并获得 [E] 。 NL 本回合打出 *那塔拉的大树 时，如果手中没有 *灵鼠族小小骑士 ，增加1张到手中。"
   }
 }

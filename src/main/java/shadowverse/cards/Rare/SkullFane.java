@@ -5,6 +5,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.ReduceCostAction;
 import com.megacrit.cardcrawl.actions.common.ReduceCostForTurnAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -56,7 +57,7 @@ public class SkullFane
     @Override
     public void triggerOnOtherCardPlayed(AbstractCard c) {
         if (c instanceof AbstractAmuletCard || c instanceof AbstractNoCountDownAmulet || (c instanceof AbstractCrystalizeCard && c.type==CardType.POWER)){
-            addToBot((AbstractGameAction)new ReduceCostForTurnAction(this,1));
+            addToBot((AbstractGameAction)new ReduceCostAction(this));
         }
     }
 
