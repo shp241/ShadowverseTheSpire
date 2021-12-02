@@ -1,6 +1,7 @@
  package shadowverse.cards.Rare;
  
  import basemod.abstracts.CustomCard;
+ import com.evacipated.cardcrawl.mod.stslib.actions.defect.EvokeSpecificOrbAction;
  import com.megacrit.cardcrawl.actions.AbstractGameAction;
  import com.megacrit.cardcrawl.actions.animations.VFXAction;
  import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -127,9 +128,7 @@ public void onMoveToDiscard() {
            for (AbstractOrb o:abstractPlayer.orbs){
                if (o instanceof AmuletOrb){
                    if (((AmuletOrb) o).amulet instanceof NaterranGreatTree){
-                       abstractPlayer.orbs.remove(o);
-                       AbstractDungeon.player.orbs.add(0, o);
-                       AbstractDungeon.player.evokeOrb();
+                       addToBot((AbstractGameAction) new EvokeSpecificOrbAction(o));
                    }
                }
            }
@@ -141,6 +140,13 @@ public void onMoveToDiscard() {
        }
      
      } else if (powerExists) {
+         for (AbstractOrb o:abstractPlayer.orbs){
+             if (o instanceof AmuletOrb){
+                 if (((AmuletOrb) o).amulet instanceof NaterranGreatTree){
+                     addToBot((AbstractGameAction) new EvokeSpecificOrbAction(o));
+                 }
+             }
+         }
        addToBot((AbstractGameAction)new RemoveSpecificPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, "shadowverse:NaterranTree"));
        addToBot((AbstractGameAction)new VFXAction((AbstractCreature)abstractPlayer, (AbstractGameEffect)new CleaveEffect(), 0.1F));
        addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)abstractPlayer, DamageInfo.createDamageMatrix(this.damage * 2, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE, true));

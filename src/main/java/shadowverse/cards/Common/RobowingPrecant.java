@@ -55,7 +55,7 @@ import shadowverse.characters.Bishop;
      addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
      boolean hasUsedMachine = false;
      for (AbstractCard c: AbstractDungeon.actionManager.cardsPlayedThisTurn){
-       if (c.hasTag(AbstractShadowversePlayer.Enums.MACHINE)){
+       if (c.hasTag(AbstractShadowversePlayer.Enums.MACHINE)&&c!=this){
          hasUsedMachine = true;
        }
      }

@@ -22,6 +22,7 @@ import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 import com.megacrit.cardcrawl.vfx.RainbowCardEffect;
 import com.megacrit.cardcrawl.vfx.combat.MiracleEffect;
 import com.megacrit.cardcrawl.vfx.combat.VerticalImpactEffect;
+import shadowverse.action.PlaceAmulet;
 import shadowverse.cards.AbstractNoCountDownAmulet;
 import shadowverse.cards.Status.EvolutionPoint;
 import shadowverse.characters.AbstractShadowversePlayer;
@@ -60,6 +61,7 @@ public class HeavenlyAegis
         addToBot((AbstractGameAction)new SFXAction("HeavenlyAegis"));
         addToBot((AbstractGameAction)new VFXAction(new MiracleEffect()));
         addToBot((AbstractGameAction)new ApplyPowerAction(p,p,(AbstractPower)new HeavenlyAegisPower(p)));
+        addToBot((AbstractGameAction)new PlaceAmulet(this,p.hand));
     }
 
 

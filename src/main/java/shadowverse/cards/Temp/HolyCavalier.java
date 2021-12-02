@@ -27,8 +27,8 @@ public class HolyCavalier
 
     public HolyCavalier() {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.SPECIAL, CardTarget.SELF);
-        this.baseBlock = 4;
-        this.baseMagicNumber = 2;
+        this.baseBlock = 3;
+        this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
     }

@@ -22,6 +22,7 @@
    public static final String ID = "shadowverse:Offensive7";
    public static final String IMG = "img/relics/Offensive.png";
    public static final String OUTLINE_IMG = "img/relics/outline/Offensive_Outline.png";
+   private boolean trigger = false;
 
    public Offensive7() {
      super(ID, ImageMaster.loadImage(IMG), RelicTier.STARTER, LandingSound.CLINK);
@@ -35,8 +36,16 @@
      public void onCardDraw(AbstractCard drawnCard) {
          if (drawnCard.type == AbstractCard.CardType.CURSE && Shadowverse.canSpawnAmuletOrb()){
              addToTop((AbstractGameAction)new PlaceAmulet(drawnCard,AbstractDungeon.player.hand));
-             addToTop((AbstractGameAction)new DrawCardAction(1));
+             if (!this.trigger){
+                 addToTop((AbstractGameAction)new DrawCardAction(1));
+                 trigger = true;
+             }
          }
+     }
+
+     @Override
+     public void atBattleStart() {
+         trigger = false;
      }
 
      public AbstractRelic makeCopy() {

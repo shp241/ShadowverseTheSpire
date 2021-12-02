@@ -2,6 +2,7 @@ package shadowverse.orbs;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
@@ -20,6 +21,7 @@ import shadowverse.cards.AbstractNoCountDownAmulet;
 import shadowverse.cards.Uncommon.GoldenCity;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.effect.AddCardToStasisEffect;
+import shadowverse.relics.ErisRelic;
 
 public class AmuletOrb extends AbstractOrb {
 
@@ -117,12 +119,18 @@ public class AmuletOrb extends AbstractOrb {
                 if (AbstractDungeon.player instanceof AbstractShadowversePlayer){
                     ((AbstractShadowversePlayer)AbstractDungeon.player).amuletCount++;
                 }
+                if (AbstractDungeon.player.hasRelic(ErisRelic.ID)){
+                    AbstractDungeon.actionManager.addToBottom(((AbstractGameAction)new AddTemporaryHPAction(AbstractDungeon.player,AbstractDungeon.player,2)));
+                }
                 this.amulet.superFlash(Color.GOLDENROD);
             }
             if (this.amulet instanceof AbstractCrystalizeCard){
                 ((AbstractCrystalizeCard) this.amulet).onEvoke(this);
                 if (AbstractDungeon.player instanceof AbstractShadowversePlayer){
                     ((AbstractShadowversePlayer)AbstractDungeon.player).amuletCount++;
+                }
+                if (AbstractDungeon.player.hasRelic(ErisRelic.ID)){
+                    AbstractDungeon.actionManager.addToBottom(((AbstractGameAction)new AddTemporaryHPAction(AbstractDungeon.player,AbstractDungeon.player,2)));
                 }
                 this.amulet.superFlash(Color.GOLDENROD);
             }

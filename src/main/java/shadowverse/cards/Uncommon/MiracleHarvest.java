@@ -25,6 +25,7 @@ import shadowverse.characters.Elf;
    public static final String NAME = cardStrings.NAME;
    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
    public static final String IMG_PATH = "img/cards/MiracleHarvest.png";
+   private boolean triggered;
 
    public MiracleHarvest() {
      super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Elf.Enums.COLOR_GREEN, CardRarity.UNCOMMON, CardTarget.SELF);
@@ -56,7 +57,10 @@ import shadowverse.characters.Elf;
        addToBot((AbstractGameAction)new MakeTempCardInHandAction(f));
        if (amt>=10){
            addToBot((AbstractGameAction)new DrawCardAction(this.magicNumber));
-           addToBot((AbstractGameAction)new GainEnergyAction(this.magicNumber));
+           if (!this.triggered){
+               this.triggered = true;
+               addToBot((AbstractGameAction)new GainEnergyAction(this.magicNumber));
+           }
        }
    }
  

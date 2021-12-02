@@ -15,6 +15,7 @@ import shadowverse.cards.AbstractAmuletCard;
 import shadowverse.cards.AbstractCrystalizeCard;
 import shadowverse.cards.Temp.NaterranGreatTree;
 import shadowverse.cards.AbstractNoCountDownAmulet;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
 import shadowverse.powers.NaterranTree;
@@ -29,7 +30,7 @@ public class PlaceAmuletPatch {
                     AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new RealWaitAction(0.6F));
                     AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new PlaceAmulet(c,p.hand));
                 }
-                if (c instanceof AbstractNoCountDownAmulet){
+                if (c instanceof AbstractNoCountDownAmulet && !c.hasTag(AbstractShadowversePlayer.Enums.MINION)){
                     if (c instanceof NaterranGreatTree){
                         if (!p.hasPower(NaterranTree.POWER_ID)){
                             AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new RealWaitAction(0.6F));

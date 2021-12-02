@@ -3270,8 +3270,8 @@
   },
   "shadowverse:MiracleHarvest": {
     "NAME": "奇迹果实",
-    "DESCRIPTION": "增加1张 *妖精 到手中。 NL 如果本场战斗已使用的 *妖精 为5以上，升级这张 *妖精 。 NL 如果为10以上，抽 !M! 张牌，获得 [E] 。",
-    "UPGRADE_DESCRIPTION": "增加1张 *妖精 到手中。 NL 如果本场战斗已使用的 *妖精 为5以上，升级这张 *妖精 。 NL 如果为10以上，抽 !M! 张牌，获得 [E] [E] 。"
+    "DESCRIPTION": "增加1张 *妖精 到手中。 NL 如果本场战斗已使用的 *妖精 为5以上，升级这张 *妖精 。 NL 如果为10以上，抽 !M! 张牌， 限定 获得 [E] 。",
+    "UPGRADE_DESCRIPTION": "增加1张 *妖精 到手中。 NL 如果本场战斗已使用的 *妖精 为5以上，升级这张 *妖精 。 NL 如果为10以上，抽 !M! 张牌， 限定 获得 [E] [E] 。"
   },
   "shadowverse:HolyFalcon": {
     "NAME": "神圣猎鹰",

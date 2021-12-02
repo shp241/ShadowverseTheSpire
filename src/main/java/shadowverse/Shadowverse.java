@@ -984,6 +984,12 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addRelicToCustomPool((AbstractRelic) new Durandal(), Royal.Enums.COLOR_YELLOW);
         BaseMod.addRelicToCustomPool((AbstractRelic) new EndlessUsurpation(), Royal.Enums.COLOR_YELLOW);
         BaseMod.addRelicToCustomPool((AbstractRelic) new Offensive7(), Bishop.Enums.COLOR_WHITE);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new GrandShield(),Bishop.Enums.COLOR_WHITE);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new GrandSword(),Bishop.Enums.COLOR_WHITE);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new Savior(),Bishop.Enums.COLOR_WHITE);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new BishopBOSS(),Bishop.Enums.COLOR_WHITE);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new HeresyAvatar(),Bishop.Enums.COLOR_WHITE);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new ErisRelic(),Bishop.Enums.COLOR_WHITE);
         /*     */
     }
 

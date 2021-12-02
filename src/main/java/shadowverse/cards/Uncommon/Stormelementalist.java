@@ -1,6 +1,7 @@
  package shadowverse.cards.Uncommon;
  
  import basemod.abstracts.CustomCard;
+ import com.evacipated.cardcrawl.mod.stslib.actions.defect.EvokeSpecificOrbAction;
  import com.megacrit.cardcrawl.actions.AbstractGameAction;
  import com.megacrit.cardcrawl.actions.common.*;
 
@@ -62,9 +63,7 @@ import shadowverse.orbs.AmuletOrb;
         for (AbstractOrb o:abstractPlayer.orbs){
             if (o instanceof AmuletOrb){
                 if (((AmuletOrb) o).amulet instanceof NaterranGreatTree){
-                    abstractPlayer.orbs.remove(o);
-                    AbstractDungeon.player.orbs.add(0, o);
-                    AbstractDungeon.player.evokeOrb();
+                    addToBot((AbstractGameAction) new EvokeSpecificOrbAction(o));
                 }
             }
         }

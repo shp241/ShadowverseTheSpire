@@ -50,6 +50,7 @@ public class RobowhipReverendPower extends AbstractPower {
         for (AbstractCard c: AbstractDungeon.player.hand.group){
             if (c.hasTag(AbstractShadowversePlayer.Enums.MACHINE)&&c.type== AbstractCard.CardType.ATTACK){
                 addToBot((AbstractGameAction)new ApplyPowerAction(this.owner,this.owner,(AbstractPower)new StrengthPower(this.owner,this.amount),this.amount));
+                break;
             }
         }
         return healAmount;
