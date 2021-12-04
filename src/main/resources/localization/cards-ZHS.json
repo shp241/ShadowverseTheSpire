@@ -2630,7 +2630,7 @@
   },
   "shadowverse:KMRsPresent": {
     "NAME": "木村唯人的赠礼",
-    "DESCRIPTION": "保留。 NL 抉择：选择1张 *传说卡 加入手中。 NL 消耗。"
+    "DESCRIPTION": "保留。 NL 抉择：选择1张 *传说卡 加入手中。 NL (下拉选择) NL 消耗。"
   },
   "shadowverse:ShadowversePain": {
     "NAME": "影之诗不过是折磨你们的工具",
@@ -3222,7 +3222,7 @@
   },
   "shadowverse:BlackenedScripture": {
     "NAME": "漆黑法典",
-    "DESCRIPTION": "给予 !M! 层 虚弱 和 脆弱 。 NL 消灭生命值为 !D! 以下的敌人。"
+    "DESCRIPTION": "给予 !M! 层 虚弱 和 脆弱 。 NL 消灭生命值为9以下的敌人。"
   },
   "shadowverse:PriestOfTheCudgel": {
     "NAME": "持矛锤的僧侣",
@@ -3500,7 +3500,7 @@
   },
   "shadowverse:GoldenCity": {
     "NAME": "黄金都市",
-    "DESCRIPTION": "瞬念召唤 回合结束时如果剩余能量为1以上，将这张牌置入到护符区。 NL 打出的护符 倒计时 减少1。"
+    "DESCRIPTION": "瞬念召唤 回合结束时如果剩余能量大于这张牌的耗能，将这张牌置入到护符区。 NL 打出的护符 倒计时 减少1。"
   },
   "shadowverse:RobowhipReverend": {
     "NAME": "机械鞭僧侣",
@@ -3509,7 +3509,7 @@
   },
   "shadowverse:HeavenlyAegis": {
     "NAME": "天耀盾甲",
-    "DESCRIPTION": "将这张牌置入护符区召唤一个 !D! / !B! 的 天耀盾甲 。 NL 你不会受到负面效果影响。"
+    "DESCRIPTION": "将这张牌置入护符区召唤一个 !D! / !B! 的 天耀盾甲 。 NL 你不会受到负面效果影响。 NL 消耗 。"
   },
   "shadowverse:SalvationLimonia": {
     "NAME": "莉莫涅姆的救济",
@@ -3619,8 +3619,8 @@
   },
   "shadowverse:RealmOfRepose": {
     "NAME": "安息的领域",
-    "DESCRIPTION": "回合内如果没有打出过攻击牌，受到的4以上的伤害变为3。 NL 倒计时 2 NL 失去这个效果。 NL 虚无 。",
-    "UPGRADE_DESCRIPTION": "回合内如果没有打出过攻击牌，受到的4以上的伤害变为3。 NL 倒计时 2 NL 失去这个效果。"
+    "DESCRIPTION": "圣洁 。 NL 回合内如果没有打出过攻击牌，受到的4以上的伤害变为3。 NL 倒计时 2 NL 失去这个效果。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION": "圣洁 。 NL 回合内如果没有打出过攻击牌，受到的4以上的伤害变为3。 NL 倒计时 2 NL 失去这个效果。"
   },
   "shadowverse:Jatelant": {
     "NAME": "荣华加护神·亚忒朗图",
@@ -3636,7 +3636,7 @@
   },
   "shadowverse:TheStrength": {
     "NAME": "《力量》·索菲娜",
-    "DESCRIPTION": "激奏 1 \b放置一张 *虚脱的刚腕 到护符区，消耗 。 NL  NL --------------------- NL  NL 获得 !M! 点 力量 和 敏捷 。 NL 受到的伤害减少你拥有的 力量 点。"
+    "DESCRIPTION": "激奏 1 \b放置一张 *虚脱的刚腕 到护符区，消耗 。 NL  NL --------------------- NL  NL 获得 !M! 点 力量 和 敏捷 。 NL 受到的伤害减少你拥有的 力量 点。 NL 如果受到伤害失去生命，减少1点 力量 。"
   },
   "shadowverse:QueenOfHope": {
     "NAME": "希望女王·莉迪耶尔",
@@ -3654,5 +3654,89 @@
   "shadowverse:MusePrincess": {
     "NAME": "灵鼠公主·蜜尔菲",
     "DESCRIPTION": "自然 。 NL 获得 !B! 点 格挡 。 NL  增加1张 *那塔拉的大树 到手中。 NL 爆能强化 3 \b改为3张并获得 [E] 。 NL 本回合打出 *那塔拉的大树 时，如果手中没有 *灵鼠族小小骑士 ，增加1张到手中。"
+  },
+  "shadowverse:PrimalShipwright": {
+    "NAME": "星界的艇人·诺亚",
+    "DESCRIPTION": "结晶 0 · 倒计时 3 NL 本回合耗能变为0返回手中。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL (根据 协作 数增加 !M! 点)"
+  },
+  "shadowverse:Garuda": {
+    "NAME": "天空守护者·迦楼罗",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 选择1张护符减少3 倒计时 。"
+  },
+  "shadowverse:Garuda2": {
+    "NAME": "烈风翼神·迦楼罗",
+    "DESCRIPTION": "激奏 0 \b选择1张护符减少1 倒计时 。 NL  NL --------------------- NL  NL 减少所有护符3 倒计时 。 NL 每因此效果触发1张护符，给予随机敌人 !D! 点伤害。"
+  },
+  "shadowverse:Garuda3": {
+    "NAME": "乐园的双翼·迦楼罗",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 从抽牌堆中随机打出一张耗能为X以下最高耗能的攻击牌和护符牌。 NL X为本场战斗已触发的护符数量。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已触发",
+      "  张。)"
+    ]
+  },
+  "shadowverse:Jeanne": {
+    "NAME": "圣女贞德",
+    "DESCRIPTION": "对全体敌人造成 !D! 点伤害。 NL 获得 !M! 点 敏捷 。 NL 消耗 。"
+  },
+  "shadowverse:Jeanne2": {
+    "NAME": "黑暗贞德",
+    "DESCRIPTION": "对全体敌人造成 !D! 点伤害。 NL 获得 !M! 点 力量 。 NL 消耗 。"
+  },
+  "shadowverse:Jeanne3": {
+    "NAME": "希望引导者·贞德",
+    "DESCRIPTION": "对全体敌人造成 !D! 点伤害。 NL 回复 !M! 点生命。 NL 消耗 。"
+  },
+  "shadowverse:Jeanne4": {
+    "NAME": "绝望的圣女·贞德",
+    "DESCRIPTION": "对全体敌人造成 !D! 点伤害。 NL 失去 !M! 点生命。 NL 获得2层 再生 。 NL 消耗 。"
+  },
+  "shadowverse:RelicSphere": {
+    "NAME": "遗存的球体",
+    "DESCRIPTION": "给予 !M! 层 虚弱 和 脆弱 。 NL 消灭生命值为9以下的敌人。 NL 如果护符区有 *遗存的女神 改为消灭生命值为27以下的敌人。 NL 回合结束时，如果护符区有 *遗存的角柱 、 *遗存的圆柱 、 *遗存的正多面体 ，则会和它们合体成一个 *遗存的女神 。",
+    "UPGRADE_DESCRIPTION": "给予 !M! 层 虚弱 和 脆弱 。 NL 消灭生命值为9以下的敌人。 NL 如果护符区有 *遗存的女神 改为消灭生命值为27以下的敌人。 NL 回合结束时，如果护符区有 *遗存的角柱 、 *遗存的圆柱 、 *遗存的正多面体 ，则会和它们合体成一个 *遗存的女神+ 。"
+  },
+  "shadowverse:RelicPrism": {
+    "NAME": "遗存的角柱",
+    "DESCRIPTION": "回合开始时，给予随机敌人 !M! 点伤害。 NL 如果护符区有 *遗存的女神 改为给予3倍伤害。"
+  },
+  "shadowverse:RelicTorus": {
+    "NAME": "遗存的圆柱",
+    "DESCRIPTION": "回合开始时，给予全体敌人 !M! 点伤害。 NL 如果护符区有 *遗存的女神 改为给予3倍伤害。"
+  },
+  "shadowverse:RelicPlaton": {
+    "NAME": "遗存的正多面体",
+    "DESCRIPTION": "回合开始时，回复1点生命。 NL 如果护符区有 *遗存的女神 改为回复3点生命。",
+    "UPGRADE_DESCRIPTION": "回合开始时，回复1点生命，获得 !B! 点 格挡 。 NL 如果护符区有 *遗存的女神 改为回复3点生命。"
+  },
+  "shadowverse:RelicGod": {
+    "NAME": "遗存的女神",
+    "DESCRIPTION": "将这张牌置入护符区召唤一个 !D! / !B! 的 遗存的女神 。 NL 这张牌被置入护符区时，你不会受负面效果影响。 NL 消耗 。"
+  },
+  "shadowverse:Eris": {
+    "NAME": "赎罪司祭·伊莉斯",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张 *遗存的球体 到手中。 NL 给予自身「回合结束时，从 *遗存的角柱 、 *遗存的圆柱 、 *遗存的正多面体 中随机将1张未存在于护符区的放置到护符区」效果。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张 *遗存的球体+ 到手中。 NL 给予自身「回合结束时，从 *遗存的角柱+ 、 *遗存的圆柱+ 、 *遗存的正多面体+ 中随机将1张未存在于护符区的放置到护符区」效果。 NL 消耗 。"
+  },
+  "shadowverse:Saren": {
+    "NAME": "育幼院之主·咲恋",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 选择1张护符减少3 倒计时 。 NL 如果护符区的护符数量为2以上， 升级 所有手牌。 NL 连结爆发 !M! 对全体敌人造成 !D! 点伤害，如果当前生命值为最大生命值一半以下，伤害翻倍。"
+  },
+  "shadowverse:LorenaWater": {
+    "NAME": "萝蕾娜的圣水",
+    "DESCRIPTION": "回复 !M! 点生命。 NL 抽1张牌。 NL 消耗 。"
+  },
+  "shadowverse:LorenaPunch": {
+    "NAME": "萝蕾娜的铁拳",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL (此伤害受到的加成取 力量 和 敏捷 中最高值) NL 消耗 。"
+  },
+  "shadowverse:Lorena": {
+    "NAME": "圣光牧师·萝蕾娜",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抉择 \b从 *萝蕾娜的圣水 和 *萝蕾娜的铁拳 中 选择1张加入手中。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 抉择 \b从 *萝蕾娜的圣水+ 和 *萝蕾娜的铁拳+ 中 选择1张加入手中。"
+  },
+  "shadowverse:Lorena2": {
+    "NAME": "传教司祭·萝蕾娜",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张 *进化点 到手中。 NL 增加1张 *萝蕾娜的圣水 和 本回合耗能为0的 *萝蕾娜的铁拳 到手中。"
   }
 }

@@ -82,6 +82,7 @@ public class Marlone extends CustomCard implements BranchableUpgradeCard {
                     }
                 }
                 addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)p, DamageInfo.createDamageMatrix((this.damage-atkAmt*5)*monsterAmt, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE, true));
+                break;
         }
     }
 

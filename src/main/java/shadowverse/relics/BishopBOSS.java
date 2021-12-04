@@ -38,7 +38,7 @@
 
      @Override
      public void onEquip() {
-         AbstractDungeon.player.maxOrbs++;
+         AbstractDungeon.player.masterMaxOrbs++;
      }
 
      public void atBattleStart() {

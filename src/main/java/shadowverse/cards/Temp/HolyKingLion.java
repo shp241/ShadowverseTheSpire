@@ -26,7 +26,7 @@ import shadowverse.characters.Bishop;
    public HolyKingLion() {
      super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.SPECIAL, CardTarget.ENEMY);
      this.baseBlock = 12;
-     this.baseDamage = 20;
+     this.baseDamage = 16;
      this.exhaust = true;
    }
  

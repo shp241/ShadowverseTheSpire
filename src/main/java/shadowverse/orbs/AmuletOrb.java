@@ -19,6 +19,7 @@ import shadowverse.cards.AbstractAmuletCard;
 import shadowverse.cards.AbstractCrystalizeCard;
 import shadowverse.cards.AbstractNoCountDownAmulet;
 import shadowverse.cards.Uncommon.GoldenCity;
+import shadowverse.cards.Uncommon.PrimalShipwright;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.effect.AddCardToStasisEffect;
 import shadowverse.relics.ErisRelic;
@@ -111,7 +112,7 @@ public class AmuletOrb extends AbstractOrb {
     }
 
     public void onEvoke() {
-        if ((this.amulet instanceof AbstractAmuletCard || this.amulet instanceof AbstractCrystalizeCard) && !this.amulet.hasTag(AbstractShadowversePlayer.Enums.AMULET_FOR_ONECE))
+        if ((this.amulet instanceof AbstractAmuletCard || this.amulet instanceof AbstractCrystalizeCard) && !this.amulet.hasTag(AbstractShadowversePlayer.Enums.AMULET_FOR_ONECE) && !(this.amulet instanceof PrimalShipwright))
             AbstractDungeon.actionManager.addToTop((AbstractGameAction)new ReturnAmuletToDiscardAction(this.amulet));
         if (this.passiveAmount <= 0 && !(this.amulet instanceof AbstractNoCountDownAmulet)) {
             if (this.amulet instanceof AbstractAmuletCard){

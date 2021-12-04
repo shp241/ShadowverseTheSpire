@@ -1,48 +1,48 @@
-package shadowverse.cards.Common;
+package shadowverse.cards.Uncommon;
 
 import basemod.abstracts.CustomCard;
-import charbosses.actions.RealWaitAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
-import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
-import com.megacrit.cardcrawl.vfx.combat.SweepingBeamEffect;
 import shadowverse.Shadowverse;
-import shadowverse.action.PlaceAmulet;
 import shadowverse.cards.AbstractCrystalizeCard;
 import shadowverse.cards.Curse.Indulgence;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
+import shadowverse.orbs.Minion;
 
-public class DirtyPriest
+public class PrimalShipwright
         extends CustomCard implements AbstractCrystalizeCard {
-    public static final String ID = "shadowverse:DirtyPriest";
-    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:DirtyPriest");
+    public static final String ID = "shadowverse:PrimalShipwright";
+    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:PrimalShipwright");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/DirtyPriest.png";
+    public static final String IMG_PATH = "img/cards/PrimalShipwright.png";
     public boolean doubleCheck = false;
 
-    public DirtyPriest() {
-        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.SELF);
-        this.baseBlock = 12;
-        this.cardsToPreview = new Indulgence();
+    public PrimalShipwright() {
+        super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        this.baseDamage = 0;
+        this.baseMagicNumber = 3;
+        this.magicNumber = this.baseMagicNumber;
     }
 
 
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(3);
+            upgradeMagicNumber(2);
         }
     }
 
@@ -68,8 +68,9 @@ public class DirtyPriest
     }
 
     public void triggerOnGainEnergy(int e, boolean dueToCard) {
-        if (EnergyPanel.getCurrentEnergy() >= 2 && this.type != CardType.ATTACK) {
-            resetAttributes();
+        if (EnergyPanel.getCurrentEnergy() >= 3 && this.type != CardType.ATTACK && this.costForTurn>0) {
+            this.costForTurn = this.cost;
+            this.isCostModifiedForTurn = false;
             this.type = CardType.ATTACK;
             applyPowers();
         }
@@ -86,36 +87,74 @@ public class DirtyPriest
         applyPowers();
     }
 
+    public int rally() {
+        int rally = 0;
+
+        for (AbstractOrb o : AbstractDungeon.actionManager.orbsChanneledThisCombat) {
+            if (o instanceof Minion) {
+                rally++;
+            }
+        }
+
+        for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
+            if (c.type == CardType.ATTACK && !(c.hasTag(CardTags.STRIKE))) {
+                rally++;
+            }
+        }
+        return rally;
+    }
+
     public void onMoveToDiscard() {
-        resetAttributes();
+        this.costForTurn = this.cost;
+        this.isCostModifiedForTurn = false;
         this.type = CardType.ATTACK;
         applyPowers();
     }
 
+    @Override
+    public void applyPowers() {
+        super.applyPowers();
+        int realBaseDamage = this.baseDamage;
+        this.baseDamage = rally() * this.magicNumber;
+        super.applyPowers();
+        this.baseDamage = realBaseDamage;
+        this.isDamageModified = (this.damage != this.baseDamage);
+    }
+
+    public void calculateCardDamage(AbstractMonster mo) {
+        int realBaseDamage = this.baseDamage;
+        this.baseDamage = rally() * this.magicNumber;
+        super.calculateCardDamage(mo);
+        this.baseDamage = realBaseDamage;
+        this.isDamageModified = (this.damage != this.baseDamage);
+    }
+
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         if (this.type==CardType.POWER && this.costForTurn == 0){
-            addToBot((AbstractGameAction)new SFXAction("DirtyPriest_Acc"));
+            addToBot((AbstractGameAction)new SFXAction("PrimalShipwright_Acc"));
         }else {
-            addToBot((AbstractGameAction)new SFXAction("DirtyPriest"));
-            addToBot((AbstractGameAction)new GainBlockAction(p,this.block));
-            addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
-            addToBot((AbstractGameAction)new MakeTempCardInDrawPileAction(this.cardsToPreview,1,true,true,false));
-            addToBot((AbstractGameAction)new MakeTempCardInDiscardAction(this.cardsToPreview,1));
+            addToBot((AbstractGameAction)new SFXAction("PrimalShipwright"));
+            calculateCardDamage(abstractMonster);
+            addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         }
     }
 
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new DirtyPriest();
+        return (AbstractCard) new PrimalShipwright();
     }
 
     @Override
     public void onStartOfTurn(AmuletOrb paramOrb) {
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
     }
 
     @Override
     public void onEvoke(AmuletOrb paramOrb) {
+        AbstractCard c = this.makeCopy();
+        if (this.upgraded)
+            c.upgrade();
+        c.setCostForTurn(0);
+        addToBot((AbstractGameAction)new MakeTempCardInHandAction(c));
     }
 
     @Override
@@ -138,7 +177,7 @@ public class DirtyPriest
 
     @Override
     public int returnCountDown() {
-        return 2;
+        return 3;
     }
 }
 

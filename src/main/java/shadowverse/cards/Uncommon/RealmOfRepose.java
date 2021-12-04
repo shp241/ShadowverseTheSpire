@@ -30,8 +30,8 @@ public class RealmOfRepose extends AbstractAmuletCard {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.SELF);
         this.countDown = 2;
         this.isEthereal = true;
+        this.tags.add(AbstractShadowversePlayer.Enums.AMULET_FOR_ONECE);
     }
-
 
 
     @Override
@@ -45,7 +45,7 @@ public class RealmOfRepose extends AbstractAmuletCard {
 
     @Override
     public void endOfTurn(AmuletOrb paramOrb) {
-        addToBot((AbstractGameAction)new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new RealmOfReposePower(AbstractDungeon.player,1)));
+        addToBot((AbstractGameAction) new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new RealmOfReposePower(AbstractDungeon.player, 1)));
     }
 
     @Override
@@ -76,7 +76,15 @@ public class RealmOfRepose extends AbstractAmuletCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("RealmOfRepose"));
-        addToBot((AbstractGameAction)new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new RealmOfReposePower(AbstractDungeon.player,1)));
+        addToBot((AbstractGameAction) new SFXAction("RealmOfRepose"));
+        boolean attacked = false;
+        for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisTurn) {
+            if (c.type == CardType.ATTACK) {
+                attacked = true;
+                break;
+            }
+        }
+        if (!attacked)
+            addToBot((AbstractGameAction) new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new RealmOfReposePower(AbstractDungeon.player, 1)));
     }
 }

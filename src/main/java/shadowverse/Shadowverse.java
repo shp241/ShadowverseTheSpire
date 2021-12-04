@@ -914,6 +914,28 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("MusePrincess", new Sfx("sounds/MusePrincess.wav"));
         reflectedMap.put("MusePrincess_EH", new Sfx("sounds/MusePrincess_EH.wav"));
         reflectedMap.put("MusePrincessPower", new Sfx("sounds/MusePrincessPower.wav"));
+        reflectedMap.put("PrimalShipwright", new Sfx("sounds/PrimalShipwright.wav"));
+        reflectedMap.put("PrimalShipwright_Acc", new Sfx("sounds/Primalshipwright_Acc.wav"));
+        reflectedMap.put("Garuda", new Sfx("sounds/Garuda.wav"));
+        reflectedMap.put("Garuda2", new Sfx("sounds/Garuda2.wav"));
+        reflectedMap.put("Garuda2Power", new Sfx("sounds/Garuda2Power.wav"));
+        reflectedMap.put("Garuda2_Acc", new Sfx("sounds/Garuda2_Acc.wav"));
+        reflectedMap.put("Garuda3", new Sfx("sounds/Garuda3.wav"));
+        reflectedMap.put("Jeanne", new Sfx("sounds/Jeanne.wav"));
+        reflectedMap.put("Jeanne2", new Sfx("sounds/Jeanne2.wav"));
+        reflectedMap.put("Jeanne3", new Sfx("sounds/Jeanne3.wav"));
+        reflectedMap.put("Jeanne4", new Sfx("sounds/Jeanne4.wav"));
+        reflectedMap.put("Eris", new Sfx("sounds/Eris.wav"));
+        reflectedMap.put("RelicSphere", new Sfx("sounds/RelicSphere.wav"));
+        reflectedMap.put("RelicPrism", new Sfx("sounds/RelicPrism.wav"));
+        reflectedMap.put("RelicTorus", new Sfx("sounds/RelicTorus.wav"));
+        reflectedMap.put("RelicPlaton", new Sfx("sounds/RelicPlaton.wav"));
+        reflectedMap.put("Saren", new Sfx("sounds/Saren.wav"));
+        reflectedMap.put("Saren_UB", new Sfx("sounds/Saren_UB.wav"));
+        reflectedMap.put("Lorena", new Sfx("sounds/Lorena.wav"));
+        reflectedMap.put("Lorena2", new Sfx("sounds/Lorena2.wav"));
+        reflectedMap.put("LorenaWater", new Sfx("sounds/LorenaWater.wav"));
+        reflectedMap.put("LorenaPunch", new Sfx("sounds/LorenaPunch.wav"));
         /*     */
     }
 
@@ -1873,6 +1895,19 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCard((AbstractCard) new SacredCounter());
         BaseMod.addCard((AbstractCard) new Muse());
         BaseMod.addCard((AbstractCard) new MusePrincess());
+        BaseMod.addCard((AbstractCard) new PrimalShipwright());
+        BaseMod.addCard((AbstractCard) new Garuda());
+        BaseMod.addCard((AbstractCard) new Jeanne());
+        BaseMod.addCard((AbstractCard) new RelicSphere());
+        BaseMod.addCard((AbstractCard) new RelicPrism());
+        BaseMod.addCard((AbstractCard) new RelicTorus());
+        BaseMod.addCard((AbstractCard) new RelicPlaton());
+        BaseMod.addCard((AbstractCard) new RelicGod());
+        BaseMod.addCard((AbstractCard) new Eris());
+        BaseMod.addCard((AbstractCard) new Saren(0));
+        BaseMod.addCard((AbstractCard) new Lorena());
+        BaseMod.addCard((AbstractCard) new LorenaPunch());
+        BaseMod.addCard((AbstractCard) new LorenaWater());
         /* 276 */
         logger.info("Success");
         /*     */

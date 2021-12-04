@@ -3,6 +3,7 @@ package shadowverse.powers;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.BetterOnApplyPowerPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -18,7 +19,7 @@ public class TheStrengthPower extends AbstractPower implements BetterOnApplyPowe
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings("shadowverse:TheStrengthPower");
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    private int dmgCut = AbstractDungeon.player.getPower(StrengthPower.POWER_ID)==null?0:AbstractDungeon.player.getPower(StrengthPower.POWER_ID).amount;
+    private int dmgCut = AbstractDungeon.player.getPower(StrengthPower.POWER_ID) == null ? 0 : AbstractDungeon.player.getPower(StrengthPower.POWER_ID).amount;
 
     public TheStrengthPower(AbstractCreature owner) {
         this.name = NAME;
@@ -31,14 +32,26 @@ public class TheStrengthPower extends AbstractPower implements BetterOnApplyPowe
     }
 
     public float atDamageFinalReceive(float damage, DamageInfo.DamageType type) {
-        if (dmgCut>0)
-            damage-=dmgCut;
+        if (dmgCut >= 0)
+            damage -= dmgCut;
+        else
+            damage += dmgCut;
         return damage;
     }
 
+    @Override
+    public int onAttackedToChangeDamage(DamageInfo info, int damageAmount) {
+        if (damageAmount > 0) {
+            addToBot((AbstractGameAction) new ApplyPowerAction(this.owner, this.owner, (AbstractPower) new StrengthPower(this.owner, -1), -1));
+        }
+        return damageAmount;
+    }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + this.dmgCut + DESCRIPTIONS[1];
+        if (dmgCut >= 0)
+            this.description = DESCRIPTIONS[0] + this.dmgCut + DESCRIPTIONS[1];
+        else
+            this.description = DESCRIPTIONS[2] + -this.dmgCut + DESCRIPTIONS[1];
     }
 
     @Override
@@ -48,8 +61,8 @@ public class TheStrengthPower extends AbstractPower implements BetterOnApplyPowe
 
     @Override
     public int betterOnApplyPowerStacks(AbstractPower power, AbstractCreature target, AbstractCreature source, int stackAmount) {
-        if ((power instanceof StrengthPower) && stackAmount > 0) {
-            this.dmgCut+=stackAmount;
+        if ((power instanceof StrengthPower)) {
+            this.dmgCut += stackAmount;
             updateDescription();
             AbstractDungeon.onModifyPower();
         }

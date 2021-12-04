@@ -1,7 +1,6 @@
-package shadowverse.cards.Rare;
+package shadowverse.cards.Temp;
 
 import basemod.abstracts.CustomCard;
-import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -18,32 +17,28 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
-import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
-import com.megacrit.cardcrawl.vfx.RainbowCardEffect;
 import com.megacrit.cardcrawl.vfx.combat.MiracleEffect;
 import com.megacrit.cardcrawl.vfx.combat.VerticalImpactEffect;
 import shadowverse.action.PlaceAmulet;
 import shadowverse.cards.AbstractNoCountDownAmulet;
-import shadowverse.cards.Status.EvolutionPoint;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
-import shadowverse.powers.AbdielPower;
 import shadowverse.powers.HeavenlyAegisPower;
 
-public class HeavenlyAegis
+public class RelicGod
         extends CustomCard implements AbstractNoCountDownAmulet {
-    public static final String ID = "shadowverse:HeavenlyAegis";
-    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:HeavenlyAegis");
+    public static final String ID = "shadowverse:RelicGod";
+    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:RelicGod");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/HeavenlyAegis.png";
+    public static final String IMG_PATH = "img/cards/RelicGod.png";
 
-    public HeavenlyAegis() {
-        super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.SELF);
+    public RelicGod() {
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.SPECIAL, CardTarget.SELF);
         this.tags.add(AbstractShadowversePlayer.Enums.MINION);
-        this.baseDamage = 8;
-        this.baseBlock = 8;
+        this.baseDamage = 6;
+        this.baseBlock = 6;
         this.exhaust = true;
     }
 
@@ -53,21 +48,18 @@ public class HeavenlyAegis
             upgradeName();
             upgradeDamage(2);
             upgradeBlock(2);
-            upgradeBaseCost(3);
         }
     }
 
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("HeavenlyAegis"));
-        addToBot((AbstractGameAction)new VFXAction(new MiracleEffect()));
         addToBot((AbstractGameAction)new ApplyPowerAction(p,p,(AbstractPower)new HeavenlyAegisPower(p)));
         addToBot((AbstractGameAction)new PlaceAmulet(this.makeStatEquivalentCopy(),null));
     }
 
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new HeavenlyAegis();
+        return (AbstractCard) new RelicGod();
     }
 
     @Override

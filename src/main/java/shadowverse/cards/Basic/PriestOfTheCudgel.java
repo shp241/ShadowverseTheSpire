@@ -38,7 +38,7 @@ import shadowverse.characters.Bishop;
      super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.BASIC, CardTarget.ENEMY);
      this.baseMagicNumber = 2;
      this.magicNumber = this.baseMagicNumber;
-     this.baseDamage = 9;
+     this.baseDamage = 8;
    }
  
    

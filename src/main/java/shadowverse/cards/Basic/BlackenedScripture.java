@@ -36,7 +36,6 @@ import shadowverse.characters.Bishop;
      super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Bishop.Enums.COLOR_WHITE, CardRarity.BASIC, CardTarget.ENEMY);
      this.baseMagicNumber = 2;
      this.magicNumber = this.baseMagicNumber;
-     this.baseDamage = 9;
    }
  
    
@@ -44,7 +43,6 @@ import shadowverse.characters.Bishop;
      if (!this.upgraded) {
        upgradeName();
        upgradeMagicNumber(1);
-       upgradeDamage(3);
      } 
    }
  
@@ -55,7 +53,7 @@ import shadowverse.characters.Bishop;
        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)p, (AbstractPower)new WeakPower((AbstractCreature)m, this.magicNumber, false), this.magicNumber));
        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)p, (AbstractPower)new FrailPower((AbstractCreature)m, this.magicNumber, false), this.magicNumber));
      }
-     addToBot((AbstractGameAction)new JudgementAction((AbstractCreature)m, this.damage));
+     addToBot((AbstractGameAction)new JudgementAction((AbstractCreature)m, 9));
    }
  
  
