@@ -1203,7 +1203,7 @@
   "shadowverse:HeavenlyAegisPower": {
     "NAME": "天耀盾甲",
     "DESCRIPTIONS": [
-      "不会受到负面效果影响。"
+      "不会受到 力量 和 敏捷 以外的负面效果影响。"
     ]
   },
   "shadowverse:LimoniaPower": {
@@ -1253,6 +1253,12 @@
     "DESCRIPTIONS": [
       "回合结束时，从 #y遗存的角柱 、 #y遗存的圆柱 、 #y遗存的正多面体 中随机将1张未存在于护符区的放置到护符区。",
       "回合结束时，从 #y遗存的角柱+ 、 #y遗存的圆柱+ 、 #y遗存的正多面体+ 中随机将1张未存在于护符区的放置到护符区。"
+    ]
+  },
+  "shadowverse:IminaPower": {
+    "NAME": "疯狂的咒器",
+    "DESCRIPTIONS": [
+      "回合结束时，失去 #y2 点 力量 ，将此效果转移给敌人。"
     ]
   }
 }

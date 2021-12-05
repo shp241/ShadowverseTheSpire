@@ -10,6 +10,8 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.DexterityPower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 
 public class HeavenlyAegisPower extends AbstractPower implements OnReceivePowerPower {
     public static final String POWER_ID = "shadowverse:HeavenlyAegisPower";
@@ -34,7 +36,7 @@ public class HeavenlyAegisPower extends AbstractPower implements OnReceivePowerP
 
     @Override
     public boolean onReceivePower(AbstractPower abstractPower, AbstractCreature abstractCreature, AbstractCreature abstractCreature1) {
-        if (abstractPower.type==PowerType.DEBUFF)
+        if (abstractPower.type==PowerType.DEBUFF && !(abstractPower instanceof StrengthPower) && !(abstractPower instanceof DexterityPower))
             return false;
         return true;
     }

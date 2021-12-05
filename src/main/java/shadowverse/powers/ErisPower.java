@@ -41,21 +41,18 @@ public class ErisPower extends AbstractPower {
     public void atEndOfTurn(boolean isPlayer) {
         if (isPlayer){
             List<AbstractCard> list = new ArrayList<>();
-            List<AbstractCard> toPlace = new ArrayList<AbstractCard>(){
-                {
-                    AbstractCard p = new RelicPrism();
-                    AbstractCard t = new RelicTorus();
-                    AbstractCard pl = new RelicPlaton();
-                    if (upgraded){
-                        p.upgrade();
-                        t.upgrade();
-                        pl.upgrade();
-                    }
-                    add(p);
-                    add(t);
-                    add(pl);
-                }
-            };
+            AbstractCard p = new RelicPrism();
+            AbstractCard t = new RelicTorus();
+            AbstractCard pl = new RelicPlaton();
+            if (upgraded){
+                p.upgrade();
+                t.upgrade();
+                pl.upgrade();
+            }
+            List<AbstractCard> toPlace = new ArrayList<AbstractCard>();
+            toPlace.add(p);
+            toPlace.add(t);
+            toPlace.add(pl);
             for (AbstractOrb o : AbstractDungeon.player.orbs){
                 if (o instanceof AmuletOrb){
                     list.add(((AmuletOrb) o).amulet);
@@ -64,11 +61,11 @@ public class ErisPower extends AbstractPower {
             if (list.size()>0){
                 for (AbstractCard c:list){
                     if (c instanceof RelicPrism)
-                        toPlace.remove(0);
+                        toPlace.remove(p);
                     if (c instanceof RelicTorus)
-                        toPlace.remove(1);
+                        toPlace.remove(t);
                     if (c instanceof RelicPlaton)
-                        toPlace.remove(2);
+                        toPlace.remove(pl);
                 }
                 if (toPlace.size()>0){
                     AbstractCard card = toPlace.get(AbstractDungeon.cardRandomRng.random(toPlace.size()-1));

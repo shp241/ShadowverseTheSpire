@@ -56,6 +56,8 @@ import java.util.ArrayList;
      if (strAmt<dexAmt){
        int realBaseDamage = this.baseDamage;
        this.baseDamage = this.baseDamage+dexAmt;
+       if (strAmt!=0)
+         this.baseDamage-=strAmt;
        super.applyPowers();
        this.baseDamage = realBaseDamage;
        this.isDamageModified = (this.damage != this.baseDamage);

@@ -207,7 +207,9 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addPotion(BuffPotion.class, Color.RED, Color.RED, YELLOW, BuffPotion.POTION_ID, Royal.Enums.Royal);
         BaseMod.addPotion(EvolutionPotion.class, Color.YELLOW, Color.YELLOW, null, EvolutionPotion.POTION_ID, Royal.Enums.Royal);
         BaseMod.addPotion(MinionPotion.class, Color.YELLOW, Color.WHITE, null, MinionPotion.POTION_ID, Royal.Enums.Royal);
-
+        BaseMod.addPotion(ReduceCountDownPotion.class,Color.WHITE,Color.GOLD,Color.WHITE,ReduceCountDownPotion.POTION_ID,Bishop.Enums.Bishop);
+        BaseMod.addPotion(IndulgencePotion.class, Color.DARK_GRAY, Color.FIREBRICK, null, IndulgencePotion.POTION_ID, Bishop.Enums.Bishop);
+        BaseMod.addPotion(SacredHealingPotion.class, Color.WHITE, Color.GOLD, null, SacredHealingPotion.POTION_ID, Bishop.Enums.Bishop);
         HashMap<String, Sfx> reflectedMap = getSoundsMap();
         reflectedMap.put("spell_boost", new Sfx("sounds/spell_boost2.wav"));
         reflectedMap.put("EarthEssence", new Sfx("sounds/EarthEssence.wav"));
@@ -1012,6 +1014,7 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addRelicToCustomPool((AbstractRelic) new BishopBOSS(),Bishop.Enums.COLOR_WHITE);
         BaseMod.addRelicToCustomPool((AbstractRelic) new HeresyAvatar(),Bishop.Enums.COLOR_WHITE);
         BaseMod.addRelicToCustomPool((AbstractRelic) new ErisRelic(),Bishop.Enums.COLOR_WHITE);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new IminaRelic(),Bishop.Enums.COLOR_WHITE);
         /*     */
     }
 

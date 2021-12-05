@@ -102,6 +102,9 @@ public class AmuletOrb extends AbstractOrb {
         if (this.amulet instanceof AbstractCrystalizeCard){
             ((AbstractCrystalizeCard)this.amulet).onStartOfTurn(this);
         }
+        if (this.amulet instanceof AbstractNoCountDownAmulet){
+            ((AbstractNoCountDownAmulet) this.amulet).onStartOfTurn(this);
+        }
         if (this.passiveAmount > 0) {
             this.passiveAmount--;
             this.evokeAmount--;

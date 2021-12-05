@@ -450,5 +450,12 @@
     "DESCRIPTIONS": [
       "护符结束 倒计时 时，获得 #b2 点 #y临时生命 。"
     ]
+  },
+  "shadowverse:IminaRelic": {
+    "NAME": "疯狂的咒器",
+    "FLAVOR": "赞美吧，凡人。吾之外再无他神。",
+    "DESCRIPTIONS": [
+      "战斗开始时，给予随机敌人 #y疯狂的咒器 。"
+    ]
   }
 }

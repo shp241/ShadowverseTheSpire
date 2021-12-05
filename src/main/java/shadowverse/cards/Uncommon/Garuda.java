@@ -34,6 +34,7 @@ import shadowverse.action.ReduceCountDownAction;
 import shadowverse.cards.Rare.BelphometCard;
 import shadowverse.cards.Temp.*;
 import shadowverse.characters.AbstractShadowversePlayer;
+import shadowverse.characters.Bishop;
 import shadowverse.characters.Nemesis;
 import shadowverse.powers.SpinePower;
 
@@ -57,7 +58,7 @@ public class Garuda extends CustomCard implements BranchableUpgradeCard{
 
 
     public Garuda() {
-        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.ENEMY);
         this.baseDamage = 15;
     }
 
