@@ -24,6 +24,7 @@ import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.WeightyImpactEffect;
 import shadowverse.action.ChoiceAction;
 import shadowverse.cards.Rare.DeadSoulTaker;
+import shadowverse.cards.Rare.ImperialSaint;
 import shadowverse.characters.Witchcraft;
 
 import java.util.ArrayList;
@@ -48,6 +49,7 @@ import java.util.Arrays;
      list.add(new SevensForceSorcerer());
      list.add(new DeadSoulTaker());
      list.add(new AbyssDoomLord());
+     list.add(new ImperialSaint());
      return list;
    }
 

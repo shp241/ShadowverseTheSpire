@@ -1258,7 +1258,20 @@
   "shadowverse:IminaPower": {
     "NAME": "疯狂的咒器",
     "DESCRIPTIONS": [
-      "回合结束时，失去 #y2 点 力量 ，将此效果转移给敌人。"
+      "回合结束时，失去 #r2 点 力量 ，将此效果转移给敌人。"
+    ]
+  },
+  "shadowverse:DimensionShiftPower": {
+    "NAME": "次元超越",
+    "DESCRIPTIONS": [
+      "追加 #b",
+      " 个额外回合。"
+    ]
+  },
+  "shadowverse:ImperialSaintPower": {
+    "NAME": "威严圣者",
+    "DESCRIPTIONS": [
+      "无效一次死亡，回复最大生命值 #b50% 的生命并追加 #b1 个额外回合。"
     ]
   }
 }

@@ -3738,5 +3738,9 @@
   "shadowverse:Lorena2": {
     "NAME": "传教司祭·萝蕾娜",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张 *进化点 到手中。 NL 增加1张 *萝蕾娜的圣水 和 本回合耗能为0的 *萝蕾娜的铁拳 到手中。"
+  },
+  "shadowverse:ImperialSaint": {
+    "NAME": "威严圣者",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得1层 残影 。 NL 死亡时无效一次死亡，回复最大生命值50%生命并追加1个额外回合。"
   }
 }

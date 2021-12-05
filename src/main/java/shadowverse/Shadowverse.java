@@ -938,6 +938,7 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("Lorena2", new Sfx("sounds/Lorena2.wav"));
         reflectedMap.put("LorenaWater", new Sfx("sounds/LorenaWater.wav"));
         reflectedMap.put("LorenaPunch", new Sfx("sounds/LorenaPunch.wav"));
+        reflectedMap.put("ImperialSaint", new Sfx("sounds/ImperialSaint.wav"));
         /*     */
     }
 
@@ -1911,6 +1912,7 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCard((AbstractCard) new Lorena());
         BaseMod.addCard((AbstractCard) new LorenaPunch());
         BaseMod.addCard((AbstractCard) new LorenaWater());
+        BaseMod.addCard((AbstractCard) new ImperialSaint());
         /* 276 */
         logger.info("Success");
         /*     */
