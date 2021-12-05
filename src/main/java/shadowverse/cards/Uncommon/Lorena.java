@@ -53,9 +53,6 @@ public class Lorena extends CustomCard implements BranchableUpgradeCard {
     public Lorena() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.SELF);
         this.baseBlock = 6;
-        if (branch1){
-            this.cardsToPreview = new MarkOfBalance();
-        }
     }
 
     public void update() {
@@ -123,7 +120,7 @@ public class Lorena extends CustomCard implements BranchableUpgradeCard {
                 Lorena.this.upgraded = true;
                 Lorena.this.name = NAME + "+";
                 Lorena.this.initializeTitle();
-                Lorena.this.baseBlock = 3;
+                Lorena.this.baseBlock = 9;
                 Lorena.this.upgradedBlock = true;
                 Lorena.this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
                 Lorena.this.initializeDescription();

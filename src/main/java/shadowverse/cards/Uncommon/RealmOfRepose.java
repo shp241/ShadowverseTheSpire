@@ -27,7 +27,7 @@ public class RealmOfRepose extends AbstractAmuletCard {
 
 
     public RealmOfRepose() {
-        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.SELF);
         this.countDown = 2;
         this.isEthereal = true;
         this.tags.add(AbstractShadowversePlayer.Enums.AMULET_FOR_ONECE);

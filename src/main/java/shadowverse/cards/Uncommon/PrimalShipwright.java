@@ -47,21 +47,23 @@ public class PrimalShipwright
     }
 
     public void triggerOnOtherCardPlayed(AbstractCard c) {
-        if (AbstractDungeon.player.hasPower("Burst")||AbstractDungeon.player.hasPower("Double Tap")||AbstractDungeon.player.hasPower("Amplified")) {
-            doubleCheck = true;
-            if (EnergyPanel.getCurrentEnergy() - c.costForTurn < this.cost) {
-                setCostForTurn(0);
-                this.type = CardType.POWER;
-                applyPowers();
-            }
-        }else {
-            if (doubleCheck) {
-                doubleCheck = false;
-            }else {
+        if (this.costForTurn>0 || this.type==CardType.POWER){
+            if (AbstractDungeon.player.hasPower("Burst")||AbstractDungeon.player.hasPower("Double Tap")||AbstractDungeon.player.hasPower("Amplified")) {
+                doubleCheck = true;
                 if (EnergyPanel.getCurrentEnergy() - c.costForTurn < this.cost) {
                     setCostForTurn(0);
                     this.type = CardType.POWER;
                     applyPowers();
+                }
+            }else {
+                if (doubleCheck) {
+                    doubleCheck = false;
+                }else {
+                    if (EnergyPanel.getCurrentEnergy() - c.costForTurn < this.cost) {
+                        setCostForTurn(0);
+                        this.type = CardType.POWER;
+                        applyPowers();
+                    }
                 }
             }
         }

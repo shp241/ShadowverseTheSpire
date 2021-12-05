@@ -32,10 +32,7 @@ public class TheStrengthPower extends AbstractPower implements BetterOnApplyPowe
     }
 
     public float atDamageFinalReceive(float damage, DamageInfo.DamageType type) {
-        if (dmgCut >= 0)
             damage -= dmgCut;
-        else
-            damage += dmgCut;
         return damage;
     }
 

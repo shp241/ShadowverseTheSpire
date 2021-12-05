@@ -48,6 +48,7 @@ public class Jeanne extends CustomCard implements BranchableUpgradeCard {
         super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.ALL);
         this.baseDamage = 16;
         this.baseMagicNumber = 2;
+        this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
         this.isMultiDamage = true;
     }

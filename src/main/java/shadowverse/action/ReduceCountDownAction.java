@@ -49,11 +49,9 @@ public class ReduceCountDownAction extends AbstractGameAction {
                 this.isDone = true;
                 return;
             }
-            if (this.p.hand.group.size() > this.amount) {
-                AbstractDungeon.cardRewardScreen.customCombatOpen(generateCardChoices(), TEXT[0], false);
-                tickDuration();
-                return;
-            }
+            AbstractDungeon.cardRewardScreen.customCombatOpen(generateCardChoices(), TEXT[0], false);
+            tickDuration();
+            return;
         }
         if (!this.retrieveCard) {
             if (AbstractDungeon.cardRewardScreen.discoveryCard != null) {

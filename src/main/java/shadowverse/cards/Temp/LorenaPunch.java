@@ -61,8 +61,9 @@ import java.util.ArrayList;
        super.applyPowers();
        this.baseDamage = realBaseDamage;
        this.isDamageModified = (this.damage != this.baseDamage);
+     }else{
+       super.applyPowers();
      }
-     super.applyPowers();
    }
 
    

@@ -32,16 +32,20 @@ public class IminaPower extends AbstractPower {
     @Override
     public void atEndOfTurn(boolean isPlayer) {
        if (isPlayer){
-           AbstractMonster m = AbstractDungeon.getRandomMonster();
-           if (m!=null&&!m.isDeadOrEscaped()){
-               addToBot((AbstractGameAction)new RemoveSpecificPowerAction(this.owner,this.owner,this));
-               addToBot((AbstractGameAction)new ApplyPowerAction(this.owner,this.owner,(AbstractPower)new StrengthPower(this.owner,-2),-2));
-               addToBot((AbstractGameAction)new ApplyPowerAction(m,this.owner,this));
+           if (this.owner==AbstractDungeon.player){
+               AbstractMonster m = AbstractDungeon.getRandomMonster();
+               if (m!=null&&!m.isDeadOrEscaped()){
+                   addToBot((AbstractGameAction)new RemoveSpecificPowerAction(this.owner,this.owner,this));
+                   addToBot((AbstractGameAction)new ApplyPowerAction(this.owner,this.owner,(AbstractPower)new StrengthPower(this.owner,-2),-2));
+                   addToBot((AbstractGameAction)new ApplyPowerAction(m,this.owner,(AbstractPower)new IminaPower(m)));
+               }
            }
        }else {
-           addToBot((AbstractGameAction)new RemoveSpecificPowerAction(this.owner,this.owner,this));
-           addToBot((AbstractGameAction)new ApplyPowerAction(this.owner,this.owner,(AbstractPower)new StrengthPower(this.owner,-2),-2));
-           addToBot((AbstractGameAction)new ApplyPowerAction(AbstractDungeon.player,this.owner,this));
+           if (this.owner!=AbstractDungeon.player){
+               addToBot((AbstractGameAction)new RemoveSpecificPowerAction(this.owner,this.owner,this));
+               addToBot((AbstractGameAction)new ApplyPowerAction(this.owner,this.owner,(AbstractPower)new StrengthPower(this.owner,-2),-2));
+               addToBot((AbstractGameAction)new ApplyPowerAction(AbstractDungeon.player,this.owner,(AbstractPower)new IminaPower(AbstractDungeon.player)));
+           }
        }
     }
 
