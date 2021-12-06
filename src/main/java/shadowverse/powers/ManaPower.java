@@ -37,7 +37,7 @@ public class ManaPower extends TwoAmountPower {
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
         this.amount2++;
-        if (this.amount==12){
+        if (this.amount2==12){
             this.amount++;
             this.amount2 = 0;
         }

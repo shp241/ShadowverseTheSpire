@@ -65,7 +65,7 @@ public class VincentBOSS extends CustomMonster {
             this.bDmg = 15;
             this.strAmt = 2;
             this.fireDmg = 2;
-            this.fireAmt = 5;
+            this.fireAmt = 4;
             this.rapidFireAmt = 6;
         } else if (AbstractDungeon.ascensionLevel >= 4) {
             this.debuffAmt = 3;
@@ -73,7 +73,7 @@ public class VincentBOSS extends CustomMonster {
             this.aDmg = 26;
             this.bDmg = 13;
             this.fireDmg = 1;
-            this.fireAmt = 5;
+            this.fireAmt = 4;
             this.strAmt = 1;
             this.rapidFireAmt = 5;
         } else {
@@ -82,7 +82,7 @@ public class VincentBOSS extends CustomMonster {
             this.aDmg = 24;
             this.bDmg = 11;
             this.fireDmg = 1;
-            this.fireAmt = 4;
+            this.fireAmt = 3;
             this.strAmt = 1;
             this.rapidFireAmt = 4;
         }
@@ -140,11 +140,11 @@ public class VincentBOSS extends CustomMonster {
                             break;
                         }
                     }
-                    if (p.type == AbstractPower.PowerType.BUFF&&p.ID!=StrengthPower.POWER_ID&&p.ID!=DexterityPower.POWER_ID&&p.ID!=JudgmentWordPower.POWER_ID&&p.ID!= Cemetery.POWER_ID)
+                    if (p.type == AbstractPower.PowerType.BUFF&&p.ID!=StrengthPower.POWER_ID&&p.ID!=DexterityPower.POWER_ID&&p.ID!=JudgmentWordPower.POWER_ID&&p.ID!= Cemetery.POWER_ID&&p.ID!=NaterranTree.POWER_ID)
                         addToTop((AbstractGameAction)new RemoveSpecificPowerAction(AbstractDungeon.player, AbstractDungeon.player, p.ID));
                 }
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)this, (AbstractPower)new JudgmentWordPower((AbstractCreature)AbstractDungeon.player)));
-                setMove((byte)5, Intent.ATTACK_DEBUFF,((DamageInfo)this.damage.get(1)).base);
+                setMove((byte)5, Intent.ATTACK_DEBUFF,((DamageInfo)this.damage.get(2)).base,this.fireAmt,true);
                 break;
             case 5:
                 addToBot((AbstractGameAction)new SFXAction("Vincent_A3"));
@@ -183,11 +183,9 @@ public class VincentBOSS extends CustomMonster {
                 setMove((byte)8, Intent.ATTACK_DEBUFF,((DamageInfo)this.damage.get(1)).base);
                 break;
             case 8:
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ShoutAction((AbstractCreature)this, DIALOG[1], 1.0F, 2.0F));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SFXAction("Vincent_A1"));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new DamageAction((AbstractCreature)AbstractDungeon.player, this.damage
-                        .get(1), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)this, (AbstractPower)new WeakPower((AbstractCreature)AbstractDungeon.player,this.debuffAmt,true),this.debuffAmt));
+                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new GainBlockAction((AbstractCreature)this, (AbstractCreature)this, this.blockAmt));
+                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)this, (AbstractCreature)this, (AbstractPower)new StrengthPower((AbstractCreature)this, this.strAmt), this.strAmt));
+                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)this, (AbstractPower)new RapidFirePower((AbstractCreature)AbstractDungeon.player,this.rapidFireAmt,this)));
                 setMove((byte)1, Intent.ATTACK_DEBUFF,((DamageInfo)this.damage.get(1)).base);
                 break;
         }

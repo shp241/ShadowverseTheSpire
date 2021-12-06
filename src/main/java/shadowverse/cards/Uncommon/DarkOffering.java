@@ -18,6 +18,8 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import shadowverse.action.PlaceAmulet;
 import shadowverse.cards.Curse.EvilWorship;
+import shadowverse.cards.Neutral.OldSatan;
+import shadowverse.cards.Neutral.Satan;
 import shadowverse.characters.Bishop;
 import shadowverse.powers.HereticPriestPower;
 
@@ -29,6 +31,7 @@ public class DarkOffering
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/DarkOffering.png";
     private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("PlaceCardToAmuletZone");
+    public static final String[] TEXT = uiStrings.TEXT;
 
     public DarkOffering() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.NONE);
@@ -45,10 +48,16 @@ public class DarkOffering
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         addToBot((AbstractGameAction)new SelectCardsInHandAction(1,TEXT[0],true,true,card -> {
-            return card.type==CardType.CURSE;
+            return card.type==CardType.CURSE || card instanceof Satan || card instanceof OldSatan
+                    ||Satan.returnCocytusDeck().stream().anyMatch(card1 -> card.cardID.equals(card1.cardID))
+                    ||OldSatan.returnApocalypseDeck().stream().anyMatch(card1 -> card.cardID.equals(card1.cardID));
         },abstractCards -> {
             for (AbstractCard c:abstractCards){
-                addToBot((AbstractGameAction)new PlaceAmulet(c,p.hand));
+                if (p.hasEmptyOrb()){
+                    addToBot((AbstractGameAction)new PlaceAmulet(c,p.hand));
+                }else {
+                    addToBot((AbstractGameAction)new ExhaustSpecificCardAction(c,p.hand));
+                }
                 addToBot((AbstractGameAction)new GainEnergyAction(2));
             }
         }));

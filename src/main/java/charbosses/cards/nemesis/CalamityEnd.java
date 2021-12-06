@@ -37,8 +37,7 @@ public class CalamityEnd extends AbstractBossCard {
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new VFXAction((AbstractGameEffect)new HeartBuffEffect(m.hb.cX, m.hb.cY)));
         addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new GrandFinalEffect()));
         addToBot((AbstractGameAction)new RealWaitAction(0.3F));
-        p.currentHealth-=99999;
-        addToBot((AbstractGameAction)new DamageAction((AbstractCreature)p, new DamageInfo((AbstractCreature)m, 99999, DamageInfo.DamageType.HP_LOSS), AbstractGameAction.AttackEffect.NONE));
+        addToBot((AbstractGameAction) new InstantKillAction(p));
     }
 
     public void upgrade() {

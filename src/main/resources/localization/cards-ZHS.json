@@ -3482,7 +3482,7 @@
   },
   "shadowverse:DarkOffering": {
     "NAME": "暗黑供奉",
-    "DESCRIPTION": "选择1张诅咒牌置入护符区。 NL 获得 [E] [E] 。"
+    "DESCRIPTION": "选择手中1张诅咒牌或启示录牌或冥河牌置入护符区。 NL 如果不可再放置护符，改为 消耗 。 NL 获得 [E] [E] 。"
   },
   "shadowverse:UnlikelyFellowship": {
     "NAME": "笨拙的信赖",

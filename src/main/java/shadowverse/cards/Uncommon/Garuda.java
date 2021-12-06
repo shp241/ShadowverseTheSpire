@@ -228,7 +228,7 @@ public class Garuda extends CustomCard implements BranchableUpgradeCard{
                         addToBot((AbstractGameAction)new Garuda2Action(3,this.damage));
                     }
                     break;
-                case 3:
+                case 2:
                     addToBot((AbstractGameAction)new SFXAction("Garuda3"));
                     addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
                     addToBot((AbstractGameAction)new Garuda3Action());

@@ -62,7 +62,7 @@ public class AmuletOrb extends AbstractOrb {
         } else if(card.type == AbstractCard.CardType.CURSE){
             this.basePassiveAmount = 3;
         }else
-            this.basePassiveAmount = 0;
+            this.basePassiveAmount = 3;
         this.passiveAmount = this.basePassiveAmount;
         this.baseEvokeAmount = this.basePassiveAmount;
         this.evokeAmount = this.baseEvokeAmount;
