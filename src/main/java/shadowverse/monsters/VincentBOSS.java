@@ -180,7 +180,7 @@ public class VincentBOSS extends CustomMonster {
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)this, (AbstractPower)new FreezePower((AbstractCreature)AbstractDungeon.player)));
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)this, (AbstractPower)new VulnerablePower((AbstractCreature)AbstractDungeon.player,this.debuffAmt,true),this.debuffAmt));
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)this, (AbstractPower)new RapidFirePower((AbstractCreature)AbstractDungeon.player,this.rapidFireAmt,this)));
-                setMove((byte)8, Intent.ATTACK_DEBUFF,((DamageInfo)this.damage.get(1)).base);
+                setMove((byte)8, Intent.DEFEND_BUFF);
                 break;
             case 8:
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new GainBlockAction((AbstractCreature)this, (AbstractCreature)this, this.blockAmt));

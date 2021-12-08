@@ -52,7 +52,7 @@ public class GuildAssembly extends CustomCard {
         addToBot(new SFXAction("GuildAssembly"));
         addToBot(new DrawCardAction(1));
         if (this.timesUpgraded >= 1) {
-            new DrawCardAction(1);
+            addToBot(new DrawCardAction(1));
         }
         if (this.timesUpgraded >= 2) {
             addToBot(new GainBlockAction(p, p, this.block));

@@ -19,6 +19,7 @@ import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 import com.megacrit.cardcrawl.vfx.RainbowCardEffect;
 import com.megacrit.cardcrawl.vfx.SpotlightPlayerEffect;
 import shadowverse.cards.Status.EvolutionPoint;
+import shadowverse.cards.Temp.SalvationLimonia;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;
 import shadowverse.powers.AbdielPower;
@@ -36,6 +37,7 @@ public class Limonia
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.POWER, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.SELF);
         this.isEthereal = true;
         this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
+        this.cardsToPreview = new SalvationLimonia();
     }
 
 

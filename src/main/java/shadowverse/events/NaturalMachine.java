@@ -93,6 +93,7 @@ public class NaturalMachine extends AbstractImageEvent {
                         colorless.addToBottom(new Mother());
                         colorless.addToBottom(new Technolord());
                         colorless.addToBottom(new Machinus());
+                        colorless.addToBottom(new Valdain());
                         if (p.chosenClass != Witchcraft.Enums.WITCHCRAFT) {
                             white.addToBottom(new Geoelementist());
                             blue.addToBottom(new Stormelementalist());

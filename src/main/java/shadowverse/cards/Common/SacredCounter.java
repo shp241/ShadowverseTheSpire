@@ -24,7 +24,7 @@ import shadowverse.characters.Bishop;
    public static final String IMG_PATH = "img/cards/SacredCounter.png";
 
    public SacredCounter() {
-     super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.ENEMY);
+     super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.ENEMY);
      this.baseDamage = 0;
    }
  

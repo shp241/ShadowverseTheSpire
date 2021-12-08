@@ -5,6 +5,7 @@
  import com.megacrit.cardcrawl.actions.AbstractGameAction;
  import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
  import com.megacrit.cardcrawl.actions.utility.SFXAction;
+ import com.megacrit.cardcrawl.actions.utility.UseCardAction;
  import com.megacrit.cardcrawl.cards.AbstractCard;
  import com.megacrit.cardcrawl.cards.DamageInfo;
  import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -43,7 +44,8 @@
      this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
    }
 
-   public void onPlayCard(AbstractCard card, AbstractMonster m) {
+   @Override
+   public void onUseCard(AbstractCard card, UseCardAction action) {
      if (card.type == AbstractCard.CardType.POWER){
        addToBot((AbstractGameAction)new SFXAction("VarmintHunterPower"));
        addToBot((AbstractGameAction)new DamageRandomEnemyAction(new DamageInfo(this.owner, this.amount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));

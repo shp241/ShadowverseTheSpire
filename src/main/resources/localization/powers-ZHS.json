@@ -1273,5 +1273,12 @@
     "DESCRIPTIONS": [
       "无效一次死亡，回复最大生命值 #b50% 的生命并追加 #b1 个额外回合。"
     ]
+  },
+  "shadowverse:ShadowCorrosionPower": {
+    "NAME": "影之侵蚀",
+    "DESCRIPTIONS": [
+      "行动结束时失去 #b",
+      " 点生命。每打出 #b1 张 #y那塔拉的大树 时本伤害增加 #b2 点。"
+    ]
   }
 }

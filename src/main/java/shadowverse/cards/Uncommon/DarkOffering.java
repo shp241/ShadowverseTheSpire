@@ -30,7 +30,7 @@ public class DarkOffering
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/DarkOffering.png";
-    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("PlaceCardToAmuletZone");
+    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("shadowverse:PlaceCardToAmuletZone");
     public static final String[] TEXT = uiStrings.TEXT;
 
     public DarkOffering() {

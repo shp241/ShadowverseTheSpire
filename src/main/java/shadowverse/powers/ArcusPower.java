@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import shadowverse.cards.Uncommon.Mordecai;
 
-public class ArcusPower extends AbstractPower {
+public class ArcusPower extends AbstractPower{
     public static final String POWER_ID = "shadowverse:ArcusPower";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings("shadowverse:ArcusPower");
     public static final String NAME = powerStrings.NAME;
@@ -35,7 +35,7 @@ public class ArcusPower extends AbstractPower {
 
     public void onCardDraw(AbstractCard card) {
         if (card.type == AbstractCard.CardType.ATTACK && card.cost==1)
-            card.setCostForTurn(-9);
+            card.setCostForTurn(0);
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
