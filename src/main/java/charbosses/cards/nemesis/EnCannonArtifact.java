@@ -36,7 +36,6 @@ public class EnCannonArtifact extends AbstractBossCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot((AbstractGameAction) new DamageAction((AbstractCreature) p, new DamageInfo((AbstractCreature) m, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) m, (AbstractCreature) m, (AbstractPower) new EnemyDrawCardNextTurnPower((AbstractCreature) m, 1), 1));
         int artifactAmt = 0;
         for (AbstractCard c : AbstractCharBoss.boss.hand.group) {
             if (c.hasTag(AbstractShadowversePlayer.Enums.ARTIFACT) && c != this)

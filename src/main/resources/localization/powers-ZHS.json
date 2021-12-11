@@ -1277,7 +1277,7 @@
   "shadowverse:ShadowCorrosionPower": {
     "NAME": "影之侵蚀",
     "DESCRIPTIONS": [
-      "行动结束时失去 #b",
+      "回合开始时失去 #b",
       " 点生命。每打出 #b1 张 #y那塔拉的大树 时本伤害增加 #b2 点。"
     ]
   }

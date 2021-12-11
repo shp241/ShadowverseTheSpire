@@ -40,8 +40,9 @@
    public void updateDescription() {
      this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
    }
-   
-   public void atEndOfRound() {
+
+   @Override
+   public void atStartOfTurn() {
        addToBot((AbstractGameAction)new LoseHPAction(this.owner,this.owner,this.amount, AbstractGameAction.AttackEffect.POISON));
    }
 

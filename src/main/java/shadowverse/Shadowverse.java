@@ -941,6 +941,7 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("ImperialSaint", new Sfx("sounds/ImperialSaint.wav"));
         reflectedMap.put("Valdain", new Sfx("sounds/Valdain.wav"));
         reflectedMap.put("ShadowCorrosion", new Sfx("sounds/ShadowCorrosion.wav"));
+        reflectedMap.put("Sukuna", new Sfx("sounds/Sukuna.wav"));
         /*     */
     }
 
@@ -1916,6 +1917,8 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCard((AbstractCard) new LorenaWater());
         BaseMod.addCard((AbstractCard) new ImperialSaint());
         BaseMod.addCard((AbstractCard) new Valdain());
+        BaseMod.addCard((AbstractCard) new Sukuna());
+        BaseMod.addCard((AbstractCard) new TerrorFormer());
         /* 276 */
         logger.info("Success");
         /*     */

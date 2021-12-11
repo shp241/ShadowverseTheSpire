@@ -39,7 +39,7 @@ public class SkullFane
     public static final String IMG_PATH = "img/cards/SkullFane.png";
 
     public SkullFane() {
-        super(ID, NAME, IMG_PATH, 7, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 5, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.SELF);
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.baseBlock = 4;
@@ -75,7 +75,7 @@ public class SkullFane
         addToBot((AbstractGameAction)new SFXAction("SkullFane"));
         addToBot((AbstractGameAction)new VFXAction(new HeartMegaDebuffEffect()));
         addToBot((AbstractGameAction)new SkullFaneAction(this.magicNumber,this.block));
-        this.cost = 7;
+        this.cost = 5;
     }
 
 

@@ -22,6 +22,7 @@ import com.megacrit.cardcrawl.vfx.combat.InflameEffect;
 import shadowverse.action.ReduceAllCountDownAction;
 import shadowverse.cards.Status.EvolutionPoint;
 import shadowverse.cards.Temp.HeavenFire;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
 import shadowverse.powers.AbdielPower;
@@ -61,7 +62,7 @@ public class Selena
         addToBot((AbstractGameAction)new GainBlockAction(p,this.block));
         int amt = 0;
         for (AbstractOrb o:p.orbs){
-            if (o instanceof AmuletOrb){
+            if (o instanceof AmuletOrb && !((AmuletOrb) o).amulet.hasTag(AbstractShadowversePlayer.Enums.MINION)){
                 amt++;
             }
         }
