@@ -3,6 +3,7 @@ package shadowverse.characters;
 import basemod.animations.AbstractAnimation;
 import basemod.animations.SpriterAnimation;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -25,6 +26,7 @@ import shadowverse.cards.Basic.Defend_N;
 import shadowverse.cards.Basic.SpartoiSergent;
 import shadowverse.cards.Basic.Strike_N;
 import shadowverse.cards.Basic.UndyingResentment;
+import shadowverse.effect.ShadowverseEnergyOrb;
 
 import java.util.ArrayList;
 
@@ -54,9 +56,10 @@ public class Necromancer extends AbstractShadowversePlayer{
     private static final int ORB_SLOTS = 0;
     private static final int ASCENSION_MAX_HP_LOSS = 5;
     public static shadowverse.animation.AbstractAnimation bigAnimation = new shadowverse.animation.AbstractAnimation("img/animation/Necromancer/class_1905.atlas", "img/animation/Necromancer/class_1905.json", com.megacrit.cardcrawl.core.Settings.M_W / 1600.0F, com.megacrit.cardcrawl.core.Settings.M_W / 2.0F, com.megacrit.cardcrawl.core.Settings.M_H / 2.0F, 0F, 0F);
+    private static Texture BASE_LAYER = new Texture("img/ui/layer_necro.png");
 
     public Necromancer(String name) {
-        super(name, Enums.Necromancer, null, null, null, (AbstractAnimation)new SpriterAnimation("img/character/Necromancer/images/necro.scml"));
+        super(name, Enums.Necromancer, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation)new SpriterAnimation("img/character/Necromancer/images/necro.scml"));
         initializeClass(null, NEC_SHOULDER_2, NEC_SHOULDER_2, NEC_CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
         bigAnimation.setVisible(false);
     }

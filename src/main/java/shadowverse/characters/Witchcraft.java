@@ -3,7 +3,8 @@
  import basemod.animations.AbstractAnimation;
 import basemod.animations.SpriterAnimation;
 import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.g2d.BitmapFont;
+ import com.badlogic.gdx.graphics.Texture;
+ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -22,8 +23,9 @@ import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import shadowverse.cards.Basic.Insight;
+ import shadowverse.effect.ShadowverseEnergyOrb;
 
-import java.util.ArrayList;
+ import java.util.ArrayList;
 
 
  public class Witchcraft
@@ -55,9 +57,10 @@ import java.util.ArrayList;
    private static final int ORB_SLOTS = 0;
    private static final int ASCENSION_MAX_HP_LOSS = 5;
    public static shadowverse.animation.AbstractAnimation bigAnimation = new shadowverse.animation.AbstractAnimation("img/animation/Witchcraft/class_1803.atlas", "img/animation/Witchcraft/class_1803.json", com.megacrit.cardcrawl.core.Settings.M_W / 1600.0F, com.megacrit.cardcrawl.core.Settings.M_W / 2.0F, com.megacrit.cardcrawl.core.Settings.M_H / 2.0F, 0F, 0F);
+   private static Texture BASE_LAYER = new Texture("img/ui/layer_witch.png");
 
    public Witchcraft(String name) {
-     super(name, Enums.WITCHCRAFT, null, null, null, (AbstractAnimation)new SpriterAnimation("img/character/Witchcraft/sprite/Witchcraft.scml"));
+     super(name, Enums.WITCHCRAFT, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation)new SpriterAnimation("img/character/Witchcraft/sprite/Witchcraft.scml"));
      initializeClass(null, "img/character/Witchcraft/shoulder.png", "img/character/Witchcraft/shoulder.png", "img/character/Witchcraft/corpse.png", getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
      bigAnimation.setVisible(false);
    }

@@ -3,6 +3,7 @@ package shadowverse.characters;
 import basemod.animations.AbstractAnimation;
 import basemod.animations.SpriterAnimation;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -23,6 +24,7 @@ import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import shadowverse.cards.Basic.*;
 import shadowverse.cards.Common.SacredPlea;
+import shadowverse.effect.ShadowverseEnergyOrb;
 
 import java.util.ArrayList;
 
@@ -43,9 +45,10 @@ public class Bishop extends AbstractShadowversePlayer{
 
     public static final String B_SHOULDER_2 = "img/character/Bishop/shoulder.png";
     public static final String B_CORPSE = "img/character/Bishop/corpse.png";
+    private static Texture BASE_LAYER = new Texture("img/ui/layer_bishop.png");
 
     public Bishop(String name) {
-        super(name, Enums.Bishop, null, null, null, (AbstractAnimation)new SpriterAnimation("img/character/Bishop/images/bishop.scml"));
+        super(name, Enums.Bishop, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation)new SpriterAnimation("img/character/Bishop/images/bishop.scml"));
         initializeClass(null, B_SHOULDER_2, B_SHOULDER_2, B_CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
     }
 
@@ -73,7 +76,7 @@ public class Bishop extends AbstractShadowversePlayer{
 
     @Override
     public CharSelectInfo getLoadout() {
-        return new CharSelectInfo(charStrings.NAMES[0], charStrings.TEXT[0], 75, 75, 5, 99, 5,
+        return new CharSelectInfo(charStrings.NAMES[0], charStrings.TEXT[0], 70, 70, 5, 99, 5,
                 (AbstractPlayer)this, getStartingRelics(),
                 getStartingDeck(), false);
     }

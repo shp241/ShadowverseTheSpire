@@ -45,9 +45,9 @@ public class TerrorFormer
 
     public TerrorFormer() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.RARE, CardTarget.ENEMY);
-        this.baseMagicNumber = 12;
+        this.baseMagicNumber = 16;
         this.magicNumber = this.baseMagicNumber;
-        this.baseDamage = 20;
+        this.baseDamage = 8;
         this.selfRetain = true;
     }
 
@@ -55,8 +55,8 @@ public class TerrorFormer
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(4);
-            upgradeMagicNumber(4);
+            upgradeDamage(2);
+            upgradeMagicNumber(6);
         }
     }
 
@@ -103,7 +103,6 @@ public class TerrorFormer
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new ApplyPowerAction(abstractMonster, abstractPlayer, (AbstractPower) new VulnerablePower(abstractMonster, 2, false), 2));
         addToBot((AbstractGameAction) new ApplyPowerAction(abstractMonster, abstractPlayer, (AbstractPower) new WeakPower(abstractMonster, 2, false), 2));
         if (abstractMonster != null)
             addToBot((AbstractGameAction) new VFXAction((AbstractGameEffect) new VerticalImpactEffect(abstractMonster.hb.cX + abstractMonster.hb.width / 4.0F, abstractMonster.hb.cY - abstractMonster.hb.height / 4.0F)));

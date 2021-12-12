@@ -37,7 +37,7 @@ public class RealmOfReposePower extends AbstractPower {
     }
 
     @Override
-    public void atStartOfTurnPostDraw() {
+    public void atEndOfRound() {
         hasAttacked = false;
         addToTop((AbstractGameAction)new ReducePowerAction(this.owner, this.owner, this.ID, 1));
         updateDescription();

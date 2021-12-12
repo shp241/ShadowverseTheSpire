@@ -3,6 +3,7 @@ package shadowverse.characters;
 import basemod.animations.AbstractAnimation;
 import basemod.animations.SpriterAnimation;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -23,6 +24,7 @@ import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import shadowverse.cards.Basic.*;
 import shadowverse.cards.Common.*;
+import shadowverse.effect.ShadowverseEnergyOrb;
 
 import java.util.ArrayList;
 
@@ -53,9 +55,10 @@ public class Royal extends AbstractShadowversePlayer {
     private static final int ORB_SLOTS = 5;
     private static final int ASCENSION_MAX_HP_LOSS = 5;
     public static shadowverse.animation.AbstractAnimation bigAnimation = new shadowverse.animation.AbstractAnimation("img/animation/Royal/class_1002.atlas", "img/animation/Royal/class_1002.json", com.megacrit.cardcrawl.core.Settings.M_W / 1600.0F, com.megacrit.cardcrawl.core.Settings.M_W / 2.0F, com.megacrit.cardcrawl.core.Settings.M_H / 2.0F, 0F, 0F);
+    private static Texture BASE_LAYER = new Texture("img/ui/layer_royal.png");
 
     public Royal(String name) {
-        super(name, Enums.Royal, null, null, null, (AbstractAnimation) new SpriterAnimation("img/character/Royal/images/Royal.scml"));
+        super(name, Enums.Royal, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation) new SpriterAnimation("img/character/Royal/images/Royal.scml"));
         initializeClass(null, Royal_SHOULDER_1, Royal_SHOULDER_2, Royal_CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
         bigAnimation.setVisible(false);
     }

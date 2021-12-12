@@ -3,6 +3,7 @@ package shadowverse.characters;
 import basemod.animations.AbstractAnimation;
 import basemod.animations.SpriterAnimation;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -26,6 +27,7 @@ import shadowverse.cards.Basic.Defend_V;
 import shadowverse.cards.Basic.RazoryClaw;
 import shadowverse.cards.Basic.Strike_V;
 import shadowverse.cards.Rare.NightVampire;
+import shadowverse.effect.ShadowverseEnergyOrb;
 
 import java.util.ArrayList;
 
@@ -55,9 +57,10 @@ public class Vampire extends AbstractShadowversePlayer{
     private static final int ORB_SLOTS = 0;
     private static final int ASCENSION_MAX_HP_LOSS = 5;
     public static shadowverse.animation.AbstractAnimation bigAnimation = new shadowverse.animation.AbstractAnimation("img/animation/Vampire/class_1806.atlas", "img/animation/Vampire/class_1806.json", com.megacrit.cardcrawl.core.Settings.M_W / 1600.0F, com.megacrit.cardcrawl.core.Settings.M_W / 2.0F, com.megacrit.cardcrawl.core.Settings.M_H / 2.0F, 0F, 0F);
+    private static Texture BASE_LAYER = new Texture("img/ui/layer_vamp.png");
 
     public Vampire(String name) {
-        super(name, Enums.Vampire, null, null, null, (AbstractAnimation)new SpriterAnimation("img/character/Vampire/images/Vampire.scml"));
+        super(name, Enums.Vampire, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation)new SpriterAnimation("img/character/Vampire/images/Vampire.scml"));
         initializeClass(null, VMP_SHOULDER_2, VMP_SHOULDER_2, VMP_CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
         bigAnimation.setVisible(false);
     }

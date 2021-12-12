@@ -1,5 +1,6 @@
 package shadowverse.characters;
 
+import basemod.abstracts.CustomEnergyOrb;
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.AbstractAnimation;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -190,7 +191,10 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
 
     public AbstractShadowversePlayer(String name, PlayerClass playerClass, String[] orbTextures, String orbVfxPath, float[] layerSpeeds, AbstractAnimation animation) {
         super(name, playerClass, orbTextures, orbVfxPath, layerSpeeds, animation);
+    }
 
+    public AbstractShadowversePlayer(String name, PlayerClass playerClass, CustomEnergyOrb energyOrb, AbstractAnimation animation) {
+        super(name, playerClass, energyOrb, animation);
     }
 
     public void onVictory() {
