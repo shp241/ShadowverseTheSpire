@@ -57,10 +57,8 @@ import com.megacrit.cardcrawl.powers.PlatedArmorPower;
              addToBot((AbstractGameAction)new BetterAutoPlayCardAction(list.get(0),p.drawPile));
          }
          if (list.size()>1){
-             if (p.stance.ID== Vengeance.STANCE_ID||p.hasPower(EpitaphPower.POWER_ID)){
-                 list.get(1).setCostForTurn(0);
-                 addToBot((AbstractGameAction)new BetterAutoPlayCardAction(list.get(1),p.drawPile));
-             }
+             list.get(1).setCostForTurn(0);
+             addToBot((AbstractGameAction)new BetterAutoPlayCardAction(list.get(1),p.drawPile));
          }
      } 
    }

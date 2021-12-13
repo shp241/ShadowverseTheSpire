@@ -2614,7 +2614,7 @@
   },
   "shadowverse:ShiningValkyrie": {
     "NAME": "闪耀女武神",
-    "DESCRIPTION": "增加 !M! 张 *妖精 到手中。 NL 每当打出 *妖精 时，获得2点 力量 和1点 敏捷 。"
+    "DESCRIPTION": "增加 !M! 张 *妖精 到手中。 NL 回合开始时增加1张妖精到手中。 NL 每当打出 *妖精 时，获得2点 力量 和1点 敏捷 。"
   },
   "shadowverse:LegendSwordCommander": {
     "NAME": "传说之剑指挥官",
