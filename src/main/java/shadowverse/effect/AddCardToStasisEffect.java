@@ -5,7 +5,9 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
+import shadowverse.orbs.AmbushMinion;
 import shadowverse.orbs.AmuletOrb;
 
 public class AddCardToStasisEffect extends AbstractGameEffect {
@@ -15,13 +17,23 @@ public class AddCardToStasisEffect extends AbstractGameEffect {
 
     private AbstractCard card;
 
-    private AmuletOrb o;
+    private AbstractOrb o;
 
     private float glowPoint;
 
     private boolean glowStartHit;
 
     public AddCardToStasisEffect(AbstractCard srcCard, AmuletOrb o, float startX, float startY, boolean instant) {
+        this.card = srcCard;
+        this.duration = this.startingDuration = instant ? 0.1F : 1.0F;
+        this.glowPoint = this.startingDuration * 0.25F;
+        this.card.target_x = startX;
+        this.card.target_y = startY;
+        this.card.targetDrawScale = 0.75F;
+        this.o = o;
+    }
+
+    public AddCardToStasisEffect(AbstractCard srcCard, AmbushMinion o, float startX, float startY, boolean instant) {
         this.card = srcCard;
         this.duration = this.startingDuration = instant ? 0.1F : 1.0F;
         this.glowPoint = this.startingDuration * 0.25F;

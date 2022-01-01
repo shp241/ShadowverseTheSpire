@@ -631,6 +631,14 @@
     "DESCRIPTION": "魔力增幅 \b耗能减少 [E] 。 NL 获得 !B! 点 格挡 。 NL 分别将一张 *式神·小纸人 、 *式神·暴鬼 、 *式神·天后 加入手中。",
     "UPGRADE_DESCRIPTION": "魔力增幅 \b耗能减少 [E] 。 NL 获得 !B! 点 格挡 。 NL 分别将一张 *式神·小纸人+ 、 *式神·暴鬼+ 、 *式神·天后+ 加入手中。"
   },
+  "shadowverse:Kuon2": {
+    "NAME": "五行大师·久苑",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 魔力增幅 3获得1点能量，将1张 *式神·小纸人 、 *式神·暴鬼 加入手中。 NL 魔力增幅 6 *式神·小纸人 改为 *式神·天后 。 NL 魔力增幅 9 *式神·暴鬼 改为 *式神·贵人 。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (魔力增幅 ",
+      " 次。)"
+    ]
+  },
   "shadowverse:Owen": {
     "NAME": "马纳历亚骑士·欧文",
     "DESCRIPTION": "马纳历亚 。 NL 获得 !B! 点 格挡 。 NL 随机从抽牌堆中将一张 马纳历亚 攻击牌 ( *马纳历亚骑士·欧文 除外)加入手中 。"
@@ -1050,6 +1058,10 @@
   "shadowverse:Amataz": {
     "NAME": "妖精剑师·阿玛兹",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果手中的 *妖精 数量为2以上，则额外获得3点 格挡 和2层 多层护甲 。 NL 如果为4以上，则获得1点 力量 和 敏捷 。 NL 如果为6以上，则本场战斗 *妖精 造成的伤害+ !M! 。"
+  },
+  "shadowverse:Amataz2": {
+    "NAME": "逆时剑师·阿玛兹",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 使弃牌堆中所有非打击精灵攻击牌返回抽牌堆，增加对应数量的 *妖精 到手中。 NL 如果本场战斗已打出的精灵非攻击牌为10以上，额外获得4点 格挡 。 NL 如果为20以上，给予全体敌人3层 易伤 和 虚弱 。"
   },
   "shadowverse:DivineSmithing": {
     "NAME": "神铁炼制术",
@@ -1601,8 +1613,8 @@
   },
   "shadowverse:Isabelle": {
     "NAME": "究明的魔法师·伊莎贝尔",
-    "DESCRIPTION": "融合 ：\b巫师攻击牌。 NL 融合时，如果为第1次，增加1张 *联合魔法 到手中。如果为第2次，增加1张 *智慧之光 到手中。如果为第3次，增加1张 *红莲的法术 到手中。 NL 发动1次 魔力增幅 ，增加1张 *命运的指引 到手中。",
-    "UPGRADE_DESCRIPTION": "融合 ：\b巫师攻击牌。 NL 融合时，如果为第1次，增加1张 *联合魔法+ 到手中。如果为第2次，增加1张 *智慧之光+ 到手中。如果为第3次，增加1张 *红莲的法术+ 到手中。 NL 发动1次 魔力增幅 ，增加1张 *命运的指引+ 到手中。"
+    "DESCRIPTION": "融合 ：\b巫师攻击牌。 NL 融合时，如果为第1次，增加1张 *联合魔法 到手中。如果为第2次，增加1张 *智慧之光 到手中。如果为第3次，增加1张 *红莲的法术 到手中。 NL 获得 !B! 点 格挡 。发动1次 魔力增幅 ，增加1张 *命运的指引 到手中。",
+    "UPGRADE_DESCRIPTION": "融合 ：\b巫师攻击牌。 NL 融合时，如果为第1次，增加1张 *联合魔法+ 到手中。如果为第2次，增加1张 *智慧之光+ 到手中。如果为第3次，增加1张 *红莲的法术+ 到手中。 NL 获得 !B! 点 格挡 。发动1次 魔力增幅 ，增加1张 *命运的指引+ 到手中。"
   },
   "shadowverse:Strike_V": {
     "NAME": "打击",
@@ -2416,7 +2428,7 @@
   },
   "shadowverse:DestructionRefrain": {
     "NAME": "破坏的歌声",
-    "DESCRIPTION": "消耗1张牌。 NL 对全体敌人造成那张牌耗能的 !M! 倍伤害。"
+    "DESCRIPTION": "消耗1张牌。 NL 对全体敌人造成那张牌耗能的 !M! 倍(最大为10)的伤害。"
   },
   "shadowverse:Modest": {
     "NAME": "至高无上·谦恭",
@@ -2425,6 +2437,10 @@
   "shadowverse:Ralmia": {
     "NAME": "音速机构·菈菈米娅",
     "DESCRIPTION": "机械 · 创造物 。 NL 造成 !D! 点伤害。 NL 如果打出创造物，这张卡获得以下效果： NL 「如果剩余耗能为2以上，造成伤害时额外消耗2点能量，使伤害增加消耗堆中 创造物种类的倍数。」"
+  },
+  "shadowverse:Ralmia2": {
+    "NAME": "星宇之翼·菈菈米娅",
+    "DESCRIPTION": "机械 · 创造物 。 NL 造成 !D! 点伤害。 NL 如果消耗堆中的 创造物 种类为6以上，对全体敌人造成 !M! 点伤害。"
   },
   "shadowverse:EnRalmia": {
     "NAME": "音速机构·菈菈米娅",
@@ -2768,7 +2784,7 @@
   },
   "shadowverse:DiscipleOfUsurpation": {
     "NAME": "强夺的信徒",
-    "DESCRIPTION": "每使用一张 财宝牌 ，获得 !M! 点护甲。"
+    "DESCRIPTION": "潜伏 ，1/1 。 NL 被动：获得攻击力的2倍格挡并失去1点体力。 NL 每使用一张 财宝牌 ，获得 !M! 点护甲。"
   },
   "shadowverse:ApostleOfUsurpation": {
     "NAME": "强夺的使徒",
@@ -3131,8 +3147,8 @@
   },
   "shadowverse:Leonidas": {
     "NAME": "列奥尼达",
-    "DESCRIPTION": "三回合后，每回合开始时获得!M!层每召唤一个随从，使其获得+1/+1。 NL 虚无 。",
-    "UPGRADE_DESCRIPTION": "三回合后，每回合开始时获得!M!层每召唤一个随从，使其获得+1/+1。"
+    "DESCRIPTION": "三回合后，每召唤一个随从，使其获得+ !M! /+ !M! 。 NL 失去生命时减少1回合。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION": "三回合后，每召唤一个随从，使其获得+ !M! /+ !M! 。 NL 失去生命时减少1回合。"
   },
   "shadowverse:LevinJustice": {
     "NAME": "雷维翁的正义",
@@ -3149,7 +3165,11 @@
   },
   "shadowverse:CaptainWalfrid": {
     "NAME": "骑空团总长·瓦佛利特",
-    "DESCRIPTION": "每召唤一个随从，使其获得+ !M! /+ !M! 。 NL 将一张 *骑空团总长·瓦佛利特 置入弃牌堆。"
+    "DESCRIPTION": "每召唤一个随从，使其获得+ !M! /+ !M! 。 NL 将一张复制品置入弃牌堆。"
+  },
+  "shadowverse:Walfrid": {
+    "NAME": "苍空总长·瓦佛利特",
+    "DESCRIPTION": "如果抽牌堆没有非打击皇家护卫攻击牌以外的卡，每召唤一个随从，使其获得+ !M! /+ !M! 。 NL 将一张复制品置入弃牌堆。"
   },
   "shadowverse:Reinhardt": {
     "NAME": "改革者·莱恩哈尔特",
@@ -3266,7 +3286,7 @@
   },
   "shadowverse:Cernunnos": {
     "NAME": "科尔努诺斯",
-    "DESCRIPTION": "葬送 1张牌，抽 !M! 张牌。 NL 获得 [E] [E] 。 NL 亡者召还 !M! 。 NL 如果本场战斗已使用的 死灵术 为20以上， 亡者召还 5。"
+    "DESCRIPTION": "葬送 1张牌，抽 !M! 张牌。 NL 限定 获得 [E] [E] 。 NL 亡者召还 !M! 。 NL 如果本场战斗已使用的 死灵术 为20以上， 亡者召还 5。"
   },
   "shadowverse:MiracleHarvest": {
     "NAME": "奇迹果实",
@@ -3404,6 +3424,10 @@
   "shadowverse:Wilbert": {
     "NAME": "尊荣骑士·维尔伯特",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 给予自身「受到攻击时，如果有 格挡 ，对攻击者造成其最大生命值5%（不会低于6点）的伤害。」效果。 NL 谢幕曲 下回合开始时，增加 !M! 张 *圣骑兵 到手中。 NL 消耗 。"
+  },
+  "shadowverse:Wilbert2": {
+    "NAME": "光璨圣骑士·维尔伯特",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 给予自身「回合结束时，对全体敌人造成对全体敌人造成自身格挡数量(最大50)点伤害。」效果。 NL 增加 !M! 张 *圣骑兵 到手中。 NL 消耗 。"
   },
   "shadowverse:Indulgence": {
     "NAME": "赎罪券",
@@ -3759,5 +3783,71 @@
   "shadowverse:TerrorFormer": {
     "NAME": "裂地异种",
     "DESCRIPTION": "保留 。 NL 融合 耗能为1以上的精灵攻击牌。 NL 如果一次融合的张数为2以上，伤害增加 !M! 点并抽1张牌。 NL 造成 !D! 点伤害。 NL 给予2层 虚弱 。"
+  },
+  "shadowverse:Ambush": {
+    "NAME": "潜伏",
+    "DESCRIPTION": "回合结束时不触发被动效果，获得+1/+0。"
+  },
+  "shadowverse:AmbushAttack": {
+    "NAME": "攻击",
+    "DESCRIPTION": "回合结束时触发被动效果，不能再选择是否 潜伏 。"
+  },
+  "shadowverse:Leod": {
+    "NAME": "夜月之刃·里欧德",
+    "DESCRIPTION": "潜伏 ，1/ !M! 。 NL 被动：造成攻击力的6倍伤害并失去1点体力。 NL 打出时增加1张 *隐伏天诛 到手中。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"固有 · 潜伏 ，1/ !M! 。 NL 被动：造成攻击力的6倍伤害并失去1点体力。 NL 打出时增加1张 *隐伏天诛 到手中。 NL 消耗 。"
+  },
+  "shadowverse:VeiledReckoning": {
+    "NAME": "隐伏天诛",
+    "DESCRIPTION": "保留 。 NL 造成 !D! 点伤害 。 NL 增加1张 *刺客 到手中。 NL 消耗 。"
+  },
+  "shadowverse:Assassin": {
+    "NAME": "刺客",
+    "DESCRIPTION": "使所有拥有潜伏的随从能够重新潜伏。 NL 消耗 。"
+  },
+  "shadowverse:Dualblade": {
+    "NAME": "双刀之技",
+    "DESCRIPTION": "随从的被动效果可以触发2次。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"固有 。 NL 随从的被动效果可以触发2次。 NL 消耗 。"
+  },
+  "shadowverse:Leod2": {
+    "NAME": "月光执行者·里欧德",
+    "DESCRIPTION": "潜伏 ，1/ !M! 。 NL 被动：造成攻击力的6倍伤害并失去1点体力。 NL 回合开始时对全体敌人造成9点伤害。 NL 消耗 。"
+  },
+  "shadowverse:AmbushBuff": {
+    "NAME": "盗贼的极意",
+    "DESCRIPTION": "回合开始时，给予所有 潜伏 状态的随从+1/+1。"
+  },
+  "shadowverse:ShinobiTanuki": {
+    "NAME": "忍者狸猫",
+    "DESCRIPTION": "潜伏 ，1/ !M! 。 NL 被动：获得攻击力的2倍格挡并失去1点体力。 NL 消耗 。"
+  },
+  "shadowverse:Tsubaki": {
+    "NAME": "妖刀之鬼·椿",
+    "DESCRIPTION": "潜伏 ，1/ !M! 。 NL 被动：造成攻击力的6倍伤害并失去1点体力。 NL 协作 10 获得+1/+1，给予随机敌人1层 易伤 和 虚弱 。",
+    "EXTENDED_DESCRIPTION": [
+      "（协作数：",
+      ")"
+    ]
+  },
+  "shadowverse:ShieldOfFlame": {
+    "NAME": "火遁之术",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果有 潜伏 状态的随从改为造成2倍伤害。"
+  },
+  "shadowverse:ShadowedMemories": {
+    "NAME": "隐伏的记忆",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抽 !M! 张牌。 NL  如果有 潜伏 状态的随从增加1张 *进化点 到手中。"
+  },
+  "shadowverse:BladeDance": {
+    "NAME": "白刃剑舞",
+    "DESCRIPTION": "爆能强化 2 给予攻击力最高的随从+2/+0。 NL 对随机敌人造成 !D! 点伤害X次。 NL （X为攻击力最高的随从的攻击力，最大为10。)"
+  },
+  "shadowverse:NobleShikigami": {
+    "NAME": "式神·贵人",
+    "DESCRIPTION": "对全体敌人造成剩余能量 !D! 倍的伤害。 NL 获得1层 人工制品 。 NL 虚无 。 NL 消耗 。"
+  },
+  "shadowverse:HarvestSeason": {
+    "NAME": "丰收的季节",
+    "DESCRIPTION": "抽 !M! 张牌。 NL 如果本回合已使用的卡牌数为2以上(不包含本牌)，额外抽1张。"
   }
 }

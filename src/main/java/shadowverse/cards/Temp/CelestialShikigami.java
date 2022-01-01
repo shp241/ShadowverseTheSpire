@@ -25,7 +25,7 @@ import shadowverse.characters.Witchcraft;
    public static final String IMG_PATH = "img/cards/CelestialShikigami.png";
 
    public CelestialShikigami() {
-     super("shadowverse:ID", NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.SPECIAL, CardTarget.SELF);
+     super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.SPECIAL, CardTarget.SELF);
      this.baseBlock = 25;
      this.baseMagicNumber = 3;
      this.magicNumber = this.baseMagicNumber;

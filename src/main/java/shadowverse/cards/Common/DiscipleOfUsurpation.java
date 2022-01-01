@@ -11,14 +11,17 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import shadowverse.action.MinionSummonAction;
 import shadowverse.cards.Temp.GildedBlade;
 import shadowverse.cards.Temp.GildedBoots;
 import shadowverse.cards.Temp.GildedGoblet;
 import shadowverse.cards.Temp.GildedNecklace;
 import shadowverse.characters.Royal;
+import shadowverse.orbs.AmbushMinion;
 import shadowverse.powers.DiscipleOfUsurpationPower;
 import shadowverse.powers.ShopPower;
 
@@ -79,6 +82,7 @@ public class DiscipleOfUsurpation  extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         addToBot(new ApplyPowerAction(p, p, new DiscipleOfUsurpationPower(p, this.magicNumber)));
+        AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new AmbushMinion(1,1,this.makeStatEquivalentCopy(),true)));
     }
 
 

@@ -47,7 +47,7 @@ public class TerrorFormer
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.RARE, CardTarget.ENEMY);
         this.baseMagicNumber = 16;
         this.magicNumber = this.baseMagicNumber;
-        this.baseDamage = 8;
+        this.baseDamage = 10;
         this.selfRetain = true;
     }
 

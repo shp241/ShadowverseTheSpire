@@ -8,7 +8,6 @@ import basemod.interfaces.*;
 import charbosses.bosses.KMR.KMR;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.audio.Sfx;
@@ -942,6 +941,21 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("Valdain", new Sfx("sounds/Valdain.wav"));
         reflectedMap.put("ShadowCorrosion", new Sfx("sounds/ShadowCorrosion.wav"));
         reflectedMap.put("Sukuna", new Sfx("sounds/Sukuna.wav"));
+        reflectedMap.put("Walfrid",new Sfx("sounds/Walfrid.wav"));
+        reflectedMap.put("Leod",new Sfx("sounds/Leod.wav"));
+        reflectedMap.put("Assassin",new Sfx("sounds/Assassin.wav"));
+        reflectedMap.put("VeiledReckoning",new Sfx("sounds/VeiledReckoning.wav"));
+        reflectedMap.put("Leod2",new Sfx("sounds/Leod2.wav"));
+        reflectedMap.put("Leod2Power",new Sfx("sounds/Leod2Power.wav"));
+        reflectedMap.put("ShinobiTanuki",new Sfx("sounds/ShinobiTanuki.wav"));
+        reflectedMap.put("Tsubaki",new Sfx("sounds/Tsubaki.wav"));
+        reflectedMap.put("BladeDance",new Sfx("sounds/BladeDance.wav"));
+        reflectedMap.put("BladeDance_EH",new Sfx("sounds/BladeDance_EH.wav"));
+        reflectedMap.put("ShadowedMemories",new Sfx("sounds/ShadowedMemories.wav"));
+        reflectedMap.put("Kuon2",new Sfx("sounds/Kuon2.wav"));
+        reflectedMap.put("Ralmia2",new Sfx("sounds/Ralmia2.wav"));
+        reflectedMap.put("Wilbert2",new Sfx("sounds/Wilbert2.wav"));
+        reflectedMap.put("Amataz2",new Sfx("sounds/Amataz2.wav"));
         /*     */
     }
 
@@ -1919,6 +1933,18 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCard((AbstractCard) new Valdain());
         BaseMod.addCard((AbstractCard) new Sukuna());
         BaseMod.addCard((AbstractCard) new TerrorFormer());
+        BaseMod.addCard((AbstractCard) new Assassin());
+        BaseMod.addCard((AbstractCard) new Leod());
+        BaseMod.addCard((AbstractCard) new VeiledReckoning());
+        BaseMod.addCard((AbstractCard) new Dualblade());
+        BaseMod.addCard((AbstractCard) new AmbushBuff());
+        BaseMod.addCard((AbstractCard) new ShinobiTanuki());
+        BaseMod.addCard((AbstractCard) new Tsubaki());
+        BaseMod.addCard((AbstractCard) new ShieldOfFlame());
+        BaseMod.addCard((AbstractCard) new BladeDance());
+        BaseMod.addCard((AbstractCard) new ShadowedMemories());
+        BaseMod.addCard((AbstractCard) new NobleShikigami());
+        BaseMod.addCard((AbstractCard) new HarvestSeason());
         /* 276 */
         logger.info("Success");
         /*     */

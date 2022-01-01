@@ -105,7 +105,9 @@ import shadowverse.powers.HeavenlyAegisPower;
        if (o instanceof AmuletOrb){
          if (((AmuletOrb) o).amulet instanceof RelicGod){
            break;
-         }else {
+         } else if (((AmuletOrb) o).amulet instanceof RelicSphere && o!=paramOrb) {
+           break;
+         } else {
            if (((AmuletOrb) o).amulet instanceof RelicPrism)
              hasPrism = true;
            if (((AmuletOrb) o).amulet instanceof RelicTorus)

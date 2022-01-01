@@ -1,4 +1,4 @@
-package shadowverse.cards.Rare;
+package shadowverse.cards.Uncommon;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.characters.Royal;
-import shadowverse.powers.LeonidasPower;
 import shadowverse.powers.LeonidasWaitPower;
 
 public class Leonidas extends CustomCard {
@@ -20,8 +19,8 @@ public class Leonidas extends CustomCard {
     public static final String IMG_PATH = "img/cards/Leonidas.png";
 
     public Leonidas() {
-        super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.SELF);
-        this.magicNumber = this.baseMagicNumber = 1;
+        super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
+        this.magicNumber = this.baseMagicNumber = 3;
         this.isEthereal = true;
     }
 
@@ -29,6 +28,7 @@ public class Leonidas extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            upgradeMagicNumber(1);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
             this.isEthereal = false;
@@ -39,7 +39,7 @@ public class Leonidas extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
-        addToBot(new ApplyPowerAction(p, p, new LeonidasWaitPower(p, 3)));
+        addToBot(new ApplyPowerAction(p, p, new LeonidasWaitPower(p, 3,this.magicNumber)));
     }
 
 

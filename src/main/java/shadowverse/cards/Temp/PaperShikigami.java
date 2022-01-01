@@ -28,7 +28,7 @@ import shadowverse.characters.Witchcraft;
    public static final String IMG_PATH = "img/cards/PaperShikigami.png";
    
    public PaperShikigami() {
-     super("shadowverse:ID", NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.SPECIAL, CardTarget.ENEMY);
+     super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.SPECIAL, CardTarget.ENEMY);
      this.baseDamage = 6;
      this.baseMagicNumber = 1;
      this.magicNumber = this.baseMagicNumber;

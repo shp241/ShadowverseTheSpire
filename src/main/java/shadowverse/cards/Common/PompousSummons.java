@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import shadowverse.characters.Royal;
+import shadowverse.orbs.AmbushMinion;
 import shadowverse.orbs.Minion;
 
 public class PompousSummons extends CustomCard {
@@ -46,7 +47,7 @@ public class PompousSummons extends CustomCard {
         int rally = 0;
 
         for (AbstractOrb o : AbstractDungeon.actionManager.orbsChanneledThisCombat) {
-            if (o instanceof Minion) {
+            if (o instanceof Minion && !(o instanceof AmbushMinion)) {
                 rally++;
             }
         }

@@ -17,6 +17,7 @@ import shadowverse.Shadowverse;
 import shadowverse.cards.Status.EvolutionPoint;
 import shadowverse.cards.Temp.DreadHound;
 import shadowverse.characters.Royal;
+import shadowverse.orbs.AmbushMinion;
 import shadowverse.orbs.Minion;
 import shadowverse.powers.DisableEffectDamagePower;
 import shadowverse.relics.KagemitsuSword;
@@ -51,7 +52,7 @@ public class Ilmisuna extends CustomCard {
         int rally = 0;
 
         for (AbstractOrb o : AbstractDungeon.actionManager.orbsChanneledThisCombat) {
-            if (o instanceof Minion) {
+            if (o instanceof Minion && !(o instanceof AmbushMinion)) {
                 rally++;
             }
         }

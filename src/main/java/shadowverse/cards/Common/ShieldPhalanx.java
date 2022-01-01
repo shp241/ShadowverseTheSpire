@@ -11,10 +11,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import shadowverse.characters.Royal;
-import shadowverse.orbs.FrontguardGeneral;
-import shadowverse.orbs.Knight;
-import shadowverse.orbs.Minion;
-import shadowverse.orbs.ShieldGuardian;
+import shadowverse.orbs.*;
 
 public class ShieldPhalanx extends CustomCard {
     public static final String ID = "shadowverse:ShieldPhalanx";
@@ -64,7 +61,7 @@ public class ShieldPhalanx extends CustomCard {
         int rally = 0;
 
         for (AbstractOrb o : AbstractDungeon.actionManager.orbsChanneledThisCombat) {
-            if (o instanceof Minion) {
+            if (o instanceof Minion && !(o instanceof AmbushMinion)) {
                 rally++;
             }
         }

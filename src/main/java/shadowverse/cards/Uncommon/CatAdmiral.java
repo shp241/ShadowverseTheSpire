@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.orbs.Frost;
 import shadowverse.characters.Royal;
+import shadowverse.orbs.AmbushMinion;
 import shadowverse.orbs.HeavyKnight;
 import shadowverse.orbs.Minion;
 import shadowverse.orbs.ShieldGuardian;
@@ -71,7 +72,7 @@ public class CatAdmiral extends CustomCard {
         int rally = 0;
 
         for (AbstractOrb o : AbstractDungeon.actionManager.orbsChanneledThisCombat) {
-            if (o instanceof Minion) {
+            if (o instanceof Minion && !(o instanceof AmbushMinion)) {
                 rally++;
             }
         }

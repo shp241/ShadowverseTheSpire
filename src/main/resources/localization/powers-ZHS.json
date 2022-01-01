@@ -426,7 +426,7 @@
   "shadowverse:CurseOfGeass": {
     "NAME": "Geass的咒缚",
     "DESCRIPTIONS": [
-      "受到致死伤害时，该伤害变为0并强制结束回合，获得 #b5 点 #y力量 和 #y敏捷 ， #b25 点 #y格挡 。"
+      "受到致死伤害时，移除所有负面效果，回复1点生命值并强制结束回合，获得 #b5 点 #y力量 和 #y敏捷 ， #b25 点 #y格挡 。"
     ]
   },
   "shadowverse:CommanderPower": {
@@ -1128,17 +1128,12 @@
   "shadowverse:LeonidasWaitPower": {
     "NAME": "列奥尼达",
     "DESCRIPTIONS": [
-      "回合开始时这个能力减少 #b1 层。 NL 失去这个能力时获得 #b1 层 #y列奥尼达的遗志 。"
-    ]
-  },
-  "shadowverse:LeonidasPower": {
-    "NAME": "列奥尼达的遗志",
-    "DESCRIPTIONS": [
-      "回合开始时，获得 #b1 层 #y列奥尼达的光辉 。"
+      "回合开始时和受到伤害时这个能力减少 #b1 层。失去这个能力时获得 #b",
+      " 层 #y列奥尼达的遗志 。"
     ]
   },
   "shadowverse:LeonidasBuffPower": {
-    "NAME": "列奥尼达的光辉",
+    "NAME": "列奥尼达的遗志",
     "DESCRIPTIONS": [
       "每当召唤 #y随从 时，使其获得+ #b",
       "/+ #b",
@@ -1169,6 +1164,12 @@
     "NAME": "尊荣骑士·维尔伯特",
     "DESCRIPTIONS": [
       "受到攻击时，如果你有格挡，对攻击者造成其最大生命值 #b5% (不会低于 #6 点)的伤害。"
+    ]
+  },
+  "shadowverse:Wilbert2Power": {
+    "NAME": "光璨圣骑士·维尔伯特",
+    "DESCRIPTIONS": [
+      "回合结束时，对全体敌人造成自身格挡数量(最大 #b50 )点伤害。"
     ]
   },
   "shadowverse:NextTurnHC": {
@@ -1279,6 +1280,20 @@
     "DESCRIPTIONS": [
       "回合开始时失去 #b",
       " 点生命。每打出 #b1 张 #y那塔拉的大树 时本伤害增加 #b2 点。"
+    ]
+  },
+  "shadowverse:DualbladePower": {
+    "NAME": "双刀之技",
+    "DESCRIPTIONS": [
+      "你的随从的被动效果会触发2次。"
+    ]
+  },
+  "shadowverse:AmbushBuffPower": {
+    "NAME": "盗贼的极意",
+    "DESCRIPTIONS": [
+      "回合开始时，给予全体潜伏状态的随从 + #b",
+      " /+ #b",
+      " 。"
     ]
   }
 }

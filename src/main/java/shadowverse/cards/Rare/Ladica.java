@@ -152,7 +152,7 @@ import java.util.List;
                  Ladica.this.rawDescription = cardStrings2.DESCRIPTION;
                  Ladica.this.initializeDescription();
                  Ladica.this.branchPreview = 1;
-                 Ladica.this.baseDamage = 12;
+                 Ladica.this.baseDamage = 18;
                  Ladica.this.upgradedDamage = true;
              }
          });

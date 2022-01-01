@@ -56,7 +56,10 @@ public class DestructionRefrain
                 for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                     addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new WeightyImpactEffect(mo.hb.cX, mo.hb.cY)));
                 }
-                addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)p, DamageInfo.createDamageMatrix(this.magicNumber*c.costForTurn, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE, true));
+                int costOfC = c.costForTurn;
+                if (costOfC>10)
+                    costOfC=10;
+                addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)p, DamageInfo.createDamageMatrix(this.magicNumber*costOfC, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE, true));
             }
         } ));
     }

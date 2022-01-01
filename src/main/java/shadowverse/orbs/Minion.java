@@ -17,6 +17,7 @@ import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.orbs.EmptyOrbSlot;
 import shadowverse.action.MinionBuffAction;
 import shadowverse.action.RemoveMinionAction;
+import shadowverse.powers.DualbladePower;
 
 import java.util.Collections;
 
@@ -91,6 +92,10 @@ public abstract class Minion extends AbstractOrb {
     public void onEndOfTurn() {
         if (this.defense > 0) {
             this.effect();
+            if (AbstractDungeon.player.hasPower(DualbladePower.POWER_ID)&&this.defense>1){
+                this.effect();
+                AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(0, -1, this));
+            }
             AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(0, -1, this));
             this.updateDescription();
         }

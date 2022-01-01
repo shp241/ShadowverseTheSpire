@@ -85,7 +85,6 @@ public class FusionAction2 extends AbstractGameAction {
                     AbstractCard c = this.p.hand.getTopCard();
                     this.p.hand.moveToExhaustPile(c);
                 }
-                CardCrawlGame.dungeon.checkForPactAchievement();
                 return;
             }
             this.p.hand.group.removeAll(this.cannotFusion);
@@ -111,6 +110,8 @@ public class FusionAction2 extends AbstractGameAction {
             self.applyPowers();
             returnCards();
             AbstractDungeon.handCardSelectScreen.wereCardsRetrieved = true;
+            AbstractDungeon.handCardSelectScreen.selectedCards.group.clear();
+            this.isDone = true;
         }
         tickDuration();
     }

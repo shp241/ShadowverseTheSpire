@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import shadowverse.action.DrawPileToHandAction_Tag;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Nemesis;
+import shadowverse.orbs.AmbushMinion;
 import shadowverse.orbs.HeavyKnight;
 import shadowverse.orbs.Minion;
 import shadowverse.orbs.SteelcladKnight;
@@ -45,7 +46,7 @@ public class FrenziedCorpsmaster_Acc  extends CustomCard {
         int rally = 0;
 
         for (AbstractOrb o : AbstractDungeon.actionManager.orbsChanneledThisCombat) {
-            if (o instanceof Minion) {
+            if (o instanceof Minion && !(o instanceof AmbushMinion)) {
                 rally++;
             }
         }

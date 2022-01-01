@@ -26,6 +26,7 @@ public class Cernunnos extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Cernunnos.png";
+    private boolean triggered;
 
     public Cernunnos() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Necromancer.Enums.COLOR_PURPLE, CardRarity.RARE, CardTarget.NONE);
@@ -45,7 +46,10 @@ public class Cernunnos extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot((AbstractGameAction) new BurialAction(1, (AbstractGameAction) new DrawCardAction(this.magicNumber)));
         addToBot((AbstractGameAction) new SFXAction("Cernunnos"));
-        addToBot((AbstractGameAction) new GainEnergyAction(2));
+        if (!this.triggered) {
+            this.triggered = true;
+            addToBot((AbstractGameAction) new GainEnergyAction(2));
+        }
         if (this.costForTurn>0){
             addToBot((AbstractGameAction) new ReanimateAction(this.magicNumber));
             if (abstractPlayer instanceof AbstractShadowversePlayer){

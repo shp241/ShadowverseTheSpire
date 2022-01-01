@@ -1,8 +1,11 @@
 package shadowverse.cards.Rare;
 
+import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsInHandAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.unique.ExpertiseAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -10,12 +13,14 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import shadowverse.action.FusionAction2;
 import shadowverse.cards.AbstractRightClickCard2;
+import shadowverse.characters.Elf;
 import shadowverse.characters.Vampire;
 
 public class Baal
@@ -46,8 +51,16 @@ public class Baal
 
     @Override
     protected void onRightClick() {
-        if (!this.hasFusion){
-            addToBot((AbstractGameAction)new FusionAction2(8,false,true,true,this,this.hasFusion,Vampire.Enums.COLOR_SCARLET,CardType.ATTACK,1));
+            if (!this.hasFusion && AbstractDungeon.player!=null){
+                addToBot((AbstractGameAction)new SelectCardsInHandAction(8,TEXT[0],true,true, card -> {
+                    return card.type==CardType.ATTACK&&card.color== Vampire.Enums.COLOR_SCARLET&&card.cost<2&&card!=this;
+                }, abstractCards -> {
+                    for (AbstractCard c:abstractCards){
+                        this.magicNumber++;
+                        this.applyPowers();
+                        addToBot((AbstractGameAction)new ExhaustSpecificCardAction(c,AbstractDungeon.player.hand));
+                    }
+                }));
             this.hasFusion = true;
         }
     }

@@ -2,6 +2,7 @@ package shadowverse.cards.Rare;
 
 import com.badlogic.gdx.Gdx;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.ReduceCostAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
@@ -47,6 +48,7 @@ public class Isabelle
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.RARE, CardTarget.SELF);
         this.baseMagicNumber = 0;
         this.magicNumber = this.baseMagicNumber;
+        this.baseBlock = 6;
     }
 
 
@@ -123,6 +125,7 @@ public class Isabelle
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot((AbstractGameAction)new SFXAction("Isabelle"));
+        addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
         //增幅
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
             if (c.hasTag(AbstractShadowversePlayer.Enums.SPELL_BOOST)) {

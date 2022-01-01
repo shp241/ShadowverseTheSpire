@@ -30,7 +30,7 @@ import java.util.List;
 
 
 public class Zwei extends CustomCard implements BranchableUpgradeCard {
-    public static final String ID = "shadowverse:Ceridwen";
+    public static final String ID = "shadowverse:Zwei";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Zwei");
     public static CardStrings cardStrings2 = CardCrawlGame.languagePack.getCardStrings("shadowverse:Zwei2");
     public static final String NAME = cardStrings.NAME;
