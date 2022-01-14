@@ -40,7 +40,7 @@ public class VictoryCard extends CustomCard {
                 isKMR = true;
             }
         }
-        if (isKMR){
+        if (isKMR&&(AbstractDungeon.getCurrRoom()).cannotLose){
             for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                 if (!mo.isDeadOrEscaped()) {
                     addToBot((AbstractGameAction)new JudgementAction((AbstractCreature)mo, 99999));
@@ -56,7 +56,6 @@ public class VictoryCard extends CustomCard {
                 if (m.isEscaping || m.isDead)
                     continue;
                 m.useFastShakeAnimation(5.0F);
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new CanLoseAction());
                 AbstractDungeon.actionManager.addToTop((AbstractGameAction)new HideHealthBarAction((AbstractCreature)m));
                 AbstractDungeon.actionManager.addToTop((AbstractGameAction)new SuicideAction(m));
             }

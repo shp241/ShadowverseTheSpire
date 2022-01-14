@@ -47,7 +47,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
        for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisTurn) {
            count++;
        }
-       if (count >= 5){
+       if (count >= 4){
            addToBot((AbstractGameAction)new DrawCardAction((AbstractCreature)AbstractDungeon.player, this.amount));
        }
    }

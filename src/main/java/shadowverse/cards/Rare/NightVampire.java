@@ -4,6 +4,7 @@ package shadowverse.cards.Rare;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -14,6 +15,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.stance.StanceAuraEffect;
 import shadowverse.cards.Temp.Fairy;
 import shadowverse.cards.Temp.ForestBat;
@@ -55,6 +57,9 @@ public class NightVampire extends CustomCard {
         addToBot((AbstractGameAction) new MakeTempCardInHandAction(c, 2));
         if (!abstractPlayer.hasPower(NightVampirePower.POWER_ID))
             addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, (AbstractPower) new NightVampirePower((AbstractCreature) abstractPlayer)));
+        if (EnergyPanel.getCurrentEnergy()-this.costForTurn>=3){
+            addToBot((AbstractGameAction)new MakeTempCardInDiscardAction(new DarkfeastBat(),1));
+        }
     }
 
 

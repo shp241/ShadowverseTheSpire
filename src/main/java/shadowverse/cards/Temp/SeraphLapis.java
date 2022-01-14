@@ -55,7 +55,7 @@ public class SeraphLapis extends AbstractAmuletCard {
                 isKMR = true;
             }
         }
-        if (isKMR){
+        if (isKMR&&(AbstractDungeon.getCurrRoom()).cannotLose){
             for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                 if (!mo.isDeadOrEscaped()) {
                     addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new GrandFinalEffect()));

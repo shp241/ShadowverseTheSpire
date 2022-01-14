@@ -37,7 +37,7 @@ public class Indulgence extends CustomCard {
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
         boolean canUse = super.canUse(p, m);
         if (!canUse) return false;
-        if (p.gold<12) {
+        if (p.gold<8) {
             canUse = false;
             this.cantUseMessage = cardStrings.EXTENDED_DESCRIPTION[0];
         }
@@ -52,7 +52,7 @@ public class Indulgence extends CustomCard {
             for (AbstractCard c:abstractCards){
                 addToBot((AbstractGameAction)new ExhaustSpecificCardAction(c,abstractPlayer.hand));
                 CardCrawlGame.sound.play("GOLD_JINGLE");
-                abstractPlayer.gold -= 12;
+                abstractPlayer.gold -= 8;
             }
         }));
     }

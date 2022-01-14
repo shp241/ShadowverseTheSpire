@@ -956,6 +956,14 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("Ralmia2",new Sfx("sounds/Ralmia2.wav"));
         reflectedMap.put("Wilbert2",new Sfx("sounds/Wilbert2.wav"));
         reflectedMap.put("Amataz2",new Sfx("sounds/Amataz2.wav"));
+        reflectedMap.put("RejuvenatingResurrection",new Sfx("sounds/RejuvenatingResurrection.wav"));
+        reflectedMap.put("MasterCook",new Sfx("sounds/MasterCook.wav"));
+        reflectedMap.put("OmnifacedArchdemon",new Sfx("sounds/OmnifacedArchdemon.wav"));
+        reflectedMap.put("EvilEyeDemon",new Sfx("sounds/EvilEyeDemon.wav"));
+        reflectedMap.put("EvilEyeDemon_Acc",new Sfx("sounds/EvilEyeDemon_Acc.wav"));
+        reflectedMap.put("PhantomBloomPredator",new Sfx("sounds/PhantomBloomPredator.wav"));
+        reflectedMap.put("Alberta",new Sfx("sounds/Alberta.wav"));
+        reflectedMap.put("AlbertaPower",new Sfx("sounds/AlbertaPower.wav"));
         /*     */
     }
 
@@ -1945,6 +1953,13 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCard((AbstractCard) new ShadowedMemories());
         BaseMod.addCard((AbstractCard) new NobleShikigami());
         BaseMod.addCard((AbstractCard) new HarvestSeason());
+        BaseMod.addCard((AbstractCard) new RejuvenatingResurrection());
+        BaseMod.addCard((AbstractCard) new MasterCook());
+        BaseMod.addCard((AbstractCard) new OmnifacedArchdemon());
+        BaseMod.addCard((AbstractCard) new EvilEyeDemon());
+        BaseMod.addCard((AbstractCard) new PhantomBloomPredator());
+        BaseMod.addCard((AbstractCard) new WonderTree());
+        BaseMod.addCard((AbstractCard) new Alberta());
         /* 276 */
         logger.info("Success");
         /*     */
