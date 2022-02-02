@@ -1,5 +1,4 @@
-package shadowverse;/*     */
-/*     */
+package shadowverse;
 
 import basemod.BaseMod;
 import basemod.ReflectionHacks;
@@ -101,72 +100,38 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addColor(Nemesis.Enums.COLOR_SKY, NEMESIS_SKY, NEMESIS_SKY, NEMESIS_SKY, NEMESIS_SKY, NEMESIS_SKY, NEMESIS_SKY, NEMESIS_SKY, "img/512nemesis/bg_attack_default_gray.png", "img/512nemesis/bg_skill_default_gray.png", "img/512nemesis/bg_power_default_gray.png", "img/512nemesis/card_default_gray_orb.png", "img/1024nemesis/bg_attack_default_gray.png", "img/1024nemesis/bg_skill_default_gray.png", "img/1024nemesis/bg_power_default_gray.png", "img/1024nemesis/card_default_gray_orb.png", "img/512nemesis/card_small_orb.png");
         BaseMod.addColor(Royal.Enums.COLOR_YELLOW, ROYAL_YELLOW, ROYAL_YELLOW, ROYAL_YELLOW, ROYAL_YELLOW, ROYAL_YELLOW, ROYAL_YELLOW, ROYAL_YELLOW, "img/512royal/bg_attack_default_gray.png", "img/512royal/bg_skill_default_gray.png", "img/512royal/bg_power_default_gray.png", "img/512royal/card_default_gray_orb.png", "img/1024royal/bg_attack_default_gray.png", "img/1024royal/bg_skill_default_gray.png", "img/1024royal/bg_power_default_gray.png", "img/1024royal/card_default_gray_orb.png", "img/512royal/card_small_orb.png");
         BaseMod.addColor(Bishop.Enums.COLOR_WHITE, BISHOP_WHITE, BISHOP_WHITE, BISHOP_WHITE, BISHOP_WHITE, BISHOP_WHITE, BISHOP_WHITE, BISHOP_WHITE, "img/512bishop/bg_attack_default_gray.png", "img/512bishop/bg_skill_default_gray.png", "img/512bishop/bg_power_default_gray.png", "img/512bishop/card_default_gray_orb.png", "img/1024bishop/bg_attack_default_gray.png", "img/1024bishop/bg_skill_default_gray.png", "img/1024bishop/bg_power_default_gray.png", "img/1024bishop/card_default_gray_orb.png", "img/512bishop/card_small_orb.png");
-        /*  60 */
         logger.info("Success subscribe");
-        /*     */
     }
 
-    /*     */
     public static void initialize() {
-        /*  63 */
         logger.info("Initializing");
-        /*  64 */
         Shadowverse shadowverse = new Shadowverse();
-        /*  65 */
         logger.info("Initialization success");
-        /*     */
     }
 
-    /*     */
-    /*     */
     private static String loadJson(String jsonPath) {
-        /*  69 */
         return Gdx.files.internal(jsonPath).readString(String.valueOf(StandardCharsets.UTF_8));
-        /*     */
     }
 
-    /*     */
-    /*     */
-    /*     */
     public void receiveEditKeywords() {
-        /*  74 */
         logger.info("Adding Keywords");
-        /*  75 */
         String keywordsPath = "localization/keywords-" + Settings.language + ".json";
-        /*  76 */
         Gson gson = new Gson();
-        /*  77 */
         Keywords keywords = (Keywords) gson.fromJson(loadJson(keywordsPath), Keywords.class);
-        /*  78 */
         Keyword[] var4 = keywords.keywords;
-        /*  79 */
         int var5 = var4.length;
-        /*  80 */
         for (int var6 = 0; var6 < var5; var6++) {
-            /*  81 */
             Keyword key = var4[var6];
-            /*  82 */
             logger.info("Loading keyword : " + key.NAMES[0]);
-            /*  83 */
             BaseMod.addKeyword(key.NAMES, key.DESCRIPTION);
-            /*     */
         }
-        /*  85 */
         logger.info("Keywords setting finished.");
-        /*     */
     }
 
-    /*     */
-    /*     */
     private HashMap<String, Sfx> getSoundsMap() {
-        /*  89 */
         return (HashMap<String, Sfx>) ReflectionHacks.getPrivate(CardCrawlGame.sound, SoundMaster.class, "map");
-        /*     */
     }
 
-    /*     */
-    /*     */
-    /*     */
     public void receivePostInitialize() {
         BaseMod.addEvent(PinyaEvent.ID, PinyaEvent.class);
         BaseMod.addEvent(GemFortune.ID, GemFortune.class, TheCity.ID);
@@ -964,24 +929,47 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("PhantomBloomPredator",new Sfx("sounds/PhantomBloomPredator.wav"));
         reflectedMap.put("Alberta",new Sfx("sounds/Alberta.wav"));
         reflectedMap.put("AlbertaPower",new Sfx("sounds/AlbertaPower.wav"));
-        /*     */
+        reflectedMap.put("Shiro",new Sfx("sounds/Shiro.wav"));
+        reflectedMap.put("TheChariot",new Sfx("sounds/TheChariot.wav"));
+        reflectedMap.put("TheChariotPower",new Sfx("sounds/TheChariotPower.wav"));
+        reflectedMap.put("TheChariot_I",new Sfx("sounds/TheChariot_I.wav"));
+        reflectedMap.put("TheChariot_IPower",new Sfx("sounds/TheChariot_IPower.wav"));
+        reflectedMap.put("EvidenceOfOne",new Sfx("sounds/EvidenceOfOne.wav"));
+        reflectedMap.put("RearriveOne",new Sfx("sounds/RearriveOne.wav"));
+        reflectedMap.put("ReturningMelody",new Sfx("sounds/ReturningMelody.wav"));
+        reflectedMap.put("SoloOfMelody",new Sfx("sounds/SoloOfMelody.wav"));
+        reflectedMap.put("WhiteArtifact2",new Sfx("sounds/WhiteArtifact2.wav"));
+        reflectedMap.put("BlackArtifact2",new Sfx("sounds/BlackArtifact2.wav"));
+        reflectedMap.put("ExpandingScreaming",new Sfx("sounds/ExpandingScreaming.wav"));
+        reflectedMap.put("ResentfulScreaming",new Sfx("sounds/ResentfulScreaming.wav"));
+        reflectedMap.put("EternalDispair",new Sfx("sounds/EternalDispair.wav"));
+        reflectedMap.put("FlowOfDispair",new Sfx("sounds/FlowOfDispair.wav"));
+        reflectedMap.put("CorruptionOfUnkilling",new Sfx("sounds/CorruptionOfUnkilling.wav"));
+        reflectedMap.put("ShootOfUnkilling",new Sfx("sounds/ShootOfUnkilling.wav"));
+        reflectedMap.put("ShootOfUnkilling_EH",new Sfx("sounds/ShootOfUnkilling_EH.wav"));
+        reflectedMap.put("LoathingDesire",new Sfx("sounds/LoathingDesire.wav"));
+        reflectedMap.put("WingsOfDesire",new Sfx("sounds/WingsOfDesire.wav"));
+        reflectedMap.put("WingsOfDesire_EH",new Sfx("sounds/WingsOfDesire_EH.wav"));
+        reflectedMap.put("UnleashTruth",new Sfx("sounds/UnleashTruth.wav"));
+        reflectedMap.put("PerjuryOfTruth",new Sfx("sounds/PerjuryOfTruth.wav"));
+        reflectedMap.put("UltimateHollow",new Sfx("sounds/UltimateHollow.wav"));
+        reflectedMap.put("LightOfHollow",new Sfx("sounds/LightOfHollow.wav"));
+        reflectedMap.put("OmenOfOne2",new Sfx("sounds/OmenOfOne2.wav"));
+        reflectedMap.put("OmenOfDestruction2",new Sfx("sounds/OmenOfDestruction2.wav"));
+        reflectedMap.put("OmenOfSilence2",new Sfx("sounds/OmenOfSilence2.wav"));
+        reflectedMap.put("OmenOfRepose2",new Sfx("sounds/OmenOfRepose2.wav"));
+        reflectedMap.put("OmenOfUnkilling2",new Sfx("sounds/OmenOfUnkilling2.wav"));
+        reflectedMap.put("OmenOfLust2",new Sfx("sounds/OmenOfLust2.wav"));
+        reflectedMap.put("OmenOfTruth2",new Sfx("sounds/OmenOfTruth2.wav"));
+        reflectedMap.put("Octrice2",new Sfx("sounds/Octrice2.wav"));
     }
 
-    /*     */
-    /*     */
-    /*     */
     public void receiveEditRelics() {
-        /* 158 */
         BaseMod.addRelicToCustomPool((AbstractRelic) new FriendOfTruth(), Witchcraft.Enums.COLOR_BLUE);
-        /* 159 */
         BaseMod.addRelicToCustomPool((AbstractRelic) new Eleanor(), Witchcraft.Enums.COLOR_BLUE);
-        /* 160 */
         BaseMod.addRelicToCustomPool((AbstractRelic) new EnchantedLibrary(), Witchcraft.Enums.COLOR_BLUE);
-        /* 161 */
         BaseMod.addRelicToCustomPool((AbstractRelic) new EarthEssenceRelic(), Witchcraft.Enums.COLOR_BLUE);
-        /* 162 */
         BaseMod.addRelicToCustomPool((AbstractRelic) new shadowverse.relics.Mysteria(), Witchcraft.Enums.COLOR_BLUE);
-        /* 164 */
         BaseMod.addRelicToCustomPool((AbstractRelic) new Offensive(), Witchcraft.Enums.COLOR_BLUE);
         BaseMod.addRelicToCustomPool((AbstractRelic) new Genius(), Witchcraft.Enums.COLOR_BLUE);
         BaseMod.addRelic((AbstractRelic) new BlackPinya(), RelicType.SHARED);
@@ -1041,232 +1029,125 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addRelicToCustomPool((AbstractRelic) new HeresyAvatar(),Bishop.Enums.COLOR_WHITE);
         BaseMod.addRelicToCustomPool((AbstractRelic) new ErisRelic(),Bishop.Enums.COLOR_WHITE);
         BaseMod.addRelicToCustomPool((AbstractRelic) new IminaRelic(),Bishop.Enums.COLOR_WHITE);
-        /*     */
     }
 
-    /*     */
-    /*     */   class Keywords
-            /*     */ {
-        /*     */ Keyword[] keywords;
-        /*     */
-    }
+   class Keywords
+   {
+       Keyword[] keywords;
+   }
 
-    /*     */
-    /*     */
+
     public void receiveEditStrings() {
-        /* 173 */
         logger.info("Adding Strings");
-        /*     */
-        /* 175 */
         String cardsPath = "localization/cards-" + Settings.language + ".json";
-        /* 176 */
         String characterPath = "localization/character-" + Settings.language + ".json";
-        /* 177 */
         String powerPath = "localization/powers-" + Settings.language + ".json";
-        /* 178 */
         String relicsPath = "localization/relics-" + Settings.language + ".json";
         String uiPath = "localization/UIStrings-" + Settings.language + ".json";
         String eventPath = "localization/events-" + Settings.language + ".json";
         String monsterPath = "localization/monsters-" + Settings.language + ".json";
         String potionPath = "localization/potions-" + Settings.language + ".json";
         String orbPath = "localization/orbs-" + Settings.language + ".json";
-        /* 179 */
         BaseMod.loadCustomStringsFile(CardStrings.class, cardsPath);
-        /* 180 */
         BaseMod.loadCustomStringsFile(CharacterStrings.class, characterPath);
-        /* 181 */
         BaseMod.loadCustomStringsFile(PowerStrings.class, powerPath);
-        /* 182 */
         BaseMod.loadCustomStringsFile(RelicStrings.class, relicsPath);
         BaseMod.loadCustomStringsFile(UIStrings.class, uiPath);
         BaseMod.loadCustomStringsFile(EventStrings.class, eventPath);
         BaseMod.loadCustomStringsFile(MonsterStrings.class, monsterPath);
         BaseMod.loadCustomStringsFile(PotionStrings.class, potionPath);
         BaseMod.loadCustomStringsFile(OrbStrings.class, orbPath);
-        /* 183 */
         logger.info("Success");
-        /*     */
     }
 
-    /*     */
-    /*     */
-    /*     */
     public void receiveEditCards() {
-        /* 188 */
         logger.info("Adding cards");
-        /* 189 */
         BaseMod.addCard((AbstractCard) new Strike_W());
-        /* 190 */
         BaseMod.addCard((AbstractCard) new Defend_W());
-        /* 191 */
         BaseMod.addCard((AbstractCard) new Insight());
-        /* 192 */
         BaseMod.addCard((AbstractCard) new FieryEmbrace());
-        /* 193 */
         BaseMod.addCard((AbstractCard) new FatesHand());
-        /* 194 */
         BaseMod.addCard((AbstractCard) new Lou());
-        /* 195 */
         BaseMod.addCard((AbstractCard) new Ogler());
-        /* 196 */
         BaseMod.addCard((AbstractCard) new ZealotOfTruth());
-        /* 197 */
         BaseMod.addCard((AbstractCard) new MagicMissile());
-        /* 198 */
         BaseMod.addCard((AbstractCard) new DimensionShift());
-        /* 199 */
         BaseMod.addCard((AbstractCard) new MagicOwl());
-        /* 200 */
         BaseMod.addCard((AbstractCard) new FireChain());
-        /* 201 */
         BaseMod.addCard((AbstractCard) new GigantChimera());
-        /* 202 */
         BaseMod.addCard((AbstractCard) new OmenOfTruth());
-        /* 203 */
         BaseMod.addCard((AbstractCard) new DimensionalWitch());
-        /* 204 */
         BaseMod.addCard((AbstractCard) new MysticSeeker());
-        /* 205 */
         BaseMod.addCard((AbstractCard) new EdictOfTruth());
-        /* 206 */
         BaseMod.addCard((AbstractCard) new TruthsAdjudication());
-        /* 207 */
         BaseMod.addCard((AbstractCard) new MysterianKnowledge());
-        /* 208 */
         BaseMod.addCard((AbstractCard) new MysterianCircle());
-        /* 209 */
         BaseMod.addCard((AbstractCard) new MysterianMissile());
-        /* 210 */
         BaseMod.addCard((AbstractCard) new CommenceExperiment());
-        /* 211 */
         BaseMod.addCard((AbstractCard) new MasterMageLevi());
-        /* 212 */
         BaseMod.addCard((AbstractCard) new Concentration());
-        /* 213 */
         BaseMod.addCard((AbstractCard) new PiousInstructor());
-        /* 214 */
         BaseMod.addCard((AbstractCard) new ConjureGuardian());
-        /* 215 */
         BaseMod.addCard((AbstractCard) new GolemAssault());
-        /* 216 */
         BaseMod.addCard((AbstractCard) new Clarke());
-        /* 217 */
         BaseMod.addCard((AbstractCard) new Faust());
-        /* 218 */
         BaseMod.addCard((AbstractCard) new OrichalcumGolem());
-        /* 219 */
         BaseMod.addCard((AbstractCard) new DwarfAlchemist());
-        /* 220 */
         BaseMod.addCard((AbstractCard) new WitchsCauldron());
-        /* 221 */
         BaseMod.addCard((AbstractCard) new Magisa());
-        /* 222 */
         BaseMod.addCard((AbstractCard) new StaffOfWhirlwinds());
-        /* 223 */
         BaseMod.addCard((AbstractCard) new ConjureTwosome());
-        /* 224 */
         BaseMod.addCard((AbstractCard) new Petrification());
-        /* 225 */
         BaseMod.addCard((AbstractCard) new AbsoluteZeroBlade());
-        /* 226 */
         BaseMod.addCard((AbstractCard) new Chaos());
-        /* 227 */
         BaseMod.addCard((AbstractCard) new ChainLightning());
-        /* 228 */
         BaseMod.addCard((AbstractCard) new Runie());
-        /* 229 */
         BaseMod.addCard((AbstractCard) new Telescope());
-        /* 230 */
         BaseMod.addCard((AbstractCard) new ForbiddenDarkMage());
-        /* 231 */
         BaseMod.addCard((AbstractCard) new ProductMachine());
-        /* 232 */
         BaseMod.addCard((AbstractCard) new RepairMode());
-        /* 233 */
         BaseMod.addCard((AbstractCard) new JetBroomWitch());
-        /* 234 */
         BaseMod.addCard((AbstractCard) new TetrasMettle());
-        /* 235 */
         BaseMod.addCard((AbstractCard) new IsabellesConjuration());
-        /* 236 */
         BaseMod.addCard((AbstractCard) new SorceryInSolidarity());
-        /* 237 */
         BaseMod.addCard((AbstractCard) new MechanizedLifeform());
-        /* 238 */
         BaseMod.addCard((AbstractCard) new MagitechGolem());
-        /* 239 */
         BaseMod.addCard((AbstractCard) new MechabookSorcerer());
-        /* 240 */
         BaseMod.addCard((AbstractCard) new SonicFour());
-        /* 241 */
         BaseMod.addCard((AbstractCard) new Tetra());
-        /* 242 */
         BaseMod.addCard((AbstractCard) new MechastaffSorcerer());
-        /* 243 */
         BaseMod.addCard((AbstractCard) new ArsMagna());
-        /* 244 */
         BaseMod.addCard((AbstractCard) new Cagliostro());
-        /* 245 */
         BaseMod.addCard((AbstractCard) new MadcapConjuration());
-        /* 246 */
         BaseMod.addCard((AbstractCard) new Awakened());
-        /* 247 */
         BaseMod.addCard((AbstractCard) new Erasmus());
-        /* 248 */
         BaseMod.addCard((AbstractCard) new Oz());
-        /* 249 */
         BaseMod.addCard((AbstractCard) new GrandSummoning());
-        /* 250 */
         BaseMod.addCard((AbstractCard) new Shop());
-        /* 251 */
         BaseMod.addCard((AbstractCard) new NaterranGreatTree());
-        /* 252 */
         BaseMod.addCard((AbstractCard) new Geoelementist());
-        /* 253 */
         BaseMod.addCard((AbstractCard) new Stormelementalist());
-        /* 254 */
         BaseMod.addCard((AbstractCard) new Pyromancer());
-        /* 255 */
         BaseMod.addCard((AbstractCard) new Elementalmana());
-        /* 256 */
         BaseMod.addCard((AbstractCard) new Riley());
-        /* 257 */
         BaseMod.addCard((AbstractCard) new ApexElemental());
-        /* 258 */
         BaseMod.addCard((AbstractCard) new DualAngle());
-        /* 259 */
         BaseMod.addCard((AbstractCard) new Ghios());
-        /* 260 */
         BaseMod.addCard((AbstractCard) new OmenOfOne());
-        /* 261 */
         BaseMod.addCard((AbstractCard) new Mysteria());
-        /* 262 */
         BaseMod.addCard((AbstractCard) new EarthFall());
-        /* 263 */
         BaseMod.addCard((AbstractCard) new InfernalSurge());
-        /* 264 */
         BaseMod.addCard((AbstractCard) new InfernalGaze());
-        /* 265 */
         BaseMod.addCard((AbstractCard) new HeavenFall());
-        /* 266 */
         BaseMod.addCard((AbstractCard) new Astaroth());
-        /* 267 */
         BaseMod.addCard((AbstractCard) new Scorpion());
-        /* 268 */
         BaseMod.addCard((AbstractCard) new Flamelord());
-        /* 269 */
         BaseMod.addCard((AbstractCard) new ViciousCommander());
-        /* 270 */
         BaseMod.addCard((AbstractCard) new WrathfulIcefiend());
-        /* 271 */
         BaseMod.addCard((AbstractCard) new Behemoth());
-        /* 272 */
         BaseMod.addCard((AbstractCard) new DemonOfPurgatory());
-        /* 273 */
         BaseMod.addCard((AbstractCard) new Desire());
-        /* 274 */
         BaseMod.addCard((AbstractCard) new Satan());
-        /* 275 */
         BaseMod.addCard((AbstractCard) new EmbodimentOfCocytus());
         BaseMod.addCard((AbstractCard) new JudgmentWord());
         BaseMod.addCard((AbstractCard) new Vincent());
@@ -1960,18 +1841,32 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCard((AbstractCard) new PhantomBloomPredator());
         BaseMod.addCard((AbstractCard) new WonderTree());
         BaseMod.addCard((AbstractCard) new Alberta());
-        /* 276 */
+        BaseMod.addCard((AbstractCard) new Shiro());
+        BaseMod.addCard((AbstractCard) new TheChariot());
+        BaseMod.addCard((AbstractCard) new TheChariot_I());
+        BaseMod.addCard((AbstractCard) new CorruptionOfUnkilling());
+        BaseMod.addCard((AbstractCard) new UltimateHollow());
+        BaseMod.addCard((AbstractCard) new LoathingDesire());
+        BaseMod.addCard((AbstractCard) new ReturningMelody());
+        BaseMod.addCard((AbstractCard) new EternalDispair());
+        BaseMod.addCard((AbstractCard) new UnleashTruth());
+        BaseMod.addCard((AbstractCard) new ResentfulScreaming());
+        BaseMod.addCard((AbstractCard) new RearriveOne());
+        BaseMod.addCard((AbstractCard) new EvidenceOfOne());
+        BaseMod.addCard((AbstractCard) new BlackArtifact2());
+        BaseMod.addCard((AbstractCard) new WhiteArtifact2());
+        BaseMod.addCard((AbstractCard) new SoloOfMelody());
+        BaseMod.addCard((AbstractCard) new FlowOfDispair());
+        BaseMod.addCard((AbstractCard) new ShootOfUnkilling());
+        BaseMod.addCard((AbstractCard) new LightOfHollow());
+        BaseMod.addCard((AbstractCard) new PerjuryOfTruth());
+        BaseMod.addCard((AbstractCard) new WingsOfDesire());
+        BaseMod.addCard((AbstractCard) new ExpandingScreaming());
         logger.info("Success");
-        /*     */
     }
 
-    /*     */
-    /*     */
-    /*     */
     public void receiveEditCharacters() {
-        /* 281 */
         logger.info("Adding char");
-        /* 282 */
         BaseMod.addCharacter((AbstractPlayer) new Witchcraft("Witchcraft"), "img/character/Witchcraft/button1.png", "img/character/Witchcraft/background.png", Witchcraft.Enums.WITCHCRAFT);
         BaseMod.addCharacter((AbstractPlayer) new Elf(("Elf")), "img/character/Elf/button.png", "img/character/Elf/background.png", Elf.Enums.Elf);
         BaseMod.addCharacter((AbstractPlayer) new Necromancer(("Necromancer")), "img/character/Necromancer/button.png", "img/character/Necromancer/background.png", Necromancer.Enums.Necromancer);
@@ -1979,14 +1874,6 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCharacter((AbstractPlayer) new Nemesis(("Nemesis")), "img/character/Nemesis/button.png", "img/character/Nemesis/background.png", Nemesis.Enums.Nemesis);
         BaseMod.addCharacter((AbstractPlayer) new Royal(("Royal")), "img/character/Royal/button.png", "img/character/Royal/background.png", Royal.Enums.Royal);
         BaseMod.addCharacter((AbstractPlayer) new Bishop(("Bishop")), "img/character/Bishop/button.png", "img/character/Bishop/background.png", Bishop.Enums.Bishop);
-        /*     */
     }
-    /*     */
 }
 
-
-
-/* Location:              F:\Steam\steamapps\common\SlayTheSpire\mods\shadowverseMod.jar!\shadowverse\shadowverse.Shadowverse.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */

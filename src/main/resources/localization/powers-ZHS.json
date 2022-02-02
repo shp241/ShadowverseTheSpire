@@ -855,7 +855,7 @@
     "NAME": "圣白破坏的创造物",
     "DESCRIPTIONS": [
       "回合开始时，获得 #b",
-      " 点格挡。"
+      " 点格挡。如果本场战斗已打出 #y新约·黑之章 则格挡翻倍。"
     ]
   },
   "shadowverse:BlackArtifactPower": {
@@ -1315,10 +1315,60 @@
   "shadowverse:AlbertaPower": {
     "NAME": "闪光精灵·艾珥芭塔",
     "DESCRIPTIONS": [
-      "如果本回合已打出的卡片数为 #b4 以上，增加 #b1 张",
+      "如果本回合已打出的卡片数为 #b4 ，增加 #b1 张",
       "#y闪光精灵·艾珥芭塔",
       "#y闪光精灵·艾珥芭塔+",
-      " 到手中。"
+      " 到手中并失去此效果。"
+    ]
+  },
+  "shadowverse:TheChariot_IPower": {
+    "NAME": "《暴走》战车·奥辂昂",
+    "DESCRIPTIONS": [
+      "回合结束时，随机对自己造成 #b",
+      " 点伤害或对随机敌人造成 #b",
+      " 点伤害。此行动将执行 #b2 次。"
+    ]
+  },
+  "shadowverse:TheChariotPower": {
+    "NAME": "《战车》·奥辂昂",
+    "DESCRIPTIONS": [
+      "回合结束时，随机触发以下一种效果： NL 获得 #b",
+      " 点格挡 NL 召唤一个 #y骑士 NL 对随机敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "shadowverse:IzudiaCorruptionPower": {
+    "NAME": "绝命的腐蚀",
+    "DESCRIPTIONS": [
+      "接下来 #b",
+      " 个回合结束时，全体敌人失去 #b1 点 #y力量 和 #y敏捷 。(无法重复叠加)"
+    ]
+  },
+  "shadowverse:ShootOfUnkillingPower": {
+    "NAME": "绝命的痛击",
+    "DESCRIPTIONS": [
+      "回合开始时给予意图为攻击且伤害为0的敌人其生命上限的伤害。"
+    ]
+  },
+  "shadowverse:OmenOfUnkillingPower2": {
+    "NAME": "绝命不弑·艾兹迪亚",
+    "DESCRIPTIONS": [
+      "接下来 #b",
+      " 个回合结束时，随机敌人本回合失去 #b6 点 #y力量 。(无法重复叠加)"
+    ]
+  },
+  "shadowverse:WingsOfDesirePower": {
+    "NAME": "爱绝的飞翔",
+    "DESCRIPTIONS": [
+      "下一次打出攻击牌将失去 #b1 点生命 #b",
+      " 次，全体敌人失去 #b",
+      " 点生命。"
+    ]
+  },
+  "shadowverse:OmenOfOnePower2": {
+    "NAME": "绝大唯我·马塞班恩",
+    "DESCRIPTIONS": [
+      "回合结束时，如果本回合打出过耗能为2以下的卡，对随机敌人造成 #b10 点伤害；如果打出过耗能为2以上的卡，对全体敌人造成 #b18 点伤害。"
     ]
   }
 }

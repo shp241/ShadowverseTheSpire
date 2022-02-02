@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.powers.EnergizedPower;
 import shadowverse.action.MinionAttackAction;
 import shadowverse.action.MinionBuffAction;
 import shadowverse.action.RemoveMinionAction;
+import shadowverse.powers.DualbladePower;
 
 public class QueenMagnus extends Minion {
 
@@ -75,6 +76,11 @@ public class QueenMagnus extends Minion {
             AbstractDungeon.actionManager.addToBottom(new SFXAction(this.ID.replace("shadowverse:", "") + "_Atk"));
             AbstractCreature p = AbstractDungeon.player;
             this.effect();
+            if (AbstractDungeon.player.hasPower(DualbladePower.POWER_ID)&&this.defense>1){
+                this.effect();
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new EnergizedPower(p, 1), 1));
+                AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(0, -1, this));
+            }
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new EnergizedPower(p, 1), 1));
             AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(0, -1, this));
             this.updateDescription();

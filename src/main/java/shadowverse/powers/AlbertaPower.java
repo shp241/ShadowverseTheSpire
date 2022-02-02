@@ -47,7 +47,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
        for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisTurn) {
            count++;
        }
-       if (count >= 3 && !trigger){
+       if (count == 3 && !trigger){
            AbstractCard c = new Alberta();
            if (upgraded)
                c.upgrade();

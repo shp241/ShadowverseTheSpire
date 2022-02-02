@@ -35,7 +35,7 @@ public class Muse extends CustomCard {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.SPECIAL, CardTarget.ENEMY);
         this.baseDamage = 3;
         this.baseBlock = 3;
-        this.baseMagicNumber = this.baseDamage;
+        this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(AbstractShadowversePlayer.Enums.NATURAL);
         this.exhaust = true;
@@ -46,8 +46,7 @@ public class Muse extends CustomCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeDamage(2);
-            this.baseMagicNumber = this.baseDamage;
-            this.magicNumber = this.baseMagicNumber;
+            upgradeMagicNumber(2);
         }
     }
 

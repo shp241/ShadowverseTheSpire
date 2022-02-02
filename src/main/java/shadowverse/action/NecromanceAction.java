@@ -65,6 +65,7 @@ public class NecromanceAction extends AbstractGameAction {
             }
         }
         else{
+            if (null != commonAction)
                 addToBot(commonAction);
         }
         this.isDone = true;

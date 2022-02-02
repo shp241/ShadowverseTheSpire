@@ -1,73 +1,123 @@
- package shadowverse.cards.Neutral;
- 
- import basemod.abstracts.CustomCard;
- import com.megacrit.cardcrawl.actions.AbstractGameAction;
- import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
- import com.megacrit.cardcrawl.actions.utility.SFXAction;
- import com.megacrit.cardcrawl.cards.AbstractCard;
- import com.megacrit.cardcrawl.characters.AbstractPlayer;
- import com.megacrit.cardcrawl.core.AbstractCreature;
- import com.megacrit.cardcrawl.core.CardCrawlGame;
- import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+package shadowverse.cards.Neutral;
+
+import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
- import com.megacrit.cardcrawl.monsters.AbstractMonster;
- import com.megacrit.cardcrawl.powers.AbstractPower;
- import java.util.ArrayList;
- import com.megacrit.cardcrawl.vfx.SpotlightPlayerEffect;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.megacrit.cardcrawl.vfx.SpotlightPlayerEffect;
+import rs.lazymankits.interfaces.cards.BranchableUpgradeCard;
+import rs.lazymankits.interfaces.cards.UpgradeBranch;
+import shadowverse.cards.Temp.EvidenceOfOne;
 import shadowverse.powers.OmenOfOnePower;
- 
- 
- public class OmenOfOne
-   extends AbstractNeutralCard
- {
-   public static final String ID = "shadowverse:OmenOfOne";
-   public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:OmenOfOne");
-   public static final String NAME = cardStrings.NAME;
-   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-   public static final String IMG_PATH = "img/cards/OmenOfOne.png";
-   
-   public OmenOfOne() {
-     super("shadowverse:OmenOfOne", NAME, "img/cards/OmenOfOne.png", 2, DESCRIPTION, CardType.POWER, CardColor.COLORLESS, CardRarity.RARE, CardTarget.SELF);
-     this.baseMagicNumber = 1;
-     this.magicNumber = this.baseMagicNumber;
-   }
- 
-   
-   public void upgrade() {
-     if (!this.upgraded) {
-       upgradeName();
-       upgradeBaseCost(1);
-     } 
-   }
- 
-   
-   public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     boolean powerExists = false;
-     boolean deckCheck = true;
-     ArrayList<String> tmp = new ArrayList<>();
-     for (AbstractPower pow : abstractPlayer.powers) {
-       if (pow.ID.equals("shadowverse:OmenOfOnePower")) {
-         powerExists = true;
-         break;
-       } 
-     } 
-     for (AbstractCard c : abstractPlayer.drawPile.group) {
-       if (tmp.contains(c.cardID)) {
-         deckCheck = false;
-         break;
-       } 
-       tmp.add(c.cardID);
-     } 
-     if (!powerExists && deckCheck) {
-               AbstractDungeon.effectsQueue.add(new SpotlightPlayerEffect());
-       addToBot((AbstractGameAction)new SFXAction("OmenOfOne"));
-       addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new OmenOfOnePower((AbstractCreature)abstractPlayer)));
-     } 
-   }
- 
-   
-   public AbstractCard makeCopy() {
-     return (AbstractCard)new OmenOfOne();
-   }
- }
+import shadowverse.powers.OmenOfOnePower2;
+
+
+public class OmenOfOne
+        extends AbstractNeutralCard implements BranchableUpgradeCard {
+    public static final String ID = "shadowverse:OmenOfOne";
+    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:OmenOfOne");
+    public static CardStrings cardStrings2 = CardCrawlGame.languagePack.getCardStrings("shadowverse:OmenOfOne2");
+    public static final String NAME = cardStrings.NAME;
+    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String IMG_PATH = "img/cards/OmenOfOne.png";
+    public static final String IMG_PATH2 = "img/cards/OmenOfOne2.png";
+
+    public OmenOfOne() {
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.POWER, CardColor.COLORLESS, CardRarity.RARE, CardTarget.SELF);
+        this.baseMagicNumber = 1;
+        this.magicNumber = this.baseMagicNumber;
+    }
+
+
+    public void upgrade() {
+        ((UpgradeBranch) ((BranchableUpgradeCard) this).possibleBranches().get(chosenBranch())).upgrade();
+    }
+
+
+    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+        switch (chosenBranch()){
+            case 0:
+                boolean deckCheck = true;
+                ArrayList<String> tmp = new ArrayList<>();
+                for (AbstractCard c : abstractPlayer.drawPile.group) {
+                    if (tmp.contains(c.cardID)) {
+                        deckCheck = false;
+                        break;
+                    }
+                    tmp.add(c.cardID);
+                }
+                if (deckCheck) {
+                    AbstractDungeon.effectsQueue.add(new SpotlightPlayerEffect());
+                    addToBot((AbstractGameAction) new SFXAction("OmenOfOne"));
+                    addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, (AbstractPower) new OmenOfOnePower((AbstractCreature) abstractPlayer)));
+                }
+                break;
+            case 1:
+                AbstractDungeon.effectsQueue.add(new SpotlightPlayerEffect());
+                addToBot((AbstractGameAction) new SFXAction("OmenOfOne2"));
+                ArrayList<String> tmp2 = new ArrayList<>();
+                for (AbstractCard c : abstractPlayer.drawPile.group) {
+                    if (tmp2.contains(c.cardID)) {
+                        addToBot((AbstractGameAction)new ExhaustSpecificCardAction(c,abstractPlayer.drawPile));
+                    }else {
+                        tmp2.add(c.cardID);
+                    }
+                }
+                addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,new OmenOfOnePower2(abstractPlayer)));
+                addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+                break;
+        }
+
+    }
+
+
+    public AbstractCard makeCopy() {
+        return (AbstractCard) new OmenOfOne();
+    }
+
+    @Override
+    public List<UpgradeBranch> possibleBranches() {
+        ArrayList<UpgradeBranch> list = new ArrayList<UpgradeBranch>();
+        list.add(new UpgradeBranch() {
+            @Override
+            public void upgrade() {
+                ++OmenOfOne.this.timesUpgraded;
+                OmenOfOne.this.upgraded = true;
+                OmenOfOne.this.name = NAME + "+";
+                OmenOfOne.this.initializeTitle();
+                OmenOfOne.this.upgradeBaseCost(1);
+            }
+        });
+        list.add(new UpgradeBranch() {
+            @Override
+            public void upgrade() {
+                ++OmenOfOne.this.timesUpgraded;
+                OmenOfOne.this.upgraded = true;
+                OmenOfOne.this.textureImg = IMG_PATH2;
+                OmenOfOne.this.loadCardImage(IMG_PATH2);
+                OmenOfOne.this.name = cardStrings2.NAME;
+                OmenOfOne.this.initializeTitle();
+                OmenOfOne.this.rawDescription = cardStrings2.DESCRIPTION;
+                OmenOfOne.this.initializeDescription();
+                OmenOfOne.this.cardsToPreview = new EvidenceOfOne();
+            }
+        });
+        return list;
+
+    }
+}
 

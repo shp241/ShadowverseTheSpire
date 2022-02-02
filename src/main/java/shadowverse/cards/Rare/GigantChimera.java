@@ -96,11 +96,9 @@ import com.megacrit.cardcrawl.vfx.combat.MindblastEffect;
          addToBot((AbstractGameAction)new SFXAction("ATTACK_HEAVY"));
          addToBot((AbstractGameAction)new VFXAction((AbstractCreature)abstractPlayer, (AbstractGameEffect)new MindblastEffect(abstractPlayer.dialogX, abstractPlayer.dialogY, abstractPlayer.flipHorizontal), 0.1F));
          addToBot((AbstractGameAction)new DamageAction((AbstractCreature)weakestMonster, new DamageInfo((AbstractCreature)abstractPlayer, leftDamage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-         System.out.println("大美伤害小于生命值最低怪物体力，大美已造成伤害");
          leftDamage = 0;
          continue;
        } else if (leftDamage >= amountOfweakestMonster) {
-         System.out.println("当前生命值最低怪物体力与护盾的和为" + amountOfweakestMonster);
          int count = 0;
          for (AbstractMonster m2 : (AbstractDungeon.getMonsters()).monsters) {
            if (!m2.isDeadOrEscaped()) {
@@ -111,24 +109,19 @@ import com.megacrit.cardcrawl.vfx.combat.MindblastEffect;
            addToBot((AbstractGameAction)new SFXAction("ATTACK_HEAVY"));
            addToBot((AbstractGameAction)new VFXAction((AbstractCreature)abstractPlayer, (AbstractGameEffect)new MindblastEffect(abstractPlayer.dialogX, abstractPlayer.dialogY, abstractPlayer.flipHorizontal), 0.1F));
            addToBot((AbstractGameAction)new DamageAction((AbstractCreature)weakestMonster, new DamageInfo((AbstractCreature)abstractPlayer, leftDamage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-           System.out.println("大美伤害大于生命值最低怪物体力，当前房间只有一只怪物，大美已造成伤害");
            leftDamage = 0;
            continue;
-         } 
-         System.out.println("大美伤害大于生命值最低怪物体力，当前房间有多只怪物");
+         }
          if (!weakestMonster.isDead || !weakestMonster.isDeadOrEscaped()) {
            addToBot((AbstractGameAction)new SFXAction("ATTACK_HEAVY"));
            addToBot((AbstractGameAction)new VFXAction((AbstractCreature)abstractPlayer, (AbstractGameEffect)new MindblastEffect(abstractPlayer.dialogX, abstractPlayer.dialogY, abstractPlayer.flipHorizontal), 0.1F));
            addToBot((AbstractGameAction)new DamageAction((AbstractCreature)weakestMonster, new DamageInfo((AbstractCreature)abstractPlayer, amountOfweakestMonster, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-           System.out.println("大美已杀死当前生命值最低怪物");
            leftDamage -= amountOfweakestMonster;
-           System.out.println("大美伤害值剩余" + leftDamage);
            (AbstractDungeon.getMonsters()).monsters.remove(weakestMonster);
            weakestMonster = null;
          } 
        } 
      }
-
    }
  
    

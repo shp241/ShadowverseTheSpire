@@ -3,10 +3,14 @@ package shadowverse.powers;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import shadowverse.cards.Temp.BlackArtifact2;
+import shadowverse.cards.Temp.WhiteArtifact2;
 
 
 public class WhiteArtifactPower
@@ -38,7 +42,18 @@ public class WhiteArtifactPower
 
     public void atStartOfTurnPostDraw() {
         flash();
-        addToBot((AbstractGameAction)new GainBlockAction(this.owner,this.amount));
+        boolean hasPlayedBlack2 = false;
+        for (AbstractCard c: AbstractDungeon.actionManager.cardsPlayedThisCombat){
+            if (c instanceof BlackArtifact2){
+                hasPlayedBlack2 = true;
+                break;
+            }
+        }
+        if (hasPlayedBlack2){
+            addToBot((AbstractGameAction)new GainBlockAction(this.owner,this.amount*2));
+        }else {
+            addToBot((AbstractGameAction)new GainBlockAction(this.owner,this.amount));
+        }
     }
 
 

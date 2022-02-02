@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import shadowverse.action.RemoveMinionAction;
+import shadowverse.powers.DualbladePower;
 
 public class QueenHemera extends Minion {
 
@@ -60,6 +61,10 @@ public class QueenHemera extends Minion {
         if (this.defense > 0) {
             AbstractDungeon.actionManager.addToBottom(new SFXAction(this.ID.replace("shadowverse:", "") + "_Atk"));
             this.effect();
+            if (AbstractDungeon.player.hasPower(DualbladePower.POWER_ID)&&this.defense>1){
+                this.effect();
+                AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(0, -1, this));
+            }
             AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(0, -1, this));
             this.updateDescription();
         }

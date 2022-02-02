@@ -17,6 +17,7 @@ import shadowverse.cards.Temp.GildedBlade;
 import shadowverse.cards.Temp.GildedBoots;
 import shadowverse.cards.Temp.GildedGoblet;
 import shadowverse.cards.Temp.GildedNecklace;
+import shadowverse.cards.Uncommon.UltimateHollow;
 
 public class ApostleOfUsurpationPower extends AbstractPower {
     public static final String POWER_ID = "shadowverse:ApostleOfUsurpationPower";
@@ -49,7 +50,7 @@ public class ApostleOfUsurpationPower extends AbstractPower {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (card instanceof GildedBlade || card instanceof GildedBoots || card instanceof GildedGoblet || card instanceof GildedNecklace) {
+        if (card instanceof GildedBlade || card instanceof GildedBoots || card instanceof GildedGoblet || card instanceof GildedNecklace || card instanceof UltimateHollow) {
             flash();
             addToBot(new SFXAction("ApostleOfUsurpation_Pow"));
             addToBot(new DamageRandomEnemyAction(new DamageInfo(this.owner, this.amount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));

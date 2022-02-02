@@ -122,6 +122,7 @@ public class Marlone extends CustomCard implements BranchableUpgradeCard {
                 Marlone.this.rawDescription = cardStrings2.DESCRIPTION;
                 Marlone.this.initializeDescription();
                 Marlone.this.branch1 = false;
+                Marlone.this.cardsToPreview = null;
                 Marlone.this.rarity = CardRarity.RARE;
                 Marlone.this.setDisplayRarity(Marlone.this.rarity);
             }

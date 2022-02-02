@@ -63,9 +63,9 @@ public class OmnifacedArchdemon
             amt = 3;
         }
         for (int i=0;i<amt;i++){
-            addToBot((AbstractGameAction) new HealAction(abstractPlayer,abstractPlayer,this.magicNumber));
             AbstractCreature m = (AbstractCreature) AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
             if (m != null && !m.isDeadOrEscaped()){
+                addToBot((AbstractGameAction) new HealAction(abstractPlayer,abstractPlayer,this.magicNumber));
                 addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new BiteEffect(m.hb.cX, m.hb.cY - 40.0F * Settings.scale, Color.SCARLET.cpy()), 0.2F));
                 addToBot((AbstractGameAction)new DamageAction((AbstractCreature)m, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
             }
