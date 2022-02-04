@@ -33,7 +33,7 @@ public class GenerateNineAction extends AbstractGameAction {
         if (list != null && list.size() != 0) {
             Collections.shuffle(list);
             for (AbstractCard c : list) {
-                if (!nameTmp.contains(c.cardID)){
+                if (!nameTmp.contains(c.cardID) && finalList.size()<10-p.hand.group.size()){
                     nameTmp.add(c.cardID);
                     finalList.add(c);
                 }

@@ -1,5 +1,5 @@
  package shadowverse.powers;
- 
+
  import com.badlogic.gdx.graphics.Texture;
  import com.megacrit.cardcrawl.actions.AbstractGameAction;
  import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -11,25 +11,23 @@
  import com.megacrit.cardcrawl.monsters.AbstractMonster;
  import com.megacrit.cardcrawl.powers.AbstractPower;
  import shadowverse.action.SpellBoostAction;
- 
- public class MysticSeekerPower
+
+ public class BirthOfRavenousPower
    extends AbstractPower {
-   public static final String POWER_ID = "shadowverse:MysticSeeker";
-   private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings("shadowverse:MysticSeeker");
+   public static final String POWER_ID = "shadowverse:BirthOfRavenousPower";
+   private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings("shadowverse:BirthOfRavenousPower");
    public static final String NAME = powerStrings.NAME;
    public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
    public int counter = 0;
-   private AbstractCard card;
-   
-   public MysticSeekerPower(AbstractCreature owner, AbstractCard card) {
+
+   public BirthOfRavenousPower(AbstractCreature owner) {
      this.name = NAME;
-     this.ID = "shadowverse:MysticSeeker";
+     this.ID = POWER_ID;
      this.owner = owner;
      this.amount = -1;
      this.type = PowerType.BUFF;
-     this.card = card;
      updateDescription();
-     this.img = new Texture("img/powers/MysticSeekerPower.png");
+     this.img = new Texture("img/powers/BirthOfRavenousPower.png");
    }
  
    
@@ -40,11 +38,9 @@
    
    public void atStartOfTurnPostDraw() {
      flash();
-     if (this.counter <= 3) {
-       addToBot((AbstractGameAction)new SpellBoostAction(AbstractDungeon.player, this.card, AbstractDungeon.player.hand.group));
-     } else {
-       addToBot((AbstractGameAction)new DrawCardAction((AbstractCreature)AbstractDungeon.player, 3));
-     } 
+     if (this.counter > 3) {
+         addToBot((AbstractGameAction) new DrawCardAction((AbstractCreature) AbstractDungeon.player, 1));
+     }
      this.counter = 0;
    }
    

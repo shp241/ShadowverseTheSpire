@@ -52,7 +52,7 @@ public class FlowOfDispair
         addToBot((AbstractGameAction)new SFXAction("FlowOfDispair"));
         addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new MiracleEffect(Color.SKY.cpy(),Color.WHITE.cpy(),"HEAL_3")));
         for (int i=0;i<4;i++){
-            addToTop((AbstractGameAction)new VFXAction((AbstractGameEffect)new ThrowDaggerEffect(abstractMonster.hb.cX, abstractMonster.hb.cY)));
+            addToTop((AbstractGameAction)new VFXAction((AbstractGameEffect)new ThrowDaggerEffect(abstractMonster.hb.cX, abstractMonster.hb.cY),0.3F));
         }
         BigDecimal amt = new BigDecimal(abstractMonster.maxHealth*0.4);
         BigDecimal ft = new BigDecimal(40);

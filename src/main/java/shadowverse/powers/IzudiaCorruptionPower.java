@@ -43,8 +43,10 @@ public class IzudiaCorruptionPower extends TwoAmountPower {
         if (isPlayer) {
             this.amount2--;
             for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters){
-                addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)mo, (AbstractCreature)this.owner, (AbstractPower)new StrengthPower((AbstractCreature)mo, -1), -1, true, AbstractGameAction.AttackEffect.NONE));
-                addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)mo, (AbstractCreature)this.owner, (AbstractPower)new DexterityPower((AbstractCreature)mo, -1), -1, true, AbstractGameAction.AttackEffect.NONE));
+                if (!mo.isDeadOrEscaped()){
+                    addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)mo, (AbstractCreature)this.owner, (AbstractPower)new StrengthPower((AbstractCreature)mo, -1), -1, true, AbstractGameAction.AttackEffect.NONE));
+                    addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)mo, (AbstractCreature)this.owner, (AbstractPower)new DexterityPower((AbstractCreature)mo, -1), -1, true, AbstractGameAction.AttackEffect.NONE));
+                }
             }
             if (this.amount2<=0){
                 addToBot((AbstractGameAction)new RemoveSpecificPowerAction(this.owner,this.owner,this));

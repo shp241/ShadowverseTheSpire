@@ -960,8 +960,13 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("OmenOfRepose2",new Sfx("sounds/OmenOfRepose2.wav"));
         reflectedMap.put("OmenOfUnkilling2",new Sfx("sounds/OmenOfUnkilling2.wav"));
         reflectedMap.put("OmenOfLust2",new Sfx("sounds/OmenOfLust2.wav"));
+        reflectedMap.put("LustfulDesire",new Sfx("sounds/LustfulDesire.wav"));
         reflectedMap.put("OmenOfTruth2",new Sfx("sounds/OmenOfTruth2.wav"));
         reflectedMap.put("Octrice2",new Sfx("sounds/Octrice2.wav"));
+        reflectedMap.put("OmenOfCraving",new Sfx("sounds/OmenOfCraving.wav"));
+        reflectedMap.put("OmenOfCraving2",new Sfx("sounds/OmenOfCraving2.wav"));
+        reflectedMap.put("RavenousSweetness",new Sfx("sounds/RavenousSweetness.wav"));
+        reflectedMap.put("BirthOfRavenous",new Sfx("sounds/BirthOfRavenous.wav"));
     }
 
     public void receiveEditRelics() {
@@ -1862,6 +1867,9 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCard((AbstractCard) new PerjuryOfTruth());
         BaseMod.addCard((AbstractCard) new WingsOfDesire());
         BaseMod.addCard((AbstractCard) new ExpandingScreaming());
+        BaseMod.addCard((AbstractCard) new RavenousSweetness());
+        BaseMod.addCard((AbstractCard) new OmenOfCraving());
+        BaseMod.addCard((AbstractCard) new BirthOfRavenous());
         logger.info("Success");
     }
 

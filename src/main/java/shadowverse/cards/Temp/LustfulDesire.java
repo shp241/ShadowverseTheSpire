@@ -26,7 +26,7 @@ import shadowverse.powers.WrathPower;
  public class LustfulDesire
    extends CustomCard {
    public static final String ID = "shadowverse:LustfulDesire";
-   public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:OmenOfLust2");
+   public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:LustfulDesire");
    public static final String NAME = cardStrings.NAME;
    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
    public static final String IMG_PATH = "img/cards/OmenOfLust2.png";
@@ -34,6 +34,8 @@ import shadowverse.powers.WrathPower;
    public LustfulDesire() {
      super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Vampire.Enums.COLOR_SCARLET, CardRarity.SPECIAL, CardTarget.ENEMY);
      this.baseDamage = 14;
+     this.baseMagicNumber = 2;
+     this.magicNumber = this.baseMagicNumber;
    }
  
    
@@ -46,7 +48,7 @@ import shadowverse.powers.WrathPower;
    }
 
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction) new SFXAction("OmenOfLust2"));
+     addToBot((AbstractGameAction) new SFXAction("LustfulDesire"));
      addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
      addToBot((AbstractGameAction)new MakeTempCardInHandAction(new WingsOfDesire()));
      if (abstractPlayer.hasPower(EpitaphPower.POWER_ID)||abstractPlayer.hasPower(WrathPower.POWER_ID)){

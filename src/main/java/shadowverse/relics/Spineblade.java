@@ -16,6 +16,7 @@ import shadowverse.cards.Temp.GildedBlade;
 import shadowverse.cards.Temp.GildedBoots;
 import shadowverse.cards.Temp.GildedGoblet;
 import shadowverse.cards.Temp.GildedNecklace;
+import shadowverse.cards.Uncommon.UltimateHollow;
 
 public class Spineblade extends CustomRelic {
     public static final String ID = "shadowverse:Spineblade";
@@ -34,7 +35,7 @@ public class Spineblade extends CustomRelic {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (card instanceof GildedBlade || card instanceof GildedBoots || card instanceof GildedGoblet || card instanceof GildedNecklace) {
+        if (card instanceof GildedBlade || card instanceof GildedBoots || card instanceof GildedGoblet || card instanceof GildedNecklace || card instanceof UltimateHollow) {
             addToBot(new DrawCardAction(AbstractDungeon.player, 1));
         }
     }

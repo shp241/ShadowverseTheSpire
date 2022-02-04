@@ -423,7 +423,7 @@
   },
   "shadowverse:OmenOfOne2": {
     "NAME": "绝大唯我·马塞班恩",
-    "DESCRIPTION": "消耗 抽牌堆中重复的牌。 NL 回合结束时如果打出过耗能为2以下的牌，对随机敌人造成10点伤害，如果打出过耗能为2以上的牌，对全体敌人造成18点伤害。 NL 增加1张 *绝大的证明 到手中。"
+    "DESCRIPTION": "消耗 抽牌堆中重复的牌。 NL 此后，如果抽牌堆和弃牌堆卡片数量总和为卡组一半以上，回合结束时如果打出过耗能为2以下的牌，对随机敌人造成10点伤害，如果打出过耗能为2以上的牌，对全体敌人造成18点伤害。 NL 增加1张 *绝大的证明 到手中。"
   },
   "shadowverse:RearriveOne": {
     "NAME": "再临的绝大",
@@ -1904,6 +1904,10 @@
   "shadowverse:OmenOfLust2": {
     "NAME": "爱绝奸淫·瓦娜蕾格",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 增加1张 *爱绝的飞翔 到手中。 NL 狂乱 获得 !M! 点 力量 和 敏捷 。 NL 谢幕曲 如果 狂乱 ，增加7张没有这个效果的 *爱绝奸淫·瓦娜蕾格 到抽牌堆中。"
+  },
+  "shadowverse:LustfulDesire": {
+    "NAME": "爱绝奸淫·瓦娜蕾格",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 增加1张 *爱绝的飞翔 到手中。 NL 狂乱 获得 !M! 点 力量 和 敏捷 。"
   },
   "shadowverse:ServantOfLust": {
     "NAME": "奸淫的信徒",
@@ -4016,5 +4020,21 @@
   "shadowverse:SoloOfMelody": {
     "NAME": "奏绝的独唱",
     "DESCRIPTION": "消耗 1张手牌。 NL 对随机敌人造成 !D! 点伤害。 NL 对全体敌人造成 !M! 点伤害。 NL 消耗 。"
+  },
+  "shadowverse:OmenOfCraving": {
+    "NAME": "饥饿绝杰·吉鲁涅莉婕",
+    "DESCRIPTION": "造成 !D! 点伤害，回复造成伤害的生命。 NL 获得 !B! 点 格挡 ，获得1层 残影 。 NL 获得2点 力量 。 NL 如果为第5回合以上，抽5张牌。"
+  },
+  "shadowverse:OmenOfCraving2": {
+    "NAME": "涸绝饥饿·吉鲁涅莉婕",
+    "DESCRIPTION": "造成 !D! 点伤害，回复6点生命。 NL 获得2点 力量 ，失去2点 敏捷 。 NL 瞬念召唤 自己的回合开始，若为第5回合，则会 消耗 ，并将1张 *涸绝的甘露 加入手中。"
+  },
+  "shadowverse:RavenousSweetness": {
+    "NAME": "涸绝的甘露",
+    "DESCRIPTION": "造成 !D! 点伤害，回复5点生命。 NL 使目标失去5点 力量 。 NL 抽5张牌。 NL 消耗 。"
+  },
+  "shadowverse:BirthOfRavenous": {
+    "NAME": "降诞的涸绝",
+    "DESCRIPTION": "获得「如果回合内已打出3张以上的卡，下回合额外抽1张卡」效果。 NL 消耗 。"
   }
 }

@@ -15,6 +15,7 @@ import shadowverse.cards.Temp.GildedBlade;
 import shadowverse.cards.Temp.GildedBoots;
 import shadowverse.cards.Temp.GildedGoblet;
 import shadowverse.cards.Temp.GildedNecklace;
+import shadowverse.cards.Uncommon.UltimateHollow;
 import shadowverse.orbs.*;
 
 public class AlwidaPower extends AbstractPower {
@@ -54,7 +55,7 @@ public class AlwidaPower extends AbstractPower {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (this.triggeredThisTurn < this.amount && (card instanceof GildedBlade || card instanceof GildedNecklace || card instanceof GildedGoblet || card instanceof GildedBoots)) {
+        if (this.triggeredThisTurn < this.amount && (card instanceof GildedBlade || card instanceof GildedNecklace || card instanceof GildedGoblet || card instanceof GildedBoots || card instanceof UltimateHollow)) {
             this.triggeredThisTurn++;
             AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new Pirate()));
             AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new Viking()));

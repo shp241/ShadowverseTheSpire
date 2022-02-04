@@ -50,11 +50,7 @@ public class OmenOfLust
 
 
     public void upgrade() {
-        if (!this.upgraded) {
-            upgradeName();
-            upgradeDamage(3);
-            upgradeMagicNumber(1);
-        }
+        ((UpgradeBranch) ((BranchableUpgradeCard) this).possibleBranches().get(chosenBranch())).upgrade();
     }
 
 

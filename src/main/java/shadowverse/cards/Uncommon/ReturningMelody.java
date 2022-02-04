@@ -53,7 +53,7 @@ public class ReturningMelody
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         addToBot((AbstractGameAction)new SFXAction("ReturningMelody"));
-        addToBot((AbstractGameAction)new SelectCardsInHandAction(this.magicNumber,TEXT[0],true,false, card -> {
+        addToBot((AbstractGameAction)new SelectCardsInHandAction(this.magicNumber,TEXT[0],true,true, card -> {
             return card.type ==CardType.ATTACK;
         }, abstractCards ->{
             for (AbstractCard c:abstractCards){

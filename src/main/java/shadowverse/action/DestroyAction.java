@@ -42,7 +42,9 @@ public class DestroyAction extends AbstractGameAction {
                 AbstractCard card = tmp.getTopCard();
                     card.unhover();
                     addToBot((AbstractGameAction)new ExhaustSpecificCardAction(card,this.p.discardPile));
-                addToBot(action);
+                    if (null!=action){
+                        addToBot(action);
+                    }
                 addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p, (AbstractPower)new Cemetery((AbstractCreature)p, 1), 1));
                 this.isDone = true;
                 return;
@@ -55,7 +57,9 @@ public class DestroyAction extends AbstractGameAction {
             for (AbstractCard c : AbstractDungeon.gridSelectScreen.selectedCards) {
                 c.unhover();
                 addToBot((AbstractGameAction)new ExhaustSpecificCardAction(c,this.p.discardPile));
-                addToBot(action);
+                if (null!=action){
+                    addToBot(action);
+                }
                 addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p, (AbstractPower)new Cemetery((AbstractCreature)p, 1), 1));
             }
             AbstractDungeon.gridSelectScreen.selectedCards.clear();

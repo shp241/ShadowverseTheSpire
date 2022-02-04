@@ -104,7 +104,9 @@ public class BurialAction extends AbstractGameAction {
             returnCards();
             AbstractDungeon.handCardSelectScreen.wereCardsRetrieved = true;
             AbstractDungeon.handCardSelectScreen.selectedCards.group.clear();
-            addToBot(action);
+            if (null!=action){
+                addToBot(action);
+            }
             addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p, (AbstractPower)new Cemetery((AbstractCreature)p, 1), 1));
             if (this.p.hasPower(CarnivalNecromancerPower.POWER_ID)){
                 int drawAmt = 0;

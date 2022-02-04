@@ -77,7 +77,9 @@ public class OmenOfOne
                         tmp2.add(c.cardID);
                     }
                 }
-                addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,new OmenOfOnePower2(abstractPlayer)));
+                if(tmp2.size()+abstractPlayer.discardPile.size()>=abstractPlayer.masterDeck.size()/2){
+                    addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,new OmenOfOnePower2(abstractPlayer)));
+                }
                 addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
                 break;
         }
@@ -99,7 +101,8 @@ public class OmenOfOne
                 OmenOfOne.this.upgraded = true;
                 OmenOfOne.this.name = NAME + "+";
                 OmenOfOne.this.initializeTitle();
-                OmenOfOne.this.upgradeBaseCost(1);
+                OmenOfOne.this.cost = 1;
+                OmenOfOne.this.upgradedCost = true;
             }
         });
         list.add(new UpgradeBranch() {

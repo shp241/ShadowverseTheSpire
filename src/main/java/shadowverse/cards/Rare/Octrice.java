@@ -147,8 +147,10 @@ public class Octrice extends CustomCard implements BranchableUpgradeCard {
                         powers.add(pow);
                     }
                 }
-                Collections.shuffle(powers);
-                addToBot((AbstractGameAction) new ApplyPowerAction(p, p, powers.get(0)));
+                if (powers.size()>0){
+                    Collections.shuffle(powers);
+                    addToBot((AbstractGameAction) new ApplyPowerAction(p, p, powers.get(0)));
+                }
                 int r1 = AbstractDungeon.cardRandomRng.random(3);
                 AbstractCard c1 = returnProphecy().get(r1);
                 addToBot(new MakeTempCardInHandAction(c1));
