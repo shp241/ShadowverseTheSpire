@@ -48,7 +48,7 @@ public class OmenOfCraving extends AbstractNeutralCard implements BranchableUpgr
     @Override
     public void atTurnStart() {
         if (chosenBranch()==1){
-            if (AbstractDungeon.actionManager.turn == 4 && dupCheck) {
+            if (AbstractDungeon.actionManager.turn >= 4 && dupCheck) {
                 dupCheck = false;
                 AbstractCard c = new RavenousSweetness();
                 if (AbstractDungeon.player.discardPile.contains((AbstractCard)this)) {
@@ -58,7 +58,7 @@ public class OmenOfCraving extends AbstractNeutralCard implements BranchableUpgr
                     addToBot((AbstractGameAction)new ExhaustSpecificCardAction(this, AbstractDungeon.player.drawPile));
                     addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, 1));
                 }
-            }else if (AbstractDungeon.actionManager.turn != 4){
+            }else if (AbstractDungeon.actionManager.turn < 4){
                 dupCheck = true;
             }
         }
@@ -73,7 +73,7 @@ public class OmenOfCraving extends AbstractNeutralCard implements BranchableUpgr
                 addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
                 addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,new StrengthPower(abstractPlayer,2),2));
                 addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,new BlurPower(abstractPlayer,1),1));
-                if (AbstractDungeon.actionManager.turn == 4){
+                if (AbstractDungeon.actionManager.turn >= 4){
                     addToBot((AbstractGameAction)new DrawCardAction(5));
                 }
                 break;

@@ -148,6 +148,8 @@ public class OmenOfDestruction
                 OmenOfDestruction.this.rawDescription = cardStrings2.DESCRIPTION;
                 OmenOfDestruction.this.initializeDescription();
                 OmenOfDestruction.this.previewBranch = 1;
+                OmenOfDestruction.this.type = CardType.ATTACK;
+                OmenOfDestruction.this.exhaust = true;
             }
         });
         return list;

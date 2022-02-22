@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import shadowverse.cards.Rare.LightOfHollow;
 import shadowverse.cards.Temp.GildedBlade;
 import shadowverse.cards.Temp.GildedBoots;
 import shadowverse.cards.Temp.GildedGoblet;
@@ -35,7 +36,7 @@ public class Spineblade extends CustomRelic {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (card instanceof GildedBlade || card instanceof GildedBoots || card instanceof GildedGoblet || card instanceof GildedNecklace || card instanceof UltimateHollow) {
+        if (card instanceof GildedBlade || card instanceof GildedBoots || card instanceof GildedGoblet || card instanceof GildedNecklace || card instanceof UltimateHollow || card instanceof LightOfHollow) {
             addToBot(new DrawCardAction(AbstractDungeon.player, 1));
         }
     }

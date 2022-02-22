@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import shadowverse.cards.Rare.LightOfHollow;
 import shadowverse.cards.Temp.GildedBlade;
 import shadowverse.cards.Temp.GildedBoots;
 import shadowverse.cards.Temp.GildedGoblet;
@@ -53,7 +54,7 @@ public class DiscipleOfUsurpationPower extends AbstractPower {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (card instanceof GildedBlade || card instanceof GildedBoots || card instanceof GildedGoblet || card instanceof GildedNecklace || card instanceof UltimateHollow) {
+        if (card instanceof GildedBlade || card instanceof GildedBoots || card instanceof GildedGoblet || card instanceof GildedNecklace || card instanceof UltimateHollow || card instanceof LightOfHollow) {
             flash();
             addToBot(new SFXAction("DiscipleOfUsurpation_Pow"));
             addToBot(new GainBlockAction(this.owner,this.amount));

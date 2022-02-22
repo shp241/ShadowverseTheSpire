@@ -1483,7 +1483,7 @@
   },
   "shadowverse:GenerateNine": {
     "NAME": "转瞬即逝的幸福",
-    "DESCRIPTION": "机械 。 NL 本回合受到的6以上的伤害转变为5。 NL 爆能强化 4 \b随机将4张名称各不相同的 机械 攻击牌本回合耗能变为0从抽牌堆中加入手中。 NL 虚无 。 NL 消耗 。"
+    "DESCRIPTION": "机械 。 NL 本回合受到的6以上的伤害转变为5。 NL 爆能强化 4 \b将名称各不相同的 机械 攻击牌本回合耗能变为0从抽牌堆中加入手中直到满为止。 NL 虚无 。 NL 消耗 。"
   },
   "shadowverse:Aenea": {
     "NAME": "丹紫抵御者·安涅尔",
@@ -1499,7 +1499,7 @@
   },
   "shadowverse:OmenOfSilence2": {
     "NAME": "绝叫沉默·鲁鲁纳伊",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 本场战斗每打出1张 *绝叫沉默·鲁鲁纳伊，伤害增加3点。 NL 如果已打出10张以上，伤害不再增加，改为对全体敌人造成伤害并给予随机敌人3层 易伤 和 虚弱 。 NL 谢幕曲 被 消耗 时增加1张 *扩散的绝叫 到手中。 NL 消耗 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 本场战斗每打出1张 *绝叫沉默·鲁鲁纳伊，伤害增加3点。 NL 如果已打出10张以上，伤害不再增加，给予随机敌人3层 易伤 和 虚弱 。 NL 谢幕曲 被 消耗 时增加1张 *扩散的绝叫 到手中。 NL 消耗 。"
   },
   "shadowverse:OmenOfSilence2Copy": {
     "NAME": "绝叫沉默·鲁鲁纳伊",
@@ -2321,7 +2321,7 @@
   },
   "shadowverse:OmenOfDestruction2": {
     "NAME": "奏绝破坏·里榭娜",
-    "DESCRIPTION": "获得 !M! 层 人工制品 。 NL 抉择 ：增加1张 *新约·白之章 或 *新约·黑之章 或 *奏绝的独唱 到手中。 NL 如果消耗堆中的攻击牌为10张以上，改为全部加入手中。 NL 亡者召还 0、 亡者召还 0、 亡者召还 1。"
+    "DESCRIPTION": "获得 !M! 层 人工制品 。 NL 抉择 ：增加1张 *新约·白之章 或 *新约·黑之章 或 *奏绝的独唱 到手中。 NL 如果消耗堆中的攻击牌为10张以上，改为全部加入手中。 NL 亡者召还 0、 亡者召还 0、 亡者召还 1。 NL 消耗 。"
   },
   "shadowverse:Licht": {
     "NAME": "齿轮运行者·里希特",
@@ -3291,12 +3291,12 @@
   },
   "shadowverse:BlackenedScripture": {
     "NAME": "漆黑法典",
-    "DESCRIPTION": "给予 !M! 层 虚弱 和 脆弱 。 NL 消灭生命值为9以下的敌人。"
+    "DESCRIPTION": "给予 !M! 层 虚弱 和 脆弱 。 NL 消灭生命值为9以下的目标。"
   },
   "shadowverse:PriestOfTheCudgel": {
     "NAME": "持矛锤的僧侣",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 层 易伤 。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 层 易伤 。 NL 消灭生命值为15以下的敌人。"
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 层 易伤 。 NL 消灭生命值为15以下的目标。"
   },
   "shadowverse:SacredPlea": {
     "NAME": "吟唱：神圣祈祷",
@@ -3995,7 +3995,7 @@
   },
   "shadowverse:LightOfHollow": {
     "NAME": "空绝的残光",
-    "DESCRIPTION": "保留 · 融合 ：财宝牌。 NL 融合 后抽1张牌。 NL 轮流对敌方造成 !D! 点伤害。 NL 如果融合张数为4以上，则伤害翻倍。 NL 消耗 。",
+    "DESCRIPTION": "保留 · 融合 ：财宝牌。 NL 融合 后抽1张牌。 NL 轮流对敌方造成 !D! 点伤害。 NL 如果融合张数为4以上，则伤害翻倍。 NL 这张卡视为财宝牌。",
     "EXTENDED_DESCRIPTION": [
       " NL (当前已 融合 财宝牌为",
       "张)"
@@ -4036,5 +4036,34 @@
   "shadowverse:BirthOfRavenous": {
     "NAME": "降诞的涸绝",
     "DESCRIPTION": "获得「如果回合内已打出3张以上的卡，下回合额外抽1张卡」效果。 NL 消耗 。"
+  },
+  "shadowverse:AdherentOfDesire": {
+    "NAME": "爱绝的崇拜者",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 渴望 伤害增加 !M! 点。 NL 狂乱 对全体敌人造成 !M! 点伤害。"
+  },
+  "shadowverse:AdherentOfScream": {
+    "NAME": "绝叫的崇拜者",
+    "DESCRIPTION": "激奏 0 亡者召还 1。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 亡者召还 1、 亡者召还 1。"
+  },
+  "shadowverse:AdherentOfElimination": {
+    "NAME": "绝尽的崇拜者",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 打出其他牌时伤害增加 !M! 点。"
+  },
+  "shadowverse:AdherentOfMelody": {
+    "NAME": "奏绝的崇拜者",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 选择1张攻击牌 消耗 并将1张复制品加入手中。 NL 选择1张 能力牌 消耗 并将1张复制品加入手中。"
+  },
+  "shadowverse:AdherentOfHollow": {
+    "NAME": "空绝的崇拜者",
+    "DESCRIPTION": "打出财宝牌时 升级 这张卡。 NL 造成 !D! 点伤害。 NL 打出 *进化点 时，随机增加1张财宝牌到手中。",
+    "UPGRADE_DESCRIPTION":"打出后解除 升级 。 NL 造成 !D! 点伤害。 NL 打出 *进化点 时，随机增加1张财宝牌到手中。"
+  },
+  "shadowverse:AdherentOfDispair": {
+    "NAME": "绝望的崇拜者",
+    "DESCRIPTION": "如果回合内没有打出过攻击牌，阻止下一次受到的伤害。 NL 可以生效 !M! 次。"
+  },
+  "shadowverse:AdherentOfAnnihilation": {
+    "NAME": "绝命的崇拜者",
+    "DESCRIPTION": "给予负面效果时，抽 !M! 张牌。"
   }
 }

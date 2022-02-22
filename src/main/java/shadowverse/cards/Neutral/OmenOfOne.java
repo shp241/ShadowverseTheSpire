@@ -101,7 +101,15 @@ public class OmenOfOne
                 OmenOfOne.this.upgraded = true;
                 OmenOfOne.this.name = NAME + "+";
                 OmenOfOne.this.initializeTitle();
+                int diff = OmenOfOne.this.costForTurn - OmenOfOne.this.cost;
                 OmenOfOne.this.cost = 1;
+                if (OmenOfOne.this.costForTurn > 0) {
+                    OmenOfOne.this.costForTurn = OmenOfOne.this.cost + diff;
+                }
+
+                if (OmenOfOne.this.costForTurn < 0) {
+                    OmenOfOne.this.costForTurn = 0;
+                }
                 OmenOfOne.this.upgradedCost = true;
             }
         });

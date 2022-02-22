@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import shadowverse.action.MinionSummonAction;
+import shadowverse.cards.Rare.LightOfHollow;
 import shadowverse.cards.Temp.GildedBlade;
 import shadowverse.cards.Temp.GildedBoots;
 import shadowverse.cards.Temp.GildedGoblet;
@@ -55,7 +56,7 @@ public class AlwidaPower extends AbstractPower {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (this.triggeredThisTurn < this.amount && (card instanceof GildedBlade || card instanceof GildedNecklace || card instanceof GildedGoblet || card instanceof GildedBoots || card instanceof UltimateHollow)) {
+        if (this.triggeredThisTurn < this.amount && (card instanceof GildedBlade || card instanceof GildedNecklace || card instanceof GildedGoblet || card instanceof GildedBoots || card instanceof UltimateHollow || card instanceof LightOfHollow)) {
             this.triggeredThisTurn++;
             AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new Pirate()));
             AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new Viking()));

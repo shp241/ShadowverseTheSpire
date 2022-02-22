@@ -17,8 +17,9 @@ public class DestructionPatch {
     public static class Destruction {
         @SpirePrefixPatch
         public static SpireReturn Post(CardGroup group, AbstractCard c) {
-            if (c instanceof WhiteArtifact||c instanceof BlackArtifact||c instanceof WhiteArtifact2||c instanceof BlackArtifact2)
+            if (c instanceof WhiteArtifact||c instanceof BlackArtifact||c instanceof WhiteArtifact2||c instanceof BlackArtifact2){
                 return SpireReturn.Return(null);
+            }
             return SpireReturn.Continue();
         }
     }

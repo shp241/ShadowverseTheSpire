@@ -104,17 +104,14 @@ public class OmenOfSilence extends CustomCard implements BranchableUpgradeCard {
                         amt++;
                 }
                 calculateCardDamage(abstractMonster);
-                if (amt>10){
-                    addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature) AbstractDungeon.player, DamageInfo.createDamageMatrix(this.damage, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HEAVY, true));
+                if (amt>10) {
                     AbstractMonster mo = AbstractDungeon.getRandomMonster();
-                    if (!mo.isDeadOrEscaped()){
-                        addToBot((AbstractGameAction)new ApplyPowerAction(mo,abstractPlayer,new VulnerablePower(abstractMonster,3,false),3));
-                        addToBot((AbstractGameAction)new ApplyPowerAction(mo,abstractPlayer,new WeakPower(abstractMonster,3,false),3));
-                        abstractPlayer.hand.removeCard(this);
+                    if (!mo.isDeadOrEscaped()) {
+                        addToBot((AbstractGameAction) new ApplyPowerAction(mo, abstractPlayer, new VulnerablePower(abstractMonster, 3, false), 3));
+                        addToBot((AbstractGameAction) new ApplyPowerAction(mo, abstractPlayer, new WeakPower(abstractMonster, 3, false), 3));
                     }
-                }else {
-                    addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
                 }
+                addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
                 break;
         }
     }

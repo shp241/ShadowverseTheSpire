@@ -41,7 +41,6 @@ public class LightOfHollow
     private boolean hasFusion = false;
     private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("ExhaustAction");
     public static final String[] TEXT = uiStrings.TEXT;
-    private int fusionAmt;
 
 
 
@@ -51,7 +50,6 @@ public class LightOfHollow
         this.baseMagicNumber = 0;
         this.magicNumber = this.baseMagicNumber;
         this.selfRetain = true;
-        this.exhaust = true;
     }
 
 
@@ -104,6 +102,8 @@ public class LightOfHollow
         int dmg = this.damage;
         if (this.magicNumber>=4){
             dmg = dmg*2;
+            this.baseMagicNumber = 0;
+            this.magicNumber = this.baseMagicNumber;
         }
         int leftDamage = dmg;
         AbstractMonster weakestMonster = null;

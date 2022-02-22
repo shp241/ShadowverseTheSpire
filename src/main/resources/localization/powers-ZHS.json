@@ -1376,5 +1376,19 @@
     "DESCRIPTIONS": [
       "本回合如果已打出过3张以上的卡，下回合开始时额外抽1张牌。"
     ]
+  },
+  "shadowverse:AdherentOfDispairPower": {
+    "NAME": "绝望的崇拜者",
+    "DESCRIPTIONS": [
+      "本回合如果没有打出过攻击牌，则阻止下一次受到的伤害。还可以生效 #b",
+      " 次。"
+    ]
+  },
+  "shadowverse:AdherentOfAnnihilationPower": {
+    "NAME": "绝命的崇拜者",
+    "DESCRIPTIONS": [
+      "给予负面效果时，抽 #b",
+      " 张牌。"
+    ]
   }
 }

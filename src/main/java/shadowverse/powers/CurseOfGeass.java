@@ -48,9 +48,20 @@ public class CurseOfGeass extends AbstractPower implements OnPlayerDeathPower {
         addToBot((AbstractGameAction)new GainBlockAction(this.owner,25));
         addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature) this.owner,(AbstractCreature) this.owner,(AbstractPower)new StrengthPower((AbstractCreature)this.owner,5),5));
         addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature) this.owner,(AbstractCreature) this.owner,(AbstractPower)new DexterityPower((AbstractCreature)this.owner,5),5));
-        if (this.owner instanceof AbstractMonster){
-            addToBot((AbstractGameAction)new PressEndTurnButtonAction());
-        }
         return false;
+    }
+
+    @Override
+    public void onDeath() {
+        if(this.owner instanceof AbstractMonster){
+            addToBot((AbstractGameAction)new PressEndTurnButtonAction());
+            addToBot((AbstractGameAction)new SFXAction("Suzaku_CURSE"));
+            addToBot((AbstractGameAction)new RemoveSpecificPowerAction(this.owner,this.owner,this));
+            this.owner.heal(1, true);
+            addToBot((AbstractGameAction)new RemoveDebuffsAction(this.owner));
+            addToBot((AbstractGameAction)new GainBlockAction(this.owner,25));
+            addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature) this.owner,(AbstractCreature) this.owner,(AbstractPower)new StrengthPower((AbstractCreature)this.owner,5),5));
+            addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature) this.owner,(AbstractCreature) this.owner,(AbstractPower)new DexterityPower((AbstractCreature)this.owner,5),5));
+        }
     }
 }

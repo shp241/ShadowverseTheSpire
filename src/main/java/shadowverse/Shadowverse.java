@@ -967,6 +967,18 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("OmenOfCraving2",new Sfx("sounds/OmenOfCraving2.wav"));
         reflectedMap.put("RavenousSweetness",new Sfx("sounds/RavenousSweetness.wav"));
         reflectedMap.put("BirthOfRavenous",new Sfx("sounds/BirthOfRavenous.wav"));
+        reflectedMap.put("AdherentOfDesire",new Sfx("sounds/AdherentOfDesire.wav"));
+        reflectedMap.put("AdherentOfScream",new Sfx("sounds/AdherentOfScream.wav"));
+        reflectedMap.put("AdherentOfElimination",new Sfx("sounds/AdherentOfElimination.wav"));
+        reflectedMap.put("AdherentOfElimination_Eff",new Sfx("sounds/AdherentOfElimination_Eff.wav"));
+        reflectedMap.put("AdherentOfMelody",new Sfx("sounds/AdherentOfMelody.wav"));
+        reflectedMap.put("AdherentOfHollow",new Sfx("sounds/AdherentOfHollow.wav"));
+        reflectedMap.put("AdherentOfHollow_Eff",new Sfx("sounds/AdherentOfHollow_Eff.wav"));
+        reflectedMap.put("AdherentOfHollow_Ev",new Sfx("sounds/AdherentOfHollow_Ev.wav"));
+        reflectedMap.put("AdherentOfDispair",new Sfx("sounds/AdherentOfDispair.wav"));
+        reflectedMap.put("AdherentOfDispairPower",new Sfx("sounds/AdherentOfDispairPower.wav"));
+        reflectedMap.put("AdherentOfAnnihilationPower",new Sfx("sounds/AdherentOfAnnihilationPower.wav"));
+        reflectedMap.put("AdherentOfAnnihilation",new Sfx("sounds/AdherentOfAnnihilation.wav"));
     }
 
     public void receiveEditRelics() {
@@ -1870,6 +1882,13 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCard((AbstractCard) new RavenousSweetness());
         BaseMod.addCard((AbstractCard) new OmenOfCraving());
         BaseMod.addCard((AbstractCard) new BirthOfRavenous());
+        BaseMod.addCard((AbstractCard) new AdherentOfDesire());
+        BaseMod.addCard((AbstractCard) new AdherentOfScream());
+        BaseMod.addCard((AbstractCard) new AdherentOfElimination());
+        BaseMod.addCard((AbstractCard) new AdherentOfMelody());
+        BaseMod.addCard((AbstractCard) new AdherentOfHollow());
+        BaseMod.addCard((AbstractCard) new AdherentOfDispair());
+        BaseMod.addCard((AbstractCard) new AdherentOfAnnihilation());
         logger.info("Success");
     }
 
