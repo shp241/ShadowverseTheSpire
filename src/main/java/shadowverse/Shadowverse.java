@@ -979,6 +979,9 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("AdherentOfDispairPower",new Sfx("sounds/AdherentOfDispairPower.wav"));
         reflectedMap.put("AdherentOfAnnihilationPower",new Sfx("sounds/AdherentOfAnnihilationPower.wav"));
         reflectedMap.put("AdherentOfAnnihilation",new Sfx("sounds/AdherentOfAnnihilation.wav"));
+        reflectedMap.put("Albert2",new Sfx("sounds/Albert2.wav"));
+        reflectedMap.put("Albert2_EH",new Sfx("sounds/Albert2_EH.wav"));
+        reflectedMap.put("Valdain2",new Sfx("sounds/Valdain2.wav"));
     }
 
     public void receiveEditRelics() {

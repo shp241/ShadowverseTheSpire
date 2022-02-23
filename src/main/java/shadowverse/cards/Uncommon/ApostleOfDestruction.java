@@ -46,7 +46,7 @@ public class ApostleOfDestruction
         }, abstractCards ->{
             for (AbstractCard c:abstractCards){
                 addToBot((AbstractGameAction)new ExhaustSpecificCardAction(c,p.hand));
-                AbstractCard card = c.makeCopy();
+                AbstractCard card = c.makeStatEquivalentCopy();
                 addToBot((AbstractGameAction)new ReduceCostAction(card));
                 addToBot((AbstractGameAction)new MakeTempCardInHandAction(card));
             }

@@ -31,7 +31,7 @@ import shadowverse.characters.Nemesis;
 
    public Bearminator() {
      super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.RARE, CardTarget.ENEMY);
-     this.baseDamage = 20;
+     this.baseDamage = 22;
      this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
      this.tags.add(AbstractShadowversePlayer.Enums.NATURAL);
      this.baseMagicNumber = 9;
@@ -42,7 +42,7 @@ import shadowverse.characters.Nemesis;
    public void upgrade() {
      if (!this.upgraded) {
        upgradeName();
-       upgradeBlock(5);
+       upgradeDamage(5);
        upgradeMagicNumber(6);
      } 
    }
