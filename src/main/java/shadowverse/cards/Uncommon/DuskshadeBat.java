@@ -44,14 +44,10 @@ public class DuskshadeBat
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot((AbstractGameAction)new GainBlockAction(p,this.block));
         if (p.hasPower(EpitaphPower.POWER_ID)){
-            addToBot((AbstractGameAction)new GainEnergyAction(3));
-            addToBot((AbstractGameAction)new DrawCardAction(3));
+            addToBot((AbstractGameAction)new GainEnergyAction(2));
+            addToBot((AbstractGameAction)new DrawCardAction(2));
         }else {
-            if (p.stance.ID.equals(Vengeance.STANCE_ID)){
-                addToBot((AbstractGameAction)new GainEnergyAction(1));
-                addToBot((AbstractGameAction)new DrawCardAction(1));
-            }
-            if (p.hasPower(WrathPower.POWER_ID)){
+            if (p.stance.ID.equals(Vengeance.STANCE_ID) || p.hasPower(WrathPower.POWER_ID)){
                 addToBot((AbstractGameAction)new GainEnergyAction(1));
                 addToBot((AbstractGameAction)new DrawCardAction(1));
             }

@@ -67,7 +67,7 @@ public class Nemesis extends AbstractShadowversePlayer{
         for (i = 0; i < 5; i++) {
             starterDeck.add(Strike_Nm.ID);
         }
-        for (i = 0; i < 5; i++) {
+        for (i = 0; i < 4; i++) {
             starterDeck.add(Defend_Nm.ID);
         }
         starterDeck.add(DimensionCut.ID);

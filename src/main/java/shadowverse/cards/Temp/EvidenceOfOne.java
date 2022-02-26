@@ -19,6 +19,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
  import com.megacrit.cardcrawl.powers.WeakPower;
  import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Nemesis;
+ import shadowverse.powers.OmenOfOnePower2;
 
  import java.util.ArrayList;
 
@@ -35,7 +36,7 @@ import shadowverse.characters.Nemesis;
    public EvidenceOfOne() {
      super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ENEMY);
      this.baseDamage = 18;
-     this.baseMagicNumber = 3;
+     this.baseMagicNumber = 2;
      this.magicNumber = this.baseMagicNumber;
      this.exhaust = true;
    }
@@ -53,17 +54,8 @@ import shadowverse.characters.Nemesis;
      addToBot((AbstractGameAction)new SFXAction("EvidenceOfOne"));
      addToBot((AbstractGameAction)new ApplyPowerAction(abstractMonster,abstractPlayer,new VulnerablePower(abstractMonster,this.magicNumber,false),this.magicNumber));
      addToBot((AbstractGameAction)new ApplyPowerAction(abstractMonster,abstractPlayer,new WeakPower(abstractMonster,this.magicNumber,false),this.magicNumber));
-     boolean deckCheck = true;
-     ArrayList<String> tmp = new ArrayList<>();
-     for (AbstractCard c : abstractPlayer.drawPile.group) {
-       if (tmp.contains(c.cardID)) {
-         deckCheck = false;
-         break;
-       }
-       tmp.add(c.cardID);
-     }
-     if (deckCheck){
-       addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature) AbstractDungeon.player, DamageInfo.createDamageMatrix(this.damage, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HEAVY, true));
+     if (abstractPlayer.hasPower(OmenOfOnePower2.POWER_ID)){
+       addToBot((AbstractGameAction)new DamageAction((AbstractCreature) AbstractDungeon.player, new DamageInfo(abstractPlayer,this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
      }
    }
  

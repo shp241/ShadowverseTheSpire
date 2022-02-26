@@ -50,18 +50,12 @@ import shadowverse.cards.Basic.Insight;
    public static final String WITCHCRAFT_SHOULDER_2 = "img/character/Witchcraft/shoulder.png";
    public static final String WITCHCRAFT_SHOULDER_1 = "img/character/Witchcraft/shoulder.png";
    public static final String WITCHCRAFT_CORPSE = "img/character/Witchcraft/corpse.png";
-   private static final int STARTING_HP = 70;
-   private static final int MAX_HP = 70;
-   private static final int STARTING_GOLD = 99;
-   private static final int HAND_SIZE = 5;
-   private static final int ORB_SLOTS = 0;
-   private static final int ASCENSION_MAX_HP_LOSS = 5;
    public static shadowverse.animation.AbstractAnimation bigAnimation = new shadowverse.animation.AbstractAnimation("img/animation/Witchcraft/class_1803.atlas", "img/animation/Witchcraft/class_1803.json", com.megacrit.cardcrawl.core.Settings.M_W / 1600.0F, com.megacrit.cardcrawl.core.Settings.M_W / 2.0F, com.megacrit.cardcrawl.core.Settings.M_H / 2.0F, 0F, 0F);
    private static Texture BASE_LAYER = new Texture("img/ui/layer_witch.png");
 
    public Witchcraft(String name) {
      super(name, Enums.WITCHCRAFT, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation)new SpriterAnimation("img/character/Witchcraft/sprite/Witchcraft.scml"));
-     initializeClass(null, "img/character/Witchcraft/shoulder.png", "img/character/Witchcraft/shoulder.png", "img/character/Witchcraft/corpse.png", getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
+     initializeClass(null, WITCHCRAFT_SHOULDER_2, WITCHCRAFT_SHOULDER_1, WITCHCRAFT_CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
      bigAnimation.setVisible(false);
    }
  

@@ -192,7 +192,9 @@ public class Octrice extends CustomCard implements BranchableUpgradeCard {
                         addToBot((AbstractGameAction) new ApplyPowerAction(p, p, new CurseOfGeass(p)));
                     }else if (po instanceof BetterFlightPower){
                         addToBot((AbstractGameAction) new ApplyPowerAction(p, p, new BetterFlightPower(p,po.amount),po.amount));
-                    }else {
+                    }else if (po instanceof IntangiblePower){
+                        addToBot((AbstractGameAction) new ApplyPowerAction(p, p, new IntangiblePlayerPower(p,po.amount),po.amount));
+                    } else {
                         addToBot((AbstractGameAction) new ApplyPowerAction(p, p, new StrengthPower(p,2),2));
                     }
                 }

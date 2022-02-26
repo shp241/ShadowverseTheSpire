@@ -77,7 +77,14 @@ public class OmenOfOne
                         tmp2.add(c.cardID);
                     }
                 }
-                if(tmp2.size()+abstractPlayer.discardPile.size()>=abstractPlayer.masterDeck.size()/2){
+                for (AbstractCard card : abstractPlayer.discardPile.group){
+                    if (tmp2.contains(card.cardID)) {
+                        addToBot((AbstractGameAction)new ExhaustSpecificCardAction(card,abstractPlayer.discardPile));
+                    }else {
+                        tmp2.add(card.cardID);
+                    }
+                }
+                if(tmp2.size()>=abstractPlayer.masterDeck.size()/2){
                     addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,new OmenOfOnePower2(abstractPlayer)));
                 }
                 addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));

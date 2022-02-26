@@ -423,7 +423,7 @@
   },
   "shadowverse:OmenOfOne2": {
     "NAME": "绝大唯我·马塞班恩",
-    "DESCRIPTION": "消耗 抽牌堆中重复的牌。 NL 此后，如果抽牌堆和弃牌堆卡片数量总和为卡组一半以上，回合结束时如果打出过耗能为2以下的牌，对随机敌人造成10点伤害，如果打出过耗能为2以上的牌，对全体敌人造成18点伤害。 NL 增加1张 *绝大的证明 到手中。"
+    "DESCRIPTION": "消耗 抽牌堆和弃牌堆中重复的牌。 NL 此后，如果抽牌堆和弃牌堆卡片数量总和为卡组一半以上，回合结束时如果打出过耗能为2以下的牌，对随机敌人造成10点伤害，如果打出过耗能为2以上的牌，对全体敌人造成18点伤害。 NL 增加1张 *绝大的证明 到手中。"
   },
   "shadowverse:RearriveOne": {
     "NAME": "再临的绝大",
@@ -3345,7 +3345,7 @@
   },
   "shadowverse:DuskshadeBat": {
     "NAME": "幽暗蝙蝠",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 渴望 抽1张牌，获得 [E] 。 NL 狂乱 抽1张牌，获得 [E] 。 NL 复仇 抽1张牌，获得 [E] 。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 渴望 抽1张牌，获得 [E] 。 NL 复仇 或 狂乱 抽1张牌，获得 [E] 。"
   },
   "shadowverse:Cernunnos": {
     "NAME": "科尔努诺斯",
@@ -3996,7 +3996,7 @@
   },
   "shadowverse:EvidenceOfOne": {
     "NAME": "绝大的证明",
-    "DESCRIPTION": "给予 !M! 层 易伤 和 虚弱 。 NL 如果抽牌堆中没有重复的卡，对全体敌人造成 !D! 点伤害。 NL 消耗 。"
+    "DESCRIPTION": "给予 !M! 层 易伤 和 虚弱 。 NL 如果已获得 *绝大唯我·马塞班恩 的效果，造成 !D! 点伤害。 NL 消耗 。"
   },
   "shadowverse:PerjuryOfTruth": {
     "NAME": "绝尽的伪证",
