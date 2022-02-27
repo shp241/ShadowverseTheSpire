@@ -27,6 +27,7 @@ import shadowverse.cards.Basic.FairyWhisperer;
 import shadowverse.cards.Basic.Strike_E;
 import shadowverse.cards.Basic.SylvanJustice;
 import shadowverse.effect.ShadowverseEnergyOrb;
+import shadowverse.patch.CharacterSelectScreenPatches;
 
 import java.util.ArrayList;
 
@@ -45,16 +46,12 @@ public class Elf extends AbstractShadowversePlayer{
 
     public static final CharacterStrings charStrings = CardCrawlGame.languagePack.getCharacterString("shadowverse:Elf");
 
-    public static final int ENERGY_PER_TURN = 3;
-    public static final String ELF_SHOULDER_2 = "img/character/Elf/shoulder.png";
-    public static final String ELF_SHOULDER_1 = "img/character/Elf/shoulder.png";
-    public static final String ELF_CORPSE = "img/character/Elf/corpse.png";
     public static shadowverse.animation.AbstractAnimation bigAnimation = new shadowverse.animation.AbstractAnimation("img/animation/Elf/class_1901.atlas", "img/animation/Elf/class_1901.json", com.megacrit.cardcrawl.core.Settings.M_W / 1600.0F, com.megacrit.cardcrawl.core.Settings.M_W / 2.0F, com.megacrit.cardcrawl.core.Settings.M_H / 2.0F, 0F, 0F);
     private static Texture BASE_LAYER = new Texture("img/ui/layer_elf.png");
 
     public Elf(String name) {
-        super(name, Enums.Elf, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation)new SpriterAnimation("img/character/Elf/images/arisa.scml"));
-        initializeClass(null, ELF_SHOULDER_2, ELF_SHOULDER_2, ELF_CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
+        super(name, Enums.Elf, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation)new SpriterAnimation(((CharacterSelectScreenPatches.characters[1]).skins[(CharacterSelectScreenPatches.characters[1]).reskinCount]).scmlURL));
+        initializeClass(null, ((CharacterSelectScreenPatches.characters[1]).skins[(CharacterSelectScreenPatches.characters[1]).reskinCount]).SHOULDER1, ((CharacterSelectScreenPatches.characters[1]).skins[(CharacterSelectScreenPatches.characters[1]).reskinCount]).SHOULDER2, ((CharacterSelectScreenPatches.characters[1]).skins[(CharacterSelectScreenPatches.characters[1]).reskinCount]).CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
         bigAnimation.setVisible(false);
     }
 
@@ -124,7 +121,7 @@ public class Elf extends AbstractShadowversePlayer{
 
     @Override
     public void doCharSelectScreenSelectEffect() {
-        CardCrawlGame.sound.playA("Arisa_Selected", 0.0F);
+        ((CharacterSelectScreenPatches.characters[1]).skins[(CharacterSelectScreenPatches.characters[1]).reskinCount]).playSelect();
         CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.LOW, ScreenShake.ShakeDur.SHORT, true);
     }
 
@@ -165,20 +162,7 @@ public class Elf extends AbstractShadowversePlayer{
 
     public void damage(DamageInfo info) {
         super.damage(info);
-        if (lastDamageTaken >= 20){
-            CardCrawlGame.sound.playA("Arisa_Hurt", 0.0F);
-        }else if (lastDamageTaken > 0 ){
-            String sound = null;
-            int roll = AbstractDungeon.cardRandomRng.random(99);
-            if (roll < 50) {
-                sound = "Arisa_Hurt2";
-            } else if (roll < 80) {
-                sound = "Arisa_Hurt3";
-            } else {
-                sound = "Arisa_Hurt4";
-            }
-            CardCrawlGame.sound.playA(sound, 0.0F);
-        }
+        ((CharacterSelectScreenPatches.characters[1]).skins[(CharacterSelectScreenPatches.characters[1]).reskinCount]).playHurtSound(lastDamageTaken);
     }
     public static shadowverse.animation.AbstractAnimation getBigAnimation() {
         return bigAnimation;

@@ -13,6 +13,7 @@ import com.esotericsoftware.spine.SkeletonJson;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import shadowverse.Shadowverse;
 
@@ -51,12 +52,22 @@ public abstract class AbstractSkin {
 
     public String scmlURL;
 
+    public String hurt;
+
+    public String hurt2;
+
+    public String hurt3;
+
+    public String hurt4;
+
+    public String select;
+
     public void loadPortraitAnimation() {
         if (hasAnimation().booleanValue()) {
             loadAnimation();
             setAnimation();
             InitializeStaticPortraitVar();
-        }else {
+        } else {
             updateBgImg();
         }
     }
@@ -84,7 +95,8 @@ public abstract class AbstractSkin {
         InitializeStaticPortraitVar();
     }
 
-    public void InitializeStaticPortraitVar() {}
+    public void InitializeStaticPortraitVar() {
+    }
 
     public Texture updateBgImg() {
         Shadowverse.saveSettings();
@@ -112,9 +124,11 @@ public abstract class AbstractSkin {
         }
     }
 
-    public void setPos() {}
+    public void setPos() {
+    }
 
-    public void skeletonRenderUpdate(SpriteBatch sb) {}
+    public void skeletonRenderUpdate(SpriteBatch sb) {
+    }
 
     public void skeletonRender(SpriteBatch sb) {
         if (hasAnimation().booleanValue()) {
@@ -127,9 +141,11 @@ public abstract class AbstractSkin {
     public void update() {
     }
 
-    public void clearWhenClick() {}
+    public void clearWhenClick() {
+    }
 
-    public void extraHitboxRender(SpriteBatch sb) {}
+    public void extraHitboxRender(SpriteBatch sb) {
+    }
 
     public Boolean extraHitboxClickCheck() {
         return Boolean.valueOf(false);
@@ -161,7 +177,52 @@ public abstract class AbstractSkin {
         return this.CORPSE;
     }
 
-    public String getScmlURL(){ return this.scmlURL; }
+    public String getScmlURL() {
+        return this.scmlURL;
+    }
+
+    public String getHurt() {
+        return hurt;
+    }
+
+    public String getHurt2() {
+        return hurt2;
+    }
+
+
+    public String getHurt3() {
+        return hurt3;
+    }
+
+
+    public String getHurt4() {
+        return hurt4;
+    }
+
+    public String select(){
+        return select;
+    }
+
+    public void playHurtSound(int lastDamageTaken){
+        if (lastDamageTaken >= 20){
+            CardCrawlGame.sound.playA(hurt4, 0.0F);
+        }else if (lastDamageTaken > 0 ){
+            String sound = null;
+            int roll = AbstractDungeon.cardRandomRng.random(99);
+            if (roll < 50) {
+                sound = hurt;
+            } else if (roll < 80) {
+                sound = hurt2;
+            } else {
+                sound = hurt3;
+            }
+            CardCrawlGame.sound.playA(sound, 0.0F);
+        }
+    }
+
+    public void playSelect(){
+        CardCrawlGame.sound.playA(select, 0.0F);
+    }
 
     public void dispose() {
         if (this.portraitAtlas != null)

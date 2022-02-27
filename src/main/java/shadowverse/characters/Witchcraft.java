@@ -54,7 +54,7 @@ import shadowverse.cards.Basic.Insight;
    private static Texture BASE_LAYER = new Texture("img/ui/layer_witch.png");
 
    public Witchcraft(String name) {
-     super(name, Enums.WITCHCRAFT, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation)new SpriterAnimation("img/character/Witchcraft/sprite/Witchcraft.scml"));
+     super(name, Enums.WITCHCRAFT, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation)new SpriterAnimation(((CharacterSelectScreenPatches.characters[0]).skins[(CharacterSelectScreenPatches.characters[0]).reskinCount]).scmlURL));
      initializeClass(null, ((CharacterSelectScreenPatches.characters[0]).skins[(CharacterSelectScreenPatches.characters[0]).reskinCount]).SHOULDER1, ((CharacterSelectScreenPatches.characters[0]).skins[(CharacterSelectScreenPatches.characters[0]).reskinCount]).SHOULDER2, ((CharacterSelectScreenPatches.characters[0]).skins[(CharacterSelectScreenPatches.characters[0]).reskinCount]).CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
      bigAnimation.setVisible(false);
    }
@@ -83,15 +83,7 @@ import shadowverse.cards.Basic.Insight;
  
    
    public CharSelectInfo getLoadout() {
-     return new CharSelectInfo(charStrings.NAMES[0], charStrings.TEXT[0], 70, 70, 0, 99, 5, (AbstractPlayer)this, 
- 
- 
- 
- 
- 
- 
- 
-         
+     return new CharSelectInfo(charStrings.NAMES[0], charStrings.TEXT[0], 70, 70, 0, 99, 5, (AbstractPlayer)this,
          getStartingRelics(), 
          getStartingDeck(), false);
    }
@@ -134,7 +126,7 @@ import shadowverse.cards.Basic.Insight;
  
    
    public void doCharSelectScreenSelectEffect() {
-     CardCrawlGame.sound.playA("witch_selected", 0.0F);
+     ((CharacterSelectScreenPatches.characters[0]).skins[(CharacterSelectScreenPatches.characters[0]).reskinCount]).playSelect();
      CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.LOW, ScreenShake.ShakeDur.SHORT, true);
    }
  
@@ -177,20 +169,7 @@ import shadowverse.cards.Basic.Insight;
 
      public void damage(DamageInfo info) {
        super.damage(info);
-       if (lastDamageTaken >= 20){
-           CardCrawlGame.sound.playA("XCW_Hurt", 0.0F);
-       }else if (lastDamageTaken > 0 ){
-           String sound = null;
-           int roll = AbstractDungeon.cardRandomRng.random(99);
-           if (roll < 50) {
-               sound = "XCW_Hurt2";
-           } else if (roll < 80) {
-               sound = "XCW_Hurt3";
-           } else {
-               sound = "XCW_Hurt4";
-           }
-           CardCrawlGame.sound.playA(sound, 0.0F);
-       }
+       ((CharacterSelectScreenPatches.characters[0]).skins[(CharacterSelectScreenPatches.characters[0]).reskinCount]).playHurtSound(lastDamageTaken);
      }
    public static shadowverse.animation.AbstractAnimation getBigAnimation() {
      return bigAnimation;

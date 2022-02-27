@@ -30,6 +30,7 @@ import java.util.ArrayList;
 
 import javassist.CtBehavior;
 import shadowverse.Shadowverse;
+import shadowverse.skin.AbstractElfSkin;
 import shadowverse.skin.AbstractSkinCharacter;
 import shadowverse.skin.AbstractWitchSkin;
 
@@ -68,7 +69,9 @@ public class CharacterSelectScreenPatches {
 
     public static ArrayList<AbstractGameEffect> char_effectsQueue_toRemove = new ArrayList<>();
 
-    public static AbstractSkinCharacter[] characters = new AbstractSkinCharacter[]{(AbstractSkinCharacter) new AbstractWitchSkin()};
+    public static AbstractSkinCharacter[] characters = new AbstractSkinCharacter[]{
+            (AbstractSkinCharacter) new AbstractWitchSkin(),
+            (AbstractSkinCharacter) new AbstractElfSkin()};
 
     public static Color BLACK_OUTLINE_COLOR = new Color(0.0F, 0.0F, 0.0F, 0.5F);
 
@@ -235,6 +238,7 @@ public class CharacterSelectScreenPatches {
                                 c.reskinCount = 0;
                             }
                             c.skins[c.reskinCount].loadPortraitAnimation();
+                            c.skins[c.reskinCount].playSelect();
                             __instance.bgCharImg = c.skins[c.reskinCount].updateBgImg();
                             ReflectionHacks.setPrivate(o, CharacterOption.class, "charInfo", c.skins[c.reskinCount]
                                     .updateCharInfo(
@@ -250,6 +254,7 @@ public class CharacterSelectScreenPatches {
                                 c.reskinCount = c.skins.length - 1;
                             }
                             c.skins[c.reskinCount].loadPortraitAnimation();
+                            c.skins[c.reskinCount].playSelect();
                             __instance.bgCharImg = c.skins[c.reskinCount].updateBgImg();
                             ReflectionHacks.setPrivate(o, CharacterOption.class, "charInfo", c.skins[c.reskinCount]
                                     .updateCharInfo(
@@ -269,7 +274,8 @@ public class CharacterSelectScreenPatches {
             @SpireInsertPatch(rloc = 6)
             public static SpireReturn<Void> Insert(CharacterOption __instance, SpriteBatch sb) {
                 Color glowColor = (Color) ReflectionHacks.getPrivate(__instance, CharacterOption.class, "glowColor");
-                if (__instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Witchcraft")).NAMES[0]))
+                if (__instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Witchcraft")).NAMES[0]
+                )||__instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Elf")).NAMES[0]));
                     if (__instance.selected) {
                         glowColor.r = 0.0F;
                         glowColor.g = 1.0F;
