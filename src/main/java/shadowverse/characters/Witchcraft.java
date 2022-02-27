@@ -24,6 +24,7 @@ import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import shadowverse.cards.Basic.Insight;
  import shadowverse.effect.ShadowverseEnergyOrb;
+ import shadowverse.patch.CharacterSelectScreenPatches;
 
  import java.util.ArrayList;
 
@@ -45,8 +46,7 @@ import shadowverse.cards.Basic.Insight;
 
    }
    public static final CharacterStrings charStrings = CardCrawlGame.languagePack.getCharacterString("shadowverse:Witchcraft");
-   
-   public static final int ENERGY_PER_TURN = 3;
+
    public static final String WITCHCRAFT_SHOULDER_2 = "img/character/Witchcraft/shoulder.png";
    public static final String WITCHCRAFT_SHOULDER_1 = "img/character/Witchcraft/shoulder.png";
    public static final String WITCHCRAFT_CORPSE = "img/character/Witchcraft/corpse.png";
@@ -55,7 +55,7 @@ import shadowverse.cards.Basic.Insight;
 
    public Witchcraft(String name) {
      super(name, Enums.WITCHCRAFT, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation)new SpriterAnimation("img/character/Witchcraft/sprite/Witchcraft.scml"));
-     initializeClass(null, WITCHCRAFT_SHOULDER_2, WITCHCRAFT_SHOULDER_1, WITCHCRAFT_CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
+     initializeClass(null, ((CharacterSelectScreenPatches.characters[0]).skins[(CharacterSelectScreenPatches.characters[0]).reskinCount]).SHOULDER1, ((CharacterSelectScreenPatches.characters[0]).skins[(CharacterSelectScreenPatches.characters[0]).reskinCount]).SHOULDER2, ((CharacterSelectScreenPatches.characters[0]).skins[(CharacterSelectScreenPatches.characters[0]).reskinCount]).CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
      bigAnimation.setVisible(false);
    }
  

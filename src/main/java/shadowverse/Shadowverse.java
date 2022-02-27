@@ -7,6 +7,7 @@ import basemod.interfaces.*;
 import charbosses.bosses.KMR.KMR;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
+import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.audio.Sfx;
@@ -40,11 +41,14 @@ import shadowverse.characters.*;
 import shadowverse.events.*;
 import shadowverse.monsters.*;
 import shadowverse.orbs.AmuletOrb;
+import shadowverse.patch.CharacterSelectScreenPatches;
 import shadowverse.potions.*;
 import shadowverse.relics.*;
+import shadowverse.skin.AbstractSkinCharacter;
 
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
+import java.util.Properties;
 
 import static com.badlogic.gdx.graphics.Color.YELLOW;
 
@@ -59,7 +63,7 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
     public static final Color ROYAL_YELLOW = CardHelper.getColor(152, 156, 1);
     public static final Color BISHOP_WHITE = CardHelper.getColor(239, 236, 186);
     public static final Logger logger = LogManager.getLogger(Shadowverse.class.getName());
-
+    public static Properties ShadowverseDefaults = new Properties();
 
     public static boolean Enhance(int EH) {
         boolean res = false;
@@ -1905,5 +1909,37 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCharacter((AbstractPlayer) new Royal(("Royal")), "img/character/Royal/button.png", "img/character/Royal/background.png", Royal.Enums.Royal);
         BaseMod.addCharacter((AbstractPlayer) new Bishop(("Bishop")), "img/character/Bishop/button.png", "img/character/Bishop/background.png", Bishop.Enums.Bishop);
     }
+
+    public static void saveSettings() {
+        try {
+            SpireConfig config = new SpireConfig("VUPShionMod", "settings", ShadowverseDefaults);
+            for (int i = 0; i <= CharacterSelectScreenPatches.characters.length - 1; i++) {
+                config.setInt(CardCrawlGame.saveSlot + "reskinCount" + i, (CharacterSelectScreenPatches.characters[i]).reskinCount);
+            }
+            config.save();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void loadSettings() {
+        try {
+            SpireConfig config = new SpireConfig("Shadowverse", "settings", ShadowverseDefaults);
+            config.load();
+            for (int i = 0; i <= CharacterSelectScreenPatches.characters.length - 1; i++) {
+                (CharacterSelectScreenPatches.characters[i]).reskinCount = config.getInt(CardCrawlGame.saveSlot + "reskinCount" + i);
+                if ((CharacterSelectScreenPatches.characters[i]).reskinCount > (CharacterSelectScreenPatches.characters[i]).skins.length - 1)
+                    (CharacterSelectScreenPatches.characters[i]).reskinCount = 0;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            clearSettings();
+        }
+    }
+
+    public static void clearSettings() {
+        saveSettings();
+    }
+
 }
 
