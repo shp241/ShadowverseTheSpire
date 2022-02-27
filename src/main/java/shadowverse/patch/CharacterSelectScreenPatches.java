@@ -30,9 +30,7 @@ import java.util.ArrayList;
 
 import javassist.CtBehavior;
 import shadowverse.Shadowverse;
-import shadowverse.skin.AbstractElfSkin;
-import shadowverse.skin.AbstractSkinCharacter;
-import shadowverse.skin.AbstractWitchSkin;
+import shadowverse.skin.*;
 
 public class CharacterSelectScreenPatches {
     private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("shadowverse:Skin");
@@ -71,7 +69,10 @@ public class CharacterSelectScreenPatches {
 
     public static AbstractSkinCharacter[] characters = new AbstractSkinCharacter[]{
             (AbstractSkinCharacter) new AbstractWitchSkin(),
-            (AbstractSkinCharacter) new AbstractElfSkin()};
+            (AbstractSkinCharacter) new AbstractElfSkin(),
+            (AbstractSkinCharacter) new AbstractNecroSkin(),
+            (AbstractSkinCharacter) new AbstractRoyalSkin()
+    };
 
     public static Color BLACK_OUTLINE_COLOR = new Color(0.0F, 0.0F, 0.0F, 0.5F);
 
@@ -275,7 +276,9 @@ public class CharacterSelectScreenPatches {
             public static SpireReturn<Void> Insert(CharacterOption __instance, SpriteBatch sb) {
                 Color glowColor = (Color) ReflectionHacks.getPrivate(__instance, CharacterOption.class, "glowColor");
                 if (__instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Witchcraft")).NAMES[0]
-                )||__instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Elf")).NAMES[0]));
+                )||__instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Elf")).NAMES[0])
+                ||__instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Necromancer")).NAMES[0])
+                ||__instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Royal")).NAMES[0]));
                     if (__instance.selected) {
                         glowColor.r = 0.0F;
                         glowColor.g = 1.0F;

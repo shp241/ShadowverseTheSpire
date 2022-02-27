@@ -25,6 +25,7 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import shadowverse.cards.Basic.*;
 import shadowverse.cards.Common.*;
 import shadowverse.effect.ShadowverseEnergyOrb;
+import shadowverse.patch.CharacterSelectScreenPatches;
 
 import java.util.ArrayList;
 
@@ -44,22 +45,17 @@ public class Royal extends AbstractShadowversePlayer {
 
     public static final CharacterStrings charStrings = CardCrawlGame.languagePack.getCharacterString("shadowverse:Royal");
 
-    public static final int ENERGY_PER_TURN = 3;
-    public static final String Royal_SHOULDER_2 = "img/character/Royal/shoulder.png";
-    public static final String Royal_SHOULDER_1 = "img/character/Royal/shoulder.png";
-    public static final String Royal_CORPSE = "img/character/Royal/corpse.png";
     private static final int STARTING_HP = 75;
     private static final int MAX_HP = 75;
     private static final int STARTING_GOLD = 150;
     private static final int HAND_SIZE = 5;
     private static final int ORB_SLOTS = 5;
-    private static final int ASCENSION_MAX_HP_LOSS = 5;
     public static shadowverse.animation.AbstractAnimation bigAnimation = new shadowverse.animation.AbstractAnimation("img/animation/Royal/class_1002.atlas", "img/animation/Royal/class_1002.json", com.megacrit.cardcrawl.core.Settings.M_W / 1600.0F, com.megacrit.cardcrawl.core.Settings.M_W / 2.0F, com.megacrit.cardcrawl.core.Settings.M_H / 2.0F, 0F, 0F);
     private static Texture BASE_LAYER = new Texture("img/ui/layer_royal.png");
 
     public Royal(String name) {
-        super(name, Enums.Royal, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation) new SpriterAnimation("img/character/Royal/images/Royal.scml"));
-        initializeClass(null, Royal_SHOULDER_1, Royal_SHOULDER_2, Royal_CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
+        super(name, Enums.Royal, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation) new SpriterAnimation(((CharacterSelectScreenPatches.characters[3]).skins[(CharacterSelectScreenPatches.characters[3]).reskinCount]).scmlURL));
+        initializeClass(null, ((CharacterSelectScreenPatches.characters[3]).skins[(CharacterSelectScreenPatches.characters[3]).reskinCount]).SHOULDER1, ((CharacterSelectScreenPatches.characters[3]).skins[(CharacterSelectScreenPatches.characters[3]).reskinCount]).SHOULDER2, ((CharacterSelectScreenPatches.characters[3]).skins[(CharacterSelectScreenPatches.characters[3]).reskinCount]).CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
         bigAnimation.setVisible(false);
     }
 
@@ -130,7 +126,7 @@ public class Royal extends AbstractShadowversePlayer {
 
     @Override
     public void doCharSelectScreenSelectEffect() {
-        CardCrawlGame.sound.playA("Royal_Selected", 0.0F);
+        ((CharacterSelectScreenPatches.characters[3]).skins[(CharacterSelectScreenPatches.characters[3]).reskinCount]).playSelect();
         CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.LOW, ScreenShake.ShakeDur.SHORT, true);
     }
 
@@ -172,26 +168,7 @@ public class Royal extends AbstractShadowversePlayer {
     @Override
     public void damage(DamageInfo info) {
         super.damage(info);
-        if (lastDamageTaken > 0) {
-            String sound = null;
-            int roll = AbstractDungeon.cardRandomRng.random(99);
-            if (lastDamageTaken >= 20) {
-                if (roll < 50) {
-                    sound = "Royal_Hurt3";
-                } else {
-                    sound = "Royal_Hurt4";
-                }
-            } else {
-                if (roll < 33) {
-                    sound = "Royal_Hurt";
-                } else if (roll < 66) {
-                    sound = "Royal_Hurt1";
-                } else {
-                    sound = "Royal_Hurt2";
-                }
-            }
-            CardCrawlGame.sound.playA(sound, 0.0F);
-        }
+        ((CharacterSelectScreenPatches.characters[3]).skins[(CharacterSelectScreenPatches.characters[3]).reskinCount]).playHurtSound(lastDamageTaken);
     }
 
     public static shadowverse.animation.AbstractAnimation getBigAnimation() {

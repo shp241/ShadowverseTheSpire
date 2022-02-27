@@ -996,6 +996,21 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("Kokkoro_Hurt3",new Sfx("sounds/Kokkoro_Hurt3.wav"));
         reflectedMap.put("Kokkoro_Hurt4",new Sfx("sounds/Kokkoro_Hurt4.wav"));
         reflectedMap.put("Kokkoro_Select",new Sfx("sounds/Kokkoro_Select.wav"));
+        reflectedMap.put("Miyako_Hurt",new Sfx("sounds/Miyako_Hurt.wav"));
+        reflectedMap.put("Miyako_Hurt2",new Sfx("sounds/Miyako_Hurt2.wav"));
+        reflectedMap.put("Miyako_Hurt3",new Sfx("sounds/Miyako_Hurt3.wav"));
+        reflectedMap.put("Miyako_Hurt4",new Sfx("sounds/Miyako_Hurt4.wav"));
+        reflectedMap.put("Miyako_Select",new Sfx("sounds/Miyako_Select.wav"));
+        reflectedMap.put("Shizuru_Hurt",new Sfx("sounds/Shizuru_Hurt.wav"));
+        reflectedMap.put("Shizuru_Hurt2",new Sfx("sounds/Shizuru_Hurt2.wav"));
+        reflectedMap.put("Shizuru_Hurt3",new Sfx("sounds/Shizuru_Hurt3.wav"));
+        reflectedMap.put("Shizuru_Hurt4",new Sfx("sounds/Shizuru_Hurt4.wav"));
+        reflectedMap.put("Shizuru_Select",new Sfx("sounds/Shizuru_Select.wav"));
+        reflectedMap.put("Anne_Hurt",new Sfx("sounds/Anne_Hurt.wav"));
+        reflectedMap.put("Anne_Hurt2",new Sfx("sounds/Anne_Hurt2.wav"));
+        reflectedMap.put("Anne_Hurt3",new Sfx("sounds/Anne_Hurt3.wav"));
+        reflectedMap.put("Anne_Hurt4",new Sfx("sounds/Anne_Hurt4.wav"));
+        reflectedMap.put("Anne_Select",new Sfx("sounds/Anne_Select.wav"));
     }
 
     public void receiveEditRelics() {
