@@ -61,33 +61,73 @@ public class CutsceneChangePatches {
 
             List<CutscenePanel> customPanels = new ArrayList();
             if (AbstractDungeon.player instanceof Royal){
-                customPanels.add(new CutscenePanel("img/scene/royal1.png"));
-                customPanels.add(new CutscenePanel("img/scene/royal2.png"));
-                customPanels.add(new CutscenePanel("img/scene/royal3.png"));
+                if ((CharacterSelectScreenPatches.characters[3]).reskinCount == 0){
+                    customPanels.add(new CutscenePanel("img/scene/royal1.png"));
+                    customPanels.add(new CutscenePanel("img/scene/royal2.png"));
+                    customPanels.add(new CutscenePanel("img/scene/royal3.png"));
+                }else if ((CharacterSelectScreenPatches.characters[3]).reskinCount == 1){
+                    customPanels.add(new CutscenePanel("img/scene/shizuru1.png"));
+                    customPanels.add(new CutscenePanel("img/scene/royal2.png"));
+                    customPanels.add(new CutscenePanel("img/scene/shizuru3.png"));
+                }
             }else if (AbstractDungeon.player instanceof Witchcraft){
-                customPanels.add(new CutscenePanel("img/scene/witch1.png"));
-                customPanels.add(new CutscenePanel("img/scene/witch2.png"));
-                customPanels.add(new CutscenePanel("img/scene/witch3.png"));
+                if ((CharacterSelectScreenPatches.characters[0]).reskinCount == 0){
+                    customPanels.add(new CutscenePanel("img/scene/witch1.png"));
+                    customPanels.add(new CutscenePanel("img/scene/witch2.png"));
+                    customPanels.add(new CutscenePanel("img/scene/witch3.png"));
+                }else if ((CharacterSelectScreenPatches.characters[0]).reskinCount == 1){
+                    customPanels.add(new CutscenePanel("img/scene/kyaru1.png"));
+                    customPanels.add(new CutscenePanel("img/scene/witch2.png"));
+                    customPanels.add(new CutscenePanel("img/scene/kyaru2.png"));
+                }else if ((CharacterSelectScreenPatches.characters[0]).reskinCount == 2){
+                    customPanels.add(new CutscenePanel("img/scene/anne1.png"));
+                    customPanels.add(new CutscenePanel("img/scene/witch2.png"));
+                    customPanels.add(new CutscenePanel("img/scene/anne3.png"));
+                }
             }else if (AbstractDungeon.player instanceof Elf){
-                customPanels.add(new CutscenePanel("img/scene/elf1.png"));
-                customPanels.add(new CutscenePanel("img/scene/elf2.png"));
-                customPanels.add(new CutscenePanel("img/scene/elf3.png"));
+                if ((CharacterSelectScreenPatches.characters[1]).reskinCount == 0){
+                    customPanels.add(new CutscenePanel("img/scene/elf1.png"));
+                    customPanels.add(new CutscenePanel("img/scene/elf2.png"));
+                    customPanels.add(new CutscenePanel("img/scene/elf3.png"));
+                }else if ((CharacterSelectScreenPatches.characters[1]).reskinCount == 1){
+                    customPanels.add(new CutscenePanel("img/scene/kokkoro1.png"));
+                    customPanels.add(new CutscenePanel("img/scene/elf2.png"));
+                    customPanels.add(new CutscenePanel("img/scene/kokkoro3.png"));
+                }
             }else if (AbstractDungeon.player instanceof Necromancer){
-                customPanels.add(new CutscenePanel("img/scene/necro1.png"));
-                customPanels.add(new CutscenePanel("img/scene/necro2.png"));
-                customPanels.add(new CutscenePanel("img/scene/necro3.png"));
+                if ((CharacterSelectScreenPatches.characters[2]).reskinCount == 0){
+                    customPanels.add(new CutscenePanel("img/scene/necro1.png"));
+                    customPanels.add(new CutscenePanel("img/scene/necro2.png"));
+                    customPanels.add(new CutscenePanel("img/scene/necro3.png"));
+                }else if ((CharacterSelectScreenPatches.characters[2]).reskinCount == 1){
+                    customPanels.add(new CutscenePanel("img/scene/miyako1.png"));
+                    customPanels.add(new CutscenePanel("img/scene/necro2.png"));
+                    customPanels.add(new CutscenePanel("img/scene/miyako3.png"));
+                }
             }else if (AbstractDungeon.player instanceof Vampire){
-                customPanels.add(new CutscenePanel("img/scene/vamp1.png"));
-                customPanels.add(new CutscenePanel("img/scene/vamp2.png"));
-                customPanels.add(new CutscenePanel("img/scene/vamp3.png"));
+                if ((CharacterSelectScreenPatches.characters[4]).reskinCount == 0){
+                    customPanels.add(new CutscenePanel("img/scene/vamp1.png"));
+                    customPanels.add(new CutscenePanel("img/scene/vamp2.png"));
+                    customPanels.add(new CutscenePanel("img/scene/vamp3.png"));
+                }else if ((CharacterSelectScreenPatches.characters[4]).reskinCount == 1){
+                    customPanels.add(new CutscenePanel("img/scene/io1.png"));
+                    customPanels.add(new CutscenePanel("img/scene/io2.png"));
+                    customPanels.add(new CutscenePanel("img/scene/io3.png"));
+                }
             }else if (AbstractDungeon.player instanceof Nemesis){
                 customPanels.add(new CutscenePanel("img/scene/nemesis1.png"));
                 customPanels.add(new CutscenePanel("img/scene/nemesis2.png"));
                 customPanels.add(new CutscenePanel("img/scene/nemesis3.png"));
             }else if (AbstractDungeon.player instanceof Bishop){
-                customPanels.add(new CutscenePanel("img/scene/bishop1.png"));
-                customPanels.add(new CutscenePanel("img/scene/bishop2.png"));
-                customPanels.add(new CutscenePanel("img/scene/bishop3.png"));
+                if ((CharacterSelectScreenPatches.characters[5]).reskinCount == 0){
+                    customPanels.add(new CutscenePanel("img/scene/bishop1.png"));
+                    customPanels.add(new CutscenePanel("img/scene/bishop2.png"));
+                    customPanels.add(new CutscenePanel("img/scene/bishop3.png"));
+                }else if ((CharacterSelectScreenPatches.characters[5]).reskinCount == 1){
+                    customPanels.add(new CutscenePanel("img/scene/yukari1.png"));
+                    customPanels.add(new CutscenePanel("img/scene/bishop2.png"));
+                    customPanels.add(new CutscenePanel("img/scene/yukari3.png"));
+                }
             }
             if (customPanels != null) {
                 try {

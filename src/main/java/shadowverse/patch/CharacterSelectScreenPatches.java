@@ -61,7 +61,7 @@ public class CharacterSelectScreenPatches {
 
     private static float buttonScale = 0.5F;
 
-    private static float buttonY = 450.0F;
+    private static float buttonY = 950.0F;
 
     public static ArrayList<AbstractGameEffect> char_effectsQueue = new ArrayList<>();
 
@@ -71,7 +71,9 @@ public class CharacterSelectScreenPatches {
             (AbstractSkinCharacter) new AbstractWitchSkin(),
             (AbstractSkinCharacter) new AbstractElfSkin(),
             (AbstractSkinCharacter) new AbstractNecroSkin(),
-            (AbstractSkinCharacter) new AbstractRoyalSkin()
+            (AbstractSkinCharacter) new AbstractRoyalSkin(),
+            (AbstractSkinCharacter) new AbstractVampireSkin(),
+            (AbstractSkinCharacter) new AbstractBishopSkin()
     };
 
     public static Color BLACK_OUTLINE_COLOR = new Color(0.0F, 0.0F, 0.0F, 0.5F);
@@ -278,7 +280,9 @@ public class CharacterSelectScreenPatches {
                 if (__instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Witchcraft")).NAMES[0]
                 )||__instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Elf")).NAMES[0])
                 ||__instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Necromancer")).NAMES[0])
-                ||__instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Royal")).NAMES[0]));
+                ||__instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Royal")).NAMES[0])
+                ||__instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Vampire")).NAMES[0])
+                ||__instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Bishop")).NAMES[0]));
                     if (__instance.selected) {
                         glowColor.r = 0.0F;
                         glowColor.g = 1.0F;

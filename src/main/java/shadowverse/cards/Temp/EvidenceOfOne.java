@@ -55,7 +55,7 @@ import shadowverse.characters.Nemesis;
      addToBot((AbstractGameAction)new ApplyPowerAction(abstractMonster,abstractPlayer,new VulnerablePower(abstractMonster,this.magicNumber,false),this.magicNumber));
      addToBot((AbstractGameAction)new ApplyPowerAction(abstractMonster,abstractPlayer,new WeakPower(abstractMonster,this.magicNumber,false),this.magicNumber));
      if (abstractPlayer.hasPower(OmenOfOnePower2.POWER_ID)){
-       addToBot((AbstractGameAction)new DamageAction((AbstractCreature) AbstractDungeon.player, new DamageInfo(abstractPlayer,this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+       addToBot((AbstractGameAction)new DamageAction((AbstractCreature) abstractMonster, new DamageInfo(abstractPlayer,this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
      }
    }
  

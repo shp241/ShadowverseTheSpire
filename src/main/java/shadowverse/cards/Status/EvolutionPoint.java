@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.action.AnimationAction;
 import shadowverse.characters.*;
+import shadowverse.patch.CharacterSelectScreenPatches;
 
 public class EvolutionPoint extends CustomCard {
     public static final String ID = "shadowverse:EvolutionPoint";
@@ -46,22 +47,22 @@ public class EvolutionPoint extends CustomCard {
         addToBot(new SelectCardsInHandAction(1, TEXT[0], false, false, card -> card.type != CardType.SKILL && card.canUpgrade(), abstractCards -> {
             for (AbstractCard c : abstractCards) {
                 int roll = AbstractDungeon.cardRandomRng.random(3);
-                if (abstractPlayer.chosenClass == Witchcraft.Enums.WITCHCRAFT) {
+                if (abstractPlayer.chosenClass == Witchcraft.Enums.WITCHCRAFT && (CharacterSelectScreenPatches.characters[0]).reskinCount == 0) {
                     addToBot(new SFXAction("Witchcraft_Evolve" + roll % 3));
                     addToBot(new AnimationAction(Witchcraft.getBigAnimation(), "extra", 2.833F));
-                } else if (abstractPlayer.chosenClass == Elf.Enums.Elf) {
+                } else if (abstractPlayer.chosenClass == Elf.Enums.Elf && (CharacterSelectScreenPatches.characters[1]).reskinCount == 0) {
                     addToBot(new SFXAction("Elf_Evolve" + roll % 3));
                     addToBot(new AnimationAction(Elf.getBigAnimation(), "extra", 2.833F));
-                } else if (abstractPlayer.chosenClass == Necromancer.Enums.Necromancer) {
+                } else if (abstractPlayer.chosenClass == Necromancer.Enums.Necromancer && (CharacterSelectScreenPatches.characters[2]).reskinCount == 0) {
                     addToBot(new SFXAction("Necromancer_Evolve" + roll % 3));
                     addToBot(new AnimationAction(Necromancer.getBigAnimation(), "extra", 2.833F));
-                } else if (abstractPlayer.chosenClass == Vampire.Enums.Vampire) {
+                } else if (abstractPlayer.chosenClass == Vampire.Enums.Vampire && (CharacterSelectScreenPatches.characters[4]).reskinCount == 0) {
                     addToBot(new SFXAction("Vampire_Evolve" + roll % 3));
                     addToBot(new AnimationAction(Vampire.getBigAnimation(), "extra", 2.833F));
                 } else if (abstractPlayer.chosenClass == Nemesis.Enums.Nemesis) {
                     addToBot(new SFXAction("Nemesis_Evolve" + roll % 3));
                     addToBot(new AnimationAction(Nemesis.getBigAnimation(), "extra", 2.833F));
-                } else if (abstractPlayer.chosenClass == Royal.Enums.Royal) {
+                } else if (abstractPlayer.chosenClass == Royal.Enums.Royal && (CharacterSelectScreenPatches.characters[3]).reskinCount == 0) {
                     addToBot(new SFXAction("Royal_Evolve" + roll % 3));
                     addToBot(new AnimationAction(Royal.getBigAnimation(), "extra", 2.833F));
                 }

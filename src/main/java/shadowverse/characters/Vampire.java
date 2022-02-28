@@ -28,6 +28,7 @@ import shadowverse.cards.Basic.RazoryClaw;
 import shadowverse.cards.Basic.Strike_V;
 import shadowverse.cards.Rare.NightVampire;
 import shadowverse.effect.ShadowverseEnergyOrb;
+import shadowverse.patch.CharacterSelectScreenPatches;
 
 import java.util.ArrayList;
 
@@ -46,22 +47,13 @@ public class Vampire extends AbstractShadowversePlayer{
 
     public static final CharacterStrings charStrings = CardCrawlGame.languagePack.getCharacterString("shadowverse:Vampire");
 
-    public static final int ENERGY_PER_TURN = 3;
-    public static final String VMP_SHOULDER_2 = "img/character/Vampire/shoulder.png";
-    public static final String VMP_SHOULDER_1 = "img/character/Vampire/shoulder.png";
-    public static final String VMP_CORPSE = "img/character/Vampire/corpse.png";
-    private static final int STARTING_HP = 80;
-    private static final int MAX_HP = 80;
-    private static final int STARTING_GOLD = 99;
-    private static final int HAND_SIZE = 5;
-    private static final int ORB_SLOTS = 0;
-    private static final int ASCENSION_MAX_HP_LOSS = 5;
+
     public static shadowverse.animation.AbstractAnimation bigAnimation = new shadowverse.animation.AbstractAnimation("img/animation/Vampire/class_1806.atlas", "img/animation/Vampire/class_1806.json", com.megacrit.cardcrawl.core.Settings.M_W / 1600.0F, com.megacrit.cardcrawl.core.Settings.M_W / 2.0F, com.megacrit.cardcrawl.core.Settings.M_H / 2.0F, 0F, 0F);
     private static Texture BASE_LAYER = new Texture("img/ui/layer_vamp.png");
 
     public Vampire(String name) {
-        super(name, Enums.Vampire, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation)new SpriterAnimation("img/character/Vampire/images/Vampire.scml"));
-        initializeClass(null, VMP_SHOULDER_2, VMP_SHOULDER_2, VMP_CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
+        super(name, Enums.Vampire, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation)new SpriterAnimation(((CharacterSelectScreenPatches.characters[4]).skins[(CharacterSelectScreenPatches.characters[4]).reskinCount]).scmlURL));
+        initializeClass(null, ((CharacterSelectScreenPatches.characters[4]).skins[(CharacterSelectScreenPatches.characters[4]).reskinCount]).SHOULDER1, ((CharacterSelectScreenPatches.characters[4]).skins[(CharacterSelectScreenPatches.characters[4]).reskinCount]).SHOULDER2, ((CharacterSelectScreenPatches.characters[4]).skins[(CharacterSelectScreenPatches.characters[4]).reskinCount]).CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
         bigAnimation.setVisible(false);
     }
 
@@ -131,7 +123,7 @@ public class Vampire extends AbstractShadowversePlayer{
 
     @Override
     public void doCharSelectScreenSelectEffect() {
-        CardCrawlGame.sound.playA("Vampire_Selected", 0.0F);
+        ((CharacterSelectScreenPatches.characters[4]).skins[(CharacterSelectScreenPatches.characters[4]).reskinCount]).playSelect();
         CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.LOW, ScreenShake.ShakeDur.SHORT, true);
     }
 
@@ -172,20 +164,7 @@ public class Vampire extends AbstractShadowversePlayer{
 
     public void damage(DamageInfo info) {
         super.damage(info);
-        if (lastDamageTaken >= 20){
-            CardCrawlGame.sound.playA("Vampire_Hurt", 0.0F);
-        }else if (lastDamageTaken > 0 ){
-            String sound = null;
-            int roll = AbstractDungeon.cardRandomRng.random(99);
-            if (roll < 50) {
-                sound = "Vampire_Hurt2";
-            } else if (roll < 80) {
-                sound = "Vampire_Hurt3";
-            } else {
-                sound = "Vampire_Hurt4";
-            }
-            CardCrawlGame.sound.playA(sound, 0.0F);
-        }
+        ((CharacterSelectScreenPatches.characters[4]).skins[(CharacterSelectScreenPatches.characters[4]).reskinCount]).playHurtSound(lastDamageTaken);
     }
     public static shadowverse.animation.AbstractAnimation getBigAnimation() {
         return bigAnimation;

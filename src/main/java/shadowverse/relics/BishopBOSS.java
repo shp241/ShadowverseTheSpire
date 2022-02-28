@@ -8,6 +8,7 @@
  import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
  import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
  import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+ import com.megacrit.cardcrawl.actions.defect.IncreaseMaxOrbAction;
  import com.megacrit.cardcrawl.actions.utility.UseCardAction;
  import com.megacrit.cardcrawl.cards.AbstractCard;
  import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -36,20 +37,19 @@
      return this.DESCRIPTIONS[0];
    }
 
-     @Override
-     public void onEquip() {
-         AbstractDungeon.player.masterMaxOrbs=6;
-     }
 
      public void atBattleStart() {
          this.isActive = false;
+         flash();
+         addToBot((AbstractGameAction)new RelicAboveCreatureAction((AbstractCreature)AbstractDungeon.player, this));
+         addToBot((AbstractGameAction)new IncreaseMaxOrbAction(1));
          addToBot(new AbstractGameAction() {
              public void update() {
                  if (!BishopBOSS.this.isActive && AbstractDungeon.player.isBloodied) {
                      BishopBOSS.this.flash();
                      BishopBOSS.this.pulse = true;
+                     addToBot((AbstractGameAction)new GainEnergyAction(1));
                      AbstractDungeon.player.addPower((AbstractPower)new BerserkPower((AbstractCreature)AbstractDungeon.player, 1));
-                     addToTop((AbstractGameAction)new RelicAboveCreatureAction((AbstractCreature)AbstractDungeon.player, BishopBOSS.this));
                      BishopBOSS.this.isActive = true;
                      AbstractDungeon.onModifyPower();
                  }

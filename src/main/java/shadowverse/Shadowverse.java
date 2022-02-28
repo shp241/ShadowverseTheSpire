@@ -1011,6 +1011,16 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("Anne_Hurt3",new Sfx("sounds/Anne_Hurt3.wav"));
         reflectedMap.put("Anne_Hurt4",new Sfx("sounds/Anne_Hurt4.wav"));
         reflectedMap.put("Anne_Select",new Sfx("sounds/Anne_Select.wav"));
+        reflectedMap.put("Io_Select",new Sfx("sounds/Io_Select.wav"));
+        reflectedMap.put("Io_Hurt",new Sfx("sounds/Io_Hurt.wav"));
+        reflectedMap.put("Io_Hurt2",new Sfx("sounds/Io_Hurt2.wav"));
+        reflectedMap.put("Io_Hurt3",new Sfx("sounds/Io_Hurt3.wav"));
+        reflectedMap.put("Io_Hurt4",new Sfx("sounds/Io_Hurt4.wav"));
+        reflectedMap.put("Yukari_Select",new Sfx("sounds/Yukari_Select.wav"));
+        reflectedMap.put("Yukari_Hurt",new Sfx("sounds/Yukari_Hurt.wav"));
+        reflectedMap.put("Yukari_Hurt2",new Sfx("sounds/Yukari_Hurt2.wav"));
+        reflectedMap.put("Yukari_Hurt3",new Sfx("sounds/Yukari_Hurt3.wav"));
+        reflectedMap.put("Yukari_Hurt4",new Sfx("sounds/Yukari_Hurt4.wav"));
     }
 
     public void receiveEditRelics() {

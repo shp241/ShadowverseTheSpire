@@ -32,6 +32,7 @@ public class ShadowedMemories extends CustomCard {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.SELF);
         this.baseBlock = 5;
         this.baseMagicNumber = 1;
+        this.magicNumber = this.baseMagicNumber;
         this.cardsToPreview = new EvolutionPoint();
     }
 

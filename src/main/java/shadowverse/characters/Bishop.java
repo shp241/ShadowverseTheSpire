@@ -25,6 +25,7 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import shadowverse.cards.Basic.*;
 import shadowverse.cards.Common.SacredPlea;
 import shadowverse.effect.ShadowverseEnergyOrb;
+import shadowverse.patch.CharacterSelectScreenPatches;
 
 import java.util.ArrayList;
 
@@ -43,13 +44,11 @@ public class Bishop extends AbstractShadowversePlayer{
 
     public static final CharacterStrings charStrings = CardCrawlGame.languagePack.getCharacterString("shadowverse:Bishop");
 
-    public static final String B_SHOULDER_2 = "img/character/Bishop/shoulder.png";
-    public static final String B_CORPSE = "img/character/Bishop/corpse.png";
     private static Texture BASE_LAYER = new Texture("img/ui/layer_bishop.png");
 
     public Bishop(String name) {
-        super(name, Enums.Bishop, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation)new SpriterAnimation("img/character/Bishop/images/bishop.scml"));
-        initializeClass(null, B_SHOULDER_2, B_SHOULDER_2, B_CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
+        super(name, Enums.Bishop, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation)new SpriterAnimation(((CharacterSelectScreenPatches.characters[5]).skins[(CharacterSelectScreenPatches.characters[5]).reskinCount]).scmlURL));
+        initializeClass(null, ((CharacterSelectScreenPatches.characters[5]).skins[(CharacterSelectScreenPatches.characters[5]).reskinCount]).SHOULDER1, ((CharacterSelectScreenPatches.characters[5]).skins[(CharacterSelectScreenPatches.characters[5]).reskinCount]).SHOULDER2, ((CharacterSelectScreenPatches.characters[5]).skins[(CharacterSelectScreenPatches.characters[5]).reskinCount]).CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
     }
 
     @Override
@@ -118,7 +117,7 @@ public class Bishop extends AbstractShadowversePlayer{
 
     @Override
     public void doCharSelectScreenSelectEffect() {
-        CardCrawlGame.sound.playA("Bishop_Selected", 0.0F);
+        ((CharacterSelectScreenPatches.characters[5]).skins[(CharacterSelectScreenPatches.characters[5]).reskinCount]).playSelect();
         CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.LOW, ScreenShake.ShakeDur.SHORT, true);
     }
 
@@ -159,20 +158,7 @@ public class Bishop extends AbstractShadowversePlayer{
 
     public void damage(DamageInfo info) {
         super.damage(info);
-        if (lastDamageTaken >= 20){
-            CardCrawlGame.sound.playA("Bishop_Hurt", 0.0F);
-        }else if (lastDamageTaken > 0 ){
-            String sound = null;
-            int roll = AbstractDungeon.cardRandomRng.random(99);
-            if (roll < 50) {
-                sound = "Bishop_Hurt2";
-            } else if (roll < 80) {
-                sound = "Bishop_Hurt3";
-            } else {
-                sound = "Bishop_Hurt4";
-            }
-            CardCrawlGame.sound.playA(sound, 0.0F);
-        }
+        ((CharacterSelectScreenPatches.characters[5]).skins[(CharacterSelectScreenPatches.characters[5]).reskinCount]).playHurtSound(lastDamageTaken);
     }
 
 }
