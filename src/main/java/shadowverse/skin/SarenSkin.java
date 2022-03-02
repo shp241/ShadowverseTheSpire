@@ -10,10 +10,10 @@ public class SarenSkin extends AbstractSkin{
     private static final String SKIN_CORPSE = "img/character/Bishop/corpse.png";
     private static final String SCML = "img/character/Bishop/images/bishop.scml";
     public static final String SELECTED = "Bishop_Selected";
-    public static final String HURT_SOUND1 = "Bishop_Hurt";
-    public static final String HURT_SOUND2 = "Bishop_Hurt2";
-    public static final String HURT_SOUND3 = "Bishop_Hurt3";
-    public static final String HURT_SOUND4 = "Bishop_Hurt4";
+    public static final String HURT_SOUND1 = "Bishop_Hurt2";
+    public static final String HURT_SOUND2 = "Bishop_Hurt3";
+    public static final String HURT_SOUND3 = "Bishop_Hurt4";
+    public static final String HURT_SOUND4 = "Bishop_Hurt";
 
     public SarenSkin(){
         this.NAME =  charStrings.NAMES[1];

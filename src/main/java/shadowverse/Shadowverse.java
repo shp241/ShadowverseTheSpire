@@ -137,6 +137,7 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
     }
 
     public void receivePostInitialize() {
+        loadSettings();
         BaseMod.addEvent(PinyaEvent.ID, PinyaEvent.class);
         BaseMod.addEvent(GemFortune.ID, GemFortune.class, TheCity.ID);
         BaseMod.addEvent(NaturalMachine.ID, NaturalMachine.class, Exordium.ID);
@@ -1021,6 +1022,11 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("Yukari_Hurt2",new Sfx("sounds/Yukari_Hurt2.wav"));
         reflectedMap.put("Yukari_Hurt3",new Sfx("sounds/Yukari_Hurt3.wav"));
         reflectedMap.put("Yukari_Hurt4",new Sfx("sounds/Yukari_Hurt4.wav"));
+        reflectedMap.put("Ralmia_Hurt",new Sfx("sounds/Ralmia_Hurt.wav"));
+        reflectedMap.put("Ralmia_Hurt2",new Sfx("sounds/Ralmia_Hurt2.wav"));
+        reflectedMap.put("Ralmia_Hurt3",new Sfx("sounds/Ralmia_Hurt3.wav"));
+        reflectedMap.put("Ralmia_Hurt4",new Sfx("sounds/Ralmia_Hurt4.wav"));
+        reflectedMap.put("Ralmia_Select",new Sfx("sounds/Ralmia_Select.wav"));
     }
 
     public void receiveEditRelics() {

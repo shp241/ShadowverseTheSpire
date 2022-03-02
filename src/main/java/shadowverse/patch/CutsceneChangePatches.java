@@ -115,9 +115,15 @@ public class CutsceneChangePatches {
                     customPanels.add(new CutscenePanel("img/scene/io3.png"));
                 }
             }else if (AbstractDungeon.player instanceof Nemesis){
-                customPanels.add(new CutscenePanel("img/scene/nemesis1.png"));
-                customPanels.add(new CutscenePanel("img/scene/nemesis2.png"));
-                customPanels.add(new CutscenePanel("img/scene/nemesis3.png"));
+                if ((CharacterSelectScreenPatches.characters[6]).reskinCount == 0){
+                    customPanels.add(new CutscenePanel("img/scene/nemesis1.png"));
+                    customPanels.add(new CutscenePanel("img/scene/nemesis2.png"));
+                    customPanels.add(new CutscenePanel("img/scene/nemesis3.png"));
+                }else if ((CharacterSelectScreenPatches.characters[6]).reskinCount == 1){
+                    customPanels.add(new CutscenePanel("img/scene/ralmia1.png"));
+                    customPanels.add(new CutscenePanel("img/scene/nemesis2.png"));
+                    customPanels.add(new CutscenePanel("img/scene/ralmia3.png"));
+                }
             }else if (AbstractDungeon.player instanceof Bishop){
                 if ((CharacterSelectScreenPatches.characters[5]).reskinCount == 0){
                     customPanels.add(new CutscenePanel("img/scene/bishop1.png"));

@@ -73,7 +73,8 @@ public class CharacterSelectScreenPatches {
             (AbstractSkinCharacter) new AbstractNecroSkin(),
             (AbstractSkinCharacter) new AbstractRoyalSkin(),
             (AbstractSkinCharacter) new AbstractVampireSkin(),
-            (AbstractSkinCharacter) new AbstractBishopSkin()
+            (AbstractSkinCharacter) new AbstractBishopSkin(),
+            (AbstractSkinCharacter) new AbstractNemesisSkin()
     };
 
     public static Color BLACK_OUTLINE_COLOR = new Color(0.0F, 0.0F, 0.0F, 0.5F);
@@ -278,19 +279,21 @@ public class CharacterSelectScreenPatches {
             public static SpireReturn<Void> Insert(CharacterOption __instance, SpriteBatch sb) {
                 Color glowColor = (Color) ReflectionHacks.getPrivate(__instance, CharacterOption.class, "glowColor");
                 if (__instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Witchcraft")).NAMES[0]
-                )||__instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Elf")).NAMES[0])
-                ||__instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Necromancer")).NAMES[0])
-                ||__instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Royal")).NAMES[0])
-                ||__instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Vampire")).NAMES[0])
-                ||__instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Bishop")).NAMES[0]));
-                    if (__instance.selected) {
-                        glowColor.r = 0.0F;
-                        glowColor.g = 1.0F;
-                        glowColor.b = 1.0F;
-                        sb.setColor(glowColor);
-                    } else {
-                        sb.setColor(CharacterSelectScreenPatches.BLACK_OUTLINE_COLOR);
-                    }
+                ) || __instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Elf")).NAMES[0])
+                        || __instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Necromancer")).NAMES[0])
+                        || __instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Royal")).NAMES[0])
+                        || __instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Vampire")).NAMES[0])
+                        || __instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Bishop")).NAMES[0])
+                        || __instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Nemesis")).NAMES[0]))
+                    ;
+                if (__instance.selected) {
+                    glowColor.r = 0.0F;
+                    glowColor.g = 1.0F;
+                    glowColor.b = 1.0F;
+                    sb.setColor(glowColor);
+                } else {
+                    sb.setColor(CharacterSelectScreenPatches.BLACK_OUTLINE_COLOR);
+                }
                 return SpireReturn.Continue();
             }
         }

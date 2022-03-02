@@ -23,6 +23,7 @@ import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import shadowverse.cards.Basic.*;
 import shadowverse.cards.Curse.CurseOfPurgation;
+import shadowverse.patch.CharacterSelectScreenPatches;
 
 
 import java.util.ArrayList;
@@ -42,21 +43,11 @@ public class Nemesis extends AbstractShadowversePlayer{
 
     public static final CharacterStrings charStrings = CardCrawlGame.languagePack.getCharacterString("shadowverse:Nemesis");
 
-    public static final int ENERGY_PER_TURN = 3;
-    public static final String Nm_SHOULDER_2 = "img/character/Nemesis/shoulder.png";
-    public static final String Nm_SHOULDER_1 = "img/character/Nemesis/shoulder.png";
-    public static final String Nm_CORPSE = "img/character/Nemesis/corpse.png";
-    private static final int STARTING_HP = 75;
-    private static final int MAX_HP = 75;
-    private static final int STARTING_GOLD = 99;
-    private static final int HAND_SIZE = 5;
-    private static final int ORB_SLOTS = 0;
-    private static final int ASCENSION_MAX_HP_LOSS = 5;
     public static shadowverse.animation.AbstractAnimation bigAnimation = new shadowverse.animation.AbstractAnimation("img/animation/Nemesis/class_808.atlas", "img/animation/Nemesis/class_808.json", com.megacrit.cardcrawl.core.Settings.M_W / 1600.0F, com.megacrit.cardcrawl.core.Settings.M_W / 2.0F, com.megacrit.cardcrawl.core.Settings.M_H / 2.0F, 0F, 0F);
 
     public Nemesis(String name) {
-        super(name, Enums.Nemesis, null, null, null, (AbstractAnimation)new SpriterAnimation("img/character/Nemesis/images/NewProject.autosave.autosave.scml"));
-        initializeClass(null, Nm_SHOULDER_2, Nm_SHOULDER_2, Nm_CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
+        super(name, Enums.Nemesis, null, null, null, (AbstractAnimation)new SpriterAnimation(((CharacterSelectScreenPatches.characters[6]).skins[(CharacterSelectScreenPatches.characters[6]).reskinCount]).scmlURL));
+        initializeClass(null, ((CharacterSelectScreenPatches.characters[6]).skins[(CharacterSelectScreenPatches.characters[6]).reskinCount]).SHOULDER1, ((CharacterSelectScreenPatches.characters[6]).skins[(CharacterSelectScreenPatches.characters[6]).reskinCount]).SHOULDER2, ((CharacterSelectScreenPatches.characters[6]).skins[(CharacterSelectScreenPatches.characters[6]).reskinCount]).CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
         bigAnimation.setVisible(false);
         bigAnimation.skeleton.setSkin("skin_01");
     }
@@ -128,7 +119,7 @@ public class Nemesis extends AbstractShadowversePlayer{
 
     @Override
     public void doCharSelectScreenSelectEffect() {
-        CardCrawlGame.sound.playA("Nemesis_Selected", 0.0F);
+        ((CharacterSelectScreenPatches.characters[6]).skins[(CharacterSelectScreenPatches.characters[6]).reskinCount]).playSelect();
         CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.LOW, ScreenShake.ShakeDur.SHORT, true);
     }
 
@@ -169,20 +160,7 @@ public class Nemesis extends AbstractShadowversePlayer{
 
     public void damage(DamageInfo info) {
         super.damage(info);
-        if (lastDamageTaken >= 20){
-            CardCrawlGame.sound.playA("Nemesis_Hurt", 0.0F);
-        }else if (lastDamageTaken > 0 ){
-            String sound = null;
-            int roll = AbstractDungeon.cardRandomRng.random(99);
-            if (roll < 50) {
-                sound = "Nemesis_Hurt2";
-            } else if (roll < 80) {
-                sound = "Nemesis_Hurt3";
-            } else {
-                sound = "Nemesis_Hurt4";
-            }
-            CardCrawlGame.sound.playA(sound, 0.0F);
-        }
+        ((CharacterSelectScreenPatches.characters[6]).skins[(CharacterSelectScreenPatches.characters[6]).reskinCount]).playHurtSound(lastDamageTaken);
     }
     public static shadowverse.animation.AbstractAnimation getBigAnimation() {
         return bigAnimation;

@@ -9,10 +9,10 @@ public class KyoukaSkin extends AbstractSkin{
     public static final CharacterStrings charStrings = CardCrawlGame.languagePack.getCharacterString("shadowverse:Witchcraft");
     public static final String SCML = "img/character/Witchcraft/sprite/Witchcraft.scml";
     public static final String SELECTED = "witch_selected";
-    public static final String HURT_SOUND1 = "XCW_Hurt";
-    public static final String HURT_SOUND2 = "XCW_Hurt2";
-    public static final String HURT_SOUND3 = "XCW_Hurt3";
-    public static final String HURT_SOUND4 = "XCW_Hurt4";
+    public static final String HURT_SOUND1 = "XCW_Hurt2";
+    public static final String HURT_SOUND2 = "XCW_Hurt3";
+    public static final String HURT_SOUND3 = "XCW_Hurt4";
+    public static final String HURT_SOUND4 = "XCW_Hurt";
 
     public KyoukaSkin(){
         this.NAME =  charStrings.NAMES[1];

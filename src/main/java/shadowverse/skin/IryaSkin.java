@@ -10,10 +10,10 @@ public class IryaSkin extends AbstractSkin{
     private static final String SKIN_CORPSE = "img/character/Vampire/corpse.png";
     private static final String SCML = "img/character/Vampire/images/Vampire.scml";
     public static final String SELECTED = "Vampire_Selected";
-    public static final String HURT_SOUND1 = "Vampire_Hurt";
-    public static final String HURT_SOUND2 = "Vampire_Hurt2";
-    public static final String HURT_SOUND3 = "Vampire_Hurt3";
-    public static final String HURT_SOUND4 = "Vampire_Hurt4";
+    public static final String HURT_SOUND1 = "Vampire_Hurt2";
+    public static final String HURT_SOUND2 = "Vampire_Hurt3";
+    public static final String HURT_SOUND3 = "Vampire_Hurt4";
+    public static final String HURT_SOUND4 = "Vampire_Hurt";
 
     public IryaSkin(){
         this.NAME =  charStrings.NAMES[1];

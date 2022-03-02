@@ -10,10 +10,10 @@ public class ArisaSkin extends AbstractSkin{
     private static final String SKIN_CORPSE = "img/character/Elf/corpse.png";
     private static final String SCML = "img/character/Elf/images/arisa.scml";
     public static final String SELECTED = "Arisa_Selected";
-    public static final String HURT_SOUND1 = "Arisa_Hurt";
-    public static final String HURT_SOUND2 = "Arisa_Hurt2";
-    public static final String HURT_SOUND3 = "Arisa_Hurt3";
-    public static final String HURT_SOUND4 = "Arisa_Hurt4";
+    public static final String HURT_SOUND1 = "Arisa_Hurt2";
+    public static final String HURT_SOUND2 = "Arisa_Hurt3";
+    public static final String HURT_SOUND3 = "Arisa_Hurt4";
+    public static final String HURT_SOUND4 = "Arisa_Hurt";
 
     public ArisaSkin(){
         this.NAME =  charStrings.NAMES[1];
