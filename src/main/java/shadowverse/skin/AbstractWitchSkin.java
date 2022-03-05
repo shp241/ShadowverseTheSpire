@@ -7,7 +7,7 @@ import shadowverse.characters.Witchcraft;
 public class AbstractWitchSkin extends AbstractSkinCharacter{
     public static final String ID = (CardCrawlGame.languagePack.getCharacterString("shadowverse:Witchcraft")).NAMES[0];
 
-    public static final AbstractSkin[] SKINS = new AbstractSkin[] { new KyoukaSkin(), new KyaruSkin(), new AnneSkin() };
+    public static final AbstractSkin[] SKINS = new AbstractSkin[] { new KyoukaSkin(), new KyaruSkin(), new AnneSkin(),new HalloweenKyoukaSkin() };
 
     public AbstractWitchSkin() {
         super(ID, SKINS);

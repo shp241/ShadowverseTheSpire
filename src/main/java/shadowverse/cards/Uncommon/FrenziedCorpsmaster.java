@@ -26,10 +26,7 @@ import shadowverse.action.DrawPileToHandAction_Tag;
 import shadowverse.cards.Temp.FrenziedCorpsmaster_Acc;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
-import shadowverse.orbs.HeavyKnight;
-import shadowverse.orbs.Minion;
-import shadowverse.orbs.ShieldGuardian;
-import shadowverse.orbs.SteelcladKnight;
+import shadowverse.orbs.*;
 
 public class FrenziedCorpsmaster extends CustomCard {
     public static final String ID = "shadowverse:FrenziedCorpsmaster";
@@ -60,7 +57,7 @@ public class FrenziedCorpsmaster extends CustomCard {
         int rally = 0;
 
         for (AbstractOrb o : AbstractDungeon.actionManager.orbsChanneledThisCombat) {
-            if (o instanceof Minion) {
+            if (o instanceof Minion && !(o instanceof AmbushMinion) && !(o instanceof ErikaOrb)) {
                 rally++;
             }
         }

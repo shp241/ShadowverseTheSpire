@@ -17,10 +17,7 @@ import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import shadowverse.cards.Temp.NaterranGreatTree;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
-import shadowverse.orbs.AmbushMinion;
-import shadowverse.orbs.HeavyKnight;
-import shadowverse.orbs.Minion;
-import shadowverse.orbs.ShieldGuardian;
+import shadowverse.orbs.*;
 
 public class BrothersUnited extends CustomCard {
     public static final String ID = "shadowverse:BrothersUnited";
@@ -51,7 +48,7 @@ public class BrothersUnited extends CustomCard {
         int rally = 0;
 
         for (AbstractOrb o : AbstractDungeon.actionManager.orbsChanneledThisCombat) {
-            if (o instanceof Minion && !(o instanceof AmbushMinion)) {
+            if (o instanceof Minion && !(o instanceof AmbushMinion) && !(o instanceof ErikaOrb)) {
                 rally++;
             }
         }

@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 public class AbstractBishopSkin extends AbstractSkinCharacter{
     public static final String ID = (CardCrawlGame.languagePack.getCharacterString("shadowverse:Bishop")).NAMES[0];
 
-    public static final AbstractSkin[] SKINS = new AbstractSkin[] { new SarenSkin(), new YukariSkin() };
+    public static final AbstractSkin[] SKINS = new AbstractSkin[] { new SarenSkin(), new YukariSkin(), new SarenSummerSkin() };
 
     public AbstractBishopSkin() {
         super(ID, SKINS);

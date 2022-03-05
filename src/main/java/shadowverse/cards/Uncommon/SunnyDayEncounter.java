@@ -19,6 +19,8 @@ import shadowverse.action.SunnyDayEncounterAction;
 import shadowverse.cards.Temp.NaterranGreatTree;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
+import shadowverse.orbs.AmbushMinion;
+import shadowverse.orbs.ErikaOrb;
 import shadowverse.orbs.Minion;
 
 public class SunnyDayEncounter extends CustomCard {
@@ -48,7 +50,7 @@ public class SunnyDayEncounter extends CustomCard {
         int rally = 0;
 
         for (AbstractOrb o : AbstractDungeon.actionManager.orbsChanneledThisCombat) {
-            if (o instanceof Minion) {
+            if (o instanceof Minion && !(o instanceof AmbushMinion) && !(o instanceof ErikaOrb)) {
                 rally++;
             }
         }

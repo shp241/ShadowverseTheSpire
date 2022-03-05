@@ -21,6 +21,7 @@ import com.megacrit.cardcrawl.stances.NeutralStance;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 import com.megacrit.cardcrawl.vfx.combat.IntenseZoomEffect;
+import shadowverse.cards.Temp.AnalyzeArtifact;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Nemesis;
 import shadowverse.powers.YuwanPower;
@@ -48,7 +49,10 @@ public class Yuwan
         if (!this.upgraded) {
             upgradeName();
             upgradeBlock(3);
-            upgradeMagicNumber(4);
+            upgradeMagicNumber(2);
+            this.cardsToPreview = new AnalyzeArtifact();
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 
@@ -87,6 +91,9 @@ public class Yuwan
                 ((AbstractShadowversePlayer) p).resonanceCount--;
         }
         addToBot((AbstractGameAction)new DrawCardAction(1));
+        if (this.upgraded){
+            addToBot((AbstractGameAction)new MakeTempCardInHandAction(new AnalyzeArtifact()));
+        }
     }
 
 

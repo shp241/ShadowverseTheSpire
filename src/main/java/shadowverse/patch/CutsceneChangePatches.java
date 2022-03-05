@@ -83,6 +83,10 @@ public class CutsceneChangePatches {
                     customPanels.add(new CutscenePanel("img/scene/anne1.png"));
                     customPanels.add(new CutscenePanel("img/scene/witch2.png"));
                     customPanels.add(new CutscenePanel("img/scene/anne3.png"));
+                }else if ((CharacterSelectScreenPatches.characters[0]).reskinCount == 3){
+                    customPanels.add(new CutscenePanel("img/scene/halloween_kyouka.png"));
+                    customPanels.add(new CutscenePanel("img/scene/witch2.png"));
+                    customPanels.add(new CutscenePanel("img/scene/halloween_kyouka3.png"));
                 }
             }else if (AbstractDungeon.player instanceof Elf){
                 if ((CharacterSelectScreenPatches.characters[1]).reskinCount == 0){
@@ -133,6 +137,10 @@ public class CutsceneChangePatches {
                     customPanels.add(new CutscenePanel("img/scene/yukari1.png"));
                     customPanels.add(new CutscenePanel("img/scene/bishop2.png"));
                     customPanels.add(new CutscenePanel("img/scene/yukari3.png"));
+                }else if ((CharacterSelectScreenPatches.characters[5]).reskinCount == 2){
+                    customPanels.add(new CutscenePanel("img/scene/saren_summer.png"));
+                    customPanels.add(new CutscenePanel("img/scene/saren_summer2.png"));
+                    customPanels.add(new CutscenePanel("img/scene/saren_summer3.png"));
                 }
             }
             if (customPanels != null) {

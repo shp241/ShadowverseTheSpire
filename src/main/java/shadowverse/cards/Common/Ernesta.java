@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.powers.DexterityPower;
 import shadowverse.cards.Temp.DreadHound;
 import shadowverse.characters.Royal;
 import shadowverse.orbs.AmbushMinion;
+import shadowverse.orbs.ErikaOrb;
 import shadowverse.orbs.Minion;
 import shadowverse.powers.DisableEffectDamagePower;
 import shadowverse.relics.KagemitsuSword;
@@ -38,7 +39,7 @@ public class Ernesta extends CustomCard {
         int rally = 0;
 
         for (AbstractOrb o : AbstractDungeon.actionManager.orbsChanneledThisCombat) {
-            if (o instanceof Minion && !(o instanceof AmbushMinion)) {
+            if (o instanceof Minion && !(o instanceof AmbushMinion) && !(o instanceof ErikaOrb)) {
                 rally++;
             }
         }

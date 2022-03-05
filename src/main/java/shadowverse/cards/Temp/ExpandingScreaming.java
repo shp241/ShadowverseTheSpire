@@ -67,6 +67,9 @@ import shadowverse.characters.Necromancer;
          omenOfSilence = card;
      }
      if (null!=omenOfSilence){
+       omenOfSilence.cost = 1;
+       omenOfSilence.costForTurn = 1;
+       omenOfSilence.isCostModified = false;
        addToBot((AbstractGameAction) new NecromanceAction(3, null, (AbstractGameAction) new MakeTempCardInHandAction(omenOfSilence.makeStatEquivalentCopy())));
      }
      int count = 0;

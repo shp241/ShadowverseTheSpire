@@ -11,6 +11,8 @@ import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.orbs.EmptyOrbSlot;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import shadowverse.action.MinionSummonAction;
+import shadowverse.orbs.AmbushMinion;
+import shadowverse.orbs.ErikaOrb;
 import shadowverse.orbs.Knight;
 import shadowverse.orbs.Minion;
 
@@ -59,7 +61,7 @@ public class Conscription extends CustomRelic {
         int rally = 0;
 
         for (AbstractOrb o : AbstractDungeon.actionManager.orbsChanneledThisCombat) {
-            if (o instanceof Minion) {
+            if (o instanceof Minion && !(o instanceof AmbushMinion) && !(o instanceof ErikaOrb)) {
                 rally++;
             }
         }

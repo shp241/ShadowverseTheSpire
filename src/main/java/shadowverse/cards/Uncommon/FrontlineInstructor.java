@@ -17,6 +17,7 @@ import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import shadowverse.action.MinionBuffAction;
 import shadowverse.characters.Royal;
 import shadowverse.orbs.AmbushMinion;
+import shadowverse.orbs.ErikaOrb;
 import shadowverse.orbs.Minion;
 
 public class FrontlineInstructor extends CustomCard {
@@ -65,7 +66,7 @@ public class FrontlineInstructor extends CustomCard {
         int rally = 0;
 
         for (AbstractOrb o : AbstractDungeon.actionManager.orbsChanneledThisCombat) {
-            if (o instanceof Minion && !(o instanceof AmbushMinion)) {
+            if (o instanceof Minion && !(o instanceof AmbushMinion) && !(o instanceof ErikaOrb)) {
                 rally++;
             }
         }

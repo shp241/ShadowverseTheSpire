@@ -19,8 +19,9 @@ public class Reinhardt extends CustomCard {
     public static final String IMG_PATH = "img/cards/Reinhardt.png";
 
     public Reinhardt() {
-        super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
         this.magicNumber = this.baseMagicNumber = 1;
+        this.isEthereal = true;
     }
 
     @Override
@@ -29,7 +30,7 @@ public class Reinhardt extends CustomCard {
             upgradeName();
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
-            this.selfRetain = true;
+            this.isEthereal = false;
         }
     }
 

@@ -2284,6 +2284,7 @@
   "shadowverse:Yuwan": {
     "NAME": "次元超克者·伊昂",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 消耗一张手牌，增加1张该牌的复制品到抽牌堆中，抽1张牌。 NL 如果本场战斗由非 共鸣 转变为 共鸣 的次数为5以上，下回合开始时对随机敌人造成 !M! 点伤害。 NL 如果为10次以上，再造成一次伤害。",
+    "UPGRADE_DESCRIPTION":"获得 !B! 点 格挡 。 NL 消耗一张手牌，增加1张该牌的复制品到抽牌堆中，抽1张牌。 NL 如果本场战斗由非 共鸣 转变为 共鸣 的次数为5以上，下回合开始时对随机敌人造成 !M! 点伤害。 NL 如果为10次以上，再造成一次伤害。 NL 增加1张 *解析的创造物 到手中。",
     "EXTENDED_DESCRIPTION": [
       " NL (非 共鸣 转变为 共鸣 的次数为",
       " 。)"
@@ -3236,8 +3237,8 @@
   },
   "shadowverse:Reinhardt": {
     "NAME": "改革者·莱恩哈尔特",
-    "DESCRIPTION": "受到攻击时，获得 !M! 点 力量 和 敏捷 。受到伤害后失去这个效果并回复 5 点生命值。",
-    "UPGRADE_DESCRIPTION": "受到攻击时，获得 !M! 点 力量 和 敏捷 。受到伤害后失去这个效果并回复 5 点生命值。 NL 保留 。"
+    "DESCRIPTION": "受到攻击时，获得 !M! 点 力量 和 敏捷 。受到伤害后失去这个效果并回复 5 点生命值。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION": "受到攻击时，获得 !M! 点 力量 和 敏捷 。受到伤害后失去这个效果并回复 5 点生命值。"
   },
   "shadowverse:Garven": {
     "NAME": "终击铁腕·加尔瓦",
@@ -4079,5 +4080,18 @@
   "shadowverse:AdherentOfAnnihilation": {
     "NAME": "绝命的崇拜者",
     "DESCRIPTION": "给予负面效果时，抽 !M! 张牌。"
+  },
+  "shadowverse:Erika": {
+    "NAME": "忠义剑士·艾莉卡",
+    "DESCRIPTION": " !M! /1。 NL 被动：造成攻击力的3倍伤害并失去1点体力。打出攻击牌或召唤随从或护符时，本回合获得+1/+0。 NL 限定 协作 7 增加1张 *祕藏之技 到手中。",
+    "UPGRADE_DESCRIPTION":" !M! /1。 NL 被动：造成攻击力的3倍伤害并失去1点体力。打出攻击牌或召唤随从或护符时，本回合获得+1/+0。 NL 限定 协作 7 增加1张 *祕藏之技 到手中。 NL 协作 15 增加1张 *艾莉卡的战技 到手中。",
+    "EXTENDED_DESCRIPTION": [
+      "（协作数：",
+      ")"
+    ]
+  },
+  "shadowverse:SecretSkill": {
+    "NAME": "祕藏之技",
+    "DESCRIPTION": "回合结束时， 击晕 第一个意图为攻击的敌人。"
   }
 }

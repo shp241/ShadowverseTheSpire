@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import com.megacrit.cardcrawl.relics.PrismaticShard;
 import shadowverse.action.PlaceAmulet;
 import shadowverse.cards.AbstractAmuletCard;
 import shadowverse.cards.AbstractCrystalizeCard;
@@ -17,15 +18,19 @@ import shadowverse.cards.Temp.NaterranGreatTree;
 import shadowverse.cards.AbstractNoCountDownAmulet;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;
+import shadowverse.characters.Royal;
 import shadowverse.orbs.AmuletOrb;
+import shadowverse.orbs.ErikaOrb;
 import shadowverse.powers.NaterranTree;
+import shadowverse.relics.AlterplaneArbiter;
 
 public class PlaceAmuletPatch {
     @SpirePatch(clz = AbstractPlayer.class, method = "useCard")
     public static class placeCardPatch {
         @SpirePostfixPatch
         public static void placeA(AbstractPlayer p, AbstractCard c, AbstractMonster monster, int energyOnUse) {
-            if (p instanceof Bishop){
+            if (p instanceof Bishop || p instanceof Royal ||
+                    ((AbstractDungeon.player.hasRelic(PrismaticShard.ID)|| (AbstractDungeon.player.hasRelic(AlterplaneArbiter.ID)))&&AbstractDungeon.player instanceof AbstractShadowversePlayer)){
                 if (c instanceof AbstractAmuletCard || (c instanceof AbstractCrystalizeCard && c.type== AbstractCard.CardType.POWER)){
                     AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new RealWaitAction(0.6F));
                     AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new PlaceAmulet(c,p.hand));
@@ -57,6 +62,9 @@ public class PlaceAmuletPatch {
                     if (((AmuletOrb) o).amulet instanceof AbstractNoCountDownAmulet){
                         ((AbstractNoCountDownAmulet)(((AmuletOrb) o).amulet)).onOtherCardPlayed(c,(AmuletOrb) o);
                     }
+                }
+                if (o instanceof ErikaOrb){
+                    ((ErikaOrb)o).onOtherCardPlayed(c,o);
                 }
             }
         }

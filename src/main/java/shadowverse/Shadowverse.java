@@ -1027,6 +1027,18 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("Ralmia_Hurt3",new Sfx("sounds/Ralmia_Hurt3.wav"));
         reflectedMap.put("Ralmia_Hurt4",new Sfx("sounds/Ralmia_Hurt4.wav"));
         reflectedMap.put("Ralmia_Select",new Sfx("sounds/Ralmia_Select.wav"));
+        reflectedMap.put("HalloweenXCW_Hurt",new Sfx("sounds/HalloweenXCW_Hurt.wav"));
+        reflectedMap.put("HalloweenXCW_Hurt2",new Sfx("sounds/HalloweenXCW_Hurt2.wav"));
+        reflectedMap.put("HalloweenXCW_Hurt3",new Sfx("sounds/HalloweenXCW_Hurt3.wav"));
+        reflectedMap.put("HalloweenXCW_Select",new Sfx("sounds/HalloweenXCW_Select.wav"));
+        reflectedMap.put("Saren_Summer_Hurt",new Sfx("sounds/Saren_Summer_Hurt.wav"));
+        reflectedMap.put("Saren_Summer_Hurt2",new Sfx("sounds/Saren_Summer_Hurt2.wav"));
+        reflectedMap.put("Saren_Summer_Hurt3",new Sfx("sounds/Saren_Summer_Hurt3.wav"));
+        reflectedMap.put("Saren_Summer_Select",new Sfx("sounds/Saren_Summer_Select.wav"));
+        reflectedMap.put("Erika",new Sfx("sounds/Erika.wav"));
+        reflectedMap.put("Erika_Eff",new Sfx("sounds/Erika_Eff.wav"));
+        reflectedMap.put("SecretSkill",new Sfx("sounds/SecretSkill.wav"));
+        reflectedMap.put("SecretSkill_Eff",new Sfx("sounds/SecretSkill_Eff.wav"));
     }
 
     public void receiveEditRelics() {
@@ -1937,6 +1949,8 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCard((AbstractCard) new AdherentOfHollow());
         BaseMod.addCard((AbstractCard) new AdherentOfDispair());
         BaseMod.addCard((AbstractCard) new AdherentOfAnnihilation());
+        BaseMod.addCard((AbstractCard) new Erika());
+        BaseMod.addCard((AbstractCard) new SecretSkill());
         logger.info("Success");
     }
 
@@ -1953,7 +1967,7 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
 
     public static void saveSettings() {
         try {
-            SpireConfig config = new SpireConfig("VUPShionMod", "settings", ShadowverseDefaults);
+            SpireConfig config = new SpireConfig("Shadowverse", "settings", ShadowverseDefaults);
             for (int i = 0; i <= CharacterSelectScreenPatches.characters.length - 1; i++) {
                 config.setInt(CardCrawlGame.saveSlot + "reskinCount" + i, (CharacterSelectScreenPatches.characters[i]).reskinCount);
             }

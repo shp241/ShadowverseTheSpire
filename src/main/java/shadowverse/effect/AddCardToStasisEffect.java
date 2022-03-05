@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import shadowverse.orbs.AmbushMinion;
 import shadowverse.orbs.AmuletOrb;
+import shadowverse.orbs.Minion;
 
 public class AddCardToStasisEffect extends AbstractGameEffect {
     private static final float EFFECT_DUR = 1.5F;
@@ -33,7 +34,7 @@ public class AddCardToStasisEffect extends AbstractGameEffect {
         this.o = o;
     }
 
-    public AddCardToStasisEffect(AbstractCard srcCard, AmbushMinion o, float startX, float startY, boolean instant) {
+    public AddCardToStasisEffect(AbstractCard srcCard, Minion o, float startX, float startY, boolean instant) {
         this.card = srcCard;
         this.duration = this.startingDuration = instant ? 0.1F : 1.0F;
         this.glowPoint = this.startingDuration * 0.25F;
