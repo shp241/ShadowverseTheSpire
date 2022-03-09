@@ -26,6 +26,7 @@ import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.ThoughtBubble;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import shadowverse.cardmods.PrinceCatacombMod;
 import shadowverse.cards.Basic.*;
 import shadowverse.cards.Common.*;
 import shadowverse.cards.Curse.*;
@@ -85,10 +86,6 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
     public static boolean canSpawnAmuletOrb() {
         if (AbstractDungeon.player.hasEmptyOrb() || (AbstractDungeon.player.masterMaxOrbs == 0 && AbstractDungeon.player.maxOrbs == 0))
             return true;
-        for (AbstractOrb o : AbstractDungeon.player.orbs) {
-            if (!(o instanceof AmuletOrb))
-                return true;
-        }
         UIStrings UI_STRINGS = CardCrawlGame.languagePack.getUIString("shadowverse:AmuletText");
         AbstractDungeon.effectList.add(new ThoughtBubble(AbstractDungeon.player.dialogX, AbstractDungeon.player.dialogY, 2.0F, UI_STRINGS.TEXT[0], true));
         return false;
@@ -1039,6 +1036,10 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("Erika_Eff",new Sfx("sounds/Erika_Eff.wav"));
         reflectedMap.put("SecretSkill",new Sfx("sounds/SecretSkill.wav"));
         reflectedMap.put("SecretSkill_Eff",new Sfx("sounds/SecretSkill_Eff.wav"));
+        reflectedMap.put("OtherworldGatekeeper",new Sfx("sounds/OtherworldGatekeeper.wav"));
+        reflectedMap.put("Ginsetsu2_Eff",new Sfx("sounds/Ginsetsu2_Eff.wav"));
+        reflectedMap.put("Ginsetsu2",new Sfx("sounds/Ginsetsu2.wav"));
+        reflectedMap.put("PrinceCatacomb",new Sfx("sounds/PrinceCatacomb.wav"));
     }
 
     public void receiveEditRelics() {
@@ -1951,6 +1952,9 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCard((AbstractCard) new AdherentOfAnnihilation());
         BaseMod.addCard((AbstractCard) new Erika());
         BaseMod.addCard((AbstractCard) new SecretSkill());
+        BaseMod.addCard((AbstractCard) new PixieMischief());
+        BaseMod.addCard((AbstractCard) new OtherworldGatekeeper());
+        BaseMod.addCard((AbstractCard) new PrinceCatacomb());
         logger.info("Success");
     }
 

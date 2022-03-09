@@ -1,0 +1,461 @@
+{
+  "shadowverse:FriendOfTruth": {
+    "NAME": "誠実なる友",
+    "FLAVOR": "曝け出せ、深奥を。本質、本能、本当を。",
+    "DESCRIPTIONS": [
+      "戦闘開始時、手札・山札すべてを、 #b1 スペルブースト する。 #yナイフ #b1 枚を手札に加える。"
+    ]
+  },
+  "shadowverse:Eleanor": {
+    "NAME": "天外の友・エレノア",
+    "FLAVOR": "私は天外の華にして――お前の友。私のために、そしてお前のために咲き誇るが、エレノア・グローリアだ！",
+    "DESCRIPTIONS": [
+      "序盤の #b3 ターンの開始時、ランダムにコスト #b0 の #y変成の魔術 、 #y二重錬成 、 #yストームレイジ  #b1 枚を手札に加える。"
+    ]
+  },
+  "shadowverse:EnchantedLibrary": {
+    "NAME": "魔法図書館",
+    "FLAVOR": "本が機嫌を損ねますため、図書館では御静かに。―魔法図書館の張り紙",
+    "DESCRIPTIONS": [
+      "序盤の #b2 ターンの開始時、山札から #yスキル #b1 枚を手札に加える。"
+    ]
+  },
+  "shadowverse:EarthEssenceRelic": {
+    "NAME": "土の魔片",
+    "FLAVOR": "実験より出でる知識が、魔術を高みへと導く。",
+    "DESCRIPTIONS": [
+      "戦闘開始時、土の印を #b1 得る。"
+    ]
+  },
+  "shadowverse:Mysteria": {
+    "NAME": "魔術の始祖・マナリア",
+    "FLAVOR": "いつまでも魔術は共にある――",
+    "DESCRIPTIONS": [
+      "戦闘開始時、 #y魔術の始祖・マナリア を #b1 枚山札に加え、 筋力 を #b",
+      " 得る。"
+    ]
+  },
+  "shadowverse:Genius": {
+    "NAME": "超天才",
+    "FLAVOR": "あなたは8ターン目で敗北する！",
+    "DESCRIPTIONS": [
+      "8ターン目終了時、敵全体に #b61 ダメージを与える。"
+    ]
+  },
+  "shadowverse:MissLethal": {
+    "NAME": "リーサル逃し",
+    "FLAVOR": "まずは盤面除去だ。",
+    "DESCRIPTIONS": [
+      "ターン開始時、 [E] を得る。戦闘中に1回、ターン開始時、ミニオンでない敵のHPが5分の1以下の時、それは 無形 を得る。"
+    ]
+  },
+  "shadowverse:Offensive": {
+    "NAME": "先攻の証",
+    "FLAVOR": "あなたは先攻です。引き直しませんでした。",
+    "DESCRIPTIONS": [
+      "最初のターンの初の #yスキル は #b2 回プレイされる。"
+    ]
+  },
+  "shadowverse:NeutralBook": {
+    "NAME": "ニュートラル・カードファイル",
+    "FLAVOR": " ",
+    "DESCRIPTIONS": [
+      "1レベルに3回、報酬のカード選択画面でニュートラルカードを追加する。"
+    ]
+  },
+  "shadowverse:BlackPinya": {
+    "NAME": "黒ぴにゃこら太",
+    "FLAVOR": "ぴにゃっ！",
+    "DESCRIPTIONS": [
+      "なんだかおしゃべりしたい気分だ。",
+      "@ぴにゃぴっぴ@"
+    ]
+  },
+  "shadowverse:GoldPinya": {
+    "NAME": "金ぴにゃこら太",
+    "FLAVOR": "ぴにゃぴにゃ！",
+    "DESCRIPTIONS": [
+      "ターン開始時、 #y従順な駿馬 、 #y機動二輪車 、 #y魔導装甲車 からランダムに1枚を手札に加える。"
+    ]
+  },
+  "shadowverse:KMR1": {
+    "NAME": "カード能力の変更1",
+    "FLAVOR": "ゲーム環境の流動性を高めるため、下記の変更を実施いたします。",
+    "DESCRIPTIONS": [
+      "戦闘開始時、すべての敵は #b8 ブロック を得る。"
+    ]
+  },
+  "shadowverse:KMR2": {
+    "NAME": "カード能力の変更2",
+    "FLAVOR": "ゲーム環境の流動性を高めるため、下記の変更を実施いたします。",
+    "DESCRIPTIONS": [
+      "戦闘開始時、すべての敵は 筋力 を #b1 得る。"
+    ]
+  },
+  "shadowverse:Offensive2": {
+    "NAME": "先攻の証",
+    "FLAVOR": "あなたは先攻です。引き直しませんでした。",
+    "DESCRIPTIONS": [
+      "カードを #b5 プレイする度、敵全体に #b2 ダメージを与える。"
+    ]
+  },
+  "shadowverse:SixMark": {
+    "NAME": "むつらの刻印",
+    "FLAVOR": "畏れるな、滅びなど有り得ない。永劫に耐えれば良い。。",
+    "DESCRIPTIONS": [
+      "ターン開始時、敵全体に 弱体 、 脱力 、 #y窒息 、 #yこのターン筋力-1 、 #y拒絶の掌 、 毒 からランダムに付与されていないデバフから1つ与える。"
+    ]
+  },
+  "shadowverse:ArisaBOSS": {
+    "NAME": "クインティタニアス",
+    "FLAVOR": "私の矢が、あなたを貫く！",
+    "DESCRIPTIONS": [
+      "#r先攻の証 と置き換える。 NL 1ターンに1度、 #b6 枚目のカードをプレイした時、 [E] を得る。"
+    ]
+  },
+  "shadowverse:NiouKyuu": {
+    "NAME": "二王弓",
+    "FLAVOR": "凛然たる威厳を放つは久遠を見据える二つの輝き。爾今に起こり得る災厄の種を一矢で滅し、天の寧静を見守り続ける。",
+    "DESCRIPTIONS": [
+      "戦闘開始時、敵全体に #y天衝の正鵠 を与える。"
+    ]
+  },
+  "shadowverse:LymagaWeapon": {
+    "NAME": "咎満ち返し",
+    "FLAVOR": "至高の大剣・「咎満ち返し」に斬り裂かれた者は、\nその身を茨に喰われ、大地に還る。",
+    "DESCRIPTIONS": [
+      "ターン開始時、コスト0の #y密林の守人 1枚を手札に加える。"
+    ]
+  },
+  "shadowverse:GlassOfIC": {
+    "NAME": "経済王のグラス",
+    "FLAVOR": "私は大いなる神だ。",
+    "DESCRIPTIONS": [
+      "HPを失った時、それと等しい分のダメージを敵全体に与える。"
+    ]
+  },
+  "shadowverse:KyoukaBOSS": {
+    "NAME": "コスモブルーロッド",
+    "FLAVOR": "コスモブルーフラシュ！！",
+    "DESCRIPTIONS": [
+      "#r先攻の証 と置き換える。スキルの使用6回ごとに、次のスキルは2回プレイされる。"
+    ]
+  },
+  "shadowverse:Mimori": {
+    "NAME": "普通だけど",
+    "FLAVOR": "えっと、よろしくお願いします。",
+    "DESCRIPTIONS": [
+      "与えるダメージは #b10% 上げ、受けるダメージは #b10% 下げる。ターン終了時、このターンにプレイしたカードの枚数が5枚以上なら、 #b10% 増やす(上限は50%)。ダメージを受けたら、 #b10% 減らす。"
+    ]
+  },
+  "shadowverse:KuonWeapon": {
+    "NAME": "密羅略決",
+    "FLAVOR": "我こそ五行。──「ザコは消えろ」",
+    "DESCRIPTIONS": [
+      "戦闘開始時、 #y式神の使役 1枚を手札に加える。"
+    ]
+  },
+  "shadowverse:GeassRelic": {
+    "NAME": "生への絶対遵守",
+    "FLAVOR": "生きろ！",
+    "DESCRIPTIONS": [
+      "戦闘中に1回、死ぬ時はHPを1に回復し、すべてのデバフを除去、 筋力 ・ 敏捷性 #b5 と #b25 ブロック を得る。"
+    ]
+  },
+  "shadowverse:Offensive3": {
+    "NAME": "先攻の証",
+    "FLAVOR": "あなたは先攻です。引き直しませんでした。",
+    "DESCRIPTIONS": [
+      "ターン開始時、 #yネクロマンス3 \b #yゾンビ を手札に加える。"
+    ]
+  },
+  "shadowverse:BurialGround": {
+    "NAME": "集団埋葬地",
+    "FLAVOR": "際限なく死は集まる。",
+    "DESCRIPTIONS": [
+      "ターン終了時、 墓場 を #b1 得る。"
+    ]
+  },
+  "shadowverse:LunaBOSS": {
+    "NAME": "ルナのおともだち",
+    "FLAVOR": "ルナのお友達になってくれる？",
+    "DESCRIPTIONS": [
+      " #y先攻 と置き換える。ターン開始時、 #yネクロマンス4 \b #yリッチ を手札に加える。"
+    ]
+  },
+  "shadowverse:Todoroki": {
+    "NAME": "轟",
+    "FLAVOR": "言葉は功罪を生む。沈黙だけが平等を創る。",
+    "DESCRIPTIONS": [
+      "戦闘開始時、すべての敵はバフを1種類失う（先に アーティファクト から失う）。"
+    ]
+  },
+  "shadowverse:TailRelic": {
+    "NAME": "大妖狐のお面",
+    "FLAVOR": "いのち儚し、みな影法師。栄華はまぼろし、あぁおかし。",
+    "DESCRIPTIONS": [
+      "戦闘開始時、 #y一ツ尾狐 を山札に加える。既に #y一ツ尾狐 を #b9 回プレイしたら、代わりに #y大妖狐・ギンセツ をデッキに加え、効果を失う。"
+    ]
+  },
+  "shadowverse:InfernalCrown": {
+    "NAME": "奈落の冠",
+    "FLAVOR": "死者とは空になった器。死神に飲み干された憐れな杯。では注げ、では満ちて踊れ。",
+    "DESCRIPTIONS": [
+      "2ターン目開始時、リアニメイト #b3 。3ターン目開始時、リアニメイト #b4 。4ターン目開始時、リアニメイト #b5 。"
+    ]
+  },
+  "shadowverse:Alice": {
+    "NAME": "特別なアイドル",
+    "FLAVOR": "アリスのライブ、はっじまっるよー",
+    "DESCRIPTIONS": [
+      " ネクロマンス が働く度、すべての敵に #b3 ダメージを与える。"
+    ]
+  },
+  "shadowverse:Offensive4": {
+    "NAME": "先攻の証",
+    "FLAVOR": "あなたは先攻です。引き直しませんでした。",
+    "DESCRIPTIONS": [
+      "戦闘終了時、 #y復讐 ならHPを #b7 回復する。 #y復讐 でないならHPを #b4 回復する。"
+    ]
+  },
+  "shadowverse:IriaBOSS": {
+    "NAME": "闇斧ナハトファング",
+    "FLAVOR": "我が力に屈するがよい。",
+    "DESCRIPTIONS": [
+      " #y先攻 と置き換える。ターン開始時、HPを #b2 失う。ターン終了時、HPを #b4 回復する。"
+    ]
+  },
+  "shadowverse:LustRelic": {
+    "NAME": "抱擁の翼",
+    "FLAVOR": "呼吸さえ忘れ、命の意味も忘却し、テーゼは消える。",
+    "DESCRIPTIONS": [
+      "戦闘開始時、 #yドレイン を得る。"
+    ]
+  },
+  "shadowverse:Lusia": {
+    "NAME": "興味ないから",
+    "FLAVOR": "シャドバは道具にすぎない。",
+    "DESCRIPTIONS": [
+      " #y復讐 に入る度， [E] を得る。"
+    ]
+  },
+  "shadowverse:Pendant": {
+    "NAME": "夜の王のペンダント",
+    "FLAVOR": "私を楽しませてくれたまえ！",
+    "DESCRIPTIONS": [
+      "ターン開始時、 復讐 なら 筋力 #b1 を得る。 狂乱 なら #b7 ブロック を得る。 渇望 ならカードを #b1 枚引く。"
+    ]
+  },
+  "shadowverse:BerserkRelic": {
+    "NAME": "テトカマリ",
+    "FLAVOR": "吊るして剥いで、根こそぎ頂く！",
+    "DESCRIPTIONS": [
+      " 狂乱 に入るたび，HPを #b7 回復する。"
+    ]
+  },
+  "shadowverse:LonePromise": {
+    "NAME": "約束の一輪",
+    "FLAVOR": "首筋の刻印に代え、冷たき肌に贈られた、餞別の一輪。寄り添う螺子は、華々しき舞踏の思い出。",
+    "DESCRIPTIONS": [
+      " #b1 と #b2 ターン目の開始時、 #yリペアモード を手札に加える。 #b2 ターン目の開始時、カードを #b1 枚引く。"
+    ]
+  },
+  "shadowverse:RevelrySeed": {
+    "NAME": "闘争の種",
+    "FLAVOR": "退屈させてくれるなよ。",
+    "DESCRIPTIONS": [
+      "戦闘開始時、自身とすべての敵は 筋力 #b3 を得る。"
+    ]
+  },
+  "shadowverse:Offensive5": {
+    "NAME": "先攻の証",
+    "FLAVOR": "あなたは先攻です。引き直しませんでした。",
+    "DESCRIPTIONS": [
+      "戦闘開始時、デッキ内カードの数が偶数なら、カードを #b1 枚引く。奇数なら、カウンターを #b1 つ置く。戦闘終了時、カウンターが #b8 以上あるなら、HPを #b8 回復し、 #b8 ゴールドを得る。"
+    ]
+  },
+  "shadowverse:NemesisBOSS": {
+    "NAME": "猫のぬいぐるみ",
+    "FLAVOR": "心の意味、あなたは知ってる？",
+    "DESCRIPTIONS": [
+      " #y先攻 と置き換える。 共鳴 になるたび， [E] を得る。 共鳴 でなくなるたび、 #yめまい を捨て札に加える。"
+    ]
+  },
+  "shadowverse:ArtsMaster": {
+    "NAME": "破邪のインデラ",
+    "FLAVOR": "天地に我在り、世に咎無し。",
+    "DESCRIPTIONS": [
+      "ターン終了時に残りエナジーがあるなら、 #b5 ブロックを得る。さらに次のターン開始時カードを #b2 枚引き、すべての敵に #b5 ダメージを与える。"
+    ]
+  },
+  "shadowverse:WhiteRelic": {
+    "NAME": "白の章",
+    "FLAVOR": "既成を壊したその後に、浮かべる笑みは穢れぬ正義。",
+    "DESCRIPTIONS": [
+      "アタックを廃棄するたび、すべての敵に #y脱力 #b1 を与える。 #y黒の章 を持っていると、戦闘開始時に #y白き破壊のアーティファクト を手札に加える。"
+    ]
+  },
+  "shadowverse:BlackRelic": {
+    "NAME": "黒の章",
+    "FLAVOR": "既成を壊すその前に、浮かべる笑みは穢れた邪悪。",
+    "DESCRIPTIONS": [
+      "アタックを廃棄するたび、すべての敵に #y弱体 #b1 を与える。 #y白の章 を持っていると、戦闘開始時に #y白き破壊のアーティファクト を手札に加える。"
+    ]
+  },
+  "shadowverse:Knife": {
+    "NAME": "ゼシルのナイフ",
+    "FLAVOR": "まぁた勝っちゃった。",
+    "DESCRIPTIONS": [
+      "戦闘終了時、カウンターを #b1 つ置く。ダメージを受けるたび、カウンターを #b1 つ取り除く。戦闘開始時、カウンターが #b3 以下なら、 #yナイフ を手札に加える。 #b3 以上まら、代わりに #y発見 を手札に加える。 #b6 以上なら、代わりに #yアブソリュート・トレランス を手札に加える。"
+    ]
+  },
+  "shadowverse:TranquilCog": {
+    "NAME": "静謐なる歯車",
+    "FLAVOR": "理とは噛み合わずとも回るもの。",
+    "DESCRIPTIONS": [
+      "ターン開始時、 共鳴 ならカードを #b1 枚引く。そうでないなら #b2 枚引く。この効果は #b3 ターン続く。"
+    ]
+  },
+  "shadowverse:Offensive6": {
+    "NAME": "先攻の証",
+    "FLAVOR": "あなたは先攻です。引き直しませんでした。",
+    "DESCRIPTIONS": [
+      "戦闘ごとに #b3 回かつ1ターンに1度、これを右クリックすることで #yEP を手札に加える。"
+    ]
+  },
+  "shadowverse:OliviasBlessing": {
+    "NAME": "オリヴィエの祝福",
+    "FLAVOR": "進化？ボクもしたい。",
+    "DESCRIPTIONS": [
+      " #y先攻 と置き換える。戦闘ごとに #b5 回かつ1ターンに1度、これを右クリックすることで #yEP+ と #y奇跡 を手札に加える。"
+    ]
+  },
+  "shadowverse:WindGodsBlessing": {
+    "NAME": "風神の加護",
+    "FLAVOR": "風は終わらず。",
+    "DESCRIPTIONS": [
+      "連携 #b10 ターン終了時、一度だけすべてのフォロワーを+ #b1 /+ #b1 する。"
+    ]
+  },
+  "shadowverse:Conscription": {
+    "NAME": "兵士徴集",
+    "FLAVOR": "質を問わず、数を問え。",
+    "DESCRIPTIONS": [
+      "ターン開始時、場にフォロワーいないのなら、 ナイト を召喚する。"
+    ]
+  },
+  "shadowverse:Spineblade": {
+    "NAME": "アヴァリティア",
+    "FLAVOR": "飢えれば欲す、欲せば進む。 NL 故に簒奪、よって略奪。 NL そして餓え、渇きなさい。",
+    "DESCRIPTIONS": [
+      " 財宝カード をプレイするたび、カードを1枚引く。"
+    ]
+  },
+  "shadowverse:ValhoreanDealer": {
+    "NAME": "ヴァローナディーラー",
+    "FLAVOR": "許してください——",
+    "DESCRIPTIONS": [
+      "これを右クリックし、 #b30 ゴールド支払うことで好きなカードを捨てて同じ枚数のカードを引く。"
+    ]
+  },
+  "shadowverse:KagemitsuSword": {
+    "NAME": "閻魔安国",
+    "FLAVOR": "平和という鞘より、抜き放って頂きました。",
+    "DESCRIPTIONS": [
+      " ダウングレード を持っているカードは、プレイした後アップグレードする。"
+    ]
+  },
+  "shadowverse:EndlessUsurpation": {
+    "NAME": "無窮の簒奪",
+    "FLAVOR": "奪い尽くせ、取り戻せ。奪われた辛苦、深い悲哀。世界を憎む、だから根こそぎ奪うのだ。",
+    "DESCRIPTIONS": [
+      "ターン開始時、 財宝カード の中から、ランダムに1枚を手札に加える。"
+    ]
+  },
+  "shadowverse:Durandal": {
+    "NAME": "不滅の聖剣・デュランダル",
+    "FLAVOR": "気高き英雄と契りし、不滅の聖剣。その刀身は折れもせず、毀れもせず、いかなる時も銀に輝く。",
+    "DESCRIPTIONS": [
+      "戦闘開始時、 #yバッファー 2を得る。"
+    ]
+  },
+  "shadowverse:Tree": {
+    "NAME": "ナテラの大樹",
+    "FLAVOR": "実は64332417回以上植樹された。",
+    "DESCRIPTIONS": [
+      "ターン開始時、 #yナテラの大樹 を手札に加える。"
+    ]
+  },
+  "shadowverse:AlterplaneArbiter": {
+    "NAME": "クロスオーバー",
+    "FLAVOR": "期間限定新フォーマット",
+    "DESCRIPTIONS": [
+      "他のシャドウバースクラスの中からランダムな1つを選び、通常敵の勝利にそのクラスのカードを報酬画面に追加する。",
+      "通常敵の勝利報酬に ",
+      " カードを追加する。",
+      "#yウィッチ",
+      "#yエルフ",
+      "#yネクロマンサー",
+      "#yヴァンパイア",
+      "#yネメシス",
+      "#yロイヤル",
+      "#yビショップ"
+    ]
+  },
+  "shadowverse:Offensive7": {
+    "NAME": "先攻の証",
+    "FLAVOR": "あなたは先攻です。引き直しませんでした。",
+    "DESCRIPTIONS": [
+      " #y呪い を引くたび、アミュレットを出せるなら、そのカードをカウントダウン3のアミュレットとしてアミュレットゾーンに置く。この効果が戦闘で初めて発動する場合、カードを #b1 枚引く。カウントダウンを終了した呪いはこの戦闘から取り除かれる。"
+    ]
+  },
+  "shadowverse:Savior": {
+    "NAME": "救世主",
+    "FLAVOR": "安息の最中で、己が心と対峙せよ。",
+    "DESCRIPTIONS": [
+      "このターン、アタックをプレイしていなかった場合、次のターン開始時、 #b4 ブロックを得る。"
+    ]
+  },
+  "shadowverse:GrandShield": {
+    "NAME": "背理盾・ゼノン",
+    "FLAVOR": "翼の紋章は自由の証。神様が零した奇跡の盾。",
+    "DESCRIPTIONS": [
+      "ターン開始時、 #y聖騎兵 を手札に加える。"
+    ]
+  },
+  "shadowverse:GrandSword": {
+    "NAME": "逆理剣・リシャール",
+    "FLAVOR": "奇跡の剣は理に歪みを与え、遮断する。",
+    "DESCRIPTIONS": [
+      "ターンごとに1回、 ブロック を得るたび、 トゲ #b2 を得る。"
+    ]
+  },
+  "shadowverse:BishopBOSS": {
+    "NAME": "グロリアスフェザー",
+    "FLAVOR": "その翼が羽ばたくとき、体は重力から解き放たれる。",
+    "DESCRIPTIONS": [
+      " #y先攻 と置き換える。同時に置けるアミュレットの数が1増える。ターン開始時にHPが50％以下なら、 [E] を得る。"
+    ]
+  },
+  "shadowverse:HeresyAvatar": {
+    "NAME": "邪教の権化",
+    "FLAVOR": "熾天使の成れの果て、純白の反転。",
+    "DESCRIPTIONS": [
+      " #y呪い を引くたび、 #yアーティファクト #b1 を得る。それがプレイできるのなら、コストを0にする。"
+    ]
+  },
+  "shadowverse:ErisRelic": {
+    "NAME": "司祭の杖",
+    "FLAVOR": "この過酷溢れる世界に救いを。",
+    "DESCRIPTIONS": [
+      "アミュレットの カウントダウン が終えるたび、 #y仮HP を #b2 得る。"
+    ]
+  },
+  "shadowverse:IminaRelic": {
+    "NAME": "狂信の呪具",
+    "FLAVOR": "人よ、賛美せよ。我の他に神はなし。",
+    "DESCRIPTIONS": [
+      "戦闘開始時、ランダムな敵に #y狂信の呪具 を与える。"
+    ]
+  }
+}

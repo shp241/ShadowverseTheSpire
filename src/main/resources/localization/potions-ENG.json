@@ -110,5 +110,26 @@
       "随机召唤 #b",
       " 个随从。"
     ]
+  },
+  "shadowverse:ReduceCountDownPotion": {
+    "NAME": "咏唱水晶",
+    "DESCRIPTIONS": [
+      "所有护符减少 #b",
+      " 回合倒数"
+    ]
+  },
+  "shadowverse:IndulgencePotion": {
+    "NAME": "瓶装赎罪券",
+    "DESCRIPTIONS": [
+      "增加 #b",
+      " 张 #y赎罪券 到手中。"
+    ]
+  },
+  "shadowverse:SacredHealingPotion": {
+    "NAME": "治愈药水",
+    "DESCRIPTIONS": [
+      "回复 #b",
+      "% 生命。"
+    ]
   }
 }

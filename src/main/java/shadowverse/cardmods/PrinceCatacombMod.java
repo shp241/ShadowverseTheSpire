@@ -4,16 +4,18 @@ import basemod.abstracts.AbstractCardModifier;
 import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import shadowverse.cards.Temp.Skeleton;
 import shadowverse.characters.AbstractShadowversePlayer;
 
-public class AndrealphusMod extends AbstractCardModifier {
-    public static String ID = "shadowverse:AndrealphusMod";
+public class PrinceCatacombMod extends AbstractCardModifier {
+    public static String ID = "shadowverse:PrinceCatacombMod";
 
     public String modifyDescription(String rawDescription, AbstractCard card) {
-        return  rawDescription + CardCrawlGame.languagePack.getUIString("shadowverse:AndrealphusMod").TEXT[0];
+        return  rawDescription + CardCrawlGame.languagePack.getUIString("shadowverse:PrinceCatacombMod").TEXT[0];
     }
 
     public void onInitialApplication(AbstractCard card) {
@@ -27,12 +29,12 @@ public class AndrealphusMod extends AbstractCardModifier {
     }
 
     public void onExhausted(AbstractCard card) {
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new DrawCardAction(1));
+        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new MakeTempCardInHandAction(new Skeleton()));
     }
 
     @Override
     public AbstractCardModifier makeCopy() {
-        return new AndrealphusMod();
+        return new PrinceCatacombMod();
     }
 
     public String identifier(AbstractCard card) {

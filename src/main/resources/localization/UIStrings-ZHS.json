@@ -24,6 +24,11 @@
       " NL 谢幕曲 当这张牌被 消耗 时抽1张牌。"
     ]
   },
+  "shadowverse:PrinceCatacombMod": {
+    "TEXT": [
+      " NL 谢幕曲 当这张牌被 消耗 时增加1张 *骸骨士兵 到手中。"
+    ]
+  },
   "shadowverse:ImmoralDesireMod1": {
     "TEXT": [
       " NL 谢幕曲 当这张牌被 消耗 时对全体敌人造成这张卡的基础伤害的伤害。"
@@ -75,6 +80,21 @@
   "shadowverse:Skin": {
     "TEXT": [
       "皮肤"
+    ]
+  },
+  "shadowverse:Exhaust": {
+    "TEXT": [
+      "消耗"
+    ]
+  },
+  "shadowverse:Ethereal": {
+    "TEXT": [
+      "虚无"
+    ]
+  },
+  "shadowverse:Retain": {
+    "TEXT": [
+      "保留"
     ]
   }
 }

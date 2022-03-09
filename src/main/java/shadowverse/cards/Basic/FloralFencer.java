@@ -26,7 +26,7 @@ public class FloralFencer extends CustomCard {
 
     public FloralFencer() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, AbstractCard.CardType.ATTACK, Royal.Enums.COLOR_YELLOW, AbstractCard.CardRarity.BASIC, AbstractCard.CardTarget.ENEMY);
-        this.baseDamage = 6;
+        this.baseDamage = 4;
     }
 
 

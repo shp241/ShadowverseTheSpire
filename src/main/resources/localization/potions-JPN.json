@@ -1,0 +1,135 @@
+{
+  "shadowverse:SatanPotion": {
+    "NAME": "缶詰の地獄",
+    "DESCRIPTIONS": [
+      " #b3 枚のアポカリプス、コキュートスカードから1枚を選んで手札に加える。このターン、そのカードのコストを #b0 にする。",
+      " #b3 枚のアポカリプス、コキュートスカードから2枚を選んで手札に加える。このターン、そのカードのコストを #b0 にする。"
+    ]
+  },
+  "shadowverse:ElfPotion": {
+    "NAME": "瓶詰のエルフ",
+    "DESCRIPTIONS": [
+      " #yエルフ+ #b",
+      " 枚を手札に加える"
+    ]
+  },
+  "shadowverse:BoostPotion": {
+    "NAME": "スペルブーストポーション",
+    "DESCRIPTIONS": [
+      " #yスペルブースト を #b",
+      " 回行う。"
+    ]
+  },
+  "shadowverse:EarthPotion": {
+    "NAME": "土のエッセンス",
+    "DESCRIPTIONS": [
+      " #y土の印 を #b",
+      " 得る。"
+    ]
+  },
+  "shadowverse:KeepPotion": {
+    "NAME": "魔力補充剤",
+    "DESCRIPTIONS": [
+      "ターン終了時、カードを #b",
+      " 枚保留する。"
+    ]
+  },
+  "shadowverse:CemeteryPotion": {
+    "NAME": "魂ポーション",
+    "DESCRIPTIONS": [
+      " #y墓場 を #b",
+      " 得る。"
+    ]
+  },
+  "shadowverse:ReanimatePotion": {
+    "NAME": "リアニメイトポーション",
+    "DESCRIPTIONS": [
+      " #yリアニメイト #b3 。",
+      " #yリアニメイト #b3 を2回行う。"
+    ]
+  },
+  "shadowverse:RosePotion": {
+    "NAME": "精錬された薔薇",
+    "DESCRIPTIONS": [
+      " #y薔薇の一撃+ を #b",
+      " 枚手札に加える。"
+    ]
+  },
+  "shadowverse:NaterranPotion": {
+    "NAME": "マナ抽出物",
+    "DESCRIPTIONS": [
+      " #yナテラの大樹+ を #b",
+      " 枚手札に加える。"
+    ]
+  },
+  "shadowverse:BatPotion": {
+    "NAME": "瓶詰のコウモリ",
+    "DESCRIPTIONS": [
+      " #yフォレストバット+ を #b",
+      " 枚手札に加える。"
+    ]
+  },
+  "shadowverse:EpitaphPotion": {
+    "NAME": "契約ポーション",
+    "DESCRIPTIONS": [
+      " 復讐 、 狂乱 、 渇望 扱いとする。これを #b",
+      " ターン続く。"
+    ]
+  },
+  "shadowverse:ArtifactPotion": {
+    "NAME": "アーティファクトエッセンス",
+    "DESCRIPTIONS": [
+      " #b3 枚のAFカードから1枚を選んで手札に加える。このターン、そのカードのコストを #b0 にする。",
+      " #b3 枚のAFカードから2枚を選んで手札に加える。このターン、そのカードのコストを #b0 にする。"
+    ]
+  },
+  "shadowverse:RevisedPotion": {
+    "NAME": "改良ポーション",
+    "DESCRIPTIONS": [
+      "手札にある #y操り人形 をすべて廃棄し、それと同じ数の #y改良型・操り人形+ を手札に加える。"
+    ]
+  },
+  "shadowverse:BuffPotion": {
+    "NAME": "結束ポーション",
+    "DESCRIPTIONS": [
+      "すべてのフォロワーを+ #b",
+      " /+ #b",
+      " する。"
+    ]
+  },
+  "shadowverse:EvolutionPotion": {
+    "NAME": "進化ポーション",
+    "DESCRIPTIONS": [
+      " #yEP+ を #b",
+      " 枚手札に加える。"
+    ]
+  },
+  "shadowverse:MinionPotion": {
+    "NAME": "召喚ポーション",
+    "DESCRIPTIONS": [
+      "ランダムにフォロワーを #b",
+      " 体出す。"
+    ]
+  },
+  "shadowverse:ReduceCountDownPotion": {
+    "NAME": "詠唱ポーション",
+    "DESCRIPTIONS": [
+      "すべてのアミュレットのカウントダウンを #b",
+      " 進める"
+    ]
+  },
+  "shadowverse:IndulgencePotion": {
+    "NAME": "瓶詰の免罪符",
+    "DESCRIPTIONS": [
+      " #y免罪符 を #b",
+      " 枚手札に加える。"
+    ]
+  },
+  "shadowverse:SacredHealingPotion": {
+    "NAME": "回復ポーション",
+    "DESCRIPTIONS": [
+      "HPを #b",
+      "% 回復する。"
+    ]
+  }
+}

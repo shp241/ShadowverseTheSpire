@@ -693,7 +693,7 @@
   },
   "shadowverse:AnnesSummoning": {
     "NAME": "安的大英灵",
-    "DESCRIPTION": "马纳历亚 。 NL 获得 !B! 点格 挡 。 NL 虚无 。 NL 消耗 。"
+    "DESCRIPTION": "马纳历亚 。 NL 获得 !B! 点 格挡 。 NL 虚无 。 NL 消耗 。"
   },
   "shadowverse:Anne": {
     "NAME": "马纳历亚魔导公主·安",
@@ -702,7 +702,7 @@
   },
   "shadowverse:MysterianRite": {
     "NAME": "马纳历亚的秘术",
-    "DESCRIPTION": "马纳历亚 。 NL 如果使用 马纳历亚 牌，则手中的这张牌耗能减少为1。 NL 造成 !D! 点伤害。 NL 给予 !M! 层 易伤 。 NL 获得 !B! 点格 挡 。 NL 虚无 。 NL 消耗 。"
+    "DESCRIPTION": "马纳历亚 。 NL 如果使用 马纳历亚 牌，则手中的这张牌耗能减少为1。 NL 造成 !D! 点伤害。 NL 给予 !M! 层 易伤 。 NL 获得 !B! 点 格挡 。 NL 虚无 。 NL 消耗 。"
   },
   "shadowverse:Miranda": {
     "NAME": "光魔法教师·米兰",
@@ -783,6 +783,13 @@
     "NAME": "对空射击",
     "DESCRIPTION": "从弃牌堆选择1张 攻击牌 或 能力牌 加入手中。 NL 造成 !D! 点伤害，移除 飞行 。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "从弃牌堆选择1张 攻击牌 或 能力牌 加入手中。 NL 造成 !D! 点伤害，移除 飞行 。",
+    "EXTENDED_DESCRIPTION": [
+      "没有攻击牌或能力牌。"
+    ]
+  },
+  "shadowverse:PixieMischief": {
+    "NAME": "妖精的恶作剧",
+    "DESCRIPTION": "从弃牌堆选择1张 攻击牌 或 能力牌 加入手中。 NL 最多 消耗 !M! 张牌 。",
     "EXTENDED_DESCRIPTION": [
       "没有攻击牌或能力牌。"
     ]
@@ -911,7 +918,7 @@
   },
   "shadowverse:Ladica2": {
     "NAME": "万绿的回归·拉缇卡",
-    "DESCRIPTION": "自然 。 NL 造成 !D! 点伤害。 NL 当自己打出牌时，如果为本回合使用的第一张，增加1张 *拉缇卡的拥抱 到手中。 NL 如果为第4张，获得1点能量。 NL 如果为第8张，这张卡造成2次伤害。 NL 如果为第12张，获得3点临时力量和临时敏捷，这张卡造成的伤害翻倍。 "
+    "DESCRIPTION": "自然 。 NL 造成 !D! 点伤害。 NL 当自己打出牌时，如果为本回合使用的第一张，增加1张 *拉缇卡的拥抱 到手中。 NL 如果为第4张，获得1点能量。 NL 如果为第8张，这张卡造成2次伤害。 NL 如果为第12张，获得3点力量和敏捷，这张卡造成的伤害翻倍。 "
   },
   "shadowverse:VictoryCard": {
     "NAME": "胜利卡",
@@ -1493,6 +1500,10 @@
     "NAME": "安德雷斐斯",
     "DESCRIPTION": "抽 !M! 张牌。 NL 谢幕曲 当这张牌被 消耗 时，抽1张牌。 NL 打出时赋予手中所有攻击牌上述效果。"
   },
+  "shadowverse:PrinceCatacomb": {
+    "NAME": "骸骨贵公子",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 谢幕曲 当这张牌被 消耗 时，增加1张 *骸骨士兵 到手中。 NL 打出时赋予手中所有攻击牌上述效果。"
+  },
   "shadowverse:OmenOfSilence": {
     "NAME": "沉默绝杰·鲁鲁纳伊",
     "DESCRIPTION": "死灵术 3 \b降低全体敌人所有正面效果3层。"
@@ -1584,11 +1595,15 @@
   },
   "shadowverse:OneTailFox": {
     "NAME": "一尾狐",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 造成 !D! 点伤害并回复造成伤害的生命值。 NL 虚无 。 NL 消耗 。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 造成 !D! 点伤害。 NL 谢幕曲 被 消耗 时，使卡组中的 *大妖狐·吟雪 或 *惊骇盛宴·吟雪 本局游戏伤害+2。 NL 虚无 。 NL 消耗 。"
   },
   "shadowverse:Ginsetsu": {
     "NAME": "大妖狐·吟雪",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 造成 !D! 点伤害。 NL 增加4张本回合耗能为0的 *一尾狐 到手中。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 造成 !D! 点伤害。 NL 增加4张本回合耗能为0的 *一尾狐 到手中。 NL 这张卡在卡组存在时， *一尾狐 造成伤害时回复等量的生命。"
+  },
+  "shadowverse:Ginsetsu2": {
+    "NAME": "惊骇盛宴·吟雪",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 造成 !D! 点伤害。 NL 增加1张本回合耗能为0的 *一尾狐 到手中。 NL 死灵术 9 改为4张。 NL 这张卡在卡组存在时， *一尾狐 造成的伤害+2。"
   },
   "shadowverse:Ferry": {
     "NAME": "幽想少女·菲莉",
@@ -4093,5 +4108,9 @@
   "shadowverse:SecretSkill": {
     "NAME": "祕藏之技",
     "DESCRIPTION": "回合结束时， 击晕 第一个意图为攻击的敌人。"
+  },
+  "shadowverse:OtherworldGatekeeper": {
+    "NAME": "死门连结者",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 打出抽牌堆中 !M! 张有 谢幕曲 效果的攻击牌。 NL 谢幕曲 被 消耗 时，回复1点生命。"
   }
 }

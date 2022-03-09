@@ -29,7 +29,7 @@ public class OathlessKnight extends CustomCard {
 
     public OathlessKnight() {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.BASIC, CardTarget.ENEMY);
-        this.baseDamage = 4;
+        this.baseDamage = 3;
     }
 
 

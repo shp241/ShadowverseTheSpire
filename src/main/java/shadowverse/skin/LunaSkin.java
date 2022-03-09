@@ -10,10 +10,10 @@ public class LunaSkin extends AbstractSkin{
     private static final String SKIN_CORPSE = "img/character/Necromancer/corpse.png";
     private static final String SCML = "img/character/Necromancer/images/necro.scml";
     public static final String SELECTED = "Necro_Selected";
-    public static final String HURT_SOUND1 = "Necro_Hurt";
-    public static final String HURT_SOUND2 = "Necro_Hurt2";
-    public static final String HURT_SOUND3 = "Necro_Hurt3";
-    public static final String HURT_SOUND4 = "Necro_Hurt4";
+    public static final String HURT_SOUND1 = "Necro_Hurt2";
+    public static final String HURT_SOUND2 = "Necro_Hurt3";
+    public static final String HURT_SOUND3 = "Necro_Hurt4";
+    public static final String HURT_SOUND4 = "Necro_Hurt";
 
     public LunaSkin(){
         this.NAME =  charStrings.NAMES[1];

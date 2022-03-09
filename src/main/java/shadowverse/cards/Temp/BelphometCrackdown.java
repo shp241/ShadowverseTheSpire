@@ -20,6 +20,7 @@ public class BelphometCrackdown extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/BelphometCrackdown.png";
+    private static final String TEXT = CardCrawlGame.languagePack.getUIString("shadowverse:Retain").TEXT[0];
     public static ArrayList<AbstractCard> returnElinese(){
         ArrayList<AbstractCard> list = new ArrayList<>();
         list.add(new TisiphoneCard());
@@ -52,7 +53,7 @@ public class BelphometCrackdown extends CustomCard {
         AbstractCard c = returnRandomElinese(AbstractDungeon.cardRandomRng).makeStatEquivalentCopy();
         c.retain= true;
         c.selfRetain = true;
-        c.rawDescription += " NL 保留 。";
+        c.rawDescription += " NL "+TEXT+" 。";
         c.initializeDescription();
         c.applyPowers();
         AbstractDungeon.player.hand.addToTop(c);

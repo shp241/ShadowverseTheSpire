@@ -81,7 +81,11 @@ public class Erika
     @Override
     public void applyPowers() {
         super.applyPowers();
-        this.rawDescription = cardStrings.DESCRIPTION;
+        if (this.upgraded){
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+        }else {
+            this.rawDescription = cardStrings.DESCRIPTION;
+        }
         this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + rally() + cardStrings.EXTENDED_DESCRIPTION[1];
         this.initializeDescription();
     }

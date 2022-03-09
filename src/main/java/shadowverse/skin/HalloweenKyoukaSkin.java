@@ -8,8 +8,8 @@ import shadowverse.characters.Witchcraft;
 public class HalloweenKyoukaSkin extends AbstractSkin{
     public static final CharacterStrings charStrings = CardCrawlGame.languagePack.getCharacterString("shadowverse:Witchcraft");
     public static final String SCML = "img/character/Witchcraft/Halloween/images/Halloween.scml";
-    private static final String SHOULDER = "img/character/Witchcraft/shoulder3.png";
-    private static final String SKIN_CORPSE = "img/character/Witchcraft/corpse3.png";
+    private static final String SHOULDER = "img/character/Witchcraft/shoulder4.png";
+    private static final String SKIN_CORPSE = "img/character/Witchcraft/corpse4.png";
     public static final String SELECTED = "HalloweenXCW_Select";
     public static final String HURT_SOUND1 = "HalloweenXCW_Hurt";
     public static final String HURT_SOUND2 = "HalloweenXCW_Hurt2";

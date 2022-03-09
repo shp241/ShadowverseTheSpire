@@ -41,7 +41,7 @@ import shadowverse.characters.Necromancer;
 
    public BoneDominator() {
      super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Necromancer.Enums.COLOR_PURPLE, CardRarity.UNCOMMON, CardTarget.SELF);
-     this.baseBlock = 20;
+     this.baseBlock = 18;
      this.baseMagicNumber = 3;
      this.magicNumber = this.baseMagicNumber;
      this.tags.add(AbstractShadowversePlayer.Enums.ACCELERATE);
@@ -53,7 +53,7 @@ import shadowverse.characters.Necromancer;
    public void upgrade() {
      if (!this.upgraded) {
        upgradeName();
-       upgradeBlock(5);
+       upgradeBlock(4);
        upgradeMagicNumber(2);
      } 
    }

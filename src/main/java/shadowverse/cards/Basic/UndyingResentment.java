@@ -26,7 +26,7 @@ import shadowverse.characters.Necromancer;
 
    public UndyingResentment() {
      super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Necromancer.Enums.COLOR_PURPLE, CardRarity.BASIC, CardTarget.ENEMY);
-     this.baseDamage = 8;
+     this.baseDamage = 6;
      this.baseMagicNumber = 4;
      this.magicNumber = this.baseMagicNumber;
    }

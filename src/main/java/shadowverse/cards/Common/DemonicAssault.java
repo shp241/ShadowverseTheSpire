@@ -25,6 +25,7 @@ import shadowverse.stance.Vengeance;
    public static final String NAME = cardStrings.NAME;
    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
    public static final String IMG_PATH = "img/cards/DemonicAssault.png";
+     private static final String TEXT = CardCrawlGame.languagePack.getUIString("shadowverse:Exhaust").TEXT[0];
 
    public DemonicAssault() {
      super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Vampire.Enums.COLOR_SCARLET, CardRarity.COMMON, CardTarget.ALL_ENEMY);
@@ -51,7 +52,7 @@ import shadowverse.stance.Vengeance;
            tmp.isCostModified = true;
            tmp.exhaustOnUseOnce = true;
            tmp.exhaust = true;
-           tmp.rawDescription += " NL 消耗 。";
+           tmp.rawDescription += " NL "+TEXT+" 。";
            tmp.initializeDescription();
            tmp.applyPowers();
            p.hand.addToTop(tmp);

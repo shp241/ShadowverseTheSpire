@@ -37,12 +37,6 @@ public class PlaceAmulet extends AbstractGameAction {
 
     public void update() {
         if (Shadowverse.canSpawnAmuletOrb()) {
-            if (!AbstractDungeon.player.hasEmptyOrb())
-                for (AbstractOrb o : AbstractDungeon.player.orbs) {
-                    if (!(o instanceof AmuletOrb)) {
-                        addToBot((AbstractGameAction)new EvokeSpecificOrbAction(o));
-                    }
-                }
             AbstractDungeon.actionManager.addToTop((AbstractGameAction)new WaitAction(0.1F));
             AbstractDungeon.actionManager.addToTop((AbstractGameAction)new ChannelAction((AbstractOrb)new AmuletOrb(this.card, this.source)));
         } else {
