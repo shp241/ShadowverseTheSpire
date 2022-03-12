@@ -521,7 +521,7 @@
   "shadowverse:AeneaPower": {
     "NAME": "丹紫抵御者·安涅儿",
     "DESCRIPTIONS": [
-      "回合开始时，增加 #y如果没有 #y缓冲 ，则将 #b",
+      "回合开始时，如果没有 #y缓冲 ，则将 #b",
       " 张 #y圆滚滚1号 加入手中，如果有则将 #b",
       " 张 #y转瞬即逝的幸福 加入手中。当受到伤害时，失去此能力。"
     ]
@@ -529,7 +529,7 @@
   "shadowverse:GremoryPower": {
     "NAME": "预视死期者·格莫瑞",
     "DESCRIPTIONS": [
-      "发动 #y死灵术 时，回复该 #y死灵术 的 #y墓地 并获得 #b3 点能量。此效果每个回合仅限发动1次。"
+      "发动 #y死灵术 时，回复该 #y死灵术 的 #y墓地 并获得 #b2 点能量。此效果每个回合仅限发动1次。"
     ]
   },
   "shadowverse:GremoryUsedPower": {

@@ -96,5 +96,15 @@
     "TEXT": [
       "保留"
     ]
+  },
+  "shadowverse:ArtifactTag": {
+    "TEXT": [
+      "AF"
+    ]
+  },
+  "shadowverse:MachineTag": {
+    "TEXT": [
+      "機械"
+    ]
   }
 }

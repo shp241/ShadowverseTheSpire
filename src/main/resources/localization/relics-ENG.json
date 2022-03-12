@@ -457,5 +457,61 @@
     "DESCRIPTIONS": [
       "战斗开始时，给予随机敌人 #y疯狂的咒器 。"
     ]
+  },
+  "shadowverse:KyaruBOSS": {
+    "NAME": "混沌魔法书",
+    "FLAVOR": "做好觉悟了吗？格林爆裂！",
+    "DESCRIPTIONS": [
+      "拾起时替换 #y先手印记 。战斗开始时，敌人的生命上限减少 #b18% 。"
+    ]
+  },
+  "shadowverse:AnneBOSS": {
+    "NAME": "安的魔导书",
+    "FLAVOR": "英灵啊！",
+    "DESCRIPTIONS": [
+      "拾起时替换 #y先手印记 。打出的技能牌视为 #y马纳历亚 卡 。"
+    ]
+  },
+  "shadowverse:KokkoroBOSS": {
+    "NAME": "爱梅斯守护符",
+    "FLAVOR": "请交给我吧。",
+    "DESCRIPTIONS": [
+      "拾起时替换 #y先手印记 。回合内使用第 #b6 张牌时获得 #b1 点 #y力量 和 #y敏捷 。 NL 战斗中的生命回复量增加 #b50% 。"
+    ]
+  },
+  "shadowverse:MiyakoBOSS": {
+    "NAME": "灵甘幽灵布丁",
+    "FLAVOR": "布丁~布丁~",
+    "DESCRIPTIONS": [
+      "拾起时替换 #y先手印记 。一场战斗限3次，回合开始时， #y死灵术5 \b将一张 #y灵体 加入手中。"
+    ]
+  },
+  "shadowverse:IoBOSS": {
+    "NAME": "性感教鞭",
+    "FLAVOR": "老师来教你吧~",
+    "DESCRIPTIONS": [
+      "拾起时替换 #y先手印记 。每场战斗一次， #y斩杀 时，随机升级卡组中的一张卡。"
+    ]
+  },
+  "shadowverse:RalmiaBOSS": {
+    "NAME": "欧米伽驱动",
+    "FLAVOR": "Speed Boost！",
+    "DESCRIPTIONS": [
+      "拾起时替换 #y先手印记 。一回合一次，进入 共鸣 时，所有手牌获得 #y创造物 词条。退出 共鸣 时 ，所有手牌获得 #y机械 词条。"
+    ]
+  },
+  "shadowverse:ShizuruBOSS": {
+    "NAME": "神圣十字剑",
+    "FLAVOR": "姐姐我要使出全力了！",
+    "DESCRIPTIONS": [
+      "拾起时替换 #y先手印记 。打出已 #y升级 的卡时，获得 #b1 点格挡。一回合一次，打出 #y进化点 时获得 [E] 。"
+    ]
+  },
+  "shadowverse:YukariBOSS": {
+    "NAME": "无尽酒杯",
+    "FLAVOR": "准备完了哟。",
+    "DESCRIPTIONS": [
+      "拾起时替换 #y先手印记 。回复生命时，获得 #b能力伤害无效 。 NL 每当抽到 #y状态牌 或 #y诅咒牌 时，抽 #b1 张牌。"
+    ]
   }
 }

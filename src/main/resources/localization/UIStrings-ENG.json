@@ -96,5 +96,15 @@
     "TEXT": [
       "保留"
     ]
+  },
+  "shadowverse:ArtifactTag": {
+    "TEXT": [
+      "创造物"
+    ]
+  },
+  "shadowverse:MachineTag": {
+    "TEXT": [
+      "机械"
+    ]
   }
 }

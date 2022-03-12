@@ -12,12 +12,14 @@
  import com.megacrit.cardcrawl.characters.AbstractPlayer;
  import com.megacrit.cardcrawl.core.AbstractCreature;
  import com.megacrit.cardcrawl.core.CardCrawlGame;
+ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
  import com.megacrit.cardcrawl.localization.CardStrings;
  import com.megacrit.cardcrawl.monsters.AbstractMonster;
  import com.megacrit.cardcrawl.powers.AbstractPower;
  import com.megacrit.cardcrawl.powers.VulnerablePower;
  import shadowverse.characters.AbstractShadowversePlayer;
  import shadowverse.characters.Witchcraft;
+ import shadowverse.relics.AnneBOSS;
 
  public class MysterianRite extends CustomCard {
    public static final String ID = "shadowverse:MysterianRite";
@@ -50,7 +52,7 @@
 
    @Override
    public void triggerOnOtherCardPlayed(AbstractCard c) {
-       if (c.hasTag(AbstractShadowversePlayer.Enums.MYSTERIA)&&mysterianCheck) {
+       if ((c.hasTag(AbstractShadowversePlayer.Enums.MYSTERIA)||(AbstractDungeon.player.hasRelic(AnneBOSS.ID)&&c.type==CardType.SKILL))&&mysterianCheck) {
            flash();
            addToBot((AbstractGameAction)new SFXAction("spell_boost"));
            addToBot((AbstractGameAction)new ReduceCostAction((AbstractCard)this));

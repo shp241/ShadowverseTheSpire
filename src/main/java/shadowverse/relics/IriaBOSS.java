@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import shadowverse.patch.CharacterSelectScreenPatches;
 
 
 public class IriaBOSS
@@ -47,7 +48,8 @@ public class IriaBOSS
 
     @Override
     public boolean canSpawn() {
-        return AbstractDungeon.player.hasRelic(Offensive4.ID);
+        return AbstractDungeon.player.hasRelic(Offensive4.ID)
+                &&(CharacterSelectScreenPatches.characters[4]).reskinCount == 0;
     }
 
 

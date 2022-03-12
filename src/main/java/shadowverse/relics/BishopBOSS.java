@@ -19,6 +19,7 @@
  import com.megacrit.cardcrawl.powers.BerserkPower;
  import com.megacrit.cardcrawl.relics.AbstractRelic;
  import com.megacrit.cardcrawl.rooms.AbstractRoom;
+ import shadowverse.patch.CharacterSelectScreenPatches;
 
 
  public class BishopBOSS
@@ -95,7 +96,8 @@
 
      @Override
      public boolean canSpawn(){
-         return AbstractDungeon.player.hasRelic(Offensive7.ID);
+         return AbstractDungeon.player.hasRelic(Offensive7.ID)
+                 &&((CharacterSelectScreenPatches.characters[5]).reskinCount == 0||(CharacterSelectScreenPatches.characters[5]).reskinCount == 2);
      }
    
    public AbstractRelic makeCopy() {

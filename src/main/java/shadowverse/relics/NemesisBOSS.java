@@ -12,6 +12,7 @@
  import com.megacrit.cardcrawl.helpers.ImageMaster;
  import com.megacrit.cardcrawl.relics.AbstractRelic;
  import com.megacrit.cardcrawl.stances.AbstractStance;
+ import shadowverse.patch.CharacterSelectScreenPatches;
  import shadowverse.stance.Resonance;
  import shadowverse.stance.Vengeance;
 
@@ -48,7 +49,8 @@
      }
      @Override
      public boolean canSpawn(){
-         return AbstractDungeon.player.hasRelic(Offensive5.ID);
+         return AbstractDungeon.player.hasRelic(Offensive5.ID)
+                 &&(CharacterSelectScreenPatches.characters[6]).reskinCount == 0;
      }
 
    public AbstractRelic makeCopy() {

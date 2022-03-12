@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.action.ChoiceAction2;
@@ -19,6 +20,7 @@ import shadowverse.cards.Temp.AnnesSorcery;
 import shadowverse.cards.Temp.AnnesSummoning;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Witchcraft;
+import shadowverse.relics.AnneBOSS;
 
 import java.util.ArrayList;
 
@@ -49,7 +51,7 @@ import java.util.ArrayList;
    }
 
    public void triggerOnOtherCardPlayed(AbstractCard c) {
-     if (c.hasTag(AbstractShadowversePlayer.Enums.MYSTERIA)) {
+     if (c.hasTag(AbstractShadowversePlayer.Enums.MYSTERIA)||(AbstractDungeon.player.hasRelic(AnneBOSS.ID)&&c.type==CardType.SKILL)) {
        flash();
        addToBot((AbstractGameAction)new SFXAction("spell_boost"));
        addToBot((AbstractGameAction)new ReduceCostAction((AbstractCard)this));

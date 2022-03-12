@@ -4,7 +4,9 @@
  import basemod.abstracts.CustomRelic;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+ import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
+ import com.megacrit.cardcrawl.cards.colorless.Apparition;
+ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
@@ -14,14 +16,15 @@ import shadowverse.cards.Temp.Litch;
  import shadowverse.powers.Cemetery;
 
 
- public class LunaBOSS
+ public class MiyakoBOSS
    extends CustomRelic
  {
-   public static final String ID = "shadowverse:LunaBOSS";
-   public static final String IMG = "img/relics/LunaBOSS.png";
+   public static final String ID = "shadowverse:MiyakoBOSS";
+   public static final String IMG = "img/relics/MiyakoBOSS.png";
    public static final String OUTLINE_IMG = "img/relics/outline/LunaBOSS_Outline.png";
 
-   public LunaBOSS() {
+
+   public MiyakoBOSS() {
      super(ID, ImageMaster.loadImage(IMG), RelicTier.BOSS, LandingSound.CLINK);
    }
    
@@ -37,11 +40,22 @@ import shadowverse.cards.Temp.Litch;
                      playerNecromance = p.amount;
              }
          }
-         if (playerNecromance>=4){
+         if (playerNecromance>=6 && !this.grayscale){
              flash();
-             addToBot((AbstractGameAction)new NecromanceAction(4,null,
-                     (AbstractGameAction)new MakeTempCardInHandAction(new Litch(),1)));
+             this.counter--;
+             addToBot((AbstractGameAction)new NecromanceAction(5,null,
+                     (AbstractGameAction)new MakeTempCardInHandAction(new Apparition(),1)));
          }
+         if (this.counter == 0) {
+             flash();
+             this.grayscale = true;
+         }
+     }
+
+     @Override
+     public void atBattleStart() {
+         this.counter = 3;
+         addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
      }
 
      @Override
@@ -53,17 +67,22 @@ import shadowverse.cards.Temp.Litch;
          }
      }
 
+     @Override
+     public void onVictory() {
+         this.counter = -1;
+         this.grayscale = false;
+     }
 
      @Override
      public boolean canSpawn(){
-         return AbstractDungeon.player.hasRelic(Offensive3.ID)
-                 &&(CharacterSelectScreenPatches.characters[2]).reskinCount == 0;
+         return AbstractDungeon.player.hasRelic(Offensive3.ID) &&
+                 (CharacterSelectScreenPatches.characters[2]).reskinCount == 1;
      }
 
  
    
    public AbstractRelic makeCopy() {
-     return (AbstractRelic)new LunaBOSS();
+     return (AbstractRelic)new MiyakoBOSS();
    }
  }
 

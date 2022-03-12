@@ -31,7 +31,7 @@ public class Abdiel
     public static final String IMG_PATH = "img/cards/Abdiel.png";
 
     public Abdiel() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.POWER, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.POWER, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.SELF);
         this.isEthereal = true;
         AbstractCard ep = new EvolutionPoint();
         ep.upgrade();

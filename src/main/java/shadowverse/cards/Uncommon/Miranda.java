@@ -21,6 +21,7 @@ import shadowverse.cards.Temp.MysterianMissile;
 import shadowverse.cards.Temp.MysterianRite;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Witchcraft;
+import shadowverse.relics.AnneBOSS;
 
 import java.util.ArrayList;
 
@@ -50,7 +51,7 @@ import java.util.ArrayList;
    }
 
    public void triggerOnOtherCardPlayed(AbstractCard c) {
-     if (c.hasTag(AbstractShadowversePlayer.Enums.MYSTERIA)) {
+     if (c.hasTag(AbstractShadowversePlayer.Enums.MYSTERIA)||(AbstractDungeon.player.hasRelic(AnneBOSS.ID)&&c.type==CardType.SKILL)) {
        flash();
        addToBot((AbstractGameAction)new SFXAction("spell_boost"));
        addToBot((AbstractGameAction)new ReduceCostAction((AbstractCard)this));

@@ -56,7 +56,7 @@ import shadowverse.characters.Elf;
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
        addToBot((AbstractGameAction)new BounceAction(1));
-       addToBot((AbstractGameAction)new ExhaustAction(1, false, true, true));
+       addToBot((AbstractGameAction)new ExhaustAction(this.magicNumber, false, true, true));
    }
  
    

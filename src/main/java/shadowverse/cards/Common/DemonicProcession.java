@@ -9,6 +9,7 @@
  import com.megacrit.cardcrawl.core.CardCrawlGame;
  import com.megacrit.cardcrawl.localization.CardStrings;
  import com.megacrit.cardcrawl.monsters.AbstractMonster;
+ import rs.lazymankits.actions.common.DrawExptCardAction;
  import shadowverse.action.BurialAction;
  import shadowverse.characters.Necromancer;
 
@@ -51,7 +52,8 @@
      }
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new BurialAction(1,(AbstractGameAction)new DrawPileToHandAction(this.magicNumber, AbstractCard.CardType.ATTACK)));
+     addToBot((AbstractGameAction)new BurialAction(1,
+             (AbstractGameAction)new DrawExptCardAction(this.magicNumber,card -> card.type==CardType.ATTACK)));
    }
  
    

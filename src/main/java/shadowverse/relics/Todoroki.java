@@ -45,8 +45,8 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
                    }
                }
            }
-           this.grayscale = true;
        }
+       this.grayscale = true;
    }
    
    public void justEnteredRoom(AbstractRoom room) {

@@ -1160,268 +1160,268 @@
     ]
   },
   "shadowverse:UndyingResentment": {
-    "NAME": "不灭的怨念",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 死灵术 2 \b额外造成 !M! 点伤害。"
+    "NAME": "消えぬ怨恨",
+    "DESCRIPTION": "!D! ダメージを与える。 NL ネクロマンス 2 \bダメージを+ !M! する。"
   },
   "shadowverse:SpartoiSergent": {
-    "NAME": "尸魂战士",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 墓地 + !M!。"
+    "NAME": "スパルトイサージェント",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 墓場を + !M! する。"
   },
   "shadowverse:Path": {
     "NAME": "冥府への道",
     "DESCRIPTION": "ターン終了時、 墓場 の数が30以上なら、敵全体に !M! ダメージを与える。"
   },
   "shadowverse:SoulConversion": {
-    "NAME": "灵魂转移",
-    "DESCRIPTION": "破坏 1张牌。 NLカードを !M! 枚引く。",
+    "NAME": "ソウルコンバージョン",
+    "DESCRIPTION": "カードを1枚 破壊 する。 NLカードを !M! 枚引く。",
     "EXTENDED_DESCRIPTION": [
-      "没有攻击牌。"
+      "アタックがない。"
     ]
   },
   "shadowverse:DemonicProcession": {
     "NAME": "百鬼夜行",
-    "DESCRIPTION": "葬送 1张牌。 NL 从抽牌堆中随机将 !M! 张攻击牌加入手中。",
+    "DESCRIPTION": "カードを1枚 葬送 する。 NL アタックを !M! 枚引く。",
     "EXTENDED_DESCRIPTION": [
-      "没有攻击牌。"
+      "アタックがない。"
     ]
   },
   "shadowverse:TrothCurse": {
-    "NAME": "死咒之忠诚",
-    "DESCRIPTION": "破坏 1张牌。 NL 给予全体敌人 !M! 层 虚弱 和 易伤 。",
+    "NAME": "呪われた忠誠",
+    "DESCRIPTION": "カードを1枚 破壊 する。 NL 敵全体に 弱体 と 脱力 !M! を与える。",
     "EXTENDED_DESCRIPTION": [
-      "没有攻击牌。"
+      "アタックがない。"
     ]
   },
   "shadowverse:ImpiousResurrection": {
-    "NAME": "不洁再生",
-    "DESCRIPTION": "破坏 1张牌。 NL 增加1张 *巫妖 到手中。",
-    "UPGRADE_DESCRIPTION": "破坏 1张牌。 NL 增加1张 *巫妖+ 到手中。",
+    "NAME": "汚れた再生",
+    "DESCRIPTION": "カードを1枚 破壊 する。 NL *リッチ 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION": "カードを1枚 破壊 する。 NL *リッチ+ 1枚を手札に加える。",
     "EXTENDED_DESCRIPTION": [
-      "没有攻击牌。"
+      "アタックがない。"
     ]
   },
   "shadowverse:Mordecai": {
-    "NAME": "不死斗士・莫迪凯",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 谢幕曲 \b当这张牌被 廃棄 时，增加一张本回合耗能为0的复制品到手中。"
+    "NAME": "デュエリスト・モルディカイ",
+    "DESCRIPTION": "!D! ダメージを与える。 NL ラスワード \bこのカードが 廃棄 される時、このターンのコストが0のこれの複製を1枚を手札に加える。"
   },
   "shadowverse:LurchingCorpse": {
-    "NAME": "蹒跚的活尸",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 谢幕曲 \b当这张牌被 廃棄 时，给予全体敌人 !M! 层 虚弱 和 易伤 。"
+    "NAME": "よろめく不死者",
+    "DESCRIPTION": "!D! ダメージを与える。 NL ラスワード \bこのカードが 廃棄 される時、敵全体に 弱体 と 脱力 !M! を与える。"
   },
   "shadowverse:SpartoiSoldier": {
-    "NAME": "尸魂士兵",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 谢幕曲 \b当这张牌被 廃棄 时， 墓地 + !M! 。"
+    "NAME": "エルダースパルトイソルジャー",
+    "DESCRIPTION": "!B! ブロック を得る。 NL ラスワード \bこのカードが 廃棄 される時、 墓場を + !M! する。"
   },
   "shadowverse:DeathTyrant": {
-    "NAME": "死亡暴君",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 死灵术 20 \b额外造成 !M! 点伤害。"
+    "NAME": "デスタイラント",
+    "DESCRIPTION": "!D! ダメージを与える。 NL ネクロマンス 20 \bダメージを+ !M! する。"
   },
   "shadowverse:Minthe": {
-    "NAME": "灵魂守门人・命忒",
-    "DESCRIPTION": "获得20点 墓地 。 NL 回合开始时失去20点 墓地 。 NL エセリアル 。",
-    "UPGRADE_DESCRIPTION": "获得20点 墓地 。 NL 回合开始时失去20点 墓地 。"
+    "NAME": "魂の番人・ミント",
+    "DESCRIPTION": "墓場 20を得る。 NL ターン開始時、 墓場 20を失う。 NL エセリアル 。",
+    "UPGRADE_DESCRIPTION": "墓場 20を得る。 NL ターン開始時、 墓場 20を失う"
   },
   "shadowverse:Fafnir": {
-    "NAME": "尸龙・法芙娜",
-    "DESCRIPTION": "死灵术 X \b对全体敌人造成X的 !M! 倍伤害。 NL (X为 墓地 数量)。 NL 增加1张 *灼伤 到弃牌堆中。"
+    "NAME": "屍竜・ファフニール",
+    "DESCRIPTION": "ネクロマンス X \b敵全体にXの !M! 倍のダメージを与える。 NL (Xは 墓場 の数)。 NL *火傷 1枚を捨札に加える。"
   },
   "shadowverse:ApostleOfSilence": {
-    "NAME": "沉默的使徒",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 移除目标的 格挡 。"
+    "NAME": "沈黙の使徒",
+    "DESCRIPTION": "!B! ブロック を得る。 NL 敵の ブロック を取り除く。"
   },
   "shadowverse:DiscipleOfSilence": {
-    "NAME": "沉默的信徒",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 全体敌人本回合失去 !M! 点 力量 。"
+    "NAME": "沈黙の信者",
+    "DESCRIPTION": "!B! ブロック を得る。 NL このターン、すべての敵は 筋力 を !M! 失う。"
   },
   "shadowverse:DeathParty": {
-    "NAME": "死者派对",
-    "DESCRIPTION": "回合结束时，依顺序发动以下1种能力： NL 1.下回合额外カードを1枚引く。 NL 2.对全体敌人造成6点伤害。 NL 3. 墓地 +3。 NL 8回合结束后直接死亡。",
-    "UPGRADE_DESCRIPTION": "天賦 。 NL 回合结束时，依顺序发动以下1种能力： NL 1.下回合额外カードを1枚引く。 NL 2.对全体敌人造成6点伤害。 NL 3. 墓地 +3。 NL 8回合结束后直接死亡。"
+    "NAME": "ノーライフパーティ",
+    "DESCRIPTION": "ターン終了時、順に下記の能力が働く： NL 1.次のターン、追加でカードを1枚引く。 NL 2.敵全体に6ダメージ。 NL 3. 墓場 を+3する。 NL 8ターン終了後、即死する。",
+    "UPGRADE_DESCRIPTION": "天賦 。 NL ターン終了時、順に下記の能力が働く： NL 1.次のターン、追加でカードを1枚引く。 NL 2.敵全体に6ダメージ。 NL 3. 墓場 を+3する。 NL 8ターン終了後、即死する。"
   },
   "shadowverse:FoulTempest": {
-    "NAME": "腐坏飓风",
-    "DESCRIPTION": "对全体敌人!D! ダメージを与える。 NL 死灵术 6 \b这个伤害变为3倍。"
+    "NAME": "腐の嵐",
+    "DESCRIPTION": "敵全体に !D! ダメージを与える。 NL ネクロマンス 6 \bダメージは3倍になる。"
   },
   "shadowverse:Zombie": {
-    "NAME": "僵尸",
+    "NAME": "ゾンビ",
     "DESCRIPTION": "!D! ダメージを与える。 NL 廃棄 。"
   },
   "shadowverse:Litch": {
-    "NAME": "巫妖",
+    "NAME": "リッチ",
     "DESCRIPTION": "!D! ダメージを与える。 NL 廃棄 。"
   },
   "shadowverse:EternalVow": {
-    "NAME": "永恒誓言",
-    "DESCRIPTION": "保留 。 NL 使所有死灵术士手牌本回合耗能减少 [E] 。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION": "保留 。 NL 使所有死灵术士手牌本场战斗耗能减少 [E] 。 NL 廃棄 。"
+    "NAME": "永遠の誓い",
+    "DESCRIPTION": "保留 。 NL 手札にあるネクロマンサーカードのコストをこのターンだけ1下げる。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 手札にあるネクロマンサーカードのコストを1下げる。 NL 廃棄 。"
   },
   "shadowverse:Ceres": {
-    "NAME": "永恒花嫁・塞蕾丝",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 获得 !M! 层 再生 和 荆棘 。 NL 增加1张 *永恒誓言 到手中。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION": "!B! ブロック を得る。 NL 获得 !M! 层 再生 和 荆棘 。 NL 增加1张 *永恒誓言+ 到手中。 NL 廃棄 。"
+    "NAME": "永遠の花嫁・セレス",
+    "DESCRIPTION": "!B! ブロック を得る。 NL 再生 と トゲ !M! を得る。 NL *永遠の誓い 1枚を手札に加える。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "!B! ブロック を得る。 NL再生 と トゲ !M! を得る。 NL *永遠の誓い+ 1枚を手札に加える。 NL 廃棄 。"
   },
   "shadowverse:Ceres2": {
-    "NAME": "永暗花嫁・塞蕾丝",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 增加1张 *悖德的欲求 到手中。 NL 谢幕曲 当这张牌被 廃棄 时，ランダムな敵に !M! ダメージを与える。 NL 廃棄 。"
+    "NAME": "常闇の花嫁・セレス",
+    "DESCRIPTION": "!B! ブロック を得る。 NL *インモラルディザイア 1枚を手札に加える。 NL ラスワード このカードが 廃棄 される時、ランダムな敵に !M! ダメージを与える。 NL 廃棄 。"
   },
   "shadowverse:Hector": {
-    "NAME": "魔将军・赫克托",
-    "DESCRIPTION": "!D! ダメージを与える 。 NL 获得2点 临时力量 。 NL 死灵术 3 \b增加1张 *僵尸 到手中，重复此动作直至手牌上限。",
-    "UPGRADE_DESCRIPTION": "!D! ダメージを与える 。 NL 获得2点 临时力量 。 NL 死灵术 3 \b增加1张 *僵尸+ 到手中，重复此动作直至手牌上限。"
+    "NAME": "魔将軍・ヘクター",
+    "DESCRIPTION": "!D! ダメージを与える 。 NL このターンだけ 筋力 2を得る。 NL ネクロマンス 3 \b *ゾンビ 1枚を手札に加える。これを手札が一杯になるまで繰り返す。",
+    "UPGRADE_DESCRIPTION": "!D! ダメージを与える 。 NL このターンだけ 筋力 2を得る。 NL ネクロマンス 3 \b *ゾンビ+ 1枚を手札に加える。これを手札が一杯になるまで繰り返す。"
   },
   "shadowverse:RevenantRam": {
-    "NAME": "羊骸之灵",
-    "DESCRIPTION": "自然 。 NL 谢幕曲 \b当这张牌被 廃棄 时， 墓地 +1。 NL !B! ブロック を得る。 NL 增加1张 *那塔拉的大树 到手中。"
+    "NAME": "シープスピリット",
+    "DESCRIPTION": "自然 。 NL ラスワード \bこのカードが 廃棄 される時、 墓場 を+1する。 NL !B! ブロック を得る。 NL *ナテラの大樹 1枚を手札に加える。"
   },
   "shadowverse:GhostRider": {
-    "NAME": "死灵骑士",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 谢幕曲 \b当这张牌被 廃棄 时，!B! ブロック を得る。"
+    "NAME": "ゴーストライダー",
+    "DESCRIPTION": "!B! ブロック を得る。 NL ラスワード \bこのカードが 廃棄 される時、 !B! ブロック を得る。"
   },
   "shadowverse:ZombieDog": {
-    "NAME": "死尸犬",
-    "DESCRIPTION": "自然 。 NL !D! ダメージを与える，!B! ブロック を得る。 NL 如果在已有 那塔拉的大树 时打出 *那塔拉的大树 ，伤害和 格挡 增加 !M! 点。"
+    "NAME": "コープスドッグ",
+    "DESCRIPTION": "自然 。 NL !D! ダメージを与える，!B! ブロック を得る。 NL ナテラの大樹 を持つなら、 *ナテラの大樹 をプレイする度、これのダメージと ブロック は+ !M! される。"
   },
   "shadowverse:NecroAnimals": {
-    "NAME": "死灵兽群",
-    "DESCRIPTION": "自然 。 NL !D! ダメージを与える， 廃棄 。 NL 谢幕曲 当这张牌被 廃棄 时，随机发动以下1种能力： NL 1.增加1张 *那塔拉的大树 到手中。 NL 2.!B! ブロック を得る。 NL 3.对随机敌人造成 !D! 点 伤害。 NL エセリアル 。"
+    "NAME": "ネクロアニマルズ",
+    "DESCRIPTION": "自然 。 NL !D! ダメージを与える， 廃棄 。 NL ラスワード このカードが 廃棄 される時、下記の能力からランダムに1つが働く： NL 1. *ナテラの大樹 1枚を手札に加える。 NL 2.!B! ブロック を得る。 NL 3.ランダムな敵に !D! 点 ダメージ。 NL エセリアル 。"
   },
   "shadowverse:Lubelle": {
-    "NAME": "死灵聚集体・鲁蓓露",
-    "DESCRIPTION": "增加 !M! 张 *那塔拉的大树 和 *死灵兽群 到手中。 NL 每当打出 *那塔拉的大树 时，增加 !M! 张 *死灵兽群 到手中。 NL エセリアル 。",
-    "UPGRADE_DESCRIPTION": "增加 !M! 张 *那塔拉的大树 和 *死灵兽群 到手中。 NL 每当打出 *那塔拉的大树 时，增加 !M! 张 *死灵兽群 到手中。"
+    "NAME": "ネクログループ・ルベル",
+    "DESCRIPTION": "*ナテラの大樹 と *ネクロアニマルズ !M! 枚を手札に加える。 NL *ナテラの大樹 をプレイする度、 *ネクロアニマルズ !M! 枚を手札に加える。 NL エセリアル 。",
+    "UPGRADE_DESCRIPTION": "*ナテラの大樹 と *ネクロアニマルズ !M! 枚を手札に加える。 NL *ナテラの大樹 をプレイする度、 *ネクロアニマルズ !M! 枚を手札に加える"
   },
   "shadowverse:Thoth": {
-    "NAME": "托特",
-    "DESCRIPTION": "如果本场战斗已打出的 谢幕曲 牌 为10张以上，则给予接下来每次打出 谢幕曲 牌对全体敌人造成10点伤害的效果。 NL カードを1枚引く。",
+    "NAME": "トート",
+    "DESCRIPTION": "この戦闘中にプレイした ラスワード カードが10枚以上なら、自分は「 ラスワード カードをプレイする度、敵全体に10ダメージを与える」を持つ。 NL カードを1枚引く。",
     "EXTENDED_DESCRIPTION": [
-      " NL (已打出",
-      " 张 谢幕曲 牌。)"
+      " NL (プレイした ラスワード カードは",
+      " 枚。)"
     ]
   },
   "shadowverse:Chris": {
-    "NAME": "异族魔境・克里斯托福",
-    "DESCRIPTION": "!B! ブロック を得る。如果本场战斗已打出的 谢幕曲 牌 为5张以上，增加1张本回合耗能为0的 *死灵骑士 到手中。 NL 如果为10张以上，则 格挡 不在你的回合开始时消失。",
+    "NAME": "人外魔境・クリストフ",
+    "DESCRIPTION": "!B! ブロック を得る。この戦闘中にプレイした ラスワード カードが5枚以上なら、このターンだけコストが0の *ゴーストライダー 1枚を手札に加える。 NL 10枚以上なら、ターン開始時にブロック値を失わない。",
     "EXTENDED_DESCRIPTION": [
-      " NL (已打出",
-      " 张 谢幕曲 牌。)"
+      " NL (プレイした ラスワード カードは",
+      " 枚。)"
     ]
   },
   "shadowverse:SoulStrike": {
-    "NAME": "入魂的一刀",
-    "DESCRIPTION": "!D! ダメージを与える（这张牌也视为ストライク牌）。 NL 如果本场战斗已打出的 谢幕曲 牌 为10张以上，则ダメージを倍にする。 NL 廃棄 。",
+    "NAME": "魂の一刀",
+    "DESCRIPTION": "!D! ダメージを与える（このカードはストライク扱いとする）。 NL この戦闘中にプレイした ラスワード カードが10枚以上なら、ダメージを倍にする。 NL 廃棄 。",
     "EXTENDED_DESCRIPTION": [
-      " NL (已打出",
-      " 张 谢幕曲 牌。)"
+      " NL (プレイした ラスワード カードは",
+      " 枚。)"
     ]
   },
   "shadowverse:GloamingTombs": {
-    "NAME": "林立的墓地",
-    "DESCRIPTION": "每当打出 攻击牌 时 墓地 + !M! 。",
-    "UPGRADE_DESCRIPTION": "天賦 。 NL 每当打出 攻击牌 时 墓地 + !M! 。"
+    "NAME": "並び立つ墓",
+    "DESCRIPTION": "アタックをプレイする度、 墓場 を+ !M! する。",
+    "UPGRADE_DESCRIPTION": "天賦 。 NL アタックをプレイする度、 墓場 を+ !M! する。"
   },
   "shadowverse:Ceridwen": {
-    "NAME": "关德温",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 亡者召还 3 。"
+    "NAME": "ケリドウェン",
+    "DESCRIPTION": "!B! ブロック を得る。 NL リアニメイト 3 。"
   },
   "shadowverse:Ceridwen2": {
-    "NAME": "永劫欲求者・关德温",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 获得 [E] 。 NL 抉择 ：\b增加1张 *永恒秘药 或 *刹那剧毒 到手中。"
+    "NAME": "永劫を求む者・ケリドウェン",
+    "DESCRIPTION": "!B! ブロック を得る。 NL 获得 [E] 。 NL チョイス ：\b *久遠の秘薬 か *刹那の劇薬 1枚を手札に加える。"
   },
   "shadowverse:DeathBreath": {
-    "NAME": "死亡祝福",
-    "DESCRIPTION": "增加 !M! 张 *僵尸 到手中。 NL 死灵术 6 \b!B! ブロック を得る。"
+    "NAME": "死の祝福",
+    "DESCRIPTION": "*ゾンビ !M! 枚を手札に加える。 NL ネクロマンス 6 \b !B! ブロック を得る。"
   },
   "shadowverse:TheLovers": {
-    "NAME": "《恋人》・米露缇欧",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 葬送 2张牌 ， 亡者召还 X,Y(X,Y的总和为 !M! ) 。 NL 谢幕曲 抽2张牌。 NL エンハンス 6 \b改为回合结束时给予全体敌人伤害，使其生命转变为6点。 NL 廃棄 。"
+    "NAME": "《恋人》・ミルティオ",
+    "DESCRIPTION": "!B! ブロック を得る。 NL カードを2枚 葬送 し、 リアニメイト X、Y(X、Yの合計値は !M! ) 。 NL ラスワード カードを2枚引く。 NL エンハンス 6 \b 2回 葬送 してリアニメイトするのではなく、ターン終了時に敵全体にHPが6になるようにダメージを与える。 NL 廃棄 。"
   },
   "shadowverse:SpiritCurator": {
-    "NAME": "灵魂鉴定师",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 葬送 1张牌，カードを1枚引く。"
+    "NAME": "スピリットキュレーター",
+    "DESCRIPTION": "!B! ブロック を得る。 NL カードを1枚 葬送 し、カードを1枚引く。"
   },
   "shadowverse:ForbiddenArt": {
-    "NAME": "禁绝的一击",
-    "DESCRIPTION": "对全体敌人!D! ダメージを与える，增加1张 *虚空 到弃牌堆中。 NL 死灵术 20 \b额外增加 !M! 点伤害。 NL 廃棄 。"
+    "NAME": "禁絶の一撃",
+    "DESCRIPTION": "敵全体に !D! ダメージを与え、 *空虚 1枚を捨札に加える。 NL ネクロマンス 20 \bダメージを+ !M! する。 NL 廃棄 。"
   },
   "shadowverse:Nicola": {
-    "NAME": "禁绝之腕・尼古拉",
-    "DESCRIPTION": "機械 。 NL !D! ダメージを与える， 廃棄 。 NL 谢幕曲 当这张牌被 廃棄 时，伤害增加 !M! ，增加1张这张牌的复制品到手中。如果这张牌的伤害为 !M! 的4倍以上，则改为增加1张 *禁绝的一击 到手中，这张牌的伤害转变为 !M! 。"
+    "NAME": "禁絶の腕・ニコラ",
+    "DESCRIPTION": "機械 。 NL !D! ダメージを与える， 廃棄 。 NL ラスワード このカードが 廃棄 される時、メージを+ !M! し、これの複製を1枚手札に加える。これのダメージが !M! の4倍以上なら、 *禁絶の一撃 1枚を手札に加え、これのダメージは !M! になる。"
   },
   "shadowverse:Nicola2": {
-    "NAME": "不灭的禁绝・尼古拉",
-    "DESCRIPTION": "機械 。 NL !D! ダメージを与える， 廃棄 。 NL 增加一张这张牌的复制品到弃牌堆中。 NL 依廃棄堆中的攻击牌数量增加这张牌 !M! 点伤害。"
+    "NAME": "不滅の禁絶・ニコラ",
+    "DESCRIPTION": "機械 。 NL !D! ダメージを与える， 廃棄 。 NL これの複製を1枚捨札に加える。 NL 廃棄札のアタックの数によってこれのダメージを+ !M! する。"
   },
   "shadowverse:Nicola3": {
-    "NAME": "永续的機械・尼古拉",
-    "DESCRIPTION": "機械 。 NL !D! ダメージを与える。 NL 如果手中有其他 機械 牌，给予 !M! 层中毒。 NL 如果本场战斗已打出的 機械 牌为7张以上，增加1张 *禁断的一击 到手中，并使其耗能变为1。"
+    "NAME": "永続の機構・ニコラ",
+    "DESCRIPTION": "機械 。 NL !D! ダメージを与える。 NL 手札に 機械 カードがあるなら、さらに 毒 !M! を与える。 NL この戦闘にプレイした 機械 カードが7枚以上なら、コスト1の *禁絶の一撃 1枚を手札に加える。"
   },
   "shadowverse:Kagero": {
-    "NAME": "一刀幽鬼・蜃景",
-    "DESCRIPTION": "当这张牌被抽到时，如果 墓地 为10以上，则给予全体敌人 !M! 层 易伤 。 NL !B! ブロック を得る。 NL 谢幕曲 当这张牌被 廃棄 时，死灵术 3 \b增加1张 *入魂的一刀 到手中。",
-    "UPGRADE_DESCRIPTION": "当这张牌被抽到时，如果 墓地 为10以上，则给予全体敌人 !M! 层 易伤 。 NL !B! ブロック を得る。 NL 谢幕曲 当这张牌被 廃棄 时，死灵术 3 \b增加1张 *入魂的一刀+ 到手中。"
+    "NAME": "一刀の幽鬼・カゲロウ",
+    "DESCRIPTION": "これが引かれる時、 墓場 が10以上なら、敵全体に 弱体 !M! を与える。 NL !B! ブロック を得る。 NL ラスワード このカードが 廃棄 される時、ネクロマンス 3 \b *魂の一刀 を手札に加える。",
+    "UPGRADE_DESCRIPTION": "これが引かれる時、 墓場 が10以上なら、敵全体に 弱体 !M! を与える。 NL !B! ブロック を得る。 NL ラスワード このカードが 廃棄 される時、ネクロマンス 3 \b *魂の一刀+ を手札に加える。"
   },
   "shadowverse:WightKing": {
-    "NAME": "尸鬼之王",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 死灵术 4 \b额外获得3点 格挡 和 !M! 层 プレートアーマー 。"
+    "NAME": "ワイトキング",
+    "DESCRIPTION": "!B! ブロック を得る。 NL ネクロマンス 4 \b追加で ブロック 3と プレートアーマー !M! を得る。"
   },
   "shadowverse:Wight": {
-    "NAME": "尸鬼",
-    "DESCRIPTION": "当 攻击牌 被 廃棄 时，对全体敌人造成 !M! 点伤害。"
+    "NAME": "ワイト",
+    "DESCRIPTION": "アタックが 廃棄 される時、敵全体に !M! ダメージを与える。"
   },
   "shadowverse:ImmortalThane": {
-    "NAME": "不灭君王",
-    "DESCRIPTION": "!B! ブロック を得る， 廃棄 。 NL 增加2张本回合耗能为0的 *尸鬼 到手中。 NL 谢幕曲 当这张牌被 廃棄 时，增加1张本回合耗能为0的 *尸鬼之王 到手中。",
-    "UPGRADE_DESCRIPTION": "!B! ブロック を得る， 廃棄 。 NL 增加2张本回合耗能为0的 *尸鬼+ 到手中。 NL 谢幕曲 当这张牌被 廃棄 时，增加1张本回合耗能为0的 *尸鬼之王+ 到手中。"
+    "NAME": "不死の大王",
+    "DESCRIPTION": "!B! ブロック を得る。 廃棄 。 NL このターンだけコストが0の *ワイト 2枚を手札に加える。 NL ラスワード このカードが 廃棄 される時、このターンだけコストが0の *ワイトキング 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION": "!B! ブロック を得る。 廃棄 。 NL このターンだけコストが0の *ワイト+ 2枚を手札に加える。 NL ラスワード このカードが 廃棄 される時、このターンだけコストが0の *ワイトキング+ 1枚を手札に加える。"
   },
   "shadowverse:NecroAssassin": {
-    "NAME": "死灵暗杀者",
-    "DESCRIPTION": "破坏 1张牌，获得 [E] [E] 。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION": "破坏 1张牌，获得 [E] [E] 。"
+    "NAME": "ネクロアサシン",
+    "DESCRIPTION": "カードを1枚 破壊 し、 [E] [E] を得る。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "カードを1枚 破壊 し、 [E] [E] を得る。"
   },
   "shadowverse:Nephthys": {
-    "NAME": "奈芙蒂斯",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 随机 廃棄 抽牌堆中耗能不同的攻击牌1张，这些牌在本场战斗视为被打出过。"
+    "NAME": "ネフティス",
+    "DESCRIPTION": "!B! ブロック を得る。 NL ランダムに山札からコストが異なるアタックをそれぞれ1枚を 廃棄 する。これらのカードはプレイした状態として扱う。"
   },
   "shadowverse:EverdarkStrix": {
-    "NAME": "恒暗之枭",
-    "DESCRIPTION": "每当发动 葬送 时， !M! ブロックを得る。"
+    "NAME": "常闇の梟",
+    "DESCRIPTION": "葬送 する度、 !M! ブロックを得る。"
   },
   "shadowverse:CarnivalNecromancer": {
-    "NAME": "狂欢死灵法师",
-    "DESCRIPTION": "每当发动 葬送 时，抽 !M! 张 牌 。 NL エンハンス 3 \b 亡者召还 4。"
+    "NAME": "カーニバルネクロマンサー",
+    "DESCRIPTION": "葬送 する度、カードを !M! 枚引く。 NL エンハンス 3 \b リアニメイト 4。"
   },
   "shadowverse:HungrySlash": {
-    "NAME": "饥欲斩击",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 葬送 1张牌，カードを !M! 枚引く。"
+    "NAME": "ハングリースラッシュ",
+    "DESCRIPTION": "!D! ダメージを与える。 NL カードを1枚 葬送 し、カードを !M! 枚引く。"
   },
   "shadowverse:InstantPotion": {
-    "NAME": "刹那剧毒",
-    "DESCRIPTION": "葬送 1张牌，!D! ダメージを与える。 NL 廃棄 。"
+    "NAME": "刹那の劇薬",
+    "DESCRIPTION": "カードを1枚 葬送 し、 !D! ダメージを与える。 NL 廃棄 。"
   },
   "shadowverse:EternalPotion": {
-    "NAME": "永恒秘药",
-    "DESCRIPTION": "亡者召还 !M! 。 NL 廃棄 。"
+    "NAME": "久遠の秘薬",
+    "DESCRIPTION": "リアニメイト !M! 。 NL 廃棄 。"
   },
   "shadowverse:DeadMetalStar": {
-    "NAME": "死亡金属巨星",
-    "DESCRIPTION": "機械 。 NL アクセラレート 1 \b增加3张 *生产器械 到手中。 NL  NL --------------------- NL  NL !D! ダメージを与える，!B! ブロック を得る。 NL 谢幕曲 当这张牌被 廃棄 时， 亡者召还 3。"
+    "NAME": "デッドメタルスター",
+    "DESCRIPTION": "機械 。 NL アクセラレート 1 \b *プロダクトマシーン 3枚を手札に加える。 NL  NL --------------------- NL  NL !D! ダメージを与え、 !B! ブロック を得る。 NL ラスワード このカードが 廃棄 される時、 リアニメイト 3。"
   },
   "shadowverse:Skeleton": {
-    "NAME": "骸骨士兵",
+    "NAME": "スケルトン",
     "DESCRIPTION": "!D! ダメージを与える。 NL 廃棄 。"
   },
   "shadowverse:HinterlandGhoul": {
-    "NAME": "终末之骸",
-    "DESCRIPTION": "保留 。 NL !B! ブロック を得る。 NL 增加10张 *骸骨士兵 到手中。 NL 当这张牌被保留时，如果 墓地 为30以上，则对全体敌人造成 !M! 点伤害。",
-    "UPGRADE_DESCRIPTION": "保留 。 NL !B! ブロック を得る。 NL 增加10张 *骸骨士兵+ 到手中。 NL 当这张牌被保留时，如果 墓地 为30以上，则对全体敌人造成 !M! 点伤害。"
+    "NAME": "最果ての骸",
+    "DESCRIPTION": "保留 。 NL !B! ブロック を得る。 NL *スケルトン 10枚を手札に加える。 NL 保留される時、 墓場 が30以上なら、手札に !M! ダメージを与える。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL !B! ブロック を得る。 NL *スケルトン+ 10枚を手札に加える。 NL 保留される時、 墓場 が30以上なら、手札に !M! ダメージを与える。"
   },
   "shadowverse:BoneDominator": {
-    "NAME": "骸骨支配者",
-    "DESCRIPTION": "アクセラレート 0 \bカードを1枚引く， 葬送 1张牌 并 !M! ブロックを得る。 NL  NL --------------------- NL  NL !B! ブロック を得る。 NL 增加1张 *终末之骸 到手中。"
+    "NAME": "ボーンドミネーター",
+    "DESCRIPTION": "アクセラレート 0 \bカードを1枚引く， カードを1枚 葬送 し、 !M! ブロックを得る。 NL  NL --------------------- NL  NL !B! ブロック を得る。 NL *最果ての骸 1枚を手札に加える。"
   },
   "shadowverse:SowDeathReapLife": {
-    "NAME": "生死逆转",
-    "DESCRIPTION": "亡者召还 自己的本回合数。"
+    "NAME": "生と死の逆転",
+    "DESCRIPTION": "リアニメイト ターン数。"
   },
   "shadowverse:AbsoluteJudgment": {
     "NAME": "絶対なる裁き",
@@ -1448,167 +1448,167 @@
     "DESCRIPTION": "!D! ダメージを与え、与えたダメージ分HPを回復する。 NL !B! ブロック を得る。"
   },
   "shadowverse:RegenerateSpirit": {
-    "NAME": "灵魂再生",
-    "DESCRIPTION": "亡者召还 1。 NL エンハンス2 额外发动 亡者召还 2。 NL エセリアル 。",
-    "UPGRADE_DESCRIPTION": "亡者召还 1。 NL エンハンス2 额外发动 亡者召还 2。"
+    "NAME": "霊魂再生",
+    "DESCRIPTION": "リアニメイト 1。 NL エンハンス2 追加で リアニメイト 2。 NL エセリアル 。",
+    "UPGRADE_DESCRIPTION": "リアニメイト 1。 NL エンハンス2 追加で リアニメイト 2。"
   },
   "shadowverse:BoneChimera": {
-    "NAME": "骸骨奇美拉",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 谢幕曲 当这张牌被 廃棄 时，增加 !M! 张 *骸骨士兵 到手中。"
+    "NAME": "ボーンキマイラ",
+    "DESCRIPTION": "!B! ブロック を得る。 NL ラスワード このカードが 廃棄 される時、 *スケルトン !M! 枚を加える。"
   },
   "shadowverse:LadyGray": {
-    "NAME": "心眼的双葬女・灰淑女",
-    "DESCRIPTION": "!D! ダメージを与える，回复造成伤害的生命值。 NL 亡者召还 1。"
+    "NAME": "心眼の双葬女・レディ・グレイ",
+    "DESCRIPTION": "!D! ダメージを与える、与えたダメージ分のHPを回復する。 NL リアニメイト 1。"
   },
   "shadowverse:NecroImpulse": {
-    "NAME": "死灵冲击",
-    "DESCRIPTION": "对随机敌人!D! ダメージを与える4次。 NL 死灵术 10 获得 !M! 点 力量 。"
+    "NAME": "ネクロインパルス",
+    "DESCRIPTION": "ランダムな敵に !D! ダメージを与える。これを4回行う。 NL ネクロマンス 10 筋力 !M! を得る。"
   },
   "shadowverse:BoneDrone": {
-    "NAME": "骸骨翔机",
-    "DESCRIPTION": "機械 。 NL !B! ブロック を得る。 NL 增加1张 *生产器械 到手中。 NL 谢幕曲 当这张牌被 廃棄 时，增加1张 *生产器械 到手中。"
+    "NAME": "ボーンドローン",
+    "DESCRIPTION": "機械 。 NL !B! ブロック を得る。 NL *プロダクトマシーン 1枚を手札に加える。 NL ラスワード このカードが 廃棄 される時、 *プロダクトマシーン 1枚を手札に加える。"
   },
   "shadowverse:IrongearCorpsman": {
-    "NAME": "铁械医师",
-    "DESCRIPTION": "機械 。 NL !B! ブロック を得る。 NL 死灵术 6 \b复制1张本场战斗已使用的 機械 攻击牌中耗能最高的牌到手中。"
+    "NAME": "アイアンツールドクター",
+    "DESCRIPTION": "機械 。 NL !B! ブロック を得る。 NL ネクロマンス 6 \bこの戦闘中にプレイしたコストが最も高いの 機械 アタックの複製を1枚を手札に加える。"
   },
   "shadowverse:ForbiddenAndBalance": {
-    "NAME": "禁绝与均衡",
-    "DESCRIPTION": "機械 。 NL 每当打出 機械 攻击牌时耗能减 [E] 。 NL カードを !M! 枚引く，弃1张牌。"
+    "NAME": "禁絶と均衡",
+    "DESCRIPTION": "機械 。 NL 機械 アタックをプレイする度、コストを [E] 減らす。 NL カードを !M! 枚引き、1枚を捨てる。"
   },
   "shadowverse:GigantSkull": {
-    "NAME": "天鸣巨骸",
-    "DESCRIPTION": "機械 。 NL 对全体敌人!D! ダメージを与える。 NL 如果手中没有其他 機械 牌，则增加1张 *虚空 到弃牌堆中。"
+    "NAME": "鳴動のギガントスカル",
+    "DESCRIPTION": "機械 。 NL 敵全体に !D! ダメージを与える。 NL 手札に他の 機械 カードがないなら、 *空虚 1枚を捨札に加える。"
   },
   "shadowverse:Arcus": {
-    "NAME": "幽灵支配者・阿卡斯",
-    "DESCRIPTION": "耗能为1以下的攻击牌耗能变为0且打出时 廃棄 。 NL 每当打出耗能为0的攻击牌时对随机敌人造成4点伤害。"
+    "NAME": "幽霊支配人・アーカス",
+    "DESCRIPTION": "コストが1以下のアタックのコストは0になり、プレイされると 廃棄 される。 NL コストが0のアタックをプレイする度、ランダムな敵に4ダメージを与える。"
   },
   "shadowverse:Manmaru1": {
-    "NAME": "圆滚滚1号",
-    "DESCRIPTION": "機械 。 NL 获得 !M! 层 缓冲 。 NL 廃棄 。"
+    "NAME": "マンマル1号",
+    "DESCRIPTION": "機械 。 NL  バッファー !M! を得る。 NL 廃棄 。"
   },
   "shadowverse:GenerateNine": {
-    "NAME": "转瞬即逝的幸福",
-    "DESCRIPTION": "機械 。 NL 本回合受到的6以上的伤害转变为5。 NL エンハンス 4 \b将名称各不相同的 機械 攻击牌本回合耗能变为0从抽牌堆中加入手中直到满为止。 NL エセリアル 。 NL 廃棄 。"
+    "NAME": "つかの間の幸福",
+    "DESCRIPTION": "機械 。 NL このターン、受ける6以上のダメージは5になる。 NL エンハンス 4 \b手札が一杯になるまで山札からそれぞれ名前の異なる 機械 カードのコストを0にし、手札に加える。 NL エセリアル 。 NL 廃棄 。"
   },
   "shadowverse:Aenea": {
-    "NAME": "丹紫抵御者・安涅尔",
-    "DESCRIPTION": "機械 。 NL 回合开始时，失去1点能量，如果没有缓冲则增加1张 *圆滚滚1号 到手中，如有则增加1张 *转瞬即逝的幸福 到手中。 NL 如果受到伤害则失去这个能力。 NL 增加一张本回合耗能为0的 *圆滚滚1号 到手中。"
+    "NAME": "紫紺の抵抗者・エンネア",
+    "DESCRIPTION": "機械 。 NL ターン開始時、エナジーを1失う。バッファーを持たないなら、 *マンマル1号 1枚を手札に加える。そうでないなら、 *つかの間の幸福 1枚を手札に加える。 NL ダメージを受けるとこの能力を失う。 NL このターンだけコストが0の *マンマル1号 を手札に加える。"
   },
   "shadowverse:Andrealphus": {
-    "NAME": "安德雷斐斯",
-    "DESCRIPTION": "カードを !M! 枚引く。 NL 谢幕曲 当这张牌被 廃棄 时，カードを1枚引く。 NL 打出时赋予手中所有攻击牌上述效果。"
+    "NAME": "アンドレアルフス",
+    "DESCRIPTION": "カードを !M! 枚引く。 NL ラスワード このカードが 廃棄 される時、カードを1枚引く。 NL 手札にあるアタックも上記の効果を得る。"
   },
   "shadowverse:PrinceCatacomb": {
     "NAME": "骸骨贵公子",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 谢幕曲 当这张牌被 消耗 时，增加1张 *骸骨士兵 到手中。 NL 打出时赋予手中所有攻击牌上述效果。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL ラスワード このカードが 廃棄 される時、 *スケルトン 1枚を手札に加える。 NL 手札にあるアタックも上記の効果を得る。"
   },
   "shadowverse:OmenOfSilence": {
-    "NAME": "沉默绝杰・鲁鲁纳伊",
-    "DESCRIPTION": "死灵术 3 \b降低全体敌人所有正面效果3层。"
+    "NAME": "沈黙の絶傑・ルルナイ",
+    "DESCRIPTION": "ネクロマンス 3 \bすべての敵は全バフを3失う。"
   },
   "shadowverse:OmenOfSilence2": {
-    "NAME": "绝叫沉默・鲁鲁纳伊",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 本场战斗每打出1张 *绝叫沉默・鲁鲁纳伊，伤害增加3点。 NL 如果已打出10张以上，伤害不再增加，给予随机敌人3层 易伤 和 虚弱 。 NL 谢幕曲 被 廃棄 时增加1张 *扩散的绝叫 到手中。 NL 廃棄 。"
+    "NAME": "絶叫の沈黙・ルルナイ",
+    "DESCRIPTION": "!D! ダメージを与える。 NL この戦闘中にプレイした *絶叫の沈黙・ルルナイ の数だけダメージを+3する。 NL それが10枚以上なら、ダメージを増やさず、ランダムな敵に 弱体 と 脱力 3を与える。 NL ラスワード このカードが 廃棄 される時、 *絶叫の拡散 1枚を手札に加える。 NL 廃棄 。"
   },
   "shadowverse:OmenOfSilence2Copy": {
-    "NAME": "绝叫沉默・鲁鲁纳伊",
+    "NAME": "絶叫の沈黙・ルルナイ",
     "DESCRIPTION": "!D! ダメージを与える。 NL 廃棄 。"
   },
   "shadowverse:ExpandingScreaming": {
-    "NAME": "扩散的绝叫",
-    "DESCRIPTION": "增加X张耗能为0只能造成3点伤害的 *绝叫沉默・鲁鲁纳伊 到手中直到手牌为满。 NL X为本场战斗中已打出的 *绝叫沉默・鲁鲁纳伊 数。 NL 死灵术 3 增加1张 *绝叫沉默・鲁鲁纳伊 到手中。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION":"保留 。 NL 增加X张耗能为0只能造成3点伤害的 *绝叫沉默・鲁鲁纳伊 到手中直到手牌为满。 NL X为本场战斗中已打出的 *绝叫沉默・鲁鲁纳伊 数。 NL 死灵术 3 增加1张 *绝叫沉默・鲁鲁纳伊 到手中。 NL 廃棄 。",
+    "NAME": "絶叫の拡散",
+    "DESCRIPTION": "3ダメージを与えることしかできない *絶叫の沈黙・ルルナイ X枚を手札が一杯になるまで加える。 NL Xはこの戦闘中にプレイした *絶叫の沈黙・ルルナイ の数。 NL ネクロマンス 3  *絶叫の沈黙・ルルナイ 1枚を手札に加える。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"保留 。 NL 3ダメージを与えることしかできない *絶叫の沈黙・ルルナイ X枚を手札が一杯になるまで加える。 NL Xはこの戦闘中にプレイした *絶叫の沈黙・ルルナイ の数。 NL ネクロマンス 3  *絶叫の沈黙・ルルナイ 1枚を手札に加える。 NL 廃棄 。",
     "EXTENDED_DESCRIPTION": [
-      " NL (已打出",
-      " 张。)"
+      " NL (プレイした *絶叫の沈黙・ルルナイ は",
+      " 枚。)"
     ]
   },
   "shadowverse:Gremory": {
-    "NAME": "预视死期者・格莫瑞",
-    "DESCRIPTION": "如果自己的 墓地 数量为卡组数量以上，则获得以下效果：发动 死灵术 时，回复该 死灵术 的 墓地 并获得2点能量。此效果每个回合仅限发动1次。 NL 瞬念召唤 如果自己的 墓地 数量大于卡组数量则加入手中，耗能变为0。 NL エセリアル 。",
-    "UPGRADE_DESCRIPTION": "如果自己的 墓地 数量为卡组数量以上，则获得以下效果：发动 死灵术 时，回复该 死灵术 的 墓地 并获得2点能量。此效果每个回合仅限发动1次。 NL 瞬念召唤 如果自己的 墓地 数量大于卡组数量则加入手中，耗能变为0。"
+    "NAME": "死期を視るもの・グレモリー",
+    "DESCRIPTION": "墓場 の数がデッキの数より多いなら、自分は「1ターンに1度、自分が ネクロマンス をした時、 墓場 を+ ネクロマンス の値し、エナジー2を得る」を持つ。 NL 直接召喚 墓場 がデッキの数より多いなら、これのコストを0にして手札に加える。 NL エセリアル 。",
+    "UPGRADE_DESCRIPTION": "墓場 の数がデッキの数より多いなら、自分は「1ターンに1度、自分が ネクロマンス をした時、 墓場 を+ ネクロマンス の値し、エナジー2を得る」を持つ。 NL 直接召喚 墓場 がデッキの数より多いなら、これのコストを0にして手札に加える"
   },
   "shadowverse:Aisha": {
-    "NAME": "冥守之巅・爱夏",
-    "DESCRIPTION": "瞬念召唤 回合开始时，如果 墓地 数量为16以上，则廃棄8点 墓地 加入手中，耗能变为0。 NL !D! ダメージを与える。 NL 死灵术 10 \b再造成一次伤害。"
+    "NAME": "冥守の頂点・アイシャ",
+    "DESCRIPTION": "直接召喚 ターン開始時、 墓場 が16以上なら、8を消費してこれのコストを0にして手札に加える。 NL !D! ダメージを与える。 NL ネクロマンス 10 \bもう一回ダメージを与える。"
   },
   "shadowverse:Hades": {
-    "NAME": "冥界之神・哈迪斯",
-    "DESCRIPTION": "アクセラレート 2 \b对全体敌人!D! ダメージを与える，获得 *冥府之路 的效果。 NL  NL --------------------- NL  NL !B! ブロック を得る。 NL 谢幕曲 当这张牌被廃棄时 墓地 + !M! ，获得 *冥府之路 的效果。 NL 廃棄 。"
+    "NAME": "冥界神・ハデス",
+    "DESCRIPTION": "アクセラレート 2 \b对全体敌人!D! ダメージを与え、 *冥府への道 の効果を得る。 NL  NL --------------------- NL  NL !B! ブロック を得る。 NL ラスワード このカードが廃棄される時、 墓場 を+ !M! し、 *冥府への道 の効果を得る。 NL 廃棄 。"
   },
   "shadowverse:Mimi": {
-    "NAME": "守卫犬的右腕・米米",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 谢幕曲 当这张牌被廃棄时 对全体敌人造成 !M! 点伤害。 NL 廃棄 。"
+    "NAME": "番犬の右腕・ミミ",
+    "DESCRIPTION": "!D! ダメージを与える。 NL ラスワード このカードが廃棄される時、敵全体に !M! ダメージを与える。 NL 廃棄 。"
   },
   "shadowverse:Koko": {
-    "NAME": "守卫犬的左腕・可可",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 谢幕曲 当这张牌被廃棄时 回复 !M! 点生命。 NL 廃棄 。"
+    "NAME": "番犬の左腕・ココ",
+    "DESCRIPTION": "!B! ブロック を得る。 NL ラスワード このカードが廃棄される時、HPを !M! 回復する。 NL 廃棄 。"
   },
   "shadowverse:Cerberus": {
-    "NAME": "冥界守卫犬・刻耳柏洛斯",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 增加1张 *守卫犬的左腕・可可 、 *守卫犬的右腕・米米 到手中。",
-    "UPGRADE_DESCRIPTION": "!B! ブロック を得る。 NL 增加1张 *守卫犬的左腕・可可+ 、 *守卫犬的右腕・米米+ 到手中。"
+    "NAME": "冥界の番犬・ケルベロス",
+    "DESCRIPTION": "!B! ブロック を得る。 NL *番犬の左腕・ココ と *番犬の右腕・ミミ 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION": "!B! ブロック を得る。 NL *番犬の左腕・ココ+ と *番犬の右腕・ミミ+ 1枚を手札に加える。"
   },
   "shadowverse:AttendentOfNight": {
-    "NAME": "暗之从魔",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 谢幕曲 当这张牌被廃棄时 增加1张 *巫妖 到手中。"
+    "NAME": "闇の従者",
+    "DESCRIPTION": "!D! ダメージを与える。 NL ラスワード このカードが廃棄される時、 *リッチ 1枚を手札に加える。"
   },
   "shadowverse:Orthrus": {
-    "NAME": "冥界斗犬・欧特鲁斯",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 死灵术 3 \b额外造成 !M! 点伤害。"
+    "NAME": "冥界の闘犬・オルトロス",
+    "DESCRIPTION": "!D! ダメージを与える。 NL ネクロマンス 3 \bダメージを+ !M! する。"
   },
   "shadowverse:Pudding": {
-    "NAME": "把你变成布丁哟",
-    "DESCRIPTION": "使目标失去一种正面效果(如有 人工制品 则优先失去 人工制品 )。 NL 获得 !M! 点 临时力量 和 临时敏捷 。 NL 廃棄 。"
+    "NAME": "プリンにしてやるの",
+    "DESCRIPTION": "敵のバフを1種類除去する(先に アーティファクト から除去)。 NL このターンだけ、 筋力 と 敏捷性 を !M! 得る。 NL 廃棄 。"
   },
   "shadowverse:Miyako": {
-    "NAME": "布丁幽灵・宫子",
-    "DESCRIPTION": "失去4点生命，获得 无实体 。 NL 连结爆发 !M! 增加1张 *把你变成布丁哟 到手中。 NL 廃棄 。"
+    "NAME": "プリンゴースト・ミヤコ",
+    "DESCRIPTION": "HPを4失い、 無形 を得る。 NL ユニオンバースト !M! *プリンにしてやるの 1枚を手札に加える。 NL 廃棄 。"
   },
   "shadowverse:Kyouka": {
-    "NAME": "小小优等生・镜华",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 发动2次 魔力增幅 。 NL 连结爆发 !M! 对全体敌人!D! ダメージを与える。"
+    "NAME": "小さな優等生・キョウカ",
+    "DESCRIPTION": "!B! ブロック を得る。 NL スペルブースト 2回する。 NL ユニオンバースト !M! 敵全体に !D! ダメージを与える。"
   },
   "shadowverse:FriendsForever": {
-    "NAME": "羁绊的共振",
-    "DESCRIPTION": " *露娜的本领 NL *安涅儿的献身 NL 抉择 NL 亡者召还 2 、 亡者召还 1 、 亡者召还 0。 NL 回复4点生命，增加1张 *转瞬即逝的幸福 到手中。 NL 死灵术 4 \b发动全部效果。 NL エセリアル 。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION": " *露娜的本领 NL *安涅儿的献身 NL 抉择 NL 亡者召还 2 、 亡者召还 1 、 亡者召还 0。 NL 回复4点生命，增加1张 *转瞬即逝的幸福 到手中。 NL 死灵术 4 \b发动全部效果。 NL 廃棄 "
+    "NAME": "絆の共振",
+    "DESCRIPTION": " *ルナの本気 NL *エンネアの献身 NL チョイス NL リアニメイト 2 、 リアニメイト 1 、 リアニメイト 0。 NL HPを4回復し、 *つかの間の幸福 1枚を手札に加える。 NL ネクロマンス 4 \bチョイスではなくすべて働く。 NL エセリアル 。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": " *ルナの本気 NL *エンネアの献身 NL チョイス NL リアニメイト 2 、 リアニメイト 1 、 リアニメイト 0。 NL HPを4回復し、 *つかの間の幸福 1枚を手札に加える。 NL ネクロマンス 4 \bチョイスではなくすべて働く。 NL 廃棄 "
   },
   "shadowverse:LunaGame": {
-    "NAME": "露娜的本领",
-    "DESCRIPTION": "亡者召还 2 、 亡者召还 1 、 亡者召还 0。"
+    "NAME": "ルナの本気",
+    "DESCRIPTION": "リアニメイト 2 、 リアニメイト 1 、 リアニメイト 0。"
   },
   "shadowverse:AeneaFriendship": {
-    "NAME": "安涅儿的献身",
-    "DESCRIPTION": "回复4点生命，增加1张 *转瞬即逝的幸福 到手中。"
+    "NAME": "ンネアの献身",
+    "DESCRIPTION": "HPを4回復し、 *つかの間の幸福 1枚を手札に加える。"
   },
   "shadowverse:SonataOfSilence": {
-    "NAME": "沉默之诗",
-    "DESCRIPTION": "失去所有效果( 力量 、 敏捷 、 墓地 不受影响)。 NL カードを !M! 枚引く。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION": "失去所有效果( 力量 、 敏捷 、 墓地 不受影响)。 NL カードを !M! 枚引く。"
+    "NAME": "沈黙の詩",
+    "DESCRIPTION": "バフとデバフをすべて失う( 筋力 、 敏捷性 、 墓場 は影響を受けない)。 NL カードを !M! 枚引く。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "バフとデバフをすべて失う( 筋力 、 敏捷性 、 墓場 は影響を受けない)。 NL カードを !M! 枚引く。"
   },
   "shadowverse:SoulTaker": {
-    "NAME": "狩魂者・菈菈",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 随机复制1张弃牌堆中的攻击牌( *狩魂者・菈菈 除外)到手中，使其耗能变为0，赋予 エセリアル 和 廃棄 。"
+    "NAME": "ソウルテイカー・ララ",
+    "DESCRIPTION": "!B! ブロック を得る。 NL 捨札にあるアタック1枚( *ソウルテイカー・ララ を除く)の複製のコストを0にし、エセリアル と 廃棄 を付与して手札に加える。"
   },
   "shadowverse:OneTailFox": {
-    "NAME": "一尾狐",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 造成 !D! 点伤害。 NL 谢幕曲 被 消耗 时，使手中的 *大妖狐·吟雪 或 *惊骇盛宴·吟雪 本局游戏伤害+2。 NL 虚无 。 NL 消耗 。"
+    "NAME": "一ツ尾狐",
+    "DESCRIPTION": "!B! ブロック を得る。 NL !D! ダメージを与える。 NL ラスワード このカードが 廃棄 される時、デッキにある *大妖狐・ギンセツ と *テラーバンケット・ギンセツ のダメージを永続的に+2する。 NL エセリアル 。 NL 廃棄 。"
   },
   "shadowverse:Ginsetsu": {
-    "NAME": "大妖狐·吟雪",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 造成 !D! 点伤害。 NL 增加4张本回合耗能为0的 *一尾狐 到手中。 NL 这张卡在卡组存在时， *一尾狐 造成伤害时回复等量的生命。"
+    "NAME": "大妖狐・ギンセツ",
+    "DESCRIPTION": "!B! ブロック を得る。 NL !D! ダメージを与える。 NL このターンだけコストが0の *一ツ尾狐 4枚を手札に加える。 NL このカードがデッキに存在する時、 *一ツ尾狐 がダメージを与える時、その分のHPを回復する。"
   },
   "shadowverse:Ginsetsu2": {
-    "NAME": "惊骇盛宴·吟雪",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 造成 !D! 点伤害。 NL 增加1张本回合耗能为0的 *一尾狐 到手中。 NL 死灵术 9 改为4张。 NL 这张卡在卡组存在时， *一尾狐 造成的伤害+2。"
+    "NAME": "テラーバンケット・ギンセツ",
+    "DESCRIPTION": "!B! ブロック を得る。 NL !D! ダメージを与える。 NL このターンだけコストが0の *一ツ尾狐 1枚を手札に加える。 NL ネクロマンス 9 1枚ではなく4枚。 NL このカードがデッキに存在する時、 *一ツ尾狐 が与えるダメージは+2される。"
   },
   "shadowverse:Ferry": {
-    "NAME": "幽想少女・菲莉",
-    "DESCRIPTION": "葬送 2张牌，本回合内攻击牌重复打出3次。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION": "葬送 2张牌，本回合内攻击牌重复打出3次。"
+    "NAME": "幽想の少女・フェリ",
+    "DESCRIPTION": "カードを2枚 葬送し、このターン中にプレイするアタックを3回プレイする。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "カードを2枚 葬送し、このターン中にプレイするアタックを3回プレイする。"
   },
   "shadowverse:StormArrow": {
     "NAME": "ストームアロー",
@@ -1622,7 +1622,7 @@
     "DESCRIPTION": "!D! ダメージを与える。 NL このターンだけ 筋力 を1得る。"
   },
   "shadowverse:ArisaArrow": {
-    "NAME": "森番の弓森",
+    "NAME": "森番の弓",
     "DESCRIPTION": "ターン終了時に 筋力 を1得る。 NL カウントダウン !M! \b ラスワード カードを1枚引く。"
   },
   "shadowverse:Arisa": {
@@ -1631,17 +1631,17 @@
     "UPGRADE_DESCRIPTION": "筋力 ・ 敏捷性 ・ ブロック を得る時、敵全体に !M! ダメージを与える。 NL チョイス ： *ストームアロー+ 、 *ゲイルアロー+ から1枚を手札に加える。 NL  このターン中に（このカードを含めず）プレイしたカードの数が2枚以上なら、 *森番の弓+ 1枚を手札に加える。"
   },
   "shadowverse:NecroTemptation": {
-    "NAME": "死灵的诱惑",
-    "DESCRIPTION": " 弱体 と 脱力 を !M! 与える。 NL 死灵术 8 \b从3张随机非死灵术士攻击牌或能力牌中选择1张加入手中，其耗能在本回合变为0，并永久加入卡组。(稀有度依敌人的类型决定) NL 廃棄 。"
+    "NAME": "ネクロテンプテーション",
+    "DESCRIPTION": " 弱体 と 脱力 を !M! 与える。 NL ネクロマンス 8 \bランダムのネクロマンサーカードではないアタックかパワー3枚から1枚を選んでこのターンだけコストを0にし、手札に加える。加えられたカードはデッキにも加える。(レアリティは敵のタイプによって決まる) NL 廃棄 。"
   },
   "shadowverse:LunaDoll": {
-    "NAME": "露娜的玩偶",
-    "DESCRIPTION": "倒计时 !M! \b 谢幕曲 回复 !M! 点生命，カードを !M! 枚引く。"
+    "NAME": "ルナの人形",
+    "DESCRIPTION": "カウントダウン !M! \b ラスワード HPを !M! 回復し、カードを !M! 枚引く。"
   },
   "shadowverse:Luna": {
-    "NAME": "友魂少女・露娜",
-    "DESCRIPTION": "增加1张 *露娜的玩偶 和 *死灵的诱惑 到手中。 NL 死灵术 6 \b将1张 *进化点 和 *奇迹 加入手中。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION": "增加1张 *露娜的玩偶+ 和 *死灵的诱惑+ 到手中。 NL 死灵术 6 \b将1张 *进化点 和 *奇迹 加入手中。 NL 廃棄 。"
+    "NAME": "友魂の少女・ルナ",
+    "DESCRIPTION": "*ルナの人形 と *ネクロテンプテーション 1枚を手札に加える。 NL ネクロマンス 6 \b *EP と *奇跡 1枚を手札に加える。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "*ルナの人形+ と *ネクロテンプテーション+ 1枚を手札に加える。 NL ネクロマンス 6 \b *EP+ と *奇跡+ 1枚を手札に加える。 NL 廃棄 。"
   },
   "shadowverse:UnionMagic": {
     "NAME": "ユニオン・マジック",
@@ -1744,7 +1744,7 @@
   },
   "shadowverse:GarnetWaltz": {
     "NAME": "血色圆舞曲",
-    "DESCRIPTION": "抉择 NL ランダムな敵に !M! ダメージを与える、升级所有手牌并增加1张 *奇迹 到手中。 NL 复仇 改为发动2种效果。 NL 廃棄 。"
+    "DESCRIPTION": "チョイス NL ランダムな敵に !M! ダメージを与える、升级所有手牌并增加1张 *奇迹 到手中。 NL 复仇 改为发动2种效果。 NL 廃棄 。"
   },
   "shadowverse:Shemyaza": {
     "NAME": "桑杨沙",
@@ -1804,8 +1804,8 @@
   },
   "shadowverse:BeastEmpress": {
     "NAME": "魔兽女帝・涅蕾雅",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 增加1张本回合耗能为0的 *水源魔兽 到手中。 NL 渴望 全体敌人失去2点 力量 和 敏捷 。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION": "!B! ブロック を得る。 NL 增加1张本回合耗能为0的 *水源魔兽+ 到手中。 NL 渴望 全体敌人失去2点 力量 和 敏捷 。 NL 廃棄 。"
+    "DESCRIPTION": "!B! ブロック を得る。 NL 增加1张このターンだけコストが0の *水源魔兽 到手中。 NL 渴望 全体敌人失去2点 力量 和 敏捷 。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "!B! ブロック を得る。 NL 增加1张このターンだけコストが0の *水源魔兽+ 到手中。 NL 渴望 全体敌人失去2点 力量 和 敏捷 。 NL 廃棄 。"
   },
   "shadowverse:CorruptedBat": {
     "NAME": "躁狂蝙蝠",
@@ -1830,19 +1830,19 @@
   },
   "shadowverse:UnleashTheNightmare": {
     "NAME": "噩梦开始",
-    "DESCRIPTION": "随机将抽牌堆的 !M! 张攻击卡加入手中。 NL 增加加入的 機械 牌等量的 *生产器械 到手中。 NL 增加加入的非 機械 牌等量的 *林地蝙蝠 到手中。"
+    "DESCRIPTION": "随机将抽牌堆的 !M! 张攻击卡加入手中。 NL 增加加入的 機械 牌等量的 *プロダクトマシーン 到手中。 NL 增加加入的非 機械 牌等量的 *林地蝙蝠 到手中。"
   },
   "shadowverse:MechashotDevil": {
     "NAME": "机巧魔护士",
-    "DESCRIPTION": "機械 。 NL !B! ブロック を得る。 NL 如果手中有 機械 牌则每回合开始时增加1张 *生产器械 到手中。 NL 如果本场战斗已打出的 機械 非技能牌数量为10以上，将1张 *进化点 和 *奇迹 加入手中。"
+    "DESCRIPTION": "機械 。 NL !B! ブロック を得る。 NL 如果手中有 機械 牌则每回合开始时增加1张 *プロダクトマシーン 到手中。 NL 如果本场战斗已打出的 機械 非技能牌数量为10以上，将1张 *进化点 和 *奇迹 加入手中。"
   },
   "shadowverse:ArmoredBat": {
     "NAME": "钢翼夜蝠",
-    "DESCRIPTION": "機械 。 NL !B! ブロック を得る。 NL 谢幕曲 打出或被廃棄时增加2张 *生产器械 到手中。 NL エンハンス 2 \b额外 !M! ブロックを得る和 !M! 层 プレートアーマー 。"
+    "DESCRIPTION": "機械 。 NL !B! ブロック を得る。 NL ラスワード 打出或被廃棄时增加2张 *プロダクトマシーン 到手中。 NL エンハンス 2 \b额外 !M! ブロックを得る和 !M! 层 プレートアーマー 。"
   },
   "shadowverse:MechaforgeDevil": {
     "NAME": "机臂恶魔",
-    "DESCRIPTION": "機械 。 NL !B! ブロック を得る。 NL 增加1张 *生产器械 到手中。 NL 增加1张 *修复模式 到手中。"
+    "DESCRIPTION": "機械 。 NL !B! ブロック を得る。 NL 增加1张 *プロダクトマシーン 到手中。 NL 增加1张 *修复模式 到手中。"
   },
   "shadowverse:Mono": {
     "NAME": "绯红抗战者・莫诺",
@@ -1871,7 +1871,7 @@
   },
   "shadowverse:Neun": {
     "NAME": "拂晓吸血鬼・诺因",
-    "DESCRIPTION": "機械 。 NL !B! ブロック を得る。 NL 破坏 1张牌，增加2张 *生产器械 到手中。 NL 如果本场战斗已使用的 機械 非技能牌为10张以上，则接下来打 機械 牌时获得 2层 金属化。"
+    "DESCRIPTION": "機械 。 NL !B! ブロック を得る。 NL カードを1枚 破壊 する，增加2张 *プロダクトマシーン 到手中。 NL 如果本场战斗已使用的 機械 非技能牌为10张以上，则接下来打 機械 牌时获得 2层 金属化。"
   },
   "shadowverse:CreepingMadness": {
     "NAME": "不详的侵蚀",
@@ -1889,8 +1889,8 @@
   },
   "shadowverse:Aluzard": {
     "NAME": "永劫吸血鬼・亚瑞札特",
-    "DESCRIPTION": "!D! ダメージを与える， 廃棄 。 NL 谢幕曲 当这张卡被 廃棄 时，伤害增加 !M! 点，下回合开始时增加1张这张卡的复制品到手中。 NL 如果本场战斗已打出的 *永劫吸血鬼・亚瑞札特 为2张以上，下回合开始时增加1张 *血红獠牙 到手中。",
-    "UPGRADE_DESCRIPTION": "!D! ダメージを与える， 廃棄 。 NL 谢幕曲 当这张卡被 廃棄 时，伤害增加 !M! 点，下回合开始时增加1张这张卡的复制品到手中。 NL 如果本场战斗已打出的 *永劫吸血鬼・亚瑞札特 为2张以上，下回合开始时增加1张 *血红獠牙+ 到手中。"
+    "DESCRIPTION": "!D! ダメージを与える， 廃棄 。 NL ラスワード 当这张卡被 廃棄 时，伤害增加 !M! 点，下回合开始时增加1张这张卡的复制品到手中。 NL 如果本场战斗已打出的 *永劫吸血鬼・亚瑞札特 为2张以上，下回合开始时增加1张 *血红獠牙 到手中。",
+    "UPGRADE_DESCRIPTION": "!D! ダメージを与える， 廃棄 。 NL ラスワード 当这张卡被 廃棄 时，伤害增加 !M! 点，下回合开始时增加1张这张卡的复制品到手中。 NL 如果本场战斗已打出的 *永劫吸血鬼・亚瑞札特 为2张以上，下回合开始时增加1张 *血红獠牙+ 到手中。"
   },
   "shadowverse:BloodArts": {
     "NAME": "血红獠牙",
@@ -1906,7 +1906,7 @@
   },
   "shadowverse:Flauros": {
     "NAME": "佛劳洛斯",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 谢幕曲 打出或被廃棄时回复 !M! 点生命 。 NL 瞬念召唤 回合结束时如果本回合内因自己失去生命4次以上，加入手中并执行这张卡的效果。"
+    "DESCRIPTION": "!B! ブロック を得る。 NL ラスワード 打出或被廃棄时回复 !M! 点生命 。 NL 瞬念召唤 回合结束时如果本回合内因自己失去生命4次以上，加入手中并执行这张卡的效果。"
   },
   "shadowverse:DevilOfVengeance": {
     "NAME": "复仇的恶魔",
@@ -1918,7 +1918,7 @@
   },
   "shadowverse:OmenOfLust2": {
     "NAME": "爱绝奸淫・瓦娜蕾格",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 增加1张 *爱绝的飞翔 到手中。 NL 狂乱  筋力 と 敏捷性 を !M! 得る。 NL 谢幕曲 如果 狂乱 ，增加7张没有这个效果的 *爱绝奸淫・瓦娜蕾格 到抽牌堆中。"
+    "DESCRIPTION": "!D! ダメージを与える。 NL 增加1张 *爱绝的飞翔 到手中。 NL 狂乱  筋力 と 敏捷性 を !M! 得る。 NL ラスワード 如果 狂乱 ，增加7张没有这个效果的 *爱绝奸淫・瓦娜蕾格 到抽牌堆中。"
   },
   "shadowverse:LustfulDesire": {
     "NAME": "爱绝奸淫・瓦娜蕾格",
@@ -1926,7 +1926,7 @@
   },
   "shadowverse:ServantOfLust": {
     "NAME": "奸淫的信徒",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 失去1点生命。 NL 谢幕曲 打出或被廃棄时，全体敌人失去 !M! 点生命。"
+    "DESCRIPTION": "!D! ダメージを与える。 NL 失去1点生命。 NL ラスワード 打出或被廃棄时，全体敌人失去 !M! 点生命。"
   },
   "shadowverse:DevilSheep": {
     "NAME": "恶夜魔羊",
@@ -1959,8 +1959,8 @@
   },
   "shadowverse:RestlessParish": {
     "NAME": "诡谲的幽暗街道",
-    "DESCRIPTION": "エンハンス 1 NL 抉择 *暗夜袭击 、 *狂气现形 。 NL 失去1点生命，下回合额外カードを !M! 枚引く。",
-    "UPGRADE_DESCRIPTION": "エンハンス 1 \b 抉择 NL *暗夜袭击+ 、 *狂气现形+ 。 NL 失去1点生命，下回合额外カードを !M! 枚引く。"
+    "DESCRIPTION": "エンハンス 1 NL チョイス *暗夜袭击 、 *狂气现形 。 NL 失去1点生命，下回合额外カードを !M! 枚引く。",
+    "UPGRADE_DESCRIPTION": "エンハンス 1 \b チョイス NL *暗夜袭击+ 、 *狂气现形+ 。 NL 失去1点生命，下回合额外カードを !M! 枚引く。"
   },
   "shadowverse:NightmareTime": {
     "NAME": "梦魇时分",
@@ -2010,8 +2010,8 @@
   },
   "shadowverse:Vanpi": {
     "NAME": "暗夜公主・斑比",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 自己和全体敌人失去2点生命，增加1张 *林地蝙蝠 到手中。 NL 复仇 改为 抉择 ：\b从本回合耗能为0的 *仁慈女王・斑比 和 *血色女王・斑比 中选择1张加入手中。",
-    "UPGRADE_DESCRIPTION": "!B! ブロック を得る。 NL 自己和全体敌人失去2点生命，增加1张 *林地蝙蝠+ 到手中。 NL 复仇 改为 抉择 ：\b从本回合耗能为0的 *仁慈女王・斑比+ 和 *血色女王・斑比+ 中选择1张加入手中。"
+    "DESCRIPTION": "!B! ブロック を得る。 NL 自己和全体敌人失去2点生命，增加1张 *林地蝙蝠 到手中。 NL 复仇 改为 チョイス ：\b从このターンだけコストが0の *仁慈女王・斑比 和 *血色女王・斑比 中选择1张加入手中。",
+    "UPGRADE_DESCRIPTION": "!B! ブロック を得る。 NL 自己和全体敌人失去2点生命，增加1张 *林地蝙蝠+ 到手中。 NL 复仇 改为 チョイス ：\b从このターンだけコストが0の *仁慈女王・斑比+ 和 *血色女王・斑比+ 中选择1张加入手中。"
   },
   "shadowverse:Volteo": {
     "NAME": "享乐的经营者・波尔特欧",
@@ -2019,7 +2019,7 @@
   },
   "shadowverse:ShowdownDemon": {
     "NAME": "梭牌恶魔",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 丢弃2张牌，下回合抽2张牌。 NL 随机增加1张本回合耗能为0的 *机动二轮车 或 *魔导装甲车 到手中。"
+    "DESCRIPTION": "!B! ブロック を得る。 NL 丢弃2张牌，下回合抽2张牌。 NL 随机增加1张このターンだけコストが0の *机动二轮车 或 *魔导装甲车 到手中。"
   },
   "shadowverse:BatNoise": {
     "NAME": "蝙蝠的鸣躁",
@@ -2082,15 +2082,15 @@
   },
   "shadowverse:AlectorCard": {
     "NAME": "灾乱女神・阿莱克托",
-    "DESCRIPTION": "機械 。 NL !B! ブロック を得る。 NL 增加2张 *生产器械 到手中。 NL  筋力 と 敏捷性 を !M! 得る。"
+    "DESCRIPTION": "機械 。 NL !B! ブロック を得る。 NL 增加2张 *プロダクトマシーン 到手中。 NL  筋力 と 敏捷性 を !M! 得る。"
   },
   "shadowverse:AssaultTentacle": {
     "NAME": "蹂躏的触手",
-    "DESCRIPTION": "機械 。 NL !D! ダメージを与える。 NL 谢幕曲 当这张牌被 廃棄 时，ランダムな敵に !M! ダメージを与える。 NL 廃棄 。"
+    "DESCRIPTION": "機械 。 NL !D! ダメージを与える。 NL ラスワード このカードが 廃棄 される時、ランダムな敵に !M! ダメージを与える。 NL 廃棄 。"
   },
   "shadowverse:ArmoredTentacle": {
     "NAME": "阻断的触手",
-    "DESCRIPTION": "機械 。 NL !B! ブロック を得る。 NL 谢幕曲 当这张牌被 廃棄 时，回复 !M! 点生命。 NL 廃棄 。"
+    "DESCRIPTION": "機械 。 NL !B! ブロック を得る。 NL ラスワード このカードが 廃棄 される時、回复 !M! 点生命。 NL 廃棄 。"
   },
   "shadowverse:NeoTisiphone": {
     "NAME": "再生的杀戮・提西福涅",
@@ -2110,7 +2110,7 @@
   },
   "shadowverse:ImmoralDesire": {
     "NAME": "悖德的欲求",
-    "DESCRIPTION": "选择2张攻击牌，分别赋予「 谢幕曲 被 廃棄 时对全体敌人造成这张牌的基础攻击力的伤害」和「 谢幕曲 被 廃棄 时获得这张牌的基础格挡的临时生命」效果。 NL (没有可选择的牌时不能打出这张牌) NL 廃棄 。"
+    "DESCRIPTION": "选择2张攻击牌，分别赋予「 ラスワード 被 廃棄 时对全体敌人造成这张牌的基础攻击力的伤害」和「 ラスワード 被 廃棄 时获得这张牌的基础格挡的临时生命」效果。 NL (没有可选择的牌时不能打出这张牌) NL 廃棄 。"
   },
   "shadowverse:DimensionCut": {
     "NAME": "次元断",
@@ -2118,19 +2118,19 @@
   },
   "shadowverse:AnalyzeArtifact": {
     "NAME": "解析的AF",
-    "DESCRIPTION": "AF 。 NL !D! ダメージを与える。 NL 谢幕曲 当这张牌被 廃棄 时カードを !M! 枚引く。 NL 廃棄 。"
+    "DESCRIPTION": "AF 。 NL !D! ダメージを与える。 NL ラスワード 当这张牌被 廃棄 时カードを !M! 枚引く。 NL 廃棄 。"
   },
   "shadowverse:AncientArtifact": {
     "NAME": "エンシェントアーティファクト",
     "DESCRIPTION": "AF 。 NL !D! ダメージを与える。 NL 廃棄 。"
   },
   "shadowverse:MysticArtifact": {
-    "NAME": "神秘的AF",
+    "NAME": "ミスティックアーティファクト",
     "DESCRIPTION": "AF 。 NL !B! ブロック を得る。 NL カードを !M! 枚引く。 NL 廃棄 。"
   },
   "shadowverse:RadiantArtifact": {
     "NAME": "绚烂的AF",
-    "DESCRIPTION": "AF 。 NL !D! ダメージを与える。 NL 谢幕曲 当这张牌被 廃棄 时如果非 共鸣 则カードを !M! 枚引く， 共鸣 则从抽牌堆中将1张 AF 牌加入手中。 NL 廃棄 。"
+    "DESCRIPTION": "AF 。 NL !D! ダメージを与える。 NL ラスワード 当这张牌被 廃棄 时如果非 共鸣 则カードを !M! 枚引く， 共鸣 则从抽牌堆中将1张 AF 牌加入手中。 NL 廃棄 。"
   },
   "shadowverse:TraceArtifact": {
     "NAME": "增殖的AF",
@@ -2138,7 +2138,7 @@
   },
   "shadowverse:PrimeArtifact": {
     "NAME": "精奥的AF",
-    "DESCRIPTION": "AF 。 NL !D! ダメージを与える，!B! ブロック を得る。 NL 谢幕曲 当这张牌被 廃棄 时，下回合开始时增加1张这张牌的复制品到手中。 NL 廃棄 。"
+    "DESCRIPTION": "AF 。 NL !D! ダメージを与える，!B! ブロック を得る。 NL ラスワード このカードが 廃棄 される時、下回合开始时增加1张这张牌的复制品到手中。 NL 廃棄 。"
   },
   "shadowverse:ProtectArtifact": {
     "NAME": "プロテクトアーティファクト",
@@ -2166,7 +2166,7 @@
   },
   "shadowverse:SpineArtifact": {
     "NAME": "斯碧涅的AF",
-    "DESCRIPTION": "AF 。 NL !D! ダメージを与える，!B! ブロック を得る。 NL 谢幕曲 当这张牌被 廃棄 时如果非 共鸣 则カードを !M! 枚引く， 共鸣 则从抽牌堆中将1张 AF 牌加入手中。 NL 廃棄 。"
+    "DESCRIPTION": "AF 。 NL !D! ダメージを与える，!B! ブロック を得る。 NL ラスワード 当这张牌被 廃棄 时如果非 共鸣 则カードを !M! 枚引く， 共鸣 则从抽牌堆中将1张 AF 牌加入手中。 NL 廃棄 。"
   },
   "shadowverse:Puppet": {
     "NAME": "悬丝傀儡",
@@ -2187,18 +2187,18 @@
   },
   "shadowverse:ParadigmShift": {
     "NAME": "典范转移",
-    "DESCRIPTION": "保留 。 NL 本回合内每当打出 AF 牌时，耗能减少 [E] 。 NL 抉择 ：从本回合耗能为0的 *守御的AF 、 *锋锐的AF 、 *迅袭的AF 中选择1张加入手中。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION": "保留 。 NL 本回合内每当打出 AF 牌时，耗能减少 [E] 。 NL 抉择 ：从本回合耗能为0的 *守御的AF+ 、 *锋锐的AF+ 、 *迅袭的AF+ 中选择1张加入手中。 NL 廃棄 。"
+    "DESCRIPTION": "保留 。 NL 本回合内每当打出 AF 牌时，耗能减少 [E] 。 NL チョイス ：从このターンだけコストが0の *守御的AF 、 *锋锐的AF 、 *迅袭的AF 中选择1张加入手中。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 本回合内每当打出 AF 牌时，耗能减少 [E] 。 NL チョイス ：从このターンだけコストが0の *守御的AF+ 、 *锋锐的AF+ 、 *迅袭的AF+ 中选择1张加入手中。 NL 廃棄 。"
   },
   "shadowverse:Automation": {
     "NAME": "自动化",
-    "DESCRIPTION": "抉择 ： NL 从 *解析的AF 、 *古老的AF 、 *神秘的AF 、 *绚烂的AF 中选择2种分别加入2张到抽牌堆中。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION": "抉择 ： NL 从 *解析的AF 、 *古老的AF 、 *神秘的AF 、 *绚烂的AF 中选择2种分别加入2张到抽牌堆中。"
+    "DESCRIPTION": "チョイス ： NL 从 *解析的AF 、 *古老的AF 、 *神秘的AF 、 *绚烂的AF 中选择2种分别加入2张到抽牌堆中。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "チョイス ： NL 从 *解析的AF 、 *古老的AF 、 *神秘的AF 、 *绚烂的AF 中选择2种分别加入2张到抽牌堆中。"
   },
   "shadowverse:Synchronization": {
     "NAME": "AF的同步",
-    "DESCRIPTION": "抉择 ： NL 从 *解析的AF 、 *增殖的AF 、 *绚烂的AF 、 *典范转移 中选择1张加入手牌。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION": "抉择 ： NL 从 *解析的AF 、 *增殖的AF 、 *绚烂的AF 、 *典范转移 中选择1张加入手牌。"
+    "DESCRIPTION": "チョイス ： NL 从 *解析的AF 、 *增殖的AF 、 *绚烂的AF 、 *典范转移 中选择1张加入手牌。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "チョイス ： NL 从 *解析的AF 、 *增殖的AF 、 *绚烂的AF 、 *典范转移 中选择1张加入手牌。"
   },
   "shadowverse:ArtifactScan": {
     "NAME": "AF扫描",
@@ -2249,7 +2249,7 @@
   },
   "shadowverse:Enforcer": {
     "NAME": "機械兵",
-    "DESCRIPTION": "機械 。 NL 如果手中有其他 機械 牌，!D! ダメージを与える。 NL 谢幕曲 打出或被 廃棄 时，增加1张 *生产器械 和 *修复模式 到手中。"
+    "DESCRIPTION": "機械 。 NL 如果手中有其他 機械 牌，!D! ダメージを与える。 NL ラスワード 打出或被 廃棄 时，增加1张 *プロダクトマシーン 和 *修复模式 到手中。"
   },
   "shadowverse:MegaEnforcer": {
     "NAME": "大型機械兵",
@@ -2262,7 +2262,7 @@
   },
   "shadowverse:Armadillo": {
     "NAME": "装甲铠鼠",
-    "DESCRIPTION": "機械 ・ 自然 。 NL !B! ブロック を得る。 NL 谢幕曲 打出或被 廃棄 时，增加1张 *生产器械 和 *修复模式 到手中。"
+    "DESCRIPTION": "機械 ・ 自然 。 NL !B! ブロック を得る。 NL ラスワード 打出或被 廃棄 时，增加1张 *プロダクトマシーン 和 *修复模式 到手中。"
   },
   "shadowverse:AerialCraft": {
     "NAME": "空翔战机",
@@ -2307,7 +2307,7 @@
   },
   "shadowverse:Paracelsus": {
     "NAME": "帕拉塞尓苏斯",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 抉择 ： NL 从 *攻击型巨像 、 *防御型巨像 中选择1张加入手中。"
+    "DESCRIPTION": "!B! ブロック を得る。 NL チョイス ： NL 从 *攻击型巨像 、 *防御型巨像 中选择1张加入手中。"
   },
   "shadowverse:Windup": {
     "NAME": "转动发条",
@@ -2337,7 +2337,7 @@
   },
   "shadowverse:OmenOfDestruction2": {
     "NAME": "奏绝破坏・里榭娜",
-    "DESCRIPTION": "获得 !M! 层 人工制品 。 NL 抉择 ：增加1张 *新约・白之章 或 *新约・黑之章 或 *奏绝的独唱 到手中。 NL 如果廃棄堆中的攻击牌为10张以上，改为全部加入手中。 NL 亡者召还 0、 亡者召还 0、 亡者召还 1。 NL 廃棄 。"
+    "DESCRIPTION": "获得 !M! 层 人工制品 。 NL チョイス ：增加1张 *新约・白之章 或 *新约・黑之章 或 *奏绝的独唱 到手中。 NL 如果廃棄堆中的攻击牌为10张以上，改为全部加入手中。 NL リアニメイト 0、 リアニメイト 0、 リアニメイト 1。 NL 廃棄 。"
   },
   "shadowverse:Licht": {
     "NAME": "齿轮运行者・里希特",
@@ -2357,12 +2357,12 @@
   },
   "shadowverse:HeartlessBattle": {
     "NAME": "无心的决斗",
-    "DESCRIPTION": "抉择 ：将1张 *罗伊德 或 *维多利亚 加入手中。 NL 增加1张 *悬丝傀儡 到手中。",
-    "UPGRADE_DESCRIPTION": "抉择 ：将1张 *罗伊德+ 或 *维多利亚+ 加入手中。 NL 增加1张 *悬丝傀儡+ 到手中。"
+    "DESCRIPTION": "チョイス ：将1张 *罗伊德 或 *维多利亚 加入手中。 NL 增加1张 *悬丝傀儡 到手中。",
+    "UPGRADE_DESCRIPTION": "チョイス ：将1张 *罗伊德+ 或 *维多利亚+ 加入手中。 NL 增加1张 *悬丝傀儡+ 到手中。"
   },
   "shadowverse:YuwanFury": {
     "NAME": "伊昂的愤怒",
-    "DESCRIPTION": "增加1张本回合耗能为0的 *古老的AF 和 *神秘的AF 到手中。"
+    "DESCRIPTION": "增加1张このターンだけコストが0の *古老的AF 和 *神秘的AF 到手中。"
   },
   "shadowverse:BelphometCrackdown": {
     "NAME": "贝尔冯特的弹压",
@@ -2370,7 +2370,7 @@
   },
   "shadowverse:RebelAgainstFate": {
     "NAME": "反叛命运",
-    "DESCRIPTION": "抉择 ： NL 增加1张本回合耗能为0的 *古老的AF 和 *神秘的AF 到手中。 NL 从 *杀戮女神・提西福涅 、 *灾乱女神・阿莱克托 、 *愤怒女神・墨盖拉 中随机增加1张到手中，并赋予其保留。 NL 共鸣 改为发动2种效果。 NL 廃棄 。"
+    "DESCRIPTION": "チョイス ： NL 增加1张このターンだけコストが0の *古老的AF 和 *神秘的AF 到手中。 NL 从 *杀戮女神・提西福涅 、 *灾乱女神・阿莱克托 、 *愤怒女神・墨盖拉 中随机增加1张到手中，并赋予其保留。 NL 共鸣 改为发动2种效果。 NL 廃棄 。"
   },
   "shadowverse:PurgationBlade": {
     "NAME": "肃清的一刀",
@@ -2429,11 +2429,11 @@
   },
   "shadowverse:Due": {
     "NAME": "提线傀儡・朵叶",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 回合开始时，如果廃棄堆中同时存在 *提线傀儡・舞诺 和这张牌，则从廃棄堆中移除两者并加入1张本回合耗能为0的 *提线傀儡・托蕾 到手中。 NL 廃棄 。"
+    "DESCRIPTION": "!D! ダメージを与える。 NL 回合开始时，如果廃棄堆中同时存在 *提线傀儡・舞诺 和这张牌，则从廃棄堆中移除两者并加入1张このターンだけコストが0の *提线傀儡・托蕾 到手中。 NL 廃棄 。"
   },
   "shadowverse:Tre": {
     "NAME": "提线傀儡・托蕾",
-    "DESCRIPTION": "!D! ダメージを与える2次。 NL 谢幕曲 当这张牌被 廃棄 时，增加1张 *提线傀儡・舞诺 和 *提线傀儡・朵叶 到弃牌堆中。 NL 廃棄 。"
+    "DESCRIPTION": "!D! ダメージを与える2次。 NL ラスワード このカードが 廃棄 される時、增加1张 *提线傀儡・舞诺 和 *提线傀儡・朵叶 到弃牌堆中。 NL 廃棄 。"
   },
   "shadowverse:Orchid1": {
     "NAME": "复仇的人偶・奥琪丝",
@@ -2447,12 +2447,12 @@
   },
   "shadowverse:Orchid": {
     "NAME": "人偶少女・奥琪丝",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 如果手中的 *悬丝傀儡 数量为2以下，增加3张 *悬丝傀儡 到手中。 NL 否则， 抉择 ：\b从 *坚毅的人偶・奥琪丝 、 *复仇的人偶・奥琪丝 中选择1种效果发动。",
-    "UPGRADE_DESCRIPTION": "!B! ブロック を得る。 NL 如果手中的 *悬丝傀儡 数量为2以下，增加3张 *悬丝傀儡 到手中。 NL 否则， 抉择 ：\b从 *坚毅的人偶・奥琪丝+ 、 *复仇的人偶・奥琪丝+ 中选择1种效果发动。"
+    "DESCRIPTION": "!B! ブロック を得る。 NL 如果手中的 *悬丝傀儡 数量为2以下，增加3张 *悬丝傀儡 到手中。 NL 否则， チョイス ：\b从 *坚毅的人偶・奥琪丝 、 *复仇的人偶・奥琪丝 中选择1种效果发动。",
+    "UPGRADE_DESCRIPTION": "!B! ブロック を得る。 NL 如果手中的 *悬丝傀儡 数量为2以下，增加3张 *悬丝傀儡 到手中。 NL 否则， チョイス ：\b从 *坚毅的人偶・奥琪丝+ 、 *复仇的人偶・奥琪丝+ 中选择1种效果发动。"
   },
   "shadowverse:OrchidNeo": {
     "NAME": "连结之心・奥琪丝",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 抉择 ：\b增加1张 *罗伊德 到手中，获得1点力量 和 敏捷 、 增加1张 *提线傀儡・舞诺 和 *提线傀儡・朵叶 到手中。 NL 如果手中有 *悬丝傀儡 ，选择1张 廃棄 并增加1张 *提线傀儡・托蕾 到手中。"
+    "DESCRIPTION": "!B! ブロック を得る。 NL チョイス ：\b增加1张 *罗伊德 到手中，获得1点力量 和 敏捷 、 增加1张 *提线傀儡・舞诺 和 *提线傀儡・朵叶 到手中。 NL 如果手中有 *悬丝傀儡 ，选择1张 廃棄 并增加1张 *提线傀儡・托蕾 到手中。"
   },
   "shadowverse:MagiTrainCard": {
     "NAME": "魔导列车",
@@ -2518,11 +2518,11 @@
   },
   "shadowverse:Spine2": {
     "NAME": "终末守门人・斯碧涅",
-    "DESCRIPTION": "アクセラレート 0 \b增加1张 *斯碧涅的AF 到手中。 NL  NL --------------------- NL  NL !B! ブロック を得る。 NL 从本回合耗能为0的 *守御的AF 、 *锋锐的AF 、 *迅袭的AF 中选择2张加入手中。 NL 如果廃棄堆中的 AF 卡数量为6以上，改为全部加入手中。 NL 廃棄 。"
+    "DESCRIPTION": "アクセラレート 0 \b增加1张 *斯碧涅的AF 到手中。 NL  NL --------------------- NL  NL !B! ブロック を得る。 NL 从このターンだけコストが0の *守御的AF 、 *锋锐的AF 、 *迅袭的AF 中选择2张加入手中。 NL 如果廃棄堆中的 AF 卡数量为6以上，改为全部加入手中。 NL 廃棄 。"
   },
   "shadowverse:Miriam": {
     "NAME": "反逆之命・米莉亚姆",
-    "DESCRIPTION": "アクセラレート 0 \b 破坏 1张牌，增加1张 *典范转移 到手中。 NL  NL --------------------- NL  NL !B! ブロック を得る。 NL 共鸣 则获得 [E] 。 NL 本回合每 廃棄 AF 卡时，对全体敌人造成 !M! 点伤害。"
+    "DESCRIPTION": "アクセラレート 0 \b カードを1枚 破壊 する，增加1张 *典范转移 到手中。 NL  NL --------------------- NL  NL !B! ブロック を得る。 NL 共鸣 则获得 [E] 。 NL 本回合每 廃棄 AF 卡时，对全体敌人造成 !M! 点伤害。"
   },
   "shadowverse:CannonHermitCrab": {
     "NAME": "加农炮寄居蟹",
@@ -2569,7 +2569,7 @@
   },
   "shadowverse:Wretches": {
     "NAME": "异形",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 谢幕曲 当这张牌被 廃棄 时，增加1张 *机动二轮车 到手中。 NL 廃棄 。"
+    "DESCRIPTION": "!D! ダメージを与える。 NL ラスワード このカードが 廃棄 される時、增加1张 *机动二轮车 到手中。 NL 廃棄 。"
   },
   "shadowverse:VoidRealize": {
     "NAME": "虚像具现",
@@ -2577,7 +2577,7 @@
   },
   "shadowverse:Illganeau": {
     "NAME": "缥缈エセリアル・伊璐凯诺",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 谢幕曲 当这张牌被 廃棄 时，增加1张复制品到手中，获得1点 敏捷 。 NL 如果 敏捷 为3以上，改为增加1张 *虚像具现 到手中。 NL 廃棄 。"
+    "DESCRIPTION": "!B! ブロック を得る。 NL ラスワード このカードが 廃棄 される時、增加1张复制品到手中，获得1点 敏捷 。 NL 如果 敏捷 为3以上，改为增加1张 *虚像具现 到手中。 NL 廃棄 。"
   },
   "shadowverse:NightVampire": {
     "NAME": "夜天吸血鬼",
@@ -2790,8 +2790,8 @@
     "DESCRIPTION": "AF 。 NL 敵全体に !D! ダメージを与える"
   },
   "shadowverse:DeathNote": {
-    "NAME": "亡者之王的记事本",
-    "DESCRIPTION": "倒计时 !M! \b失去这个能力。 NL 回合结束时，随机打出一张抽牌堆中耗能最高且不大于你的能量上限的攻击牌。"
+    "NAME": "死神の手帳",
+    "DESCRIPTION": "カウントダウン !M! \bこの能力を失う。 NL ターン終了時、山札からランダムにコストが自分のコスト最大値以下のアタック1枚をプレイする。"
   },
   "shadowverse:Strike_R": {
     "NAME": "ストライク",
@@ -2823,8 +2823,8 @@
   },
   "shadowverse:GrandAcquisition": {
     "NAME": "绚烂的劫夺",
-    "DESCRIPTION": "抉择 NL 从 *黄金短剑 、 *黄金之杯 、 *黄金之靴 、 *黄金首饰 中选择1张加入手中。 NL エンハンス 3 \b改为全部加入手牌， NL 获得 [E] [E] 。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION": "抉择 NL 从 *黄金短剑 、 *黄金之杯 、 *黄金之靴 、 *黄金首饰 中选择1张加入手中。 NL エンハンス 3 \b改为全部加入手牌， NL 获得 [E] [E] 。"
+    "DESCRIPTION": "チョイス NL 从 *黄金短剑 、 *黄金之杯 、 *黄金之靴 、 *黄金首饰 中选择1张加入手中。 NL エンハンス 3 \b改为全部加入手牌， NL 获得 [E] [E] 。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "チョイス NL 从 *黄金短剑 、 *黄金之杯 、 *黄金之靴 、 *黄金首饰 中选择1张加入手中。 NL エンハンス 3 \b改为全部加入手牌， NL 获得 [E] [E] 。"
   },
   "shadowverse:SageCommander": {
     "NAME": "睿智指挥官",
@@ -2964,7 +2964,7 @@
   },
   "shadowverse:MonochromeEndgame": {
     "NAME": "黑白终局",
-    "DESCRIPTION": " 英勇之王・伊梅拉 NL 高雅女王・玛格娜丝 NL 抉择 \b召唤一个到场上。 NL 廃棄 。",
+    "DESCRIPTION": " 英勇之王・伊梅拉 NL 高雅女王・玛格娜丝 NL チョイス \b召唤一个到场上。 NL 廃棄 。",
     "UPGRADE_DESCRIPTION": "召唤 英勇之王・伊梅拉 、 高雅女王・玛格娜丝 。 NL 廃棄 。"
   },
   "shadowverse:QueenHemera_Card": {
@@ -3069,7 +3069,7 @@
   },
   "shadowverse:StrokeOfConviction": {
     "NAME": "信念之剑闪",
-    "DESCRIPTION": "抉择 NL 召唤2个 迅捷的剑士 、 NL 随机对一个敌人!D! ダメージを与える、 NL 使所有随从获得+1/+1。 NL 廃棄 。",
+    "DESCRIPTION": "チョイス NL 召唤2个 迅捷的剑士 、 NL 随机对一个敌人!D! ダメージを与える、 NL 使所有随从获得+1/+1。 NL 廃棄 。",
     "UPGRADE_DESCRIPTION": "召唤2个 迅捷的剑士 ， NL 随机对一个敌人!D! ダメージを与える， NL 使所有随从获得+1/+1。 NL 廃棄 。"
   },
   "shadowverse:ErikasSleight": {
@@ -3200,7 +3200,7 @@
   },
   "shadowverse:MeetTheLevinSisters": {
     "NAME": "雷维翁姐妹登场！",
-    "DESCRIPTION": "雷维翁 。 NL 抉择 NL 从 *雷维翁副团长・玛姆 、 *雷维翁魔法师・蜜姆 、 *雷维翁武斗家・梅姆 中选择1张加入手中。 NL 廃棄。",
+    "DESCRIPTION": "雷维翁 。 NL チョイス NL 从 *雷维翁副团长・玛姆 、 *雷维翁魔法师・蜜姆 、 *雷维翁武斗家・梅姆 中选择1张加入手中。 NL 廃棄。",
     "UPGRADE_DESCRIPTION": "雷维翁 。 NL 将 *雷维翁副团长・玛姆 、 *雷维翁魔法师・蜜姆 、 *雷维翁武斗家・梅姆 加入手牌。 NL 廃棄。"
   },
   "shadowverse:Mina": {
@@ -3278,8 +3278,8 @@
   },
   "shadowverse:Valse": {
     "NAME": "魔导狙击手・瓦路兹",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 抉择 NL 从 *净化之圣弹 、 *毁灭之魔弹 中选择1张加入手中。",
-    "UPGRADE_DESCRIPTION": "!D! ダメージを与える。 NL 抉择 NL 从 *净化之圣弹 、 *毁灭之魔弹 中选择1张加入手中，并使其获得 保留 。"
+    "DESCRIPTION": "!D! ダメージを与える。 NL チョイス NL 从 *净化之圣弹 、 *毁灭之魔弹 中选择1张加入手中。",
+    "UPGRADE_DESCRIPTION": "!D! ダメージを与える。 NL チョイス NL 从 *净化之圣弹 、 *毁灭之魔弹 中选择1张加入手中，并使其获得 保留 。"
   },
   "shadowverse:HolyPurebomb": {
     "NAME": "净化之圣弹",
@@ -3365,7 +3365,7 @@
   },
   "shadowverse:Cernunnos": {
     "NAME": "科尔努诺斯",
-    "DESCRIPTION": "葬送 1张牌，カードを !M! 枚引く。 NL 限定 获得 [E] [E] 。 NL 亡者召还 !M! 。 NL 如果本场战斗已使用的 死灵术 为20以上， 亡者召还 5。"
+    "DESCRIPTION": "葬送 1张牌，カードを !M! 枚引く。 NL 限定 获得 [E] [E] 。 NL リアニメイト !M! 。 NL 如果本场战斗已使用的 ネクロマンス 为20以上， リアニメイト 5。"
   },
   "shadowverse:MiracleHarvest": {
     "NAME": "奇跡の実",
@@ -3481,8 +3481,8 @@
   },
   "shadowverse:HolyHector": {
     "NAME": "圣将军・赫克托",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 获得2点 临时力量 。 NL 如果 墓地 数量为9以上，增加2张 *圣骑兵 到手中。",
-    "UPGRADE_DESCRIPTION":"!D! ダメージを与える。 NL 获得2点 临时力量 。 NL 如果 墓地 数量为9以上，增加2张 *圣骑兵+ 到手中。"
+    "DESCRIPTION": "!D! ダメージを与える。 NL 获得2点 临时力量 。 NL 如果 墓場 数量为9以上，增加2张 *圣骑兵 到手中。",
+    "UPGRADE_DESCRIPTION":"!D! ダメージを与える。 NL 获得2点 临时力量 。 NL 如果 墓場 数量为9以上，增加2张 *圣骑兵+ 到手中。"
   },
   "shadowverse:AcolyteLight": {
     "NAME": "破邪圣光",
@@ -3506,7 +3506,7 @@
   },
   "shadowverse:Wilbert": {
     "NAME": "尊荣骑士・维尔伯特",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 给予自身「受到攻击时，如果有 格挡 ，对攻击者造成其最大生命值5%（不会低于6点）的伤害。」效果。 NL 谢幕曲 下回合开始时，增加 !M! 张 *圣骑兵 到手中。 NL 廃棄 。"
+    "DESCRIPTION": "!B! ブロック を得る。 NL 给予自身「受到攻击时，如果有 格挡 ，对攻击者造成其最大生命值5%（不会低于6点）的伤害。」效果。 NL ラスワード 下回合开始时，增加 !M! 张 *圣骑兵 到手中。 NL 廃棄 。"
   },
   "shadowverse:Wilbert2": {
     "NAME": "光璨圣骑士・维尔伯特",
@@ -3630,7 +3630,7 @@
   },
   "shadowverse:Vice": {
     "NAME": "机指狂人・伊维尔",
-    "DESCRIPTION": "機械 。 NL 增加2张本回合耗能为0的 *铁腕女修士 到手中。 NL 每当打出 機械 攻击牌时，失去2点生命，获得 !M! 点 力量 。 NL エセリアル 。"
+    "DESCRIPTION": "機械 。 NL 增加2张このターンだけコストが0の *铁腕女修士 到手中。 NL 每当打出 機械 攻击牌时，失去2点生命，获得 !M! 点 力量 。 NL エセリアル 。"
   },
   "shadowverse:KLT": {
     "NAME": "圣弓使者・库鲁特",
@@ -3721,8 +3721,8 @@
   },
   "shadowverse:MajorPrayers": {
     "NAME": "拥覆的祈愿",
-    "DESCRIPTION": "抉择 NL 增加1张 *森林参谋长・喵鲁 到手中。 NL カードを !M! 枚引く。 NL 如果护符区的护符数量为2以上，改为发动2种效果。",
-    "UPGRADE_DESCRIPTION": "抉择 NL 增加1张 *森林参谋长・喵鲁+ 到手中。 NL カードを !M! 枚引く。 NL 如果护符区的护符数量为2以上，改为发动2种效果。"
+    "DESCRIPTION": "チョイス NL 增加1张 *森林参谋长・喵鲁 到手中。 NL カードを !M! 枚引く。 NL 如果护符区的护符数量为2以上，改为发动2种效果。",
+    "UPGRADE_DESCRIPTION": "チョイス NL 增加1张 *森林参谋长・喵鲁+ 到手中。 NL カードを !M! 枚引く。 NL 如果护符区的护符数量为2以上，改为发动2种效果。"
   },
   "shadowverse:RealmOfRepose": {
     "NAME": "安息的领域",
@@ -3844,12 +3844,12 @@
   },
   "shadowverse:Lorena": {
     "NAME": "圣光牧师・萝蕾娜",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 抉择 \b从 *萝蕾娜的圣水 和 *萝蕾娜的铁拳 中 选择1张加入手中。",
-    "UPGRADE_DESCRIPTION": "!B! ブロック を得る。 NL 抉择 \b从 *萝蕾娜的圣水+ 和 *萝蕾娜的铁拳+ 中 选择1张加入手中。"
+    "DESCRIPTION": "!B! ブロック を得る。 NL チョイス \b从 *萝蕾娜的圣水 和 *萝蕾娜的铁拳 中 选择1张加入手中。",
+    "UPGRADE_DESCRIPTION": "!B! ブロック を得る。 NL チョイス \b从 *萝蕾娜的圣水+ 和 *萝蕾娜的铁拳+ 中 选择1张加入手中。"
   },
   "shadowverse:Lorena2": {
     "NAME": "传教司祭・萝蕾娜",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 增加1张 *进化点 到手中。 NL 增加1张 *萝蕾娜的圣水 和 本回合耗能为0的 *萝蕾娜的铁拳 到手中。"
+    "DESCRIPTION": "!B! ブロック を得る。 NL 增加1张 *进化点 到手中。 NL 增加1张 *萝蕾娜的圣水 和 このターンだけコストが0の *萝蕾娜的铁拳 到手中。"
   },
   "shadowverse:ImperialSaint": {
     "NAME": "インペリアルセイント",
@@ -4006,18 +4006,18 @@
     "UPGRADE_DESCRIPTION":"天賦 。 NL [E] を得る。 NL 山札からウィッチカード1枚を手札に加える。 NL それのコストが3以上なら、コストを1下げる。 NL 廃棄 。"
   },
   "shadowverse:ResentfulScreaming": {
-    "NAME": "怨仇的绝叫",
-    "DESCRIPTION": "使目标失去一种 力量 和 敏捷 以外的正面效果(优先失去 人工制品)。 NL 廃棄1张手牌。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION":"使目标失去一种 力量 和 敏捷 以外的正面效果(优先失去 人工制品)。 NL 廃棄1张手牌。"
+    "NAME": "怨讐の絶叫",
+    "DESCRIPTION": "筋力 ・ 敏捷性 以外の敵のバフを1種類除去する(先に アーティファクト から除去)。 NL 手札1枚を廃棄する。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"筋力 ・ 敏捷性 以外の敵のバフを1種類除去する(先に アーティファクト から除去)。 NL 手札1枚を廃棄する"
   },
   "shadowverse:EvidenceOfOne": {
     "NAME": "絶大の証明",
     "DESCRIPTION": " 弱体 と 脱力 を !M! 与える。 NL 既に *絶大の唯我・マゼルベイン の能力を得た場合、 !D! ダメージを与える。 NL 廃棄 。"
   },
   "shadowverse:PerjuryOfTruth": {
-    "NAME": "绝尽的伪证",
-    "DESCRIPTION": "使目标失去所有 力量 和 敏捷 。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION":"保留 。 NL 使目标失去所有 力量 和 敏捷 。 NL 廃棄 。"
+    "NAME": "絶尽の偽証",
+    "DESCRIPTION": "敵は 筋力 と 敏捷性 をすべて失う。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"保留 。 NL 敵は 筋力 と 敏捷性 をすべて失う。 NL 廃棄 。"
   },
   "shadowverse:ShootOfUnkilling": {
     "NAME": "絶命の痛撃",
@@ -4072,8 +4072,8 @@
     "DESCRIPTION": "!D! ダメージを与える。 NL 渴望 伤害增加 !M! 点。 NL 狂乱 对全体敌人造成 !M! 点伤害。"
   },
   "shadowverse:AdherentOfScream": {
-    "NAME": "绝叫的崇拜者",
-    "DESCRIPTION": "アクセラレート 0 亡者召还 1。 NL  NL --------------------- NL  NL !B! ブロック を得る。 NL 亡者召还 1、 亡者召还 1。"
+    "NAME": "絶叫の崇拝者",
+    "DESCRIPTION": "アクセラレート 0 リアニメイト 1。 NL  NL --------------------- NL  NL !B! ブロック を得る。 NL リアニメイト 1、 リアニメイト 1。"
   },
   "shadowverse:AdherentOfElimination": {
     "NAME": "絶尽の崇拝者",
@@ -4110,7 +4110,7 @@
     "DESCRIPTION": "回合结束时， 击晕 第一个意图为攻击的敌人。"
   },
   "shadowverse:OtherworldGatekeeper": {
-    "NAME": "死门连结者",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 打出抽牌堆中 !M! 张有 谢幕曲 效果的攻击牌。 NL 谢幕曲 被 消耗 时，回复1点生命。"
+    "NAME": "死門を繋ぐ者",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 山札からランダムに ラスワード を持つアタック !M! をプレイする。 NL ラスワード 廃棄 される時、HPを1回復する。"
   }
 }

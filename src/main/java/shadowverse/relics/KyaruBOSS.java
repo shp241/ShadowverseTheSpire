@@ -2,9 +2,8 @@
 
 
  import basemod.abstracts.CustomRelic;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
+ import com.megacrit.cardcrawl.actions.AbstractGameAction;
  import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
- import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
  import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
  import com.megacrit.cardcrawl.cards.AbstractCard;
  import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -14,19 +13,19 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
  import com.megacrit.cardcrawl.powers.AbstractPower;
  import com.megacrit.cardcrawl.powers.BurstPower;
  import com.megacrit.cardcrawl.relics.AbstractRelic;
-import shadowverse.cards.Basic.Insight;
  import shadowverse.patch.CharacterSelectScreenPatches;
 
 
- public class KyoukaBOSS
+ public class KyaruBOSS
    extends CustomRelic
  {
-   public static final String ID = "shadowverse:KyoukaBOSS";
-   public static final String IMG = "img/relics/KyoukaBOSS.png";
+   public static final String ID = "shadowverse:KyaruBOSS";
+   public static final String IMG = "img/relics/KyaruBOSS.png";
    public static final String OUTLINE_IMG = "img/relics/outline/KyoukaBOSS_Outline.png";
+   private static final float MODIFIER_AMT = 0.18F;
 
 
-   public KyoukaBOSS() {
+   public KyaruBOSS() {
      super(ID, ImageMaster.loadImage(IMG), RelicTier.BOSS, LandingSound.MAGICAL);
    }
    
@@ -34,22 +33,13 @@ import shadowverse.cards.Basic.Insight;
      return this.DESCRIPTIONS[0];
    }
 
-     @Override
-     public void onPlayCard(AbstractCard c, AbstractMonster m) {
-         if (c.type== AbstractCard.CardType.SKILL){
-             this.counter++;
-             if (this.counter == 7) {
-                 this.counter = 0;
-                 flash();
-                 this.pulse = false;
-             } else if (this.counter == 6) {
-                 beginPulse();
-                 this.pulse = true;
-                 AbstractDungeon.player.hand.refreshHandLayout();
-                 addToBot((AbstractGameAction)new RelicAboveCreatureAction((AbstractCreature)AbstractDungeon.player, this));
-                 addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)AbstractDungeon.player, (AbstractPower)new BurstPower((AbstractCreature)AbstractDungeon.player, 1), 1));
+     public void atBattleStart() {
+             flash();
+             for (AbstractMonster m : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
+                     m.decreaseMaxHealth((int)(m.maxHealth *  MODIFIER_AMT));  ;
+                     m.healthBarUpdatedEvent();
              }
-         }
+             addToTop((AbstractGameAction)new RelicAboveCreatureAction((AbstractCreature)AbstractDungeon.player, this));
      }
 
      @Override
@@ -64,13 +54,12 @@ import shadowverse.cards.Basic.Insight;
      @Override
      public boolean canSpawn(){
          return AbstractDungeon.player.hasRelic(Offensive.ID)
-                 && ((CharacterSelectScreenPatches.characters[0]).reskinCount == 0||
-                 (CharacterSelectScreenPatches.characters[0]).reskinCount == 3);
+                 && (CharacterSelectScreenPatches.characters[0]).reskinCount == 1;
      }
 
 
      public AbstractRelic makeCopy() {
-     return (AbstractRelic)new KyoukaBOSS();
+     return (AbstractRelic)new KyaruBOSS();
    }
  }
 

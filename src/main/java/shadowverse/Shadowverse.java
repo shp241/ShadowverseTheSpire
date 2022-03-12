@@ -1107,6 +1107,14 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addRelicToCustomPool((AbstractRelic) new HeresyAvatar(),Bishop.Enums.COLOR_WHITE);
         BaseMod.addRelicToCustomPool((AbstractRelic) new ErisRelic(),Bishop.Enums.COLOR_WHITE);
         BaseMod.addRelicToCustomPool((AbstractRelic) new IminaRelic(),Bishop.Enums.COLOR_WHITE);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new KyaruBOSS(),Witchcraft.Enums.COLOR_BLUE);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new AnneBOSS(),Witchcraft.Enums.COLOR_BLUE);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new KokkoroBOSS(),Elf.Enums.COLOR_GREEN);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new MiyakoBOSS(),Necromancer.Enums.COLOR_PURPLE);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new IoBOSS(),Vampire.Enums.COLOR_SCARLET);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new RalmiaBOSS(),Nemesis.Enums.COLOR_SKY);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new ShizuruBOSS(),Royal.Enums.COLOR_YELLOW);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new YukariBOSS(),Bishop.Enums.COLOR_WHITE);
     }
 
    class Keywords
