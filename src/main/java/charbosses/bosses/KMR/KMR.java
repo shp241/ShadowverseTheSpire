@@ -78,7 +78,9 @@ public class KMR
         addToBot((AbstractGameAction) new DelayedActionAction((AbstractGameAction) new CharbossTurnstartDrawAction()));
         CardCrawlGame.music.unsilenceBGM();
         AbstractDungeon.scene.fadeOutAmbiance();
-        CardCrawlGame.sound.playAndLoop("GrandBattle");
+        if (Settings.MUSIC_VOLUME>0.0F){
+            CardCrawlGame.sound.playAndLoop("GrandBattle");
+        }
         (AbstractDungeon.getCurrRoom()).cannotLose = true;
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SFXAction("KMR1"));
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new TalkAction((AbstractCreature) this, DIALOG[0]));
@@ -166,7 +168,7 @@ public class KMR
     public void damage(DamageInfo info) {
         super.damage(info);
         if (this.currentHealth <= 0 && !this.halfDead) {
-            if ((AbstractDungeon.getCurrRoom()).cannotLose == true) {
+            if ((AbstractDungeon.getCurrRoom()).cannotLose) {
                 this.halfDead = true;
                 for (AbstractPower p : this.powers)
                     p.onDeath();
@@ -190,10 +192,10 @@ public class KMR
     public void die() {
         if (!(AbstractDungeon.getCurrRoom()).cannotLose) {
             super.die();
+            CardCrawlGame.sound.stop("GrandBattle");
             onBossVictoryLogic();
             onFinalBossVictoryLogic();
             CardCrawlGame.stopClock = true;
-            CardCrawlGame.sound.stop("GrandBattle");
         }
     }
 
