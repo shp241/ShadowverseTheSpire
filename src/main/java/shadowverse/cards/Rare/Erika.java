@@ -73,6 +73,7 @@ public class Erika
     public void upgrade() {
         if (!this.upgraded){
             upgradeName();
+            upgradeMagicNumber(1);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }

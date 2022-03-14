@@ -23,7 +23,7 @@ import java.util.ArrayList;
 
 
 public class IoBOSS
-        extends CustomRelic {
+        extends CustomRelic{
     public static final String ID = "shadowverse:IoBOSS";
     public static final String IMG = "img/relics/IoBOSS.png";
     public static final String OUTLINE_IMG = "img/relics/outline/IriaBOSS_Outline.png";
@@ -40,7 +40,7 @@ public class IoBOSS
 
     @Override
     public void onMonsterDeath(AbstractMonster m) {
-        if (!this.grayscale && m.hasPower(MinionPower.POWER_ID)) {
+        if (!this.grayscale && !m.hasPower(MinionPower.POWER_ID)) {
             this.grayscale = true;
             addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             ArrayList<AbstractCard> possibleCards = new ArrayList<>();
@@ -70,7 +70,7 @@ public class IoBOSS
     }
 
     @Override
-    public void onVictory() {
+    public void atBattleStart() {
         this.grayscale = false;
     }
 

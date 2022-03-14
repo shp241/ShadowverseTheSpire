@@ -75,7 +75,7 @@ public class ErikaOrb extends Minion {
 
     @Override
     public void effect() {
-        int damage = this.attack * 3;
+        int damage = this.attack * 4;
         if (AbstractDungeon.player.hasPower("Electro")) {
             AbstractDungeon.actionManager.addToBottom(new MinionAttackAction(new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.NORMAL), true));
         } else {
