@@ -3,21 +3,21 @@
     "MOVES": [
       ""
     ],
-    "NAME": "贝尔冯特·阿德莱特",
+    "NAME": "Belphomet Ardelyte",
     "DIALOG": [
-      "@哀嚎吧！@",
-      "~给我屈服！~",
-      "~无需未知~ NL @已知才是世界！@",
-      "~哈哈！~ NL ~想逃也晚了！~",
-      "~还不懂这是没用的吗？~",
-      "@服从我吧！@"
+      "@You_don't_deserve_to_live!@",
+      "~Scrap..._Mwhaha!~ NL ~All_of_you!~",
+      "~I_grow_weary_of_your_ignorance.~",
+      "~Gape_your...termination!@",
+      "@Die_in_Obscurity!@",
+      "@Obey_Me!@"
     ]
   },
   "shadowverse:chushou1": {
     "MOVES": [
       ""
     ],
-    "NAME": "蹂躏的触手",
+    "NAME": "Assault Tentacle",
     "DIALOG": [
     ]
   },
@@ -25,7 +25,7 @@
     "MOVES": [
       ""
     ],
-    "NAME": "阻断的触手",
+    "NAME": "Armored Tentacle",
     "DIALOG": [
     ]
   },
@@ -33,7 +33,7 @@
     "MOVES": [
       ""
     ],
-    "NAME": "世界消除者",
+    "NAME": "World Eliminator",
     "DIALOG": [
     ]
   },
@@ -123,26 +123,26 @@
   "shadowverse:Lelouch": {
     "MOVES": [
       "Geass",
-      "准备",
-      "扩散构造相转移炮"
+      "Stand by",
+      "Diffusion Structure Phase Transition Cannon"
     ],
     "NAME": "鲁鲁修·兰佩路奇",
     "DIALOG": [
-      "@鲁鲁修·V·不列颠尼亚在此命令你，死吧！@",
-      "~目标锁定，射角输入完成~",
-      "~相转移炮，发射！~",
-      "~Zero命令你！~",
-      "~将军了~"
+      "@I,_Lelouch_vi_Britannia,_command_you!_Die!@",
+      "~Target_locked._Firing_angle_input_completed.~",
+      "~Phase_Transition_Cannon,_Fire!~",
+      "~Zero_commands_you!~",
+      "~Checkmate!~"
     ]
   },
   "shadowverse:Lancelot": {
     "MOVES": [
-      "强子炮模式"
+      "Hadron Cannon Mode"
     ],
-    "NAME": "兰斯洛特阿尔比昂",
+    "NAME": "Lancelot",
     "DIALOG": [
-      "~就是现在！~",
-      "~结束了！~"
+      "~It's_the_time!~",
+      "~It's_over!~"
     ]
   },
   "shadowverse:Henchman": {
@@ -157,11 +157,11 @@
     "MOVES": [
       ""
     ],
-    "NAME": "莱昂·奥朗什",
+    "NAME": "Leon Aurenche",
     "DIALOG": [
-      "~我会手下留情的，你能承受得住吗？ ~",
-      "@你可要好好回应我的期待啊！@",
-      "~我可是神！我可是支配者！我可是人类的顶点！ ~"
+      "~I_apologize_in_advance_if_I_crash_your_spirit.~",
+      "@Do_not_disappoint_me_!@",
+      "~I'm_God!_I'm_the_superior!_I_am_the_Apex_of_Mankind! ~"
     ]
   }
 }

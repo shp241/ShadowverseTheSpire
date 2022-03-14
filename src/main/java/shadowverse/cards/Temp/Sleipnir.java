@@ -31,7 +31,7 @@
    public static final String IMG_PATH = "img/cards/Sleipnir.png";
 
    public Sleipnir() {
-     super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ENEMY);
+     super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ENEMY);
      this.baseBlock = 9;
      this.baseDamage = 9;
      this.baseMagicNumber = 2;

@@ -1,250 +1,250 @@
 {
   "shadowverse:MysticSeeker": {
-    "NAME": "神托的妖童·阿露露梅娅",
+    "NAME": "Arulumaya, Mystic Seer",
     "DESCRIPTIONS": [
-      "若你在某个回合打出的牌少于等于 #b3 张， NL 则在你的下个回合开始时发动 #b1 次魔力增幅 。 NL 若打出的牌大于 #b3 张， NL 则在你的下个回合开始时额外抽 #b3 张牌。"
+      "At the end of each turn, if you have played no more than #b3 cards,  NL #ySpellboost #b1 time at the start of your next turn. NL If you have played more than #b3 cards,  NL draw #b3 cards at the start of your next turn."
     ]
   },
   "shadowverse:EarthEssence": {
-    "NAME": "土之印记",
+    "NAME": "Earth Essence",
     "DESCRIPTIONS": [
-      "若土之印记等于 #b5 ， NL 则不能打出 #y攻击牌 和 #y能力牌 。 NL 土之印记上限为 #b5 。"
+      "If the number of #yEarth #yEssence reaches #b5 ,  NL you can't play any #yAttack or #yPower card . NL The maximum of #yEarth #yEssence is #b5 ."
     ]
   },
   "shadowverse:PiousInstructorPower": {
-    "NAME": "圣魔法教师·弗洛",
+    "NAME": "Karl, Pious Instructor",
     "DESCRIPTIONS": [
-      "每当获得 #y土之印记 时获得 #b",
-      "点 #y格挡 。"
+      "Every time you gain #yEarth #yEssence , gain #b",
+      " #yBlock ."
     ]
   },
   "shadowverse:FaustPower": {
-    "NAME": "真实考究者·浮士德",
+    "NAME": "Truthseeker Faust",
     "DESCRIPTIONS": [
-      "在你的回合结束时， #y土之秘术 ，获得 #b",
-      "点 #y力量 , #b",
-      "点 #y敏捷 。"
+      "By the end of your turn, #yEarth #yRite : Gain #b",
+      " #yStrength , #b",
+      " #yDexterity ."
     ]
   },
   "shadowverse:NextTurnEarthEssence": {
-    "NAME": "谢幕曲：土之印记",
+    "NAME": "Last Words : Earth Essence",
     "DESCRIPTIONS": [
-      "在你的回合开始时，获得 #b",
-      " 层 #y土之印记 。"
+      "At the start of your turn, gain #b",
+      " #yEarth #yEssence ."
     ]
   },
   "shadowverse:WitchsCauldronPower": {
-    "NAME": "魔女的坩埚",
+    "NAME": "Witch's Cauldron",
     "DESCRIPTIONS": [
-      "如果 #y土之秘术 已发动，则抽 #b",
-      "张牌。"
+      "If #yEarth #yRite is activated, draw #b",
+      "cards."
     ]
   },
   "shadowverse:ChaosPower": {
-    "NAME": "混沌的流仪",
+    "NAME": "Whims of Chaos",
     "DESCRIPTIONS": [
-      "回合开始时，随机获得或损失 #b",
-      "点 #y力量 。"
+      "At the start of the turn, randomly gain or lose #b",
+      " #yStrength ."
     ]
   },
   "shadowverse:DarkMagePower": {
-    "NAME": "结晶：禁约的黑魔术师",
+    "NAME": "Crystallize : Forbidden Darkmage",
     "DESCRIPTIONS": [
-      "受到的5以上的伤害变为 #b4 ，回合结束抽 #b1 张牌、回复 #b1 点生命，失去 #b1 层。 NL 若层数等于 #b5 ，则不能打出 #y攻击牌 。 NL 层数上限为 #b5 。"
+      "turn the incoming damage above 5 into #b4 , draw 1 card, heal 1 HP and decrease by #b1 by the end of your turn . NL If the count reaches #b5 , you can't play #yAttacks . NL Maximum count is #b5 ."
     ]
   },
   "shadowverse:MachineDrawPower": {
-    "NAME": "坦忒菈的反叛",
+    "NAME": "Tetra's Mettle",
     "DESCRIPTIONS": [
-      "本回合内每使用一张 #y机械 牌则抽 #b",
-      "张牌。"
+      "Whenever you play a #yMachina card in this turn, draw #b",
+      " card."
     ]
   },
   "shadowverse:MachineAttackPower": {
-    "NAME": "机械魔导巨像",
+    "NAME": "Magitech Golem",
     "DESCRIPTIONS": [
-      "本回合内每使用一张 #y机械 牌则造成 #b",
-      "点伤害。"
+      "Whenever you play a #yMachina card in this turn, deal #b",
+      " damage to random enemy."
     ]
   },
   "shadowverse:MechabookSorcererPower": {
-    "NAME": "机学魔导书士",
+    "NAME": "Mechabook Sorcerer",
     "DESCRIPTIONS": [
-      "每使用一张 #y机械 牌则获得 #b",
-      "点 [G] 。"
+      "Whenever you play a #yMachina card, gain #b",
+      " [G] ."
     ]
   },
   "shadowverse:SonicFourPower": {
-    "NAME": "苍奏之四",
+    "NAME": "Delta Cannon",
     "DESCRIPTIONS": [
-      "每使用4张 #y机械 牌，下回合增加 #b",
-      " 张 #y苍奏之四 到手中 。"
+      "If you have played at least 4 #yMachina cards by the end of the turn, put #b",
+      " #yDelta #yCannon into your hand ."
     ]
   },
   "shadowverse:SonicFourPower2": {
-    "NAME": "伊莎贝尔之友·坦忒菈",
+    "NAME": "Tetra, Friend of Isabelle",
     "DESCRIPTIONS": [
-      "回合开始时，如果手中没有 #y苍奏之四 ，增加 #b1 张 #y苍奏之四 到手中。"
+      "If you don't have #yDelta #yCannon in your hand at the start of your turn, put #b1 #yDelta #yCannon into your hand."
     ]
   },
   "shadowverse:ErasmusPower": {
-    "NAME": "老练的大魔法师·伊拉斯莫斯",
+    "NAME": "Erasmus, Master Summoner",
     "DESCRIPTIONS": [
-      "在你的回合结束时，对全体敌人造成 #b",
-      "点伤害。 #y土之秘术 再造成一次伤害。"
+      "By the end of your turn, deal #b",
+      " damage to all enemies. #yEarth #yRite : Repeat the effect."
     ]
   },
   "shadowverse:OzPower": {
-    "NAME": "奥兹国的大魔女：谢幕曲",
+    "NAME": "Wizardess of Oz : Last Words",
     "DESCRIPTIONS": [
-      "在你的回合结束时，#y消耗 所有 #y技能牌 。"
+      "#yExhaust all #ySkills in your hand by the end of your turn."
     ]
   },
   "shadowverse:ShopPower": {
-    "NAME": "魔导具专卖店",
+    "NAME": "Arcane Item Shop",
     "DESCRIPTIONS": [
-      "每使用 #b1 张牌 ，对随机敌人造成 #b",
-      " 点伤害。如果抽牌堆、弃牌堆中没有 #y攻击牌 、 #y状态牌 、 #y诅咒牌 ，获得 #b",
-      " 点耗能。"
+      "Whenever you play a card, deal #b",
+      " damage to random enemy. If there are no #yAttack , #yState , #yCurse card in your draw pile and your discard pile, gain #b",
+      " [G]."
     ]
   },
   "shadowverse:NaterranTree": {
-    "NAME": "那塔拉的大树",
+    "NAME": "Naterran Great Tree",
     "DESCRIPTIONS": [
-      "若已有本能力，则在打出 #y那塔拉的大树 时抽 #b1 张牌。"
+      "If you have this effect, you can draw #b1 card when you play another #yNaterran #yGreat #yTree ."
     ]
   },
   "shadowverse:OmenOfOnePower": {
-    "NAME": "唯我绝杰·马塞班恩",
+    "NAME": "Mjerrabaine, Omen of One",
     "DESCRIPTIONS": [
-      "回合结束时获得 #b2 点 #y力量 、 #b2 点 #y敏捷 ，对随机敌人造成 #b12 点伤害。"
+      "By the end of your turn, gain #b2 #yStrength , #b2 #yDexterity , deal #b12 damage to random enemy."
     ]
   },
   "shadowverse:BehemothPower": {
-    "NAME": "贪食的贝希摩斯",
+    "NAME": "Gluttonous Behemoth",
     "DESCRIPTIONS": [
-      "在你的回合结束时，对全体敌人造成 #b",
-      " 点伤害。"
+      "Deal #b",
+      " damage to all enemies by the end of your turn."
     ]
   },
   "shadowverse:DesirePower": {
-    "NAME": "欲望缠身者",
+    "NAME": "Scion of Desire",
     "DESCRIPTIONS": [
-      "在你的回合结束时，回复本回合受到的最高伤害的生命值。"
+      "By the end of your turn, Heal HP equal to the highest damage you take in this turn."
     ]
   },
   "shadowverse:VincentPower": {
-    "NAME": "和平维系者·文森特",
+    "NAME": "Vincent, the Peacekeeper",
     "DESCRIPTIONS": [
-      "回合开始时增加一张 #y宣判之词 到手中。每当你使用技能牌时，若为拥有此能力后打出的第 #b3 、 #b6 、 #b9 、 #b12 、 #b15 、 #b18 张，则对全体敌人造成 #b12 点伤害。"
+      "Put 1 #yWords #yof #yJudgment into your hand by the start of your turn. Whenever you play a Skill , if it's the #y3rd, #y6th, #y9th, #y12th, #y15th or #y18th Skill of the same name you have played this combat, deal #b12 damage to all enemies."
     ]
   },
   "shadowverse:TheWorldPower": {
-    "NAME": "世界·捷尔加内亚（逆位）",
+    "NAME": "XXI. Zelgenea, The World(Reverse)",
     "DESCRIPTIONS": [
-      "回合结束时对全体敌人造成 #b20 点伤害。增加 #b2 张 #y灼伤 到抽牌堆中。"
+      "Deal #b20 damage to all emenies by the end of your turn, put #b2 #yBurn into your draw pile."
     ]
   },
   "shadowverse:TheFoolPower": {
-    "NAME": "剥落的镇压",
+    "NAME": "Scourge of the Omniscient",
     "DESCRIPTIONS": [
-      "回合结束时，失去 #b",
-      " /10的生命值上限。"
+      "By the end of the turn, lose #b",
+      " /10 of Max HP."
     ]
   },
   "shadowverse:ExhaustPower": {
-    "NAME": "蒙昧的术式：消耗",
+    "NAME": "Rite of the Ignorant: Exhaust",
     "DESCRIPTIONS": [
-      "回合结束时，以此方式抽到手中的牌将被 #y消耗 。"
+      "At the end of your turn, #yExhaust the card you draw with this effect."
     ]
   },
   "shadowverse:TheFoolPower2": {
-    "NAME": "蒙昧的术式",
+    "NAME": "Rite of the Ignorant",
     "DESCRIPTIONS": [
-      "回合开始时，额外抽 #b",
-      " 张牌，使其随机发动1-7次 #y魔力增幅 。回合结束时 #y消耗 这些牌。"
+      "At the start of your turn, draw #b",
+      " card and #ySpellboost it X times. X equals a random number between 1 and 7."
     ]
   },
   "shadowverse:FlamePower": {
-    "NAME": "被封印的双子·烈焰",
+    "NAME": "Harnessed Flame",
     "DESCRIPTIONS": [
-      "本回合造成的伤害+ #b",
-      " 。打出 #y被封印的双子·琉璃 时不会获得该能力，改为移除本能力并获得一层 #y烈焰·琉璃 。"
+      "+ #b",
+      " for damage dealt this turn."
     ]
   },
   "shadowverse:GlassPower": {
-    "NAME": "被封印的双子·琉璃",
+    "NAME": "Harnessed Glass",
     "DESCRIPTIONS": [
-      "本回合内每使用一张 #y攻击牌 对全体敌人造成 #b",
-      " 点伤害。打出 #y被封印的双子·烈焰 时不会获得该能力，改为移除本能力并获得一层 #y烈焰·琉璃 。"
+      "Whenever you play an #yAttack card this turn, deal #b",
+      " damage to all enemies."
     ]
   },
   "shadowverse:FlameNGlassPower": {
-    "NAME": "烈焰·琉璃",
+    "NAME": "Flame and Glass",
     "DESCRIPTIONS": [
-      "本回合内若失去生命值，则失去1层本能力。回合开始时增加 #b",
-      " 张 #y烈焰·琉璃 到手中并移除本能力。"
+      "Whenever you lose your HP, lose this effect. Put #b",
+      " #yFlame #yand #yGlass into your hand next turn."
     ]
   },
   "shadowverse:HeavensDoorPower": {
-    "NAME": "天界之门",
+    "NAME": "Heaven's Gate",
     "DESCRIPTIONS": [
-      "回合开始时随机使手中的 #b",
-      " 张牌的耗能-1。如果抽牌堆中没有重复的牌，则由-1变为-6。"
+      "Randomly -1 cost of #b",
+      " cards in your hand at the start of your turn. If there are no duplicate cards in your draw plie, -6 cost instead."
     ]
   },
   "shadowverse:HeavensDoorInvocationPower": {
-    "NAME": "瞬念召唤：天界之门",
+    "NAME": "Invocation : Heaven's Gate",
     "DESCRIPTIONS": [
-      "回合结束时如果剩余耗能为2以上且没有 #y天界之门 能力，抽牌中存在 #y天界之门 则会获得该能力。"
+      "If you have more than #b2 #yEnergy left by the end of your turn, Exhaust #yHeaven's #yGate from your draw pile and gain the effect."
     ]
   },
   "shadowverse:AstarothLimit": {
-    "NAME": "阿斯塔罗特的宣判",
+    "NAME": "Astaroth's Reckoning",
     "DESCRIPTIONS": [
-      "不能再打出卡牌。"
+      "Cannot play any card this turn."
     ]
   },
   "shadowverse:LegendaryFighterPower": {
-    "NAME": "传奇剑斗士",
+    "NAME": "Legendary Fighter",
     "DESCRIPTIONS": [
-      "本回合内如果打出 #y攻击牌 则获得1层 #y双发 并失去本能力 ，如果打出 #y技能牌 则获得1层 #y涂毒 并失去本能力，如果打出 #y能力牌 则获得1层 #y人工制品 并失去本能力。本回合内若失去生命值，则失去1层本能力。若本回合已使用过3种不同种类的牌，则下回合开始时增加 #b",
-      " 张可以造成2次 #b50 点伤害的 #y传奇剑斗士 到手中。"
+      "During this turn, gain 1 #yBurst and lose this effect if you play #yAttack card , gain 1 #yEnvenom and lose this effect if you play #ySkill card, gain 1 #yArtifact and lose this effect if you play #yPower card. NL If you play all 3 kinds of cards without losing HP, put #b",
+      " #yLegendary #yFighter which can deal #b50 damage #b2 times into your hand next turn."
     ]
   },
   "shadowverse:chushouHealPower": {
-    "NAME": "阻断的触手：谢幕曲",
+    "NAME": "Armored Tentacle : Last Words",
     "DESCRIPTIONS": [
-      "死亡时，回复 #y贝尔冯特·阿德莱特 #b",
-      " 点生命值。增加1张 #y马纳之力 到手中。"
+      "Upon death, heal #b",
+      " HP for #yBelphomet #yArdelyte . Put a #yMana #yForce into hand."
     ]
   },
   "shadowverse:chushouExplosionPower": {
-    "NAME": "蹂躏的触手：谢幕曲",
+    "NAME": "Assault Tentacle : Last Words",
     "DESCRIPTIONS": [
-      "死亡时，造成 #b",
-      " 点伤害。增加1张 #y马纳之力 到手中。"
+      "Upon death, deal #b",
+      " damage. Put a #yMana #yForce into hand."
     ]
   },
   "shadowverse:WorldEliminatorLastWordPower": {
-    "NAME": "世界消除者：谢幕曲",
+    "NAME": "World Eliminator : Last Words",
     "DESCRIPTIONS": [
-      "死亡时，造成 #b",
-      " 点伤害。回复 #y莱昂·奥朗什 #b",
-      " 点生命值。"
+      "Upon death, deal #b",
+      " damage. Heal #b",
+      " HP for #yLeon #yAurenche."
     ]
   },
   "shadowverse:ManaBarrier": {
-    "NAME": "马纳屏障",
+    "NAME": "Mana Barrier",
     "DESCRIPTIONS": [
-      "受到伤害的为 #b0 。可以使用 #y马纳之力 移除。"
+      "Change incoming damage to #b0 . Can be removed by #yMana #yForce ."
     ]
   },
   "shadowverse:ICPower": {
-    "NAME": "泰坦诅咒",
+    "NAME": "Curse Of Titan",
     "DESCRIPTIONS": [
-      "每次使用卡牌将在回合结束时给自身造成2点伤害。当前返还 #b",
-      " 点伤害。"
+      "Each card played will increase this damage by 2. Deal #b",
+      " damage to you."
     ]
   },
   "shadowverse:IzudiaPower": {
@@ -1389,6 +1389,13 @@
     "DESCRIPTIONS": [
       "给予负面效果时，抽 #b",
       " 张牌。"
+    ]
+  },
+  "shadowverse:NextTurnV": {
+    "NAME": "幻影拍档·巴妮与巴隆：谢幕曲",
+    "DESCRIPTIONS": [
+      "回合开始时，增加 #b",
+      " 张 #y魔导四轮车·V 到手中。"
     ]
   }
 }

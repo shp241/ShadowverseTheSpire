@@ -1040,6 +1040,8 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("Ginsetsu2_Eff",new Sfx("sounds/Ginsetsu2_Eff.wav"));
         reflectedMap.put("Ginsetsu2",new Sfx("sounds/Ginsetsu2.wav"));
         reflectedMap.put("PrinceCatacomb",new Sfx("sounds/PrinceCatacomb.wav"));
+        reflectedMap.put("DesperadosShot",new Sfx("sounds/DesperadosShot.wav"));
+        reflectedMap.put("Spector",new Sfx("sounds/Spector.wav"));
     }
 
     public void receiveEditRelics() {
@@ -1963,6 +1965,10 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCard((AbstractCard) new PixieMischief());
         BaseMod.addCard((AbstractCard) new OtherworldGatekeeper());
         BaseMod.addCard((AbstractCard) new PrinceCatacomb());
+        BaseMod.addCard((AbstractCard) new WickedRebirth());
+        BaseMod.addCard((AbstractCard) new V());
+        BaseMod.addCard((AbstractCard) new DesperadosShot());
+        BaseMod.addCard((AbstractCard) new Spector());
         logger.info("Success");
     }
 

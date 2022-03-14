@@ -59,6 +59,7 @@ public class LuxbladeArriet extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        addToBot(new GainBlockAction(p, p, this.magicNumber));
         if (this.timesUpgraded >= 1) {
             addToBot(new GainBlockAction(p, p, this.block));
         }

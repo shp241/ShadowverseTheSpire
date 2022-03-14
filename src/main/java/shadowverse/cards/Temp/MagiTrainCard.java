@@ -32,7 +32,7 @@
    public static final String IMG_PATH = "img/cards/MagiTrainCard.png";
 
    public MagiTrainCard() {
-     super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.SELF);
+     super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.SELF);
      this.baseBlock = 27;
      this.baseMagicNumber = 3;
      this.magicNumber = this.baseMagicNumber;

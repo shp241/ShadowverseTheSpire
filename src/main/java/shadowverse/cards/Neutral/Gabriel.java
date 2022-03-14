@@ -1,6 +1,7 @@
 package shadowverse.cards.Neutral;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -18,6 +19,7 @@ public class Gabriel extends AbstractNeutralCard{
     public static final String DESCRIPTION = cardStrings.DESCRIPTION; public static final String IMG_PATH = "img/cards/Gabriel.png";
     public Gabriel() {
         super(ID, NAME, IMG_PATH, -1, DESCRIPTION, CardType.POWER, CardColor.COLORLESS, CardRarity.RARE, CardTarget.SELF);
+        this.baseBlock = 6;
     }
 
     @Override
@@ -32,6 +34,7 @@ public class Gabriel extends AbstractNeutralCard{
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot((AbstractGameAction)new SFXAction("Gabriel"));
         AbstractDungeon.effectsQueue.add(new SpotlightPlayerEffect());
+        addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
         addToBot((AbstractGameAction)new GabrielAction(abstractPlayer,this.upgraded,this.freeToPlayOnce,this.energyOnUse));
     }
 

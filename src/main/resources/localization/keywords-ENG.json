@@ -1,322 +1,395 @@
 {
   "keywords": [
     {
+      "PROPER_NAME": "Spellboost",
       "NAMES": [
-        "魔力增幅"
+        "spellboost"
       ],
-      "DESCRIPTION": "每使用1次技能牌触发1次。"
+      "DESCRIPTION": "Triggered every time a Skill card is played."
     },
     {
+      "PROPER_NAME": "Earth Essence",
       "NAMES": [
-        "土之印记"
+        "earth essence",
+        "earth_essence"
       ],
-      "DESCRIPTION": "若土之印记等于5 ， NL 则不能打出攻击牌 。 NL 土之印记上限为5。"
+      "DESCRIPTION": "If the number of #yEarth #yEssence reaches 5, NL you can't play any Attack card or Power card. NL The maximum of #yEarth #yEssence is 5."
     },
     {
+      "PROPER_NAME": "Earth Rite",
       "NAMES": [
-        "土之秘术"
+        "earth rite",
+        "earth_rite"
       ],
-      "DESCRIPTION": "消耗对应层数的 土之印记 发动。"
+      "DESCRIPTION": "Cost a corresponding number of #yEarth #yEssence to activate."
     },
     {
+      "PROPER_NAME": "Necromancy",
       "NAMES": [
-        "死灵术"
+        "necromancy"
       ],
-      "DESCRIPTION": "消耗对应数量的 墓地 发动。"
+      "DESCRIPTION": "Cost a corresponding number of #yShadows to activate."
     },
     {
+      "PROPER_NAME": "Enhance",
       "NAMES": [
-        "爆能强化"
+        "enhance"
       ],
-      "DESCRIPTION": "如果剩余耗能在爆能强化所写的数字以上， NL 就会自动消费与该数字等量的耗能，并发动爆能强化效果。 NL (生成牌时不触发该效果。)"
+      "DESCRIPTION": "If you have enough #yEnergy, NL they will automatically spent to activate the effects. NL (Won't trigger if the card is not being played from hand.)"
     },
     {
+      "PROPER_NAME": "Accelerate",
       "NAMES": [
-        "激奏"
+        "accelerate"
       ],
-      "DESCRIPTION": "如果剩余耗能不足以发动原来打出此卡所需的耗能， NL 则会自动消费与该数字等量的耗能，并发动激奏效果。 NL 此时打出的这张牌视为技能牌。(生成牌时不触发该效果。)"
+      "DESCRIPTION": "If you do not have enough #yEnergy, NL it can be played as a Skill card instead for the #yAccelerate cost. NL Only the #yAccelerate effects will activate if played in this way.(Won't trigger if the card is not being played from hand.)"
     },
     {
+      "PROPER_NAME": "Crystallize",
       "NAMES": [
-        "结晶"
+        "crystallize"
       ],
-      "DESCRIPTION": "如果剩余耗能不足以发动原来打出此卡所需的耗能， NL 则会自动消费与该数字等量的耗能，并发动结晶效果。 NL 此时打出的这张牌视为能力牌。(生成牌时不触发该效果。)"
+      "DESCRIPTION": "If you do not have enough #yEnergy, NL it can be played as an Power card instead for the #yCrystallize cost. NL Only the #yCrystallize effects will activate if played in this way.(Won't trigger if the card is not being played from hand.)"
     },
     {
+      "PROPER_NAME": "Machina",
       "NAMES": [
-        "机械"
+        "machina"
       ],
-      "DESCRIPTION": "兵种。 NL 以 #y生产机械 、 #y修复模式 为代表，普遍擅长制造衍生牌。"
+      "DESCRIPTION": "Trait. NL Represented by #yProduct #yMachine , #yRepair #yMode . Generally good at making tokens."
     },
     {
+      "PROPER_NAME": "Choose",
       "NAMES": [
-        "抉择"
+        "choose"
       ],
-      "DESCRIPTION": "从所指定的卡牌中选择一张发动。"
+      "DESCRIPTION": "Select one or more cards. Different effects will activate depending on the cards chosen."
     },
     {
+      "PROPER_NAME": "Invocation",
       "NAMES": [
-        "瞬念召唤"
+        "invocation"
       ],
-      "DESCRIPTION": "满足条件后从抽牌堆或弃牌堆中触发，同名牌只触发一张。"
+      "DESCRIPTION": "Invoke the card from the pile if certain conditions have been met. #yInvocation will only activate once for each card per turn even if you have multiple copies in your deck."
     },
     {
+      "PROPER_NAME": "Natura",
       "NAMES": [
-        "自然"
+        "natura"
       ],
-      "DESCRIPTION": "兵种。 NL 以 #y那塔拉的大树 为核心，触发额外效果。"
+      "DESCRIPTION": "Trait. NL With #yNaterran #yGreat #yTree as its center, which can trigger extra effects."
     },
     {
+      "PROPER_NAME": "AF",
       "NAMES": [
-        "创造物"
+        "af"
       ],
-      "DESCRIPTION": "兵种。 NL #y复仇者 特有，与多种 #y创造物 配合发挥特效，说书代表。"
+      "DESCRIPTION": "Trait. NL Unique to #yPortalcraft . Play with other #yAF to trigger extra effects."
     },
     {
+      "PROPER_NAME": "Naterran Great Tree",
       "NAMES": [
-        "那塔拉的大树"
+        "naterran great tree",
+        "naterran_great_tree"
       ],
-      "DESCRIPTION": "如果已有此能力，则打出 #y那塔拉的大树 时抽1张牌。 "
+      "DESCRIPTION": "If you already have #yNaterran #yGreat #yTree, you can draw 1 card when another #yNaterran #yGreat #yTree is played."
     },
     {
+      "PROPER_NAME": "Fusion",
       "NAMES": [
-        "融合"
+        "fusion"
       ],
-      "DESCRIPTION": "右键这张牌消耗对应类型的卡牌触发，一回合只能进行一次。 "
+      "DESCRIPTION": "Right click the card with Fusion effect to Exhaust specific cards to trigger effects. Can only be triggered once per turn. "
     },
     {
+      "PROPER_NAME": "Mysteria",
       "NAMES": [
-        "马纳历亚"
+        "mysteria"
       ],
-      "DESCRIPTION": "兵种。 NL #y巫师 特有，背景为马纳历亚学院相关，代表人物为 #y安 和 #y古蕾娅 。"
+      "DESCRIPTION": "Trait. NL Unique to #yRunecraft . Have extra effects when being played alongside. Represented by #yAnne and #yGrea ."
     },
     {
+      "PROPER_NAME": "Levin",
       "NAMES": [
-        "雷维翁"
+        "levin"
       ],
-      "DESCRIPTION": "兵种。 NL #y皇家护卫 代表，背景为雷维翁骑士团，团长为 #y阿尔贝尔 。"
+      "DESCRIPTION": "Trait. NL Unique to #ySwordcraft . Have extra effects when being played alongside. Represented by #yAlbert ."
     },
     {
+      "PROPER_NAME": "Union Burst",
       "NAMES": [
-        "连结爆发"
+        "union burst",
+        "union_burst"
       ],
-      "DESCRIPTION": "第X回合及之后回合使用时会发动的能力，X为该卡牌上该能力所记载的数字。可被多次升级，每次升级X减少1。"
+      "DESCRIPTION": "Activate if your turn number is equal to or greater than #yUnion #yBurst value. Can be upgraded multiple times to reduce the value."
     },
     {
+      "PROPER_NAME": "Destroy",
       "NAMES": [
-        "破坏"
+        "destroy"
       ],
-      "DESCRIPTION": "从弃牌堆消耗攻击牌并增加1点 墓地 。"
+      "DESCRIPTION": "#yExhaust Attack card from discard pile and gain #yShadows ."
     },
     {
+      "PROPER_NAME": "Burial Rite",
       "NAMES": [
-        "葬送"
+        "burial rite",
+        "burial_rite"
       ],
-      "DESCRIPTION": "选择手牌中对应张数的攻击牌从本场战斗中移除并增加1点 墓地 。这些牌在本场战斗中视为已打出。"
+      "DESCRIPTION": "Cast out the chosen cards during this combat and gain #yShadows . The cards are considered played in this combat."
     },
     {
+      "PROPER_NAME": "Shadows",
       "NAMES": [
-        "亡者召还"
+        "shadows"
       ],
-      "DESCRIPTION": "从本场战斗中已打出的牌中随机将耗能为该数字及以下的攻击牌以本回合耗能为0的形式加入手中，优先加入耗能最高的牌。卡牌耗能为0时不触发。"
+      "DESCRIPTION": "Increase when playing cards or triggering specific effects. Spend #yShadows to trigger #yNecromancy effects."
     },
     {
+      "PROPER_NAME": "Reanimate",
       "NAMES": [
-        "谢幕曲"
+        "reanimate"
       ],
-      "DESCRIPTION": "被消耗时或特定情况下触发的能力"
+      "DESCRIPTION": "Randomly add a copy of 1 of the highest-cost Attack card into your hand with 0 cost to play this turn. Won't trigger if the cost of the card with #yReanimate ability is 0."
     },
     {
+      "PROPER_NAME": "Last Words",
       "NAMES": [
-        "墓地"
+        "last words",
+        "last_words"
       ],
-      "DESCRIPTION": "使用卡牌以及一些特殊效果会增加。可以消耗墓地来发动 死灵术 。"
+      "DESCRIPTION": "Trigger effects when being #yExhausted or under special circumstances."
     },
     {
+      "PROPER_NAME": "Countdown",
       "NAMES": [
-        "倒计时"
+        "countdown"
       ],
-      "DESCRIPTION": "经过所记载的回合后会失去原本的能力并触发所记载的效果。"
+      "DESCRIPTION": "Will counts down 1 at the beginning of your turn. Will lose its original effects and trigger specific effects when the #yCountdown reaches 0."
     },
     {
+      "PROPER_NAME": "Vengeance",
       "NAMES": [
-        "复仇"
+        "vengeance"
       ],
-      "DESCRIPTION": "当前生命值小于最大生命值的一半时进入本状态。在本状态下打出的某些牌的效果将得到增强。"
+      "DESCRIPTION": "You will enter this state once you have no more than half of your HP left. Certain cards have extra effects with #yVengeance."
     },
     {
+      "PROPER_NAME": "Wrath",
       "NAMES": [
-        "狂乱"
+        "wrath"
       ],
-      "DESCRIPTION": "因自己受到的伤害为7次以上时获得本效果。拥有本效果时打出的某些牌将被增强。"
+      "DESCRIPTION": "#yWarth is active when you has taken damage during your turn at least 7 times in a combat. Certain cards have extra effects with #yWarth."
     },
     {
+      "PROPER_NAME": "Avarice",
       "NAMES": [
-        "渴望"
+        "avarice"
       ],
-      "DESCRIPTION": "每回合抽取第6张以上的牌时获得本效果。拥有本效果时打出的某些牌将被增强。回合结束时失去本效果。"
+      "DESCRIPTION": "#yAvarice is active when at least 6 cards have been drawn from your draw pile in a turn. Certain cards have extra effects with #yAvarice. Lose this effect by the end of this turn."
     },
     {
+      "PROPER_NAME": "Drain",
       "NAMES": [
-        "虹吸"
+        "drain"
       ],
-      "DESCRIPTION": "回复下一次造成伤害的生命值。（下回合开始时失去这个效果）"
+      "DESCRIPTION": "Heal HP equal to the damage to be dealt next time.(Lose this effect by the start of next turn)"
     },
     {
+      "PROPER_NAME": "Resonance",
       "NAMES": [
-        "共鸣"
+        "resonance"
       ],
-      "DESCRIPTION": "抽牌堆张数为偶数时会进入本状态。在本状态下打出的某些牌的效果将得到增强。"
+      "DESCRIPTION": "#yResonance effects occur when your draw pile has an even number of remaining cards. Certain cards have extra effects with #yResonance."
     },
     {
+      "PROPER_NAME": "Maneuver",
       "NAMES": [
-        "操纵"
+        "maneuver"
       ],
-      "DESCRIPTION": "拥有这个能力的卡牌不能被打出时。如果这张牌在手中时，打出对应数字耗能以上的攻击牌时该牌将失去效果并消耗，这张卡在这之后能被打出。如果这张牌在这之后被消耗，将返还1张本回合耗能为0的该牌到手中。"
+      "DESCRIPTION": "Cards with #yManeuver can't be played from hand directly. If another Attack card with cost higher than the #yManeuver value is played while this card is in hand, the Attack card will lose its effects and #yExhaust, then this card can be played. If this card is #yExhaust , it will return the Attack card into your hand with 0 cost to play this turn."
     },
     {
+      "PROPER_NAME": "Cannon Hermit Crab",
       "NAMES": [
-        "加农炮寄居蟹"
+        "cannon hermit crab",
+        "cannon_hermit_crab"
       ],
-      "DESCRIPTION": "被动： 在你的回合结束时，对随机敌人造成6点伤害并失去1点生命值。获得6点格挡。如果共鸣或有那塔拉的大树则生成一个伤害和生命值为当前一半(向上取整)的 #y加农炮寄居蟹 。 NL 激发： 重复造成伤害和获得格挡直到生命值为0。"
+      "DESCRIPTION": "Passive: Deal 6 damage to random enemy and lose 1 Health by the end of your turn. Gain 6 #yBlock. If you have #yResonance or #yNaterran #yGreat #yTree effect, generate a new #yCannon #yHermit #yCrab with half of the current state (Round up the value) . NL When Evoked, Deal damage and gain #yBlock repeatedly until its Health reaches 0."
     },
     {
+      "PROPER_NAME": "Effect Damage Immune",
       "NAMES": [
-        "能力伤害无效"
+        "effect damage immune",
+        "effect_damage_immune"
       ],
-      "DESCRIPTION": "本回合内因能力受到的伤害变为0。"
+      "DESCRIPTION": "Reduce damage from indirect effects to 0."
     },
     {
+      "PROPER_NAME": "Skybound Art",
       "NAMES": [
-        "奥义"
+        "skybound art",
+        "skybound_art"
       ],
-      "DESCRIPTION": "第X回合及之后回合使用时会发动的能力，X为该卡牌上该能力所记载的数字。可被多次升级，每次升级X减少1。"
+      "DESCRIPTION": "#ySkybound #yArt effects activate if your turn number is equal to or greater than the #ySkybound #yArt value. Can be upgraded for multiple times, and each time the #ySkybound #yArt value of the cards decreases by 1."
     },
     {
+      "PROPER_NAME": "Super Skybound Art",
       "NAMES": [
-        "解放奥义"
+        "super skybound art",
+        "super_skybound_art"
       ],
-      "DESCRIPTION": "第X回合及之后回合使用时会发动的能力，X为该卡牌上该能力所记载的数字。可被多次升级，每次升级X减少1。"
+      "DESCRIPTION": "#ySuper #ySkybound #yArt effects activate if your turn number is equal to or greater than the #ySuper #ySkybound #yArt value. Can be upgraded for multiple times, and each time the #ySuper #ySkybound #yArt value of the cards decreases by 1."
     },
     {
+      "PROPER_NAME": "Rally",
       "NAMES": [
-        "协作"
+        "rally"
       ],
-      "DESCRIPTION": "已召唤的随从数和使用过的非打击攻击牌数总和。"
+      "DESCRIPTION": "Your #yRally count increases by 1 each time you summon an allied follower or play a non #yStrike Attack card. The #yRally effects activate if your #yRally count is equal to or more than the #yRally value."
     },
     {
+      "PROPER_NAME": "Limit",
       "NAMES": [
-        "限定"
+        "limit"
       ],
-      "DESCRIPTION": "一场战斗中只能触发一次的效果"
+      "DESCRIPTION": "The #yLimit effects can only be activate once per combat."
     },
     {
+      "PROPER_NAME": "Knight",
       "NAMES": [
-        "骑士"
+        "knight"
       ],
-      "DESCRIPTION": "1/1 NL 被动： 在你的回合结束时，对随机敌人造成3倍攻击力的伤害并失去1点生命值。 NL 激发： 重复被动效果直到生命值为0 。"
+      "DESCRIPTION": "1/1 NL Passive: Deal damage equal to 3 times of Attack to random enemy and lose 1 Health by the end of your turn. NL When Evoked, Repeat Passive effects until its Health reaches 0."
     },
     {
+      "PROPER_NAME": "Heavy Knight",
       "NAMES": [
-        "重装骑士"
+        "heavy knight",
+        "heavy_knight"
       ],
-      "DESCRIPTION": "1/2 NL 被动： 在你的回合结束时，给予随机敌人攻击力层数的虚弱并失去1点生命值。 NL 激发： 重复被动效果直到生命值为0 。"
+      "DESCRIPTION": "1/2 NL Passive: Apply #yWeak equal to Attack to random enemy and lose 1 Health by the end of your turn. NL When Evoked, Repeat Passive effects until its Health reaches 0."
     },
     {
+      "PROPER_NAME": "Steelclad Knight",
       "NAMES": [
-        "铁甲骑士"
+        "steelclad knight",
+        "steelclad_knight"
       ],
-      "DESCRIPTION": "1/1 NL 被动： 在你的回合结束时，对随机敌人造成5倍攻击力的伤害并失去1点生命值。 NL 激发： 重复被动效果直到生命值为0 。"
+      "DESCRIPTION": "1/1 NL Passive: Deal damage equal to 5 times of Attack to random enemy and lose 1 Health by the end of your turn. NL When Evoked, Repeat Passive effects until its Health reaches 0."
     },
     {
+      "PROPER_NAME": "Shield Guardian",
       "NAMES": [
-        "战盾卫士"
+        "shield guardian",
+        "shield_guardian"
       ],
-      "DESCRIPTION": "1/1 NL 被动： 在你的回合结束时，获得2倍攻击力的格挡并失去1点生命值。 NL 激发： 重复被动效果直到生命值为0 。"
+      "DESCRIPTION": "1/1 NL Passive: Gain Block equal to 2 times of Attack and lose 1 Health by the end of your turn. NL When Evoked, Repeat Passive effects until its Health reaches 0."
     },
     {
+      "PROPER_NAME": "Frontguard General",
       "NAMES": [
-        "铁卫战将"
+        "frontguard general",
+        "frontguard_general"
       ],
-      "DESCRIPTION": "5/6 NL 被动： 在你的回合结束时，获得2倍攻击力的格挡和攻击力的多重护甲并失去1点生命值。 NL 激发： 重复被动效果直到生命值为0 。"
+      "DESCRIPTION": "5/6 NL Passive: Gain Block equal to 2 times of Attack, gain #yPlated #yArmor equal to Attack and lose 1 Health by the end of your turn. NL When Evoked, Repeat Passive effects until its Health reaches 0."
     },
     {
+      "PROPER_NAME": "Queen Hemera the Brave",
       "NAMES": [
-        "英勇之王·伊梅拉"
+        "queen hemera the brave",
+        "queen_hemera_the_brave"
       ],
-      "DESCRIPTION": "1/4 NL 被动： 在你的回合结束时，获得3倍攻击力的格挡，召唤一个 #y骑士 并失去1点生命值。 NL 激发： 重复被动效果直到生命值为0 。"
+      "DESCRIPTION": "1/4 NL Passive: Gain Block equal to 3 times of Attack, summon a #yKnight and lose 1 Health by the end of your turn. NL When Evoked, Repeat Passive effects until its Health reaches 0."
     },
     {
+      "PROPER_NAME": "Queen Magnus the Graceful",
       "NAMES": [
-        "高雅女王·玛格娜丝"
+        "queen magnus the graceful",
+        "queen_magnus_the_graceful"
       ],
-      "DESCRIPTION": "3/3 NL 被动： 在你的回合结束时，对随机敌人造成3倍攻击力的伤害，并失去1点生命值，下个回合开始时获得1点费用。 NL 激发： 重复被动效果直到生命值为0，改为即时获得费用。"
+      "DESCRIPTION": "3/3 NL Passive: Deal damage equal to 3 times of Attack to random enemy and lose 1 Health by the end of your turn. Next turn, gain #yEnergy . NL When Evoked, Repeat Passive effects until its Health reaches 0, gain #yEnergy immediately."
     },
     {
+      "PROPER_NAME": "Quickblader",
       "NAMES": [
-        "迅捷的剑士"
+        "quickblader"
       ],
-      "DESCRIPTION": "1/1 NL 被动： 在你的回合结束时，给予随机敌人攻击力层数的易伤，造成3倍攻击力的伤害，并失去1点生命值。 NL 激发： 重复被动效果直到生命值为0。"
+      "DESCRIPTION": "1/1 NL Passive: Apply 1 #yVulnerable and deal damage equal to 3 times of Attack to random enemy and lose 1 Health by the end of your turn. NL When Evoked, Repeat Passive effects until its Health reaches 0"
     },
     {
+      "PROPER_NAME": "Viking",
       "NAMES": [
-        "维京战士"
+        "viking"
       ],
-      "DESCRIPTION": "3/2 NL 被动： 在你的回合结束时，给予随机敌人攻击力层数的易伤，造成3倍攻击力的伤害，并失去1点生命值，下个回合开始时获得1点费用。 NL 激发： 重复被动效果直到生命值为0，改为即时获得费用。"
+      "DESCRIPTION": "3/2 NL Passive: Apply #yVulnerable equal to Attack and deal damage equal to 3 times of Attack to random enemy and lose 1 Health by the end of your turn. Next turn, gain #yEnergy . NL When Evoked, Repeat Passive effects until its Health reaches 0, gain #yEnergy immediately."
     },
     {
+      "PROPER_NAME": "Pirate",
       "NAMES": [
-        "航海家"
+        "pirate"
       ],
-      "DESCRIPTION": "2/3 NL 被动： 在你的回合结束时，获得2倍攻击力的格挡并失去1点生命值。 NL 激发： 重复被动效果直到生命值为0 。"
+      "DESCRIPTION": "2/3 NL Passive: Gain #yBlock equal to 2 times of Attack and lose 1 Health by the end of your turn. NL When Evoked, Repeat Passive effects until its Health reaches 0."
     },
     {
+      "PROPER_NAME": "Naht's Henchmen",
       "NAMES": [
-        "娜哈特的私兵"
+        "naht's henchmen",
+        "naht's_henchmen"
       ],
-      "DESCRIPTION": "敌人，生命值约30点，死亡时将一张 顺从的骏马 加入手牌。"
+      "DESCRIPTION": "Enemy, approximately 30 HP, put a #yDutiful #ySteed into your hand."
     },
     {
+      "PROPER_NAME": "Loot",
       "NAMES": [
-        "财宝牌"
+        "loot"
       ],
-      "DESCRIPTION": "指 #y黄金短剑 、 #y黄金之杯 、 #y黄金之靴 、 #y黄金首饰 。"
+      "DESCRIPTION": "Refer to #yGilded #yBlade , #yGilded #yGoblet , #yGilded #yBoots , #yGilded #yNecklace ."
     },
     {
+      "PROPER_NAME": "Command",
       "NAMES": [
-        "号令"
+        "command"
       ],
-      "DESCRIPTION": "触发随从的 #y被动 效果。"
+      "DESCRIPTION": "Trigger the followers' passive effects."
     },
     {
+      "PROPER_NAME": "Unevolove After Played",
       "NAMES": [
-        "打出后解除升级"
+        "unevolove after played",
+        "unevolove_after_played"
       ],
-      "DESCRIPTION": "打出这张牌后在本场战斗中其升级效果解除，升级增加的伤害和格挡不会减少，可以通过其他方法再次升级提升效果。 NL 不会影响下一场战斗。"
+      "DESCRIPTION": "Undone the upgrade of this card for this combat after being played, the damage and #yBlock won't decrease, can be upgraded by specific effects again. NL Won't affect the next combat."
     },
     {
+      "PROPER_NAME": "Divine",
       "NAMES": [
-        "圣祝"
+        "divine"
       ],
-      "DESCRIPTION": "这张护符在倒计时结束后不会进入弃牌堆而是从本场战斗中移除。"
+      "DESCRIPTION": "This #yAmulet won't go to discard pile after its #yCountdown reaches 0 and will be cast out during this combat."
     },
     {
+      "PROPER_NAME": "Heavenly Aegis",
       "NAMES": [
-        "天耀盾甲"
+        "heavenly aegis",
+        "heavenly_aegis"
       ],
-      "DESCRIPTION": "8/8 NL 被动： 回合结束时，对随机敌人造成攻击力(受力量影响)数量的伤害，获得生命值数量(受敏捷影响)的 格挡 。"
+      "DESCRIPTION": "8/8 NL Passive: Deal damage equal to Attack(affect by #yStrength ) to random enemy, gain #yBlock equal to Health(affect by #yDexterity ) by the end of your turn."
     },
     {
+      "PROPER_NAME": "Relic Goddesses",
       "NAMES": [
-        "遗存的女神"
+        "relic goddesses",
+        "relic_goddesses"
       ],
-      "DESCRIPTION": "6/6 NL 被动： 回合结束时，对随机敌人造成攻击力(受力量影响)数量的伤害，获得生命值数量(受敏捷影响)的 格挡 。"
+      "DESCRIPTION": "6/6 NL Passive: Deal damage equal to Attack(affect by #yStrength ) to random enemy, gain #yBlock equal to Health(affect by #yDexterity ) by the end of your turn."
     },
     {
+      "PROPER_NAME": "Ambush",
       "NAMES": [
-        "潜伏"
+        "ambush"
       ],
-      "DESCRIPTION": "回合结束时可以选择潜伏或攻击。若选择潜伏则不触发被动效果，获得+1/+0。触发潜伏以外的效果将不再能潜伏。"
+      "DESCRIPTION": "Choose from #yAmbush and #yAttack by the end of your turn. Choosing #yAmbush will not trigger passive effects and will gain 1 attack. Can't choose #yAmbush if passive effects have been triggered."
     }
   ]
 }

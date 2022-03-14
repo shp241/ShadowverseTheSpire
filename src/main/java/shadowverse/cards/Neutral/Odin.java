@@ -42,7 +42,9 @@ public class Odin extends AbstractNeutralCard{
         addToBot((AbstractGameAction)new SFXAction("Odin"));
         addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
         addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new IntangiblePlayerPower(abstractPlayer,1),1));
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+        AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
+        c.freeToPlayOnce = true;
+        addToBot((AbstractGameAction)new MakeTempCardInHandAction(c));
     }
 
     public AbstractCard makeCopy() {

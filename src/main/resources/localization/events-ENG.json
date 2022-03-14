@@ -1,104 +1,104 @@
 {
   "shadowverse:PinyaEvent": {
-    "NAME": "金皮喵和绿皮喵",
+    "NAME": "Golden Pinya and Green Pinya",
     "DESCRIPTIONS": [
-      "你看见一名举着许多皮喵的经纪人打扮的奇怪男人，没走几步…… NL 你就听见男人传来一个爽朗的声音： NL ~“请留步。”~",
-      "你回了回头，却发现那男人一直盯着你！ NL 仔细一看，原来这是KMR! NL NL ~“你掉的。~ ~是这只金皮喵还是这只绿皮喵？~ ~或者，想要谈论版本？”~",
-      "~“天气热吗？~ ~当然了。”~ NL 他动作机械地伸出手，将一个 #y次元石 放进了你的邮箱里。 NL NL ~“真是炎热的一天。~ ~啊啊，多热的天啊。”~ NL 当他跟你说话时，你觉得自己的账号好像有点危险！ NL 突然之间，只见他喝着的水掉落了下来在地上摔得粉碎。他立即大笑起来，这下那些次元石全都摔落下来了！你赶紧抓起次元石逃离了这里。 NL NL 你在不经意间瞥到了他大笑下的样子，你的大脑是一片完全的空白。",
-      "~“金皮喵？~ @确定吗？@ ~啊，当然了……~ ~可以。~ ~可以……~ ~唔嗯……”~ NL NL 你看见他的一根手臂抖动了一下，突然你的账号出现在了他的手里！似乎你的账号和那个皮喵交换了。 NL NL ~“很好。~ ~嗯，很好。”~",
-      "~“留步。~ ~留步啊。~ ~请留步。~ ~请留步。~ ~请留步。”~ NL NL 你觉得自己做出了正确的选择。"
+      "You walk past a strange fat cat looking statue... NL Suddenly you hear a voice whispering in your back: NL ~'Hand on a minute.'~",
+      "You turn around and see the statue staring at you! NL As you walk over to take a closer look, you find that it is not a statue, but KMR, the producer, who is dressing the Pinya doll outfit! NL NL ~'Could_you_show_me_your_account_and_share_your_comments_on_the_environment_please?'~",
+      "~'Oh,_the_heat_of_summer_continues.~ ~Are_you_doing_alright?'~ NL He mechanically reach out his hand and put some #ySeer's_Globe into your crate. NL NL ~'It_may_be_in_a_sudden,_but_please_take_these_Seer's_Globes_as_a_gift.'~ NL While he is talking with you, you feel that the Gold in your pocket is vanishing! NL All of a sudden, the cup he is drinking falls down and smashes to pieces on the ground. You run away in the echo of laughter and the sound of the broken glass. NL NL By the time you come to yourself, it is just you and the Seer's Globes in your hand.",
+      "~'Golden_Pinya?~ @Are_you_sure_about_that?@ ~Ah,_of_course...~ ~Okey.~ ~I_can_do_that...~ ~Let_me_see...'~ NL NL He shake one of his arms in the air, and your account is in his hand in the turn of a hand! Literally! NL NL ~'Yeah.~ ~ This_Is_Goooood.'~",
+      "~'Wait.~ ~Wait_a_second.~ ~Please_wait.~ ~Wait.~ ~Wait_a_second.'~ NL NL You think you made the right choice."
     ],
     "OPTIONS": [
-      "[对话] #r失去",
-      " #g金币。",
-      "[交谈] #g50%：获得好皮喵。 #r50%：进行一次平衡性调整。",
-      "[离开]",
-      "[谈论天气]",
-      " #r生命， #g获得 #g"
+      "[Chat with him] #rLose",
+      " #gGold.",
+      "[Give me that Pinya] #g50%:_Get_a_good_Pinya. #r50%:_Conduct_a_game_balance_adjustment.",
+      "[Leave]",
+      "[Talk about the weather]",
+      " #rHP, #gGain #g"
     ]
   },
   "GemFortune": {
-    "NAME": "宝石幸运杯",
+    "NAME": "Gem of Fortune",
     "DESCRIPTIONS": [
-      "在你向上攀升时，你发现不远处正在 #p~举办大赛~ ，你上前一看发现这是宝石幸运杯。 ~“看来这又是一场~ #y~马力~ ~的比拼。”~ NL #r@“我看也是！@ #r@怎么没有妖死法！”@ NL NL 你注意到一个男人微笑对你说： NL “总之，你想不想尝试参加一下 #y~宝石幸运杯~ 呢？” ",
+      "It seems like there is an event taking place ahead. As you come closer, you notice that it is Gem of Fortune Cup. ~'Sounds_like_it's_another_competition_of_#y~Luck~.'~ NL #r@'So_I_see!@ #r@Ain't_there_any_Shadowcraft_, Runecraft_or_Forestcraft?'@ NL NL A man says to you with a smile on his face: NL 'Are you interested in entering #y~Gem_of_Fortune~ ?' ",
       "",
-      "#y“好极了！” NL 那个男人的话音刚落，你就看见 #p~浓重的黑烟~ 笼罩了整个大赛。你感觉自己的阳寿正在缓慢地流逝…… NL NL 就在你快要取得优胜的时候，对手打出了一张小卖部，你被斩杀了。 NL NL 不管那个杯赛是什么存在，它现在已经结束了。你重新上路，但总觉得自己的血压有些 #b上涨 。",
-      "“真令人失望……” NL ~“反正你迟早会成为SZB傻狗。”~  NL #r@“哈哈@ #r@哈哈哈哈！”@ NL NL 那个男人消失了，只留下这令人不安的大笑声在你耳中回荡。",
+      "#y'Marvelous!' NL Soon after your reply, the whole stage is shrouded in #p~Thick_Black_Smoke~... NL NL Just at the time you're about to win, your opponent plays an #y~Arcane_Item_Shop~ and kills your leader in one turn. NL NL The match is over, and you are back on the track. But somehow you feel a bit #bAngry .",
+      "'What a disappointment...' NL ~'Anyway,_sooner_or_later_you_will_join_our_party.'~  NL #r@'Hahaha@ #r@Hahahahaha!'@ NL NL The man disappeared, leaving only the disturbing laughter echoing in your ears.",
       ""
     ],
     "OPTIONS": [
-      "[支付阳寿] #g获得4张 宝石之光 #g牌, #g获得2张 水晶之辉 #g牌。 #r失去 #r",
-      " #r最大生命。",
-      "[拒绝]",
-      "[支付阳寿] #g获得3张 宝石之光 #g牌, #g获得1张 水晶之辉 #g牌。 #r失去 #r",
+      "[Attend the match] #gGain_4 Gem Light, #ggain_2 Crystal Bright#g. #rLose #r",
+      " #rMax_HP.",
+      "[Refuse]",
+      "[Attend the match] #gGain_3 Gem Light, #ggain_1 Crystal Bright#g. #rLose #r",
       "",
-      "[离开]"
+      "[Leave]"
     ]
   },
   "shadowverse:LelouchCollaboration": {
-    "NAME": "叛逆的鲁鲁修特别联动",
+    "NAME": "CODE GEASS Lelouch of the Rebellion Collaboration",
     "DESCRIPTIONS": [
-      "你没有理会这个联动，但奇怪的是那个鲁鲁修对你使用了 #rGeass ！",
-      "#r@进入战斗！！@ NL 不仅是鲁鲁修，就连朱雀也开着兰斯洛特不知从哪里冒了出来！",
-      " #b~叛逆的鲁鲁修~ 特别联动限时开启， NL 期间限定BOSS鲁鲁修等待你的挑战！ NL 你不太想理会，准备继续向上攀登，但却有一种奇怪的冲动想要去参加来自鲁鲁修的 #b~挑战……~"
+      "You ignore the event, but somehow Lelouch casts #rGeass on you !",
+      "#r@Ambush!@ NL Your enemies are not just Lelouch, but also Suzaku operating Lancelot coming out from nowhere!",
+      " #b~Lelouch_of_the_Rebellion~ Campaign in progress. NL Time limited BOSS Lelouch is waiting for you! NL You have no interest in attending, but as soon as you're trying to leave, a strange desire in your heart drives you to #b~Challenge~ Lelouch..."
     ],
     "OPTIONS": [
-      "[挑战] #r挑战联动BOSS。",
-      "[无视]  不挑战",
-      " #r被诅咒——Geass。",
-      "[战斗]",
-      "[离开]"
+      "[Challenge] #rChallenge_the_BOSS.",
+      "[Ignore]  Ignore the event",
+      " #rBeing_cursed_-_Geass.",
+      "[Fight]",
+      "[Leave]"
     ]
   },
   "shadowverse:VampiresEvent": {
-    "NAME": "吸血鬼（？）",
+    "NAME": "Vampires ? ",
     "DESCRIPTIONS": [
-      "在一条昏暗的街上，你遇见几个戴着兜帽的人在进行某种黑暗的仪式。当你靠近时，他们全都同时转身面对你。 其中个子最高的一个微微一笑，露出了长长的尖牙，向你伸出了一只苍白而瘦长的手： NL ~“加入我们，姐妹。一起来感受高塔的温暖吧。”~",
-      "就在高个男人准备抓住你的手臂将你拉过去时，他惊恐地发现你竟然是 @夜之王@ ，你从他们身上感受不到 @意志@ ，这将是一场单方面的 @屠杀@ 。NL …… NL 不知过了多久，你结束了你的斗争，身边空无一人。你把他们都 ~杀光了~ ，完全感受不到乐趣。 你又感到 #r空虚 了……",
-      "你感到很无趣，认为他们并不能取悦你，于是给了男人一个眼神。高个男人惊恐地凝视着你，直到你完全离开。 NL 你又是独自一人了。"
+      "In a dark street, you meet some hooded people performing some kind of dark rite.As you approach, they all turn to face you at the same time. The tallest one smiled, showing his long fangs and stretches out a pale, thin hand to you: NL ~'Join_us,_sister._Let's_feel_the_warmth_of_the_spire.'~",
+      "Just as the tall man was about to grab your arm and pull you over, he is horrified to find that you are the @Lord_of_the_Dark@ . You don't feel any @Resistance@ . This is a unilateral @Massacre@ .NL .... NL After an unspecified amount of time, the revelry is over, and there is only you left. You have ~Killed_Them_All~ . You can't get any joy out of it. You feel #rEmpty again...",
+      "You feel bored. You don't think they can't please you. So you give the man a look. The tall man stared at you in horror until you left completely. NL You're alone again."
     ],
     "OPTIONS": [
-      "[斗争] #g移除所有 打击 #g牌。 #g获得相同张数的 利爪的一击 #g牌。 #r获得 #r小血瓶 。",
-      "[无视] 最大生命值增加 #r10 。",
-      "[离开]"
+      "[Revel] #gRemove_all Strick #gcards. #gReplace_with_same_amount_of Razory Claw. #rGain #rBlood_Vial .",
+      "[Ignore] Raise your Max HP by #r10 .",
+      "[Leave]"
     ]
   },
   "shadowverse:NaturalMachine": {
-    "NAME": "钢铁与大地的恩赐",
+    "NAME": "Favour from the Natur Al'machinus",
     "DESCRIPTIONS": [
-      "你看见钢铁与大地之神向你走来， NL “想开地铁吗年轻人……遵从我的引导吧……”",
-      "钢铁与大地之神让你充满了力量。"
+      "You come across the Natur Al'machinus. NL 'I shall grant you the power of Natural and Machine...'",
+      "You can feel the power coming through your body."
     ],
     "OPTIONS": [
-      "[外域之力] 从20张中立和其他职业的机械与自然牌中挑选3张加入牌组。",
-      "[地铁神的恩赐] 回复 #g",
-      " 生命。",
-      "选择3张牌。",
-      "[离开]"
+      "[Wish for enhancement] Choose 3 cards out of 20 Natura cards and Machina cards into your deck.",
+      "[Wish for recoverment] Heal #g",
+      " HP.",
+      "Choose 3 cards.",
+      "[Leave]"
     ]
   },
   "shadowverse:SellCard": {
-    "NAME": "瓦罗纳商贩",
+    "NAME": "Valhorean Dealer",
     "DESCRIPTIONS": [
-      "你看到一位紫发美少女在一堆货物旁边。 NL ",
-      "“欢迎欢迎~~这里是瓦罗纳的小摊~~ NL 现在前线军火紧张，客官有什么想要出售的吗~~”",
-      "你将一张卡牌交给商人。 NL NL ",
-      "#r@砰@ NL 她戴着手套的拳头狠狠打在了你的脸上，差点就把你打翻在地。 NL “你当我是傻子吗，滚！” NL ",
-      "“诶……这不是随处可见的垃圾吗？不给钱哦~” NL ",
-      "“客官，这个好像不值什么钱呢，不过我就收下啦~~” NL ",
-      "“这是什么？我好像没见过呢……不好评判价格，就这样吧~~” NL ",
-      "“哇哦，不错哦~~快给我快给我~~” NL ",
-      "“哇哦~~这可是上品~~可不许反悔哦~~” NL ",
-      "“哎呀~~你好像没什么能卖的呢，快走吧快走吧~” NL ",
-      "“真厉害，你的业绩简直跟瓦罗纳的理念如出一辙。 NL 不当地以低价散布的武器，点燃了预料外的火苗。 NL 最好连成果也一并确认，去看看战火的最前线吧。” NL “呜哇~~人家错了啦~~” NL "
+      "You see a girl with purple hair sitting next to a pile of goods. NL ",
+      "'Greetings! ~~Welcome_to_Varona's_stall~~ NL Is there anything you would like to sell, sir?'",
+      "You give a card to the dealer. NL NL ",
+      "#r@Bang@ NL She hit you right in the face with her gloved fist. NL 'Do you deride me as a fool? Get lost!' NL ",
+      "'Well... Do you really think I will pay for this rubbish?' NL ",
+      "'Well... It's better than nothing anyway. Here, take it.' NL ",
+      "'I don't seem to have seen it before...It's hard to make a price. ~~How_about_this_much?~~' NL ",
+      "'Wow, this one looks great! Give it to me! ' NL ",
+      "'Wow! That is some top-grade good! ... No refund! ' NL ",
+      "'Oops, ~~Looks_like_you_have_nothing_to_sell._Move_along_then.~' NL ",
+      "'Impressive. Your record in marketing is as good as Valhorean's idea. NL Weapons improperly distributed at low prices have given rise to unexpected outcome. NL It's better to confirm the results. Let's go to the forefront of the war.' NL 'I'm sorry! Please forgive me!' NL "
     ],
     "OPTIONS": [
-      "[继续]",
-      "[售卖] 选择牌组中的一张牌出售。",
-      "[逮捕] 获得一件特殊的遗物。",
-      "[锁定] 需要 #y阿尔亚斯卡 。",
-      "[离开]",
-      "选择1张牌出售"
+      "[Continue]",
+      "[Sell] Choose a card from your deck to sell.",
+      "[Arrest] Gain a special Relic.",
+      "[Lock] Need #yAlyaska .",
+      "[Leave]",
+      "Choose 1 card to sell"
     ]
   }
 }

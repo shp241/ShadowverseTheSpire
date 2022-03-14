@@ -62,7 +62,7 @@ import java.util.Collections;
      addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
      ArrayList<AbstractCard> list = new ArrayList<>();
      for (AbstractCard card:abstractPlayer.drawPile.group){
-       if (card.type == AbstractCard.CardType.ATTACK){
+       if (card.type == AbstractCard.CardType.ATTACK && card.hasTag(AbstractShadowversePlayer.Enums.LASTWORD) && card.costForTurn<=1){
          list.add(card);
        }
      }

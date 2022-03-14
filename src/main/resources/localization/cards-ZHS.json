@@ -623,8 +623,8 @@
   },
   "shadowverse:Gabriel": {
     "NAME": "神谕的大天使·加百列",
-    "DESCRIPTION": "获得X点 力量 和 敏捷 。",
-    "UPGRADE_DESCRIPTION": "获得X+1点 力量 和 敏捷 。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得X点 力量 和 敏捷 。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得X+1点 力量 和 敏捷 。"
   },
   "shadowverse:PaperShikigami": {
     "NAME": "式神·小纸人",
@@ -922,7 +922,7 @@
   },
   "shadowverse:VictoryCard": {
     "NAME": "胜利卡",
-    "DESCRIPTION": "当这张卡被抽到时，直接获得胜利。 NL 虚无 。"
+    "DESCRIPTION": "当这张卡被抽到时， 消耗 并直接获得胜利。 NL 虚无 。"
   },
   "shadowverse:TreacherousReversal": {
     "NAME": "真伪逆转",
@@ -1293,6 +1293,14 @@
   "shadowverse:Thoth": {
     "NAME": "托特",
     "DESCRIPTION": "如果本场战斗已打出的 谢幕曲 牌 为10张以上，则给予接下来每次打出 谢幕曲 牌对全体敌人造成10点伤害的效果。 NL 抽1张牌。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已打出",
+      " 张 谢幕曲 牌。)"
+    ]
+  },
+  "shadowverse:WickedRebirth": {
+    "NAME": "不详的再生",
+    "DESCRIPTION": "破坏 1张牌，从本场战斗中已打出的 谢幕曲 牌中随机将1张耗能为1以下的卡的本回合耗能变为0后加入手中。 NL 下一次攻击伤害增加 !M! 。 NL 如果本场战斗已打出的 谢幕曲 牌 为5张以上，额外抽 !M! 张牌。 NL 如果为10张以上，额外增加1张到手中。",
     "EXTENDED_DESCRIPTION": [
       " NL (已打出",
       " 张 谢幕曲 牌。)"
@@ -2460,7 +2468,7 @@
   },
   "shadowverse:ICCard": {
     "NAME": "混沌支配者·艾希连德凛克",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张 *魔导列车 到手中。 NL 如果耗能不为0，增加1张 *死之索偿 到手中。 NL 瞬念召唤 回合开始时如果消耗堆中的攻击牌为20张以上，则加入手中，耗能变为0。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张下次打出前耗能为0的 *魔导列车 到手中。 NL 如果耗能不为0，增加1张 *死之索偿 到手中。 NL 瞬念召唤 回合开始时如果消耗堆中的攻击牌为20张以上，则加入手中，耗能变为0。"
   },
   "shadowverse:DeathPenalty": {
     "NAME": "死之索偿",
@@ -2622,7 +2630,7 @@
   },
   "shadowverse:Odin": {
     "NAME": "黄昏战神·奥丁",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得1层 无实体 。 NL 增加1张 *斯莱普尼尔 到手中。 NL 消耗 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得1层 无实体 。 NL 增加1张下次打出前耗能为0的 *斯莱普尼尔 到手中。 NL 消耗 。"
   },
   "shadowverse:SevensForceSorcerer": {
     "NAME": "七彩之力召唤师",
@@ -3069,8 +3077,8 @@
   },
   "shadowverse:StrokeOfConviction": {
     "NAME": "信念之剑闪",
-    "DESCRIPTION": "抉择 NL 召唤2个 迅捷的剑士 、 NL 随机对一个敌人造成 !D! 点伤害、 NL 使所有随从获得+1/+1。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "召唤2个 迅捷的剑士 ， NL 随机对一个敌人造成 !D! 点伤害， NL 使所有随从获得+1/+1。 NL 消耗 。"
+    "DESCRIPTION": "抉择 NL 召唤2个 迅捷的剑士 、 NL 随机对一个敌人造成 !D! 点伤害、 NL 使所有随从获得+1/+1。 NL 爆能强化 2 改为发动全部效果。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "召唤2个 迅捷的剑士 ， NL 随机对一个敌人造成 !D! 点伤害， NL 使所有随从获得+1/+1。 NL 爆能强化 2 改为发动全部效果。"
   },
   "shadowverse:ErikasSleight": {
     "NAME": "艾莉卡的剑技",
@@ -3098,14 +3106,14 @@
   },
   "shadowverse:LuxbladeArriet": {
     "NAME": "煌剑战士·亨莉雅妲",
-    "DESCRIPTION": "多次升级以获得效果。 NL +1：获得 !B! 点 格挡 ， 保留 。 NL +2：获得 [E] [E] ， 固有 。 NL +3：获得1点 力量 和 敏捷 。 NL +4：抽牌到7张。 NL +5：回复 !M! 点生命值。 NL 消耗 。",
+    "DESCRIPTION": "多次升级以获得效果。 NL +1：获得 !B! 点 格挡 ， 保留 。 NL +2：获得 [E] [E] ， 固有 。 NL +3：获得1点 力量 和 敏捷 。 NL +4：抽牌到7张。 NL +5：回复 !M! 点生命值。 NL 获得 !M! 点 格挡 ， 消耗 。",
     "EXTENDED_DESCRIPTION": [
       "获得 !B! 点 格挡 ， 保留 。 NL ",
       "获得 [E] [E] ， 固有 。 NL ",
       "获得1点 力量 和 敏捷 。 NL ",
       "抽牌到7张。 NL ",
       "回复 !M! 点生命值。 NL ",
-      "消耗 。"
+      "获得 !M! 点 格挡 ， 消耗 。"
     ]
   },
   "shadowverse:Valdain2": {
@@ -4111,6 +4119,19 @@
   },
   "shadowverse:OtherworldGatekeeper": {
     "NAME": "死门连结者",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 打出抽牌堆中 !M! 张有 谢幕曲 效果的攻击牌。 NL 谢幕曲 被 消耗 时，回复1点生命。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 打出抽牌堆中 !M! 张耗能为1以下有 谢幕曲 效果的攻击牌。 NL 谢幕曲 被 消耗 时，回复1点生命。"
+  },
+  "shadowverse:V": {
+    "NAME": "魔导四轮车·V",
+    "DESCRIPTION": "保留 。 NL 操纵 1。 NL 造成 !D! 点伤害 。 NL 从以下效果中随机发动两种： NL 「抽1张牌」 NL 「给予全体敌人4点伤害」 NL 「给予随机敌人 !M! 点伤害」 NL 「获得 !B! 点 格挡 」。",
+    "UPGRADE_DESCRIPTION":"保留 。 NL 操纵 1。 NL 造成 !D! 点伤害 。 NL 从以下效果中随机发动两种： NL 「抽2张牌」 NL 「给予全体敌人6点伤害」 NL 「给予随机敌人 !M! 点伤害」 NL 「获得 !B! 点 格挡 」。"
+  },
+  "shadowverse:DesperadosShot": {
+    "NAME": "亡命射击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果手中有 *进化点 ，则 消耗 其中一张并额外对随机敌人造成 !D! 点伤害，下回合开始时增加一张打出前耗能为0的 *魔导四轮车·V 到手中。 NL 消耗 。"
+  },
+  "shadowverse:Spector": {
+    "NAME": "幻影拍档·巴妮与巴隆",
+    "DESCRIPTION": " 激奏 0 \b增加1张 *亡命射击 到手中。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 谢幕曲 下回合开始时增加1张打出前耗能为的 *魔导四轮车·V 到手中。 NL 消耗 。"
   }
 }

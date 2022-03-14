@@ -1,42 +1,42 @@
 {
   "shadowverse:Witchcraft": {
-    "NAMES": ["巫师","镜华","凯露","安","镜华(万圣节)"],
-    "TEXT": ["使用各种法术，需要技巧的职业。 NL 使用技能牌时，可以使手中所持的有「魔力增幅」能力的卡牌的威力上升或耗能减少。 NL 使用技能牌使「魔力增幅」值得到积蓄的话，就可以使用强力的卡牌突破尖塔。"]
+    "NAMES": ["Runecraft","Kyoka","Karyl","Anne","Kyoka(Halloween)"],
+    "TEXT": ["Runecraft uses the power of spells against opponents. Their 'Spellboost' cards become cheaper and stronger everytime they use Skill card. NL Cast spells to Spellboost your hand, and then overwhelm your opponent."]
   },
   "shadowverse:Elf": {
-    "NAMES": ["精灵","亚里莎","可可萝"],
-    "TEXT": ["活用频繁加入手中的攻击牌「妖精」来战斗。 NL 例如于一回合使用2张以上的卡牌后，有些卡牌便可以发动额外效果。 NL 如在使用某些卡牌之前，如果先使用2张「妖精」就可以顺利发动额外能力。"]
+    "NAMES": ["Forestcraft","Arisa","Kokkoro"],
+    "TEXT": ["Forestcraft strategies use bands of fairies in battle. They have cards that fill your hand with lots of low-cost 'Fairy' cards. NL You can easily play multiple cards in one turn and activate other Forestcraft cards' abilities, giving you more power. "]
   },
   "shadowverse:Necromancer": {
-    "NAMES": ["死灵术士","露娜","宫子"],
-    "TEXT": ["特征是消费墓地发挥效果的「死灵术」。 NL 使用卡牌即可增加墓地。 NL 使用卡牌或是通过卡牌效果来进行准备就可以用强力的「死灵术」来取胜。"]
+    "NAMES": ["Shadowcraft","Luna","Miyako"],
+    "TEXT": ["The Shadowcraft class harnesses 'Shadows' to utilize the power of 'Necromancy'. Shadows are added whenever you play a card. NL Spend Shadows using Necromancy at the right time to control the battlefield."]
   },
   "shadowverse:Vampire": {
-    "NAMES": ["吸血鬼","伊莉雅","伊绪"],
+    "NAMES": ["Bloodcraft","Illya","Io"],
     "TEXT": [
-      "有很多利用对自己造成伤害为代价，来获得强大能力的卡牌。 NL 当自己的生命值小于最大生命值一半时，将会进入「复仇」状态，这个状态下部分卡牌将会被强化。 NL 巧妙的调整生命值，是吸血鬼攻略尖塔的要点。",
-      "复仇",
-      "当前生命值小于最大生命值的一半时进入本状态。在本状态下打出的某些牌的效果将得到增强。"
+      "The Bloodcraft class has cards that lower your defense in order to activate powerful effects. NL Paying attention to the remaining HP of both you and your enemies is the key to victory.",
+      "Vengeance",
+      "You will enter this state once you have no more than 1/2 of your HP left. Certain cards have extra effects with Vengeance."
     ]
   },
   "shadowverse:Nemesis": {
-    "NAMES": ["复仇者","奥琪丝","菈菈米娅"],
+    "NAMES": ["Portalcraft","Orchis","Ralmia"],
     "TEXT": [
-      "抽牌堆张数为偶数时会进入「共鸣」状态。 NL 拥有将“创造物”类型的强力卡牌加入抽牌堆或手中的能力。 NL 如何灵活运用这两种能力是复仇者的要点。",
-      "共鸣",
-      "抽牌堆张数为偶数时会进入本状态。在本状态下打出的某些牌的效果将得到增强。"
+      "Portalcraft shifts reality with potent strategies. They can use 'Resonance' ability and 'AF' followers to skillfully manipulate the battle. NL Try to activate multiple effects at once when you add AF to deck and hand.",
+      "Resonance",
+      "Resonance effects occur when your draw pile has an even number of remaining cards. Certain cards have extra effects with Resonance."
     ]
   },
   "shadowverse:Royal": {
-    "NAMES": ["皇家护卫","佩可莉姆","静流"],
+    "NAMES": ["Swordcraft","Pecorine","Shizuru"],
     "TEXT": [
-      "可以通过卡牌生成许多随从。 NL 例如召唤「骑士」、「铁甲骑士」等来进行作战。 NL 随从之间的配合，是皇家护卫攻略尖塔的要点。"
+      "Many loyal Followers stand at the ready of a Swordcraft leader. Summon Commanders and Officers to strengthen your army. NL Play them alongside each other to gain an advantage in battle."
     ]
   },
   "shadowverse:Bishop": {
-    "NAMES": ["主教","咲恋","优花梨","咲恋(夏日)"],
+    "NAMES": ["Havencraft","Saren","Yukari","Saren(Summer)"],
     "TEXT": [
-      "使用拥有“吟唱”效果的各种护符卡牌进行战斗。 NL 护符卡牌在倒计时结束后，会返还到弃牌堆中并触发强力效果。 NL 搭配加快倒计时等能力便可使倒计时提前结束。"
+      "The main strategy of Havencraft is to play Countdown 'Amulets' which will activate a few turns after they're played. NL You can overwhelm the opponent by using cards that sped up or activate the Amulets."
     ]
   }
 }

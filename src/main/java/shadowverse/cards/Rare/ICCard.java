@@ -105,7 +105,9 @@ import java.util.ArrayList;
      addToBot((AbstractGameAction)new SFXAction("IC1"));
      addToBot((AbstractGameAction)new WaitAction(0.8F));
      addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
-     addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new MagiTrainCard()));
+     AbstractCard c = (AbstractCard)new MagiTrainCard();
+     c.freeToPlayOnce = true;
+     addToBot((AbstractGameAction)new MakeTempCardInHandAction(c));
      if (this.costForTurn>0)
          addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new DeathPenalty()));
    }

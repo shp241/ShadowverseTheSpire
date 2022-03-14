@@ -8,7 +8,7 @@ public class RalmiaSkin extends AbstractSkin{
     public static final CharacterStrings charStrings = CardCrawlGame.languagePack.getCharacterString("shadowverse:Nemesis");
     private static final String SHOULDER = "img/character/Nemesis/shoulder2.png";
     private static final String SKIN_CORPSE = "img/character/Nemesis/corpse2.png";
-    private static final String SCML = "img/character/Nemesis/Ralmia/llmy.scml";
+    private static final String SCML = "img/character/Nemesis/Ralmia_cpy/Ralmia.scml";
     public static final String SELECTED = "Ralmia_Select";
     public static final String HURT_SOUND1 = "Ralmia_Hurt";
     public static final String HURT_SOUND2 = "Ralmia_Hurt2";
