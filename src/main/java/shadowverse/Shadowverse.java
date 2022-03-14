@@ -137,6 +137,7 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         loadSettings();
         BaseMod.addEvent(PinyaEvent.ID, PinyaEvent.class);
         BaseMod.addEvent(GemFortune.ID, GemFortune.class, TheCity.ID);
+        BaseMod.addEvent(Crossover.ID, Crossover.class);
         BaseMod.addEvent(NaturalMachine.ID, NaturalMachine.class, Exordium.ID);
         BaseMod.addEvent(SellCard.ID, SellCard.class, TheCity.ID);
         BaseMod.addMonster(Belphomet.ID, Belphomet::new);

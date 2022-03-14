@@ -2,9 +2,11 @@ package shadowverse.cards.Uncommon;
 
 import basemod.abstracts.CustomCard;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsInHandAction;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -31,65 +33,21 @@ public class Ilmisuna extends CustomCard {
     public static final String IMG_PATH_EV = "img/cards/Ilmisuna_Ev.png";
 
     public Ilmisuna() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
-        this.baseBlock = 8;
-        this.cardsToPreview = new EvolutionPoint();
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        this.baseDamage = 7;
+        this.baseBlock = 3;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(2);
             this.textureImg = IMG_PATH_EV;
             this.loadCardImage(IMG_PATH_EV);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }
-
-    public int rally() {
-        int rally = 0;
-
-        for (AbstractOrb o : AbstractDungeon.actionManager.orbsChanneledThisCombat) {
-            if (o instanceof Minion && !(o instanceof AmbushMinion)) {
-                rally++;
-            }
-        }
-
-        for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
-            if (c.type == CardType.ATTACK && !(c.hasTag(CardTags.STRIKE))) {
-                rally++;
-            }
-        }
-        return rally;
-    }
-
-    @Override
-    public void applyPowers() {
-        super.applyPowers();
-        if (!this.upgraded) {
-            this.rawDescription = cardStrings.DESCRIPTION;
-            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + rally() + cardStrings.EXTENDED_DESCRIPTION[1];
-            this.initializeDescription();
-        }
-    }
-
-    @Override
-    public void onMoveToDiscard() {
-        if (!this.upgraded) {
-            this.rawDescription = cardStrings.DESCRIPTION;
-            this.initializeDescription();
-        }
-    }
-
-    @Override
-    public void triggerWhenDrawn() {
-        if (rally() >= 11) {
-            addToBot(new MakeTempCardInHandAction(new EvolutionPoint()));
-        }
-    }
-
 
     public void degrade() {
         if (this.upgraded) {
@@ -117,7 +75,8 @@ public class Ilmisuna extends CustomCard {
         } else {
             addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         }
-        if (this.upgraded) {
+        if (!this.upgraded) {
+            addToBot(new GainBlockAction(p, p, this.block));
             addToBot(new SelectCardsInHandAction(1, TEXT[0], false, false, card -> true, abstractCards -> {
                 for (AbstractCard c : abstractCards) {
                     addToBot(new ExhaustSpecificCardAction(c, p.hand));
@@ -125,8 +84,12 @@ public class Ilmisuna extends CustomCard {
                 }
             }));
         }
-        addToBot(new GainBlockAction(p, p, this.block));
         if (this.upgraded) {
+            for (int i = 0; i < p.orbs.size(); i++) {
+                if (p.orbs.get(i) instanceof Minion) {
+                    addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+                }
+            }
             this.degrade();
             if (p.hasRelic(KagemitsuSword.ID)) {
                 this.upgrade();

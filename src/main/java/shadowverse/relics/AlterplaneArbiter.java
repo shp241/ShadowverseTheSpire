@@ -46,7 +46,7 @@ public class AlterplaneArbiter extends CustomRelic {
     };
 
     public AlterplaneArbiter() {
-        super(ID, ImageMaster.loadImage(IMG), RelicTier.UNCOMMON, LandingSound.SOLID);
+        super(ID, ImageMaster.loadImage(IMG), RelicTier.SPECIAL, LandingSound.SOLID);
     }
 
     @Override

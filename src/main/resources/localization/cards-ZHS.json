@@ -3312,12 +3312,8 @@
   },
   "shadowverse:Ilmisuna": {
     "NAME": "动乱商人·伊尔米斯娜",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 协作 10：抽到时将一张 *进化点 置入手牌。",
-    "UPGRADE_DESCRIPTION": "打出后解除升级 。 NL 获得 !B! 点 格挡 。 NL 选择1张手牌，将其消耗，抽1张牌。",
-    "EXTENDED_DESCRIPTION": [
-      "（协作数：",
-      ")"
-    ]
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 选择1张手牌，将其消耗，抽1张牌。",
+    "UPGRADE_DESCRIPTION": "打出后解除升级 。 NL 每有一个随从，造成 !D! 点伤害。"
   },
   "shadowverse:MasterDealer": {
     "NAME": "首席商贩·阿尔亚斯卡",
