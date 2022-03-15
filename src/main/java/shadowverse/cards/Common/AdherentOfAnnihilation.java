@@ -34,7 +34,7 @@ import shadowverse.powers.AdherentOfDispairPower;
    public void upgrade() {
      if (!this.upgraded) {
        upgradeName();
-       upgradeMagicNumber(1);
+       upgradeBaseCost(0);
      } 
    }
  

@@ -1,9 +1,9 @@
 {
   "shadowverse:FriendOfTruth": {
-    "NAME": "诚实之友",
-    "FLAVOR": "暴露汝之本质、本能、及真实吧！",
+    "NAME": "Honest Cohort",
+    "FLAVOR": "Expose yourself to the deepest truths—the qualities, faculties, and reality of this plane.",
     "DESCRIPTIONS": [
-      "战斗开始时，手牌、抽牌堆全部发动 #b1 次 魔力增幅 ，在你的手牌中增加 #b1 张 #y小刀 。"
+      "At the start of each combat, spellboost all the cards in your hand and draw pile #b1 time. Put 1 #yshivs into your hand."
     ]
   },
   "shadowverse:Eleanor": {
@@ -14,25 +14,25 @@
     ]
   },
   "shadowverse:EnchantedLibrary": {
-    "NAME": "魔法图书馆",
-    "FLAVOR": "图书馆内请保持肃静，否则书本的心情会变坏。──魔法图书馆公告",
+    "NAME": "Enchanted Library",
+    "FLAVOR": "Quiet, please. Noise upsets the books. —A poster in the Enchanted Library ",
     "DESCRIPTIONS": [
-      "前 #b2 回合开始时，从抽牌堆中选择 #b1 张 #y技能牌 加入手中。"
+      "At the start of the first #b2 turn, put #b1 #yskill into your hand from draw pile."
     ]
   },
   "shadowverse:EarthEssenceRelic": {
-    "NAME": "土之魔片",
-    "FLAVOR": "从实验出来的知识，会将魔法引向新高度。",
+    "NAME": "Earth Essence",
+    "FLAVOR": "I daresay the fruits of my research should take my magical abilities to still greater heights! ",
     "DESCRIPTIONS": [
-      "战斗开始时，获得 #b1 层 土之印记 。"
+      "At the start of each combat, gain #b1 Earth_Essence."
     ]
   },
   "shadowverse:Mysteria": {
-    "NAME": "魔法始祖·马纳历亚",
-    "FLAVOR": "无论何时，魔法将与你们同在──",
+    "NAME": "Mysteria, Magic Founder",
+    "FLAVOR": "It's always around us, and always with you.",
     "DESCRIPTIONS": [
-      "战斗开始时，在你的抽牌堆中增加 #b1 张 #y魔法始祖·马纳历亚 ，获得 #b",
-      " 点 力量 。"
+      "At the start of each combat, add #b1 #yMysteria, *Magic Founder into your draw pile and gain #b",
+      " Strength ."
     ]
   },
   "shadowverse:Genius": {
@@ -50,60 +50,60 @@
     ]
   },
   "shadowverse:Offensive": {
-    "NAME": "先手印记",
-    "FLAVOR": "您为先手，不更换手牌。",
+    "NAME": "Token of 1st",
+    "FLAVOR": "I go first, no need to redraw.",
     "DESCRIPTIONS": [
-      "首回合的第一张 #y技能牌 将被打出 #b2 次。"
+      "The first #ySkill Card you play in the first turn will be played #btwice ."
     ]
   },
   "shadowverse:NeutralBook": {
-    "NAME": "中立手册",
+    "NAME": "Neutral Book",
     "FLAVOR": " ",
     "DESCRIPTIONS": [
-      "战斗结束后可从3张随机中立牌中选择一张加入卡组。每层仅限3次。"
+      "Active 3 times for an Act, Enemies drop an additional neutral card reward."
     ]
   },
   "shadowverse:BlackPinya": {
-    "NAME": "黑皮喵",
-    "FLAVOR": "皮喵！",
+    "NAME": "The Black Pinya",
+    "FLAVOR": "Pinya!",
     "DESCRIPTIONS": [
-      "你觉得自己有开腔的欲望。",
-      "@皮喵皮皮！@"
+      "You feel more talkative.",
+      "@Pinyapipi！@"
     ]
   },
   "shadowverse:GoldPinya": {
-    "NAME": "金皮喵",
-    "FLAVOR": "皮喵皮喵！",
+    "NAME": "The Golden Pinya",
+    "FLAVOR": "Pinya~Pinya！",
     "DESCRIPTIONS": [
-      "回合开始时，随机从 #y顺从的骏马 、 #y机动二轮车 、 #y魔导装甲车 中生成一张加入手中。"
+      "At the start of turn,randomly put 1 #yDutiful #ySteed, #yBullet #yBike, or #yArcane #yPersonnel #yCarrier into your hand."
     ]
   },
   "shadowverse:KMR1": {
-    "NAME": "平衡性调整1",
-    "FLAVOR": "为了增加环境的流动性，我们决定施行平衡性调整。",
+    "NAME": "Balance Changes1",
+    "FLAVOR": "To achieve better game balance,we're making changes to enemies.",
     "DESCRIPTIONS": [
-      "战斗开始时，所有敌人获得 #b8 点 格挡 。"
+      "At the start of each combat, all enemies gain #b8 block ."
     ]
   },
   "shadowverse:KMR2": {
-    "NAME": "平衡性调整2",
-    "FLAVOR": "为了增加环境的流动性，我们决定施行平衡性调整。",
+    "NAME": "Balance Changes2",
+    "FLAVOR": "To achieve better game balance,we're making changes to enemies.",
     "DESCRIPTIONS": [
-      "战斗开始时，所有敌人获得 #b1 点 力量 。"
+      "At the start of each combat, all enemies gain #b1 strength ."
     ]
   },
   "shadowverse:Offensive2": {
-    "NAME": "先手印记",
-    "FLAVOR": "您为先手，不更换手牌。",
+    "NAME": "Token of 1st",
+    "FLAVOR": "I go first, no need to redraw.",
     "DESCRIPTIONS": [
-      "回合内每使用 #b5 张牌，对全体敌人造成 #b2 点伤害。"
+      "Everytime you use #b5 cards in the same turn, deal #b2 damage to all enemies."
     ]
   },
   "shadowverse:SixMark": {
-    "NAME": "六连星刻印",
-    "FLAVOR": "无须畏惧，生命绝不会灭绝，只要熬过那永恒即可。",
+    "NAME": "Mark of the Six",
+    "FLAVOR": "Fear not ruin, one must merely endure eternity.",
     "DESCRIPTIONS": [
-      "回合开始时，给予全体敌人 易伤 、 虚弱 、 #y肋脖 、 #y本回合力量-1 、 #y以手拒之 、 中毒 中的随机一种未给予过的负面效果。"
+      "At the start of turn, randomly apply 1 Vulnerable, Weak,  #yChoke , #y-1Strength #ythis #turn, #yTalk #yto #ythe #yHand,  Poison to all enemies. Each of these debuff can be applied only once."
     ]
   },
   "shadowverse:ArisaBOSS": {
@@ -121,10 +121,10 @@
     ]
   },
   "shadowverse:LymagaWeapon": {
-    "NAME": "咎满返归",
-    "FLAVOR": "被至高大剑［咎满返归」所斩裂之人，其身躯将被荆棘吞噬，归还大地。",
+    "NAME": "Judgment Rising",
+    "FLAVOR": "Those slashed by her supreme blade, Judgment Rising, will be consumed by thorns and returned to the earth.",
     "DESCRIPTIONS": [
-      "回合开始时，增加1张耗能为0的 #y密林守卫者 到手中。"
+      "At the start of turn, put a 0 cost #yGreenwood #yGuardian into your hand."
     ]
   },
   "shadowverse:GlassOfIC": {
@@ -149,10 +149,10 @@
     ]
   },
   "shadowverse:KuonWeapon": {
-    "NAME": "密罗略决",
-    "FLAVOR": "吾乃五行，杂鱼退散！",
+    "NAME": "Mitsura Ryakketsu",
+    "FLAVOR": "Calamity approaches.",
     "DESCRIPTIONS": [
-      "战斗开始时，增加1张 #y式神使役之术 到手中。"
+      "At the start of combat, add 1 #yShikigami #ySummons into your hand."
     ]
   },
   "shadowverse:GeassRelic": {
@@ -163,10 +163,10 @@
     ]
   },
   "shadowverse:Offensive3": {
-    "NAME": "先手印记",
-    "FLAVOR": "您为先手，不更换手牌。",
+    "NAME": "Token of 1st",
+    "FLAVOR": "I go first, no need to redraw.",
     "DESCRIPTIONS": [
-      "回合开始时， #y死灵术3 \b将一张 #y僵尸 加入手中。"
+      "At the start of your turn, #yNecromancy 3 : \bPut 1 #yZombie into your hand."
     ]
   },
   "shadowverse:BurialGround": {
@@ -212,10 +212,10 @@
     ]
   },
   "shadowverse:Offensive4": {
-    "NAME": "先手印记",
-    "FLAVOR": "您为先手，不更换手牌。",
+    "NAME": "Token of 1st",
+    "FLAVOR": "I go first, no need to redraw.",
     "DESCRIPTIONS": [
-      "战斗结束， #y复仇 则回复 #b7 点生命，未 #y复仇 则回复 #b4 点生命。"
+      "When a combat is over, #yVengeance : Heal #b7 HP. Othervise, heal #b4 HP."
     ]
   },
   "shadowverse:IriaBOSS": {
@@ -268,10 +268,10 @@
     ]
   },
   "shadowverse:Offensive5": {
-    "NAME": "先手印记",
-    "FLAVOR": "您为先手，不更换手牌。",
+    "NAME": "Token of 1st",
+    "FLAVOR": "I go first, no need to redraw.",
     "DESCRIPTIONS": [
-      "战斗开始时，如果你的卡组数量为偶数，额外抽 #b1 张牌。如果为奇数，增加 #b1 层计数。当计数达到 #b8 时，战斗结束时回复 #b8 点生命，获得 #b8 金币。"
+      "At the start of combat, draw #b1 card if number of cards in your deck is even. Othervise, increase count by #b1 . heal #b8 HP and gain #b8 Gold when count reaches #b8 ."
     ]
   },
   "shadowverse:NemesisBOSS": {
@@ -317,10 +317,10 @@
     ]
   },
   "shadowverse:Offensive6": {
-    "NAME": "先手印记",
-    "FLAVOR": "您为先手，不更换手牌。",
+    "NAME": "Token of 1st",
+    "FLAVOR": "I go first, no need to redraw.",
     "DESCRIPTIONS": [
-      "每场战斗限 #b3 次，右击时增加 #b1 张 #y进化点 到手中。"
+      "Can be activated #b3 times per combat. Right click to add #b1 #yEvolution #yPoint into your hand."
     ]
   },
   "shadowverse:OliviasBlessing": {
@@ -403,10 +403,10 @@
     ]
   },
   "shadowverse:Offensive7": {
-    "NAME": "先手印记",
-    "FLAVOR": "您为先手，不更换手牌。",
+    "NAME": "Token of 1st",
+    "FLAVOR": "I go first, no need to redraw.",
     "DESCRIPTIONS": [
-      "每当抽到 #y诅咒牌 时，如果可以放置护符，将这张诅咒牌视为倒计时 #b3 的护符放置到护符栏位。如果这是本场战斗第一次，抽 #b1 张牌。倒计时结束后诅咒牌会从本场战斗中移除。"
+      "Everytime you draw a #yCurse into your hand, move it to the Amulet Zone as a #yCountdown #b3 #yDivine Amulet. If it's the first time in this combat, draw #b1 card."
     ]
   },
   "shadowverse:Savior": {

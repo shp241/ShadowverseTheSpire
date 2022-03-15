@@ -243,106 +243,106 @@
   "shadowverse:ICPower": {
     "NAME": "Curse Of Titan",
     "DESCRIPTIONS": [
-      "Each card played will increase this damage by 2. Deal #b",
+      "Each card played will increase this damage by 1. Deal #b",
       " damage to you."
     ]
   },
   "shadowverse:IzudiaPower": {
-    "NAME": "不弑的圆阵",
+    "NAME": "Ward Of Unkilling",
     "DESCRIPTIONS": [
-      "#b",
-      " 回合内，受到的 #b6 点以上的伤害转变为5。"
+      "Within #b",
+      " turn, You can't take more than #b5 damage at a time."
     ]
   },
   "shadowverse:HeroicResolve": {
-    "NAME": "英雄的觉悟",
+    "NAME": "Heroic Resolve",
     "DESCRIPTIONS": [
-      "回合结束时，若果本回合已使用的卡牌数为4以上，则下回合额外抽 #b",
-      " 张牌，获得 #b",
-      " 点 #y力量 和 #y 敏捷 。如果为8以上，则由原本的 #b",
-      " 张变为 #b",
-      " 张，原本的 #b",
-      " 点变为 #b",
-      " 点。"
+      "At the end of your turn, if at least 4 cards were played this turn,next turn,draw #b",
+      " more, gain #b",
+      " #yStrength and #yDexterity . If at least 8, change #b",
+      " more cards to #b",
+      " more cards, change gain #b",
+      " #yStrength and #yDexterity to gain #b",
+      " #yStrength and #yDexterity ."
     ]
   },
   "shadowverse:WindFallFay": {
-    "NAME": "扬风的妖精",
+    "NAME": "WindFall Fay",
     "DESCRIPTIONS": [
-      "打出卡牌时，如果为本回合的第5张以上，则抽#b",
-      " 张牌。回合开始时失去本能力。"
+      "Whenever you play a card, if it's the 5th card or later played this turn, draw #b",
+      " card(s). Lose this power at the start of your turn."
     ]
   },
   "shadowverse:AriaPower": {
-    "NAME": "瘴气妖精公主·阿丽雅",
+    "NAME": "Aria, Miasma Fairy",
     "DESCRIPTIONS": [
-      "#y妖精萤火 或 #y妖精 会给予 2层 #y中毒 。"
+      "#yFariy #yWhisp and #yFariy will apply 2 #yPoison ."
     ]
   },
   "shadowverse:LoxisPower": {
-    "NAME": "套索的拓荒者·洛奇萨斯",
+    "NAME": "Loxis, Homestead Pioneer",
     "DESCRIPTIONS": [
-      "每当使用 #y能力牌 时获得 [E] （每回合最多3次），并从本回合尚未因此加入手中的 #y顺从的骏马 、 #y机动二轮车 、 #y魔导装甲车 中随机将一张加入手中。"
+      "Whenever you play a Power, Gain [E] (up to 3 times per turn), randomly put a #yDutiful #ySteed ,#yBullet #yBike ,or #yArcane #yPersonnel #yCarrier . Each of these Powers can be put only once per turn with this effect."
     ]
   },
   "shadowverse:NextTurnFairy": {
-    "NAME": "谢幕曲：妖精",
+    "NAME": "Last Words: Fairy",
     "DESCRIPTIONS": [
-      "在你的回合开始时，将 #b",
-      " 张 #y妖精 加入手中 。"
+      "At the start of your turn, put #b",
+      " #yFairy into your hand."
     ]
   },
   "shadowverse:VarmintHunterPower": {
-    "NAME": "害兽猎人",
+    "NAME": "Varmint Hunter",
     "DESCRIPTIONS": [
-      "每当使用 #y能力牌 ，对随机敌人造成 #b",
-      " 点伤害。"
+      "Whenever your play a Power, deal #b",
+      " damage to a random enemy."
     ]
   },
   "shadowverse:ForestFairyPower": {
-    "NAME": "森林妖精",
+    "NAME": "Fairy Slugger",
     "DESCRIPTIONS": [
-      "每当使用 #y妖精 或 #y妖精萤火 ，获得 #b",
-      " 点格挡。"
+      "Whenever you play a #yFariy or a #yFariy #yWhisp, gain #b",
+      " Block ."
     ]
   },
   "shadowverse:GenshinPower": {
-    "NAME": "原始的恶神",
+    "NAME": "Primordial Colossus",
     "DESCRIPTIONS": [
-      "一回合仅限一次，打出牌时，本回合已使用卡牌数+ #b2 ，获得 [E] 。"
+      "Once on each of your turns, when you play a card, Gain [E] and add #b2 to the number of cards played this turn."
     ]
   },
   "shadowverse:GreenbrierElfPower": {
-    "NAME": "植蔓精灵",
+    "NAME": "Greenbrier Elf",
     "DESCRIPTIONS": [
-      "每当使用 #y密林守卫者 ，对随机敌人造成 #b",
-      " 点伤害。"
+      "Whenever you play a #yGreenwood #yGuardian , deal",
+      " damage to a random enemy."
     ]
   },
   "shadowverse:AmatazPower": {
-    "NAME": "妖精剑师·阿玛兹",
+    "NAME": "Amataz, Fairy Blader",
     "DESCRIPTIONS": [
-      "#y妖精 造成的伤害提高 #b",
-      " 点。"
+      "Increase the damage of #yFairy by #b",
+      " ."
     ]
   },
   "shadowverse:PixieParadisePower": {
-    "NAME": "妖精的乐园",
+    "NAME": "Pixie Paradise",
     "DESCRIPTIONS": [
-      "在你的回合开始时，将 #b",
-      " 张 #y妖精 加入手中 。"
+      "At the start of your turn, add #b",
+      " #yFariy into your hand."
     ]
   },
   "shadowverse:PameraPower": {
-    "NAME": "森之巫女·帕梅拉",
+    "NAME": "Forest Oracle Pascale",
     "DESCRIPTIONS": [
-      "如果本回合已使用的卡牌数为4以上，回合结束时翻倍 #y力量 和 #y格挡 。"
+      "If at least 4 cards were played this turn, at the end of your turn, double your #yBlock and #yStrength ."
     ]
   },
   "shadowverse:FilPower": {
-    "NAME": "绚丽的纺织者·歌露瓦",
+    "NAME": "Korwa, Ravishing Designer",
     "DESCRIPTIONS": [
-      "回合开始时增加1张 #y丝线 到手中。如果上回合受到过8点以上的伤害，则这个数量+1。"
+      "At the start of your turn, add a #yFil into your hand. If you have taken at least 8 damage, +1 #yFil ."
     ]
   },
   "shadowverse:TweyenPower": {
@@ -360,92 +360,92 @@
     ]
   },
   "shadowverse:NoDamage": {
-    "NAME": "宣判之词：禁止伤害",
+    "NAME": "Words of Judgment: No Damage",
     "DESCRIPTIONS": [
-      "无法造成伤害。"
+      "You cannot deal any damage."
     ]
   },
   "shadowverse:NoPower": {
-    "NAME": "宣判之词：禁止能力",
+    "NAME": "Words of Judgment: No Power",
     "DESCRIPTIONS": [
-      "无法打出 #y能力牌 。"
+      "You cannot play Power card."
     ]
   },
   "shadowverse:ManaPower": {
-    "NAME": "魔力",
+    "NAME": "Mana Power",
     "DESCRIPTIONS": [
-      "你可以依靠 #g魔力 来抵御文森特的言语。回合内打出第 #b12 张牌时提高 #b1 层魔力，当你有 #b1 层以上的魔力时，抵御一次文森特的消除能力。"
+      "You can use #gMana #gPower against Vincent's Words. Whenever you play #b12 cards in your turn, gain #b1 #gMana #gPower . If you have at least #b1 #gMana #gPower , Negates the next Vincent's Words."
     ]
   },
   "shadowverse:JudgmentWordPower": {
-    "NAME": "宣判之词",
+    "NAME": "Words of Judgment",
     "DESCRIPTIONS": [
-      "回合开始时，轮流获得 #y无法造成伤害 、 #y无法打出能力牌 、 #y邪咒 （一回合） 、 #y无法获得格挡 。(回合结束时有剩余能量获得 #b1 层 #y人工制品 )"
+      "At the start of your turn, gain #yNo #yDamage , #yNo #yPower , #yHexed (1 turn) , #yNo #yBlock in order.(Gain #b1 #yArtifact if you have Energy left by the end of your turn.)"
     ]
   },
   "shadowverse:RapidFirePower": {
-    "NAME": "集中火力",
+    "NAME": "Rapid Fire",
     "DESCRIPTIONS": [
-      "每打出 #b3 张牌，受到 #b",
-      " 点伤害。"
+      "Whenever you play #b3 cards, take #b",
+      " damage."
     ]
   },
   "shadowverse:FreezePower": {
-    "NAME": "冻结",
+    "NAME": "Freeze",
     "DESCRIPTIONS": [
-      "你抽到的牌耗能+1。"
+      "+1 cost to the card you drawn."
     ]
   },
   "shadowverse:AlectorPower": {
-    "NAME": "破坏杖·库多拉贾",
+    "NAME": "Particle Mace Kotaehge",
     "DESCRIPTIONS": [
-      "回合结束时，全体敌人获得 #b",
-      " 点 #y力量 。"
+      "By the end of turn, all enemies gain #b",
+      " #yStrength ."
     ]
   },
   "shadowverse:KMFPower": {
-    "NAME": "绝对守护领域",
+    "NAME": "Absolute Defense Field",
     "DESCRIPTIONS": [
-      "受到的 #b",
-      " 点以下的伤害将会被无效化。当受到攻击伤害时，当回合将会失效。"
+      "Damage under #b",
+      " will be ignored. When taking damage, lose this effect this turn."
     ]
   },
   "shadowverse:CheckmatePower": {
-    "NAME": "奇迹的条件",
+    "NAME": "Checkmate",
     "DESCRIPTIONS": [
-      "如果打出 #y稀有牌 则会立即受到 #b",
-      " 点伤害并失去此能力。"
+      "If you play #yRare cards, take #b",
+      " damage and lose this effect."
     ]
   },
   "shadowverse:GeassPower": {
     "NAME": "Geass",
     "DESCRIPTIONS": [
-      "回合结束时，将1张 #yGeass 加入抽牌堆。"
+      "By the end of turn, put 1 #yGeass into draw pile."
     ]
   },
   "shadowverse:CurseOfGeass": {
-    "NAME": "Geass的咒缚",
+    "NAME": "Curse of Geass",
     "DESCRIPTIONS": [
-      "受到致死伤害时，移除所有负面效果，回复1点生命值并强制结束回合，获得 #b5 点 #y力量 和 #y敏捷 ， #b25 点 #y格挡 。"
+      "When you would die, remove all debuffs, heal 1 HP and end the turn, gain #b5 #yStrength and #yDexterity , gain #b25 #yBlock ."
     ]
   },
   "shadowverse:CommanderPower": {
-    "NAME": "战术指挥",
+    "NAME": "Tactical Command",
     "DESCRIPTIONS": [
-      "回合结束时轮流执行以下行动：1.全体敌人获得 #b1 层 #y人工制品 、 2.全体敌人获得 #b1 点 #y力量 、 3.全体敌人获得 #b3 点 #y多层护甲 、4.给予 #b2 层 #y虚弱 。"
+      "By the end of turn, activate the following effects in order: 1.All enemies gain #b1 #yArtifact 2.All enemies gain #b1 #yStrength 3.All enemies gain #b3 #yPlated #yArmor 4.Apply #b2 #yWeak ."
     ]
   },
   "shadowverse:Cemetery": {
-    "NAME": "墓地",
+    "NAME": "Shadows",
     "DESCRIPTIONS": [
-      "使用卡牌以及一些特殊效果会增加。可以消耗墓地来发动 #y死灵术 。"
+      "Increase when playing cards or triggering specific effects. Spend #yShadows to trigger #yNecromancy effects."
     ]
   },
   "shadowverse:PathPower": {
-    "NAME": "冥府之路",
+    "NAME": "Path to Purgatory",
     "DESCRIPTIONS": [
-      "回合结束时，如果 #y墓地 数量为 #b30 以上，则对全体敌人造成 #b",
-      " 点伤害。"
+      "By the end of your turn, if you have at least #b30 #yShadows , deal #b",
+      " damage to all enemies."
     ]
   },
   "shadowverse:MinthePower": {
@@ -545,16 +545,16 @@
     ]
   },
   "shadowverse:ArrowPower": {
-    "NAME": "森林守卫之弓",
+    "NAME": "Forest Guardian's Bow",
     "DESCRIPTIONS": [
-      "回合结束时获得 #b1 点 #y力量 。回合开始时这个能力减少 #b1 层，因这个效果减少至0时抽 #b1 张牌。"
+      "At the end of your turn, gain 1 #yStrength . Countdown by #b1 every turn. #yLast #yWords: Draw #b1 card."
     ]
   },
   "shadowverse:ArisaPower": {
-    "NAME": "深绿弓手·亚里莎",
+    "NAME": "Arisa, Evergreen Arrow",
     "DESCRIPTIONS": [
-      "每当获得 #y力量 或 #y敏捷 或 #y格挡 时，对全体敌人造成 #b",
-      " 点伤害。"
+      "Whenever you gain #yStrength , #yDexterity or #yBlock , deal #b",
+      " damage to ALL enemies."
     ]
   },
   "shadowverse:DollPower": {
@@ -566,15 +566,15 @@
     ]
   },
   "shadowverse:WrathPower": {
-    "NAME": "狂乱",
+    "NAME": "Wrath",
     "DESCRIPTIONS": [
-      "因自己受到的伤害为7次以上时获得本效果。拥有本效果时打出的某些牌将被增强。"
+      "#yWarth is active when you has taken damage during your turn at least 7 times in a combat. Certain cards have extra effects with #yWarth."
     ]
   },
   "shadowverse:AvaricePower": {
-    "NAME": "渴望",
+    "NAME": "Avarice",
     "DESCRIPTIONS": [
-      "每回合抽取第6张以上的牌时获得本效果。拥有本效果时打出的某些牌将被增强。回合结束时失去本效果。"
+      "#yAvarice is active when at least 6 cards have been drawn from your draw pile in a turn. Certain cards have extra effects with #yAvarice. Lose this effect by the end of this turn."
     ]
   },
   "shadowverse:EpitaphPower": {
@@ -623,9 +623,9 @@
     ]
   },
   "shadowverse:DrainPower": {
-    "NAME": "虹吸",
+    "NAME": "Drain",
     "DESCRIPTIONS": [
-      "回复下一次造成伤害的生命值。下回合开始时失去这个效果。"
+      "Heal HP equal to the damage to be dealt next time.(Lose this effect by the start of next turn)"
     ]
   },
   "shadowverse:AzazelPower": {
@@ -768,32 +768,32 @@
     ]
   },
   "shadowverse:NeoAlectorPower": {
-    "NAME": "再诞的灾乱·阿莱克托",
+    "NAME": "Alector, Dissonance Lives",
     "DESCRIPTIONS": [
-      "下回合开始时，额外抽 #b",
-      " 张牌，获得 #b",
-      " 点 力量 和 敏捷 。"
+      "Draw #b",
+      " more cards next turn, gain #b",
+      " #yStrength and #yDexterity ."
     ]
   },
   "shadowverse:NeoMegaeraPower": {
-    "NAME": "再燃的愤怒·墨盖拉",
+    "NAME": "Megaera, Indignance Lives",
     "DESCRIPTIONS": [
-      "下回合开始时，回复 #b6 点生命，升级所有手牌，增加 #b1 张 #y奇迹 到手中，对全体敌人造成 #b",
-      " 点伤害"
+      "At the start of next turn, heal #b6 HP, upgrade all cards in hand and put #b1 #yMiracle into your hand, deal #b",
+      " damage to all enemies."
     ]
   },
   "shadowverse:ProphecyOfDoomPower": {
-    "NAME": "覆灭预言",
+    "NAME": "Prophecy of Doom",
     "DESCRIPTIONS": [
-      "行动结束时，失去 #b",
-      " 点生命。"
+      "Lose #b",
+      " HP by the end of the turn."
     ]
   },
   "shadowverse:FaustPower2": {
     "NAME": "欲望观察者·浮士德",
     "DESCRIPTIONS": [
-      "回合结束时，如果 #y土之印记 为 #b2 以下，获得 #b2 层 #y土之印记。否则 #y土之秘术 #b2 对全体敌人造成 #b",
-      " 点伤害。"
+      "By the end of your turn, if #yEarth #yEssence is less than #b2, gain #b2 #yEarth #yEssence. NL Othervise #yEarth #yRite #b2 : Deal #b",
+      " damage to all enemies."
     ]
   },
   "shadowverse:MonoPower": {
@@ -900,9 +900,9 @@
     ]
   },
   "shadowverse:DrawLoseHealthPower": {
-    "NAME": "肃清的诅咒",
+    "NAME": "Curse of Purgation",
     "DESCRIPTIONS": [
-      "抽牌时失去 #b2 点生命。"
+      "Lose #b2 HP when you draw cards."
     ]
   },
   "shadowverse:InesPower": {
@@ -913,9 +913,9 @@
     ]
   },
   "shadowverse:DeathPenaltyPower": {
-    "NAME": "死之索偿",
+    "NAME": "Dead to Rights",
     "DESCRIPTIONS": [
-      "死亡时获得 #b10 金币。"
+      "Gain #b10 Gold on death."
     ]
   },
   "shadowverse:ModestPower": {
@@ -941,10 +941,10 @@
     ]
   },
   "shadowverse:DisableEffectDamagePower": {
-    "NAME": "能力伤害无效",
+    "NAME": "Power Damage Immune",
     "DESCRIPTIONS": [
-      "#b",
-      " 回合内因能力受到的伤害无效。"
+      "Reduce damage from Power to 0 in #b",
+      " turn(s)."
     ]
   },
   "shadowverse:NightVampirePower": {
@@ -961,56 +961,56 @@
     ]
   },
   "shadowverse:AbsoluteOnePower": {
-    "NAME": "绝对之一",
+    "NAME": "Absolute One",
     "DESCRIPTIONS": [
-      "因能力受到的伤害变为 #b0 。回合开始时将 #y1 张 #y绝对制裁 加入手中。"
+      "Immune to Power damage. Put a #yAbsolute #yJudgment into your hand at the start of your turn."
     ]
   },
   "shadowverse:DeathNotePower": {
-    "NAME": "亡者之王的记事本",
+    "NAME": "Death's Ledger",
     "DESCRIPTIONS": [
-      "接下来的 #b",
-      " 个回合内，随机打出一张抽牌堆中耗能最高且不大于你的能量上限的攻击牌。"
+      "Randomly play a highest-cost Attack card with cost less than your Max Energy in your draw pile in #b",
+      " turn(s)."
     ]
   },
   "shadowverse:AncientAmplifierPower": {
-    "NAME": "古代增幅器",
+    "NAME": "Ancient Amplifier",
     "DESCRIPTIONS": [
-      "回合结束时，增加 #b",
-      " 张随机牌到你的抽牌堆中。这个效果回合开始时减少1层。"
+      "By the end of turn, randomly put",
+      " cards into draw pile, -1 card every turn."
     ]
   },
   "shadowverse:BrandOfMorningStarPower": {
-    "NAME": "灾祸刻印",
+    "NAME": "Brand of the Morning Star",
     "DESCRIPTIONS": [
-      "一回合一次，消耗攻击牌时增加 #b1 张 #y暗影士兵 到手中。 如果消耗堆中的攻击牌数量为 #b15 以上，改为增加 #b1 张 #y暗影指挥官 到手中。"
+      "Once per turn, whenever you #yExhaust #yAttack card, put 1 #yShadow #ySoldier into your hand. NL If you have at least 15 #yAttack cards in your Exhaust pilt, put 1 #yShadow #yCommander into your hand instead."
     ]
   },
   "shadowverse:LionSanctuaryPower": {
-    "NAME": "狮子的圣域",
+    "NAME": "Holy Lion Sanctum",
     "DESCRIPTIONS": [
-      "不会受到负面效果影响。受到攻击时，对攻击者造成 #b",
-      " 点伤害。"
+      "Immune to debuffs. When being attacked, deal #b",
+      " damage back."
     ]
   },
   "shadowverse:SevensForceSorcererPower": {
-    "NAME": "七彩之力召唤师",
+    "NAME": "Seven's Force Sorcerer",
     "DESCRIPTIONS": [
-      "打出 #b",
-      " 张技能牌后，消灭所有敌人并失去此效果。"
+      "Whenever you play #b",
+      " #ySkill cards in 1 turn, kill all enemies and lose this effect."
     ]
   },
   "shadowverse:ShiningValkyriePower": {
-    "NAME": "闪耀女武神",
+    "NAME": "Shining Valkyrie",
     "DESCRIPTIONS": [
-      "每回合开始增加 #b1 张 #y妖精 到手中。每当打出 #y妖精 时，获得 #b2 点 力量 和 #b1 点 敏捷 。"
+      "Put a #yFairy into your hand at the start of your turn. NL Whenever you play a #yFairy , gain #b2 #yStrength and #b1 #yDexterity ."
     ]
   },
   "shadowverse:AbyssDoomLordPower": {
-    "NAME": "深渊毁灭领主",
+    "NAME": "Abyss Doom Lord",
     "DESCRIPTIONS": [
-      " #b",
-      " 回合内，你受到的伤害变为0。"
+      " Change incoming damage to 0 for #b",
+      " turn(s)."
     ]
   },
   "shadowverse:DiscipleOfUsurpationPower": {
@@ -1078,7 +1078,7 @@
   "shadowverse:GloriousCorePower": {
     "NAME": "荣耀之核",
     "DESCRIPTIONS": [
-      "使用 *进化点 时，使所有随从获得+ #b",
+      "使用 #y进化点 时，使所有随从获得+ #b",
       "/+ #b",
       "。"
     ]
@@ -1263,10 +1263,10 @@
     ]
   },
   "shadowverse:DimensionShiftPower": {
-    "NAME": "次元超越",
+    "NAME": "Dimension Shift",
     "DESCRIPTIONS": [
-      "追加 #b",
-      " 个额外回合。"
+      "Add #b",
+      " extra turn(s)."
     ]
   },
   "shadowverse:ImperialSaintPower": {
@@ -1276,10 +1276,10 @@
     ]
   },
   "shadowverse:ShadowCorrosionPower": {
-    "NAME": "影之侵蚀",
+    "NAME": "Shadow's Corrosion",
     "DESCRIPTIONS": [
-      "回合开始时失去 #b",
-      " 点生命。每打出 #b1 张 #y那塔拉的大树 时本伤害增加 #b2 点。"
+      "At the start of turn, lose #b",
+      " HP. Whenever you play #b1 #yNaterran #yGreat #yTree , + #b2 damage."
     ]
   },
   "shadowverse:DualbladePower": {
@@ -1297,28 +1297,28 @@
     ]
   },
   "shadowverse:WonderTreePower": {
-    "NAME": "奇幻树",
+    "NAME": "Tree of Wonders",
     "DESCRIPTIONS": [
-      "回合开始时，依顺序触发以下效果: NL ",
+      "At the start of your turn,activate 1 of the following effects in order: NL ",
       " #g",
-      "(1)额外抽 #b",
-      "张卡 NL ",
-      "(2)增加 #b",
-      "张 #y",
-      "妖精",
-      "妖精+",
-      "到手中，获得 #b",
-      "点 #y格挡 NL ",
-      "(3)回复2点生命"
+      "(1)Draw #b",
+      " additional card(s) NL ",
+      "(2)Add #b",
+      " #y",
+      "Fairy",
+      "Fairy+",
+      "into your hand, gain #b",
+      " #yBlock NL ",
+      "(3)Heal 2 HP."
     ]
   },
   "shadowverse:AlbertaPower": {
-    "NAME": "闪光精灵·艾珥芭塔",
+    "NAME": "Alberta, the Autumnblade",
     "DESCRIPTIONS": [
-      "如果本回合已打出的卡片数为 #b4 ，增加 #b1 张",
-      "#y闪光精灵·艾珥芭塔",
-      "#y闪光精灵·艾珥芭塔+",
-      " 到手中并失去此效果。"
+      "Once per turn,whenever you play a card, if it's the #b4th card you've played this turn, add #b1 ",
+      "#yAlberta, #ythe #yAutumnblade",
+      "#yAlberta, #ythe #yAutumnblade+",
+      " into hand and lose this effect."
     ]
   },
   "shadowverse:TheChariot_IPower": {
@@ -1338,23 +1338,23 @@
     ]
   },
   "shadowverse:IzudiaCorruptionPower": {
-    "NAME": "绝命的腐蚀",
+    "NAME": "Erosive Annihilation",
     "DESCRIPTIONS": [
-      "接下来 #b",
-      " 个回合结束时，全体敌人失去 #b1 点 #y力量 和 #y敏捷 。(无法重复叠加)"
+      "By the end of next #b",
+      " turn(s), all enemies lose #b1 #yStrength and #yDexterity .(Not stackable)"
     ]
   },
   "shadowverse:ShootOfUnkillingPower": {
-    "NAME": "绝命的痛击",
+    "NAME": "Annihilating Onslaught",
     "DESCRIPTIONS": [
-      "回合开始时给予意图为攻击且伤害为0的敌人其生命上限的伤害。"
+      "At the start of your next turn,deal damage that equals its Maximum HP to a enemy that intends to attack."
     ]
   },
   "shadowverse:OmenOfUnkillingPower2": {
-    "NAME": "绝命不弑·艾兹迪亚",
+    "NAME": "Izudia, Unkilling Annihilation",
     "DESCRIPTIONS": [
-      "接下来 #b",
-      " 个回合结束时，随机敌人本回合失去 #b6 点 #y力量 。(无法重复叠加)"
+      "By the end of next #b",
+      " turn(s), a random enemy lose #b6 #yStrength .(Not stackable)"
     ]
   },
   "shadowverse:WingsOfDesirePower": {
@@ -1366,9 +1366,9 @@
     ]
   },
   "shadowverse:OmenOfOnePower2": {
-    "NAME": "绝大唯我·马塞班恩",
+    "NAME": "Mjerrabaine, Great One",
     "DESCRIPTIONS": [
-      "回合结束时，如果本回合打出过耗能为2以下的卡，对随机敌人造成 #b10 点伤害；如果打出过耗能为2以上的卡，对全体敌人造成 #b18 点伤害。"
+      "If you have played card that costs #b2 or less, deal #b10 damage to random enemy by the end of your turn. NL If you have played card that costs #b2 or more, deal #b18 damage to all enemies by the end of your turn."
     ]
   },
   "shadowverse:BirthOfRavenousPower": {
@@ -1385,10 +1385,10 @@
     ]
   },
   "shadowverse:AdherentOfAnnihilationPower": {
-    "NAME": "绝命的崇拜者",
+    "NAME": "Adherent of Annihilation",
     "DESCRIPTIONS": [
-      "给予负面效果时，抽 #b",
-      " 张牌。"
+      "When apply debuff, draw #b",
+      " cards."
     ]
   },
   "shadowverse:NextTurnV": {

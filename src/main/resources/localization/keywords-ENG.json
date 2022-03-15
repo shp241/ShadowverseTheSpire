@@ -218,12 +218,12 @@
       "DESCRIPTION": "Passive: Deal 6 damage to random enemy and lose 1 Health by the end of your turn. Gain 6 #yBlock. If you have #yResonance or #yNaterran #yGreat #yTree effect, generate a new #yCannon #yHermit #yCrab with half of the current state (Round up the value) . NL When Evoked, Deal damage and gain #yBlock repeatedly until its Health reaches 0."
     },
     {
-      "PROPER_NAME": "Effect Damage Immune",
+      "PROPER_NAME": "Power Damage Immune",
       "NAMES": [
-        "effect damage immune",
-        "effect_damage_immune"
+        "power damage immune",
+        "power_damage_immune"
       ],
-      "DESCRIPTION": "Reduce damage from indirect effects to 0."
+      "DESCRIPTION": "Reduce damage from Power to 0."
     },
     {
       "PROPER_NAME": "Skybound Art",

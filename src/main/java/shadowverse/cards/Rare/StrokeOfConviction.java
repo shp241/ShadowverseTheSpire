@@ -4,6 +4,7 @@ import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.AttackDamageRandomEnemyAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import shadowverse.Shadowverse;
 import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.actions.watcher.ChooseOneAction;
@@ -37,7 +38,8 @@ public class StrokeOfConviction extends CustomCard {
 
     @Override
     public void update() {
-        if (Shadowverse.Enhance(2)){
+        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
+                Shadowverse.Enhance(2)){
             setCostForTurn(2);
         }else {
             if (this.costForTurn!=0){

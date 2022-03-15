@@ -89,17 +89,17 @@ public class Belphomet extends CustomMonster {
             this.blockAmt = 23;
         }
         if (AbstractDungeon.ascensionLevel >= 19) {
-            this.hyperBeamDmg = 40;
+            this.hyperBeamDmg = 36;
             this.beamDmg = 7;
             this.strAmt = 6;
             this.debuffAmount = 4;
         } else if (AbstractDungeon.ascensionLevel >= 4) {
-            this.hyperBeamDmg = 38;
+            this.hyperBeamDmg = 34;
             this.beamDmg = 6;
             this.strAmt = 5;
             this.debuffAmount = 3;
         } else {
-            this.hyperBeamDmg = 35;
+            this.hyperBeamDmg = 32;
             this.beamDmg = 5;
             this.strAmt = 4;
             this.debuffAmount = 3;

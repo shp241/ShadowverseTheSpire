@@ -56,12 +56,12 @@ public class chushou1 extends CustomMonster {
         }
         if (AbstractDungeon.ascensionLevel >= 19) {
 
-            this.debuffAmount = 10;
+            this.debuffAmount = 8;
         } else if (AbstractDungeon.ascensionLevel >= 4) {
 
-            this.debuffAmount = 8;
-        } else {
             this.debuffAmount = 6;
+        } else {
+            this.debuffAmount = 4;
         }
         this.damage.add(new DamageInfo((AbstractCreature)this, this.ATTACK_DMG));
         this.damage.add(new DamageInfo((AbstractCreature)this, this.STRIKE_DMG));
