@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.SweepingBeamEffect;
@@ -31,7 +32,6 @@ public class MagnaGiant extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/MagnaGiant.png";
-    public boolean doubleCheck = false;
 
     public MagnaGiant() {
         super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.RARE, CardTarget.ALL);
@@ -65,62 +65,18 @@ public class MagnaGiant extends CustomCard {
     }
 
     @Override
-    public void atTurnStart() {
-        if (AbstractDungeon.player.hand.group.contains(this)) {
-            if (EnergyPanel.getCurrentEnergy() < 3) {
-                setCostForTurn(0);
-                this.type = CardType.SKILL;
-            } else {
-                this.type = CardType.ATTACK;
-            }
-            applyPowers();
-        }
-    }
-
-    public void triggerOnOtherCardPlayed(AbstractCard c) {
-        if (AbstractDungeon.player.hasPower("Burst") || AbstractDungeon.player.hasPower("Double Tap") || AbstractDungeon.player.hasPower("Amplified")) {
-            doubleCheck = true;
-            if (EnergyPanel.getCurrentEnergy() - c.costForTurn < this.cost) {
-                setCostForTurn(0);
-                this.type = CardType.SKILL;
-                applyPowers();
-            }
-        } else {
-            if (doubleCheck) {
-                doubleCheck = false;
-            } else {
-                if (EnergyPanel.getCurrentEnergy() - c.costForTurn < this.cost) {
-                    setCostForTurn(0);
-                    this.type = CardType.SKILL;
-                    applyPowers();
-                }
-            }
-        }
-    }
-
-    public void triggerOnGainEnergy(int e, boolean dueToCard) {
-        if (EnergyPanel.getCurrentEnergy() >= 3 && this.type != CardType.ATTACK) {
-            resetAttributes();
-            this.type = CardType.ATTACK;
-            applyPowers();
-        }
-    }
-
-    public void triggerWhenDrawn() {
-        if (Shadowverse.Accelerate((AbstractCard) this)) {
-            super.triggerWhenDrawn();
+    public void update() {
+        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
+                Shadowverse.Accelerate(this)) {
             setCostForTurn(0);
             this.type = CardType.SKILL;
         } else {
-            this.type = CardType.ATTACK;
+            if (this.type == CardType.SKILL) {
+                setCostForTurn(3);
+                this.type = CardType.ATTACK;
+            }
         }
-        applyPowers();
-    }
-
-    public void onMoveToDiscard() {
-        resetAttributes();
-        this.type = CardType.ATTACK;
-        applyPowers();
+        super.update();
     }
 
 
@@ -144,7 +100,7 @@ public class MagnaGiant extends CustomCard {
 
     public AbstractCard makeSameInstanceOf() {
         AbstractCard card = null;
-        if (Shadowverse.Accelerate((AbstractCard)this) && this.type == CardType.SKILL) {
+        if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
             card = (new MagnaGiant_Acc()).makeStatEquivalentCopy();
             card.uuid = (new MagnaGiant_Acc()).uuid;
         } else {

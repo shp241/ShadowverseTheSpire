@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -27,8 +28,6 @@ public class EmpressOfSerenity extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/EmpressOfSerenity.png";
-    public static final int ENHANCE = 2;
-    private boolean doubleCheck = false;
 
     public EmpressOfSerenity() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
@@ -45,67 +44,21 @@ public class EmpressOfSerenity extends CustomCard {
     }
 
     @Override
-    public void triggerWhenDrawn() {
-        if (Shadowverse.Enhance(ENHANCE)) {
-            super.triggerWhenDrawn();
-            setCostForTurn(ENHANCE);
-            applyPowers();
-        }
-    }
-
-    @Override
-    public void applyPowers() {
-        if (Shadowverse.Enhance(ENHANCE)) {
-            setCostForTurn(ENHANCE);
+    public void update() {
+        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
+                Shadowverse.Enhance(2)) {
+            setCostForTurn(2);
         } else {
-            resetAttributes();
+            setCostForTurn(1);
         }
-        super.applyPowers();
-    }
-
-    @Override
-    public void atTurnStart() {
-        if (AbstractDungeon.player.hand.group.contains(this)) {
-            setCostForTurn(ENHANCE);
-            applyPowers();
-        }
-    }
-
-    @Override
-    public void triggerOnOtherCardPlayed(AbstractCard c) {
-        if (AbstractDungeon.player.hasPower("Burst") || AbstractDungeon.player.hasPower("Double Tap") || AbstractDungeon.player.hasPower("Amplified")) {
-            doubleCheck = true;
-            if (EnergyPanel.getCurrentEnergy() - c.costForTurn < ENHANCE) {
-                resetAttributes();
-                applyPowers();
-            }
-        } else {
-            if (doubleCheck) {
-                doubleCheck = false;
-            } else {
-                if (EnergyPanel.getCurrentEnergy() - c.costForTurn < ENHANCE) {
-                    resetAttributes();
-                    applyPowers();
-                }
-            }
-        }
-    }
-
-    @Override
-    public void triggerOnGainEnergy(int e, boolean dueToCard) {
-        if (EnergyPanel.getCurrentEnergy() >= ENHANCE) {
-            setCostForTurn(ENHANCE);
-        } else {
-            resetAttributes();
-        }
-        applyPowers();
+        super.update();
     }
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
         AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new ShieldGuardian()));
-        if (Shadowverse.Enhance(ENHANCE) && this.costForTurn == ENHANCE) {
+        if (Shadowverse.Enhance(2) && this.costForTurn == 2) {
             addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Eh"));
             AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new ShieldGuardian()));
             AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new ShieldGuardian()));

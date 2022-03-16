@@ -4133,5 +4133,30 @@
   "shadowverse:Spector": {
     "NAME": "幻影拍档·巴妮与巴隆",
     "DESCRIPTION": " 激奏 0 \b增加1张 *亡命射击 到手中。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 谢幕曲 下回合开始时增加1张打出前耗能为的 *魔导四轮车·V 到手中。 NL 消耗 。"
+  },
+  "shadowverse:HonoredFrontguardGeneral": {
+    "NAME": "荣耀的铁卫战将",
+    "DESCRIPTION": "可被多次 升级 。 NL 召唤一个+ !M! / !M! 的 铁卫战将 。 NL 消耗 。"
+  },
+  "shadowverse:Aramis": {
+    "NAME": "阿拉密斯",
+    "DESCRIPTION": "打出攻击牌时，获得1点 力量 和 敏捷 并使这张卡的伤害+3。 NL 召唤随从时，使该随从获得+1/+1并使这张卡的伤害+3。 NL 造成 !D! 点伤害。 NL 消耗 。"
+  },
+  "shadowverse:Porthos": {
+    "NAME": "波尔多斯",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 回合结束时，对随机敌人造成 !B! 点伤害。 NL 消耗 。"
+  },
+  "shadowverse:Athos": {
+    "NAME": "阿多斯",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果本回合没有完全失去格挡，下回合开始时额外获得 !B! 点格挡。 NL 消耗 。"
+  },
+  "shadowverse:DArtagnan": {
+    "NAME": "达达尼昂",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果通过 爆能强化 将这张卡加入手中，这张卡的伤害翻倍。 NL 消耗 。"
+  },
+  "shadowverse:MusketeersVow": {
+    "NAME": "火枪手的誓言",
+    "DESCRIPTION": "*阿拉密斯 、 *波尔多斯 、 *阿多斯 、 *达达尼昂  NL 抉择 ：选择2张指定的卡加入手中。 NL 爆能强化 4\b改为全部加入手中。如果手中有2张以上的 *进化点 ， 升级 这些卡。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "*阿拉密斯 、 *波尔多斯 、 *阿多斯 、 *达达尼昂  NL 抉择 ：选择2张指定的卡加入手中。 NL 爆能强化 4\b改为全部加入手中。如果手中有2张以上的 *进化点 ， 升级 这些卡。 NL 消耗性 !stslib:ex! 。"
   }
 }

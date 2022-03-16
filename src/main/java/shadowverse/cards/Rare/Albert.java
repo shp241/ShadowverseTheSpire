@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.LightningEffect;
@@ -38,8 +39,6 @@ public class Albert extends CustomCard implements BranchableUpgradeCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Albert.png";
     public static final String IMG_PATH2 = "img/cards/Albert2.png";
-    public static final int ENHANCE = 3;
-    private boolean doubleCheck = false;
 
     public Albert() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ENEMY);
@@ -53,60 +52,14 @@ public class Albert extends CustomCard implements BranchableUpgradeCard {
     }
 
     @Override
-    public void triggerWhenDrawn() {
-        if (Shadowverse.Enhance(ENHANCE)) {
-            super.triggerWhenDrawn();
-            setCostForTurn(ENHANCE);
-            applyPowers();
-        }
-    }
-
-    @Override
-    public void applyPowers() {
-        if (Shadowverse.Enhance(ENHANCE)) {
-            setCostForTurn(ENHANCE);
+    public void update() {
+        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
+                Shadowverse.Enhance(3)) {
+            setCostForTurn(3);
         } else {
-            resetAttributes();
+            setCostForTurn(1);
         }
-        super.applyPowers();
-    }
-
-    @Override
-    public void atTurnStart() {
-        if (AbstractDungeon.player.hand.group.contains(this)) {
-            setCostForTurn(ENHANCE);
-            applyPowers();
-        }
-    }
-
-    @Override
-    public void triggerOnOtherCardPlayed(AbstractCard c) {
-        if (AbstractDungeon.player.hasPower("Burst") || AbstractDungeon.player.hasPower("Double Tap") || AbstractDungeon.player.hasPower("Amplified")) {
-            doubleCheck = true;
-            if (EnergyPanel.getCurrentEnergy() - c.costForTurn < ENHANCE) {
-                resetAttributes();
-                applyPowers();
-            }
-        } else {
-            if (doubleCheck) {
-                doubleCheck = false;
-            } else {
-                if (EnergyPanel.getCurrentEnergy() - c.costForTurn < ENHANCE) {
-                    resetAttributes();
-                    applyPowers();
-                }
-            }
-        }
-    }
-
-    @Override
-    public void triggerOnGainEnergy(int e, boolean dueToCard) {
-        if (EnergyPanel.getCurrentEnergy() >= ENHANCE) {
-            setCostForTurn(ENHANCE);
-        } else {
-            resetAttributes();
-        }
-        applyPowers();
+        super.update();
     }
 
     @Override
@@ -115,13 +68,13 @@ public class Albert extends CustomCard implements BranchableUpgradeCard {
             case 0:
                 addToBot(new SFXAction(ID.replace("shadowverse:", "")));
                 addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-                if (Shadowverse.Enhance(ENHANCE) && this.costForTurn == ENHANCE) {
+                if (Shadowverse.Enhance(3) && this.costForTurn == 3) {
                     addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
                     addToBot(new AlbertDrawAction(11 - p.hand.group.size()));
                 }
                 break;
             case 1:
-                if (Shadowverse.Enhance(ENHANCE) && this.costForTurn == ENHANCE){
+                if (Shadowverse.Enhance(3) && this.costForTurn == 3){
                     addToBot(new SFXAction("Albert2_EH"));
                     int dmg = this.damage;
                     for (AbstractCard c:p.hand.group){

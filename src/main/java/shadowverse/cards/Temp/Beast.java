@@ -24,7 +24,7 @@ public class Beast extends CustomCard {
 
     public Beast() {
         super(ID, NAME, IMG_PATH, -2, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
-        this.baseDamage = 9;
+        this.baseDamage = 10;
     }
 
 

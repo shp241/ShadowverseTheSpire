@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.cards.AbstractCrystalizeCard;
@@ -29,7 +30,6 @@ public class PrimalShipwright
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/PrimalShipwright.png";
-    public boolean doubleCheck = false;
 
     public PrimalShipwright() {
         super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.ENEMY);
@@ -46,47 +46,19 @@ public class PrimalShipwright
         }
     }
 
-    public void triggerOnOtherCardPlayed(AbstractCard c) {
-        if (this.costForTurn>0 || this.type==CardType.POWER){
-            if (AbstractDungeon.player.hasPower("Burst")||AbstractDungeon.player.hasPower("Double Tap")||AbstractDungeon.player.hasPower("Amplified")) {
-                doubleCheck = true;
-                if (EnergyPanel.getCurrentEnergy() - c.costForTurn < this.cost) {
-                    setCostForTurn(0);
-                    this.type = CardType.POWER;
-                    applyPowers();
-                }
-            }else {
-                if (doubleCheck) {
-                    doubleCheck = false;
-                }else {
-                    if (EnergyPanel.getCurrentEnergy() - c.costForTurn < this.cost) {
-                        setCostForTurn(0);
-                        this.type = CardType.POWER;
-                        applyPowers();
-                    }
-                }
-            }
-        }
-    }
-
-    public void triggerOnGainEnergy(int e, boolean dueToCard) {
-        if (EnergyPanel.getCurrentEnergy() >= 3 && this.type != CardType.ATTACK && this.costForTurn>0) {
-            this.costForTurn = this.cost;
-            this.isCostModifiedForTurn = false;
-            this.type = CardType.ATTACK;
-            applyPowers();
-        }
-    }
-
-    public void triggerWhenDrawn() {
-        if (Shadowverse.Accelerate((AbstractCard)this)) {
-            super.triggerWhenDrawn();
+    @Override
+    public void update() {
+        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
+                Shadowverse.Accelerate(this)){
             setCostForTurn(0);
             this.type = CardType.POWER;
-        } else {
-            this.type = CardType.ATTACK;
+        }else {
+            if (this.type==CardType.POWER){
+                setCostForTurn(3);
+                this.type = CardType.ATTACK;
+            }
         }
-        applyPowers();
+        super.update();
     }
 
     public int rally() {

@@ -14,6 +14,7 @@
  import com.megacrit.cardcrawl.localization.CardStrings;
  import com.megacrit.cardcrawl.monsters.AbstractMonster;
  import com.megacrit.cardcrawl.powers.AbstractPower;
+ import com.megacrit.cardcrawl.rooms.AbstractRoom;
  import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
  import shadowverse.Shadowverse;
@@ -32,10 +33,9 @@ import shadowverse.cards.Temp.OrichalcumGolem_Accelerate;
    public static final String NAME = cardStrings.NAME;
    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
    public static final String IMG_PATH = "img/cards/OrichalcumGolem.png";
-     private boolean doubleCheck = false;
 
    public OrichalcumGolem() {
-     super("shadowverse:OrichalcumGolem", NAME, "img/cards/OrichalcumGolem.png", 2, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.RARE, CardTarget.SELF);
+     super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.RARE, CardTarget.SELF);
      this.baseBlock = 18;
      this.tags.add(AbstractShadowversePlayer.Enums.EARTH_RITE);
      this.tags.add(AbstractShadowversePlayer.Enums.ACCELERATE);
@@ -58,62 +58,20 @@ import shadowverse.cards.Temp.OrichalcumGolem_Accelerate;
      } 
    }
 
-
      @Override
-     public void atTurnStart() {
-         if (AbstractDungeon.player.hand.group.contains(this)){
-             this.type = CardType.ATTACK;
-             resetAttributes();
-             applyPowers();
+     public void update() {
+         if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
+                 Shadowverse.Accelerate(this)){
+             setCostForTurn(0);
+             this.type = CardType.SKILL;
+         }else {
+             if (this.type==CardType.SKILL){
+                 setCostForTurn(2);
+                 this.type = CardType.ATTACK;
+             }
          }
+         super.update();
      }
-
-   public void triggerOnOtherCardPlayed(AbstractCard c) {
-       if (AbstractDungeon.player.hasPower("Burst")||AbstractDungeon.player.hasPower("Double Tap")||AbstractDungeon.player.hasPower("Amplified")) {
-           doubleCheck = true;
-           if (EnergyPanel.getCurrentEnergy() - c.costForTurn < this.cost) {
-               setCostForTurn(0);
-               this.type = CardType.SKILL;
-               applyPowers();
-           }
-       }else {
-           if (doubleCheck) {
-               doubleCheck = false;
-           }else {
-               if (EnergyPanel.getCurrentEnergy() - c.costForTurn < this.cost) {
-                   setCostForTurn(0);
-                   this.type = CardType.SKILL;
-                   applyPowers();
-               }
-           }
-       }
-   }
-   
-   public void triggerOnGainEnergy(int e, boolean dueToCard) {
-     if (EnergyPanel.getCurrentEnergy() >= 2 && this.type != CardType.ATTACK) {
-       resetAttributes();
-       this.type = CardType.ATTACK;
-       applyPowers();
-     } 
-   }
-   
-   public void triggerWhenDrawn() {
-     if (Shadowverse.Accelerate((AbstractCard)this)) {
-       super.triggerWhenDrawn();
-       setCostForTurn(0);
-       this.type = CardType.SKILL;
-     } else {
-       this.type = CardType.ATTACK;
-     } 
-     applyPowers();
-   }
- 
-
-public void onMoveToDiscard() {
-    resetAttributes();
-    this.type = CardType.ATTACK;
-    applyPowers();
-}
 
      public void rand(int[] l, int n, int m)
      {

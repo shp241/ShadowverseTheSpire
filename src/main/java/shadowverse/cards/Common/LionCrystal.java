@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import com.megacrit.cardcrawl.vfx.combat.MiracleEffect;
@@ -29,7 +30,6 @@ public class LionCrystal extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/LionCrystal.png";
-    private boolean doubleCheck = false;
     private float rotationTimer;
     private int previewIndex;
     public static ArrayList<AbstractCard> returnChoice() {
@@ -47,6 +47,12 @@ public class LionCrystal extends CustomCard {
 
 
     public void update() {
+        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
+                Shadowverse.Enhance(2)) {
+            setCostForTurn(2);
+        } else {
+            setCostForTurn(1);
+        }
         super.update();
         if (this.hb.hovered)
             if (this.rotationTimer <= 0.0F) {
@@ -73,36 +79,6 @@ public class LionCrystal extends CustomCard {
         }
     }
 
-    public void triggerWhenDrawn() {
-        if (Shadowverse.Enhance(2)) {
-            super.triggerWhenDrawn();
-            setCostForTurn(2);
-            applyPowers();
-        }
-    }
-    @Override
-    public void applyPowers(){
-
-        if (Shadowverse.Enhance(2))
-            setCostForTurn(2);
-        else
-        if (this.costForTurn>0){
-            resetAttributes();
-        }
-        super.applyPowers();
-    }
-
-    @Override
-    public void atTurnStart() {
-        if (AbstractDungeon.player.hand.group.contains(this)){
-            if (Shadowverse.Enhance(2)) {
-                super.triggerWhenDrawn();
-                setCostForTurn(2);
-                applyPowers();
-            }
-        }
-    }
-
     public void triggerOnGlowCheck() {
         int count = 0;
         for (AbstractCard c:AbstractDungeon.actionManager.cardsPlayedThisCombat){
@@ -114,34 +90,6 @@ public class LionCrystal extends CustomCard {
         }else if (count > 2){
             this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
         }
-    }
-
-    public void triggerOnOtherCardPlayed(AbstractCard c) {
-        if (AbstractDungeon.player.hasPower("Burst")||AbstractDungeon.player.hasPower("Double Tap")||AbstractDungeon.player.hasPower("Amplified")) {
-            doubleCheck = true;
-            if (EnergyPanel.getCurrentEnergy() - c.costForTurn < 2) {
-                resetAttributes();
-                applyPowers();
-            }
-        }else {
-            if (doubleCheck) {
-                doubleCheck = false;
-            }else {
-                if (EnergyPanel.getCurrentEnergy() - c.costForTurn < 2) {
-                    resetAttributes();
-                    applyPowers();
-                }
-            }
-        }
-    }
-
-    public void triggerOnGainEnergy(int e, boolean dueToCard) {
-        if (EnergyPanel.getCurrentEnergy() >= 2) {
-            setCostForTurn(2);
-        }  else {
-            resetAttributes();
-        }
-        applyPowers();
     }
 
     @Override

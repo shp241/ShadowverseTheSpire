@@ -23,7 +23,7 @@ public class Beauty extends CustomCard {
 
     public Beauty() {
         super(ID, NAME, IMG_PATH, -2, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.SPECIAL, CardTarget.SELF);
-        this.baseBlock = 7;
+        this.baseBlock = 8;
     }
 
 

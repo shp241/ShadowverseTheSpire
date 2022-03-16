@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.cards.Temp.ProductMachine;
@@ -28,8 +29,6 @@ public class Nahtnaught extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Nahtnaught.png";
-    public static final int ENHANCE = 2;
-    private boolean doubleCheck = false;
 
     public Nahtnaught() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.NONE);
@@ -48,65 +47,19 @@ public class Nahtnaught extends CustomCard {
     }
 
     @Override
-    public void triggerWhenDrawn() {
-        if (Shadowverse.Enhance(ENHANCE)) {
-            super.triggerWhenDrawn();
-            setCostForTurn(ENHANCE);
-            applyPowers();
-        }
-    }
-
-    @Override
-    public void applyPowers() {
-        if (Shadowverse.Enhance(ENHANCE)) {
-            setCostForTurn(ENHANCE);
+    public void update() {
+        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
+                Shadowverse.Enhance(2)) {
+            setCostForTurn(2);
         } else {
-            resetAttributes();
+            setCostForTurn(1);
         }
-        super.applyPowers();
-    }
-
-    @Override
-    public void atTurnStart() {
-        if (AbstractDungeon.player.hand.group.contains(this)) {
-            setCostForTurn(ENHANCE);
-            applyPowers();
-        }
-    }
-
-    @Override
-    public void triggerOnOtherCardPlayed(AbstractCard c) {
-        if (AbstractDungeon.player.hasPower("Burst") || AbstractDungeon.player.hasPower("Double Tap") || AbstractDungeon.player.hasPower("Amplified")) {
-            doubleCheck = true;
-            if (EnergyPanel.getCurrentEnergy() - c.costForTurn < ENHANCE) {
-                resetAttributes();
-                applyPowers();
-            }
-        } else {
-            if (doubleCheck) {
-                doubleCheck = false;
-            } else {
-                if (EnergyPanel.getCurrentEnergy() - c.costForTurn < ENHANCE) {
-                    resetAttributes();
-                    applyPowers();
-                }
-            }
-        }
-    }
-
-    @Override
-    public void triggerOnGainEnergy(int e, boolean dueToCard) {
-        if (EnergyPanel.getCurrentEnergy() >= ENHANCE) {
-            setCostForTurn(ENHANCE);
-        } else {
-            resetAttributes();
-        }
-        applyPowers();
+        super.update();
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (Shadowverse.Enhance(ENHANCE) && this.costForTurn == ENHANCE) {
+        if (Shadowverse.Enhance(2) && this.costForTurn == 2) {
             addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Eh"));
             Henchman h1 = new Henchman(-300 - 185.0F * 1, MathUtils.random(-5.0F, 25.0F));
             Henchman h2 = new Henchman(-300 - 185.0F * 2, MathUtils.random(-5.0F, 25.0F));

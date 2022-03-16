@@ -1043,6 +1043,16 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("PrinceCatacomb",new Sfx("sounds/PrinceCatacomb.wav"));
         reflectedMap.put("DesperadosShot",new Sfx("sounds/DesperadosShot.wav"));
         reflectedMap.put("Spector",new Sfx("sounds/Spector.wav"));
+        reflectedMap.put("HonoredFrontguardGeneral",new Sfx("sounds/HonoredFrontguardGeneral.wav"));
+        reflectedMap.put("Athos",new Sfx("sounds/Athos.wav"));
+        reflectedMap.put("AthosPower",new Sfx("sounds/AthosPower.wav"));
+        reflectedMap.put("Aramis",new Sfx("sounds/Aramis.wav"));
+        reflectedMap.put("AramisPower",new Sfx("sounds/AramisPower.wav"));
+        reflectedMap.put("Porthos",new Sfx("sounds/Porthos.wav"));
+        reflectedMap.put("PorthosPower",new Sfx("sounds/PorthosPower.wav"));
+        reflectedMap.put("DArtagnan",new Sfx("sounds/DArtagnan.wav"));
+        reflectedMap.put("MusketeersVow",new Sfx("sounds/MusketeersVow.wav"));
+        reflectedMap.put("MusketeersVow_EH",new Sfx("sounds/MusketeersVow_EH.wav"));
     }
 
     public void receiveEditRelics() {
@@ -1970,6 +1980,12 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addCard((AbstractCard) new V());
         BaseMod.addCard((AbstractCard) new DesperadosShot());
         BaseMod.addCard((AbstractCard) new Spector());
+        BaseMod.addCard((AbstractCard) new HonoredFrontguardGeneral());
+        BaseMod.addCard((AbstractCard) new Aramis());
+        BaseMod.addCard((AbstractCard) new Porthos());
+        BaseMod.addCard((AbstractCard) new Athos());
+        BaseMod.addCard((AbstractCard) new DArtagnan());
+        BaseMod.addCard((AbstractCard) new MusketeersVow());
         logger.info("Success");
     }
 

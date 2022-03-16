@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.MiracleEffect;
@@ -34,7 +35,6 @@ public class Anvelt
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Anvelt.png";
-    public boolean doubleCheck = false;
 
     public Anvelt() {
         super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.ALL);
@@ -52,50 +52,19 @@ public class Anvelt
         }
     }
 
-    public void triggerOnOtherCardPlayed(AbstractCard c) {
-        if (AbstractDungeon.player.hasPower("Burst")||AbstractDungeon.player.hasPower("Double Tap")||AbstractDungeon.player.hasPower("Amplified")) {
-            doubleCheck = true;
-            if (EnergyPanel.getCurrentEnergy() - c.costForTurn < this.cost) {
-                setCostForTurn(0);
-                this.type = CardType.POWER;
-                applyPowers();
-            }
-        }else {
-            if (doubleCheck) {
-                doubleCheck = false;
-            }else {
-                if (EnergyPanel.getCurrentEnergy() - c.costForTurn < this.cost) {
-                    setCostForTurn(0);
-                    this.type = CardType.POWER;
-                    applyPowers();
-                }
-            }
-        }
-    }
-
-    public void triggerOnGainEnergy(int e, boolean dueToCard) {
-        if (EnergyPanel.getCurrentEnergy() >= 4 && this.type != CardType.ATTACK) {
-            resetAttributes();
-            this.type = CardType.ATTACK;
-            applyPowers();
-        }
-    }
-
-    public void triggerWhenDrawn() {
-        if (Shadowverse.Accelerate((AbstractCard)this)) {
-            super.triggerWhenDrawn();
+    @Override
+    public void update() {
+        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
+                Shadowverse.Accelerate(this)){
             setCostForTurn(0);
-            this.type = CardType.POWER;
-        } else {
-            this.type = CardType.ATTACK;
+            this.type = CardType.SKILL;
+        }else {
+            if (this.type==CardType.SKILL){
+                setCostForTurn(4);
+                this.type = CardType.ATTACK;
+            }
         }
-        applyPowers();
-    }
-
-    public void onMoveToDiscard() {
-        resetAttributes();
-        this.type = CardType.ATTACK;
-        applyPowers();
+        super.update();
     }
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {

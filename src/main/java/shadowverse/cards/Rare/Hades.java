@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.cards.Common.DemonicProcession;
@@ -32,7 +33,6 @@ public class Hades extends CustomCard {
     public static final String ID = "shadowverse:Hades";
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION; public static final String IMG_PATH = "img/cards/Hades.png";
-    public boolean doubleCheck = false;
 
     public Hades() {
         super(ID, NAME, IMG_PATH, 5, DESCRIPTION, CardType.ATTACK, Necromancer.Enums.COLOR_PURPLE, CardRarity.RARE, CardTarget.ALL_ENEMY);
@@ -67,68 +67,23 @@ public class Hades extends CustomCard {
         if (c instanceof DemonicProcession ||c instanceof TheLovers||c instanceof HungrySlash ||c instanceof SpiritCurator ||c instanceof Ferry||c instanceof InstantPotion){
             this.type = CardType.ATTACK;
             this.resetAttributes();
-            return;
         }
-        if (AbstractDungeon.player.hasPower("Burst")||AbstractDungeon.player.hasPower("Double Tap")||AbstractDungeon.player.hasPower("Amplified")) {
-            doubleCheck = true;
-            if (EnergyPanel.getCurrentEnergy() - c.costForTurn < this.cost) {
-                setCostForTurn(2);
-                this.type = CardType.SKILL;
-                applyPowers();
-            }
-        }else {
-            if (doubleCheck) {
-                doubleCheck = false;
-            }else {
-                if (EnergyPanel.getCurrentEnergy() - c.costForTurn < this.cost) {
-                    setCostForTurn(2);
-                    this.type = CardType.SKILL;
-                    applyPowers();
-                }
-            }
-        }
-    }
-
-
-    public void triggerOnGainEnergy(int e, boolean dueToCard) {
-        if (EnergyPanel.getCurrentEnergy() >= 5 && this.type != CardType.ATTACK) {
-            resetAttributes();
-            this.type = CardType.ATTACK;
-            applyPowers();
-        }
-    }
-
-    public void triggerWhenDrawn() {
-        if (Shadowverse.Accelerate((AbstractCard)this)) {
-            super.triggerWhenDrawn();
-            setCostForTurn(2);
-            this.type = CardType.SKILL;
-        } else {
-            this.type = CardType.ATTACK;
-        }
-        applyPowers();
     }
 
     @Override
-    public void atTurnStart() {
-        if (AbstractDungeon.player.hand.group.contains(this)){
-            if (EnergyPanel.getCurrentEnergy()<5) {
-                setCostForTurn(2);
-                this.type = CardType.SKILL;
-            } else {
-                resetAttributes();
+    public void update() {
+        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
+                Shadowverse.Accelerate(this)){
+            setCostForTurn(2);
+            this.type = CardType.SKILL;
+        }else {
+            if (this.type==CardType.SKILL){
+                setCostForTurn(5);
                 this.type = CardType.ATTACK;
             }
-            applyPowers();
         }
+        super.update();
     }
-
-    public void onMoveToDiscard() {
-        resetAttributes();
-        this.type = CardType.ATTACK;
-        applyPowers();
-    }
-
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {

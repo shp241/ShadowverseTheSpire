@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import shadowverse.action.MinionSummonAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -35,7 +36,6 @@ public class FrenziedCorpsmaster extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/FrenziedCorpsmaster.png";
     public static final int ACCELERATE = 1;
-    public boolean doubleCheck = false;
 
     public FrenziedCorpsmaster() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
@@ -88,6 +88,20 @@ public class FrenziedCorpsmaster extends CustomCard {
         }
     }
 
+    @Override
+    public void update() {
+        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
+                Shadowverse.Accelerate(this)){
+            setCostForTurn(1);
+            this.type = CardType.SKILL;
+        }else {
+            if (this.type==CardType.SKILL){
+                setCostForTurn(2);
+                this.type = CardType.ATTACK;
+            }
+        }
+        super.update();
+    }
 
     @Override
     public void applyPowers() {
@@ -99,15 +113,6 @@ public class FrenziedCorpsmaster extends CustomCard {
     }
 
     @Override
-    public void onMoveToDiscard() {
-        resetAttributes();
-        this.type = CardType.ATTACK;
-        applyPowers();
-        this.rawDescription = cardStrings.DESCRIPTION;
-        this.initializeDescription();
-    }
-
-    @Override
     public void calculateCardDamage(AbstractMonster mo) {
         super.calculateCardDamage(mo);
         this.rawDescription = cardStrings.DESCRIPTION;
@@ -115,61 +120,6 @@ public class FrenziedCorpsmaster extends CustomCard {
         this.initializeDescription();
     }
 
-    @Override
-    public void atTurnStart() {
-        if (AbstractDungeon.player.hand.group.contains(this)) {
-            if (EnergyPanel.getCurrentEnergy() < 2) {
-                setCostForTurn(ACCELERATE);
-                this.type = CardType.SKILL;
-            } else {
-                this.type = CardType.ATTACK;
-            }
-            applyPowers();
-        }
-    }
-
-    @Override
-    public void triggerOnOtherCardPlayed(AbstractCard c) {
-        if (AbstractDungeon.player.hasPower("Burst") || AbstractDungeon.player.hasPower("Double Tap") || AbstractDungeon.player.hasPower("Amplified")) {
-            doubleCheck = true;
-            if (EnergyPanel.getCurrentEnergy() - c.costForTurn < this.cost) {
-                setCostForTurn(ACCELERATE);
-                this.type = CardType.SKILL;
-                applyPowers();
-            }
-        } else {
-            if (doubleCheck) {
-                doubleCheck = false;
-            } else {
-                if (EnergyPanel.getCurrentEnergy() - c.costForTurn < this.cost) {
-                    setCostForTurn(ACCELERATE);
-                    this.type = CardType.SKILL;
-                    applyPowers();
-                }
-            }
-        }
-    }
-
-    @Override
-    public void triggerOnGainEnergy(int e, boolean dueToCard) {
-        if (EnergyPanel.getCurrentEnergy() >= 2 && this.type != CardType.ATTACK) {
-            resetAttributes();
-            this.type = CardType.ATTACK;
-            applyPowers();
-        }
-    }
-
-    @Override
-    public void triggerWhenDrawn() {
-        if (Shadowverse.Accelerate(this)) {
-            super.triggerWhenDrawn();
-            setCostForTurn(ACCELERATE);
-            this.type = CardType.SKILL;
-        } else {
-            this.type = CardType.ATTACK;
-        }
-        applyPowers();
-    }
 
     @Override
     public AbstractCard makeSameInstanceOf() {

@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.action.EleganceInActionAction;
@@ -27,8 +28,7 @@ public class EleganceInAction extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/EleganceInAction.png";
-    public static final int ENHANCE = 1;
-    private boolean doubleCheck = false;
+
 
     public EleganceInAction() {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.NONE);
@@ -46,55 +46,19 @@ public class EleganceInAction extends CustomCard {
     }
 
     @Override
-    public void triggerWhenDrawn() {
-        if (Shadowverse.Enhance(ENHANCE)) {
-            super.triggerWhenDrawn();
-            setCostForTurn(ENHANCE);
-            applyPowers();
-        }
-    }
-
-    @Override
-    public void atTurnStart() {
-        if (AbstractDungeon.player.hand.group.contains(this)) {
-            setCostForTurn(ENHANCE);
-            applyPowers();
-        }
-    }
-
-    @Override
-    public void triggerOnOtherCardPlayed(AbstractCard c) {
-        if (AbstractDungeon.player.hasPower("Burst") || AbstractDungeon.player.hasPower("Double Tap") || AbstractDungeon.player.hasPower("Amplified")) {
-            doubleCheck = true;
-            if (EnergyPanel.getCurrentEnergy() - c.costForTurn < ENHANCE) {
-                resetAttributes();
-                applyPowers();
-            }
+    public void update() {
+        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
+                Shadowverse.Enhance(1)) {
+            setCostForTurn(1);
         } else {
-            if (doubleCheck) {
-                doubleCheck = false;
-            } else {
-                if (EnergyPanel.getCurrentEnergy() - c.costForTurn < ENHANCE) {
-                    resetAttributes();
-                    applyPowers();
-                }
-            }
+            setCostForTurn(0);
         }
-    }
-
-    @Override
-    public void triggerOnGainEnergy(int e, boolean dueToCard) {
-        if (EnergyPanel.getCurrentEnergy() >= ENHANCE) {
-            setCostForTurn(ENHANCE);
-        } else {
-            resetAttributes();
-        }
-        applyPowers();
+        super.update();
     }
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (Shadowverse.Enhance(ENHANCE) && this.costForTurn == ENHANCE) {
+        if (Shadowverse.Enhance(1) && this.costForTurn == 1) {
             for (int i = 0; i < this.magicNumber; i++) {
                 this.addToBot(new DrawCardAction(1, new EleganceInActionAction(this)));
             }

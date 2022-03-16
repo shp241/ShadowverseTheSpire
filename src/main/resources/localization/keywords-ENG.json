@@ -292,7 +292,7 @@
         "frontguard general",
         "frontguard_general"
       ],
-      "DESCRIPTION": "5/6 NL Passive: Gain Block equal to 2 times of Attack, gain #yPlated #yArmor equal to Attack and lose 1 Health by the end of your turn. NL When Evoked, Repeat Passive effects until its Health reaches 0."
+      "DESCRIPTION": "5/6 NL Passive: Gain Block equal to 2 times of Attack, gain #yBlock at next turn equal to Attack and lose 1 Health by the end of your turn. NL When Evoked, Repeat Passive effects until its Health reaches 0."
     },
     {
       "PROPER_NAME": "Queen Hemera the Brave",
@@ -322,7 +322,7 @@
       "NAMES": [
         "viking"
       ],
-      "DESCRIPTION": "3/2 NL Passive: Apply #yVulnerable equal to Attack and deal damage equal to 3 times of Attack to random enemy and lose 1 Health by the end of your turn. Next turn, gain #yEnergy . NL When Evoked, Repeat Passive effects until its Health reaches 0, gain #yEnergy immediately."
+      "DESCRIPTION": "3/2 NL Passive: Apply #yVulnerable equal to Attack and deal damage equal to 3 times of Attack to random enemy and lose 1 Health by the end of your turn. NL When Evoked, Repeat Passive effects until its Health reaches 0, gain #yEnergy immediately."
     },
     {
       "PROPER_NAME": "Pirate",

@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.characters.AbstractShadowversePlayer;
@@ -27,7 +28,6 @@ public class WingsOfLust
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/WingsOfLust.png";
-    private boolean doubleCheck = false;
 
     public WingsOfLust() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Vampire.Enums.COLOR_SCARLET, CardRarity.UNCOMMON, CardTarget.SELF);
@@ -46,62 +46,16 @@ public class WingsOfLust
         }
     }
 
-    public void triggerWhenDrawn() {
-        if (Shadowverse.Enhance(2)) {
-            super.triggerWhenDrawn();
-            setCostForTurn(2);
-            applyPowers();
-        }
-    }
-
     @Override
-    public void applyPowers() {
-        if (Shadowverse.Enhance(2))
-            setCostForTurn(2);
-        else
-            resetAttributes();
-        super.applyPowers();
-    }
-
-    @Override
-    public void atTurnStart() {
-        if (AbstractDungeon.player.hand.group.contains(this)) {
-            if (Shadowverse.Enhance(2)) {
-                super.triggerWhenDrawn();
-                setCostForTurn(2);
-                applyPowers();
-            }
-        }
-    }
-
-    public void triggerOnOtherCardPlayed(AbstractCard c) {
-        if (AbstractDungeon.player.hasPower("Burst") || AbstractDungeon.player.hasPower("Double Tap") || AbstractDungeon.player.hasPower("Amplified")) {
-            doubleCheck = true;
-            if (EnergyPanel.getCurrentEnergy() - c.costForTurn < 2) {
-                resetAttributes();
-                applyPowers();
-            }
-        } else {
-            if (doubleCheck) {
-                doubleCheck = false;
-            } else {
-                if (EnergyPanel.getCurrentEnergy() - c.costForTurn < 2) {
-                    resetAttributes();
-                    applyPowers();
-                }
-            }
-        }
-    }
-
-    public void triggerOnGainEnergy(int e, boolean dueToCard) {
-        if (EnergyPanel.getCurrentEnergy() >= 2) {
+    public void update() {
+        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
+                Shadowverse.Enhance(2)) {
             setCostForTurn(2);
         } else {
-            resetAttributes();
+            setCostForTurn(1);
         }
-        applyPowers();
+        super.update();
     }
-
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot((AbstractGameAction) new SFXAction("WingsOfLust"));

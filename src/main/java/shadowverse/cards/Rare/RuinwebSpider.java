@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.EntangleEffect;
@@ -30,7 +31,6 @@ public class RuinwebSpider
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/RuinwebSpider.png";
-    public boolean doubleCheck = false;
 
     public RuinwebSpider() {
         super(ID, NAME, IMG_PATH, 5, DESCRIPTION, CardType.ATTACK, Vampire.Enums.COLOR_SCARLET, CardRarity.RARE, CardTarget.ALL_ENEMY);
@@ -51,51 +51,19 @@ public class RuinwebSpider
         }
     }
 
-
-    public void triggerOnOtherCardPlayed(AbstractCard c) {
-        if (AbstractDungeon.player.hasPower("Burst") || AbstractDungeon.player.hasPower("Double Tap") || AbstractDungeon.player.hasPower("Amplified")) {
-            doubleCheck = true;
-            if (EnergyPanel.getCurrentEnergy() - c.costForTurn < this.cost) {
-                setCostForTurn(0);
-                this.type = CardType.POWER;
-                applyPowers();
-            }
-        } else {
-            if (doubleCheck) {
-                doubleCheck = false;
-            } else {
-                if (EnergyPanel.getCurrentEnergy() - c.costForTurn < this.cost) {
-                    setCostForTurn(0);
-                    this.type = CardType.POWER;
-                    applyPowers();
-                }
-            }
-        }
-    }
-
-    public void triggerOnGainEnergy(int e, boolean dueToCard) {
-        if (EnergyPanel.getCurrentEnergy() >= 5 && this.type != CardType.ATTACK) {
-            resetAttributes();
-            this.type = CardType.ATTACK;
-            applyPowers();
-        }
-    }
-
-    public void triggerWhenDrawn() {
-        if (Shadowverse.Accelerate((AbstractCard) this)) {
-            super.triggerWhenDrawn();
+    @Override
+    public void update() {
+        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
+                Shadowverse.Accelerate(this)){
             setCostForTurn(0);
             this.type = CardType.POWER;
-        } else {
-            this.type = CardType.ATTACK;
+        }else {
+            if (this.type==CardType.POWER){
+                setCostForTurn(5);
+                this.type = CardType.ATTACK;
+            }
         }
-        applyPowers();
-    }
-
-    public void onMoveToDiscard() {
-        resetAttributes();
-        this.type = CardType.ATTACK;
-        applyPowers();
+        super.update();
     }
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
@@ -109,19 +77,6 @@ public class RuinwebSpider
         }
     }
 
-    @Override
-    public void atTurnStart() {
-        if (AbstractDungeon.player.hand.group.contains(this)) {
-            if (EnergyPanel.getCurrentEnergy() < 5) {
-                setCostForTurn(0);
-                this.type = CardType.POWER;
-            } else {
-                resetAttributes();
-                this.type = CardType.ATTACK;
-            }
-            applyPowers();
-        }
-    }
 
     public AbstractCard makeSameInstanceOf() {
         AbstractCard card = null;

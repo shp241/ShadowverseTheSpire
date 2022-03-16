@@ -16,6 +16,7 @@
  import com.megacrit.cardcrawl.localization.CardStrings;
  import com.megacrit.cardcrawl.monsters.AbstractMonster;
  import com.megacrit.cardcrawl.powers.AbstractPower;
+ import com.megacrit.cardcrawl.rooms.AbstractRoom;
  import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
  import shadowverse.Shadowverse;
  import shadowverse.cards.Temp.Fil;
@@ -34,7 +35,6 @@
    public static final String NAME = cardStrings.NAME;
    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
    public static final String IMG_PATH = "img/cards/MusePrincess.png";
-   private  boolean doubleCheck = false;
 
    public MusePrincess() {
      super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.SELF);
@@ -52,58 +52,15 @@
      } 
    }
 
-     public void triggerWhenDrawn() {
-         if (Shadowverse.Enhance(3)) {
-             super.triggerWhenDrawn();
-             setCostForTurn(3);
-             applyPowers();
-         }
-     }
-
      @Override
-     public void applyPowers(){
-         if (Shadowverse.Enhance(3))
+     public void update() {
+         if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
+                 Shadowverse.Enhance(3)) {
              setCostForTurn(3);
-         else
-             resetAttributes();
-         super.applyPowers();
-     }
-
-
-     @Override
-     public void atTurnStart() {
-         if (AbstractDungeon.player.hand.group.contains(this)){
-                 setCostForTurn(3);
-                 applyPowers();
+         } else {
+             setCostForTurn(2);
          }
-     }
-
-     public void triggerOnOtherCardPlayed(AbstractCard c) {
-         if (AbstractDungeon.player.hasPower("Burst")||AbstractDungeon.player.hasPower("Double Tap")||AbstractDungeon.player.hasPower("Amplified")) {
-             doubleCheck = true;
-             if (EnergyPanel.getCurrentEnergy() - c.costForTurn < 3) {
-                 resetAttributes();
-                 applyPowers();
-             }
-         }else {
-             if (doubleCheck) {
-                 doubleCheck = false;
-             }else {
-                 if (EnergyPanel.getCurrentEnergy() - c.costForTurn < 3) {
-                     resetAttributes();
-                     applyPowers();
-                 }
-             }
-         }
-     }
-
-     public void triggerOnGainEnergy(int e, boolean dueToCard) {
-         if (EnergyPanel.getCurrentEnergy() >= 3) {
-             setCostForTurn(3);
-         }  else {
-             resetAttributes();
-         }
-         applyPowers();
+         super.update();
      }
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {

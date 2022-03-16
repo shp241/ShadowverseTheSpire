@@ -10,6 +10,7 @@
  import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDrawPileEffect;
 
  import java.util.ArrayList;
+ import java.util.Arrays;
 
  public class Choose2DifferentAction
    extends DiscoveryAction
@@ -23,9 +24,7 @@
      this.duration = Settings.ACTION_DUR_FAST;
      this.amount = 1;
      this.secondTime = secondTime;
-     for (AbstractCard c : card) {
-       this.card.add(c);
-     }
+       this.card.addAll(Arrays.asList(card));
    }
  
    

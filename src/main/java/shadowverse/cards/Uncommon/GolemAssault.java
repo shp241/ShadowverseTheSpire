@@ -12,6 +12,7 @@
  import com.megacrit.cardcrawl.localization.CardStrings;
  import com.megacrit.cardcrawl.monsters.AbstractMonster;
  import com.megacrit.cardcrawl.powers.AbstractPower;
+ import com.megacrit.cardcrawl.rooms.AbstractRoom;
  import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
  import shadowverse.Shadowverse;
@@ -30,8 +31,7 @@ import shadowverse.cards.Temp.ConjureGuardian;
    public static final String NAME = cardStrings.NAME;
    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
    public static final String IMG_PATH = "img/cards/GolemAssault.png";
-   private boolean canEnhance = false;
-   private boolean doubleCheck =false;
+
    
    public GolemAssault() {
      super("shadowverse:GolemAssault", NAME, "img/cards/GolemAssault.png", 0, DESCRIPTION, CardType.SKILL, Witchcraft.Enums.COLOR_BLUE, CardRarity.UNCOMMON, CardTarget.SELF);
@@ -49,69 +49,19 @@ import shadowverse.cards.Temp.ConjureGuardian;
        initializeDescription();
      } 
    }
-   
-   public void triggerWhenDrawn() {
-     if (Shadowverse.Enhance(2)) {
-       super.triggerWhenDrawn();
-       setCostForTurn(2);
-       this.canEnhance = true;
-       applyPowers();
-     } 
-   }
+
      @Override
-     public void applyPowers(){
-         if (Shadowverse.Enhance(2))
+     public void update() {
+         if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
+                 Shadowverse.Enhance(2)){
              setCostForTurn(2);
-         else
-             resetAttributes();
-         super.applyPowers();
-     }
-     
-     @Override
-     public void atTurnStart() {
-         if (AbstractDungeon.player.hand.group.contains(this)){
-             if (Shadowverse.Enhance(2)) {
-                 super.triggerWhenDrawn();
-                 setCostForTurn(2);
-                 applyPowers();
-             }
+         }else {
+             setCostForTurn(0);
          }
+         super.update();
      }
 
-     public void triggerOnOtherCardPlayed(AbstractCard c) {
-         if (AbstractDungeon.player.hasPower("Burst")||AbstractDungeon.player.hasPower("Double Tap")||AbstractDungeon.player.hasPower("Amplified")) {
-             doubleCheck = true;
-             if (EnergyPanel.getCurrentEnergy() - c.costForTurn < 2) {
-                 resetAttributes();
-                 this.canEnhance = false;
-                 applyPowers();
-             }
-         }else {
-             if (doubleCheck) {
-                 doubleCheck = false;
-             }else {
-                 if (EnergyPanel.getCurrentEnergy() - c.costForTurn < 2) {
-                     resetAttributes();
-                     this.canEnhance = false;
-                     applyPowers();
-                 }
-             }
-         }
-     }
-   
-   public void triggerOnGainEnergy(int e, boolean dueToCard) {
-     if (EnergyPanel.getCurrentEnergy()  >= 2) {
-       setCostForTurn(2);
-       this.canEnhance = true;
-     }  else {
-         resetAttributes();
-         this.canEnhance =false;
-     }
-       applyPowers();
-   }
- 
-   
-   public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
      boolean powerExists = false;
      for (AbstractPower pow : abstractPlayer.powers) {

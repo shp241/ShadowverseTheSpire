@@ -765,12 +765,12 @@
   },
   "shadowverse:FairyWhisperer": {
     "NAME": "Fairy Whisperer",
-    "DESCRIPTION": "Add !M! *Faries into your hand.",
-    "UPGRADE_DESCRIPTION": "Add !M! *Faries+ into your hand."
+    "DESCRIPTION": "Add !M! *Fairy into your hand.",
+    "UPGRADE_DESCRIPTION": "Add !M! *Fairy+ into your hand."
   },
   "shadowverse:SylvanJustice": {
     "NAME": "Sylvan Justice",
-    "DESCRIPTION": "Deal !D! damage. NL Add !M! *Fariy into your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Add !M! *Fairy into your hand."
   },
   "shadowverse:NaturesGuidance": {
     "NAME": "Nature's Guidance",
@@ -796,8 +796,8 @@
   },
   "shadowverse:FairyCircle": {
     "NAME": "FairyCircle",
-    "DESCRIPTION": "Add !M! *Faries into your hand. NL Exhaust .",
-    "UPGRADE_DESCRIPTION": "Add !M! *Faries+ into your hand. NL Exhaust ."
+    "DESCRIPTION": "Add !M! *Fairy into your hand. NL Exhaust .",
+    "UPGRADE_DESCRIPTION": "Add !M! *Fairy+ into your hand. NL Exhaust ."
   },
   "shadowverse:WhirlwindRhinoceroach": {
     "NAME": "Whirlwind Rhinoceroach",
@@ -809,11 +809,11 @@
   },
   "shadowverse:WoodOfBrambles": {
     "NAME": "Wood Of Brambles",
-    "DESCRIPTION": "Add 2 *Faries into your hand. NL Gain !M! Thorns ."
+    "DESCRIPTION": "Add 2 *Fairy into your hand. NL Gain !M! Thorns ."
   },
   "shadowverse:ElfSong": {
     "NAME": "Elf Song",
-    "DESCRIPTION": "Add !M! *Fariy(ies) into your hand. NL If at least 2 other cards were played this turn, Gain 1 Strength and 1 Dexterity ."
+    "DESCRIPTION": "Add !M! *Fairy into your hand. NL If at least 2 other cards were played this turn, Gain 1 Strength and 1 Dexterity ."
   },
   "shadowverse:WardOfUnkilling": {
     "NAME": "Ward Of Unkilling",
@@ -853,12 +853,12 @@
     "DESCRIPTION": "Gain !B!  Block . NL If at least 2 other cards were played this turn, Gain !M! Plated Armor ."
   },
   "shadowverse:Whisp": {
-    "NAME": "Fariy Whisp",
+    "NAME": "Fairy Whisp",
     "DESCRIPTION": "Retain . NL If no more than 2 other cars were played this turn, Deal !D! damage, Gain !B!  Block . NL Exhaust ."
   },
   "shadowverse:Aria": {
     "NAME": "Aria, Miasma Fairy",
-    "DESCRIPTION": "Add a *Fariy *Whisp and a *Fariy into your hand. NL *Fariy *Whisp and *Fariy will apply 2 Poison ."
+    "DESCRIPTION": "Add a *Fairy *Whisp and a *Fairy into your hand. NL *Fairy *Whisp and *Fairy will apply 2 Poison ."
   },
   "shadowverse:GuardOfMachinatree": {
     "NAME": "Guard Of Machinatree",
@@ -906,7 +906,7 @@
   },
   "shadowverse:ScaryTrend": {
     "NAME": "Scary Trend",
-    "DESCRIPTION": "Natura . NL Put a *Naterran *Great *Tree into your hand. NL Gain !B! Block . NL If at least 2 other cards were played this turn, Add a *Fariy into your hand. "
+    "DESCRIPTION": "Natura . NL Put a *Naterran *Great *Tree into your hand. NL Gain !B! Block . NL If at least 2 other cards were played this turn, Add a *Fairy into your hand. "
   },
   "shadowverse:Packing": {
     "NAME": "Send 'Em Packing",
@@ -914,7 +914,7 @@
   },
   "shadowverse:Ladica": {
     "NAME": "Ladica, the Stoneclaw",
-    "DESCRIPTION": "Natura . NL Deal !D! damage.Then,if you have a *Fariy in your hand,Deal !D! damage to All enemies. NL If you have the Power: Naterran_Great_Tree ,Add a *Send *'Em *Packing into your hand. "
+    "DESCRIPTION": "Natura . NL Deal !D! damage.Then,if you have a *Fairy in your hand,Deal !D! damage to All enemies. NL If you have the Power: Naterran_Great_Tree ,Add a *Send *'Em *Packing into your hand. "
   },
   "shadowverse:Ladica2": {
     "NAME": "Ladica, Verdant Claw",
@@ -934,7 +934,7 @@
   },
   "shadowverse:WindFairy": {
     "NAME": "Wind Fairy",
-    "DESCRIPTION": " Accelerate 0 \bPut an Attack or a Power from your discard pile into your hand,add a *Fariy *Whisp into your hand. NL  NL --------------------- NL  NL Deal !D! damage 2 times. NL Exhaust .",
+    "DESCRIPTION": " Accelerate 0 \bPut an Attack or a Power from your discard pile into your hand,add a *Fairy *Whisp into your hand. NL  NL --------------------- NL  NL Deal !D! damage 2 times. NL Exhaust .",
     "EXTENDED_DESCRIPTION": [
       "There aren't any Attack or Power in my discard pile"
     ]
@@ -957,7 +957,7 @@
   },
   "shadowverse:Verdant": {
     "NAME": "Verdant Steward",
-    "DESCRIPTION": "Gain !B! Block . NL At the start of your next turn,add !M! *Faries into your hand."
+    "DESCRIPTION": "Gain !B! Block . NL At the start of your next turn,add !M! *Fairy into your hand."
   },
   "shadowverse:Beast": {
     "NAME": "Irate Forest Beast",
@@ -992,7 +992,7 @@
   },
   "shadowverse:ForestFairy": {
     "NAME": "Fairy Slugger",
-    "DESCRIPTION": "Whenever you play a *Fariy or a *Fariy *Whisp , Gain !M! Block . NL Add a *Fariy *Whisp into your hand."
+    "DESCRIPTION": "Whenever you play a *Fairy or a *Fairy *Whisp , Gain !M! Block . NL Add a *Fairy *Whisp into your hand."
   },
   "shadowverse:Lisa": {
     "NAME": "Elf Girl Liza",
@@ -1000,7 +1000,7 @@
   },
   "shadowverse:NatureCorroded": {
     "NAME": "NatureCorroded",
-    "DESCRIPTION": "Apply !M! Weak and !M! Vulnerable . NL Add a *Fariy into your hand. NL Exhaust ."
+    "DESCRIPTION": "Apply !M! Weak and !M! Vulnerable . NL Add a *Fairy into your hand. NL Exhaust ."
   },
   "shadowverse:Genshin": {
     "NAME": "Primordial Colossus",
@@ -1080,11 +1080,11 @@
   },
   "shadowverse:Amataz": {
     "NAME": "Amataz, Fairy Blader",
-    "DESCRIPTION": "Gain !B! Block . NL If there are at least 2 *Faries in your hand, Gain 3 additional Block and 2 Plated Armor . NL If at least 4, Gain 1 Strength and 1 Dexterity . NL If at least 6, Increase the damage of *Fairy by !M! this combat ."
+    "DESCRIPTION": "Gain !B! Block . NL If there are at least 2 *Fairy in your hand, Gain 3 additional Block and 2 Plated Armor . NL If at least 4, Gain 1 Strength and 1 Dexterity . NL If at least 6, Increase the damage of *Fairy by !M! this combat ."
   },
   "shadowverse:Amataz2": {
     "NAME": "Amataz, Reverse Blader",
-    "DESCRIPTION": "Gain !B! Block . NL Return all non-strike Forestcraft Attacks in your discard piles into your draw pile,add X *Fariy into your hand.X equals the number of cards returned.  NL If at least 10 non-Strike Elf Attacks are played this combat, Gain 4 additional Block. NL If at least 20, applt 3 Vulnerable and 3 Weak to All enemies."
+    "DESCRIPTION": "Gain !B! Block . NL Return all non-strike Forestcraft Attacks in your discard piles into your draw pile,add X *Fairy into your hand.X equals the number of cards returned.  NL If at least 10 non-Strike Elf Attacks are played this combat, Gain 4 additional Block. NL If at least 20, applt 3 Vulnerable and 3 Weak to All enemies."
   },
   "shadowverse:DivineSmithing": {
     "NAME": "Divine Smithing",
@@ -1105,8 +1105,8 @@
   },
   "shadowverse:PixieParadise": {
     "NAME": "Pixie Paradise",
-    "DESCRIPTION": "At the start of your turn,add !M! *Fariy into your hand.",
-    "UPGRADE_DESCRIPTION": "Innate . NL At the start of your turn,add !M! *Fariy into your hand."
+    "DESCRIPTION": "At the start of your turn,add !M! *Fairy into your hand.",
+    "UPGRADE_DESCRIPTION": "Innate . NL At the start of your turn,add !M! *Fairy into your hand."
   },
   "shadowverse:Lycoris": {
     "NAME": "Lycoris, Poisoner Princess",
@@ -1114,7 +1114,7 @@
   },
   "shadowverse:AvatarOfFruition": {
     "NAME": "Avatar Of Fruition",
-    "DESCRIPTION": "Natura . NL Add !M! *Fariy into your hand. NL If you have the Power: Naterran_Great_Tree , Add 1 addtional *Fariy into your hand and Deal !D! damage."
+    "DESCRIPTION": "Natura . NL Add !M! *Fairy into your hand. NL If you have the Power: Naterran_Great_Tree , Add 1 addtional *Fairy into your hand and Deal !D! damage."
   },
   "shadowverse:ThronBurst": {
     "NAME": "Thron Burst",
@@ -1122,8 +1122,8 @@
   },
   "shadowverse:RoseQueen": {
     "NAME": "RoseQueen",
-    "DESCRIPTION": "Gain !B!  Block . NL Exhaust all *Faries in your hand, add a *Thron *Burst into your hand for each *Fariy exausted.",
-    "UPGRADE_DESCRIPTION": "Gain !B!  Block . NL Exhaust all *Faries in your hand, add a *Thron *Burst+ into your hand for each *Fariy exausted."
+    "DESCRIPTION": "Gain !B!  Block . NL Exhaust all *Fairy in your hand, add a *Thron *Burst into your hand for each *Fairy exausted.",
+    "UPGRADE_DESCRIPTION": "Gain !B!  Block . NL Exhaust all *Fairy in your hand, add a *Thron *Burst+ into your hand for each *Fairy exausted."
   },
   "shadowverse:Pamera": {
     "NAME": "Forest Oracle Pascale",
@@ -3970,8 +3970,8 @@
   },
   "shadowverse:WonderTree": {
     "NAME": "Tree of Wonders",
-    "DESCRIPTION": "Fusion : *Fariy . NL At the start of your turn,activate 1 of the following effects in order: NL (1)Draw 1 additional card NL (2)Add a *Fariy into your hand and Gain !M!  Block NL (3)Heal 2 HP NL If fused,activate 2 effects instead.",
-    "UPGRADE_DESCRIPTION":"Fusion : *Fariy . NL At the start of your turn,activate 1 of the following effects in order: NL (1)Draw 1 additional card NL (2)Add a *Fariy+ into your hand and Gain !M!  Block NL (3)Heal 2 HP NL If fused,activate 2 effects instead.."
+    "DESCRIPTION": "Fusion : *Fairy . NL At the start of your turn,activate 1 of the following effects in order: NL (1)Draw 1 additional card NL (2)Add a *Fairy into your hand and Gain !M!  Block NL (3)Heal 2 HP NL If fused,activate 2 effects instead.",
+    "UPGRADE_DESCRIPTION":"Fusion : *Fairy . NL At the start of your turn,activate 1 of the following effects in order: NL (1)Draw 1 additional card NL (2)Add a *Fairy+ into your hand and Gain !M!  Block NL (3)Heal 2 HP NL If fused,activate 2 effects instead.."
   },
   "shadowverse:Alberta": {
     "NAME": "Alberta, the Autumnblade",
@@ -4133,5 +4133,30 @@
   "shadowverse:Spector": {
     "NAME": "幻影拍档·巴妮与巴隆",
     "DESCRIPTION": " 激奏 0 \b增加1张 *亡命射击 到手中. NL  NL --------------------- NL  NL 造成 !D! 点伤害. NL 谢幕曲 下回合开始时增加1张打出前耗能为的 *魔导四轮车·V 到手中. NL 消耗 ."
+  },
+  "shadowverse:HonoredFrontguardGeneral": {
+    "NAME": "荣耀的铁卫战将",
+    "DESCRIPTION": "可被多次 升级 。 NL 召唤一个+ !M! / !M! 的 铁卫战将 。 NL 消耗 。"
+  },
+  "shadowverse:Aramis": {
+    "NAME": "阿拉密斯",
+    "DESCRIPTION": "打出攻击牌时，获得1点 力量 和 敏捷 并使这张卡的伤害+3。 NL 召唤随从时，使该随从获得+1/+1并使这张卡的伤害+3。 NL 造成 !D! 点伤害。 NL 消耗 。"
+  },
+  "shadowverse:Porthos": {
+    "NAME": "波尔多斯",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 回合结束时，对随机敌人造成 !B! 点伤害。 NL 消耗 。"
+  },
+  "shadowverse:Athos": {
+    "NAME": "阿多斯",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果本回合没有完全失去格挡，下回合开始时额外获得 !B! 点格挡。 NL 消耗 。"
+  },
+  "shadowverse:DArtagnan": {
+    "NAME": "达达尼昂",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果通过 爆能强化 将这张卡加入手中，这张卡的伤害翻倍。 NL 消耗 。"
+  },
+  "shadowverse:MusketeersVow": {
+    "NAME": "火枪手的誓言",
+    "DESCRIPTION": "*阿拉密斯 、 *波尔多斯 、 *阿多斯 、 *达达尼昂  NL 抉择 ：选择2张指定的卡加入手中。 NL 爆能强化 4\b改为全部加入手中。如果手中有2张以上的 *进化点 ， 升级 这些卡。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "*阿拉密斯 、 *波尔多斯 、 *阿多斯 、 *达达尼昂  NL 抉择 ：选择2张指定的卡加入手中。 NL 爆能强化 4\b改为全部加入手中。如果手中有2张以上的 *进化点 ， 升级 这些卡。 NL 消耗性 !stslib:ex! 。"
   }
 }

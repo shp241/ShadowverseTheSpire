@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import com.megacrit.cardcrawl.vfx.combat.MiracleEffect;
@@ -34,8 +35,6 @@ public class BenevolentBlight extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/BenevolentBlight.png";
-    private boolean doubleCheck = false;
-
 
     public BenevolentBlight() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.SKILL, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.ALL_ENEMY);
@@ -46,8 +45,6 @@ public class BenevolentBlight extends CustomCard {
         this.exhaust = true;
     }
 
-
-
     @Override
     public void upgrade() {
         if (!this.upgraded) {
@@ -57,74 +54,30 @@ public class BenevolentBlight extends CustomCard {
         }
     }
 
-    public void triggerWhenDrawn() {
-        if (Shadowverse.Enhance(3)) {
-            super.triggerWhenDrawn();
-            setCostForTurn(3);
-            applyPowers();
-        }
-    }
     @Override
-    public void applyPowers(){
-        if (Shadowverse.Enhance(3))
+    public void update() {
+        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
+                Shadowverse.Enhance(3)) {
             setCostForTurn(3);
-        else
-            resetAttributes();
-        super.applyPowers();
-    }
-
-    @Override
-    public void atTurnStart() {
-        if (AbstractDungeon.player.hand.group.contains(this)){
-            if (Shadowverse.Enhance(3)) {
-                super.triggerWhenDrawn();
-                setCostForTurn(3);
-                applyPowers();
-            }
+        } else {
+            setCostForTurn(2);
         }
-    }
-
-    public void triggerOnOtherCardPlayed(AbstractCard c) {
-        if (AbstractDungeon.player.hasPower("Burst")||AbstractDungeon.player.hasPower("Double Tap")||AbstractDungeon.player.hasPower("Amplified")) {
-            doubleCheck = true;
-            if (EnergyPanel.getCurrentEnergy() - c.costForTurn < 3) {
-                resetAttributes();
-                applyPowers();
-            }
-        }else {
-            if (doubleCheck) {
-                doubleCheck = false;
-            }else {
-                if (EnergyPanel.getCurrentEnergy() - c.costForTurn < 3) {
-                    resetAttributes();
-                    applyPowers();
-                }
-            }
-        }
-    }
-
-    public void triggerOnGainEnergy(int e, boolean dueToCard) {
-        if (EnergyPanel.getCurrentEnergy() >= 3) {
-            setCostForTurn(3);
-        }  else {
-            resetAttributes();
-        }
-        applyPowers();
+        super.update();
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new VFXAction(new MiracleEffect()));
+        addToBot((AbstractGameAction) new VFXAction(new MiracleEffect()));
         addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
         if (this.costForTurn == 3 && Shadowverse.Enhance(3)) {
             addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
             addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
-            addToBot((AbstractGameAction)new HealAction(p,p,this.magicNumber*2));
-            addToBot((AbstractGameAction)new DrawCardAction(2));
-        }else {
+            addToBot((AbstractGameAction) new HealAction(p, p, this.magicNumber * 2));
+            addToBot((AbstractGameAction) new DrawCardAction(2));
+        } else {
             addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
-            addToBot((AbstractGameAction)new HealAction(p,p,this.magicNumber));
-            addToBot((AbstractGameAction)new DrawCardAction(1));
+            addToBot((AbstractGameAction) new HealAction(p, p, this.magicNumber));
+            addToBot((AbstractGameAction) new DrawCardAction(1));
         }
     }
 

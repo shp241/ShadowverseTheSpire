@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.PlatedArmorPower;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.cards.Temp.ProductMachine;
@@ -27,7 +28,6 @@ public class ArmoredBat
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/ArmoredBat.png";
-    private boolean doubleCheck = false;
 
     public ArmoredBat() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Vampire.Enums.COLOR_SCARLET, CardRarity.COMMON, CardTarget.SELF);
@@ -49,60 +49,15 @@ public class ArmoredBat
         }
     }
 
-    public void triggerWhenDrawn() {
-        if (Shadowverse.Enhance(2)) {
-            super.triggerWhenDrawn();
-            setCostForTurn(2);
-            applyPowers();
-        }
-    }
-
     @Override
-    public void applyPowers() {
-        if (Shadowverse.Enhance(2))
-            setCostForTurn(2);
-        else
-            resetAttributes();
-        super.applyPowers();
-    }
-
-    @Override
-    public void atTurnStart() {
-        if (AbstractDungeon.player.hand.group.contains(this)) {
-            if (Shadowverse.Enhance(2)) {
-                super.triggerWhenDrawn();
-                setCostForTurn(2);
-                applyPowers();
-            }
-        }
-    }
-
-    public void triggerOnOtherCardPlayed(AbstractCard c) {
-        if (AbstractDungeon.player.hasPower("Burst") || AbstractDungeon.player.hasPower("Double Tap") || AbstractDungeon.player.hasPower("Amplified")) {
-            doubleCheck = true;
-            if (EnergyPanel.getCurrentEnergy() - c.costForTurn < 2) {
-                resetAttributes();
-                applyPowers();
-            }
-        } else {
-            if (doubleCheck) {
-                doubleCheck = false;
-            } else {
-                if (EnergyPanel.getCurrentEnergy() - c.costForTurn < 2) {
-                    resetAttributes();
-                    applyPowers();
-                }
-            }
-        }
-    }
-
-    public void triggerOnGainEnergy(int e, boolean dueToCard) {
-        if (EnergyPanel.getCurrentEnergy() >= 2) {
+    public void update() {
+        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
+                Shadowverse.Enhance(2)) {
             setCostForTurn(2);
         } else {
-            resetAttributes();
+            setCostForTurn(1);
         }
-        applyPowers();
+        super.update();
     }
 
     @Override
