@@ -75,7 +75,11 @@ public class AmuletOrb extends AbstractOrb {
 
     public void updateDescription() {
         applyFocus();
-        this.description = DESC[0] + this.passiveAmount + DESC[1] + this.amulet.name;
+        if (!(this.amulet instanceof AbstractNoCountDownAmulet)){
+            this.description = DESC[0] + this.passiveAmount + DESC[1] + this.amulet.name;
+        }else {
+            this.description = this.amulet.name;
+        }
     }
 
 

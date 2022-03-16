@@ -18,16 +18,21 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.powers.*;
 import com.megacrit.cardcrawl.vfx.RainingGoldEffect;
 import rs.lazymankits.interfaces.cards.BranchableUpgradeCard;
 import rs.lazymankits.interfaces.cards.UpgradeBranch;
+import shadowverse.cards.Status.EvolutionPoint;
 import shadowverse.cards.Temp.GildedBlade;
 import shadowverse.cards.Temp.GildedBoots;
 import shadowverse.cards.Temp.GildedGoblet;
 import shadowverse.cards.Temp.GildedNecklace;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
+import shadowverse.orbs.AmbushMinion;
+import shadowverse.orbs.ErikaOrb;
+import shadowverse.orbs.Minion;
 import shadowverse.powers.BetterFlightPower;
 import shadowverse.powers.CurseOfGeass;
 
@@ -117,6 +122,29 @@ public class Octrice extends CustomCard implements BranchableUpgradeCard {
         ((UpgradeBranch) ((BranchableUpgradeCard) this).possibleBranches().get(chosenBranch())).upgrade();
     }
 
+    @Override
+    public void triggerWhenDrawn() {
+        if (chosenBranch()==1){
+            if (rally()>7){
+                addToBot((AbstractGameAction) new MakeTempCardInHandAction(new EvolutionPoint()));
+            }
+        }
+    }
+
+    public int rally() {
+        int rally = 0;
+        for (AbstractOrb o : AbstractDungeon.actionManager.orbsChanneledThisCombat) {
+            if (o instanceof Minion && !(o instanceof AmbushMinion) && !(o instanceof ErikaOrb)) {
+                rally++;
+            }
+        }
+        for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
+            if (c.type == CardType.ATTACK && !(c.hasTag(CardTags.STRIKE))) {
+                rally++;
+            }
+        }
+        return rally;
+    }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {

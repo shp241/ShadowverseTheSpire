@@ -30,8 +30,8 @@ public class ExterminusWeapon extends CustomCard {
     }
 
     public ExterminusWeapon(int upgrades) {
-        super(ID, NAME, IMG_PATH, 5, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
-        this.baseDamage = 50;
+        super(ID, NAME, IMG_PATH, 6, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
+        this.baseDamage = 48;
         this.isMultiDamage = true;
         this.timesUpgraded = upgrades;
         this.selfRetain = true;

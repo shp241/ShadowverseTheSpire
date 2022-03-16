@@ -2867,7 +2867,7 @@
   },
   "shadowverse:Octrice2": {
     "NAME": "空绝强夺·奥克托丽丝",
-    "DESCRIPTION": "随机获得敌人的一种正面效果。 NL 获得 !M! 金币。 NL 增加1张 *空绝的残光 到手中。 NL 随机将1张 财宝牌 加入手牌。 NL 消耗 。"
+    "DESCRIPTION": "协作 8 \b这张卡被抽到时，增加1张 *进化点 到手中。 NL 随机获得敌人的一种正面效果。 NL 获得 !M! 金币。 NL 增加1张 *空绝的残光 到手中。 NL 随机将1张 财宝牌 加入手牌。 NL 消耗 。"
   },
   "shadowverse:Mars": {
     "NAME": "沉默的炎将·玛尔斯",
@@ -3168,8 +3168,8 @@
   },
   "shadowverse:GloriousCore": {
     "NAME": "荣耀之核",
-    "DESCRIPTION": "机械 。 NL 下次使用 *进化点 时，使所有随从获得+1/+1。 NL 爆能强化 2 \b将1张进化点置入手牌。",
-    "UPGRADE_DESCRIPTION": "机械 。 NL 下次使用 *进化点 时，使所有随从获得+1/+1。 NL 爆能强化 2 \b将1张进化点置入手牌，获得 [E] 。"
+    "DESCRIPTION": "机械 。 NL 下次使用 *进化点 时，使所有随从获得+1/+1。 NL 爆能强化 2 \b将1张 *进化点 置入手牌，获得 [E] 。",
+    "UPGRADE_DESCRIPTION": "机械 。 NL 下次使用 *进化点 时，使所有随从获得+1/+1。 NL 爆能强化 2 \b将2张 *进化点+ 置入手牌，获得 [E] 。"
   },
   "shadowverse:LevinBeastmaster": {
     "NAME": "雷维翁魔兽使",
