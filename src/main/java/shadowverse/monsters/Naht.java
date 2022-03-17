@@ -79,21 +79,21 @@ public class Naht extends CustomMonster {
         this.turnsTaken = 0;
         if (AbstractDungeon.ascensionLevel >= 19) {
             this.heavyDmg = 25;
-            this.multiDmg = 6;
-            this.backDmg = 8;
+            this.multiDmg = 8;
+            this.backDmg = 10;
             this.minionAmt = 4;
-            this.strAmount = 4;
+            this.strAmount = 5;
             this.debuffAmount = 3;
         } else if (AbstractDungeon.ascensionLevel >= 4) {
             this.heavyDmg = 25;
-            this.multiDmg = 6;
-            this.backDmg = 6;
+            this.multiDmg = 8;
+            this.backDmg = 8;
             this.minionAmt = 2;
             this.strAmount = 3;
             this.debuffAmount = 2;
         } else {
             this.heavyDmg = 20;
-            this.multiDmg = 4;
+            this.multiDmg = 6;
             this.backDmg = 6;
             this.minionAmt = 2;
             this.strAmount = 3;
@@ -111,12 +111,13 @@ public class Naht extends CustomMonster {
         AbstractDungeon.getCurrRoom().playBgmInstantly("BOSS_BEYOND");
         int baseStrength = 0;
         if (AbstractDungeon.ascensionLevel >= 19) {
-            baseStrength = AbstractDungeon.player.currentHealth / 10;
+            baseStrength = AbstractDungeon.player.currentHealth / 12;
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new InvinciblePower(this, 80)));
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new CuriosityPower(this, 1)));
         } else {
-            baseStrength = AbstractDungeon.player.currentHealth / 12;
+            baseStrength = AbstractDungeon.player.currentHealth / 15;
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new InvinciblePower(this, 100)));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new CuriosityPower(this, 1)));
         }
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new StrengthPower(this, baseStrength), baseStrength));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new NahtPower(this), 1));
@@ -270,10 +271,10 @@ public class Naht extends CustomMonster {
             }
             if (ms != 0) {
                 setMove((byte) 5, AbstractMonster.Intent.ATTACK, (this.damage.get(2)).base, ms, ms > 1);
-                this.createIntent();
             } else {
                 setMove((byte) 1, Intent.ATTACK, (this.damage.get(1)).base, 3, true);
             }
+            this.createIntent();
         }
     }
 
