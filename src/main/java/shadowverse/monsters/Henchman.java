@@ -89,6 +89,7 @@ public class Henchman extends CustomMonster {
     @Override
     public void die() {
         AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Horse()));
+        super.die();
         for (AbstractMonster m : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
             if (m.isDying || m.isDead) {
                 continue;
@@ -97,6 +98,5 @@ public class Henchman extends CustomMonster {
                 AbstractDungeon.actionManager.addToBottom(new RollMoveAction(m));
             }
         }
-        super.die();
     }
 }
