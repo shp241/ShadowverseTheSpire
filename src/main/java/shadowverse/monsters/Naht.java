@@ -50,8 +50,6 @@ public class Naht extends CustomMonster {
 
     private int debuffAmount;
 
-    private int buffAmount;
-
     private int next = 1;
 
     private int turnsTaken;
@@ -83,10 +81,9 @@ public class Naht extends CustomMonster {
             this.heavyDmg = 25;
             this.multiDmg = 6;
             this.backDmg = 10;
-            this.minionAmt = 3;
+            this.minionAmt = 4;
             this.strAmount = 4;
             this.debuffAmount = 3;
-            this.buffAmount = 4;
         } else if (AbstractDungeon.ascensionLevel >= 4) {
             this.heavyDmg = 25;
             this.multiDmg = 6;
@@ -94,7 +91,6 @@ public class Naht extends CustomMonster {
             this.minionAmt = 2;
             this.strAmount = 3;
             this.debuffAmount = 2;
-            this.buffAmount = 2;
         } else {
             this.heavyDmg = 20;
             this.multiDmg = 4;
@@ -102,7 +98,6 @@ public class Naht extends CustomMonster {
             this.minionAmt = 2;
             this.strAmount = 3;
             this.debuffAmount = 2;
-            this.buffAmount = 2;
         }
         this.damage.add(new DamageInfo(this, this.heavyDmg));
         this.damage.add(new DamageInfo(this, this.multiDmg));
@@ -178,7 +173,6 @@ public class Naht extends CustomMonster {
                     AbstractMonster m = new Henchman(this.spawnX - 50 - 75.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
                     AbstractDungeon.actionManager.addToBottom(new SpawnMonsterAction(m, true));
                     this.enemySlots.put(i + 1, m);
-                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, this, new MetallicizePower(m, this.buffAmount)));
                 }
                 turnsTaken++;
                 if (turnsTaken % 4 == 3) {
