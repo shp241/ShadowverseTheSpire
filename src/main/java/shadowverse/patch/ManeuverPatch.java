@@ -49,8 +49,8 @@ public class ManeuverPatch {
                                 ((NahtPower) power).triggered = true;
                                 ((NahtPower) power).boxed.add(c);
                                 power.updateDescription();
-                                AbstractDungeon.actionManager.addToBottom(new RollMoveAction(m));
                                 AbstractDungeon.actionManager.addToBottom(new NahtAction(c));
+                                AbstractDungeon.actionManager.addToBottom(new RollMoveAction(m));
                                 return SpireReturn.Return(null);
                             }
                         }

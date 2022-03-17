@@ -2,6 +2,7 @@ package shadowverse.cards.Uncommon;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -30,7 +31,6 @@ public class LuminousMage extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.isInnate = true;
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }
@@ -43,6 +43,13 @@ public class LuminousMage extends CustomCard {
         addToBot(new ApplyPowerAction(p, p, new LuminousMagePower(p, this.magicNumber)));
     }
 
+    @Override
+    public void triggerWhenDrawn() {
+        if (this.upgraded) {
+            addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Eff"));
+            this.addToTop(new MakeTempCardInHandAction(new EvolutionPoint(), 1));
+        }
+    }
 
     @Override
     public AbstractCard makeCopy() {

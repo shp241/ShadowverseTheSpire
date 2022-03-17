@@ -2,7 +2,9 @@ package shadowverse.relics;
 
 import basemod.abstracts.CustomRelic;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.defect.IncreaseMaxOrbAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -68,7 +70,7 @@ public class AlterplaneArbiter extends CustomRelic {
                 s += this.DESCRIPTIONS[7] + this.DESCRIPTIONS[2];
             } else if (COLORS[this.counter] == Royal.Enums.COLOR_YELLOW) {
                 s += this.DESCRIPTIONS[8] + this.DESCRIPTIONS[2];
-            }else if (COLORS[this.counter] == Bishop.Enums.COLOR_WHITE){
+            } else if (COLORS[this.counter] == Bishop.Enums.COLOR_WHITE) {
                 s += this.DESCRIPTIONS[9] + this.DESCRIPTIONS[2];
             }
         }
@@ -77,6 +79,12 @@ public class AlterplaneArbiter extends CustomRelic {
 
     @Override
     public void onEnterRoom(AbstractRoom room) {
+        flash();
+        AbstractPlayer p = AbstractDungeon.player;
+        if (p.maxOrbs < 5) {
+            int toIncrease = 5 - p.maxOrbs;
+            addToBot(new IncreaseMaxOrbAction(toIncrease));
+        }
         for (PowerTip t : this.tips) {
             if (t.header.equals(this.name)) {
                 t.body = this.getUpdatedDescription();

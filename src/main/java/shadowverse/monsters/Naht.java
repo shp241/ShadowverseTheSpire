@@ -47,6 +47,10 @@ public class Naht extends CustomMonster {
 
     private int strAmount;
 
+    private int debuffAmount;
+
+    private int buffAmount;
+
     private int next = 1;
 
     private boolean initialSpawn = true;
@@ -67,19 +71,25 @@ public class Naht extends CustomMonster {
             this.multiDmg = 6;
             this.backDmg = 10;
             this.minionAmt = 4;
-            this.strAmount = 5;
+            this.strAmount = 4;
+            this.debuffAmount = 3;
+            this.buffAmount = 5;
         } else if (AbstractDungeon.ascensionLevel >= 4) {
             this.heavyDmg = 25;
             this.multiDmg = 6;
-            this.backDmg = 10;
+            this.backDmg = 8;
             this.minionAmt = 2;
             this.strAmount = 3;
+            this.debuffAmount = 2;
+            this.buffAmount = 3;
         } else {
             this.heavyDmg = 20;
             this.multiDmg = 4;
             this.backDmg = 6;
             this.minionAmt = 2;
             this.strAmount = 3;
+            this.debuffAmount = 2;
+            this.buffAmount = 3;
         }
         this.damage.add(new DamageInfo(this, this.heavyDmg));
         this.damage.add(new DamageInfo(this, this.multiDmg));
@@ -144,20 +154,16 @@ public class Naht extends CustomMonster {
                     AbstractMonster m = new Henchman(this.spawnX + -100.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
                     AbstractDungeon.actionManager.addToBottom(new SpawnMonsterAction(m, true));
                     this.enemySlots.put(i + 1, m);
-                    if (AbstractDungeon.ascensionLevel >= 19) {
-                        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, this, new MetallicizePower(m, 5)));
-                        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, this, new StrengthPower(m, 3), 3));
-                    } else {
-                        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, this, new MetallicizePower(m, 3)));
-                        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, this, new StrengthPower(m, 2), 2));
-                    }
+                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, this, new MetallicizePower(m, this.buffAmount)));
+                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, this, new StrengthPower(m, this.strAmount), this.strAmount));
+
                 }
                 this.next = (3 + AbstractDungeon.monsterRng.random(3)) % 5 + 1;
                 break;
             case 4:
                 AbstractDungeon.actionManager.addToBottom(new ShoutAction(this, DIALOG[3], 1.0F, 2.0F));
                 addToBot(new SFXAction("Naht_A4"));
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new VulnerablePower(AbstractDungeon.player, 3, true), 3));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new VulnerablePower(AbstractDungeon.player, this.debuffAmount, true), this.debuffAmount));
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new StrengthPower(this, this.strAmount), this.strAmount));
                 this.next = (4 + AbstractDungeon.monsterRng.random(3)) % 5 + 1;
                 break;
@@ -236,6 +242,7 @@ public class Naht extends CustomMonster {
             }
             if (ms != 0) {
                 setMove((byte) 5, AbstractMonster.Intent.ATTACK, (this.damage.get(2)).base, ms, ms > 1);
+                this.createIntent();
             } else {
                 setMove((byte) 1, Intent.ATTACK, (this.damage.get(1)).base, 3, true);
             }

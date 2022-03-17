@@ -26,7 +26,7 @@ public class NahtAction extends AbstractGameAction {
         if (this.duration == this.startingDuration) {
             AbstractDungeon.player.hand.removeCard(c);
             AbstractDungeon.player.limbo.addToBottom(c);
-            addToBot(new SFXAction("Naht_D" + (MathUtils.random(10) % 3 + 1)));
+            addToBot(new SFXAction("Naht_P" + (MathUtils.random(10) % 3 + 1)));
             c.setAngle(0.0F);
             c.targetDrawScale = 0.75F;
             c.target_x = (float) Settings.WIDTH / 2.0F;

@@ -2946,7 +2946,7 @@
   "shadowverse:LuminousMage": {
     "NAME": "鲁米那斯法师",
     "DESCRIPTION": "回合开始时, 将 !M! 张 *进化点 置入手牌.",
-    "UPGRADE_DESCRIPTION": "固有 . NL 回合开始时, 将 !M! 张 *进化点 置入手牌. "
+    "UPGRADE_DESCRIPTION": "回合开始时, 将 !M! 张 *进化点 置入手牌. NL 抽到时将一张 *进化点 置入手牌."
   },
   "shadowverse:PrudentGeneral": {
     "NAME": "静寂的元帅",
