@@ -1,89 +1,89 @@
 {
   "shadowverse:Knight": {
     "DESCRIPTION": [
-      "#y被动： 在你的回合结束时，对随机敌人造成 #b",
-      " 点伤害并失去 #b1 点生命值。 NL #y激发： 重复被动效果直到生命值为 #b0 。"
+      "#yPassive: Deal #b",
+      " damage to random enemy and lose #b1 Health by the end of your turn. NL #yEvoked: Repeat passive effects until its Health reaches #b0 ."
     ],
-    "NAME": "骑士"
+    "NAME": "Knight"
   },
   "shadowverse:HeavyKnight": {
     "DESCRIPTION": [
-      "#y被动： 在你的回合结束时，给予随机敌人 #b",
-      " 层 #y虚弱 并失去 #b1 点生命值。 NL #y激发： 重复被动效果直到生命值为 #b0 。"
+      "#yPassive: Apply #b",
+      " #yWeak to random enemy and lose #b1 Health by the end of your turn. NL #yEvoked: Repeat passive effects until its Health reaches #b0 ."
     ],
-    "NAME": "重装骑士"
+    "NAME": "HeavyKnight"
   },
   "shadowverse:SteelcladKnight": {
     "DESCRIPTION": [
-      "#y被动： 在你的回合结束时，对随机敌人造成 #b",
-      " 点伤害并失去 #b1 点生命值。 NL #y激发： 重复被动效果直到生命值为 #b0 。"
+      "#yPassive: Deal #b",
+      " damage to random enemy and lose #b1 Health by the end of your turn. NL #yEvoked: Repeat passive effects until its Health reaches #b0 ."
     ],
-    "NAME": "铁甲骑士"
+    "NAME": "Steelclad Knight"
   },
   "shadowverse:ShieldGuardian": {
     "DESCRIPTION": [
-      "#y被动： 在你的回合结束时，获得 #b",
-      " 点格挡并失去 #b1 点生命值。 NL #y激发： 重复被动效果直到生命值为 #b0 。"
+      "#yPassive: Gain #b",
+      " #yBlock and lose #b1 Health by the end of your turn. NL #yEvoked: Repeat passive effects until its Health reaches #b0 ."
     ],
-    "NAME": "战盾卫士"
+    "NAME": "Shield Guardian"
   },
   "shadowverse:FrontguardGeneral": {
     "DESCRIPTION": [
-      "#y被动： 在你的回合结束时，获得 #b",
-      " 点格挡，下回合获得 #b",
-      " 点格挡并失去 #b1 点生命值。 NL #y激发： 重复被动效果直到生命值为 #b0 。"
+      "#yPassive: Gain #b",
+      " #yBlock , gain #b",
+      " #yPlated #yArmor and lose #b1 Health by the end of your turn. NL #yEvoked: Repeat passive effects until its Health reaches #b0 ."
     ],
-    "NAME": "铁卫战将"
+    "NAME": "Frontguard General"
   },
   "shadowverse:QueenHemera": {
     "DESCRIPTION": [
-      "#y被动： 在你的回合结束时，获得 #b",
-      " 点格挡，召唤 #b1 个骑士并失去 #b1 点生命值。 NL #y激发： 重复被动效果直到生命值为 #b0 。"
+      "#yPassive: Gain #b",
+      " #yBlock , summon #b1 #yKnight and lose #b1 Health by the end of your turn. NL #yEvoked: Repeat passive effects until its Health reaches #b0 ."
     ],
-    "NAME": "英勇之王·伊梅拉"
+    "NAME": "Queen Hemera the Brave"
   },
   "shadowverse:QueenMagnus": {
     "DESCRIPTION": [
-      "#y被动： 在你的回合结束时，对随机敌人造成 #b",
-      " 点伤害并失去 #b1 点生命值，下个回合开始时获得 #b1 点费用。 NL #y激发： 重复被动效果直到生命值为 #b0 ，改为即时获得费用。"
+      "#yPassive: Deal #b",
+      " damage to random enemy and lose #b1 Health by the end of your turn. Next turn, gain #yEnergy . NL #yEvoked: Repeat passive effects until its Health reaches #b0 , gain #yEnergy immediately."
     ],
-    "NAME": "高雅女王·玛格娜丝"
+    "NAME": "Queen Magnus the Graceful"
   },
   "shadowverse:Quickblader": {
     "DESCRIPTION": [
-      "#y被动： 在你的回合结束时，给予随机敌人 #b1 层 #y易伤， #b",
-      " 点伤害并失去 #b1 点生命值。 NL #y激发： 重复被动效果直到生命值为 #b0 。"
+      "#yPassive: Apply #b1 #yVulnerable , deal #b",
+      " damage to random enemy and lose #b1 Health by the end of your turn. NL #yEvoked: Repeat passive effects until its Health reaches #b0 ."
     ],
-    "NAME": "迅捷的剑士"
+    "NAME": "Quickblader"
   },
   "shadowverse:Viking": {
     "DESCRIPTION": [
-      "#y被动： 在你的回合结束时，给予随机敌人 #b",
-      " 层 #y易伤， #b",
-      " 点伤害并失去 #b1 点生命值。 NL #y激发： 重复被动效果直到生命值为 #b0 。"
+      "#yPassive: Apply #b",
+      " #yVulnerable , deal #b",
+      " damage to random enemy and lose #b1 Health by the end of your turn. NL #yEvoked: Repeat passive effects until its Health reaches #b0 ."
     ],
-    "NAME": "维京战士"
+    "NAME": "Viking"
   },
   "shadowverse:Pirate": {
     "DESCRIPTION": [
-      "#y被动： 在你的回合结束时，获得 #b",
-      " 点格挡并失去 #b1 点生命值。 NL #y激发： 重复被动效果直到生命值为 #b0 。"
+      "#yPassive: Gain #b",
+      " #yBlock and lose #b1 Health by the end of your turn. NL #yEvoked: Repeat passive effects until its Health reaches #b0 ."
     ],
-    "NAME": "航海家"
+    "NAME": "Pirate"
   },
   "shadowverse:CannonHermitCrabOrb": {
     "DESCRIPTION": [
-      "#y被动： 在你的回合结束时，对随机敌人造成 #b",
-      " 点伤害并失去 #b1 点生命值。获得 #b",
-      " 点格挡。如果 #y共鸣 或有 #y那塔拉的大树 则生成一个伤害和生命值为当前一半的 #y加农炮寄居蟹 。 NL #y激发： 重复造成伤害和获得格挡直到生命值为 #b0 。"
+      "#yPassive: Deal #b",
+      " damage to random enemy , gain #b",
+      " #yBlock and lose #b1 Health by the end of your turn. If you have #yResonance or the Power: #yNaterran #yGreat #yTree , summon a new #yCannon #yHermit #yCrab with half of the current state (Round up the value) . NL #yEvoked: Repeat passive effects until its Health reaches #b0 ."
     ],
-    "NAME": "加农炮寄居蟹"
+    "NAME": "Cannon Hermit Crab"
   },
   "shadowverse:Amulet": {
     "DESCRIPTION": [
-      "倒计时 #b",
-      " ：\b"
+      "#yCountdown #b",
+      " :\b"
     ],
-    "NAME": "护符："
+    "NAME": "Amulet: "
   }
 }

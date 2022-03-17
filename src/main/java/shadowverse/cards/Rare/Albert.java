@@ -57,7 +57,9 @@ public class Albert extends CustomCard implements BranchableUpgradeCard {
                 Shadowverse.Enhance(3)) {
             setCostForTurn(3);
         } else {
-            setCostForTurn(1);
+            if (this.costForTurn!=0){
+                setCostForTurn(1);
+            }
         }
         super.update();
     }

@@ -53,7 +53,7 @@ public class TheLovers extends CustomCard {
                 Shadowverse.Enhance(6)) {
             setCostForTurn(6);
         } else {
-            if ((this.costForTurn > 0)) {
+            if (this.costForTurn > 1) {
                 setCostForTurn(2);
             }
         }

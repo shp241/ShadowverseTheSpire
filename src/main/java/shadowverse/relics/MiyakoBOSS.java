@@ -43,7 +43,7 @@ import shadowverse.cards.Temp.Litch;
          if (playerNecromance>=6 && !this.grayscale){
              flash();
              this.counter--;
-             addToBot((AbstractGameAction)new NecromanceAction(5,null,
+             addToBot((AbstractGameAction)new NecromanceAction(6,null,
                      (AbstractGameAction)new MakeTempCardInHandAction(new Apparition(),1)));
          }
          if (this.counter == 0) {

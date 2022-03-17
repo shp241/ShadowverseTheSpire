@@ -95,7 +95,7 @@
     "DIALOG": [
       "~I~ ~don't~ ~need~ ~a~ ~gun.~ ~Not~ ~when~ ~I~ ~have~ ~my~ ~words.~",
       "~Quiet!~",
-      "@My@ @Words@ @is@ @my@ @Gun!@",
+      "Open yer ears! @Justice himself is speakin'.@",
       "~Well,~ ~that's~ ~it,~ ~then.~",
       "~Afront~ ~My~ ~Hands~ ~is~ ~Absolute~ ~Zero~",
       "~Beneath~ ~My~ ~Legs~ ~is~ ~Storm-Force~ ~Wind~",
@@ -170,11 +170,11 @@
     ],
     "NAME": "Nahtnaught",
     "DIALOG": [
-      "@我が咆哮で千切れろ消えろ！@",
-      "~咆える銃声、凱歌なり~",
-      "~路傍の石、転がる草、それがお前よ~",
-      "@この掌はお前の箱庭@",
-      "@足掻いて見せろ！@"
+      "@I love the smell of gunsmoke in the mornin.@",
+      "~咆哮的枪声正是凯歌~",
+      "~You look 'bout as tough as a field mouse!~",
+      "@You make a lovely coffin.@",
+      "@How's that.@"
     ]
   }
 }

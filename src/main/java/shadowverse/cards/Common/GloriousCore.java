@@ -51,7 +51,9 @@ public class GloriousCore extends CustomCard {
                 Shadowverse.Enhance(2)) {
             setCostForTurn(2);
         } else {
-            setCostForTurn(1);
+            if (this.costForTurn!=0){
+                setCostForTurn(1);
+            }
         }
         super.update();
     }

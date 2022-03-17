@@ -47,7 +47,9 @@ import shadowverse.characters.Nemesis;
              Shadowverse.Enhance(3)) {
        setCostForTurn(3);
      } else {
-       setCostForTurn(2);
+       if (this.costForTurn>1){
+         setCostForTurn(2);
+       }
      }
      super.update();
    }

@@ -53,7 +53,9 @@ public class Invasion extends CustomCard {
                 Shadowverse.Enhance(3)) {
             setCostForTurn(3);
         } else {
-            setCostForTurn(1);
+            if (this.costForTurn!=0){
+                setCostForTurn(1);
+            }
         }
         super.update();
         if (this.hb.hovered)

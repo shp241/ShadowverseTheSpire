@@ -1,135 +1,135 @@
 {
   "shadowverse:SatanPotion": {
-    "NAME": "罐装地狱",
+    "NAME": "Evil in a Jar",
     "DESCRIPTIONS": [
-      "从 #b3 张随机启示录、冥河牌中选择 #b1 张加入手中，其本回合耗能变为 #b0 。",
-      "从 #b3 张随机启示录、冥河牌中选择 #b2 张加入手中，其本回合耗能变为 #b0 。"
+      "Choose #b1 of #b3 random *Apocalypse or *Cocytus cards to add to your hand, it costs #b0 this turn.",
+      "Choose #b2 of #b3 random *Apocalypse or *Cocytus cards to add to your hand, they costs #b0 this turn."
     ]
   },
   "shadowverse:ElfPotion": {
-    "NAME": "瓶中妖精",
+    "NAME": "Bottled Fairy",
     "DESCRIPTIONS": [
-      "增加 #b",
-      " 张 #y妖精+ 到手中。"
+      "Add #b",
+      " #yFairy+ to your hand."
     ]
   },
   "shadowverse:BoostPotion": {
-    "NAME": "增幅药水",
+    "NAME": "Boost Potion",
     "DESCRIPTIONS": [
-      "发动 #b",
-      " 次 #y魔力增幅 。"
+      "#ySpellboost cards in your hand #b",
+      " times."
     ]
   },
   "shadowverse:EarthPotion": {
-    "NAME": "土之精华",
+    "NAME": "Essence Of Earth",
     "DESCRIPTIONS": [
-      "获得 #b",
-      " 层 #y土之印记 。"
+      "Gain #b",
+      " #yEarth #yEssence ."
     ]
   },
   "shadowverse:KeepPotion": {
-    "NAME": "魔力补充剂",
+    "NAME": "Mana Supplement",
     "DESCRIPTIONS": [
-      "本场战斗中每回合结束时保留 #b",
-      " 张牌。"
+      "Retain #b",
+      " cards by the end of your turn for the rest of combat."
     ]
   },
   "shadowverse:CemeteryPotion": {
-    "NAME": "灵魂药水",
+    "NAME": "Potion of Shadows",
     "DESCRIPTIONS": [
-      "获得 #b",
-      " 点 #y墓地 。"
+      "Gain #b",
+      " #yShadows ."
     ]
   },
   "shadowverse:ReanimatePotion": {
-    "NAME": "召还药水",
+    "NAME": "Reanimate Potion",
     "DESCRIPTIONS": [
-      " #y亡者召还 #b3 。",
-      " #y亡者召还 #b3 两次。"
+      " #yReanimate #b3 .",
+      " #yReanimate #b3 2 times."
     ]
   },
   "shadowverse:RosePotion": {
-    "NAME": "精炼蔷薇",
+    "NAME": "Rose Brew",
     "DESCRIPTIONS": [
-      "增加 #b",
-      " 张 #y蔷薇的猛击+ 到手中。"
+      "Add #b",
+      " #yThron #yBurst+ to your hand."
     ]
   },
   "shadowverse:NaterranPotion": {
-    "NAME": "马纳提取液",
+    "NAME": "Liquid Mana",
     "DESCRIPTIONS": [
-      "增加 #b",
-      " 张 #y那塔拉的大树 到手中。"
+      "Add #b",
+      " #yNaterran #yGreat #yTree to your hand."
     ]
   },
   "shadowverse:BatPotion": {
-    "NAME": "瓶中蝙蝠",
+    "NAME": "Bat in a Bottle",
     "DESCRIPTIONS": [
-      "增加 #b",
-      " 张 #y林地蝙蝠+ 到手中。"
+      "Add #b",
+      " #yForest #yBat+ to your hand."
     ]
   },
   "shadowverse:EpitaphPotion": {
-    "NAME": "契约药水",
+    "NAME": "Epitaph Potion",
     "DESCRIPTIONS": [
-      "你视为 复仇 、 狂乱 、 渴望 、 #b",
-      " 回合。"
+      "Gain #yVengeance , #yWrath and #yAvarice for #b",
+      " turns."
     ]
   },
   "shadowverse:ArtifactPotion": {
-    "NAME": "创造物精华",
+    "NAME": "Essence Of Artifact",
     "DESCRIPTIONS": [
-      "从 #b3 张随机创造物中选择 #b1 张加入手中，其本回合耗能变为 #b0 。",
-      "从 #b3 张随机创造物中选择 #b2 张加入手中，其本回合耗能变为 #b0 。"
+      "Choose #b1 of #b3 random *AF cards to add to your hand, it costs #b0 this turn.",
+      "Choose #b2 of #b3 random *AF cards to add to your hand, it costs #b0 this turn."
     ]
   },
   "shadowverse:RevisedPotion": {
-    "NAME": "改良药水",
+    "NAME": "Potion Of Revise",
     "DESCRIPTIONS": [
-      "消耗手中所有 #y悬丝傀儡 ，增加消耗张数的 #y改良型·悬丝傀儡+ 到手中。"
+      "#yExhaust all #yPuppet in your hand, then add that many #yEnhanced #yPuppet+ to your hand."
     ]
   },
   "shadowverse:BuffPotion": {
-    "NAME": "团结药水",
+    "NAME": "Potion Of Unite",
     "DESCRIPTIONS": [
-      "使所有随从获得+ #b",
+      "+ #b",
       " /+ #b",
-      " 。"
+      " to all your #yFollowers ."
     ]
   },
   "shadowverse:EvolutionPotion": {
-    "NAME": "进化药水",
+    "NAME": "Potion Of Evolution",
     "DESCRIPTIONS": [
-      "增加 #b",
-      " 张 #y进化点+ 到手中。"
+      "Add #b",
+      " #yEvolution #yPoint+ to your hand."
     ]
   },
   "shadowverse:MinionPotion": {
-    "NAME": "召唤药水",
+    "NAME": "Potion Of Summoning",
     "DESCRIPTIONS": [
-      "随机召唤 #b",
-      " 个随从。"
+      "Randomly summon #b",
+      " #yFollowers ."
     ]
   },
   "shadowverse:ReduceCountDownPotion": {
-    "NAME": "咏唱水晶",
+    "NAME": "Chanting Crystal",
     "DESCRIPTIONS": [
-      "所有护符减少 #b",
-      " 回合倒数"
+      "Reduce all your #yAmulet's #yCountdown by #b",
+      " ."
     ]
   },
   "shadowverse:IndulgencePotion": {
-    "NAME": "瓶装赎罪券",
+    "NAME": "Bottled Indulgences",
     "DESCRIPTIONS": [
-      "增加 #b",
-      " 张 #y赎罪券 到手中。"
+      "Add #b",
+      " #yIndulgence to your hand."
     ]
   },
   "shadowverse:SacredHealingPotion": {
-    "NAME": "治愈药水",
+    "NAME": "Healing Potion",
     "DESCRIPTIONS": [
-      "回复 #b",
-      "% 生命。"
+      "Heal #b",
+      "% HP."
     ]
   }
 }

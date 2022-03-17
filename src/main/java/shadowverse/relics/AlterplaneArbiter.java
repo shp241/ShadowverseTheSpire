@@ -109,7 +109,7 @@ public class AlterplaneArbiter extends CustomRelic {
                 break;
             }
         }
-        if (CLASSES[this.counter] == Royal.Enums.Royal && CLASSES[this.counter] == Bishop.Enums.Bishop) {
+        if (CLASSES[this.counter] == Royal.Enums.Royal || CLASSES[this.counter] == Bishop.Enums.Bishop) {
             AbstractDungeon.player.masterMaxOrbs = 5;
         }
         for (PowerTip t : this.tips) {

@@ -54,7 +54,9 @@ public class Korwa extends CustomCard {
                 Shadowverse.Enhance(3)) {
             setCostForTurn(3);
         } else {
-            setCostForTurn(2);
+            if (this.costForTurn>1){
+                setCostForTurn(2);
+            }
         }
         super.update();
     }

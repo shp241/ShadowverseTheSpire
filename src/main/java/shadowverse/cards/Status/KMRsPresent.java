@@ -1,34 +1,21 @@
- package shadowverse.cards.Temp;
+ package shadowverse.cards.Status;
  
 
 
 import basemod.abstracts.CustomCard;
 import com.badlogic.gdx.Gdx;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.animations.VFXAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
-import com.megacrit.cardcrawl.actions.common.SuicideAction;
-import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.DexterityPower;
-import com.megacrit.cardcrawl.powers.MinionPower;
-import com.megacrit.cardcrawl.powers.StrengthPower;
-import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
-import com.megacrit.cardcrawl.vfx.combat.WeightyImpactEffect;
 import shadowverse.action.ChoiceAction;
 import shadowverse.cards.Rare.DeadSoulTaker;
 import shadowverse.cards.Rare.ImperialSaint;
-import shadowverse.characters.Witchcraft;
+import shadowverse.cards.Temp.*;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 
  public class KMRsPresent
@@ -55,7 +42,7 @@ import java.util.Arrays;
 
 
    public KMRsPresent() {
-     super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.SELF);
+     super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.STATUS, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.SELF);
      this.exhaust = true;
      this.selfRetain = true;
      this.cardsToPreview = new ShadowBahmut();

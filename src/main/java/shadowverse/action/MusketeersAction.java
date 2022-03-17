@@ -40,6 +40,15 @@ public class MusketeersAction
         this.secondTime = secondTime;
     }
 
+    public MusketeersAction(boolean secondTime, boolean enhanced, ArrayList<AbstractCard> card) {
+        this.actionType = ActionType.CARD_MANIPULATION;
+        this.duration = Settings.ACTION_DUR_FAST;
+        this.amount = 1;
+        this.card = card;
+        this.enhanced = enhanced;
+        this.secondTime = secondTime;
+    }
+
 
     public void update() {
         if (this.enhanced) {
@@ -104,7 +113,7 @@ public class MusketeersAction
             }
             tickDuration();
             if (secondTime) {
-                addToBot((AbstractGameAction) new MusketeersAction(false, false));
+                addToBot((AbstractGameAction) new MusketeersAction(false, false,card));
                 this.secondTime = false;
             }
         }

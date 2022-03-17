@@ -3,19 +3,19 @@
     "NAME": "Honest Cohort",
     "FLAVOR": "Expose yourself to the deepest truths—the qualities, faculties, and reality of this plane.",
     "DESCRIPTIONS": [
-      "At the start of each combat, spellboost all the cards in your hand and draw pile #b1 time. Put 1 #yshiv into your hand."
+      "At the start of each combat, spellboost all the cards in your hand and draw pile #b1 time. Put 1 #yshivs into your hand."
     ]
   },
   "shadowverse:Eleanor": {
-    "NAME": "天外之友·爱莲娜",
-    "FLAVOR": "我是天外之花——也是你的友人。我会为了我自己，也为了你高傲地绽放！这就是我，爱莲娜·葛萝莉娅！",
+    "NAME": "Eleanor, Cosmic Friend",
+    "FLAVOR": "I am the Cosmic Flower, as well as a friend of yours. For me and you shall I bloom gloriously! For that is me, Eleaner Gloria!",
     "DESCRIPTIONS": [
-      "前 #b3 回合开始时，随机在手牌中增加 #b1 张耗能为 #b0 的 #y转化的魔法 、 #y二重炼成术 、 #y风怒之术 。"
+      "For the first #b3 turns, randomly add #b1 0 cost #yPetrification , #yConjure #yTwosome or #yStaff #yof #yWhirlwinds to your hand."
     ]
   },
   "shadowverse:EnchantedLibrary": {
     "NAME": "Enchanted Library",
-    "FLAVOR": "Quiet, please. Noise upsets the books. —A poster in the Enchanted Library ",
+    "FLAVOR": "Quiet, please. Noise upsets the books. -A poster in the Enchanted Library ",
     "DESCRIPTIONS": [
       "At the start of the first #b2 turn, put #b1 #yskill into your hand from draw pile."
     ]
@@ -36,24 +36,24 @@
     ]
   },
   "shadowverse:Genius": {
-    "NAME": "超天才",
-    "FLAVOR": "你将在第8回合败北！",
+    "NAME": "Genius Among Geniuses",
+    "FLAVOR": "You shall lose in turn 8!",
     "DESCRIPTIONS": [
-      "第8回合结束时，对全体敌人造成 #b61 点伤害。"
+      "At the end of the 8th turn, deal #b61 damage to all enemies."
     ]
   },
   "shadowverse:MissLethal": {
-    "NAME": "错斩",
-    "FLAVOR": "总之先解场。",
+    "NAME": "Missed Lethal",
+    "FLAVOR": "...Anyway, let's clear the board first.",
     "DESCRIPTIONS": [
-      "在每回合开始时获得 #b1 点能量。回合开始时，当有非 爪牙 敌人生命值低于五分之一时，该敌人获得 无实体 。"
+      "Gain #b1 [E] at the start of your turn. Once a time, whenever a non-Minion enemy's HP is lower than 1/5 by the start of turn, apply #yIntangible ."
     ]
   },
   "shadowverse:Offensive": {
     "NAME": "Token of 1st",
     "FLAVOR": "I go first, no need to redraw.",
     "DESCRIPTIONS": [
-      "The first #ySkill Card you play in the first turn will be played #btwice ."
+      "The first #ySkill card you play in the first turn will be played #btwice ."
     ]
   },
   "shadowverse:NeutralBook": {
@@ -68,12 +68,12 @@
     "FLAVOR": "Pinya!",
     "DESCRIPTIONS": [
       "You feel more talkative.",
-      "@Pinyapipi！@"
+      "@Pinyapipi!@"
     ]
   },
   "shadowverse:GoldPinya": {
     "NAME": "The Golden Pinya",
-    "FLAVOR": "Pinya~Pinya！",
+    "FLAVOR": "Pinya~Pinya!",
     "DESCRIPTIONS": [
       "At the start of turn,randomly put 1 #yDutiful #ySteed, #yBullet #yBike, or #yArcane #yPersonnel #yCarrier into your hand."
     ]
@@ -107,17 +107,17 @@
     ]
   },
   "shadowverse:ArisaBOSS": {
-    "NAME": "女王缇达尼亚斯",
-    "FLAVOR": "我的箭矢将会贯穿你！",
+    "NAME": "Quintitanias",
+    "FLAVOR": "My arrow will penetrate you!",
     "DESCRIPTIONS": [
-      "拾起时替换 #y先手印记 。 NL 回合内使用第 #b6 张牌时获得 [E] 。"
+      "Replaces #yToken #yof #y1st . NL Gain [E] whenever you play the #b6th card in a turn."
     ]
   },
   "shadowverse:NiouKyuu": {
-    "NAME": "二王弓",
-    "FLAVOR": "绽放凛然威严，凝视久远的二重光辉。其矢可绝灾厄之种，守天之宁静。",
+    "NAME": "Two-Crown Bow",
+    "FLAVOR": "The dignified jewels embedded in this bow gaze into eternity, identifying possible threats to peace. One arrow loosed from its string can put an end to those threats.",
     "DESCRIPTIONS": [
-      "战斗开始时给予全体敌人1层 #y天冲之正鹄 。"
+      "ALL enemies start combat with #b1 #yPinpoint #yPrey ."
     ]
   },
   "shadowverse:LymagaWeapon": {
@@ -128,24 +128,24 @@
     ]
   },
   "shadowverse:GlassOfIC": {
-    "NAME": "经济之神的红墨镜",
-    "FLAVOR": "我可是伟大的神啊！",
+    "NAME": "Glass Of Icey",
+    "FLAVOR": "I'm the great God!",
     "DESCRIPTIONS": [
-      "每当失去生命时，对全体敌人造成等额伤害。"
+      "Whenever you lose HP, deal equal amount of damage to ALL enemies."
     ]
   },
   "shadowverse:KyoukaBOSS": {
-    "NAME": "宇宙之蓝法杖",
-    "FLAVOR": "宇宙蓝色闪光！！",
+    "NAME": "Cosmo Blue Rod",
+    "FLAVOR": "Cosmo Blue Flash!!",
     "DESCRIPTIONS": [
-      "拾起时替换 #y先手印记 。每打出6张技能牌，下一张技能牌打出2次。"
+      "Replaces #yToken #yof #y1st . Whenever you play 6 #ySkill cards, the next #ySkill card will be played #btwice ."
     ]
   },
   "shadowverse:Mimori": {
-    "NAME": "虽然很平凡",
-    "FLAVOR": "诶哆……请多指教！",
+    "NAME": "Being normal",
+    "FLAVOR": "Well, pleasure to meet you!",
     "DESCRIPTIONS": [
-      "造成伤害提高 #b10% ，承受伤害减少 #b10% 。回合结束时如果已使用的卡牌数为5以上则增加 #b10% (最多可叠加5次)。如果受到伤害则减少 #b10% 。"
+      "Damage dealt + #b10%, damage taken - #b10%. By the end of your turn, if you have played at least 5 cards, damage dealt + #b10% (Up to 5 times). If you take any unblocked damage, damage dealt - #b10% ."
     ]
   },
   "shadowverse:KuonWeapon": {
@@ -156,10 +156,10 @@
     ]
   },
   "shadowverse:GeassRelic": {
-    "NAME": "绝对生存指令",
-    "FLAVOR": "活下去！",
+    "NAME": "Geass: Survive",
+    "FLAVOR": "Survive!",
     "DESCRIPTIONS": [
-      "每场战斗一次，受到致死伤害时，回复1点生命，移除所有负面效果，获得 #b5 点 力量 和 敏捷 ， #b25 点 格挡 。"
+      "One time per combat, when you would die, heal 1 HP, remove all of your debuffs, gain #b5 #yStrength and #yDexterity , gain #b25 #yBlock ."
     ]
   },
   "shadowverse:Offensive3": {
@@ -170,45 +170,45 @@
     ]
   },
   "shadowverse:BurialGround": {
-    "NAME": "集团埋葬地",
-    "FLAVOR": "死亡正在不断地往此聚集。",
+    "NAME": "Burial Ground",
+    "FLAVOR": "Death is gathering.",
     "DESCRIPTIONS": [
-      "回合结束时，获得 #b1 点 墓地 。"
+      "By the end of your turn, gain #b1 #yShadows ."
     ]
   },
   "shadowverse:LunaBOSS": {
-    "NAME": "露娜的朋友",
-    "FLAVOR": "可以和露娜做朋友吗?",
+    "NAME": "Luna's Friend",
+    "FLAVOR": "Would you like to be Luna's friend?",
     "DESCRIPTIONS": [
-      "拾起时替换 #y先手印记 。回合开始时， #y死灵术4 \b将一张 #y巫妖 加入手中。"
+      "Replaces #yToken #yof #y1st . At the start of your turn, #yNecromancy 4 :\b Add 1 #yLitch to hand."
     ]
   },
   "shadowverse:Todoroki": {
-    "NAME": "巨镰·轰",
-    "FLAVOR": "话语生功罪，唯有沉默可创造平等。",
+    "NAME": "Scythe of Thunder",
+    "FLAVOR": "Language breeds both good and evil. Only silence creates equality.",
     "DESCRIPTIONS": [
-      "战斗开始时，全体敌人失去一种正面效果（优先失去 人工制品 ）。"
+      "ALL enemies lose #b1 buff(Lose #yArtifact first.) at the start of combat."
     ]
   },
   "shadowverse:TailRelic": {
-    "NAME": "大妖狐的面具",
-    "FLAVOR": "生命如梦，众人皆影。荣华似幻，还真是有趣。",
+    "NAME": "Mask of Great Fox",
+    "FLAVOR": "Life is fleeting, mortals the flickering figures in a shadow play. Is it not odd?",
     "DESCRIPTIONS": [
-      "战斗开始时，增加 #b1 张 #y一尾狐 到抽牌堆中。本局游戏累计打出过 #b9 张 #y一尾狐 时，改为增加 #b1 张 #y大妖狐·吟雪 到你的卡组中并使这个遗物失效。"
+      "Start the combat with #b1 #yOne-Tailed #yFox added to your draw pile. If you have played #b9 #yOne-Tailed #yFox this run, add #b1 #yGinsetsu, #yGreat #yFox to your deck instead."
     ]
   },
   "shadowverse:InfernalCrown": {
-    "NAME": "奈落之冠",
-    "FLAVOR": "死者即为空洞的容器，被死神啜饮而干的可怜之杯。注满而起舞吧。",
+    "NAME": "Infernal Crown",
+    "FLAVOR": "The dead are but empty vessels. Crude, earthen cups drained by the god of death. Pour, then! Fill the vessel and make it dance.",
     "DESCRIPTIONS": [
-      "第2回合开始时亡者召还 #b3 ，第3回合开始时亡者召还 #b4 ，第4回合开始时亡者召还 #b5 。"
+      "#yReanimate #b3 at turn #b2 , #yReanimate #b4 at turn #b3 , #yReanimate #b5 at turn #b4 ."
     ]
   },
   "shadowverse:Alice": {
-    "NAME": "特别的偶像",
-    "FLAVOR": "爱丽丝的演出要开始咯~",
+    "NAME": "Special Idol",
+    "FLAVOR": "Alice's show is about to begin~",
     "DESCRIPTIONS": [
-      "发动 死灵术 时，对全体敌人造成 #b3 点伤害。"
+      "Whenever #yNecromancy is activated, deal #b3 damage to ALL enemies."
     ]
   },
   "shadowverse:Offensive4": {
@@ -219,52 +219,52 @@
     ]
   },
   "shadowverse:IriaBOSS": {
-    "NAME": "暗斧夜之牙",
-    "FLAVOR": "尽管臣服于妾身伟大的力量之下吧！",
+    "NAME": "Vermillion Bite",
+    "FLAVOR": "尽管臣服于妾身伟大的力量之下吧!",
     "DESCRIPTIONS": [
-      "回合开始时失去 #b2 点生命。回合结束时回复 #b4 点生命。"
+      "回合开始时失去 #b2 点生命.回合结束时回复 #b4 点生命."
     ]
   },
   "shadowverse:LustRelic": {
     "NAME": "抱拥之翼",
-    "FLAVOR": "爱意相融，情意相交。沉溺在欲望之中，水乳交融吧。",
+    "FLAVOR": "爱意相融, 情意相交.沉溺在欲望之中, 水乳交融吧.",
     "DESCRIPTIONS": [
-      "战斗开始时，获得 #y虹吸 。"
+      "战斗开始时, 获得 #y虹吸 ."
     ]
   },
   "shadowverse:Lusia": {
     "NAME": "我没有兴趣",
-    "FLAVOR": "影之诗不过是道具而已。",
+    "FLAVOR": "影之诗不过是道具而已.",
     "DESCRIPTIONS": [
-      "进入 #y复仇 时，获得 [E] 。"
+      "进入 #y复仇 时, 获得 [E] ."
     ]
   },
   "shadowverse:Pendant": {
     "NAME": "夜之王的吊坠",
-    "FLAVOR": "尽管来取悦我吧！",
+    "FLAVOR": "尽管来取悦我吧!",
     "DESCRIPTIONS": [
-      "回合开始时， 复仇 则获得 #b1 点 力量 。 狂乱 则获得 #b7 点 格挡 。 渴望 则抽 #b1 张牌。"
+      "回合开始时,  复仇 则获得 #b1 点 力量 . 狂乱 则获得 #b7 点 格挡 . 渴望 则抽 #b1 张牌."
     ]
   },
   "shadowverse:BerserkRelic": {
     "NAME": "提特迦玛利",
-    "FLAVOR": "悬挂活剥，将一切吃干抹净！",
+    "FLAVOR": "悬挂活剥, 将一切吃干抹净!",
     "DESCRIPTIONS": [
-      "进入 狂乱 时，回复 #b7 点生命。"
+      "进入 狂乱 时, 回复 #b7 点生命."
     ]
   },
   "shadowverse:LonePromise": {
     "NAME": "约定的花朵",
-    "FLAVOR": "取代颈部刻印的  ――是向冰冷肌肤所赠予的饯别花朵。  而相伴的螺丝则为华丽舞踏过的回忆。",
+    "FLAVOR": "取代颈部刻印的  ――是向冰冷肌肤所赠予的饯别花朵.  而相伴的螺丝则为华丽舞踏过的回忆.",
     "DESCRIPTIONS": [
-      "前 #b2 回合开始时，增加 #b1 张 #y修复模式 到手中。第 #b2 回合开始时额外抽 #b1 张牌。"
+      "前 #b2 回合开始时, 增加 #b1 张 #y修复模式 到手中.第 #b2 回合开始时额外抽 #b1 张牌."
     ]
   },
   "shadowverse:RevelrySeed": {
     "NAME": "斗争之种",
     "FLAVOR": "可不要让我感到无趣哦？",
     "DESCRIPTIONS": [
-      "你和全体敌人初始获得 #b3 点 力量 。"
+      "你和全体敌人初始获得 #b3 点 力量 ."
     ]
   },
   "shadowverse:Offensive5": {
@@ -278,42 +278,42 @@
     "NAME": "猫(玩偶)",
     "FLAVOR": "你知道心灵的意义吗？",
     "DESCRIPTIONS": [
-      "进入 共鸣 时，获得 [E] 。退出 共鸣 时 增加1张 #y眩晕 到弃牌堆中。"
+      "进入 共鸣 时, 获得 [E] .退出 共鸣 时 增加1张 #y眩晕 到弃牌堆中."
     ]
   },
   "shadowverse:ArtsMaster": {
     "NAME": "破邪之因迪拉",
-    "FLAVOR": "我存在于天地，无咎于世间。",
+    "FLAVOR": "我存在于天地, 无咎于世间.",
     "DESCRIPTIONS": [
-      "回合结束时如果有剩余能量，获得 #b5 点格挡，下回合额外抽 #b2 张牌，对全体敌人造成 #b5 点伤害。"
+      "回合结束时如果有剩余能量, 获得 #b5 点格挡, 下回合额外抽 #b2 张牌, 对全体敌人造成 #b5 点伤害."
     ]
   },
   "shadowverse:WhiteRelic": {
     "NAME": "白之章",
-    "FLAVOR": "破坏完成之后，浮现的笑容是纯洁的正义。",
+    "FLAVOR": "破坏完成之后, 浮现的笑容是纯洁的正义.",
     "DESCRIPTIONS": [
-      "每当消耗攻击牌时，给予随机敌人 #b1 层 #y虚弱 。如果拥有 #y黑之章 ，战斗开始时将 #b1 张 #y圣白破坏的创造物 加入手中。"
+      "每当消耗攻击牌时, 给予随机敌人 #b1 层 #y虚弱 .如果拥有 #y黑之章 , 战斗开始时将 #b1 张 #y圣白破坏的创造物 加入手中."
     ]
   },
   "shadowverse:BlackRelic": {
     "NAME": "黑之章",
-    "FLAVOR": "破坏完成之前，浮现的笑容是污秽的邪恶。",
+    "FLAVOR": "破坏完成之前, 浮现的笑容是污秽的邪恶.",
     "DESCRIPTIONS": [
-      "每当消耗攻击牌时，给予随机敌人 #b1 层 #y易伤 。如果拥有 #y白之章 ，战斗开始时将 #b1 张 #y圣白破坏的创造物 加入手中。"
+      "每当消耗攻击牌时, 给予随机敌人 #b1 层 #y易伤 .如果拥有 #y白之章 , 战斗开始时将 #b1 张 #y圣白破坏的创造物 加入手中."
     ]
   },
   "shadowverse:Knife": {
     "NAME": "杰西尔的匕首",
-    "FLAVOR": "我又要赢啦！",
+    "FLAVOR": "我又要赢啦!",
     "DESCRIPTIONS": [
-      "战斗结束时，增加 #b1 点计数。受到伤害时，失去 #b1 点计数。当计数为 #b3 以下时，战斗开始时增加1张 #y小刀 到手中。 #b3 以上时，改为 #y发现 。 #b6 以上时，改为 #y至高无上·宽容 。"
+      "战斗结束时, 增加 #b1 点计数.受到伤害时, 失去 #b1 点计数.当计数为 #b3 以下时, 战斗开始时增加1张 #y小刀 到手中. #b3 以上时, 改为 #y发现 . #b6 以上时, 改为 #y至高无上·宽容 ."
     ]
   },
   "shadowverse:TranquilCog": {
     "NAME": "静谧的齿轮",
-    "FLAVOR": "定理，无须完美契合即可运转。",
+    "FLAVOR": "定理, 无须完美契合即可运转.",
     "DESCRIPTIONS": [
-      "前 #b3 回合开始时，如果 共鸣 额外抽 #b1 张牌，否则额外抽 #b2 张牌。"
+      "前 #b3 回合开始时, 如果 共鸣 额外抽 #b1 张牌, 否则额外抽 #b2 张牌."
     ]
   },
   "shadowverse:Offensive6": {
@@ -327,72 +327,72 @@
     "NAME": "奥莉薇的祝福",
     "FLAVOR": "进化？我也想……",
     "DESCRIPTIONS": [
-      "每场战斗限 #b5 次，右击时增加 #b1 张 #y奇迹 和 #b1 张 #y进化点+ 到手中。"
+      "每场战斗限 #b5 次, 右击时增加 #b1 张 #y奇迹 和 #b1 张 #y进化点+ 到手中."
     ]
   },
   "shadowverse:WindGodsBlessing": {
     "NAME": "风神的祝福",
-    "FLAVOR": "风不止息。",
+    "FLAVOR": "风不止息.",
     "DESCRIPTIONS": [
-      "协作 #b10 :回合结束时，使所有随从获得+ #b1 /+ #b1 。"
+      "协作 #b10 :回合结束时, 使所有随从获得+ #b1 /+ #b1 ."
     ]
   },
   "shadowverse:Conscription": {
     "NAME": "征兵令",
-    "FLAVOR": "我不求质，我只求量。",
+    "FLAVOR": "我不求质, 我只求量.",
     "DESCRIPTIONS": [
-      "回合开始时，若你没有随从，召唤一个 骑士 。"
+      "回合开始时, 若你没有随从, 召唤一个 骑士 ."
     ]
   },
   "shadowverse:Spineblade": {
     "NAME": "阿瓦利提亚",
-    "FLAVOR": "饱受饥饿吧。 NL 当你感到饥寒交迫时，就去掠夺吧。 NL 如此一来，世界将会继续运转。",
+    "FLAVOR": "饱受饥饿吧. NL 当你感到饥寒交迫时, 就去掠夺吧. NL 如此一来, 世界将会继续运转.",
     "DESCRIPTIONS": [
-      "使用 财宝牌 时，抽1张牌。"
+      "使用 财宝牌 时, 抽1张牌."
     ]
   },
   "shadowverse:ValhoreanDealer": {
     "NAME": "瓦罗纳商贩",
     "FLAVOR": "对不起——饶了我吧——",
     "DESCRIPTIONS": [
-      "右击时花费 #b30 金币，更换任意张手牌。"
+      "右击时花费 #b30 金币, 更换任意张手牌."
     ]
   },
   "shadowverse:KagemitsuSword": {
     "NAME": "阎魔安国",
-    "FLAVOR": "自名为和平的剑鞘中，感谢您让吾拔出此刀。 ——不败剑圣·景光",
+    "FLAVOR": "自名为和平的剑鞘中, 感谢您让吾拔出此刀. ——不败剑圣·景光",
     "DESCRIPTIONS": [
-      "所有 打出后解除升级 的卡牌在打出后自动升级。"
+      "所有 打出后解除升级 的卡牌在打出后自动升级."
     ]
   },
   "shadowverse:EndlessUsurpation": {
     "NAME": "无尽劫掠",
-    "FLAVOR": "掠夺一切，取回所有吧。那些奇珍异宝打从一开始就属于我们。那，我们就不客气地全部收下了。",
+    "FLAVOR": "掠夺一切, 取回所有吧.那些奇珍异宝打从一开始就属于我们.那, 我们就不客气地全部收下了.",
     "DESCRIPTIONS": [
-      "回合开始时，随机获得1张 财宝牌 。"
+      "回合开始时, 随机获得1张 财宝牌 ."
     ]
   },
   "shadowverse:Durandal": {
     "NAME": "不灭圣剑·杜兰朵",
-    "FLAVOR": "这把与英雄结契的不灭圣剑，经理百战也不曾折损刀身，甚至无法熔毁。不论何时，它的银白光芒都是如此的耀眼夺目。",
+    "FLAVOR": "这把与英雄结契的不灭圣剑, 经理百战也不曾折损刀身, 甚至无法熔毁.不论何时, 它的银白光芒都是如此的耀眼夺目.",
     "DESCRIPTIONS": [
-      "对战开始时，获得2层 #y缓冲 。"
+      "对战开始时, 获得2层 #y缓冲 ."
     ]
   },
   "shadowverse:Tree": {
     "NAME": "那塔拉的大树",
-    "FLAVOR": "好大一棵树。",
+    "FLAVOR": "好大一棵树.",
     "DESCRIPTIONS": [
-      "回合开始时，获得1张 #y那塔拉的大树 。"
+      "回合开始时, 获得1张 #y那塔拉的大树 ."
     ]
   },
   "shadowverse:AlterplaneArbiter": {
     "NAME": "混合职业模式",
-    "FLAVOR": "期间限定新模式！混合两个职业构筑卡组！",
+    "FLAVOR": "期间限定新模式!混合两个职业构筑卡组!",
     "DESCRIPTIONS": [
-      "随机选择一个非本职业的影之诗职业，在与普通敌人的对战胜利奖励中添加一轮该职业的卡牌奖励。",
+      "随机选择一个非本职业的影之诗职业, 在与普通敌人的对战胜利奖励中添加一轮该职业的卡牌奖励.",
       "在与普通敌人的对战胜利奖励中添加一轮 ",
-      " 的卡牌奖励。",
+      " 的卡牌奖励.",
       "#y巫师",
       "#y精灵",
       "#y死灵术士",
@@ -411,107 +411,107 @@
   },
   "shadowverse:Savior": {
     "NAME": "救世主",
-    "FLAVOR": "在安息中，与己身的内心对峙吧。",
+    "FLAVOR": "在安息中, 与己身的内心对峙吧.",
     "DESCRIPTIONS": [
-      "如果回合中没有打出过攻击牌，下回合开始时获得 #b4 点 格挡 。"
+      "如果回合中没有打出过攻击牌, 下回合开始时获得 #b4 点 格挡 ."
     ]
   },
   "shadowverse:GrandShield": {
     "NAME": "背理盾·塞农",
-    "FLAVOR": "翼之纹章是自由的证明。其为神所遗落的奇迹之盾。",
+    "FLAVOR": "翼之纹章是自由的证明.其为神所遗落的奇迹之盾.",
     "DESCRIPTIONS": [
-      "回合开始时，增加 #b1 张 #y圣骑兵 到手中。"
+      "回合开始时, 增加 #b1 张 #y圣骑兵 到手中."
     ]
   },
   "shadowverse:GrandSword": {
     "NAME": "逆理剑·理夏尔",
-    "FLAVOR": "奇迹之剑足以扭曲道理，屏蔽天理。",
+    "FLAVOR": "奇迹之剑足以扭曲道理, 屏蔽天理.",
     "DESCRIPTIONS": [
-      "一回合一次，获得 格挡 时获得 #b2 层 荆棘 。"
+      "一回合一次, 获得 格挡 时获得 #b2 层 荆棘 ."
     ]
   },
   "shadowverse:BishopBOSS": {
     "NAME": "辉煌羽饰",
-    "FLAVOR": "当羽翼展翅之时，身体将不受重力束缚。",
+    "FLAVOR": "当羽翼展翅之时, 身体将不受重力束缚.",
     "DESCRIPTIONS": [
-      "拾起时替换 #y先手印记 。增加1个护符栏位。如果你的生命值低于最大生命值的一半，每回合开始时额外获得 [E] 。"
+      "Replaces #yToken #yof #y1st .增加1个护符栏位.如果你的生命值低于最大生命值的一半, 每回合开始时额外获得 [E] ."
     ]
   },
   "shadowverse:HeresyAvatar": {
     "NAME": "邪教化身",
-    "FLAVOR": "炽天使的末路，已与纯白背道而驰。",
+    "FLAVOR": "炽天使的末路, 已与纯白背道而驰.",
     "DESCRIPTIONS": [
-      "每当抽到诅咒牌时，获得 #b1 层 #y人工制品 。如果这张诅咒牌可以打出，其耗能变为0。"
+      "每当抽到诅咒牌时, 获得 #b1 层 #y人工制品 .如果这张诅咒牌可以打出, 其耗能变为0."
     ]
   },
   "shadowverse:ErisRelic": {
     "NAME": "司祭的权杖",
-    "FLAVOR": "为这残酷的世界带来救赎。",
+    "FLAVOR": "为这残酷的世界带来救赎.",
     "DESCRIPTIONS": [
-      "护符结束 倒计时 时，获得 #b2 点 #y临时生命 。"
+      "护符结束 倒计时 时, 获得 #b2 点 #y临时生命 ."
     ]
   },
   "shadowverse:IminaRelic": {
     "NAME": "疯狂的咒器",
-    "FLAVOR": "赞美吧，凡人。吾之外再无他神。",
+    "FLAVOR": "赞美吧, 凡人.吾之外再无他神.",
     "DESCRIPTIONS": [
-      "战斗开始时，给予随机敌人 #y疯狂的咒器 。"
+      "战斗开始时, 给予随机敌人 #y疯狂的咒器 ."
     ]
   },
   "shadowverse:KyaruBOSS": {
     "NAME": "混沌魔法书",
-    "FLAVOR": "做好觉悟了吗？格林爆裂！",
+    "FLAVOR": "做好觉悟了吗？格林爆裂!",
     "DESCRIPTIONS": [
-      "拾起时替换 #y先手印记 。战斗开始时，敌人的生命上限减少 #b18% 。"
+      "Replaces #yToken #yof #y1st .战斗开始时, 敌人的生命上限减少 #b18% ."
     ]
   },
   "shadowverse:AnneBOSS": {
     "NAME": "安的魔导书",
-    "FLAVOR": "英灵啊！",
+    "FLAVOR": "英灵啊!",
     "DESCRIPTIONS": [
-      "拾起时替换 #y先手印记 。打出的技能牌视为 #y马纳历亚 卡 。"
+      "Replaces #yToken #yof #y1st .打出的技能牌视为 #y马纳历亚 卡 ."
     ]
   },
   "shadowverse:KokkoroBOSS": {
-    "NAME": "爱梅斯守护符",
-    "FLAVOR": "请交给我吧。",
+    "NAME": "Ames Amulet",
+    "FLAVOR": "Please leave it to me.",
     "DESCRIPTIONS": [
-      "拾起时替换 #y先手印记 。回合内使用第 #b6 张牌时获得 #b1 点 #y力量 和 #y敏捷 。 NL 战斗中的生命回复量增加 #b50% 。"
+      "Replaces #yToken #yof #y1st .回合内使用第 #b6 张牌时获得 #b1 点 #y力量 和 #y敏捷 . NL 战斗中的生命回复量增加 #b50% ."
     ]
   },
   "shadowverse:MiyakoBOSS": {
     "NAME": "灵甘幽灵布丁",
     "FLAVOR": "布丁~布丁~",
     "DESCRIPTIONS": [
-      "拾起时替换 #y先手印记 。一场战斗限3次，回合开始时， #y死灵术5 \b将一张 #y灵体 加入手中。"
+      "Replaces #yToken #yof #y1st .一场战斗限3次, 回合开始时,  #y死灵术5 \b将一张 #y灵体 加入手中."
     ]
   },
   "shadowverse:IoBOSS": {
     "NAME": "性感教鞭",
     "FLAVOR": "老师来教你吧~",
     "DESCRIPTIONS": [
-      "拾起时替换 #y先手印记 。每场战斗一次， #y斩杀 时，随机升级卡组中的一张卡。"
+      "Replaces #yToken #yof #y1st .每场战斗一次,  #y斩杀 时, 随机升级卡组中的一张卡."
     ]
   },
   "shadowverse:RalmiaBOSS": {
     "NAME": "欧米伽驱动",
-    "FLAVOR": "Speed Boost！",
+    "FLAVOR": "Speed Boost!",
     "DESCRIPTIONS": [
-      "拾起时替换 #y先手印记 。一回合一次，进入 共鸣 时，所有手牌获得 #y创造物 词条。退出 共鸣 时 ，所有手牌获得 #y机械 词条。"
+      "Replaces #yToken #yof #y1st .一回合一次, 进入 共鸣 时, 所有手牌获得 #y创造物 词条.退出 共鸣 时 , 所有手牌获得 #y机械 词条."
     ]
   },
   "shadowverse:ShizuruBOSS": {
     "NAME": "神圣十字剑",
-    "FLAVOR": "姐姐我要使出全力了！",
+    "FLAVOR": "姐姐我要使出全力了!",
     "DESCRIPTIONS": [
-      "拾起时替换 #y先手印记 。打出已 #y升级 的卡时，获得 #b1 点格挡。一回合一次，打出 #y进化点 时获得 [E] 。"
+      "Replaces #yToken #yof #y1st .打出已 #y升级 的卡时, 获得 #b1 点格挡.一回合一次, 打出 #y进化点 时获得 [E] ."
     ]
   },
   "shadowverse:YukariBOSS": {
     "NAME": "无尽酒杯",
-    "FLAVOR": "准备完了哟。",
+    "FLAVOR": "准备完了哟.",
     "DESCRIPTIONS": [
-      "拾起时替换 #y先手印记 。回复生命时，获得 #b能力伤害无效 。 NL 每当抽到 #y状态牌 或 #y诅咒牌 时，抽 #b1 张牌。"
+      "Replaces #yToken #yof #y1st .回复生命时, 获得 #b能力伤害无效 . NL 每当抽到 #y状态牌 或 #y诅咒牌 时, 抽 #b1 张牌."
     ]
   }
 }

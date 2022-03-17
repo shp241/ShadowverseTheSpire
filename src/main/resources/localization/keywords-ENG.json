@@ -150,7 +150,7 @@
       "NAMES": [
         "reanimate"
       ],
-      "DESCRIPTION": "Randomly add a copy of 1 of the highest-cost Attack card into your hand with 0 cost to play this turn. Won't trigger if the cost of the card with #yReanimate ability is 0."
+      "DESCRIPTION": "Randomly add a copy of 1 of the highest-cost Attack card costs no more than the Reanimate value you played into your hand with 0 cost to play this turn. Won't trigger if the cost of the card with #yReanimate ability is 0."
     },
     {
       "PROPER_NAME": "Last Words",
@@ -215,7 +215,7 @@
         "cannon hermit crab",
         "cannon_hermit_crab"
       ],
-      "DESCRIPTION": "Passive: Deal 6 damage to random enemy and lose 1 Health by the end of your turn. Gain 6 #yBlock. If you have #yResonance or #yNaterran #yGreat #yTree effect, generate a new #yCannon #yHermit #yCrab with half of the current state (Round up the value) . NL When Evoked, Deal damage and gain #yBlock repeatedly until its Health reaches 0."
+      "DESCRIPTION": "Passive: Deal 6 damage to random enemy and lose 1 Health by the end of your turn. Gain 6 #yBlock. If you have #yResonance or the Power: #yNaterran #yGreat #yTree , summon a new #yCannon #yHermit #yCrab with half of the current state (Round up the value) . NL When #yEvoked, Deal damage and gain #yBlock repeatedly until its Health reaches 0."
     },
     {
       "PROPER_NAME": "Power Damage Immune",
@@ -260,7 +260,7 @@
       "NAMES": [
         "knight"
       ],
-      "DESCRIPTION": "1/1 NL Passive: Deal damage equal to 3 times of Attack to random enemy and lose 1 Health by the end of your turn. NL When Evoked, Repeat Passive effects until its Health reaches 0."
+      "DESCRIPTION": "1/1 NL Passive: Deal damage equal to 3 times of Attack to random enemy and lose 1 Health by the end of your turn. NL When #yEvoked, Repeat Passive effects until its Health reaches 0."
     },
     {
       "PROPER_NAME": "Heavy Knight",
@@ -268,7 +268,7 @@
         "heavy knight",
         "heavy_knight"
       ],
-      "DESCRIPTION": "1/2 NL Passive: Apply #yWeak equal to Attack to random enemy and lose 1 Health by the end of your turn. NL When Evoked, Repeat Passive effects until its Health reaches 0."
+      "DESCRIPTION": "1/2 NL Passive: Apply #yWeak equal to Attack to random enemy and lose 1 Health by the end of your turn. NL When #yEvoked, Repeat Passive effects until its Health reaches 0."
     },
     {
       "PROPER_NAME": "Steelclad Knight",
@@ -276,7 +276,7 @@
         "steelclad knight",
         "steelclad_knight"
       ],
-      "DESCRIPTION": "1/1 NL Passive: Deal damage equal to 5 times of Attack to random enemy and lose 1 Health by the end of your turn. NL When Evoked, Repeat Passive effects until its Health reaches 0."
+      "DESCRIPTION": "1/1 NL Passive: Deal damage equal to 5 times of Attack to random enemy and lose 1 Health by the end of your turn. NL When #yEvoked, Repeat Passive effects until its Health reaches 0."
     },
     {
       "PROPER_NAME": "Shield Guardian",
@@ -284,7 +284,7 @@
         "shield guardian",
         "shield_guardian"
       ],
-      "DESCRIPTION": "1/1 NL Passive: Gain Block equal to 2 times of Attack and lose 1 Health by the end of your turn. NL When Evoked, Repeat Passive effects until its Health reaches 0."
+      "DESCRIPTION": "1/1 NL Passive: Gain #yBlock equal to 2 times of Attack and lose 1 Health by the end of your turn. NL When #yEvoked, Repeat Passive effects until its Health reaches 0."
     },
     {
       "PROPER_NAME": "Frontguard General",
@@ -292,7 +292,7 @@
         "frontguard general",
         "frontguard_general"
       ],
-      "DESCRIPTION": "5/6 NL Passive: Gain Block equal to 2 times of Attack, gain #yBlock at next turn equal to Attack and lose 1 Health by the end of your turn. NL When Evoked, Repeat Passive effects until its Health reaches 0."
+      "DESCRIPTION": "5/6 NL Passive: Gain #yBlock equal to 2 times of Attack, gain #yPlated #yArmor equal to Attack and lose 1 Health by the end of your turn. NL When #yEvoked, Repeat Passive effects until its Health reaches 0."
     },
     {
       "PROPER_NAME": "Queen Hemera the Brave",
@@ -300,7 +300,7 @@
         "queen hemera the brave",
         "queen_hemera_the_brave"
       ],
-      "DESCRIPTION": "1/4 NL Passive: Gain Block equal to 3 times of Attack, summon a #yKnight and lose 1 Health by the end of your turn. NL When Evoked, Repeat Passive effects until its Health reaches 0."
+      "DESCRIPTION": "1/4 NL Passive: Gain #yBlock equal to 3 times of Attack, summon a #yKnight and lose 1 Health by the end of your turn. NL When #yEvoked, Repeat Passive effects until its Health reaches 0."
     },
     {
       "PROPER_NAME": "Queen Magnus the Graceful",
@@ -308,28 +308,28 @@
         "queen magnus the graceful",
         "queen_magnus_the_graceful"
       ],
-      "DESCRIPTION": "3/3 NL Passive: Deal damage equal to 3 times of Attack to random enemy and lose 1 Health by the end of your turn. Next turn, gain #yEnergy . NL When Evoked, Repeat Passive effects until its Health reaches 0, gain #yEnergy immediately."
+      "DESCRIPTION": "3/3 NL Passive: Deal damage equal to 3 times of Attack to random enemy and lose 1 Health by the end of your turn. Next turn, gain #yEnergy . NL When #yEvoked, Repeat Passive effects until its Health reaches 0, gain #yEnergy immediately."
     },
     {
       "PROPER_NAME": "Quickblader",
       "NAMES": [
         "quickblader"
       ],
-      "DESCRIPTION": "1/1 NL Passive: Apply 1 #yVulnerable and deal damage equal to 3 times of Attack to random enemy and lose 1 Health by the end of your turn. NL When Evoked, Repeat Passive effects until its Health reaches 0"
+      "DESCRIPTION": "1/1 NL Passive: Apply 1 #yVulnerable , deal damage equal to 3 times of Attack to random enemy and lose 1 Health by the end of your turn. NL When #yEvoked, Repeat Passive effects until its Health reaches 0"
     },
     {
       "PROPER_NAME": "Viking",
       "NAMES": [
         "viking"
       ],
-      "DESCRIPTION": "3/2 NL Passive: Apply #yVulnerable equal to Attack and deal damage equal to 3 times of Attack to random enemy and lose 1 Health by the end of your turn. NL When Evoked, Repeat Passive effects until its Health reaches 0, gain #yEnergy immediately."
+      "DESCRIPTION": "3/2 NL Passive: Apply #yVulnerable equal to Attack and deal damage equal to 3 times of Attack to random enemy and lose 1 Health by the end of your turn. Next turn, gain #yEnergy . NL When #yEvoked, Repeat Passive effects until its Health reaches 0, gain #yEnergy immediately."
     },
     {
       "PROPER_NAME": "Pirate",
       "NAMES": [
         "pirate"
       ],
-      "DESCRIPTION": "2/3 NL Passive: Gain #yBlock equal to 2 times of Attack and lose 1 Health by the end of your turn. NL When Evoked, Repeat Passive effects until its Health reaches 0."
+      "DESCRIPTION": "2/3 NL Passive: Gain #yBlock equal to 2 times of Attack and lose 1 Health by the end of your turn. NL When #yEvoked, Repeat Passive effects until its Health reaches 0."
     },
     {
       "PROPER_NAME": "Naht's Henchmen",

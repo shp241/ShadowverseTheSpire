@@ -57,9 +57,9 @@ public class Anvelt
         if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
                 Shadowverse.Accelerate(this)){
             setCostForTurn(0);
-            this.type = CardType.SKILL;
+            this.type = CardType.POWER;
         }else {
-            if (this.type==CardType.SKILL){
+            if (this.type==CardType.POWER){
                 setCostForTurn(4);
                 this.type = CardType.ATTACK;
             }

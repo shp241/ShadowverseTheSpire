@@ -22,7 +22,6 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.MonsterStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -32,9 +31,7 @@ import com.megacrit.cardcrawl.ui.panels.energyorb.EnergyOrbInterface;
 import com.megacrit.cardcrawl.ui.panels.energyorb.EnergyOrbRed;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.IntenseZoomEffect;
-import shadowverse.action.AnimationAction;
-import shadowverse.cards.Temp.KMRsPresent;
-import shadowverse.characters.Witchcraft;
+import shadowverse.cards.Status.KMRsPresent;
 import shadowverse.powers.AbsoluteOnePower;
 import shadowverse.powers.LionSanctuaryPower;
 

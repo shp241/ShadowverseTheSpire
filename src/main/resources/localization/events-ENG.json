@@ -2,35 +2,35 @@
   "shadowverse:PinyaEvent": {
     "NAME": "Golden Pinya and Green Pinya",
     "DESCRIPTIONS": [
-      "You walk past a strange fat cat looking statue... NL Suddenly you hear a voice whispering in your back: NL ~'Hand on a minute.'~",
-      "You turn around and see the statue staring at you! NL As you walk over to take a closer look, you find that it is not a statue, but KMR, the producer, who is dressing the Pinya doll outfit! NL NL ~'Could_you_show_me_your_account_and_share_your_comments_on_the_environment_please?'~",
-      "~'Oh,_the_heat_of_summer_continues.~ ~Are_you_doing_alright?'~ NL He mechanically reach out his hand and put some #ySeer's_Globe into your crate. NL NL ~'It_may_be_in_a_sudden,_but_please_take_these_Seer's_Globes_as_a_gift.'~ NL While he is talking with you, you feel that the Gold in your pocket is vanishing! NL All of a sudden, the cup he is drinking falls down and smashes to pieces on the ground. You run away in the echo of laughter and the sound of the broken glass. NL NL By the time you come to yourself, it is just you and the Seer's Globes in your hand.",
-      "~'Golden_Pinya?~ @Are_you_sure_about_that?@ ~Ah,_of_course...~ ~Okey.~ ~I_can_do_that...~ ~Let_me_see...'~ NL NL He shake one of his arms in the air, and your account is in his hand in the turn of a hand! Literally! NL NL ~'Yeah.~ ~ This_Is_Goooood.'~",
-      "~'Wait.~ ~Wait_a_second.~ ~Please_wait.~ ~Wait.~ ~Wait_a_second.'~ NL NL You think you made the right choice."
+      "You walk past a strange fat cat looking statue... NL Suddenly you hear a voice whispering in your back: NL ~'Hang~ ~on~ ~a~ ~minute.'~",
+      "You turn around and see the statue staring at you! NL As you walk over to take a closer look, you find that it is not a statue, but KMR, the producer, who is dressing the Pinya doll outfit! NL NL ~'Could~ ~you~ ~show~ ~me~ ~your~ ~account~ ~and~ ~share~ ~your~ ~comments~ ~on~ ~the~ ~environment~ ~please?'~",
+      "~'Oh,~ ~the~ ~heat~ ~of~ ~summer~ ~continues.~ ~Are~ ~you~ ~doing~ ~alright?'~ NL He mechanically reach out his hand and put some #ySeer's #yGlobe into your crate. NL NL ~'It~ ~may~ ~be~ ~in~ ~a~ ~sudden,~ ~but~ ~please~ ~take~ ~these~ ~Seer's~ ~Globes~ ~as~ ~a~ ~gift.'~ NL While he is talking with you, you feel that the Gold in your pocket is vanishing! NL All of a sudden, the cup he is drinking falls down and smashes to pieces on the ground. You run away in the echo of laughter and the sound of the broken glass. NL NL By the time you come to yourself, it is just you and the Seer's Globes in your hand.",
+      "~'Golden~ ~Pinya?~ @Are@ @you@ @sure@ @about@ @that?@ ~Ah,~ ~of~ ~course...~ ~Okey.~ ~I~ ~can~ ~do~ ~that...~ ~Let~ ~me~ ~see...'~ NL NL He shake one of his arms in the air, and your account is in his hand in the turn of a hand! Literally! NL NL ~'Yeah.~ ~This~ ~Is~ ~Goooood.'~",
+      "~'Wait.~ ~Wait~ ~a~ ~second.~ ~Please~ ~wait.~ ~Wait.~ ~Wait~ ~a~ ~second.'~ NL NL You think you made the right choice."
     ],
     "OPTIONS": [
       "[Chat with him] #rLose",
       " #gGold.",
-      "[Give me that Pinya] #g50%:_Get_a_good_Pinya. #r50%:_Conduct_a_game_balance_adjustment.",
+      "[Give me that Pinya] #g50%: #gGet #ga #ggood #gPinya. #r50%: #rConduct #ra #rgame #rbalance #radjustment.",
       "[Leave]",
       "[Talk about the weather]",
-      " #rHP, #gGain #g"
+      " #rHP, #ggain #g"
     ]
   },
   "GemFortune": {
     "NAME": "Gem of Fortune",
     "DESCRIPTIONS": [
-      "It seems like there is an event taking place ahead. As you come closer, you notice that it is Gem of Fortune Cup. ~'Sounds_like_it's_another_competition_of_#y~Luck~.'~ NL #r@'So_I_see!@ #r@Ain't_there_any_Shadowcraft_, Runecraft_or_Forestcraft?'@ NL NL A man says to you with a smile on his face: NL 'Are you interested in entering #y~Gem_of_Fortune~ ?' ",
+      "It seems like there is an event taking place ahead. As you come closer, you notice that it is Gem of Fortune Cup. ~'Sounds~ ~like~ ~it's~ ~another~ ~competition~ ~of~ #y~Luck~.' NL #r@'So@ #r@I@ #r@see!@ #r@Ain't@ #r@there@ #r@any@ #r@Shadowcraft,@ #r@Runecraft@ #r@or@ #r@Forestcraft?'@ NL NL A man says to you with a smile on his face: NL 'Are you interested in entering #y~Gem~ #y~of~ #y~Fortune~ ?' ",
       "",
-      "#y'Marvelous!' NL Soon after your reply, the whole stage is shrouded in #p~Thick_Black_Smoke~... NL NL Just at the time you're about to win, your opponent plays an #y~Arcane_Item_Shop~ and kills your leader in one turn. NL NL The match is over, and you are back on the track. But somehow you feel a bit #bAngry .",
-      "'What a disappointment...' NL ~'Anyway,_sooner_or_later_you_will_join_our_party.'~  NL #r@'Hahaha@ #r@Hahahahaha!'@ NL NL The man disappeared, leaving only the disturbing laughter echoing in your ears.",
+      "#y'Marvelous!' NL Soon after your reply, the whole stage is shrouded in #p~Thick~ #p~Black~ #p~Smoke~ ... NL NL Just at the time you're about to win, your opponent plays an #y~Arcane~ #y~Item~ #y~Shop~ and kills your leader in one turn. NL NL The match is over, and you are back on the track. But somehow you feel a bit #bAngry .",
+      "'What a disappointment...' NL ~'Anyway,~ ~sooner~ ~or~ ~later~ ~you~ ~will~ ~join~ ~our~ ~party.'~  NL #r@'Hahaha@ #r@Hahahahaha!'@ NL NL The man disappeared, leaving only the disturbing laughter echoing in your ears.",
       ""
     ],
     "OPTIONS": [
-      "[Attend the match] #gGain_4 Gem Light, #ggain_2 Crystal Bright#g. #rLose #r",
-      " #rMax_HP.",
+      "[Attend the match] #gGain #g4 Gem Light, #ggain #g2 Crystal Bright. #rLose #r",
+      " #rMax #rHP.",
       "[Refuse]",
-      "[Attend the match] #gGain_3 Gem Light, #ggain_1 Crystal Bright#g. #rLose #r",
+      "[Attend the match] #gGain #g3 Gem Light, #ggain #g1 Crystal Bright. #rLose #r",
       "",
       "[Leave]"
     ]
@@ -40,12 +40,12 @@
     "DESCRIPTIONS": [
       "You ignore the event, but somehow Lelouch casts #rGeass on you !",
       "#r@Ambush!@ NL Your enemies are not just Lelouch, but also Suzaku operating Lancelot coming out from nowhere!",
-      " #b~Lelouch_of_the_Rebellion~ Campaign in progress. NL Time limited BOSS Lelouch is waiting for you! NL You have no interest in attending, but as soon as you're trying to leave, a strange desire in your heart drives you to #b~Challenge~ Lelouch..."
+      " #b~Lelouch~ #b~of~ #b~the~ #b~Rebellion~ Campaign in progress. NL Time limited BOSS Lelouch is waiting for you! NL You have no interest in attending, but as soon as you're trying to leave, a strange desire in your heart drives you to #b~Challenge~ Lelouch..."
     ],
     "OPTIONS": [
-      "[Challenge] #rChallenge_the_BOSS.",
+      "[Challenge] #rChallenge #rthe #rBOSS.",
       "[Ignore]  Ignore the event",
-      " #rBeing_cursed_-_Geass.",
+      " #rBeing #rcursed #r- #rGeass.",
       "[Fight]",
       "[Leave]"
     ]
@@ -53,12 +53,12 @@
   "shadowverse:VampiresEvent": {
     "NAME": "Vampires ? ",
     "DESCRIPTIONS": [
-      "In a dark street, you meet some hooded people performing some kind of dark rite.As you approach, they all turn to face you at the same time. The tallest one smiled, showing his long fangs and stretches out a pale, thin hand to you: NL ~'Join_us,_sister._Let's_feel_the_warmth_of_the_spire.'~",
-      "Just as the tall man was about to grab your arm and pull you over, he is horrified to find that you are the @Lord_of_the_Dark@ . You don't feel any @Resistance@ . This is a unilateral @Massacre@ .NL .... NL After an unspecified amount of time, the revelry is over, and there is only you left. You have ~Killed_Them_All~ . You can't get any joy out of it. You feel #rEmpty again...",
+      "In a dark street, you meet some hooded people performing some kind of dark rite.As you approach, they all turn to face you at the same time. The tallest one smiled, showing his long fangs and stretches out a pale, thin hand to you: NL ~'Join~ ~us,~ ~sister.~ ~Let's~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~spire.'~",
+      "Just as the tall man was about to grab your arm and pull you over, he is horrified to find that you are the #y@Lord@ #y@of@ #y@the@ #y@Dark@ . You don't feel any @Resistance@ . This is a unilateral #r@Massacre@ .NL .... NL After an unspecified amount of time, the revelry is over, and there is only you left. You have #y~Killed~ #y~Them~ #y~All~ . You can't get any joy out of it. You feel #rEmpty again...",
       "You feel bored. You don't think they can't please you. So you give the man a look. The tall man stared at you in horror until you left completely. NL You're alone again."
     ],
     "OPTIONS": [
-      "[Revel] #gRemove_all Strick #gcards. #gReplace_with_same_amount_of Razory Claw. #rGain #rBlood_Vial .",
+      "[Revel] #gRemove #gall Strick #gcards. #gReplace #gwith #gsame #gamount #gof Razory Claw. #rGain #rBlood #rVial .",
       "[Ignore] Raise your Max HP by #r10 .",
       "[Leave]"
     ]
@@ -81,15 +81,15 @@
     "NAME": "Valhorean Dealer",
     "DESCRIPTIONS": [
       "You see a girl with purple hair sitting next to a pile of goods. NL ",
-      "'Greetings! ~~Welcome_to_Varona's_stall~~ NL Is there anything you would like to sell, sir?'",
+      "'Greetings! ~Welcome~ ~to~ ~Varona's~ ~stall~ NL Is there anything you would like to sell, sir?'",
       "You give a card to the dealer. NL NL ",
       "#r@Bang@ NL She hit you right in the face with her gloved fist. NL 'Do you deride me as a fool? Get lost!' NL ",
       "'Well... Do you really think I will pay for this rubbish?' NL ",
       "'Well... It's better than nothing anyway. Here, take it.' NL ",
-      "'I don't seem to have seen it before...It's hard to make a price. ~~How_about_this_much?~~' NL ",
+      "'I don't seem to have seen it before...It's hard to make a price. ~How~ ~about~ ~this~ ~much?~' NL ",
       "'Wow, this one looks great! Give it to me! ' NL ",
       "'Wow! That is some top-grade good! ... No refund! ' NL ",
-      "'Oops, ~~Looks_like_you_have_nothing_to_sell._Move_along_then.~' NL ",
+      "'Oops, ~Looks~ ~like~ ~you~ ~have~ ~nothing~ ~to~ ~sell.~ ~Move~ ~along~ ~then.~' NL ",
       "'Impressive. Your record in marketing is as good as Valhorean's idea. NL Weapons improperly distributed at low prices have given rise to unexpected outcome. NL It's better to confirm the results. Let's go to the forefront of the war.' NL 'I'm sorry! Please forgive me!' NL "
     ],
     "OPTIONS": [
@@ -102,21 +102,21 @@
     ]
   },
   "Crossover": {
-    "NAME": "混合职业杯",
+    "NAME": "Storms Cross Craft",
     "DESCRIPTIONS": [
-      "在你向上攀升时，你发现不远处正在 #p~举办大赛~ ，你上前一看发现这是混合职业杯。 ~“看来这又是一场~ #y~马力~ ~的比拼。”~ NL #r@“我看也是！@ #r@怎么五把全是死皇！”@ NL NL 你注意到一个男人微笑对你说： NL “总之，你想不想尝试参加一下 #y~混合职业杯~ 呢？” ",
+      "It seems like there is an event taking place ahead. As you come closer, you notice that it is Storms Cross Craft Cup. ~'Sounds~ ~like~ ~it's~ ~another~ ~competition~ ~of~ #y~Luck~.' NL #r@'So@ #r@I@ #r@see!@ #r@Why@ #r@is@ #r@it@ #r@Shadow-Swordcraft@ #r@all@ #r@along?'@ NL NL A man says to you with a smile on his face: NL 'Are you interested in entering #y~Storms~ #y~Cross~ #y~Craft~ ?' ",
       "",
-      "#y“好极了！” NL 那个男人的话音刚落，你就看见 #p~浓重的黑烟~ 笼罩了整个大赛。你感觉自己的阳寿正在缓慢地流逝…… NL NL 就在你快要取得优胜的时候，对手华哥4费把你斩杀了。 NL NL 不管那个杯赛是什么存在，它现在已经结束了。你重新上路，但总觉得自己的血压有些 #b上涨 。",
-      "“真令人失望……” NL ~“反正你迟早会成为SZB傻狗。”~  NL #r@“哈哈@ #r@哈哈哈哈！”@ NL NL 那个男人消失了，只留下这令人不安的大笑声在你耳中回荡。",
+      "#y'Marvelous!' NL Soon after your reply, the whole stage is shrouded in #p~Thick~ #p~Black~ #p~Smoke~ ... NL NL Just at the time you're about to win, your opponent plays Ladica and kills your leader in turn 4. NL NL The match is over, and you are back on the track. But somehow you feel a bit #bAngry .",
+      "'What a disappointment...' NL ~'Anyway,~ ~sooner~ ~or~ ~later~ ~you~ ~will~ ~join~ ~our~ ~party.'~  NL #r@'Hahaha@ #r@Hahahahaha!'@ NL NL The man disappeared, leaving only the disturbing laughter echoing in your ears.",
       ""
     ],
     "OPTIONS": [
-      "[支付阳寿] #g获得 混合职业模式 。 #r失去 #r",
-      " #r最大生命。",
-      "[拒绝]",
-      "[支付阳寿] #g获得 混合职业模式 。 #r失去 #r",
+      "[Attend the match] #gGain #gCross #gCraft . #rLose #r",
+      " #rMax #rHP.",
+      "[Refuse]",
+      "[Attend the match] #gGain #gCross #gCraft . #rLose #r",
       "",
-      "[离开]"
+      "[Leave]"
     ]
   }
 }
