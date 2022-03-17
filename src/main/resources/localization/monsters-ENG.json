@@ -163,5 +163,18 @@
       "@Do@ @not@ @disappoint@ @me!@",
       "~I'm~ #y~God!~ ~I'm~ ~the~ #y~Superior!~ ~I~ ~am~ ~the~ #y~Apex~ ~of~ #y~Mankind!~"
     ]
+  },
+  "shadowverse:Naht": {
+    "MOVES": [
+      ""
+    ],
+    "NAME": "Nahtnaught",
+    "DIALOG": [
+      "@我が咆哮で千切れろ消えろ！@",
+      "~咆える銃声、凱歌なり~",
+      "~路傍の石、転がる草、それがお前よ~",
+      "@この掌はお前の箱庭@",
+      "@足掻いて見せろ！@"
+    ]
   }
 }

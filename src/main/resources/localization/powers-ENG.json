@@ -1397,5 +1397,39 @@
       "回合开始时，增加 #b",
       " 张 #y魔导四轮车·V 到手中。"
     ]
+  },
+  "shadowverse:AramisPower": {
+    "NAME": "阿拉密斯",
+    "DESCRIPTIONS": [
+      "本回合内每当召唤 #y随从 时，使其获得+ #b",
+      "/+ #b",
+      " ，并使 #y阿拉密斯 增加 #b",
+      " 点伤害。每当打出攻击牌时，获得 #b",
+      " 点 #y力量 和 #y敏捷 ，并使 #y阿拉密斯 增加 #b",
+      " 点伤害。"
+    ]
+  },
+  "shadowverse:AthosPower": {
+    "NAME": "阿多斯",
+    "DESCRIPTIONS": [
+      "如果本回合结束时没有完全失去格挡，则下回合开始时获得 #b",
+      " 点格挡。"
+    ]
+  },
+  "shadowverse:PorthosPower": {
+    "NAME": "波尔多斯",
+    "DESCRIPTIONS": [
+      "回合结束时，对随机敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "shadowverse:NahtPower": {
+    "NAME": "Tyrant's Box",
+    "DESCRIPTIONS": [
+      "The first card played in each turn that target this enemy will be invalid and deposit in the box",
+      ", Boxed cards:",
+      "triggered in this turn.",
+      "not triggered in this turn."
+    ]
   }
 }

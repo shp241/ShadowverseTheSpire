@@ -145,6 +145,7 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addMonster(VincentBOSS.ID, VincentBOSS::new);
         BaseMod.addMonster(Lelouch.ID, () -> new Lelouch());
         BaseMod.addMonster(KMR.ID,KMR::new);
+        BaseMod.addMonster(Naht.ID,Naht::new);
         BaseMod.addEvent(LelouchCollaboration.ID, LelouchCollaboration.class, TheBeyond.ID);
         BaseMod.addBoss(TheEnding.ID,KMR.ID,"img/monsters/UI/KMR.png", "img/monsters/UI/KMR_Outline.png");
         BaseMod.addBoss(TheEnding.ID,KMR.ID,"img/monsters/UI/KMR.png", "img/monsters/UI/KMR_Outline.png");
@@ -152,6 +153,7 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         BaseMod.addBoss(TheBeyond.ID, Iceschillendrig.ID, "img/monsters/UI/IC.png", "img/monsters/UI/IC_Outline.png");
         BaseMod.addBoss(TheBeyond.ID, Belphomet.ID, "img/monsters/UI/Belphomet.png", "img/monsters/UI/Belphomet_Outline.png");
         BaseMod.addBoss(TheBeyond.ID, VincentBOSS.ID, "img/monsters/UI/VincentBOSS.png", "img/monsters/UI/VincentBOSS_Outline.png");
+        BaseMod.addBoss(TheBeyond.ID, Naht.ID, "img/monsters/UI/Naht.png", "img/monsters/UI/Naht_Outline.png");
         BaseMod.addMonster(Megaera.ID, () -> new Megaera());
         BaseMod.addEliteEncounter(TheBeyond.ID, new MonsterInfo(Megaera.ID, 1.5F));
         BaseMod.addMonster(Tisiphone.ID, () -> new Tisiphone());
@@ -1053,6 +1055,20 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("DArtagnan",new Sfx("sounds/DArtagnan.wav"));
         reflectedMap.put("MusketeersVow",new Sfx("sounds/MusketeersVow.wav"));
         reflectedMap.put("MusketeersVow_EH",new Sfx("sounds/MusketeersVow_EH.wav"));
+        reflectedMap.put("Naht_A1",new Sfx("sounds/Naht_A1.wav"));
+        reflectedMap.put("Naht_A2",new Sfx("sounds/Naht_A2.wav"));
+        reflectedMap.put("Naht_A3",new Sfx("sounds/Naht_A3.wav"));
+        reflectedMap.put("Naht_A4",new Sfx("sounds/Naht_A4.wav"));
+        reflectedMap.put("Naht_A5",new Sfx("sounds/Naht_A5.wav"));
+        reflectedMap.put("Naht_C",new Sfx("sounds/Naht_C.wav"));
+        reflectedMap.put("Naht_D1",new Sfx("sounds/Naht_D1.wav"));
+        reflectedMap.put("Naht_D2",new Sfx("sounds/Naht_D2.wav"));
+        reflectedMap.put("Naht_D3",new Sfx("sounds/Naht_D3.wav"));
+        reflectedMap.put("Naht_D4",new Sfx("sounds/Naht_D4.wav"));
+        reflectedMap.put("Naht_D5",new Sfx("sounds/Naht_D5.wav"));
+        reflectedMap.put("Naht_P1",new Sfx("sounds/Naht_P1.wav"));
+        reflectedMap.put("Naht_P2",new Sfx("sounds/Naht_P2.wav"));
+        reflectedMap.put("Naht_P3",new Sfx("sounds/Naht_P3.wav"));
     }
 
     public void receiveEditRelics() {
