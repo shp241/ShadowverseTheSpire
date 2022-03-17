@@ -80,14 +80,14 @@ public class Naht extends CustomMonster {
         if (AbstractDungeon.ascensionLevel >= 19) {
             this.heavyDmg = 25;
             this.multiDmg = 6;
-            this.backDmg = 10;
+            this.backDmg = 8;
             this.minionAmt = 4;
             this.strAmount = 4;
             this.debuffAmount = 3;
         } else if (AbstractDungeon.ascensionLevel >= 4) {
             this.heavyDmg = 25;
             this.multiDmg = 6;
-            this.backDmg = 8;
+            this.backDmg = 6;
             this.minionAmt = 2;
             this.strAmount = 3;
             this.debuffAmount = 2;
