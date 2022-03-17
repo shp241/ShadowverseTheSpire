@@ -83,10 +83,10 @@ public class Naht extends CustomMonster {
             this.heavyDmg = 25;
             this.multiDmg = 6;
             this.backDmg = 10;
-            this.minionAmt = 4;
+            this.minionAmt = 3;
             this.strAmount = 4;
             this.debuffAmount = 3;
-            this.buffAmount = 5;
+            this.buffAmount = 4;
         } else if (AbstractDungeon.ascensionLevel >= 4) {
             this.heavyDmg = 25;
             this.multiDmg = 6;
@@ -94,7 +94,7 @@ public class Naht extends CustomMonster {
             this.minionAmt = 2;
             this.strAmount = 3;
             this.debuffAmount = 2;
-            this.buffAmount = 3;
+            this.buffAmount = 2;
         } else {
             this.heavyDmg = 20;
             this.multiDmg = 4;
@@ -102,7 +102,7 @@ public class Naht extends CustomMonster {
             this.minionAmt = 2;
             this.strAmount = 3;
             this.debuffAmount = 2;
-            this.buffAmount = 3;
+            this.buffAmount = 2;
         }
         this.damage.add(new DamageInfo(this, this.heavyDmg));
         this.damage.add(new DamageInfo(this, this.multiDmg));
@@ -179,8 +179,6 @@ public class Naht extends CustomMonster {
                     AbstractDungeon.actionManager.addToBottom(new SpawnMonsterAction(m, true));
                     this.enemySlots.put(i + 1, m);
                     AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, this, new MetallicizePower(m, this.buffAmount)));
-                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, this, new StrengthPower(m, this.strAmount), this.strAmount));
-
                 }
                 turnsTaken++;
                 if (turnsTaken % 4 == 3) {
