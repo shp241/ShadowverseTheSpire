@@ -21,6 +21,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.*;
 import com.megacrit.cardcrawl.vfx.combat.InflameEffect;
 import shadowverse.action.AnimationAction;
+import shadowverse.action.ChangeSpriteAction;
 import shadowverse.characters.Witchcraft;
 import shadowverse.powers.NahtPower;
 
@@ -53,19 +54,31 @@ public class Naht extends CustomMonster {
 
     private int next = 1;
 
-    private boolean initialSpawn = true;
+    private int turnsTaken;
 
+    private boolean initialSpawn = true;
 
     private float spawnX = -100.0F;
 
+    public SpriterAnimation bigAnimation;
+
     private HashMap<Integer, AbstractMonster> enemySlots = new HashMap<>();
 
+    public void setAnimation(SpriterAnimation animation) {
+        this.animation = animation;
+    }
+
+    public SpriterAnimation getAnimation() {
+        return (SpriterAnimation) this.animation;
+    }
+
     public Naht() {
-        super(NAME, ID, 300, 0.0F, -30F, 600.0F, 400.0F, null, 60.0F, 130.0F);
+        super(NAME, ID, 300, 0.0F, -30F, 340.0F, 420.0F, null, 60.0F, 130.0F);
         this.animation = new SpriterAnimation("img/monsters/Naht/Naht.scml");
         this.dialogX = -100.0F * Settings.scale;
         this.dialogY = 10.0F * Settings.scale;
         this.type = AbstractMonster.EnemyType.BOSS;
+        this.turnsTaken = 0;
         if (AbstractDungeon.ascensionLevel >= 19) {
             this.heavyDmg = 25;
             this.multiDmg = 6;
@@ -112,6 +125,7 @@ public class Naht extends CustomMonster {
         }
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new StrengthPower(this, baseStrength), baseStrength));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new NahtPower(this), 1));
+        addToBot(new SFXAction("Naht_A0"));
     }
 
     @Override
@@ -138,38 +152,59 @@ public class Naht extends CustomMonster {
                 for (i = 0; i < 3; i++) {
                     AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage.get(1), AbstractGameAction.AttackEffect.BLUNT_LIGHT, true));
                 }
-                this.next = (1 + AbstractDungeon.monsterRng.random(3)) % 5 + 1;
+                turnsTaken++;
+                if (turnsTaken % 4 == 3) {
+                    this.next = 5;
+                } else {
+                    this.next = (1 + AbstractDungeon.aiRng.random(2)) % 4 + 1;
+                }
                 break;
             case 2:
                 AbstractDungeon.actionManager.addToBottom(new ShoutAction(this, DIALOG[1], 1.0F, 2.0F));
                 AbstractDungeon.actionManager.addToBottom(new SFXAction("Naht_A2"));
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage.get(0), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-                this.next = (2 + AbstractDungeon.monsterRng.random(3)) % 5 + 1;
+                turnsTaken++;
+                if (turnsTaken % 4 == 3) {
+                    this.next = 5;
+                } else {
+                    this.next = (2 + AbstractDungeon.aiRng.random(2)) % 4 + 1;
+                }
                 break;
             case 3:
                 AbstractDungeon.actionManager.addToBottom(new ShoutAction(this, DIALOG[2], 1.0F, 2.0F));
                 addToBot(new SFXAction("Naht_A3"));
                 AbstractDungeon.actionManager.addToBottom(new SFXAction("MONSTER_COLLECTOR_SUMMON"));
                 for (i = 0; i < this.minionAmt; i++) {
-                    AbstractMonster m = new Henchman(this.spawnX + -100.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
+                    AbstractMonster m = new Henchman(this.spawnX - 50 - 75.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
                     AbstractDungeon.actionManager.addToBottom(new SpawnMonsterAction(m, true));
                     this.enemySlots.put(i + 1, m);
                     AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, this, new MetallicizePower(m, this.buffAmount)));
                     AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, this, new StrengthPower(m, this.strAmount), this.strAmount));
 
                 }
-                this.next = (3 + AbstractDungeon.monsterRng.random(3)) % 5 + 1;
+                turnsTaken++;
+                if (turnsTaken % 4 == 3) {
+                    this.next = 5;
+                } else {
+                    this.next = (3 + AbstractDungeon.aiRng.random(2)) % 4 + 1;
+                }
                 break;
             case 4:
                 AbstractDungeon.actionManager.addToBottom(new ShoutAction(this, DIALOG[3], 1.0F, 2.0F));
                 addToBot(new SFXAction("Naht_A4"));
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new VulnerablePower(AbstractDungeon.player, this.debuffAmount, true), this.debuffAmount));
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new StrengthPower(this, this.strAmount), this.strAmount));
-                this.next = (4 + AbstractDungeon.monsterRng.random(3)) % 5 + 1;
+                turnsTaken++;
+                if (turnsTaken % 4 == 3) {
+                    this.next = 5;
+                } else {
+                    this.next = (4 + AbstractDungeon.aiRng.random(2)) % 4 + 1;
+                }
                 break;
             case 5:
                 AbstractDungeon.actionManager.addToBottom(new ShoutAction(this, DIALOG[4], 1.0F, 2.0F));
                 addToBot(new SFXAction("Naht_A5"));
+                AbstractDungeon.actionManager.addToBottom(new ChangeSpriteAction("img/animation/Naht/Naht.scml", this, 2.4F));
                 for (AbstractMonster m : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                     if (m.equals(this) || m.isDying || m.isDead) {
                         continue;
@@ -194,6 +229,7 @@ public class Naht extends CustomMonster {
                         break;
                     }
                 }
+                turnsTaken++;
                 this.next = (5 + AbstractDungeon.monsterRng.random(3)) % 5 + 1;
                 break;
             default:

@@ -1055,6 +1055,7 @@ import static com.badlogic.gdx.graphics.Color.YELLOW;
         reflectedMap.put("DArtagnan",new Sfx("sounds/DArtagnan.wav"));
         reflectedMap.put("MusketeersVow",new Sfx("sounds/MusketeersVow.wav"));
         reflectedMap.put("MusketeersVow_EH",new Sfx("sounds/MusketeersVow_EH.wav"));
+        reflectedMap.put("Naht_A0",new Sfx("sounds/Naht_A0.wav"));
         reflectedMap.put("Naht_A1",new Sfx("sounds/Naht_A1.wav"));
         reflectedMap.put("Naht_A2",new Sfx("sounds/Naht_A2.wav"));
         reflectedMap.put("Naht_A3",new Sfx("sounds/Naht_A3.wav"));
