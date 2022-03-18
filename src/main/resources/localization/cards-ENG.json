@@ -174,10 +174,6 @@
     "NAME": "Clarke, Knowledge Seeker",
     "DESCRIPTION": " Accelerate 0 : \bGain 1 Earth_Essence . Put 1 *Veridic *Ritual into your hand . NL  NL --------------------- NL  NL Gain [E] [E] [E] [E] [E] . NL  Earth_Rite : \b Exhaust all cards in your hand and gain !B! Block for each card. Draw cards until your hand is full."
   },
-  "shadowverse:Clarke_Accelerate": {
-    "NAME": "Clarke, Knowledge Seeker",
-    "DESCRIPTION": " Accelerate 0 : \bGain 1 Earth_Essence . Put 1 *Veridic *Ritual into your hand . NL  NL --------------------- NL  NL Gain [E] [E] [E] [E] [E] . NL  Earth_Rite : \b Exhaust all cards in your hand and gain !B! Block for each card. Draw cards until your hand is full."
-  },
   "shadowverse:Faust": {
     "NAME": "Truthseeker Faust",
     "DESCRIPTION": "By the end of your turn, Earth_Rite : \b Gain !M! Strength and 1 Dexterity . NL Ethereal .",
@@ -188,11 +184,6 @@
     "DESCRIPTION": "By the end of your turn, if Earth_Essence is less than 2, gain 2 Earth_Essence. NL Othervise Earth_Rite 2 : \bDeal !M! damage to all enemies. NL Ethereal ."
   },
   "shadowverse:OrichalcumGolem": {
-    "NAME": "Orichalcum Golem",
-    "DESCRIPTION": " Accelerate 0 : \b Earth_Rite X : \bRandomly activate 1 of the following effects. NL 'Gain 6 Block ', 'Put 1 *Veridic Ritual into your hand', 'Deal !D! damage to random enemy' NL Repeat X times. NL X equal to the value of Earth_Essence. NL  NL --------------------- NL  NL Gain !B! Block . NL Gain 2 Earth_Essence next turn.",
-    "UPGRADE_DESCRIPTION": " Accelerate 0 : \b Earth_Rite X : \bRandomly activate 1 of the following effects. NL 'Gain 8 Block ', 'Put 1 *Veridic Ritual+ into your hand', 'Deal !D! damage to random enemy' NL Repeat X times. NL X equal to the value of Earth_Essence. NL  NL --------------------- NL  NL Gain !B! Block . NL Gain 2 Earth_Essence next turn."
-  },
-  "shadowverse:OrichalcumGolem_Accelerate": {
     "NAME": "Orichalcum Golem",
     "DESCRIPTION": " Accelerate 0 : \b Earth_Rite X : \bRandomly activate 1 of the following effects. NL 'Gain 6 Block ', 'Put 1 *Veridic Ritual into your hand', 'Deal !D! damage to random enemy' NL Repeat X times. NL X equal to the value of Earth_Essence. NL  NL --------------------- NL  NL Gain !B! Block . NL Gain 2 Earth_Essence next turn.",
     "UPGRADE_DESCRIPTION": " Accelerate 0 : \b Earth_Rite X : \bRandomly activate 1 of the following effects. NL 'Gain 8 Block ', 'Put 1 *Veridic Ritual+ into your hand', 'Deal !D! damage to random enemy' NL Repeat X times. NL X equal to the value of Earth_Essence. NL  NL --------------------- NL  NL Gain !B! Block . NL Gain 2 Earth_Essence next turn."
@@ -401,13 +392,9 @@
     "NAME": "Apex Elemental",
     "DESCRIPTION": "Natura . NL Accelerate 0 : \bDeal 6 damage. NL If you have the Power: Naterran_Great_Tree , destroy it and put a *Naterran *Great *Tree into your hand, change damage to 9. NL  NL --------------------- NL  NL Deal !D! damage to all enemies. NL If you have the Power: Naterran_Great_Tree , destroy it and put a *Naterran *Great *Tree into your hand, double the damage."
   },
-  "shadowverse:ApexElemental_Accelerate": {
-    "NAME": "Apex Elemental",
-    "DESCRIPTION": "Natura . NL Accelerate 0 : \bDeal 6 damage. NL If you have the Power: Naterran_Great_Tree , destroy it and put a *Naterran *Great *Tree into your hand, change damage to 9. NL  NL --------------------- NL  NL Deal !D! damage to all enemies. NL If you have the Power: Naterran_Great_Tree , destroy it and put a *Naterran *Great *Tree into your hand, double the damage."
-  },
   "shadowverse:DualAngle": {
-    "NAME": "Changwing Cherub",
-    "DESCRIPTION": "Machina · Natura . NL Gain !B! Block . NL If you have more than 2 Machina cards in your hand, deal !D! damage. NL If you have more than 2 Natura cards in your hand, heal 2 HP. NL *Product *Machine NL *Naterran *Great *Tree NL Choose : Put 1 of the cards above into your hand."
+    "NAME": "Changewing Cherub",
+    "DESCRIPTION": "Machina · Natura . NL Gain !B! Block . NL If you have more than 2 Machina cards in your hand, deal !D! damage. NL If you have more than 2 Natura cards in your hand, heal 2 HP. NL *Assembly *Droid NL *Naterran *Great *Tree NL Choose : Put 1 of the cards above into your hand."
   },
   "shadowverse:Ghios": {
     "NAME": "Ghios, Sparkling Prism",
@@ -487,10 +474,6 @@
     "DESCRIPTION": "By the end of your turn, Heal HP equal to the highest damage you take in this turn."
   },
   "shadowverse:Satan": {
-    "NAME": "Prince of Cocytus",
-    "DESCRIPTION": " Accelerate 1 : \bRandomly put 4 *Cocytus cards into your draw pile. NL Exhaust . NL  NL --------------------- NL  NL Replace your draw pile with a *Cocytus *Deck ."
-  },
-  "shadowverse:Satan_Accelerate": {
     "NAME": "Prince of Cocytus",
     "DESCRIPTION": " Accelerate 1 : \bRandomly put 4 *Cocytus cards into your draw pile. NL Exhaust . NL  NL --------------------- NL  NL Replace your draw pile with a *Cocytus *Deck ."
   },
@@ -2688,10 +2671,6 @@
   "shadowverse:CurseOfTheBlackDragon": {
     "NAME": "Curse of the Black Dragon",
     "DESCRIPTION": "Retain . NL By the end of your turn, lose 1 HP."
-  },
-  "shadowverse:FreezePower": {
-    "NAME": "Freeze",
-    "DESCRIPTION": "The cards you drawn costs #b1 more."
   },
   "shadowverse:ShadowBahmut": {
     "NAME": "Shadow Bahmut",

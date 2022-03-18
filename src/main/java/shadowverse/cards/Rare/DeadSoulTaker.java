@@ -7,23 +7,17 @@
  import com.megacrit.cardcrawl.actions.AbstractGameAction;
  import com.megacrit.cardcrawl.actions.animations.VFXAction;
  import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.common.HealAction;
  import com.megacrit.cardcrawl.actions.utility.SFXAction;
  import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.localization.CardStrings;
+ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
  import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
  import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
- import shadowverse.Shadowverse;
  import shadowverse.action.NecromanceAction;
  import shadowverse.action.PrimalGigantAction;
-import shadowverse.cards.Temp.PrimalGigant_Accelerate;
-import shadowverse.characters.AbstractShadowversePlayer;
-import shadowverse.characters.Elf;
+ import shadowverse.characters.AbstractShadowversePlayer;
  import shadowverse.characters.Necromancer;
 
 

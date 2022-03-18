@@ -35,7 +35,7 @@
 
      @Override
      public void onPlayCard(AbstractCard c, AbstractMonster m) {
-         if (c.type== AbstractCard.CardType.SKILL && c.hasTag(AbstractShadowversePlayer.Enums.MYSTERIA)){
+         if (c.type== AbstractCard.CardType.SKILL && !c.hasTag(AbstractShadowversePlayer.Enums.MYSTERIA)){
              if (AbstractDungeon.player instanceof AbstractShadowversePlayer){
                  ((AbstractShadowversePlayer) AbstractDungeon.player).mysteriaCount++;
              }

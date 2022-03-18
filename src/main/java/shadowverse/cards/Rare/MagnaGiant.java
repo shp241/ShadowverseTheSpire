@@ -16,12 +16,10 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.SweepingBeamEffect;
 import shadowverse.Shadowverse;
 import shadowverse.action.DrawPileToHandAction_Tag;
-import shadowverse.cards.Temp.MagnaGiant_Acc;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Nemesis;
 
@@ -96,18 +94,6 @@ public class MagnaGiant extends CustomCard {
             addToBot((AbstractGameAction) new VFXAction((AbstractCreature) abstractPlayer, (AbstractGameEffect) new SweepingBeamEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, AbstractDungeon.player.flipHorizontal), 0.4F));
             addToBot((AbstractGameAction) new DamageAllEnemiesAction((AbstractCreature) abstractPlayer, DamageInfo.createDamageMatrix(this.magicNumber * count, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE, true));
         }
-    }
-
-    public AbstractCard makeSameInstanceOf() {
-        AbstractCard card = null;
-        if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
-            card = (new MagnaGiant_Acc()).makeStatEquivalentCopy();
-            card.uuid = (new MagnaGiant_Acc()).uuid;
-        } else {
-            card = makeStatEquivalentCopy();
-            card.uuid = this.uuid;
-        }
-        return card;
     }
 
 

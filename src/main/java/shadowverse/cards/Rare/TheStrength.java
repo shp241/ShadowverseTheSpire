@@ -17,19 +17,13 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
-import com.megacrit.cardcrawl.vfx.RainbowCardEffect;
 import com.megacrit.cardcrawl.vfx.combat.HeartBuffEffect;
 import shadowverse.Shadowverse;
 import shadowverse.action.PlaceAmulet;
-import shadowverse.cards.Status.EvolutionPoint;
-import shadowverse.cards.Temp.Clarke_Accelerate;
 import shadowverse.cards.Temp.SomnolentStrength;
-import shadowverse.cards.Temp.TheStrength_Acc;
 import shadowverse.characters.Bishop;
-import shadowverse.powers.AbdielPower;
 import shadowverse.powers.TheStrengthPower;
 
 public class TheStrength
@@ -83,18 +77,6 @@ public class TheStrength
             addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) p, (AbstractCreature) p, (AbstractPower) new StrengthPower((AbstractCreature) p,this.magicNumber),this.magicNumber));
             addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) p, (AbstractCreature) p, (AbstractPower) new DexterityPower((AbstractCreature) p,this.magicNumber),this.magicNumber));
         }
-    }
-
-    public AbstractCard makeSameInstanceOf() {
-        AbstractCard card = null;
-        if (Shadowverse.Accelerate((AbstractCard)this) && this.type == CardType.SKILL) {
-            card = (new TheStrength_Acc()).makeStatEquivalentCopy();
-            card.uuid = (new TheStrength_Acc()).uuid;
-        } else {
-            card = makeStatEquivalentCopy();
-            card.uuid = this.uuid;
-        }
-        return card;
     }
 
     public AbstractCard makeCopy() {

@@ -17,12 +17,10 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.BlurPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.MindblastEffect;
 import shadowverse.Shadowverse;
 import shadowverse.action.ExhaustSpecificGroupAndDrawAction;
-import shadowverse.cards.Temp.OmniscientKaiser_Acc;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Nemesis;
 
@@ -97,17 +95,6 @@ public class OmniscientKaiser extends CustomCard {
         i++;
     }
 
-    public AbstractCard makeSameInstanceOf() {
-        AbstractCard card = null;
-        if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
-            card = (new OmniscientKaiser_Acc()).makeStatEquivalentCopy();
-            card.uuid = (new OmniscientKaiser_Acc()).uuid;
-        } else {
-            card = makeStatEquivalentCopy();
-            card.uuid = this.uuid;
-        }
-        return card;
-    }
 
     public AbstractCard makeCopy() {
         return (AbstractCard) new OmniscientKaiser();

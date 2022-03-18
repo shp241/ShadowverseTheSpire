@@ -31,14 +31,14 @@ import com.megacrit.cardcrawl.ui.panels.energyorb.EnergyOrbInterface;
 import com.megacrit.cardcrawl.ui.panels.energyorb.EnergyOrbRed;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.IntenseZoomEffect;
+import shadowverse.action.ChangeSpriteAction;
 import shadowverse.cards.Status.KMRsPresent;
+import shadowverse.monsters.SpriteCreature;
 import shadowverse.powers.AbsoluteOnePower;
 import shadowverse.powers.LionSanctuaryPower;
 
-import java.util.Iterator;
-
 public class KMR
-        extends AbstractCharBoss {
+        extends AbstractCharBoss implements SpriteCreature {
     public static final String ID = "shadowverse:KMR";
     private static final MonsterStrings monsterStrings = CardCrawlGame.languagePack.getMonsterStrings("shadowverse:KMR");
     public static final String NAME = monsterStrings.NAME;
@@ -131,11 +131,7 @@ public class KMR
 //                addToBot(new AnimationAction(bigAnimation, "extra", 3.0F, false));
                 break;
             case "CALAMITY":
-                for (Iterator<AbstractPower> s = this.powers.iterator(); s.hasNext(); ) {
-                    AbstractPower p = s.next();
-                    if (p.type == AbstractPower.PowerType.DEBUFF || p.ID.equals(AbsoluteOnePower.POWER_ID))
-                        s.remove();
-                }
+                this.powers.removeIf(p -> p.type == AbstractPower.PowerType.DEBUFF || p.ID.equals(AbsoluteOnePower.POWER_ID));
                 if (AbstractDungeon.ascensionLevel >= 19) {
                     this.maxHealth = 1000;
                 } else if (AbstractDungeon.ascensionLevel >= 4) {
@@ -157,6 +153,7 @@ public class KMR
             default:
                 break;
         }
+        AbstractDungeon.actionManager.addToBottom(new ChangeSpriteAction("img/monsters/KMR/extra/KMR.scml", this, 2.0F));
     }
 
     public void onPlayAttackCardSound() {
@@ -172,11 +169,7 @@ public class KMR
                 for (AbstractRelic r : AbstractDungeon.player.relics)
                     r.onMonsterDeath(this);
                 addToTop((AbstractGameAction) new ClearCardQueueAction());
-                for (Iterator<AbstractPower> s = this.powers.iterator(); s.hasNext(); ) {
-                    AbstractPower p = s.next();
-                    if (p.type == AbstractPower.PowerType.DEBUFF || p.ID.equals(LionSanctuaryPower.POWER_ID))
-                        s.remove();
-                }
+                this.powers.removeIf(p -> p.type == AbstractPower.PowerType.DEBUFF || p.ID.equals(LionSanctuaryPower.POWER_ID));
                 setMove((byte) 20, AbstractMonster.Intent.UNKNOWN);
                 createIntent();
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SetMoveAction(this, (byte) 20, AbstractMonster.Intent.UNKNOWN));
@@ -185,6 +178,12 @@ public class KMR
         }
     }
 
+    public SpriterAnimation getAnimation() {
+        return (SpriterAnimation) this.animation;
+    }
+    public void setAnimation(SpriterAnimation animation) {
+        this.animation = animation;
+    }
 
     public void die() {
         if (!(AbstractDungeon.getCurrRoom()).cannotLose) {

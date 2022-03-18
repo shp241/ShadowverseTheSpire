@@ -20,16 +20,13 @@ import com.megacrit.cardcrawl.localization.MonsterStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.*;
 import com.megacrit.cardcrawl.vfx.combat.InflameEffect;
-import shadowverse.action.AnimationAction;
 import shadowverse.action.ChangeSpriteAction;
-import shadowverse.characters.Witchcraft;
 import shadowverse.powers.NahtPower;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
 
-public class Naht extends CustomMonster {
+public class Naht extends CustomMonster implements SpriteCreature{
     public static final String ID = "shadowverse:Naht";
     private static final MonsterStrings monsterStrings = CardCrawlGame.languagePack.getMonsterStrings("shadowverse:Naht");
     public static final String NAME = monsterStrings.NAME;

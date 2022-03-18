@@ -12,10 +12,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.action.PrimalGigantAction;
-import shadowverse.cards.Temp.PrimalGigant_Accelerate;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Elf;
 
@@ -67,17 +65,6 @@ public class PrimalGigant extends CustomCard {
         }
     }
 
-    public AbstractCard makeSameInstanceOf() {
-        AbstractCard card = null;
-        if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
-            card = (new PrimalGigant_Accelerate()).makeStatEquivalentCopy();
-            card.uuid = (new PrimalGigant_Accelerate()).uuid;
-        } else {
-            card = makeStatEquivalentCopy();
-            card.uuid = this.uuid;
-        }
-        return card;
-    }
 
     public AbstractCard makeCopy() {
         return (AbstractCard) new PrimalGigant();

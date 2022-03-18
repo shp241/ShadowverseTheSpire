@@ -96,17 +96,6 @@ public class Hades extends CustomCard {
         }
     }
 
-    public AbstractCard makeSameInstanceOf() {
-        AbstractCard card = null;
-        if (Shadowverse.Accelerate((AbstractCard)this) && this.type == CardType.SKILL) {
-            card = (new Hades_Accelerate()).makeStatEquivalentCopy();
-            card.uuid = (new Hades_Accelerate()).uuid;
-        } else {
-            card = makeStatEquivalentCopy();
-            card.uuid = this.uuid;
-        }
-        return card;
-    }
 
     public AbstractCard makeCopy() {
         return new Hades();

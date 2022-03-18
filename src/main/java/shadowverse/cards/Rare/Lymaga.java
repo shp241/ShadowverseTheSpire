@@ -18,11 +18,9 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.action.InvocationAction;
 import shadowverse.cards.Common.GreenWoodGuardian;
-import shadowverse.cards.Temp.Lymaga_Accelerate;
 import shadowverse.cards.Temp.Lymaga_NoAcc;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Elf;
@@ -128,18 +126,6 @@ public class Lymaga
             addToBot((AbstractGameAction) new SFXAction("ATTACK_HEAVY"));
             addToBot((AbstractGameAction) new DamageAction((AbstractCreature) abstractMonster, new DamageInfo((AbstractCreature) abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
         }
-    }
-
-    public AbstractCard makeSameInstanceOf() {
-        AbstractCard card = null;
-        if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
-            card = (new Lymaga_Accelerate()).makeStatEquivalentCopy();
-            card.uuid = (new Lymaga_Accelerate()).uuid;
-        } else {
-            card = makeStatEquivalentCopy();
-            card.uuid = this.uuid;
-        }
-        return card;
     }
 
     public AbstractCard makeCopy() {

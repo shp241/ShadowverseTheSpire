@@ -15,14 +15,12 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.SpotlightPlayerEffect;
 import shadowverse.Shadowverse;
 import shadowverse.action.ReanimateAction;
 import shadowverse.cards.Common.DemonicProcession;
 import shadowverse.cards.Common.HungrySlash;
 import shadowverse.cards.Common.SpiritCurator;
-import shadowverse.cards.Temp.DeadMetalStar_Accelerate;
 import shadowverse.cards.Temp.InstantPotion;
 import shadowverse.cards.Temp.ProductMachine;
 import shadowverse.characters.AbstractShadowversePlayer;
@@ -96,18 +94,6 @@ public class DeadMetalStar
         }
     }
 
-
-    public AbstractCard makeSameInstanceOf() {
-        AbstractCard card = null;
-        if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
-            card = (new DeadMetalStar_Accelerate()).makeStatEquivalentCopy();
-            card.uuid = (new DeadMetalStar_Accelerate()).uuid;
-        } else {
-            card = makeStatEquivalentCopy();
-            card.uuid = this.uuid;
-        }
-        return card;
-    }
 
 
     public AbstractCard makeCopy() {

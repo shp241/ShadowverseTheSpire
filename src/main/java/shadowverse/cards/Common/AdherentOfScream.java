@@ -5,22 +5,16 @@
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.unique.VampireDamageAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.action.ReanimateAction;
-import shadowverse.cards.Temp.AdherentOfScream_Acc;
-import shadowverse.cards.Temp.Clarke_Accelerate;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Necromancer;
 
@@ -74,18 +68,6 @@ import shadowverse.characters.Necromancer;
          addToBot((AbstractGameAction)new ReanimateAction(1));
        }
      }
-   }
-
-   public AbstractCard makeSameInstanceOf() {
-     AbstractCard card = null;
-     if (Shadowverse.Accelerate((AbstractCard)this) && this.type == CardType.SKILL) {
-       card = (new AdherentOfScream_Acc()).makeStatEquivalentCopy();
-       card.uuid = (new AdherentOfScream_Acc()).uuid;
-     } else {
-       card = makeStatEquivalentCopy();
-       card.uuid = this.uuid;
-     }
-     return card;
    }
 
    public AbstractCard makeCopy() {

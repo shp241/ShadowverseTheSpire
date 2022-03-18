@@ -2,12 +2,10 @@ package shadowverse.cards.Uncommon;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
-import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -17,17 +15,12 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
-import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
-import com.megacrit.cardcrawl.vfx.combat.ClashEffect;
 import shadowverse.Shadowverse;
 import shadowverse.cards.Common.DemonicProcession;
 import shadowverse.cards.Common.HungrySlash;
 import shadowverse.cards.Common.SpiritCurator;
 import shadowverse.cards.Rare.Ferry;
 import shadowverse.cards.Rare.TheLovers;
-import shadowverse.cards.Temp.Clarke_Accelerate;
-import shadowverse.cards.Temp.EvilEyeDemon_Acc;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Vampire;
 
@@ -101,18 +94,6 @@ public class EvilEyeDemon
             addToBot((AbstractGameAction) new SFXAction("EvilEyeDemon"));
             addToBot((AbstractGameAction) new DamageAllEnemiesAction((AbstractCreature) p, DamageInfo.createDamageMatrix(this.magicNumber, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true));
         }
-    }
-
-    public AbstractCard makeSameInstanceOf() {
-        AbstractCard card = null;
-        if (Shadowverse.Accelerate((AbstractCard)this) && this.type == CardType.SKILL) {
-            card = (new EvilEyeDemon_Acc()).makeStatEquivalentCopy();
-            card.uuid = (new EvilEyeDemon_Acc()).uuid;
-        } else {
-            card = makeStatEquivalentCopy();
-            card.uuid = this.uuid;
-        }
-        return card;
     }
 
     public AbstractCard makeCopy() {

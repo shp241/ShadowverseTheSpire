@@ -109,19 +109,6 @@ public class Satan extends AbstractNeutralCard {
     }
 
 
-    public AbstractCard makeSameInstanceOf() {
-        AbstractCard card = null;
-        if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
-            card = (new Satan_Accelerate()).makeStatEquivalentCopy();
-            card.uuid = (new Satan_Accelerate()).uuid;
-        } else {
-            card = makeStatEquivalentCopy();
-            card.uuid = this.uuid;
-        }
-        return card;
-    }
-
-
     public AbstractCard makeCopy() {
         return (AbstractCard) new Satan();
     }

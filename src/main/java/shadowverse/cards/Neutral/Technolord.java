@@ -9,10 +9,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.action.TechnolordAction;
-import shadowverse.cards.Temp.Technolord_Accelerate;
 import shadowverse.characters.AbstractShadowversePlayer;
 
 
@@ -85,21 +83,6 @@ public class Technolord
         } else {
             addToBot((AbstractGameAction) new TechnolordAction());
         }
-    }
-
-    public AbstractCard makeSameInstanceOf() {
-        AbstractCard card = null;
-        if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
-            card = (new Technolord_Accelerate()).makeStatEquivalentCopy();
-            card.uuid = (new Technolord_Accelerate()).uuid;
-            if (this.upgraded) {
-                card.upgrade();
-            }
-        } else {
-            card = makeStatEquivalentCopy();
-            card.uuid = this.uuid;
-        }
-        return card;
     }
 
     public AbstractCard makeCopy() {

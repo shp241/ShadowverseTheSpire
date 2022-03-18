@@ -19,7 +19,6 @@
 
  import shadowverse.Shadowverse;
 import shadowverse.action.BlockPerCardAction;
- import shadowverse.cards.Temp.Clarke_Accelerate;
  import shadowverse.cards.Temp.VeridicRitual;
  import shadowverse.characters.AbstractShadowversePlayer;
  import shadowverse.characters.Witchcraft;
@@ -143,21 +142,6 @@ import shadowverse.action.BlockPerCardAction;
        } 
      } 
    }
- 
-   
-   public AbstractCard makeSameInstanceOf() {
-     AbstractCard card = null;
-     if (Shadowverse.Accelerate((AbstractCard)this) && this.type == CardType.SKILL) {
-       card = (new Clarke_Accelerate()).makeStatEquivalentCopy();
-       card.uuid = (new Clarke_Accelerate()).uuid;
-     } else {
-       card = makeStatEquivalentCopy();
-       card.uuid = this.uuid;
-     } 
-     return card;
-   }
- 
- 
    
    public AbstractCard makeCopy() {
      return (AbstractCard)new Clarke();

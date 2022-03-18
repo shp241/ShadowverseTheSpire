@@ -13,7 +13,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.action.BurialAction;
 import shadowverse.cards.Common.DemonicProcession;
@@ -22,7 +21,6 @@ import shadowverse.cards.Common.SpiritCurator;
 import shadowverse.cards.Rare.Ferry;
 import shadowverse.cards.Rare.HinterlandGhoul;
 import shadowverse.cards.Rare.TheLovers;
-import shadowverse.cards.Temp.BoneDominator_Accelerate;
 import shadowverse.cards.Temp.InstantPotion;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Necromancer;
@@ -87,19 +85,6 @@ public class BoneDominator
             addToBot((AbstractGameAction) new GainBlockAction(abstractPlayer, this.block));
             addToBot((AbstractGameAction) new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
         }
-    }
-
-
-    public AbstractCard makeSameInstanceOf() {
-        AbstractCard card = null;
-        if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
-            card = (new BoneDominator_Accelerate()).makeStatEquivalentCopy();
-            card.uuid = (new BoneDominator_Accelerate()).uuid;
-        } else {
-            card = makeStatEquivalentCopy();
-            card.uuid = this.uuid;
-        }
-        return card;
     }
 
 

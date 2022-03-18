@@ -7,14 +7,15 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.Settings;
 import shadowverse.animation.AbstractAnimation;
 import shadowverse.monsters.Naht;
+import shadowverse.monsters.SpriteCreature;
 
 public class ChangeSpriteAction extends AbstractGameAction {
 
-    Naht creature;
+    SpriteCreature creature;
     SpriterAnimation to;
     SpriterAnimation ori;
 
-    public ChangeSpriteAction(String path, Naht c, float duration) {
+    public ChangeSpriteAction(String path, SpriteCreature c, float duration) {
         this.actionType = ActionType.SPECIAL;
         this.duration = duration;
         this.to = new SpriterAnimation(path);

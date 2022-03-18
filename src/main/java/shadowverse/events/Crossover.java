@@ -37,7 +37,7 @@ public class Crossover extends AbstractImageEvent {
     private int screenNum = 0, hpLoss = 0;
 
     public Crossover() {
-        super(NAME, "test", "img/event/Crossover.png");
+        super(NAME, "test", "img/event/Crossover.jpg");
         this.body = INTRO_BODY_M;
         this.hpLoss = MathUtils.ceil(AbstractDungeon.player.maxHealth * 0.2F);
         if (this.hpLoss >= AbstractDungeon.player.maxHealth) {

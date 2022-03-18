@@ -19,12 +19,10 @@
  import com.megacrit.cardcrawl.orbs.AbstractOrb;
  import com.megacrit.cardcrawl.powers.AbstractPower;
  import com.megacrit.cardcrawl.rooms.AbstractRoom;
- import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
  import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
  import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 
  import shadowverse.Shadowverse;
-import shadowverse.cards.Temp.ApexElemental_Accelerate;
  import shadowverse.cards.Temp.NaterranGreatTree;
  import shadowverse.characters.AbstractShadowversePlayer;
  import shadowverse.characters.Witchcraft;
@@ -109,20 +107,6 @@ import shadowverse.cards.Temp.ApexElemental_Accelerate;
        addToBot((AbstractGameAction)new VFXAction((AbstractCreature)abstractPlayer, (AbstractGameEffect)new CleaveEffect(), 0.1F));
        addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)abstractPlayer, DamageInfo.createDamageMatrix(this.damage, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE, true));
      } 
-   }
- 
- 
-   
-   public AbstractCard makeSameInstanceOf() {
-     AbstractCard card = null;
-     if (Shadowverse.Accelerate((AbstractCard)this) && this.type == CardType.SKILL) {
-       card = (new ApexElemental_Accelerate()).makeStatEquivalentCopy();
-       card.uuid = (new ApexElemental_Accelerate()).uuid;
-     } else {
-       card = makeStatEquivalentCopy();
-       card.uuid = this.uuid;
-     } 
-     return card;
    }
  
    

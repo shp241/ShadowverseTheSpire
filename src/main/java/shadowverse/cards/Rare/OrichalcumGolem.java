@@ -15,10 +15,8 @@
  import com.megacrit.cardcrawl.monsters.AbstractMonster;
  import com.megacrit.cardcrawl.powers.AbstractPower;
  import com.megacrit.cardcrawl.rooms.AbstractRoom;
- import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
  import shadowverse.Shadowverse;
-import shadowverse.cards.Temp.OrichalcumGolem_Accelerate;
  import shadowverse.cards.Temp.VeridicRitual;
  import shadowverse.characters.AbstractShadowversePlayer;
  import shadowverse.characters.Witchcraft;
@@ -119,20 +117,6 @@ import shadowverse.cards.Temp.OrichalcumGolem_Accelerate;
        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new NextTurnEarthEssence((AbstractCreature)abstractPlayer, this.magicNumber), this.magicNumber));
      } 
    }
- 
-   
-   public AbstractCard makeSameInstanceOf() {
-     AbstractCard card = null;
-     if (Shadowverse.Accelerate((AbstractCard)this) && this.type == CardType.SKILL) {
-       card = (new OrichalcumGolem_Accelerate()).makeStatEquivalentCopy();
-       card.uuid = (new OrichalcumGolem_Accelerate()).uuid;
-     } else {
-       card = makeStatEquivalentCopy();
-       card.uuid = this.uuid;
-     } 
-     return card;
-   }
- 
    
    public AbstractCard makeCopy() {
      return (AbstractCard)new OrichalcumGolem();

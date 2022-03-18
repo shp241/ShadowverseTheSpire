@@ -2,36 +2,24 @@ package shadowverse.cards.Uncommon;
 
 
 import basemod.abstracts.CustomCard;
-import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsInHandAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.BlurPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
-import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
-import com.megacrit.cardcrawl.vfx.combat.MindblastEffect;
 import shadowverse.Shadowverse;
 import shadowverse.action.DestroyAction;
-import shadowverse.action.ExhaustSpecificGroupAndDrawAction;
-import shadowverse.cards.Temp.Miriam_Acc;
-import shadowverse.cards.Temp.OmniscientKaiser_Acc;
 import shadowverse.cards.Temp.ParadigmShift;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Nemesis;
 import shadowverse.powers.MiriamPower;
 import shadowverse.stance.Resonance;
-
-import java.util.ArrayList;
 
 
 public class Miriam extends CustomCard {
@@ -85,18 +73,6 @@ public class Miriam extends CustomCard {
                 addToBot((AbstractGameAction)new GainEnergyAction(1));
             }
         }
-    }
-
-    public AbstractCard makeSameInstanceOf() {
-        AbstractCard card = null;
-        if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
-            card = (new Miriam_Acc()).makeStatEquivalentCopy();
-            card.uuid = (new Miriam_Acc()).uuid;
-        } else {
-            card = makeStatEquivalentCopy();
-            card.uuid = this.uuid;
-        }
-        return card;
     }
 
     public AbstractCard makeCopy() {

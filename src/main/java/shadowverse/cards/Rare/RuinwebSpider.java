@@ -14,11 +14,9 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.EntangleEffect;
 import shadowverse.Shadowverse;
-import shadowverse.cards.Temp.RuinwebSpider_Acc;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Vampire;
 import shadowverse.powers.RuinwebSpiderPower;
@@ -75,19 +73,6 @@ public class RuinwebSpider
                 addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new EntangleEffect(abstractPlayer.hb.cX - 70.0F * Settings.scale, abstractPlayer.hb.cY + 10.0F * Settings.scale, mo.hb.cX, mo.hb.cY), 0.5F));
             }
         }
-    }
-
-
-    public AbstractCard makeSameInstanceOf() {
-        AbstractCard card = null;
-        if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.POWER) {
-            card = (new RuinwebSpider_Acc()).makeStatEquivalentCopy();
-            card.uuid = (new RuinwebSpider_Acc()).uuid;
-        } else {
-            card = makeStatEquivalentCopy();
-            card.uuid = this.uuid;
-        }
-        return card;
     }
 
 

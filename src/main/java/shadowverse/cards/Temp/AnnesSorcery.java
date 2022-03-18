@@ -56,6 +56,8 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
        super.applyPowers();
        this.baseDamage = realBaseDamage;
        this.isDamageModified = (this.damage != this.baseDamage);
+     }else {
+       super.applyPowers();
      }
    }
    
