@@ -17,7 +17,7 @@ public class ImmoralDesireMod2 extends AbstractCardModifier {
     }
 
     public void onInitialApplication(AbstractCard card) {
-        if (card.hasTag(AbstractShadowversePlayer.Enums.LASTWORD)){
+        if (!card.hasTag(AbstractShadowversePlayer.Enums.LASTWORD)){
             card.tags.add(AbstractShadowversePlayer.Enums.LASTWORD);
         }
     }

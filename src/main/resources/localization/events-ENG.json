@@ -118,5 +118,21 @@
       "",
       "[Leave]"
     ]
+  },
+  "shadowverse:IceschillendrigEvent": {
+    "NAME": "The one I should shoot is--",
+    "DESCRIPTIONS": [
+      "在苦难的终焉， #p~决断~ 的时刻已经到来。 NL 天秤，倾斜，世界动荡…… ",
+      "选择吧。选出你 #r~该攻击的敌人~ 。 NL 选择吧。如此一来，世界将会改变。",
+      "你没有那种资格。 NL 至少现在如此。",
+      "不，没有那个可能。"
+    ],
+    "OPTIONS": [
+      "[Continue]",
+      "Shoot #rIceschillendrg ",
+      "Shoot no one",
+      "Shoot #g「——————」",
+      "[Leave]"
+    ]
   }
 }

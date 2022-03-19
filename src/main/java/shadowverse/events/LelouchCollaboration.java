@@ -94,7 +94,7 @@ public class LelouchCollaboration extends AbstractEvent {
 
     public void render(SpriteBatch sb) {
         sb.setColor(Color.WHITE);
-        sb.draw(this.fgImg, 0.0F, -20.0F * Settings.scale, 600.0F * Settings.scale, 600.0F * Settings.scale);
+        sb.draw(this.fgImg, 0.0F, 600.0F * Settings.scale, 600.0F * Settings.scale, 600.0F * Settings.scale);
     }
 
     public void dispose() {

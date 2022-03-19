@@ -55,7 +55,7 @@ public class Naht extends CustomMonster implements SpriteCreature{
 
     private float spawnX = -100.0F;
 
-    public SpriterAnimation bigAnimation;
+    public SpriterAnimation extra = new SpriterAnimation("img/animation/Naht/Naht.scml");
 
     private HashMap<Integer, AbstractMonster> enemySlots = new HashMap<>();
 
@@ -68,30 +68,30 @@ public class Naht extends CustomMonster implements SpriteCreature{
     }
 
     public Naht() {
-        super(NAME, ID, 300, 0.0F, -30F, 340.0F, 420.0F, null, 60.0F, 130.0F);
+        super(NAME, ID, 400, 0.0F, -30F, 340.0F, 420.0F, null, 60.0F, 130.0F);
         this.animation = new SpriterAnimation("img/monsters/Naht/Naht.scml");
         this.dialogX = -100.0F * Settings.scale;
         this.dialogY = 10.0F * Settings.scale;
         this.type = AbstractMonster.EnemyType.BOSS;
         this.turnsTaken = 0;
         if (AbstractDungeon.ascensionLevel >= 19) {
-            this.heavyDmg = 25;
-            this.multiDmg = 8;
-            this.backDmg = 10;
+            this.heavyDmg = 28;
+            this.multiDmg = 10;
+            this.backDmg = 12;
             this.minionAmt = 4;
             this.strAmount = 5;
             this.debuffAmount = 3;
         } else if (AbstractDungeon.ascensionLevel >= 4) {
-            this.heavyDmg = 25;
-            this.multiDmg = 8;
-            this.backDmg = 8;
+            this.heavyDmg = 27;
+            this.multiDmg = 9;
+            this.backDmg = 10;
             this.minionAmt = 2;
             this.strAmount = 3;
             this.debuffAmount = 2;
         } else {
-            this.heavyDmg = 20;
-            this.multiDmg = 6;
-            this.backDmg = 6;
+            this.heavyDmg = 24;
+            this.multiDmg = 7;
+            this.backDmg = 8;
             this.minionAmt = 2;
             this.strAmount = 3;
             this.debuffAmount = 2;
@@ -108,14 +108,13 @@ public class Naht extends CustomMonster implements SpriteCreature{
         AbstractDungeon.getCurrRoom().playBgmInstantly("BOSS_BEYOND");
         int baseStrength = 0;
         if (AbstractDungeon.ascensionLevel >= 19) {
-            baseStrength = AbstractDungeon.player.currentHealth / 12;
+            baseStrength = AbstractDungeon.player.currentHealth / 13;
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new InvinciblePower(this, 80)));
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new CuriosityPower(this, 1)));
         } else {
-            baseStrength = AbstractDungeon.player.currentHealth / 15;
+            baseStrength = AbstractDungeon.player.currentHealth / 16;
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new InvinciblePower(this, 100)));
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new CuriosityPower(this, 1)));
         }
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new CuriosityPower(this, 1)));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new StrengthPower(this, baseStrength), baseStrength));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new NahtPower(this), 1));
         addToBot(new SFXAction("Naht_A0"));
@@ -194,7 +193,7 @@ public class Naht extends CustomMonster implements SpriteCreature{
             case 5:
                 AbstractDungeon.actionManager.addToBottom(new ShoutAction(this, DIALOG[4], 1.0F, 2.0F));
                 addToBot(new SFXAction("Naht_A5"));
-                AbstractDungeon.actionManager.addToBottom(new ChangeSpriteAction("img/animation/Naht/Naht.scml", this, 2.4F));
+                AbstractDungeon.actionManager.addToBottom(new ChangeSpriteAction(extra, this, 2.4F));
                 for (AbstractMonster m : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                     if (m.equals(this) || m.isDying || m.isDead) {
                         continue;

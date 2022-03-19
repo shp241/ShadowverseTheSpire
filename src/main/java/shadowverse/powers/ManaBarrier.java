@@ -20,7 +20,7 @@ public class ManaBarrier extends AbstractPower {
         this.amount = -1;
         this.type = PowerType.BUFF;
         this.img = new Texture("img/powers/ManaBarrier.png");
-        this.priority = 10;
+        this.priority = 999;
         updateDescription();
     }
 

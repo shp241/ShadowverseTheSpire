@@ -3967,8 +3967,8 @@
   },
   "shadowverse:CorruptionOfUnkilling": {
     "NAME": "腐蚀的绝命",
-    "DESCRIPTION": "回合结束时，全体敌人失去1点 力量 和 敏捷。 NL 此效果持续3回合，无法重复叠加。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION":"固有 。 NL 回合结束时，全体敌人失去1点 力量 和 敏捷。 NL 此效果持续3回合，无法重复叠加。 NL 消耗 。"
+    "DESCRIPTION": "回合结束时，全体敌人失去1点 力量 和 敏捷 。 NL 此效果持续3回合，无法重复叠加。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"固有 。 NL 回合结束时，全体敌人失去1点 力量 和 敏捷 。 NL 此效果持续3回合，无法重复叠加。 NL 消耗 。"
   },
   "shadowverse:UltimateHollow": {
     "NAME": "极意的空绝",

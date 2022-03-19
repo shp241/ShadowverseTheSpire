@@ -26,7 +26,7 @@ public class MasterDealer extends CustomCard {
 
     public MasterDealer() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF);
-        this.baseBlock = 18;
+        this.baseBlock = 16;
     }
 
     @Override

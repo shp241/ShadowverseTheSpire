@@ -32,10 +32,11 @@ public class TheGreatCreation extends AbstractBossCard {
     public static final String IMG_PATH = "img/cards/TheGreatCreation.png";
 
     public TheGreatCreation() {
-        super(ID, cardStrings.NAME, IMG_PATH, 2, cardStrings.DESCRIPTION, CardType.SKILL, Nemesis.Enums.COLOR_SKY, CardRarity.RARE, CardTarget.SELF, AbstractMonster.Intent.BUFF);
+        super(ID, cardStrings.NAME, IMG_PATH, 2, cardStrings.DESCRIPTION, CardType.SKILL, Nemesis.Enums.COLOR_SKY, CardRarity.RARE, CardTarget.SELF, AbstractMonster.Intent.ATTACK_BUFF);
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
         this.cardsToPreview = new EnAncientArtifact();
+        this.baseDamage = 15;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

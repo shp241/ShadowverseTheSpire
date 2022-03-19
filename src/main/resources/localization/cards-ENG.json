@@ -3971,8 +3971,8 @@
   },
   "shadowverse:CorruptionOfUnkilling": {
     "NAME": "Erosive Annihilation",
-    "DESCRIPTION": "At the end of your turn, All ememies lose 1 Strength and 1 Dexterity. NL This effect is not stackable and lasts for 3 turns. NL Exhaust .",
-    "UPGRADE_DESCRIPTION":"Innate . NL At the end of your turn, All ememies lose 1 Strength and 1 Dexterity. NL This effect is not stackable and lasts for 3 turns. NL Exhaust ."
+    "DESCRIPTION": "At the end of your turn, All ememies lose 1 Strength and 1 Dexterity . NL This effect is not stackable and lasts for 3 turns. NL Exhaust .",
+    "UPGRADE_DESCRIPTION":"Innate . NL At the end of your turn, All ememies lose 1 Strength and 1 Dexterity . NL This effect is not stackable and lasts for 3 turns. NL Exhaust ."
   },
   "shadowverse:UltimateHollow": {
     "NAME": "极意的空绝",

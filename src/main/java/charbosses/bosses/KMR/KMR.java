@@ -44,6 +44,7 @@ public class KMR
     public static final String NAME = monsterStrings.NAME;
     public static final String[] DIALOG = monsterStrings.DIALOG;
     private boolean secondPhase = true;
+    private SpriterAnimation extra = new SpriterAnimation("img/monsters/KMR/extra/KMR.scml");
 //    public static shadowverse.animation.AbstractAnimation bigAnimation = new shadowverse.animation.AbstractAnimation("img/animation/KMR/class_3208.atlas", "img/animation/KMR/class_3208.json", com.megacrit.cardcrawl.core.Settings.M_W / 1600.0F, com.megacrit.cardcrawl.core.Settings.M_W / 2.0F, com.megacrit.cardcrawl.core.Settings.M_H / 2.0F, 0F, 0F);
 
 
@@ -54,6 +55,8 @@ public class KMR
         this.animation = new SpriterAnimation("img/monsters/KMR/KMR.scml");
         this.energyString = "[R]";
         this.type = EnemyType.BOSS;
+        this.dialogX = -100.0F * Settings.scale;
+        this.dialogY = 10.0F * Settings.scale;
 //        bigAnimation.setVisible(false);
     }
 
@@ -153,7 +156,7 @@ public class KMR
             default:
                 break;
         }
-        AbstractDungeon.actionManager.addToBottom(new ChangeSpriteAction("img/monsters/KMR/extra/KMR.scml", this, 2.0F));
+        AbstractDungeon.actionManager.addToBottom(new ChangeSpriteAction(extra, this, 2.1F));
     }
 
     public void onPlayAttackCardSound() {

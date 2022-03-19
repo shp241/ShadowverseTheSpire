@@ -1,6 +1,7 @@
 package shadowverse.powers;
 
 import com.badlogic.gdx.graphics.Texture;
+import com.evacipated.cardcrawl.mod.stslib.patches.NeutralPowertypePatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -26,7 +27,7 @@ public class NahtPower extends AbstractPower {
         this.owner = owner;
         this.amount = -1;
         this.triggered = false;
-        this.type = PowerType.BUFF;
+        this.type = NeutralPowertypePatch.NEUTRAL;
         this.img = new Texture("img/powers/NahtPower.png");
         updateDescription();
     }

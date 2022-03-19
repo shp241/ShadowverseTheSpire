@@ -59,7 +59,7 @@ public class EvolutionPoint extends CustomCard {
                 } else if (abstractPlayer.chosenClass == Vampire.Enums.Vampire && (CharacterSelectScreenPatches.characters[4]).reskinCount == 0) {
                     addToBot(new SFXAction("Vampire_Evolve" + roll % 3));
                     addToBot(new AnimationAction(Vampire.getBigAnimation(), "extra", 2.833F));
-                } else if (abstractPlayer.chosenClass == Nemesis.Enums.Nemesis) {
+                } else if (abstractPlayer.chosenClass == Nemesis.Enums.Nemesis && (CharacterSelectScreenPatches.characters[6]).reskinCount == 0) {
                     addToBot(new SFXAction("Nemesis_Evolve" + roll % 3));
                     addToBot(new AnimationAction(Nemesis.getBigAnimation(), "extra", 2.833F));
                 } else if (abstractPlayer.chosenClass == Royal.Enums.Royal && (CharacterSelectScreenPatches.characters[3]).reskinCount == 0) {
