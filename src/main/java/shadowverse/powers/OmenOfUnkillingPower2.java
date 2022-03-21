@@ -35,7 +35,7 @@ public class OmenOfUnkillingPower2 extends TwoAmountPower {
         if (isPlayer) {
             this.amount2--;
             AbstractMonster mo = AbstractDungeon.getRandomMonster();
-            if (!mo.isDeadOrEscaped() && !mo.isDying) {
+            if (!mo.isDeadOrEscaped() && !mo.isDying && !mo.halfDead) {
                 addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) mo, (AbstractCreature) this.owner, (AbstractPower) new StrengthPower((AbstractCreature) mo, -6), -6, true, AbstractGameAction.AttackEffect.NONE));
                 if (!mo.hasPower(ArtifactPower.POWER_ID))
                     addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) mo, (AbstractCreature) this.owner, (AbstractPower) new GainStrengthPower((AbstractCreature) mo, 6), 6));

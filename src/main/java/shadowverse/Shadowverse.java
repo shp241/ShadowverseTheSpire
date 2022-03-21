@@ -1067,6 +1067,18 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         reflectedMap.put("Naht_P1", new Sfx("sounds/Naht_P1.wav"));
         reflectedMap.put("Naht_P2", new Sfx("sounds/Naht_P2.wav"));
         reflectedMap.put("Naht_P3", new Sfx("sounds/Naht_P3.wav"));
+        reflectedMap.put("IC_Stage2", new Sfx("sounds/IC_Stage2.wav"));
+        reflectedMap.put("IC_Stage2_A1", new Sfx("sounds/IC_Stage2_A1.wav"));
+        reflectedMap.put("IC_Stage2_A2", new Sfx("sounds/IC_Stage2_A2.wav"));
+        reflectedMap.put("IC_Stage2_A3", new Sfx("sounds/IC_Stage2_A3.wav"));
+        reflectedMap.put("Maiser_Story", new Sfx("sounds/Maiser_Story.wav"));
+        reflectedMap.put("Selena_Story", new Sfx("sounds/Selena_Story.wav"));
+        reflectedMap.put("Illganeau_Story", new Sfx("sounds/Illganeau_Story.wav"));
+        reflectedMap.put("Sekka_Story", new Sfx("sounds/Sekka_Story.wav"));
+        reflectedMap.put("Dracu_Story", new Sfx("sounds/Dracu_Story.wav"));
+        reflectedMap.put("Kagero_Story", new Sfx("sounds/Kagero_Story.wav"));
+        reflectedMap.put("VerdictWord", new Sfx("sounds/VerdictWord.wav"));
+        reflectedMap.put("AbsoluteOrder", new Sfx("sounds/AbsoluteOrder.wav"));
     }
 
     public void receiveEditRelics() {
@@ -1087,6 +1099,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addRelic((AbstractRelic) new ValhoreanDealer(), RelicType.SHARED);
         BaseMod.addRelic((AbstractRelic) new AlterplaneArbiter(), RelicType.SHARED);
         BaseMod.addRelic((AbstractRelic) new Tree(), RelicType.SHARED);
+        BaseMod.addRelic((AbstractRelic) new Bullet(), RelicType.SHARED);
         BaseMod.addRelicToCustomPool((AbstractRelic) new Offensive2(), Elf.Enums.COLOR_GREEN);
         BaseMod.addRelicToCustomPool((AbstractRelic) new SixMark(), Elf.Enums.COLOR_GREEN);
         BaseMod.addRelicToCustomPool((AbstractRelic) new ArisaBOSS(), Elf.Enums.COLOR_GREEN);

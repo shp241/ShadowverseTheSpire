@@ -23,7 +23,7 @@ public class ArtifactScan
     public static final String IMG_PATH = "img/cards/ArtifactScan.png";
 
     public ArtifactScan() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Nemesis.Enums.COLOR_SKY, CardRarity.COMMON, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Nemesis.Enums.COLOR_SKY, CardRarity.COMMON, CardTarget.SELF);
         this.isEthereal = true;
     }
 

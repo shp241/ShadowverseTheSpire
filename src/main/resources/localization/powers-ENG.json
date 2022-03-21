@@ -247,6 +247,13 @@
       " damage to you."
     ]
   },
+  "shadowverse:ICPower2": {
+    "NAME": "The Great Curse",
+    "DESCRIPTIONS": [
+      "Damage equals to #yIceschillendrig taken this turn will be applied to you at end of his turn.  #yIceschillendrig will also heal for this amount. Deal #b",
+      " damage to you."
+    ]
+  },
   "shadowverse:IzudiaPower": {
     "NAME": "Ward Of Unkilling",
     "DESCRIPTIONS": [
@@ -1430,6 +1437,12 @@
       ", Boxed cards:",
       "triggered in this turn.",
       "not triggered in this turn."
+    ]
+  },
+  "shadowverse:MaiserPower": {
+    "NAME": "Maiser, Formulahero",
+    "DESCRIPTIONS": [
+      "Whenever you play a #yskill, deal #b5 damage to all enemies."
     ]
   }
 }

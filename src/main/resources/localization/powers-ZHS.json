@@ -247,6 +247,13 @@
       " 点伤害。"
     ]
   },
+  "shadowverse:ICPower2": {
+    "NAME": "诅咒之力",
+    "DESCRIPTIONS": [
+      "受到的伤害将在 #y艾希连德凛克 回合结束时全额返还给玩家，并等额回复 #y艾希连德凛克 的血量。当前返还 #b",
+      " 点伤害。"
+    ]
+  },
   "shadowverse:IzudiaPower": {
     "NAME": "不弑的圆阵",
     "DESCRIPTIONS": [
@@ -1430,6 +1437,12 @@
       "，已存卡牌：",
       "本回合已发动。",
       "本回合未发动。"
+    ]
+  },
+  "shadowverse:MaiserPower": {
+    "NAME": "音速英雄·麦哲",
+    "DESCRIPTIONS": [
+      "打出 #y技能牌 时，对全体敌人造成 #b5 点伤害。"
     ]
   }
 }

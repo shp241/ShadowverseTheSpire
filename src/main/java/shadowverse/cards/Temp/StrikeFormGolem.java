@@ -44,11 +44,11 @@ public class StrikeFormGolem
 
     @Override
     public void update() {
-        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
-                Shadowverse.Enhance(2)) {
-            setCostForTurn(2);
-        } else {
-            if(this.costForTurn!=0){
+        if(this.costForTurn!=0){
+            if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
+                    Shadowverse.Enhance(2)) {
+                setCostForTurn(2);
+            } else {
                 setCostForTurn(1);
             }
         }

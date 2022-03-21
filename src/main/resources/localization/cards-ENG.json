@@ -4137,5 +4137,41 @@
     "NAME": "火枪手的誓言",
     "DESCRIPTION": "*阿拉密斯 、 *波尔多斯 、 *阿多斯 、 *达达尼昂  NL 抉择 ：选择2张指定的卡加入手中。 NL 爆能强化 4\b改为全部加入手中。如果手中有2张以上的 *进化点 ， 升级 这些卡。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "*阿拉密斯 、 *波尔多斯 、 *阿多斯 、 *达达尼昂  NL 抉择 ：选择2张指定的卡加入手中。 NL 爆能强化 4\b改为全部加入手中。如果手中有2张以上的 *进化点 ， 升级 这些卡。 NL 消耗性 !stslib:ex! 。"
+  },
+  "shadowverse:Maiser_Story": {
+    "NAME": "音速英雄·麦哲",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 增加1张 *机动二轮车 到手中。 NL 本回合每打出1张技能牌，对全体敌人造成5点伤害。 NL 消耗 。"
+  },
+  "shadowverse:Selena_Story": {
+    "NAME": "爆燃霜糖·圣里奈",
+    "DESCRIPTION": "获得 !B! 点格挡。 NL 如果手中有1张以上其他攻击牌，回复4点生命。 NL 如果有2张以上，抽2张卡。 NL 如果有3张以上，获得1点 力量 和 敏捷 。 NL 消耗 。"
+  },
+  "shadowverse:Illganeau_Story": {
+    "NAME": "觉醒虚无·伊璐凯诺",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 全体敌人失去1点 力量 和 敏捷 。 NL 根据消耗堆中的攻击牌数量增加这张卡 !M! 点伤害。 NL 消耗 。"
+  },
+  "shadowverse:Sekka_Story": {
+    "NAME": "九尾猛火·雪华",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 [E] ，增加1张 *进化点 到手中。 NL 如果本场战斗已打出的非打击攻击牌数量为18以上，获得 !M! 点 力量 和 敏捷 。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (X为",
+      " 。)"
+    ]
+  },
+  "shadowverse:Dracu_Story": {
+    "NAME": "天翔龙翼·德莱克",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得1点 敏捷 。 NL 如果敏捷为5以上，再造成一次伤害。 NL 消耗 。"
+  },
+  "shadowverse:Kagero_Story": {
+    "NAME": "秘剑幽鬼·蜃景",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予随机敌人2层 易伤 。 NL 死灵术 10 伤害+ !M! 。 NL 消耗 。"
+  },
+  "shadowverse:VerdictWord": {
+    "NAME": "审判之词",
+    "DESCRIPTION": "*音速英雄·麦哲 NL *爆燃霜糖·圣里奈 NL *觉醒虚无·伊璐凯诺 NL 抉择 ：选择1张非本职业的卡加入手中。 NL 如果已打出过2张以上的 *审判之词 ，改为升级全部并加入手中，本回合攻击伤害翻倍。 NL 保留 · 消耗 。"
+  },
+  "shadowverse:AbsoluteOrder": {
+    "NAME": "无上谕令",
+    "DESCRIPTION": "*九尾猛火·雪华 NL *天翔龙翼·德莱克 NL *秘剑幽鬼·蜃景 NL 抉择 ：选择1张非本职业的卡加入手中。 NL 如果已打出过2张以上的 *无上谕令 ，改为升级全部并加入手中，本回合攻击伤害翻倍。 NL 保留 · 消耗 。"
   }
 }

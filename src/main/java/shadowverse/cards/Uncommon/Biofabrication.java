@@ -85,7 +85,8 @@ public class Biofabrication
             for (AbstractCard c:abstractCards){
                 c.flash();
                 addToBot((AbstractGameAction)new ReduceCostForTurnAction(c,1));
-                AbstractCard toCopy = c.makeCopy();
+                AbstractCard toCopy = c.makeStatEquivalentCopy();
+                toCopy.resetAttributes();
                 addToBot((AbstractGameAction)new MakeTempCardInDrawPileAction(toCopy,this.magicNumber,true,true,false));
             }
         } ));

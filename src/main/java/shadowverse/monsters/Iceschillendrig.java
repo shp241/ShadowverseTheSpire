@@ -31,12 +31,15 @@ import com.megacrit.cardcrawl.vfx.combat.InflameEffect;
 import com.megacrit.cardcrawl.vfx.combat.ShockWaveEffect;
 import com.megacrit.cardcrawl.vfx.combat.ViceCrushEffect;
 import org.lwjgl.Sys;
+import shadowverse.action.ChangeSpriteAction;
 import shadowverse.action.eventAction;
 import shadowverse.powers.ICPower;
+import shadowverse.powers.ICPower2;
+import shadowverse.relics.Bullet;
 
 import java.util.HashMap;
 
-public class Iceschillendrig extends CustomMonster {
+public class Iceschillendrig extends CustomMonster implements SpriteCreature{
     public static final String ID = "shadowverse:Iceschillendrig";
     private static final MonsterStrings monsterStrings = CardCrawlGame.languagePack.getMonsterStrings("shadowverse:Iceschillendrig");
     public static final String NAME = monsterStrings.NAME;
@@ -71,8 +74,14 @@ public class Iceschillendrig extends CustomMonster {
 
     private int selection;
 
+    public SpriterAnimation stage2 = new SpriterAnimation("img/monsters/Iceschillendrig/stage2/stage2.scml");
+
+    public SpriterAnimation extra = new SpriterAnimation("img/monsters/Iceschillendrig/stage2/extra/extra.scml");
+
+    private boolean secondStage;
+
     public Iceschillendrig() {
-        super(NAME, ID, 570, 0.0F, -30F, 230.0F, 400.0F, null, 80.0F, -30.0F);
+        super(NAME, ID, 570, 0.0F, -30F, 230.0F, 480.0F, null, 80.0F, -30.0F);
         this.animation = new SpriterAnimation("img/monsters/Iceschillendrig/Iceschillendrig.scml");
         this.dialogX = -100.0F * Settings.scale;
         this.dialogY = 10.0F * Settings.scale;
@@ -131,8 +140,13 @@ public class Iceschillendrig extends CustomMonster {
         int i;
         switch (this.nextMove) {
             case 2:
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new TalkAction((AbstractCreature) this, DIALOG[1]));
-                addToBot((AbstractGameAction) new SFXAction("IC2"));
+                if (this.secondStage){
+                    AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new TalkAction((AbstractCreature) this, DIALOG[1]));
+                    addToBot((AbstractGameAction) new SFXAction("IC2"));
+                }else {
+                    AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new TalkAction((AbstractCreature) this, DIALOG[7]));
+                    addToBot((AbstractGameAction) new SFXAction("IC_Stage2_A1"));
+                }
                 if (Settings.FAST_MODE) {
                     AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new VFXAction((AbstractGameEffect) new BloodShotEffect(this.hb.cX, this.hb.cY, AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, this.bloodHitCount), 0.25F));
                 } else {
@@ -143,8 +157,13 @@ public class Iceschillendrig extends CustomMonster {
                             .get(1), AbstractGameAction.AttackEffect.BLUNT_HEAVY, true));
                 break;
             case 3:
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new TalkAction((AbstractCreature) this, DIALOG[2]));
-                addToBot((AbstractGameAction) new SFXAction("IC3"));
+                if (this.secondStage){
+                    AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new TalkAction((AbstractCreature) this, DIALOG[9]));
+                    addToBot((AbstractGameAction) new SFXAction("IC_Stage2_A3"));
+                }else {
+                    AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new TalkAction((AbstractCreature) this, DIALOG[2]));
+                    addToBot((AbstractGameAction) new SFXAction("IC3"));
+                }
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new VFXAction((AbstractGameEffect) new ViceCrushEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY), 0.5F));
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new DamageAction((AbstractCreature) AbstractDungeon.player, this.damage
                         .get(0), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
@@ -173,26 +192,24 @@ public class Iceschillendrig extends CustomMonster {
                 }
                 break;
             case 5:
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new TalkAction((AbstractCreature) this, DIALOG[4]));
-                addToBot((AbstractGameAction) new SFXAction("IC5"));
+                int str = 1;
+                if (this.secondStage){
+                    str = 2;
+                    AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new TalkAction((AbstractCreature) this, DIALOG[8]));
+                    addToBot((AbstractGameAction) new SFXAction("IC_Stage2_A2"));
+                    addToBot((AbstractGameAction)new ApplyPowerAction(AbstractDungeon.player,this,new WeakPower(AbstractDungeon.player,2,true)));
+                }else {
+                    AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new TalkAction((AbstractCreature) this, DIALOG[4]));
+                    addToBot((AbstractGameAction) new SFXAction("IC5"));
+                }
                 for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                     if (!mo.isDead && !mo.isDying && !mo.isEscaping) {
                         AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new GainBlockAction((AbstractCreature) mo, (AbstractCreature) this, 20));
-                        AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) mo, (AbstractCreature) this, (AbstractPower) new StrengthPower((AbstractCreature) mo, 1), 1));
+                        AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) mo, (AbstractCreature) this, (AbstractPower) new StrengthPower((AbstractCreature) mo, str), str));
                     }
                 }
                 break;
             case 6:
-//                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ShoutAction((AbstractCreature)this, DIALOG[5], 0.5F, 2.0F));
-//                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new RemoveDebuffsAction((AbstractCreature)this));
-//                this.increaseMaxHp(AbstractDungeon.player.maxHealth*10-this.maxHealth,true);
-//                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new HealAction((AbstractCreature)this, (AbstractCreature)this, AbstractDungeon.player.maxHealth*10));
-//                for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-//                    if (!mo.isDead && !mo.isDying && !mo.isEscaping){
-//                        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new GainBlockAction((AbstractCreature)mo, (AbstractCreature)this, 20));
-//                        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)mo, (AbstractCreature)this, (AbstractPower)new StrengthPower((AbstractCreature)mo, 1), 1));
-//                    }
-//                }
                 eventNext = 0;
                 ReflectionHacks.setPrivate(this.imageEventText, GenericEventDialog.class, "title", eventStrings.NAME);
                 this.imageEventText.loadImage("img/event/Furozes.png");
@@ -249,7 +266,6 @@ public class Iceschillendrig extends CustomMonster {
     }
 
     public void buttonEffect(int p) {
-        System.out.println("-----"+eventNext);
         switch (eventNext) {
             case 0:
                 eventNext = 1;
@@ -263,21 +279,31 @@ public class Iceschillendrig extends CustomMonster {
                 switch (p){
                     case 0:
                         selection = 0;
+                        eventNext = 2;
                         break;
                     case 1:
-                        selection = 1;
                         this.imageEventText.updateBodyText(eventStrings.DESCRIPTIONS[3]);
-                        this.imageEventText.updateDialogOption(0, eventStrings.OPTIONS[4]);
+                        this.imageEventText.updateDialogOption(0, eventStrings.OPTIONS[0]);
                         this.imageEventText.clearRemainingOptions();
+                        eventNext = 0;
                         break;
                     case 2:
-                        selection = 2;
-                        this.imageEventText.updateBodyText(eventStrings.DESCRIPTIONS[2]);
-                        this.imageEventText.updateDialogOption(0, eventStrings.OPTIONS[4]);
-                        this.imageEventText.clearRemainingOptions();
+                        if (AbstractDungeon.player.hasRelic(Bullet.ID)){
+                            selection = 1;
+                            this.imageEventText.updateBodyText(eventStrings.DESCRIPTIONS[4]);
+                            this.imageEventText.updateDialogOption(0,eventStrings.OPTIONS[5]);
+                            this.imageEventText.clearRemainingOptions();
+                            AbstractDungeon.player.getRelic(Bullet.ID).counter = 0;
+                            ((Bullet)AbstractDungeon.player.getRelic(Bullet.ID)).changeDescription();
+                            eventNext = 2;
+                        }else {
+                            this.imageEventText.updateBodyText(eventStrings.DESCRIPTIONS[2]);
+                            this.imageEventText.updateDialogOption(0, eventStrings.OPTIONS[0]);
+                            this.imageEventText.clearRemainingOptions();
+                            eventNext = 0;
+                        }
                         break;
                 }
-                eventNext = 2;
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new eventAction());
                 break;
             case 2:
@@ -285,8 +311,6 @@ public class Iceschillendrig extends CustomMonster {
                 this.imageEventText.clear();
                 switch (selection){
                     case 0:
-                    case 1:
-                    case 2:
                         AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ShoutAction((AbstractCreature) this, DIALOG[5], 0.5F, 2.0F));
                         AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new RemoveDebuffsAction((AbstractCreature) this));
                         this.increaseMaxHp(AbstractDungeon.player.maxHealth * 10 - this.maxHealth, true);
@@ -298,6 +322,10 @@ public class Iceschillendrig extends CustomMonster {
                             }
                         }
                         break;
+                    case 1:
+                        this.setAnimation(stage2);
+                        addToBot((AbstractGameAction)new ChangeStateAction(this,"STAGE2"));
+                        break;
                 }
                 break;
         }
@@ -308,5 +336,39 @@ public class Iceschillendrig extends CustomMonster {
         super.render(sb);
         if (AbstractDungeon.id != null)
             this.imageEventText.render(sb);
+    }
+
+    public void setAnimation(SpriterAnimation animation) {
+        this.animation = animation;
+    }
+
+    public SpriterAnimation getAnimation() {
+        return (SpriterAnimation) this.animation;
+    }
+
+    public void changeState(String key) {
+        if ("STAGE2".equals(key)){
+            this.secondStage = true;
+            if (AbstractDungeon.ascensionLevel >= 9) {
+                this.maxHealth = 500;
+            } else {
+                this.maxHealth = 400;
+            }
+            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ShoutAction((AbstractCreature) this, DIALOG[6], 0.5F, 2.0F));
+            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SFXAction("IC_Stage2"));
+            AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new HealAction((AbstractCreature)this, (AbstractCreature)this, this.maxHealth));
+            AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ChangeSpriteAction(this.extra,this,1.6F));
+            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new RemoveDebuffsAction((AbstractCreature) this));
+            if (AbstractDungeon.player.hasPower(ICPower.POWER_ID)){
+                addToBot((AbstractGameAction)new RemoveSpecificPowerAction(AbstractDungeon.player,this,ICPower.POWER_ID));
+            }
+            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) this, (AbstractCreature) this, (AbstractPower) new ICPower2((AbstractCreature) this)));
+            for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
+                if (!mo.isDead && !mo.isDying && !mo.isEscaping) {
+                    AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new GainBlockAction((AbstractCreature) mo, (AbstractCreature) this, 20));
+                    AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) mo, (AbstractCreature) this, (AbstractPower) new StrengthPower((AbstractCreature) mo, 1), 1));
+                }
+            }
+        }
     }
 }

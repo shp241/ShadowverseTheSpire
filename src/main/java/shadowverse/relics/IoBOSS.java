@@ -52,11 +52,11 @@ public class IoBOSS
                 this.theCard = possibleCards.get(AbstractDungeon.miscRng.random(0, possibleCards.size() - 1));
                 this.theCard.upgrade();
                 p.bottledCardUpgradeCheck(this.theCard);
+                if ((AbstractDungeon.getCurrRoom()).monsters.areMonstersBasicallyDead())
+                    AbstractDungeon.actionManager.clearPostCombatActions();
+                AbstractDungeon.effectsQueue.add(new UpgradeShineEffect(Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
+                AbstractDungeon.topLevelEffectsQueue.add(new ShowCardBrieflyEffect(this.theCard.makeStatEquivalentCopy()));
             }
-            if ((AbstractDungeon.getCurrRoom()).monsters.areMonstersBasicallyDead())
-                AbstractDungeon.actionManager.clearPostCombatActions();
-            AbstractDungeon.effectsQueue.add(new UpgradeShineEffect(Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
-            AbstractDungeon.topLevelEffectsQueue.add(new ShowCardBrieflyEffect(this.theCard.makeStatEquivalentCopy()));
         }
     }
 

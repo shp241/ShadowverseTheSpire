@@ -53,7 +53,7 @@ import shadowverse.characters.Elf;
      super.applyPowers();
      int count = 0;
      for(AbstractCard c: AbstractDungeon.actionManager.cardsPlayedThisCombat){
-       if (c.type == CardType.ATTACK&&!(c.hasTag(CardTags.STRIKE))){
+       if (c.type == CardType.ATTACK&&!(c.hasTag(CardTags.STRIKE))&&c.color==Elf.Enums.COLOR_GREEN){
          count++;
        }
      }
@@ -72,7 +72,7 @@ import shadowverse.characters.Elf;
      addToBot((AbstractGameAction)new ArmamentsAction(true));
      int count = 0;
      for(AbstractCard c: AbstractDungeon.actionManager.cardsPlayedThisCombat){
-       if (c.type == CardType.ATTACK&&!(c.hasTag(CardTags.STRIKE))){
+       if (c.type == CardType.ATTACK&&!(c.hasTag(CardTags.STRIKE))&&c.color==Elf.Enums.COLOR_GREEN){
          count++;
        }
      }
