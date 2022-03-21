@@ -2,11 +2,13 @@
  
  import com.badlogic.gdx.graphics.Texture;
  import com.megacrit.cardcrawl.actions.AbstractGameAction;
+ import com.megacrit.cardcrawl.actions.animations.TalkAction;
  import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
  import com.megacrit.cardcrawl.cards.AbstractCard;
  import com.megacrit.cardcrawl.core.AbstractCreature;
  import com.megacrit.cardcrawl.core.CardCrawlGame;
  import com.megacrit.cardcrawl.localization.PowerStrings;
+ import com.megacrit.cardcrawl.monsters.AbstractMonster;
  import com.megacrit.cardcrawl.powers.AbstractPower;
  
  public class EarthEssence extends AbstractPower {
@@ -42,8 +44,15 @@
      }
      return true;
    }
-   
-   public void updateDescription() {
+
+     @Override
+     public void onPlayCard(AbstractCard card, AbstractMonster m) {
+         if (this.amount == 5 && (card.type == AbstractCard.CardType.ATTACK||card.type== AbstractCard.CardType.POWER)){
+             addToBot((AbstractGameAction)new TalkAction(true, DESCRIPTIONS[2], 1.0F, 2.0F));
+         }
+     }
+
+     public void updateDescription() {
      this.description = DESCRIPTIONS[0];
    }
  

@@ -39,7 +39,7 @@ import shadowverse.relics.Bullet;
 
 import java.util.HashMap;
 
-public class Iceschillendrig extends CustomMonster implements SpriteCreature{
+public class Iceschillendrig extends CustomMonster implements SpriteCreature {
     public static final String ID = "shadowverse:Iceschillendrig";
     private static final MonsterStrings monsterStrings = CardCrawlGame.languagePack.getMonsterStrings("shadowverse:Iceschillendrig");
     public static final String NAME = monsterStrings.NAME;
@@ -81,7 +81,7 @@ public class Iceschillendrig extends CustomMonster implements SpriteCreature{
     private boolean secondStage;
 
     public Iceschillendrig() {
-        super(NAME, ID, 570, 0.0F, -30F, 230.0F, 480.0F, null, 80.0F, -30.0F);
+        super(NAME, ID, 570, 0.0F, -30F, 230.0F, 500.0F, null, 80.0F, 0.0F);
         this.animation = new SpriterAnimation("img/monsters/Iceschillendrig/Iceschillendrig.scml");
         this.dialogX = -100.0F * Settings.scale;
         this.dialogY = 10.0F * Settings.scale;
@@ -124,7 +124,7 @@ public class Iceschillendrig extends CustomMonster implements SpriteCreature{
         addToBot((AbstractGameAction) new SFXAction("IC1"));
         AbstractMonster m = new MagiTrain(this.spawnX + -185.0F * 1, MathUtils.random(-10.0F, 20.0F));
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SpawnMonsterAction(m, true));
-        this.enemySlots.put(Integer.valueOf(1), m);
+        this.enemySlots.put(1, m);
         if (AbstractDungeon.ascensionLevel >= 19) {
             AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) m, (AbstractCreature) this, (AbstractPower) new ArtifactPower((AbstractCreature) m, 3)));
         } else {
@@ -140,10 +140,10 @@ public class Iceschillendrig extends CustomMonster implements SpriteCreature{
         int i;
         switch (this.nextMove) {
             case 2:
-                if (this.secondStage){
+                if (!this.secondStage) {
                     AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new TalkAction((AbstractCreature) this, DIALOG[1]));
                     addToBot((AbstractGameAction) new SFXAction("IC2"));
-                }else {
+                } else {
                     AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new TalkAction((AbstractCreature) this, DIALOG[7]));
                     addToBot((AbstractGameAction) new SFXAction("IC_Stage2_A1"));
                 }
@@ -157,10 +157,10 @@ public class Iceschillendrig extends CustomMonster implements SpriteCreature{
                             .get(1), AbstractGameAction.AttackEffect.BLUNT_HEAVY, true));
                 break;
             case 3:
-                if (this.secondStage){
+                if (this.secondStage) {
                     AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new TalkAction((AbstractCreature) this, DIALOG[9]));
                     addToBot((AbstractGameAction) new SFXAction("IC_Stage2_A3"));
-                }else {
+                } else {
                     AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new TalkAction((AbstractCreature) this, DIALOG[2]));
                     addToBot((AbstractGameAction) new SFXAction("IC3"));
                 }
@@ -193,12 +193,12 @@ public class Iceschillendrig extends CustomMonster implements SpriteCreature{
                 break;
             case 5:
                 int str = 1;
-                if (this.secondStage){
+                if (this.secondStage) {
                     str = 2;
                     AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new TalkAction((AbstractCreature) this, DIALOG[8]));
                     addToBot((AbstractGameAction) new SFXAction("IC_Stage2_A2"));
-                    addToBot((AbstractGameAction)new ApplyPowerAction(AbstractDungeon.player,this,new WeakPower(AbstractDungeon.player,2,true)));
-                }else {
+                    addToBot((AbstractGameAction) new ApplyPowerAction(AbstractDungeon.player, this, new WeakPower(AbstractDungeon.player, 2, true)));
+                } else {
                     AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new TalkAction((AbstractCreature) this, DIALOG[4]));
                     addToBot((AbstractGameAction) new SFXAction("IC5"));
                 }
@@ -215,7 +215,7 @@ public class Iceschillendrig extends CustomMonster implements SpriteCreature{
                 this.imageEventText.loadImage("img/event/Furozes.png");
                 this.imageEventText.updateBodyText(eventStrings.DESCRIPTIONS[0]);
                 this.imageEventText.setDialogOption(eventStrings.OPTIONS[0]);
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new eventAction());
+                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new eventAction());
                 break;
             default:
                 System.out.println("ERROR: Default Take Turn was called on " + this.name);
@@ -252,6 +252,7 @@ public class Iceschillendrig extends CustomMonster implements SpriteCreature{
 
     public void die() {
         super.die();
+        (AbstractDungeon.getCurrRoom()).cannotLose = false;
         useFastShakeAnimation(5.0F);
         CardCrawlGame.screenShake.rumble(4.0F);
         for (AbstractMonster m : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
@@ -273,10 +274,10 @@ public class Iceschillendrig extends CustomMonster implements SpriteCreature{
                 this.imageEventText.updateDialogOption(0, eventStrings.OPTIONS[1]);
                 this.imageEventText.setDialogOption(eventStrings.OPTIONS[2]);
                 this.imageEventText.setDialogOption(eventStrings.OPTIONS[3]);
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new eventAction());
-            break;
+                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new eventAction());
+                break;
             case 1:
-                switch (p){
+                switch (p) {
                     case 0:
                         selection = 0;
                         eventNext = 2;
@@ -288,15 +289,15 @@ public class Iceschillendrig extends CustomMonster implements SpriteCreature{
                         eventNext = 0;
                         break;
                     case 2:
-                        if (AbstractDungeon.player.hasRelic(Bullet.ID)){
+                        if (AbstractDungeon.player.hasRelic(Bullet.ID)) {
                             selection = 1;
                             this.imageEventText.updateBodyText(eventStrings.DESCRIPTIONS[4]);
-                            this.imageEventText.updateDialogOption(0,eventStrings.OPTIONS[5]);
+                            this.imageEventText.updateDialogOption(0, eventStrings.OPTIONS[5]);
                             this.imageEventText.clearRemainingOptions();
                             AbstractDungeon.player.getRelic(Bullet.ID).counter = 0;
-                            ((Bullet)AbstractDungeon.player.getRelic(Bullet.ID)).changeDescription();
+                            ((Bullet) AbstractDungeon.player.getRelic(Bullet.ID)).changeDescription();
                             eventNext = 2;
-                        }else {
+                        } else {
                             this.imageEventText.updateBodyText(eventStrings.DESCRIPTIONS[2]);
                             this.imageEventText.updateDialogOption(0, eventStrings.OPTIONS[0]);
                             this.imageEventText.clearRemainingOptions();
@@ -304,12 +305,12 @@ public class Iceschillendrig extends CustomMonster implements SpriteCreature{
                         }
                         break;
                 }
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new eventAction());
+                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new eventAction());
                 break;
             case 2:
                 this.imageEventText.clearAllDialogs();
                 this.imageEventText.clear();
-                switch (selection){
+                switch (selection) {
                     case 0:
                         AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ShoutAction((AbstractCreature) this, DIALOG[5], 0.5F, 2.0F));
                         AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new RemoveDebuffsAction((AbstractCreature) this));
@@ -324,7 +325,7 @@ public class Iceschillendrig extends CustomMonster implements SpriteCreature{
                         break;
                     case 1:
                         this.setAnimation(stage2);
-                        addToBot((AbstractGameAction)new ChangeStateAction(this,"STAGE2"));
+                        addToBot((AbstractGameAction) new ChangeStateAction(this, "STAGE2"));
                         break;
                 }
                 break;
@@ -347,7 +348,7 @@ public class Iceschillendrig extends CustomMonster implements SpriteCreature{
     }
 
     public void changeState(String key) {
-        if ("STAGE2".equals(key)){
+        if ("STAGE2".equals(key)) {
             this.secondStage = true;
             if (AbstractDungeon.ascensionLevel >= 9) {
                 this.maxHealth = 500;
@@ -356,11 +357,11 @@ public class Iceschillendrig extends CustomMonster implements SpriteCreature{
             }
             AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ShoutAction((AbstractCreature) this, DIALOG[6], 0.5F, 2.0F));
             AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SFXAction("IC_Stage2"));
-            AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new HealAction((AbstractCreature)this, (AbstractCreature)this, this.maxHealth));
-            AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ChangeSpriteAction(this.extra,this,1.6F));
+            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new HealAction((AbstractCreature) this, (AbstractCreature) this, this.maxHealth));
+            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ChangeSpriteAction(this.extra, this, 1.6F));
             AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new RemoveDebuffsAction((AbstractCreature) this));
-            if (AbstractDungeon.player.hasPower(ICPower.POWER_ID)){
-                addToBot((AbstractGameAction)new RemoveSpecificPowerAction(AbstractDungeon.player,this,ICPower.POWER_ID));
+            if (AbstractDungeon.player.hasPower(ICPower.POWER_ID)) {
+                addToBot((AbstractGameAction) new RemoveSpecificPowerAction(AbstractDungeon.player, this, ICPower.POWER_ID));
             }
             AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) this, (AbstractCreature) this, (AbstractPower) new ICPower2((AbstractCreature) this)));
             for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
@@ -369,6 +370,17 @@ public class Iceschillendrig extends CustomMonster implements SpriteCreature{
                     AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) mo, (AbstractCreature) this, (AbstractPower) new StrengthPower((AbstractCreature) mo, 1), 1));
                 }
             }
+            for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
+                if (!mo.isDead && mo != this) {
+                    AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SuicideAction(mo));
+                }
+            }
+            AbstractMonster zecilwenshe = new Zecilwenshe(this.spawnX + -185.0F * 1, -30.0F);
+            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SpawnMonsterAction(zecilwenshe, true, 0));
+            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) zecilwenshe, (AbstractCreature) this, (AbstractPower) new ShiftingPower((AbstractCreature) zecilwenshe)));
+            (AbstractDungeon.getCurrRoom()).cannotLose = true;
         }
     }
+
+
 }

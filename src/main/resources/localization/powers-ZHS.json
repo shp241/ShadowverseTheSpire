@@ -8,7 +8,8 @@
   "shadowverse:EarthEssence": {
     "NAME": "土之印记",
     "DESCRIPTIONS": [
-      "若土之印记等于 #b5 ， NL 则不能打出 #y攻击牌 和 #y能力牌 。 NL 土之印记上限为 #b5 。"
+      "若土之印记等于 #b5 ， NL 则不能打出 #y攻击牌 和 #y能力牌 。 NL 土之印记上限为 #b5 。",
+      "五土封印啦！"
     ]
   },
   "shadowverse:PiousInstructorPower": {

@@ -54,9 +54,9 @@
   },
   "shadowverse:MagiTrain": {
     "MOVES": [
-      "Steam Burst",
+      "Stand By",
       "Charge",
-      "Stand By"
+      "Steam Burst"
     ],
     "NAME": "MagiTrain",
     "DIALOG": [
@@ -176,6 +176,18 @@
       "~You look 'bout as tough as a field mouse!~",
       "@You make a lovely coffin.@",
       "@How's that.@"
+    ]
+  },
+  "shadowverse:Zecilwenshe": {
+    "MOVES": [
+      "Dagger Spray"
+    ],
+    "NAME": "Zecilwenshe",
+    "DIALOG": [
+      "~The~ ~infesation~ ~evolves~",
+      "~My~ ~future~ ~victory~ ~await~.",
+      "~I~ ~am~ ~the~ ~epitome~ ~of~ ~victory.~",
+      "~I'll~ ~win~ ~in~ ~the~ ~end.~ ~I~ ~always~ ~do.~"
     ]
   }
 }
