@@ -48,7 +48,7 @@ public class Henchman extends CustomMonster {
     private static final String START = MOVES[0];
 
     public Henchman(float x, float y) {
-        super(NAME, ID, AbstractDungeon.monsterHpRng.random(20, 24), -5.0F, -20.0F, 145.0F, 260.0F, null, x, y);
+        super(NAME, ID, AbstractDungeon.monsterHpRng.random(20, 24), -5.0F, -20.0F, 145.0F, 330.0F, null, x, y);
         this.animation = new SpriterAnimation("img/monsters/Henchman/Henchman.scml");
         if (AbstractDungeon.ascensionLevel >= 7) {
             setHp(HP_MIN, HP_MAX);
