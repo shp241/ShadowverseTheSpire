@@ -26,7 +26,7 @@ import shadowverse.powers.NahtPower;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Naht extends CustomMonster implements SpriteCreature{
+public class Naht extends CustomMonster implements SpriteCreature {
     public static final String ID = "shadowverse:Naht";
     private static final MonsterStrings monsterStrings = CardCrawlGame.languagePack.getMonsterStrings("shadowverse:Naht");
     public static final String NAME = monsterStrings.NAME;
@@ -53,16 +53,20 @@ public class Naht extends CustomMonster implements SpriteCreature{
 
     private boolean initialSpawn = true;
 
+    private int totalStr;
+
     private float spawnX = -100.0F;
 
     public SpriterAnimation extra = new SpriterAnimation("img/animation/Naht/Naht.scml");
 
     private HashMap<Integer, AbstractMonster> enemySlots = new HashMap<>();
 
+    @Override
     public void setAnimation(SpriterAnimation animation) {
         this.animation = animation;
     }
 
+    @Override
     public SpriterAnimation getAnimation() {
         return (SpriterAnimation) this.animation;
     }
@@ -75,7 +79,7 @@ public class Naht extends CustomMonster implements SpriteCreature{
         this.type = AbstractMonster.EnemyType.BOSS;
         this.turnsTaken = 0;
         if (AbstractDungeon.ascensionLevel >= 19) {
-            this.heavyDmg = 28;
+            this.heavyDmg = 30;
             this.multiDmg = 10;
             this.backDmg = 12;
             this.minionAmt = 4;
@@ -89,7 +93,7 @@ public class Naht extends CustomMonster implements SpriteCreature{
             this.strAmount = 3;
             this.debuffAmount = 2;
         } else {
-            this.heavyDmg = 24;
+            this.heavyDmg = 25;
             this.multiDmg = 7;
             this.backDmg = 8;
             this.minionAmt = 2;
@@ -114,6 +118,7 @@ public class Naht extends CustomMonster implements SpriteCreature{
             baseStrength = AbstractDungeon.player.currentHealth / 16;
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new InvinciblePower(this, 100)));
         }
+        this.totalStr = baseStrength;
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new CuriosityPower(this, 1)));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new StrengthPower(this, baseStrength), baseStrength));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new NahtPower(this), 1));
@@ -182,6 +187,16 @@ public class Naht extends CustomMonster implements SpriteCreature{
                 AbstractDungeon.actionManager.addToBottom(new ShoutAction(this, DIALOG[3], 1.0F, 2.0F));
                 addToBot(new SFXAction("Naht_A4"));
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new VulnerablePower(AbstractDungeon.player, this.debuffAmount, true), this.debuffAmount));
+                for (AbstractPower power : this.powers) {
+                    if (power instanceof WeakPower || power instanceof VulnerablePower) {
+                        addToBot(new RemoveSpecificPowerAction(power.owner, this, power.ID));
+                    } else if (power instanceof StrengthPower) {
+                        if (power.amount < totalStr) {
+                            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new StrengthPower(this, totalStr - power.amount), totalStr - power.amount));
+                        }
+                    }
+                }
+                totalStr += this.strAmount;
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new StrengthPower(this, this.strAmount), this.strAmount));
                 turnsTaken++;
                 if (turnsTaken % 4 == 3) {
@@ -219,7 +234,7 @@ public class Naht extends CustomMonster implements SpriteCreature{
                     }
                 }
                 turnsTaken++;
-                this.next = (5 + AbstractDungeon.monsterRng.random(3)) % 5 + 1;
+                this.next = AbstractDungeon.monsterRng.random(3) + 1;
                 break;
             default:
                 System.out.println("ERROR: Default Take Turn was called on " + this.name);
