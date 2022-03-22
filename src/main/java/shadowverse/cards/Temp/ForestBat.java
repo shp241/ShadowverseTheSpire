@@ -48,9 +48,6 @@ import shadowverse.stance.Vengeance;
      } else {
        this.baseDamage = 4;
      }
-     if (AbstractDungeon.player != null && AbstractDungeon.player.hasPower(NightVampirePower.POWER_ID)){
-       this.baseDamage += this.baseDamage;
-     }
      this.exhaust = true;
    }
  

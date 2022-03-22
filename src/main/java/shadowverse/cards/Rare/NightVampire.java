@@ -52,8 +52,6 @@ public class NightVampire extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot((AbstractGameAction) new SFXAction("NightVampire"));
         AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
-        c.baseDamage = 8;
-        c.applyPowers();
         addToBot((AbstractGameAction) new MakeTempCardInHandAction(c, 2));
         if (!abstractPlayer.hasPower(NightVampirePower.POWER_ID))
             addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, (AbstractPower) new NightVampirePower((AbstractCreature) abstractPlayer)));

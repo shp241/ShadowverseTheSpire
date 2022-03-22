@@ -107,6 +107,10 @@ public class CutsceneChangePatches {
                     customPanels.add(new CutscenePanel("img/scene/miyako1.png"));
                     customPanels.add(new CutscenePanel("img/scene/necro2.png"));
                     customPanels.add(new CutscenePanel("img/scene/miyako3.png"));
+                }else if ((CharacterSelectScreenPatches.characters[2]).reskinCount == 2){
+                    customPanels.add(new CutscenePanel("img/scene/shinobu1.png"));
+                    customPanels.add(new CutscenePanel("img/scene/shinobu2.png"));
+                    customPanels.add(new CutscenePanel("img/scene/shinobu3.png"));
                 }
             }else if (AbstractDungeon.player instanceof Vampire){
                 if ((CharacterSelectScreenPatches.characters[4]).reskinCount == 0){

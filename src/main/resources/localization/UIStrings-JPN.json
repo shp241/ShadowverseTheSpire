@@ -21,22 +21,22 @@
   },
   "shadowverse:AndrealphusMod": {
     "TEXT": [
-      " NL ラスワード このカードが 廃棄 される時、カード1枚を引く。"
+      " NL ラストワード このカードが 廃棄 される時、カード1枚を引く。"
     ]
   },
   "shadowverse:PrinceCatacombMod": {
     "TEXT": [
-      " NL ラスワード このカードが 廃棄 される時、 *スケルトン 1枚を手札に加える。"
+      " NL ラストワード このカードが 廃棄 される時、 *スケルトン 1枚を手札に加える。"
     ]
   },
   "shadowverse:ImmoralDesireMod1": {
     "TEXT": [
-      " NL ラスワード このカードが 廃棄 される時、敵全体にこのカードの元々のダメージを与える。"
+      " NL ラストワード このカードが 廃棄 される時、敵全体にこのカードの元々のダメージを与える。"
     ]
   },
   "shadowverse:ImmoralDesireMod2": {
     "TEXT": [
-      " NL ラスワード このカードが 廃棄 される時、このカードの元々の ブロック の 仮HP を得る。"
+      " NL ラストワード このカードが 廃棄 される時、このカードの元々の ブロック の 仮HP を得る。"
     ]
   },
   "shadowverse:applyEffect": {

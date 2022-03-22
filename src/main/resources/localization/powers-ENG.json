@@ -354,17 +354,17 @@
     ]
   },
   "shadowverse:TweyenPower": {
-    "NAME": "天冲之正鹄",
+    "NAME": "Pinpoint Prey",
     "DESCRIPTIONS": [
-      "承受伤害 #b+20% ，获得格挡 #b-10% 。"
+      "Damage taken #b+20% , #yBlock gained #b-10% ."
     ]
   },
   "shadowverse:FairyCirclePower": {
-    "NAME": "妖精之环",
+    "NAME": "Fairy Circle",
     "DESCRIPTIONS": [
-      "造成伤害提高 #b",
-      "0% ，承受伤害减少 #b",
-      "0% 。回合结束时如果已使用的卡牌数为5以上则增加 #b10% (最多可叠加5次)。如果受到伤害则减少 #b10% 。"
+      "Damage dealt + #b",
+      "0% , damage taken - #b",
+      "0% . If you have played at least 5 cards by the end of your turn, + #b10% (Can stack up to 5). If you take any unblock damage, - #b10% . "
     ]
   },
   "shadowverse:NoDamage": {
@@ -1022,130 +1022,130 @@
     ]
   },
   "shadowverse:DiscipleOfUsurpationPower": {
-    "NAME": "强夺的信徒",
+    "NAME": "Disciple of Usurpation",
     "DESCRIPTIONS": [
-      "每当打出 #y财宝 牌时，获得 #b",
-      "点格挡。"
+      "Whenever you play #yLoot , gain #b",
+      " #yBlock ."
     ]
   },
   "shadowverse:ApostleOfUsurpationPower": {
-    "NAME": "强夺的使徒",
+    "NAME": "Apostle of Usurpation",
     "DESCRIPTIONS": [
-      "每当打出 #y财宝 牌时，对随机敌人造成 #b",
-      "点伤害。"
+      "Whenever you play #yLoot , deal #b",
+      " damage to random enemy."
     ]
   },
   "shadowverse:MarsPower": {
-    "NAME": "沉默的炎将·玛尔斯",
+    "NAME": "Mars, Silent Flame General",
     "DESCRIPTIONS": [
-      "每当召唤 #y随从 时，使其获得+ #b",
-      "/+ #b",
-      "。"
+      "Whenever you summon a #yFollower , it gains + #b",
+      " /+ #b",
+      " ."
     ]
   },
   "shadowverse:FortressStrategistPower": {
-    "NAME": "王城司令官",
+    "NAME": "Fortress Strategist",
     "DESCRIPTIONS": [
-      "每当打出技能牌时，随机升级 #b",
-      "张牌。"
+      "Whenever you play a #ySkill card, randomly upgrade #b",
+      " card(s) in hand."
     ]
   },
   "shadowverse:LuminousMagePower": {
-    "NAME": "鲁米那斯法师",
+    "NAME": "Luminous Mage",
     "DESCRIPTIONS": [
-      "回合开始时，将 #b",
-      "张 #y进化点 置入手牌。"
+      "At the start of your turn, add #b",
+      " #yEvolution #yPoint to hand."
     ]
   },
   "shadowverse:PrudentGeneralPower": {
-    "NAME": "静寂的元帅",
+    "NAME": "Prudent General",
     "DESCRIPTIONS": [
-      "回合结束时，召唤 #b",
-      "个 #y铁甲骑士。"
+      "By the end of your turn, summon #b",
+      " #ySteelclad #yKnight ."
     ]
   },
   "shadowverse:RoyalBannerPower": {
-    "NAME": "皇家御用战旗",
+    "NAME": "Royal Standard",
     "DESCRIPTIONS": [
-      "每当召唤 #y随从 时，使其获得+1/+0。回合开始时这个能力减少 #b1 层。"
+      "Whenever you summon a #yFollower , it gains +1/+0. Reduce this power by #b1 at the start of turn."
     ]
   },
   "shadowverse:LathamPower": {
-    "NAME": "高洁的骑士·雷瑟姆",
+    "NAME": "Latham, Honorable Knight",
     "DESCRIPTIONS": [
-      "使用攻击牌时，召唤1个 骑士 。"
+      "Whenever you play an #yAttack card, summon 1 #yKnight ."
     ]
   },
   "shadowverse:AlwidaPower": {
-    "NAME": "海贼女王·雅尔莉妲",
+    "NAME": "Alwida, Pirate Queen",
     "DESCRIPTIONS": [
-      "每回合限 #b",
-      " 次，每当你使用财宝牌，召唤1个 航海家 和1个 维京战士 。"
+      "#b",
+      " time per turn, whenever you play a #yLoot , summon 1 #yPirate and 1 #yViking ."
     ]
   },
   "shadowverse:GloriousCorePower": {
-    "NAME": "荣耀之核",
+    "NAME": "Glorious Core",
     "DESCRIPTIONS": [
-      "使用 #y进化点 时，使所有随从获得+ #b",
+      "Next time you play #yEvolution #yPoint , ALL #yFollowers gain + #b",
       "/+ #b",
-      "。"
+      " ."
     ]
   },
   "shadowverse:GraysonDrawnPower": {
-    "NAME": "迅猛驭剑士·格雷森",
+    "NAME": "Grayson, Rocket Blader",
     "DESCRIPTIONS": [
-      "本回合中每当打出 机械 牌时，获得 [E] 。"
+      "Gain [E] for every #yMachina card you play this turn."
     ]
   },
   "shadowverse:GraysonPower": {
-    "NAME": "迅猛驭剑士·格雷森",
+    "NAME": "Grayson, Rocket Blader",
     "DESCRIPTIONS": [
-      "每当打出 机械 牌时，对全体敌人造成 #b",
-      "点伤害。"
+      "Whenever you play a #yMachina card, deal #b",
+      " damage to ALL enemies."
     ]
   },
   "shadowverse:JenoPower": {
-    "NAME": "雷维翁猛者·杰诺",
+    "NAME": "Jeno, Levin Stalwart",
     "DESCRIPTIONS": [
-      "雷维翁 卡牌造成的伤害和获得的格挡增加 #b",
-      "点。"
+      "Damage dealt and #yBlock gained for #yLevin cards increase by #b",
+      " ."
     ]
   },
   "shadowverse:JohannPower": {
-    "NAME": "纯铁英雄·约翰",
+    "NAME": "Johann, Ironforged Hero",
     "DESCRIPTIONS": [
-      "使用机械牌时获得 #b",
-      "点格挡。"
+      "Whenever you play a #yMachina card this turn, gain #b",
+      " #yBlock ."
     ]
   },
   "shadowverse:ReinhardtPower": {
-    "NAME": "改革者·莱恩哈尔特",
+    "NAME": "Reinhardt, the Deathless",
     "DESCRIPTIONS": [
-      "受到攻击时，获得 #b ",
-      "点 力量 和 敏捷 。 NL 受到伤害后失去这个效果并回复 5 点生命值。"
+      "Whenever being attacked, gain #b ",
+      " #yStrength and #yDexterity . NL Lose this effect after taking unblock damage and heal #b5 HP."
     ]
   },
   "shadowverse:CaptainWalfridPower": {
-    "NAME": "骑空团总长·瓦佛利特",
+    "NAME": "Captain Walfrid",
     "DESCRIPTIONS": [
-      "每当召唤 #y随从 时，使其获得+ #b",
+      "Whenever you summon a #yFollower , it gains + #b",
       "/+ #b",
-      "。"
+      " ."
     ]
   },
   "shadowverse:LeonidasWaitPower": {
-    "NAME": "列奥尼达",
+    "NAME": "Leonidas",
     "DESCRIPTIONS": [
-      "回合开始时和受到伤害时这个能力减少 #b1 层。失去这个能力时获得 #b",
-      " 层 #y列奥尼达的遗志 。"
+      "Reduce by #b1 whenever you lose HP or by the end of your turn. Gain #b",
+      " #yLeonidas's #yResolve when lose this effect."
     ]
   },
   "shadowverse:LeonidasBuffPower": {
-    "NAME": "列奥尼达的遗志",
+    "NAME": "Leonidas's Resolve",
     "DESCRIPTIONS": [
-      "每当召唤 #y随从 时，使其获得+ #b",
+      "Whenever you summon a #yFollower , it gains + #b",
       "/+ #b",
-      "。"
+      " ."
     ]
   },
   "shadowverse:RaPower": {
@@ -1291,17 +1291,17 @@
     ]
   },
   "shadowverse:DualbladePower": {
-    "NAME": "双刀之技",
+    "NAME": "Dualblade Flurry",
     "DESCRIPTIONS": [
-      "你的随从的被动效果会触发2次。"
+      "#yFollowers can attack 2 times."
     ]
   },
   "shadowverse:AmbushBuffPower": {
-    "NAME": "盗贼的极意",
+    "NAME": "Rogue's Creed",
     "DESCRIPTIONS": [
-      "回合开始时，给予全体潜伏状态的随从 + #b",
+      "At the start of your turn, ALL #yFollowers in #yAmbush gain + #b",
       " /+ #b",
-      " 。"
+      " ."
     ]
   },
   "shadowverse:WonderTreePower": {
@@ -1400,35 +1400,35 @@
     ]
   },
   "shadowverse:NextTurnV": {
-    "NAME": "幻影拍档·巴妮与巴隆：谢幕曲",
+    "NAME": "Bunny & Baron, Specter Duo: Last Words",
     "DESCRIPTIONS": [
-      "回合开始时，增加 #b",
-      " 张 #y魔导四轮车·V 到手中。"
+      "Add #b",
+      " #yVal, #yTrusty #yGetaway #yCar with 0 cost until played to hand next turn."
     ]
   },
   "shadowverse:AramisPower": {
-    "NAME": "阿拉密斯",
+    "NAME": "Aramis",
     "DESCRIPTIONS": [
-      "本回合内每当召唤 #y随从 时，使其获得+ #b",
+      "Whenever you summon a #yFollower , it gains + #b",
       "/+ #b",
-      " ，并使 #y阿拉密斯 增加 #b",
-      " 点伤害。每当打出攻击牌时，获得 #b",
-      " 点 #y力量 和 #y敏捷 ，并使 #y阿拉密斯 增加 #b",
-      " 点伤害。"
+      " , #yAramis + #b",
+      " damage. Whenever you play #yAttack cards, gain #b",
+      " #yStrength and #yDexterity , #yAramis + #b",
+      " damage."
     ]
   },
   "shadowverse:AthosPower": {
-    "NAME": "阿多斯",
+    "NAME": "Athos",
     "DESCRIPTIONS": [
-      "如果本回合结束时没有完全失去格挡，则下回合开始时获得 #b",
-      " 点格挡。"
+      "If you haven't lose ALL your #yBlock this turn, gain #b",
+      " #yBlock next turn."
     ]
   },
   "shadowverse:PorthosPower": {
-    "NAME": "波尔多斯",
+    "NAME": "Porthos",
     "DESCRIPTIONS": [
-      "回合结束时，对随机敌人造成 #b",
-      " 点伤害。"
+      "By the end of your turn, deal #b",
+      " damage to random enemy."
     ]
   },
   "shadowverse:NahtPower": {
@@ -1441,9 +1441,9 @@
     ]
   },
   "shadowverse:MaiserPower": {
-    "NAME": "Maiser, Formulahero",
+    "NAME": "Maiser, Accelerated Hero",
     "DESCRIPTIONS": [
-      "Whenever you play a #yskill, deal #b5 damage to all enemies."
+      "Whenever you play a #ySkill card, deal #b5 damage to all enemies."
     ]
   }
 }

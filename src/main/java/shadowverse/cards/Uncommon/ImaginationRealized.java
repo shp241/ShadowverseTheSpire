@@ -14,6 +14,7 @@
  import com.megacrit.cardcrawl.monsters.AbstractMonster;
  import com.megacrit.cardcrawl.powers.AbstractPower;
  import rs.lazymankits.actions.common.DrawExptCardAction;
+ import shadowverse.action.ImaginationAction;
  import shadowverse.characters.AbstractShadowversePlayer;
  import shadowverse.characters.Witchcraft;
  import shadowverse.powers.EarthEssence;
@@ -41,22 +42,7 @@
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-           addToBot((AbstractGameAction)new DrawExptCardAction((AbstractCreature) abstractPlayer, 3, card -> true, new AbstractGameAction() {
-               @Override
-               public void update() {
-                   this.isDone = true;
-                   for (AbstractCard c : DrawCardAction.drawnCards) {
-                       if (c.costForTurn > 0) {
-                           c.costForTurn = 0;
-                           c.isCostModifiedForTurn = true;
-                       }
-                       if (ImaginationRealized.this.upgraded && c.cost > 0){
-                           c.cost = 0;
-                           c.isCostModified = true;
-                       }
-                   }
-               }
-           }));
+       addToBot((AbstractGameAction)new DrawCardAction(3, (AbstractGameAction)new ImaginationAction(this.upgraded)));
    }
  
    

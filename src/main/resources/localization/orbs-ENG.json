@@ -31,7 +31,7 @@
     "DESCRIPTION": [
       "#yPassive: Gain #b",
       " #yBlock , gain #b",
-      " #yPlated #yArmor and lose #b1 Health by the end of your turn. NL #yEvoked: Repeat passive effects until its Health reaches #b0 ."
+      " #yBlock next turn and lose #b1 Health by the end of your turn. NL #yEvoked: Repeat passive effects until its Health reaches #b0 ."
     ],
     "NAME": "Frontguard General"
   },

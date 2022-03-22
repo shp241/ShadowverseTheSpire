@@ -350,8 +350,8 @@
   },
   "shadowverse:Shop": {
     "NAME": "Arcane Item Shop",
-    "DESCRIPTION": "Whenever you play a card, deal !M! damage to random enemy. If there are no Attacks , States , Curses cards in your draw pile and your discard pile, gain [E] . NL Invocation : \bBy the start of your turn, if it's after turn 5, put this card in 0 cost into your hand, put 2 *Void into your discard pile. NL Ethereal .",
-    "UPGRADE_DESCRIPTION": "Whenever you play a card, deal !M! damage to random enemy. If there are no Attacks , States , Curses cards in your draw pile and your discard pile, gain [E] . NL Invocation : \bBy the start of your turn, if it's after turn 5, put this card in 0 cost into your hand, put 2 *Void into your discard pile."
+    "DESCRIPTION": "Whenever you play a card, deal !M! damage to random enemy. If there are no Attacks , Status , Curses cards in your draw pile and your discard pile, gain [E] . NL Invocation : \bBy the start of your turn, if it's after turn 5, put this card in 0 cost into your hand, put 2 *Void into your discard pile. NL Ethereal .",
+    "UPGRADE_DESCRIPTION": "Whenever you play a card, deal !M! damage to random enemy. If there are no Attacks , Status , Curses cards in your draw pile and your discard pile, gain [E] . NL Invocation : \bBy the start of your turn, if it's after turn 5, put this card in 0 cost into your hand, put 2 *Void into your discard pile."
   },
   "shadowverse:NaterranGreatTree": {
     "NAME": "Naterran Great Tree",
@@ -2789,78 +2789,78 @@
     "DESCRIPTION": "Gain !B! Block ."
   },
   "shadowverse:OathlessKnight": {
-    "NAME": "背水一战的骑士",
-    "DESCRIPTION": "造成 !D! 点伤害,  NL 召唤一个 骑士 ."
+    "NAME": "Oathless Knight",
+    "DESCRIPTION": "Deal !D! damage,  NL Summon 1 Knight ."
   },
   "shadowverse:GildedBoots": {
-    "NAME": "黄金之靴",
-    "DESCRIPTION": "号令 最右侧随从 !M! 次. NL 消耗 ."
+    "NAME": "Gilded Boots",
+    "DESCRIPTION": "Command the rightmost *Follower !M! time. NL Exhaust ."
   },
   "shadowverse:GildedNecklace": {
-    "NAME": "黄金首饰",
-    "DESCRIPTION": "使最右侧随从获得 NL +1/+ !M! . NL 消耗 ."
+    "NAME": "Gilded Necklace",
+    "DESCRIPTION": "The rightmost *Follower gain NL +1/+ !M! . NL Exhaust ."
   },
   "shadowverse:GildedBlade": {
-    "NAME": "黄金短剑",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 消耗 ."
+    "NAME": "Gilded Blade",
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust ."
   },
   "shadowverse:GildedGoblet": {
-    "NAME": "黄金之杯",
-    "DESCRIPTION": "获得 !B! 点 格挡 . NL 消耗 ."
+    "NAME": "Gilded Goblet",
+    "DESCRIPTION": "Gain !B! Block . NL Exhaust ."
   },
   "shadowverse:GrandAcquisition": {
-    "NAME": "绚烂的劫夺",
-    "DESCRIPTION": "抉择 NL 从 *黄金短剑 、 *黄金之杯 、 *黄金之靴 、 *黄金首饰 中选择1张加入手中. NL 爆能强化 3 \b改为全部加入手牌,  NL 获得 [E] [E] . NL 消耗 .",
-    "UPGRADE_DESCRIPTION": "抉择 NL 从 *黄金短剑 、 *黄金之杯 、 *黄金之靴 、 *黄金首饰 中选择1张加入手中. NL 爆能强化 3 \b改为全部加入手牌,  NL 获得 [E] [E] ."
+    "NAME": "Grand Acquisition",
+    "DESCRIPTION": "Choose NL Add 1 of *Gilded *Blade , *Gilded *Goblet , *Gilded *Boots or *Gilded *Necklace to your hand. NL Enhance 3: \bAdd ALL to hand instead,  NL gain [E] [E] . NL Exhaust .",
+    "UPGRADE_DESCRIPTION": "Choose NL Add 1 of *Gilded *Blade , *Gilded *Goblet , *Gilded *Boots or *Gilded *Necklace to your hand. NL Enhance 3: \bAdd ALL to hand instead,  NL gain [E] [E] ."
   },
   "shadowverse:SageCommander": {
-    "NAME": "睿智指挥官",
-    "DESCRIPTION": "获得 !B! 点 格挡,使所有随从获得+0/+1."
+    "NAME": "Sage Commander",
+    "DESCRIPTION": "Gain !B! Block , ALL *Followers gain +0/+1."
   },
   "shadowverse:DanceOfUsurpation": {
-    "NAME": "强夺之舞",
-    "DESCRIPTION": "对全体敌人造成 !D! 点伤害, 随机将2张 财宝牌 加入手牌."
+    "NAME": "Dance of Usurpation",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies, randomly add 2 Loot to hand."
   },
   "shadowverse:UsurpingSpineblade": {
-    "NAME": "强夺的蛇剑",
-    "DESCRIPTION": "造成 !D! 点伤害, 随机将1张 财宝牌 加入手牌."
+    "NAME": "Usurping Spineblade",
+    "DESCRIPTION": "Deal !D! damage, randomly add 1 Loot to hand."
   },
   "shadowverse:WeeMerchantsAppraisal": {
-    "NAME": "商人的鉴定",
-    "DESCRIPTION": "将 *进化点 、 *黄金之杯 、 *黄金首饰 加入手中.",
-    "UPGRADE_DESCRIPTION": "将 *进化点 、 *黄金之杯 、 *黄金首饰 加入手中. NL 抽 !M! 张牌."
+    "NAME": "Wee Merchant's Appraisal",
+    "DESCRIPTION": "Add *Evolution *Point , *Gilded *Goblet , *Gilded *Necklace to hand.",
+    "UPGRADE_DESCRIPTION": "Add *Evolution *Point , *Gilded *Goblet , *Gilded *Necklace to hand. NL Draw !M! cards."
   },
   "shadowverse:DiscipleOfUsurpation": {
-    "NAME": "强夺的信徒",
-    "DESCRIPTION": "潜伏 , 1/1 . NL 被动:获得攻击力的2倍格挡并失去1点体力. NL 每使用一张 财宝牌 , 获得 !M! 点护甲."
+    "NAME": "Disciple of Usurpation",
+    "DESCRIPTION": "Ambush , 1/1 . NL Passive: Gain Block equals to 2 times of Atk and lose 1 Health by the end of your turn. NL Whenever you play Loot , gain !M! Block ."
   },
   "shadowverse:ApostleOfUsurpation": {
-    "NAME": "强夺的使徒",
-    "DESCRIPTION": "每使用一张 财宝牌 , 对随机敌人造成 !M! 点伤害.",
-    "UPGRADE_DESCRIPTION": "每使用一张 财宝牌 , 对随机敌人造成 !M! 点伤害. NL 随机将1张 财宝牌 加入手牌."
+    "NAME": "Apostle of Usurpation",
+    "DESCRIPTION": "Whenever you play Loot , deal !M! damage to random enemy.",
+    "UPGRADE_DESCRIPTION": "Whenever you play Loot , deal !M! damage to random enemy. NL Randomly add 1 Loot to hand."
   },
   "shadowverse:Octrice": {
-    "NAME": "强夺灾杰·奥克托丽丝",
-    "DESCRIPTION": "使敌人失去2点 力量, 获得2点 力量.获得 !M! 金币. NL 消耗 .",
-    "UPGRADE_DESCRIPTION": "使敌人失去2点 力量, 获得2点 力量.获得 !M! 金币. NL 随机将2张 财宝牌 加入手牌. NL 消耗 ."
+    "NAME": "Octrice, Omen of Usurpation",
+    "DESCRIPTION": "Gain 2 Strength , Enemy lose 2 Strength . Gain !M! Gold. NL Exhaust .",
+    "UPGRADE_DESCRIPTION": "Gain 2 Strength , Enemy lose 2 Strength . Gain !M! Gold. NL Randomly add 2 Loot to hand. NL Exhaust ."
   },
   "shadowverse:Octrice2": {
-    "NAME": "空绝强夺·奥克托丽丝",
-    "DESCRIPTION": "随机获得敌人的一种正面效果. NL 获得 !M! 金币. NL 增加1张 *空绝的残光 到手中. NL 随机将1张 财宝牌 加入手牌. NL 消耗 ."
+    "NAME": "Octrice, Hollow Usurpation",
+    "DESCRIPTION": "Randomly Gain 1 kind of enemy's buff. NL Gain !M! Gold. NL Add 1 *Remnant *of *Hollowness to hand. NL Randomly add 1 Loot to hand. NL Rally 8 When this is drawn, put 1 *Evolution *Point into your hand. NL Exhaust ."
   },
   "shadowverse:Mars": {
-    "NAME": "沉默的炎将·玛尔斯",
-    "DESCRIPTION": "每召唤一个随从, 使其获得+ !M! /+ !M! . NL 虚无",
-    "UPGRADE_DESCRIPTION": "固有 . NL 每召唤一个随从, 使其获得+ !M! /+ !M! ."
+    "NAME": "Mars, Silent Flame General",
+    "DESCRIPTION": "Whenever you summon a *Follower , it gains + !M! /+ !M! . NL Ethereal",
+    "UPGRADE_DESCRIPTION": "Innate NL Whenever you summon a *Follower , it gains + !M! /+ !M! ."
   },
   "shadowverse:Sera": {
-    "NAME": "曙光少女·赛拉",
-    "DESCRIPTION": "获得 !B! 点 格挡 .获得1层人工制品. NL 消耗 .",
-    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 .获得1层人工制品. NL 召唤3个 战盾卫士 , 回复 !M! 点生命. NL 消耗 ."
+    "NAME": "Sera, Maiden of the Dawn",
+    "DESCRIPTION": "Gain !B! Block .Gain 1 Artifact. NL Exhaust .",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block .Gain 1 Artifact. NL Summon 3 Shield_Guardian , Heal !M! HP. NL Exhaust ."
   },
   "shadowverse:MistolinaBayleon": {
-    "NAME": "光耀导引·米丝特莉娜与贝里昂",
-    "DESCRIPTION": "自然 . NL 造成 !D! 点伤害, 获得 !B! 点 格挡 .若手牌中有能力牌, 选择消耗一张, 本局对战中造成的伤害和 格挡 + !M! , 若为 *那塔拉的大树 获得 [E] [E] ."
+    "NAME": "Mistolina & Bayleon",
+    "DESCRIPTION": "Natura . NL Deal !D! damage, Gain !B! Block . NL If you have Power card in hand, Exhaust 1 of it, damage dealt and Block gain + !M! during this combat. If it's *Naterran *Great *Tree , gain [E] [E] ."
   },
   "shadowverse:TemperedMana": {
     "NAME": "Tempered Aether",
@@ -2868,50 +2868,50 @@
     "UPGRADE_DESCRIPTION": "Natura . NL Put a *Naterran *Great *Tree into your hand."
   },
   "shadowverse:WhitePaladin": {
-    "NAME": "白银圣骑士",
-    "DESCRIPTION": "召唤3个 战盾卫士 . NL 消耗 ."
+    "NAME": "White Paladin",
+    "DESCRIPTION": "Summon 3 Shield_Guardian . NL Exhaust ."
   },
   "shadowverse:EmpressOfSerenity": {
-    "NAME": "安宁的女王",
-    "DESCRIPTION": "获得 !B! 点 格挡 , 召唤1个 战盾卫士 . NL 爆能强化 2 \b再额外召唤2个 战盾卫士 ."
+    "NAME": "Empress of Serenity",
+    "DESCRIPTION": "Gain !B! Block , summon 1 Shield_Guardian . NL Enhance 2: \bSummon 2 more Shield_Guardian ."
   },
   "shadowverse:ShieldPhalanx": {
-    "NAME": "坚盾战阵",
-    "DESCRIPTION": "获得 !B! 点 格挡 . NL 召唤一个 战盾卫士 NL 和一个 骑士 . NL ",
-    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 . NL 召唤一个 战盾卫士 NL 和一个 骑士 . NL 限定 协作 15:由 战盾卫士 改为 铁卫战将 . NL ",
+    "NAME": "Shield Phalanx",
+    "DESCRIPTION": "Gain !B! Block . NL Summon 1 Shield_Guardian NL and 1 Knight . NL ",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block . NL Summon 1 Shield_Guardian NL and 1 Knight . NL Limit Rally 15: Change Shield_Guardian to Frontguard_General . NL ",
     "EXTENDED_DESCRIPTION": [
-      "（协作数:",
+      "(Rally: ",
       ")"
     ]
   },
   "shadowverse:DramaticRetreat": {
-    "NAME": "壮烈的撤退",
-    "DESCRIPTION": "抽 !M! 张牌. NL 选择1张攻击牌,  NL 将其洗入抽牌堆,  NL 其下一次打出时的消耗变为0点.",
+    "NAME": "Dramatic Retreat",
+    "DESCRIPTION": "Draw !M! cards. NL Select 1 Attack card in hand to put into drawpile. NL It costs 0 until played.",
     "EXTENDED_DESCRIPTION": [
-      "没有攻击牌"
+      "No Attack card"
     ]
   },
   "shadowverse:CatAdmiral": {
-    "NAME": "俏猫上将",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 协作 7:再造成1次伤害. NL ",
-    "UPGRADE_DESCRIPTION": "打出后解除升级 . NL 造成 !D! 点伤害. NL 协作 7:再造成1次伤害. NL 召唤一个 战盾卫士 和一个 重装骑士 . NL ",
+    "NAME": "Cat Admiral",
+    "DESCRIPTION": "Deal !D! damage. NL Rally 7: Repeat 1 time. NL ",
+    "UPGRADE_DESCRIPTION": "Disupgrade after played. NL Deal !D! damage. NL Rally 7: Repeat 1 time. NL Summon 1 Shield_Guardian and 1 Heavy_Knight . NL ",
     "EXTENDED_DESCRIPTION": [
-      "（协作数:",
+      "(Rally: ",
       ")"
     ]
   },
   "shadowverse:FrenziedCorpsmaster": {
-    "NAME": "绝灭之士兵长",
-    "DESCRIPTION": "获得 !B! 点 格挡 . NL 对全体敌人造成协作数两倍的伤害. NL 激奏 1 \b  召唤一个 铁甲骑士 NL 和一个 重装骑士 . NL ",
+    "NAME": "Frenzied Corpsmaster",
+    "DESCRIPTION": "Gain !B! Block . NL Deal damage equals to 2 times of Rally . NL Accelerate 1: \b Summon 1 Steelclad_Knight NL and 1 Heavy_Knight . NL ",
     "EXTENDED_DESCRIPTION": [
-      "（造成",
-      "点伤害)"
+      "(Deal ",
+      " damage)"
     ]
   },
   "shadowverse:FortressStrategist": {
-    "NAME": "王城司令官",
-    "DESCRIPTION": "每当你使用技能牌时, 随机升级 !M! 张牌.",
-    "UPGRADE_DESCRIPTION": "固有 . NL 每当你使用技能牌时, 随机升级 !M! 张牌. "
+    "NAME": "Fortress Strategist",
+    "DESCRIPTION": "Whenever you play a Skill card, randomly upgrade !M! card in hand.",
+    "UPGRADE_DESCRIPTION": "Innate . NL Whenever you play a Skill card, randomly upgrade !M! card in hand. "
   },
   "shadowverse:EvolutionPoint": {
     "NAME": "Evolution Point",
@@ -2919,392 +2919,388 @@
     "UPGRADE_DESCRIPTION": "Retain . NL Upgrade !M! Attack or Power card. NL Exhaust ."
   },
   "shadowverse:EnragedGeneral": {
-    "NAME": "愤怒的将军",
-    "DESCRIPTION": "获得等同于你随从个数的 [E]  NL 消耗 ."
+    "NAME": "Enraged General",
+    "DESCRIPTION": "Gain [E] equals to your *Follower number. NL Exhaust ."
   },
   "shadowverse:LuminousMage": {
-    "NAME": "鲁米那斯法师",
-    "DESCRIPTION": "回合开始时, 将 !M! 张 *进化点 置入手牌.",
-    "UPGRADE_DESCRIPTION": "回合开始时, 将 !M! 张 *进化点 置入手牌. NL 抽到时将一张 *进化点 置入手牌."
+    "NAME": "Luminous Mage",
+    "DESCRIPTION": "At the start of your turn, add !M! *Evolution *Point to hand.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, add !M! *Evolution *Point to hand. NL Add 1 *Evolution *Point to hand whenever this card is drawn."
   },
   "shadowverse:PrudentGeneral": {
-    "NAME": "静寂的元帅",
-    "DESCRIPTION": "虚无",
-    "UPGRADE_DESCRIPTION": "回合结束时, 召唤 !M! 个 铁甲骑士 ."
+    "NAME": "Prudent General",
+    "DESCRIPTION": "Ethereal",
+    "UPGRADE_DESCRIPTION": "By the end of your turn, summon !M! Steelclad_Knight ."
   },
   "shadowverse:DualbladeKnight": {
-    "NAME": "双剑骑士",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 获得 [E] . NL 协作 7:升级这张牌. NL ",
-    "UPGRADE_DESCRIPTION": "打出后解除升级 . NL 造成 !D! 点伤害. NL 获得 [E] [E] .",
+    "NAME": "Dualblade Knight",
+    "DESCRIPTION": "Deal !D! damage. NL Gain [E] . NL Rally 7: Upgrade this card. NL ",
+    "UPGRADE_DESCRIPTION": "Disupgrade after played. NL Deal !D! damage. NL Gain [E] [E] .",
     "EXTENDED_DESCRIPTION": [
-      "（协作数:",
+      "(Rally: ",
       ")"
     ]
   },
   "shadowverse:StrikeproneGuardian": {
-    "NAME": "奋击卫士",
-    "DESCRIPTION": "获得 !B! 点 格挡 . NL 协作 7:额外获得 !M! 点 格挡 . NL ",
+    "NAME": "Strikeprone Guardian",
+    "DESCRIPTION": "Gain !B! Block . NL Rally 7: Gain !M! more Block . NL ",
     "EXTENDED_DESCRIPTION": [
-      "（协作数:",
+      "(Rally: ",
       ")"
     ]
   },
   "shadowverse:MonochromeEndgame": {
-    "NAME": "黑白终局",
-    "DESCRIPTION": " 英勇之王·伊梅拉 NL 高雅女王·玛格娜丝 NL 抉择 \b召唤一个到场上. NL 消耗 .",
-    "UPGRADE_DESCRIPTION": "召唤 英勇之王·伊梅拉 、 高雅女王·玛格娜丝 . NL 消耗 ."
+    "NAME": "Monochrome Endgame",
+    "DESCRIPTION": " Choose : \b Summon Queen_Hemera_the_Brave NL or NL Queen_Magnus_the_Graceful . NL Exhaust .",
+    "UPGRADE_DESCRIPTION": "Summon Queen_Hemera_the_Brave NL and NL Queen_Magnus_the_Graceful . NL Exhaust ."
   },
   "shadowverse:QueenHemera_Card": {
-    "NAME": "英勇之王·伊梅拉",
-    "DESCRIPTION": "召唤 英勇之王·伊梅拉 . NL 消耗 ."
+    "NAME": "Queen Hemera the Brave",
+    "DESCRIPTION": "Summon Queen_Hemera_the_Brave . NL Exhaust ."
   },
   "shadowverse:QueenMagnus_Card": {
-    "NAME": "高雅女王·玛格娜丝",
-    "DESCRIPTION": "召唤 高雅女王·玛格娜丝 . NL 消耗 ."
+    "NAME": "Queen Magnus the Graceful",
+    "DESCRIPTION": "Summon Queen_Magnus_the_Graceful . NL Exhaust ."
   },
   "shadowverse:PompousSummons": {
-    "NAME": "任性的差遣",
-    "DESCRIPTION": "抽2张牌. NL 协作 10:额外抽 !M! 张牌.",
+    "NAME": "Pompous Summons",
+    "DESCRIPTION": "Draw 2 cards. NL Rally 10: Draw !M! more cards.",
     "EXTENDED_DESCRIPTION": [
-      "（协作数:",
+      "(Rally: ",
       ")"
     ]
   },
   "shadowverse:FlyingMessengerSquirrel": {
-    "NAME": "鼯鼠传令兵",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 抽1张牌. NL 协作 10:额外抽 !M! 张牌.",
+    "NAME": "Flying Messenger Squirrel",
+    "DESCRIPTION": "Deal !D! damage. NL Draw 1 card. NL Rally 10: Draw !M! more card(s).",
     "EXTENDED_DESCRIPTION": [
-      "（协作数:",
+      "(Rally: ",
       ")"
     ]
   },
   "shadowverse:BrothersUnited": {
-    "NAME": "勇武的团结",
-    "DESCRIPTION": "自然 . NL 造成 !D! 点伤害. NL 增加一张 *那塔拉的大树 到手中. NL 协作 7:额外造成 !M! 点伤害. NL ",
+    "NAME": "Brothers United",
+    "DESCRIPTION": "Natura . NL Deal !D! damage. NL Add 1 *Naterran *Great *Tree to hand. NL Rally 7: Deal !M! more damage. NL ",
     "EXTENDED_DESCRIPTION": [
-      "（协作数:",
+      "(Rally: ",
       ")"
     ]
   },
   "shadowverse:HonorableThief": {
-    "NAME": "诚实的侠客",
-    "DESCRIPTION": "造成 !D! 点伤害, 给予 !M! 层 虚弱. NL 增加一张 *黄金之靴 到手中. NL 协作 7:升级这张牌. NL ",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害, 给予 !M! 层 虚弱. NL 增加一张 *黄金之靴 到手中.",
+    "NAME": "Honorable Thief",
+    "DESCRIPTION": "Deal !D! damage, apply !M! Weak . NL Add 1 *Gilded *Boots to hand. NL Rally 7: Upgrade this card. NL ",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage, apply !M! Weak . NL Add 1 *Gilded *Boots to hand.",
     "EXTENDED_DESCRIPTION": [
-      "（协作数:",
+      "(Rally: ",
       ")"
     ]
   },
   "shadowverse:FloralFencer": {
-    "NAME": "华丽的花园剑士",
-    "DESCRIPTION": "造成 !D! 点伤害.",
-    "UPGRADE_DESCRIPTION": "打出后解除升级 . NL 造成 !D! 点伤害. NL 召唤一个 骑士 NL 和一个 铁甲骑士 ."
+    "NAME": "Floral Fencer",
+    "DESCRIPTION": "Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Disupgrade after played. NL Deal !D! damage. NL Summon 1 Knight NL and 1 Steelclad_Knight ."
   },
   "shadowverse:SunnyDayEncounter": {
-    "NAME": "向阳的邂逅",
-    "DESCRIPTION": "自然 . NL 抽 !M! 张攻击牌. NL 如果手牌中有 自然 牌则 NL 增加一张 *那塔拉的大树 到手中. NL 协作 7:获得 [E] . NL ",
+    "NAME": "Sunny Day Encounter",
+    "DESCRIPTION": "Natura . NL Draw !M! Attack card. NL If you have Natura card in hand, add 1 *Naterran *Great *Tree to hand. NL Rally 7: Gain [E] . NL ",
     "EXTENDED_DESCRIPTION": [
-      "（协作数:",
+      "(Rally: ",
       ")"
     ]
   },
   "shadowverse:WarriorWing": {
-    "NAME": "白翼战神·埃特尔",
-    "DESCRIPTION": "选择抽牌堆中的1张攻击牌或能力牌, 将其置入手牌.",
-    "UPGRADE_DESCRIPTION": "打出后解除升级 . NL 选择抽牌堆中的1张攻击牌或能力牌, 将其置入手牌. NL 使所有随从获得+0/+1."
+    "NAME": "Aether of the Warrior Wing",
+    "DESCRIPTION": "Select 1 Attack or Power card from your draw pile to put into hand.",
+    "UPGRADE_DESCRIPTION": "Disupgrade after played. NL Select 1 Attack or Power card from your draw pile to put into hand. NL All *Followers gain +0/+1."
   },
   "shadowverse:Alyaska": {
-    "NAME": "战争商人·阿尔亚斯卡",
-    "DESCRIPTION": "获得1层 能力伤害无效 . NL 造成 !D! 点伤害. NL 抽到时将一张 *进化点 置入手牌.",
-    "UPGRADE_DESCRIPTION": "打出后解除升级 . NL 获得1层 能力伤害无效 . NL 造成 !D! 点伤害. NL 将一张 *究极兵器 置入手牌."
+    "NAME": "Alyaska, War Hawker",
+    "DESCRIPTION": "Gain 1 Power_Damage_Immune . NL Deal !D! damage. NL Add 1 *Evolution *Point to hand whenever this card is drawn.",
+    "UPGRADE_DESCRIPTION": "Disupgrade after played. NL Gain 1 Power_Damage_Immune . NL Deal !D! damage. NL Add 1 *Exterminus *Weapon to hand."
   },
   "shadowverse:ExterminusWeapon": {
-    "NAME": "究极兵器",
-    "DESCRIPTION": "可升级任意次. NL 保留 NL 对所有敌人造成 !D! 点伤害. NL 保留时升级. NL 消耗 ."
+    "NAME": "Exterminus Weapon",
+    "DESCRIPTION": "Can be upgraded multiple times. NL Retain NL Deal !D! damage to ALL enemies. NL Upgrade whenever Retain . NL Exhaust ."
   },
   "shadowverse:RadicalGunslinger": {
-    "NAME": "激进的神枪手",
-    "DESCRIPTION": "给予 !M! 层 易伤, 造成 !D! 点伤害.",
-    "UPGRADE_DESCRIPTION": "打出后解除升级 . NL 给予 !M! 层 易伤, 造成 !D! 点伤害. NL 增加一张 *顺从的骏马 到手中."
+    "NAME": "Radical Gunslinger",
+    "DESCRIPTION": "Apply !M! Vulnerable , Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Disupgrade after played. NL Apply !M! Vulnerable , Deal !D! damage. NL Add 1 *Dutiful *Steed to hand."
   },
   "shadowverse:Mirin": {
-    "NAME": "武士梦想家·米琳",
-    "DESCRIPTION": "升级时降低奥义数. NL 造成 !D! 点伤害. NL 奥义 3:额外造成一次伤害. NL 解放奥义 6:再额外造成一次伤害.",
+    "NAME": "Mirin, Samurai Dreamer",
+    "DESCRIPTION": "Deal !D! damage. NL Skybound_Art 3: Repeat 1 time. NL Super_Skybound_Art 6: Repeat 1 more time.",
     "EXTENDED_DESCRIPTION": [
-      "造成 !D! 点伤害. NL 奥义",
-      ":额外造成一次伤害. NL 解放奥义",
-      ":再额外造成一次伤害."
+      "Deal !D! damage. NL Skybound_Art",
+      ": Repeat 1 time. NL Super_Skybound_Art",
+      ": Repeat 1 more time."
     ]
   },
   "shadowverse:Seofon": {
-    "NAME": "天星剑王·席耶提",
-    "DESCRIPTION": "升级时降低奥义数. NL 造成 !D! 点伤害, 抽1张牌. NL 奥义 3:升级所有卡牌. NL 限定 解放奥义 6:获得1层 无实体 .",
+    "NAME": "Seofon, Star Sword Sovereign",
+    "DESCRIPTION": "Deal !D! damage, draw 1 card. NL Skybound_Art 3: Upgrade ALL cards in hand. NL Limit Super_Skybound_Art 6: Gain 1 Intangible .",
     "EXTENDED_DESCRIPTION": [
-      "造成 !D! 点伤害, 抽1张牌. NL 奥义 ",
-      ":升级所有卡牌. NL 限定 解放奥义 ",
-      ":获得1层 无实体 ."
+      "Deal !D! damage, draw 1 card. NL Skybound_Art ",
+      ": Upgrade ALL cards in hand. NL Limit Super_Skybound_Art ",
+      ": Gain 1 Intangible ."
     ]
   },
   "shadowverse:Eahta": {
-    "NAME": "刀神·奥克托",
-    "DESCRIPTION": "升级时降低奥义数. NL 造成 !D! 点伤害两次. NL 奥义 3:使手牌中所有皇家护卫攻击牌本回合中消耗-2. NL 限定 解放奥义 9:使所有皇家护卫攻击牌本局对战中消耗-2.",
+    "NAME": "Eahta, God of the Blade",
+    "DESCRIPTION": "Deal !D! damage twice. NL Skybound_Art 3: All Swordcraft Attack cards in hand -2 cost this turn. NL Limit Super_Skybound_Art 9: All Swordcraft Attack cards -2 cost this combat.",
     "EXTENDED_DESCRIPTION": [
-      "造成 !D! 点伤害两次. NL 奥义 ",
-      ":使手牌中所有皇家护卫攻击牌本回合中消耗-2. NL 限定 解放奥义 ",
-      ":使所有皇家护卫攻击牌本局对战中消耗-2."
+      "Deal !D! damage twice. NL Skybound_Art ",
+      " :All Swordcraft Attack cards in hand -2 cost this turn. NL Limit Super_Skybound_Art ",
+      " :All Swordcraft Attack cards -2 cost this combat."
     ]
   },
   "shadowverse:StrokeOfConviction": {
-    "NAME": "信念之剑闪",
-    "DESCRIPTION": "抉择 NL 召唤2个 迅捷的剑士 、 NL 随机对一个敌人造成 !D! 点伤害、 NL 使所有随从获得+1/+1. NL 消耗 .",
-    "UPGRADE_DESCRIPTION": "召唤2个 迅捷的剑士 ,  NL 随机对一个敌人造成 !D! 点伤害,  NL 使所有随从获得+1/+1. NL 消耗 ."
+    "NAME": "Stroke of Conviction",
+    "DESCRIPTION": "Choose : NL Summon 2 *Quickblader , NL Deal !D! damage to random enemy. NL All *Followers gain +1/+1. NL Enhance 2 \bActive all instead of choosing one. NL Exhaust .",
+    "UPGRADE_DESCRIPTION": "Choose : NL Summon 2 *Quickblader , NL Deal !D! damage to random enemy. NL All *Followers gain +1/+1. NL Enhance 2 \bActive all instead of choosing one."
   },
   "shadowverse:ErikasSleight": {
-    "NAME": "艾莉卡的剑技",
-    "DESCRIPTION": "召唤2个 迅捷的剑士 . NL 消耗 ."
+    "NAME": "Erika's Sleight",
+    "DESCRIPTION": "Summon 2 Quickblader . NL Exhaust ."
   },
   "shadowverse:MistolinasSwordplay": {
-    "NAME": "米丝特莉娜的剑刃",
-    "DESCRIPTION": "随机对一个敌人造成 !D! 点伤害. NL 消耗 ."
+    "NAME": "Mistolina's Swordplay",
+    "DESCRIPTION": "Deal !D! damage to random enemy. NL Exhaust ."
   },
   "shadowverse:BayleonsCommand": {
-    "NAME": "贝里昂的号令",
-    "DESCRIPTION": "使所有随从获得+1/+1. NL 消耗 ."
+    "NAME": "Bayleon's Command",
+    "DESCRIPTION": "All *Followers gain +1/+1. NL Exhaust ."
   },
   "shadowverse:FrontlineInstructor": {
-    "NAME": "前线教官",
-    "DESCRIPTION": "获得 !B! 点 格挡 , 使最右侧随从获得 NL +1/+0. NL 限定 协作 10:改为使所有随从获得+1/+1.",
+    "NAME": "Frontline Instructor",
+    "DESCRIPTION": "Gain !B! Block , the rightmost *Follower gain NL +1/+0. NL Limit Rally 10: All *Followers gain +1/+1 instead.",
     "EXTENDED_DESCRIPTION": [
-      "（协作数:",
+      "(Rally:",
       ")"
     ]
   },
   "shadowverse:RoyalBanner": {
-    "NAME": "皇家御用战旗",
-    "DESCRIPTION": "倒计时 !M! \b每召唤一个随从, 使其获得+1/+0."
+    "NAME": "Royal Standard",
+    "DESCRIPTION": "Countdown !M! : \bWhenever you summon a *Follower , it gains +1/+0."
   },
   "shadowverse:LuxbladeArriet": {
-    "NAME": "煌剑战士·亨莉雅妲",
-    "DESCRIPTION": "多次升级以获得效果. NL +1:获得 !B! 点 格挡 ,  保留 . NL +2:获得 [E] [E] ,  固有 . NL +3:获得1点 力量 和 敏捷 . NL +4:抽牌到7张. NL +5:回复 !M! 点生命值. NL Gain !M! block , Exhaust .",
+    "NAME": "Luxblade Arriet",
+    "DESCRIPTION": "Can be upgraded multiple times. NL +1: Gain !B! Block , Retain . NL +2: Gain [E] [E] , Innate . NL +3: Gain 1 Strength and Dexterity . NL +4: Draw cards until 7 in hand. NL +5: Heal !M! HP. NL Gain !M! Block , Exhaust .",
     "EXTENDED_DESCRIPTION": [
-      "获得 !B! 点 格挡 ,  保留 . NL ",
-      "获得 [E] [E] ,  固有 . NL ",
-      "获得1点 力量 和 敏捷 . NL ",
-      "抽牌到7张. NL ",
-      "回复 !M! 点生命值. NL ",
-      "Gain !M! block , Exhaust ."
+      "Gain !B! Block , Retain . NL ",
+      "Gain [E] [E] , Innate . NL ",
+      "Gain 1 Strength and Dexterity . NL ",
+      "Draw cards until 7 in hand. NL ",
+      "Heal !M! HP. NL ",
+      "Gain !M! Block , Exhaust ."
     ]
   },
   "shadowverse:Valdain2": {
-    "NAME": "森林之影·拜迪",
-    "DESCRIPTION": "自然 . NL 融合 : *纳塔拉的大树 . NL 每融合1张随机获得以下未获得的效果: NL (1)伤害翻倍. NL (2)打出时获得 !B! 点 格挡 , 1点 力量 和 敏捷 . NL (3)打出时回复5点生命. NL 对随机敌人造成 !M! 点伤害, 如果有 那塔拉的大树 再造成一次. NL 造成 !D! 点伤害.",
+    "NAME": "Valdain, Forest Shadow",
+    "DESCRIPTION": "Natura . NL Fusion : *Naterran *Great *Tree . NL For each card fused to this card, randomly gain 1 of the effects that haven't gained: NL (1)Double the damage. NL (2)Gain !B! Block , 1 Strength and Dexterity . NL (3)Heal 5 HP. NL Deal !M! damage to random enemy, repeat once if you have the Power: Naterran_Great_Tree . NL Deal !D! damage.",
     "EXTENDED_DESCRIPTION": [
-      " 伤害翻倍. NL ",
-      " 打出时获得 !B! 点 格挡 , 1点 力量 和 敏捷 . NL ",
-      " 打出时回复5点生命. NL  ",
-      "对随机敌人造成 !M! 点伤害, 如果有 那塔拉的大树 再造成一次. NL 造成 !D! 点伤害."
+      " Double the damage. NL ",
+      " Gain !B! Block , 1 Strength and Dexterity . NL ",
+      " Heal 5 HP. NL  ",
+      " Deal !M! damage to random enemy, repeat once if you have the Power: Naterran_Great_Tree . NL Deal !D! damage."
     ]
   },
   "shadowverse:Charlotta": {
-    "NAME": "小小的圣骑士·夏绿蒂",
-    "DESCRIPTION": "获得 !B! 点 格挡 .",
-    "UPGRADE_DESCRIPTION": "打出后解除升级 . NL 获得 !B! 点 格挡 , 获得 !M! 点 敏捷 . NL 获得1层 能力伤害无效 ."
+    "NAME": "Charlotta, Tiny Justice",
+    "DESCRIPTION": "Gain !B! Block .",
+    "UPGRADE_DESCRIPTION": "Disupgrade after played. NL Gain !B! Block , gain !M! Dexterity . NL Gain 1 Power_Damage_Immune ."
   },
   "shadowverse:Latham": {
-    "NAME": "高洁的骑士·雷瑟姆",
-    "DESCRIPTION": "每当你使用一张攻击牌, 召唤1个 骑士 . NL 此效果无法叠加. NL 虚无",
-    "UPGRADE_DESCRIPTION": "每当你使用一张攻击牌, 召唤1个 骑士 . NL 此效果无法叠加."
+    "NAME": "Latham, Honorable Knight",
+    "DESCRIPTION": "Whenever you play an Attack card, summon 1 Knight . NL This effect is not stackable. NL Ethereal",
+    "UPGRADE_DESCRIPTION": "Whenever you play an Attack card, summon 1 Knight . NL This effect is not stackable."
   },
   "shadowverse:Alwida": {
-    "NAME": "海贼女王·雅尔莉妲",
-    "DESCRIPTION": "每回合限 !M! 次, 每当你使用 财宝牌 , 召唤1个 航海家 和1个 维京战士 . NL 虚无",
-    "UPGRADE_DESCRIPTION": "每回合限 !M! 次, 每当你使用 财宝牌 , 召唤1个 航海家 和1个 维京战士 ."
+    "NAME": "Alwida, Pirate Queen",
+    "DESCRIPTION": " !M! time per turn, whenever you play a Loot , summon 1 Pirate and 1 Viking . NL Ethereal",
+    "UPGRADE_DESCRIPTION": " !M! time per turn, whenever you play a Loot , summon 1 Pirate and 1 Viking ."
   },
   "shadowverse:Patrick": {
-    "NAME": "战犀骑士·帕特里克",
-    "DESCRIPTION": "自然 . NL 获得 !B! 点 格挡 , 如果你的随从个数不多于1个, 获得 [E] [E] . NL 抽1张 自然 牌, 增加一张 *那塔拉的大树 到手中."
+    "NAME": "Patrick, Rhiceros Knight",
+    "DESCRIPTION": "Natura . NL Gain !B! Block . If you have no more than 1 *Follower , gain [E] [E] . NL Draw 1 Natura card, add 1 *Naterran *Great *Tree to hand."
   },
   "shadowverse:Johann": {
-    "NAME": "纯铁英雄·约翰",
-    "DESCRIPTION": "机械 . NL 造成 !D! 点伤害.本回合中使用机械牌时获得 !M! 点 格挡 . NL 每打出一张 机械 牌耗能-1.",
-    "UPGRADE_DESCRIPTION": "机械 . NL 造成 !D! 点伤害.本回合中使用机械牌时获得 !M! 点 格挡 . NL 每打出一张 机械 牌耗能-1. NL 保留"
+    "NAME": "Johann, Ironforged Hero",
+    "DESCRIPTION": "Machina . NL Deal !D! damage. Whenever you play a Machina card this turn, gain !M! Block . NL Whenever you play a Machina card, -1 cost.",
+    "UPGRADE_DESCRIPTION": "Machina . NL Deal !D! damage. Whenever you play a Machina card this turn, gain !M! Block . NL Whenever you play a Machina card, -1 cost. NL Retain"
   },
   "shadowverse:Grayson": {
-    "NAME": "迅猛驭剑士·格雷森",
-    "DESCRIPTION": "机械 . NL 每当打出 机械 牌时, 对全体敌人造成 !M! 点伤害. NL 抽到时, 本回合中每当打出 机械 牌时, 获得 [E] ."
+    "NAME": "Grayson, Rocket Blader",
+    "DESCRIPTION": "Machina . NL Whenever you play a Machina card, deal !M! damage to ALL enemies. NL Whenever been drawn, gain [E] for every Machina card you play this turn."
   },
   "shadowverse:Albert": {
-    "NAME": "雷维翁英雄·阿尔贝尔",
-    "DESCRIPTION": "雷维翁 . NL 造成 !D! 点伤害. NL 爆能强化 3 \b额外造成一次伤害, 将所有抽牌堆、弃牌堆中的 雷维翁 攻击牌置入手牌, 这些牌下次打出消耗变为0."
+    "NAME": "Albert, Levin Champion",
+    "DESCRIPTION": "Levin . NL Deal !D! damage. NL Enhance 3: \bRepeat once. Put ALL Levin Attack cards in your draw pile and discard pile into hand, they costs 0 until played."
   },
   "shadowverse:Albert2": {
-    "NAME": "雷灭卿·阿尔贝尔",
-    "DESCRIPTION": "雷维翁 . NL 造成 !D! 点伤害. NL 破坏 1张卡, 伤害增加6点. NL 爆能强化 3 \b额外造成一次伤害, 破坏 改为 消耗 手中的攻击牌, 伤害增加6点, 给予全体敌人2层 易伤 和 虚弱 ."
+    "NAME": "Albert, Thunderous Doom",
+    "DESCRIPTION": "Levin . NL Deal !D! damage. NL Destroy 1 card, damage +6. NL Enhance 3: \bDeal damage 1 more time, Exhaust the Attack cards in hand instead of Destroy 1, damage +6, apply 2 Vulnerable and Weak to ALL enemies."
   },
   "shadowverse:LevinScholar": {
-    "NAME": "雷维翁的探索者",
-    "DESCRIPTION": "雷维翁 . NL 获得 !B! 点 格挡 . NL 抽 !M! 张雷维翁牌并使其在本回合中 保留 ."
+    "NAME": "Levin Scholar",
+    "DESCRIPTION": "Levin . NL Gain !B! Block . NL Draw !M! Levin cards and Retain them this turn."
   },
   "shadowverse:GloriousCore": {
-    "NAME": "荣耀之核",
-    "DESCRIPTION": "机械 . NL 下次使用 *进化点 时, 使所有随从获得+1/+1. NL 爆能强化 2 \b将1张进化点置入手牌.",
-    "UPGRADE_DESCRIPTION": "机械 . NL 下次使用 *进化点 时, 使所有随从获得+1/+1. NL 爆能强化 2 \b将1张进化点置入手牌, 获得 [E] ."
+    "NAME": "Glorious Core",
+    "DESCRIPTION": "Machina . NL Next time you play *Evolution *Point , ALL *Followers gain +1/+1. NL Enhance 2: \bAdd 1 *Evolution *Point to hand.",
+    "UPGRADE_DESCRIPTION": "Machina . NL Next time you play *Evolution *Point , ALL *Followers gain +1/+1. NL Enhance 2: \bAdd 2 *Evolution *Point+ to hand, gain [E] ."
   },
   "shadowverse:LevinBeastmaster": {
-    "NAME": "雷维翁魔兽使",
-    "DESCRIPTION": "雷维翁 . NL 获得 !B! 点 格挡 . NL 将1张圣兽白虎置入手牌.",
-    "UPGRADE_DESCRIPTION": "雷维翁 . NL 打出后解除升级 . NL 获得 !B! 点 格挡 . NL 将3张圣兽白虎置入手牌."
+    "NAME": "Levin Beastmaster",
+    "DESCRIPTION": "Levin . NL Gain !B! Block . NL Add 1 *White *Tiger to hand.",
+    "UPGRADE_DESCRIPTION": "Levin . NL Disupgrade after played. NL Gain !B! Block . NL Add 3 *White *Tiger to hand."
   },
   "shadowverse:WhiteTiger": {
-    "NAME": "圣兽白虎",
-    "DESCRIPTION": "雷维翁 . NL 获得 !B! 点 格挡 . NL 消耗 . NL 保留 ."
+    "NAME": "White Tiger",
+    "DESCRIPTION": "Levin . NL Gain !B! Block . NL Exhaust . NL Retain ."
   },
   "shadowverse:Jeno": {
-    "NAME": "雷维翁猛者·杰诺",
-    "DESCRIPTION": "雷维翁 . NL 雷维翁 卡牌造成的伤害和获得的 格挡 增加 !M! 点."
+    "NAME": "Jeno, Levin Stalwart",
+    "DESCRIPTION": "Levin . NL Damage dealt and Block gained for Levin cards increase by !M! ."
   },
   "shadowverse:LevinArcher": {
-    "NAME": "雷维翁弓箭手",
-    "DESCRIPTION": "雷维翁 . NL 造成 !D! 点伤害, 给予 !M! 层 易伤.",
-    "UPGRADE_DESCRIPTION": "雷维翁 . NL 打出后解除升级 . NL 造成 !D! 点伤害, 给予 !M! 层 易伤, 如果手牌中有其他 雷维翁 牌, 重复一次."
+    "NAME": "Levin Archer",
+    "DESCRIPTION": "Levin . NL Deal !D! damage, Apply !M! Vulnerable.",
+    "UPGRADE_DESCRIPTION": "Levin . NL Disupgrade after played. NL Deal !D! damage, apply !M! Vulnerable. If you have other Levin card in hand, repeat once."
   },
   "shadowverse:Lounes": {
-    "NAME": "雷维翁见习兵·璐涅丝",
-    "DESCRIPTION": "雷维翁 . NL 造成 !D! 点伤害, 手牌中每有1张 雷维翁 牌, 获得1次 !B! 点 格挡 . NL 爆能强化 1 \b再造成一次伤害.",
+    "NAME": "Lounes, Levin Apprentice",
+    "DESCRIPTION": "Levin . NL Deal !D! damage. Gain !B! Block for each Levin card in hand. NL Enhance 1: \bDeal damage 1 more time.",
     "EXTENDED_DESCRIPTION": [
-      "（其他雷维翁卡牌数:",
+      "(Other Levin cards number: ",
       ")"
     ]
   },
   "shadowverse:Cybercannoneer": {
-    "NAME": "加农炮破坏者",
-    "DESCRIPTION": "机械 . NL 造成 !D! 点伤害. NL 爆能强化 2 \b将 !M! 张 *生产机械 置入手牌."
+    "NAME": "Cybercannoneer",
+    "DESCRIPTION": "Machina . NL Deal !D! damage. NL Enhance 2: \bAdd !M! *Assembly *Droids to hand."
   },
   "shadowverse:StampedingFortress": {
-    "NAME": "虐袭城塞",
-    "DESCRIPTION": "机械 . NL 造成 !D! 点伤害, 获得 !B! 点 格挡 .",
-    "UPGRADE_DESCRIPTION": "机械 . NL 打出后解除升级 . NL 造成 !D! 点伤害, 获得 !B! 点 格挡 . NL 如果手牌中有其他 机械 牌, 将 !M! 张 *生产机械 置入手牌."
+    "NAME": "Stampeding Fortress",
+    "DESCRIPTION": "Machina . NL Deal !D! damage, Gain !B! Block .",
+    "UPGRADE_DESCRIPTION": "Machina . NL Disupgrade after played. NL Deal !D! damage, gain !B! Block . NL If you have other Machina card in hand, add !M! *Assembly *Droids to hand."
   },
   "shadowverse:MeetTheLevinSisters": {
-    "NAME": "雷维翁姐妹登场！",
-    "DESCRIPTION": "雷维翁 . NL 抉择 NL 从 *雷维翁副团长·玛姆 、 *雷维翁魔法师·蜜姆 、 *雷维翁武斗家·梅姆 中选择1张加入手中. NL 消耗.",
-    "UPGRADE_DESCRIPTION": "雷维翁 . NL 将 *雷维翁副团长·玛姆 、 *雷维翁魔法师·蜜姆 、 *雷维翁武斗家·梅姆 加入手牌. NL 消耗."
+    "NAME": "Meet The Levin Sisters!",
+    "DESCRIPTION": "Levin . NL Choose : NL Add 1 of *Mina, *Levin *Vice *Leader , *Mona, *Levin *Mage or *Mena, *Levin *Duelist to hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Levin . NL Add *Mina, *Levin *Vice *Leader , *Mona, *Levin *Mage and *Mena, *Levin *Duelist to hand. NL Exhaust."
   },
   "shadowverse:Mina": {
-    "NAME": "雷维翁副团长·玛姆",
-    "DESCRIPTION": "雷维翁 . NL 造成 !D! 点伤害, 选择抽牌堆中的1张 雷维翁 牌, 将其置入手牌并在本回合中 保留 ."
+    "NAME": "Mina, Levin Vice Leader",
+    "DESCRIPTION": "Levin . NL Deal !D! damage. Select 1 Levin card in your draw pile to put into hand and Retain this turn."
   },
   "shadowverse:Mona": {
-    "NAME": "雷维翁魔法师·蜜姆",
-    "DESCRIPTION": "雷维翁 . NL 获得 !B! 点 格挡 , 获得 [E] . NL 如果手牌中有其他 雷维翁 牌, 再获得 [E] ."
+    "NAME": "Mona, Levin Mage",
+    "DESCRIPTION": "Levin . NL Gain !B! Block , gain [E] . NL If you have other Levin card in hand, gain extra [E] ."
   },
   "shadowverse:Mena": {
-    "NAME": "雷维翁武斗家·梅姆",
-    "DESCRIPTION": "雷维翁 . NL 造成 !D! 点伤害. NL 如果手牌中有其他 雷维翁 牌, 给予 !M! 层 易伤 和 虚弱."
+    "NAME": "Mena, Levin Duelist",
+    "DESCRIPTION": "Levin . NL Deal !D! damage. NL If you have other Levin card in hand, apply !M! Vulnerable and Weak."
   },
   "shadowverse:Nahtnaught": {
-    "NAME": "咒箱女王·娜哈特·娜哈特",
-    "DESCRIPTION": "将1张 *暴君谕令 置入手牌. NL 爆能强化 2 \b生成2个 娜哈特的私兵 到敌方. NL 消耗 .",
-    "UPGRADE_DESCRIPTION": "固有 . NL 将1张 *暴君谕令 置入手牌. NL 爆能强化 2 \b生成2个 娜哈特的私兵 到敌方. NL 消耗 ."
+    "NAME": "Nahtnaught, Cursed Queen",
+    "DESCRIPTION": "Add 1 *Tyrant's *Order to hand. NL Enhance 2: \bSummon 2 Naht's_Henchmen as enemies. NL Exhaust .",
+    "UPGRADE_DESCRIPTION": "Innate . NL Add 1 *Tyrant's *Order to hand. NL Enhance 2: \bSummon 2 Naht's_Henchmen as enemies. NL Exhaust ."
   },
   "shadowverse:TyrantsOrder": {
-    "NAME": "暴君谕令",
-    "DESCRIPTION": "选择1个敌人, 对其他敌人造成等同于这个敌人生命值的伤害. NL （上限 !M! 点）"
+    "NAME": "Tyrant's Order",
+    "DESCRIPTION": "Select 1 enemy, deal damage equals to the HP of this enemy to ALL other enemies. NL (Maximum !M! damage)"
   },
   "shadowverse:Leonidas": {
-    "NAME": "列奥尼达",
-    "DESCRIPTION": "三回合后, 每召唤一个随从, 使其获得+ !M! /+ !M! . NL 失去生命时减少1回合. NL 虚无 .",
-    "UPGRADE_DESCRIPTION": "三回合后, 每召唤一个随从, 使其获得+ !M! /+ !M! . NL 失去生命时减少1回合."
+    "NAME": "Leonidas",
+    "DESCRIPTION": "After 3 turns, whenever you summon a *Follower , it gains + !M! /+ !M! . NL Reduce 1 turn whenever you lose HP. NL Ethereal .",
+    "UPGRADE_DESCRIPTION": "After 3 turns, whenever you summon a *Follower , it gains + !M! /+ !M! . NL Reduce 1 turn whenever you lose HP."
   },
   "shadowverse:LevinJustice": {
-    "NAME": "雷维翁的正义",
-    "DESCRIPTION": "雷维翁 . NL 造成本局对战中已打出的 雷维翁 卡牌两倍的伤害. NL 将 *雷维翁公爵·尤里乌斯 置入手牌.",
-    "UPGRADE_DESCRIPTION": "雷维翁 . NL 造成本局对战中已打出的 雷维翁 卡牌两倍的伤害. NL 将 *雷维翁公爵·尤里乌斯 置入手牌, 其消耗变为0.",
+    "NAME": "Levin Justice",
+    "DESCRIPTION": "Levin . NL Deal damage equals to double the Levin cards you played this combat. NL Add 1 *Yurius, *Levin *Duke to hand.",
+    "UPGRADE_DESCRIPTION": "Levin . NL Deal damage equals to double the Levin cards you played this combat. NL Add 1 *Yurius, *Levin *Duke to hand, it costs 0 to play.",
     "EXTENDED_DESCRIPTION": [
-      "（造成",
-      "点伤害)"
+      "(Deal ",
+      " damage)"
     ]
   },
   "shadowverse:YuriusLevinDuke": {
-    "NAME": "雷维翁公爵·尤里乌斯",
-    "DESCRIPTION": "雷维翁 . NL 获得 !M! 层 荆棘 ."
+    "NAME": "Yurius, Levin Duke",
+    "DESCRIPTION": "Levin . NL Gain !M! Thorns ."
   },
   "shadowverse:CaptainWalfrid": {
-    "NAME": "骑空团总长·瓦佛利特",
-    "DESCRIPTION": "每召唤一个随从, 使其获得+ !M! /+ !M! . NL 将一张复制品置入弃牌堆."
+    "NAME": "Captain Walfrid",
+    "DESCRIPTION": "Whenever you summon a *Follower , it gains + !M! /+ !M! . NL Put 1 copy of this card into discard pile."
   },
   "shadowverse:Walfrid": {
-    "NAME": "苍空总长·瓦佛利特",
-    "DESCRIPTION": "如果抽牌堆没有非打击皇家护卫攻击牌以外的卡, 每召唤一个随从, 使其获得+ !M! /+ !M! . NL 将一张复制品置入弃牌堆."
+    "NAME": "Walfrid, Sky Captain",
+    "DESCRIPTION": "If you only have non-Strike Swordcraft Attack cards in your draw pile, whenever you summon a *Follower , it gains + !M! /+ !M! . NL Put 1 copy of this card into discard pile."
   },
   "shadowverse:Reinhardt": {
-    "NAME": "改革者·莱恩哈尔特",
-    "DESCRIPTION": "受到攻击时, 获得 !M! 点 力量 和 敏捷 .受到伤害后失去这个效果并回复 5 点生命值. NL 虚无 .",
-    "UPGRADE_DESCRIPTION": "受到攻击时, 获得 !M! 点 力量 和 敏捷 .受到伤害后失去这个效果并回复 5 点生命值."
+    "NAME": "Reinhardt, the Deathless",
+    "DESCRIPTION": "Whenever being attacked, gain !M! Strength and Dexterity . If you take any unblock damage, lose this effect and heal 5 HP. NL Ethereal .",
+    "UPGRADE_DESCRIPTION": "Whenever being attacked, gain !M! Strength and Dexterity . If you take any unblock damage, lose this effect and heal 5 HP."
   },
   "shadowverse:Garven": {
-    "NAME": "终击铁腕·加尔瓦",
-    "DESCRIPTION": "造成 !D! 点伤害 !M! 次. NL 本局对战中每打出过一个兵种（ 机械 、 自然 、 雷维翁 、 马纳历亚 、 创造物 ）的卡牌便额外造成一次伤害.",
+    "NAME": "Garven, Iron Dreadnought",
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Can deal 1 more time for each different Traits ( Machina , Natura , Levin , Mysteria , AF ) you played this combat.",
     "EXTENDED_DESCRIPTION": [
-      "（造成伤害次数:",
-      ")"
+      "(Deal damage for ",
+      " times)"
     ]
   },
   "shadowverse:Kagemitsu": {
-    "NAME": "不败剑圣·景光",
-    "DESCRIPTION": "可以升级任意次. NL 造成 !D! 点伤害. NL 消耗 . NL 斩杀 时, 升级此牌."
+    "NAME": "Kagemitsu, Matchless Blade",
+    "DESCRIPTION": "Can be upgraded multiple times. NL Deal !D! damage. NL Exhaust . NL If Fatal , upgrade this card."
   },
   "shadowverse:Alexander": {
-    "NAME": "亚历山大",
-    "DESCRIPTION": "造成 !D! 点伤害 !M! 次. NL 虚无 .",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 !M! 次."
+    "NAME": "Alexander",
+    "DESCRIPTION": "Deal !D! damage for !M! times. NL Ethereal .",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage for !M! times."
   },
   "shadowverse:MirrorImage": {
-    "NAME": "分身之术",
-    "DESCRIPTION": "复制手牌中一张攻击牌或能力牌, 其获得 消耗 和 虚无 ."
+    "NAME": "Mirror Image",
+    "DESCRIPTION": "Copy 1 Attack or Power card in hand. The copy gain Exhaust and Ethereal ."
   },
   "shadowverse:Valse": {
-    "NAME": "魔导狙击手·瓦路兹",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 抉择 NL 从 *净化之圣弹 、 *毁灭之魔弹 中选择1张加入手中.",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害. NL 抉择 NL 从 *净化之圣弹 、 *毁灭之魔弹 中选择1张加入手中, 并使其获得 保留 ."
+    "NAME": "Valse, Magical Marksman",
+    "DESCRIPTION": "Deal !D! damage. NL Choose : NL Add 1 *Holy *Purebomb or *Fatal *Spellbomb to hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Choose : NL Add 1 *Holy *Purebomb or *Fatal *Spellbomb to hand, it gains Retain ."
   },
   "shadowverse:HolyPurebomb": {
-    "NAME": "净化之圣弹",
-    "DESCRIPTION": "消耗 手牌中所有诅咒牌和状态牌. NL 使目标失去一种 正面效果 . NL 消耗 ."
+    "NAME": "Holy Purebomb",
+    "DESCRIPTION": "Exhaust ALL Curse and Status card in hand. NL Enemy lose 1 buff . NL Exhaust ."
   },
   "shadowverse:FatalSpellbomb": {
-    "NAME": "毁灭之魔弹",
-    "DESCRIPTION": "造成 !D! 点体力流失. NL 消耗 ."
+    "NAME": "Fatal Spellbomb",
+    "DESCRIPTION": "Enemy loses !D! HP. NL Exhaust ."
   },
   "shadowverse:Ernesta": {
-    "NAME": "武器商人·艾尔涅斯塔",
-    "DESCRIPTION": "协作 10:将1张 *恐惧猎犬 加入手牌.",
-    "UPGRADE_DESCRIPTION": "打出后解除升级 . NL 选择1张手牌, 将其消耗, 抽1张牌.",
+    "NAME": "Ernesta, Weapons Hawker",
+    "DESCRIPTION": "Rally 10: Add 1 *Dread *Hound to hand.",
+    "UPGRADE_DESCRIPTION": "Disupgrade after played. NL Select 1 card in hand to Exhaust , draw 1 card.",
     "EXTENDED_DESCRIPTION": [
-      "（协作数:",
+      "(Rally: ",
       ")"
     ]
   },
   "shadowverse:DreadHound": {
-    "NAME": "恐惧猎犬",
-    "DESCRIPTION": "造成 !D! 点体力流失, 获得 !B! 点 格挡 . NL 消耗 ."
+    "NAME": "Dread Hound",
+    "DESCRIPTION": "Gain !B! Block . Enemy loses !D! HP. NL Exhaust ."
   },
   "shadowverse:Ilmisuna": {
-    "NAME": "动乱商人·伊尔米斯娜",
-    "DESCRIPTION": "获得 !B! 点 格挡 . NL 协作 10:抽到时将一张 *进化点 置入手牌.",
-    "UPGRADE_DESCRIPTION": "打出后解除升级 . NL 获得 !B! 点 格挡 . NL 选择1张手牌, 将其消耗, 抽1张牌.",
-    "EXTENDED_DESCRIPTION": [
-      "（协作数:",
-      ")"
-    ]
+    "NAME": "Ilmisuna, Arms Dealer",
+    "DESCRIPTION": "Gain !B! Block . NL Select 1 card in hand to Exhaust, draw 1 card.",
+    "UPGRADE_DESCRIPTION": "Disupgrade after played. NL Deal !D! damage times equal to the number of your *Followers ."
   },
   "shadowverse:MasterDealer": {
-    "NAME": "首席商贩·阿尔亚斯卡",
-    "DESCRIPTION": "获得 !B! 点 格挡 . NL 选择1张手牌, 消耗其余的牌, 抽等量的牌."
+    "NAME": "Alyaska, Master Dealer",
+    "DESCRIPTION": "Gain !B! Block . NL Select 1 card in hand, Exhaust ALL other cards in hand, draw cards equals to the cards you Exhaust ."
   },
   "shadowverse:EleganceInAction": {
-    "NAME": "意外失足",
-    "DESCRIPTION": "抽1张牌, 如果是攻击牌召唤1个 重装骑士 , 否则随机造成 !D! 点伤害. NL 爆能强化 1 \b改为抽 !M! 张牌."
+    "NAME": "Elegance in Action",
+    "DESCRIPTION": "Draw 1 card, summon 1 *Heavy *Knight if it's Attack card. Otherwise, deal !D! damage. NL Enhance 1: \bDraw !M! cards instead."
   },
   "shadowverse:BlackenedScripture": {
     "NAME": "漆黑法典",
@@ -3860,62 +3856,62 @@
     "DESCRIPTION": "Retain . NL Fusion :Forestcraft Attacks that is more than 1 cost. NL Whenever 2 or more cards are fused to this card at once, increase the damage by !M! and Draw 1 card. NL Deal !D! damage. NL Apply 2 Weak ."
   },
   "shadowverse:Ambush": {
-    "NAME": "潜伏",
-    "DESCRIPTION": "回合结束时不触发被动效果, 获得+1/+0."
+    "NAME": "Ambush",
+    "DESCRIPTION": "Won't trigger passive effects by the end of turn, gain +1/+0."
   },
   "shadowverse:AmbushAttack": {
-    "NAME": "攻击",
-    "DESCRIPTION": "回合结束时触发被动效果, 不能再选择是否 潜伏 ."
+    "NAME": "Attack",
+    "DESCRIPTION": "Trigger passive effects by the end of turn, cannot select Ambush again."
   },
   "shadowverse:Leod": {
-    "NAME": "夜月之刃·里欧德",
-    "DESCRIPTION": "潜伏 , 1/ !M! . NL 被动:造成攻击力的5倍伤害并失去1点体力. NL 打出时增加1张 *隐伏天诛 到手中. NL 消耗 .",
-    "UPGRADE_DESCRIPTION":"固有 · 潜伏 , 1/ !M! . NL 被动:造成攻击力的5倍伤害并失去1点体力. NL 打出时增加1张 *隐伏天诛 到手中. NL 消耗 ."
+    "NAME": "Leod, the Crescent Blade",
+    "DESCRIPTION": "Ambush , 1/ !M! . NL Add 1 *Veiled *Reckoning to hand. NL Passive: Deal damage equal to 5 times of Atk to random enemy and lose 1 Health by the end of your turn. NL Exhaust .",
+    "UPGRADE_DESCRIPTION":"Innate · Ambush , 1/ !M! . NL Add 1 *Veiled *Reckoning to hand. NL Passive: Deal damage equal to 5 times of Atk to random enemy and lose 1 Health by the end of your turn. NL Exhaust ."
   },
   "shadowverse:VeiledReckoning": {
-    "NAME": "隐伏天诛",
-    "DESCRIPTION": "保留 . NL 造成 !D! 点伤害 . NL 增加1张 *刺客 到手中. NL 消耗 ."
+    "NAME": "Veiled Reckoning",
+    "DESCRIPTION": "Retain . NL Deal !D! damage . NL Add 1 *Assassin to hand. NL Exhaust ."
   },
   "shadowverse:Assassin": {
-    "NAME": "刺客",
-    "DESCRIPTION": "使所有拥有潜伏的随从能够重新潜伏. NL 消耗 ."
+    "NAME": "Assassin",
+    "DESCRIPTION": "ALL *Followers with Ambush ability can select Ambush again. NL Exhaust ."
   },
   "shadowverse:Dualblade": {
-    "NAME": "双刀之技",
-    "DESCRIPTION": "随从的攻击可以触发2次. NL 消耗 .",
-    "UPGRADE_DESCRIPTION":"固有 . NL 随从的攻击可以触发2次. NL 消耗 ."
+    "NAME": "Dualblade Flurry",
+    "DESCRIPTION": "*Followers can attack 2 times. NL Exhaust .",
+    "UPGRADE_DESCRIPTION":"Innate . NL *Followers can attack 2 times. NL Exhaust ."
   },
   "shadowverse:Leod2": {
-    "NAME": "月光执行者·里欧德",
-    "DESCRIPTION": "潜伏 , 1/ !M! . NL 被动:造成攻击力的5倍伤害并失去1点体力. NL 回合开始时对全体敌人造成9点伤害. NL 消耗 ."
+    "NAME": "Leod, Moonlit Executioner",
+    "DESCRIPTION": "Ambush , 1/ !M! . NL Passive: Deal damage equal to 5 times of Atk to random enemy and lose 1 Health by the end of your turn. NL Deal 9 damage to ALL enemies at the start of your turn. NL Exhaust ."
   },
   "shadowverse:AmbushBuff": {
-    "NAME": "盗贼的极意",
-    "DESCRIPTION": "回合开始时, 给予所有 潜伏 状态的随从+1/+1."
+    "NAME": "Rogue's Creed",
+    "DESCRIPTION": "At the start of your turn, ALL *Followers in Ambush gain +1/+1."
   },
   "shadowverse:ShinobiTanuki": {
-    "NAME": "忍者狸猫",
-    "DESCRIPTION": "潜伏 , 1/ !M! . NL 被动:获得攻击力的2倍格挡并失去1点体力. NL 消耗 ."
+    "NAME": "Shinobi Tanuki",
+    "DESCRIPTION": "Ambush , 1/ !M! . NL Passive: Gain Block equal to 2 times of Atk and lose 1 Health by the end of your turn. NL Exhaust ."
   },
   "shadowverse:Tsubaki": {
-    "NAME": "妖刀之鬼·椿",
-    "DESCRIPTION": "潜伏 , 1/ !M! . NL 被动:造成攻击力的5倍伤害并失去1点体力. NL 协作 10 获得+1/+1, 给予随机敌人1层 易伤 和 虚弱 .",
+    "NAME": "Tsubaki of the Demon Blade",
+    "DESCRIPTION": "Ambush , 1/ !M! . NL Passive: Deal damage equal to 5 times of Atk to random enemy and lose 1 Health by the end of your turn. NL Rally 10: Gain +1/+1, apply 1 Vulnerable and Weak to random enemy.",
     "EXTENDED_DESCRIPTION": [
-      "（协作数:",
+      "(Rally:",
       ")"
     ]
   },
   "shadowverse:ShieldOfFlame": {
-    "NAME": "火遁之术",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 如果有 潜伏 状态的随从改为造成2倍伤害."
+    "NAME": "Shield of Flame",
+    "DESCRIPTION": "Deal !D! damage. NL If you have *Follower in Ambush , double the damage."
   },
   "shadowverse:ShadowedMemories": {
-    "NAME": "隐伏的记忆",
-    "DESCRIPTION": "获得 !B! 点 格挡 . NL 抽 !M! 张牌. NL  如果有 潜伏 状态的随从增加1张 *进化点 到手中."
+    "NAME": "Shadowed Memories",
+    "DESCRIPTION": "Gain !B! Block . NL Draw !M! card. NL If you have *Follower in Ambush, add 1 *Evolution *Point to hand."
   },
   "shadowverse:BladeDance": {
-    "NAME": "白刃剑舞",
-    "DESCRIPTION": "爆能强化 2 给予攻击力最高的随从+2/+0. NL 对随机敌人造成 !D! 点伤害X次. NL （X为攻击力最高的随从的攻击力, 最大为10.)"
+    "NAME": "Ivory Sword Dance",
+    "DESCRIPTION": "Enhance 2: The *Follower with the highest Atk gain +2/+0. NL Deal !D! damage to random enemy for X time(s). NL (X equals to the Atk of your strongest *Follower , Maximum 10.)"
   },
   "shadowverse:NobleShikigami": {
     "NAME": "Noble Shikigami",
@@ -3961,13 +3957,13 @@
     "DESCRIPTION": "保留 . NL 被 保留 时, 每有10点 格挡 这张卡的耗能减少 [E] . NL 获得 !B! 点 格挡 . NL 对全体敌人造成自身 格挡 数量一半的伤害."
   },
   "shadowverse:TheChariot": {
-    "NAME": "《战车》·奥辂昂",
-    "DESCRIPTION": "获得 !B! 点 格挡 . NL 回合结束时, 由「获得 !M! 点 格挡」、「召唤1个 骑士 」、「对随机敌人造成 !M! 点伤害」之中随机触发1种效果. NL 爆能强化 3 \b改为 *《暴走》战车·奥珞昂 .",
-    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 . NL 回合结束时, 由「获得 !M! 点 格挡」、「召唤1个 骑士 」、「对随机敌人造成 !M! 点伤害」之中随机触发1种效果. NL 爆能强化 3 \b改为 *《暴走》战车·奥珞昂+ ."
+    "NAME": "VII. Oluon, The Chariot",
+    "DESCRIPTION": "Gain !B! Block . NL At the end of turn, andomly activate 1 of the following effects. NL -Gain !M! Block , -Summon 1 Knight , -Deal !M! damage to an random enemy. NL Enhance 3 \bChange to *VII. *Oluon, *Runaway *Chariot 's effect.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block . NL At the end of turn, andomly activate 1 of the following effects. NL -Gain !M! Block , -Summon 1 Knight , -Deal !M! damage to an random enemy. NL Enhance 3 \bChange to *VII. *Oluon, *Runaway *Chariot+ 's effect."
   },
   "shadowverse:TheChariot_I": {
-    "NAME": "《暴走》战车·奥辂昂",
-    "DESCRIPTION": "回合结束时随机对自己造成最大生命值一半的伤害或对随机敌人造成 !M! 点伤害. NL 此行动将执行2次."
+    "NAME": "VII. Oluon, Runaway Chariot",
+    "DESCRIPTION": "At the end of turn, randomly deal damage equals to half of your maximum health to you, or deal !M! damage to an random enemy. NL Do this 2 times."
   },
   "shadowverse:CorruptionOfUnkilling": {
     "NAME": "Erosive Annihilation",
@@ -3975,8 +3971,8 @@
     "UPGRADE_DESCRIPTION":"Innate . NL At the end of your turn, All ememies lose 1 Strength and 1 Dexterity . NL This effect is not stackable and lasts for 3 turns. NL Exhaust ."
   },
   "shadowverse:UltimateHollow": {
-    "NAME": "极意的空绝",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 如果消耗堆中的财宝牌数量为4以上, 伤害翻倍并获得 !B! 点 格挡 . NL 此卡视为财宝牌."
+    "NAME": "Ultimate Hollow",
+    "DESCRIPTION": "Deal !D! Damage. NL If there are more than 4 Loot in your exhaust pile, double the damage and gain !B! Block . NL This card will be treated as a Loot ."
   },
   "shadowverse:LoathingDesire": {
     "NAME": "憎恶的爱绝",
@@ -4011,11 +4007,11 @@
     "DESCRIPTION": "Enemy loses !M! Strength . NL Enhance 3 \b At the start of your next turn,deal damage that equals its Maximum HP to a enemy that intends to attack. NL Exhaust ."
   },
   "shadowverse:LightOfHollow": {
-    "NAME": "空绝的残光",
-    "DESCRIPTION": "保留 · 融合 :财宝牌. NL 融合 后抽1张牌. NL 轮流对敌方造成 !D! 点伤害. NL 如果融合张数为4以上, 则伤害翻倍. NL 这张卡视为财宝牌.",
+    "NAME": "Remnant of Hollowness",
+    "DESCRIPTION": "Retain · Loot NL Fusion : Loot NL Whenever cards are fused to this card, draw a card. NL Deal a pool of !D! damage divided between all enemies. NL If at least 4 cards have been fused to this card, double the damage.",
     "EXTENDED_DESCRIPTION": [
-      " NL (当前已 融合 财宝牌为",
-      "张)"
+      " NL (Fused Loot: ",
+      ")"
     ]
   },
   "shadowverse:WingsOfDesire": {
@@ -4071,9 +4067,9 @@
     "DESCRIPTION": "获得 !B! 点 格挡 . NL 选择1张攻击牌 消耗 并将1张复制品加入手中. NL 选择1张 能力牌 消耗 并将1张复制品加入手中."
   },
   "shadowverse:AdherentOfHollow": {
-    "NAME": "空绝的崇拜者",
-    "DESCRIPTION": "打出财宝牌时 升级 这张卡. NL 造成 !D! 点伤害. NL 打出 *进化点 时, 随机增加1张财宝牌到手中.",
-    "UPGRADE_DESCRIPTION":"打出后解除 升级 . NL 造成 !D! 点伤害. NL 打出 *进化点 时, 随机增加1张财宝牌到手中."
+    "NAME": "AdherentOfHollow",
+    "DESCRIPTION": "Whenever you play a Loot , upgraded this card. NL Deal !D! damage. NL Whenever you play an *Evolution *Point , add 1 random Loot card into your hand.",
+    "UPGRADE_DESCRIPTION":"Disupgrade after played. NL Deal !D! damage. NL Whenever you play an *Evolution *Point , add 1 random Loot card into your hand."
   },
   "shadowverse:AdherentOfDispair": {
     "NAME": "绝望的崇拜者",
@@ -4084,94 +4080,98 @@
     "DESCRIPTION": "When apply debuff,draw !M! cards."
   },
   "shadowverse:Erika": {
-    "NAME": "忠义剑士·艾莉卡",
-    "DESCRIPTION": " !M! /1. NL 被动:造成攻击力的4倍伤害并失去1点体力.打出攻击牌或召唤随从或护符时, 本回合获得+1/+0. NL 限定 协作 7 增加1张 *祕藏之技 到手中.",
-    "UPGRADE_DESCRIPTION":" !M! /1. NL 被动:造成攻击力的4倍伤害并失去1点体力.打出攻击牌或召唤随从或护符时, 本回合获得+1/+0. NL 限定 协作 7 增加1张 *祕藏之技 到手中. NL 协作 15 增加1张 *艾莉卡的战技 到手中.",
+    "NAME": "Erika, Loyal Swordsavant",
+    "DESCRIPTION": " !M! /1. NL Passive: Deal damage equal to 4 times of Atk to random enemy and lose 1 Health by the end of your turn. Whenever you play Attack cards, summon *Followers or *Amulets, gain +1/+0 this turn. NL Limit Rally 7: Add 1 *Killer *Instincts to hand.",
+    "UPGRADE_DESCRIPTION":" !M! /1. NL Passive: Deal damage equal to 4 times of Atk to random enemy and lose 1 Health by the end of your turn. Whenever you play Attack cards, summon *Followers or *Amulets, gain +1/+0 this turn. NL Limit Rally 7: Add 1 *Killer *Instincts to hand. NL Rally 15: Add 1 *Erika's *Sleight to hand.",
     "EXTENDED_DESCRIPTION": [
-      "（协作数:",
+      "(Rally: ",
       ")"
     ]
   },
   "shadowverse:SecretSkill": {
-    "NAME": "祕藏之技",
-    "DESCRIPTION": "回合结束时,  击晕 第一个意图为攻击的敌人."
+    "NAME": "Killer Instincts",
+    "DESCRIPTION": "By the end of your turn, Stun the first enemy intends to attack."
   },
   "shadowverse:OtherworldGatekeeper": {
     "NAME": "死门连结者",
     "DESCRIPTION": "造成 !D! 点伤害. NL 打出抽牌堆中为1以下 !M! 张有 谢幕曲 效果的攻击牌. NL 谢幕曲 被 消耗 时, 回复1点生命."
   },
   "shadowverse:V": {
-    "NAME": "魔导四轮车·V",
-    "DESCRIPTION": "保留 . NL 操纵 1. NL 造成 !D! 点伤害 . NL 从以下效果中随机发动两种: NL 「抽1张牌」 NL 「给予全体敌人4点伤害」 NL 「给予随机敌人 !M! 点伤害」 NL 「获得 !B! 点 格挡 」.",
-    "UPGRADE_DESCRIPTION":"保留 . NL 操纵 1. NL 造成 !D! 点伤害 . NL 从以下效果中随机发动两种: NL 「抽2张牌」 NL 「给予全体敌人6点伤害」 NL 「给予随机敌人 !M! 点伤害」 NL 「获得 !B! 点 格挡 」."
+    "NAME": "Val, Trusty Getaway Car",
+    "DESCRIPTION": "Retain . NL Maneuver 1. NL Deal !D! damage . NL Randomly activate 2 of the following effects: NL 'Draw 1 card' NL 'Deal 4 damage to ALL enemies' NL 'Deal !M! damage to random enemy' NL 'Gain !B! Block '.",
+    "UPGRADE_DESCRIPTION":"Retain . NL Maneuver 1. NL Deal !D! damage . NL Randomly activate 2 of the following effects: NL 'Draw 2 cards' NL 'Deal 6 damage to ALL enemies' NL 'Deal !M! damage to random enemy' NL 'Gain !B! Block '."
   },
   "shadowverse:DesperadosShot": {
-    "NAME": "亡命射击",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 如果手中有 *进化点 , 则 消耗 其中一张并额外对随机敌人造成 !D! 点伤害, 下回合开始时增加一张打出前耗能为0的 *魔导四轮车·V 到手中. NL 消耗 ."
+    "NAME": "Desperado's Shot",
+    "DESCRIPTION": "Deal !D! damage. NL If you have *Evolution *Point in hand, Exhaust 1 and deal !D! extra damage to random enemy, add 1 *Val, *Trusty *Getaway *Car with 0 cost until played to hand next turn. NL Exhaust ."
   },
   "shadowverse:Spector": {
-    "NAME": "幻影拍档·巴妮与巴隆",
-    "DESCRIPTION": " 激奏 0 \b增加1张 *亡命射击 到手中. NL  NL --------------------- NL  NL 造成 !D! 点伤害. NL 谢幕曲 下回合开始时增加1张打出前耗能为的 *魔导四轮车·V 到手中. NL 消耗 ."
+    "NAME": "Bunny & Baron, Specter Duo",
+    "DESCRIPTION": " Accelerate 0: \bAdd 1 *Desperado's *Shot to hand. NL  NL --------------------- NL  NL Deal !D! damage. NL Last_Words : Add 1 *Val, *Trusty *Getaway *Car with 0 cost until played to hand next turn. NL Exhaust ."
   },
   "shadowverse:HonoredFrontguardGeneral": {
-    "NAME": "荣耀的铁卫战将",
-    "DESCRIPTION": "可被多次 升级 。 NL 召唤一个+ !M! / !M! 的 铁卫战将 。 NL 消耗 。"
+    "NAME": "Honored Frontguard General",
+    "DESCRIPTION": "Can be upgraded for multiple times. NL Summon 1 *Frontguard *General with + !M! / !M! . NL Exhaust ."
   },
   "shadowverse:Aramis": {
-    "NAME": "阿拉密斯",
-    "DESCRIPTION": "打出攻击牌时，获得1点 力量 和 敏捷 并使这张卡的伤害+3。 NL 召唤随从时，使该随从获得+1/+1并使这张卡的伤害+3。 NL 造成 !D! 点伤害。 NL 消耗 。"
+    "NAME": "Aramis",
+    "DESCRIPTION": "Whenever you play Attack cards , gain 1 Strength and Dexterity , +3 damage. NL Whenever you summon a *Follower , damage +3, the *Follower gain +1/+1. NL Deal !D! damage. NL Exhaust ."
   },
   "shadowverse:Porthos": {
-    "NAME": "波尔多斯",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 回合结束时，对随机敌人造成 !B! 点伤害。 NL 消耗 。"
+    "NAME": "Porthos",
+    "DESCRIPTION": "Gain !B! Block . NL By the end of your turn, deal !B! damage to random enemy. NL Exhaust ."
   },
   "shadowverse:Athos": {
-    "NAME": "阿多斯",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果本回合没有完全失去格挡，下回合开始时额外获得 !B! 点格挡。 NL 消耗 。"
+    "NAME": "Athos",
+    "DESCRIPTION": "Gain !B! Block . NL If you haven't lose ALL your Block this turn, gain !B! extra Block next turn. NL Exhaust ."
   },
   "shadowverse:DArtagnan": {
-    "NAME": "达达尼昂",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果通过 爆能强化 将这张卡加入手中，这张卡的伤害翻倍。 NL 消耗 。"
+    "NAME": "D'Artagnan",
+    "DESCRIPTION": "Deal !D! damage. NL If you Enhance the *Musketeers' *Vow , double the damage. NL Exhaust ."
   },
   "shadowverse:MusketeersVow": {
-    "NAME": "火枪手的誓言",
-    "DESCRIPTION": "*阿拉密斯 、 *波尔多斯 、 *阿多斯 、 *达达尼昂  NL 抉择 ：选择2张指定的卡加入手中。 NL 爆能强化 4\b改为全部加入手中。如果手中有2张以上的 *进化点 ， 升级 这些卡。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "*阿拉密斯 、 *波尔多斯 、 *阿多斯 、 *达达尼昂  NL 抉择 ：选择2张指定的卡加入手中。 NL 爆能强化 4\b改为全部加入手中。如果手中有2张以上的 *进化点 ， 升级 这些卡。 NL 消耗性 !stslib:ex! 。"
+    "NAME": "Musketeers' Vow",
+    "DESCRIPTION": "*Aramis , *Porthos , *Athos , *D'Artagnan  NL Choose : Add 2 of the cards above to hand. NL Enhance 4: \bAdd ALL to hand instead. If you have at least 2 *Evolution *Point in hand, upgrade these cards. NL Exhaust .",
+    "UPGRADE_DESCRIPTION": "*Aramis , *Porthos , *Athos , *D'Artagnan  NL Choose : Add 2 of the cards above to hand. NL Enhance 4: \bAdd ALL to hand instead. If you have at least 2 *Evolution *Point in hand, upgrade these cards. NL Exhaust !stslib:ex! ."
   },
   "shadowverse:Maiser_Story": {
-    "NAME": "音速英雄·麦哲",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 增加1张 *机动二轮车 到手中。 NL 本回合每打出1张技能牌，对全体敌人造成5点伤害。 NL 消耗 。"
+    "NAME": "Maiser, Accelerated Hero",
+    "DESCRIPTION": "Deal !D! damage. NL Add 1 *Bullet *Bike to hand. NL Deal 5 damage to ALL enemies whenever you play Skill cards this turn. NL Exhaust ."
   },
   "shadowverse:Selena_Story": {
-    "NAME": "爆燃霜糖·圣里奈",
-    "DESCRIPTION": "获得 !B! 点格挡。 NL 如果手中有1张以上其他攻击牌，回复4点生命。 NL 如果有2张以上，抽2张卡。 NL 如果有3张以上，获得1点 力量 和 敏捷 。 NL 消耗 。"
+    "NAME": "Selena, Sugar-Sweet Ending",
+    "DESCRIPTION": "Gain !B! Block . NL If you have at least 1 other Attack cards, heal 4 HP. NL If you have at least 2, draw 2 cards. NL If you have at least 3, gain 1 Strength and Dexterity . NL Exhaust ."
   },
   "shadowverse:Illganeau_Story": {
-    "NAME": "觉醒虚无·伊璐凯诺",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 全体敌人失去1点 力量 和 敏捷 。 NL 根据消耗堆中的攻击牌数量增加这张卡 !M! 点伤害。 NL 消耗 。"
+    "NAME": "Illganeau, Horror Awakened",
+    "DESCRIPTION": "Deal !D! damage. NL ALL enemies lose 1 Strength and Dexterity . NL Increase !M! damage by the number of cards in your exhaust pile. NL Exhaust ."
   },
   "shadowverse:Sekka_Story": {
-    "NAME": "九尾猛火·雪华",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 [E] ，增加1张 *进化点 到手中。 NL 如果本场战斗已打出的非打击攻击牌数量为18以上，获得 !M! 点 力量 和 敏捷 。 NL 消耗 。",
+    "NAME": "Sekka, Nine-Tailed Inferno",
+    "DESCRIPTION": "Deal !D! damage. NL Gain [E] ,add 1 *Evolution *Point to hand. NL If you have played at least 18 non-Strike Attack cards this combat, gain !M! Strength and Dexterity . NL Exhaust .",
     "EXTENDED_DESCRIPTION": [
-      " NL (X为",
-      " 。)"
+      " NL (X : ",
+      " .)"
     ]
   },
   "shadowverse:Dracu_Story": {
-    "NAME": "天翔龙翼·德莱克",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得1点 敏捷 。 NL 如果敏捷为5以上，再造成一次伤害。 NL 消耗 。"
+    "NAME": "Drache, Soaring Dragonlord",
+    "DESCRIPTION": "Deal !D! damage. NL Gain 1 Dexterity . NL If you have at least 5 Dexterity , deal damage 1 more time. NL Exhaust ."
   },
   "shadowverse:Kagero_Story": {
-    "NAME": "秘剑幽鬼·蜃景",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予随机敌人2层 易伤 。 NL 死灵术 10 伤害+ !M! 。 NL 消耗 。"
+    "NAME": "Kagero, the Blade Within",
+    "DESCRIPTION": "Deal !D! damage. NL Apply 2 Vulnerable to random enemy. NL Necromancy 10: Damage + !M! . NL Exhaust ."
   },
   "shadowverse:VerdictWord": {
-    "NAME": "审判之词",
-    "DESCRIPTION": "*音速英雄·麦哲 NL *爆燃霜糖·圣里奈 NL *觉醒虚无·伊璐凯诺 NL 抉择 ：选择1张非本职业的卡加入手中。 NL 如果已打出过2张以上的 *审判之词 ，改为升级全部并加入手中，本回合攻击伤害翻倍。 NL 保留 · 消耗 。"
+    "NAME": "Verdict Rendered",
+    "DESCRIPTION": "*Maiser, *Accelerated *Hero NL *Selena, *Sugar-Sweet *Ending NL *Illganeau, *Horror *Awakened NL Choose : Add 1 of the different class's cards above in hand. NL If you have played at least 2 *Verdict *Rendered , add ALL to hand and upgrade them instead, double their damage this turn. NL Retain · Exhaust ."
   },
   "shadowverse:AbsoluteOrder": {
-    "NAME": "无上谕令",
-    "DESCRIPTION": "*九尾猛火·雪华 NL *天翔龙翼·德莱克 NL *秘剑幽鬼·蜃景 NL 抉择 ：选择1张非本职业的卡加入手中。 NL 如果已打出过2张以上的 *无上谕令 ，改为升级全部并加入手中，本回合攻击伤害翻倍。 NL 保留 · 消耗 。"
+    "NAME": "Absolute Decree",
+    "DESCRIPTION": "*Sekka, *Nine-Tailed *Inferno NL *Drache, *Soaring *Dragonlord NL *Kagero, *the *Blade *Within NL Choose : Add 1 of the different class's cards above in hand. NL If you have played at least 2 *Absolute *Decree , add ALL to hand and upgrade them instead, double their damage this turn. NL Retain · Exhaust ."
+  },
+  "shadowverse:Skullfather": {
+    "NAME": "Skullfather",
+    "DESCRIPTION": "Deal !D! damage. NL Gain 1 Strength and Dexterity . NL Exhaust 。"
   }
 }

@@ -2,6 +2,7 @@ package shadowverse.action;
 
 import com.megacrit.cardcrawl.actions.unique.DiscoveryAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.screens.CardRewardScreen;
@@ -15,6 +16,7 @@ public class ValseAction
     private ArrayList<AbstractCard> card = new ArrayList<>();
     private boolean retrieveCard = false;
     private boolean upgrade = false;
+    private static final String TEXT = CardCrawlGame.languagePack.getUIString("shadowverse:Retain").TEXT[0];
 
     public ValseAction(boolean upgrade, AbstractCard... card) {
         this.actionType = ActionType.CARD_MANIPULATION;
@@ -50,11 +52,11 @@ public class ValseAction
                 disCard2.current_x = -1000.0F * Settings.xScale + AbstractCard.IMG_HEIGHT_S;
                 if (this.upgrade) {
                     disCard.selfRetain = true;
-                    disCard.rawDescription += " NL 保留 。";
+                    disCard.rawDescription +=  " NL "+TEXT+" 。";
                     disCard.initializeDescription();
                     disCard.applyPowers();
                     disCard2.selfRetain = true;
-                    disCard2.rawDescription += " NL 保留 。";
+                    disCard2.rawDescription +=  " NL "+TEXT+" 。";
                     disCard2.initializeDescription();
                     disCard2.applyPowers();
                 }

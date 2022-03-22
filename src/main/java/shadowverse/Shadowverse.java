@@ -1032,6 +1032,12 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         reflectedMap.put("Saren_Summer_Hurt2", new Sfx("sounds/Saren_Summer_Hurt2.wav"));
         reflectedMap.put("Saren_Summer_Hurt3", new Sfx("sounds/Saren_Summer_Hurt3.wav"));
         reflectedMap.put("Saren_Summer_Select", new Sfx("sounds/Saren_Summer_Select.wav"));
+        reflectedMap.put("Shinobu_Hurt", new Sfx("sounds/Shinobu_Hurt.wav"));
+        reflectedMap.put("Shinobu_Hurt2", new Sfx("sounds/Shinobu_Hurt2.wav"));
+        reflectedMap.put("Shinobu_Hurt3", new Sfx("sounds/Shinobu_Hurt3.wav"));
+        reflectedMap.put("Shinobu_Hurt4", new Sfx("sounds/Shinobu_Hurt4.wav"));
+        reflectedMap.put("Shinobu_Select", new Sfx("sounds/Shinobu_Select.wav"));
+        reflectedMap.put("Skullfather", new Sfx("sounds/Skullfather.wav"));
         reflectedMap.put("Erika", new Sfx("sounds/Erika.wav"));
         reflectedMap.put("Erika_Eff", new Sfx("sounds/Erika_Eff.wav"));
         reflectedMap.put("SecretSkill", new Sfx("sounds/SecretSkill.wav"));
@@ -1159,6 +1165,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addRelicToCustomPool((AbstractRelic) new RalmiaBOSS(), Nemesis.Enums.COLOR_SKY);
         BaseMod.addRelicToCustomPool((AbstractRelic) new ShizuruBOSS(), Royal.Enums.COLOR_YELLOW);
         BaseMod.addRelicToCustomPool((AbstractRelic) new YukariBOSS(), Bishop.Enums.COLOR_WHITE);
+        BaseMod.addRelicToCustomPool((AbstractRelic) new ShinobuBOSS(), Necromancer.Enums.COLOR_PURPLE);
     }
 
     class Keywords {

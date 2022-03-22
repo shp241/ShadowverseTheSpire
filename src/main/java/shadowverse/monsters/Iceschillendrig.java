@@ -81,7 +81,7 @@ public class Iceschillendrig extends CustomMonster implements SpriteCreature {
     private boolean secondStage;
 
     public Iceschillendrig() {
-        super(NAME, ID, 570, 0.0F, -30F, 230.0F, 500.0F, null, 80.0F, 0.0F);
+        super(NAME, ID, 570, 0.0F, -30F, 230.0F, 500.0F, null, 80.0F, -10.0F);
         this.animation = new SpriterAnimation("img/monsters/Iceschillendrig/Iceschillendrig.scml");
         this.dialogX = -100.0F * Settings.scale;
         this.dialogY = 10.0F * Settings.scale;

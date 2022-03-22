@@ -31,7 +31,7 @@
     "NAME": "Mysteria, Magic Founder",
     "FLAVOR": "It's always around us, and always with you.",
     "DESCRIPTIONS": [
-      "At the start of each combat, add #b1 #yMysteria, *Magic Founder into your draw pile and gain #b",
+      "At the start of each combat, add #b1 #yMysteria, #yMagic #yFounder into your draw pile and gain #b",
       " Strength ."
     ]
   },
@@ -128,7 +128,7 @@
     ]
   },
   "shadowverse:GlassOfIC": {
-    "NAME": "Glass Of Icey",
+    "NAME": "Iceschillendrig's Glass",
     "FLAVOR": "I'm the great God!",
     "DESCRIPTIONS": [
       "Whenever you lose HP, deal equal amount of damage to ALL enemies."
@@ -324,82 +324,82 @@
     ]
   },
   "shadowverse:OliviasBlessing": {
-    "NAME": "奥莉薇的祝福",
-    "FLAVOR": "进化？我也想……",
+    "NAME": "Olivia's Blessing",
+    "FLAVOR": "Evolve? Lemme give it a shot.",
     "DESCRIPTIONS": [
-      "每场战斗限 #b5 次, 右击时增加 #b1 张 #y奇迹 和 #b1 张 #y进化点+ 到手中."
+      "Can be activated #b5 times per combat. Right click to add #b1 #yMiracle and #b1 #yEvolution #yPoint+ to your hand."
     ]
   },
   "shadowverse:WindGodsBlessing": {
-    "NAME": "风神的祝福",
-    "FLAVOR": "风不止息.",
+    "NAME": "Wind God's Blessing",
+    "FLAVOR": "Wind is eternal.",
     "DESCRIPTIONS": [
-      "协作 #b10 :回合结束时, 使所有随从获得+ #b1 /+ #b1 ."
+      "Rally #b10 : By the end of turn, ALL #yFollowers gain + #b1 /+ #b1 ."
     ]
   },
   "shadowverse:Conscription": {
-    "NAME": "征兵令",
-    "FLAVOR": "我不求质, 我只求量.",
+    "NAME": "Conscription",
+    "FLAVOR": "Quantity over quality.",
     "DESCRIPTIONS": [
-      "回合开始时, 若你没有随从, 召唤一个 骑士 ."
+      "At the start of your turn, if you don't have any #yFollower , summon 1 #yKnight ."
     ]
   },
   "shadowverse:Spineblade": {
-    "NAME": "阿瓦利提亚",
-    "FLAVOR": "饱受饥饿吧. NL 当你感到饥寒交迫时, 就去掠夺吧. NL 如此一来, 世界将会继续运转.",
+    "NAME": "Argentum",
+    "FLAVOR": "Go ahead, hunger. Once the craving overtakes you, claim what is rightfully yours. That is the true way of the world, after all.",
     "DESCRIPTIONS": [
-      "使用 财宝牌 时, 抽1张牌."
+      "Whenever you play a #yLoot , draw 1 card."
     ]
   },
   "shadowverse:ValhoreanDealer": {
-    "NAME": "瓦罗纳商贩",
-    "FLAVOR": "对不起——饶了我吧——",
+    "NAME": "Valhorean Dealer",
+    "FLAVOR": "I'm sorry——Forgive me——",
     "DESCRIPTIONS": [
-      "右击时花费 #b30 金币, 更换任意张手牌."
+      "Right click to spend #b30 gold to redraw any number of your hand."
     ]
   },
   "shadowverse:KagemitsuSword": {
-    "NAME": "阎魔安国",
-    "FLAVOR": "自名为和平的剑鞘中, 感谢您让吾拔出此刀. ——不败剑圣·景光",
+    "NAME": "Enma Yasukuni",
+    "FLAVOR": "Thanks to you, I have drawn my blade from the scabbard called peace. -Kagemitsu, Matchless Blade",
     "DESCRIPTIONS": [
-      "所有 打出后解除升级 的卡牌在打出后自动升级."
+      "ALL cards with disupgrade ability will upgrade again after being played."
     ]
   },
   "shadowverse:EndlessUsurpation": {
-    "NAME": "无尽劫掠",
-    "FLAVOR": "掠夺一切, 取回所有吧.那些奇珍异宝打从一开始就属于我们.那, 我们就不客气地全部收下了.",
+    "NAME": "Endless Usurpation",
+    "FLAVOR": "Take and take again. Awaken the world to the pain of loss, to grief as deep as Hell. Leave them nothing, that they may know our hatred.",
     "DESCRIPTIONS": [
-      "回合开始时, 随机获得1张 财宝牌 ."
+      "At the start of your turn, add 1 random #yLoot to hand."
     ]
   },
   "shadowverse:Durandal": {
-    "NAME": "不灭圣剑·杜兰朵",
-    "FLAVOR": "这把与英雄结契的不灭圣剑, 经理百战也不曾折损刀身, 甚至无法熔毁.不论何时, 它的银白光芒都是如此的耀眼夺目.",
+    "NAME": "Durandal the Incorruptible",
+    "FLAVOR": "A holy sword bound to a certain proud hero. Its blade will shine for eternity, never to break or tarnish.",
     "DESCRIPTIONS": [
-      "对战开始时, 获得2层 #y缓冲 ."
+      "At the start of combat, gain 2 #yBuffer ."
     ]
   },
   "shadowverse:Tree": {
-    "NAME": "那塔拉的大树",
-    "FLAVOR": "好大一棵树.",
+    "NAME": "Naterran Great Tree",
+    "FLAVOR": "What a Tree.",
     "DESCRIPTIONS": [
-      "回合开始时, 获得1张 #y那塔拉的大树 ."
+      "At the start of combat, add 1 #yNaterran #yGreat #yTree to hand."
     ]
   },
   "shadowverse:AlterplaneArbiter": {
-    "NAME": "混合职业模式",
-    "FLAVOR": "期间限定新模式!混合两个职业构筑卡组!",
+    "NAME": "Cross Craft",
+    "FLAVOR": "Limited Time New Format: Cross Craft. Build decks with cards from 2 different classes!",
     "DESCRIPTIONS": [
-      "随机选择一个非本职业的影之诗职业, 在与普通敌人的对战胜利奖励中添加一轮该职业的卡牌奖励.",
-      "在与普通敌人的对战胜利奖励中添加一轮 ",
-      " 的卡牌奖励.",
-      "#y巫师",
-      "#y精灵",
-      "#y死灵术士",
-      "#y吸血鬼",
-      "#y复仇者",
-      "#y皇家护卫",
-      "#y主教"
+      "Randomly choose 1 different shadowverse class, enemy drop an additional card reward of this class.",
+      "Enemy drop an additional card reward of ",
+      " .",
+      "#yRunecraft",
+      "#yForestcraft",
+      "#yShadowcraft",
+      "#yBloodcraft",
+      "#yPortalcraft",
+      "#ySwordcraft",
+      "#yHavencraft"
     ]
   },
   "shadowverse:Offensive7": {
@@ -459,68 +459,75 @@
     ]
   },
   "shadowverse:KyaruBOSS": {
-    "NAME": "混沌魔法书",
-    "FLAVOR": "做好觉悟了吗？格林爆裂!",
+    "NAME": "Chaos Grimoire",
+    "FLAVOR": "Are you ready? Grim Burst!",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st .战斗开始时, 敌人的生命上限减少 #b18% ."
+      "Replaces #yToken #yof #y1st . At the start of combat, enemies' Max HP reduce by #b18% ."
     ]
   },
   "shadowverse:AnneBOSS": {
-    "NAME": "安的魔导书",
-    "FLAVOR": "英灵啊!",
+    "NAME": "Anne's Spellbook",
+    "FLAVOR": "O, spirit of war! Heed my call!",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st .打出的技能牌视为 #y马纳历亚 卡 ."
+      "Replaces #yToken #yof #y1st . The #ySkill cards you played are considered as #yMysteria cards."
     ]
   },
   "shadowverse:KokkoroBOSS": {
     "NAME": "Ames Amulet",
     "FLAVOR": "Please leave it to me.",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st .回合内使用第 #b6 张牌时获得 #b1 点 #y力量 和 #y敏捷 . NL 战斗中的生命回复量增加 #b50% ."
+      "Replaces #yToken #yof #y1st . Whenever you play the #b6th card of that turn, gain #b1 #yStrength and #yDexterity . NL HP healed in combat increases by #b50% ."
     ]
   },
   "shadowverse:MiyakoBOSS": {
-    "NAME": "灵甘幽灵布丁",
-    "FLAVOR": "布丁~布丁~",
+    "NAME": "Sweet Ghost Pudding",
+    "FLAVOR": "Pudding~Pudding~",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st .一场战斗限3次, 回合开始时,  #y死灵术5 \b将一张 #y灵体 加入手中."
+      "Replaces #yToken #yof #y1st . 3 times per combat, at the start of your turn,  #yNecromancy 6: \bAdd 1 #yApparition to hand."
     ]
   },
   "shadowverse:IoBOSS": {
-    "NAME": "性感教鞭",
-    "FLAVOR": "老师来教你吧~",
+    "NAME": "Glamour Whip",
+    "FLAVOR": "Yes! You called for your teacher~?",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st .每场战斗一次,  #y斩杀 时, 随机升级卡组中的一张卡."
+      "Replaces #yToken #yof #y1st . Once per combat, when #yFatal , randomly upgrade a card in your deck."
     ]
   },
   "shadowverse:RalmiaBOSS": {
-    "NAME": "欧米伽驱动",
+    "NAME": "Omega Drive",
     "FLAVOR": "Speed Boost!",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st .一回合一次, 进入 共鸣 时, 所有手牌获得 #y创造物 词条.退出 共鸣 时 , 所有手牌获得 #y机械 词条."
+      "Replaces #yToken #yof #y1st . Once per combat: When you gain #yResonance , ALL cards in hand are considered as #yAF cards; When you lose #yResonance , ALL cards in hand are considered as #yMachina cards."
     ]
   },
   "shadowverse:ShizuruBOSS": {
-    "NAME": "神圣十字剑",
-    "FLAVOR": "姐姐我要使出全力了!",
+    "NAME": "Sacred Blade",
+    "FLAVOR": "Your big sister will always protect you!",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st .打出已 #y升级 的卡时, 获得 #b1 点格挡.一回合一次, 打出 #y进化点 时获得 [E] ."
+      "Replaces #yToken #yof #y1st . Whenever you play an #yUpgraded card, gain #b1 #yBlock. Once per combat, gain [E] when you play #yEvolution #yPoint ."
     ]
   },
   "shadowverse:YukariBOSS": {
-    "NAME": "无尽酒杯",
-    "FLAVOR": "准备完了哟.",
+    "NAME": "Eternal Mug",
+    "FLAVOR": "Ehehe, I wanna go home early to have a drink~",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st .回复生命时, 获得 #b能力伤害无效 . NL 每当抽到 #y状态牌 或 #y诅咒牌 时, 抽 #b1 张牌."
+      "Replaces #yToken #yof #y1st . Whenever you heal your HP, gain #bPower #bDamage #bImmune . NL Whenever you draw a #yStatus or #yCurse card, draw #b1 card."
+    ]
+  },
+  "shadowverse:ShinobuBOSS": {
+    "NAME": "Grim Soul Rope",
+    "FLAVOR": "Rest in peace.",
+    "DESCRIPTIONS": [
+      "Replaces #yToken #yof #y1st .At start of your turn, #yNecromancy 4: \bAdd 1 #ySkullfather to your hand."
     ]
   },
   "shadowverse:Bullet": {
-    "NAME": "发光的谜之子弹",
-    "FLAVOR": "像是护身符一样的东西。还请不要弄丢它。",
+    "NAME": "Mystical Bullet",
+    "FLAVOR": "It's kind of an amulet. Just don't lose it, please.",
     "DESCRIPTIONS": [
-      "不知道有什么用的遗物。",
-      "贯穿世界，宿命的子弹。",
-      "第1、3回合开始时，增加1张 #y审判之词 到手中。 NL 第2、4回合开始时，增加1张 #y无上谕令 到手中。 NL 第5回合以后改为各增加1张手中没有的到手中。"
+      "Relic with unknown use.",
+      "Bullet of Fate, shattering the world.",
+      "At the start of the 1st, 3rd turn, add 1 #yVerdict #yRendered to hand. NL At the start of the 2nd, 4th turn, add 1 #yAbsolute #yDecree to hand. NL At the start of the 5th turn or after, add 1 that you don't have in hand."
     ]
   }
 }

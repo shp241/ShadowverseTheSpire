@@ -49,7 +49,10 @@
       "~The~ ~sheer~ ~hubris~ ~of~ ~opposing~ ~me~",
       "~Do~ ~you~ ~have~ ~what~ ~it~ ~takes?~",
       "@Your@ @body@ @is@ @mine@ @now!@",
-      "@This@ @world@ @will@ @be@ @remade@ @in@ @my@ @image!@"
+      "@This@ @world@ @will@ @be@ @remade@ @in@ @my@ @image!@",
+      "~Bow~ ~before~ ~your~ ~god!~",
+      "~You~ ~dare~ ~look~ ~me~ ~in~ ~the~ ~eye?~",
+      "@Be@ @gone@ @from@ @my@ @seat!@"
     ]
   },
   "shadowverse:MagiTrain": {
@@ -171,11 +174,11 @@
     ],
     "NAME": "Nahtnaught",
     "DIALOG": [
-      "@I love the smell of gunsmoke in the mornin.@",
-      "~咆哮的枪声正是凯歌~",
-      "~You look 'bout as tough as a field mouse!~",
-      "@You make a lovely coffin.@",
-      "@How's that.@"
+      "@I@ @love@ @the@ @smell@ @of@ @gunsmoke@ @in@ @the@ @mornin.@",
+      "~My~ ~gunshot~ ~is~ ~a~ ~roar,~ ~a~ ~song~ ~to~ ~herald~ ~my~ ~triumph.~",
+      "~You~ ~look~ ~'bout~ ~as~ ~tough~ ~as~ ~a~ ~field~ ~mouse!~",
+      "@You@ @make@ @a@ @lovely@ @coffin.@",
+      "@How's@ @that.@"
     ]
   },
   "shadowverse:Zecilwenshe": {

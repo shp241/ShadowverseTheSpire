@@ -4169,5 +4169,9 @@
   "shadowverse:AbsoluteOrder": {
     "NAME": "无上谕令",
     "DESCRIPTION": "*九尾猛火·雪华 NL *天翔龙翼·德莱克 NL *秘剑幽鬼·蜃景 NL 抉择 ：选择1张非本职业的卡加入手中。 NL 如果已打出过2张以上的 *无上谕令 ，改为升级全部并加入手中，本回合攻击伤害翻倍。 NL 保留 · 消耗 。"
+  },
+  "shadowverse:Skullfather": {
+    "NAME": "骷髅老爹",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得1点 力量 和 敏捷 。 NL 消耗 。"
   }
 }
