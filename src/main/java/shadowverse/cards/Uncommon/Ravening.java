@@ -41,7 +41,7 @@
  
    
    public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new ApplyPowerAction(p,p,(AbstractPower)new RaveningPower(p)));
+     addToBot((AbstractGameAction)new ApplyPowerAction(p,p,(AbstractPower)new RaveningPower(p,this.upgraded)));
    }
  
    

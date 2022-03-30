@@ -39,6 +39,7 @@ public class SatanPotion extends CustomPotion {
         list.add(new Dis());
         return list;
     }
+
     public static AbstractCard returnCocytusCard(Random rng) {
         return returnCocytusDeck().get(rng.random(returnCocytusDeck().size() - 1));
     }

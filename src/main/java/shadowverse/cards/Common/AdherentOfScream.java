@@ -59,6 +59,7 @@ import shadowverse.characters.Necromancer;
 
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      if (Shadowverse.Accelerate((AbstractCard)this) && this.type == CardType.SKILL) {
+       addToBot((AbstractGameAction)new SFXAction("AdherentOfScream_Acc"));
        addToBot((AbstractGameAction)new ReanimateAction(1));
      }else {
        addToBot((AbstractGameAction)new SFXAction("AdherentOfScream"));

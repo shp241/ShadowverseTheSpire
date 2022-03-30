@@ -15,12 +15,15 @@ public class RaveningPower extends AbstractPower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings("shadowverse:RaveningPower");
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
+    private int drawAmt;
+    private boolean upgrade;
 
-    public RaveningPower(AbstractCreature owner) {
+    public RaveningPower(AbstractCreature owner, boolean upgrade) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.amount = -1;
+        this.upgrade = upgrade;
         this.type = PowerType.BUFF;
         updateDescription();
         this.img = new Texture("img/powers/RaveningPower.png");
@@ -28,11 +31,25 @@ public class RaveningPower extends AbstractPower {
 
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0];
+        if (upgrade) {
+            this.description = DESCRIPTIONS[1];
+        } else {
+            this.description = DESCRIPTIONS[0];
+        }
     }
 
     public void onCardDraw(AbstractCard card) {
-        flash();
-        addToBot((AbstractGameAction)new DamageRandomEnemyAction(new DamageInfo(this.owner, 2, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        drawAmt++;
+        if (drawAmt > 5)
+            addToBot((AbstractGameAction) new DamageRandomEnemyAction(new DamageInfo(this.owner, upgrade ? 4 : 3, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+    }
+
+
+    @Override
+    public void atEndOfTurn(boolean isPlayer) {
+        if (!isPlayer) {
+            drawAmt = 0;
+        }
     }
 }
+

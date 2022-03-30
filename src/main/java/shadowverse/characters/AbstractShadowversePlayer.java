@@ -26,10 +26,7 @@ import com.megacrit.cardcrawl.vfx.combat.HealEffect;
 import shadowverse.Shadowverse;
 import shadowverse.action.RemoveMinionAction;
 import shadowverse.action.TreAction;
-import shadowverse.powers.AvaricePower;
-import shadowverse.powers.Cemetery;
-import shadowverse.powers.VengeanceHealthPower;
-import shadowverse.powers.WrathPower;
+import shadowverse.powers.*;
 import shadowverse.stance.Vengeance;
 
 import java.util.Iterator;
@@ -70,6 +67,8 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
         public static AbstractCard.CardTags LEGEND;
         @SpireEnum
         public static AbstractCard.CardTags MINION;
+        @SpireEnum
+        public static AbstractCard.CardTags FES;
 
     }
 
@@ -84,6 +83,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
     public int necromanceCount = 0;
     public int amuletCount = 0;
     public int healCount = 0;
+    public int totalDrawAmt = 0;
 
     public AbstractShadowversePlayer(String name, PlayerClass playerClass, String[] orbTextures, String orbVfxPath, float[] layerSpeeds, AbstractAnimation animation) {
         super(name, playerClass, orbTextures, orbVfxPath, layerSpeeds, animation);
@@ -106,6 +106,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
         this.necromanceCount = 0;
         this.amuletCount = 0;
         this.healCount = 0;
+        this.totalDrawAmt = 0;
     }
 
     public void useCard(AbstractCard c, AbstractMonster monster, int energyOnUse) {
@@ -132,6 +133,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
     @Override
     public void draw() {
         super.draw();
+        totalDrawAmt++;
         if (!this.hasPower(AvaricePower.POWER_ID))
             this.drawAmt++;
         if (this.drawAmt > 5){
@@ -177,7 +179,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
     public void heal(int healAmount){
         healCount++;
         super.heal(healAmount);
-        if (this.currentHealth > this.maxHealth / 2&&!this.hasPower(VengeanceHealthPower.POWER_ID))
+        if (this.currentHealth > this.maxHealth / 2&&!this.hasPower(VengeanceHealthPower.POWER_ID)&&!this.hasPower(ExitVengeancePower.POWER_ID))
             AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ChangeStanceAction((AbstractStance)new NeutralStance()));
     }
 

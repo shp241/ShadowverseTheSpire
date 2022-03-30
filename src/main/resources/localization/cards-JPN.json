@@ -96,7 +96,7 @@
   },
   "shadowverse:EdictOfTruth": {
     "NAME": "真実の掟",
-    "DESCRIPTION": "保留 。 NL 手札が一杯になるまでカードを引く。NL スペルブースト が6回以上なら、 [E] [E] を得る。 NL 廃棄 。",
+    "DESCRIPTION": "保留 。 NL 手札が一杯になるまでカードを引く。 NL スペルブースト が6回以上なら、 [E] [E] を得る。 NL 廃棄 。",
     "EXTENDED_DESCRIPTION": [
       " NL ( スペルブースト は",
       "回)"
@@ -477,6 +477,10 @@
     "NAME": "氷獄の王・サタン",
     "DESCRIPTION": "アクセラレート 1 \bランダムのコキュートスカード4枚を山札に加える。 NL 廃棄 。 NL  NL --------------------- NL  NL 山札をコキュートスカード のデッキにする。"
   },
+  "shadowverse:Satanael": {
+    "NAME": "サタナエル",
+    "DESCRIPTION": "手札をすべて 廃棄 する。廃棄した枚数につき、 !B! ブロック を得る 。 NL 保留 を持つ アポカリプスカード か コキュートスカード の中からランダムに6種類を1枚ずつ、手札に加える。"
+  },
   "shadowverse:EmbodimentOfCocytus": {
     "NAME": "氷獄の顕現",
     "DESCRIPTION": "チョイス このターンだけコスト0の *欲望を纏う者 、 *辺獄の悪鬼 、 *異端なる冥獣 から1枚を手札に加える。 NL 自分に6ダメージを与える。 NL 廃棄 。"
@@ -575,6 +579,10 @@
     "NAME": "フラム＝グラス",
     "DESCRIPTION": "!D! ダメージを与える。 NL 敵全体に !D! ダメージを与える。 NL 廃棄 。"
   },
+  "shadowverse:FlameNGlass2": {
+    "NAME": "双極の生命・フラム＝グラス",
+    "DESCRIPTION": "融合 ：\b *ツインプリズナー・フラム か *ツインプリズナー・グラス 。 NL これに融合した枚数が1以上なら、敵全体に 弱体 と 脱力 !M! を与える。 NL !D! ダメージを与える。 NL 融合 が2種類なら、エナジーを3得る。"
+  },
   "shadowverse:Flame": {
     "NAME": "ツインプリズナー・フラム",
     "DESCRIPTION": "このターン、与えるダメージを+ !M! する。 NL ツインプリズナー・グラス を持つなら、 フラム＝グラス を1得る。"
@@ -653,8 +661,8 @@
   },
   "shadowverse:NewGrea": {
     "NAME": "レグニスロード・グレア",
-    "DESCRIPTION": "マナリア 。 NL !B! ブロック を得る，!D! ダメージを与える。 NL 山札が2枚以上なら、ランダムにそれから2枚を 廃棄 する。 NL 山札の数がデッキの半分以下なら、ブロックとダメージを倍にする。NL *フェイタルバーン 1枚を手札に加える。 NL *火傷 2枚を捨札に加える。",
-    "UPGRADE_DESCRIPTION": "マナリア 。 NL !B! ブロック を得る，!D! ダメージを与える。 NL 山札が2枚以上なら、ランダムにそれから2枚を 廃棄 する。 NL 山札の数がデッキの半分以下なら、ブロックとダメージを倍にする。NL *フェイタルバーン+ 1枚を手札に加える。 NL *火傷 2枚を捨札に加える。"
+    "DESCRIPTION": "マナリア 。 NL !B! ブロック を得る，!D! ダメージを与える。 NL 山札が2枚以上なら、ランダムにそれから2枚を 廃棄 する。 NL 山札の数がデッキの半分以下なら、ブロックとダメージを倍にする。 NL *フェイタルバーン 1枚を手札に加える。 NL *火傷 2枚を捨札に加える。",
+    "UPGRADE_DESCRIPTION": "マナリア 。 NL !B! ブロック を得る，!D! ダメージを与える。 NL 山札が2枚以上なら、ランダムにそれから2枚を 廃棄 する。 NL 山札の数がデッキの半分以下なら、ブロックとダメージを倍にする。 NL *フェイタルバーン+ 1枚を手札に加える。 NL *火傷 2枚を捨札に加える。"
   },
   "shadowverse:NewEmber": {
     "NAME": "フェイタルバーン",
@@ -1777,8 +1785,8 @@
   },
   "shadowverse:Ravening": {
     "NAME": "背徳の狂獣",
-    "DESCRIPTION": "自然 。 NL カード引く度、ランダムな敵に引いた枚数かける2のダメージを与える。 NL この能力は重複して持たない。",
-    "UPGRADE_DESCRIPTION": "天賦 。 NL 自然 。 NL カード引く度、ランダムな敵に引いた枚数かける2のダメージを与える。 NL この能力は重複して持たない。"
+    "DESCRIPTION": "自然 。 NL 渇望 なら、カード引く度、ランダムな敵に引いた枚数かける3のダメージを与える。 NL この能力は重複して持たない。",
+    "UPGRADE_DESCRIPTION": "天賦 / 自然 。 NL 渇望 なら、カード引く度、ランダムな敵に引いた枚数かける4のダメージを与える。 NL この能力は重複して持たない。"
   },
   "shadowverse:LunaticMana": {
     "NAME": "インサニティ・マナ",
@@ -2265,7 +2273,7 @@
   },
   "shadowverse:Bearminator": {
     "NAME": "灭裂机爪熊",
-    "DESCRIPTION": "機械 ・ 自然 。 NL !D! ダメージを与える。 NL 回合结束时，如果有剩余能量，敵全体に 造成 !M! 点伤害。"
+    "DESCRIPTION": "機械 ・ 自然 。 NL !D! ダメージを与える。 NL 手札にある他の 機械 アタックと同じ数のエナジーを得る。 NL ターン終了時、残りエナジーがあるなら、敵全体に 造成 !M! 点伤害。"
   },
   "shadowverse:Prototype": {
     "NAME": "试作型機械兵",
@@ -3382,7 +3390,7 @@
   },
   "shadowverse:MoriaeEncomium": {
     "NAME": "愚神礼賛",
-    "DESCRIPTION": "カードを !M! 枚引く。 *苦悩 を1枚山札に加える。 NL カウントダウン 1 NL ランダムな敵に 弱体 !M! を与える。"
+    "DESCRIPTION": "カードを !M! 枚引く。 *ブラックミサ を1枚山札に加える。 NL カウントダウン 1 NL ランダムな敵に 弱体 !M! を与える。"
   },
   "shadowverse:ThemisDecree": {
     "NAME": "テミスの審判",
@@ -4173,5 +4181,154 @@
   "shadowverse:Skullfather": {
     "NAME": "ドクロ親父",
     "DESCRIPTION": "!D! ダメージを与える。 NL 筋力 と 敏捷性 1を得る。 NL 廃棄 。"
+  },
+  "shadowverse:EnNightmareTime": {
+    "NAME": "ナイトメア・タイム",
+    "DESCRIPTION": "HPを1失う。 NL すべてのデバフを取り除く。 NL ターン開始時、追加でカードを !M! 枚引く。 NL 廃棄 。"
+  },
+  "shadowverse:EnBloodyNail": {
+    "NAME": "ブラッディーネイル",
+    "DESCRIPTION": "HPを1失い、 !D! ダメージを与える。 NL 敵は「アタックをプレイする度、1ダメージを受ける」を持つ。 NL 廃棄 。"
+  },
+  "shadowverse:EnDemonStorm": {
+    "NAME": "デモンストーム",
+    "DESCRIPTION": "お互いに !D! ダメージを与える。"
+  },
+  "shadowverse:EnMono": {
+    "NAME": "悠久の真紅・モノ",
+    "DESCRIPTION": "機械 。 NL !B! ブロック を得る。 NL 筋力 2を得る。 NL 復讐 なら、 金属化  !M! を得る。"
+  },
+  "shadowverse:EnDemonCommander": {
+    "NAME": "デモンコマンダー・ラウラ",
+    "DESCRIPTION": "!B! ブロック を得る。 NL 復讐 なら、次のアタックは2回プレイされる。"
+  },
+  "shadowverse:EnTerrorNight": {
+    "NAME": "テラーナイト",
+    "DESCRIPTION": "お互いに !D! ダメージを与える。 NL 限定 次のターン開始時、通常ドローの代わりに *ナイトメア・タイム 、 *ブラッディーネイル 、 *ドレッドオーラ それぞれ1枚を手札に加える。"
+  },
+  "shadowverse:EnBloodPact": {
+    "NAME": "血の取引",
+    "DESCRIPTION": "HPを2失う。 NL 次のターン、追加でカードを !M! 枚引く。"
+  },
+  "shadowverse:Seox": {
+    "NAME": "神狼・シス",
+    "DESCRIPTION": "!D! ダメージを2回与える。 NL 奥義 3 \bもう2回ダメージを与える。 NL 解放奥義 6 \bもう2回ダメージを与える。"
+  },
+  "shadowverse:EnLonePromise": {
+    "NAME": "約束の一輪",
+    "DESCRIPTION": "機械 。 NL 筋力 1を得、HPを !M! 回復する。 NL 脱力 !M! を与える。"
+  },
+  "shadowverse:Taketsumi": {
+    "NAME": "華の大将・タケツミ",
+    "DESCRIPTION": "宴楽 。 NL !B! ブロック を得る 。 NL *伊達の大見得 1枚を手札に加える。 NL 連携 10 \b *EP 1枚を手札に加える。 NL ",
+    "UPGRADE_DESCRIPTION": "宴楽 。 NL !B! ブロック を得る 。 NL *伊達の大見得+ 1枚を手札に加える。 NL 連携 10 \b *EP 1枚を手札に加える。 NL ",
+    "EXTENDED_DESCRIPTION": [
+      "（連携数：",
+      ")"
+    ]
+  },
+  "shadowverse:HeroOfTheHunt": {
+    "NAME": "伊達の大見得",
+    "DESCRIPTION": "宴楽 。 NL !D! ダメージを与える。 NL 連携 10 \bこのターン、受けるダメージを-1する。 NL 廃棄 NL ",
+    "EXTENDED_DESCRIPTION": [
+      "（連携数：",
+      ")"
+    ]
+  },
+  "shadowverse:Anisage": {
+    "NAME": "因果の迷い子・アンサージュ",
+    "DESCRIPTION": "宴楽 。 NL !D! ダメージを与える 。 NL *惑わぬ意志 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION": "宴楽 。 NL 防御不能の !D! ダメージを与える 。 NL *惑わぬ意志+ 1枚を手札に加える。"
+  },
+  "shadowverse:UndyingResolve": {
+    "NAME": "惑わぬ意志",
+    "DESCRIPTION": "宴楽 。 NL 捨札にあるカード1枚を選び、それのコストをこのターンだけ-1する。 NL それが *因果の迷い子・アンサージュ なら、さらに「 ラストワード ネクロマンス 6 \bこのカードが 廃棄 される時、ダメージを倍にする。その後、これの複製1枚を手札に加える」を付与する。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "宴楽 。 NL 捨札にあるカード1枚を選び、それのコストを-1する。 NL それが *因果の迷い子・アンサージュ なら、さらに「 ラストワード ネクロマンス 6 \bこのカードが 廃棄 される時、ダメージを倍にする。その後、これの複製1枚を手札に加える」を付与する。 NL 廃棄 。"
+  },
+  "shadowverse:SoulGuide": {
+    "NAME": "ソウルガイド",
+    "DESCRIPTION": "!B! ブロック を得る。 NL カード1枚を 破壊 し、 !M! 枚引く。"
+  },
+  "shadowverse:Krampus": {
+    "NAME": "クランプス",
+    "DESCRIPTION": "アクセラレート 0 \bカード1枚を 破壊 し、1枚を引く。 墓場を +2し、ランダムな敵に !M! ダメージ。 NL  NL --------------------- NL  NL !D! ダメージを与える。 NL ラストワード プレイまたは 廃棄 される時、カードを1枚引き、 墓場 を+2し、ランダムな敵に 脱力 !M! を与える。",
+    "EXTENDED_DESCRIPTION": [
+      "アタックがない。"
+    ]
+  },
+  "shadowverse:Itsurugi": {
+    "NAME": "憧れの飛躍・イツルギ",
+    "DESCRIPTION": "宴楽 。 NL !B! ブロック を得る。 NL 自分は「ターン終了時、HPを1回復し、敵全体に3ダメージを与える」を持つ。 NL *幼狼奮闘 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION": "宴楽 。 NL !B! ブロック を得る。 NL 自分は「ターン終了時、HPを1回復し、敵全体に3ダメージを与える」を持つ。 NL *幼狼奮闘+ 1枚を手札に加える。"
+  },
+  "shadowverse:WolflingStruggle": {
+    "NAME": "幼狼奮闘",
+    "DESCRIPTION": "宴楽 。 NL !D! ダメージを与える。 NL カードを1枚引く。 NL 廃棄 。"
+  },
+  "shadowverse:Yukishima": {
+    "NAME": "真理の大文豪・ユキシマ",
+    "DESCRIPTION": "宴楽 。 NL カードを引く度、ランダムな敵に1ダメージを与える。その後、ランダムに手札にあるアタックのダメージとブロックを+1する。これを引いた枚数と同じ回行う。 NL エンハンス 4 \b敵全体にこの戦闘中に引いたカードの枚数のダメージを与える。",
+    "UPGRADE_DESCRIPTION":"宴楽 。 NL これの複製1枚を捨札に加える。 NL カードを引く度、ランダムな敵に1ダメージを与える。その後、ランダムに手札にあるアタックのダメージとブロックを+1する。これを引いた枚数と同じ回行う。 NL エンハンス 4 \b敵全体にこの戦闘中に引いたカードの枚数のダメージを与える。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (引いたカードの枚数は",
+      ")"
+    ]
+  },
+  "shadowverse:Hozumi": {
+    "NAME": "化かし女将・ホズミ",
+    "DESCRIPTION": "宴楽 。 NL !B! ブロック を得る。 NL このターン中に（これを含めず）カードを4枚以上プレイしていたなら、手札をすべて 廃棄 し、廃棄したアタックにつき、ランダムなこのターンだけコストが0のアタックを手札に加える。"
+  },
+  "shadowverse:MagnaSaber": {
+    "NAME": "マグナセイバー",
+    "DESCRIPTION": "宴楽 · 操縦 2以下。 NL !D! ダメージを与える。 NL 敵全体に !M! ダメージ。 NL 廃棄 される時、操縦によって廃棄されたアタックの代わりにプレイされるまでコストが0のこれの複製を1枚を手札に加える。"
+  },
+  "shadowverse:AllFeeling": {
+    "NAME": "千箔百面ノ邪神",
+    "DESCRIPTION": "宴楽 。 NL 手札を !M! 枚 廃棄 し、 !M! 枚引く。 NL !M! 枚の *ブラックミサ を捨札に加える。 NL 敵全体に手札、山札、捨札、廃棄札、アミュレットゾーンにある呪いの合計値の !D! 倍のダメージを与える。"
+  },
+  "shadowverse:Paracelise": {
+    "NAME": "デモンズグリード・パラセリゼ",
+    "DESCRIPTION": "宴楽 。 NL !D! ダメージを与え、ランダムに手札を3枚捨てる。 NL 直接召喚 ターン終了時、手札が0枚のなら、手札に加え、 !B! ブロック を得、HPを !M! 回復し、敵全体に !M! ダメージ、次のターン追加で1枚を引く。"
+  },
+  "shadowverse:ArcticChimera": {
+    "NAME": "極冠の幻想獣",
+    "DESCRIPTION": "アクセラレート 0 \b 土の秘術 \b !D! ダメージを与え、カードを1枚引く。 NL  NL --------------------- NL  NL !B! ブロック を 2回得る。 NL 土の秘術 3 \b2回ではなく3回。その後、 ブロック 分のダメージを与える。 NL 土の印 が3以下なら、それを2得る。そして敵に 弱体 2を与える。"
+  },
+  "shadowverse:EternalContract": {
+    "NAME": "底なしの契約",
+    "DESCRIPTION": "宴楽 。 NL カードを !M! 枚引く。 NL カードを !M! 枚捨てる。"
+  },
+  "shadowverse:Lifetime": {
+    "NAME": "一世の探究",
+    "DESCRIPTION": "宴楽 。 NL カードを1枚捨て、 !M! 枚引く。 NL この戦闘中に引いたカードの枚数が15枚以上なら、さらに2枚を引く。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (引いたカードの枚数は",
+      ")"
+    ]
+  },
+  "shadowverse:TriggerPuppeteer": {
+    "NAME": "トリガーマリオネッター",
+    "DESCRIPTION": "カードを !M! 枚引く。 NL *操り人形 !M! 枚を手札に加える。"
+  },
+  "shadowverse:WhiteEagleBaptism": {
+    "NAME": "詠唱：白鷲の洗礼",
+    "DESCRIPTION": "ランダムに *ホリーファルコン と *壮麗なる隼 から1枚を手札に加える。 NL カウントダウン 2 \bこれによって手札に加えていないカードを1枚を手札に加える。"
+  },
+  "shadowverse:Faker": {
+    "NAME": "変幻のフェイカー",
+    "DESCRIPTION": "このカードが捨てられる時、次のターンが終わるまで 復讐 に入る。 NL 復讐 なら、このターン、ストライクでないアタックをプレイする度、 筋力 と 敏捷性 1を得る。 NL エセリアル。",
+    "UPGRADE_DESCRIPTION": "このカードが捨てられる時、次のターンが終わるまで 復讐 に入る。 NL 復讐 なら、このターン、ストライクでないアタックをプレイする度、 筋力 と 敏捷性 1を得る。"
+  },
+  "shadowverse:RoomServiceDevil": {
+    "NAME": "ルームサービスデビル",
+    "DESCRIPTION": "アクセラレート 0 \bカードを1枚捨て、 !M! ダメージを与える。 NL  NL --------------------- NL  NL !D! ダメージを与える。 NL 他の手札が2枚以下なら、もう一回ダメージを与え、 !B! ブロック を得る。"
+  },
+  "shadowverse:JubilanceWitch": {
+    "NAME": "炸裂の魔女",
+    "DESCRIPTION": "土の印 !M! を得る。 NL その後、 土の印 の数が3以上なら、敵全体に !D! ダメージを与える。"
+  },
+  "shadowverse:AcidGolem": {
+    "NAME": "アシッドゴーレム",
+    "DESCRIPTION": "土の秘術 !D! ダメージを与える。 NL 土の秘術 2 \bもう一回ダメージを与える。 NL 土の秘術 3 \bもう一回ダメージを与える。"
   }
 }

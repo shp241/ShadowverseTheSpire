@@ -613,7 +613,8 @@
   "shadowverse:RaveningPower": {
     "NAME": "背德的狂兽",
     "DESCRIPTIONS": [
-      "每抽 #b1 张牌给予随机敌人 #b2 点伤害。"
+      "渴望时，每抽 #b1 张牌给予随机敌人 #b3 点伤害。",
+      "渴望时，每抽 #b1 张牌给予随机敌人 #b4 点伤害。"
     ]
   },
   "shadowverse:AllFlameBarrierPower": {
@@ -1444,6 +1445,53 @@
     "NAME": "Maiser, Accelerated Hero",
     "DESCRIPTIONS": [
       "Whenever you play a #ySkill card, deal #b5 damage to all enemies."
+    ]
+  },
+  "shadowverse:EnemyNightmareTimePower": {
+    "NAME": "Nightmare Time",
+    "DESCRIPTIONS": [
+      "At the start of your turn, draw #b",
+      " additional card(s)。"
+    ]
+  },
+  "shadowverse:BloodyNailPower": {
+    "NAME": "BloodyNail",
+    "DESCRIPTIONS": [
+      "Whenever you play an attack, Urias will deal #b",
+      " damage to you."
+    ]
+  },
+  "shadowverse:HeroOfTheHuntPower": {
+    "NAME": "Hero Of The Hunt",
+    "DESCRIPTIONS": [
+      "Reduce the damage received by #b",
+      " ."
+    ]
+  },
+  "shadowverse:ItsurugiPower": {
+    "NAME": "憧憬的飞跃·苇剑",
+    "DESCRIPTIONS": [
+      "回合结束时，回复 #b1 点生命，对全体敌人造成 #b3 点伤害。"
+    ]
+  },
+  "shadowverse:YukishimaPower": {
+    "NAME": "Yukishima, Master Biographer",
+    "DESCRIPTIONS": [
+      "Deal #b1 damage to a random enemy for each card you drawn.Then, increase a Attack's damage and block by 1 randomly in your hand."
+    ]
+  },
+  "shadowverse:ExitVengeancePower": {
+    "NAME": "Temporary Vengeance",
+    "DESCRIPTIONS": [
+      "After #b",
+      " turn, if your health is more than half of max HP, exit  #yVengeance ."
+    ]
+  },
+  "shadowverse:VengeanceBuffPower": {
+    "NAME": "Deceptive Shapeshifter",
+    "DESCRIPTIONS": [
+      "Whenever you play a non-Strike Attack, gain #b",
+      " #yStrength and #yDexterity ."
     ]
   }
 }

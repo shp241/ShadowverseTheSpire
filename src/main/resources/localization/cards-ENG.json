@@ -477,6 +477,10 @@
     "NAME": "Prince of Cocytus",
     "DESCRIPTION": " Accelerate 1 : \bRandomly put 4 *Cocytus cards into your draw pile. NL Exhaust . NL  NL --------------------- NL  NL Replace your draw pile with a *Cocytus *Deck ."
   },
+  "shadowverse:Satanael": {
+    "NAME": "Satanael",
+    "DESCRIPTION": "Exhaust your hand and gain !B! Block for each card. NL Randomly put 6 different Apocalypse Cards or Cocytus Cards with Retain into your hand. "
+  },
   "shadowverse:EmbodimentOfCocytus": {
     "NAME": "Embodiment of Cocytus",
     "DESCRIPTION": "Choose : Put 1 of the following cards in 0 cost into your hand. NL *Scion *of *Desire ,  *Demon *of *Purgatory ,  *Heretical *HellBeast NL Deal 6 damage to yourself. NL Exhaust ."
@@ -574,6 +578,10 @@
   "shadowverse:FlameNGlass": {
     "NAME": "Flame and Glass",
     "DESCRIPTION": "Deal !D! damage. NL Deal !D! damage to all enemies. NL Exhaust ."
+  },
+  "shadowverse:FlameNGlass2": {
+    "NAME": "Flame and Glass, Duality",
+    "DESCRIPTION": "Fusion :\b *Harnessed *Flame or *Harnessed *Glass . NL If this card is fused with at least 1 card, apply !M! Vulnerable and Weak to all enemies. NL Deal !D! damage. NL If fused with both, gain 3 energy."
   },
   "shadowverse:Flame": {
     "NAME": "Harnessed Flame",
@@ -748,8 +756,8 @@
   },
   "shadowverse:FairyWhisperer": {
     "NAME": "Fairy Whisperer",
-    "DESCRIPTION": "Add !M! *Fairy into your hand.",
-    "UPGRADE_DESCRIPTION": "Add !M! *Fairy+ into your hand."
+    "DESCRIPTION": "Add !M! *Fairies into your hand.",
+    "UPGRADE_DESCRIPTION": "Add !M! *Fairies+ into your hand."
   },
   "shadowverse:SylvanJustice": {
     "NAME": "Sylvan Justice",
@@ -778,9 +786,9 @@
     ]
   },
   "shadowverse:FairyCircle": {
-    "NAME": "FairyCircle",
-    "DESCRIPTION": "Add !M! *Fairy into your hand. NL Exhaust .",
-    "UPGRADE_DESCRIPTION": "Add !M! *Fairy+ into your hand. NL Exhaust ."
+    "NAME": "Fairy Circle",
+    "DESCRIPTION": "Add !M! *Fairies into your hand. NL Exhaust .",
+    "UPGRADE_DESCRIPTION": "Add !M! *Fairies+ into your hand. NL Exhaust ."
   },
   "shadowverse:WhirlwindRhinoceroach": {
     "NAME": "Whirlwind Rhinoceroach",
@@ -792,11 +800,11 @@
   },
   "shadowverse:WoodOfBrambles": {
     "NAME": "Wood Of Brambles",
-    "DESCRIPTION": "Add 2 *Fairy into your hand. NL Gain !M! Thorns ."
+    "DESCRIPTION": "Add 2 *Fairies into your hand. NL Gain !M! Thorns ."
   },
   "shadowverse:ElfSong": {
     "NAME": "Elf Song",
-    "DESCRIPTION": "Add !M! *Fairy into your hand. NL If at least 2 other cards were played this turn, Gain 1 Strength and 1 Dexterity ."
+    "DESCRIPTION": "Add !M! *Fairy(ies) into your hand. NL If at least 2 other cards were played this turn, Gain 1 Strength and 1 Dexterity ."
   },
   "shadowverse:WardOfUnkilling": {
     "NAME": "Ward Of Unkilling",
@@ -828,8 +836,8 @@
   },
   "shadowverse:WindFall": {
     "NAME": "WindFall Fay",
-    "DESCRIPTION": "Gain [E] . NL Whenever you play a card, if it's the 5th card or later played this turn, draw !M! card(s). NL Ethereal .",
-    "UPGRADE_DESCRIPTION": "Gain [E] . NL Whenever you play a card, if it's the 5th card or later played this turn, draw !M! card(s)."
+    "DESCRIPTION": "Gain [E] . NL Whenever you play a card, if it's the 5th card or later played this turn, draw !M! card. NL Ethereal .",
+    "UPGRADE_DESCRIPTION": "Gain [E] . NL Whenever you play a card, if it's the 5th card or later played this turn, draw !M! card."
   },
   "shadowverse:ElfGuard": {
     "NAME": "Elf Guard",
@@ -940,7 +948,7 @@
   },
   "shadowverse:Verdant": {
     "NAME": "Verdant Steward",
-    "DESCRIPTION": "Gain !B! Block . NL At the start of your next turn,add !M! *Fairy into your hand."
+    "DESCRIPTION": "Gain !B! Block . NL At the start of your next turn,add !M! *Fairies into your hand."
   },
   "shadowverse:Beast": {
     "NAME": "Irate Forest Beast",
@@ -1063,11 +1071,11 @@
   },
   "shadowverse:Amataz": {
     "NAME": "Amataz, Fairy Blader",
-    "DESCRIPTION": "Gain !B! Block . NL If there are at least 2 *Fairy in your hand, Gain 3 additional Block and 2 Plated Armor . NL If at least 4, Gain 1 Strength and 1 Dexterity . NL If at least 6, Increase the damage of *Fairy by !M! this combat ."
+    "DESCRIPTION": "Gain !B! Block . NL If there are at least 2 *Fairies in your hand, Gain 3 additional Block and 2 Plated Armor . NL If at least 4, Gain 1 Strength and 1 Dexterity . NL If at least 6, Increase the damage of *Fairy by !M! this combat ."
   },
   "shadowverse:Amataz2": {
     "NAME": "Amataz, Reverse Blader",
-    "DESCRIPTION": "Gain !B! Block . NL Return all non-strike Forestcraft Attacks in your discard piles into your draw pile,add X *Fairy into your hand.X equals the number of cards returned.  NL If at least 10 non-Strike Elf Attacks are played this combat, Gain 4 additional Block. NL If at least 20, applt 3 Vulnerable and 3 Weak to All enemies."
+    "DESCRIPTION": "Gain !B! Block . NL Return all non-strike Forestcraft Attacks in your discard piles into your draw pile,add X *Fairies into your hand.X equals the number of cards returned.  NL If at least 10 non-Strike Elf Attacks are played this combat, Gain 4 additional Block. NL If at least 20, applt 3 Vulnerable and 3 Weak to All enemies."
   },
   "shadowverse:DivineSmithing": {
     "NAME": "Divine Smithing",
@@ -1084,7 +1092,7 @@
   },
   "shadowverse:Homecoming": {
     "NAME": "Homecoming",
-    "DESCRIPTION": "Change the intension of ALL enmies. NL Put Attacks in your discard piles until these aren't any or your hand is full. NL Exhaust ."
+    "DESCRIPTION": "Change the intension of ALL enmies. NL Put Attacks from your discard piles to your hand until these aren't any or your hand is full. NL Exhaust ."
   },
   "shadowverse:PixieParadise": {
     "NAME": "Pixie Paradise",
@@ -1664,25 +1672,25 @@
     "DESCRIPTION": "Gain !B! Block ."
   },
   "shadowverse:RazoryClaw": {
-    "NAME": "利爪的一击",
-    "DESCRIPTION": "失去2点生命. NL 造成 !D! 点伤害."
+    "NAME": "Razory Claw",
+    "DESCRIPTION": "Lose 2 HP. NL Deal !D! damage."
   },
   "shadowverse:DarkGeneral": {
-    "NAME": "暗魔女将",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 复仇 则伤害翻倍."
+    "NAME": "Dark General",
+    "DESCRIPTION": "Deal !D! damage. NL If Vengeance is active, double the damage."
   },
   "shadowverse:BloodPact": {
-    "NAME": "血之契约",
-    "DESCRIPTION": "失去2点生命. NL 抽 !M! 张牌."
+    "NAME": "Blood Pact",
+    "DESCRIPTION": "Lose 2 HP. NL Draw !M! cards."
   },
   "shadowverse:ForestBat": {
-    "NAME": "林地蝙蝠",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 消耗 ."
+    "NAME": "Forest Bat",
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust ."
   },
   "shadowverse:SummoningBloodkin": {
-    "NAME": "从魔召唤",
-    "DESCRIPTION": "增加 !M! 张 *林地蝙蝠 到手中.",
-    "UPGRADE_DESCRIPTION": "增加 !M! 张 *林地蝙蝠+ 到手中."
+    "NAME": "Summoning Bloodkin",
+    "DESCRIPTION": "Add !M! *Forest *Bat into your hand.",
+    "UPGRADE_DESCRIPTION": "Add !M! *Forest *Bat+ into your hand."
   },
   "shadowverse:BloodGarden": {
     "NAME": "鲜血花园",
@@ -1764,8 +1772,8 @@
     "DESCRIPTION": "获得 !B! 点 格挡 . NL 失去2点生命, 抽2张牌 NL 全体敌人失去1点生命, 获得1点 临时力量 ."
   },
   "shadowverse:DiabolicDrain": {
-    "NAME": "破坏神的气息",
-    "DESCRIPTION": "造成 !D! 点伤害, 回复 !M! 点生命. NL 复仇 耗能变为0."
+    "NAME": "Diabolic Drain",
+    "DESCRIPTION": "Deal !D! damage, heal !M! HP. NL If Vengeance is active, this card cost 0."
   },
   "shadowverse:Baal": {
     "NAME": "芭力",
@@ -1777,8 +1785,8 @@
   },
   "shadowverse:Ravening": {
     "NAME": "背德的狂兽",
-    "DESCRIPTION": "自然 . NL 每抽1张牌给予随机敌人2点伤害. NL 无法叠加.",
-    "UPGRADE_DESCRIPTION": "固有 . NL 自然 . NL 每抽1张牌给予随机敌人2点伤害. NL 无法叠加."
+    "DESCRIPTION": "自然 。 NL 渴望 时每抽1张牌给予随机敌人3点伤害。 NL 无法叠加。",
+    "UPGRADE_DESCRIPTION": "固有 · 自然 。 NL 渴望 时每抽1张牌给予随机敌人4点伤害。 NL 无法叠加。"
   },
   "shadowverse:LunaticMana": {
     "NAME": "狂乱玛纳",
@@ -1962,8 +1970,8 @@
     "DESCRIPTION": "给予负面效果时对目标造成 !M! 点伤害. NL 失去1点生命, 对随机敌人造成 !D! 点伤害. NL 消耗 ."
   },
   "shadowverse:DreadAura": {
-    "NAME": "惊惧气息",
-    "DESCRIPTION": "因自己受到的伤害转变为0. NL 失去1点生命, 对全体敌人造成 !D! 点伤害. NL 消耗 ."
+    "NAME": "Cursed Aura",
+    "DESCRIPTION": "Reduce HP lost by yourself to 0. NL Lose 1 HP, deal !D! damage to all enemies. NL Exhaust ."
   },
   "shadowverse:TerrorNight": {
     "NAME": "惊骇之夜",
@@ -3244,7 +3252,7 @@
   },
   "shadowverse:Garven": {
     "NAME": "Garven, Iron Dreadnought",
-    "DESCRIPTION": "Deal !D! damage !M! times. NL Can deal 1 more time for each different Traits ( Machina , Natura , Levin , Mysteria , AF ) you played this combat.",
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Can deal 1 more time for each different Traits ( Machina , Natura , Levin , Mysteria , AF , Festive ) you played this combat.",
     "EXTENDED_DESCRIPTION": [
       "(Deal damage for ",
       " times)"
@@ -3378,7 +3386,7 @@
   },
   "shadowverse:MoriaeEncomium": {
     "NAME": "愚神礼赞",
-    "DESCRIPTION": "抽 !M! 张牌, 增加1张 *苦恼 到抽牌堆中. NL 倒计时 1 NL 给予随机敌人 !M! 层 易伤 ."
+    "DESCRIPTION": "抽 !M! 张牌, 增加1张 *恶魔崇拜 到抽牌堆中. NL 倒计时 1 NL 给予随机敌人 !M! 层 易伤 ."
   },
   "shadowverse:ThemisDecree": {
     "NAME": "忒弥斯的审判",
@@ -4067,7 +4075,7 @@
     "DESCRIPTION": "获得 !B! 点 格挡 . NL 选择1张攻击牌 消耗 并将1张复制品加入手中. NL 选择1张 能力牌 消耗 并将1张复制品加入手中."
   },
   "shadowverse:AdherentOfHollow": {
-    "NAME": "AdherentOfHollow",
+    "NAME": "Adherent Of Hollow",
     "DESCRIPTION": "Whenever you play a Loot , upgraded this card. NL Deal !D! damage. NL Whenever you play an *Evolution *Point , add 1 random Loot card into your hand.",
     "UPGRADE_DESCRIPTION":"Disupgrade after played. NL Deal !D! damage. NL Whenever you play an *Evolution *Point , add 1 random Loot card into your hand."
   },
@@ -4173,5 +4181,154 @@
   "shadowverse:Skullfather": {
     "NAME": "Skullfather",
     "DESCRIPTION": "Deal !D! damage. NL Gain 1 Strength and Dexterity . NL Exhaust 。"
+  },
+  "shadowverse:EnNightmareTime": {
+    "NAME": "Nightmare Begins",
+    "DESCRIPTION": "Lose 1 HP. NL Remove all debuff. NL  At the start of your turn, draw !M! additional card(s). NL Exhaust 。"
+  },
+  "shadowverse:EnBloodyNail": {
+    "NAME": "Bloody Claw",
+    "DESCRIPTION": "Lose 1 HP, Deal !D! damage. NL Apply 'Whenever you play an Attack, deal 1 damage to you' to your enemy. NL Exhaust 。"
+  },
+  "shadowverse:EnDemonStorm": {
+    "NAME": "Demonic Storm",
+    "DESCRIPTION": "Deal !D! damage to all."
+  },
+  "shadowverse:EnMono": {
+    "NAME": "Mono, Immortal Garnet",
+    "DESCRIPTION": "Machina . NL Gain !B! Block . NL Gain 2 Strength . NL If Vengeance is active, gain !M! Metallicize ."
+  },
+  "shadowverse:EnDemonCommander": {
+    "NAME": "Demon Commander Laura",
+    "DESCRIPTION": "Gain !B! Block . NL If Vengeance is active, next Attack are played twice."
+  },
+  "shadowverse:EnTerrorNight": {
+    "NAME": "A Horrible Night",
+    "DESCRIPTION": "Deal !D! damage to all. NL Limit At the start of next turn, instead of common draw, put a *Nightmare *Begins , *Bloody *Claw and *Cursed *Aura into your hand."
+  },
+  "shadowverse:EnBloodPact": {
+    "NAME": "Blood Pact",
+    "DESCRIPTION": "Lose 2 HP. NL Draw !M! additional cards next turn."
+  },
+  "shadowverse:Seox": {
+    "NAME": "Seox, Heavenly Howl",
+    "DESCRIPTION": "Deal !D! damage twice. NL Skybound_Art 3 \bRepeat this 1 time. NL Super_Skybound_Art 6 \bRepeat this 2 times."
+  },
+  "shadowverse:EnLonePromise": {
+    "NAME": "Lone Promise",
+    "DESCRIPTION": "Machina . NL Gain 1 Strength. Heal !M! HP . NL Apply !M! Weak ."
+  },
+  "shadowverse:Taketsumi": {
+    "NAME": "Taketsumi, Aconite Paladin",
+    "DESCRIPTION": "Festive . NL Gain !B! Block . NL add 1 *Hero *Of *The *Hunt into your hand. NL Rally 10 \badd 1 *Evolution *Point into your hand. NL ",
+    "UPGRADE_DESCRIPTION": "Festive . NL Gain !B! Block . NL add 1 *Hero *Of *The *Hunt+ into your hand. NL Rally 10 \badd 1 *Evolution *Point into your hand. NL ",
+    "EXTENDED_DESCRIPTION": [
+      "(Rally:",
+      ")"
+    ]
+  },
+  "shadowverse:HeroOfTheHunt": {
+    "NAME": "Hero Of The Hunt",
+    "DESCRIPTION": "Festive. NL Deal !D! damage。 NL Rally 10 \bReduce the damage received this turn by 1. NL Exhaust . NL ",
+    "EXTENDED_DESCRIPTION": [
+      "(Rally:",
+      ")"
+    ]
+  },
+  "shadowverse:Anisage": {
+    "NAME": "因果的迷途之子·安瑟乔",
+    "DESCRIPTION": "宴乐 。 NL 造成 !D! 点伤害 。 NL 增加1张 *不惑的意志 到手中。",
+    "UPGRADE_DESCRIPTION": "宴乐 。 NL 造成 !D! 点无法格挡的伤害 。 NL 增加1张 *不惑的意志+ 到手中。"
+  },
+  "shadowverse:UndyingResolve": {
+    "NAME": "不惑的意志",
+    "DESCRIPTION": "宴乐 。 NL 选择弃牌堆1张卡，将其本回合耗能-1。 NL 如果选择的是 *因果的迷途之子·安瑟乔 ，则给予其「 谢幕曲 死灵术 6 \b当这张牌被 消耗 时伤害翻倍，然后将1张复制加入手牌」。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "宴乐 。 NL 选择弃牌堆1张卡，将其耗能-1。 NL 如果选择的是 *因果的迷途之子·安瑟乔 ，则给予其「 谢幕曲 死灵术 6 \b当这张牌被 消耗 时伤害翻倍，然后将1张复制加入手牌」。 NL 消耗 。"
+  },
+  "shadowverse:SoulGuide": {
+    "NAME": "灵魂向导",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 破坏 1张卡，抽 !M! 张牌。"
+  },
+  "shadowverse:Krampus": {
+    "NAME": "坎普斯",
+    "DESCRIPTION": "激奏 0 \b 破坏 1张卡，抽1张牌， 墓地 +2，给予随机敌人 !M! 点伤害。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 谢幕曲 打出或被 消耗 时，抽1张牌， 墓地 +2，给予随机敌人 !M! 层 虚弱 。",
+    "EXTENDED_DESCRIPTION": [
+      "没有攻击牌。"
+    ]
+  },
+  "shadowverse:Itsurugi": {
+    "NAME": "憧憬的飞跃·苇剑",
+    "DESCRIPTION": "宴乐 。 NL 获得 !B! 点 格挡 。 NL 获得「回合结束时，回复1点生命，对全体敌人造成3点伤害」。 NL 增加1张 *幼狼的奋战 到手中。",
+    "UPGRADE_DESCRIPTION": "宴乐 。 NL 获得 !B! 点 格挡 。 NL 获得「回合结束时，回复1点生命，对全体敌人造成3点伤害」。 NL 增加1张 *幼狼的奋战+ 到手中。"
+  },
+  "shadowverse:WolflingStruggle": {
+    "NAME": "幼狼的奋战",
+    "DESCRIPTION": "宴乐 。 NL 造成 !D! 点伤害。 NL 抽1张牌。 NL 消耗 。"
+  },
+  "shadowverse:Yukishima": {
+    "NAME": "Yukishima, Master Biographer",
+    "DESCRIPTION": "Festive . NL Deal 1 damage to a random enemy for each card you drawn.Then, increase a Attack's damage and block by 1 randomly in your hand. NL Enhance 4 \bDeal damage equals to the amount of cards you drawn in this combat to all enemies.",
+    "UPGRADE_DESCRIPTION":"Festive . NL Add 1 copy of this into your discard pile. NL Deal 1 damage to a random enemy for each card you drawn.Then, increase a Attack's damage and block by 1 randomly in your hand. NL Enhance 4 \bDeal damage equals to the amount of cards you drawn in this combat to all enemies.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Cards you have drawn are ",
+      ")"
+    ]
+  },
+  "shadowverse:Hozumi": {
+    "NAME": "Hozumi, Enchanting Hostess",
+    "DESCRIPTION": "Festive 。 NL Gain !B! Block . NL If at least 4 other cards were played this turn, Exhaust all of your hands. For each Attack exhausted, add a random Attack to your hand which costs 0 this turn."
+  },
+  "shadowverse:MagnaSaber": {
+    "NAME": "神伟剑士",
+    "DESCRIPTION": "宴乐 · 操纵 2以下。 NL 造成 !D! 点伤害。 NL 对全体敌人造成 !M! 点伤害。 NL 被 消耗 时，不返还因操纵而消耗的攻击牌，改为增加1张打出前耗能为0的这张卡的复制品到手中。"
+  },
+  "shadowverse:AllFeeling": {
+    "NAME": "千箔百面之邪神",
+    "DESCRIPTION": "宴乐 。 NL 消耗 !M! 张牌，抽 !M! 张牌。 NL 增加 !M! 张 *恶魔崇拜 到弃牌堆中。 NL 对全体敌人造成手牌、抽牌堆、弃牌堆、消耗堆、护符区中的诅咒牌数量的 !D! 倍伤害。"
+  },
+  "shadowverse:Paracelise": {
+    "NAME": "贪婪的大恶魔·帕拉瑟丽婕",
+    "DESCRIPTION": "宴乐 。 NL 造成 !D! 点伤害，随机丢弃3张牌。 NL 瞬念召唤 回合结束时，如果你的手牌数为0，加入手中，获得 !B! 点 格挡 ，回复 !M! 点生命，对全体敌人造成 !M! 点伤害，下回合额外抽1张牌。"
+  },
+  "shadowverse:ArcticChimera": {
+    "NAME": "Arctic Chimera",
+    "DESCRIPTION": "Accelerate 0 \b Earth_Rite \bDeal !D! damage, draw 1 card. NL  NL --------------------- NL  NL Gain !B! Block 2 times. NL Earth_Rite 3 \bChange to 3 times, then deal damage equals to your block. NL If your Earth_Essence are less than 3, gain 2 and apply 2 Vulnerable ."
+  },
+  "shadowverse:EternalContract": {
+    "NAME": "Eternal Contract",
+    "DESCRIPTION": "Festive . NL Draw !M! cards. NL Discard !M! cards."
+  },
+  "shadowverse:Lifetime": {
+    "NAME": "Story of a Lifetime",
+    "DESCRIPTION": "Festive . NL Discard 1 card, draw !M! cards. NL If  the amount of cards you drawn in this combat is more than 15, draw 2 additionally.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Cards you have drawn are ",
+      ")"
+    ]
+  },
+  "shadowverse:TriggerPuppeteer": {
+    "NAME": "Trigger-Happy Puppeteer",
+    "DESCRIPTION": "Draw !M! cards. NL Add !M! *Puppet to your hand."
+  },
+  "shadowverse:WhiteEagleBaptism": {
+    "NAME": "咏唱：白鹫的洗礼",
+    "DESCRIPTION": "由 *神圣猎鹰 和 *壮丽大神隼 中随机增加1张到手中。 NL 倒计时 2 \b增加1张未因此加入的卡到手中。"
+  },
+  "shadowverse:Faker": {
+    "NAME": "变幻自如的伪装者",
+    "DESCRIPTION": "当这张卡被丢弃时，直到下回合结束为止进入 复仇 。 NL 复仇 则本回合内每打出1张非打击攻击牌，获得1点 力量 和 敏捷 。 NL 虚无。",
+    "UPGRADE_DESCRIPTION": "当这张卡被丢弃时，直到下回合结束为止进入 复仇 。 NL 复仇 则本回合内每打出1张非打击攻击牌，获得1点 力量 和 敏捷 。"
+  },
+  "shadowverse:RoomServiceDevil": {
+    "NAME": "客房服务的恶魔",
+    "DESCRIPTION": "激奏 0 \b丢弃1张牌，造成 !M! 点伤害。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 如果其他手牌数量为2以下，再造成一次伤害，获得 !B! 点 格挡 。"
+  },
+  "shadowverse:JubilanceWitch": {
+    "NAME": "Jubilance Witch",
+    "DESCRIPTION": "Gain !M! Earth_Essence. NL Then, if your Earth_Essence are more than 3, deal !D! damage to all enemies."
+  },
+  "shadowverse:AcidGolem": {
+    "NAME": "Acid Golem",
+    "DESCRIPTION": "Earth_Rite Deal !D! damage. NL Earth_Rite 2 \bDo this 1 time again. NL Earth_Rite 3 \bDo this 1 time again."
   }
 }

@@ -389,6 +389,13 @@
         "ambush"
       ],
       "DESCRIPTION": "Choose from #yAmbush and #yAttack by the end of your turn. Choosing #yAmbush will not trigger passive effects and will gain 1 attack. Can't choose #yAmbush if passive effects have been triggered."
+    },
+    {
+      "PROPER_NAME": "Festive",
+      "NAMES": [
+        "festive"
+      ],
+      "DESCRIPTION": "trait."
     }
   ]
 }

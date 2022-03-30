@@ -52,9 +52,9 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
    public void atEndOfTurnPreEndTurnCards(boolean isPlayer) {
      if (isPlayer) {
        if (EnergyPanel.getCurrentEnergy()>=1){
-         addToBot((AbstractGameAction)new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE));
-           addToBot((AbstractGameAction)new SFXAction("ATTACK_HEAVY"));
-           addToBot((AbstractGameAction)new VFXAction((AbstractCreature)this.owner, (AbstractGameEffect)new CleaveEffect(), 0.1F));
+           addToBot((AbstractGameAction) new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE));
+           addToBot((AbstractGameAction) new SFXAction("ATTACK_HEAVY"));
+           addToBot((AbstractGameAction) new VFXAction((AbstractCreature) this.owner, (AbstractGameEffect) new CleaveEffect(), 0.1F));
        }
      } 
    }

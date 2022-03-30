@@ -613,7 +613,8 @@
   "shadowverse:RaveningPower": {
     "NAME": "背徳の狂獣",
     "DESCRIPTIONS": [
-      "カードを #b1 枚引く度、ランダムな敵に #b2 ダメージを与える。"
+      "渇望なら、カードを #b1 枚引く度、ランダムな敵に #b3 ダメージを与える。",
+      "渇望なら、カードを #b1 枚引く度、ランダムな敵に #b4 ダメージを与える。"
     ]
   },
   "shadowverse:AllFlameBarrierPower": {
@@ -1444,6 +1445,53 @@
     "NAME": "フォーミュラーヒーロー・マイザー",
     "DESCRIPTIONS": [
       "#yスキル をプレイする時、敵全体に #b5 ダメージを与える。"
+    ]
+  },
+  "shadowverse:EnemyNightmareTimePower": {
+    "NAME": "ナイトメア・タイム",
+    "DESCRIPTIONS": [
+      "ターン開始時、追加でカードを #b",
+      " 枚引く。"
+    ]
+  },
+  "shadowverse:BloodyNailPower": {
+    "NAME": "ブラッディーネイル",
+    "DESCRIPTIONS": [
+      "アタックをプレイする度、 #yユリアス はプレイヤーに #b",
+      " ダメージを与える。"
+    ]
+  },
+  "shadowverse:HeroOfTheHuntPower": {
+    "NAME": "伊達の大見得",
+    "DESCRIPTIONS": [
+      "受けるダメージを- #b",
+      " する。"
+    ]
+  },
+  "shadowverse:ItsurugiPower": {
+    "NAME": "憧れの飛躍・イツルギ",
+    "DESCRIPTIONS": [
+      "ターン終了時、HPを #b1 回復し、敵全体に #b3 ダメージを与える。"
+    ]
+  },
+  "shadowverse:YukishimaPower": {
+    "NAME": "真理の大文豪・ユキシマ",
+    "DESCRIPTIONS": [
+      "カードを引く度、ランダムな敵に #b1 ダメージを与える。その後、ランダムに手札にあるアタックのダメージとブロックを+1する。これを引いた枚数と同じ回行う。"
+    ]
+  },
+  "shadowverse:ExitVengeancePower": {
+    "NAME": "仮復讐",
+    "DESCRIPTIONS": [
+      "#b",
+      " ターン終了後、HPが最大値の半分以上なら、 #y復讐 から通常スタンスに戻る。"
+    ]
+  },
+  "shadowverse:VengeanceBuffPower": {
+    "NAME": "変幻のフェイカー",
+    "DESCRIPTIONS": [
+      "ストライクでないアタックをプレイする度、 #b",
+      " の #y筋力 と #y敏捷性 を得る。"
     ]
   }
 }

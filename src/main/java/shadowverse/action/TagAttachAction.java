@@ -31,6 +31,7 @@ public class TagAttachAction extends AbstractGameAction {
 
     private void upgradeAllCardsInGroup(CardGroup cardGroup) {
         for (AbstractCard c : cardGroup.group) {
+            if (c.type== AbstractCard.CardType.ATTACK){
                 if (cardGroup.type == CardGroup.CardGroupType.HAND)
                     c.superFlash();
                 if (!c.hasTag(tags)){
@@ -39,6 +40,7 @@ public class TagAttachAction extends AbstractGameAction {
                     c.initializeDescription();
                     c.applyPowers();
                 }
+            }
         }
     }
 }

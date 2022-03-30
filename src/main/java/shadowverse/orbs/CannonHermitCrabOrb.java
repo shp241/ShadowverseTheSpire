@@ -64,9 +64,11 @@ public class CannonHermitCrabOrb extends Minion {
     public void onEndOfTurn() {
         super.onEndOfTurn();
         if (AbstractDungeon.player.stance.ID.equals(Resonance.STANCE_ID) || AbstractDungeon.player.hasPower(NaterranTree.POWER_ID)) {
-            int atk = this.attack % 2 == 0 ? this.attack / 2 : this.attack / 2 + 1;
-            int def = this.defense % 2 == 0 ? this.defense / 2 : this.defense / 2 + 1;
-            AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new CannonHermitCrabOrb(atk, def)));
+            if (this.defense>1){
+                int atk = this.attack % 2 == 0 ? this.attack / 2 : this.attack / 2 + 1;
+                int def = this.defense % 2 == 0 ? this.defense / 2 : this.defense / 2 + 1;
+                AbstractDungeon.actionManager.addToBottom(new MinionSummonAction(new CannonHermitCrabOrb(atk, def)));
+            }
         }
     }
 

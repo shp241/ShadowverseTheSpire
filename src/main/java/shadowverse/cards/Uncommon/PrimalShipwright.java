@@ -127,9 +127,9 @@ public class PrimalShipwright
         AbstractCard c = this.makeCopy();
         if (this.upgraded)
             c.upgrade();
-        c.type = CardType.ATTACK;
         c.setCostForTurn(0);
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(c));
+        c.type = CardType.ATTACK;
+        AbstractDungeon.player.hand.addToTop(c);
     }
 
     @Override

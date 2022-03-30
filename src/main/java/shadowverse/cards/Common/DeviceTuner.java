@@ -81,7 +81,9 @@ public class DeviceTuner
             return card.hasTag(AbstractShadowversePlayer.Enums.ARTIFACT);
         }, abstractCards ->{
             for (AbstractCard c:abstractCards){
-                addToBot((AbstractGameAction)new MakeTempCardInHandAction(c.makeCopy()));
+                AbstractCard card = c.makeStatEquivalentCopy();
+                card.resetAttributes();
+                addToBot((AbstractGameAction)new MakeTempCardInHandAction(card));
             }
         } ));
     }

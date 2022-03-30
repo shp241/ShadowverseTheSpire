@@ -52,7 +52,7 @@ public class MusketeersVow extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            ExhaustiveVariable.upgrade((AbstractCard)this, 2);
+            ExhaustiveVariable.upgrade((AbstractCard)this, 1);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }

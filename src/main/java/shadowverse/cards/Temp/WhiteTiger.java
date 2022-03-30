@@ -21,7 +21,7 @@ public class WhiteTiger extends CustomCard {
 
     public WhiteTiger() {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.SELF);
-        this.baseBlock = 5;
+        this.baseBlock = 4;
         this.tags.add(AbstractShadowversePlayer.Enums.LEVIN);
         this.selfRetain = true;
         this.exhaust = true;

@@ -43,7 +43,7 @@ public class DivineSmithing
     @Override
     public void update() {
         if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
-                Shadowverse.Enhance(2)) {
+                Shadowverse.Enhance(1)) {
             setCostForTurn(1);
         } else {
             setCostForTurn(0);

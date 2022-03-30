@@ -497,7 +497,7 @@
     "NAME": "Omega Drive",
     "FLAVOR": "Speed Boost!",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st . Once per combat: When you gain #yResonance , ALL cards in hand are considered as #yAF cards; When you lose #yResonance , ALL cards in hand are considered as #yMachina cards."
+      "Replaces #yToken #yof #y1st . Once per combat: When you gain #yResonance , ALL Attacks in hand are considered as #yAF cards; When you lose #yResonance , ALL Attacks in hand are considered as #yMachina cards."
     ]
   },
   "shadowverse:ShizuruBOSS": {

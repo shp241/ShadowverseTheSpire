@@ -44,12 +44,12 @@ import shadowverse.characters.Nemesis;
    }
 
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new ExhaustAction(8, false, true, true));
-     addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-     addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)abstractPlayer, DamageInfo.createDamageMatrix((abstractPlayer.currentHealth-1)*2, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE, true));
+     addToTop((AbstractGameAction)new ExhaustAction(8, false, true, true));
      addToBot((AbstractGameAction)new LoseHPAction(abstractPlayer,abstractPlayer,abstractPlayer.currentHealth-1));
      addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new StrengthPower(abstractPlayer,3),3));
      addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new AbyssDoomLordPower(abstractPlayer,1),1));
+       addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+       addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)abstractPlayer, DamageInfo.createDamageMatrix((abstractPlayer.currentHealth-1)*2, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE, true));
    }
  
    

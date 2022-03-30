@@ -60,7 +60,7 @@ public class Vampire extends AbstractShadowversePlayer{
     @Override
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> starterDeck = new ArrayList<>(); int i;
-        for (i = 0; i < 4; i++) {
+        for (i = 0; i < 5; i++) {
             starterDeck.add(Strike_V.ID);
         }
         for (i = 0; i < 4; i++) {

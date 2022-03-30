@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import shadowverse.cards.AbstractAmuletCard;
+import shadowverse.cards.Curse.EvilWorship;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
 
@@ -31,7 +32,7 @@ public class MoriaeEncomium extends AbstractAmuletCard {
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
         this.countDown = 1;
-        this.cardsToPreview = new Writhe();
+        this.cardsToPreview = new EvilWorship();
     }
 
     @Override

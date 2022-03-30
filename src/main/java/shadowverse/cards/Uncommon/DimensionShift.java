@@ -30,7 +30,7 @@ public class DimensionShift extends CustomCard {
     public static final int BASE_COST = 12;
 
     public DimensionShift() {
-        super("shadowverse:DimensionShift", NAME, "img/cards/DimensionShift.png", 12, DESCRIPTION, CardType.SKILL, Witchcraft.Enums.COLOR_BLUE, CardRarity.UNCOMMON, CardTarget.ALL);
+        super(ID, NAME, IMG_PATH, 12, DESCRIPTION, CardType.SKILL, Witchcraft.Enums.COLOR_BLUE, CardRarity.UNCOMMON, CardTarget.ALL);
         this.exhaust = true;
         this.selfRetain = true;
         this.tags.add(AbstractShadowversePlayer.Enums.SPELL_BOOST);
@@ -63,7 +63,7 @@ public class DimensionShift extends CustomCard {
                 break;
             }
         }
-        if (used>1){
+        if (used>0){
             addToBot((AbstractGameAction) new ApplyPowerAction(abstractPlayer, abstractPlayer, (AbstractPower) new DimensionShiftPower(abstractPlayer, 1), 1));
         }
         else{

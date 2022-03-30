@@ -192,5 +192,13 @@
       "~I~ ~am~ ~the~ ~epitome~ ~of~ ~victory.~",
       "~I'll~ ~win~ ~in~ ~the~ ~end.~ ~I~ ~always~ ~do.~"
     ]
+  },
+  "shadowverse:Urias": {
+    "MOVES": [
+    ],
+    "NAME": "Urias Formonde",
+    "DIALOG": [
+      "~Struggle~ ~all~ ~you~ ~want~ ~it~ ~matters~ ~not!~"
+    ]
   }
 }

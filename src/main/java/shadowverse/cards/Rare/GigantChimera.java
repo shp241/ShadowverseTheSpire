@@ -30,7 +30,7 @@ import com.megacrit.cardcrawl.vfx.combat.MindblastEffect;
    public static final String IMG_PATH = "img/cards/GigantChimera.png";
    
    public GigantChimera() {
-     super("shadowverse:GigantChimera", NAME, "img/cards/GigantChimera.png", 3, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.RARE, CardTarget.ALL_ENEMY);
+     super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.RARE, CardTarget.ALL_ENEMY);
      this.baseDamage = 7;
      this.baseMagicNumber = 0;
      this.magicNumber = this.baseMagicNumber;

@@ -7,6 +7,7 @@
  import com.megacrit.cardcrawl.actions.animations.VFXAction;
  import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
  import com.megacrit.cardcrawl.actions.common.DamageAction;
+ import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
  import com.megacrit.cardcrawl.cards.AbstractCard;
  import com.megacrit.cardcrawl.cards.DamageInfo;
  import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -31,7 +32,7 @@ import shadowverse.characters.Nemesis;
 
    public Bearminator() {
      super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.RARE, CardTarget.ENEMY);
-     this.baseDamage = 22;
+     this.baseDamage = 18;
      this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
      this.tags.add(AbstractShadowversePlayer.Enums.NATURAL);
      this.baseMagicNumber = 9;
@@ -42,14 +43,19 @@ import shadowverse.characters.Nemesis;
    public void upgrade() {
      if (!this.upgraded) {
        upgradeName();
-       upgradeDamage(5);
-       upgradeMagicNumber(6);
+       upgradeDamage(3);
+       upgradeMagicNumber(3);
      } 
    }
 
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
        addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new ClawEffect(abstractMonster.hb.cX, abstractMonster.hb.cY, Color.CYAN, Color.WHITE), 0.1F));
+       for (AbstractCard c : abstractPlayer.hand.group){
+           if (c.type==CardType.ATTACK&&c.hasTag(AbstractShadowversePlayer.Enums.MACHINE)&&c!=this){
+               addToBot(new GainEnergyAction(1));
+           }
+       }
        addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
        addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new BearminatorPower(abstractPlayer,this.magicNumber),this.magicNumber));
    }

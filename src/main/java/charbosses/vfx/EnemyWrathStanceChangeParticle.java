@@ -2,6 +2,7 @@
  
  import charbosses.bosses.AbstractCharBoss;
  import com.badlogic.gdx.Gdx;
+ import com.badlogic.gdx.graphics.Color;
  import com.badlogic.gdx.graphics.g2d.SpriteBatch;
  import com.badlogic.gdx.graphics.g2d.TextureAtlas;
  import com.badlogic.gdx.graphics.g2d.TextureRegion;
@@ -29,7 +30,9 @@
    private float delayTimer = MathUtils.random(0.5F);
  
    
-   public EnemyWrathStanceChangeParticle(float playerX) {}
+   public EnemyWrathStanceChangeParticle(float playerX) {
+       this.color = new Color(1.0F, MathUtils.random(0.1F, 0.3F), 0.1F, 0.0F);
+   }
    
    public void update() {
      if (this.delayTimer > 0.0F) {

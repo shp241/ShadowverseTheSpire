@@ -177,7 +177,7 @@ public class NaturalMachine extends AbstractImageEvent {
                             white.addToBottom(new BrothersUnited());
                             white.addToBottom(new TemperedMana());
                             blue.addToBottom(new SunnyDayEncounter());
-                            blue.addToBottom(new GloriousCore());
+                            white.addToBottom(new GloriousCore());
                             blue.addToBottom(new StampedingFortress());
                             gold.addToBottom(new MistolinaBayleon());
                             gold.addToBottom(new Patrick());

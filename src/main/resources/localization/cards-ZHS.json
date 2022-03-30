@@ -477,6 +477,10 @@
     "NAME": "冰狱之王·撒旦",
     "DESCRIPTION": " 激奏 1 \b由 悲叹冥河卡牌 之中，随机增加不同的4张卡牌到抽牌堆中。 NL 消耗 。 NL  NL --------------------- NL  NL 以 悲叹冥河卡组 取代抽牌堆中的卡牌。"
   },
+  "shadowverse:Satanael": {
+    "NAME": "撒旦耶尔",
+    "DESCRIPTION": "消耗 所有手牌，每消耗1张获得 !B! 点 格挡 。 NL 由带有 保留 的 启示录卡牌 或 悲叹冥河卡牌 之中随机将6种不同的卡牌加入手中。"
+  },
   "shadowverse:EmbodimentOfCocytus": {
     "NAME": "冰狱的显现",
     "DESCRIPTION": "抉择 从本回合耗能为0的 *欲望缠身者 、 *边狱的恶鬼 、 *异端的冥兽 中选择一张加入手中。 NL 对自己造成6点伤害。 NL 消耗 。"
@@ -574,6 +578,10 @@
   "shadowverse:FlameNGlass": {
     "NAME": "烈焰·琉璃",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 对全体敌人造成 !D! 点伤害。 NL 消耗 。"
+  },
+  "shadowverse:FlameNGlass2": {
+    "NAME": "双极的生命·烈焰琉璃",
+    "DESCRIPTION": "融合 ：\b *被封印的双子·烈焰 或 *被封印的双子·琉璃 。 NL 如果融合张数为1以上，给予全体敌人 !M! 层 易伤 和 虚弱 。 NL 造成 !D! 点伤害。 NL 如果已融合2种，获得3点能量。"
   },
   "shadowverse:Flame": {
     "NAME": "被封印的双子·烈焰",
@@ -1777,8 +1785,8 @@
   },
   "shadowverse:Ravening": {
     "NAME": "背德的狂兽",
-    "DESCRIPTION": "自然 。 NL 每抽1张牌给予随机敌人2点伤害。 NL 无法叠加。",
-    "UPGRADE_DESCRIPTION": "固有 。 NL 自然 。 NL 每抽1张牌给予随机敌人2点伤害。 NL 无法叠加。"
+    "DESCRIPTION": "自然 。 NL 渴望 时每抽1张牌给予随机敌人3点伤害。 NL 无法叠加。",
+    "UPGRADE_DESCRIPTION": "固有 · 自然 。 NL 渴望 时每抽1张牌给予随机敌人4点伤害。 NL 无法叠加。"
   },
   "shadowverse:LunaticMana": {
     "NAME": "狂乱玛纳",
@@ -2265,7 +2273,7 @@
   },
   "shadowverse:Bearminator": {
     "NAME": "灭裂机爪熊",
-    "DESCRIPTION": "机械 · 自然 。 NL 造成 !D! 点伤害。 NL 回合结束时，如果有剩余能量，对全体敌人造成 !M! 点伤害。"
+    "DESCRIPTION": "机械 · 自然 。 NL 造成 !D! 点伤害。 NL 获得手中其他 机械 攻击牌数量的能量。 NL 回合结束时，如果有剩余能量，对全体敌人造成 !M! 点伤害。"
   },
   "shadowverse:Prototype": {
     "NAME": "试作型机械兵",
@@ -3244,7 +3252,7 @@
   },
   "shadowverse:Garven": {
     "NAME": "终击铁腕·加尔瓦",
-    "DESCRIPTION": "造成 !D! 点伤害 !M! 次。 NL 本局对战中每打出过一个兵种（ 机械 、 自然 、 雷维翁 、 马纳历亚 、 创造物 ）的卡牌便额外造成一次伤害。",
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次。 NL 本局对战中每打出过一个兵种（ 机械 、 自然 、 雷维翁 、 马纳历亚 、 创造物 、 宴乐 ）的卡牌便额外造成一次伤害。",
     "EXTENDED_DESCRIPTION": [
       "（造成伤害次数：",
       ")"
@@ -3378,7 +3386,7 @@
   },
   "shadowverse:MoriaeEncomium": {
     "NAME": "愚神礼赞",
-    "DESCRIPTION": "抽 !M! 张牌，增加1张 *苦恼 到抽牌堆中。 NL 倒计时 1 NL 给予随机敌人 !M! 层 易伤 。"
+    "DESCRIPTION": "抽 !M! 张牌，增加1张 *恶魔崇拜 到抽牌堆中。 NL 倒计时 1 NL 给予随机敌人 !M! 层 易伤 。"
   },
   "shadowverse:ThemisDecree": {
     "NAME": "忒弥斯的审判",
@@ -4103,11 +4111,11 @@
   },
   "shadowverse:DesperadosShot": {
     "NAME": "亡命射击",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果手中有 *进化点 ，则 消耗 其中一张并额外对随机敌人造成 !D! 点伤害，下回合开始时增加一张打出前耗能为0的 *魔导四轮车·V 到手中。 NL 消耗 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果手中有 *进化点 ，则 消耗 其中一张并额外对随机敌人造成 !D! 点伤害，下回合开始时增加一张打出前耗能为0的 *魔导四轮车V 到手中。 NL 消耗 。"
   },
   "shadowverse:Spector": {
     "NAME": "幻影拍档·巴妮与巴隆",
-    "DESCRIPTION": " 激奏 0 \b增加1张 *亡命射击 到手中。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 谢幕曲 下回合开始时增加1张打出前耗能为的 *魔导四轮车·V 到手中。 NL 消耗 。"
+    "DESCRIPTION": " 激奏 0 \b增加1张 *亡命射击 到手中。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 谢幕曲 下回合开始时增加1张打出前耗能为的 *魔导四轮车V 到手中。 NL 消耗 。"
   },
   "shadowverse:HonoredFrontguardGeneral": {
     "NAME": "荣耀的铁卫战将",
@@ -4173,5 +4181,154 @@
   "shadowverse:Skullfather": {
     "NAME": "骷髅老爹",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 获得1点 力量 和 敏捷 。 NL 消耗 。"
+  },
+  "shadowverse:EnNightmareTime": {
+    "NAME": "梦魇时分",
+    "DESCRIPTION": "失去1点生命。 NL 移除所有负面效果。 NL  每回合开始时额外抽 !M! 张卡。 NL 消耗 。"
+  },
+  "shadowverse:EnBloodyNail": {
+    "NAME": "血腥利爪",
+    "DESCRIPTION": "失去1点生命，造成 !D! 点伤害。 NL 给予敌人「每打出1张攻击牌，受到1点伤害」。 NL 消耗 。"
+  },
+  "shadowverse:EnDemonStorm": {
+    "NAME": "恶魔风暴",
+    "DESCRIPTION": "给予双方 !D! 点伤害。"
+  },
+  "shadowverse:EnMono": {
+    "NAME": "悠久的绯红·莫诺",
+    "DESCRIPTION": "机械 。 NL 获得 !B! 点 格挡 。 NL 获得2点 力量 。 NL 复仇 则获得 !M! 层 金属化 。"
+  },
+  "shadowverse:EnDemonCommander": {
+    "NAME": "恶魔司令官·劳拉",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 复仇 则下一张攻击牌打出2次。"
+  },
+  "shadowverse:EnTerrorNight": {
+    "NAME": "惊骇之夜",
+    "DESCRIPTION": "给予双方 !D! 点伤害。 NL 限定 下回合开始时不抽牌，改为分别增加1张 *梦魇时分 、 *血腥利爪 、 *惊惧气息 到手中。"
+  },
+  "shadowverse:EnBloodPact": {
+    "NAME": "血之契约",
+    "DESCRIPTION": "失去2点生命。 NL 下回合额外抽 !M! 张牌。"
+  },
+  "shadowverse:Seox": {
+    "NAME": "神狼·希斯",
+    "DESCRIPTION": "造成 !D! 点伤害2次。 NL 奥义 3 \b再造成2次伤害。 NL 奥义 6 \b再造成2次伤害。"
+  },
+  "shadowverse:EnLonePromise": {
+    "NAME": "约定的花朵",
+    "DESCRIPTION": "机械 。 NL 获得1点 力量 ，回复 !M! 点生命 。 NL 给予 !M! 层 虚弱 。"
+  },
+  "shadowverse:Taketsumi": {
+    "NAME": "华之大将·武祇",
+    "DESCRIPTION": "宴乐 。 NL 获得 !B! 点 格挡 。 NL 增加1张 *炫目的崭露 到手中。 NL 协作 10 \b增加1张 *进化点 到手中。 NL ",
+    "UPGRADE_DESCRIPTION": "宴乐 。 NL 获得 !B! 点 格挡 。 NL 增加1张 *炫目的崭露+ 到手中。 NL 协作 10 \b增加1张 *进化点 到手中。 NL ",
+    "EXTENDED_DESCRIPTION": [
+      "（协作数：",
+      ")"
+    ]
+  },
+  "shadowverse:HeroOfTheHunt": {
+    "NAME": "炫目的崭露",
+    "DESCRIPTION": "宴乐 。 NL 造成 !D! 点伤害。 NL 协作 10 \b本回合受到的伤害减少1。 NL 消耗 。 NL ",
+    "EXTENDED_DESCRIPTION": [
+      "（协作数：",
+      ")"
+    ]
+  },
+  "shadowverse:Anisage": {
+    "NAME": "因果的迷途之子·安瑟乔",
+    "DESCRIPTION": "宴乐 。 NL 造成 !D! 点伤害。 NL 增加1张 *不惑的意志 到手中。",
+    "UPGRADE_DESCRIPTION": "宴乐 。 NL 造成 !D! 点无法格挡的伤害。 NL 增加1张 *不惑的意志+ 到手中。"
+  },
+  "shadowverse:UndyingResolve": {
+    "NAME": "不惑的意志",
+    "DESCRIPTION": "宴乐 。 NL 选择弃牌堆1张卡，将其本回合耗能-1。 NL 如果选择的是 *因果的迷途之子·安瑟乔 ，则给予其「 谢幕曲 死灵术 6 \b当这张牌被 消耗 时伤害翻倍，然后将1张复制加入手牌」。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "宴乐 。 NL 选择弃牌堆1张卡，将其耗能-1。 NL 如果选择的是 *因果的迷途之子·安瑟乔 ，则给予其「 谢幕曲 死灵术 6 \b当这张牌被 消耗 时伤害翻倍，然后将1张复制加入手牌」。 NL 消耗 。"
+  },
+  "shadowverse:SoulGuide": {
+    "NAME": "灵魂向导",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 破坏 1张卡，抽 !M! 张牌。"
+  },
+  "shadowverse:Krampus": {
+    "NAME": "坎普斯",
+    "DESCRIPTION": "激奏 0 \b 破坏 1张卡，抽1张牌， 墓地 +2，给予随机敌人 !M! 点伤害。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 谢幕曲 打出或被 消耗 时，抽1张牌， 墓地 +2，给予随机敌人 !M! 层 虚弱 。",
+    "EXTENDED_DESCRIPTION": [
+      "没有攻击牌。"
+    ]
+  },
+  "shadowverse:Itsurugi": {
+    "NAME": "憧憬的飞跃·苇剑",
+    "DESCRIPTION": "宴乐 。 NL 获得 !B! 点 格挡 。 NL 获得「回合结束时，回复1点生命，对全体敌人造成3点伤害」。 NL 增加1张 *幼狼的奋战 到手中。",
+    "UPGRADE_DESCRIPTION": "宴乐 。 NL 获得 !B! 点 格挡 。 NL 获得「回合结束时，回复1点生命，对全体敌人造成3点伤害」。 NL 增加1张 *幼狼的奋战+ 到手中。"
+  },
+  "shadowverse:WolflingStruggle": {
+    "NAME": "幼狼的奋战",
+    "DESCRIPTION": "宴乐 。 NL 造成 !D! 点伤害。 NL 抽1张牌。 NL 消耗 。"
+  },
+  "shadowverse:Yukishima": {
+    "NAME": "真理的大文豪·幸岛",
+    "DESCRIPTION": "宴乐 。 NL 每抽一张牌，对随机敌人造成1点伤害，随机使手中的一张攻击卡的基础伤害和格挡+1。 NL 爆能强化 4 \b对全体敌人造成本场战斗已抽取的卡牌数的伤害。",
+    "UPGRADE_DESCRIPTION":"宴乐 。 NL 增加1张复制品到弃牌堆中。 NL 每抽一张牌，对随机敌人造成1点伤害，随机使手中的一张攻击卡的基础伤害和格挡+1。 NL 爆能强化 4 \b对全体敌人造成本场战斗已抽取的卡牌数的伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已抽取",
+      "张牌)"
+    ]
+  },
+  "shadowverse:Hozumi": {
+    "NAME": "狸惑的女将·穗澄",
+    "DESCRIPTION": "宴乐 。 NL 获得 !B! 点 格挡 。 NL 如果本回合已使用的卡片张数为4以上(不包含本卡)， 消耗 所有手牌，每消耗1张攻击牌，增加1张本回合耗能为0的随机攻击牌到手中。"
+  },
+  "shadowverse:MagnaSaber": {
+    "NAME": "神伟剑士",
+    "DESCRIPTION": "宴乐 · 操纵 2以下。 NL 造成 !D! 点伤害。 NL 对全体敌人造成 !M! 点伤害。 NL 被 消耗 时，不返还因操纵而消耗的攻击牌，改为增加1张打出前耗能为0的这张卡的复制品到手中。"
+  },
+  "shadowverse:AllFeeling": {
+    "NAME": "千箔百面之邪神",
+    "DESCRIPTION": "宴乐 。 NL 消耗 !M! 张牌，抽 !M! 张牌。 NL 增加 !M! 张 *恶魔崇拜 到弃牌堆中。 NL 对全体敌人造成手牌、抽牌堆、弃牌堆、消耗堆、护符区中的诅咒牌数量的 !D! 倍伤害。"
+  },
+  "shadowverse:Paracelise": {
+    "NAME": "贪婪的大恶魔·帕拉瑟丽婕",
+    "DESCRIPTION": "宴乐 。 NL 造成 !D! 点伤害，随机丢弃3张牌。 NL 瞬念召唤 回合结束时，如果你的手牌数为0，加入手中，获得 !B! 点 格挡 ，回复 !M! 点生命，对全体敌人造成 !M! 点伤害，下回合额外抽1张牌。"
+  },
+  "shadowverse:ArcticChimera": {
+    "NAME": "极冠幻想兽",
+    "DESCRIPTION": "激奏 0 \b 土之秘术 \b造成 !D! 点伤害，抽1张牌。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 2次。 NL 土之秘术 3 \b改为3次，然后造成你的 格挡 的伤害。 NL 如果 土之印记 不足3，获得2层并给予敌人2层 易伤 。"
+  },
+  "shadowverse:EternalContract": {
+    "NAME": "无尽契约",
+    "DESCRIPTION": "宴乐 。 NL 抽 !M! 张牌。 NL 丢弃 !M! 张牌。"
+  },
+  "shadowverse:Lifetime": {
+    "NAME": "一生的探究",
+    "DESCRIPTION": "宴乐 。 NL 丢弃1张牌，抽 !M! 张牌。 NL 如果本场战斗已抽取的卡牌数为15以上，额外抽2张。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已抽取",
+      "张牌)"
+    ]
+  },
+  "shadowverse:TriggerPuppeteer": {
+    "NAME": "扳机操偶师",
+    "DESCRIPTION": "抽 !M! 张牌。 NL 增加 !M! 张 *悬丝傀儡 到手中。"
+  },
+  "shadowverse:WhiteEagleBaptism": {
+    "NAME": "咏唱：白鹫的洗礼",
+    "DESCRIPTION": "由 *神圣猎鹰 和 *壮丽大神隼 中随机增加1张到手中。 NL 倒计时 2 \b增加1张未因此加入的卡到手中。"
+  },
+  "shadowverse:Faker": {
+    "NAME": "变幻自如的伪装者",
+    "DESCRIPTION": "当这张卡被丢弃时，直到下回合结束为止进入 复仇 。 NL 复仇 则本回合内每打出1张非打击攻击牌，获得1点 力量 和 敏捷 。 NL 虚无。",
+    "UPGRADE_DESCRIPTION": "当这张卡被丢弃时，直到下回合结束为止进入 复仇 。 NL 复仇 则本回合内每打出1张非打击攻击牌，获得1点 力量 和 敏捷 。"
+  },
+  "shadowverse:RoomServiceDevil": {
+    "NAME": "客房服务的恶魔",
+    "DESCRIPTION": "激奏 0 \b丢弃1张牌，造成 !M! 点伤害。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 如果其他手牌数量为2以下，再造成一次伤害，获得 !B! 点 格挡 。"
+  },
+  "shadowverse:JubilanceWitch": {
+    "NAME": "炸裂魔女",
+    "DESCRIPTION": "获得 !M! 层 土之印记 。 NL 此后，如果 土之印 为3以上，对全体敌人造成 !D! 点伤害。"
+  },
+  "shadowverse:AcidGolem": {
+    "NAME": "强酸巨像",
+    "DESCRIPTION": "土之秘术 造成 !D! 点伤害。 NL 土之秘术 2 \b再造成一次伤害。 NL 土之秘术 3 \b再造成一次伤害。"
   }
 }

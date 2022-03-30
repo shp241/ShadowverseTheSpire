@@ -613,7 +613,8 @@
   "shadowverse:RaveningPower": {
     "NAME": "背德的狂兽",
     "DESCRIPTIONS": [
-      "每抽 #b1 张牌给予随机敌人 #b2 点伤害。"
+      "渴望时，每抽 #b1 张牌给予随机敌人 #b3 点伤害。",
+      "渴望时，每抽 #b1 张牌给予随机敌人 #b4 点伤害。"
     ]
   },
   "shadowverse:AllFlameBarrierPower": {
@@ -1444,6 +1445,53 @@
     "NAME": "音速英雄·麦哲",
     "DESCRIPTIONS": [
       "打出 #y技能牌 时，对全体敌人造成 #b5 点伤害。"
+    ]
+  },
+  "shadowverse:EnemyNightmareTimePower": {
+    "NAME": "梦魇时分",
+    "DESCRIPTIONS": [
+      "回合开始时，额外抽 #b",
+      " 张卡。"
+    ]
+  },
+  "shadowverse:BloodyNailPower": {
+    "NAME": "血腥利爪",
+    "DESCRIPTIONS": [
+      "每打出1张攻击牌， #y尤里亚斯 将会对你造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "shadowverse:HeroOfTheHuntPower": {
+    "NAME": "炫目的崭露",
+    "DESCRIPTIONS": [
+      "受到的伤害减少 #b",
+      " 。"
+    ]
+  },
+  "shadowverse:ItsurugiPower": {
+    "NAME": "憧憬的飞跃·苇剑",
+    "DESCRIPTIONS": [
+      "回合结束时，回复 #b1 点生命，对全体敌人造成 #b3 点伤害。"
+    ]
+  },
+  "shadowverse:YukishimaPower": {
+    "NAME": "真理的大文豪·幸岛",
+    "DESCRIPTIONS": [
+      "每抽一张牌，对随机敌人造成 #b1 点伤害，随机使手中的一张攻击卡的基础伤害和格挡+1。"
+    ]
+  },
+  "shadowverse:ExitVengeancePower": {
+    "NAME": "临时复仇",
+    "DESCRIPTIONS": [
+      "#b",
+      " 回合结束后，如果生命值为最大生命值一半以上则退出 #y复仇 。"
+    ]
+  },
+  "shadowverse:VengeanceBuffPower": {
+    "NAME": "变幻自如的伪装者",
+    "DESCRIPTIONS": [
+      "每打出非打击攻击牌时，获得 #b",
+      " 点 #y力量 和 #y敏捷 。"
     ]
   }
 }

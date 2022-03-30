@@ -51,6 +51,11 @@ public class BatEffect extends AbstractGameEffect {
         this.y = AbstractDungeon.player.hb.cY -AbstractDungeon.player.hb.height / 2.0F + 10.0F * Settings.scale;
     }
 
+    public BatEffect(float x, float y){
+        this();
+        this.x = x;
+        this.y = y;
+    }
 
 
     public void update() {

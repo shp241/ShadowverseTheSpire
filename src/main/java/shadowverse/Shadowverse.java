@@ -2,7 +2,6 @@ package shadowverse;
 
 import basemod.BaseMod;
 import basemod.ReflectionHacks;
-import basemod.animations.SpriterAnimation;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import charbosses.bosses.KMR.KMR;
@@ -143,6 +142,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addMonster(Lelouch.ID, () -> new Lelouch());
         BaseMod.addMonster(KMR.ID, KMR::new);
         BaseMod.addMonster(Naht.ID, Naht::new);
+        BaseMod.addMonsterEncounter(Exordium.ID,new MonsterInfo(charbosses.bosses.Urias.Urias.ID,1.5F));
         BaseMod.addEvent(LelouchCollaboration.ID, LelouchCollaboration.class, TheBeyond.ID);
         BaseMod.addBoss(TheEnding.ID, KMR.ID, "img/monsters/UI/KMR.png", "img/monsters/UI/KMR_Outline.png");
         BaseMod.addBoss(TheEnding.ID, KMR.ID, "img/monsters/UI/KMR.png", "img/monsters/UI/KMR_Outline.png");
@@ -151,6 +151,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addBoss(TheBeyond.ID, Belphomet.ID, "img/monsters/UI/Belphomet.png", "img/monsters/UI/Belphomet_Outline.png");
         BaseMod.addBoss(TheBeyond.ID, VincentBOSS.ID, "img/monsters/UI/VincentBOSS.png", "img/monsters/UI/VincentBOSS_Outline.png");
         BaseMod.addBoss(TheBeyond.ID, Naht.ID, "img/monsters/UI/Naht.png", "img/monsters/UI/Naht_Outline.png");
+        BaseMod.addBoss(TheCity.ID, charbosses.bosses.Urias.Urias.ID,"img/monsters/UI/Urias.png", "img/monsters/UI/Urias_Outline.png");
         BaseMod.addMonster(Megaera.ID, () -> new Megaera());
         BaseMod.addEliteEncounter(TheBeyond.ID, new MonsterInfo(Megaera.ID, 1.5F));
         BaseMod.addMonster(Tisiphone.ID, () -> new Tisiphone());
@@ -1089,6 +1090,37 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         reflectedMap.put("Zecilwenshe_R", new Sfx("sounds/Zecilwenshe_R.wav"));
         reflectedMap.put("Zecilwenshe_R2", new Sfx("sounds/Zecilwenshe_R2.wav"));
         reflectedMap.put("Zecilwenshe_R3", new Sfx("sounds/Zecilwenshe_R3.wav"));
+        reflectedMap.put("Satanael", new Sfx("sounds/Satanael.wav"));
+        reflectedMap.put("FlameNGlass2", new Sfx("sounds/FlameNGlass2.wav"));
+        reflectedMap.put("Taketsumi", new Sfx("sounds/Taketsumi.wav"));
+        reflectedMap.put("HeroOfTheHunt", new Sfx("sounds/HeroOfTheHunt.wav"));
+        reflectedMap.put("Anisage", new Sfx("sounds/Anisage.wav"));
+        reflectedMap.put("UndyingResolve", new Sfx("sounds/UndyingResolve.wav"));
+        reflectedMap.put("SoulGuide", new Sfx("sounds/SoulGuid.wav"));
+        reflectedMap.put("Itsurugi", new Sfx("sounds/Itsurugi.wav"));
+        reflectedMap.put("WolflingStruggle", new Sfx("sounds/WolflingStruggle.wav"));
+        reflectedMap.put("Yukishima", new Sfx("sounds/Yukishima.wav"));
+        reflectedMap.put("Yukishima_EH", new Sfx("sounds/Yukishima_EH.wav"));
+        reflectedMap.put("Hozumi", new Sfx("sounds/Hozumi.wav"));
+        reflectedMap.put("MagnaSaber", new Sfx("sounds/MagnaSaber.wav"));
+        reflectedMap.put("AllFeeling", new Sfx("sounds/AllFeeling.wav"));
+        reflectedMap.put("Paracelise", new Sfx("sounds/Paracelise.wav"));
+        reflectedMap.put("EternalContract", new Sfx("sounds/EternalContract.wav"));
+        reflectedMap.put("Lifetime", new Sfx("sounds/Lifetime.wav"));
+        reflectedMap.put("TriggerPuppeteer", new Sfx("sounds/TriggerPuppeteer.wav"));
+        reflectedMap.put("Faker", new Sfx("sounds/Faker.wav"));
+        reflectedMap.put("VengeanceBuffPower", new Sfx("sounds/VengeanceBuffPower.wav"));
+        reflectedMap.put("AdherentOfScream_Acc", new Sfx("sounds/AdherentOfScream_Acc.wav"));
+        reflectedMap.put("RoomServiceDevil", new Sfx("sounds/RoomServiceDevil.wav"));
+        reflectedMap.put("RoomServiceDevil_Acc", new Sfx("sounds/RoomServiceDevil_Acc.wav"));
+        reflectedMap.put("JubilanceWitch", new Sfx("sounds/JubilanceWitch.wav"));
+        reflectedMap.put("AcidGolem", new Sfx("sounds/AcidGolem.wav"));
+        reflectedMap.put("DemonCommander", new Sfx("sounds/DemonCommander.wav"));
+        reflectedMap.put("Seox", new Sfx("sounds/Seox.wav"));
+        reflectedMap.put("Seox_SA", new Sfx("sounds/Seox_SA.wav"));
+        reflectedMap.put("Seox_SSA", new Sfx("sounds/Seox_SSA.wav"));
+        reflectedMap.put("Urias_Start", new Sfx("sounds/Urias_Start.wav"));
+        reflectedMap.put("Urias_Ev", new Sfx("sounds/Urias_Ev.wav"));
     }
 
     public void receiveEditRelics() {
@@ -1414,9 +1446,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard((AbstractCard) new Korwa());
         BaseMod.addCard((AbstractCard) new Fil());
         BaseMod.addCard((AbstractCard) new PrimalGigant());
-        BaseMod.addCard((AbstractCard) new NewGrea());
         BaseMod.addCard((AbstractCard) new NewEmber());
-        BaseMod.addCard((AbstractCard) new NewAnne());
         BaseMod.addCard((AbstractCard) new ExceedBurst());
         BaseMod.addCard((AbstractCard) new ShikigamiSummoning());
         BaseMod.addCard((AbstractCard) new Geass());
@@ -2023,6 +2053,29 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard((AbstractCard) new Athos());
         BaseMod.addCard((AbstractCard) new DArtagnan());
         BaseMod.addCard((AbstractCard) new MusketeersVow());
+        BaseMod.addCard((AbstractCard) new FlameNGlass2());
+        BaseMod.addCard((AbstractCard) new HeroOfTheHunt());
+        BaseMod.addCard((AbstractCard) new Taketsumi());
+        BaseMod.addCard((AbstractCard) new Anisage());
+        BaseMod.addCard((AbstractCard) new UndyingResolve());
+        BaseMod.addCard((AbstractCard) new SoulGuide());
+        BaseMod.addCard((AbstractCard) new Krampus());
+        BaseMod.addCard((AbstractCard) new Itsurugi());
+        BaseMod.addCard((AbstractCard) new WolflingStruggle());
+        BaseMod.addCard((AbstractCard) new Yukishima());
+        BaseMod.addCard((AbstractCard) new Hozumi());
+        BaseMod.addCard((AbstractCard) new MagnaSaber());
+        BaseMod.addCard((AbstractCard) new AllFeeling());
+        BaseMod.addCard((AbstractCard) new Paracelise());
+        BaseMod.addCard((AbstractCard) new ArcticChimera());
+        BaseMod.addCard((AbstractCard) new EternalContract());
+        BaseMod.addCard((AbstractCard) new Lifetime());
+        BaseMod.addCard((AbstractCard) new TriggerPuppeteer());
+        BaseMod.addCard((AbstractCard) new WhiteEagleBaptism());
+        BaseMod.addCard((AbstractCard) new Faker());
+        BaseMod.addCard((AbstractCard) new RoomServiceDevil());
+        BaseMod.addCard((AbstractCard) new JubilanceWitch());
+        BaseMod.addCard((AbstractCard) new AcidGolem());
         logger.info("Success");
     }
 

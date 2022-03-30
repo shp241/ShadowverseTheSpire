@@ -678,16 +678,6 @@
      AbstractPlayer.poisonKillCount = 0;
      this.gameHandSize = this.masterHandSize;
      this.cardInUse = null;
- 
- 
- 
- 
- 
- 
- 
- 
- 
-     
      AbstractDungeon.overlayMenu.endTurnButton.enabled = false;
      this.hand.clear();
      this.energy.prep();

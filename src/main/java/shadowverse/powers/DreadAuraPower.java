@@ -29,12 +29,16 @@ public class DreadAuraPower extends AbstractPower {
         if (info.owner==this.owner){
             for (AbstractPower p : this.owner.powers)
                 damageAmount = p.onLoseHp(damageAmount);
-            for (AbstractRelic r : AbstractDungeon.player.relics)
-                r.onLoseHp(damageAmount);
+            if (this.owner==AbstractDungeon.player){
+                for (AbstractRelic r : AbstractDungeon.player.relics)
+                    r.onLoseHp(damageAmount);
+            }
             for (AbstractPower p : this.owner.powers)
                 p.wasHPLost(info, damageAmount);
-            for (AbstractRelic r : AbstractDungeon.player.relics)
-                r.wasHPLost(damageAmount);
+            if (this.owner==AbstractDungeon.player){
+                for (AbstractRelic r : AbstractDungeon.player.relics)
+                    r.wasHPLost(damageAmount);
+            }
             if (info.owner != null)
                 for (AbstractPower p : info.owner.powers)
                     p.onInflictDamage(info, damageAmount, this.owner);

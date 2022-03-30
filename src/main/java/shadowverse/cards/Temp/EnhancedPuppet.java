@@ -27,10 +27,10 @@ import shadowverse.characters.Nemesis;
      super();
      this.cardID = ID;
      this.textureImg = IMG_PATH;
-     if (IMG_PATH != null) {
-       this.loadCardImage(IMG_PATH);
-     }
+     this.loadCardImage(IMG_PATH);
      this.rawDescription = DESCRIPTION;
+     this.name = cardStrings.NAME;
+     initializeTitle();
      initializeDescription();
      this.baseDamage = 6;
      this.exhaust = true;

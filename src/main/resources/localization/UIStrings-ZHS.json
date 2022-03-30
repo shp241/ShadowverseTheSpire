@@ -39,6 +39,11 @@
       " NL 谢幕曲 当这张牌被 消耗 时获得张牌的基础 格挡 的 临时生命 。"
     ]
   },
+  "shadowverse:UndyingResolveMod": {
+    "TEXT": [
+      " NL 谢幕曲 死灵术 6 \b当这张牌被 消耗 时伤害翻倍，然后将1张复制加入手牌。"
+    ]
+  },
   "shadowverse:applyEffect": {
     "TEXT": [
       "选择一张牌赋予效果"
