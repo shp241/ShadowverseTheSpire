@@ -104,6 +104,9 @@ public class WhiteEagleBaptism extends AbstractAmuletCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         this.randToGenerate = AbstractDungeon.cardRandomRng.random(1);
-        addToBot(new MakeTempCardInHandAction(returnChoice().get(randToGenerate)));
+        AbstractCard c = returnChoice().get(randToGenerate);
+        if (this.upgraded)
+            c.upgrade();
+        addToBot(new MakeTempCardInHandAction(c.makeStatEquivalentCopy()));
     }
 }

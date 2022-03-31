@@ -1088,7 +1088,7 @@
   },
   "shadowverse:TwinAssault": {
     "NAME": "Twin Assault",
-    "DESCRIPTION": "Deal X damage to 2 random enemies(X equals !D! times of the number of non-Forestcraft cards in your hand)."
+    "DESCRIPTION": "Deal X damage to 2 random enemies(X equals !M! times of the number of non-Forestcraft cards in your hand)."
   },
   "shadowverse:Homecoming": {
     "NAME": "Homecoming",
@@ -2379,6 +2379,10 @@
     "NAME": "肃清的英雄·梅西亚",
     "DESCRIPTION": "抽 !M! 张牌. NL 增加1张 *肃清的一刀 到手中. NL 消耗 .",
     "UPGRADE_DESCRIPTION": "抽 !M! 张牌. NL 增加1张 *肃清的一刀+ 到手中. NL 消耗 ."
+  },
+  "shadowverse:Maisha2": {
+    "NAME": "肃清之器·梅西亚",
+    "DESCRIPTION": "造成消耗堆中攻击牌数量的伤害。 NL 如果剩余能量为3以上时打出这张牌，改为造成 !M! 倍伤害。"
   },
   "shadowverse:Metaproduction": {
     "NAME": "创造术",
@@ -4312,7 +4316,8 @@
   },
   "shadowverse:WhiteEagleBaptism": {
     "NAME": "咏唱：白鹫的洗礼",
-    "DESCRIPTION": "由 *神圣猎鹰 和 *壮丽大神隼 中随机增加1张到手中。 NL 倒计时 2 \b增加1张未因此加入的卡到手中。"
+    "DESCRIPTION": "由 *神圣猎鹰 和 *壮丽大神隼 中随机增加1张到手中。 NL 倒计时 2 \b增加1张未因此加入的卡到手中。",
+    "UPGRADE_DESCRIPTION": "由 *神圣猎鹰+ 和 *壮丽大神隼+ 中随机增加1张到手中。 NL 倒计时 2 \b增加1张未因此加入的卡到手中。"
   },
   "shadowverse:Faker": {
     "NAME": "变幻自如的伪装者",

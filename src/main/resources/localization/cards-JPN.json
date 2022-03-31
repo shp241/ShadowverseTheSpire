@@ -1088,7 +1088,7 @@
   },
   "shadowverse:TwinAssault": {
     "NAME": "エルフの双撃",
-    "DESCRIPTION": "ランダムにXダメージを与える。これを2回行う。(Xは手札のエルフでないカード の !D! 倍)。"
+    "DESCRIPTION": "ランダムにXダメージを与える。これを2回行う。(Xは手札のエルフでないカード の !M! 倍)。"
   },
   "shadowverse:Homecoming": {
     "NAME": "根源への回帰",
@@ -2379,6 +2379,10 @@
     "NAME": "肃清的英雄・梅西亚",
     "DESCRIPTION": "カードを !M! 枚引く。 NL 增加1张 *肃清的一刀 到手中。 NL 廃棄 。",
     "UPGRADE_DESCRIPTION": "カードを !M! 枚引く。 NL 增加1张 *肃清的一刀+ 到手中。 NL 廃棄 。"
+  },
+  "shadowverse:Maisha2": {
+    "NAME": "肃清之器·梅西亚",
+    "DESCRIPTION": "造成消耗堆中攻击牌数量的伤害。 NL 如果剩余能量为3以上时打出这张牌，改为造成 !M! 倍伤害。"
   },
   "shadowverse:Metaproduction": {
     "NAME": "创造术",
@@ -4312,7 +4316,8 @@
   },
   "shadowverse:WhiteEagleBaptism": {
     "NAME": "詠唱：白鷲の洗礼",
-    "DESCRIPTION": "ランダムに *ホリーファルコン と *壮麗なる隼 から1枚を手札に加える。 NL カウントダウン 2 \bこれによって手札に加えていないカードを1枚を手札に加える。"
+    "DESCRIPTION": "ランダムに *ホリーファルコン と *壮麗なる隼 から1枚を手札に加える。 NL カウントダウン 2 \bこれによって手札に加えていないカードを1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION":"ランダムに *ホリーファルコン+ と *壮麗なる隼+ から1枚を手札に加える。 NL カウントダウン 2 \bこれによって手札に加えていないカードを1枚を手札に加える。"
   },
   "shadowverse:Faker": {
     "NAME": "変幻のフェイカー",

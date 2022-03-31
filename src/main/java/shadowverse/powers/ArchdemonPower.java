@@ -52,7 +52,7 @@ public class ArchdemonPower extends AbstractPower implements OnLoseBlockPower {
 
     @Override
     public int onLoseBlock(DamageInfo damageInfo, int i) {
-            if (i<this.owner.currentBlock&& damageInfo.owner!=this.owner){
+            if (i<this.owner.currentBlock&& damageInfo.owner!=this.owner && damageInfo.owner!=null){
                 flash();
                 addToBot((AbstractGameAction)new SFXAction("ArchdemonPower"));
                 addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)this.owner, (AbstractCreature)this.owner, (AbstractPower)new NextTurnBlockPower((AbstractCreature)this.owner, this.amount), this.amount));

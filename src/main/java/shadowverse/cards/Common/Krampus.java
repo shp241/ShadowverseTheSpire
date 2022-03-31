@@ -4,6 +4,7 @@ package shadowverse.cards.Common;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -108,7 +109,7 @@ public class Krampus extends CustomCard {
             addToBot(new DamageRandomEnemyAction(new DamageInfo(abstractPlayer,this.magicNumber,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
             addToBot((AbstractGameAction) new DestroyAction(1, (AbstractGameAction) new DrawCardAction(1)));
         }else {
-            addToBot(new DamageRandomEnemyAction(new DamageInfo(abstractPlayer,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+            addToBot(new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
             addToBot(new DrawCardAction(1));
             AbstractMonster mo = AbstractDungeon.getCurrRoom().monsters.getRandomMonster();
             if (!mo.isDeadOrEscaped()&&!mo.halfDead){

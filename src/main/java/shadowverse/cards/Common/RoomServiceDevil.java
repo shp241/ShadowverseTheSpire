@@ -78,7 +78,7 @@ public class RoomServiceDevil
         }else {
             addToBot(new SFXAction("RoomServiceDevil"));
             addToBot(new DamageAction(m,new DamageInfo(p,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-            if (p.hand.group.size()<3){
+            if (p.hand.group.size()<4){
                 addToBot(new DamageAction(m,new DamageInfo(p,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
                 addToBot(new GainBlockAction(p,this.block));
             }

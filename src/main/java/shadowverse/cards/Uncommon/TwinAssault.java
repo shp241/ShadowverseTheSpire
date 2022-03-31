@@ -21,14 +21,15 @@ public class TwinAssault extends CustomCard {
 
     public TwinAssault() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Elf.Enums.COLOR_GREEN, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
-        this.baseDamage = 7;
+        this.baseMagicNumber = 7;
+        this.magicNumber = this.baseMagicNumber;
     }
 
 
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(2);
+            upgradeMagicNumber(2);
         }
     }
 
@@ -40,8 +41,8 @@ public class TwinAssault extends CustomCard {
             if (ca.color!=Elf.Enums.COLOR_GREEN)
                 nCount++;
         }
-        addToBot((AbstractGameAction)new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, this.damage*nCount, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot((AbstractGameAction)new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, this.damage*nCount, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        addToBot((AbstractGameAction)new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, this.magicNumber*nCount, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        addToBot((AbstractGameAction)new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, this.magicNumber*nCount, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
     }
 
 

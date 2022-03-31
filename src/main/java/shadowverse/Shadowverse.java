@@ -142,7 +142,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addMonster(Lelouch.ID, () -> new Lelouch());
         BaseMod.addMonster(KMR.ID, KMR::new);
         BaseMod.addMonster(Naht.ID, Naht::new);
-        BaseMod.addMonsterEncounter(Exordium.ID,new MonsterInfo(charbosses.bosses.Urias.Urias.ID,1.5F));
+        BaseMod.addMonster(charbosses.bosses.Urias.Urias.ID, charbosses.bosses.Urias.Urias::new);
         BaseMod.addEvent(LelouchCollaboration.ID, LelouchCollaboration.class, TheBeyond.ID);
         BaseMod.addBoss(TheEnding.ID, KMR.ID, "img/monsters/UI/KMR.png", "img/monsters/UI/KMR_Outline.png");
         BaseMod.addBoss(TheEnding.ID, KMR.ID, "img/monsters/UI/KMR.png", "img/monsters/UI/KMR_Outline.png");
@@ -1121,6 +1121,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         reflectedMap.put("Seox_SSA", new Sfx("sounds/Seox_SSA.wav"));
         reflectedMap.put("Urias_Start", new Sfx("sounds/Urias_Start.wav"));
         reflectedMap.put("Urias_Ev", new Sfx("sounds/Urias_Ev.wav"));
+        reflectedMap.put("Maisha2", new Sfx("sounds/Maisha2.wav"));
     }
 
     public void receiveEditRelics() {

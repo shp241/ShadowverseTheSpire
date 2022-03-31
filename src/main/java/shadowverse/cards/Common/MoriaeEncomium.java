@@ -81,7 +81,7 @@ public class MoriaeEncomium extends AbstractAmuletCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot((AbstractGameAction)new DrawCardAction(this.magicNumber));
-        AbstractCard c = new Writhe();
+        AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
         addToBot((AbstractGameAction)new MakeTempCardInDrawPileAction(c,1,true,true,false));
     }
 }
