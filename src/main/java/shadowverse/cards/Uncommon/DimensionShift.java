@@ -60,10 +60,9 @@ public class DimensionShift extends CustomCard {
         for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisTurn) {
             if (c.cardID.equals(this.cardID)) {
                 used++;
-                break;
             }
         }
-        if (used>0){
+        if (used>1){
             addToBot((AbstractGameAction) new ApplyPowerAction(abstractPlayer, abstractPlayer, (AbstractPower) new DimensionShiftPower(abstractPlayer, 1), 1));
         }
         else{
