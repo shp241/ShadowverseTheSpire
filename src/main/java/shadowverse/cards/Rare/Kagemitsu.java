@@ -2,6 +2,7 @@ package shadowverse.cards.Rare;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.ReduceCostAction;
 import com.megacrit.cardcrawl.actions.common.ReduceCostForTurnAction;
@@ -10,11 +11,16 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import shadowverse.action.KagemitsuAction;
+import shadowverse.cards.Temp.LostSamurai;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
+import shadowverse.powers.NextAluzard;
+import shadowverse.powers.NextKagemitsu;
 
 public class Kagemitsu extends CustomCard {
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Kagemitsu");
@@ -24,15 +30,18 @@ public class Kagemitsu extends CustomCard {
     public static final String IMG_PATH = "img/cards/Kagemitsu.png";
 
 
-    public Kagemitsu() {
-        this(0);
+    public Kagemitsu(int upgrades) {
+        this();
+        for (int i = 0; i < upgrades; i++) {
+            this.upgrade();
+        }
     }
 
-    public Kagemitsu(int upgrades) {
+    public Kagemitsu() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ENEMY);
         this.baseDamage = 7;
-        this.timesUpgraded = upgrades;
         this.exhaust = true;
+        this.cardsToPreview = new LostSamurai();
     }
 
     @Override
@@ -50,6 +59,11 @@ public class Kagemitsu extends CustomCard {
     }
 
     @Override
+    public void triggerOnExhaust() {
+        addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new NextKagemitsu(AbstractDungeon.player,1,new LostSamurai(this.timesUpgraded))));
+    }
+
+    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         addToBot(new KagemitsuAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), this));
@@ -57,6 +71,6 @@ public class Kagemitsu extends CustomCard {
 
     @Override
     public AbstractCard makeCopy() {
-        return new Kagemitsu();
+        return new Kagemitsu(this.timesUpgraded);
     }
 }

@@ -687,6 +687,13 @@
       " 张 #y血红獠牙 到手中。"
     ]
   },
+  "shadowverse:NextKagemitsu": {
+    "NAME": "Kagemitsu, Matchless Blade",
+    "DESCRIPTIONS": [
+      "At the start of turn, add #b",
+      " #yKagemitsu, #yLost #ySamurai to your hand."
+    ]
+  },
   "shadowverse:OmenOfLustPower": {
     "NAME": "奸淫绝杰·瓦娜蕾格",
     "DESCRIPTIONS": [

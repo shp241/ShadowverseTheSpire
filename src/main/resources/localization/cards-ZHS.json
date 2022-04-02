@@ -3264,7 +3264,11 @@
   },
   "shadowverse:Kagemitsu": {
     "NAME": "不败剑圣·景光",
-    "DESCRIPTION": "可以升级任意次。 NL 造成 !D! 点伤害。 NL 消耗 。 NL 斩杀 时，升级此牌。"
+    "DESCRIPTION": "可以升级任意次。 NL 造成 !D! 点伤害。 NL 消耗 。 NL 斩杀 时，升级此牌。 NL 谢幕曲 当这张牌被 消耗 时，下回合开始时增加1张当回合消耗为0且升级次数相同的 *失落武士·景光 到手牌中。"
+  },
+  "shadowverse:LostSamurai": {
+    "NAME": "失落武士·景光",
+    "DESCRIPTION": "可以升级任意次。 NL 造成 !D! 点伤害。 NL 消耗 。 NL 如果这张牌升级次数为5次以上，对全体敌人造成10点伤害。 NL 如果为7次以上，则改为20点。"
   },
   "shadowverse:Alexander": {
     "NAME": "亚历山大",

@@ -1122,6 +1122,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         reflectedMap.put("Urias_Start", new Sfx("sounds/Urias_Start.wav"));
         reflectedMap.put("Urias_Ev", new Sfx("sounds/Urias_Ev.wav"));
         reflectedMap.put("Maisha2", new Sfx("sounds/Maisha2.wav"));
+        reflectedMap.put("LostSamurai", new Sfx("sounds/LostSamurai.wav"));
     }
 
     public void receiveEditRelics() {
@@ -2077,6 +2078,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard((AbstractCard) new RoomServiceDevil());
         BaseMod.addCard((AbstractCard) new JubilanceWitch());
         BaseMod.addCard((AbstractCard) new AcidGolem());
+        BaseMod.addCard((AbstractCard) new LostSamurai());
         logger.info("Success");
     }
 

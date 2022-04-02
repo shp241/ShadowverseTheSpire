@@ -3263,8 +3263,12 @@
     ]
   },
   "shadowverse:Kagemitsu": {
-    "NAME": "不败剑圣・景光",
-    "DESCRIPTION": "可以升级任意次。 NL !D! ダメージを与える。 NL 廃棄 。 NL 斩杀 时，升级此牌。"
+    "NAME": "無敗の剣聖・カゲミツ",
+    "DESCRIPTION": "可以升级任意次。 NL !D! ダメージを与える。 NL 廃棄 。 NL 斩杀 时，升级此牌。 NL ラストワード このカードが 廃棄 される時、下回合开始时增加1张当回合消耗为0且升级次数相同的 *ロストサムライ・カゲミツ 到手牌中。"
+  },
+  "shadowverse:LostSamurai": {
+    "NAME": "ロストサムライ・カゲミツ",
+    "DESCRIPTION": "可以升级任意次。 NL !D! ダメージを与える。 NL 廃棄 。 NL 如果这张牌升级次数为5次以上，对全体敌人造成10点伤害。 NL 如果为7次以上，则改为20点。"
   },
   "shadowverse:Alexander": {
     "NAME": "亚历山大",

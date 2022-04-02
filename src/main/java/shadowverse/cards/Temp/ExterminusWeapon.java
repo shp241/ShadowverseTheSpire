@@ -25,15 +25,17 @@ public class ExterminusWeapon extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/ExterminusWeapon.png";
 
-    public ExterminusWeapon() {
-        this(0);
+    public ExterminusWeapon(int upgrades) {
+        this();
+        for (int i = 0; i < upgrades; i++) {
+            this.upgrade();
+        }
     }
 
-    public ExterminusWeapon(int upgrades) {
+    public ExterminusWeapon() {
         super(ID, NAME, IMG_PATH, 6, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
         this.baseDamage = 48;
         this.isMultiDamage = true;
-        this.timesUpgraded = upgrades;
         this.selfRetain = true;
         this.exhaust = true;
     }

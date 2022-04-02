@@ -687,6 +687,13 @@
       " 枚の #y紅の牙 を手札に加える。"
     ]
   },
+  "shadowverse:NextKagemitsu": {
+    "NAME": "無敗の剣聖・カゲミツ",
+    "DESCRIPTIONS": [
+      "ターン開始時 #b",
+      " 枚の #yロストサムライ・カゲミツ を手札に加える。"
+    ]
+  },
   "shadowverse:OmenOfLustPower": {
     "NAME": "姦淫の絶傑・ヴァーナレク",
     "DESCRIPTIONS": [
