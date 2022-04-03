@@ -53,7 +53,7 @@
     "NAME": "Token of 1st",
     "FLAVOR": "I go first, no need to redraw.",
     "DESCRIPTIONS": [
-      "The first #ySkill card you play in the first turn will be played #btwice ."
+      "When you play the first #ySkill card in a combat, gain [E] ."
     ]
   },
   "shadowverse:NeutralBook": {

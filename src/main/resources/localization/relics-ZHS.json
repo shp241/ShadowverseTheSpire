@@ -53,7 +53,7 @@
     "NAME": "先手印记",
     "FLAVOR": "您为先手，不更换手牌。",
     "DESCRIPTIONS": [
-      "首回合的第一张 #y技能牌 将被打出 #b2 次。"
+      "打出第一张 #y技能牌 时，获得 [E] 。"
     ]
   },
   "shadowverse:NeutralBook": {

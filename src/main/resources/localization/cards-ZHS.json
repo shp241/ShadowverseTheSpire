@@ -2231,7 +2231,7 @@
   },
   "shadowverse:NilpotentEntity": {
     "NAME": "虚数物体",
-    "DESCRIPTION": "倒计时 1 \b失去这个能力。 NL 受到为4以上的伤害转变为3。 NL 如果手中有 创造物 牌，随机舍弃1张并增加1回合倒计时数。 NL 虚无 。"
+    "DESCRIPTION": "倒计时 1 \b失去这个能力。 NL 受到为4以上的伤害转变为3。 NL 如果手中有 创造物 牌，随机消耗1张并增加1回合倒计时数。 NL 虚无 。"
   },
   "shadowverse:DeusExMachina": {
     "NAME": "机械降神",
@@ -2331,8 +2331,8 @@
   },
   "shadowverse:OmenOfDestruction": {
     "NAME": "破坏绝杰·里榭娜",
-    "DESCRIPTION": "获得 !M! 层 人工制品 。 NL 增加1张 *圣白破坏的创造 物到手中。",
-    "UPGRADE_DESCRIPTION": "固有 。 NL 获得 !M! 层 人工制品 。 NL 增加1张 *圣白破坏的创造 物到手中。"
+    "DESCRIPTION": "获得 !M! 层 人工制品 。 NL 增加1张 *圣白破坏的创造物 到手中。",
+    "UPGRADE_DESCRIPTION": "固有 。 NL 获得 !M! 层 人工制品 。 NL 增加1张 *圣白破坏的创造物 到手中。"
   },
   "shadowverse:OmenOfDestruction2": {
     "NAME": "奏绝破坏·里榭娜",
@@ -2455,7 +2455,7 @@
   },
   "shadowverse:OrchidNeo": {
     "NAME": "连结之心·奥琪丝",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抉择 ：\b增加1张 *罗伊德 到手中，获得1点力量 和 敏捷 、 增加1张 *提线傀儡·舞诺 和 *提线傀儡·朵叶 到手中。 NL 如果手中有 *悬丝傀儡 ，选择1张 消耗 并增加1张 *提线傀儡·托蕾 到手中。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抉择 ：\b增加1张 *罗伊德 到手中，获得1点 力量 和 敏捷 、 增加1张 *提线傀儡·舞诺 和 *提线傀儡·朵叶 到手中。 NL 如果手中有 *悬丝傀儡 ，选择1张 消耗 并增加1张 *提线傀儡·托蕾 到手中。"
   },
   "shadowverse:MagiTrainCard": {
     "NAME": "魔导列车",
@@ -2666,7 +2666,7 @@
   },
   "shadowverse:WUP": {
     "NAME": "那塔拉崩坏",
-    "DESCRIPTION": "机械 · 自然 。 NL 当这张牌被抽到时，增加1张 *贝尔冯特的弹压 到手中。 NL 如果手牌中没有其他 机械 或 自然 卡，额外增加1张。"
+    "DESCRIPTION": "机械 · 自然 。 NL 当这张牌被抽到时，增加2张 *贝尔冯特的弹压 到手中。 NL 如果卡组中没有其他 机械 或 自然 卡，额外增加1张。 NL 虚无 。"
   },
   "shadowverse:Death": {
     "NAME": "死神",

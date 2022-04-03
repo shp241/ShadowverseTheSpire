@@ -784,18 +784,18 @@
     ]
   },
   "shadowverse:NeoAlectorPower": {
-    "NAME": "再诞的灾乱·阿莱克托",
+    "NAME": "再誕の不鎮・アレークト",
     "DESCRIPTIONS": [
-      "下ターン開始時、额外抽 #b",
-      " 张牌，获得 #b",
-      " 点 力量 和 敏捷 。"
+      "ターン開始時、追加でカードを #b",
+      " 枚引き、筋力と敏捷性 #b",
+      " を得る。"
     ]
   },
   "shadowverse:NeoMegaeraPower": {
-    "NAME": "再燃的愤怒·墨盖拉",
+    "NAME": "再燃の憤怒・メガイラ",
     "DESCRIPTIONS": [
-      "下ターン開始時、回复 #b6 点生命，升级所有手牌，增加 #b1 张 #y奇迹 到手中，对全体敌人造成 #b",
-      " 点伤害"
+      "ターン開始時、HPを #b6 回復し、手札をすべてアップグレードする。 #b1 枚の #y奇跡 を手札に加え、敵全体に #b",
+      " ダメージを与える。"
     ]
   },
   "shadowverse:ProphecyOfDoomPower": {
@@ -819,141 +819,141 @@
     ]
   },
   "shadowverse:PrimeArtifactPower": {
-    "NAME": "精奥的创造物",
+    "NAME": "プライムアーティファクト",
     "DESCRIPTIONS": [
-      "回合开始时 #b",
-      " 张 #y精奥的创造物 到手中。"
+      "ターン開始時、 #b",
+      " 枚の #yプライムアーティファクト を手札に加える。"
     ]
   },
   "shadowverse:AcceleratiumPower": {
     "NAME": "加速装置",
     "DESCRIPTIONS": [
-      "每当打出 #y创造物 牌时，获得 [E] 。每打出 #b2 张 #y创造物 牌时增加 #b1 张 #y虚空 到弃牌堆中。 #b",
-      " 回合后失去本效果。"
+      " #yAF カードをプレイする度、 [E] を得る。 #yAF カードを #b2 枚プレイごとに、 #y空虚 1枚を捨札に加える。 #b",
+      " ターン後にこの能力を失う。"
     ]
   },
   "shadowverse:AugmentationBestowalPower": {
-    "NAME": "機械的解放",
+    "NAME": "機構の解放",
     "DESCRIPTIONS": [
-      "每当打出 #y创造物 牌时，获得 #b",
-      " 点能量，抽 #b",
-      " 张牌。"
+      " #yAF カードをプレイする度、エナジーを #b",
+      " 得、カードを #b",
+      " 枚引く。"
     ]
   },
   "shadowverse:NilpotentPower": {
     "NAME": "虚数物体",
     "DESCRIPTIONS": [
       "#b",
-      " 回合内，受到的 #b4 点以上的伤害转变为3。"
+      " ターンの内、受ける #b4 以上のダメージは3になる。"
     ]
   },
   "shadowverse:DeusExMachinaPower": {
-    "NAME": "機械降神",
+    "NAME": "デウスエクスマキナ",
     "DESCRIPTIONS": [
-      "每当打出 #y创造物 牌时，获得 [E] 。ターン終了時，如果 #y共鸣 则下回合额外抽 #b2 张牌。"
+      " #yAF カードをプレイする度、 [E] を得る。ターン終了時、 #y共鳴 なら、次のターン、追加でカードを #b2 枚引く。"
     ]
   },
   "shadowverse:BearminatorPower": {
-    "NAME": "灭裂机爪熊",
+    "NAME": "ターミネイトマシンベア",
     "DESCRIPTIONS": [
-      "ターン終了時，如果有剩余能量，对全体敌人造成 #b",
-      " 点伤害。"
+      "ターン終了時、残りダメージがあるなら、敵全体に #b",
+      " ダメージを与える。"
     ]
   },
   "shadowverse:YuwanPower": {
-    "NAME": "次元超克者·伊昂",
+    "NAME": "次元の超克者・ユアン",
     "DESCRIPTIONS": [
-      "ターン開始時、如果本场战斗由非 #y共鸣 转变为 #y共鸣 的次数为 #b5 以上，对随机敌人造成 #b",
-      " 点伤害。如果为 #b10 以上，再造成一次伤害。"
+      "ターン開始時、この戦闘中に #y共鳴 になった回数が #b5 回以上なら、ランダムな敵に #b",
+      " ダメージを与える。 #b10 回以上なら、もう一回ダメージを与える。"
     ]
   },
   "shadowverse:WhiteArtifactPower": {
-    "NAME": "圣白破坏的创造物",
+    "NAME": "白き破壊のアーティファクト",
     "DESCRIPTIONS": [
-      "ターン開始時、获得 #b",
-      " 点格挡。如果本场战斗已打出 #y新约·黑之章 则格挡翻倍。"
+      "ターン開始時、 #b",
+      " ブロックを得る。この戦闘中に #y新約·黒の章 をプレイしていたなら、このブロックを倍にする。"
     ]
   },
   "shadowverse:BlackArtifactPower": {
-    "NAME": "暗黑破坏的创造物",
+    "NAME": "黒き破壊のアーティファクト",
     "DESCRIPTIONS": [
-      "ターン開始時、对全体敌人 #b",
-      " 点伤害。如果有 #y圣白破坏的创造物 ，伤害翻倍。"
+      "ターン開始時、敵全体に #b",
+      " ダメージを与える。 #y白き破壊のアーティファクト を持つなら、ダメージを倍にする。"
     ]
   },
   "shadowverse:LichtPower": {
-    "NAME": "齿轮运行者·里希特",
+    "NAME": "歯車の廻し手・リヒト",
     "DESCRIPTIONS": [
-      "每当使用 #y悬丝傀儡 ，获得 #b",
-      " 点格挡。"
+      " #y操り人形 をプレイする度、 #b",
+      " ブロックを得る。"
     ]
   },
   "shadowverse:PuppetRoomPower": {
-    "NAME": "人偶房",
+    "NAME": "パペットルーム",
     "DESCRIPTIONS": [
-      "回合开始时增加 #b1 张 #y悬丝傀儡 到手中。减少1层本能力。"
+      "ターン開始時、 #y操り人形 #b1 枚を手札に加える。"
     ]
   },
   "shadowverse:StringMasterPower": {
-    "NAME": "线偶大师",
+    "NAME": "ストリングマイスター",
     "DESCRIPTIONS": [
-      "每当使用 #y悬丝傀儡 ，增加 #b",
-      " 张 #y悬丝傀儡 到手中。（一回合仅限一次）"
+      "1ターンに1度、 #y操り人形 をプレイする時、 #b",
+      " 枚の #y操り人形 を手札に加える。"
     ]
   },
   "shadowverse:ConcentratePower": {
-    "NAME": "全神贯注",
+    "NAME": "コンセントレート",
     "DESCRIPTIONS": [
-      "如果本ターン終了時有剩余能量，下回合开始额外抽 #b",
-      " 张牌，获得 #b5 点格挡。"
+      "ターン終了時、残りエナジーがあるなら、次のターン開始時、追加でカードを #b",
+      " 枚引き、 #b5 ブロックを得る。"
     ]
   },
   "shadowverse:KarulaPower": {
-    "NAME": "武艺至尊·伽尔拉",
+    "NAME": "アーツマスター・カルラ",
     "DESCRIPTIONS": [
-      "如果本ターン終了時有剩余能量，获得 #b",
-      " 点 #y力量 和 #y敏捷 ，给予随机敌人 #b3 层 #y易伤 和 #y虚弱 。"
+      "ターン終了時、残りエナジーがあるなら、 #b",
+      " の #y筋力 と #y敏捷性 を得、ランダムな敵に #y弱体 と #y脱力 #b3 を得る。"
     ]
   },
   "shadowverse:DrawLoseHealthPower": {
-    "NAME": "肃清的诅咒",
+    "NAME": "粛清の呪い",
     "DESCRIPTIONS": [
-      "抽牌时失去 #b2 点生命。"
+      "カードを引く度、HPを #b2 失う。"
     ]
   },
   "shadowverse:InesPower": {
-    "NAME": "暗云巫女·叶涅司",
+    "NAME": "暗雲の巫女・エネス",
     "DESCRIPTIONS": [
-      "由非 #y共鸣 转变为 #y共鸣 时，对全体敌人造成 #b",
-      " 点伤害。"
+      " #y共鳴 になる度、敵全体に #b",
+      " ダメージを与える。"
     ]
   },
   "shadowverse:DeathPenaltyPower": {
-    "NAME": "死之索偿",
+    "NAME": "デッドペナルティ",
     "DESCRIPTIONS": [
-      "死亡时获得 #b10 金币。"
+      "死亡時、 #b10 ゴールドを得る。"
     ]
   },
   "shadowverse:ModestPower": {
-    "NAME": "至高无上·谦恭",
+    "NAME": "アブソリュート・モデスト",
     "DESCRIPTIONS": [
-      "ターン終了時，对随机敌人造成 #b",
-      " 点伤害。（已消耗的创造物种类为 #b",
-      " 种）"
+      "ターン終了時、ランダムな敵に #b",
+      " ダメージを与える。（廃棄されたAFの種類は #b",
+      " ）"
     ]
   },
   "shadowverse:SpinePower": {
-    "NAME": "神秘守门人·斯碧涅",
+    "NAME": "神秘の番人・スピネ",
     "DESCRIPTIONS": [
-      "每当打出 #y创造物 卡牌时，对随机敌人造成 #b",
-      " 点伤害。"
+      " #yAF カードをプレイする度、ランダムな敵に #b",
+      " ダメージを与える。"
     ]
   },
   "shadowverse:MiriamPower": {
-    "NAME": "反逆之命·米莉亚姆",
+    "NAME": "反逆の命・ミリアム",
     "DESCRIPTIONS": [
-      "本回合内每当消耗 #y创造物 卡牌时，对全体敌人造成 #b",
-      " 点伤害。"
+      "このターン、 #yAF カードを廃棄する度、敵全体に #b",
+      " ダメージを与える。"
     ]
   },
   "shadowverse:DisableEffectDamagePower": {
@@ -970,10 +970,10 @@
     ]
   },
   "shadowverse:TheWheelOfFortunePower": {
-    "NAME": "惨祸的圆环",
+    "NAME": "惨禍の円環",
     "DESCRIPTIONS": [
-      "接下来的 #b",
-      " 个回合内，回合开始前从以下3种效果中发动一种未发动过的效果：「失去 #b2 点力量」「眩晕 #b1 回合」「增加 #b1 张 #y解析的创造物 到你的手中」。"
+      " #b",
+      " ターンの内、ターン開始時、下記の働いていない能力が1つ働く：「筋力を #b2 失う」「 #b1 ターンスタンになる」「 #yアナライズアーティファクト #b1 枚をプレイヤーの手札に加える」。"
     ]
   },
   "shadowverse:AbsoluteOnePower": {

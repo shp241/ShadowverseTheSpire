@@ -49,7 +49,7 @@ public class PrimalShipwright
     @Override
     public void update() {
         if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
-                Shadowverse.Accelerate(this)){
+                Shadowverse.Accelerate(this)&&this.costForTurn!=0&&this.type==CardType.ATTACK){
             setCostForTurn(0);
             this.type = CardType.POWER;
         }else {

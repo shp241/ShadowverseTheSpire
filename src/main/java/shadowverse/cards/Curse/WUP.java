@@ -24,6 +24,7 @@ public class WUP extends CustomCard {
         this.tags.add(AbstractShadowversePlayer.Enums.NATURAL);
         this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
         this.cardsToPreview = new BelphometStatus();
+        this.isEthereal = true;
     }
 
     @Override
@@ -34,8 +35,9 @@ public class WUP extends CustomCard {
     @Override
     public void triggerWhenDrawn() {
         addToBot((AbstractGameAction) new MakeTempCardInHandAction(new BelphometStatus()));
+        addToBot((AbstractGameAction) new MakeTempCardInHandAction(new BelphometStatus()));
         boolean has = false;
-        for (AbstractCard c : AbstractDungeon.player.hand.group) {
+        for (AbstractCard c : AbstractDungeon.player.masterDeck.group) {
             if (c != this && (c.hasTag(AbstractShadowversePlayer.Enums.MACHINE) || c.hasTag(AbstractShadowversePlayer.Enums.NATURAL))) {
                 has = true;
                 break;

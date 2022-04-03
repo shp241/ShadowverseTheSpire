@@ -821,7 +821,7 @@
   "shadowverse:PrimeArtifactPower": {
     "NAME": "精奥的创造物",
     "DESCRIPTIONS": [
-      "回合开始时 #b",
+      "回合开始时增加 #b",
       " 张 #y精奥的创造物 到手中。"
     ]
   },

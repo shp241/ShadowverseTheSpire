@@ -2666,7 +2666,7 @@
   },
   "shadowverse:WUP": {
     "NAME": "World Uprooted",
-    "DESCRIPTION": "Machina · Natura . NL Whenever this card is drawn into your hand, put 1 *Dominator's *crackdown into your hand. NL If there is not any Machina or Natura card in your hand, add 1 additionally."
+    "DESCRIPTION": "Machina · Natura . NL Whenever this card is drawn into your hand, put 2 *Dominator's *crackdown into your hand. NL If there is not any Machina or Natura card in your deck, add 1 additionally. NL Ethereal ."
   },
   "shadowverse:Death": {
     "NAME": "Death",

@@ -231,9 +231,11 @@ public class BelphometCard extends AbstractRightClickCard2 implements Branchable
                     int z = l[2];
                     addToBot((AbstractGameAction)new MakeTempCardInHandAction(assault.makeStatEquivalentCopy(),x));
                     addToBot((AbstractGameAction)new MakeTempCardInHandAction(armored.makeStatEquivalentCopy(),y));
-                    addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new DrawCardNextTurnPower(abstractPlayer,z*3),z*3));
-                    addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new StrengthPower(abstractPlayer,z*3),z*3));
-                    addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new DexterityPower(abstractPlayer,z*3),z*3));
+                    if (z>0){
+                        addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new DrawCardNextTurnPower(abstractPlayer,z*3),z*3));
+                        addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new StrengthPower(abstractPlayer,z*3),z*3));
+                        addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new DexterityPower(abstractPlayer,z*3),z*3));
+                    }
                     this.baseMagicNumber = 0;
                     this.magicNumber = this.baseMagicNumber;
                     break;
