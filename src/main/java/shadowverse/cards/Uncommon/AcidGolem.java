@@ -46,14 +46,23 @@
      AbstractPower p = abstractPlayer.getPower(EarthEssence.POWER_ID);
      if (p!=null){
          if (p.amount>0){
+             if (abstractPlayer instanceof  AbstractShadowversePlayer){
+                 ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
+             }
              addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new EarthEssence((AbstractCreature)abstractPlayer, -1), -1));
              addToBot((AbstractGameAction)new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.POISON));
          }
          if (p.amount>1){
+             if (abstractPlayer instanceof  AbstractShadowversePlayer){
+                 ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
+             }
              addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new EarthEssence((AbstractCreature)abstractPlayer, -1), -1));
              addToBot((AbstractGameAction)new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.POISON));
          }
          if (p.amount>2){
+             if (abstractPlayer instanceof  AbstractShadowversePlayer){
+                 ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
+             }
              addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new EarthEssence((AbstractCreature)abstractPlayer, -1), -1));
              addToBot((AbstractGameAction)new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.POISON));
          }

@@ -79,22 +79,14 @@ public class HeroOfTheHunt extends CustomCard {
     @Override
     public void applyPowers() {
         super.applyPowers();
-        if (this.upgraded) {
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-        } else {
-            this.rawDescription = cardStrings.DESCRIPTION;
-        }
+        this.rawDescription = cardStrings.DESCRIPTION;
         this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + rally() + cardStrings.EXTENDED_DESCRIPTION[1];
         this.initializeDescription();
     }
 
     @Override
     public void onMoveToDiscard() {
-        if (this.upgraded) {
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-        } else {
-            this.rawDescription = cardStrings.DESCRIPTION;
-        }
+        this.rawDescription = cardStrings.DESCRIPTION;
         this.initializeDescription();
     }
 

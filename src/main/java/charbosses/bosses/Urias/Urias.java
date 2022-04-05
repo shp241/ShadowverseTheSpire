@@ -74,7 +74,7 @@ public class Urias
         addToBot((AbstractGameAction) new DelayedActionAction((AbstractGameAction) new CharbossTurnstartDrawAction()));
         CardCrawlGame.music.unsilenceBGM();
         AbstractDungeon.scene.fadeOutAmbiance();
-        AbstractDungeon.getCurrRoom().playBgmInstantly("BOSS_CITY");
+        AbstractDungeon.getCurrRoom().playBgmInstantly("UriasBgm");
         this.chosenArchetype.addedPreBattle();
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SFXAction("Urias_Start"));
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new TalkAction((AbstractCreature) this, DIALOG[0]));

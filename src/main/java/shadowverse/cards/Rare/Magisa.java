@@ -68,20 +68,26 @@ import shadowverse.characters.Witchcraft;
      if (powerExists) {
        switch (earthEssence.amount) {
          case 1:
-           ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
+             if (abstractPlayer instanceof  AbstractShadowversePlayer){
+                 ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
+             }
            addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, this.block));
            addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new EarthEssence((AbstractCreature)abstractPlayer, -1), -1));
            break;
          
          case 2:
-           ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
+             if (abstractPlayer instanceof  AbstractShadowversePlayer){
+                 ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
+             }
            addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, this.block));
            addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
            addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new EarthEssence((AbstractCreature)abstractPlayer, -2), -2));
            break;
          
          case 3:
-           ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
+             if (abstractPlayer instanceof  AbstractShadowversePlayer){
+                 ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
+             }
            addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, this.block));
            addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
            addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractMonster, (AbstractCreature)abstractPlayer, (AbstractPower)new WeakPower((AbstractCreature)abstractMonster, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
@@ -89,7 +95,9 @@ import shadowverse.characters.Witchcraft;
            break;
          
          case 4:
-           ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
+             if (abstractPlayer instanceof  AbstractShadowversePlayer){
+                 ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
+             }
            addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, this.block));
            addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
            addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractMonster, (AbstractCreature)abstractPlayer, (AbstractPower)new WeakPower((AbstractCreature)abstractMonster, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));

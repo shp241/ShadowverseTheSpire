@@ -4339,5 +4339,9 @@
   "shadowverse:AcidGolem": {
     "NAME": "强酸巨像",
     "DESCRIPTION": "土之秘术 造成 !D! 点伤害。 NL 土之秘术 2 \b再造成一次伤害。 NL 土之秘术 3 \b再造成一次伤害。"
+  },
+  "shadowverse:Comfort": {
+    "NAME": "梦幻款待",
+    "DESCRIPTION": "消耗1张牌，造成 !D! 点伤害。 NL 斩杀 时，最大生命值+ !M! 。 NL 消耗 。"
   }
 }

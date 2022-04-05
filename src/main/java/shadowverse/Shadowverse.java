@@ -7,6 +7,7 @@ import basemod.interfaces.*;
 import charbosses.bosses.KMR.KMR;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.maps.MapProperties;
 import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
@@ -61,6 +62,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
     public static final Color BISHOP_WHITE = CardHelper.getColor(239, 236, 186);
     public static final Logger logger = LogManager.getLogger(Shadowverse.class.getName());
     public static Properties ShadowverseDefaults = new Properties();
+    public static Map<String, String> tempmusic = new HashMap<>();
 
     public static boolean Enhance(int EH) {
         boolean res = false;
@@ -177,6 +179,11 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addPotion(ReduceCountDownPotion.class, Color.WHITE, Color.GOLD, Color.WHITE, ReduceCountDownPotion.POTION_ID, Bishop.Enums.Bishop);
         BaseMod.addPotion(IndulgencePotion.class, Color.DARK_GRAY, Color.FIREBRICK, null, IndulgencePotion.POTION_ID, Bishop.Enums.Bishop);
         BaseMod.addPotion(SacredHealingPotion.class, Color.WHITE, Color.GOLD, null, SacredHealingPotion.POTION_ID, Bishop.Enums.Bishop);
+        tempmusic.put("GrandBattle","sounds/GrandBattle.mp3");
+        tempmusic.put("Aiolon","sounds/Aiolon.mp3");
+        tempmusic.put("StormOverRivayle","sounds/StormOverRivayle.mp3");
+        tempmusic.put("IceschillendrigBgm","sounds/IschellendrigBgm.mp3");
+        tempmusic.put("UriasBgm","sounds/UriasBgm.mp3");
         HashMap<String, Sfx> reflectedMap = getSoundsMap();
         reflectedMap.put("spell_boost", new Sfx("sounds/spell_boost2.wav"));
         reflectedMap.put("EarthEssence", new Sfx("sounds/EarthEssence.wav"));
@@ -660,7 +667,6 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         reflectedMap.put("DeadSoulTaker", new Sfx("sounds/DeadSoulTaker.wav"));
         reflectedMap.put("AbyssDoomLord", new Sfx("sounds/AbyssDoomLord.wav"));
         reflectedMap.put("SpineLucille", new Sfx("sounds/SpineLucille.wav"));
-        reflectedMap.put("GrandBattle", new Sfx("sounds/GrandBattle.wav"));
         reflectedMap.put("Royal_Hurt", new Sfx("sounds/Royal_Hurt.wav"));
         reflectedMap.put("Royal_Hurt1", new Sfx("sounds/Royal_Hurt1.wav"));
         reflectedMap.put("Royal_Hurt2", new Sfx("sounds/Royal_Hurt2.wav"));
@@ -1123,6 +1129,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         reflectedMap.put("Urias_Ev", new Sfx("sounds/Urias_Ev.wav"));
         reflectedMap.put("Maisha2", new Sfx("sounds/Maisha2.wav"));
         reflectedMap.put("LostSamurai", new Sfx("sounds/LostSamurai.wav"));
+        reflectedMap.put("Comfort", new Sfx("sounds/Comfort.wav"));
     }
 
     public void receiveEditRelics() {
@@ -2079,6 +2086,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard((AbstractCard) new JubilanceWitch());
         BaseMod.addCard((AbstractCard) new AcidGolem());
         BaseMod.addCard((AbstractCard) new LostSamurai());
+        BaseMod.addCard((AbstractCard) new Comfort());
         logger.info("Success");
     }
 

@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.characters.AbstractShadowversePlayer;
@@ -43,7 +44,9 @@ import shadowverse.characters.Witchcraft;
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     ((AbstractShadowversePlayer)abstractPlayer).mysteriaCount++;
+     if (AbstractDungeon.player instanceof AbstractShadowversePlayer) {
+       ((AbstractShadowversePlayer) AbstractDungeon.player).mysteriaCount++;
+     }
      addToBot((AbstractGameAction)new SFXAction("Inferno"));
      for (int i = 0; i < this.magicNumber; i++) {
        addToBot((AbstractGameAction)new AttackDamageRandomEnemyAction((AbstractCard)this, AbstractGameAction.AttackEffect.FIRE));

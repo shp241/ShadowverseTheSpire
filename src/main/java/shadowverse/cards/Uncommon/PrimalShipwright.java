@@ -30,6 +30,7 @@ public class PrimalShipwright
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/PrimalShipwright.png";
+    public boolean crystalize;
 
     public PrimalShipwright() {
         super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.ENEMY);
@@ -49,7 +50,7 @@ public class PrimalShipwright
     @Override
     public void update() {
         if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
-                Shadowverse.Accelerate(this)&&this.costForTurn!=0&&this.type==CardType.ATTACK){
+                Shadowverse.Accelerate(this)&&!this.crystalize){
             setCostForTurn(0);
             this.type = CardType.POWER;
         }else {
@@ -107,6 +108,7 @@ public class PrimalShipwright
         if (this.type==CardType.POWER && this.costForTurn == 0){
             addToBot((AbstractGameAction)new SFXAction("PrimalShipwright_Acc"));
         }else {
+            this.crystalize = false;
             addToBot((AbstractGameAction)new SFXAction("PrimalShipwright"));
             calculateCardDamage(abstractMonster);
             addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
@@ -129,6 +131,7 @@ public class PrimalShipwright
             c.upgrade();
         c.setCostForTurn(0);
         c.type = CardType.ATTACK;
+        ((PrimalShipwright)c).crystalize = true;
         AbstractDungeon.player.hand.addToTop(c);
     }
 

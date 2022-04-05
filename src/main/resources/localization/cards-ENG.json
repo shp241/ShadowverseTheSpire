@@ -4339,5 +4339,9 @@
   "shadowverse:AcidGolem": {
     "NAME": "Acid Golem",
     "DESCRIPTION": "Earth_Rite Deal !D! damage. NL Earth_Rite 2 \bDo this 1 time again. NL Earth_Rite 3 \bDo this 1 time again."
+  },
+  "shadowverse:Comfort": {
+    "NAME": "Illusions of Comfort",
+    "DESCRIPTION": "Exhaust 1 card, deal !D! damage. NL When Fatal , increase yor max HP by !M! . NL Exhaust ."
   }
 }

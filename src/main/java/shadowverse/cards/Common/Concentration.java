@@ -51,7 +51,9 @@ import shadowverse.characters.Witchcraft;
        } 
      } 
      if (powerExists) {
-       ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
+         if (abstractPlayer instanceof  AbstractShadowversePlayer){
+             ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
+         }
        addToBot((AbstractGameAction)new DrawCardAction((AbstractCreature)abstractPlayer, this.magicNumber + 1));
        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new GainBlockAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, this.block));
        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new EarthEssence((AbstractCreature)abstractPlayer, -1), -1));

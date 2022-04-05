@@ -71,6 +71,7 @@ public class ShadowBahmut
        addToBot((AbstractGameAction)new WaitAction(0.8F));
        if (abstractMonster.currentHealth>this.damage){
            abstractMonster.currentHealth -= Math.min(this.damage, abstractMonster.currentHealth - 1);
+           abstractMonster.update();
        }else {
            addToBot((AbstractGameAction)new JudgementAction((AbstractCreature)abstractMonster, this.damage));
        }

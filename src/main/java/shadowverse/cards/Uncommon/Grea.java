@@ -82,7 +82,9 @@ import java.util.List;
    }
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     ((AbstractShadowversePlayer)abstractPlayer).mysteriaCount++;
+     if (AbstractDungeon.player instanceof AbstractShadowversePlayer) {
+       ((AbstractShadowversePlayer) AbstractDungeon.player).mysteriaCount++;
+     }
      switch (chosenBranch()){
        case 0:
          AbstractCard a = (AbstractCard)new Ember();

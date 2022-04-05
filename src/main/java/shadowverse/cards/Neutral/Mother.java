@@ -38,22 +38,26 @@ public class Mother extends AbstractNeutralCard{
 
     public void applyPowers() {
         super.applyPowers();
-        int count = ((AbstractShadowversePlayer) AbstractDungeon.player).naterranCount;
-        this.rawDescription = cardStrings.DESCRIPTION;
-        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + count;
-        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[1];
-        initializeDescription();
+        if (AbstractDungeon.player instanceof AbstractShadowversePlayer){
+            int count = ((AbstractShadowversePlayer) AbstractDungeon.player).naterranCount;
+            this.rawDescription = cardStrings.DESCRIPTION;
+            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + count;
+            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[1];
+            initializeDescription();
+        }
     }
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot((AbstractGameAction)new SFXAction("Mother"));
         addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractMonster, (AbstractCreature)abstractPlayer, (AbstractPower)new PoisonPower((AbstractCreature)abstractMonster, (AbstractCreature)abstractPlayer, this.magicNumber)));
-        if (((AbstractShadowversePlayer)abstractPlayer).naterranCount >= 1){
-            addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractMonster, (AbstractCreature)abstractPlayer, (AbstractPower)new PoisonPower((AbstractCreature)abstractMonster, (AbstractCreature)abstractPlayer, this.magicNumber)));
-        }
-        if (((AbstractShadowversePlayer)abstractPlayer).naterranCount >= 3){
-            addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
+        if (AbstractDungeon.player instanceof AbstractShadowversePlayer){
+            if (((AbstractShadowversePlayer)abstractPlayer).naterranCount >= 1){
+                addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractMonster, (AbstractCreature)abstractPlayer, (AbstractPower)new PoisonPower((AbstractCreature)abstractMonster, (AbstractCreature)abstractPlayer, this.magicNumber)));
+            }
+            if (((AbstractShadowversePlayer)abstractPlayer).naterranCount >= 3){
+                addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
+            }
         }
     }
 }

@@ -45,8 +45,6 @@ public class KMR
     public static final String[] DIALOG = monsterStrings.DIALOG;
     private boolean secondPhase = true;
     private SpriterAnimation extra = new SpriterAnimation("img/monsters/KMR/extra/KMR.scml");
-//    public static shadowverse.animation.AbstractAnimation bigAnimation = new shadowverse.animation.AbstractAnimation("img/animation/KMR/class_3208.atlas", "img/animation/KMR/class_3208.json", com.megacrit.cardcrawl.core.Settings.M_W / 1600.0F, com.megacrit.cardcrawl.core.Settings.M_W / 2.0F, com.megacrit.cardcrawl.core.Settings.M_H / 2.0F, 0F, 0F);
-
 
     public KMR() {
         super(NAME, ID, 500, -4.0F, -16.0F, 220.0F, 400.0F, null, 0.0F, -20.0F, AbstractPlayer.PlayerClass.IRONCLAD);
@@ -57,7 +55,6 @@ public class KMR
         this.type = EnemyType.BOSS;
         this.dialogX = -100.0F * Settings.scale;
         this.dialogY = 10.0F * Settings.scale;
-//        bigAnimation.setVisible(false);
     }
 
 
@@ -73,14 +70,11 @@ public class KMR
 
     @Override
     public void usePreBattleAction() {
-        CardCrawlGame.sound.stop("GrandBattle");
         this.energy.recharge();
         addToBot((AbstractGameAction) new DelayedActionAction((AbstractGameAction) new CharbossTurnstartDrawAction()));
         CardCrawlGame.music.unsilenceBGM();
         AbstractDungeon.scene.fadeOutAmbiance();
-        if (Settings.MUSIC_VOLUME>0.0F){
-            CardCrawlGame.sound.playAndLoop("GrandBattle");
-        }
+        AbstractDungeon.getCurrRoom().playBgmInstantly("GrandBattle");
         (AbstractDungeon.getCurrRoom()).cannotLose = true;
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SFXAction("KMR1"));
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new TalkAction((AbstractCreature) this, DIALOG[0]));
@@ -131,7 +125,7 @@ public class KMR
                 archetype.initialize();
                 this.chosenArchetype = archetype;
                 this.chosenArchetype.addedPreBattle();
-//                addToBot(new AnimationAction(bigAnimation, "extra", 3.0F, false));
+                AbstractDungeon.actionManager.addToBottom(new ChangeSpriteAction(extra, this, 2.1F));
                 break;
             case "CALAMITY":
                 this.powers.removeIf(p -> p.type == AbstractPower.PowerType.DEBUFF || p.ID.equals(AbsoluteOnePower.POWER_ID));
@@ -152,11 +146,11 @@ public class KMR
                 archetype3.initialize();
                 this.chosenArchetype = archetype3;
                 this.chosenArchetype.addedPreBattle();
+                AbstractDungeon.actionManager.addToBottom(new ChangeSpriteAction(extra, this, 2.1F));
                 break;
             default:
                 break;
         }
-        AbstractDungeon.actionManager.addToBottom(new ChangeSpriteAction(extra, this, 2.1F));
     }
 
     public void onPlayAttackCardSound() {
@@ -191,7 +185,6 @@ public class KMR
     public void die() {
         if (!(AbstractDungeon.getCurrRoom()).cannotLose) {
             super.die();
-            CardCrawlGame.sound.stop("GrandBattle");
             onBossVictoryLogic();
             onFinalBossVictoryLogic();
             CardCrawlGame.stopClock = true;

@@ -135,7 +135,9 @@ import shadowverse.action.BlockPerCardAction;
          } 
        } 
        if (powerExists) {
-         ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
+           if (abstractPlayer instanceof  AbstractShadowversePlayer){
+               ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
+           }
          addToBot((AbstractGameAction)new BlockPerCardAction(this.block));
          addToBot((AbstractGameAction)new ExpertiseAction((AbstractCreature)abstractPlayer, 10));
          addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new EarthEssence((AbstractCreature)abstractPlayer, -this.magicNumber), -this.magicNumber));

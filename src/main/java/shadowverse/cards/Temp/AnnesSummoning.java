@@ -42,7 +42,9 @@ import shadowverse.characters.Witchcraft;
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     ((AbstractShadowversePlayer)abstractPlayer).mysteriaCount++;
+     if (AbstractDungeon.player instanceof AbstractShadowversePlayer){
+       ((AbstractShadowversePlayer) AbstractDungeon.player).mysteriaCount++;
+     }
      AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new GainBlockAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, this.block));
    }
  

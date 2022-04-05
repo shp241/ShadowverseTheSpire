@@ -53,7 +53,9 @@ import shadowverse.characters.AbstractShadowversePlayer;
          } 
        } 
        if (power!=null&&power.amount>=2) {
-         ((AbstractShadowversePlayer)p).earthCount++;
+         if (p instanceof  AbstractShadowversePlayer){
+           ((AbstractShadowversePlayer)p).earthCount+=2;
+         }
          flash();
          addToBot((AbstractGameAction)new SFXAction("FaustPower2"));
          addToBot((AbstractGameAction)new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE));

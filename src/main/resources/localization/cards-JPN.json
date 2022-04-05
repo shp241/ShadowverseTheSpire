@@ -4339,5 +4339,9 @@
   "shadowverse:AcidGolem": {
     "NAME": "アシッドゴーレム",
     "DESCRIPTION": "土の秘術 !D! ダメージを与える。 NL 土の秘術 2 \bもう一回ダメージを与える。 NL 土の秘術 3 \bもう一回ダメージを与える。"
+  },
+  "shadowverse:Comfort": {
+    "NAME": "夢のもてなし",
+    "DESCRIPTION": "カード1枚を廃棄し、 !D! ダメージを与える。 NL 致命 時、最大HPを+ !M! する。 NL 廃棄 。"
   }
 }

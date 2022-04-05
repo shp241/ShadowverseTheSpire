@@ -64,7 +64,9 @@ import shadowverse.characters.AbstractShadowversePlayer;
          } 
        } 
        if (powerExists) {
-         ((AbstractShadowversePlayer)p).earthCount++;
+         if (p instanceof  AbstractShadowversePlayer){
+           ((AbstractShadowversePlayer)p).earthCount++;
+         }
          flash();
          addToBot((AbstractGameAction)new SFXAction("FaustPower"));
          addToBot((AbstractGameAction)new ApplyPowerAction(this.owner, this.owner, (AbstractPower)new StrengthPower(this.owner, this.amount), this.amount));

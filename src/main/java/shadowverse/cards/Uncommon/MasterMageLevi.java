@@ -53,7 +53,9 @@ import shadowverse.characters.Witchcraft;
        } 
      } 
      if (powerExists) {
-       ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
+         if (abstractPlayer instanceof  AbstractShadowversePlayer){
+             ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
+         }
        addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)abstractPlayer, DamageInfo.createDamageMatrix(this.damage, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true));
        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new EarthEssence((AbstractCreature)abstractPlayer, -this.magicNumber), -this.magicNumber));
      } 

@@ -41,7 +41,6 @@ public class Technolord
 
 
     public void applyPowers() {
-        AbstractShadowversePlayer w = (AbstractShadowversePlayer) AbstractDungeon.player;
         super.applyPowers();
         int count = 0;
         for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {

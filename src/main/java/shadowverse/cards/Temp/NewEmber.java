@@ -43,7 +43,9 @@ import shadowverse.characters.Witchcraft;
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     ((AbstractShadowversePlayer)abstractPlayer).mysteriaCount++;
+     if (AbstractDungeon.player instanceof AbstractShadowversePlayer) {
+       ((AbstractShadowversePlayer) AbstractDungeon.player).mysteriaCount++;
+     }
      addToBot((AbstractGameAction)new SFXAction("NewEmber"));
      int drawPileAmt = abstractPlayer.drawPile.group.size();
      int masterDeckAmt = AbstractDungeon.player.masterDeck.group.size();

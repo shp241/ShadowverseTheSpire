@@ -44,7 +44,7 @@ public class ArchetypeVampire extends ArchetypeBaseVampire {
     public ArchetypeVampire() {
         super("Vampire", "Vampire");
         if (AbstractDungeon.ascensionLevel >= 19) {
-            this.maxHPModifier += 80;
+            this.maxHPModifier += 50;
         } else if (AbstractDungeon.ascensionLevel >= 4) {
             this.maxHPModifier += 40;
         }

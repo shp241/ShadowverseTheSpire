@@ -54,7 +54,9 @@
        } 
      } 
      if (powerExists) {
-       ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
+         if (abstractPlayer instanceof  AbstractShadowversePlayer){
+             ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
+         }
        addToBot((AbstractGameAction)new DrawCardAction((AbstractCreature)abstractPlayer, this.magicNumber));
        addToBot((AbstractGameAction)new GainEnergyAction(this.magicNumber));
        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new EarthEssence((AbstractCreature)abstractPlayer, -this.magicNumber), -this.magicNumber));

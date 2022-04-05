@@ -95,7 +95,9 @@
          } 
        } 
        if (powerExists) {
-         ((AbstractShadowversePlayer)abstractPlayer).earthCount += earthEssence.amount;
+           if (abstractPlayer instanceof  AbstractShadowversePlayer){
+               ((AbstractShadowversePlayer)abstractPlayer).earthCount += earthEssence.amount;
+           }
            int [] l = new int[3];
            rand(l,3,earthEssence.amount);
            int x = l[0];

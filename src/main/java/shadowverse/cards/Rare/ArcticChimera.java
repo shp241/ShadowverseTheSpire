@@ -79,6 +79,9 @@ public class ArcticChimera
                 addToBot((AbstractGameAction) new DamageAction((AbstractCreature) abstractMonster, new DamageInfo((AbstractCreature) abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
                 addToBot((AbstractGameAction) new ReducePowerAction(abstractPlayer, abstractPlayer, abstractPlayer.getPower(EarthEssence.POWER_ID), 1));
                 addToBot((AbstractGameAction) new DrawCardAction(1));
+                if (abstractPlayer instanceof  AbstractShadowversePlayer){
+                    ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
+                }
             }
         }else {
             addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
@@ -88,6 +91,9 @@ public class ArcticChimera
                 addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new BiteEffect(abstractMonster.hb.cX, abstractMonster.hb.cY - 40.0F * Settings.scale, Color.WHITE.cpy()), 0.2F));
                 addToBot((AbstractGameAction)new DamageAction((AbstractCreature) abstractMonster, new DamageInfo((AbstractCreature) abstractPlayer, abstractPlayer.currentBlock+this.block*3, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
                 addToBot((AbstractGameAction)new ReducePowerAction(abstractPlayer, abstractPlayer, abstractPlayer.getPower(EarthEssence.POWER_ID), 3));
+                if (abstractPlayer instanceof  AbstractShadowversePlayer){
+                    ((AbstractShadowversePlayer)abstractPlayer).earthCount+=2;
+                }
             }else {
                 addToBot((AbstractGameAction)new ApplyPowerAction(abstractMonster,abstractPlayer,new VulnerablePower(abstractMonster,2,false),2));
                 addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,new EarthEssence(abstractPlayer,2),2));

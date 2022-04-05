@@ -117,7 +117,7 @@ public class Iceschillendrig extends CustomMonster implements SpriteCreature {
     public void usePreBattleAction() {
         CardCrawlGame.music.unsilenceBGM();
         AbstractDungeon.scene.fadeOutAmbiance();
-        AbstractDungeon.getCurrRoom().playBgmInstantly("BOSS_BEYOND");
+        AbstractDungeon.getCurrRoom().playBgmInstantly("IceschillendrigBgm");
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) AbstractDungeon.player, (AbstractCreature) this, (AbstractPower) new ICPower((AbstractCreature) AbstractDungeon.player, (AbstractCreature) this)));
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) this, (AbstractCreature) this, (AbstractPower) new WeakPower((AbstractCreature) this, 99, true)));
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new TalkAction((AbstractCreature) this, DIALOG[0]));

@@ -109,7 +109,7 @@ public class Naht extends CustomMonster implements SpriteCreature {
     public void usePreBattleAction() {
         CardCrawlGame.music.unsilenceBGM();
         AbstractDungeon.scene.fadeOutAmbiance();
-        AbstractDungeon.getCurrRoom().playBgmInstantly("BOSS_BEYOND");
+        AbstractDungeon.getCurrRoom().playBgmInstantly("StormOverRivayle");
         int baseStrength = 0;
         if (AbstractDungeon.ascensionLevel >= 19) {
             baseStrength = AbstractDungeon.player.currentHealth / 13;

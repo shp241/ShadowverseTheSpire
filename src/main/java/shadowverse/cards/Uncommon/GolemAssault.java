@@ -71,7 +71,9 @@ import shadowverse.cards.Temp.ConjureGuardian;
        } 
      } 
      if (powerExists) {
-       ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
+         if (abstractPlayer instanceof  AbstractShadowversePlayer){
+             ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
+         }
        c.setCostForTurn(0);
        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new EarthEssence((AbstractCreature)abstractPlayer, -1), -1));
      } 

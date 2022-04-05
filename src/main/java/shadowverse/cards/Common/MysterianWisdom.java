@@ -73,7 +73,9 @@
    }
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     ((AbstractShadowversePlayer)abstractPlayer).mysteriaCount++;
+       if (AbstractDungeon.player instanceof AbstractShadowversePlayer){
+           ((AbstractShadowversePlayer) AbstractDungeon.player).mysteriaCount++;
+       }
        addToBot((AbstractGameAction)new SelectCardsInHandAction(1,TEXT[0],false,false,card -> {
            return true;
        }, abstractCards ->{

@@ -55,7 +55,7 @@ public class Hozumi extends CustomCard {
                     if (card.type==CardType.ATTACK){
                         AbstractCard c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.ATTACK).makeCopy();
                         c.setCostForTurn(0);
-                        addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, true));
+                        p.hand.addToTop(c);
                     }
                 }
             }

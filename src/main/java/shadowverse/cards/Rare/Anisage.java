@@ -25,6 +25,7 @@ import com.megacrit.cardcrawl.powers.MinionPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.BloodShotEffect;
+import com.megacrit.cardcrawl.vfx.combat.FlashAtkImgEffect;
 import com.megacrit.cardcrawl.vfx.combat.WeightyImpactEffect;
 import shadowverse.cards.Temp.UndyingResolve;
 import shadowverse.characters.AbstractShadowversePlayer;
@@ -63,7 +64,8 @@ public class Anisage
         if (upgraded){
             if (m.currentHealth>this.damage){
                 m.currentHealth -= Math.min(this.damage, m.currentHealth - 1);
-                addToBot(new VFXAction(new BloodShotEffect(p.hb.cX,p.hb.cY,m.hb.cX,m.hb.cY,1)));
+                AbstractDungeon.effectList.add(new FlashAtkImgEffect(m.hb.cX, m.hb.cY, AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+                m.update();
             }else {
                 addToBot((AbstractGameAction)new JudgementAction((AbstractCreature)m, this.damage));
             }
