@@ -20,8 +20,6 @@ public class OliviasBlessing extends CustomRelic implements BetterClickableRelic
     public static final String ID = "shadowverse:OliviasBlessing";
     public static final String IMG = "img/relics/OliviasBlessing.png";
     public static final String OUTLINE_IMG = "img/relics/outline/OliviasBlessing_Outline.png";
-    public boolean lifeCheck;
-    private boolean triggeredThisTurn;
 
     public OliviasBlessing() {
         super(ID, new Texture(Gdx.files.internal(IMG)), RelicTier.BOSS, LandingSound.SOLID);
@@ -34,21 +32,14 @@ public class OliviasBlessing extends CustomRelic implements BetterClickableRelic
 
     @Override
     public void atBattleStart() {
-        this.counter = 5;
-        this.triggeredThisTurn = false;
+        this.counter = 3;
         addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
     }
 
     @Override
-    public void atTurnStart() {
-        this.triggeredThisTurn = false;
-    }
-
-    @Override
     public void onEachRightClick() {
-        if (!this.grayscale && !this.triggeredThisTurn) {
+        if (!this.grayscale) {
             this.counter--;
-            this.triggeredThisTurn = true;
             flash();
             AbstractCard c = new Miracle();
             addToBot(new MakeTempCardInHandAction(c.makeStatEquivalentCopy(), 1));

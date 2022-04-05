@@ -32,7 +32,6 @@ public class Offensive6 extends CustomRelic implements BetterClickableRelic<Offe
     public static final String ID = "shadowverse:Offensive6";
     public static final String IMG = "img/relics/Offensive.png";
     public static final String OUTLINE_IMG = "img/relics/outline/Offensive_Outline.png";
-    public boolean lifeCheck;
     private boolean triggeredThisTurn;
 
     public Offensive6() {

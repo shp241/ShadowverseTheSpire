@@ -2,6 +2,8 @@ package shadowverse.events;
 
 import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -39,7 +41,7 @@ public class Crossover extends AbstractImageEvent {
     public Crossover() {
         super(NAME, "test", "img/event/Crossover.jpg");
         this.body = INTRO_BODY_M;
-        this.hpLoss = MathUtils.ceil(AbstractDungeon.player.maxHealth * 0.2F);
+        this.hpLoss = MathUtils.ceil(AbstractDungeon.player.maxHealth * 0.1F);
         if (this.hpLoss >= AbstractDungeon.player.maxHealth) {
             this.hpLoss = AbstractDungeon.player.maxHealth - 1;
         }
@@ -65,7 +67,7 @@ public class Crossover extends AbstractImageEvent {
                 switch (buttonPressed) {
                     case 0:
                         this.imageEventText.updateBodyText(ACCEPT_BODY);
-                        AbstractDungeon.player.decreaseMaxHealth(this.hpLoss);
+                        AbstractDungeon.player.damage(new DamageInfo((AbstractCreature)null, this.hpLoss, DamageInfo.DamageType.HP_LOSS));
                         becomeGhost();
                         this.screenNum = 1;
                         this.imageEventText.updateDialogOption(0, OPTIONS[5]);

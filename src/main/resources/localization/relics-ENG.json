@@ -320,14 +320,14 @@
     "NAME": "Token of 1st",
     "FLAVOR": "I go first, no need to redraw.",
     "DESCRIPTIONS": [
-      "Can be activated #b3 times per combat. Right click to add #b1 #yEvolution #yPoint into your hand."
+      "Can be activated #b3 times per combat. Once per combat: Right click to add #b1 #yEvolution #yPoint into your hand."
     ]
   },
   "shadowverse:OliviasBlessing": {
     "NAME": "Olivia's Blessing",
     "FLAVOR": "Evolve? Lemme give it a shot.",
     "DESCRIPTIONS": [
-      "Can be activated #b5 times per combat. Right click to add #b1 #yMiracle and #b1 #yEvolution #yPoint+ to your hand."
+      "Can be activated #b3 times per combat. Right click to add #b1 #yMiracle and #b1 #yEvolution #yPoint+ to your hand."
     ]
   },
   "shadowverse:WindGodsBlessing": {
@@ -504,7 +504,7 @@
     "NAME": "Sacred Blade",
     "FLAVOR": "Your big sister will always protect you!",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st . Whenever you play an #yUpgraded card, gain #b1 #yBlock. Once per combat, gain [E] when you play #yEvolution #yPoint ."
+      "Replaces #yToken #yof #y1st . Can be activated #b2 times per combat. Once per combat: Right click to add #b1 #yEvolution #yPoint+ into your hand and gain 10 #yBlock. NL At hte end of combat, restore #b3 health per time left."
     ]
   },
   "shadowverse:YukariBOSS": {
