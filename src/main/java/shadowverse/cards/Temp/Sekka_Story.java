@@ -62,11 +62,7 @@ public class Sekka_Story extends CustomCard {
                 count++;
             }
         }
-        if(this.upgraded){
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-        }else {
-            this.rawDescription = cardStrings.DESCRIPTION;
-        }
+        this.rawDescription = cardStrings.DESCRIPTION;
         this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + count;
         this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[1];
         initializeDescription();

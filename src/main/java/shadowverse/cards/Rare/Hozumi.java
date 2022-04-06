@@ -44,10 +44,7 @@ public class Hozumi extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction("Hozumi"));
         addToBot(new GainBlockAction(p,this.block));
-        int count = 0;
-        for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisTurn){
-            count++;
-        }
+        int count = AbstractDungeon.actionManager.cardsPlayedThisTurn.size();
         if (count > 4){
             for (AbstractCard card : p.hand.group){
                 if (card!=this){
@@ -55,7 +52,7 @@ public class Hozumi extends CustomCard {
                     if (card.type==CardType.ATTACK){
                         AbstractCard c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.ATTACK).makeCopy();
                         c.setCostForTurn(0);
-                        p.hand.addToTop(c);
+                        addToBot(new MakeTempCardInHandAction(c));
                     }
                 }
             }

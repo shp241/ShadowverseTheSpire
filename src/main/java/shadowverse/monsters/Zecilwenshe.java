@@ -174,6 +174,7 @@ public class Zecilwenshe extends CustomMonster {
                         addToBot((AbstractGameAction) new SFXAction("Zecilwenshe_R3"));
                     }
                     AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new HealAction((AbstractCreature)this, (AbstractCreature)this, this.maxHealth));
+                    AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)this, (AbstractCreature)this, (AbstractPower)new ShiftingPower((AbstractCreature)this)));
                     for (AbstractRelic r : AbstractDungeon.player.relics)
                         r.onSpawnMonster(this);
                 }

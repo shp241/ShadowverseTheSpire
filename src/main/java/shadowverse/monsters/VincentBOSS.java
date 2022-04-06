@@ -95,7 +95,7 @@ public class VincentBOSS extends CustomMonster {
     public void usePreBattleAction() {
         CardCrawlGame.music.unsilenceBGM();
         AbstractDungeon.scene.fadeOutAmbiance();
-        AbstractDungeon.getCurrRoom().playBgmInstantly("BOSS_BEYOND");
+        AbstractDungeon.getCurrRoom().playBgmInstantly("StormOverRivayle");
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)this, (AbstractCreature)this, (AbstractPower)new TimeWarpPower((AbstractCreature)this)));
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new TalkAction((AbstractCreature)this, DIALOG[0]));
         addToBot((AbstractGameAction)new SFXAction("Vincent"));
