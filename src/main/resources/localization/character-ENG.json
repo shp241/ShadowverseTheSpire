@@ -1,7 +1,7 @@
 {
   "shadowverse:Witchcraft": {
-    "NAMES": ["Runecraft","Kyoka","Karyl","Anne","Kyoka(Halloween)"],
-    "TEXT": ["Runecraft uses the power of spells against opponents. Their 'Spellboost' cards become cheaper and stronger everytime they use Skill card. NL Cast spells to Spellboost your hand, and then overwhelm your opponent."]
+    "NAMES": ["Runecraft","Kyoka","Karyl","Anne","Kyoka (Halloween)"],
+    "TEXT": ["Runecraft uses the power of spells against opponents. Their 'Spellboost' cards become cheaper and stronger everytime they use Skill card. NL Cast spells to Spellboost your hand and overwhelm your opponent."]
   },
   "shadowverse:Elf": {
     "NAMES": ["Forestcraft","Arisa","Kokkoro"],
@@ -22,7 +22,7 @@
   "shadowverse:Nemesis": {
     "NAMES": ["Portalcraft","Orchis","Ralmia"],
     "TEXT": [
-      "Portalcraft shifts reality with potent strategies. They can use 'Resonance' ability and 'AF' followers to skillfully manipulate the battle. NL Try to activate multiple effects at once when you add AF to deck and hand.",
+      "Portalcraft shifts reality with potent strategies. They can use the power of 'Resonance' and Artifact ('AF') cards to skillfully manipulate the battle. NL Try to activate multiple effects at once when you add AF cards to your deck and hand.",
       "Resonance",
       "Resonance effects occur when your draw pile has an even number of remaining cards. Certain cards have extra effects with Resonance."
     ]
@@ -34,7 +34,7 @@
     ]
   },
   "shadowverse:Bishop": {
-    "NAMES": ["Havencraft","Saren","Yukari","Saren(Summer)"],
+    "NAMES": ["Havencraft","Saren","Yukari","Saren (Summer)"],
     "TEXT": [
       "The main strategy of Havencraft is to play Countdown 'Amulets' which will activate a few turns after they're played. NL You can overwhelm the opponent by using cards that sped up or activate the Amulets."
     ]

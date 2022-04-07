@@ -2424,7 +2424,7 @@
   },
   "shadowverse:CurseOfPurgation": {
     "NAME": "Curse of Purgation",
-    "DESCRIPTION": "Cannot Exhaust . NL When being removed from your deck, you die. NL Whenever you play cards more than 8 in a turn, lose 2 HP when you draw cards."
+    "DESCRIPTION": "If this card is exhausted, return it to your hand. NL You die if this card is removed from your deck. NL Whenever you play a card, if it's the 8th card you've played this turn, gain the following effect until the end of your turn: Lose 2 HP whenever you draw a card."
   },
   "shadowverse:Uno": {
     "NAME": "Marionette//Uno",

@@ -84,13 +84,13 @@
     ]
   },
   "shadowverse:RevisedPotion": {
-    "NAME": "Potion Of Revise",
+    "NAME": "Potion Of Revision",
     "DESCRIPTIONS": [
       "#yExhaust all #yPuppet in your hand, then add that many #yEnhanced #yPuppet+ to your hand."
     ]
   },
   "shadowverse:BuffPotion": {
-    "NAME": "Potion Of Unite",
+    "NAME": "Potion Of Unity",
     "DESCRIPTIONS": [
       "+ #b",
       " /+ #b",

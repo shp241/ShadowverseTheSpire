@@ -82,9 +82,9 @@
     {
       "PROPER_NAME": "AF",
       "NAMES": [
-        "af"
+        "AF"
       ],
-      "DESCRIPTION": "Trait. NL Unique to #yPortalcraft . Play with other #yAF to trigger extra effects."
+      "DESCRIPTION": "Trait, short for Artifact. NL Unique to #yPortalcraft . Play with other #yAF cards to trigger additional effects."
     },
     {
       "PROPER_NAME": "Naterran Great Tree",
@@ -395,7 +395,7 @@
       "NAMES": [
         "festive"
       ],
-      "DESCRIPTION": "trait."
+      "DESCRIPTION": "Trait."
     }
   ]
 }

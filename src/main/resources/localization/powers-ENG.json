@@ -868,17 +868,17 @@
     ]
   },
   "shadowverse:WhiteArtifactPower": {
-    "NAME": "Destruction In White",
+    "NAME": "Destruction in White",
     "DESCRIPTIONS": [
       "At the start of your turn, gain #b",
-      " Block. If #yDestruction #yIn #yBlack has been played this combat, gain double the Block."
+      " Block. If #yDestruction #yin #yBlack has been played this combat, gain double the Block."
     ]
   },
   "shadowverse:BlackArtifactPower": {
-    "NAME": "Destruction In Black",
+    "NAME": "Destruction in Black",
     "DESCRIPTIONS": [
       "At the start of your turn, all enemies are dealt #b",
-      " damage. If #yDestruction #yIn #yWhite has been played this combat, the damage is doubled."
+      " damage. If #yDestruction #yin #yWhite has been played this combat, the damage is doubled."
     ]
   },
   "shadowverse:LichtPower": {

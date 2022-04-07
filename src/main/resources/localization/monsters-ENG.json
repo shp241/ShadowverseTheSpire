@@ -6,11 +6,11 @@
     "NAME": "Belphomet Ardelyte",
     "DIALOG": [
       "@You@ @don't@ @deserve@ @to@ @live!@",
-      "~Scrap...Mwhaha!~ NL ~All~ ~of~ ~you!~",
-      "~I~ ~grow~ ~weary~ ~of~ ~your~ ~Ignorance.~",
-      "Gape your... #r@Termination!@",
-      "@Die@ @in@ @Obscurity!@",
-      "#r@Obey@ #r@Me!@"
+      "~Scrap... Mwhaha!~ NL ~All~ ~of~ ~you!~",
+      "~I~ ~grow~ ~weary~ ~of~ ~your~ ~ignorance.~",
+      "Prepare for your #r@termination!@",
+      "@Die@ @in@ @obscurity!@",
+      "#r@Obey@ #r@me!@"
     ]
   },
   "shadowverse:chushou1": {
@@ -46,13 +46,13 @@
       "@You@ @will@ @atone@ @for@ @wasting@ @my@ @time.@",
       "~Futile.~",
       "~Useless!~ ~Worthless!~ ~Powerless!~",
-      "~The~ ~sheer~ ~hubris~ ~of~ ~opposing~ ~me~",
+      "~The~ ~sheer~ ~hubris~ ~of~ ~opposing~ ~me!~",
       "~Do~ ~you~ ~have~ ~what~ ~it~ ~takes?~",
       "@Your@ @body@ @is@ @mine@ @now!@",
       "@This@ @world@ @will@ @be@ @remade@ @in@ @my@ @image!@",
       "~Bow~ ~before~ ~your~ ~god!~",
       "~You~ ~dare~ ~look~ ~me~ ~in~ ~the~ ~eye?~",
-      "@Be@ @gone@ @from@ @my@ @seat!@"
+      "@Begone@ @from@ @my@ @sight!@"
     ]
   },
   "shadowverse:MagiTrain": {
@@ -61,9 +61,9 @@
       "Charge",
       "Steam Burst"
     ],
-    "NAME": "MagiTrain",
+    "NAME": "Magitrain",
     "DIALOG": [
-      "~Standing~ ~by~"
+      "~Standing~ ~by...~"
     ]
   },
   "shadowverse:Megaera": {
@@ -84,12 +84,12 @@
     ],
     "NAME": "Tisiphone, the Malignant",
     "DIALOG": [
-      "~一之剑噬其羽翼~",
-      "~二之剑落其双脚~",
-      "~三之剑猎其双臂~",
-      "~四之剑取其双目~",
-      "~五之剑斩其首级~",
-      "~六之剑断其心灵~"
+      "~My blade, cut first thy wings.~",
+      "~Fell second thy legs.~",
+      "~Hunt third thy arms.~",
+      "~Gouge fourth thy eyes.~",
+      "~Sunder fifth thy neck.~",
+      "~Pierce sixth thy heart.~"
     ]
   },
   "shadowverse:VincentBOSS": {
@@ -98,13 +98,13 @@
     "NAME": "Vincent",
     "DIALOG": [
       "~I~ ~don't~ ~need~ ~a~ ~gun.~ ~Not~ ~when~ ~I~ ~have~ ~my~ ~words.~",
-      "~Quiet!~",
+      "~Silence!~",
       "Open yer ears! @Justice himself is speakin'.@",
-      "~Well,~ ~that's~ ~it,~ ~then.~",
-      "~Afront~ ~My~ ~Hands~ ~is~ ~Absolute~ ~Zero~",
-      "~Beneath~ ~My~ ~Legs~ ~is~ ~Storm-Force~ ~Wind~",
-      "~Above~ ~My~ ~Tongue~ ~is~ ~Scorching~ ~Flame~ ",
-      "~Steel~ ~of~ ~Still,~ ~Bullet~ ~of~ ~Silence.~"
+      "~See~ ~ya~ ~'round,~ ~slick.~",
+      "~My~ arms,~ ~enraptured~ ~with~ ~ice.~",
+      "~My~ ~feet~ ~becometh~ ~as~ ~the~ ~gale.~",
+      "~My~ ~breath~ ~becometh~ ~flame.~",
+      "~I~ ~am ~the~ ~immutable~ ~Steel.~ ~The~ ~unsilenceable~ ~Bullet.~"
     ]
   },
   "shadowverse:MechaSoldier": {
@@ -121,7 +121,7 @@
     ],
     "NAME": "Alecto, the Dissonant",
     "DIALOG": [
-      "~Particle~ ~Mace~ ~Kotaehge,~ ~fully~ ~charged~"
+      "~Particle~ ~Mace~ ~Kotaehge,~ ~fully~ ~charged.~"
     ]
   },
   "shadowverse:Lelouch": {
@@ -163,9 +163,9 @@
     ],
     "NAME": "Leon Aurenche",
     "DIALOG": [
-      "~I~ ~apologize~ ~in~ ~advance~ ~if~ ~I~ ~crash~ ~your~ ~spirit.~",
+      "~I~ ~apologize~ ~in~ ~advance~ ~if~ ~I~ ~crush~ ~your~ ~spirit.~",
       "@Do@ @not@ @disappoint@ @me!@",
-      "~I'm~ #y~God!~ ~I'm~ ~the~ #y~Superior!~ ~I~ ~am~ ~the~ #y~Apex~ ~of~ #y~Mankind!~"
+      "~I~ ~am~ ~a~ #y~God!~ ~I'm~ ~the~ #y~Superior!~ ~I~ ~am~ ~the~ #y~Apex~ ~of~ #y~Mankind!~"
     ]
   },
   "shadowverse:Naht": {
@@ -174,11 +174,11 @@
     ],
     "NAME": "Nahtnaught",
     "DIALOG": [
-      "@I@ @love@ @the@ @smell@ @of@ @gunsmoke@ @in@ @the@ @mornin.@",
-      "~My~ ~gunshot~ ~is~ ~a~ ~roar,~ ~a~ ~song~ ~to~ ~herald~ ~my~ ~triumph.~",
+      "@I@ @love@ @the@ @smell@ @of@ @gunsmoke@ @in@ @the@ @mornin'!@",
+      "~I~ ~need~ ~more~ ~fear,~ ~more~ ~terror!~",
       "~You~ ~look~ ~'bout~ ~as~ ~tough~ ~as~ ~a~ ~field~ ~mouse!~",
-      "@You@ @make@ @a@ @lovely@ @coffin.@",
-      "@How's@ @that.@"
+      "@You'll@ @make@ @a@ @lovely@ @coffin.@",
+      "@How's@ @that?@"
     ]
   },
   "shadowverse:Zecilwenshe": {
@@ -187,10 +187,10 @@
     ],
     "NAME": "Zecilwenshe",
     "DIALOG": [
-      "~The~ ~infesation~ ~evolves~",
-      "~My~ ~future~ ~victory~ ~await~.",
-      "~I~ ~am~ ~the~ ~epitome~ ~of~ ~victory.~",
-      "~I'll~ ~win~ ~in~ ~the~ ~end.~ ~I~ ~always~ ~do.~"
+      "~The~ ~infesation~ ~evolves!~",
+      "~My~ ~future~ ~victory~ ~awaits!~.",
+      "~I~ ~am~ ~the~ ~epitome~ ~of~ ~victory!~",
+      "~I'll~ ~win~ ~in~ ~the~ ~end!~ ~I~ ~always~ ~do!~"
     ]
   },
   "shadowverse:Urias": {
@@ -198,7 +198,7 @@
     ],
     "NAME": "Urias Formonde",
     "DIALOG": [
-      "~Struggle~ ~all~ ~you~ ~want~ ~it~ ~matters~ ~not!~"
+      "~Struggle~ ~all~ ~you~ ~want,~ ~it~ ~matters~ ~not!~"
     ]
   }
 }

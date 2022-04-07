@@ -2,10 +2,10 @@
   "shadowverse:PinyaEvent": {
     "NAME": "Golden Pinya and Green Pinya",
     "DESCRIPTIONS": [
-      "You walk past a strange fat cat looking statue... NL Suddenly you hear a voice whispering in your back: NL ~'Hang~ ~on~ ~a~ ~minute.'~",
-      "You turn around and see the statue staring at you! NL As you walk over to take a closer look, you find that it is not a statue, but KMR, the producer, who is dressing the Pinya doll outfit! NL NL ~'Could~ ~you~ ~show~ ~me~ ~your~ ~account~ ~and~ ~share~ ~your~ ~comments~ ~on~ ~the~ ~environment~ ~please?'~",
-      "~'Oh,~ ~the~ ~heat~ ~of~ ~summer~ ~continues.~ ~Are~ ~you~ ~doing~ ~alright?'~ NL He mechanically reach out his hand and put some #ySeer's #yGlobe into your crate. NL NL ~'It~ ~may~ ~be~ ~in~ ~a~ ~sudden,~ ~but~ ~please~ ~take~ ~these~ ~Seer's~ ~Globes~ ~as~ ~a~ ~gift.'~ NL While he is talking with you, you feel that the Gold in your pocket is vanishing! NL All of a sudden, the cup he is drinking falls down and smashes to pieces on the ground. You run away in the echo of laughter and the sound of the broken glass. NL NL By the time you come to yourself, it is just you and the Seer's Globes in your hand.",
-      "~'Golden~ ~Pinya?~ @Are@ @you@ @sure@ @about@ @that?@ ~Ah,~ ~of~ ~course...~ ~Okey.~ ~I~ ~can~ ~do~ ~that...~ ~Let~ ~me~ ~see...'~ NL NL He shake one of his arms in the air, and your account is in his hand in the turn of a hand! Literally! NL NL ~'Yeah.~ ~This~ ~Is~ ~Goooood.'~",
+      "You walk past a strange statue that looks like a chubby cat... NL Suddenly you hear a voice whispering from behind you: NL ~'Hang~ ~on~ ~a~ ~minute.'~",
+      "You turn around and see the statue staring at you! NL As you walk over to take a closer look, you find that it is not a statue, but KMR, the producer, who is dressed in a Pinya costume! NL NL ~'Could~ ~you~ ~show~ ~me~ ~your~ ~account~ ~and~ ~share~ ~your~ ~comments~ ~on~ ~the~ ~environment~ ~please?'~",
+      "~'Oh,~ ~the~ ~heat~ ~of~ ~summer~ ~continues.~ ~Are~ ~you~ ~doing~ ~alright?'~ NL He mechanically reach out his hand and puts some #ySeer's #yGlobe into your crate. NL NL ~'It~ ~may~ ~be~ ~sudden,~ ~but~ ~please~ ~take~ ~these~ ~Seer's~ ~Globes~ ~as~ ~a~ ~gift.'~ NL While he is talking with you, you feel that the Gold in your pocket is vanishing! NL All of a sudden, the glass he is drinking from falls down and smashes to pieces on the ground. You run away, hearing the echo of laughter and the sound of the broken glass. NL NL The next thing you know, you're all alone with Seer's Globes in your hand.",
+      "~'Golden~ ~Pinya?~ @Are@ @you@ @sure@ @about@ @that?@ ~Ah,~ ~of~ ~course...~ ~Okey.~ ~I~ ~can~ ~do~ ~that...~ ~Let~ ~me~ ~see...'~ NL NL He shakes one of his arms and your account is suddenly in his hand! NL NL ~'Yeah.~ ~This~ ~Is~ ~Goooood.'~",
       "~'Wait.~ ~Wait~ ~a~ ~second.~ ~Please~ ~wait.~ ~Wait.~ ~Wait~ ~a~ ~second.'~ NL NL You think you made the right choice."
     ],
     "OPTIONS": [
@@ -18,12 +18,12 @@
     ]
   },
   "GemFortune": {
-    "NAME": "Gem of Fortune",
+    "NAME": "Gems of Fortune",
     "DESCRIPTIONS": [
-      "It seems like there is an event taking place ahead. As you come closer, you notice that it is Gem of Fortune Cup. ~'Sounds~ ~like~ ~it's~ ~another~ ~competition~ ~of~ #y~Luck~.' NL #r@'So@ #r@I@ #r@see!@ #r@Ain't@ #r@there@ #r@any@ #r@Shadowcraft,@ #r@Runecraft@ #r@or@ #r@Forestcraft?'@ NL NL A man says to you with a smile on his face: NL 'Are you interested in entering #y~Gem~ #y~of~ #y~Fortune~ ?' ",
+      "It seems like there is an event taking place ahead. As you come closer, you notice that it's the Gems of Fortune Cup! ~'Sounds~ ~like~ ~it's~ ~another~ ~competition~ ~of~ #y~Luck~.' NL #r@'So@ #r@I@ #r@see!@ #r@Ain't@ #r@there@ #r@any@ #r@Shadowcraft,@ #r@Runecraft@ #r@or@ #r@Forestcraft?'@ NL NL A man asks you with a smile on his face: NL 'Are you interested in entering #y~Gems~ #y~of~ #y~Fortune~ ?' ",
       "",
-      "#y'Marvelous!' NL Soon after your reply, the whole stage is shrouded in #p~Thick~ #p~Black~ #p~Smoke~ ... NL NL Just at the time you're about to win, your opponent plays an #y~Arcane~ #y~Item~ #y~Shop~ and kills your leader in one turn. NL NL The match is over, and you are back on the track. But somehow you feel a bit #bAngry .",
-      "'What a disappointment...' NL ~'Anyway,~ ~sooner~ ~or~ ~later~ ~you~ ~will~ ~join~ ~our~ ~party.'~  NL #r@'Hahaha@ #r@Hahahahaha!'@ NL NL The man disappeared, leaving only the disturbing laughter echoing in your ears.",
+      "#y'Marvelous!' NL Soon after your reply, the whole stage is shrouded in #p~Thick~ #p~Black~ #p~Smoke~ ... NL NL Just at the time you're about to win, your opponent plays an #y~Arcane~ #y~Item~ #y~Shop~ and kills your leader in one turn. NL NL The match is over and you're back on the track, but somehow you feel a bit #bAngry .",
+      "'What a disappointment...' NL ~'Anyway,~ ~sooner~ ~or~ ~later~ ~you~ ~will~ ~join~ ~us!'~  NL #r@'Hahaha@ #r@Hahahahaha!'@ NL NL The man disappeared, leaving only the disturbing laughter echoing in your ears.",
       ""
     ],
     "OPTIONS": [
@@ -39,8 +39,8 @@
     "NAME": "CODE GEASS Lelouch of the Rebellion Collaboration",
     "DESCRIPTIONS": [
       "You ignore the event, but somehow Lelouch casts #rGeass on you !",
-      "#r@Ambush!@ NL Your enemies are not just Lelouch, but also Suzaku operating Lancelot coming out from nowhere!",
-      " #b~Lelouch~ #b~of~ #b~the~ #b~Rebellion~ Campaign in progress. NL Time limited BOSS Lelouch is waiting for you! NL You have no interest in attending, but as soon as you're trying to leave, a strange desire in your heart drives you to #b~Challenge~ Lelouch..."
+      "#r@Ambush!@ NL Your enemies are not just Lelouch but also Suzaku operating Lancelot, coming out of nowhere!",
+      " #b~Lelouch~ #b~of~ #b~the~ #b~Rebellion~ Campaign in progress. NL Time limited boss Lelouch is waiting for you! NL You have no interest in attending, but as soon as you're trying to leave, a strange desire in your heart drives you to #b~Challenge~ Lelouch..."
     ],
     "OPTIONS": [
       "[Challenge] #rChallenge #rthe #rBOSS.",
@@ -64,14 +64,14 @@
     ]
   },
   "shadowverse:NaturalMachine": {
-    "NAME": "Favour from the Natur Al'machinus",
+    "NAME": "Blessing of Natur Al'machinus",
     "DESCRIPTIONS": [
-      "You come across the Natur Al'machinus. NL 'I shall grant you the power of Natural and Machine...'",
-      "You can feel the power coming through your body."
+      "You come across Natur Al'machinus. NL 'I shall grant you the power of Nature and Machine...'",
+      "You can feel the power surging through your body."
     ],
     "OPTIONS": [
-      "[Wish for enhancement] Choose 3 cards out of 20 Natura cards and Machina cards into your deck.",
-      "[Wish for recoverment] Heal #g",
+      "[Enhancement Blessing] Choose 3 cards out of 20 Natura cards and Machina cards into your deck.",
+      "[Recovery Blessing] Heal #g",
       " HP.",
       "Choose 3 cards.",
       "[Leave]"
@@ -81,16 +81,16 @@
     "NAME": "Valhorean Dealer",
     "DESCRIPTIONS": [
       "You see a girl with purple hair sitting next to a pile of goods. NL ",
-      "'Greetings! ~Welcome~ ~to~ ~Varona's~ ~stall~ NL Is there anything you would like to sell, sir?'",
+      "'Greetings! ~Welcome~ ~to~ ~Varona's~ ~stall!~ NL Is there anything you would like to sell?'",
       "You give a card to the dealer. NL NL ",
-      "#r@Bang@ NL She hit you right in the face with her gloved fist. NL 'Do you deride me as a fool? Get lost!' NL ",
-      "'Well... Do you really think I will pay for this rubbish?' NL ",
-      "'Well... It's better than nothing anyway. Here, take it.' NL ",
-      "'I don't seem to have seen it before...It's hard to make a price. ~How~ ~about~ ~this~ ~much?~' NL ",
-      "'Wow, this one looks great! Give it to me! ' NL ",
-      "'Wow! That is some top-grade good! ... No refund! ' NL ",
-      "'Oops, ~Looks~ ~like~ ~you~ ~have~ ~nothing~ ~to~ ~sell.~ ~Move~ ~along~ ~then.~' NL ",
-      "'Impressive. Your record in marketing is as good as Valhorean's idea. NL Weapons improperly distributed at low prices have given rise to unexpected outcome. NL It's better to confirm the results. Let's go to the forefront of the war.' NL 'I'm sorry! Please forgive me!' NL "
+      "#r@Bang@ NL She hits you right in the face with her gloved fist. NL 'Do you think I'm stupid?! Get lost!' NL ",
+      "'Do you really think I'll pay for this trash?' NL ",
+      "'Well... It's better than nothing, anyway. Here, take this.' NL ",
+      "'I've never seen this before... I'm not sure what the value is. ~How~ ~about~ ~this~ ~much?~' NL ",
+      "'Wow, this one looks great! Give it to me!' NL ",
+      "'Wow! This is some grade-A goods! ... No refunds! ' NL ",
+      "'Oops, ~looks~ ~like~ ~you~ ~have~ ~nothing~ ~to~ ~sell.~ ~Move~ ~along~ ~then.~' NL ",
+      "'Your marketing skills are impressive! NL Weapons improperly distributed at low prices have given rise to an unexpected outcome. NL We need to confirm the results. Let's go to the forefront of the war.' NL 'I'm sorry! Please forgive me!' NL "
     ],
     "OPTIONS": [
       "[Continue]",
@@ -104,10 +104,10 @@
   "Crossover": {
     "NAME": "Storms Cross Craft",
     "DESCRIPTIONS": [
-      "It seems like there is an event taking place ahead. As you come closer, you notice that it is Storms Cross Craft Cup. ~'Sounds~ ~like~ ~it's~ ~another~ ~competition~ ~of~ #y~Luck~.' NL #r@'So@ #r@I@ #r@see!@ #r@Why@ #r@is@ #r@it@ #r@Shadow-Swordcraft@ #r@all@ #r@along?'@ NL NL A man says to you with a smile on his face: NL 'Are you interested in entering #y~Storms~ #y~Cross~ #y~Craft~ ?' ",
+      "It seems like there is an event taking place ahead. As you come closer, you notice that it's the Storms Cross Craft Cup! ~'Sounds~ ~like~ ~it's~ ~another~ ~competition~ ~of~ #y~Luck~.' NL #r@'Wait, #r@why@ #r@is@ #r@it@ #r@all@ #r@Swordcraft@ #r@and@ #r@Shadowcraft?!'@ NL NL A man asks you with a smile on his face: NL 'Are you interested in entering the #y~Storms~ #y~Cross~ #y~Craft~ #y~Cup?~' ",
       "",
-      "#y'Marvelous!' NL Soon after your reply, the whole stage is shrouded in #p~Thick~ #p~Black~ #p~Smoke~ ... NL NL Just at the time you're about to win, your opponent plays Ladica and kills your leader in turn 4. NL NL The match is over, and you are back on the track. But somehow you feel a bit #bAngry .",
-      "'What a disappointment...' NL ~'Anyway,~ ~sooner~ ~or~ ~later~ ~you~ ~will~ ~join~ ~our~ ~party.'~  NL #r@'Hahaha@ #r@Hahahahaha!'@ NL NL The man disappeared, leaving only the disturbing laughter echoing in your ears.",
+      "#y'Marvelous!' NL Soon after your reply, the whole arena is shrouded in #p~thick~ #p~black~ #p~smoke~ ... NL NL Just as you're about to win, your opponent plays Ladica and kills your leader on turn 5. NL NL The match is over and you're back on the track, but somehow you feel a bit #bAngry .",
+      "'What a disappointment...' NL ~'Anyway,~ ~sooner~ ~or~ ~later~ ~you~ ~will~ ~join~ ~us!'~  NL #r@'Hahaha@ #r@Hahahahaha!'@ NL NL The man disappears, leaving only the disturbing laughter echoing in your ears.",
       ""
     ],
     "OPTIONS": [
