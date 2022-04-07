@@ -735,8 +735,8 @@
     "UPGRADE_DESCRIPTION": "Retain . NL Exhaust 1 of your hand, put !M! random uncommon or rare cards into your hand. NL Exhaust ."
   },
   "shadowverse:BelphometStatus": {
-    "NAME": "Dominator's Crackdown",
-    "DESCRIPTION": "Retain . NL Machina . NL Take 4 damage. NL Whenever this card is Retain , take !M! damage for every *Nefarious *Invasion (exclude this card) in hand."
+    "NAME": "Tyrannical Force",
+    "DESCRIPTION": "Retain . NL Machina . NL Take 4 damage. NL Whenever this card is Retained, take !M! damage for every *Tyrannical *Force (excluding the first) in hand."
   },
   "shadowverse:ManaForce": {
     "NAME": "Aether Force",
