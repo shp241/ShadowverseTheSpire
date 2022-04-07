@@ -2165,7 +2165,7 @@
   },
   "shadowverse:SpineArtifact": {
     "NAME": "Spinaria’s Artifact",
-    "DESCRIPTION": "AF . NL Deal !D! damage, Gain !B! Block . NL Last_Words : When this card is exhausted, if you are not in Resonance , draw !M! Cards. If you are in Resonance , draw 1 Artifact card from your draw pile. NL Exhaust ."
+    "DESCRIPTION": "AF . NL Deal !D! damage, Gain !B! Block . NL Last_Words : When this card is exhausted, if you are not in Resonance , draw !M! Cards. If you are in Resonance , draw 1 AF card from your draw pile. NL Exhaust ."
   },
   "shadowverse:Puppet": {
     "NAME": "Puppet",
@@ -2177,16 +2177,16 @@
   },
   "shadowverse:Acceleratium": {
     "NAME": "Acceleratium",
-    "DESCRIPTION": "Countdown 3 \bLose this ability. NL Whenever you play an AF, gain [E]. NL For every 2 Artifacts you play, put 1 *Void into your discard pile."
+    "DESCRIPTION": "Countdown 3 \bLose this ability. NL Whenever you play an AF card, gain [E]. NL For every 2 Artifacts you play, put 1 *Void into your discard pile."
   },
   "shadowverse:AugmentationBestowal": {
     "NAME": "Augmentation Bestowal",
-    "DESCRIPTION": "Whenever you play an Artifact this turn, gain 1 Energy and draw !M! Cards. NL Ethereal . NL Exhaust .",
-    "UPGRADE_DESCRIPTION": "Whenever you play an Artifact this turn, gain 1 Energy and draw !M! Cards. NL Exhaust ."
+    "DESCRIPTION": "Whenever you play an AF card this turn, gain 1 Energy and draw !M! Cards. NL Ethereal . NL Exhaust .",
+    "UPGRADE_DESCRIPTION": "Whenever you play an AF card this turn, gain 1 Energy and draw !M! Cards. NL Exhaust ."
   },
   "shadowverse:ParadigmShift": {
     "NAME": "Paradigm Shift",
-    "DESCRIPTION": "Retain . NL This card costs 1 less for each AF played. NL Choose : put 1 *Barrier *Artifact , *Keenedge *Artifact , or *Airstrike *Artifact into your hand. That card costs 0 this turn. NL Exhaust .",
+    "DESCRIPTION": "Retain . NL This card costs 1 less for each AF card played. NL Choose : put 1 *Barrier *Artifact , *Keenedge *Artifact , or *Airstrike *Artifact into your hand. That card costs 0 this turn. NL Exhaust .",
     "UPGRADE_DESCRIPTION": "Retain . NL This card costs 1 less for each AF played. NL Choose : put 1 *Barrier *Artifact+ , *Keenedge *Artifact+ , or *Airstrike *Artifact+ into your hand. That card costs 0 this turn. NL Exhaust ."
   },
   "shadowverse:Automation": {
@@ -3957,7 +3957,7 @@
   },
   "shadowverse:PhantomBloomPredator": {
     "NAME": "Phantombloom Predator",
-    "DESCRIPTION": "Deal !D! damage. NL If there are Attacks that cost no more than 1 in your discard pile,put one into your hand and increase the damage by !M! ."
+    "DESCRIPTION": "Deal !D! damage. NL If there are Attacks that cost no more than 1 in your discard pile, put one into your hand and increase the damage by !M! ."
   },
   "shadowverse:WonderTree": {
     "NAME": "Tree of Wonders",
