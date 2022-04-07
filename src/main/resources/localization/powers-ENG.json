@@ -1273,9 +1273,9 @@
     ]
   },
   "shadowverse:IminaPower": {
-    "NAME": "疯狂的咒器",
+    "NAME": "Totem of Madness",
     "DESCRIPTIONS": [
-      "回合结束时，失去 #r2 点 力量 ，将此效果转移给敌人。"
+      "At the end of the turn, lose #r2 Strength and transfer this effect to a random opponent."
     ]
   },
   "shadowverse:DimensionShiftPower": {

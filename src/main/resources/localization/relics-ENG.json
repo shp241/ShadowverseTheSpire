@@ -37,14 +37,14 @@
   },
   "shadowverse:Genius": {
     "NAME": "Genius Among Geniuses",
-    "FLAVOR": "You shall lose in turn 8!",
+    "FLAVOR": "You'll lose on turn 8!",
     "DESCRIPTIONS": [
       "At the end of the 8th turn, deal #b61 damage to all enemies."
     ]
   },
   "shadowverse:MissLethal": {
     "NAME": "Missed Lethal",
-    "FLAVOR": "...Anyway, let's clear the board first.",
+    "FLAVOR": "... Anyway, let's clear the board first.",
     "DESCRIPTIONS": [
       "Gain #b1 [E] at the start of your turn. Once a time, whenever a non-Minion enemy's HP is lower than 1/5 by the start of turn, apply #yIntangible ."
     ]
@@ -58,9 +58,9 @@
   },
   "shadowverse:NeutralBook": {
     "NAME": "Neutral Book",
-    "FLAVOR": " ",
+    "FLAVOR": "The story of a nightmare in Wonderland.",
     "DESCRIPTIONS": [
-      "Active 3 times for an Act, Enemies drop an additional neutral card reward."
+      "Enemies drop an additional Neutral card reward. Activates 3 times per Act."
     ]
   },
   "shadowverse:BlackPinya": {
@@ -73,21 +73,21 @@
   },
   "shadowverse:GoldPinya": {
     "NAME": "The Golden Pinya",
-    "FLAVOR": "Pinya~Pinya!",
+    "FLAVOR": "Pinya pinya~!",
     "DESCRIPTIONS": [
       "At the start of turn,randomly put 1 #yDutiful #ySteed, #yBullet #yBike, or #yArcane #yPersonnel #yCarrier into your hand."
     ]
   },
   "shadowverse:KMR1": {
-    "NAME": "Balance Changes1",
-    "FLAVOR": "To achieve better game balance,we're making changes to enemies.",
+    "NAME": "Balance Changes 1",
+    "FLAVOR": "To achieve better game balance, we're making changes to the enemies.",
     "DESCRIPTIONS": [
       "At the start of each combat, all enemies gain #b8 block ."
     ]
   },
   "shadowverse:KMR2": {
-    "NAME": "Balance Changes2",
-    "FLAVOR": "To achieve better game balance,we're making changes to enemies.",
+    "NAME": "Balance Changes 2",
+    "FLAVOR": "To achieve better game balance, we're making changes to the enemies.",
     "DESCRIPTIONS": [
       "At the start of each combat, all enemies gain #b1 strength ."
     ]
@@ -100,15 +100,15 @@
     ]
   },
   "shadowverse:SixMark": {
-    "NAME": "Mark of the Six",
+    "NAME": "Bow of Unkilling",
     "FLAVOR": "Fear not ruin, one must merely endure eternity.",
     "DESCRIPTIONS": [
       "At the start of turn, randomly apply 1 Vulnerable, Weak,  #yChoke , #y-1Strength #ythis #turn, #yTalk #yto #ythe #yHand,  Poison to all enemies. Each of these debuff can be applied only once."
     ]
   },
   "shadowverse:ArisaBOSS": {
-    "NAME": "Quintitanias",
-    "FLAVOR": "My arrow will penetrate you!",
+    "NAME": "Quintitanias, Aether Bow",
+    "FLAVOR": "Come forth as verdant wind... Be my wings as I invoke thy name! Fly true!",
     "DESCRIPTIONS": [
       "Replaces #yToken #yof #y1st . NL Gain [E] whenever you play the #b6th card in a turn."
     ]
@@ -128,29 +128,29 @@
     ]
   },
   "shadowverse:GlassOfIC": {
-    "NAME": "Iceschillendrig's Glass",
-    "FLAVOR": "I'm the great God!",
+    "NAME": "Iceschillendrig's Glasses",
+    "FLAVOR": "I'll lay Reclamation upon your vessel.",
     "DESCRIPTIONS": [
       "Whenever you lose HP, deal equal amount of damage to ALL enemies."
     ]
   },
   "shadowverse:KyoukaBOSS": {
     "NAME": "Cosmo Blue Rod",
-    "FLAVOR": "Cosmo Blue Flash!!",
+    "FLAVOR": "Cosmo Blue Flash!",
     "DESCRIPTIONS": [
       "Replaces #yToken #yof #y1st . Whenever you play 6 #ySkill cards, the next #ySkill card will be played #btwice ."
     ]
   },
   "shadowverse:Mimori": {
-    "NAME": "Being normal",
-    "FLAVOR": "Well, pleasure to meet you!",
+    "NAME": "Not-So-Ordinary",
+    "FLAVOR": "Nice to meet you! I'm Mimori Amamiya!",
     "DESCRIPTIONS": [
       "Damage dealt + #b10%, damage taken - #b10%. By the end of your turn, if you have played at least 5 cards, damage dealt + #b10% (Up to 5 times). If you take any unblocked damage, damage dealt - #b10% ."
     ]
   },
   "shadowverse:KuonWeapon": {
     "NAME": "Mitsura Ryakketsu",
-    "FLAVOR": "Calamity approaches.",
+    "FLAVOR": "Calamity approaches! Might wanna run.",
     "DESCRIPTIONS": [
       "At the start of combat, add 1 #yShikigami #ySummons into your hand."
     ]
@@ -170,7 +170,7 @@
     ]
   },
   "shadowverse:BurialGround": {
-    "NAME": "Burial Ground",
+    "NAME": "Burial Grounds",
     "FLAVOR": "Death is gathering.",
     "DESCRIPTIONS": [
       "By the end of your turn, gain #b1 #yShadows ."
@@ -205,8 +205,8 @@
     ]
   },
   "shadowverse:Alice": {
-    "NAME": "Special Idol",
-    "FLAVOR": "Alice's show is about to begin~",
+    "NAME": "One-of-a-Kind Idol",
+    "FLAVOR": "Alice Kurobane's concert is about to begin!",
     "DESCRIPTIONS": [
       "Whenever #yNecromancy is activated, deal #b3 damage to ALL enemies."
     ]
@@ -220,51 +220,51 @@
   },
   "shadowverse:IriaBOSS": {
     "NAME": "Vermillion Bite",
-    "FLAVOR": "尽管臣服于妾身伟大的力量之下吧!",
+    "FLAVOR": "Submit to the great power of the Vermillion Bite!",
     "DESCRIPTIONS": [
-      "回合开始时失去 #b2 点生命.回合结束时回复 #b4 点生命."
+      "Lose #b2 life at the start of your turn. Heal #b4 life at the end of your turn."
     ]
   },
   "shadowverse:LustRelic": {
-    "NAME": "抱拥之翼",
-    "FLAVOR": "爱意相融, 情意相交.沉溺在欲望之中, 水乳交融吧.",
+    "NAME": "Wings of Lust",
+    "FLAVOR": "Love and mix, ravish and enrapture. Let lust overtake you as you come together with your fellows.",
     "DESCRIPTIONS": [
-      "战斗开始时, 获得 #y虹吸 ."
+      "At the start of combat, gain #ySiphon."
     ]
   },
   "shadowverse:Lusia": {
-    "NAME": "我没有兴趣",
-    "FLAVOR": "影之诗不过是道具而已.",
+    "NAME": "Don't Waste My Time",
+    "FLAVOR": "Shadowverse is only a tool.",
     "DESCRIPTIONS": [
-      "进入 #y复仇 时, 获得 [E] ."
+      "Gain [E] when #yVengeance is activated."
     ]
   },
   "shadowverse:Pendant": {
-    "NAME": "夜之王的吊坠",
-    "FLAVOR": "尽管来取悦我吧!",
+    "NAME": "Urias's Pendant",
+    "FLAVOR": "Amuse me!",
     "DESCRIPTIONS": [
-      "回合开始时,  复仇 则获得 #b1 点 力量 . 狂乱 则获得 #b7 点 格挡 . 渴望 则抽 #b1 张牌."
+      "At the start of your turn, gain #b1 Strength if Vengeance is active. If Wrath is active, gain #b7 Block. If Avarice is active, draw #b1 cards."
     ]
   },
   "shadowverse:BerserkRelic": {
-    "NAME": "提特迦玛利",
-    "FLAVOR": "悬挂活剥, 将一切吃干抹净!",
+    "NAME": "Aragavy's Club",
+    "FLAVOR": "We’ll string you up, dress you, and devour you to the marrow!",
     "DESCRIPTIONS": [
-      "进入 狂乱 时, 回复 #b7 点生命."
+      "Whenever Wrath is activated, heal #b7 HP."
     ]
   },
   "shadowverse:LonePromise": {
-    "NAME": "约定的花朵",
-    "FLAVOR": "取代颈部刻印的  ――是向冰冷肌肤所赠予的饯别花朵.  而相伴的螺丝则为华丽舞踏过的回忆.",
+    "NAME": "Lone Promise",
+    "FLAVOR": "In lieu of a vampiric brand, he bestows upon her a crimson parting gift of another kind. The flower, and the lone screw, are a reminder of the glorious dance they shared.",
     "DESCRIPTIONS": [
-      "前 #b2 回合开始时, 增加 #b1 张 #y修复模式 到手中.第 #b2 回合开始时额外抽 #b1 张牌."
+      "At the start of your first #b2 turn, add #b1 #yRepair #yMode cards to your hand. At the start of your #b2 turn, draw #b1 additional cards."
     ]
   },
   "shadowverse:RevelrySeed": {
-    "NAME": "斗争之种",
-    "FLAVOR": "可不要让我感到无趣哦？",
+    "NAME": "Seed of Revelry",
+    "FLAVOR": "Don't bore me, okay?",
     "DESCRIPTIONS": [
-      "你和全体敌人初始获得 #b3 点 力量 ."
+      "You and all enemies start combat with #b3 Strength."
     ]
   },
   "shadowverse:Offensive5": {
@@ -275,45 +275,45 @@
     ]
   },
   "shadowverse:NemesisBOSS": {
-    "NAME": "猫(玩偶)",
-    "FLAVOR": "你知道心灵的意义吗？",
+    "NAME": "Orchis's Cat Doll",
+    "FLAVOR": "Why do people love other people? Why do they hate them? I know that somewhere in the world the answer is waiting.",
     "DESCRIPTIONS": [
-      "进入 共鸣 时, 获得 [E] .退出 共鸣 时 增加1张 #y眩晕 到弃牌堆中."
+      "Whenever Resonance becomes active for you, gain [E]. Whenever Resonance becomes inactive for you, add 1 #yStun to your discard pile."
     ]
   },
   "shadowverse:ArtsMaster": {
-    "NAME": "破邪之因迪拉",
-    "FLAVOR": "我存在于天地, 无咎于世间.",
+    "NAME": "The Ultimate Way of the Fist",
+    "FLAVOR": "I am, therefore the best of all possible worlds.",
     "DESCRIPTIONS": [
-      "回合结束时如果有剩余能量, 获得 #b5 点格挡, 下回合额外抽 #b2 张牌, 对全体敌人造成 #b5 点伤害."
+      "If you have any remaining Energy at the end of your turn, gain #b5 Block, draw #b2 additional cards at the start of your next turn and deal #b5 damage to all enemies."
     ]
   },
   "shadowverse:WhiteRelic": {
-    "NAME": "白之章",
-    "FLAVOR": "破坏完成之后, 浮现的笑容是纯洁的正义.",
+    "NAME": "Destruction in White",
+    "FLAVOR": "The urge to destroy is white. People's smiles on the morrow of the apocalypse will be evidence of the unstained righteousness of annihilation.",
     "DESCRIPTIONS": [
-      "每当消耗攻击牌时, 给予随机敌人 #b1 层 #y虚弱 .如果拥有 #y黑之章 , 战斗开始时将 #b1 张 #y圣白破坏的创造物 加入手中."
+      "Whenever an Attack card is exhausted, apply #b1 #yWeak to a random enemy. If you also have the #yDestruction #yin #yBlack relic, add #b1 #yDestruction #yin #yWhite card to your hand at the start of combat."
     ]
   },
   "shadowverse:BlackRelic": {
-    "NAME": "黑之章",
-    "FLAVOR": "破坏完成之前, 浮现的笑容是污秽的邪恶.",
+    "NAME": "Destruction in Black",
+    "FLAVOR": "The urge to destroy is black. People's smiles on the eve of the apocalypse are the corrupt obstacle hindering the inevitability of annihilation.",
     "DESCRIPTIONS": [
-      "每当消耗攻击牌时, 给予随机敌人 #b1 层 #y易伤 .如果拥有 #y白之章 , 战斗开始时将 #b1 张 #y圣白破坏的创造物 加入手中."
+      "Whenever an Attack card is exhausted, apply #b1 #yVulnerable to a random enemy. If you also have the #yDestruction #yin #yWhite relic, add #b1 #yDestruction #yin #yWhite card to your hand at the start of combat."
     ]
   },
   "shadowverse:Knife": {
-    "NAME": "杰西尔的匕首",
-    "FLAVOR": "我又要赢啦!",
+    "NAME": "Zecilwenshe's Dagger",
+    "FLAVOR": "I'll win in the end - I always do!",
     "DESCRIPTIONS": [
-      "战斗结束时, 增加 #b1 点计数.受到伤害时, 失去 #b1 点计数.当计数为 #b3 以下时, 战斗开始时增加1张 #y小刀 到手中. #b3 以上时, 改为 #y发现 . #b6 以上时, 改为 #y至高无上·宽容 ."
+      "At the end of combat, gain #b1 Infestation Point. Whenever you take damage, lose #b1 Infestation Point. If you have less than #b3 Infestation Points, add 1 #yShiv to your hand at the beginning of combat. If you have #b3 or more Infestation Points, add 1 #yDiscovery instead. If you have #b6 or more Infestation Points, add 1 #yAbsolute #yTolerance instead."
     ]
   },
   "shadowverse:TranquilCog": {
-    "NAME": "静谧的齿轮",
-    "FLAVOR": "定理, 无须完美契合即可运转.",
+    "NAME": "Tranquil Cog",
+    "FLAVOR": "Wisdom keeps the universe in motion.",
     "DESCRIPTIONS": [
-      "前 #b3 回合开始时, 如果 共鸣 额外抽 #b1 张牌, 否则额外抽 #b2 张牌."
+      "At the start of your first #b3 turn, draw #b1 additional cards if Resonance is active for you. Otherwise, draw #b2 additional cards."
     ]
   },
   "shadowverse:Offensive6": {
@@ -325,16 +325,16 @@
   },
   "shadowverse:OliviasBlessing": {
     "NAME": "Olivia's Blessing",
-    "FLAVOR": "Evolve? Lemme give it a shot.",
+    "FLAVOR": "A new world is our desire!",
     "DESCRIPTIONS": [
       "Can be activated #b3 times per combat. Right click to add #b1 #yMiracle and #b1 #yEvolution #yPoint+ to your hand."
     ]
   },
   "shadowverse:WindGodsBlessing": {
-    "NAME": "Wind God's Blessing",
-    "FLAVOR": "Wind is eternal.",
+    "NAME": "Fieran's Blessing",
+    "FLAVOR": "Wind, grant them courage!",
     "DESCRIPTIONS": [
-      "Rally #b10 : By the end of turn, ALL #yFollowers gain + #b1 /+ #b1 ."
+      "Rally #b10 : At the end of your turn, ALL #yFollowers gain + #b1 /+ #b1 ."
     ]
   },
   "shadowverse:Conscription": {
@@ -362,7 +362,7 @@
     "NAME": "Enma Yasukuni",
     "FLAVOR": "Thanks to you, I have drawn my blade from the scabbard called peace. -Kagemitsu, Matchless Blade",
     "DESCRIPTIONS": [
-      "ALL cards with disupgrade ability will upgrade again after being played."
+      "ALL cards that disupgrade will automatically upgrade again after being played."
     ]
   },
   "shadowverse:EndlessUsurpation": {
@@ -381,14 +381,14 @@
   },
   "shadowverse:Tree": {
     "NAME": "Naterran Great Tree",
-    "FLAVOR": "What a Tree.",
+    "FLAVOR": "When the Mother begins to sing, all will be decided.",
     "DESCRIPTIONS": [
       "At the start of combat, add 1 #yNaterran #yGreat #yTree to hand."
     ]
   },
   "shadowverse:AlterplaneArbiter": {
     "NAME": "Cross Craft",
-    "FLAVOR": "Limited Time New Format: Cross Craft. Build decks with cards from 2 different classes!",
+    "FLAVOR": "New Limited Time Format: Cross Craft! Build decks with cards from 2 different classes!",
     "DESCRIPTIONS": [
       "Randomly choose 1 different shadowverse class, enemy drop an additional card reward of this class.",
       "Enemy drop an additional card reward of ",
@@ -410,59 +410,59 @@
     ]
   },
   "shadowverse:Savior": {
-    "NAME": "救世主",
-    "FLAVOR": "在安息中, 与己身的内心对峙吧.",
+    "NAME": "Staff of Repose",
+    "FLAVOR": "Confront the mind in the depths of repose.",
     "DESCRIPTIONS": [
-      "如果回合中没有打出过攻击牌, 下回合开始时获得 #b4 点 格挡 ."
+      "If you play no Attack cards during your turn, start your next turn with #b4 Block."
     ]
   },
   "shadowverse:GrandShield": {
-    "NAME": "背理盾·塞农",
-    "FLAVOR": "翼之纹章是自由的证明.其为神所遗落的奇迹之盾.",
+    "NAME": "Zeno, Paradoxical Shield",
+    "FLAVOR": "Don't fill the world with any more false hope.",
     "DESCRIPTIONS": [
-      "回合开始时, 增加 #b1 张 #y圣骑兵 到手中."
+      "At the start of your turn, add #b1 #yHoly #yCavaliers to your hand."
     ]
   },
   "shadowverse:GrandSword": {
-    "NAME": "逆理剑·理夏尔",
-    "FLAVOR": "奇迹之剑足以扭曲道理, 屏蔽天理.",
+    "NAME": "Sword of the Luminous Paladin",
+    "FLAVOR": "Hope that is given can only be false.",
     "DESCRIPTIONS": [
-      "一回合一次, 获得 格挡 时获得 #b2 层 荆棘 ."
+      "Once per turn, apply #b2 Thorns whenever you Block."
     ]
   },
   "shadowverse:BishopBOSS": {
-    "NAME": "辉煌羽饰",
-    "FLAVOR": "当羽翼展翅之时, 身体将不受重力束缚.",
+    "NAME": "Saren's Brilliant Feather",
+    "FLAVOR": "When you spread your wings, your body will no longer be bound by gravity.",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st .增加1个护符栏位.如果你的生命值低于最大生命值的一半, 每回合开始时额外获得 [E] ."
+      "Replaces #yToken #yof #y1st. Gain 1 Amulet slot. If your HP is less than half of your max HP, start each of your turns with an additional [E]."
     ]
   },
   "shadowverse:HeresyAvatar": {
-    "NAME": "邪教化身",
-    "FLAVOR": "炽天使的末路, 已与纯白背道而驰.",
+    "NAME": "Heresy's Avatar",
+    "FLAVOR": "Utter its name and resolve yourself to madness.",
     "DESCRIPTIONS": [
-      "每当抽到诅咒牌时, 获得 #b1 层 #y人工制品 .如果这张诅咒牌可以打出, 其耗能变为0."
+      "Whenever you draw a Curse card, apply #b1 #yArtifact. If the drawn Curse card is playable, change its cost to 0."
     ]
   },
   "shadowverse:ErisRelic": {
-    "NAME": "司祭的权杖",
-    "FLAVOR": "为这残酷的世界带来救赎.",
+    "NAME": "Scepter of Atonement",
+    "FLAVOR": "So long as my companions watch over me, I will not err again.",
     "DESCRIPTIONS": [
-      "护符结束 倒计时 时, 获得 #b2 点 #y临时生命 ."
+      "Whenever an Amulet's Countdown reaches 0, gain #b2 #yTemporary #yHP."
     ]
   },
   "shadowverse:IminaRelic": {
-    "NAME": "疯狂的咒器",
-    "FLAVOR": "赞美吧, 凡人.吾之外再无他神.",
+    "NAME": "Totem of Madness",
+    "FLAVOR": "Speak your praise, mortal. For there is no god but me. —Inscription on a statue.",
     "DESCRIPTIONS": [
-      "战斗开始时, 给予随机敌人 #y疯狂的咒器 ."
+      "At the start of combat, give a random enemy #yTotem #yof #yMadness."
     ]
   },
   "shadowverse:KyaruBOSS": {
     "NAME": "Chaos Grimoire",
     "FLAVOR": "Are you ready? Grim Burst!",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st . At the start of combat, enemies' Max HP reduce by #b18% ."
+      "Replaces #yToken #yof #y1st . At the start of combat, reduce the max HP of all enemies by #b18% ."
     ]
   },
   "shadowverse:AnneBOSS": {
@@ -481,7 +481,7 @@
   },
   "shadowverse:MiyakoBOSS": {
     "NAME": "Sweet Ghost Pudding",
-    "FLAVOR": "Pudding~Pudding~",
+    "FLAVOR": "Pudding, pudding~!",
     "DESCRIPTIONS": [
       "Replaces #yToken #yof #y1st . 3 times per combat, at the start of your turn,  #yNecromancy 6: \bAdd 1 #yApparition to hand."
     ]
@@ -523,10 +523,10 @@
   },
   "shadowverse:Bullet": {
     "NAME": "Mystical Bullet",
-    "FLAVOR": "It's kind of an amulet. Just don't lose it, please.",
+    "FLAVOR": "Think of it as a good luck charm. Do try to keep it close.",
     "DESCRIPTIONS": [
       "Relic with unknown use.",
-      "Bullet of Fate, shattering the world.",
+      "The world of Rivayle sprang forth from this crucible known as the Lodestone.",
       "At the start of the 1st, 3rd turn, add 1 #yVerdict #yRendered to hand. NL At the start of the 2nd, 4th turn, add 1 #yAbsolute #yDecree to hand. NL At the start of the 5th turn or after, add 1 that you don't have in hand."
     ]
   }
