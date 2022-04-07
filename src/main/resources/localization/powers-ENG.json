@@ -819,100 +819,100 @@
     ]
   },
   "shadowverse:PrimeArtifactPower": {
-    "NAME": "精奥的创造物",
+    "NAME": "Prime Artifact",
     "DESCRIPTIONS": [
-      "回合开始时 #b",
-      " 张 #y精奥的创造物 到手中。"
+      "At the start of your turn, #b",
+      " put a #yPrime #yArtifact into your hand."
     ]
   },
   "shadowverse:AcceleratiumPower": {
-    "NAME": "加速装置",
+    "NAME": "Acceleratium",
     "DESCRIPTIONS": [
-      "每当打出 #y创造物 牌时，获得 [E] 。每打出 #b2 张 #y创造物 牌时增加 #b1 张 #y虚空 到弃牌堆中。 #b",
-      " 回合后失去本效果。"
+      "Whenever you play an #yAF card, gain [E]. Add #b1 #yVoid to your discard pile for ever #b2 #yAF card played. #b",
+      " Lose this effect at the end of your turn."
     ]
   },
   "shadowverse:AugmentationBestowalPower": {
-    "NAME": "机械的解放",
+    "NAME": "Augmentation Bestowal",
     "DESCRIPTIONS": [
-      "每当打出 #y创造物 牌时，获得 #b",
-      " 点能量，抽 #b",
-      " 张牌。"
+      "Whenever you play an #yAF card, gain #b",
+      " Energy and draw #b",
+      " cards."
     ]
   },
   "shadowverse:NilpotentPower": {
-    "NAME": "虚数物体",
+    "NAME": "Nilpotent Entity",
     "DESCRIPTIONS": [
       "#b",
-      " 回合内，受到的 #b4 点以上的伤害转变为3。"
+      " During your turn, if you would take #b4 or more damage, that damage becomes 3 instead."
     ]
   },
   "shadowverse:DeusExMachinaPower": {
-    "NAME": "机械降神",
+    "NAME": "Deus Ex Machina",
     "DESCRIPTIONS": [
-      "每当打出 #y创造物 牌时，获得 [E] 。回合结束时，如果 #y共鸣 则下回合额外抽 #b2 张牌。"
+      "Whenever you play an #yAF card, gain [E]. At the end of your turn, if you are in #yResonance , draw #b2 additional cards at the start of your next turn."
     ]
   },
   "shadowverse:BearminatorPower": {
-    "NAME": "灭裂机爪熊",
+    "NAME": "Bearminator",
     "DESCRIPTIONS": [
-      "回合结束时，如果有剩余能量，对全体敌人造成 #b",
-      " 点伤害。"
+      "At the end of your turn, if you have any Energy remaining, deal #b to all enemies.",
+      " damage"
     ]
   },
   "shadowverse:YuwanPower": {
-    "NAME": "次元超克者·伊昂",
+    "NAME": "Yuwan, Dimensional Avenger",
     "DESCRIPTIONS": [
-      "回合开始时，如果本场战斗由非 #y共鸣 转变为 #y共鸣 的次数为 #b5 以上，对随机敌人造成 #b",
-      " 点伤害。如果为 #b10 以上，再造成一次伤害。"
+      "At the start of your turn，if you have entered #yResonance #b5 times or more, deal #b to a random enemy.",
+      " damage. Repeat if #b10 times or more."
     ]
   },
   "shadowverse:WhiteArtifactPower": {
-    "NAME": "圣白破坏的创造物",
+    "NAME": "Destruction In White",
     "DESCRIPTIONS": [
-      "回合开始时，获得 #b",
-      " 点格挡。如果本场战斗已打出 #y新约·黑之章 则格挡翻倍。"
+      "At the start of your turn, gain #b",
+      " Block. If #yDestruction #yIn #yBlack has been played this combat, gain double the Block."
     ]
   },
   "shadowverse:BlackArtifactPower": {
-    "NAME": "暗黑破坏的创造物",
+    "NAME": "Destruction In Black",
     "DESCRIPTIONS": [
-      "回合开始时，对全体敌人 #b",
-      " 点伤害。如果有 #y圣白破坏的创造物 ，伤害翻倍。"
+      "At the start of your turn, all enemies are dealt #b",
+      " damage. If #yDestruction #yIn #yWhite has been played this combat, the damage is doubled."
     ]
   },
   "shadowverse:LichtPower": {
-    "NAME": "齿轮运行者·里希特",
+    "NAME": "Licht, the Gearturner",
     "DESCRIPTIONS": [
-      "每当使用 #y悬丝傀儡 ，获得 #b",
-      " 点格挡。"
+      "Whenever you play a #yPuppet, gain #b",
+      " Block."
     ]
   },
   "shadowverse:PuppetRoomPower": {
-    "NAME": "人偶房",
+    "NAME": "Puppet Room",
     "DESCRIPTIONS": [
-      "回合开始时增加 #b1 张 #y悬丝傀儡 到手中。减少1层本能力。"
+      "Add #b1 #yPuppets to your hand. Reduce this by 1."
     ]
   },
   "shadowverse:StringMasterPower": {
-    "NAME": "线偶大师",
+    "NAME": "Stringmaster",
     "DESCRIPTIONS": [
-      "每当使用 #y悬丝傀儡 ，增加 #b",
-      " 张 #y悬丝傀儡 到手中。（一回合仅限一次）"
+      "Whenever you play a #yPuppet, add #b",
+      " #yPuppets to your hand (once per turn)."
     ]
   },
   "shadowverse:ConcentratePower": {
-    "NAME": "全神贯注",
+    "NAME": "Focus",
     "DESCRIPTIONS": [
-      "如果本回合结束时有剩余能量，下回合开始额外抽 #b",
-      " 张牌，获得 #b5 点格挡。"
+      "If you have any Energy remaining at the end of your turn, draw additional #b at the start of your next turn.",
+      " cards and gain #b5 Block"
     ]
   },
   "shadowverse:KarulaPower": {
-    "NAME": "武艺至尊·伽尔拉",
+    "NAME": "Karula, Arts Master",
     "DESCRIPTIONS": [
-      "如果本回合结束时有剩余能量，获得 #b",
-      " 点 #y力量 和 #y敏捷 ，给予随机敌人 #b3 层 #y易伤 和 #y虚弱 。"
+      "If you have any Energy remaining at the end of your turn, apply #b",
+      " #yStrength and #yDexterity and give a random enemy #b3 #yVulnerable and #yWeak."
     ]
   },
   "shadowverse:DrawLoseHealthPower": {
@@ -922,10 +922,10 @@
     ]
   },
   "shadowverse:InesPower": {
-    "NAME": "暗云巫女·叶涅司",
+    "NAME": "Ines, Maiden of Clouds",
     "DESCRIPTIONS": [
-      "由非 #y共鸣 转变为 #y共鸣 时，对全体敌人造成 #b",
-      " 点伤害。"
+      "Whenever you enter #yResonance, deal #b to all enemies.",
+      " damage"
     ]
   },
   "shadowverse:DeathPenaltyPower": {
@@ -935,25 +935,25 @@
     ]
   },
   "shadowverse:ModestPower": {
-    "NAME": "至高无上·谦恭",
+    "NAME": "Absolute Modesty",
     "DESCRIPTIONS": [
-      "回合结束时，对随机敌人造成 #b",
-      " 点伤害。（已消耗的创造物种类为 #b",
-      " 种）"
+      "At the end of your turn, deal #b to a random enemy.",
+      " damage equal to the number of different AF cards played this combat ( #b ",
+      " different AF cards played)"
     ]
   },
   "shadowverse:SpinePower": {
-    "NAME": "神秘守门人·斯碧涅",
+    "NAME": "Spinaria, Keeper of Enigmas",
     "DESCRIPTIONS": [
-      "每当打出 #y创造物 卡牌时，对随机敌人造成 #b",
-      " 点伤害。"
+      "Whenever you play an #yAF card, deal #b to a random enemy.",
+      " damage"
     ]
   },
   "shadowverse:MiriamPower": {
-    "NAME": "反逆之命·米莉亚姆",
+    "NAME": "Miriam, Mutinous Being",
     "DESCRIPTIONS": [
-      "本回合内每当消耗 #y创造物 卡牌时，对全体敌人造成 #b",
-      " 点伤害。"
+      "Whenever you exhaust an #yAF card this turn, deal #b to all enemies.",
+      " damage"
     ]
   },
   "shadowverse:DisableEffectDamagePower": {
@@ -970,14 +970,14 @@
     ]
   },
   "shadowverse:TheWheelOfFortunePower": {
-    "NAME": "惨祸的圆环",
+    "NAME": "Wheel of Misfortune",
     "DESCRIPTIONS": [
-      "接下来的 #b",
-      " 个回合内，回合开始前从以下3种效果中发动一种未发动过的效果：「失去 #b2 点力量」「眩晕 #b1 回合」「增加 #b1 张 #y解析的创造物 到你的手中」。"
+      "For the next #b",
+      " turns, at the start of the turn, activate one of the following effects that hasn't been activated yet: Lose #b2 Strength, Stunned for #b1 turn, Add #b1 #yAnalyzing #yArtifact to your hand."
     ]
   },
   "shadowverse:AbsoluteOnePower": {
-    "NAME": "Absolute One",
+    "NAME": "The Almighty One",
     "DESCRIPTIONS": [
       "Immune to Power damage. Put a #yAbsolute #yJudgment into your hand at the start of your turn."
     ]
