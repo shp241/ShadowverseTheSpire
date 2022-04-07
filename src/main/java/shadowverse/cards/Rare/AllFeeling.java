@@ -39,6 +39,7 @@ public class AllFeeling
         this.cardsToPreview = new EvilWorship();
         this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
+        this.baseDamage = 3;
         this.tags.add(AbstractShadowversePlayer.Enums.FES);
     }
 
@@ -57,7 +58,7 @@ public class AllFeeling
         addToBot((AbstractGameAction)new DrawCardAction(this.magicNumber));
         addToBot((AbstractGameAction)new MakeTempCardInDiscardAction(this.cardsToPreview.makeStatEquivalentCopy(),this.magicNumber));
         addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new BorderFlashEffect(Color.PURPLE, true),0.7F));
-        addToBot((AbstractGameAction)new FeelingAction(this.magicNumber));
+        addToBot((AbstractGameAction)new FeelingAction(this.damage));
     }
 
 

@@ -69,7 +69,7 @@
      for (AbstractCard c:AbstractDungeon.actionManager.cardsPlayedThisCombat){
          if (c.hasTag(AbstractShadowversePlayer.Enums.LASTWORD)){
              count++;
-             if (c.cost<=1){
+             if (c.cost<=1&&c.type==CardType.ATTACK){
                  rebirth.add(c);
              }
          }
