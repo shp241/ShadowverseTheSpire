@@ -3,12 +3,12 @@
     "NAME": "Honest Cohort",
     "FLAVOR": "Expose yourself to the deepest truths—the qualities, faculties, and reality of this plane.",
     "DESCRIPTIONS": [
-      "At the start of each combat, spellboost all the cards in your hand and draw pile #b1 time. Put 1 #yshivs into your hand."
+      "At the start of each combat, Spellboost all cards in your hand and draw pile #b1 time(s). Put 1 #yShivs into your hand."
     ]
   },
   "shadowverse:Eleanor": {
     "NAME": "Eleanor, Cosmic Friend",
-    "FLAVOR": "I am the Cosmic Flower, as well as a friend of yours. For me and you shall I bloom gloriously! For that is me, Eleaner Gloria!",
+    "FLAVOR": "Gaze up at me with fear and respect in your heart, for I am Eleanor Gloria, the Cosmic Flower!",
     "DESCRIPTIONS": [
       "For the first #b3 turns, randomly add #b1 0 cost #yPetrification , #yConjure #yTwosome or #yStaff #yof #yWhirlwinds to your hand."
     ]
@@ -46,14 +46,14 @@
     "NAME": "Missed Lethal",
     "FLAVOR": "... Anyway, let's clear the board first.",
     "DESCRIPTIONS": [
-      "Gain #b1 [E] at the start of your turn. Once a time, whenever a non-Minion enemy's HP is lower than 1/5 by the start of turn, apply #yIntangible ."
+      "Gain #b1 [E] at the start of your turn. Once per turn, whenever a non-Minion enemy's HP is lower than 1/5th of its max by the start of turn, apply #yIntangible ."
     ]
   },
   "shadowverse:Offensive": {
     "NAME": "Token of 1st",
     "FLAVOR": "I go first, no need to redraw.",
     "DESCRIPTIONS": [
-      "When you play the first #ySkill card in a combat, gain [E] ."
+      "Gain [E] when you play the first #ySkill card in a combat."
     ]
   },
   "shadowverse:NeutralBook": {
@@ -75,18 +75,18 @@
     "NAME": "The Golden Pinya",
     "FLAVOR": "Pinya pinya~!",
     "DESCRIPTIONS": [
-      "At the start of turn,randomly put 1 #yDutiful #ySteed, #yBullet #yBike, or #yArcane #yPersonnel #yCarrier into your hand."
+      "At the start of your turn, randomly put 1 #yDutiful #ySteed, #yBullet #yBike, or #yArcane #yPersonnel #yCarrier into your hand."
     ]
   },
   "shadowverse:KMR1": {
-    "NAME": "Balance Changes 1",
+    "NAME": "Balance Changes: Defense Buff",
     "FLAVOR": "To achieve better game balance, we're making changes to the enemies.",
     "DESCRIPTIONS": [
       "At the start of each combat, all enemies gain #b8 block ."
     ]
   },
   "shadowverse:KMR2": {
-    "NAME": "Balance Changes 2",
+    "NAME": "Balance Changes: Strength Buff",
     "FLAVOR": "To achieve better game balance, we're making changes to the enemies.",
     "DESCRIPTIONS": [
       "At the start of each combat, all enemies gain #b1 strength ."
@@ -96,14 +96,14 @@
     "NAME": "Token of 1st",
     "FLAVOR": "I go first, no need to redraw.",
     "DESCRIPTIONS": [
-      "Everytime you use #b5 cards in the same turn, deal #b2 damage to all enemies."
+      "Every time you play #b5 cards in one turn, deal #b2 damage to all enemies."
     ]
   },
   "shadowverse:SixMark": {
     "NAME": "Bow of Unkilling",
     "FLAVOR": "Fear not ruin, one must merely endure eternity.",
     "DESCRIPTIONS": [
-      "At the start of turn, randomly apply 1 Vulnerable, Weak,  #yChoke , #y-1Strength #ythis #turn, #yTalk #yto #ythe #yHand,  Poison to all enemies. Each of these debuff can be applied only once."
+      "At the start of your turn, randomly apply 1 Vulnerable, Weak,  #yChoke , #y-1Strength #ythis #turn, #yTalk #yto #ythe #yHand, or Poison to all enemies. Each of these debuffs can be applied only once."
     ]
   },
   "shadowverse:ArisaBOSS": {
@@ -166,56 +166,56 @@
     "NAME": "Token of 1st",
     "FLAVOR": "I go first, no need to redraw.",
     "DESCRIPTIONS": [
-      "At the start of your turn, #yNecromancy 3 : \bPut 1 #yZombie into your hand."
+      "At the start of your turn, #yNecromancy 3: Put 1 #yZombie into your hand."
     ]
   },
   "shadowverse:BurialGround": {
     "NAME": "Burial Grounds",
     "FLAVOR": "Death is gathering.",
     "DESCRIPTIONS": [
-      "By the end of your turn, gain #b1 #yShadows ."
+      "At the end of your turn, gain #b1 #yShadows."
     ]
   },
   "shadowverse:LunaBOSS": {
     "NAME": "Luna's Friend",
     "FLAVOR": "Would you like to be Luna's friend?",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st . At the start of your turn, #yNecromancy 4 :\b Add 1 #yLitch to hand."
+      "Replaces #yToken #yof #y1st. At the start of your turn, #yNecromancy 4: Add 1 #yLich to your hand."
     ]
   },
   "shadowverse:Todoroki": {
-    "NAME": "Scythe of Thunder",
+    "NAME": "Thunderous Roar",
     "FLAVOR": "Language breeds both good and evil. Only silence creates equality.",
     "DESCRIPTIONS": [
-      "ALL enemies lose #b1 buff(Lose #yArtifact first.) at the start of combat."
+      "ALL enemies lose #b1 buff at the start of combat (if the enemy has #yArtifact, it will lose that first)."
     ]
   },
   "shadowverse:TailRelic": {
-    "NAME": "Mask of Great Fox",
-    "FLAVOR": "Life is fleeting, mortals the flickering figures in a shadow play. Is it not odd?",
+    "NAME": "Mask of the Great Fox",
+    "FLAVOR": "We live within a strange story. Life is fleeting, mortals the flickering figures in a shadow play.",
     "DESCRIPTIONS": [
-      "Start the combat with #b1 #yOne-Tailed #yFox added to your draw pile. If you have played #b9 #yOne-Tailed #yFox this run, add #b1 #yGinsetsu, #yGreat #yFox to your deck instead."
+      "Start each combat with #b1 #yOne-Tailed #yFox added to your draw pile. If you've played #b9 #yOne-Tailed #yFoxes this run, add #b1 #yGinsetsu, #yGreat #yFox to your deck instead."
     ]
   },
   "shadowverse:InfernalCrown": {
     "NAME": "Infernal Crown",
     "FLAVOR": "The dead are but empty vessels. Crude, earthen cups drained by the god of death. Pour, then! Fill the vessel and make it dance.",
     "DESCRIPTIONS": [
-      "#yReanimate #b3 at turn #b2 , #yReanimate #b4 at turn #b3 , #yReanimate #b5 at turn #b4 ."
+      "#yReanimate #b3 on turn #b2, #yReanimate #b4 on turn #b3, and #yReanimate #b5 on turn #b4."
     ]
   },
   "shadowverse:Alice": {
     "NAME": "One-of-a-Kind Idol",
     "FLAVOR": "Alice Kurobane's concert is about to begin!",
     "DESCRIPTIONS": [
-      "Whenever #yNecromancy is activated, deal #b3 damage to ALL enemies."
+      "Whenever a #yNecromancy effect is activated, deal #b3 damage to ALL enemies."
     ]
   },
   "shadowverse:Offensive4": {
     "NAME": "Token of 1st",
     "FLAVOR": "I go first, no need to redraw.",
     "DESCRIPTIONS": [
-      "When a combat is over, #yVengeance : Heal #b7 HP. Othervise, heal #b4 HP."
+      "At the end of combat, if you are in #yVengeance, heal #b7 HP. Otherwise, heal #b4 HP."
     ]
   },
   "shadowverse:IriaBOSS": {
@@ -226,7 +226,7 @@
     ]
   },
   "shadowverse:LustRelic": {
-    "NAME": "Wings of Lust",
+    "NAME": "Embracing Wings",
     "FLAVOR": "Love and mix, ravish and enrapture. Let lust overtake you as you come together with your fellows.",
     "DESCRIPTIONS": [
       "At the start of combat, gain #ySiphon."
@@ -247,10 +247,10 @@
     ]
   },
   "shadowverse:BerserkRelic": {
-    "NAME": "Aragavy's Club",
+    "NAME": "Tetocalami, Berserker's Cudgel",
     "FLAVOR": "We’ll string you up, dress you, and devour you to the marrow!",
     "DESCRIPTIONS": [
-      "Whenever Wrath is activated, heal #b7 HP."
+      "Whenever Wrath becomes active, heal #b7 HP."
     ]
   },
   "shadowverse:LonePromise": {
@@ -271,7 +271,7 @@
     "NAME": "Token of 1st",
     "FLAVOR": "I go first, no need to redraw.",
     "DESCRIPTIONS": [
-      "At the start of combat, draw #b1 card if number of cards in your deck is even. Othervise, increase count by #b1 . heal #b8 HP and gain #b8 Gold when count reaches #b8 ."
+      "At the start of combat, draw #b1 card(s) if the total number of cards in your deck is even. Otherwise, increase your Portal Count by #b1. Heal #b8 HP and gain #b8 Gold when your Portal Count count reaches #b8 ."
     ]
   },
   "shadowverse:NemesisBOSS": {
@@ -282,7 +282,7 @@
     ]
   },
   "shadowverse:ArtsMaster": {
-    "NAME": "The Ultimate Way of the Fist",
+    "NAME": "Haja Indira, Ultimate Way of the Fist",
     "FLAVOR": "I am, therefore the best of all possible worlds.",
     "DESCRIPTIONS": [
       "If you have any remaining Energy at the end of your turn, gain #b5 Block, draw #b2 additional cards at the start of your next turn and deal #b5 damage to all enemies."
@@ -320,35 +320,35 @@
     "NAME": "Token of 1st",
     "FLAVOR": "I go first, no need to redraw.",
     "DESCRIPTIONS": [
-      "Can be activated #b3 times per combat. Once per combat: Right click to add #b1 #yEvolution #yPoint into your hand."
+      "Once per combat: Right click to add #b1 #yEvolution #yPoint into your hand. Can be activated #b3 times per combat."
     ]
   },
   "shadowverse:OliviasBlessing": {
     "NAME": "Olivia's Blessing",
     "FLAVOR": "A new world is our desire!",
     "DESCRIPTIONS": [
-      "Can be activated #b3 times per combat. Right click to add #b1 #yMiracle and #b1 #yEvolution #yPoint+ to your hand."
+      "Right click to add #b1 #yMiracle and #b1 #yEvolution #yPoint+ to your hand. Can be activated #b3 times per combat."
     ]
   },
   "shadowverse:WindGodsBlessing": {
     "NAME": "Fieran's Blessing",
     "FLAVOR": "Wind, grant them courage!",
     "DESCRIPTIONS": [
-      "Rally #b10 : At the end of your turn, ALL #yFollowers gain + #b1 /+ #b1 ."
+      "At the end of your turn, ALL #yFollowers gain + #b1 /+ #b1 if your Rally count is #b10 or more."
     ]
   },
   "shadowverse:Conscription": {
     "NAME": "Conscription",
     "FLAVOR": "Quantity over quality.",
     "DESCRIPTIONS": [
-      "At the start of your turn, if you don't have any #yFollower , summon 1 #yKnight ."
+      "At the start of your turn, if you don't have any #yFollowers, summon 1 #yKnight."
     ]
   },
   "shadowverse:Spineblade": {
-    "NAME": "Argentum",
+    "NAME": "Avaritia, Blade of Usurption",
     "FLAVOR": "Go ahead, hunger. Once the craving overtakes you, claim what is rightfully yours. That is the true way of the world, after all.",
     "DESCRIPTIONS": [
-      "Whenever you play a #yLoot , draw 1 card."
+      "Whenever you play a #yLoot card, draw 1 card."
     ]
   },
   "shadowverse:ValhoreanDealer": {
@@ -360,7 +360,7 @@
   },
   "shadowverse:KagemitsuSword": {
     "NAME": "Enma Yasukuni",
-    "FLAVOR": "Thanks to you, I have drawn my blade from the scabbard called peace. -Kagemitsu, Matchless Blade",
+    "FLAVOR": "Thanks to you, I have drawn my blade from the scabbard called peace.",
     "DESCRIPTIONS": [
       "ALL cards that disupgrade will automatically upgrade again after being played."
     ]
@@ -390,8 +390,8 @@
     "NAME": "Cross Craft",
     "FLAVOR": "New Limited Time Format: Cross Craft! Build decks with cards from 2 different classes!",
     "DESCRIPTIONS": [
-      "Randomly choose 1 different shadowverse class, enemy drop an additional card reward of this class.",
-      "Enemy drop an additional card reward of ",
+      "Enemies will drop an additional reward of a card belonging to a Shadowverse class other than your own.",
+      "Enemies drop an additional card reward of ",
       " .",
       "#yRunecraft",
       "#yForestcraft",
@@ -406,14 +406,14 @@
     "NAME": "Token of 1st",
     "FLAVOR": "I go first, no need to redraw.",
     "DESCRIPTIONS": [
-      "Everytime you draw a #yCurse into your hand, move it to the Amulet Zone as a #yCountdown #b3 #yDivine Amulet. If it's the first time in this combat, draw #b1 card."
+      "Whenever you draw a #yCurse card, move it to your Amulet Zone as a #yCountdown #b3 #yDivine Amulet. If it's the first time in this combat, draw #b1 card(s)."
     ]
   },
   "shadowverse:Savior": {
-    "NAME": "Staff of Repose",
+    "NAME": "The Saviors, Spears of Repose",
     "FLAVOR": "Confront the mind in the depths of repose.",
     "DESCRIPTIONS": [
-      "If you play no Attack cards during your turn, start your next turn with #b4 Block."
+      "If you played no Attack cards during your turn, start your next turn with #b4 Block."
     ]
   },
   "shadowverse:GrandShield": {
@@ -424,7 +424,7 @@
     ]
   },
   "shadowverse:GrandSword": {
-    "NAME": "Sword of the Luminous Paladin",
+    "NAME": "Richard, Paradoxical Sword",
     "FLAVOR": "Hope that is given can only be false.",
     "DESCRIPTIONS": [
       "Once per turn, apply #b2 Thorns whenever you Block."
@@ -462,63 +462,63 @@
     "NAME": "Chaos Grimoire",
     "FLAVOR": "Are you ready? Grim Burst!",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st . At the start of combat, reduce the max HP of all enemies by #b18% ."
+      "Replaces #yToken #yof #y1st. At the start of combat, reduce the max HP of all enemies by #b18% ."
     ]
   },
   "shadowverse:AnneBOSS": {
     "NAME": "Anne's Spellbook",
     "FLAVOR": "O, spirit of war! Heed my call!",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st . The #ySkill cards you played are considered as #yMysteria cards."
+      "Replaces #yToken #yof #y1st. All #ySkill cards you play count as #yMysteria cards."
     ]
   },
   "shadowverse:KokkoroBOSS": {
     "NAME": "Ames Amulet",
     "FLAVOR": "Please leave it to me.",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st . Whenever you play the #b6th card of that turn, gain #b1 #yStrength and #yDexterity . NL HP healed in combat increases by #b50% ."
+      "Replaces #yToken #yof #y1st. Whenever you play a card, if it's the #b6th card played this turn, gain #b1 #yStrength and #yDexterity. NL HP healed in combat increases by #b50%."
     ]
   },
   "shadowverse:MiyakoBOSS": {
     "NAME": "Sweet Ghost Pudding",
     "FLAVOR": "Pudding, pudding~!",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st . 3 times per combat, at the start of your turn,  #yNecromancy 6: \bAdd 1 #yApparition to hand."
+      "Replaces #yToken #yof #y1st. 3 times per combat, at the start of your turn activate #yNecromancy 6: Add 1 #yApparition to hand."
     ]
   },
   "shadowverse:IoBOSS": {
     "NAME": "Glamour Whip",
     "FLAVOR": "Yes! You called for your teacher~?",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st . Once per combat, when #yFatal , randomly upgrade a card in your deck."
+      "Replaces #yToken #yof #y1st. Once per combat, when #yFatal, randomly upgrade a card in your deck."
     ]
   },
   "shadowverse:RalmiaBOSS": {
     "NAME": "Omega Drive",
     "FLAVOR": "Speed Boost!",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st . Once per combat: When you gain #yResonance , ALL Attacks in hand are considered as #yAF cards; When you lose #yResonance , ALL Attacks in hand are considered as #yMachina cards."
+      "Replaces #yToken #yof #y1st. Once per combat: When #yResonance becomes active, ALL Attack cards in your hand count as #yAF cards. When #yResonance is not active, ALL Attack cards in your hand count as #yMachina cards."
     ]
   },
   "shadowverse:ShizuruBOSS": {
     "NAME": "Sacred Blade",
     "FLAVOR": "Your big sister will always protect you!",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st . Can be activated #b2 times per combat. Once per combat: Right click to add #b1 #yEvolution #yPoint+ into your hand and gain 10 #yBlock. NL At hte end of combat, restore #b3 health per time left."
+      "Replaces #yToken #yof #y1st. Once per combat: Right click to add #b1 #yEvolution #yPoint+ into your hand and gain 10 #yBlock. Can be activated #b2 times per combat. NL At the end of combat, restore #b3 health per activations left."
     ]
   },
   "shadowverse:YukariBOSS": {
     "NAME": "Eternal Mug",
     "FLAVOR": "Ehehe, I wanna go home early to have a drink~",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st . Whenever you heal your HP, gain #bPower #bDamage #bImmune . NL Whenever you draw a #yStatus or #yCurse card, draw #b1 card."
+      "Replaces #yToken #yof #y1st. Whenever you heal your HP, gain #bPower #bDamage #bImmune. NL Whenever you draw a #yStatus or #yCurse card, draw #b1 card."
     ]
   },
   "shadowverse:ShinobuBOSS": {
     "NAME": "Grim Soul Rope",
     "FLAVOR": "Rest in peace.",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st .At start of your turn, #yNecromancy 4: \bAdd 1 #ySkullfather to your hand."
+      "Replaces #yToken #yof #y1st. At start of your turn, #yNecromancy 4: Add 1 #ySkullfather to your hand."
     ]
   },
   "shadowverse:Bullet": {
