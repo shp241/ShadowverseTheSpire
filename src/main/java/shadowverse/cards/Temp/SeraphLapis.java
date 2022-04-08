@@ -1,6 +1,6 @@
 package shadowverse.cards.Temp;
 
-import charbosses.bosses.KMR.KMR;
+import shadowverseCharbosses.bosses.KMR.KMR;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;

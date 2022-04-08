@@ -1,11 +1,10 @@
 package shadowverse.powers;
 
-import charbosses.actions.common.EnemyMakeTempCardInHandAction;
-import charbosses.cards.nemesis.AbsoluteJudgment;
+import shadowverseCharbosses.actions.common.EnemyMakeTempCardInHandAction;
+import shadowverseCharbosses.cards.nemesis.AbsoluteJudgment;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.patches.NeutralPowertypePatch;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;

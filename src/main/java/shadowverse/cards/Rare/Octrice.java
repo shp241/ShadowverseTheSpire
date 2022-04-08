@@ -1,19 +1,14 @@
 package shadowverse.cards.Rare;
 
 import basemod.abstracts.CustomCard;
-import charbosses.powers.cardpowers.EnemyFlameBarrierPower;
+import shadowverseCharbosses.powers.cardpowers.EnemyFlameBarrierPower;
 import com.badlogic.gdx.Gdx;
-import com.google.gson.Gson;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -28,7 +23,6 @@ import shadowverse.cards.Temp.GildedBlade;
 import shadowverse.cards.Temp.GildedBoots;
 import shadowverse.cards.Temp.GildedGoblet;
 import shadowverse.cards.Temp.GildedNecklace;
-import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 import shadowverse.orbs.AmbushMinion;
 import shadowverse.orbs.ErikaOrb;

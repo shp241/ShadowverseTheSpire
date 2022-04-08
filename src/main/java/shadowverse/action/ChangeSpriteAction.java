@@ -1,18 +1,10 @@
 package shadowverse.action;
 
 import basemod.animations.SpriterAnimation;
-import charbosses.bosses.KMR.KMR;
+import shadowverseCharbosses.bosses.KMR.KMR;
 import com.badlogic.gdx.Gdx;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.core.Settings;
-import shadowverse.Shadowverse;
-import shadowverse.animation.AbstractAnimation;
-import shadowverse.monsters.Naht;
 import shadowverse.monsters.SpriteCreature;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class ChangeSpriteAction extends AbstractGameAction {
 
