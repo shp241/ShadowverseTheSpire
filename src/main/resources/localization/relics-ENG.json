@@ -8,7 +8,7 @@
   },
   "shadowverse:Eleanor": {
     "NAME": "Eleanor, Cosmic Friend",
-    "FLAVOR": "Gaze up at me with fear and respect in your heart, for I am Eleanor Gloria, the Cosmic Flower!",
+    "FLAVOR": "I am Eleanor Gloria, Cosmic Flower and friend to you. For the two of us I shall proudly bloom!",
     "DESCRIPTIONS": [
       "For the first #b3 turns, randomly add #b1 0 cost #yPetrification , #yConjure #yTwosome or #yStaff #yof #yWhirlwinds to your hand."
     ]
@@ -46,7 +46,7 @@
     "NAME": "Missed Lethal",
     "FLAVOR": "... Anyway, let's clear the board first.",
     "DESCRIPTIONS": [
-      "Gain #b1 [E] at the start of your turn. Once per turn, whenever a non-Minion enemy's HP is lower than 1/5th of its max by the start of turn, apply #yIntangible ."
+      "Gain #b1 [E] at the start of your turn. Once a combat, whenever a non-Minion enemy's HP is lower than 1/5th of its max by the start of turn, apply #yIntangible ."
     ]
   },
   "shadowverse:Offensive": {
