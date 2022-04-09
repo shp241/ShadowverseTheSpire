@@ -19,7 +19,7 @@ public class Bullet
     public static final String ID = "shadowverse:Bullet";
     public static final String IMG = "img/relics/Bullet.png";
     public static final String OUTLINE_IMG = "img/relics/outline/Bullet_Outline.png";
-    private boolean triggered;
+    private static boolean triggered = false;
     private static AbstractCard verdict = new VerdictWord();
     private static AbstractCard order = new AbsoluteOrder();
 
@@ -92,6 +92,7 @@ public class Bullet
             }
         }
     }
+
 
     @Override
     public void onVictory() {

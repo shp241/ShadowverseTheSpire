@@ -271,7 +271,7 @@
     "NAME": "Token of 1st",
     "FLAVOR": "I go first, no need to redraw.",
     "DESCRIPTIONS": [
-      "At the start of combat, draw #b1 card(s) if the total number of cards in your deck is even. Otherwise, increase your Portal Count by #b1. Heal #b8 HP and gain #b8 Gold when your Portal Count count reaches #b8 ."
+      "At the start of combat, draw #b1 card(s) if the total number of cards in your deck is even. Otherwise, increase your Portal Count by #b1. Heal #b8 HP and gain #b8 Gold when your Portal Count reaches #b8 ."
     ]
   },
   "shadowverse:NemesisBOSS": {
