@@ -896,7 +896,7 @@
     "UPGRADE_DESCRIPTION": "Natura. NL Put a *Naterran *Great *Tree into your hand.."
   },
   "shadowverse:ScaryTrend": {
-    "NAME": "Scary Trend",
+    "NAME": "Ghastly Treant",
     "DESCRIPTION": "Natura. NL Put a *Naterran *Great *Tree into your hand. NL Gain !B! Block. NL If at least 2 other cards were played this turn, Add a *Fairy into your hand. "
   },
   "shadowverse:Packing": {
@@ -2261,7 +2261,7 @@
   },
   "shadowverse:Armadillo": {
     "NAME": "Ironclad Armadillo",
-    "DESCRIPTION": "Machina / Natura. NL Gain !B! Block. NL Last_Words:When this card is played or exhausted, add 1 *Assembly *Droid and 1 *Repair *Mode to your hand."
+    "DESCRIPTION": "Machina / Natura. NL Gain !B! Block. NL Last_Words: When this card is played or exhausted, add 1 *Assembly *Droid and 1 *Repair *Mode to your hand."
   },
   "shadowverse:AerialCraft": {
     "NAME": "Aerial Craft",
@@ -2572,7 +2572,7 @@
   },
   "shadowverse:Wretches": {
     "NAME": "Wretch",
-    "DESCRIPTION": "Deal !D! damage. NL Last_Words:When this card is exhausted, add 1 *Bullet *Bike to your hand. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Last_Words: When this card is exhausted, add 1 *Bullet *Bike to your hand. NL Exhaust."
   },
   "shadowverse:VoidRealize": {
     "NAME": "Wretched Tryst",
@@ -2580,7 +2580,7 @@
   },
   "shadowverse:Illganeau": {
     "NAME": "Illganeau, Horror Astray",
-    "DESCRIPTION": "Gain !B! Block. NL Last_Words:When this card is exhausted, add 1 copy of this card to your hand and gain 1 Dexterity. NL If your Dexterity is 3 or more, add 1 *Wretched *Tryst to your hand instead. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL Last_Words: When this card is exhausted, add 1 copy of this card to your hand and gain 1 Dexterity. NL If your Dexterity is 3 or more, add 1 *Wretched *Tryst to your hand instead. NL Exhaust."
   },
   "shadowverse:NightVampire": {
     "NAME": "夜天吸血鬼",
@@ -2628,7 +2628,7 @@
     "DESCRIPTION": "Deal !D! damage. NL Gain 1 Intangible. NL Put a *Sleipnir which costs 0 unit played into your hand. NL Exhaust."
   },
   "shadowverse:SevensForceSorcerer": {
-    "NAME": "Seven's Force Sorcerer",
+    "NAME": "Sorcerer of Seven Forces",
     "DESCRIPTION": "Whenever you play 7 Skill cards in 1 turn, kill all enemies and lose this effect.",
     "UPGRADE_DESCRIPTION": "Whenever you play 7 Skill cards in 1 turn, kill all enemies and lose this effect. NL All 1 cost Skill cards costs 0 in this turn."
   },
@@ -2666,7 +2666,7 @@
   },
   "shadowverse:WUP": {
     "NAME": "World Uprooted",
-    "DESCRIPTION": "Machina · Natura. NL Whenever this card is drawn into your hand, put 2 *Dominator's *crackdown into your hand. NL If there is not any Machina or Natura card in your deck, add 1 additionally. NL Ethereal."
+    "DESCRIPTION": "Machina · Natura. NL Whenever this card is drawn into your hand, put 2 *Tyrannical *Force into your hand. NL If there is not any Machina or Natura card in your deck, add 1 additionally. NL Ethereal."
   },
   "shadowverse:Death": {
     "NAME": "Death",
@@ -2677,7 +2677,7 @@
     "DESCRIPTION": "Whenever you play a card, randomly Exhaust a card in hand and put a card into your hand. NL Ethereal."
   },
   "shadowverse:Rowen": {
-    "NAME": "Rowen, Omen of Simper",
+    "NAME": "Smiling Rowen",
     "DESCRIPTION": "By the end of the turn, put 1 *Curse *of *the *Black *Dragon into your hand."
   },
   "shadowverse:CurseOfTheBlackDragon": {
@@ -2693,43 +2693,43 @@
     "DESCRIPTION": "Put !M! *Fairy into your hand. NL Put 1 *Fairy into your hand at the start of your turn. NL Whenever you play a *Fairy , gain 2 Strength and 1 Dexterity."
   },
   "shadowverse:LegendSwordCommander": {
-    "NAME": "Legend Sword Commander",
+    "NAME": "Legendary Sword Commander",
     "DESCRIPTION": "Will not lose Block at the start of your turn. NL By the end of your turn, gain !M! Block."
   },
   "shadowverse:DeadSoulTaker": {
-    "NAME": "Dead Soul Taker",
+    "NAME": "Departed Soultaker",
     "DESCRIPTION": "Gain !B! Block. NL Put 1 Attack from your Exhaust pile into your hand with 0 cost this turn. NL Necromancy 10: \bRandomly put Attacks you played in this combat into your hand with Exhaust and 0 cost until your hand is full."
   },
   "shadowverse:AbyssDoomLord": {
-    "NAME": "Abyss Doom Lord",
+    "NAME": "Doomlord of the Abyss",
     "DESCRIPTION": "Exhaust any number of hand. NL Deal !D! damage. NL Lose HP until your HP equal to 1. NL Deal damage equal to double the HP you've lost. NL Change incoming damage to 0 this turn. NL Exhaust."
   },
   "shadowverse:KMRsPresent": {
     "NAME": "KMR's Present",
-    "DESCRIPTION": "Retain. NL Choose: Put 1 *Legendary *Card into your hand. NL (Select from the drop-down list) NL Exhaust."
+    "DESCRIPTION": "Retain. NL Choose: Put 1 *Mythical *Card into your hand. NL (Select from the drop-down list) NL Exhaust."
   },
   "shadowverse:ShadowversePain": {
-    "NAME": "Shadowverse is tool of torture",
+    "NAME": "Shadowverse is Pain",
     "DESCRIPTION": "Whenever you play a Shadowverse card, lose 1 HP."
   },
   "shadowverse:Betray": {
-    "NAME": "Shadowverse betrays me!",
+    "NAME": "Shadowverse Betrayed Me!",
     "DESCRIPTION": "By the end of the turn, put a copy of this card into your discard pile. NL Exhaust."
   },
   "shadowverse:CalamityMode": {
-    "NAME": "Calamity Mode",
+    "NAME": "Calamity's Genesis'",
     "DESCRIPTION": "Change your deck with *Calamity *Deck. NL Exhaust."
   },
   "shadowverse:JusticeTyrant": {
-    "NAME": "Justice Tyrant",
+    "NAME": "Magisterial Dreadnought",
     "DESCRIPTION": "Gain !B! Block. NL Summon 4 *World *Eliminator. NL Put 1 *Evolution *Point into enemy's hand. NL Enemy draw 1 less card next turn."
   },
   "shadowverse:ShangrilaBreaker": {
-    "NAME": "Shangrila Breaker",
+    "NAME": "Ruiner of Eden",
     "DESCRIPTION": "Deal !D! damage 10 times. NL Gain !B! Block."
   },
   "shadowverse:CalamityEnd": {
-    "NAME": "Calamity End",
+    "NAME": "Calamity's End",
     "DESCRIPTION": "Kill the enemy."
   },
   "shadowverse:EnDeath": {
@@ -2741,7 +2741,7 @@
     "DESCRIPTION": "Gain !B! Block. NL Gain 1 Buffer. NL Deal !M! damage to attacker when being attacked this turn. NL Put 1 Holy *Lion's *Bless into your enemy's hand."
   },
   "shadowverse:LionBless": {
-    "NAME": "Holy Lion's Bless",
+    "NAME": "Holy Lion's Blessing",
     "DESCRIPTION": "Put 1 Attack from your Exhaust pile into your hand with 0 cost. NL Apply 24 Block ,6 Flame Barrier to enemy. NL Ethereal. NL Exhaust."
   },
   "shadowverse:EnHereticalInquiry": {
@@ -2749,7 +2749,7 @@
     "DESCRIPTION": "Randomly put !M! Curse card into your enemy's draw pile."
   },
   "shadowverse:EnAcolyteLight": {
-    "NAME": "Acolyte Light",
+    "NAME": "Acolyte's Light",
     "DESCRIPTION": "If the Block of your enemy is less than 20, remove all Block. NL Otherwise, deal 20 damage. NL Heal HP equal to removed Block."
   },
   "shadowverse:EnSacredPlea": {
@@ -3851,8 +3851,8 @@
     "DESCRIPTION": "Gain !B! Block. NL 增加1张 *进化点 到手中. NL 增加1张 *萝蕾娜的圣水 和 本回合耗能为0的 *萝蕾娜的铁拳 到手中."
   },
   "shadowverse:ImperialSaint": {
-    "NAME": "威严圣者",
-    "DESCRIPTION": "Gain !B! Block. NL 获得1层 残影. NL 死亡时无效一次死亡, 回复最大生命值50%生命并追加1个额外回合."
+    "NAME": "Imperial Saint",
+    "DESCRIPTION": "Gain !B! Block. NL Gain 1 Blur. NL The next time you would die, restore 50% of your max HP and take an extra turn instead."
   },
   "shadowverse:ShadowCorrosion": {
     "NAME": "Shadow's Corrosion",
@@ -4051,20 +4051,20 @@
     "DESCRIPTION": "Exhaust 1 card. NL Deal !D! damage to a random enemy. NL Deal !M! damage to all enemies. NL Exhaust."
   },
   "shadowverse:OmenOfCraving": {
-    "NAME": "饥饿绝杰·吉鲁涅莉婕",
-    "DESCRIPTION": "造成 !D! 点伤害, 回复造成伤害的生命. NL Gain !B! Block , 获得1层 残影. NL 获得2点 力量. NL 如果为第5回合以上, 抽5张牌."
+    "NAME": "Gilnelise, Omen of Craving",
+    "DESCRIPTION": "Deal !D! damage and restore your HP equal to the damage dealt. NL Gain !B! Block and 1 Blur. NL Gain 2 Strength. NL If it is your 5th turn or later, draw 5 cards."
   },
   "shadowverse:OmenOfCraving2": {
-    "NAME": "涸绝饥饿·吉鲁涅莉婕",
-    "DESCRIPTION": "造成 !D! 点伤害, 回复6点生命. NL 获得2点 力量 , 失去2点 敏捷. NL 瞬念召唤 自己的回合开始, 若为第5回合, 则会 Exhaust , 并将1张 *涸绝的甘露 加入手中."
+    "NAME": "Gilnelise, Ravenous Craving",
+    "DESCRIPTION": "Deal !D! damage and restore 6 HP. NL Gain 2 Strength and lose 2 Dexterity. NL Invocation: If it is your 5th turn or later, put this card into your hand, Exhaust it and put 1 *Ravenous *Sweetness into your hand."
   },
   "shadowverse:RavenousSweetness": {
-    "NAME": "涸绝的甘露",
-    "DESCRIPTION": "造成 !D! 点伤害, 回复5点生命. NL 使目标失去5点 力量. NL 抽5张牌. NL Exhaust."
+    "NAME": "Ravenous Sweetness",
+    "DESCRIPTION": "Deal !D! damage and restore 5 HP. NL The enemy loses 5 Strength. NL Draw 5 cards. NL Exhaust."
   },
   "shadowverse:BirthOfRavenous": {
-    "NAME": "降诞的涸绝",
-    "DESCRIPTION": "获得「如果回合内已打出3张以上的卡, 下回合额外抽1张卡」效果. NL Exhaust."
+    "NAME": "Birth of the Ravenous",
+    "DESCRIPTION": "Gain the following effect: If you played 3 or more cards this turn, draw 1 additional card next turn. NL Exhaust."
   },
   "shadowverse:AdherentOfDesire": {
     "NAME": "爱绝的崇拜者",

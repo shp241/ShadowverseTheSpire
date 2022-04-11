@@ -24,7 +24,7 @@
     "NAME": "Earth Essence",
     "FLAVOR": "I daresay the fruits of my research should take my magical abilities to still greater heights! ",
     "DESCRIPTIONS": [
-      "At the start of each combat, gain #b1 Earth_Essence."
+      "At the start of each combat, gain #b1 #yEarth #yEssence."
     ]
   },
   "shadowverse:Mysteria": {
@@ -103,7 +103,7 @@
     "NAME": "Bow of Unkilling",
     "FLAVOR": "Fear not ruin, one must merely endure eternity.",
     "DESCRIPTIONS": [
-      "At the start of your turn, randomly apply 1 Vulnerable, Weak,  #yChoke , #y-1Strength #ythis #turn, #yTalk #yto #ythe #yHand, or Poison to all enemies. Each of these debuffs can be applied only once."
+      "At the start of your turn, randomly apply 1 Vulnerable, Weak,  #yChoke , -1 #yStrength this turn, #yTalk #yto #ythe #yHand, or Poison to all enemies. Each of these debuffs can be applied only once."
     ]
   },
   "shadowverse:ArisaBOSS": {
