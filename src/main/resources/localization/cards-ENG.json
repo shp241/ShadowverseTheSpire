@@ -754,7 +754,7 @@
     "NAME": "Fairy",
     "DESCRIPTION": "Deal !D! damage. NL Exhaust."
   },
-  "shadowverse:FairyWhisperer": {
+  "shadowverse:FairyWisperer": {
     "NAME": "Fairy Whisperer",
     "DESCRIPTION": "Add !M! *Fairies into your hand.",
     "UPGRADE_DESCRIPTION": "Add !M! *Fairies+ into your hand."
@@ -835,108 +835,108 @@
     "DESCRIPTION": "At the end of your turn, if at least 4 cards were played this turn, !M! more cards at the start of your next turn. Gain !M! Dexterity and Strength. NL If at least 8 cards were played, double the effect. NL Exhaust."
   },
   "shadowverse:WindFall": {
-    "NAME": "WindFall Fay",
-    "DESCRIPTION": "Gain [E]. NL Whenever you play a card, if it's the 5th card or later played this turn, draw !M! card. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Gain [E]. NL Whenever you play a card, if it's the 5th card or later played this turn, draw !M! card."
+    "NAME": "Windfall Fay",
+    "DESCRIPTION": "Gain [E]. NL Whenever you play a card, if it's at least the 5th card played this turn, draw !M! card(s). NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Gain [E]. NL Whenever you play a card, if it's at least the 5th card played this turn, draw !M! card(s)."
   },
   "shadowverse:ElfGuard": {
     "NAME": "Elf Guard",
-    "DESCRIPTION": "Gain !B!  Block. NL If at least 2 other cards were played this turn, Gain !M! Plated Armor."
+    "DESCRIPTION": "Gain !B!  Block. NL If at least 2 other cards were played this turn, gain !M! Plated Armor."
   },
-  "shadowverse:Whisp": {
-    "NAME": "Fairy Whisp",
-    "DESCRIPTION": "Retain. NL If no more than 2 other cars were played this turn, Deal !D! damage, Gain !B!  Block. NL Exhaust."
+  "shadowverse:Wisp": {
+    "NAME": "Fairy Wisp",
+    "DESCRIPTION": "Retain. NL If no more than 2 other cards were played this turn, deal !D! damage and gain !B! Block. NL Exhaust."
   },
   "shadowverse:Aria": {
     "NAME": "Aria, Miasma Fairy",
-    "DESCRIPTION": "Add a *Fairy *Whisp and a *Fairy into your hand. NL *Fairy *Whisp and *Fairy will apply 2 Poison."
+    "DESCRIPTION": "Add a *Fairy *Wisp and a *Fairy into your hand. NL *Fairy *Wisps and *Fairies will apply 2 Poison."
   },
   "shadowverse:GuardOfMachinatree": {
-    "NAME": "Guard Of Machinatree",
-    "DESCRIPTION": "Machina. NL Put an Attack or a Power from your discard pile into your hand.If it is a Machina card,Draw 1 card. NL Gain !B! Block."
+    "NAME": "Guard of the Machinatree",
+    "DESCRIPTION": "Machina. NL Put an Attack or Power card from your discard pile into your hand. If it's a Machina card, draw 1 card. NL Gain !B! Block."
   },
   "shadowverse:RoboticBagworm": {
     "NAME": "Robotic Bagworm",
-    "DESCRIPTION": "Machina. NL Choose a Machina card in your hand and it cost 1 less [E] this turn. NL Gain !B! Block."
+    "DESCRIPTION": "Machina. NL Select a Machina card in your hand. It costs 1 less [E] this turn. NL Gain !B! Block."
   },
   "shadowverse:Damian": {
     "NAME": "Damian, Drillarm Brawler",
-    "DESCRIPTION": "Machina. NL If any other Machina Attacks were played this turn, Deal !D! damage.Deal X damage to ALL enemies. X equals !M! times of the number of Machina Attacks played this turn."
+    "DESCRIPTION": "Machina. NL If any other Machina Attack cards were played this turn, deal !D! damage. Deal X damage to ALL enemies. X equals !M! times of the number of Machina Attack cards played this turn."
   },
   "shadowverse:MachineClaw": {
     "NAME": "Mechaclaw Elf",
-    "DESCRIPTION": "Machina. NL Gain !B! Block. NL If another Machina card was played this turn, Deal !D! damage."
+    "DESCRIPTION": "Machina. NL Gain !B! Block. NL If another Machina card was played this turn, deal !D! damage."
   },
   "shadowverse:IrongliderElf": {
     "NAME": "Ironglider Elf",
-    "DESCRIPTION": "Machina. NL Gain !B! Block. NL Put 2 random Machina card from your draw pile into your hand."
+    "DESCRIPTION": "Machina. NL Gain !B! Block. NL Put 2 random Machina cards from your draw pile into your hand."
   },
   "shadowverse:Cassiopeia": {
     "NAME": "Cassiopeia",
-    "DESCRIPTION": "Deal !D! damage to a random enemy.Do this X times.X equals the number of other cards in your hand."
+    "DESCRIPTION": "Deal !D! damage to a random enemy. Do this X times. X equals the number of other cards in your hand."
   },
   "shadowverse:Loxis": {
     "NAME": "Loxis, Homestead Pioneer",
-    "DESCRIPTION": "Whenever you play a Power, Gain [E] (up to 3 times per turn), randomly put a *Dutiful *Steed , *Bullet *Bike ,or *Arcane *Personnel *Carrier. Each of these Powers can be put only once per turn with this effect. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Whenever you play a Power, Gain [E] (up to 3 times per turn), randomly put a *Dutiful *Steed , *Bullet *Bike ,or *Arcane *Personnel *Carrier. Each of these Powers can be put only once per turn with this effect."
+    "DESCRIPTION": "Whenever you play a Power card: Gain [E] (up to 3 times per turn) and randomly put a *Dutiful *Steed, *Bullet *Bike, or *Arcane *Personnel *Carrier into your hand. Each of these cards can only be put into your hand once per turn with this effect. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Whenever you play a Power card: Gain [E] (up to 3 times per turn) and randomly put a *Dutiful *Steed, *Bullet *Bike, or *Arcane *Personnel *Carrier into your hand. Each of these cards can only be put into your hand once per turn with this effect."
   },
   "shadowverse:NaturalMana": {
     "NAME": "Fertile Aether",
-    "DESCRIPTION": "Natura. NL  Put a *Naterran *Great *Tree into your hand.. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Natura. NL  Put a *Naterran *Great *Tree into your hand.."
+    "DESCRIPTION": "Natura. NL Put a *Naterran *Great *Tree into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Natura. NL Put a *Naterran *Great *Tree into your hand."
   },
   "shadowverse:JusticeMana": {
-    "NAME": "Virtuous Aethe",
-    "DESCRIPTION": "Natura. NL  Put a *Naterran *Great *Tree into your hand.. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Natura. NL  Put a *Naterran *Great *Tree into your hand.."
+    "NAME": "Virtuous Aether",
+    "DESCRIPTION": "Natura. NL Put a *Naterran *Great *Tree into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Natura. NL Put a *Naterran *Great *Tree into your hand."
   },
   "shadowverse:TechnologyMana": {
     "NAME": "Enigmatic Aether",
-    "DESCRIPTION": "Natura. NL Put a *Naterran *Great *Tree into your hand.. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Natura. NL Put a *Naterran *Great *Tree into your hand.."
+    "DESCRIPTION": "Natura. NL Put a *Naterran *Great *Tree into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Natura. NL Put a *Naterran *Great *Tree into your hand."
   },
   "shadowverse:ScaryTrend": {
     "NAME": "Ghastly Treant",
-    "DESCRIPTION": "Natura. NL Put a *Naterran *Great *Tree into your hand. NL Gain !B! Block. NL If at least 2 other cards were played this turn, Add a *Fairy into your hand. "
+    "DESCRIPTION": "Natura. NL Put a *Naterran *Great *Tree into your hand. NL Gain !B! Block. NL If at least 2 other cards were played this turn, put a *Fairy into your hand. "
   },
   "shadowverse:Packing": {
     "NAME": "Send 'Em Packing",
-    "DESCRIPTION": "Natura. NL Retain. NL Add 2 to the number of cards played this turn. NL Enemy loses one kind of buffs. NL (Artifact first) NL Apply !M! Vulnerable and Weak. NL Exhaust. "
+    "DESCRIPTION": "Natura. NL Retain. NL Add 2 to the number of cards played this turn. NL An enemy loses one buff (if the enemy has Artifact, that will be lost first). NL Apply !M! Vulnerable and Weak. NL Exhaust. "
   },
   "shadowverse:Ladica": {
     "NAME": "Ladica, the Stoneclaw",
-    "DESCRIPTION": "Natura. NL Deal !D! damage.Then,if you have a *Fairy in your hand,Deal !D! damage to All enemies. NL If you have the Power: Naterran_Great_Tree ,Add a *Send *'Em *Packing into your hand. "
+    "DESCRIPTION": "Natura. NL Deal !D! damage. Then, if you have a *Fairy in your hand, deal !D! damage to All enemies. NL If you have the Power Naterran_Great_Tree, add a *Send *'Em *Packing into your hand. "
   },
   "shadowverse:Ladica2": {
     "NAME": "Ladica, Verdant Claw",
-    "DESCRIPTION": "Natura. NL Deal !D! damage. NL Whenever you play a card, if it's the 1st you've played this turn,Add a *Ladica's *Embrace into your hand. NL If it's the 4th,gain 1 [E]. NL If it's the 8th,this card will deal damage 2 times. NL If it's the 12th, Gain 3 Strength and 3 Dexterity , double the damage."
+    "DESCRIPTION": "Natura. NL Deal !D! damage. NL Whenever you play a card, if it's the 1st card you've played this turn, add a *Ladica's *Embrace into your hand. NL If it's the 4th, gain 1 [E]. NL If it's the 8th, this card will deal damage 2 times. NL If it's the 12th, gain 3 Strength and Dexterity and Double the damage."
   },
   "shadowverse:VictoryCard": {
     "NAME": "Victory Card",
-    "DESCRIPTION": "When drawn, Exhaust this and win this combat. NL Ethereal."
+    "DESCRIPTION": "When you draw this card, Exhaust it and win the combat. NL Ethereal."
   },
   "shadowverse:TreacherousReversal": {
     "NAME": "Treacherous Reversal",
-    "DESCRIPTION": "Gain 1 Intangible , you cannot draw additional cards this turn. NL ALL enemies lose all kinds of buffs( Artifact first). NL Exhaust your hand, draw pile and discard pile,add 20 random cards into your draw pile, put a *Victory *Card at the bottom of your draw pile. NL Exhaust."
+    "DESCRIPTION": "Gain 1 Intangible. You cannot draw additional cards this turn. NL ALL enemies lose all buffs (if the enemy has Artifact, that will be lost first). NL Exhaust your hand, draw pile and discard pile, then add 20 random cards into your draw pile. Put a *Victory *Card at the bottom of your draw pile. NL Exhaust."
   },
   "shadowverse:TheHanged": {
     "NAME": "XII. Wolfraud, Hanged Man",
-    "DESCRIPTION": "Gain !B! Block. NL Gain 1 Blur. NL If at least 3 cards were played this turn,Gain !M! Block more. NL Enhance 3 \bAdd a *Treacherous *Reversal into your hand instead."
+    "DESCRIPTION": "Gain !B! Block. NL Gain 1 Blur. NL If at least 3 cards were played this turn, gain !M! more Block. NL Enhance 3: Add a *Treacherous *Reversal into your hand instead."
   },
   "shadowverse:WindFairy": {
     "NAME": "Wind Fairy",
-    "DESCRIPTION": " Accelerate 0 \bPut an Attack or a Power from your discard pile into your hand,add a *Fairy *Whisp into your hand. NL  NL --------------------- NL  NL Deal !D! damage 2 times. NL Exhaust.",
+    "DESCRIPTION": "Accelerate 0: Put an Attack or Power card from your discard pile into your hand, then add a *Fairy *Wisp into your hand. NL NL --------------------- NL NL Deal !D! damage 2 times. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      "There aren't any Attack or Power in my discard pile"
+      "There aren't any Attack or Power cards in my discard pile!"
     ]
   },
   "shadowverse:ServantOfUnkilling": {
     "NAME": "Servant Of Unkilling",
-    "DESCRIPTION": "Gain !B!  Block. NL Enemy loses !M! Strength this turn."
+    "DESCRIPTION": "Gain !B! Block. NL Enemy loses !M! Strength this turn."
   },
   "shadowverse:MarkOfUnkilling": {
     "NAME": "Mark Of Unkilling",
-    "DESCRIPTION": "If the enemy have a debuff, it loses !M! Strength. NL Enhance 2 \bThe enemy loses !M! Strength unconditionally. NL Draw 1 card. NL Exhaust."
+    "DESCRIPTION": "If the enemy has a debuff, it loses !M! Strength. NL Enhance 2: The enemy loses !M! Strength unconditionally. NL Draw 1 card. NL Exhaust."
   },
   "shadowverse:ZealotOfUnkilling": {
     "NAME": "Zealot Of Unkilling",
@@ -944,38 +944,38 @@
   },
   "shadowverse:VarmintHunter": {
     "NAME": "Varmint Hunter",
-    "DESCRIPTION": "Whenever your play a Power,Deal !M! damage to a random enemy. NL Add a *Dutiful *Steed into your hand."
+    "DESCRIPTION": "Whenever your play a Power card, deal !M! damage to a random enemy. NL Add a *Dutiful *Steed into your hand."
   },
   "shadowverse:Verdant": {
     "NAME": "Verdant Steward",
-    "DESCRIPTION": "Gain !B! Block. NL At the start of your next turn,add !M! *Fairies into your hand."
+    "DESCRIPTION": "Gain !B! Block. NL At the start of your next turn, add !M! *Fairies into your hand."
   },
   "shadowverse:Beast": {
     "NAME": "Irate Forest Beast",
-    "DESCRIPTION": "Deal !D! damage to a random enemy. NL If at least 2 other cards were played this turn, double the damage."
+    "DESCRIPTION": "Deal !D! damage to a random enemy. NL If at least 2 other cards were played this turn, Double the damage."
   },
   "shadowverse:Beauty": {
     "NAME": "Gentle Forest Beauty",
-    "DESCRIPTION": "Gain !B!  Block. NL If at least 2 other cards were played this turn, twice the Block."
+    "DESCRIPTION": "Gain !B! Block. NL If at least 2 other cards were played this turn, gain double the Block."
   },
   "shadowverse:MiracleOfLove": {
     "NAME": "Miracle Of Love",
-    "DESCRIPTION": " *Irate *Forest *Beast NL *Gentle *Forest *Beauty NL Choose \bDeal !D! damage to a random enemy, If at least 2 other cards were played this turn, twice the damage、Gain !B! Block , If at least 2 other cards were played this turn, twice the Block. NL Enhance 2 \bActivate both the effects.",
-    "UPGRADE_DESCRIPTION": " *Irate *Forest *Beast NL *Gentle *Forest *Beauty NL Choose \bDeal !D! damage to a random enemy, If at least 2 other cards were played this turn, twice the damage、Gain !B! Block , If at least 2 other cards were played this turn, twice the Block. NL Enhance 2 \bActivate both the effects."
+    "DESCRIPTION": "Choose: Play this card as either an *Irate *Forest *Beast or a *Gentle *Forest *Beauty. NL Enhance 2: Play this card as both.",
+    "UPGRADE_DESCRIPTION": "Choose: Play this card as either an *Irate *Forest *Beast+ or a *Gentle *Forest *Beauty+. NL Enhance 2: Play this card as both."
   },
   "shadowverse:ResolveOfSekka": {
     "NAME": "Resolve of the Nine-Tailed Fox",
-    "DESCRIPTION": "Upgrade all cards in your hand. NL If at least 18 non-Strike Forestcraft Attacks are played this combat, and there is a *Sekka, *Fatebound *Fox in your hand,Gain !M! Strength and !M! Dexterity. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Upgrade all cards in your hand. NL If at least 18 non-Strike Forestcraft Attacks are played this combat, and there is a *Sekka, *Fatebound *Fox in your hand,Gain !M! Strength and !M! Dexterity.NL Exhaust.",
+    "DESCRIPTION": "Upgrade all cards in your hand. NL If at least 18 non-Strike Forestcraft Attack cards were played this combat  and there is a *Sekka, *Fatebound *Fox in your hand, gain !M! Strength and !M! Dexterity. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Upgrade all cards in your hand. NL If at least 18 non-Strike Forestcraft Attack cards were played this combat and there is a *Sekka, *Fatebound *Fox in your hand, gain !M! Strength and !M! Dexterity. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      " NL (X equals ",
+      " NL (non-Strike Forestcraft Attack cards played: ",
       ".)"
     ]
   },
   "shadowverse:Sekka": {
     "NAME": "Sekka, Fatebound Fox",
-    "DESCRIPTION": "Gain !B!  Block. NL Deal !D! damage X times.(X equals the number of non-Strike Forestcraft Attacks are played this combat, up to 9 times) NL If X is at least 9, put a *Resolve *of *the *Nine-Tailed *Fox into your hand.",
-    "UPGRADE_DESCRIPTION": "Gain !B!  Block. NL Deal !D! damage X times.(X equals the number of non-Strike Forestcraft Attacks are played this combat, up to 9 times) NL If X is at least 9, put a *Resolve *of *the *Nine-Tailed *Fox into your hand.",
+    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage X times (up to 9 times). X equals the number of non-Strike Forestcraft Attack cards played this combat. NL If X is at least 9, put a *Resolve *of *the *Nine-Tailed *Fox into your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Deal !D! damage X times (up to 9 times). X equals the number of non-Strike Forestcraft Attack cards played this combat. NL If X is at least 9, put a *Resolve *of *the *Nine-Tailed *Fox+ into your hand.",
     "EXTENDED_DESCRIPTION": [
       " NL (X equals ",
       ".)"
@@ -983,7 +983,7 @@
   },
   "shadowverse:ForestFairy": {
     "NAME": "Fairy Slugger",
-    "DESCRIPTION": "Whenever you play a *Fairy or a *Fairy *Whisp , Gain !M! Block. NL Add a *Fairy *Whisp into your hand."
+    "DESCRIPTION": "Whenever you play a *Fairy or a *Fairy *Wisp, gain !M! Block. NL Add a *Fairy *Wisp into your hand."
   },
   "shadowverse:Lisa": {
     "NAME": "Elf Girl Liza",
@@ -995,15 +995,15 @@
   },
   "shadowverse:Genshin": {
     "NAME": "Primordial Colossus",
-    "DESCRIPTION": "Once on each of your turns, when you play a card, Gain [E] and add 2 to the number of cards played this turn. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Once on each of your turns, when you play a card, Gain [E] and add 2 to the number of cards played this turn."
+    "DESCRIPTION": "Once on each of your turns, whenever you play a card, gain [E] and add 2 to the number of cards played this turn. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Once on each of your turns, whenever you play a card, gain [E] and add 2 to the number of cards played this turn."
   },
   "shadowverse:GreenWoodGuardian": {
     "NAME": "Greenwood Guardian",
-    "DESCRIPTION": "Gain !B!  Block. NL If at least 3 *Greenwood *Guardian are played this combat,Gain 3 addtional Block.If at least 6,Gain !M! Plated Armor. NL Exhaust.",
+    "DESCRIPTION": "Gain !B! Block. NL If at least 3 *Greenwood *Guardians were played this combat, gain 3 more Block. If at least 6 were played, gain !M! Plated Armor. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      " NL (The number of *Greenwood *Guardian played this combat",
-      ".)"
+      " NL (*Greenwood *Guardians played this combat:",
+      " )"
     ]
   },
   "shadowverse:CrossCombination": {
@@ -1012,39 +1012,39 @@
   },
   "shadowverse:WoodlandCleaver": {
     "NAME": "Woodland Cleaver",
-    "DESCRIPTION": "Deal !D! damage. NL Add a *Greenwood *Guardian into your hand. NL If at least 3 *Greenwood *Guardian are played this combat, double the damage."
+    "DESCRIPTION": "Deal !D! damage. NL Add a *Greenwood *Guardian into your hand. NL If at least 3 *Greenwood *Guardians were played this combat, Double the damage."
   },
   "shadowverse:GreenbrierElf": {
     "NAME": "Greenbrier Elf",
-    "DESCRIPTION": "Add a *Greenwood *Guardian into your hand. NL Whenever you play a *Greenwood *Guardian ,Deal !M! damage to a random enemy."
+    "DESCRIPTION": "Add a *Greenwood *Guardian into your hand. NL Whenever you play a *Greenwood *Guardian, deal !M! damage to a random enemy."
   },
   "shadowverse:Lymaga": {
     "NAME": "Lymaga, Forest Champion",
-    "DESCRIPTION": " Accelerate 0 \bAdd a *Greenwood *Guardian into your hand, add a *Lymaga, *Forest *Champion without Accelerate into your discard pile. NL  NL --------------------- NL  NL Deal !D! damage. NL Invocation At the start of your turn, If at least 6 *Greenwood *Guardian are played this combat,put this card into your hand and change its cost to 0. NL Exhaust.",
+    "DESCRIPTION": "Accelerate 0: Add a *Greenwood *Guardian into your hand and add 1 *Lymaga, *Forest *Champion without Accelerate into your discard pile. NL NL --------------------- NL NL Deal !D! damage. NL Invocation: At the start of your turn, If at least 6 *Greenwood *Guardians were played this combat, put this card into your hand and change its cost to 0. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      " NL (The number of *Greenwood *Guardian played this combat",
+      " NL (*Greenwood *Guardians played this combat:",
       ".)"
     ]
   },
   "shadowverse:Lymaga_NoAcc": {
     "NAME": "Lymaga, Forest Champion",
-    "DESCRIPTION": " Deal !D! damage. NL Invocation At the start of your turn, If at least 6 *Greenwood *Guardian are played this combat,put this card into your hand and change its cost to 0.",
+    "DESCRIPTION": "Deal !D! damage. NL Invocation: At the start of your turn, if at least 6 *Greenwood *Guardians were played this combat, put this card into your hand and change its cost to 0.",
     "EXTENDED_DESCRIPTION": [
-      " NL (The number of *Greenwood *Guardian played this combat",
-      ".)"
+      " NL (*Greenwood *Guardians played this combat:",
+      " )"
     ]
   },
   "shadowverse:WildwoodMatriarch": {
     "NAME": "Wildwood Matriarch",
-    "DESCRIPTION": "Add a *Greenwood *Guardian into your hand. NL  Deal !D! damage, If the damage isn't Blocked lower the cost of all *Greenwood *Guardian in your hand by 1[E]. NL If at least 3 *Greenwood *Guardian are played this combat, double the damage."
+    "DESCRIPTION": "Add a *Greenwood *Guardian into your hand. NL  Deal !D! damage. If the damage is not Blocked, lower the cost of all *Greenwood *Guardians in your hand by 1 [E]. NL If at least 3 *Greenwood *Guardians were played this combat, Double the damage."
   },
   "shadowverse:Aerin": {
     "NAME": "Crystalia Aerin",
-    "DESCRIPTION": "Gain !B!  Block. NL Heal 3 HP. NL Enhance 3  \bAdd a *Evolution *Point and a *Miracle into your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Heal 3 HP. NL Enhance 3: bAdd a *Evolution *Point and a *Miracle into your hand."
   },
   "shadowverse:Metera": {
     "NAME": "Metera, Peerless Shot",
-    "DESCRIPTION": " Deal !M! damage more for each other card in your hand. NL Draw 1 card.",
+    "DESCRIPTION": "Deal !M! damage for each other card in your hand. NL Draw 1 card.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deal !D! damage.)"
     ]
@@ -1059,45 +1059,45 @@
   },
   "shadowverse:Rino": {
     "NAME": "Rino, Cleansweep Archer",
-    "DESCRIPTION": "Gain 4 temporary Strength, add 2 to the number of cards played this turn. NL Union_Burst !M! Deal !D! or double damage to ALL enemies randomly."
+    "DESCRIPTION": "Gain 4 temporary Strength and add 2 to the number of cards played this turn. NL Union_Burst !M! Deal !D! or double damage to ALL enemies randomly."
   },
   "shadowverse:Irya": {
     "NAME": "Illya, Queen of Night",
-    "DESCRIPTION": "Gain !B!  Block. NL  Gain the following effect「If you lose HP due to yourself, next turn Gain 1 Strength and 1 Dexterity.If you are attacked and any block remains ,next turn,Gain 4 Block 」. NL Union_Burst !M! Deal !D! damage, heal 3 HP."
+    "DESCRIPTION": "Gain !B! Block. NL Gain the following effect: If you deal damage to yourself, gain 1 Strength and 1 Dexterity at the start of your next turn. If you are attacked and have any Block remaining, gain 4 Block at the start of your next turn. NL Union_Burst !M! Deal !D! damage and heal 3 HP."
   },
   "shadowverse:Kokkoro": {
     "NAME": "Kokkoro, Faithful Guide",
-    "DESCRIPTION": "Draw 2 cards,if at least 2 other cards were played this turn,draw 3 instead. NL Union_Burst !M! Heal 3 HP, Gain 1 Strength and 1 Dexterity."
+    "DESCRIPTION": "Draw 2 cards. If at least 2 other cards were played this turn, draw 3 instead. NL Union_Burst !M! Heal 3 HP, gain 1 Strength and 1 Dexterity."
   },
   "shadowverse:Amataz": {
     "NAME": "Amataz, Fairy Blader",
-    "DESCRIPTION": "Gain !B! Block. NL If there are at least 2 *Fairies in your hand, Gain 3 additional Block and 2 Plated Armor. NL If at least 4, Gain 1 Strength and 1 Dexterity. NL If at least 6, Increase the damage of *Fairy by !M! this combat."
+    "DESCRIPTION": "Gain !B! Block. NL If there are at least 2 *Fairies in your hand, gain 3 additional Block and 2 Plated Armor. NL If there are at least 4, gain 1 Strength and 1 Dexterity. NL If there are at least 6, increase the damage of *Fairies by !M! this combat."
   },
   "shadowverse:Amataz2": {
     "NAME": "Amataz, Reverse Blader",
-    "DESCRIPTION": "Gain !B! Block. NL Return all non-strike Forestcraft Attacks in your discard piles into your draw pile,add X *Fairies into your hand.X equals the number of cards returned.  NL If at least 10 non-Strike Elf Attacks are played this combat, Gain 4 additional Block. NL If at least 20, applt 3 Vulnerable and 3 Weak to All enemies."
+    "DESCRIPTION": "Gain !B! Block. NL Return all non-strike Forestcraft Attack cards in your discard piles to your draw pile and add X *Fairies into your hand. X equals the number of cards returned. NL If at least 10 non-Strike Forestcraft Attack cards were played this combat, gain 4 more Block. NL If at least 20 were played, apply 3 Vulnerable and 3 Weak to all enemies."
   },
   "shadowverse:DivineSmithing": {
     "NAME": "Divine Smithing",
-    "DESCRIPTION": "Upgrade all 0 cost Attacks in your hand this combat. NL Enhance 1 \bGive these cards Retain. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Upgrade all 0 cost Attacks in your hand this combat. NL Enhance 1 \bGive these cards Retain. NL Exhaust."
+    "DESCRIPTION": "Upgrade all 0 cost Attack cards in your hand this combat. NL Enhance 1: Give these cards Retain. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Upgrade all 0 cost Attacks in your hand this combat. NL Enhance 1: Give these cards Retain. NL Exhaust."
   },
   "shadowverse:Cleft": {
     "NAME": "Cleft, Dual Fencer",
-    "DESCRIPTION": "Machina. NL If at least 2 other cards were played this turn, Deal X damage(X equals !D! times of the number of other Machina cards in your hands). NL If at least 3, Deal !D! damage to a random enemy additionally."
+    "DESCRIPTION": "Machina. NL If at least 2 other cards were played this turn, deal X damage. X equals !D! times of the number of other Machina cards in your hand. NL If X is at least 3, also deal !D! damage to a random enemy."
   },
   "shadowverse:TwinAssault": {
-    "NAME": "Twin Assault",
-    "DESCRIPTION": "Deal X damage to 2 random enemies(X equals !M! times of the number of non-Forestcraft cards in your hand)."
+    "NAME": "Elf Twins' Assault",
+    "DESCRIPTION": "Deal X damage to 2 random enemies. X equals !M! times of the number of non-Forestcraft cards in your hand."
   },
   "shadowverse:Homecoming": {
     "NAME": "Homecoming",
-    "DESCRIPTION": "Change the intension of ALL enmies. NL Put Attacks from your discard piles to your hand until these aren't any or your hand is full. NL Exhaust."
+    "DESCRIPTION": "Change the intent of ALL enmies. NL Put Attack cards from your discard pile to your hand until there are none left or your hand is full. NL Exhaust."
   },
   "shadowverse:PixieParadise": {
     "NAME": "Pixie Paradise",
-    "DESCRIPTION": "At the start of your turn,add !M! *Fairy into your hand.",
-    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn,add !M! *Fairy into your hand."
+    "DESCRIPTION": "At the start of your turn, add !M! *Fairy into your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, add !M! *Fairy into your hand."
   },
   "shadowverse:Lycoris": {
     "NAME": "Lycoris, Poisoner Princess",
@@ -1105,41 +1105,41 @@
   },
   "shadowverse:AvatarOfFruition": {
     "NAME": "Avatar Of Fruition",
-    "DESCRIPTION": "Natura. NL Add !M! *Fairy into your hand. NL If you have the Power: Naterran_Great_Tree , Add 1 addtional *Fairy into your hand and Deal !D! damage."
+    "DESCRIPTION": "Natura. NL Add !M! *Fairy into your hand. NL If you have the Power Naterran_Great_Tree, add 1 more *Fairy into your hand and deal !D! damage."
   },
   "shadowverse:ThronBurst": {
-    "NAME": "Thron Burst",
+    "NAME": "Thorne Burst",
     "DESCRIPTION": "Retain. NL Deal !D! damage. NL Exhaust."
   },
   "shadowverse:RoseQueen": {
-    "NAME": "RoseQueen",
-    "DESCRIPTION": "Gain !B!  Block. NL Exhaust all *Fairy in your hand, add a *Thron *Burst into your hand for each *Fairy exausted.",
-    "UPGRADE_DESCRIPTION": "Gain !B!  Block. NL Exhaust all *Fairy in your hand, add a *Thron *Burst+ into your hand for each *Fairy exausted."
+    "NAME": "Rose Queen",
+    "DESCRIPTION": "Gain !B! Block. NL Exhaust all *Fairies in your hand and add a *Thorne *Burst into your hand for each *Fairy Exausted.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Exhaust all *Fairies in your hand and add a *Thorne *Burst+ into your hand for each *Fairy Exausted."
   },
   "shadowverse:Pamera": {
     "NAME": "Forest Oracle Pascale",
-    "DESCRIPTION": "If at least 4 cards were played this turn, at the end of your turn,double your Block and Strength. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "If at least 4 cards were played this turn, at the end of your turn,double your Block and Strength."
+    "DESCRIPTION": "If at least 4 cards were played this turn, double your Block and Strength at the end of your turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "If at least 4 cards were played this turn, double your Block and Strength at the end of your turn."
   },
   "shadowverse:SkyDevouring": {
-    "NAME": "Sky Devouring",
-    "DESCRIPTION": "Retain. NL Deal !D! damage. NL When Retained, If at least 7 cards were played this turn, increase the damage by !M!."
+    "NAME": "Sky Devouring Horror",
+    "DESCRIPTION": "Retain. NL Deal !D! damage. NL When Retained, if at least 7 cards were played this turn, increase the damage by !M!."
   },
   "shadowverse:Fil": {
     "NAME": "Fil",
-    "DESCRIPTION": "Gain !B!  Block. NL If at least 4 other *Fils were played this combat, your next Attack is played twice. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL If at least 4 other *Fils were played this combat, your next Attack card is played twice. NL Exhaust."
   },
   "shadowverse:Korwa": {
     "NAME": "Korwa, Ravishing Designer",
-    "DESCRIPTION": "At the start of your turn,add a *Fil into your hand. NL Enhance 3 \bAdd 3 *Fils into your hand, Gain [E].",
-    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn.Add a *Fil into your hand. NL Enhance 3 \bAdd 3 *Fils into your hand, Gain [E]."
+    "DESCRIPTION": "At the start of your turn, add a *Fil into your hand. NL Enhance 3: Add 3 *Fils into your hand and gain [E].",
+    "UPGRADE_DESCRIPTION": "Innate. At the start of your turn, add a *Fil into your hand. NL Enhance 3: Add 3 *Fils into your hand and gain [E]."
   },
   "shadowverse:PrimalGigant": {
-    "NAME": "Primal Gigant",
-    "DESCRIPTION": "Accelerate 0 \bHeal 4 HP. NL  NL --------------------- NL  NL Gain !B! Block. NL Randomly add Attacks you played this combat into your hand until your hand is full.Change their costs to 0 and give them Exhaused. NL Exhaust."
+    "NAME": "Primal Giant",
+    "DESCRIPTION": "Accelerate 0: Heal 4 HP. NL NL --------------------- NL NL Gain !B! Block. NL Add random Attack cards played this combat into your hand until your hand is full. Change the costs of these cards to 0 and give them Exhaust. NL Exhaust."
   },
   "shadowverse:ShikigamiSummoning": {
-    "NAME": "Shikigami Summoning",
+    "NAME": "Shikigami Summons",
     "DESCRIPTION": "Retain. NL Put a *Paper *Shikigami into your hand. NL If the cards in your draw pile equal less than half the cards in your deck, put a *Demonic *Shikigami into your hand instead."
   },
   "shadowverse:Geass": {
@@ -1160,7 +1160,7 @@
   },
   "shadowverse:Path": {
     "NAME": "Path to Purgatory",
-    "DESCRIPTION": "By the end of your turn, if you have at least 30 Shadows , deal !M! damage to all enemies."
+    "DESCRIPTION": "At the end of your turn, if you have at least 30 Shadows, deal !M! damage to all enemies."
   },
   "shadowverse:SoulConversion": {
     "NAME": "灵魂转移",
@@ -1423,19 +1423,19 @@
     "DESCRIPTION": "亡者召还 自己的本回合数."
   },
   "shadowverse:AbsoluteJudgment": {
-    "NAME": "Absolute Judgment",
-    "DESCRIPTION": "If enemy don't have any Vulnerable, apply !M! Vulnerable. NL If enemy have Vulnerable , enemy lose 1 Strength. NL Change your next damage taken into 0. NL Exhaust."
+    "NAME": "Almighty Verdict",
+    "DESCRIPTION": "If the enemy does not have Vulnerable, apply !M! Vulnerable. NL If the enemy has Vulnerable, the enemy loses 1 Strength. NL The next damage you take becomes 0. NL Exhaust."
   },
   "shadowverse:AbsoluteOne": {
-    "NAME": "Absolute One",
-    "DESCRIPTION": "Gain !B! Block. NL Immune to Power damage. NL Put a *Absolute *Judgment into your hand at the start of your turn. NL Exhaust."
+    "NAME": "The Almighty One",
+    "DESCRIPTION": "Gain !B! Block. NL Immune to Power damage. NL Put a *Almighty *Verdict into your hand at the start of your turn. NL Exhaust."
   },
   "shadowverse:EnAcceleratium": {
     "NAME": "Acceleratium",
     "DESCRIPTION": "Gain !M! Energy next turn."
   },
   "shadowverse:ShadowMode": {
-    "NAME": "Shadow Mode",
+    "NAME": "Shadow Aura",
     "DESCRIPTION": "Gain 1 Intangible."
   },
   "shadowverse:EnBlackenedScripture": {
@@ -1444,7 +1444,7 @@
   },
   "shadowverse:EnMoonAlmiraj": {
     "NAME": "Moon Al-mi'raj",
-    "DESCRIPTION": "Deal !D! damage, heal HP equal to the damage dealt. NL Gain !B! Block."
+    "DESCRIPTION": "Deal !D! damage and heal HP equal to the damage dealt. NL Gain !B! Block."
   },
   "shadowverse:RegenerateSpirit": {
     "NAME": "灵魂再生",
@@ -1535,7 +1535,7 @@
   },
   "shadowverse:Hades": {
     "NAME": "Hades, Father of Purgatory",
-    "DESCRIPTION": "Accelerate 2: \bDeal !D! damage to all enemies, gain *Path *to *Purgatory Power. NL  NL --------------------- NL  NL Gain !B! Block. NL Last_Words: Whenever this card is Exhaust, Shadows + !M! , gain *Path *to *Purgatory Power. NL Exhaust."
+    "DESCRIPTION": "Accelerate 2: Deal !D! damage to all enemies and gain the Power *Path *to *Purgatory. NL NL --------------------- NL NL Gain !B! Block. NL Last_Words: When this card is Exhausted, gain the Power *Path *to *Purgatory and !M! Shadows. NL Exhaust."
   },
   "shadowverse:Mimi": {
     "NAME": "守卫犬的右腕·米米",
@@ -1611,7 +1611,7 @@
   },
   "shadowverse:StormArrow": {
     "NAME": "Storm Arrow",
-    "DESCRIPTION": "Deal damage !M! -fold as many as half of your hands. NL Draw 1 card.",
+    "DESCRIPTION": "Deal damage !M! times half the number of cards in your hand. NL Draw 1 card.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deal !D! damage.)"
     ]
@@ -1622,12 +1622,12 @@
   },
   "shadowverse:ArisaArrow": {
     "NAME": "Forest Guardian's Bow",
-    "DESCRIPTION": "At the end of your turn, gain 1 Strength. NL Countdown !M! \b Last Words: Draw 1 card."
+    "DESCRIPTION": "At the end of your turn, gain 1 Strength. NL Countdown !M! Last Words: Draw 1 card."
   },
   "shadowverse:Arisa": {
     "NAME": "Arisa, Evergreen Arrow",
-    "DESCRIPTION": "Whenever you gain Strength , Dexterity or Block , Deal !M! damage to ALL enemies. NL Choose - Add a *Gale *Arrow or *Storm *Arrow into your hand. NL If at least 2 other cards were played this turn, add a *Forest *Guardian's *Bow into your hand.",
-    "UPGRADE_DESCRIPTION": "Whenever you gain Strength , Dexterity or Block,Deal !M! damage to ALL enemies. NL Choose - Add a *Gale *Arrow+ or *Storm *Arrow+ into your hand. NL If at least 2 other cards were played this turn, add a *Forest *Guardian's *Bow+ into your hand."
+    "DESCRIPTION": "Whenever you gain Strength, Dexterity or Block, deal !M! damage to ALL enemies. NL Choose: Add a *Gale *Arrow or *Storm *Arrow into your hand. NL If at least 2 other cards were played this turn, add a *Forest *Guardian's *Bow into your hand.",
+    "UPGRADE_DESCRIPTION": "Whenever you gain Strength, Dexterity or Block, deal !M! damage to ALL enemies. NL Choose: Add a *Gale *Arrow+ or *Storm *Arrow+ into your hand. NL If at least 2 other cards were played this turn, add a *Forest *Guardian's *Bow+ into your hand."
   },
   "shadowverse:NecroTemptation": {
     "NAME": "死灵的诱惑",
@@ -1644,8 +1644,8 @@
   },
   "shadowverse:UnionMagic": {
     "NAME": "Quadra Magic",
-    "DESCRIPTION": "Deal !D! damage to a random enemy X times（X equal to the number of different Skill cards you played in this combat). NL If X is at least 7, put 1 *Elements *of *Creation into your hand. NL Ethereal NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "NL Deal !D! damage to a random enemy X times（X equal to the number of different Skill cards you played in this combat). NL If X is at least 7, put 1 *Elements *of *Creation+ into your hand. NL Ethereal NL Exhaust.",
+    "DESCRIPTION": "Deal !D! damage to a random enemy X times. X equals number of different Skill cards played this combat. NL If X is at least 7, put 1 *Elements *of *Creation into your hand. NL Ethereal NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to a random enemy X times. X equals number of different Skill cards played this combat. NL If X is at least 7, put 1 *Elements *of *Creation+ into your hand. NL Ethereal NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " NL (X: !M!.)"
     ]
@@ -1660,8 +1660,8 @@
   },
   "shadowverse:Isabelle": {
     "NAME": "Isabelle, Intrepid Mage",
-    "DESCRIPTION": "Fusion: \b Runecraft Attack. NL Whenever Fusion , if it's the 1st time, put 1 *Quadra *Magic into your hand. If it's the 2nd time, put 1 *Insight into your hand. If it's the 3rd time, put 1 *Crimson *Sorcery into your hand. NL Gain !B! Block. Spellboost 1 time, put 1 *Fate's *Hand into your hand.",
-    "UPGRADE_DESCRIPTION": "Fusion: \bRunecraft Attack. NL Whenever Fusion , if it's the 1st time, put 1 *Quadra *Magic+ into your hand. If it's the 2nd time, put 1 *Insight+ into your hand. If it's the 3rd time, put 1 *Crimson *Sorcery+ into your hand. NL Gain !B! Block. Spellboost 1 time, put 1 *Fate's *Hand+ into your hand."
+    "DESCRIPTION": "Fusion: Runecraft Attack cards. NL Whenever cards are fused to this card, if it's the 1st time, put 1 *Quadra *Magic into your hand. If it's the 2nd time, put 1 *Insight into your hand. If it's the 3rd time, put 1 *Crimson *Sorcery into your hand. NL Gain !B! Block. Spellboost 1 time and put 1 *Fate's *Hand into your hand.",
+    "UPGRADE_DESCRIPTION": "Fusion: Runecraft Attack cards. NL Whenever cards are fused to this card, if it's the 1st time, put 1 *Quadra *Magic+ into your hand. If it's the 2nd time, put 1 *Insight+ into your hand. If it's the 3rd time, put 1 *Crimson *Sorcery+ into your hand. NL Gain !B! Block. Spellboost 1 time and put 1 *Fate's *Hand+ into your hand."
   },
   "shadowverse:Strike_V": {
     "NAME": "Strike",
@@ -2161,7 +2161,7 @@
   },
   "shadowverse:StrikeFormGolem": {
     "NAME": "Strikeform Golem",
-    "DESCRIPTION": "AF. NL This card is treated as a Strike. NL Deal !D! Damage. NL Enhance 2: Deal double the damage. NL Exhaust."
+    "DESCRIPTION": "AF. NL This card is treated as a Strike. NL Deal !D! Damage. NL Enhance 2: Double the damage. NL Exhaust."
   },
   "shadowverse:SpineArtifact": {
     "NAME": "Spinaria’s Artifact",
@@ -2265,7 +2265,7 @@
   },
   "shadowverse:AerialCraft": {
     "NAME": "Aerial Craft",
-    "DESCRIPTION": "Machina. NL Deal !D! damage. NL If the damage is not blocked, all Machina cards in your hand cost 1 less this turn. NL Enhance 3: Deal double the damage."
+    "DESCRIPTION": "Machina. NL Deal !D! damage. NL If the damage is not blocked, all Machina cards in your hand cost 1 less this turn. NL Enhance 3: Double the damage."
   },
   "shadowverse:LasershellTortoise": {
     "NAME": "Lasershell Tortoise",
@@ -2621,7 +2621,7 @@
   },
   "shadowverse:Sleipnir": {
     "NAME": "Sleipnir",
-    "DESCRIPTION": "Retain. NL Maneuver 1. NL Deal !D! damage, gain !B! Block. NL Apply !M! Vulnerable and Weak , Gain 1 Blur."
+    "DESCRIPTION": "Retain. NL Maneuver: 1. NL Deal !D! damage, gain !B! Block. NL Apply !M! Vulnerable and Weak , Gain 1 Blur."
   },
   "shadowverse:Odin": {
     "NAME": "Odin, Twilight's Bane",
@@ -2642,7 +2642,7 @@
   },
   "shadowverse:EnPriestOfTheCudgel": {
     "NAME": "Priest of the Cudgel",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL Exhaust 1 card in top of your draw pile."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL Exhaust 1 card on the top of your draw pile."
   },
   "shadowverse:EnArdentSister": {
     "NAME": "Ardent Nun",
@@ -2662,19 +2662,19 @@
   },
   "shadowverse:KMRGaze": {
     "NAME": "KMR's Gaze",
-    "DESCRIPTION": "Whenever this card is drawn into your hand, +10 cost to all Skill cards in your hand this turn. NL Ethereal."
+    "DESCRIPTION": "Whenever you draw this card, all Skill cards in your hand cost 10 more this turn. NL Ethereal."
   },
   "shadowverse:WUP": {
     "NAME": "World Uprooted",
-    "DESCRIPTION": "Machina · Natura. NL Whenever this card is drawn into your hand, put 2 *Tyrannical *Force into your hand. NL If there is not any Machina or Natura card in your deck, add 1 additionally. NL Ethereal."
+    "DESCRIPTION": "Machina / Natura. NL Whenever you draw this card, add 2 *Tyrannical *Force into your hand. NL If there are no Machina or Natura cards in your deck, add 1 more. NL Ethereal."
   },
   "shadowverse:Death": {
     "NAME": "Death",
-    "DESCRIPTION": "By the end of your turn, if your draw pile is empty, you die."
+    "DESCRIPTION": "At the end of your turn, you die if your draw pile is empty."
   },
   "shadowverse:Altersphere": {
     "NAME": "Altersphere",
-    "DESCRIPTION": "Whenever you play a card, randomly Exhaust a card in hand and put a card into your hand. NL Ethereal."
+    "DESCRIPTION": "Whenever you play a card, randomly Exhaust a card in your hand and put a random card into your hand. NL Ethereal."
   },
   "shadowverse:Rowen": {
     "NAME": "Smiling Rowen",
@@ -2682,31 +2682,31 @@
   },
   "shadowverse:CurseOfTheBlackDragon": {
     "NAME": "Curse of the Black Dragon",
-    "DESCRIPTION": "Retain. NL By the end of your turn, lose 1 HP."
+    "DESCRIPTION": "Retain. NL Lose 1 HP at the end of your turn."
   },
   "shadowverse:ShadowBahmut": {
     "NAME": "Shadow Bahmut",
-    "DESCRIPTION": "Deal !D! unblockable damage. NL Enemy lose all buff except Strength and Dexterity. NL Kill all Minions."
+    "DESCRIPTION": "Deal !D! unblockable damage. NL The enemy loses all buffs except Strength and Dexterity. NL Kill all Minions."
   },
   "shadowverse:ShiningValkyrie": {
     "NAME": "Shining Valkyrie",
-    "DESCRIPTION": "Put !M! *Fairy into your hand. NL Put 1 *Fairy into your hand at the start of your turn. NL Whenever you play a *Fairy , gain 2 Strength and 1 Dexterity."
+    "DESCRIPTION": "Put !M! *Fairy into your hand. NL Put 1 *Fairy into your hand at the start of your turn. NL Whenever you play a *Fairy, gain 2 Strength and 1 Dexterity."
   },
   "shadowverse:LegendSwordCommander": {
     "NAME": "Legendary Sword Commander",
-    "DESCRIPTION": "Will not lose Block at the start of your turn. NL By the end of your turn, gain !M! Block."
+    "DESCRIPTION": "You will not lose Block at the start of your turn. NL At the end of your turn, gain !M! Block."
   },
   "shadowverse:DeadSoulTaker": {
     "NAME": "Departed Soultaker",
-    "DESCRIPTION": "Gain !B! Block. NL Put 1 Attack from your Exhaust pile into your hand with 0 cost this turn. NL Necromancy 10: \bRandomly put Attacks you played in this combat into your hand with Exhaust and 0 cost until your hand is full."
+    "DESCRIPTION": "Gain !B! Block. NL Put 1 Attack card from your Exhaust pile into your hand and change its cost to 0 this turn. NL Necromancy 10: Put random Attack cards played in this combat into your hand until it is full. These cards cost 0 and have Exhaust."
   },
   "shadowverse:AbyssDoomLord": {
     "NAME": "Doomlord of the Abyss",
-    "DESCRIPTION": "Exhaust any number of hand. NL Deal !D! damage. NL Lose HP until your HP equal to 1. NL Deal damage equal to double the HP you've lost. NL Change incoming damage to 0 this turn. NL Exhaust."
+    "DESCRIPTION": "Exhaust any number of cards in your hand. NL Deal !D! damage. NL Lose HP until your HP equals 1. NL Deal damage equal to double the HP you lost. NL Any damage you take until your next turn becomes 0. NL Exhaust."
   },
   "shadowverse:KMRsPresent": {
     "NAME": "KMR's Present",
-    "DESCRIPTION": "Retain. NL Choose: Put 1 *Mythical *Card into your hand. NL (Select from the drop-down list) NL Exhaust."
+    "DESCRIPTION": "Retain. NL Choose: Put 1 *Mythical *Card into your hand (select from the drop-down list). NL Exhaust."
   },
   "shadowverse:ShadowversePain": {
     "NAME": "Shadowverse is Pain",
@@ -2714,15 +2714,15 @@
   },
   "shadowverse:Betray": {
     "NAME": "Shadowverse Betrayed Me!",
-    "DESCRIPTION": "By the end of the turn, put a copy of this card into your discard pile. NL Exhaust."
+    "DESCRIPTION": "At the end of your turn, put a copy of this card into your discard pile. NL Exhaust."
   },
   "shadowverse:CalamityMode": {
     "NAME": "Calamity's Genesis'",
-    "DESCRIPTION": "Change your deck with *Calamity *Deck. NL Exhaust."
+    "DESCRIPTION": "Replace your deck with a *Calamity *Deck. NL Exhaust."
   },
   "shadowverse:JusticeTyrant": {
     "NAME": "Magisterial Dreadnought",
-    "DESCRIPTION": "Gain !B! Block. NL Summon 4 *World *Eliminator. NL Put 1 *Evolution *Point into enemy's hand. NL Enemy draw 1 less card next turn."
+    "DESCRIPTION": "Gain !B! Block. NL Summon 4 *World *Eliminators. NL Put 1 *Evolution *Point into enemy's hand. NL The enemy draws 1 less card next turn."
   },
   "shadowverse:ShangrilaBreaker": {
     "NAME": "Ruiner of Eden",
@@ -2734,23 +2734,23 @@
   },
   "shadowverse:EnDeath": {
     "NAME": "Death",
-    "DESCRIPTION": "Whenever you draw this card into your hand, you die."
+    "DESCRIPTION": "You die when you draw this card."
   },
   "shadowverse:SacredLion": {
     "NAME": "Sacred Lion",
-    "DESCRIPTION": "Gain !B! Block. NL Gain 1 Buffer. NL Deal !M! damage to attacker when being attacked this turn. NL Put 1 Holy *Lion's *Bless into your enemy's hand."
+    "DESCRIPTION": "Gain !B! Block. NL Gain 1 Buffer. NL Deal !M! damage back whenever you're attacked this turn. NL Put 1 Holy *Lion's *Blessing into your enemy's hand."
   },
   "shadowverse:LionBless": {
     "NAME": "Holy Lion's Blessing",
-    "DESCRIPTION": "Put 1 Attack from your Exhaust pile into your hand with 0 cost. NL Apply 24 Block ,6 Flame Barrier to enemy. NL Ethereal. NL Exhaust."
+    "DESCRIPTION": "Put 1 Attack card from your Exhaust pile into your hand and change its cost to 0. NL Apply 24 Block and 6 Flame Barrier to the enemy. NL Ethereal. NL Exhaust."
   },
   "shadowverse:EnHereticalInquiry": {
     "NAME": "Countdown: Heretical Inquiry",
-    "DESCRIPTION": "Randomly put !M! Curse card into your enemy's draw pile."
+    "DESCRIPTION": "Randomly put !M! Curse cards into your enemy's draw pile."
   },
   "shadowverse:EnAcolyteLight": {
     "NAME": "Acolyte's Light",
-    "DESCRIPTION": "If the Block of your enemy is less than 20, remove all Block. NL Otherwise, deal 20 damage. NL Heal HP equal to removed Block."
+    "DESCRIPTION": "If the Block of your enemy is less than 20, remove all Block. NL Otherwise, deal 20 damage. NL Heal HP equal to the removed Block."
   },
   "shadowverse:EnSacredPlea": {
     "NAME": "Countdown: Sacred Plea",
@@ -2774,7 +2774,7 @@
   },
   "shadowverse:EnAncientAmplifier": {
     "NAME": "Ancient Amplifier",
-    "DESCRIPTION": "Apply 'By the end of turn, randomly put !M! cards into draw pile, -1 card every turn.' effect to your enemy, last for !M! turn."
+    "DESCRIPTION": "Give your enemy the following effect: Randomly put !M! cards into your draw pile. Put 1 less card every turn. NL Lasts for !M! turns."
   },
   "shadowverse:EnMysticArtifact": {
     "NAME": "Mystic Artifact",
@@ -2790,7 +2790,7 @@
   },
   "shadowverse:DeathNote": {
     "NAME": "Death's Ledger",
-    "DESCRIPTION": "Countdown !M!: \bLose this effect. NL By the end of turn, randomly play a highest-cost Attack with cost less than your Max Energy in your draw pile"
+    "DESCRIPTION": "Countdown !M!: Lose this effect. NL At the end of your turn, randomly play the highest cost Attack card in your draw pile that costs less than your max Energy."
   },
   "shadowverse:Strike_R": {
     "NAME": "Strike",
@@ -2802,15 +2802,15 @@
   },
   "shadowverse:OathlessKnight": {
     "NAME": "Oathless Knight",
-    "DESCRIPTION": "Deal !D! damage,  NL Summon 1 Knight."
+    "DESCRIPTION": "Deal !D! damage NL Summon 1 Knight."
   },
   "shadowverse:GildedBoots": {
     "NAME": "Gilded Boots",
-    "DESCRIPTION": "Command the rightmost *Follower !M! time. NL Exhaust."
+    "DESCRIPTION": "Command the rightmost *Follower !M! time(s). NL Exhaust."
   },
   "shadowverse:GildedNecklace": {
     "NAME": "Gilded Necklace",
-    "DESCRIPTION": "The rightmost *Follower gain NL +1/+ !M!. NL Exhaust."
+    "DESCRIPTION": "The rightmost *Follower gains NL +1/+ !M!. NL Exhaust."
   },
   "shadowverse:GildedBlade": {
     "NAME": "Gilded Blade",
@@ -2822,57 +2822,57 @@
   },
   "shadowverse:GrandAcquisition": {
     "NAME": "Grand Acquisition",
-    "DESCRIPTION": "Choose NL Add 1 of *Gilded *Blade , *Gilded *Goblet , *Gilded *Boots or *Gilded *Necklace to your hand. NL Enhance 3: \bAdd ALL to hand instead,  NL gain [E] [E]. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Choose NL Add 1 of *Gilded *Blade , *Gilded *Goblet , *Gilded *Boots or *Gilded *Necklace to your hand. NL Enhance 3: \bAdd ALL to hand instead,  NL gain [E] [E]."
+    "DESCRIPTION": "Choose: Add 1 *Gilded *Blade, *Gilded *Goblet, *Gilded *Boots or *Gilded *Necklace into your hand. NL Enhance 3: Add one of each to your hand instead and gain [E] [E]. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose: Add 1 *Gilded *Blade, *Gilded *Goblet, *Gilded *Boots or *Gilded *Necklace into your hand. NL Enhance 3: Add one of each to your hand instead and gain [E] [E]."
   },
   "shadowverse:SageCommander": {
     "NAME": "Sage Commander",
-    "DESCRIPTION": "Gain !B! Block , ALL *Followers gain +0/+1."
+    "DESCRIPTION": "Gain !B! Block. ALL *Followers gain +0/+1."
   },
   "shadowverse:DanceOfUsurpation": {
     "NAME": "Dance of Usurpation",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies, randomly add 2 Loot to hand."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. Put 2 random Loot cards into your hand."
   },
   "shadowverse:UsurpingSpineblade": {
     "NAME": "Usurping Spineblade",
-    "DESCRIPTION": "Deal !D! damage, randomly add 1 Loot to hand."
+    "DESCRIPTION": "Deal !D! damage. Put 1 random Loot card into your hand."
   },
   "shadowverse:WeeMerchantsAppraisal": {
     "NAME": "Wee Merchant's Appraisal",
-    "DESCRIPTION": "Add *Evolution *Point , *Gilded *Goblet , *Gilded *Necklace to hand.",
-    "UPGRADE_DESCRIPTION": "Add *Evolution *Point , *Gilded *Goblet , *Gilded *Necklace to hand. NL Draw !M! cards."
+    "DESCRIPTION": "Add an *Evolution *Point, *Gilded *Goblet and *Gilded *Necklace to your hand.",
+    "UPGRADE_DESCRIPTION": "Add an *Evolution *Point, *Gilded *Goblet and *Gilded *Necklace to your hand. NL Draw !M! cards."
   },
   "shadowverse:DiscipleOfUsurpation": {
     "NAME": "Disciple of Usurpation",
-    "DESCRIPTION": "Ambush , 1/1. NL Passive: Gain Block equals to 2 times of Atk and lose 1 Health by the end of your turn. NL Whenever you play Loot , gain !M! Block."
+    "DESCRIPTION": "Ambush. 1/1. NL Passive: Gain Block equals to 2 times Attack and lose 1 Health at the end of your turn. NL Whenever you play a Loot card, gain !M! Block."
   },
   "shadowverse:ApostleOfUsurpation": {
     "NAME": "Apostle of Usurpation",
-    "DESCRIPTION": "Whenever you play Loot , deal !M! damage to a random enemy.",
-    "UPGRADE_DESCRIPTION": "Whenever you play Loot , deal !M! damage to a random enemy. NL Randomly add 1 Loot to hand."
+    "DESCRIPTION": "Whenever you play Loot card, deal !M! damage to a random enemy.",
+    "UPGRADE_DESCRIPTION": "Whenever you play Loot card, deal !M! damage to a random enemy. NL Add 1 random Loot card to your hand."
   },
   "shadowverse:Octrice": {
     "NAME": "Octrice, Omen of Usurpation",
-    "DESCRIPTION": "Gain 2 Strength , Enemy lose 2 Strength. Gain !M! Gold. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain 2 Strength , Enemy lose 2 Strength. Gain !M! Gold. NL Randomly add 2 Loot to hand. NL Exhaust."
+    "DESCRIPTION": "Gain 2 Strength. The enemy loses 2 Strength. Gain !M! Gold. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain 2 Strength. The enemy loses 2 Strength. Gain !M! Gold. NL Add 2 random Loot cards to your hand. NL Exhaust."
   },
   "shadowverse:Octrice2": {
     "NAME": "Octrice, Hollow Usurpation",
-    "DESCRIPTION": "Randomly Gain 1 kind of enemy's buff. NL Gain !M! Gold. NL Add 1 *Remnant *of *Hollowness to hand. NL Randomly add 1 Loot to hand. NL Rally 8 When this is drawn, put 1 *Evolution *Point into your hand. NL Exhaust."
+    "DESCRIPTION": "Randomly gain 1 of an enemy's buffs. NL Gain !M! Gold. NL Add 1 *Remnant *of *Hollowness to your hand. NL Add 1 random Loot card to your hand. NL Rally 8: When you draw this card, put 1 *Evolution *Point into your hand. NL Exhaust."
   },
   "shadowverse:Mars": {
     "NAME": "Mars, Silent Flame General",
-    "DESCRIPTION": "Whenever you summon a *Follower , it gains + !M! /+ !M!. NL Ethereal",
-    "UPGRADE_DESCRIPTION": "Innate NL Whenever you summon a *Follower , it gains + !M! /+ !M!."
+    "DESCRIPTION": "Whenever you summon a *Follower, it gains + !M! /+ !M!. NL Ethereal",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you summon a *Follower, it gains + !M! /+ !M!."
   },
   "shadowverse:Sera": {
     "NAME": "Sera, Maiden of the Dawn",
-    "DESCRIPTION": "Gain !B! Block.Gain 1 Artifact. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block.Gain 1 Artifact. NL Summon 3 Shield_Guardian , Heal !M! HP. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. Gain 1 Artifact. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Gain 1 Artifact. NL Summon 3 Shield_Guardian and heal !M! HP. NL Exhaust."
   },
   "shadowverse:MistolinaBayleon": {
     "NAME": "Mistolina & Bayleon",
-    "DESCRIPTION": "Natura. NL Deal !D! damage, Gain !B! Block. NL If you have Power card in hand, Exhaust 1 of it, damage dealt and Block gain + !M! during this combat. If it's *Naterran *Great *Tree , gain [E] [E]."
+    "DESCRIPTION": "Natura. NL Deal !D! damage and gain !B! Block. NL If you have a Power card in your hand, Exhaust 1 Power card in your hand and this card deals and gains !M! more damage and block during this combat. If the Exhausted card is a *Naterran *Great *Tree, gain [E] [E]."
   },
   "shadowverse:TemperedMana": {
     "NAME": "Tempered Aether",
@@ -2885,12 +2885,12 @@
   },
   "shadowverse:EmpressOfSerenity": {
     "NAME": "Empress of Serenity",
-    "DESCRIPTION": "Gain !B! Block , summon 1 Shield_Guardian. NL Enhance 2: \bSummon 2 more Shield_Guardian."
+    "DESCRIPTION": "Gain !B! Block. Summon 1 Shield_Guardian. NL Enhance 2: Summon 2 more Shield_Guardian."
   },
   "shadowverse:ShieldPhalanx": {
     "NAME": "Shield Phalanx",
     "DESCRIPTION": "Gain !B! Block. NL Summon 1 Shield_Guardian NL and 1 Knight. NL ",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Summon 1 Shield_Guardian NL and 1 Knight. NL Limit Rally 15: Change Shield_Guardian to Frontguard_General. NL ",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Summon 1 Shield_Guardian NL and 1 Knight. NL Rally 15: Summon a Frontguard_General instead of a Shield_Guardian. NL ",
     "EXTENDED_DESCRIPTION": [
       "(Rally: ",
       ")"
@@ -2898,9 +2898,9 @@
   },
   "shadowverse:DramaticRetreat": {
     "NAME": "Dramatic Retreat",
-    "DESCRIPTION": "Draw !M! cards. NL Select 1 Attack in hand to put into drawpile. NL It costs 0 until played.",
+    "DESCRIPTION": "Draw !M! cards. NL Select 1 Attack card in your hand to put it into your draw pile. NL It costs 0 until played.",
     "EXTENDED_DESCRIPTION": [
-      "No Attack card"
+      "No Attack cards!"
     ]
   },
   "shadowverse:CatAdmiral": {
@@ -2914,7 +2914,7 @@
   },
   "shadowverse:FrenziedCorpsmaster": {
     "NAME": "Frenzied Corpsmaster",
-    "DESCRIPTION": "Gain !B! Block. NL Deal damage equals to 2 times of Rally. NL Accelerate 1: Summon 1 Steelclad_Knight NL and 1 Heavy_Knight. NL ",
+    "DESCRIPTION": "Gain !B! Block. NL Deal damage equal to 2 times your Rally count. NL Accelerate 1: Summon 1 Steelclad_Knight NL and 1 Heavy_Knight. NL ",
     "EXTENDED_DESCRIPTION": [
       "(Deal ",
       " damage)"
@@ -2922,32 +2922,32 @@
   },
   "shadowverse:FortressStrategist": {
     "NAME": "Fortress Strategist",
-    "DESCRIPTION": "Whenever you play a Skill card, randomly upgrade !M! card in hand.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you play a Skill card, randomly upgrade !M! card in hand. "
+    "DESCRIPTION": "Whenever you play a Skill card, randomly upgrade !M! card(s) in your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you play a Skill card, randomly upgrade !M! card(s) in your hand. "
   },
   "shadowverse:EvolutionPoint": {
     "NAME": "Evolution Point",
-    "DESCRIPTION": "Ethereal. NL Upgrade !M! Attack or Power card. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Upgrade !M! Attack or Power card. NL Exhaust."
+    "DESCRIPTION": "Ethereal. NL Upgrade !M! Attack or Power cards. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Upgrade !M! Attack or Power cards. NL Exhaust."
   },
   "shadowverse:EnragedGeneral": {
     "NAME": "Enraged General",
-    "DESCRIPTION": "Gain [E] equals to your *Follower number. NL Exhaust."
+    "DESCRIPTION": "Gain [E] equal to your *Follower count. NL Exhaust."
   },
   "shadowverse:LuminousMage": {
     "NAME": "Luminous Mage",
-    "DESCRIPTION": "At the start of your turn, add !M! *Evolution *Point to hand.",
-    "UPGRADE_DESCRIPTION": "At the start of your turn, add !M! *Evolution *Point to hand. NL Add 1 *Evolution *Point to hand whenever this card is drawn."
+    "DESCRIPTION": "At the start of your turn, add !M! *Evolution *Point(s) to your hand.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, add !M! *Evolution *Point(s) to your hand. NL Add 1 *Evolution *Point to your hand whenever you draw this card."
   },
   "shadowverse:PrudentGeneral": {
     "NAME": "Prudent General",
     "DESCRIPTION": "Ethereal",
-    "UPGRADE_DESCRIPTION": "By the end of your turn, summon !M! Steelclad_Knight."
+    "UPGRADE_DESCRIPTION": "At the end of your turn, summon !M! Steelclad_Knight."
   },
   "shadowverse:DualbladeKnight": {
     "NAME": "Dualblade Knight",
     "DESCRIPTION": "Deal !D! damage. NL Gain [E]. NL Rally 7: Upgrade this card. NL ",
-    "UPGRADE_DESCRIPTION": "Disupgrade after played. NL Deal !D! damage. NL Gain [E] [E].",
+    "UPGRADE_DESCRIPTION": "Disupgrade after playing. NL Deal !D! damage. NL Gain [E] [E].",
     "EXTENDED_DESCRIPTION": [
       "(Rally: ",
       ")"
@@ -2963,7 +2963,7 @@
   },
   "shadowverse:MonochromeEndgame": {
     "NAME": "Monochrome Endgame",
-    "DESCRIPTION": " Choose: \b Summon Queen_Hemera_the_Brave NL or NL Queen_Magnus_the_Graceful. NL Exhaust.",
+    "DESCRIPTION": " Choose: Summon Queen_Hemera_the_Brave NL or NL Queen_Magnus_the_Graceful. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Summon Queen_Hemera_the_Brave NL and NL Queen_Magnus_the_Graceful. NL Exhaust."
   },
   "shadowverse:QueenHemera_Card": {
@@ -2992,7 +2992,7 @@
   },
   "shadowverse:BrothersUnited": {
     "NAME": "Brothers United",
-    "DESCRIPTION": "Natura. NL Deal !D! damage. NL Add 1 *Naterran *Great *Tree to hand. NL Rally 7: Deal !M! more damage. NL ",
+    "DESCRIPTION": "Natura. NL Deal !D! damage. NL Add 1 *Naterran *Great *Tree to your hand. NL Rally 7: Deal !M! more damage. NL ",
     "EXTENDED_DESCRIPTION": [
       "(Rally: ",
       ")"
@@ -3000,8 +3000,8 @@
   },
   "shadowverse:HonorableThief": {
     "NAME": "Honorable Thief",
-    "DESCRIPTION": "Deal !D! damage, apply !M! Weak. NL Add 1 *Gilded *Boots to hand. NL Rally 7: Upgrade this card. NL ",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage, apply !M! Weak. NL Add 1 *Gilded *Boots to hand.",
+    "DESCRIPTION": "Deal !D! damage and apply !M! Weak. NL Add 1 *Gilded *Boots to your hand. NL Rally 7: Upgrade this card. NL ",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage and apply !M! Weak. NL Add 1 *Gilded *Boots to your hand.",
     "EXTENDED_DESCRIPTION": [
       "(Rally: ",
       ")"
@@ -3010,11 +3010,11 @@
   "shadowverse:FloralFencer": {
     "NAME": "Floral Fencer",
     "DESCRIPTION": "Deal !D! damage.",
-    "UPGRADE_DESCRIPTION": "Disupgrade after played. NL Deal !D! damage. NL Summon 1 Knight NL and 1 Steelclad_Knight."
+    "UPGRADE_DESCRIPTION": "Disupgrade after playing. NL Deal !D! damage. NL Summon 1 Knight NL and 1 Steelclad_Knight."
   },
   "shadowverse:SunnyDayEncounter": {
     "NAME": "Sunny Day Encounter",
-    "DESCRIPTION": "Natura. NL Draw !M! Attack. NL If you have Natura card in hand, add 1 *Naterran *Great *Tree to hand. NL Rally 7: Gain [E]. NL ",
+    "DESCRIPTION": "Natura. NL Draw !M! Attack cards. NL If you have a Natura card in your hand, add 1 *Naterran *Great *Tree to your hand. NL Rally 7: Gain [E]. NL ",
     "EXTENDED_DESCRIPTION": [
       "(Rally: ",
       ")"
@@ -3023,21 +3023,21 @@
   "shadowverse:WarriorWing": {
     "NAME": "Aether of the Warrior Wing",
     "DESCRIPTION": "Select 1 Attack or Power card from your draw pile to put into hand.",
-    "UPGRADE_DESCRIPTION": "Disupgrade after played. NL Select 1 Attack or Power card from your draw pile to put into hand. NL All *Followers gain +0/+1."
+    "UPGRADE_DESCRIPTION": "Disupgrade after playing. NL Select 1 Attack or Power card from your draw pile to put into hand. NL All *Followers gain +0/+1."
   },
   "shadowverse:Alyaska": {
     "NAME": "Alyaska, War Hawker",
-    "DESCRIPTION": "Gain 1 Power_Damage_Immune. NL Deal !D! damage. NL Add 1 *Evolution *Point to hand whenever this card is drawn.",
-    "UPGRADE_DESCRIPTION": "Disupgrade after played. NL Gain 1 Power_Damage_Immune. NL Deal !D! damage. NL Add 1 *Exterminus *Weapon to hand."
+    "DESCRIPTION": "Gain 1 Power_Damage_Immune. NL Deal !D! damage. NL Add 1 *Evolution *Point to hand whenever you draw this card.",
+    "UPGRADE_DESCRIPTION": "Disupgrade after playing. NL Gain 1 Power_Damage_Immune. NL Deal !D! damage. NL Add 1 *Exterminus *Weapon to hand."
   },
   "shadowverse:ExterminusWeapon": {
     "NAME": "Exterminus Weapon",
-    "DESCRIPTION": "Can be upgraded multiple times. NL Retain NL Deal !D! damage to ALL enemies. NL Upgrade whenever Retain. NL Exhaust."
+    "DESCRIPTION": "Can be upgraded multiple times. NL Retain NL Deal !D! damage to ALL enemies. NL Upgrade this card whenever you Retain it. NL Exhaust."
   },
   "shadowverse:RadicalGunslinger": {
     "NAME": "Radical Gunslinger",
-    "DESCRIPTION": "Apply !M! Vulnerable , Deal !D! damage.",
-    "UPGRADE_DESCRIPTION": "Disupgrade after played. NL Apply !M! Vulnerable , Deal !D! damage. NL Add 1 *Dutiful *Steed to hand."
+    "DESCRIPTION": "Apply !M! Vulnerable and deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Disupgrade after playing. NL Apply !M! Vulnerable and deal !D! damage. NL Add 1 *Dutiful *Steed to your hand."
   },
   "shadowverse:Mirin": {
     "NAME": "Mirin, Samurai Dreamer",
@@ -3050,30 +3050,30 @@
   },
   "shadowverse:Seofon": {
     "NAME": "Seofon, Star Sword Sovereign",
-    "DESCRIPTION": "Deal !D! damage, draw 1 card. NL Skybound_Art 3: Upgrade ALL cards in hand. NL Limit Super_Skybound_Art 6: Gain 1 Intangible.",
+    "DESCRIPTION": "Deal !D! damage and draw 1 card. NL Skybound_Art 3: Upgrade ALL cards in your hand. NL Super_Skybound_Art 6: Gain 1 Intangible.",
     "EXTENDED_DESCRIPTION": [
-      "Deal !D! damage, draw 1 card. NL Skybound_Art ",
-      ": Upgrade ALL cards in hand. NL Limit Super_Skybound_Art ",
+      "Deal !D! damage and draw 1 card. NL Skybound_Art ",
+      ": Upgrade ALL cards in your hand. NL Limit Super_Skybound_Art ",
       ": Gain 1 Intangible."
     ]
   },
   "shadowverse:Eahta": {
     "NAME": "Eahta, God of the Blade",
-    "DESCRIPTION": "Deal !D! damage twice. NL Skybound_Art 3: All Swordcraft Attacks in hand -2 cost this turn. NL Limit Super_Skybound_Art 9: All Swordcraft Attack cards -2 cost this combat.",
+    "DESCRIPTION": "Deal !D! damage twice. NL Skybound_Art 3: All Swordcraft Attack cards in your hand cost 2 less this turn. NL Super_Skybound_Art 9: All Swordcraft Attack cards cost 2 less this combat.",
     "EXTENDED_DESCRIPTION": [
       "Deal !D! damage twice. NL Skybound_Art ",
-      ":All Swordcraft Attacks in hand -2 cost this turn. NL Limit Super_Skybound_Art ",
-      ":All Swordcraft Attacks -2 cost this combat."
+      ":All Swordcraft Attack cards in hand cost 2 less this turn. NL Super_Skybound_Art ",
+      ":All Swordcraft Attack cards cost 2 less this combat."
     ]
   },
   "shadowverse:StrokeOfConviction": {
     "NAME": "Stroke of Conviction",
-    "DESCRIPTION": "Choose: NL Summon 2 *Quickblader , NL Deal !D! damage to a random enemy. NL All *Followers gain +1/+1. NL Enhance 2 \bActive all instead of choosing one. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Choose: NL Summon 2 *Quickblader , NL Deal !D! damage to a random enemy. NL All *Followers gain +1/+1. NL Enhance 2 \bActive all instead of choosing one."
+    "DESCRIPTION": "Choose: NL Summon 2 *Quickbladers NL Deal !D! damage to a random enemy NL All *Followers gain +1/+1 NL NL Enhance 2: Activate all 3 effects intead. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose: NL Summon 2 *Quickbladers NL Deal !D! damage to a random enemy NL All *Followers gain +1/+1 NL NL Enhance 2: Activate all 3 effects intead."
   },
   "shadowverse:ErikasSleight": {
     "NAME": "Erika's Sleight",
-    "DESCRIPTION": "Summon 2 Quickblader. NL Exhaust."
+    "DESCRIPTION": "Summon 2 *Quickbladers. NL Exhaust."
   },
   "shadowverse:MistolinasSwordplay": {
     "NAME": "Mistolina's Swordplay",
@@ -3085,7 +3085,7 @@
   },
   "shadowverse:FrontlineInstructor": {
     "NAME": "Frontline Instructor",
-    "DESCRIPTION": "Gain !B! Block , the rightmost *Follower gain NL +1/+0. NL Limit Rally 10: All *Followers gain +1/+1 instead.",
+    "DESCRIPTION": "Gain !B! Block. The rightmost *Follower gains +1/+0. NL Rally 10: All *Followers gain +1/+1 instead.",
     "EXTENDED_DESCRIPTION": [
       "(Rally:",
       ")"
@@ -3093,65 +3093,65 @@
   },
   "shadowverse:RoyalBanner": {
     "NAME": "Royal Standard",
-    "DESCRIPTION": "Countdown !M!: \bWhenever you summon a *Follower , it gains +1/+0."
+    "DESCRIPTION": "Countdown !M!: Whenever you summon a *Follower, it gains +1/+0."
   },
   "shadowverse:LuxbladeArriet": {
     "NAME": "Luxblade Arriet",
-    "DESCRIPTION": "Can be upgraded multiple times. NL +1: Gain !B! Block , Retain. NL +2: Gain [E] [E] , Innate. NL +3: Gain 1 Strength and Dexterity. NL +4: Draw cards until 7 in hand. NL +5: Heal !M! HP. NL Gain !M! Block , Exhaust.",
+    "DESCRIPTION": "Can be upgraded multiple times. NL +1: Gain !B! Block. Retain. NL +2: Gain [E] [E]. Innate. NL +3: Gain 1 Strength and Dexterity. NL +4: Draw until you have 7 cards in your hand. NL +5: Heal !M! HP. NL Gain !M! Block. Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      "Gain !B! Block , Retain. NL ",
-      "Gain [E] [E] , Innate. NL ",
+      "Gain !B! Block. Retain. NL ",
+      "Gain [E] [E]. Innate. NL ",
       "Gain 1 Strength and Dexterity. NL ",
-      "Draw cards until 7 in hand. NL ",
+      "Draw until you have 7 cards in your hand. NL ",
       "Heal !M! HP. NL ",
-      "Gain !M! Block , Exhaust."
+      "Gain !M! Block. Exhaust."
     ]
   },
   "shadowverse:Valdain2": {
     "NAME": "Valdain, Forest Shadow",
-    "DESCRIPTION": "Natura. NL Fusion: *Naterran *Great *Tree. NL For each card fused to this card, randomly gain 1 of the effects that haven't gained: NL (1)Double the damage. NL (2)Gain !B! Block , 1 Strength and Dexterity. NL (3)Heal 5 HP. NL Deal !M! damage to a random enemy, repeat once if you have the Power: Naterran_Great_Tree. NL Deal !D! damage.",
+    "DESCRIPTION": "Natura. NL Fusion: *Naterran *Great *Tree. NL For each card fused to this card, randomly gain 1 of the following effects that hasn't already been gained: NL Double the damage. NL Gain !B! Block, 1 Strength and 1 Dexterity. NL Heal 5 HP. NL Deal !M! damage to a random enemy. Repeat once if you have the Power Naterran_Great_Tree. NL Deal !D! damage.",
     "EXTENDED_DESCRIPTION": [
       " Double the damage. NL ",
-      " Gain !B! Block , 1 Strength and Dexterity. NL ",
+      " Gain !B! Block, 1 Strength and 1 Dexterity. NL ",
       " Heal 5 HP. NL  ",
-      " Deal !M! damage to a random enemy, repeat once if you have the Power: Naterran_Great_Tree. NL Deal !D! damage."
+      " Deal !M! damage to a random enemy. Repeat once if you have the Power Naterran_Great_Tree. NL Deal !D! damage."
     ]
   },
   "shadowverse:Charlotta": {
     "NAME": "Charlotta, Tiny Justice",
     "DESCRIPTION": "Gain !B! Block.",
-    "UPGRADE_DESCRIPTION": "Disupgrade after played. NL Gain !B! Block , gain !M! Dexterity. NL Gain 1 Power_Damage_Immune."
+    "UPGRADE_DESCRIPTION": "Disupgrade after playing. NL Gain !B! Block and !M! Dexterity. NL Gain 1 Power_Damage_Immune."
   },
   "shadowverse:Latham": {
     "NAME": "Latham, Honorable Knight",
-    "DESCRIPTION": "Whenever you play an Attack, summon 1 Knight. NL This effect is not stackable. NL Ethereal",
-    "UPGRADE_DESCRIPTION": "Whenever you play an Attack, summon 1 Knight. NL This effect is not stackable."
+    "DESCRIPTION": "Whenever you play an Attack card, summon 1 Knight. NL This effect is not stackable. NL Ethereal",
+    "UPGRADE_DESCRIPTION": "Whenever you play an Attack card, summon 1 Knight. NL This effect is not stackable."
   },
   "shadowverse:Alwida": {
     "NAME": "Alwida, Pirate Queen",
-    "DESCRIPTION": " !M! time per turn, whenever you play a Loot , summon 1 Pirate and 1 Viking. NL Ethereal",
-    "UPGRADE_DESCRIPTION": " !M! time per turn, whenever you play a Loot , summon 1 Pirate and 1 Viking."
+    "DESCRIPTION": " !M! time(s) per turn, whenever you play a Loot card, summon 1 Pirate and 1 Viking. NL Ethereal",
+    "UPGRADE_DESCRIPTION": " !M! time(s) per turn, whenever you play a Loot card, summon 1 Pirate and 1 Viking."
   },
   "shadowverse:Patrick": {
     "NAME": "Patrick, Rhiceros Knight",
-    "DESCRIPTION": "Natura. NL Gain !B! Block. If you have no more than 1 *Follower , gain [E] [E]. NL Draw 1 Natura card, add 1 *Naterran *Great *Tree to hand."
+    "DESCRIPTION": "Natura. NL Gain !B! Block. If you have no more than 1 *Follower, gain [E] [E]. NL Draw 1 Natura card and add 1 *Naterran *Great *Tree to your hand."
   },
   "shadowverse:Johann": {
     "NAME": "Johann, Ironforged Hero",
-    "DESCRIPTION": "Machina. NL Deal !D! damage. Whenever you play a Machina card this turn, gain !M! Block. NL Whenever you play a Machina card, -1 cost.",
-    "UPGRADE_DESCRIPTION": "Machina. NL Deal !D! damage. Whenever you play a Machina card this turn, gain !M! Block. NL Whenever you play a Machina card, -1 cost. NL Retain"
+    "DESCRIPTION": "Machina. NL Deal !D! damage. Whenever you play a Machina card this turn, gain !M! Block. NL Whenever you play a Machina card, subtract 1 from this card's cost.",
+    "UPGRADE_DESCRIPTION": "Machina. NL Deal !D! damage. Whenever you play a Machina card this turn, gain !M! Block. NL Whenever you play a Machina card, subtract 1 from this card's cost. NL Retain"
   },
   "shadowverse:Grayson": {
     "NAME": "Grayson, Rocket Blader",
-    "DESCRIPTION": "Machina. NL Whenever you play a Machina card, deal !M! damage to ALL enemies. NL Whenever been drawn, gain [E] for every Machina card you play this turn."
+    "DESCRIPTION": "Machina. NL Whenever you play a Machina card, deal !M! damage to ALL enemies. NL When you draw this card, gain [E] for every Machina card played this turn."
   },
   "shadowverse:Albert": {
     "NAME": "Albert, Levin Champion",
-    "DESCRIPTION": "Levin. NL Deal !D! damage. NL Enhance 3: \bRepeat once. Put ALL Levin Attacks in your draw pile and discard pile into hand, they costs 0 until played."
+    "DESCRIPTION": "Levin. NL Deal !D! damage. NL Enhance 3: Repeat once. Put ALL Levin Attack cards in your draw pile and discard pile into your hand. They cost 0 until played."
   },
   "shadowverse:Albert2": {
     "NAME": "Albert, Thunderous Doom",
-    "DESCRIPTION": "Levin. NL Deal !D! damage. NL Destroy 1 card, damage +6. NL Enhance 3: \bDeal damage 1 more time, Exhaust the Attacks in hand instead of Destroy 1, damage +6, apply 2 Vulnerable and Weak to ALL enemies."
+    "DESCRIPTION": "Levin. NL Deal !D! damage. NL Destroy 1 card. This card does an additional 6 damage. NL Enhance 3: Deal damage 1 more time, Exhaust all the Attack cards in your hand instead of Destroying 1. This card does an additional 6 damage. Apply 2 Vulnerable and Weak to ALL enemies."
   },
   "shadowverse:LevinScholar": {
     "NAME": "Levin Scholar",
@@ -3159,13 +3159,13 @@
   },
   "shadowverse:GloriousCore": {
     "NAME": "Glorious Core",
-    "DESCRIPTION": "Machina. NL Next time you play *Evolution *Point , ALL *Followers gain +1/+1. NL Enhance 2: \bAdd 1 *Evolution *Point to hand.",
-    "UPGRADE_DESCRIPTION": "Machina. NL Next time you play *Evolution *Point , ALL *Followers gain +1/+1. NL Enhance 2: \bAdd 2 *Evolution *Point+ to hand, gain [E]."
+    "DESCRIPTION": "Machina. NL Next time you play an *Evolution *Point, ALL *Followers gain +1/+1. NL Enhance 2: Put 1 *Evolution *Point into to your hand.",
+    "UPGRADE_DESCRIPTION": "Machina. NL Next time you play an *Evolution *Point, ALL *Followers gain +1/+1. NL Enhance 2: Put 2 *Evolution *Points into your hand and gain [E]."
   },
   "shadowverse:LevinBeastmaster": {
     "NAME": "Levin Beastmaster",
-    "DESCRIPTION": "Levin. NL Gain !B! Block. NL Add 1 *White *Tiger to hand.",
-    "UPGRADE_DESCRIPTION": "Levin. NL Disupgrade after played. NL Gain !B! Block. NL Add 3 *White *Tiger to hand."
+    "DESCRIPTION": "Levin. NL Gain !B! Block. NL Add 1 *White *Tiger to your hand.",
+    "UPGRADE_DESCRIPTION": "Levin. NL Disupgrade after playing. NL Gain !B! Block. NL Add 3 *White *Tigers to your hand."
   },
   "shadowverse:WhiteTiger": {
     "NAME": "White Tiger",
@@ -3173,65 +3173,65 @@
   },
   "shadowverse:Jeno": {
     "NAME": "Jeno, Levin Stalwart",
-    "DESCRIPTION": "Levin. NL Damage dealt and Block gained for Levin cards increase by !M!."
+    "DESCRIPTION": "Levin. NL The damage dealt and Block gained by Levin cards increases by !M!."
   },
   "shadowverse:LevinArcher": {
     "NAME": "Levin Archer",
-    "DESCRIPTION": "Levin. NL Deal !D! damage, Apply !M! Vulnerable.",
-    "UPGRADE_DESCRIPTION": "Levin. NL Disupgrade after played. NL Deal !D! damage, apply !M! Vulnerable. If you have other Levin card in hand, repeat once."
+    "DESCRIPTION": "Levin. NL Deal !D! damage and apply !M! Vulnerable.",
+    "UPGRADE_DESCRIPTION": "Levin. NL Disupgrade after playing. NL Deal !D! damage and apply !M! Vulnerable. If you have any other Levin cards in hand, repeat once."
   },
   "shadowverse:Lounes": {
     "NAME": "Lounes, Levin Apprentice",
-    "DESCRIPTION": "Levin. NL Deal !D! damage. Gain !B! Block for each Levin card in hand. NL Enhance 1: \bDeal damage 1 more time.",
+    "DESCRIPTION": "Levin. NL Deal !D! damage. Gain !B! Block for each Levin card in your hand. NL Enhance 1: Deal damage 1 more time.",
     "EXTENDED_DESCRIPTION": [
-      "(Other Levin cards number: ",
+      "(Other Levin cards: ",
       ")"
     ]
   },
   "shadowverse:Cybercannoneer": {
     "NAME": "Cybercannoneer",
-    "DESCRIPTION": "Machina. NL Deal !D! damage. NL Enhance 2: \bAdd !M! *Assembly *Droids to hand."
+    "DESCRIPTION": "Machina. NL Deal !D! damage. NL Enhance 2: Put !M! *Assembly *Droids into your hand."
   },
   "shadowverse:StampedingFortress": {
     "NAME": "Stampeding Fortress",
-    "DESCRIPTION": "Machina. NL Deal !D! damage, Gain !B! Block.",
-    "UPGRADE_DESCRIPTION": "Machina. NL Disupgrade after played. NL Deal !D! damage, gain !B! Block. NL If you have other Machina card in hand, add !M! *Assembly *Droids to hand."
+    "DESCRIPTION": "Machina. NL Deal !D! damage and gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "Machina. NL Disupgrade after playing. NL Deal !D! damage and gain !B! Block. NL If you have any other Machina cards in your hand, put !M! *Assembly *Droids into your hand."
   },
   "shadowverse:MeetTheLevinSisters": {
     "NAME": "Meet The Levin Sisters!",
-    "DESCRIPTION": "Levin. NL Choose: NL Add 1 of *Mina, *Levin *Vice *Leader , *Mona, *Levin *Mage or *Mena, *Levin *Duelist to hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Levin. NL Add *Mina, *Levin *Vice *Leader , *Mona, *Levin *Mage and *Mena, *Levin *Duelist to hand. NL Exhaust."
+    "DESCRIPTION": "Levin. NL Choose: NL Put 1 *Mina, *Levin *Vice *Leader, *Mona, *Levin *Mage or *Mena, *Levin *Duelist into your  hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Levin. NL Put 1 *Mina, *Levin *Vice *Leader, *Mona, *Levin *Mage and *Mena, *Levin *Duelist into your  hand. NL Exhaust. NL Exhaust."
   },
   "shadowverse:Mina": {
     "NAME": "Mina, Levin Vice Leader",
-    "DESCRIPTION": "Levin. NL Deal !D! damage. Select 1 Levin card in your draw pile to put into hand and Retain this turn."
+    "DESCRIPTION": "Levin. NL Deal !D! damage. Select 1 Levin card in your draw pile. Put it into your hand and give it Retain this turn."
   },
   "shadowverse:Mona": {
     "NAME": "Mona, Levin Mage",
-    "DESCRIPTION": "Levin. NL Gain !B! Block , gain [E]. NL If you have other Levin card in hand, gain extra [E]."
+    "DESCRIPTION": "Levin. NL Gain !B! Block and [E]. NL If you have any other Levin cards in your hand, gain extra [E]."
   },
   "shadowverse:Mena": {
     "NAME": "Mena, Levin Duelist",
-    "DESCRIPTION": "Levin. NL Deal !D! damage. NL If you have other Levin card in hand, apply !M! Vulnerable and Weak."
+    "DESCRIPTION": "Levin. NL Deal !D! damage. NL If you have any other Levin cards in your hand, apply !M! Vulnerable and Weak."
   },
   "shadowverse:Nahtnaught": {
     "NAME": "Nahtnaught, Cursed Queen",
-    "DESCRIPTION": "Add 1 *Tyrant's *Order to hand. NL Enhance 2: \bSummon 2 Naht's_Henchmen as enemies. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Add 1 *Tyrant's *Order to hand. NL Enhance 2: \bSummon 2 Naht's_Henchmen as enemies. NL Exhaust."
+    "DESCRIPTION": "Put 1 *Tyrant's *Order intoto your hand. NL Enhance 2: Summon 2 Naht's_Henchmen as enemies. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. Put 1 *Tyrant's *Order intoto your hand. NL Enhance 2: Summon 2 Naht's_Henchmen as enemies. NL Exhaust."
   },
   "shadowverse:TyrantsOrder": {
     "NAME": "Tyrant's Order",
-    "DESCRIPTION": "Select 1 enemy, deal damage equals to the HP of this enemy to ALL other enemies. NL (Maximum !M! damage)"
+    "DESCRIPTION": "Select 1 enemy. Deal damage equal to the HP of this enemy to ALL other enemies. NL (Maximum !M! damage)"
   },
   "shadowverse:Leonidas": {
     "NAME": "Leonidas",
-    "DESCRIPTION": "After 3 turns, whenever you summon a *Follower , it gains + !M! /+ !M!. NL Reduce 1 turn whenever you lose HP. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "After 3 turns, whenever you summon a *Follower , it gains + !M! /+ !M!. NL Reduce 1 turn whenever you lose HP."
+    "DESCRIPTION": "Gain the following effect after 3 turns: Whenever you summon a *Follower, it gains + !M! /+ !M!. NL Whenever you lose HP, gain this effect 1 turn sooner. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Gain the following effect after 3 turns: Whenever you summon a *Follower, it gains + !M! /+ !M!. NL Whenever you lose HP, gain this effect 1 turn sooner."
   },
   "shadowverse:LevinJustice": {
     "NAME": "Levin Justice",
-    "DESCRIPTION": "Levin. NL Deal damage equals to double the Levin cards you played this combat. NL Add 1 *Yurius, *Levin *Duke to hand.",
-    "UPGRADE_DESCRIPTION": "Levin. NL Deal damage equals to double the Levin cards you played this combat. NL Add 1 *Yurius, *Levin *Duke to hand, it costs 0 to play.",
+    "DESCRIPTION": "Levin. NL Deal damage equal to twice the total Levin cards played this combat. NL Put 1 *Yurius, *Levin *Duke into your hand.",
+    "UPGRADE_DESCRIPTION": "Levin. NL Deal damage equal to twice the total Levin cards played this combat. NL Put 1 *Yurius, *Levin *Duke into your hand and change its cost to 0.",
     "EXTENDED_DESCRIPTION": [
       "(Deal ",
       " damage)"
@@ -3243,59 +3243,59 @@
   },
   "shadowverse:CaptainWalfrid": {
     "NAME": "Captain Walfrid",
-    "DESCRIPTION": "Whenever you summon a *Follower , it gains + !M! /+ !M!. NL Put 1 copy of this card into discard pile."
+    "DESCRIPTION": "Whenever you summon a *Follower, it gains + !M! /+ !M!. NL Put 1 copy of this card into your discard pile."
   },
   "shadowverse:Walfrid": {
     "NAME": "Walfrid, Sky Captain",
-    "DESCRIPTION": "If you only have non-Strike Swordcraft Attacks in your draw pile, whenever you summon a *Follower , it gains + !M! /+ !M!. NL Put 1 copy of this card into discard pile."
+    "DESCRIPTION": "If you only have non-Strike Swordcraft Attack cards in your draw pile, whenever you summon a *Follower, it gains + !M! /+ !M!. NL Put 1 copy of this card into discard pile."
   },
   "shadowverse:Reinhardt": {
     "NAME": "Reinhardt, the Deathless",
-    "DESCRIPTION": "Whenever being attacked, gain !M! Strength and Dexterity. If you take any unblock damage, lose this effect and heal 5 HP. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Whenever being attacked, gain !M! Strength and Dexterity. If you take any unblock damage, lose this effect and heal 5 HP."
+    "DESCRIPTION": "Whenever you're attacked, gain !M! Strength and Dexterity. If you take any unblocked damage, lose this effect and heal 5 HP. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Whenever you're attacked, gain !M! Strength and Dexterity. If you take any unblocked damage, lose this effect and heal 5 HP."
   },
   "shadowverse:Garven": {
     "NAME": "Garven, Iron Dreadnought",
-    "DESCRIPTION": "Deal !D! damage !M! times. NL Can deal 1 more time for each different Traits ( Machina , Natura , Levin , Mysteria , AF , Festive ) you played this combat.",
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Repeat 1 time for each card with a different Trait (Machina, Natura, Levin, Mysteria, AF, Festive) played this combat.",
     "EXTENDED_DESCRIPTION": [
-      "(Deal damage for ",
+      "(Deal damage ",
       " times)"
     ]
   },
   "shadowverse:Kagemitsu": {
     "NAME": "Kagemitsu, Matchless Blade",
-    "DESCRIPTION": "Can be upgraded multiple times. NL Deal !D! damage. NL Exhaust. NL If Fatal, upgrade this card. NL Last_Words: When this card is Exhausted, next turn add a 0 cost *Kagemitsu, *Lost *Samurai with same number of upgrades to your hand."
+    "DESCRIPTION": "Can be upgraded multiple times. NL Deal !D! damage. NL Exhaust. NL If Fatal, upgrade this card. NL Last_Words: When this card is Exhausted, next turn put a 0 cost *Kagemitsu, *Lost *Samurai with same number of upgrades to your hand."
   },
   "shadowverse:LostSamurai": {
     "NAME": "Kagemitsu, Lost Samurai",
-    "DESCRIPTION": "Can be upgraded multiple times. NL Deal !D! damage. NL Exhaust. NL +5: Deal 10 damage to ALL enemies. NL +7: Change to 20 damage."
+    "DESCRIPTION": "Can be upgraded multiple times. NL Deal !D! damage. NL Exhaust. NL +5: Deal 10 damage to ALL enemies. NL +7: Deal 20 damage instead."
   },
   "shadowverse:Alexander": {
     "NAME": "Alexander",
-    "DESCRIPTION": "Deal !D! damage for !M! times. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage for !M! times."
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times."
   },
   "shadowverse:MirrorImage": {
     "NAME": "Mirror Image",
-    "DESCRIPTION": "Copy 1 Attack or Power card in hand. The copy gain Exhaust and Ethereal."
+    "DESCRIPTION": "Copy 1 Attack or Power card in your hand. This copy gains Exhaust and Ethereal."
   },
   "shadowverse:Valse": {
     "NAME": "Valse, Magical Marksman",
-    "DESCRIPTION": "Deal !D! damage. NL Choose: NL Add 1 *Holy *Purebomb or *Fatal *Spellbomb to hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Choose: NL Add 1 *Holy *Purebomb or *Fatal *Spellbomb to hand, it gains Retain."
+    "DESCRIPTION": "Deal !D! damage. NL Choose: NL Put 1 *Holy *Purebomb or *Fatal *Spellbomb into your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Choose: NL Put 1 *Holy *Purebomb or *Fatal *Spellbomb into your hand and give it Retain."
   },
   "shadowverse:HolyPurebomb": {
     "NAME": "Holy Purebomb",
-    "DESCRIPTION": "Exhaust ALL Curse and Status card in hand. NL Enemy lose 1 buff. NL Exhaust."
+    "DESCRIPTION": "Exhaust ALL Curse and Status cards in your hand. NL The enemy loses 1 buff. NL Exhaust."
   },
   "shadowverse:FatalSpellbomb": {
     "NAME": "Fatal Spellbomb",
-    "DESCRIPTION": "Enemy loses !D! HP. NL Exhaust."
+    "DESCRIPTION": "The enemy loses !D! HP. NL Exhaust."
   },
   "shadowverse:Ernesta": {
     "NAME": "Ernesta, Weapons Hawker",
-    "DESCRIPTION": "Rally 10: Add 1 *Dread *Hound to hand.",
-    "UPGRADE_DESCRIPTION": "Disupgrade after played. NL Select 1 card in hand to Exhaust , draw 1 card.",
+    "DESCRIPTION": "Rally 10: Put 1 *Dread *Hound into your hand.",
+    "UPGRADE_DESCRIPTION": "Disupgrade after playing. NL Select 1 card in your hand, Exhaust it and draw 1 card.",
     "EXTENDED_DESCRIPTION": [
       "(Rally: ",
       ")"
@@ -3303,20 +3303,20 @@
   },
   "shadowverse:DreadHound": {
     "NAME": "Dread Hound",
-    "DESCRIPTION": "Gain !B! Block. Enemy loses !D! HP. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. The enemy loses !D! HP. NL Exhaust."
   },
   "shadowverse:Ilmisuna": {
     "NAME": "Ilmisuna, Arms Dealer",
-    "DESCRIPTION": "Gain !B! Block. NL Select 1 card in hand to Exhaust, draw 1 card.",
-    "UPGRADE_DESCRIPTION": "Disupgrade after played. NL Deal !D! damage times equal to the number of your *Followers."
+    "DESCRIPTION": "Gain !B! Block. NL Select 1 card in your hand, Exhaust it and draw 1 card.",
+    "UPGRADE_DESCRIPTION": "Disupgrade after playing. NL Deal !D! damage times the number of your *Followers."
   },
   "shadowverse:MasterDealer": {
     "NAME": "Alyaska, Master Dealer",
-    "DESCRIPTION": "Gain !B! Block. NL Select 1 card in hand, Exhaust ALL other cards in hand, draw cards equals to the cards you Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL Select 1 card in hand, Exhaust ALL other cards in your hand and draw cards equal to the number of cards Exhausted."
   },
   "shadowverse:EleganceInAction": {
     "NAME": "Elegance in Action",
-    "DESCRIPTION": "Draw 1 card, summon 1 *Heavy *Knight if it's Attack. Otherwise, deal !D! damage. NL Enhance 1: \bDraw !M! cards instead."
+    "DESCRIPTION": "Draw 1 card. Summon 1 *Heavy *Knight if it's an Attack card. Otherwise, deal !D! damage. NL Enhance 1: Draw !M! cards instead."
   },
   "shadowverse:BlackenedScripture": {
     "NAME": "漆黑法典",
@@ -3340,12 +3340,12 @@
   },
   "shadowverse:ImaginationRealized": {
     "NAME": "Imagination Realized",
-    "DESCRIPTION": "Draw 3 cards, these cards costs 0 this turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Draw 3 cards, these cards costs 0 this combat. NL Exhaust."
+    "DESCRIPTION": "Draw 3 cards. These cards costs 0 this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Draw 3 cards. These cards costs 0 this combat. NL Exhaust."
   },
   "shadowverse:GuildAssembly": {
     "NAME": "Guild Assembly",
-    "DESCRIPTION": "Innate. Can be upgraded for multiple times. NL Draw 1 card. NL +1:Draw 1 extra. NL +2:Gain !B! Block. NL +3:Gain 2 Strength and Dexterity. NL Exhaust.",
+    "DESCRIPTION": "Innate. Can be upgraded multiple times. NL Draw 1 card. NL +1: Draw 1 extra. NL +2: Gain !B! Block. NL +3: Gain 2 Strength and Dexterity. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       "Draw 1 extra. NL ",
       "Gain !B! Block. NL ",
@@ -3355,8 +3355,8 @@
   },
   "shadowverse:MysterianWisdom": {
     "NAME": "Mysterian Wisdom",
-    "DESCRIPTION": "Exhaust 1 card in hand. NL Put 1 *Mysterian *Missile and *Mysterian *Circle into your hand.",
-    "UPGRADE_DESCRIPTION": "Exhaust 1 card in hand.Then put a copy of that card into draw pile. NL Put 1 *Mysterian *Missile and *Mysterian *Circle into your hand."
+    "DESCRIPTION": "Exhaust 1 card in your hand. NL Put 1 *Mysterian *Missile and *Mysterian *Circle into your hand.",
+    "UPGRADE_DESCRIPTION": "Exhaust 1 card in your hand. Then, put a copy of that card into your draw pile. NL Put 1 *Mysterian *Missile and *Mysterian *Circle into your hand."
   },
   "shadowverse:DuskshadeBat": {
     "NAME": "幽暗蝙蝠",
@@ -3368,8 +3368,8 @@
   },
   "shadowverse:MiracleHarvest": {
     "NAME": "Miracle Harvest",
-    "DESCRIPTION": "Put 1 *Fairy into hand. NL If the amount of *Fairy played in this combat is more than 5, Upgrade this *Fairy. NL More than 10,draw !M! cards. Limit Gain [E].",
-    "UPGRADE_DESCRIPTION": "Put 1 *Fairy into hand. NL If the amount of *Fairy played in this combat is more than 5, Upgrade this *Fairy. NL More than 10,draw !M! cards. Limit Gain [E] [E]."
+    "DESCRIPTION": "Put 1 *Fairy into your hand. NL If the amount of *Fairies played in this combat is more than 5, Upgrade this *Fairy. NL If more than 10, draw !M! cards. Gain [E].",
+    "UPGRADE_DESCRIPTION": "Put 1 *Fairy into your hand. NL If the amount of *Fairies played in this combat is more than 5, Upgrade this *Fairy. NL If more than 10, draw !M! cards. Gain [E] [E]."
   },
   "shadowverse:HolyFalcon": {
     "NAME": "神圣猎鹰",
@@ -3856,7 +3856,7 @@
   },
   "shadowverse:ShadowCorrosion": {
     "NAME": "Shadow's Corrosion",
-    "DESCRIPTION": "Natura. NL Apply 'At the start of turn, lose HP equals double the number of played *Naterran *Great *Tree ' effect. NL If the enemy has this effect, deal damage directly instead. NL Exhaust."
+    "DESCRIPTION": "Natura. NL Apply the following effect to an enemy: At the start of your turn, lose HP equal to double the number of played *Naterran *Great *Trees played this combat. NL If the enemy already has this effect, deal the same amount of damage directly instead. NL Exhaust."
   },
   "shadowverse:Valdain": {
     "NAME": "Valdain, Cursed Shadow",
@@ -3865,32 +3865,32 @@
   },
   "shadowverse:Sukuna": {
     "NAME": "Sukuna, Mighty Malleteer",
-    "DESCRIPTION": "Deal !D! damage. NL Increase the damage by !M! for each kind of Power you played this combat ."
+    "DESCRIPTION": "Deal !D! damage. NL Increase the damage by !M! for each Power card with a different name played this combat ."
   },
   "shadowverse:TerrorFormer": {
-    "NAME": "Terror Former",
-    "DESCRIPTION": "Retain. NL Fusion:Forestcraft Attacks that is more than 1 cost. NL Whenever 2 or more cards are fused to this card at once, increase the damage by !M! and Draw 1 card. NL Deal !D! damage. NL Apply 2 Weak."
+    "NAME": "Terrorformer",
+    "DESCRIPTION": "Retain. NL Fusion: Forestcraft Attack cards that cost more than 1. NL Whenever 2 or more cards are fused to this card at once, increase the damage by !M! and draw 1 card. NL Deal !D! damage. NL Apply 2 Weak."
   },
   "shadowverse:Ambush": {
     "NAME": "Ambush",
-    "DESCRIPTION": "Won't trigger passive effects by the end of turn, gain +1/+0."
+    "DESCRIPTION": "Won't trigger passive effects at the end of your turn. Gain +1/+0."
   },
   "shadowverse:AmbushAttack": {
     "NAME": "Attack",
-    "DESCRIPTION": "Trigger passive effects by the end of turn, cannot select Ambush again."
+    "DESCRIPTION": "Trigger passive effects at the end of your turn. Ambush cannot be selected again."
   },
   "shadowverse:Leod": {
     "NAME": "Leod, the Crescent Blade",
-    "DESCRIPTION": "Ambush , 1/ !M!. NL Add 1 *Veiled *Reckoning to hand. NL Passive: Deal damage equal to 5 times of Atk to a random enemy and lose 1 Health by the end of your turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION":"Innate · Ambush , 1/ !M!. NL Add 1 *Veiled *Reckoning to hand. NL Passive: Deal damage equal to 5 times of Atk to a random enemy and lose 1 Health by the end of your turn. NL Exhaust."
+    "DESCRIPTION": "Ambush. 1/ !M!. NL Put 1 *Veiled *Reckoning into your hand. NL Passive: Deal damage equal to 5 times Attack to a random enemy and lose 1 Health at the end of your turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. Ambush. 1/ !M!. NL Put 1 *Veiled *Reckoning into your hand. NL Passive: Deal damage equal to 5 times this follower's Attack to a random enemy and lose 1 Health at the end of your turn. NL Exhaust."
   },
   "shadowverse:VeiledReckoning": {
     "NAME": "Veiled Reckoning",
-    "DESCRIPTION": "Retain. NL Deal !D! damage. NL Add 1 *Assassin to hand. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Deal !D! damage. NL Put 1 *Assassin into your hand. NL Exhaust."
   },
   "shadowverse:Assassin": {
     "NAME": "Assassin",
-    "DESCRIPTION": "ALL *Followers with Ambush ability can select Ambush again. NL Exhaust."
+    "DESCRIPTION": "ALL *Followers with Ambush can select Ambush again. NL Exhaust."
   },
   "shadowverse:Dualblade": {
     "NAME": "Dualblade Flurry",
@@ -3899,7 +3899,7 @@
   },
   "shadowverse:Leod2": {
     "NAME": "Leod, Moonlit Executioner",
-    "DESCRIPTION": "Ambush , 1/ !M!. NL Passive: Deal damage equal to 5 times of Atk to a random enemy and lose 1 Health by the end of your turn. NL Deal 9 damage to ALL enemies at the start of your turn. NL Exhaust."
+    "DESCRIPTION": "Ambush. 1/ !M!. NL Passive: Deal damage equal to 5 times Attack to a random enemy and lose 1 Health at the end of your turn. NL Deal 9 damage to ALL enemies at the start of your turn. NL Exhaust."
   },
   "shadowverse:AmbushBuff": {
     "NAME": "Rogue's Creed",
@@ -3907,11 +3907,11 @@
   },
   "shadowverse:ShinobiTanuki": {
     "NAME": "Shinobi Tanuki",
-    "DESCRIPTION": "Ambush , 1/ !M!. NL Passive: Gain Block equal to 2 times of Atk and lose 1 Health by the end of your turn. NL Exhaust."
+    "DESCRIPTION": "Ambush. 1/ !M!. NL Passive: Gain Block equal to 2 times Attack and lose 1 Health at the end of your turn. NL Exhaust."
   },
   "shadowverse:Tsubaki": {
     "NAME": "Tsubaki of the Demon Blade",
-    "DESCRIPTION": "Ambush , 1/ !M!. NL Passive: Deal damage equal to 5 times of Atk to a random enemy and lose 1 Health by the end of your turn. NL Rally 10: Gain +1/+1, apply 1 Vulnerable and Weak to a random enemy.",
+    "DESCRIPTION": "Ambush. 1/ !M!. NL Passive: Deal damage equal to 5 times Attack to a random enemy and lose 1 Health at the end of your turn. NL Rally 10: Gain +1/+1 and apply 1 Vulnerable and Weak to a random enemy.",
     "EXTENDED_DESCRIPTION": [
       "(Rally:",
       ")"
@@ -3919,32 +3919,32 @@
   },
   "shadowverse:ShieldOfFlame": {
     "NAME": "Shield of Flame",
-    "DESCRIPTION": "Deal !D! damage. NL If you have *Follower in Ambush , double the damage."
+    "DESCRIPTION": "Deal !D! damage. NL If you have *Follower in Ambush, double the damage."
   },
   "shadowverse:ShadowedMemories": {
     "NAME": "Shadowed Memories",
-    "DESCRIPTION": "Gain !B! Block. NL Draw !M! card. NL If you have *Follower in Ambush, add 1 *Evolution *Point to hand."
+    "DESCRIPTION": "Gain !B! Block. NL Draw !M! card. NL If you have *Follower in Ambush, put 1 *Evolution *Point into your hand."
   },
   "shadowverse:BladeDance": {
     "NAME": "Ivory Sword Dance",
-    "DESCRIPTION": "Enhance 2: The *Follower with the highest Atk gain +2/+0. NL Deal !D! damage to a random enemy for X time(s). NL (X equals to the Atk of your strongest *Follower , Maximum 10.)"
+    "DESCRIPTION": "Enhance 2: The *Follower with the highest Attack gains +2/+0. NL Deal !D! damage to a random enemy X time(s). X equals to the Attack of your strongest *Follower (maximum 10)."
   },
   "shadowverse:NobleShikigami": {
     "NAME": "Noble Shikigami",
-    "DESCRIPTION": "Deal damage to all enemies equal to !D! times of remain energy. NL Gain 1 Artifact. NL Ethereal. NL Exhaust."
+    "DESCRIPTION": "Deal damage to all enemies equal to !D! times your remaining Energy. NL Gain 1 Artifact. NL Ethereal. NL Exhaust."
   },
   "shadowverse:HarvestSeason": {
     "NAME": "Harvest Season",
-    "DESCRIPTION": "Draw !M! cards. NL If at least 2 other cards were played this turn, draw 1 additionally."
+    "DESCRIPTION": "Draw !M! cards. NL If at least 2 other cards were played this turn, draw 1 more."
   },
   "shadowverse:RejuvenatingResurrection": {
     "NAME": "Rejuvenating Resurrection",
-    "DESCRIPTION": "Put an Attack or a Power from your discard pile into your hand and upgrade it.",
-    "UPGRADE_DESCRIPTION":"Put an Attack or a Power from your discard pile into your hand and upgrade it ."
+    "DESCRIPTION": "Put an Attack or Power card from your discard pile into your hand and upgrade it.",
+    "UPGRADE_DESCRIPTION": "Put an Attack or Power from your discard pile into your hand and upgrade it."
   },
   "shadowverse:MasterCook": {
     "NAME": "Master Chef",
-    "DESCRIPTION": "Gain !B! Block. NL Draw 1 card. NL + !M! to your Max HP. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL Draw 1 card. NL Add !M! to your max HP. NL Exhaust."
   },
   "shadowverse:OmnifacedArchdemon": {
     "NAME": "百兽大恶鬼",
@@ -3957,16 +3957,16 @@
   },
   "shadowverse:PhantomBloomPredator": {
     "NAME": "Phantombloom Predator",
-    "DESCRIPTION": "Deal !D! damage. NL If there are Attacks that cost no more than 1 in your discard pile, put one into your hand and increase the damage by !M!."
+    "DESCRIPTION": "Deal !D! damage. NL If there are Attack cards that cost no more than 1 in your discard pile, put one into your hand and increase the damage by !M!."
   },
   "shadowverse:WonderTree": {
     "NAME": "Tree of Wonders",
-    "DESCRIPTION": "Fusion: *Fairy. NL At the start of your turn,activate 1 of the following effects in order: NL (1)Draw 1 additional card NL (2)Add a *Fairy into your hand and Gain !M!  Block NL (3)Heal 2 HP NL If fused,activate 2 effects instead.",
-    "UPGRADE_DESCRIPTION":"Fusion: *Fairy. NL At the start of your turn,activate 1 of the following effects in order: NL (1)Draw 1 additional card NL (2)Add a *Fairy+ into your hand and Gain !M!  Block NL (3)Heal 2 HP NL If fused,activate 2 effects instead.."
+    "DESCRIPTION": "Fusion: *Fairies. NL At the start of your turn, activate 1 of the following effects in order: NL Draw 1 additional card NL Add a *Fairy into your hand and Gain !M! Block NL Heal 2 HP NL. If at least 1 card is fused to this card, activate 2 effects instead.",
+    "UPGRADE_DESCRIPTION": "Fusion: *Fairies. NL At the start of your turn, activate 1 of the following effects in order: NL Draw 1 additional card NL Add a *Fairy+ into your hand and Gain !M! Block NL Heal 2 HP NL. If at least 1 card is fused to this card, activate 2 effects instead."
   },
   "shadowverse:Alberta": {
     "NAME": "Alberta, the Autumnblade",
-    "DESCRIPTION": "Deal !D! damage. NL Gain ‘Once per turn,whenever you play a card, if it's the 4th card you've played this turn,put a copy of this into hand and lose this effect’. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Gain the following effect: Once per turn, whenever you play a card, if it's the 4th card you've played this turn, put a copy of this card into hand and lose this effect. NL Exhaust."
   },
   "shadowverse:Shiro": {
     "NAME": "被诅咒的双翼·希萝",
@@ -3974,21 +3974,21 @@
   },
   "shadowverse:TheChariot": {
     "NAME": "VII. Oluon, The Chariot",
-    "DESCRIPTION": "Gain !B! Block. NL At the end of turn, andomly activate 1 of the following effects. NL -Gain !M! Block , -Summon 1 Knight , -Deal !M! damage to an random enemy. NL Enhance 3 \bChange to *VII. *Oluon, *Runaway *Chariot 's effect.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL At the end of turn, andomly activate 1 of the following effects. NL -Gain !M! Block , -Summon 1 Knight , -Deal !M! damage to an random enemy. NL Enhance 3 \bChange to *VII. *Oluon, *Runaway *Chariot+ 's effect."
+    "DESCRIPTION": "Gain !B! Block. NL At the end of your turn, randomly activate 1 of the following effects. NL Gain !M! Block NL Summon 1 Knight NL Deal !M! damage to an random enemy. NL NL Enhance 3: Play this card as *VII. *Oluon, *Runaway *Chariot instead.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL At the end of your turn, randomly activate 1 of the following effects. NL Gain !M! Block NL Summon 1 Knight NL Deal !M! damage to an random enemy. NL NL Enhance 3: Play this card as *VII. *Oluon, *Runaway *Chariot+ instead."
   },
   "shadowverse:TheChariot_I": {
     "NAME": "VII. Oluon, Runaway Chariot",
-    "DESCRIPTION": "At the end of turn, randomly deal damage equals to half of your maximum health to you, or deal !M! damage to an random enemy. NL Do this 2 times."
+    "DESCRIPTION": "At the end of your turn, randomly deal damage equal to half your max HP to you or deal !M! damage to an random enemy. NL Do this 2 times."
   },
   "shadowverse:CorruptionOfUnkilling": {
     "NAME": "Erosive Annihilation",
-    "DESCRIPTION": "At the end of your turn, All ememies lose 1 Strength and 1 Dexterity. NL This effect is not stackable and lasts for 3 turns. NL Exhaust.",
-    "UPGRADE_DESCRIPTION":"Innate. NL At the end of your turn, All ememies lose 1 Strength and 1 Dexterity. NL This effect is not stackable and lasts for 3 turns. NL Exhaust."
+    "DESCRIPTION": "At the end of your turn, all enemies lose 1 Strength and 1 Dexterity. NL This effect is not stackable and lasts for 3 turns. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. At the end of your turn, all enemies lose 1 Strength and 1 Dexterity. NL This effect is not stackable and lasts for 3 turns. NL Exhaust."
   },
   "shadowverse:UltimateHollow": {
     "NAME": "Ultimate Hollow",
-    "DESCRIPTION": "Deal !D! Damage. NL If there are more than 4 Loot in your exhaust pile, double the damage and gain !B! Block. NL This card will be treated as a Loot."
+    "DESCRIPTION": "Deal !D! Damage. NL If there are more than 4 Loot cards in your exhaust pile, double the damage and gain !B! Block. NL This card is treated as a Loot card."
   },
   "shadowverse:LoathingDesire": {
     "NAME": "憎恶的爱绝",
@@ -4001,8 +4001,8 @@
   },
   "shadowverse:UnleashTruth": {
     "NAME": "Elimination Unleashed",
-    "DESCRIPTION": "Gain [E]. NL Put 1 Runecraft card into hand. NL If it costs more than 3,reduce 1 cost of it. NL Exhaust.",
-    "UPGRADE_DESCRIPTION":"Innate. NL Gain [E]. NL Put 1 Runecraft card into hand. NL If it costs more than 3,reduce 1 cost of it. NL Exhaust."
+    "DESCRIPTION": "Gain [E]. NL Put 1 Runecraft card into hand. NL If it costs more than 3, reduce its cost by 1. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. Gain [E]. NL Put 1 Runecraft card into hand. NL If it costs more than 3, reduce its cost by 1. NL Exhaust."
   },
   "shadowverse:ResentfulScreaming": {
     "NAME": "怨仇的绝叫",
@@ -4015,16 +4015,16 @@
   },
   "shadowverse:PerjuryOfTruth": {
     "NAME": "Ersatz Elimination",
-    "DESCRIPTION": "Enemy loses all Strength and Dexterity. NL Exhaust.",
-    "UPGRADE_DESCRIPTION":"Retain. NL Enemy loses all Strength and Dexterity. NL Exhaust."
+    "DESCRIPTION": "An enemy loses all Strength and Dexterity. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL An enemy loses all Strength and Dexterity. NL Exhaust."
   },
   "shadowverse:ShootOfUnkilling": {
     "NAME": "Annihilating Onslaught",
-    "DESCRIPTION": "Enemy loses !M! Strength. NL Enhance 3 \b At the start of your next turn,deal damage that equals its Maximum HP to a enemy that intends to attack. NL Exhaust."
+    "DESCRIPTION": "An enemy loses !M! Strength. NL Enhance 3: At the start of your next turn, deal damage equal to its max HP to an enemy that intends to attack. NL Exhaust."
   },
   "shadowverse:LightOfHollow": {
     "NAME": "Remnant of Hollowness",
-    "DESCRIPTION": "Retain · Loot NL Fusion: Loot NL Whenever cards are fused to this card, draw a card. NL Deal a pool of !D! damage divided between all enemies. NL If at least 4 cards have been fused to this card, double the damage.",
+    "DESCRIPTION": "Retain. Loot. NL Fusion: Loot cards. NL Whenever cards are fused to this card, draw a card. NL Deal a pool of !D! damage divided between all enemies. NL If at least 4 cards have been fused to this card, double the damage.",
     "EXTENDED_DESCRIPTION": [
       " NL (Fused Loot: ",
       ")"
@@ -4083,9 +4083,9 @@
     "DESCRIPTION": "Gain !B! Block. NL Select an Attack in your hand, Exhaust it and then add 1 copy of it to your hand. NL Select 1 Power, Exhaust it and then add 1 copy of it to your hand."
   },
   "shadowverse:AdherentOfHollow": {
-    "NAME": "Adherent Of Hollow",
-    "DESCRIPTION": "Whenever you play a Loot , upgraded this card. NL Deal !D! damage. NL Whenever you play an *Evolution *Point , add 1 random Loot card into your hand.",
-    "UPGRADE_DESCRIPTION":"Disupgrade after played. NL Deal !D! damage. NL Whenever you play an *Evolution *Point , add 1 random Loot card into your hand."
+    "NAME": "Adherent Of Hollowness",
+    "DESCRIPTION": "Whenever you play a Loot card, upgrad this card. NL Deal !D! damage. NL Whenever you play an *Evolution *Point, put 1 random Loot card into your hand.",
+    "UPGRADE_DESCRIPTION": "Disupgrade after playing. NL Deal !D! damage. NL Whenever you play an *Evolution *Point, put 1 random Loot card into your hand."
   },
   "shadowverse:AdherentOfDispair": {
     "NAME": "绝望的崇拜者",
@@ -4093,12 +4093,12 @@
   },
   "shadowverse:AdherentOfAnnihilation": {
     "NAME": "Adherent of Annihilation",
-    "DESCRIPTION": "When apply debuff,draw !M! cards."
+    "DESCRIPTION": "Whenever you apply a debuff, draw !M! card(s)."
   },
   "shadowverse:Erika": {
     "NAME": "Erika, Loyal Swordsavant",
-    "DESCRIPTION": " !M! /1. NL Passive: Deal damage equal to 4 times of Atk to a random enemy and lose 1 Health by the end of your turn. Whenever you play Attacks, summon *Followers or *Amulets, gain +1/+0 this turn. NL Limit Rally 7: Add 1 *Killer *Instincts to hand.",
-    "UPGRADE_DESCRIPTION":" !M! /1. NL Passive: Deal damage equal to 4 times of Atk to a random enemy and lose 1 Health by the end of your turn. Whenever you play Attacks, summon *Followers or *Amulets, gain +1/+0 this turn. NL Limit Rally 7: Add 1 *Killer *Instincts to hand. NL Rally 15: Add 1 *Erika's *Sleight to hand.",
+    "DESCRIPTION": " !M! /1. NL Passive: Deal damage equal to 4 times attack to a random enemy and lose 1 Health at the end of your turn. Whenever you play Attack cards or summon *Followers or *Amulets, gain +1/+0 this turn. NL Rally 7: Put 1 *Killer *Instincts into your hand.",
+    "UPGRADE_DESCRIPTION": " !M! /1. NL Passive: Deal damage equal to 4 times attack to a random enemy and lose 1 Health at the end of your turn. Whenever you play Attack cards or summon *Followers or *Amulets, gain +1/+0 this turn. NL Rally 7: Put 1 *Killer *Instincts into your hand. NL Rally 15: Add 1 *Erika's *Sleight to hand.",
     "EXTENDED_DESCRIPTION": [
       "(Rally: ",
       ")"
@@ -4106,7 +4106,7 @@
   },
   "shadowverse:SecretSkill": {
     "NAME": "Killer Instincts",
-    "DESCRIPTION": "By the end of your turn, Stun the first enemy intends to attack."
+    "DESCRIPTION": "At the end of your turn, Stun the first enemy intends to attack."
   },
   "shadowverse:OtherworldGatekeeper": {
     "NAME": "死门连结者",
@@ -4114,16 +4114,16 @@
   },
   "shadowverse:V": {
     "NAME": "Val, Trusty Getaway Car",
-    "DESCRIPTION": "Retain. NL Maneuver 1. NL Deal !D! damage. NL Randomly activate 2 of the following effects: NL 'Draw 1 card' NL 'Deal 4 damage to ALL enemies' NL 'Deal !M! damage to a random enemy' NL 'Gain !B! Block '.",
-    "UPGRADE_DESCRIPTION":"Retain. NL Maneuver 1. NL Deal !D! damage. NL Randomly activate 2 of the following effects: NL 'Draw 2 cards' NL 'Deal 6 damage to ALL enemies' NL 'Deal !M! damage to a random enemy' NL 'Gain !B! Block '."
+    "DESCRIPTION": "Retain. NL Maneuver: 1. NL Deal !D! damage. NL Randomly activate 2 of the following effects: NL Draw 1 card NL Deal 4 damage to ALL enemies NL Deal !M! damage to a random enemy NL Gain !B! Block.",
+    "UPGRADE_DESCRIPTION":"Retain. NL Maneuver: 1. NL Deal !D! damage. NL Randomly activate 2 of the following effects: NL Draw 2 cards NL Deal 6 damage to ALL enemies NL Deal !M! damage to a random enemy NL Gain !B! Block."
   },
   "shadowverse:DesperadosShot": {
     "NAME": "Desperado's Shot",
-    "DESCRIPTION": "Deal !D! damage. NL If you have *Evolution *Point in hand, Exhaust 1 and deal !D! extra damage to a random enemy, add 1 *Val, *Trusty *Getaway *Car with 0 cost until played to hand next turn. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL If you have an *Evolution *Point in your hand, Exhaust 1 *Evolution *Point and deal !D! additional damage to a random enemy, then put 1 *Val, *Trusty *Getaway *Car into your hand at the start of your next turn. It costs 0 until played. NL Exhaust."
   },
   "shadowverse:Spector": {
     "NAME": "Bunny & Baron, Specter Duo",
-    "DESCRIPTION": " Accelerate 0: \bAdd 1 *Desperado's *Shot to hand. NL  NL --------------------- NL  NL Deal !D! damage. NL Last_Words: Add 1 *Val, *Trusty *Getaway *Car with 0 cost until played to hand next turn. NL Exhaust."
+    "DESCRIPTION": " Accelerate 0: Put 1 *Desperado's *Shot into your hand. NL NL --------------------- NL NL Deal !D! damage. NL Last_Words: Put 1 *Val, *Trusty *Getaway *Car into your hand at the start of your next turn. It costs 0 until played. NL Exhaust."
   },
   "shadowverse:HonoredFrontguardGeneral": {
     "NAME": "Honored Frontguard General",
@@ -4131,40 +4131,40 @@
   },
   "shadowverse:Aramis": {
     "NAME": "Aramis",
-    "DESCRIPTION": "Whenever you play Attacks , gain 1 Strength and Dexterity , +3 damage. NL Whenever you summon a *Follower , damage +3, the *Follower gain +1/+1. NL Deal !D! damage. NL Exhaust."
+    "DESCRIPTION": "Whenever you play an Attack card, gain 1 Strength and Dexterity and deal +3 damage. NL Whenever you summon a *Follower, deal +3 damage and that *Follower gains +1/+1. NL Deal !D! damage. NL Exhaust."
   },
   "shadowverse:Porthos": {
     "NAME": "Porthos",
-    "DESCRIPTION": "Gain !B! Block. NL By the end of your turn, deal !B! damage to a random enemy. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL At the end of your turn, deal !B! damage to a random enemy. NL Exhaust."
   },
   "shadowverse:Athos": {
     "NAME": "Athos",
-    "DESCRIPTION": "Gain !B! Block. NL If you haven't lose ALL your Block this turn, gain !B! extra Block next turn. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL If you don't lose all your Block this turn, gain !B! extra Block next turn. NL Exhaust."
   },
   "shadowverse:DArtagnan": {
     "NAME": "D'Artagnan",
-    "DESCRIPTION": "Deal !D! damage. NL If you Enhance the *Musketeers' *Vow , double the damage. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL If you Enhance the *Musketeers' *Vow, double the damage. NL Exhaust."
   },
   "shadowverse:MusketeersVow": {
     "NAME": "Musketeers' Vow",
-    "DESCRIPTION": "*Aramis , *Porthos , *Athos , *D'Artagnan  NL Choose: Add 2 of the cards above to hand. NL Enhance 4: \bAdd ALL to hand instead. If you have at least 2 *Evolution *Point in hand, upgrade these cards. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "*Aramis , *Porthos , *Athos , *D'Artagnan  NL Choose: Add 2 of the cards above to hand. NL Enhance 4: \bAdd ALL to hand instead. If you have at least 2 *Evolution *Point in hand, upgrade these cards. NL Exhaust !stslib:ex!."
+    "DESCRIPTION": "Choose: Put 2 of the following cards into your hand: NL *Aramis NL *Porthos NL *Athos NL *D'Artagnan NL NL Enhance 4: Put all four into your hand instead. If you have at least 2 *Evolution *Points in your hand, upgrade these cards. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose: Put 2 of the following cards into your hand: NL *Aramis NL *Porthos NL *Athos NL *D'Artagnan NL NL Enhance 4: Put all four into your hand instead. If you have at least 2 *Evolution *Points in your hand, upgrade these cards. NL Exhaust !stslib:ex!."
   },
   "shadowverse:Maiser_Story": {
     "NAME": "Maiser, Accelerated Hero",
-    "DESCRIPTION": "Deal !D! damage. NL Add 1 *Bullet *Bike to hand. NL Deal 5 damage to ALL enemies whenever you play Skill cards this turn. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Put a *Bullet *Bike into your hand. NL Deal 5 damage to ALL enemies whenever you play Skill cards this turn. NL Exhaust."
   },
   "shadowverse:Selena_Story": {
     "NAME": "Selena, Sugar-Sweet Ending",
-    "DESCRIPTION": "Gain !B! Block. NL If you have at least 1 other Attacks, heal 4 HP. NL If you have at least 2, draw 2 cards. NL If you have at least 3, gain 1 Strength and Dexterity. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL If you have at least 1 other Attack card, heal 4 HP. NL If you have at least 2, draw 2 cards. NL If you have at least 3, gain 1 Strength and Dexterity. NL Exhaust."
   },
   "shadowverse:Illganeau_Story": {
     "NAME": "Illganeau, Horror Awakened",
-    "DESCRIPTION": "Deal !D! damage. NL ALL enemies lose 1 Strength and Dexterity. NL Increase !M! damage by the number of cards in your exhaust pile. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL ALL enemies lose 1 Strength and Dexterity. NL Deal !M! additional damage determined by the number of cards in your exhaust pile. NL Exhaust."
   },
   "shadowverse:Sekka_Story": {
     "NAME": "Sekka, Nine-Tailed Inferno",
-    "DESCRIPTION": "Deal !D! damage. NL Gain [E] ,add 1 *Evolution *Point to hand. NL If you have played at least 18 non-Strike Attacks this combat, gain !M! Strength and Dexterity. NL Exhaust.",
+    "DESCRIPTION": "Deal !D! damage. NL Gain [E] and put 1 *Evolution *Point into your hand. NL If you've played at least 18 non-Strike Attack cards this combat, gain !M! Strength and Dexterity. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " NL (X: ",
       ".)"
@@ -4172,35 +4172,35 @@
   },
   "shadowverse:Dracu_Story": {
     "NAME": "Drache, Soaring Dragonlord",
-    "DESCRIPTION": "Deal !D! damage. NL Gain 1 Dexterity. NL If you have at least 5 Dexterity , deal damage 1 more time. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Gain 1 Dexterity. NL If you have at least 5 Dexterity, deal damage 1 more time. NL Exhaust."
   },
   "shadowverse:Kagero_Story": {
     "NAME": "Kagero, the Blade Within",
-    "DESCRIPTION": "Deal !D! damage. NL Apply 2 Vulnerable to a random enemy. NL Necromancy 10: Damage + !M!. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Apply 2 Vulnerable to a random enemy. NL Necromancy 10: Deal !M! additional. NL Exhaust."
   },
   "shadowverse:VerdictWord": {
     "NAME": "Verdict Rendered",
-    "DESCRIPTION": "*Maiser, *Accelerated *Hero NL *Selena, *Sugar-Sweet *Ending NL *Illganeau, *Horror *Awakened NL Choose: Add 1 of the different class's cards above in hand. NL If you have played at least 2 *Verdict *Rendered , add ALL to hand and upgrade them instead, double their damage this turn. NL Retain · Exhaust."
+    "DESCRIPTION": "Choose: Put 1 of the following cards into your hand that doesn't belong to your leader's class: NL *Maiser, *Accelerated *Hero NL *Selena, *Sugar-Sweet *Ending NL *Illganeau, *Horror *Awakened NL NL If you've played at least 2 *Verdict *Rendered this combat, instead put all of them into your hand, upgrade them and double their damage this turn. NL Retain. NL Exhaust."
   },
   "shadowverse:AbsoluteOrder": {
     "NAME": "Absolute Decree",
-    "DESCRIPTION": "*Sekka, *Nine-Tailed *Inferno NL *Drache, *Soaring *Dragonlord NL *Kagero, *the *Blade *Within NL Choose: Add 1 of the different class's cards above in hand. NL If you have played at least 2 *Absolute *Decree , add ALL to hand and upgrade them instead, double their damage this turn. NL Retain · Exhaust."
+    "DESCRIPTION": "Choose: Put 1 of the following cards into your hand that doesn't belong to your leader's class: *Sekka, *Nine-Tailed *Inferno NL *Drache, *Soaring *Dragonlord NL *Kagero, *the *Blade *Within NL NL If you've played at least 2 *Absolute *Decree this combat, instead put all of them into your hand, upgrade them and double their damage this turn. NL Retain. NL Exhaust."
   },
   "shadowverse:Skullfather": {
     "NAME": "Skullfather",
-    "DESCRIPTION": "Deal !D! damage. NL Gain 1 Strength and Dexterity. NL Exhaust 。"
+    "DESCRIPTION": "Deal !D! damage. NL Gain 1 Strength and Dexterity. NL Exhaust."
   },
   "shadowverse:EnNightmareTime": {
     "NAME": "Nightmare Begins",
-    "DESCRIPTION": "Lose 1 HP. NL Remove all debuff. NL  At the start of your turn, draw !M! additional card(s). NL Exhaust 。"
+    "DESCRIPTION": "Lose 1 HP. NL Remove all debuffs. NL At the start of your turn, draw !M! additional card(s). NL Exhaust."
   },
   "shadowverse:EnBloodyNail": {
     "NAME": "Bloody Claw",
-    "DESCRIPTION": "Lose 1 HP, Deal !D! damage. NL Apply 'Whenever you play an Attack, deal 1 damage to you' to your enemy. NL Exhaust 。"
+    "DESCRIPTION": "Lose 1 HP and deal !D! damage. NL Apply the following effect to an enemy: Whenever you play an Attack, you take 1 damage. NL Exhaust."
   },
   "shadowverse:EnDemonStorm": {
     "NAME": "Demonic Storm",
-    "DESCRIPTION": "Deal !D! damage to all."
+    "DESCRIPTION": "Deal !D! damage to yourself and all enemies."
   },
   "shadowverse:EnMono": {
     "NAME": "Mono, Immortal Garnet",
@@ -4208,11 +4208,11 @@
   },
   "shadowverse:EnDemonCommander": {
     "NAME": "Demon Commander Laura",
-    "DESCRIPTION": "Gain !B! Block. NL If Vengeance is active, next Attack are played twice."
+    "DESCRIPTION": "Gain !B! Block. NL If Vengeance is active, the next Attack card is played twice."
   },
   "shadowverse:EnTerrorNight": {
     "NAME": "A Horrible Night",
-    "DESCRIPTION": "Deal !D! damage to all. NL Limit At the start of next turn, instead of common draw, put a *Nightmare *Begins , *Bloody *Claw and *Cursed *Aura into your hand."
+    "DESCRIPTION": "Deal !D! damage to yourself and all enemies. NL At the start of your next turn, instead of drawing cards, put a *Nightmare *Begins, *Bloody *Claw and *Cursed *Aura into your hand."
   },
   "shadowverse:EnBloodPact": {
     "NAME": "Blood Pact",
@@ -4220,7 +4220,7 @@
   },
   "shadowverse:Seox": {
     "NAME": "Seox, Heavenly Howl",
-    "DESCRIPTION": "Deal !D! damage twice. NL Skybound_Art 3 \bRepeat this 1 time. NL Super_Skybound_Art 6 \bRepeat this 2 times."
+    "DESCRIPTION": "Deal !D! damage twice. NL Skybound_Art 3: Repeat this 1 time. NL Super_Skybound_Art 6: Repeat this 2 times."
   },
   "shadowverse:EnLonePromise": {
     "NAME": "Lone Promise",
@@ -4228,8 +4228,8 @@
   },
   "shadowverse:Taketsumi": {
     "NAME": "Taketsumi, Aconite Paladin",
-    "DESCRIPTION": "Festive. NL Gain !B! Block. NL add 1 *Hero *Of *The *Hunt into your hand. NL Rally 10 \badd 1 *Evolution *Point into your hand. NL ",
-    "UPGRADE_DESCRIPTION": "Festive. NL Gain !B! Block. NL add 1 *Hero *Of *The *Hunt+ into your hand. NL Rally 10 \badd 1 *Evolution *Point into your hand. NL ",
+    "DESCRIPTION": "Festive. NL Gain !B! Block. NL Put 1 *Hero *Of *The *Hunt into your hand. NL Rally 10: Put 1 *Evolution *Point into your hand.",
+    "UPGRADE_DESCRIPTION": "Festive. NL Gain !B! Block. NL Put 1 *Hero *Of *The *Hunt+ into your hand. NL Rally 10: Put 1 *Evolution *Point into your hand.",
     "EXTENDED_DESCRIPTION": [
       "(Rally:",
       ")"
@@ -4237,7 +4237,7 @@
   },
   "shadowverse:HeroOfTheHunt": {
     "NAME": "Hero Of The Hunt",
-    "DESCRIPTION": "Festive. NL Deal !D! damage。 NL Rally 10 \bReduce the damage received this turn by 1. NL Exhaust. NL ",
+    "DESCRIPTION": "Festive. NL Deal !D! damage. NL Rally 10: Reduce any damage by 1 until your next turn. NL Exhaust. NL ",
     "EXTENDED_DESCRIPTION": [
       "(Rally:",
       ")"
@@ -4275,16 +4275,16 @@
   },
   "shadowverse:Yukishima": {
     "NAME": "Yukishima, Master Biographer",
-    "DESCRIPTION": "Festive. NL Deal 1 damage to a random enemy for each card you drawn.Then, increase a Attack's damage and block by 1 randomly in your hand. NL Enhance 4 \bDeal damage equals to the amount of cards you drawn in this combat to all enemies.",
-    "UPGRADE_DESCRIPTION":"Festive. NL Add 1 copy of this into your discard pile. NL Deal 1 damage to a random enemy for each card you drawn.Then, increase a Attack's damage and block by 1 randomly in your hand. NL Enhance 4 \bDeal damage equals to the amount of cards you drawn in this combat to all enemies.",
+    "DESCRIPTION": "Festive. NL Deal 1 damage to a random enemy for each card you draw. Then, increase the damage and Block of a random Attack card in your hand by 1. NL Enhance 4: Deal damage equal to the amount of cards you've this combat to all enemies.",
+    "UPGRADE_DESCRIPTION": "Festive. NL Add 1 copy of this into your discard pile. NL Deal 1 damage to a random enemy for each card you draw. Then, increase the damage and Block of a random Attack card in your hand by 1. NL Enhance 4: Deal damage equal to the amount of cards you've this combat to all enemies.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Cards you have drawn are ",
+      " NL (Cards drawn: ",
       ")"
     ]
   },
   "shadowverse:Hozumi": {
     "NAME": "Hozumi, Enchanting Hostess",
-    "DESCRIPTION": "Festive. NL Gain !B! Block. NL If at least 4 other cards were played this turn, Exhaust all of your hands. For each Attack exhausted, add a random Attack to your hand which costs 0 this turn."
+    "DESCRIPTION": "Festive. NL Gain !B! Block. NL If at least 4 other cards were played this turn, Exhaust all cards in your hand. For each Attack card Exhausted, add a random Attack card to your hand and change its cost to 0 this turn."
   },
   "shadowverse:MagnaSaber": {
     "NAME": "Magna Saber",
@@ -4300,7 +4300,7 @@
   },
   "shadowverse:ArcticChimera": {
     "NAME": "Arctic Chimera",
-    "DESCRIPTION": "Accelerate 0 \b Earth_Rite \bDeal !D! damage, draw 1 card. NL  NL --------------------- NL  NL Gain !B! Block 2 times. NL Earth_Rite 3 \bChange to 3 times, then deal damage equals to your block. NL If your Earth_Essence are less than 3, gain 2 and apply 2 Vulnerable."
+    "DESCRIPTION": "Accelerate 0: Earth_Rite: Deal !D! damage and draw 1 card. NL NL --------------------- NL NL Gain !B! Block 2 times. NL Earth_Rite 3: 3 times instead. Then, deal damage equal to your Block. NL If your Earth_Essence are less than 3, gain 2 and apply 2 Vulnerable."
   },
   "shadowverse:EternalContract": {
     "NAME": "Eternal Contract",
@@ -4308,9 +4308,9 @@
   },
   "shadowverse:Lifetime": {
     "NAME": "Story of a Lifetime",
-    "DESCRIPTION": "Festive. NL Discard 1 card, draw !M! cards. NL If  the amount of cards you drawn in this combat is more than 15, draw 2 additionally.",
+    "DESCRIPTION": "Festive. NL Discard 1 card and draw !M! cards. NL If you've drawn 15 or more cards this combat, draw 2 more.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Cards you have drawn are ",
+      " NL (Cards drawn: ",
       ")"
     ]
   },
@@ -4338,10 +4338,10 @@
   },
   "shadowverse:AcidGolem": {
     "NAME": "Acid Golem",
-    "DESCRIPTION": "Earth_Rite Deal !D! damage. NL Earth_Rite 2 \bDo this 1 time again. NL Earth_Rite 3 \bDo this 1 time again."
+    "DESCRIPTION": "Earth_Rite: Deal !D! damage. NL Earth_Rite 2: Repeat 1 time. NL Earth_Rite 3: Repeat 2 times."
   },
   "shadowverse:Comfort": {
     "NAME": "Illusions of Comfort",
-    "DESCRIPTION": "Exhaust 1 card, deal !D! damage. NL When Fatal , increase yor max HP by !M!. NL Exhaust."
+    "DESCRIPTION": "Exhaust 1 card in your hand and deal !D! damage. NL If Fatal, increase yor max HP by !M!. NL Exhaust."
   }
 }
