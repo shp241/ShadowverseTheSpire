@@ -406,7 +406,7 @@
   },
   "shadowverse:OmenOfOne": {
     "NAME": "Mjerrabaine, Omen of One",
-    "DESCRIPTION": "If there are no duplicate cards in your deck, gain 2 Strength and 2 Dexterity. At the end of your turn, deal 12 damage to a random enemy."
+    "DESCRIPTION": "If there are no duplicate cards in your draw pile, gain 2 Strength and 2 Dexterity. At the end of your turn, deal 12 damage to a random enemy."
   },
   "shadowverse:OmenOfOne2": {
     "NAME": "Mjerrabaine, Great One",
@@ -2890,7 +2890,7 @@
   "shadowverse:ShieldPhalanx": {
     "NAME": "Shield Phalanx",
     "DESCRIPTION": "Gain !B! Block. NL Summon 1 Shield_Guardian NL and 1 Knight. NL ",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Summon 1 Shield_Guardian NL and 1 Knight. NL Rally 15: Summon a Frontguard_General instead of a Shield_Guardian. NL ",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Summon 1 Shield_Guardian NL and 1 Knight. NL Rally 15: Summon a Frontguard_General instead of a Shield_Guardian (Limit). NL ",
     "EXTENDED_DESCRIPTION": [
       "(Rally: ",
       ")"
@@ -3050,19 +3050,19 @@
   },
   "shadowverse:Seofon": {
     "NAME": "Seofon, Star Sword Sovereign",
-    "DESCRIPTION": "Deal !D! damage and draw 1 card. NL Skybound_Art 3: Upgrade ALL cards in your hand. NL Super_Skybound_Art 6: Gain 1 Intangible.",
+    "DESCRIPTION": "Deal !D! damage and draw 1 card. NL Skybound_Art 3: Upgrade ALL cards in your hand. NL Super_Skybound_Art 6: Gain 1 Intangible (Limit).",
     "EXTENDED_DESCRIPTION": [
       "Deal !D! damage and draw 1 card. NL Skybound_Art ",
-      ": Upgrade ALL cards in your hand. NL Limit Super_Skybound_Art ",
+      ": Upgrade ALL cards in your hand. NL Super_Skybound_Art (Limit) ",
       ": Gain 1 Intangible."
     ]
   },
   "shadowverse:Eahta": {
     "NAME": "Eahta, God of the Blade",
-    "DESCRIPTION": "Deal !D! damage twice. NL Skybound_Art 3: All Swordcraft Attack cards in your hand cost 2 less this turn. NL Super_Skybound_Art 9: All Swordcraft Attack cards cost 2 less this combat.",
+    "DESCRIPTION": "Deal !D! damage twice. NL Skybound_Art 3: All Swordcraft Attack cards in your hand cost 2 less this turn. NL Super_Skybound_Art 9: All Swordcraft Attack cards cost 2 less this combat (Limit).",
     "EXTENDED_DESCRIPTION": [
       "Deal !D! damage twice. NL Skybound_Art ",
-      ":All Swordcraft Attack cards in hand cost 2 less this turn. NL Super_Skybound_Art ",
+      ":All Swordcraft Attack cards in hand cost 2 less this turn. NL Super_Skybound_Art (Limit) ",
       ":All Swordcraft Attack cards cost 2 less this combat."
     ]
   },
@@ -3085,7 +3085,7 @@
   },
   "shadowverse:FrontlineInstructor": {
     "NAME": "Frontline Instructor",
-    "DESCRIPTION": "Gain !B! Block. The rightmost *Follower gains +1/+0. NL Rally 10: All *Followers gain +1/+1 instead.",
+    "DESCRIPTION": "Gain !B! Block. The rightmost *Follower gains +1/+0. NL Rally 10: All *Followers gain +1/+1 instead (Limit).",
     "EXTENDED_DESCRIPTION": [
       "(Rally:",
       ")"
@@ -3368,8 +3368,8 @@
   },
   "shadowverse:MiracleHarvest": {
     "NAME": "Miracle Harvest",
-    "DESCRIPTION": "Put 1 *Fairy into your hand. NL If the amount of *Fairies played in this combat is more than 5, Upgrade this *Fairy. NL If more than 10, draw !M! cards. Gain [E].",
-    "UPGRADE_DESCRIPTION": "Put 1 *Fairy into your hand. NL If the amount of *Fairies played in this combat is more than 5, Upgrade this *Fairy. NL If more than 10, draw !M! cards. Gain [E] [E]."
+    "DESCRIPTION": "Put 1 *Fairy into your hand. NL If the amount of *Fairies played in this combat is more than 5, Upgrade this *Fairy. NL If more than 10, draw !M! cards. Gain [E] (Limit).",
+    "UPGRADE_DESCRIPTION": "Put 1 *Fairy into your hand. NL If the amount of *Fairies played in this combat is more than 5, Upgrade this *Fairy. NL If more than 10, draw !M! cards. Gain [E] [E] (Limit)."
   },
   "shadowverse:HolyFalcon": {
     "NAME": "神圣猎鹰",
@@ -4097,8 +4097,8 @@
   },
   "shadowverse:Erika": {
     "NAME": "Erika, Loyal Swordsavant",
-    "DESCRIPTION": " !M! /1. NL Passive: Deal damage equal to 4 times attack to a random enemy and lose 1 Health at the end of your turn. Whenever you play Attack cards or summon *Followers or *Amulets, gain +1/+0 this turn. NL Rally 7: Put 1 *Killer *Instincts into your hand.",
-    "UPGRADE_DESCRIPTION": " !M! /1. NL Passive: Deal damage equal to 4 times attack to a random enemy and lose 1 Health at the end of your turn. Whenever you play Attack cards or summon *Followers or *Amulets, gain +1/+0 this turn. NL Rally 7: Put 1 *Killer *Instincts into your hand. NL Rally 15: Add 1 *Erika's *Sleight to hand.",
+    "DESCRIPTION": " !M! /1. NL Passive: Deal damage equal to 4 times attack to a random enemy and lose 1 Health at the end of your turn. Whenever you play Attack cards or summon *Followers or *Amulets, gain +1/+0 this turn. NL Rally 7: Put 1 *Killer *Instincts into your hand (Limit).",
+    "UPGRADE_DESCRIPTION": " !M! /1. NL Passive: Deal damage equal to 4 times attack to a random enemy and lose 1 Health at the end of your turn. Whenever you play Attack cards or summon *Followers or *Amulets, gain +1/+0 this turn. NL Rally 7: Put 1 *Killer *Instincts into your hand (Limit). NL Rally 15: Add 1 *Erika's *Sleight to hand.",
     "EXTENDED_DESCRIPTION": [
       "(Rally: ",
       ")"
@@ -4212,7 +4212,7 @@
   },
   "shadowverse:EnTerrorNight": {
     "NAME": "A Horrible Night",
-    "DESCRIPTION": "Deal !D! damage to yourself and all enemies. NL At the start of your next turn, instead of drawing cards, put a *Nightmare *Begins, *Bloody *Claw and *Cursed *Aura into your hand."
+    "DESCRIPTION": "Deal !D! damage to yourself and all enemies. NL At the start of your next turn, instead of drawing cards, put a *Nightmare *Begins, *Bloody *Claw and *Cursed *Aura into your hand (Limit)."
   },
   "shadowverse:EnBloodPact": {
     "NAME": "Blood Pact",

@@ -361,11 +361,11 @@
       "DESCRIPTION": "Undo the upgrade of this card for this combat after being played. The damage and #yBlock won't decrease. Can be upgraded by specific effects again. NL Won't affect the next combat."
     },
     {
-      "PROPER_NAME": "Divine",
+      "PROPER_NAME": "Banish",
       "NAMES": [
-        "divine"
+        "banish"
       ],
-      "DESCRIPTION": "This #yAmulet won't go to discard pile after its #yCountdown reaches 0 and will be cast out during this combat."
+      "DESCRIPTION": "This #yAmulet won't go to discard pile after its #yCountdown reaches 0 and will instead disappear during this combat."
     },
     {
       "PROPER_NAME": "Heavenly Aegis",
