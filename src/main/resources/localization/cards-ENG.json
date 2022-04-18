@@ -1718,11 +1718,11 @@
   },
   "shadowverse:MoonriseWerewolf": {
     "NAME": "Moonrise Werewolf",
-    "DESCRIPTION": "Gain !B! Block. NL 渴望 则获得2层多层护甲. NL 爆能强化 2 \b再Gain !B! Block."
+    "DESCRIPTION": "Gain !B! Block. NL If Avarice is active, gain 2 Plated Armor. NL Enhance 2: Gain !B! additional Block."
   },
   "shadowverse:BloodtrothEpitaph": {
     "NAME": "Bloodtroth Epitaph",
-    "DESCRIPTION": "Gain !B! Block. NL If Avarice is active, gain 2 Plated Armor. NL Enhance 2: Gain !B! additional Block .",
+    "DESCRIPTION": "NL Vengeance, Wrath and Avarice are active for you. NL Countdown 3: Lose this effect.",
     "UPGRADE_DESCRIPTION": "Innate. NL Vengeance, Wrath and Avarice are active for you. NL Countdown 3: Lose this effect."
   },
   "shadowverse:Revelation": {
