@@ -43,7 +43,6 @@ public class ICPower2 extends TwoAmountPower {
         if (!isPlayer){
             flash();
             addToBot((AbstractGameAction)new HealAction(this.owner,this.owner,this.amount2));
-            addToBot((AbstractGameAction)new DamageAction(AbstractDungeon.player,new DamageInfo(this.owner,this.amount2, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.FIRE));
             this.amount2 = 0;
             updateDescription();
         }

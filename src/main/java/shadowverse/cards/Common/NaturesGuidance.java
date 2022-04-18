@@ -33,7 +33,7 @@ import shadowverse.characters.Elf;
    public void upgrade() {
      if (!this.upgraded) {
        upgradeName();
-       upgradeMagicNumber(1);
+       upgradeBaseCost(0);
      } 
    }
 
