@@ -843,7 +843,7 @@
     "NAME": "Elf Guard",
     "DESCRIPTION": "Gain !B!  Block. NL If at least 2 other cards were played this turn, gain !M! Plated Armor."
   },
-  "shadowverse:Wisp": {
+  "shadowverse:Whisp": {
     "NAME": "Fairy Wisp",
     "DESCRIPTION": "Retain. NL If no more than 2 other cards were played this turn, deal !D! damage and gain !B! Block. NL Exhaust."
   },
