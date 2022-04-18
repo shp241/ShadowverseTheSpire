@@ -780,7 +780,7 @@
   },
   "shadowverse:PixieMischief": {
     "NAME": "Pixie Mischief",
-    "DESCRIPTION": "Put 1 Attack or Power card from your discard pile into your hand. NL Exhaust !M! card at most.",
+    "DESCRIPTION": "Put 1 Attack or Power card from your discard pile into your hand. NL You may Exhaust up to !M! card(s).",
     "EXTENDED_DESCRIPTION": [
       "There aren't any Attack or Power cards in my discard pile!"
     ]
@@ -1688,375 +1688,375 @@
     "DESCRIPTION": "Deal !D! damage. NL Exhaust."
   },
   "shadowverse:SummoningBloodkin": {
-    "NAME": "Summoning Bloodkin",
+    "NAME": "Summon Bloodkin",
     "DESCRIPTION": "Add !M! *Forest *Bat into your hand.",
     "UPGRADE_DESCRIPTION": "Add !M! *Forest *Bat+ into your hand."
   },
   "shadowverse:BloodGarden": {
-    "NAME": "鲜血花园",
-    "DESCRIPTION": "回合结束时失去1点生命, 对全体敌人造成 !M! 点伤害."
+    "NAME": "Bloodfed Flowerbed",
+    "DESCRIPTION": "At the end of your turn, lose 1 HP and deal !M! damage to all enemies."
   },
   "shadowverse:BloodWolf": {
-    "NAME": "嗜血魔狼",
-    "DESCRIPTION": "失去2点生命. NL 造成 !D! 点伤害."
+    "NAME": "Blood Wolf",
+    "DESCRIPTION": "Lose 2 HP. NL Deal !D! Damage."
   },
   "shadowverse:SpiderWebImp": {
-    "NAME": "蛛网恶魔",
-    "DESCRIPTION": "Gain !B! Block. NL 未 复仇 则失去2点生命."
+    "NAME": "Spiderweb Imp",
+    "DESCRIPTION": "Gain !B! Block. NL Lose 2 HP if Vengeance is not active."
   },
   "shadowverse:DemonicAssault": {
-    "NAME": "恶魔突击",
-    "DESCRIPTION": "对随机敌人造成 !D! 点伤害. NL 复仇 则增加1张本回合耗能为0且 Exhaust 的 *暗魔女将 到手中."
+    "NAME": "Demonic Assault",
+    "DESCRIPTION": "Deal !D! damage to a random enemy. NL If Vengeance is active, put a *Dark *General in your hand and change it’s cost to 0."
   },
   "shadowverse:AntelopeWarrior": {
-    "NAME": "角羚战士",
-    "DESCRIPTION": "Gain !B! Block. NL 未 狂乱 则失去1点生命. NL 狂乱 则回复3点生命."
+    "NAME": "Antelope Pelt Warrior",
+    "DESCRIPTION": "Gain !B! Block. NL If Wrath is not active, lose 1 HP. NL If Wrath is active, heal 3 HP."
   },
   "shadowverse:HellSpearWarrior": {
-    "NAME": "凶枪战士",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 渴望 则伤害翻倍."
+    "NAME": "Hellspear Warrior",
+    "DESCRIPTION": "Deal !D! Damage. NL Double the damage if Avarice is active."
   },
   "shadowverse:MoonriseWerewolf": {
-    "NAME": "月下狼人",
+    "NAME": "Moonrise Werewolf",
     "DESCRIPTION": "Gain !B! Block. NL 渴望 则获得2层多层护甲. NL 爆能强化 2 \b再Gain !B! Block."
   },
   "shadowverse:BloodtrothEpitaph": {
-    "NAME": "契约的碑文",
-    "DESCRIPTION": "你同时视为 复仇 、 狂乱 、 渴望. NL 倒计时 3 \b失去这个效果.",
-    "UPGRADE_DESCRIPTION": "Innate. NL 你同时视为 复仇 、 狂乱 、 渴望. NL 倒计时 3 \b失去这个效果."
+    "NAME": "Bloodtroth Epitaph",
+    "DESCRIPTION": "Gain !B! Block. NL If Avarice is active, gain 2 Plated Armor. NL Enhance 2: Gain !B! additional Block .",
+    "UPGRADE_DESCRIPTION": "Innate. NL Vengeance, Wrath and Avarice are active for you. NL Countdown 3: Lose this effect."
   },
   "shadowverse:Revelation": {
-    "NAME": "启示录",
-    "DESCRIPTION": "复仇 耗能变为2. NL 对全体敌人造成 !D! 点伤害. NL 增加1张 *伤口 到弃牌堆中."
+    "NAME": "Revelation",
+    "DESCRIPTION": "If Vengeance is active, this card costs 2. NL Deal !D! damage to all enemies. NL Put 1 *Wound in your discard pile."
   },
   "shadowverse:LadicaEmbrace": {
     "NAME": "Ladica's Embrace",
     "DESCRIPTION": "Deal !M! damage to a random enemy. NL Exhaust."
   },
   "shadowverse:UriasRevelry": {
-    "NAME": "尤里亚斯的斗争",
-    "DESCRIPTION": "对随机敌人造成 !M! 点伤害."
+    "NAME": "Urias's Revelry",
+    "DESCRIPTION": "Deal !M! damage to a random enemy."
   },
   "shadowverse:MonoResolve": {
-    "NAME": "莫诺的觉悟",
-    "DESCRIPTION": "升级所有手牌, 增加1张 *奇迹 到手中."
+    "NAME": "Mono's Resolve",
+    "DESCRIPTION": "Upgrade all cards in your hand and add 1 *Miracle to your hand."
   },
   "shadowverse:GarnetWaltz": {
-    "NAME": "血色圆舞曲",
-    "DESCRIPTION": "抉择 NL 对随机敌人造成 !M! 点伤害、升级所有手牌并增加1张 *奇迹 到手中. NL 复仇 改为发动2种效果. NL Exhaust."
+    "NAME": "Garnet Waltz",
+    "DESCRIPTION": "Choose: NL deal !M! damage to a random enemy or upgrade all cards in your hand and add 1 *Miracle to your hand. NL If Vengeance is active, activate both effects in sequence. NL Exhaust."
   },
   "shadowverse:Shemyaza": {
-    "NAME": "桑杨沙",
-    "DESCRIPTION": "回合开始时额外抽3张牌. NL 回合结束时 Exhaust 所有手牌.",
-    "UPGRADE_DESCRIPTION": "Innate. NL 回合开始时额外抽3张牌. NL 回合结束时 Exhaust 所有手牌."
+    "NAME": "Shemyaza",
+    "DESCRIPTION": "Draw 3 more cards at the start of your turn. NL Exhaust all cards in your hand at the end of your turn.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Draw 3 more cards at the start of your turn. NL Exhaust all cards in your hand at the end of your turn."
   },
   "shadowverse:DarkfeastBat": {
-    "NAME": "噬暗巨蝠",
-    "DESCRIPTION": "造成 !D! 点伤害. NL (本场战斗每因自己受到一次伤害本伤害+6.)",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害. NL (本场战斗每因自己受到一次伤害本伤害+8.)"
+    "NAME": "Darkfeast Bat",
+    "DESCRIPTION": "Deal !D! Damage. NL Deal 6 additional damage for each card played this combat that would cause you to lose HP or take damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Deal 8 additional damage for each card played this combat that would cause you to lose HP or take damage."
   },
   "shadowverse:Belphegor": {
-    "NAME": "贝尔芬格",
-    "DESCRIPTION": "Gain !B! Block. NL 抽 !M! 张牌. NL 未 复仇 则失去生命使其变为最大生命值的一半."
+    "NAME": "Belphegor",
+    "DESCRIPTION": "Gain !B! Block. NL Draw !M! cards. NL If Vengeance is not active, lose HP until you have half your max HP."
   },
   "shadowverse:SexyVampire": {
-    "NAME": "绚烂的妖艳暗夜眷属",
-    "DESCRIPTION": "当这张牌被抽到时, 未 复仇 则 生命值变为最大生命值的一半, 并Exhaust这张牌.之后在本场战斗中你的生命值不会高于最大生命值的一半, 战斗结束时回复因此失去的生命值. NL 造成 !D! 点伤害, 回复 !M! 点生命."
+    "NAME": "Seductress Vampire",
+    "DESCRIPTION": "Whenever you draw this card and Vengeance is not active, your HP becomes equal to half your max HP and this card Exhausts. You cannot have more than half of your max HP this combat. At the end of combat, heal HP equal to the amount lost by this card's effect. NL Deal !D! damage and heal !M! HP"
   },
   "shadowverse:SadisticDemon": {
-    "NAME": "讥讽的恶魔",
-    "DESCRIPTION": "回合结束时失去1点生命. NL 回合开始时回复2点生命. NL 每当因自己而受到伤害时对随机敌人造成 !M! 点伤害."
+    "NAME": "Contemptuous Demon",
+    "DESCRIPTION": "Lose 1 HP at the end of your turn. NL Gain 2 HP at the start of your turn. NL Whenever you lose HP from a card effect, deal !M! damage to a random enemy."
   },
   "shadowverse:ApostleOfLust": {
-    "NAME": "奸淫的使徒",
-    "DESCRIPTION": "Gain !B! Block. NL 失去2点生命, 抽2张牌 NL 全体敌人失去1点生命, 获得1点 临时力量."
+    "NAME": "Apostle of Lust",
+    "DESCRIPTION": "Gain !B! Block. NL Lose 2 HP and draw 2 cards. NL All enemies lose 1 HP and gain 1 Temporary Strength."
   },
   "shadowverse:DiabolicDrain": {
     "NAME": "Diabolic Drain",
-    "DESCRIPTION": "Deal !D! damage, heal !M! HP. NL If Vengeance is active, this card cost 0."
+    "DESCRIPTION": "Deal !D! damage and heal !M! HP. NL If Vengeance is active, this card cost 0."
   },
   "shadowverse:Baal": {
-    "NAME": "芭力",
-    "DESCRIPTION": "融合:耗能为1以下的吸血鬼攻击牌. NL 如果与这张卡融合的张数为2以上, 则抽牌直到满6张. NL 如果为5以上, 则对全体敌人造成 !D! 点伤害.",
+    "NAME": "Baal",
+    "DESCRIPTION": "Fusion: Bloodcraft Attack cards that cost 1 or less. NL If 2 or more cards were fused to this card, draw until you have 6 cards. NL If 5 or more cards were fused, deal !D! damage to all enemies",
     "EXTENDED_DESCRIPTION": [
-      " NL (已融合",
-      " 张牌.)"
+      " NL (Fused",
+      " cards.)"
     ]
   },
   "shadowverse:Ravening": {
-    "NAME": "背德的狂兽",
-    "DESCRIPTION": "Natura 。 NL 渴望 时每抽1张牌给予随机敌人3点伤害。 NL 无法叠加。",
-    "UPGRADE_DESCRIPTION": "Innate · Natura 。 NL 渴望 时每抽1张牌给予随机敌人4点伤害。 NL 无法叠加。"
+    "NAME": "Ravening Corruption",
+    "DESCRIPTION": "Natura. NL Whenever you draw a card, if Avarice is active, deal 3 damage to a random enemy (this effect does not stack).",
+    "UPGRADE_DESCRIPTION": "Innate. NL Natura. NL Whenever you draw a card, if Avarice is active, deal 3 damage to a random enemy (this effect does not stack)."
   },
   "shadowverse:LunaticMana": {
-    "NAME": "狂乱玛纳",
+    "NAME": "Lunatic Aether",
     "DESCRIPTION": "Natura. NL Put a *Naterran *Great *Tree into your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Natura. NL Put a *Naterran *Great *Tree into your hand."
   },
   "shadowverse:BearBerserk": {
-    "NAME": "豪熊狂战士",
-    "DESCRIPTION": "失去1点生命, 全体敌人失去1点生命, 自己回复2点生命. NL 渴望 重复上述效果1次. NL Gain !B! Block."
+    "NAME": "Bear Pelt Warrior",
+    "DESCRIPTION": "Lose 1 HP, then all enemies lose 1 HP and you heal 2 HP. NL Repeat if Avarice is active. NL Gain !B! block."
   },
   "shadowverse:FloodBehemoth": {
-    "NAME": "水源魔兽",
-    "DESCRIPTION": "Gain !B! Block. NL 这个回合每受到1次攻击, 对全体敌人造成 !M! 点伤害."
+    "NAME": "Flood Behemoth",
+    "DESCRIPTION": "Gain !B! block. NL Whenever you are attacked this turn, deal !M! damage to all enemies."
   },
   "shadowverse:BeastEmpress": {
-    "NAME": "魔兽女帝·涅蕾雅",
-    "DESCRIPTION": "Gain !B! Block. NL 增加1张本回合耗能为0的 *水源魔兽 到手中. NL 渴望 全体敌人失去2点 力量 和 敏捷. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL 增加1张本回合耗能为0的 *水源魔兽+ 到手中. NL 渴望 全体敌人失去2点 力量 和 敏捷. NL Exhaust."
+    "NAME": "Nerea, Beast Empress",
+    "DESCRIPTION": "Gain !B! Block. NL Add 1 *Flood *Behemoth to your hand. It costs 0 this turn. NL If Avarice is active, all enemies lose 2 Strength and Dexterity. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add 1 *Flood *Behemoth+ to your hand. It costs 0 this turn. NL If Avarice is active, all enemies lose 2 Strength and Dexterity. NL Exhaust."
   },
   "shadowverse:CorruptedBat": {
-    "NAME": "躁狂蝙蝠",
-    "DESCRIPTION": "Natura. NL Gain !B! Block. NL 增加1张 *那塔拉的大树 到手中. NL 复仇 获得2层 多层护甲 和 1点 临时力量."
+    "NAME": "Corrupted Bat",
+    "DESCRIPTION": "Natura. NL Gain !B! Block. NL Add 1 *Naterran *Great *Tree to your hand. NL If Vengeance is active, gain 2 Plated Armor and 1 Temporary Strength"
   },
   "shadowverse:WingsOfLust": {
-    "NAME": "奸淫的羽翼",
-    "DESCRIPTION": "获得 !M! 点 力量 和 敏捷. NL 回合结束时失去1点生命. NL 爆能强化 2 获得 虹吸. NL Exhaust. NL Ethereal."
+    "NAME": "Wings of Lust",
+    "DESCRIPTION": "Gain !M! Strength and Dexterity. NL Lose 1 HP at the end of this turn. NL Enhance 2 Gain Drain this turn. NL Exhaust. NL Ethereal."
   },
   "shadowverse:Emeralda": {
-    "NAME": "恶魔巡查官·亚梅拉达",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 给予 !M! 层 易伤 和 虚弱. NL 复仇 则伤害翻倍."
+    "NAME": "Emeralda, Demonic Officer",
+    "DESCRIPTION": "Apply !M! Vulnerable and Weak. Deal !D! Damage. NL If Vengeance is active, double the damage"
   },
   "shadowverse:Azazel": {
-    "NAME": "堕落的漆黑·阿萨谢尔",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 复仇 则造成3倍伤害. NL 自己的生命值变为最大生命值的一半（当前生命值小于最大生命值的一半则不会变动）. NL 本场战斗中生命值不能高于最大生命值的一半. NL 本场战斗中自己受到的伤害不会超过最大生命值一半的30%."
+    "NAME": "Azazel, the Depraved",
+    "DESCRIPTION": "Deal !D! Damage. NL If Vengeance is active, triple the damage. NL If your HP is above 50% of your max HP, your HP becomes equal to half your max HP. NL You cannot have more than half of your Max HP this combat. NL You cannot take damage more than 30% of your max HP at once for the rest of this combat."
   },
   "shadowverse:Yurius": {
-    "NAME": "恶逆公爵·尤里乌斯",
-    "DESCRIPTION": "受到攻击时, 回复 !M! 点生命, 攻击者受到 !M! 点伤害. NL 复仇 受到攻击时如果攻击伤害低于当前 格挡 , 则下回合获得6点 格挡. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "受到攻击时, 回复 !M! 点生命, 攻击者受到 !M! 点伤害. NL 复仇 受到攻击时如果伤害低于当前 格挡 , 则下回合获得6点 格挡."
+    "NAME": "Yurius, Traitorous Duke",
+    "DESCRIPTION": "Whenever you are attacked, heal !M! HP and deal !M! damage back. NL If Vengeance is active and the attack damage is less than your Block, gain 6 Block next turn. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Whenever you are attacked, heal !M! HP and deal !M! damage back. NL If Vengeance is active and the attack damage is less than your Block, gain 6 Block next turn."
   },
   "shadowverse:UnleashTheNightmare": {
-    "NAME": "噩梦开始",
-    "DESCRIPTION": "随机将抽牌堆的 !M! 张攻击卡加入手中. NL 增加加入的 Machina 牌等量的 *生产器械 到手中. NL 增加加入的非 Machina 牌等量的 *林地蝙蝠 到手中."
+    "NAME": "Unleash the Nightmare",
+    "DESCRIPTION": "Randomly add !M! attack card(s) from the draw pile to your hand. NL Add an *Assembly *Droid to your hand for each Machina card added to your hand. NL Add a *Forest *Bat to your hand for each non-Machina card added to your hand."
   },
   "shadowverse:MechashotDevil": {
-    "NAME": "机巧魔护士",
-    "DESCRIPTION": "Machina. NL Gain !B! Block. NL 如果手中有 Machina 牌则每回合开始时增加1张 *生产器械 到手中. NL 如果本场战斗已打出的 Machina 非技能牌数量为10以上, 将1张 *进化点 和 *奇迹 加入手中."
+    "NAME": "Mechashot Devil",
+    "DESCRIPTION": "Machina. NL Gain !B! block. NL If you have a Machina card in your hand, add 1 *Assembly *Droid to your hand at the start of your turn. NL If you have played 10 or more Machina non-Skill cards this combat, add 1 *Evolution Point and *Miracle to your hand"
   },
   "shadowverse:ArmoredBat": {
-    "NAME": "钢翼夜蝠",
-    "DESCRIPTION": "Machina. NL Gain !B! Block. NL Last_Words 打出或被Exhaust时增加2张 *生产器械 到手中. NL 爆能强化 2 \b额外获得 !M! 点 格挡 和 !M! 层 多层护甲."
+    "NAME": "Armored Bat",
+    "DESCRIPTION": "Machina. NL Gain !B! Block. NL Last Words: When this card is played or Exhausted, add 2 *Assembly *Droids to your hand. NL Enhance 2: Gain an additional !M! Block and !M! Plated Armor."
   },
   "shadowverse:MechaforgeDevil": {
-    "NAME": "机臂恶魔",
-    "DESCRIPTION": "Machina. NL Gain !B! Block. NL 增加1张 *生产器械 到手中. NL 增加1张 *修复模式 到手中."
+    "NAME": "Mechaforge Devil",
+    "DESCRIPTION": "Machina. NL Gain !B! Block. NL Put 1 *Assembly *Droid and 1 *Repair *Mode into your hand."
   },
   "shadowverse:Mono": {
-    "NAME": "绯红抗战者·莫诺",
-    "DESCRIPTION": "Machina. NL Gain !B! Block. NL 如果本场战斗已打出的 Machina 非技能牌数量为7以上, 增加1张 *原初之一 到手中.",
-    "UPGRADE_DESCRIPTION": "Machina. NL Gain !B! Block. NL 如果本场战斗已打出的 Machina 非技能牌数量为7以上, 增加1张 *原初之一+ 到手中.",
+    "NAME": "Mono, Garnet Rebel",
+    "DESCRIPTION": "Machina. NL Gain !B! Block. NL If you've played 7 or more Machina non-Skill cards this combat, put 1 *Alpha *Drive into your hand.",
+    "UPGRADE_DESCRIPTION": "Machina. NL Gain !B! Block. NL If you've played 7 or more Machina non-Skill cards this combat, put 1 *Alpha *Drive+ into your hand.",
     "EXTENDED_DESCRIPTION": [
-      " NL (已打出",
-      " 张 Machina 非技能牌.)"
+      " NL (",
+      " non-Skill Machina cards played.)"
     ]
   },
   "shadowverse:Mono2": {
-    "NAME": "悠久的绯红·莫诺",
-    "DESCRIPTION": "Machina. NL Gain !B! Block. NL 复仇 获得1点 敏捷. NL 如果本回合获得 力量 或 敏捷 或回复生命的次数为3以上, 造成 !D! 点伤害并升级所有手牌, 本回合攻击伤害翻倍."
+    "NAME": "Mono, Immortal Garnet",
+    "DESCRIPTION": "Machina. NL Gain !B! Block. NL If Vengeance is active, gain 1 Dexterity. NL If you gain Strength, Dexterity  or HP 3 or more times this turn, upgrade all cards in your hand, double your attack damage this turn, then deal !D! damage."
   },
   "shadowverse:FirstOne": {
-    "NAME": "原初之一",
-    "DESCRIPTION": "Machina. NL 本场战斗中升级所有 Machina 攻击牌. NL Exhaust 弃牌堆中的 *绯红抗战者·莫诺 , 增加等量的 *绯红抗战者·莫诺(解放) 到手中."
+    "NAME": "Alpha Drive",
+    "DESCRIPTION": "Machina. NL Upgrade all Machina Attack cards this combat. NL Exhaust all *Mono, *Garnet *Rebels from your discard pile and add the same amount of of *Mono, *Garnet *Rebel *(Evolved) to your hand."
   },
   "shadowverse:Mono_Unlock": {
-    "NAME": "绯红抗战者·莫诺(解放)",
-    "DESCRIPTION": "Machina. NL 造成 !D! 点伤害. NL Gain !B! Block. NL 失去1点生命."
+    "NAME": "Mono, Garnet Rebel (Evolved)",
+    "DESCRIPTION": "Machina. NL Deal !D! Damage. NL Gain !B! Block. NL Lose 1 HP."
   },
   "shadowverse:Slayn": {
-    "NAME": "钢之吸血鬼·诗雷",
-    "DESCRIPTION": "Machina. NL 造成 !D! 点伤害. NL 如果手中其他 Machina 牌为4张以上, 伤害翻倍. NL 如果为6张以上, 回复造成伤害的生命."
+    "NAME": "Slayn, Steelwrought Vampire",
+    "DESCRIPTION": "Machina. NL Deal !D! Damage. NL If you have 4 or more other Machina cards in your hand, double the damage. NL If you have 6 other cards in your hand, heal HP equal to damage dealt."
   },
   "shadowverse:Neun": {
-    "NAME": "拂晓吸血鬼·诺因",
-    "DESCRIPTION": "Machina. NL Gain !B! Block. NL 破坏 1张牌, 增加2张 *生产器械 到手中. NL 如果本场战斗已使用的 Machina 非技能牌为10张以上, 则接下来打 Machina 牌时获得 2层 金属化."
+    "NAME": "Neun, Daybreak Vampire",
+    "DESCRIPTION": "Machina. NL Gain !B! Block. NL Send 1 Attack card from your draw pile to the discard pile, then add 2 *Assembly *Droids to your hand. NL If you've played 10 or more Machina non-Skill cards in this combat, gain 2 Metallicize the next time you play a Machina card."
   },
   "shadowverse:CreepingMadness": {
-    "NAME": "不详的侵蚀",
-    "DESCRIPTION": "Natura. NL 失去1点生命, 抽 !M! 张牌. NL 如果有 那塔拉的大树 , 回复2点生命, 获得 [E]. NL Exhaust."
+    "NAME": "Creeping Madness",
+    "DESCRIPTION": "Natura. NL Lose 1 HP and draw !M! card(s). NL If you have the Power *Naterran *Great *Tree, heal 2 HP and gain [E]. NL Exhaust."
   },
   "shadowverse:Cradle": {
-    "NAME": "胎动的魔神",
-    "DESCRIPTION": "Natura. NL 回复3点生命. NL 如果有 那塔拉的大树 则本场战斗中升级你的所有牌. NL 给予自身「回合开始时额外抽1张牌, 丢弃2张牌, 对随机敌人造成10点伤害」的效果.",
-    "UPGRADE_DESCRIPTION": "Natura. NL Innate. NL 回复3点生命. NL 如果有 那塔拉的大树 则本场战斗中升级你的所有牌. NL 给予自身「回合开始时额外抽1张牌, 丢弃2张牌, 对随机敌人造成10点伤害」的效果."
+    "NAME": "Cradle of Dark Divinity",
+    "DESCRIPTION": "Natura. NL Heal 3 HP. NL If you have the Power *Naterran *Great *Tree, upgrade all cards this combat. NL Draw 1 extra card at the beginning of your turn, then discard 2 cards in your hand and deal 10 damage to a random enemy.",
+    "UPGRADE_DESCRIPTION": "Natura. NL Innate. NL Heal 3 HP. NL If you have the Power *Naterran *Great *Tree, upgrade all cards this combat. NL Draw 1 extra card at the beginning of your turn, then discard 2 cards in your hand and deal 10 damage to a random enemy."
   },
   "shadowverse:RuinwebSpider": {
-    "NAME": "祸网巨蛛",
-    "DESCRIPTION": "Natura. NL 结晶 0 \b倒计时 !M! 跳过敌人的回合.每打出1张能力牌,  倒计时 减少1. NL  NL --------------------- NL  NL 跳过敌人的回合.",
-    "UPGRADE_DESCRIPTION": "Natura. NL Innate. NL 结晶 0 \b倒计时 !M! 跳过敌人的回合.每打出1张能力牌,  倒计时 减少1. NL  NL --------------------- NL  NL 跳过敌人的回合."
+    "NAME": "Ruinweb Spider",
+    "DESCRIPTION": "Natura. NL Crystallize 0: Countdown !M!: Take an extra turn after this one. Whenever you play a Power card, subtract 1 from this card’s Countdown. NL NL --------------------- NL NL Take an extra turn after this one",
+    "UPGRADE_DESCRIPTION": "Natura. NL Innate. NL Crystallize 0: Countdown !M!: Take an extra turn after this one. Whenever you play a Power card, subtract 1 from this card’s Countdown. NL NL --------------------- NL NL Take an extra turn after this one"
   },
   "shadowverse:Aluzard": {
-    "NAME": "永劫吸血鬼·亚瑞札特",
-    "DESCRIPTION": "造成 !D! 点伤害,  Exhaust. NL Last_Words 当这张卡被 Exhaust 时, 伤害增加 !M! 点, 下回合开始时增加1张这张卡的复制品到手中. NL 如果本场战斗已打出的 *永劫吸血鬼·亚瑞札特 为2张以上, 下回合开始时增加1张 *血红獠牙 到手中.",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害,  Exhaust. NL Last_Words 当这张卡被 Exhaust 时, 伤害增加 !M! 点, 下回合开始时增加1张这张卡的复制品到手中. NL 如果本场战斗已打出的 *永劫吸血鬼·亚瑞札特 为2张以上, 下回合开始时增加1张 *血红獠牙+ 到手中."
+    "NAME": "Aluzard, Timeworn Vampire",
+    "DESCRIPTION": "Deal !D! Damage. NL Exhaust. NL Last Words: When this card is Exhausted, increase its damage by !M! and add 1 copy of this card to your hand at the start of your next turn. NL If you have played 2 or more *Aluzard, *Timeworn *Vampires this combat, add 1 *Blood *Arts to your hand at the start of your next turn.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Exhaust. NL Last Words: When this card is Exhausted, increase its damage by !M! and add 1 copy of this card to your hand at the start of your next turn. NL If you have played 2 or more *Aluzard, *Timeworn *Vampires this combat, add 1 *Blood *Arts+ to your hand at the start of your next turn."
   },
   "shadowverse:BloodArts": {
-    "NAME": "血红獠牙",
-    "DESCRIPTION": "对全体敌人造成 !D! 点伤害. NL Gain !B! Block. NL Exhaust."
+    "NAME": "Blood Arts",
+    "DESCRIPTION": "Deal !D! damage to all enemies. NL Gain !B! Block. NL Exhaust."
   },
   "shadowverse:RageCommander": {
-    "NAME": "狂暴司令·萝拉",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 下一次攻击伤害翻倍. NL 复仇 改为本回合攻击伤害翻倍."
+    "NAME": "Laura, Enraged Commander",
+    "DESCRIPTION": "Deal !D! Damage. NL The next Attack card you play deals double damage. NL If Vengeance is active, all Attack cards you play this turn deal double damage"
   },
   "shadowverse:Relinquish": {
-    "NAME": "理性崩坏",
-    "DESCRIPTION": "获得 !M! 点 力量. NL 未 复仇 则回合结束时失去 !M! 点 力量."
+    "NAME": "Relinquish Reason",
+    "DESCRIPTION": "Gain !M! Strength. NL If Vengeance is not active, lose !M! Strength at the end of your turn."
   },
   "shadowverse:Flauros": {
-    "NAME": "佛劳洛斯",
-    "DESCRIPTION": "Gain !B! Block. NL Last_Words 打出或被Exhaust时回复 !M! 点生命. NL 瞬念召唤 回合结束时如果本回合内因自己失去生命4次以上, 加入手中并执行这张卡的效果."
+    "NAME": "Flauros",
+    "DESCRIPTION": "Gain !B! Block. NL Last Words: Heal !M! HP when this card is played or Exhausted. NL Invocation: If you lose HP 4 or more times during your turn, add it to your hand and apply this card's effect."
   },
   "shadowverse:DevilOfVengeance": {
-    "NAME": "复仇的恶魔",
-    "DESCRIPTION": "未 复仇 不能打出这张牌. NL Gain !B! Block."
+    "NAME": "Devil of Vengeance",
+    "DESCRIPTION": "Can only be played if Vengeance is active. NL Gain !B! Block."
   },
   "shadowverse:OmenOfLust": {
-    "NAME": "奸淫绝杰·瓦娜蕾格",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 获得「如果因自己失去生命, 则下回合开始时获得 !M! 点 力量 和 敏捷 」效果. NL 狂乱 造成伤害翻倍并给予 !M! 层 虚弱 和 易伤."
+    "NAME": "Valnareik, Omen of Lust",
+    "DESCRIPTION": "Deal !D! Damage. NL If you lose HP, gain !M! Strength and Dexterity next turn. NL If Wrath is active, double the damage and apply !M! Weak and Vulnerable."
   },
   "shadowverse:OmenOfLust2": {
-    "NAME": "爱绝奸淫·瓦娜蕾格",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 增加1张 *爱绝的飞翔 到手中. NL 狂乱 获得 !M! 点 力量 和 敏捷. NL Last_Words 如果 狂乱 , 增加7张没有这个效果的 *爱绝奸淫·瓦娜蕾格 到抽牌堆中."
+    "NAME": "Valnareik, Lustful Desire",
+    "DESCRIPTION": "Deal !D! damage. NL Add 1 *Wings *of *Desire to your hand. NL If Wrath is active, gain !M! Strength and Dexterity. NL Last Words: If Wrath is active, add 7 copies of *Valnareik, *Lustful *Desire without Last Words to your draw pile."
   },
   "shadowverse:LustfulDesire": {
-    "NAME": "爱绝奸淫·瓦娜蕾格",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 增加1张 *爱绝的飞翔 到手中. NL 狂乱 获得 !M! 点 力量 和 敏捷."
+    "NAME": "Valnareik, Lustful Desire",
+    "DESCRIPTION": "Deal !D! Damage. NL Add 1 *Wings *of *Desire to your hand. NL If Wrath is active, gain !M! Strength and Dexterity."
   },
   "shadowverse:ServantOfLust": {
-    "NAME": "奸淫的信徒",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 失去1点生命. NL Last_Words 打出或被Exhaust时, 全体敌人失去 !M! 点生命."
+    "NAME": "Servant of Lust",
+    "DESCRIPTION": "Deal !D! Damage. NL Lose 1 HP. NL Last Words: When this card is played or Exhausted, all enemies lose !M! HP"
   },
   "shadowverse:DevilSheep": {
-    "NAME": "恶夜魔羊",
-    "DESCRIPTION": "每当因自己失去生命时, 获得 !M! 点 格挡."
+    "NAME": "Demonic Ram",
+    "DESCRIPTION": "Whenever you lose HP from a card effect, gain !M! Block."
   },
   "shadowverse:TheBerserker": {
-    "NAME": "狂狼战士·阿拉加维",
-    "DESCRIPTION": "造成 !D! 点伤害, Gain !B! Block. NL 失去1点生命, 回复 !M! 点生命. NL 狂乱 升级所有手牌. NL 如果打出这张牌后剩余能量为2以上, 不造成伤害, 改为对全体敌人造成2倍伤害."
+    "NAME": "Aragavy the Berserker",
+    "DESCRIPTION": "Deal !D! damage and gain !B! Block. NL Lose 1 HP and heal !M! HP. NL If Wrath is active, upgrade all cards in your hand. NL If you have 2 or more Energy left after playing this card, deal double damage to all enemies instead of one."
   },
   "shadowverse:PrisonOfPain": {
-    "NAME": "凌虐囚房",
-    "DESCRIPTION": "失去1点生命, 抽1张牌. NL 倒计时 !M! \b失去这个能力. NL  回合开始时失去1点生命, 抽1张牌."
+    "NAME": "Prison of Pain",
+    "DESCRIPTION": "Lose 1 HP and draw 1 card. NL At the start of your turn, lose 1 HP and draw 1 card. NL Countdown !M!: Lose this effect."
   },
   "shadowverse:Lilim": {
-    "NAME": "迷人魅魔·莉莉姆",
-    "DESCRIPTION": "本回合内因自己受到伤害时获得 [E]. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "本回合内因自己受到伤害时获得 [E]."
+    "NAME": "Endearing Succubus Lilith",
+    "DESCRIPTION": "Whenever you lose HP from a card effect this turn, gain [E]. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Whenever you lose HP from a card effect this turn, gain [E]."
   },
   "shadowverse:ChaosShip": {
-    "NAME": "混沌方舟",
-    "DESCRIPTION": "Gain !B! Block. NL 随机打出抽牌堆中1张耗能为1以下的攻击牌. NL 复仇 额外打出1张."
+    "NAME": "Dark Airjammer",
+    "DESCRIPTION": "Gain !B! Block. NL Randomly play 1 Attack card from your draw pile that costs 1 or less. NL If Vengeance is active, play 1 more."
   },
   "shadowverse:MadnessRevealed": {
-    "NAME": "狂气现形",
-    "DESCRIPTION": "失去4点生命. NL 下回合开始时回复 !M! 点生命."
+    "NAME": "Madness Revealed",
+    "DESCRIPTION": "Lose 4 HP. NL Heal !M! HP at the start of your next turn."
   },
   "shadowverse:NightFall": {
-    "NAME": "暗夜袭击",
-    "DESCRIPTION": "倒计时 !M! \b失去这个效果. NL 回合开始时, 增加1张 *林地蝙蝠 到手中."
+    "NAME": "Night Fall",
+    "DESCRIPTION": "At the start of your turn, add a *Forest *Bat to your hand. NL Countdown !M!: Lose this effect."
   },
   "shadowverse:RestlessParish": {
-    "NAME": "诡谲的幽暗街道",
-    "DESCRIPTION": "爆能强化 1 NL 抉择 *暗夜袭击 、 *狂气现形. NL 失去1点生命, 下回合额外抽 !M! 张牌.",
-    "UPGRADE_DESCRIPTION": "爆能强化 1 \b 抉择 NL *暗夜袭击+ 、 *狂气现形+. NL 失去1点生命, 下回合额外抽 !M! 张牌."
+    "NAME": "Restless Parish",
+    "DESCRIPTION": "Lose 1 HP and draw !M! additional card(s) next turn. NL Enhance 1: Choose: Play this card as either a *Night *Fall or *Madness *Revealed.",
+    "UPGRADE_DESCRIPTION": "Lose 1 HP and draw !M! additional card(s) next turn. NL Enhance 1: Choose: Play this card as either a *Night *Fall+ or *Madness *Revealed+"
   },
   "shadowverse:NightmareTime": {
-    "NAME": "梦魇时分",
-    "DESCRIPTION": "每回合开始时额外抽 !M! 张牌. NL 失去1点生命, 增加1张 *进化点 和 *奇迹 到手中. NL Exhaust."
+    "NAME": "The Nightmare Begins",
+    "DESCRIPTION": "Draw !M! extra card(s) at the start of each of your turns. NL Lose 1 HP and add 1 *Evolution *Point and 1 *Miracle to your hand. NL Exhaust."
   },
   "shadowverse:BloodyNail": {
-    "NAME": "血腥利爪",
-    "DESCRIPTION": "给予负面效果时对目标造成 !M! 点伤害. NL 失去1点生命, 对随机敌人造成 !D! 点伤害. NL Exhaust."
+    "NAME": "Bloody Claw",
+    "DESCRIPTION": "Whenever you apply a debuff to an enemy, deal !M! damage to that enemy. NL Lose 1 HP and deal !D! damage to a random enemy. NL Exhaust."
   },
   "shadowverse:DreadAura": {
     "NAME": "Cursed Aura",
-    "DESCRIPTION": "Reduce HP lost by yourself to 0. NL Lose 1 HP, deal !D! damage to all enemies. NL Exhaust."
+    "DESCRIPTION": "Whenever you would lose HP from a card effect, reduce the amount of HP lost to 0. NL Lose 1 HP and deal !D! damage to all enemies. NL Exhaust."
   },
   "shadowverse:TerrorNight": {
-    "NAME": "惊骇之夜",
-    "DESCRIPTION": "丢弃3张牌, 分别增加1张 *梦魇时分 和 *血腥利爪 和 *惊惧气息 到手中. NL 如果本场战斗已打出其他 *惊骇之夜 , 则改为对全体敌人造成 !D! 点伤害. NL Exhaust."
+    "NAME": "A Horrible Night",
+    "DESCRIPTION": "Discard 3 cards. Add 1 *The Nightmare Begins, *Bloody Claw and *Cursed Aura to your hand. NL If you've played another *A *Horrible *Night this combat, deal !D! damage to all enemies instead. NL Exhaust."
   },
   "shadowverse:Urias": {
-    "NAME": "终末的吸血鬼·尤里亚斯",
-    "DESCRIPTION": "Gain !B! Block. NL 复仇 抽1张牌. NL 狂乱 抽1张牌. NL 增加1张 *惊骇之夜 到手中.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL 复仇 抽1张牌. NL 狂乱 抽1张牌. NL 增加1张 *惊骇之夜+ 到手中."
+    "NAME": "Urias, Final Vampire",
+    "DESCRIPTION": "Gain !B! Block. NL Add 1 *A *Horrible *Night to your hand. NL If Vengeance is active, draw 1 card. NL If Wrath is active, draw 1 card.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add 1 *A *Horrible *Night+ to your hand. NL If Vengeance is active, draw 1 card. NL If Wrath is active, draw 1 card."
   },
   "shadowverse:Jormungand": {
-    "NAME": "耶梦加得",
-    "DESCRIPTION": "因自己失去生命时, 给予全体敌人 !M! 点伤害. NL (每回合仅限1次)"
+    "NAME": "Jormungand",
+    "DESCRIPTION": "Whenever you would lose HP due to a card effect, inflict !M! damage to all enemies. This effect activates only once per turn."
   },
   "shadowverse:OldBloodKing": {
-    "NAME": "血脉之王",
-    "DESCRIPTION": "*林地蝙蝠 造成的伤害提高 !M!."
+    "NAME": "Oldblood King",
+    "DESCRIPTION": "*Forest *Bats deal !M! additional damage."
   },
   "shadowverse:NightHorde": {
-    "NAME": "暗夜中的兽群",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 增加2张 *林地蝙蝠 到手中. NL (本场战斗每打出1张 *林地蝙蝠 本伤害+5.)",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害. NL 增加2张 *林地蝙蝠 到手中. NL (本场战斗每打出1张 *林地蝙蝠 本伤害+7.)"
+    "NAME": "Night Horde",
+    "DESCRIPTION": "Deal !D! damage. NL Add 2 *Forest *Bats to your hand. NL For every *Forest *Bat played this combat, increase this card's damage by 5.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add 2 *Forest *Bats to your hand. NL For every *Forest *Bat played this combat, increase this card's damage by 7."
   },
   "shadowverse:Veight": {
-    "NAME": "暗夜贵公子·拜特",
-    "DESCRIPTION": "Gain !B! Block. NL 受到攻击时, 增加1张 *林地蝙蝠 到手中."
+    "NAME": "Veight, Vampire Noble",
+    "DESCRIPTION": "Gain !B! Block. NL Whenever you are attacked during your opponent's next turn, add 1 *Forest *Bat to your hand."
   },
   "shadowverse:Vanpi1": {
-    "NAME": "血色女王·斑比",
-    "DESCRIPTION": "造成 !D! 点伤害, 给予3层中毒. NL Gain !B! Block. NL 增加1张 *林地蝙蝠 到手中. NL Exhaust."
+    "NAME": "Blood Queen Vania",
+    "DESCRIPTION": "Deal !D! damage and apply 3 Poison. NL Gain !B! Block. NL Add 1 *Forest *Bat to your hand. NL Exhaust."
   },
   "shadowverse:Vanpi2": {
-    "NAME": "仁慈女王·斑比",
-    "DESCRIPTION": "造成 !D! 点伤害, 回复造成伤害的生命. NL Gain !B! Block. NL 增加1张 *林地蝙蝠 到手中. NL Exhaust."
+    "NAME": "Kind Queen Vania",
+    "DESCRIPTION": "Deal !D! damage and heal HP equal to the unblocked damage dealt. NL Gain !B! Block. NL Add 1 *Forest *Bat to your hand. NL Exhaust."
   },
   "shadowverse:Vanpi": {
-    "NAME": "暗夜公主·斑比",
-    "DESCRIPTION": "Gain !B! Block. NL 自己和全体敌人失去2点生命, 增加1张 *林地蝙蝠 到手中. NL 复仇 改为 抉择:\b从本回合耗能为0的 *仁慈女王·斑比 和 *血色女王·斑比 中选择1张加入手中.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL 自己和全体敌人失去2点生命, 增加1张 *林地蝙蝠+ 到手中. NL 复仇 改为 抉择:\b从本回合耗能为0的 *仁慈女王·斑比+ 和 *血色女王·斑比+ 中选择1张加入手中."
+    "NAME": "Vania, Nightshade Vampire",
+    "DESCRIPTION": "Gain !B! Block. NL You and all enemies lose 2 HP. Add 1 *Forest Bat to your hand. NL If Vengeance is active, instead, Choose: Add a *Kind *Queen *Vania or *Blood *Queen *Vania to your hand. It costs 0 this turn.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL You and all enemies lose 2 HP. Add 1 *Forest Bat+ to your hand. NL If Vengeance is active, instead, Choose: Add a *Kind *Queen *Vania+ or *Blood *Queen *Vania+ to your hand. It costs 0 this turn."
   },
   "shadowverse:Volteo": {
-    "NAME": "享乐的经营者·波尔特欧",
-    "DESCRIPTION": "如果抽牌堆中没有重复的牌, 获得 !M! 金币, 回合结束时获得8层 多层护甲 , 随机打出抽牌堆中的2张攻击牌."
+    "NAME": "Volteo, Hedonistic Dealer",
+    "DESCRIPTION": "If there are no duplicate cards in your draw pile: At the end of each of your turns, gain !M! Gold, gain 8 Plated Armor and randomly play 2 Attack cards from your draw pile."
   },
   "shadowverse:ShowdownDemon": {
-    "NAME": "梭牌恶魔",
-    "DESCRIPTION": "Gain !B! Block. NL 丢弃2张牌, 下回合抽2张牌. NL 随机增加1张本回合耗能为0的 *机动二轮车 或 *魔导装甲车 到手中."
+    "NAME": "Showdown Demon",
+    "DESCRIPTION": "Gain !B! Block. NL Discard 2 cards. NL Randomly add a *Bullet *Bike or *Arcane *Personnel *Carrier to your hand. It costs 0 this turn. NL Draw 2 more cards at the start of your next turn."
   },
   "shadowverse:BatNoise": {
-    "NAME": "蝙蝠的鸣躁",
-    "DESCRIPTION": "增加1张 *林地蝙蝠 到手中. NL 未 狂乱 失去1点生命. NL 狂乱 改为 *林地蝙蝠+ 并抽1张牌. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "增加1张 *林地蝙蝠 到手中. NL 未 狂乱 失去1点生命. NL 狂乱 改为 *林地蝙蝠+ 并抽1张牌"
+    "NAME": "Nightscreech",
+    "DESCRIPTION": "Add 1 *Forest *Bat to your hand. NL Lose 1 HP if Wrath is not active. Otherwise, add a *Forest *Bat+ to your hand and draw 1 card. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add 1 *Forest *Bat to your hand. NL Lose 1 HP if Wrath is not active. Otherwise, add a *Forest *Bat+ to your hand and draw 1 card."
   },
   "shadowverse:ShadowDevil": {
-    "NAME": "暗影恶魔·摩里亚娜",
-    "DESCRIPTION": "Gain !B! Block. NL 复仇 增加2张 *进化点 和 *奇迹 到手中."
+    "NAME": "Moriana, Shadow Devil",
+    "DESCRIPTION": "Gain !B! Block. NL If Vengeance is active, add 2 *Evolution *Points and *Miracles to your hand."
   },
   "shadowverse:MaskedMayhem": {
-    "NAME": "蒙面斗士·莎兰婕亚",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 给予 !M! 层 中毒. NL 渴望 则伤害翻倍."
+    "NAME": "Sharanzaya, Masked Mayhem",
+    "DESCRIPTION": "Deal !D! damage and apply !M! Poison. NL If Avarice is active, double the damage."
   },
   "shadowverse:Ayre": {
-    "NAME": "灰白之豹·艾路",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 抽牌直到满 !M! 张."
+    "NAME": "Ayer, Ashen Brawler",
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! cards or until your hand is full."
   },
   "shadowverse:Lucius": {
-    "NAME": "吸血鬼屠杀者·路西乌斯",
-    "DESCRIPTION": "造成 !D! 点伤害. NL （根据你当前损失的生命值比例增加伤害, 最大为19) NL 爆能强化 3 \b改为当前生命值与最大生命值之差的伤害. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害. NL （根据你当前损失的生命值比例增加伤害, 最大为19) NL 爆能强化 3 \b改为当前生命值与最大生命值之差的伤害."
+    "NAME": "Lucius, Vampire Slayer",
+    "DESCRIPTION": "Deal !D! damage. NL Deal additional damage equal to your lost HP (max 19 additional damage). NL Enhance 3: Deal damage equal to the difference between your HP and max HP instead. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deal additional damage equal to your lost HP (max 19 additional damage). NL Enhance 3: Deal damage equal to the difference between your HP and max HP instead."
   },
   "shadowverse:SilverboltHail": {
-    "NAME": "银箭散射",
-    "DESCRIPTION": "对随机敌人造成 !D! 点伤害 !M! 次."
+    "NAME": "Silverbolt Hail",
+    "DESCRIPTION": "Deal !D! damage to a random enemy !M! times."
   },
   "shadowverse:ArkDaemon": {
-    "NAME": "方舟魔神",
-    "DESCRIPTION": "Gain !B! Block. NL 未 复仇 则失去生命使其变为最大生命值的一半并获得 [E] [E]. NL 复仇 则从抽牌堆中打出耗能最高的攻击牌."
+    "NAME": "Ark Daemon",
+    "DESCRIPTION": "Gain !B! Block. NL If Vengeance is active, play the Attack card with the highest cost in your draw pile. Otherwise, lose HP until your HP becomes half your max HP and gain [E] [E]."
   },
   "shadowverse:Archdemon": {
-    "NAME": "鏖杀的大恶魔",
-    "DESCRIPTION": "激奏 0 \b抽1张牌,  *鏖杀的大恶魔 本场战斗耗能减少1. NL  NL ----------------- NL  NL 造成 !D! 点伤害. NL 本回合受到攻击时, 如果未失去格挡 , 则下回合获得 !M! 点 格挡 并对攻击者造成 !M! 点伤害."
+    "NAME": "Bloodsoaked Archdemon",
+    "DESCRIPTION": "Accelerate 0: Draw 1 card. *Bloodsoaked *Archdemon’s cost is reduced by 1 this combat. NL NL ----------------- NL NL Deal !D! damage. NL Whenever you are attacked, if you have any remaining Block, deal !M! damage back and gain !M! Block next turn."
   },
   "shadowverse:Executioner": {
-    "NAME": "魔界处刑人",
-    "DESCRIPTION": "造成 !D! 点伤害. NL Gain !B! Block. NL 如果抽牌堆有10种以上的不同名卡, 伤害和格挡增加 !M!."
+    "NAME": "Netherworld Executioner",
+    "DESCRIPTION": "Deal !D! damage and gain !B! Block. NL If there are more than 10 different cards in your draw pile, increase this card’s damage and Block by !M!."
   },
   "shadowverse:BelphometCard": {
     "NAME": "Belphomet, Lord of Aiolon",
@@ -2104,8 +2104,8 @@
     "DESCRIPTION": "Machina. NL Gain 1 Blur. NL At the start of your next turn, heal 6 HP, upgrade all cards in your hand, put 1 *Miracle into your hand and deal !M! damage to all enemies. NL Exhaust."
   },
   "shadowverse:CrimsonWar": {
-    "NAME": "赤红战争·萝拉",
-    "DESCRIPTION": "保留. NL 造成 !D! 点伤害. NL (1)回复造成伤害的生命. NL (2)伤害翻倍. NL (3)对全体敌人造成 !M! 点伤害,  复仇 则伤害翻倍. NL 当这张牌被 保留 时, 如果 渴望 则依顺序获得以上1种效果. NL Exhaust."
+    "NAME": "Laura, Crimson Strife",
+    "DESCRIPTION": "Retain. NL Deal !D! damage. NL When this card is Retained and Avarice is active, this card gains one of the following effects in order: NL 1. Heal HP equal any unblocked damage dealt. NL 2. Double the damage. NL 3. Deal !M! additional damage to all enemies. This damage is doubled if Vengeance is active. NL NL Exhaust."
   },
   "shadowverse:ImmoralDesire": {
     "NAME": "悖德的欲求",
@@ -2583,9 +2583,9 @@
     "DESCRIPTION": "Gain !B! Block. NL Last_Words: When this card is Exhausted, add 1 copy of this card to your hand and gain 1 Dexterity. NL If your Dexterity is 3 or more, add 1 *Wretched *Tryst to your hand instead. NL Exhaust."
   },
   "shadowverse:NightVampire": {
-    "NAME": "夜天吸血鬼",
-    "DESCRIPTION": "增加2张 *林地蝙蝠 到手中. NL *林地蝙蝠 的基础伤害翻倍. NL 未 狂乱 时打出 *林地蝙蝠 失去1点生命. NL 狂乱 时打出 *林地蝙蝠 回复2点生命并给予2层 中毒. NL 如果剩余耗能为3以上, 增加1张 *噬暗巨蝙 到弃牌堆.",
-    "UPGRADE_DESCRIPTION": "Innate. NL 增加2张 *林地蝙蝠 到手中. NL *林地蝙蝠 的基础伤害翻倍. NL 未 狂乱 时打出 *林地蝙蝠 失去1点生命. NL 狂乱 时打出 *林地蝙蝠 回复2点生命并给予2层 中毒. NL 如果剩余耗能为3以上, 增加1张 *噬暗巨蝙 到弃牌堆."
+    "NAME": "Bloodsucker of the Night",
+    "DESCRIPTION": "Add 2 *Forest *Bats to your hand. NL All damage from *Forest *Bats is doubled. NL If Wrath is active, heal 2 HP and apply 2 Poison to an enemy for each *Forest *Bat you play. Otherwise, lose 1 HP for each *Forest *Bat you play. NL If you have 3 or more energy left after playing this card, add 1 *Darkfeast *Bat to your discard pile.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Add 2 *Forest *Bats to your hand. NL All damage from *Forest *Bats is doubled. NL If Wrath is active, heal 2 HP and apply 2 Poison to an enemy for each *Forest *Bat you play. Otherwise, lose 1 HP for each *Forest *Bat you play. NL If you have 3 or more energy left after playing this card, add 1 *Darkfeast *Bat to your discard pile."
   },
   "shadowverse:ShadowCommander": {
     "NAME": "Shadow Commander",
@@ -2598,8 +2598,8 @@
   },
   "shadowverse:BrandOfMorningStar": {
     "NAME": "Brand of the Morning Star",
-    "DESCRIPTION": "Once per turn, whenever you Exhaust Attack, put 1 *Shadow *Soldier into your hand. NL If you have at least 15 Attacks in your Exhaust pilt, put 1 *Shadow *Commander into your hand instead.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Once per turn, whenever you Exhaust Attack, put 1 *Shadow *Soldier into your hand. NL If you have at least 15 Attacks in your Exhaust pilt, put 1 *Shadow *Commander into your hand instead."
+    "DESCRIPTION": "Once per turn, whenever you Exhaust an Attack card, put 1 *Shadow *Soldier into your hand. NL If you have at least 15 Attack cards in your Exhaust pile, put 1 *Shadow *Commander into your hand instead.",
+    "UPGRADE_DESCRIPTION": "Innate. Once per turn, whenever you Exhaust an Attack card, put 1 *Shadow *Soldier into your hand. NL If you have at least 15 Attack cards in your Exhaust pile, put 1 *Shadow *Commander into your hand instead."
   },
   "shadowverse:TheWheelOfFortune": {
     "NAME": "Slaus, Wheel of Fortune",
@@ -3359,8 +3359,8 @@
     "UPGRADE_DESCRIPTION": "Exhaust 1 card in your hand. Then, put a copy of that card into your draw pile. NL Put 1 *Mysterian *Missile and *Mysterian *Circle into your hand."
   },
   "shadowverse:DuskshadeBat": {
-    "NAME": "幽暗蝙蝠",
-    "DESCRIPTION": "Gain !B! Block. NL 渴望 抽1张牌, 获得 [E]. NL 复仇 或 狂乱 抽1张牌, 获得 [E]."
+    "NAME": "Duskshade Bat",
+    "DESCRIPTION": "Gain !B! Block. NL If Avarice is active, draw 1 card and gain [E]. NL If Wrath or Vengeance is active, draw 1 card and gain [E]."
   },
   "shadowverse:Cernunnos": {
     "NAME": "科尔努诺斯",
@@ -3869,7 +3869,7 @@
   },
   "shadowverse:TerrorFormer": {
     "NAME": "Terrorformer",
-    "DESCRIPTION": "Retain. NL Fusion: Forestcraft Attack cards that cost more than 1. NL Whenever 2 or more cards are fused to this card at once, increase the damage by !M! and draw 1 card. NL Deal !D! damage. NL Apply 2 Weak."
+    "DESCRIPTION": "Retain. NL Fusion: Forestcraft Attack cards that cost at least 1 Energy. NL Whenever 2 or more cards are fused to this card at once, increase this card's damage by !M! and draw 1 card. NL Deal !D! damage and apply 2 Weak."
   },
   "shadowverse:Ambush": {
     "NAME": "Ambush",
@@ -3947,13 +3947,13 @@
     "DESCRIPTION": "Gain !B! Block. NL Draw 1 card. NL Add !M! to your max HP. NL Exhaust."
   },
   "shadowverse:OmnifacedArchdemon": {
-    "NAME": "百兽大恶鬼",
-    "DESCRIPTION": "Gain !B! Block. NL 对随机敌人造成 !D! 点伤害, 回复 !M! 点生命, 此行动执行一次. NL 狂乱 改为执行三次."
+    "NAME": "Omnifaced Archdemon",
+    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage to a random enemy and heal !M! HP. NL If Wrath is active, apply this card’s effects three times."
   },
   "shadowverse:EvilEyeDemon": {
-    "NAME": "邪眼恶魔",
-    "DESCRIPTION": "激奏 1 \b失去1点生命, 造成 !D! 点伤害. NL  NL --------------------- NL  NL 对全体敌人造成 !M! 点伤害. NL (本场战斗每因自己受到一次伤害本伤害+3.)",
-    "UPGRADE_DESCRIPTION":"激奏 1 \b失去1点生命, 造成 !D! 点伤害. NL  NL --------------------- NL  NL 对全体敌人造成 !M! 点伤害. NL (本场战斗每因自己受到一次伤害本伤害+4.)"
+    "NAME": "Evil Eye Demon",
+    "DESCRIPTION": "Accelerate 1: Lose 1 HP and deal !D! damage. NL NL --------------------- NL NL Deal !M! damage to all enemies. Deal +3 damage for each time you've lost HP from a card effect this combat.",
+    "UPGRADE_DESCRIPTION":"Accelerate 1: Lose 1 HP and deal !D! damage. NL NL --------------------- NL NL Deal !M! damage to all enemies. Deal +4 damage for each time you've lost HP from a card effect this combat."
   },
   "shadowverse:PhantomBloomPredator": {
     "NAME": "Phantombloom Predator",
@@ -3991,9 +3991,9 @@
     "DESCRIPTION": "Deal !D! Damage. NL If there are more than 4 Loot cards in your exhaust pile, double the damage and gain !B! Block. NL This card is treated as a Loot card."
   },
   "shadowverse:LoathingDesire": {
-    "NAME": "憎恶的爱绝",
-    "DESCRIPTION": "失去1点生命. NL 获得 虹吸. NL Ethereal. NL Exhaust.",
-    "UPGRADE_DESCRIPTION":"失去1点生命. NL 获得 虹吸. NL Exhaust."
+    "NAME": "Loathing Desire",
+    "DESCRIPTION": "Lose 1 HP. NL Gain Drain. NL Ethereal. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Lose 1 HP. NL Gain Drain. NL Exhaust."
   },
   "shadowverse:ReturningMelody": {
     "NAME": "Melody’s Return",
@@ -4010,8 +4010,8 @@
     "UPGRADE_DESCRIPTION":"使目标失去一种 力量 和 敏捷 以外的正面效果(优先失去 人工制品). NL Exhaust1张手牌."
   },
   "shadowverse:EvidenceOfOne": {
-    "NAME": "绝大的证明",
-    "DESCRIPTION": "给予 !M! 层 易伤 和 虚弱. NL 如果已获得 *绝大唯我·马塞班恩 的效果, 造成 !D! 点伤害. NL Exhaust."
+    "NAME": "Great Testimony",
+    "DESCRIPTION": "Apply !M! Vulnerable and Weak. NL If you have played *Mjerrabaine, *Great *One this combat, deal !D! damage. NL Exhaust."
   },
   "shadowverse:PerjuryOfTruth": {
     "NAME": "Ersatz Elimination",
@@ -4031,8 +4031,8 @@
     ]
   },
   "shadowverse:WingsOfDesire": {
-    "NAME": "爱绝的飞翔",
-    "DESCRIPTION": "打出下一张攻击牌时失去1点生命, 全体敌人失去 !M! 点生命. NL 爆能强化 1 \b这个效果重复一次. NL Exhaust."
+    "NAME": "Wings of Desire",
+    "DESCRIPTION": "When you play your next Attack card, lose 1 HP and all enemies lose !M! HP. NL Enhance 1: Lose 2 HP and all enemies lose !M! HP twice. NL Exhaust."
   },
   "shadowverse:FlowOfDispair": {
     "NAME": "绝望的奔流",
@@ -4067,8 +4067,8 @@
     "DESCRIPTION": "Gain the following effect: If you played 3 or more cards this turn, draw 1 additional card next turn. NL Exhaust."
   },
   "shadowverse:AdherentOfDesire": {
-    "NAME": "爱绝的崇拜者",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 渴望 伤害增加 !M! 点. NL 狂乱 对全体敌人造成 !M! 点伤害."
+    "NAME": "Adherent of Desire",
+    "DESCRIPTION": "Deal !D! Damage. NL If Avarice is active, increase this card's damage by !M!. NL If Wrath is active, deal !M! damage to all enemies."
   },
   "shadowverse:AdherentOfScream": {
     "NAME": "绝叫的崇拜者",
@@ -4265,13 +4265,13 @@
     ]
   },
   "shadowverse:Itsurugi": {
-    "NAME": "憧憬的飞跃·苇剑",
-    "DESCRIPTION": "宴乐 。 NL Gain !B! Block 。 NL 获得「回合结束时，回复1点生命，对全体敌人造成3点伤害」。 NL 增加1张 *幼狼的奋战 到手中。",
-    "UPGRADE_DESCRIPTION": "宴乐 。 NL Gain !B! Block 。 NL 获得「回合结束时，回复1点生命，对全体敌人造成3点伤害」。 NL 增加1张 *幼狼的奋战+ 到手中。"
+    "NAME": "Itsurugi, Eager Admirer",
+    "DESCRIPTION": "Festive. NL Gain !B! Block. NL Add 1 *Wolfling’s *Struggle to your hand. NL Gain the following effect: At the end of your turn, heal 1 HP and deal 3 damage to all enemies.",
+    "UPGRADE_DESCRIPTION": "Festive. NL Gain !B! Block. NL Add 1 *Wolfling’s *Struggle+ to your hand. NL Gain the following effect: At the end of your turn, heal 1 HP and deal 3 damage to all enemies."
   },
   "shadowverse:WolflingStruggle": {
-    "NAME": "幼狼的奋战",
-    "DESCRIPTION": "宴乐 。 NL 造成 !D! 点伤害。 NL 抽1张牌。 NL Exhaust 。"
+    "NAME": "Wolfling's Struggle",
+    "DESCRIPTION": "Festive. NL Deal !D! damage. NL Draw 1 card. NL Exhaust."
   },
   "shadowverse:Yukishima": {
     "NAME": "Yukishima, Master Biographer",
@@ -4295,8 +4295,8 @@
     "DESCRIPTION": "宴乐 。 NL Exhaust !M! 张牌，抽 !M! 张牌。 NL 增加 !M! 张 *恶魔崇拜 到弃牌堆中。 NL 对全体敌人造成手牌、抽牌堆、弃牌堆、Exhaust堆、护符区中的诅咒牌数量的 !D! 倍伤害。"
   },
   "shadowverse:Paracelise": {
-    "NAME": "贪婪的大恶魔·帕拉瑟丽婕",
-    "DESCRIPTION": "宴乐 。 NL 造成 !D! 点伤害，随机丢弃3张牌。 NL 瞬念召唤 回合结束时，如果你的手牌数为0，加入手中，Gain !B! Block ，回复 !M! 点生命，对全体敌人造成 !M! 点伤害，下回合额外抽1张牌。"
+    "NAME": "Paracelise, Demon of Greed",
+    "DESCRIPTION": "Festive. NL Deal !D! damage and discard 3 random cards. NL Invocation: At the end of your turn, if you have no cards in your hand, add this card to your hand, gain !B! Block, heal !M! HP, deal !M! damage to all enemies and draw 1 additional card next turn."
   },
   "shadowverse:ArcticChimera": {
     "NAME": "Arctic Chimera",
@@ -4324,13 +4324,13 @@
     "UPGRADE_DESCRIPTION": "由 *神圣猎鹰+ 和 *壮丽大神隼+ 中随机增加1张到手中。 NL 倒计时 2 \b增加1张未因此加入的卡到手中。"
   },
   "shadowverse:Faker": {
-    "NAME": "变幻自如的伪装者",
-    "DESCRIPTION": "当这张卡被丢弃时，直到下回合结束为止进入 复仇 。 NL 复仇 则本回合内每打出1张非打击攻击牌，获得1点 力量 和 敏捷 。 NL Ethereal。",
-    "UPGRADE_DESCRIPTION": "当这张卡被丢弃时，直到下回合结束为止进入 复仇 。 NL 复仇 则本回合内每打出1张非打击攻击牌，获得1点 力量 和 敏捷 。"
+    "NAME": "Deceptive Shapeshifter",
+    "DESCRIPTION": "When this card is discarded, Vengeance becomes active until the end of your turn. NL If Vengeance is active, gain 1 Strength and Dexterity for each non-Strike Attack card played this turn. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "When this card is discarded, Vengeance becomes active until the end of your turn. NL If Vengeance is active, gain 1 Strength and Dexterity for each non-Strike Attack card played this turn."
   },
   "shadowverse:RoomServiceDevil": {
-    "NAME": "客房服务的恶魔",
-    "DESCRIPTION": "激奏 0 \b丢弃1张牌，造成 !M! 点伤害。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 如果其他手牌数量为2以下，再造成一次伤害，Gain !B! Block 。"
+    "NAME": "Room Service Demon",
+    "DESCRIPTION": "Accelerate 0: Discard 1 card and deal !M! damage. NL NL --------------------- NL NL Deal !D! damage. If there are 2 or less cards in your hand, deal that damage again and gain !B! block."
   },
   "shadowverse:JubilanceWitch": {
     "NAME": "Jubilance Witch",

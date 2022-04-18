@@ -6,7 +6,7 @@
     "NAME": "Belphomet Ardelyte",
     "DIALOG": [
       "@You@ @don't@ @deserve@ @to@ @live!@",
-      "~Scrap... Mwhaha!~ NL ~All~ ~of~ ~you!~",
+      "~Scrap...~ ~Mwhaha!~ NL ~All~ ~of~ ~you!~",
       "~I~ ~grow~ ~weary~ ~of~ ~your~ ~ignorance.~",
       "Prepare for your #r@termination!@",
       "@Die@ @in@ @obscurity!@",
@@ -84,12 +84,12 @@
     ],
     "NAME": "Tisiphone, the Malignant",
     "DIALOG": [
-      "~My blade, cut first thy wings.~",
-      "~Fell second thy legs.~",
-      "~Hunt third thy arms.~",
-      "~Gouge fourth thy eyes.~",
-      "~Sunder fifth thy neck.~",
-      "~Pierce sixth thy heart.~"
+      "~My~ ~blade,~ ~cut~ ~first~ ~thy~ ~wings.~",
+      "~Fell~ ~second~ ~thy~ ~legs.~",
+      "~Hunt~ ~third~ ~thy~ ~arms.~",
+      "~Gouge~ ~fourth~ ~thy~ ~eyes.~",
+      "~Sunder~ ~fifth~ ~thy~ ~neck.~",
+      "~Pierce~ ~sixth~ ~thy~ ~heart.~"
     ]
   },
   "shadowverse:VincentBOSS": {
@@ -99,9 +99,9 @@
     "DIALOG": [
       "~I~ ~don't~ ~need~ ~a~ ~gun.~ ~Not~ ~when~ ~I~ ~have~ ~my~ ~words.~",
       "~Silence!~",
-      "Open yer ears! @Justice himself is speakin'.@",
+      "Open yer ears! @Justice@ @himself @is@ @speakin'.@",
       "~See~ ~ya~ ~'round,~ ~slick.~",
-      "~My~ arms,~ ~enraptured~ ~with~ ~ice.~",
+      "~My~ ~arms,~ ~enraptured~ ~with~ ~ice.~",
       "~My~ ~feet~ ~becometh~ ~as~ ~the~ ~gale.~",
       "~My~ ~breath~ ~becometh~ ~flame.~",
       "~I~ ~am ~the~ ~immutable~ ~Steel.~ ~The~ ~unsilenceable~ ~Bullet.~"

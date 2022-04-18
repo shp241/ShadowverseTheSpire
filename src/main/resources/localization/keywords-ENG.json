@@ -172,14 +172,14 @@
       "NAMES": [
         "vengeance"
       ],
-      "DESCRIPTION": "#yVengeance once you have no more than half of your HP left. Certain cards have effects trigged by #yVengeance."
+      "DESCRIPTION": "#yVengeance becomes active once you have no more than 1/2 of your HP left. Certain cards have effects trigged by #yVengeance."
     },
     {
       "PROPER_NAME": "Wrath",
       "NAMES": [
         "wrath"
       ],
-      "DESCRIPTION": "#yWarth is active when you have taken damage during your turn at least 7 times in a combat. Certain cards have effects trigged by #yWarth."
+      "DESCRIPTION": "#yWrath is active when you have taken damage during your turn at least 7 times in a combat. Certain cards have effects trigged by #yWrath."
     },
     {
       "PROPER_NAME": "Avarice",
@@ -200,7 +200,7 @@
       "NAMES": [
         "resonance"
       ],
-      "DESCRIPTION": "#yResonance effects occur when your draw pile has an even number of remaining cards. Certain card have effects triggered by #yResonance."
+      "DESCRIPTION": "#yResonance is active when your draw pile has an even number of remaining cards. Certain card have effects triggered by #yResonance."
     },
     {
       "PROPER_NAME": "Maneuver",
@@ -376,10 +376,10 @@
       "DESCRIPTION": "8/8 NL Passive: Deal damage equal to Attack (affected by #yStrength ) to a random enemy, gain #yBlock equal to Health (affect by #yDexterity) at the end of your turn."
     },
     {
-      "PROPER_NAME": "Relic Goddesses",
+      "PROPER_NAME": "Relic Goddess",
       "NAMES": [
-        "relic goddesses",
-        "relic_goddesses"
+        "relic goddess",
+        "relic_goddess"
       ],
       "DESCRIPTION": "6/6 NL Passive: Deal damage equal to Attack (affect by #yStrength) to a random enemy, gain #yBlock equal to Health (affected by #yDexterity ) at the end of your turn."
     },
