@@ -1837,7 +1837,7 @@
   },
   "shadowverse:ArmoredBat": {
     "NAME": "Armored Bat",
-    "DESCRIPTION": "Machina. NL Gain !B! Block. NL Last Words: When this card is played or Exhausted, add 2 *Assembly *Droids to your hand. NL Enhance 2: Gain an additional !M! Block and !M! Plated Armor."
+    "DESCRIPTION": "Machina. NL Gain !B! Block. NL Last_Words: When this card is played or Exhausted, add 2 *Assembly *Droids to your hand. NL Enhance 2: Gain an additional !M! Block and !M! Plated Armor."
   },
   "shadowverse:MechaforgeDevil": {
     "NAME": "Mechaforge Devil",
@@ -1870,7 +1870,7 @@
   },
   "shadowverse:Neun": {
     "NAME": "Neun, Daybreak Vampire",
-    "DESCRIPTION": "Machina. NL Gain !B! Block. NL Send 1 Attack card from your draw pile to the discard pile, then add 2 *Assembly *Droids to your hand. NL If you've played 10 or more Machina non-Skill cards in this combat, gain 2 Metallicize the next time you play a Machina card."
+    "DESCRIPTION": "Machina. NL Gain !B! Block. NL Destroy 1 card, then add 2 *Assembly *Droids to your hand. NL If you've played 10 or more Machina non-Skill cards in this combat, gain 2 Metallicize the next time you play a Machina card."
   },
   "shadowverse:CreepingMadness": {
     "NAME": "Creeping Madness",
@@ -1888,8 +1888,8 @@
   },
   "shadowverse:Aluzard": {
     "NAME": "Aluzard, Timeworn Vampire",
-    "DESCRIPTION": "Deal !D! Damage. NL Exhaust. NL Last Words: When this card is Exhausted, increase its damage by !M! and add 1 copy of this card to your hand at the start of your next turn. NL If you have played 2 or more *Aluzard, *Timeworn *Vampires this combat, add 1 *Blood *Arts to your hand at the start of your next turn.",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Exhaust. NL Last Words: When this card is Exhausted, increase its damage by !M! and add 1 copy of this card to your hand at the start of your next turn. NL If you have played 2 or more *Aluzard, *Timeworn *Vampires this combat, add 1 *Blood *Arts+ to your hand at the start of your next turn."
+    "DESCRIPTION": "Deal !D! Damage. NL Exhaust. NL Last_Words: When this card is Exhausted, increase its damage by !M! and add 1 copy of this card to your hand at the start of your next turn. NL If you have played 2 or more *Aluzard, *Timeworn *Vampires this combat, add 1 *Blood *Arts to your hand at the start of your next turn.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Exhaust. NL Last_Words: When this card is Exhausted, increase its damage by !M! and add 1 copy of this card to your hand at the start of your next turn. NL If you have played 2 or more *Aluzard, *Timeworn *Vampires this combat, add 1 *Blood *Arts+ to your hand at the start of your next turn."
   },
   "shadowverse:BloodArts": {
     "NAME": "Blood Arts",
