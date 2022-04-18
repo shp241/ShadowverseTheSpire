@@ -1622,7 +1622,7 @@
   },
   "shadowverse:ArisaArrow": {
     "NAME": "Forest Guardian's Bow",
-    "DESCRIPTION": "At the end of your turn, gain 1 Strength. NL Countdown !M! Last Words: Draw 1 card."
+    "DESCRIPTION": "At the end of your turn, gain 1 Strength. NL Countdown !M! Last_Words: Draw 1 card."
   },
   "shadowverse:Arisa": {
     "NAME": "Arisa, Evergreen Arrow",
@@ -1905,7 +1905,7 @@
   },
   "shadowverse:Flauros": {
     "NAME": "Flauros",
-    "DESCRIPTION": "Gain !B! Block. NL Last Words: Heal !M! HP when this card is played or Exhausted. NL Invocation: If you lose HP 4 or more times during your turn, add it to your hand and apply this card's effect."
+    "DESCRIPTION": "Gain !B! Block. NL Last_Words: Heal !M! HP when this card is played or Exhausted. NL Invocation: If you lose HP 4 or more times during your turn, add it to your hand and apply this card's effect."
   },
   "shadowverse:DevilOfVengeance": {
     "NAME": "Devil of Vengeance",
@@ -1917,7 +1917,7 @@
   },
   "shadowverse:OmenOfLust2": {
     "NAME": "Valnareik, Lustful Desire",
-    "DESCRIPTION": "Deal !D! damage. NL Add 1 *Wings *of *Desire to your hand. NL If Wrath is active, gain !M! Strength and Dexterity. NL Last Words: If Wrath is active, add 7 copies of *Valnareik, *Lustful *Desire without Last Words to your draw pile."
+    "DESCRIPTION": "Deal !D! damage. NL Add 1 *Wings *of *Desire to your hand. NL If Wrath is active, gain !M! Strength and Dexterity. NL Last_Words: If Wrath is active, add 7 copies of *Valnareik, *Lustful *Desire without Last_Words to your draw pile."
   },
   "shadowverse:LustfulDesire": {
     "NAME": "Valnareik, Lustful Desire",
@@ -1925,7 +1925,7 @@
   },
   "shadowverse:ServantOfLust": {
     "NAME": "Servant of Lust",
-    "DESCRIPTION": "Deal !D! Damage. NL Lose 1 HP. NL Last Words: When this card is played or Exhausted, all enemies lose !M! HP"
+    "DESCRIPTION": "Deal !D! Damage. NL Lose 1 HP. NL Last_Words: When this card is played or Exhausted, all enemies lose !M! HP"
   },
   "shadowverse:DevilSheep": {
     "NAME": "Demonic Ram",
