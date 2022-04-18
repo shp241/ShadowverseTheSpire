@@ -3939,7 +3939,7 @@
   },
   "shadowverse:RejuvenatingResurrection": {
     "NAME": "Rejuvenating Resurrection",
-    "DESCRIPTION": "Put an Attack or Power card from your discard pile into your hand and upgrade it.",
+    "DESCRIPTION": "Put an Attack card from your discard pile into your hand and upgrade it.",
     "UPGRADE_DESCRIPTION": "Put an Attack or Power from your discard pile into your hand and upgrade it."
   },
   "shadowverse:MasterCook": {

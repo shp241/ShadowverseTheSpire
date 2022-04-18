@@ -221,6 +221,11 @@ public class Iceschillendrig extends CustomMonster implements SpriteCreature {
                 System.out.println("ERROR: Default Take Turn was called on " + this.name);
                 break;
         }
+        if (this.secondStage){
+            if (this.hasPower(ICPower2.POWER_ID)){
+                addToBot((AbstractGameAction)new DamageAction(AbstractDungeon.player,new DamageInfo(this,((ICPower2)this.getPower(ICPower2.POWER_ID)).amount2, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.FIRE));
+            }
+        }
         this.turnsTaken++;
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new RollMoveAction(this));
     }
