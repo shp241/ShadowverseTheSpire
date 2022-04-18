@@ -4068,7 +4068,7 @@
   },
   "shadowverse:AdherentOfDesire": {
     "NAME": "Adherent of Desire",
-    "DESCRIPTION": "Deal !D! Damage. NL If Avarice is active, increase this card's damage by !M!. NL If Wrath is active, deal !M! damage to all enemies."
+    "DESCRIPTION": "Lose 1 HP, deal !D! Damage. NL If Avarice is active, increase this card's damage by !M!. NL If Wrath is active, deal !M! damage to all enemies."
   },
   "shadowverse:AdherentOfScream": {
     "NAME": "绝叫的崇拜者",

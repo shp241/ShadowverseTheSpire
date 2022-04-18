@@ -4068,7 +4068,7 @@
   },
   "shadowverse:AdherentOfDesire": {
     "NAME": "愛絶の崇拝者",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 渇望 ならダメージを+ !M! する。 NL 狂乱 なら敵全体に !M! ダメージを与える。"
+    "DESCRIPTION": "HPを1失い、 !D! ダメージを与える。 NL 渇望 ならダメージを+ !M! する。 NL 狂乱 なら敵全体に !M! ダメージを与える。"
   },
   "shadowverse:AdherentOfScream": {
     "NAME": "絶叫の崇拝者",

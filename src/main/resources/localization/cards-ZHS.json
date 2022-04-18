@@ -4068,7 +4068,7 @@
   },
   "shadowverse:AdherentOfDesire": {
     "NAME": "爱绝的崇拜者",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 渴望 伤害增加 !M! 点。 NL 狂乱 对全体敌人造成 !M! 点伤害。"
+    "DESCRIPTION": "失去1点生命，造成 !D! 点伤害。 NL 渴望 伤害增加 !M! 点。 NL 狂乱 对全体敌人造成 !M! 点伤害。"
   },
   "shadowverse:AdherentOfScream": {
     "NAME": "绝叫的崇拜者",
