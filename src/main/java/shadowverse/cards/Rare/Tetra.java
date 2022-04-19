@@ -69,7 +69,7 @@ import java.util.List;
                break;
            case 2:
                addToBot((AbstractGameAction)new SFXAction("Tetra3"));
-               addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, 3));
+               addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, 2));
                addToBot((AbstractGameAction)new GainEnergyAction(1));
                break;
            default:

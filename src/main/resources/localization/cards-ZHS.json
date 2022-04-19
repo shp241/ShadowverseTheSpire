@@ -312,7 +312,7 @@
   },
   "shadowverse:Tetra3": {
     "NAME": "清澄的苍蓝·坦忒菈",
-    "DESCRIPTION": "机械 。 NL 获得 !B! 点 格挡 。 NL 增加3张 *苍奏之四 到手中。 NL 获得 [E] 。"
+    "DESCRIPTION": "机械 。 NL 获得 !B! 点 格挡 。 NL 增加2张 *苍奏之四 到手中。 NL 获得 [E] 。"
   },
   "shadowverse:MechastaffSorcerer": {
     "NAME": "机装术师",
@@ -1352,7 +1352,7 @@
   },
   "shadowverse:Nicola3": {
     "NAME": "永续的机械·尼古拉",
-    "DESCRIPTION": "机械 。 NL 造成 !D! 点伤害。 NL 如果手中有其他 机械 牌，给予 !M! 层中毒。 NL 如果本场战斗已打出的 机械 牌为7张以上，增加1张 *禁断的一击 到手中，并使其耗能变为1。"
+    "DESCRIPTION": "机械 。 NL 造成 !D! 点伤害。 NL 给予 !M! 层中毒手中有其他 机械 牌次。 NL 如果本场战斗已打出的 机械 牌为7张以上，增加1张 *禁断的一击 到手中，并使其耗能变为1。"
   },
   "shadowverse:Kagero": {
     "NAME": "一刀幽鬼·蜃景",

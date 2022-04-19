@@ -312,7 +312,7 @@
   },
   "shadowverse:Tetra3": {
     "NAME": "清澄の蒼・テトラ",
-    "DESCRIPTION": "機械 。 NL !B! ブロック を得る。 NL *ソニック・フォー 3枚を手札に加える。 NL  [E] を得る。"
+    "DESCRIPTION": "機械 。 NL !B! ブロック を得る。 NL *ソニック・フォー 2枚を手札に加える。 NL  [E] を得る。"
   },
   "shadowverse:MechastaffSorcerer": {
     "NAME": "机装术师",
@@ -1352,7 +1352,7 @@
   },
   "shadowverse:Nicola3": {
     "NAME": "永続の機構・ニコラ",
-    "DESCRIPTION": "機械 。 NL !D! ダメージを与える。 NL 手札に 機械 カードがあるなら、さらに 毒 !M! を与える。 NL この戦闘にプレイした 機械 カードが7枚以上なら、コスト1の *禁絶の一撃 1枚を手札に加える。"
+    "DESCRIPTION": "機械 。 NL !D! ダメージを与える。 NL  毒 !M! を手札に 機械 カードと同じだけ回与える。 NL この戦闘にプレイした 機械 カードが7枚以上なら、コスト1の *禁絶の一撃 1枚を手札に加える。"
   },
   "shadowverse:Kagero": {
     "NAME": "一刀の幽鬼・カゲロウ",
