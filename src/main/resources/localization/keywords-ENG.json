@@ -158,7 +158,7 @@
         "last words",
         "last_words"
       ],
-      "DESCRIPTION": "Trigger effects when being #yExhausted or under special circumstances."
+      "DESCRIPTION": "Effects that trigger when the card is #yExhausted or under other special circumstances."
     },
     {
       "PROPER_NAME": "Countdown",
