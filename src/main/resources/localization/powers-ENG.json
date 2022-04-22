@@ -457,99 +457,99 @@
     ]
   },
   "shadowverse:MinthePower": {
-    "NAME": "灵魂守门人·命忒",
+    "NAME": "Minthe of the Underworld",
     "DESCRIPTIONS": [
-      "回合开始时，失去 #b",
-      " 点 #y墓地 。"
+      "At the start of your turn, lose #b",
+      " Shadows."
     ]
   },
   "shadowverse:DeathPartyPower": {
-    "NAME": "死者派对",
+    "NAME": "Death of the Party",
     "DESCRIPTIONS": [
-      "回合结束时，依顺序发动以下1种能力：1.下回合额外抽 #b",
-      " 张牌。 2.对全体敌人造成 #b",
-      " 点伤害。 3.墓地+ #b",
-      " 。( #b",
-      " 回合结束时直接死亡。)"
+      "At the end of your turn, activate one of the following effects in order: 1. Draw #b",
+      " card(s) at the start of your next turn. 2. Deal #b",
+      " damage to all enemies. 3. Gain #b",
+      " Shadows. #b",
+      " You die at the end of this turn."
     ]
   },
   "shadowverse:LubellePower": {
-    "NAME": "死灵聚集体·鲁蓓露",
+    "NAME": "Lubelle, Necrofamily",
     "DESCRIPTIONS": [
-      "每当打出 #y那塔拉的大树 时增加 #b",
-      " 张 #y死灵兽群 到手中。"
+      "Whenever you play a #yNaterran #yGreat #yTree, add #b",
+      " #yNecrofauna to your hand."
     ]
   },
   "shadowverse:ThothPower": {
-    "NAME": "托特",
+    "NAME": "Thoth",
     "DESCRIPTIONS": [
-      "每当打出 #y谢幕曲 牌，对全体敌人造成 #b10 点伤害。"
+      "Whenever you play a card with #yLast #yWords, deal #b10 damage to all enemies."
     ]
   },
   "shadowverse:GloamingTombsPower": {
-    "NAME": "林立的墓地",
+    "NAME": "Gloaming Tombs",
     "DESCRIPTIONS": [
-      "每当打出 #y攻击 时 #y墓地 增加 #b",
-      " 点。"
+      "Whenever you play an Attack card, gain #b",
+      " Shadows."
     ]
   },
   "shadowverse:TheLoversPower": {
-    "NAME": "《恋人》·米露缇欧（逆位）",
+    "NAME": "VI. Milteo, The Lovers",
     "DESCRIPTIONS": [
-      "回合结束时，给予全体敌人伤害，使其生命值转变为 #b6 点 。"
+      "At the end of this turn, deal damage to all enemies until their HP is #b6."
     ]
   },
   "shadowverse:WightPower": {
-    "NAME": "尸鬼",
+    "NAME": "Wight",
     "DESCRIPTIONS": [
-      "每当消耗 #y攻击牌 ，对全体敌人造成 #b",
-      " 点伤害。"
+      "Whenever an Attack card is Exhausted, deal #b",
+      " damage to all enemies."
     ]
   },
   "shadowverse:CarnivalNecromancerPower": {
-    "NAME": "狂欢死灵法师",
+    "NAME": "Bonenanza Necromancer",
     "DESCRIPTIONS": [
-      "每当发动 #y葬送 时，抽 #b",
-      " 张牌。"
+      "Whenever you perform #yBurial #yRite, draw #b",
+      " card(s)."
     ]
   },
   "shadowverse:EverdarkStrixPower": {
-    "NAME": "恒暗之枭",
+    "NAME": "Everdark Strix",
     "DESCRIPTIONS": [
-      "每当发动 #y葬送 时，获得 #b",
-      " 点格挡。"
+      "Whenever you perform #yBurial #yRite, gain #b",
+      " Block."
     ]
   },
   "shadowverse:ArcusPower": {
-    "NAME": "幽灵支配者·阿卡斯",
+    "NAME": "Arcus, Ghostly Manager",
     "DESCRIPTIONS": [
-      "耗能为 #b1 以下的攻击牌耗能变为 #b0 且打出时消耗。每当打出耗能为0的攻击牌时对随机敌人造成 #b4 点伤害。"
+      "Attack cards that cost #b1 become #b0 cost and are Exhausted when played. Deal #b4 damage to a random enemy whenever a 0 cost Attack card is played."
     ]
   },
   "shadowverse:AeneaPower": {
-    "NAME": "丹紫抵御者·安涅儿",
+    "NAME": "Aenea, Amethyst Rebel",
     "DESCRIPTIONS": [
-      "回合开始时，增加 #y如果没有 #y缓冲 ，则将 #b",
-      " 张 #y圆滚滚1号 加入手中，如果有则将 #b",
-      " 张 #y转瞬即逝的幸福 加入手中。当受到伤害时，失去此能力。"
+      "At the start of your turn, lose 1 Energy and if you do not have #yBuffer, add #b",
+      " #yRoly-Poly #yMk #yI to your hand. Otherwise, add #b",
+      " #yFleeting #yJoy to your hand. Lose this ability when you take damage."
     ]
   },
   "shadowverse:GremoryPower": {
-    "NAME": "预视死期者·格莫瑞",
+    "NAME": "Gremory, Death Teller",
     "DESCRIPTIONS": [
-      "发动 #y死灵术 时，回复该 #y死灵术 的 #y墓地 并获得 #b3 点能量。此效果每个回合仅限发动1次。"
+      "Whenever you use #yNecromancy, lose 0 Shadows and gain #b2 Energy. This effect activates only once per turn."
     ]
   },
   "shadowverse:GremoryUsedPower": {
-    "NAME": "预视死期者·格莫瑞(已发动)",
+    "NAME": "Gremory, Death Teller",
     "DESCRIPTIONS": [
-      "发动 #y死灵术 时，回复该 #y死灵术 的 #y墓地 并获得 #b2 点能量。此效果每个回合仅限发动1次。"
+      "Whenever you use #yNecromancy, lose 0 Shadows and gain #b2 Energy. This effect activates only once per turn."
     ]
   },
   "shadowverse:FerryPower": {
-    "NAME": "幽想少女·菲莉",
+    "NAME": "Ferry, Spirit Maiden",
     "DESCRIPTIONS": [
-      "本回合内攻击牌重复打出3次。"
+      "The next Attack card you play this turn is played 3 times."
     ]
   },
   "shadowverse:ArrowPower": {
@@ -568,9 +568,9 @@
   "shadowverse:DollPower": {
     "NAME": "Luna's Doll",
     "DESCRIPTIONS": [
-      "回合开始时这个能力减少 #b1 层，因这个效果减少至0时抽 #b",
-      " 张牌，回复 #b",
-      " 点生命。"
+      "At the start of your turn, reduce this card's #yCountdown by #b1. When this card's #yCountdown reaches 0, draw #b",
+      " card(s) and heal #b",
+      " HP."
     ]
   },
   "shadowverse:WrathPower": {
@@ -606,8 +606,8 @@
   "shadowverse:SadisticDemonPower": {
     "NAME": "Contemptuous Demon",
     "DESCRIPTIONS": [
-      "Lose #b1 HP at the end of your turn. Heal #b2 HP at the start of your turn. Deal #b to a random enemy whenever you lose HP from a card effect.",
-      " damage"
+      "Lose #b1 HP at the end of your turn. Heal #b2 HP at the start of your turn. Deal #b",
+      " damage to a random enemy whenever you lose HP from a card effect."
     ]
   },
   "shadowverse:RaveningPower": {
@@ -1374,11 +1374,11 @@
     ]
   },
   "shadowverse:WingsOfDesirePower": {
-    "NAME": "爱绝的飞翔",
+    "NAME": "Wings of Desire",
     "DESCRIPTIONS": [
-      "下一次打出攻击牌将失去 #b1 点生命 #b",
-      " 次，全体敌人失去 #b",
-      " 点生命。"
+      "Next time you play an Attack card, lose #b1 HP #b",
+      " time(s). Deal #b",
+      " damage to all enemies."
     ]
   },
   "shadowverse:OmenOfOnePower2": {

@@ -28,7 +28,7 @@
       "NAMES": [
         "necromancy"
       ],
-      "DESCRIPTION": "Cost a corresponding number of #yShadows to activate."
+      "DESCRIPTION": "Spend a corresponding number of #yShadows to activate."
     },
     {
       "PROPER_NAME": "Enhance",
@@ -128,7 +128,7 @@
       "NAMES": [
         "destroy"
       ],
-      "DESCRIPTION": "#yExhaust an Attack card from discard pile and gain #yShadows."
+      "DESCRIPTION": "#yExhaust an Attack card from your discard pile and gain #yShadows."
     },
     {
       "PROPER_NAME": "Burial Rite",
@@ -136,7 +136,7 @@
         "burial rite",
         "burial_rite"
       ],
-      "DESCRIPTION": "Cast out the chosen cards during this combat and gain #yShadows . The cards are considered played in this combat."
+      "DESCRIPTION": "Select the corresponding number of Attack cards in your hand to remove from this combat and gain #yShadows. These cards are considered played this combat."
     },
     {
       "PROPER_NAME": "Shadows",
@@ -150,7 +150,7 @@
       "NAMES": [
         "reanimate"
       ],
-      "DESCRIPTION": "Randomly add a copy of 1 of the highest-cost Attack card costs no more than the Reanimate value you played into your hand with 0 cost to play this turn. Won't trigger if the cost of the card with #yReanimate ability is 0."
+      "DESCRIPTION": "Randomly add a copy of 1 of the highest-cost Attack cards that costs no more than the Reanimate value played this combat to your hand, then change its cost to 0 this turn. NL (Won't trigger if the cost of the card with #yReanimate is 0.)"
     },
     {
       "PROPER_NAME": "Last Words",

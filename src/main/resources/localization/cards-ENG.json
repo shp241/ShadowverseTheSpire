@@ -1151,276 +1151,276 @@
     ]
   },
   "shadowverse:UndyingResentment": {
-    "NAME": "不灭的怨念",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 死灵术 2 \b额外造成 !M! 点伤害."
+    "NAME": "Undying Resentment",
+    "DESCRIPTION": "Deal !D! damage. Necromancy 2: Deal !M! additional damage."
   },
   "shadowverse:SpartoiSergent": {
-    "NAME": "尸魂战士",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 墓地 + !M!."
+    "NAME": "Spartoi Sergeant",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Shadows."
   },
   "shadowverse:Path": {
     "NAME": "Path to Purgatory",
     "DESCRIPTION": "At the end of your turn, if you have at least 30 Shadows, deal !M! damage to all enemies."
   },
   "shadowverse:SoulConversion": {
-    "NAME": "灵魂转移",
-    "DESCRIPTION": "破坏 1张牌. NL 抽 !M! 张牌.",
+    "NAME": "Soul Conversion",
+    "DESCRIPTION": "Destroy 1 card. NL Draw !M! card(s).",
     "EXTENDED_DESCRIPTION": [
-      "没有攻击牌."
+      "No Attack cards in the discard pile!"
     ]
   },
   "shadowverse:DemonicProcession": {
-    "NAME": "百鬼夜行",
-    "DESCRIPTION": "葬送 1张牌. NL 从抽牌堆中随机将 !M! 张攻击牌加入手中.",
+    "NAME": "Demonic Procession",
+    "DESCRIPTION": "Burial_Rite 1: Add !M! random Attack cards from your draw pile to your hand.",
     "EXTENDED_DESCRIPTION": [
-      "没有攻击牌."
+      "No Attack cards!"
     ]
   },
   "shadowverse:TrothCurse": {
-    "NAME": "死咒之忠诚",
-    "DESCRIPTION": "破坏 1张牌. NL 给予全体敌人 !M! 层 虚弱 和 易伤.",
+    "NAME": "Troth's Curse",
+    "DESCRIPTION": "Destroy 1 card. NL Apply !M! Weak and Vulnerable to all enemies.",
     "EXTENDED_DESCRIPTION": [
-      "没有攻击牌."
+      "No Attack cards in the discard pile!"
     ]
   },
   "shadowverse:ImpiousResurrection": {
-    "NAME": "不洁再生",
-    "DESCRIPTION": "破坏 1张牌. NL 增加1张 *巫妖 到手中.",
-    "UPGRADE_DESCRIPTION": "破坏 1张牌. NL 增加1张 *巫妖+ 到手中.",
+    "NAME": "Impious Resurrection",
+    "DESCRIPTION": "Destroy 1 card. NL Add 1 *Lich to your hand.",
+    "UPGRADE_DESCRIPTION": "Destroy 1 card. NL Add 1 *Lich+ to your hand.",
     "EXTENDED_DESCRIPTION": [
-      "没有攻击牌."
+      "No Attack cards in the discard pile!"
     ]
   },
   "shadowverse:Mordecai": {
-    "NAME": "不死斗士·莫迪凯",
-    "DESCRIPTION": "造成 !D! 点伤害. NL Last_Words \b当这张牌被 Exhaust 时, 增加一张本回合耗能为0的复制品到手中."
+    "NAME": "Mordecai the Duelist",
+    "DESCRIPTION": "Deal !D! damage. NL Last_Words: When this card is Exhausted, add a copy of this card to your hand. It costs 0 this turn."
   },
   "shadowverse:LurchingCorpse": {
-    "NAME": "蹒跚的活尸",
-    "DESCRIPTION": "造成 !D! 点伤害. NL Last_Words \b当这张牌被 Exhaust 时, 给予全体敌人 !M! 层 虚弱 和 易伤."
+    "NAME": "Lurching Corpse",
+    "DESCRIPTION": "Deal !D! damage. NL Last_Words: When this card is Exhausted, apply !M! Weak and Vulneranle to all enemies."
   },
   "shadowverse:SpartoiSoldier": {
-    "NAME": "尸魂士兵",
-    "DESCRIPTION": "Gain !B! Block. NL Last_Words \b当这张牌被 Exhaust 时,  墓地 + !M!."
+    "NAME": "Spartoi Soldier",
+    "DESCRIPTION": "Gain !B! Block. NL Last_Words: When this card is Exhausted, gain !M! Shadows."
   },
   "shadowverse:DeathTyrant": {
-    "NAME": "死亡暴君",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 死灵术 20 \b额外造成 !M! 点伤害."
+    "NAME": "Deathly Tyrant",
+    "DESCRIPTION": "Deal !D! damage. NL Necromancy 20: Deal !M! additional damage."
   },
   "shadowverse:Minthe": {
-    "NAME": "灵魂守门人·命忒",
-    "DESCRIPTION": "获得20点 墓地. NL 回合开始时失去20点 墓地. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "获得20点 墓地. NL 回合开始时失去20点 墓地."
+    "NAME": "Minthe of the Underworld",
+    "DESCRIPTION": "Gain 20 Shadows. NL Lose 20 Shadows at the start of your next turn. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Gain 20 Shadows. NL Lose 20 Shadows at the start of your next turn."
   },
   "shadowverse:Fafnir": {
-    "NAME": "尸龙·法芙娜",
-    "DESCRIPTION": "死灵术 X \b对全体敌人造成X的 !M! 倍伤害. NL (X为 墓地 数量). NL 增加1张 *灼伤 到弃牌堆中."
+    "NAME": "Corpsewyrm Fafnir",
+    "DESCRIPTION": "Necromancy X: Deal X damage !M! times to all enemies. X equals your number of Shadows. NL Add 1 *Burn to your discard pile."
   },
   "shadowverse:ApostleOfSilence": {
-    "NAME": "沉默的使徒",
-    "DESCRIPTION": "Gain !B! Block. NL 移除目标的 格挡."
+    "NAME": "Apostle of Silence",
+    "DESCRIPTION": "Gain !B! Block. NL Remove an enemy's Block."
   },
   "shadowverse:DiscipleOfSilence": {
-    "NAME": "沉默的信徒",
-    "DESCRIPTION": "Gain !B! Block. NL 全体敌人本回合失去 !M! 点 力量."
+    "NAME": "Disciple of Silence",
+    "DESCRIPTION": "Gain !B! Block. NL All enemies lose !M! Strength this turn."
   },
   "shadowverse:DeathParty": {
-    "NAME": "死者派对",
-    "DESCRIPTION": "回合结束时, 依顺序发动以下1种能力: NL 1.下回合额外抽1张牌. NL 2.对全体敌人造成6点伤害. NL 3. 墓地 +3. NL 8回合结束后直接死亡.",
-    "UPGRADE_DESCRIPTION": "Innate. NL 回合结束时, 依顺序发动以下1种能力: NL 1.下回合额外抽1张牌. NL 2.对全体敌人造成6点伤害. NL 3. 墓地 +3. NL 8回合结束后直接死亡."
+    "NAME": "Death of the Party",
+    "DESCRIPTION": "At the end of your turn, activate one of the following effects in order: NL 1. Draw 1 additional card at the start of your next turn. NL 2. Deal 6 damage to all enemies. NL 3. Gain 3 Shadows. NL NL You die after 8 turns.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the end of your turn, activate one of the following effects in order: NL 1. Draw 1 additional card at the start of your next turn. NL 2. Deal 6 damage to all enemies. NL 3. Gain 3 Shadows. NL NL You die after 8 turns."
   },
   "shadowverse:FoulTempest": {
-    "NAME": "腐坏飓风",
-    "DESCRIPTION": "对全体敌人造成 !D! 点伤害. NL 死灵术 6 \b这个伤害变为3倍."
+    "NAME": "Foul Tempest",
+    "DESCRIPTION": "Deal !D! damage to all enemies. NL Necromancy 6: Triple the damage."
   },
   "shadowverse:Zombie": {
-    "NAME": "僵尸",
-    "DESCRIPTION": "造成 !D! 点伤害. NL Exhaust."
+    "NAME": "Zombie",
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust."
   },
   "shadowverse:Litch": {
-    "NAME": "巫妖",
-    "DESCRIPTION": "造成 !D! 点伤害. NL Exhaust."
+    "NAME": "Lich",
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust."
   },
   "shadowverse:EternalVow": {
-    "NAME": "永恒誓言",
-    "DESCRIPTION": "保留. NL 使所有死灵术士手牌本回合耗能减少 [E]. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "保留. NL 使所有死灵术士手牌本场战斗耗能减少 [E]. NL Exhaust."
+    "NAME": "Eternal Vow",
+    "DESCRIPTION": "Retain. NL Reduce the cost of all Shadowcraft cards this turn by [E]. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Reduce the cost of all Shadowcraft cards this combat by [E]. NL Exhaust."
   },
   "shadowverse:Ceres": {
-    "NAME": "永恒花嫁·塞蕾丝",
-    "DESCRIPTION": "Gain !B! Block. NL 获得 !M! 层 再生 和 荆棘. NL 增加1张 *永恒誓言 到手中. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL 获得 !M! 层 再生 和 荆棘. NL 增加1张 *永恒誓言+ 到手中. NL Exhaust."
+    "NAME": "Ceres, Eternal Bride",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Regen and Thorns. NL Add an *Eternal *Vow to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Gain !M! Regen and Thorns. NL Add an *Eternal *Vow+ to your hand. NL Exhaust."
   },
   "shadowverse:Ceres2": {
-    "NAME": "永暗花嫁·塞蕾丝",
-    "DESCRIPTION": "Gain !B! Block. NL 增加1张 *悖德的欲求 到手中. NL Last_Words 当这张牌被 Exhaust 时, 对随机敌人造成 !M! 点伤害. NL Exhaust."
+    "NAME": "Ceres, Bride of the Night",
+    "DESCRIPTION": "Gain !B! Block. NL Add a *Darkest *Desire. NL Last_Words: When this card is Exhausted, deal !M! damage to a random enemy. NL Exhaust."
   },
   "shadowverse:Hector": {
-    "NAME": "魔将军·赫克托",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 获得2点 临时力量. NL 死灵术 3 \b增加1张 *僵尸 到手中, 重复此动作直至手牌上限.",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害. NL 获得2点 临时力量. NL 死灵术 3 \b增加1张 *僵尸+ 到手中, 重复此动作直至手牌上限."
+    "NAME": "Demonlord Eachtar",
+    "DESCRIPTION": "Deal !D! damage. NL Gain 2 temporary Strength. NL Necromancy 3: Add a *Zombie to your hand. Repeat until your hand is full.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain 2 temporary Strength. NL Necromancy 3: Add a *Zombie+ to your hand. Repeat until your hand is full."
   },
   "shadowverse:RevenantRam": {
-    "NAME": "羊骸之灵",
-    "DESCRIPTION": "Natura. NL Last_Words \b当这张牌被 Exhaust 时,  墓地 +1. NL Gain !B! Block. NL 增加1张 *那塔拉的大树 到手中."
+    "NAME": "Revenant Ram",
+    "DESCRIPTION": "Natura. NL Last_Words: When this card is Exhausted, gain 1 Shadow. NL Gain !B! Block. NL Add a *Naterran *Great *Tree to your hand."
   },
   "shadowverse:GhostRider": {
-    "NAME": "死灵骑士",
-    "DESCRIPTION": "Gain !B! Block. NL Last_Words \b当这张牌被 Exhaust 时, Gain !B! Block."
+    "NAME": "Ghostly Rider",
+    "DESCRIPTION": "Gain !B! Block. NL Last_Words: When this card is Exhausted, gain !B! Block."
   },
   "shadowverse:ZombieDog": {
-    "NAME": "死尸犬",
-    "DESCRIPTION": "Natura. NL 造成 !D! 点伤害, Gain !B! Block. NL 如果在已有 那塔拉的大树 时打出 *那塔拉的大树 , 伤害和 格挡 增加 !M! 点."
+    "NAME": "Night of the Living Dog",
+    "DESCRIPTION": "Natura. NL Deal !D! damage and gain !B! Block. NL If you play a *Naterran *Great *Tree while you already have the Power Naterran Great Tree, increase the damage and block by !M!."
   },
   "shadowverse:NecroAnimals": {
-    "NAME": "死灵兽群",
-    "DESCRIPTION": "Natura. NL 造成 !D! 点伤害,  Exhaust. NL Last_Words 当这张牌被 Exhaust 时, 随机发动以下1种能力: NL 1.增加1张 *那塔拉的大树 到手中. NL 2.Gain !B! Block. NL 3.对随机敌人造成 !D! 点 伤害. NL Ethereal."
+    "NAME": "Necrofauna",
+    "DESCRIPTION": "Natura. NL Deal !D! damage. NL Last_Words: When this card is Exhausted, randomly activate one of the following effects: NL 1. Add a *Naterran *Great *Tree to your hand. NL 2. Gain !B! Block. NL 3. Deal !D! damage to a random enemy. NL NL Exhaust. NL Ethereal."
   },
   "shadowverse:Lubelle": {
-    "NAME": "死灵聚集体·鲁蓓露",
-    "DESCRIPTION": "增加 !M! 张 *那塔拉的大树 和 *死灵兽群 到手中. NL 每当打出 *那塔拉的大树 时, 增加 !M! 张 *死灵兽群 到手中. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "增加 !M! 张 *那塔拉的大树 和 *死灵兽群 到手中. NL 每当打出 *那塔拉的大树 时, 增加 !M! 张 *死灵兽群 到手中."
+    "NAME": "Lubelle, Necrofamily",
+    "DESCRIPTION": "Add !M! *Naterran *Great *Tree and *Necrofauna to your hand. NL Whenever you play a *Naterran *Great *Tree, add !M! *Necrofauna to your hand. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Add !M! *Naterran *Great *Tree and *Necrofauna to your hand. NL Whenever you play a *Naterran *Great *Tree, add !M! *Necrofauna to your hand."
   },
   "shadowverse:Thoth": {
-    "NAME": "托特",
-    "DESCRIPTION": "如果本场战斗已打出的 Last_Words 牌 为10张以上, 则给予接下来每次打出 Last_Words 牌对全体敌人造成10点伤害的效果. NL 抽1张牌.",
+    "NAME": "Thoth",
+    "DESCRIPTION": "If you've played 10 or more cards with Last_Words this combat, deal 10 damage to all enemies whenever you play a card with Last_Words. NL Draw a card.",
     "EXTENDED_DESCRIPTION": [
-      " NL (已打出",
-      " 张 Last_Words 牌.)"
+      " NL (Cards with Last_Words played:",
+      " .)"
     ]
   },
   "shadowverse:WickedRebirth": {
-    "NAME": "不详的再生",
-    "DESCRIPTION": "破坏 1张牌, 从本场战斗中已打出的 Last_Words 牌中随机将1张耗能为1以下的卡的本回合耗能变为0后加入手中. NL 下一次攻击伤害增加 !M!. NL 如果本场战斗已打出的 Last_Words 牌 为5张以上, 额外抽 !M! 张牌. NL 如果为10张以上, 额外增加1张到手中.",
+    "NAME": "Wicked Rebirth",
+    "DESCRIPTION": "Destroy 1 card. Add a copy of a random card with Last_Words and an original cost of 1 or less played this combat to your hand. It costs 0 this turn. NL Increase the damage of the next Attack card you play by !M!. NL If you've played 5 or more cards with Last_Words this combat, draw !M! card(s). NL If you've played 10 or more, add 2 copies instead.",
     "EXTENDED_DESCRIPTION": [
-      " NL (已打出",
-      " 张 Last_Words 牌.)"
+      " NL (Cards with Last_Words played:",
+      " .)"
     ]
   },
   "shadowverse:Chris": {
-    "NAME": "异族魔境·克里斯托福",
-    "DESCRIPTION": "Gain !B! Block.如果本场战斗已打出的 Last_Words 牌 为5张以上, 增加1张本回合耗能为0的 *死灵骑士 到手中. NL 如果为10张以上, 则 格挡 不在你的回合开始时消失.",
+    "NAME": "Chris, Beyond the Patch",
+    "DESCRIPTION": "Gain !B! Block. If you've played 5 or more cards with Last_Words this combat, add a *Ghostly *Rider to your hand. It costs 0 this turn. NL If you've played 10 or more, you do not lose your Block at the start of your next turn.",
     "EXTENDED_DESCRIPTION": [
-      " NL (已打出",
-      " 张 Last_Words 牌.)"
+      " NL (Cards with Last_Words played:",
+      " .)"
     ]
   },
   "shadowverse:SoulStrike": {
-    "NAME": "入魂的一刀",
-    "DESCRIPTION": "造成 !D! 点伤害（这张牌也视为打击牌）. NL 如果本场战斗已打出的 Last_Words 牌 为10张以上, 则伤害翻倍. NL Exhaust.",
+    "NAME": "Soulstrike",
+    "DESCRIPTION": "Deal !D! damage. This card counts as a Strike. NL If you've played 10 or more cards with Last_Words this combat, double the damage. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      " NL (已打出",
-      " 张 Last_Words 牌.)"
+      " NL (Cards with Last_Words played:",
+      " .)"
     ]
   },
   "shadowverse:GloamingTombs": {
-    "NAME": "林立的墓地",
-    "DESCRIPTION": "每当打出 攻击牌 时 墓地 + !M!.",
-    "UPGRADE_DESCRIPTION": "Innate. NL 每当打出 攻击牌 时 墓地 + !M!."
+    "NAME": "Gloaming Tombs",
+    "DESCRIPTION": "Whenever you play an Attack card, gain !M! Shadows.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you play an Attack card, gain !M! Shadows."
   },
   "shadowverse:Ceridwen": {
-    "NAME": "关德温",
-    "DESCRIPTION": "Gain !B! Block. NL 亡者召还 3."
+    "NAME": "Ceridwen",
+    "DESCRIPTION": "Gain !B! Block. NL Reanimate: 3."
   },
   "shadowverse:Ceridwen2": {
-    "NAME": "永劫欲求者·关德温",
-    "DESCRIPTION": "Gain !B! Block. NL 获得 [E]. NL 抉择:\b增加1张 *永恒秘药 或 *刹那剧毒 到手中."
+    "NAME": "Ceridwen, Eternity Hunter",
+    "DESCRIPTION": "Gain !B! Block. NL Gain [E]. NL Choose: Add an *Instant *Potion or an *Eternal *Potion to your hand."
   },
   "shadowverse:DeathBreath": {
-    "NAME": "死亡祝福",
-    "DESCRIPTION": "增加 !M! 张 *僵尸 到手中. NL 死灵术 6 \bGain !B! Block."
+    "NAME": "Death's Breath",
+    "DESCRIPTION": "Add !M! *Zombies to your hand. NL Necromancy 6: Gain !B! Block."
   },
   "shadowverse:TheLovers": {
-    "NAME": "《恋人》·米露缇欧",
-    "DESCRIPTION": "Gain !B! Block. NL 葬送 2张牌 ,  亡者召还 X,Y(X,Y的总和为 !M! ). NL Last_Words 抽2张牌. NL 爆能强化 6 \b改为回合结束时给予全体敌人伤害, 使其生命转变为6点. NL Exhaust."
+    "NAME": "VI. Milteo, The Lovers",
+    "DESCRIPTION": "Gain !B! Block. NL Burial_Rite 2: Reanimate X and Reanimate Y (The sum of X and Y is !M!). NL Last_Words: When this card is Exhausted, draw 2 cards. NL Enhance 6: Deal damage to all enemies until their HP is 6 instead. NL Exhaust."
   },
   "shadowverse:SpiritCurator": {
-    "NAME": "灵魂鉴定师",
-    "DESCRIPTION": "Gain !B! Block. NL 葬送 1张牌, 抽1张牌."
+    "NAME": "Spirit Curator",
+    "DESCRIPTION": "Gain !B! Block. NL Burial_Rite 1: Draw a card."
   },
   "shadowverse:ForbiddenArt": {
-    "NAME": "禁绝的一击",
-    "DESCRIPTION": "对全体敌人造成 !D! 点伤害, 增加1张 *虚空 到弃牌堆中. NL 死灵术 20 \b额外增加 !M! 点伤害. NL Exhaust."
+    "NAME": "Forbidden Art",
+    "DESCRIPTION": "Deal !D! damage to all enemies and add 1 *Void to your discard pile. NL Necromancy 20: Deal !M! additional damage. NL Exhaust."
   },
   "shadowverse:Nicola": {
-    "NAME": "禁绝之腕·尼古拉",
-    "DESCRIPTION": "Machina. NL 造成 !D! 点伤害,  Exhaust. NL Last_Words 当这张牌被 Exhaust 时, 伤害增加 !M! , 增加1张这张牌的复制品到手中.如果这张牌的伤害为 !M! 的4倍以上, 则改为增加1张 *禁绝的一击 到手中, 这张牌的伤害转变为 !M!."
+    "NAME": "Nicola, Forbidden Strength",
+    "DESCRIPTION": "Machina. NL Deal !D! damage. NL Last_Words: When this card is Exhausted, add a copy of this card to your hand and increase its damage by !M!. NL If this card's damage has been increased by !M! 4 times, add a *Forbidden *Art to your hand and change this card's damage to !M! instead. NL Exhaust."
   },
   "shadowverse:Nicola2": {
-    "NAME": "不灭的禁绝·尼古拉",
-    "DESCRIPTION": "Machina. NL 造成 !D! 点伤害,  Exhaust. NL 增加一张这张牌的复制品到弃牌堆中. NL 依Exhaust堆中的攻击牌数量增加这张牌 !M! 点伤害."
+    "NAME": "Nicola, Deathless Cyborg",
+    "DESCRIPTION": "Machina. NL Deal !D! damage. NL Add a copy of this card to your discard pile. NL Increase this card's damage by !M! times the number of Attack cards in your exhausted pile. NL Exhaust."
   },
   "shadowverse:Nicola3": {
-    "NAME": "永续的Machina·尼古拉",
-    "DESCRIPTION": "Machina. NL 造成 !D! 点伤害. NL 如果手中有其他 Machina 牌, 给予 !M! 层中毒. NL 如果本场战斗已打出的 Machina 牌为7张以上, 增加1张 *禁断的一击 到手中, 并使其耗能变为1."
+    "NAME": "Nicola, Enduring Steward",
+    "DESCRIPTION": "Machina. NL Deal !D! damage. NL If there are any other Machina cards in your hand, apply !M! Poison. NL If you have played 7 or more Machina cards this combat, add a *Forbidden *Art to your hand and change its cost to 1."
   },
   "shadowverse:Kagero": {
-    "NAME": "一刀幽鬼·蜃景",
-    "DESCRIPTION": "当这张牌被抽到时, 如果 墓地 为10以上, 则给予全体敌人 !M! 层 易伤. NL Gain !B! Block. NL Last_Words 当这张牌被 Exhaust 时, 死灵术 3 \b增加1张 *入魂的一刀 到手中.",
-    "UPGRADE_DESCRIPTION": "当这张牌被抽到时, 如果 墓地 为10以上, 则给予全体敌人 !M! 层 易伤. NL Gain !B! Block. NL Last_Words 当这张牌被 Exhaust 时, 死灵术 3 \b增加1张 *入魂的一刀+ 到手中."
+    "NAME": "Kagero, Swordbound Soul",
+    "DESCRIPTION": "Whenever you draw this card, if you have 10 or more Shadows, apply !M! Vulnerable to all enemies. NL Gain !B! Block. NL Last_Words: When this card is Exhausted, Necromancy 3: Add a *Soulstrike to your hand.",
+    "UPGRADE_DESCRIPTION": "Whenever you draw this card, if you have 10 or more Shadows, apply !M! Vulnerable to all enemies. NL Gain !B! Block. NL Last_Words: When this card is Exhausted, Necromancy 3: Add a *Soulstrike+ to your hand."
   },
   "shadowverse:WightKing": {
-    "NAME": "尸鬼之王",
-    "DESCRIPTION": "Gain !B! Block. NL 死灵术 4 \b额外获得3点 格挡 和 !M! 层 多层护甲."
+    "NAME": "Wight King",
+    "DESCRIPTION": "Gain !B! Block. NL Necromancy 4: Gain an additional 3 Block and !M! Plated Armor."
   },
   "shadowverse:Wight": {
-    "NAME": "尸鬼",
-    "DESCRIPTION": "当 攻击牌 被 Exhaust 时, 对全体敌人造成 !M! 点伤害."
+    "NAME": "Wight",
+    "DESCRIPTION": "When an Attack card is Exhausted, deal !M! damage to all enemies."
   },
   "shadowverse:ImmortalThane": {
-    "NAME": "不灭君王",
-    "DESCRIPTION": "Gain !B! Block ,  Exhaust. NL 增加2张本回合耗能为0的 *尸鬼 到手中. NL Last_Words 当这张牌被 Exhaust 时, 增加1张本回合耗能为0的 *尸鬼之王 到手中.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block ,  Exhaust. NL 增加2张本回合耗能为0的 *尸鬼+ 到手中. NL Last_Words 当这张牌被 Exhaust 时, 增加1张本回合耗能为0的 *尸鬼之王+ 到手中."
+    "NAME": "Immortal Thane",
+    "DESCRIPTION": "Gain !B! Block. NL Add 2 *Wight to your hand. They cost 0 this turn. NL Last_Words: When this card is Exhausted, add a *Wight *King to your hand. It costs 0 this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add 2 *Wight+ to your hand. They cost 0 this turn. NL Last_Words: When this card is Exhausted, add a *Wight *King+ to your hand. It costs 0 this turn. NL Exhaust."
   },
   "shadowverse:NecroAssassin": {
-    "NAME": "死灵暗杀者",
-    "DESCRIPTION": "破坏 1张牌, 获得 [E] [E]. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "破坏 1张牌, 获得 [E] [E]."
+    "NAME": "Necroassassin",
+    "DESCRIPTION": "Destroy 1 card. Gain [E] [E]. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Destroy 1 card. Gain [E] [E]."
   },
   "shadowverse:Nephthys": {
-    "NAME": "奈芙蒂斯",
-    "DESCRIPTION": "Gain !B! Block. NL 随机 Exhaust 抽牌堆中耗能不同的攻击牌1张, 这些牌在本场战斗视为被打出过."
+    "NAME": "Nephthys",
+    "DESCRIPTION": "Gain !B! Block. NL Play and then Exhaust a random card of each cost in your draw pile."
   },
   "shadowverse:EverdarkStrix": {
-    "NAME": "恒暗之枭",
-    "DESCRIPTION": "每当发动 葬送 时, 获得 !M! 点 格挡."
+    "NAME": "Everdark Strix",
+    "DESCRIPTION": "Gain !M! Block whenever you perform Burial_Rite."
   },
   "shadowverse:CarnivalNecromancer": {
-    "NAME": "狂欢死灵法师",
-    "DESCRIPTION": "每当发动 葬送 时, 抽 !M! 张 牌. NL 爆能强化 3 \b 亡者召还 4."
+    "NAME": "Bonenanza Necromancer",
+    "DESCRIPTION": "Whenever you perform Burial_Rite, draw !M! card(s). NL Enhance 3: Reanimate: 4."
   },
   "shadowverse:HungrySlash": {
-    "NAME": "饥欲斩击",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 葬送 1张牌, 抽 !M! 张牌."
+    "NAME": "Savoring Slash",
+    "DESCRIPTION": "Deal !D! damage. NL Burial_Rite 1: Draw !M! card(s)."
   },
   "shadowverse:InstantPotion": {
-    "NAME": "刹那剧毒",
-    "DESCRIPTION": "葬送 1张牌, 造成 !D! 点伤害. NL Exhaust."
+    "NAME": "Instant Potion",
+    "DESCRIPTION": "Burial_Rite 1: Deal !D! damage. NL Exhaust."
   },
   "shadowverse:EternalPotion": {
-    "NAME": "永恒秘药",
-    "DESCRIPTION": "亡者召还 !M!. NL Exhaust."
+    "NAME": "Eternal Potion",
+    "DESCRIPTION": "Reanimate: !M!. NL Exhaust."
   },
   "shadowverse:DeadMetalStar": {
-    "NAME": "死亡金属巨星",
-    "DESCRIPTION": "Machina. NL 激奏 1 \b增加3张 *生产器械 到手中. NL  NL --------------------- NL  NL 造成 !D! 点伤害, Gain !B! Block. NL Last_Words 当这张牌被 Exhaust 时,  亡者召还 3."
+    "NAME": "He Who Once Rocked",
+    "DESCRIPTION": "Machina. NL Accelerate 1: Add 3 *Assembly *Droids to your hand. NL NL --------------------- NL NL Deal !D! damage and gain !B! Block. NL Last_Words: When this card is Exhausted,  Reanimate: 3."
   },
   "shadowverse:Skeleton": {
-    "NAME": "骸骨士兵",
-    "DESCRIPTION": "造成 !D! 点伤害. NL Exhaust."
+    "NAME": "Skeleton",
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust."
   },
   "shadowverse:HinterlandGhoul": {
-    "NAME": "终末之骸",
-    "DESCRIPTION": "保留. NL Gain !B! Block. NL 增加10张 *骸骨士兵 到手中. NL 当这张牌被保留时, 如果 墓地 为30以上, 则对全体敌人造成 !M! 点伤害.",
-    "UPGRADE_DESCRIPTION": "保留. NL Gain !B! Block. NL 增加10张 *骸骨士兵+ 到手中. NL 当这张牌被保留时, 如果 墓地 为30以上, 则对全体敌人造成 !M! 点伤害."
+    "NAME": "Hinterland Ghoul",
+    "DESCRIPTION": "Retain. NL Gain !B! Block. NL Add 10 *Skeletons to your hand. NL When this card is Retained, if you have 30 or more Shadows, deal !M! damage to all enemies.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Gain !B! Block. NL Add 10 *Skeletons+ to your hand. NL When this card is Retained, if you have 30 or more Shadows, deal !M! damage to all enemies."
   },
   "shadowverse:BoneDominator": {
-    "NAME": "骸骨支配者",
-    "DESCRIPTION": "激奏 0 \b抽1张牌,  葬送 1张牌 并获得 !M! 点 格挡. NL  NL --------------------- NL  NL Gain !B! Block. NL 增加1张 *终末之骸 到手中."
+    "NAME": "Bone Maven",
+    "DESCRIPTION": "Accelerate 0: Draw a card. Burial_Rite 1: Gain !M! Block. NL NL --------------------- NL NL Gain !B! Block. NL Add a *Hinterland *Ghoul to your hand."
   },
   "shadowverse:SowDeathReapLife": {
-    "NAME": "生死逆转",
-    "DESCRIPTION": "亡者召还 自己的本回合数."
+    "NAME": "Sow Death, Reap Life",
+    "DESCRIPTION": "Reanimate: X. X equals your current turn number."
   },
   "shadowverse:AbsoluteJudgment": {
     "NAME": "Almighty Verdict",
@@ -1447,167 +1447,167 @@
     "DESCRIPTION": "Deal !D! damage and heal HP equal to the damage dealt. NL Gain !B! Block."
   },
   "shadowverse:RegenerateSpirit": {
-    "NAME": "灵魂再生",
-    "DESCRIPTION": "亡者召还 1. NL 爆能强化2 额外发动 亡者召还 2. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "亡者召还 1. NL 爆能强化2 额外发动 亡者召还 2."
+    "NAME": "Regenerate Spirit",
+    "DESCRIPTION": "Reanimate: 1. NL Reanimate: 2 additionally. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Reanimate: 1. NL Reanimate: 2 additionally."
   },
   "shadowverse:BoneChimera": {
-    "NAME": "骸骨奇美拉",
-    "DESCRIPTION": "Gain !B! Block. NL Last_Words 当这张牌被 Exhaust 时, 增加 !M! 张 *骸骨士兵 到手中."
+    "NAME": "Bone Chimera",
+    "DESCRIPTION": "Gain !B! Block. NL Last_Words: When this card is Exhausted, add !M! *Skeletons to your hand."
   },
   "shadowverse:LadyGray": {
-    "NAME": "心眼的双葬女·灰淑女",
-    "DESCRIPTION": "造成 !D! 点伤害, 回复造成伤害的生命值. NL 亡者召还 1."
+    "NAME": "Lady Grey, Deathweaver",
+    "DESCRIPTION": "Deal !D! damage and heal HP equal to the damage dealt. NL Reanimate: 1."
   },
   "shadowverse:NecroImpulse": {
-    "NAME": "死灵冲击",
-    "DESCRIPTION": "对随机敌人造成 !D! 点伤害4次. NL 死灵术 10 获得 !M! 点 力量."
+    "NAME": "Necroimpulse",
+    "DESCRIPTION": "Deal !D! damage to a random enemy 4 times. NL Necromancy 10: Gain !M! Strength."
   },
   "shadowverse:BoneDrone": {
-    "NAME": "骸骨翔机",
-    "DESCRIPTION": "Machina. NL Gain !B! Block. NL 增加1张 *生产器械 到手中. NL Last_Words 当这张牌被 Exhaust 时, 增加1张 *生产器械 到手中."
+    "NAME": "Bone Drone",
+    "DESCRIPTION": "Machina. NL Gain !B! Block. NL Add an *Assembly *Droid to your hand. NL Last_Words: When this card is Exhausted, add an *Assembly *Droid to your hand."
   },
   "shadowverse:IrongearCorpsman": {
-    "NAME": "铁械医师",
-    "DESCRIPTION": "Machina. NL Gain !B! Block. NL 死灵术 6 \b复制1张本场战斗已使用的 Machina 攻击牌中耗能最高的牌到手中."
+    "NAME": "Irongear Corpsman",
+    "DESCRIPTION": "Machina. NL Gain !B! Block. NL Necromancy 6: Put a copy of one of the highest cost Machina cards played this combat into your hand."
   },
   "shadowverse:ForbiddenAndBalance": {
-    "NAME": "禁绝与均衡",
-    "DESCRIPTION": "Machina. NL 每当打出 Machina 攻击牌时耗能减 [E]. NL 抽 !M! 张牌, 弃1张牌."
+    "NAME": "Balance and Obliteration",
+    "DESCRIPTION": "Machina. NL Reduce this card's cost by [E] whenever a Machina Attack card is played. NL Draw !M! card(s) and discard 1 card."
   },
   "shadowverse:GigantSkull": {
-    "NAME": "天鸣巨骸",
-    "DESCRIPTION": "Machina. NL 对全体敌人造成 !D! 点伤害. NL 如果手中没有其他 Machina 牌, 则增加1张 *虚空 到弃牌堆中."
+    "NAME": "Colossal Skull Lord",
+    "DESCRIPTION": "Machina. NL Deal !D! damage to all enemies. NL If there are no other Machina cards in your hand, add 1 *Void to your discard pile."
   },
   "shadowverse:Arcus": {
-    "NAME": "幽灵支配者·阿卡斯",
-    "DESCRIPTION": "耗能为1以下的攻击牌耗能变为0且打出时 Exhaust. NL 每当打出耗能为0的攻击牌时对随机敌人造成4点伤害."
+    "NAME": "Arcus, Ghostly Manager",
+    "DESCRIPTION": "Attack cards with a cost of 1 or less become 0 cost and Exhaust when played. NL Deal 4 damage to a random enemy whenever an Attack card with 0 cost is played."
   },
   "shadowverse:Manmaru1": {
-    "NAME": "圆滚滚1号",
-    "DESCRIPTION": "Machina. NL 获得 !M! 层 缓冲. NL Exhaust."
+    "NAME": "Roly-Poly Mk I",
+    "DESCRIPTION": "Machina. NL Gain !M! Buffer. NL Exhaust."
   },
   "shadowverse:GenerateNine": {
-    "NAME": "转瞬即逝的幸福",
-    "DESCRIPTION": "Machina. NL 本回合受到的6以上的伤害转变为5. NL 爆能强化 4 \b将名称各不相同的 Machina 攻击牌本回合耗能变为0从抽牌堆中加入手中直到满为止. NL Ethereal. NL Exhaust."
+    "NAME": "Fleeting Joy",
+    "DESCRIPTION": "Machina. NL You cannot take more than 5 damage at a time this turn. NL Enhance 4: Randomly add different Machina Attack cards from your draw pile to your hand until your hand is full. Change the cost of the added cards to 0 this turn. NL Ethereal. NL Exhaust."
   },
   "shadowverse:Aenea": {
-    "NAME": "丹紫抵御者·安涅尔",
-    "DESCRIPTION": "Machina. NL 回合开始时, 失去1点能量, 如果没有缓冲则增加1张 *圆滚滚1号 到手中, 如有则增加1张 *转瞬即逝的幸福 到手中. NL 如果受到伤害则失去这个能力. NL 增加一张本回合耗能为0的 *圆滚滚1号 到手中."
+    "NAME": "Aenea, Amethyst Rebel",
+    "DESCRIPTION": "Machina. NL At the start of your turn, lose 1 Energy. If you do not have Buffer, add a *Roly-Poly *Mk *I to your hand. Otherwise, add a *Fleeting *Joy to your hand. Lose this ability when you take damage. NL Add a *Roly-Poly *Mk *I to your hand and change its cost to 0 this turn."
   },
   "shadowverse:Andrealphus": {
-    "NAME": "安德雷斐斯",
-    "DESCRIPTION": "抽 !M! 张牌. NL Last_Words 当这张牌被 Exhaust 时, 抽1张牌. NL 打出时赋予手中所有攻击牌上述效果."
+    "NAME": "Andrealphus",
+    "DESCRIPTION": "Draw !M! card(s). Give all Attack cards in your hand the following effect: Last_Words: When this card is Exhausted, draw a card. NL Last_Words: When this card is Exhausted, draw a card."
   },
   "shadowverse:PrinceCatacomb": {
-    "NAME": "骸骨贵公子",
-    "DESCRIPTION": "造成 !D! 点伤害. NL Last_Words 当这张牌被 Exhaust 时, 增加1张 *骸骨士兵 到手中. NL 打出时赋予手中所有攻击牌上述效果."
+    "NAME": "Prince Catacomb",
+    "DESCRIPTION": "Deal !D! damage. Give all Attack cards in your hand the following effect: Last_Words: When this card is Exhausted, add a *Skeleton to your hand. NL Last_Words: When this card is Exhausted, add a *Skeleton to your hand."
   },
   "shadowverse:OmenOfSilence": {
-    "NAME": "沉默绝杰·鲁鲁纳伊",
-    "DESCRIPTION": "死灵术 3 \b降低全体敌人所有正面效果3层."
+    "NAME": "Rulenye, Omen of Silence",
+    "DESCRIPTION": "Necromancy 3: Reduce all enemy buffs by 3."
   },
   "shadowverse:OmenOfSilence2": {
-    "NAME": "绝叫沉默·鲁鲁纳伊",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 本场战斗每打出1张 *绝叫沉默·鲁鲁纳伊, 伤害增加3点. NL 如果已打出10张以上, 伤害不再增加, 给予随机敌人3层 易伤 和 虚弱. NL Last_Words 被 Exhaust 时增加1张 *扩散的绝叫 到手中. NL Exhaust."
+    "NAME": "Rulenye, Screaming Silence",
+    "DESCRIPTION": "Deal !D! damage. NL Increase this card's damage by 3 every time you play it. If you have played this card 10 times or more this combat, apply 3 Weak and Vulnerable a random enemy instead. NL Last_Words: When this card is Exhausted, add a *Scream *Diffusion to your hand. NL Exhaust."
   },
   "shadowverse:OmenOfSilence2Copy": {
-    "NAME": "绝叫沉默·鲁鲁纳伊",
-    "DESCRIPTION": "造成 !D! 点伤害. NL Exhaust."
+    "NAME": "Rulenye, Screaming Silence",
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust."
   },
   "shadowverse:ExpandingScreaming": {
-    "NAME": "扩散的绝叫",
-    "DESCRIPTION": "增加X张耗能为0只能造成3点伤害的 *绝叫沉默·鲁鲁纳伊 到手中直到手牌为满. NL X为本场战斗中已打出的 *绝叫沉默·鲁鲁纳伊 数. NL 死灵术 3 增加1张 *绝叫沉默·鲁鲁纳伊 到手中. NL Exhaust.",
-    "UPGRADE_DESCRIPTION":"保留. NL 增加X张耗能为0只能造成3点伤害的 *绝叫沉默·鲁鲁纳伊 到手中直到手牌为满. NL X为本场战斗中已打出的 *绝叫沉默·鲁鲁纳伊 数. NL 死灵术 3 增加1张 *绝叫沉默·鲁鲁纳伊 到手中. NL Exhaust.",
+    "NAME": "Scream Diffusion",
+    "DESCRIPTION": "Add X copies of *Rulenye, *Screaming *Silence without Last_Words and that deal exactly 3 damage to your hand until your hand is full. They cost 0 this turn. X equals the number of *Rulenye, *Screaming *Silences played this combat. NL Necromancy 3: Add 1 *Rulenye, *Screaming *Silence to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Add X copies of *Rulenye, *Screaming *Silence without Last_Words and that deal exactly 3 damage to your hand until your hand is full. They cost 0 this turn. X equals the number of *Rulenye, *Screaming *Silences played this combat. NL Necromancy 3: Add 1 *Rulenye, *Screaming *Silence to your hand. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      " NL (已打出",
-      " 张.)"
+      " NL (Rulenye, Screaming Silences played this combat:",
+      " .)"
     ]
   },
   "shadowverse:Gremory": {
-    "NAME": "预视死期者·格莫瑞",
-    "DESCRIPTION": "如果自己的 墓地 数量为卡组数量以上, 则获得以下效果:发动 死灵术 时, 回复该 死灵术 的 墓地 并获得2点能量.此效果每个回合仅限发动1次. NL 瞬念召唤 如果自己的 墓地 数量大于卡组数量则加入手中, 耗能变为0. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "如果自己的 墓地 数量为卡组数量以上, 则获得以下效果:发动 死灵术 时, 回复该 死灵术 的 墓地 并获得2点能量.此效果每个回合仅限发动1次. NL 瞬念召唤 如果自己的 墓地 数量大于卡组数量则加入手中, 耗能变为0."
+    "NAME": "Gremory, Death Teller",
+    "DESCRIPTION": "If your number of Shadows is greater than the number of cards in your deck, gain the following effect: Whenever you perform Necromancy, lose 0 Shadows and gain 2 Energy. This effect activates only once per turn. NL Invocation: If your number of Shadows is greater than the number of cards in your deck, add this card to your hand and change its cost to 0. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "If your number of Shadows is greater than the number of cards in your deck, gain the following effect: Whenever you perform Necromancy, lose 0 Shadows and gain 2 Energy. This effect activates only once per turn. NL Invocation: If your number of Shadows is greater than the number of cards in your deck, add this card to your hand and change its cost to 0."
   },
   "shadowverse:Aisha": {
-    "NAME": "冥守之巅·爱夏",
-    "DESCRIPTION": "瞬念召唤 回合开始时, 如果 墓地 数量为16以上, 则Exhaust8点 墓地 加入手中, 耗能变为0. NL 造成 !D! 点伤害. NL 死灵术 10 \b再造成一次伤害."
+    "NAME": "Aisha, Underworld Sovereign",
+    "DESCRIPTION": "Invocation: At the start of your turn, if you have 16 or more Shadows, spend 8 Shadows, add this card to your hand and change its cost to 0. NL Deal !D! damage. Necromancy 10: Double the damage."
   },
   "shadowverse:Hades": {
     "NAME": "Hades, Father of Purgatory",
     "DESCRIPTION": "Accelerate 2: Deal !D! damage to all enemies and gain the Power *Path *to *Purgatory. NL NL --------------------- NL NL Gain !B! Block. NL Last_Words: When this card is Exhausted, gain the Power *Path *to *Purgatory and !M! Shadows. NL Exhaust."
   },
   "shadowverse:Mimi": {
-    "NAME": "守卫犬的右腕·米米",
-    "DESCRIPTION": "造成 !D! 点伤害. NL Last_Words 当这张牌被Exhaust时 对全体敌人造成 !M! 点伤害. NL Exhaust."
+    "NAME": "Mimi, Right Paw Hellhound",
+    "DESCRIPTION": "Deal !D! damage. NL Last_Words: When this card is Exhausted, deal !M! damage to all enemies. NL Exhaust."
   },
   "shadowverse:Koko": {
-    "NAME": "守卫犬的左腕·可可",
-    "DESCRIPTION": "Gain !B! Block. NL Last_Words 当这张牌被Exhaust时 回复 !M! 点生命. NL Exhaust."
+    "NAME": "Coco, Left Paw Hellhound",
+    "DESCRIPTION": "Gain !B! Block. NL Last_Words: When this card is Exhausted, heal !M! HP. NL Exhaust."
   },
   "shadowverse:Cerberus": {
-    "NAME": "冥界守卫犬·刻耳柏洛斯",
-    "DESCRIPTION": "Gain !B! Block. NL 增加1张 *守卫犬的左腕·可可 、 *守卫犬的右腕·米米 到手中.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL 增加1张 *守卫犬的左腕·可可+ 、 *守卫犬的右腕·米米+ 到手中."
+    "NAME": "Cerberus, Hound of Hades",
+    "DESCRIPTION": "Gain !B! Block. NL Add a *Mimi, *Right *Paw *Hellhound and a *Coco, *Left *Paw *Hellhound to your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add a *Mimi, *Right *Paw *Hellhound+ and a *Coco, *Left *Paw *Hellhound+ to your hand."
   },
   "shadowverse:AttendentOfNight": {
-    "NAME": "暗之从魔",
-    "DESCRIPTION": "造成 !D! 点伤害. NL Last_Words 当这张牌被Exhaust时 增加1张 *巫妖 到手中."
+    "NAME": "Attendant of Night",
+    "DESCRIPTION": "Deal !D! damage. NL Last_Words: When this card is Exhausted, add a *Lich to your hand."
   },
   "shadowverse:Orthrus": {
-    "NAME": "冥界斗犬·欧特鲁斯",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 死灵术 3 \b额外造成 !M! 点伤害."
+    "NAME": "Orthrus, Junior Hellhound",
+    "DESCRIPTION": "Deal !D! damage. NL Necromancy 3: Deal !M! additional damage."
   },
   "shadowverse:Pudding": {
-    "NAME": "把你变成布丁哟",
-    "DESCRIPTION": "使目标失去一种正面效果(如有 人工制品 则优先失去 人工制品 ). NL 获得 !M! 点 临时力量 和 临时敏捷. NL Exhaust."
+    "NAME": "Pudding Time",
+    "DESCRIPTION": "Remove an enemy buff (if the enemy has Artifact, that will be removed first). NL Gain !M! temporary Strength and Dexterity. NL Exhaust."
   },
   "shadowverse:Miyako": {
-    "NAME": "布丁幽灵·宫子",
-    "DESCRIPTION": "失去4点生命, 获得 无实体. NL 连结爆发 !M! 增加1张 *把你变成布丁哟 到手中. NL Exhaust."
+    "NAME": "Miyako, Pudding Poltergeist",
+    "DESCRIPTION": "Lose 4 life and gain Intangible. NL Union_Burst !M!: Add a *Pudding *Time to your hand. NL Exhaust."
   },
   "shadowverse:Kyouka": {
     "NAME": "Kyouka, Prize Pupil",
     "DESCRIPTION": "Gain !B! Block. NL Spellboost cards in your hand 2 times. NL Union_Burst !M!: Deal !D! damage to all enemies."
   },
   "shadowverse:FriendsForever": {
-    "NAME": "羁绊的共振",
-    "DESCRIPTION": " *露娜的本领 NL *安涅儿的献身 NL 抉择 NL 亡者召还 2 、 亡者召还 1 、 亡者召还 0. NL 回复4点生命, 增加1张 *转瞬即逝的幸福 到手中. NL 死灵术 4 \b发动全部效果. NL Ethereal. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": " *露娜的本领 NL *安涅儿的献身 NL 抉择 NL 亡者召还 2 、 亡者召还 1 、 亡者召还 0. NL 回复4点生命, 增加1张 *转瞬即逝的幸福 到手中. NL 死灵术 4 \b发动全部效果. NL Exhaust "
+    "NAME": "Friends Forever",
+    "DESCRIPTION": "Choose: Play this card as either a *Luna's *Game or an *Aenea's *Friendship. NL Necromancy 4: Play this card as both. NL Ethereal. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose: Play this card as either a *Luna's *Game or an *Aenea's *Friendship. NL Necromancy 4: Play this card as both. NL Exhaust."
   },
   "shadowverse:LunaGame": {
-    "NAME": "露娜的本领",
-    "DESCRIPTION": "亡者召还 2 、 亡者召还 1 、 亡者召还 0."
+    "NAME": "Luna's Game",
+    "DESCRIPTION": "Reanimate: 2, 1 and 0."
   },
   "shadowverse:AeneaFriendship": {
-    "NAME": "安涅儿的献身",
-    "DESCRIPTION": "回复4点生命, 增加1张 *转瞬即逝的幸福 到手中."
+    "NAME": "Aenea's Friendship",
+    "DESCRIPTION": "Heal 4 HP and add a *Fleeting *Joy to your hand."
   },
   "shadowverse:SonataOfSilence": {
-    "NAME": "沉默之诗",
-    "DESCRIPTION": "失去所有效果( 力量 、 敏捷 、 墓地 不受影响). NL 抽 !M! 张牌. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "失去所有效果( 力量 、 敏捷 、 墓地 不受影响). NL 抽 !M! 张牌."
+    "NAME": "Sonata of Silence",
+    "DESCRIPTION": "Lose all your current effects except Strength, Dexterity and Shadows. NL Draw !M! card(s). NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Lose all your current effects except Strength, Dexterity and Shadows. NL Draw !M! card(s)."
   },
   "shadowverse:SoulTaker": {
-    "NAME": "狩魂者·菈菈",
-    "DESCRIPTION": "Gain !B! Block. NL 随机复制1张弃牌堆中的攻击牌( *狩魂者·菈菈 除外)到手中, 使其耗能变为0, 赋予 Ethereal 和 Exhaust."
+    "NAME": "Lara, Soul Taker",
+    "DESCRIPTION": "Gain !B! Block. NL Add a copy of a random Attack card (except *Lara, *Soul *Taker) from your discard pile and add it to your hand. Change its cost to 0 and give it Ethereal and Exhaust."
   },
   "shadowverse:OneTailFox": {
-    "NAME": "一尾狐",
-    "DESCRIPTION": "Gain !B! Block. NL 造成 !D! 点伤害. NL Last_Words 被 Exhaust 时, 使手中的 *大妖狐·吟雪 或 *惊骇盛宴·吟雪 本局游戏伤害+2. NL Ethereal. NL Exhaust."
+    "NAME": "One-Tailed Fox",
+    "DESCRIPTION": "Gain !B! Block and deal !D! damage. NL Last_Words: When this card is Exhausted, add 2 to the damage dealt by all cards named *Ginsetsu, *Great *Fox and *Ginsetsu, *Terror *Banquet in your hand. NL Ethereal. NL Exhaust."
   },
   "shadowverse:Ginsetsu": {
-    "NAME": "大妖狐·吟雪",
-    "DESCRIPTION": "Gain !B! Block. NL 造成 !D! 点伤害. NL 增加4张本回合耗能为0的 *一尾狐 到手中. NL 这张卡在卡组存在时,  *一尾狐 造成伤害时回复等量的生命."
+    "NAME": "Ginsetsu, Great Fox",
+    "DESCRIPTION": "Gain !B! Block and deal !D! damage. NL Add 4 *One-Tailed *Fox to your hand and change its cost to 0 this turn. NL While this card is in your deck, when you play a card named *One-Tailed *Fox, heal HP equal to the damage dealt."
   },
   "shadowverse:Ginsetsu2": {
-    "NAME": "惊骇盛宴·吟雪",
-    "DESCRIPTION": "Gain !B! Block. NL 造成 !D! 点伤害. NL 增加1张本回合耗能为0的 *一尾狐 到手中. NL 死灵术 9 改为4张. NL 这张卡在卡组存在时,  *一尾狐 造成的伤害+2."
+    "NAME": "Ginsetsu, Terror Banquet",
+    "DESCRIPTION": "Gain !B! Block and deal !D! damage. NL Add 1 *One-Tailed *Fox to your hand and change its cost to 0 this turn. Necromancy 9: Add 4 instead. NL While this card is in your deck, cards named *One-Tailed *Fox deal 2 additional damage."
   },
   "shadowverse:Ferry": {
-    "NAME": "幽想少女·菲莉",
-    "DESCRIPTION": "葬送 2张牌, 本回合内攻击牌重复打出3次. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "葬送 2张牌, 本回合内攻击牌重复打出3次."
+    "NAME": "Ferry, Spirit Maiden",
+    "DESCRIPTION": "Burial_Rite 2: The next Attack card you play this turn is played 3 times. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Burial_Rite 2: The next Attack card you play this turn is played 3 times."
   },
   "shadowverse:StormArrow": {
     "NAME": "Storm Arrow",
@@ -1630,17 +1630,17 @@
     "UPGRADE_DESCRIPTION": "Whenever you gain Strength, Dexterity or Block, deal !M! damage to ALL enemies. NL Choose: Add a *Gale *Arrow+ or *Storm *Arrow+ into your hand. NL If at least 2 other cards were played this turn, add a *Forest *Guardian's *Bow+ into your hand."
   },
   "shadowverse:NecroTemptation": {
-    "NAME": "死灵的诱惑",
-    "DESCRIPTION": "给予 !M! 层 虚弱 和 易伤. NL 死灵术 8 \b从3张随机非死灵术士攻击牌或能力牌中选择1张加入手中, 其耗能在本回合变为0, 并永久加入卡组.(稀有度依敌人的类型决定) NL Exhaust."
+    "NAME": "Allure of Shadows",
+    "DESCRIPTION": "Apply !M! Weak and Vulnerable. NL Necromancy 8: Select 1 of 3 random non-Shadowcraft Attack or Power cards and add it to your hand. Change its cost to 0 this turn. This card is added to your deck at the end of combat. (Rarity of the card depends on the current enemy). NL Exhaust."
   },
   "shadowverse:LunaDoll": {
-    "NAME": "露娜的玩偶",
-    "DESCRIPTION": "倒计时 !M! \b Last_Words 回复 !M! 点生命, 抽 !M! 张牌."
+    "NAME": "Luna's Doll",
+    "DESCRIPTION": "Countdown !M!: Last_Words: Heal !M! HP and draw !M! card(s)."
   },
   "shadowverse:Luna": {
-    "NAME": "友魂少女·露娜",
-    "DESCRIPTION": "增加1张 *露娜的玩偶 和 *死灵的诱惑 到手中. NL 死灵术 6 \b将1张 *进化点 和 *奇迹 加入手中. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "增加1张 *露娜的玩偶+ 和 *死灵的诱惑+ 到手中. NL 死灵术 6 \b将1张 *进化点 和 *奇迹 加入手中. NL Exhaust."
+    "NAME": "Luna, Soul Keeper",
+    "DESCRIPTION": "Add a *Luna's *Doll and an *Allure *of *Shadows to your hand. Necromancy 6: Add an *Evolution *Point and a *Miracle to your hand as well. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add a *Luna's *Doll+ and an *Allure *of *Shadows+ to your hand. Necromancy 6: Add an *Evolution *Point and a *Miracle to your hand as well. NL Exhaust."
   },
   "shadowverse:UnionMagic": {
     "NAME": "Quadra Magic",
@@ -2069,7 +2069,7 @@
   },
   "shadowverse:BelphometCard3": {
     "NAME": "Belphomet, Ultimate Creator",
-    "DESCRIPTION": "Machina. NL Fusion: Machina. NL Whenever cards are fused to this card, if it's the 2nd or 4th time, use 1 Energy and put 1 *Armored *Tentacle into your hand. If it's the 3rd or 5th time, use 1 Energy and put 1 *Assault *Tentacle into your hand. NL NL ---------- NL NL Gain !B! Block. NL Put 1 *Tisiphone, *Malignance *Lives into your hand. If fused with at least 1 card, put 1 *Alector, *Dissonance *Lives into your hand. If fused with at least 2 cards, put 1 *Megaera, *Indignance *Lives into your hand."
+    "DESCRIPTION": "Machina. NL Fusion: Machina. NL Whenever cards are fused to this card, if it's the 2nd or 4th time, use 1 Energy and put 1 *Armored *Tentacle into your hand. If it's the 3rd or 5th time, use 1 Energy and put 1 *Assault *Tentacle into your hand. NL NL ---------- NL NL Gain !B! Block. NL Put 1 *Tisiphone, *Malignance *Lives into your hand. If fused with at least 1 card, put 1 *Alecto, *Dissonance *Lives into your hand. If fused with at least 2 cards, put 1 *Megaera, *Indignance *Lives into your hand."
   },
   "shadowverse:TisiphoneCard": {
     "NAME": "Tisiphone, the Malignant",
@@ -2108,8 +2108,8 @@
     "DESCRIPTION": "Retain. NL Deal !D! damage. NL When this card is Retained and Avarice is active, this card gains one of the following effects in order: NL 1. Heal HP equal any unblocked damage dealt. NL 2. Double the damage. NL 3. Deal !M! additional damage to all enemies. This damage is doubled if Vengeance is active. NL NL Exhaust."
   },
   "shadowverse:ImmoralDesire": {
-    "NAME": "悖德的欲求",
-    "DESCRIPTION": "选择2张攻击牌, 分别赋予「 Last_Words 被 Exhaust 时对全体敌人造成这张牌的基础攻击力的伤害」和「 Last_Words 被 Exhaust 时获得这张牌的基础格挡的临时生命」效果. NL (没有可选择的牌时不能打出这张牌) NL Exhaust."
+    "NAME": "Darkest Desire",
+    "DESCRIPTION": "Select 2 Attack cards. NL Give the first the following effect: Last_Words: When this card is Exhausted, deal damage equal to this card’s base Attack to all enemies. NL Give the second the following effect: Last_Words: When this card is Exhausted, gain temporary HP equal to this card’s base Block. NL (This card cannot be played if you do not have Attack cards to select.) NL Exhaust."
   },
   "shadowverse:DimensionCut": {
     "NAME": "Dimension Cut",
@@ -2364,7 +2364,7 @@
     "DESCRIPTION": "Add 1 *Mystic *Artifact and 1 *Ancient *Artifact into your hand. Their cost becomes 0 this turn."
   },
   "shadowverse:BelphometCrackdown": {
-    "NAME": "Belphomet’s Crackdown",
+    "NAME": "Belphomet's Crackdown",
     "DESCRIPTION": "Randomly put 1 *Tisiphone *the *Malignant, *Alecto *the *Dissonant or *Megaera *the *Indignant to your hand and give it Retain."
   },
   "shadowverse:RebelAgainstFate": {
@@ -2372,7 +2372,7 @@
     "DESCRIPTION": "Choose: NL Play this card as either a *Yuwan’s *Fury or a *Belphomet’s *Crackdown. NL If Resonance is active for you, play this card as both. NL Exhaust."
   },
   "shadowverse:PurgationBlade": {
-    "NAME": "Purgation’s Blade",
+    "NAME": "Purgation's Blade",
     "DESCRIPTION": "Gain Strength equal to the amount of cards in your exhaust pile. NL Exhaust."
   },
   "shadowverse:Maisha": {
@@ -2381,7 +2381,7 @@
     "UPGRADE_DESCRIPTION": "Draw !M! Cards. NL Add 1 *Purgation’s *Blade+ to your hand. NL Exhaust."
   },
   "shadowverse:Maisha2": {
-    "NAME": "Maisha, Purgation’s Vessel",
+    "NAME": "Maisha, Purgation's Vessel",
     "DESCRIPTION": "Deal damage equal to the number of Attacks in your exhausted pile. NL If you have 3 Energy or more when you play this card, deal !M! times the damage."
   },
   "shadowverse:Metaproduction": {
@@ -4005,9 +4005,9 @@
     "UPGRADE_DESCRIPTION": "Innate. Gain [E]. NL Put 1 Runecraft card into hand. NL If it costs more than 3, reduce its cost by 1. NL Exhaust."
   },
   "shadowverse:ResentfulScreaming": {
-    "NAME": "怨仇的绝叫",
-    "DESCRIPTION": "使目标失去一种 力量 和 敏捷 以外的正面效果(优先失去 人工制品). NL Exhaust1张手牌. NL Exhaust.",
-    "UPGRADE_DESCRIPTION":"使目标失去一种 力量 和 敏捷 以外的正面效果(优先失去 人工制品). NL Exhaust1张手牌."
+    "NAME": "Spiteful Screams",
+    "DESCRIPTION": "Remove an enemy buff other than Strength and Dexterity (if the enemy has Artifact, that will be removed first). NL Exhaust a card in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Remove an enemy buff other than Strength and Dexterity (if the enemy has Artifact, that will be removed first). NL Exhaust a card in your hand."
   },
   "shadowverse:EvidenceOfOne": {
     "NAME": "Great Testimony",
@@ -4071,8 +4071,8 @@
     "DESCRIPTION": "Lose 1 HP, deal !D! Damage. NL If Avarice is active, increase this card's damage by !M!. NL If Wrath is active, deal !M! damage to all enemies."
   },
   "shadowverse:AdherentOfScream": {
-    "NAME": "绝叫的崇拜者",
-    "DESCRIPTION": "激奏 0 亡者召还 1. NL  NL --------------------- NL  NL Gain !B! Block. NL 亡者召还 1、 亡者召还 1."
+    "NAME": "Adherent of Screams",
+    "DESCRIPTION": "Accelerate 0: Reanimate: 1. NL NL --------------------- NL NL Gain !B! Block. Reanimate: 1 twice."
   },
   "shadowverse:AdherentOfElimination": {
     "NAME": "Adherent Of Elimination",
@@ -4109,8 +4109,8 @@
     "DESCRIPTION": "At the end of your turn, Stun the first enemy intends to attack."
   },
   "shadowverse:OtherworldGatekeeper": {
-    "NAME": "死门连结者",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 打出抽牌堆中为1以下 !M! 张有 Last_Words 效果的攻击牌. NL Last_Words 被 Exhaust 时, 回复1点生命."
+    "NAME": "Otherworld Gatekeeper",
+    "DESCRIPTION": "Deal !D! damage. NL Play an Attack card with Last_Words that costs !M! from your draw pile. NL Last_Words: When this card is Exhausted, heal 1 HP."
   },
   "shadowverse:V": {
     "NAME": "Val, Trusty Getaway Car",
@@ -4244,24 +4244,24 @@
     ]
   },
   "shadowverse:Anisage": {
-    "NAME": "因果的迷途之子·安瑟乔",
-    "DESCRIPTION": "宴乐 。 NL 造成 !D! 点伤害 。 NL 增加1张 *不惑的意志 到手中。",
-    "UPGRADE_DESCRIPTION": "宴乐 。 NL 造成 !D! 点无法格挡的伤害 。 NL 增加1张 *不惑的意志+ 到手中。"
+    "NAME": "Anisage, Lost Forsaken",
+    "DESCRIPTION": "Festive. NL Deal !D! damage. NL Add an *Undying *Resolve to your hand.",
+    "UPGRADE_DESCRIPTION": "Festive. NL Deal !D! damage. NL Add an *Undying *Resolve+ to your hand."
   },
   "shadowverse:UndyingResolve": {
-    "NAME": "不惑的意志",
-    "DESCRIPTION": "宴乐 。 NL 选择弃牌堆1张卡，将其本回合耗能-1。 NL 如果选择的是 *因果的迷途之子·安瑟乔 ，则给予其「 Last_Words 死灵术 6 \b当这张牌被 Exhaust 时伤害翻倍，然后将1张复制加入手牌」。 NL Exhaust 。",
-    "UPGRADE_DESCRIPTION": "宴乐 。 NL 选择弃牌堆1张卡，将其耗能-1。 NL 如果选择的是 *因果的迷途之子·安瑟乔 ，则给予其「 Last_Words 死灵术 6 \b当这张牌被 Exhaust 时伤害翻倍，然后将1张复制加入手牌」。 NL Exhaust 。"
+    "NAME": "Undying Resolve",
+    "DESCRIPTION": "Festive. NL Select a card in your discard pile and play it for 1 less cost. NL If that card is *Anisage, *Lost *Forsaken, give it the following effect: Last_Words: When this card is Exhausted, put a copy of it that deals double damage into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Festive. NL Select a card in your discard pile, play it for 1 less cost and then Exhaust it. NL If that card is *Anisage, *Lost *Forsaken, give it the following effect: Last_Words: When this card is Exhausted, put a copy of it that deals double damage into your hand. NL Exhaust."
   },
   "shadowverse:SoulGuide": {
-    "NAME": "灵魂向导",
-    "DESCRIPTION": "Gain !B! Block 。 NL 破坏 1张卡，抽 !M! 张牌。"
+    "NAME": "Psychopomp Tour Guide",
+    "DESCRIPTION": "Gain !B! Block. NL Destroy 1 card and draw !M! card(s)."
   },
   "shadowverse:Krampus": {
-    "NAME": "坎普斯",
-    "DESCRIPTION": "激奏 0 \b 破坏 1张卡，抽1张牌， 墓地 +2，给予随机敌人 !M! 点伤害。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL Last_Words 打出或被 Exhaust 时，抽1张牌， 墓地 +2，给予随机敌人 !M! 层 虚弱 。",
+    "NAME": "Krampus",
+    "DESCRIPTION": "Accelerate 0: Destroy 1 card. Draw a card, gain 2 Shadows and deal !M! damage to a random enemy. NL NL --------------------- NL NL Deal !D! damage. NL Last_Words: When this card is played or Exhausted, draw a card, gain 2 Shadows and apply !M! Weak to a random enemy.",
     "EXTENDED_DESCRIPTION": [
-      "没有攻击牌。"
+      "No Attack cards in the discard pile!"
     ]
   },
   "shadowverse:Itsurugi": {
