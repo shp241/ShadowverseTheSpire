@@ -469,8 +469,8 @@
       "At the end of your turn, activate one of the following effects in order: 1. Draw #b",
       " card(s) at the start of your next turn. 2. Deal #b",
       " damage to all enemies. 3. Gain #b",
-      " Shadows. #b",
-      " You die at the end of this turn."
+      " Shadows. Turns until death: #b",
+      " (You die when this number reaches 0.)"
     ]
   },
   "shadowverse:LubellePower": {
