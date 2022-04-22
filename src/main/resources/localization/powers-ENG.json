@@ -523,7 +523,7 @@
   "shadowverse:ArcusPower": {
     "NAME": "Arcus, Ghostly Manager",
     "DESCRIPTIONS": [
-      "Attack cards that cost #b1 become #b0 cost and are Exhausted when played. Deal #b4 damage to a random enemy whenever a 0 cost Attack card is played."
+      "Attack cards with a cost of #b1 or less become #b0 cost and Exhaust when played. Deal #b4 damage to a random enemy whenever a 0 cost Attack card is played."
     ]
   },
   "shadowverse:AeneaPower": {
