@@ -4250,7 +4250,7 @@
   },
   "shadowverse:UndyingResolve": {
     "NAME": "Undying Resolve",
-    "DESCRIPTION": "Festive. NL Select a card in your discard pile and play it for 1 less cost. NL If that card is *Anisage, *Lost *Forsaken, give it the following effect: Last_Words: When this card is Exhausted, put a copy of it that deals double damage into your hand. NL Exhaust.",
+    "DESCRIPTION": "Festive. NL Select a card in your discard pile reduce its cost by 1. NL If that card is *Anisage, *Lost *Forsaken, give it the following effect: Last_Words: When this card is Exhausted, put a copy of it that deals double damage into your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Festive. NL Select a card in your discard pile, play it for 1 less cost and then Exhaust it. NL If that card is *Anisage, *Lost *Forsaken, give it the following effect: Last_Words: When this card is Exhausted, put a copy of it that deals double damage into your hand. NL Exhaust."
   },
   "shadowverse:SoulGuide": {
