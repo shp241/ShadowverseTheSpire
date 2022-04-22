@@ -1448,8 +1448,8 @@
   },
   "shadowverse:RegenerateSpirit": {
     "NAME": "Regenerate Spirit",
-    "DESCRIPTION": "Reanimate: 1. NL Reanimate: 2 additionally. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Reanimate: 1. NL Reanimate: 2 additionally."
+    "DESCRIPTION": "Reanimate: 1. NL Enhance 2: Reanimate: 2 additionally. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Reanimate: 1. NL Enhance 2: Reanimate: 2 additionally."
   },
   "shadowverse:BoneChimera": {
     "NAME": "Bone Chimera",
@@ -3363,8 +3363,8 @@
     "DESCRIPTION": "Gain !B! Block. NL If Avarice is active, draw 1 card and gain [E]. NL If Wrath or Vengeance is active, draw 1 card and gain [E]."
   },
   "shadowverse:Cernunnos": {
-    "NAME": "科尔努诺斯",
-    "DESCRIPTION": "葬送 1张牌, 抽 !M! 张牌. NL 限定 获得 [E] [E]. NL 亡者召还 !M!. NL 如果本场战斗已使用的 死灵术 为20以上,  亡者召还 5."
+    "NAME": "Cernunnos",
+    "DESCRIPTION": "Burial_Rite 1: Draw !M! card(s). NL Gain [E] [E] (Limit). NL Reanimate: !M!. If you've spent 20 or more Shadows to activate Necromancy effects this combat, Reanimate: 5 instead."
   },
   "shadowverse:MiracleHarvest": {
     "NAME": "Miracle Harvest",

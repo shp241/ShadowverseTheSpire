@@ -253,7 +253,7 @@
       "NAMES": [
         "limit"
       ],
-      "DESCRIPTION": "The #yLimit effects can only be activate once per combat."
+      "DESCRIPTION": "Effects with #yLimit can only be activated once per combat."
     },
     {
       "PROPER_NAME": "Knight",
