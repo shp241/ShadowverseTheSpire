@@ -21,27 +21,27 @@
   },
   "shadowverse:AndrealphusMod": {
     "TEXT": [
-      " NL Last_Words : Draw 1 card when Exhaust "
+      " NL Last_Words: Draw 1 card when Exhausted. "
     ]
   },
   "shadowverse:PrinceCatacombMod": {
     "TEXT": [
-      " NL Last_Words : Put 1 *Skeleton into your hand when Exhaust "
+      " NL Last_Words: Put 1 *Skeleton into your hand when Exhausted. "
     ]
   },
   "shadowverse:ImmoralDesireMod1": {
     "TEXT": [
-      " NL Last_Words : Deal damage equal to the basic damage of this card to all the enemies when Exhaust "
+      " NL Last_Words: Deal damage equal to the base damage of this card to all the enemies when Exhausted. "
     ]
   },
   "shadowverse:ImmoralDesireMod2": {
     "TEXT": [
-      " NL Last_Words : Gain Temporary_HP equal to the basic Block of this card when Exhaust "
+      " NL Last_Words: Gain Temporary_HP equal to the base Block of this card when Exhausted. "
     ]
   },
   "shadowverse:UndyingResolveMod": {
     "TEXT": [
-      " NL Last_Words : Necromancy 6 \bDouble this card's damage when Exhaust. Then, add 1 copy into your hand."
+      " NL Last_Words: Necromancy 6: Double this card's damage when Exhausted. Then, add 1 copy into your hand."
     ]
   },
   "shadowverse:applyEffect": {
