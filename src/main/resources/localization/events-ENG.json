@@ -4,8 +4,8 @@
     "DESCRIPTIONS": [
       "You walk past a strange statue that looks like a chubby cat... NL Suddenly you hear a voice whispering from behind you: NL ~'Hang~ ~on~ ~a~ ~minute.'~",
       "You turn around and see the statue staring at you! NL As you walk over to take a closer look, you find that it is not a statue, but KMR, the producer, who is dressed in a Pinya costume! NL NL ~'Could~ ~you~ ~show~ ~me~ ~your~ ~account~ ~and~ ~share~ ~your~ ~comments~ ~on~ ~the~ ~environment~ ~please?'~",
-      "~'Oh,~ ~the~ ~heat~ ~of~ ~summer~ ~continues.~ ~Are~ ~you~ ~doing~ ~alright?'~ NL He mechanically reach out his hand and puts some #ySeer's #yGlobe into your crate. NL NL ~'It~ ~may~ ~be~ ~sudden,~ ~but~ ~please~ ~take~ ~these~ ~Seer's~ ~Globes~ ~as~ ~a~ ~gift.'~ NL While he is talking with you, you feel that the Gold in your pocket is vanishing! NL All of a sudden, the glass he is drinking from falls down and smashes to pieces on the ground. You run away, hearing the echo of laughter and the sound of the broken glass. NL NL The next thing you know, you're all alone with Seer's Globes in your hand.",
-      "~'Golden~ ~Pinya?~ @Are@ @you@ @sure@ @about@ @that?@ ~Ah,~ ~of~ ~course...~ ~Okey.~ ~I~ ~can~ ~do~ ~that...~ ~Let~ ~me~ ~see...'~ NL NL He shakes one of his arms and your account is suddenly in his hand! NL NL ~'Yeah.~ ~This~ ~Is~ ~Goooood.'~",
+      "~'Oh,~ ~the~ ~heat~ ~of~ ~summer~ ~continues.~ ~Are~ ~you~ ~doing~ ~alright?'~ NL He mechanically reach out his hand and puts some #ySeer's #yGlobe into your crate. NL NL ~'It~ ~may~ ~be~ ~sudden,~ ~but~ ~please~ ~take~ ~these~ ~Seer's~ ~Globes~ ~as~ ~a~ ~gift.'~ NL While he is talking with you, you feel that the Gold in your pocket is vanishing! NL All of a sudden, the glass he is drinking from falls down and smashes to pieces on the ground. You run away, hearing the echo of laughter and the sound of the broken glass. NL NL The next thing you know, you're all alone with the Seer's Globes in your hand.",
+      "~'Golden~ ~Pinya?~ @Are@ @you@ @sure@ @about@ @that?@ ~Ah,~ ~of~ ~course...~ ~Okey.~ ~I~ ~can~ ~do~ ~that...~ ~Let~ ~me~ ~see...'~ NL NL He shakes one of his arms and your account is suddenly in his hand! NL NL ~'Yeah.~ ~This~ ~is~ ~goooood.'~",
       "~'Wait.~ ~Wait~ ~a~ ~second.~ ~Please~ ~wait.~ ~Wait.~ ~Wait~ ~a~ ~second.'~ NL NL You think you made the right choice."
     ],
     "OPTIONS": [
@@ -20,7 +20,7 @@
   "GemFortune": {
     "NAME": "Gems of Fortune",
     "DESCRIPTIONS": [
-      "It seems like there is an event taking place ahead. As you come closer, you notice that it's the Gems of Fortune Cup! ~'Sounds~ ~like~ ~it's~ ~another~ ~competition~ ~of~ #y~Luck~.' NL #r@'So@ #r@I@ #r@see!@ #r@Ain't@ #r@there@ #r@any@ #r@Shadowcraft,@ #r@Runecraft@ #r@or@ #r@Forestcraft?'@ NL NL A man asks you with a smile on his face: NL 'Are you interested in entering #y~Gems~ #y~of~ #y~Fortune~ ?' ",
+      "It seems like there is an event taking place ahead. As you come closer, you notice that it's the Gems of Fortune Cup! ~'Sounds~ ~like~ ~it's~ ~another~ ~competition~ ~of~ #y~Luck~ .' NL #r@'So@ #r@I@ #r@see!@ #r@Ain't@ #r@there@ #r@any@ #r@Shadowcraft,@ #r@Runecraft@ #r@or@ #r@Forestcraft?'@ NL NL A man asks you with a smile on his face: NL 'Are you interested in entering #y~Gems~ #y~of~ #y~Fortune~ ?' ",
       "",
       "#y'Marvelous!' NL Soon after your reply, the whole stage is shrouded in #p~Thick~ #p~Black~ #p~Smoke~ ... NL NL Just at the time you're about to win, your opponent plays an #y~Arcane~ #y~Item~ #y~Shop~ and kills your leader in one turn. NL NL The match is over and you're back on the track, but somehow you feel a bit #bAngry .",
       "'What a disappointment...' NL ~'Anyway,~ ~sooner~ ~or~ ~later~ ~you~ ~will~ ~join~ ~us!'~  NL #r@'Hahaha@ #r@Hahahahaha!'@ NL NL The man disappeared, leaving only the disturbing laughter echoing in your ears.",
@@ -104,7 +104,7 @@
   "Crossover": {
     "NAME": "Storms Cross Craft",
     "DESCRIPTIONS": [
-      "It seems like there is an event taking place ahead. As you come closer, you notice that it's the Storms Cross Craft Cup! ~'Sounds~ ~like~ ~it's~ ~another~ ~competition~ ~of~ #y~Luck~.' NL #r@'Wait,@ #r@why@ #r@is@ #r@it@ #r@all@ #r@Swordcraft@ #r@and@ #r@Shadowcraft?!'@ NL NL A man asks you with a smile on his face: NL 'Are you interested in entering the #y~Storms~ #y~Cross~ #y~Craft~ #y~Cup?~' ",
+      "It seems like there is an event taking place ahead. As you come closer, you notice that it's the Storms Cross Craft Cup! ~'Sounds~ ~like~ ~it's~ ~another~ ~competition~ ~of~ #y~Luck~ .' NL #r@'Wait,@ #r@why@ #r@is@ #r@it@ #r@all@ #r@Swordcraft@ #r@and@ #r@Shadowcraft?!'@ NL NL A man asks you with a smile on his face: NL 'Are you interested in entering the #y~Storms~ #y~Cross~ #y~Craft~ #y~Cup?~' ",
       "",
       "#y'Marvelous!' NL Soon after your reply, the whole arena is shrouded in #p~thick~ #p~black~ #p~smoke~ ... NL NL Just as you're about to win, your opponent plays Ladica and kills your leader on turn 5. NL NL The match is over and you're back on the track, but somehow you feel a bit #bAngry .",
       "'What a disappointment...' NL ~'Anyway,~ ~sooner~ ~or~ ~later~ ~you~ ~will~ ~join~ ~us!'~  NL #r@'Hahaha@ #r@Hahahahaha!'@ NL NL The man disappears, leaving only the disturbing laughter echoing in your ears.",
@@ -125,7 +125,7 @@
       "After a time of great strife, you will face a #p~turning~ #p~point~. NL The scales will begin to tip, and the world will begin to tremble.",
       "So choose wisely. Who is your #r~enemy~ ? NL Who will you lay #b~waste~ to?",
       "I'm afraid you don't have that right. NL ~Not~ ~for~ ~now,~ ~at~ ~least.~",
-      "(No. That can't be right... ~Right?~)",
+      "(No. That can't be right... ~Right?~ )",
       "~My!~ NL ~Very~ ~well~ ~then.~"
     ],
     "OPTIONS": [
