@@ -49,7 +49,7 @@
       "NAMES": [
         "crystallize"
       ],
-      "DESCRIPTION": "If you do not have enough #yEnergy, NL it can be played as a Power card instead for the #yCrystallize cost. NL Only the #yCrystallize effects will activate if played in this way. (Won't trigger if the card is not being played from hand.)"
+      "DESCRIPTION": "If you do not have enough #yEnergy, cards with Crystallize can be played as a Power card instead for the #yCrystallize cost. NL Only the #yCrystallize effects will activate if played in this way. (Won't trigger if the card is not being played from hand.)"
     },
     {
       "PROPER_NAME": "Machina",
