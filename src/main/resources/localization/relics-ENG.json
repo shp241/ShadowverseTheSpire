@@ -406,7 +406,7 @@
     "NAME": "Token of 1st",
     "FLAVOR": "I go first, no need to redraw.",
     "DESCRIPTIONS": [
-      "Whenever you draw a #yCurse card, move it to your Amulet Zone as a #yCountdown #b3 #yDivine Amulet. If it's the first time in this combat, draw #b1 card(s)."
+      "Whenever you draw a #yCurse card, move it to your Amulet zone as a #yCountdown #b3 Amulet with #yBanish. If it's the first time in this combat, draw #b1 card(s)."
     ]
   },
   "shadowverse:Savior": {
