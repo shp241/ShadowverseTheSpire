@@ -20,7 +20,7 @@
   "GemFortune": {
     "NAME": "Gems of Fortune",
     "DESCRIPTIONS": [
-      "It seems like there is an event taking place ahead. As you come closer, you notice that it's the Gems of Fortune Cup! ~'Sounds~ ~like~ ~it's~ ~another~ ~competition~ ~of~ #y~Luck~ .' NL #r@'So@ #r@I@ #r@see!@ #r@Ain't@ #r@there@ #r@any@ #r@Shadowcraft,@ #r@Runecraft@ #r@or@ #r@Forestcraft?'@ NL NL A man asks you with a smile on his face: NL 'Are you interested in entering #y~Gems~ #y~of~ #y~Fortune~ ?' ",
+      "It seems like there is an event taking place ahead. As you come closer, you notice that it's the Gems of Fortune Cup! ~'Sounds~ ~like~ ~it's~ ~another~ ~competition~ ~of~ #y~Luck~ .' NL #r@'So@ #r@I@ #r@see!@ #r@Ain't@ #r@there@ #r@any@ #r@Shadowcraft,@ #r@Runecraft@ #r@or@ #r@Forestcraft?'@ NL NL A man asks you with a smile on his face: NL 'Are you interested in entering #y~Gems~ #y~of~ #y~Fortune~ ? ' ",
       "",
       "#y'Marvelous!' NL Soon after your reply, the whole stage is shrouded in #p~Thick~ #p~Black~ #p~Smoke~ ... NL NL Just at the time you're about to win, your opponent plays an #y~Arcane~ #y~Item~ #y~Shop~ and kills your leader in one turn. NL NL The match is over and you're back on the track, but somehow you feel a bit #bAngry .",
       "'What a disappointment...' NL ~'Anyway,~ ~sooner~ ~or~ ~later~ ~you~ ~will~ ~join~ ~us!'~  NL #r@'Hahaha@ #r@Hahahahaha!'@ NL NL The man disappeared, leaving only the disturbing laughter echoing in your ears.",
@@ -104,7 +104,7 @@
   "Crossover": {
     "NAME": "Storms Cross Craft",
     "DESCRIPTIONS": [
-      "It seems like there is an event taking place ahead. As you come closer, you notice that it's the Storms Cross Craft Cup! ~'Sounds~ ~like~ ~it's~ ~another~ ~competition~ ~of~ #y~Luck~ .' NL #r@'Wait,@ #r@why@ #r@is@ #r@it@ #r@all@ #r@Swordcraft@ #r@and@ #r@Shadowcraft?!'@ NL NL A man asks you with a smile on his face: NL 'Are you interested in entering the #y~Storms~ #y~Cross~ #y~Craft~ #y~Cup?~' ",
+      "It seems like there is an event taking place ahead. As you come closer, you notice that it's the Storms Cross Craft Cup! ~'Sounds~ ~like~ ~it's~ ~another~ ~competition~ ~of~ #y~Luck~ .' NL #r@'Wait,@ #r@why@ #r@is@ #r@it@ #r@all@ #r@Swordcraft@ #r@and@ #r@Shadowcraft?!'@ NL NL A man asks you with a smile on his face: NL 'Are you interested in entering the #y~Storms~ #y~Cross~ #y~Craft~ #y~Cup~ ?'",
       "",
       "#y'Marvelous!' NL Soon after your reply, the whole arena is shrouded in #p~thick~ #p~black~ #p~smoke~ ... NL NL Just as you're about to win, your opponent plays Ladica and kills your leader on turn 5. NL NL The match is over and you're back on the track, but somehow you feel a bit #bAngry .",
       "'What a disappointment...' NL ~'Anyway,~ ~sooner~ ~or~ ~later~ ~you~ ~will~ ~join~ ~us!'~  NL #r@'Hahaha@ #r@Hahahahaha!'@ NL NL The man disappears, leaving only the disturbing laughter echoing in your ears.",
