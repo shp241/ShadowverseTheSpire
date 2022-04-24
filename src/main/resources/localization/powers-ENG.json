@@ -256,7 +256,7 @@
     ]
   },
   "shadowverse:IzudiaPower": {
-    "NAME": "Ward Of Unkilling",
+    "NAME": "Damage Reduction",
     "DESCRIPTIONS": [
       "For #b",
       " turn(s), you can't take more than #b5 damage at a time."
@@ -1157,119 +1157,119 @@
     ]
   },
   "shadowverse:RaPower": {
-    "NAME": "光辉显世·拉",
+    "NAME": "Ra, Radiance Incarnate",
     "DESCRIPTIONS": [
-      "回合结束时对全体敌人造成 #b",
-      " 点 伤害。"
+      "Deal #b",
+      " damage to all enemies at the end of your turn."
     ]
   },
   "shadowverse:RealmOfReposePower": {
-    "NAME": "安息的领域",
+    "NAME": "Realm of Repose",
     "DESCRIPTIONS": [
       " #b",
-      " 回合内，如果你没有打出过攻击牌，受到的 #b4 以上的伤害变为 #b3 。"
+      " If no Attack cards were played this turn, any damage you would receive equal to #b4 or more becomes #b3."
     ]
   },
   "shadowverse:AbdielPower": {
-    "NAME": "亚必迭",
+    "NAME": "Abdiel",
     "DESCRIPTIONS": [
-      "一回合一次，打出 #y非技能主教牌 时，获得 [E] ，增加1张 #y进化点+ 到手中。"
+      "Once per turn, whenever you play a non-Skill Havencraft card, gain [E] and add a #yEvolution #yPoint+ to your hand."
     ]
   },
   "shadowverse:WilbertPower": {
-    "NAME": "尊荣骑士·维尔伯特",
+    "NAME": "Wilbert, Grand Knight",
     "DESCRIPTIONS": [
-      "受到攻击时，如果你有格挡，对攻击者造成其最大生命值 #b5% (不会低于 #6 点)的伤害。"
+      "Whenever you are attacked, if you have any Block, deal damage equal to #b5% of the attacker’s max HP (no less than 6 damage)."
     ]
   },
   "shadowverse:Wilbert2Power": {
-    "NAME": "光璨圣骑士·维尔伯特",
+    "NAME": "Wilbert, Luminous Paladin",
     "DESCRIPTIONS": [
-      "回合结束时，对全体敌人造成自身格挡数量(最大 #b50 )点伤害。"
+      "At the end of your turn, deal damage to all enemies equal to your block (max #b50 damage)."
     ]
   },
   "shadowverse:NextTurnHC": {
-    "NAME": "尊荣骑士·维尔伯特：谢幕曲",
+    "NAME": "Wilbert, Grand Knight (Last Words)",
     "DESCRIPTIONS": [
-      "回合开始时，增加 #b",
-      " 张 #y圣骑兵 到手中。"
+      "At the start of your turn, add #b",
+      " #yHoly #yCavaliers to your hand."
     ]
   },
   "shadowverse:HereticPriestPower": {
-    "NAME": "邪教神父",
+    "NAME": "Heretic Priest",
     "DESCRIPTIONS": [
-      "每当抽到诅咒牌时，额外抽 #b",
-      " 张牌。"
+      "Whenever you draw a Curse card, draw #b",
+      " additional card(s)."
     ]
   },
   "shadowverse:HeavenFirePower": {
-    "NAME": "圣祝射击",
+    "NAME": "Haven Fire",
     "DESCRIPTIONS": [
-      "一回合一次，本回合如果使用过护符卡，增加 #b1 张 #y",
-      " 到手中。"
+      "Once per turn, whenever you play an Amulet, add #b1 #y",
+      " to your hand."
     ]
   },
   "shadowverse:RobowhipReverendPower": {
-    "NAME": "机械鞭僧侣",
+    "NAME": "Robowhip Reverend",
     "DESCRIPTIONS": [
-      "本回合每回复1次生命，获得 #b",
-      " 点 敏捷 。如果手中有机械攻击牌，额外获得 #b",
-      " 点 力量 。"
+      "Whenever you heal HP this turn, gain #b",
+      " Dexterity. If there are any Machina Attack cards in your hand, gain #b",
+      " Strength."
     ]
   },
   "shadowverse:HeavenlyAegisPower": {
-    "NAME": "天耀盾甲",
+    "NAME": "Heavenly Aegis",
     "DESCRIPTIONS": [
-      "不会受到 力量 和 敏捷 以外的负面效果影响。"
+      "You are not affected by debuffs other than those that affect Strength or Dexterity."
     ]
   },
   "shadowverse:LimoniaPower": {
-    "NAME": "残缺的圣女·莉莫涅姆",
+    "NAME": "Limonia, Flawed Saint",
     "DESCRIPTIONS": [
-      "打出机械攻击牌时，增加 #b1 张 #y莉莫涅姆的救济 到手中。",
-      "打出机械攻击牌时，增加 #b1 张 #y莉莫涅姆的救济+ 到手中。"
+      "Whenever you play a Machina Attack card, add #b1 #ySalvation #yEx #yLimonia to your hand.",
+      "Whenever you play a Machina Attack card, add #b1 #ySalvation #yEx #yLimonia+ to your hand."
     ]
   },
   "shadowverse:VicePower": {
-    "NAME": "机指狂人·伊维尔",
+    "NAME": "Vice, Death Grip",
     "DESCRIPTIONS": [
-      "打出机械攻击牌时，失去 #b2 点生命，获得 #b",
-      " 点 力量 。"
+      "Whenever you play a Machina Attack card, lose #b2 HP and gain #b",
+      " Strength."
     ]
   },
   "shadowverse:DDKPower": {
-    "NAME": "圣弓使者·库鲁特",
+    "NAME": "Kel, Holy Marksman",
     "DESCRIPTIONS": [
-      "回复生命时，对全体敌人造成 #b",
-      " 点伤害。"
+      "Whenever you heal HP, deal #b",
+      " damage to all enemies."
     ]
   },
   "shadowverse:TheStrengthPower": {
-    "NAME": "《力量》·索菲娜",
+    "NAME": "VIII. Sofina, Strength",
     "DESCRIPTIONS": [
-      "受到的伤害减少 #b",
-      " 点。",
-      "受到的伤害增加 #b"
+      "Take #b",
+      " less damage.",
+      "Increase damage taken by #b"
     ]
   },
   "shadowverse:QueenOfHopePower": {
-    "NAME": "希望女王·莉迪耶尔",
+    "NAME": "Zoe, Queen of Hope",
     "DESCRIPTIONS": [
-      "每当回复生命时抽 #b",
-      " 张牌。"
+      "Whenever you heal HP, draw #b",
+      " card(s)."
     ]
   },
   "shadowverse:MusePrincessPower": {
-    "NAME": "灵鼠公主·蜜尔菲",
+    "NAME": "Daffodil, Meus Princess",
     "DESCRIPTIONS": [
-      "打出 #y那塔拉的大树 时，如果手中没有 #y灵鼠族小小骑士 ，增加 #b1 张到手中。"
+      "Whenever you play a #yNaterran #yGreat #yTree, if you don't have a #yMeus #yKnight in your hand, add #b1 to your hand."
     ]
   },
   "shadowverse:ErisPower": {
-    "NAME": "赎罪司祭·伊莉斯",
+    "NAME": "Eris, Atoned Priestess",
     "DESCRIPTIONS": [
-      "回合结束时，从 #y遗存的角柱 、 #y遗存的圆柱 、 #y遗存的正多面体 中随机将1张未存在于护符区的放置到护符区。",
-      "回合结束时，从 #y遗存的角柱+ 、 #y遗存的圆柱+ 、 #y遗存的正多面体+ 中随机将1张未存在于护符区的放置到护符区。"
+      "At the end of your turn, place one of the following cards into your Amulet zone that isn't there already: #yPrism #yRelic, #yCylinder #yRelic, #yOctarelic.",
+      "At the end of your turn, place one of the following cards into your Amulet zone that isn't there already: #yPrism #yRelic+, #yCylinder #yRelic+, #yOctarelic+."
     ]
   },
   "shadowverse:IminaPower": {
@@ -1286,9 +1286,9 @@
     ]
   },
   "shadowverse:ImperialSaintPower": {
-    "NAME": "威严圣者",
+    "NAME": "Imperial Saint",
     "DESCRIPTIONS": [
-      "无效一次死亡，回复最大生命值 #b50% 的生命并追加 #b1 个额外回合。"
+      "The next time you would die, heal 50% of your max HP and take an extra turn instead."
     ]
   },
   "shadowverse:ShadowCorrosionPower": {
@@ -1394,10 +1394,10 @@
     ]
   },
   "shadowverse:AdherentOfDispairPower": {
-    "NAME": "绝望的崇拜者",
+    "NAME": "Adherent of Despair",
     "DESCRIPTIONS": [
-      "本回合如果没有打出过攻击牌，则阻止下一次受到的伤害。还可以生效 #b",
-      " 次。"
+      "If no Attack cards were played this turn, prevent the next time you would lose HP. This effect can be applied #b",
+      " times."
     ]
   },
   "shadowverse:AdherentOfAnnihilationPower": {

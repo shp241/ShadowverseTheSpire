@@ -373,7 +373,7 @@
         "heavenly aegis",
         "heavenly_aegis"
       ],
-      "DESCRIPTION": "8/8 NL Passive: Deal damage equal to Attack (affected by #yStrength ) to a random enemy, gain #yBlock equal to Health (affect by #yDexterity) at the end of your turn."
+      "DESCRIPTION": "8/8 NL Passive: Deal damage equal to Attack (affected by #yStrength) to a random enemy, gain #yBlock equal to Health (affected by #yDexterity) at the end of your turn."
     },
     {
       "PROPER_NAME": "Relic Goddess",
@@ -381,7 +381,7 @@
         "relic goddess",
         "relic_goddess"
       ],
-      "DESCRIPTION": "6/6 NL Passive: Deal damage equal to Attack (affect by #yStrength) to a random enemy, gain #yBlock equal to Health (affected by #yDexterity ) at the end of your turn."
+      "DESCRIPTION": "6/6 NL Passive: Deal damage equal to Attack (affected by #yStrength) to a random enemy, gain #yBlock equal to Health (affected by #yDexterity) at the end of your turn."
     },
     {
       "PROPER_NAME": "Ambush",

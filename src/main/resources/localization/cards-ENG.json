@@ -961,7 +961,7 @@
   "shadowverse:MiracleOfLove": {
     "NAME": "Miracle Of Love",
     "DESCRIPTION": "Choose: Play this card as either an *Irate *Forest *Beast or a *Gentle *Forest *Beauty. NL Enhance 2: Play this card as both.",
-    "UPGRADE_DESCRIPTION": "Choose: Play this card as either an *Irate *Forest *Beast+ or a *Gentle *Forest *Beauty+. NL Enhance 2: Play this card as both."
+    "UPGRADE_DESCRIPTION": "Choose: Play this card as either an *Irate *Forest *Beast+ or a *Gentle *Forest *Beauty+. NL Enhance 2: Play this card as both instead."
   },
   "shadowverse:ResolveOfSekka": {
     "NAME": "Resolve of the Nine-Tailed Fox",
@@ -1572,8 +1572,8 @@
   },
   "shadowverse:FriendsForever": {
     "NAME": "Friends Forever",
-    "DESCRIPTION": "Choose: Play this card as either a *Luna's *Game or an *Aenea's *Friendship. NL Necromancy 4: Play this card as both. NL Ethereal. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Choose: Play this card as either a *Luna's *Game or an *Aenea's *Friendship. NL Necromancy 4: Play this card as both. NL Exhaust."
+    "DESCRIPTION": "Choose: Play this card as either a *Luna's *Game or an *Aenea's *Friendship. NL Necromancy 4: Play this card as both instead. NL Ethereal. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose: Play this card as either a *Luna's *Game or an *Aenea's *Friendship. NL Necromancy 4: Play this card as both instead. NL Exhaust."
   },
   "shadowverse:LunaGame": {
     "NAME": "Luna's Game",
@@ -2369,7 +2369,7 @@
   },
   "shadowverse:RebelAgainstFate": {
     "NAME": "Rebel Against Fate",
-    "DESCRIPTION": "Choose: NL Play this card as either a *Yuwan’s *Fury or a *Belphomet’s *Crackdown. NL If Resonance is active for you, play this card as both. NL Exhaust."
+    "DESCRIPTION": "Choose: NL Play this card as either a *Yuwan’s *Fury or a *Belphomet’s *Crackdown. NL If Resonance is active for you, play this card as both instead. NL Exhaust."
   },
   "shadowverse:PurgationBlade": {
     "NAME": "Purgation's Blade",
@@ -3319,23 +3319,23 @@
     "DESCRIPTION": "Draw 1 card. Summon 1 *Heavy *Knight if it's an Attack card. Otherwise, deal !D! damage. NL Enhance 1: Draw !M! cards instead."
   },
   "shadowverse:BlackenedScripture": {
-    "NAME": "漆黑法典",
-    "DESCRIPTION": "给予 !M! 层 虚弱 和 脆弱. NL 消灭生命值为9以下的目标."
+    "NAME": "Blackened Scripture",
+    "DESCRIPTION": "Apply !M! Weak and Vulnerable. NL Kill the enemy if its HP is 9 or less."
   },
   "shadowverse:PriestOfTheCudgel": {
-    "NAME": "持矛锤的僧侣",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 给予 !M! 层 易伤.",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害. NL 给予 !M! 层 易伤. NL 消灭生命值为15以下的目标."
+    "NAME": "Priest of the Cudgel",
+    "DESCRIPTION": "Deal !D! Damage. NL Apply !M! Vulnerable.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Apply !M! Vulnerable. NL Kill the enemy if its HP is less than 15."
   },
   "shadowverse:SacredPlea": {
-    "NAME": "吟唱:神圣祈祷",
-    "DESCRIPTION": "倒计时 1 NL 抽 !M! 张牌."
+    "NAME": "Sacred Plea",
+    "DESCRIPTION": "Countdown 1: Draw !M! card(s)."
   },
   "shadowverse:HallowedDogma": {
-    "NAME": "崇高的教理",
-    "DESCRIPTION": "选择1张张护符减少2 倒计时. NL 抽 !M! 张牌.",
+    "NAME": "Hallowed Dogma",
+    "DESCRIPTION": "Select 1 Amulet and reduce its Countdown by 2. NL Draw !M! card(s).",
     "EXTENDED_DESCRIPTION": [
-      "没有可以加速的护符！"
+      "I have no Amulets with a Countdown I can reduce!"
     ]
   },
   "shadowverse:ImaginationRealized": {
@@ -3372,483 +3372,483 @@
     "UPGRADE_DESCRIPTION": "Put 1 *Fairy into your hand. NL If the amount of *Fairies played in this combat is more than 5, Upgrade this *Fairy. NL If more than 10, draw !M! cards. Gain [E] [E] (Limit)."
   },
   "shadowverse:HolyFalcon": {
-    "NAME": "神圣猎鹰",
-    "DESCRIPTION": "造成 !D! 点伤害. NL Exhaust."
+    "NAME": "Holy Falcon",
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust."
   },
   "shadowverse:RegalFalcon": {
-    "NAME": "壮丽大神隼",
-    "DESCRIPTION": "造成 !D! 点伤害. NL Exhaust."
+    "NAME": "Regal Falcon",
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust."
   },
   "shadowverse:HolyFlameTiger": {
-    "NAME": "圣炎猛虎",
+    "NAME": "Holyflame Tiger",
     "DESCRIPTION": "Gain !B! Block. NL Exhaust."
   },
   "shadowverse:HolywingDragon": {
-    "NAME": "圣翼白龙",
+    "NAME": "Holywing Dragon",
     "DESCRIPTION": "Gain !B! Block. NL Exhaust."
   },
   "shadowverse:BeastCallAria": {
-    "NAME": "吟唱:野兽公主的呼唤",
-    "DESCRIPTION": "倒计时 2 NL 增加1张 *神圣猎鹰 和 *圣炎猛虎 到手中.",
-    "UPGRADE_DESCRIPTION": "倒计时 2 NL 增加1张 *神圣猎鹰+ 和 *圣炎猛虎+ 到手中."
+    "NAME": "Beastcall Aria",
+    "DESCRIPTION": "Countdown 2: Put 1 *Holy *Falcon and 1 *Holyflame *Tiger into your hand.",
+    "UPGRADE_DESCRIPTION": "Countdown 2: Put 1 *Holy *Falcon+ and 1 *Holyflame *Tiger+ into your hand."
   },
   "shadowverse:MoriaeEncomium": {
-    "NAME": "愚神礼赞",
-    "DESCRIPTION": "抽 !M! 张牌, 增加1张 *恶魔崇拜 到抽牌堆中. NL 倒计时 1 NL 给予随机敌人 !M! 层 易伤."
+    "NAME": "Moriae Encomium",
+    "DESCRIPTION": "Draw !M! card(s) and put 1 *Black *Mass into your draw pile. NL Countdown 1: Apply !M! Vulnerable to a random enemy."
   },
   "shadowverse:ThemisDecree": {
-    "NAME": "忒弥斯的审判",
-    "DESCRIPTION": "Exhaust手中所有非技能或非能力牌. NL 给予全体敌人 !M! 层 虚弱 和 易伤. NL Exhaust."
+    "NAME": "Themis's Decree",
+    "DESCRIPTION": "Exhaust all Attack cards in your hand. NL Apply !M! Weak and Vulnerable to all enemies. NL Exhaust."
   },
   "shadowverse:HolyEnchanter": {
-    "NAME": "着魔的圣骑士",
-    "DESCRIPTION": "Gain !B! Block. NL 抽自身 格挡 数量除以这张牌的 格挡 张牌."
+    "NAME": "Enchanted Knight",
+    "DESCRIPTION": "Gain !B! Block. Then, draw cards equal to your total Block."
   },
   "shadowverse:PunishmentSniper": {
-    "NAME": "伐罪狙击手",
-    "DESCRIPTION": "Gain !B! Block. NL 造成 !D! 点伤害. NL (本场战斗已触发的护符数量的一半 !M! 倍)"
+    "NAME": "Vengeful Sniper",
+    "DESCRIPTION": "Gain !B! Block and deal !D! damage. NL (The damage dealt is equal to half the Amulets played this combat times !M!.)"
   },
   "shadowverse:SeraphLapis": {
-    "NAME": "光耀的炽天使·拉碧丝",
-    "DESCRIPTION": "圣祝. NL 倒计时 1 NL 获得本场战斗的胜利."
+    "NAME": "Seraph Lapis, Glory Be",
+    "DESCRIPTION": "Countdown 1: Win the battle. NL Banish."
   },
   "shadowverse:RenascentSeraph": {
-    "NAME": "复苏的炽天使",
-    "DESCRIPTION": "圣祝. NL 倒计时 1 NL 增加1张 *光耀的炽天使·拉碧丝 到手中.",
-    "UPGRADE_DESCRIPTION":"圣祝. NL 倒计时 1 NL 增加1张 *光耀的炽天使·拉碧丝+ 到手中."
+    "NAME": "Renascent Seraph",
+    "DESCRIPTION": "Countdown 1: Put a *Seraph *Lapis, *Glory *Be into your hand. NL Banish.",
+    "UPGRADE_DESCRIPTION": "Countdown 1: Put a *Seraph *Lapis, *Glory *Be+ into your hand. NL Banish."
   },
   "shadowverse:AwakenedSeraph": {
-    "NAME": "觉醒的炽天使",
-    "DESCRIPTION": "圣祝. NL 倒计时 1 NL 增加1张 *复苏的炽天使 到手中.",
-    "UPGRADE_DESCRIPTION": "圣祝. NL 倒计时 1 NL 增加1张 *复苏的炽天使+ 到手中."
+    "NAME": "Awakened Seraph",
+    "DESCRIPTION": "Countdown 1: Put a *Renascent *Seraph into your hand. NL Banish.",
+    "UPGRADE_DESCRIPTION": "Countdown 1: Put a *Renascent *Seraph+ into your hand. NL Banish."
   },
   "shadowverse:EnstatuedSeraph": {
-    "NAME": "被封印的炽天使",
-    "DESCRIPTION": "圣祝. NL 倒计时 1 NL 增加1张 *觉醒的炽天使 到手中.",
-    "UPGRADE_DESCRIPTION": "圣祝. NL 倒计时 1 NL 增加1张 *觉醒的炽天使+ 到手中."
+    "NAME": "Enstatued Seraph",
+    "DESCRIPTION": "Countdown 1: Put an *Awakened *Seraph into your hand. NL Banish.",
+    "UPGRADE_DESCRIPTION": "Countdown 1: Put an *Awakened *Seraph+ into your hand. NL Banish."
   },
   "shadowverse:Ra": {
-    "NAME": "光辉显世·拉",
-    "DESCRIPTION": "回合结束时对全体敌人造成 !M! 点伤害. NL 这个伤害每回合会增加 !M! 点."
+    "NAME": "Ra, Radiance Incarnate",
+    "DESCRIPTION": "At the end of your turn, deal !M! damage to all enemies. NL This damage increases by !M! every turn."
   },
   "shadowverse:OmenOfRepose": {
-    "NAME": "安息绝杰·玛文",
-    "DESCRIPTION": "回复1点生命, 下回合额外抽1张牌. NL 使所有护符倒计时减少1. NL 下回合如果未打出过攻击牌, 受到的4以上的伤害变为3. NL 跳过双方回合. NL Exhaust. "
+    "NAME": "Marwynn, Omen of Repose",
+    "DESCRIPTION": "Heal 1 HP and draw 1 more card at the start of your next turn. NL Reduce the Countdown of all Amulets by 1. NL If no Attack cards are played this turn, if you would receive more than 4 damage, that damage becomes 3 instead. NL Both you and the enemy skip your next turn. NL Exhaust."
   },
   "shadowverse:OmenOfRepose2": {
-    "NAME": "绝望安息·玛文",
-    "DESCRIPTION": "Exhaust 手中所有非技能或非能力牌. NL 给予全体敌人4层 虚弱 和 易伤. NL 如果 Exhaust的牌和敌人的合计数量为4以上, 增加1张 *绝望的奔流 到手中. NL Exhaust. "
+    "NAME": "Marwynn, Repose of Despair",
+    "DESCRIPTION": "Exhaust all Attack cards in your hand. NL Apply 4 Weak and Vulnerable to all enemies. NL If the total number of Exhausted cards from this effect plus the number of enemies is 4 or more, put a *Torrent *of *Despair into your hand. NL Exhaust."
   },
   "shadowverse:Agnes": {
-    "NAME": "复仇的白刃·阿尼耶丝",
-    "DESCRIPTION": "Natura. NL 每打出1张护符牌, 耗能减少1. NL 每打出1张 *那塔拉的大树 , 耗能减少2. NL 造成 !D! 点伤害."
+    "NAME": "Agnes, Hollow Feather",
+    "DESCRIPTION": "Natura. NL This card costs 1 less Energy for each Amulet card played. Whenever you play a *Naterran *Great *Tree, reduce this card’s cost by 2 instead. NL Deal !D! damage."
   },
   "shadowverse:WhitefangTemple": {
-    "NAME": "吟唱:白牙神殿",
-    "DESCRIPTION": "圣祝 \b倒计时 6 NL 增加1张 *圣翼白龙 到手中. NL 每当回复生命时,  倒计时 减少1. NL 回合结束时回复1点生命.",
-    "UPGRADE_DESCRIPTION":"圣祝 \b倒计时 6 NL 增加1张 *圣翼白龙+ 到手中. NL 每当回复生命时,  倒计时 减少1. NL 回合结束时回复1点生命."
+    "NAME": "Whitefang Temple",
+    "DESCRIPTION": "Countdown 6: Put a *Holywing *Dragon into your hand. NL Whenever you heal HP, reduce the Countdown of this card by 1. NL At the end of your turn, heal 1 HP. NL Banish.",
+    "UPGRADE_DESCRIPTION": "Countdown 6: Put a *Holywing *Dragon+ into your hand. NL Whenever you heal HP, reduce the Countdown of this card by 1. NL At the end of your turn, heal 1 HP. NL Banish."
   },
   "shadowverse:ElanaPrayer": {
-    "NAME": "耶拉的祈祷",
-    "DESCRIPTION": "每当回复生命时, 获得1点 力量 和 敏捷."
+    "NAME": "Elana's Prayer",
+    "DESCRIPTION": "Whenever you heal HP, gain 1 Strength and Dexterity."
   },
   "shadowverse:Elana": {
-    "NAME": "清纯祈祷者·耶拉",
-    "DESCRIPTION": "Gain !B! Block. NL 增加1张 *耶拉的祈祷 到手中. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL 增加1张 *耶拉的祈祷+ 到手中. NL Exhaust."
+    "NAME": "Elana, Purest Prayer",
+    "DESCRIPTION": "Gain !B! Block. Put an *Elana's *Prayer into your hand. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Put an *Elana's *Prayer+ into your hand. NL Exhaust"
   },
   "shadowverse:IronknuckleNun": {
-    "NAME": "铁腕女修士",
-    "DESCRIPTION": "Machina. NL Gain !B! Block. NL 限定 获得 !M! 层 多重护甲. NL 增加1张 *修复模式 到手中."
+    "NAME": "Ironknuckle Nun",
+    "DESCRIPTION": "Machina. NL Gain !B! Block. NL Gain !M! Plated Armor (Limit). NL Add a *Repair *Mode to your hand."
   },
   "shadowverse:RadiantAngel": {
-    "NAME": "光辉天使",
-    "DESCRIPTION": "Gain !B! Block. NL 回复 !M! 点生命. NL 抽1张牌."
+    "NAME": "Radiance Angel",
+    "DESCRIPTION": "Gain !B! Block. NL Heal !M! HP. NL Draw a card."
   },
   "shadowverse:GodLovingSmite": {
-    "NAME": "神爱的一击",
-    "DESCRIPTION": "对随机敌人造成 !D! 点伤害. NL 使所有护符 倒计时 减少1."
+    "NAME": "Gods' Loving Smite",
+    "DESCRIPTION": "Deal !D! damage to a random enemy. NL Reduce the Countdown of all Amulets by 1."
   },
   "shadowverse:HolyCavalier": {
-    "NAME": "圣骑兵",
-    "DESCRIPTION": "Gain !B! Block. NL 获得 !M! 层 多重护甲. NL Exhaust."
+    "NAME": "Holy Cavalier",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Plated Armor. NL Exhaust."
   },
   "shadowverse:HallowedCave": {
-    "NAME": "洞窟圣堂",
-    "DESCRIPTION": "圣祝. NL 打出时增加1张 *圣骑兵 到手中. NL 回合开始时增加1张 *圣骑兵 到手中. NL 倒计时 2 \b失去这个效果.",
-    "UPGRADE_DESCRIPTION":"圣祝. NL 打出时增加1张 *圣骑兵 到手中. NL 回合开始时增加1张 *圣骑兵 到手中. NL 倒计时 3 \b失去这个效果."
+    "NAME": "Hallowed Cave Shrine",
+    "DESCRIPTION": "Add a *Holy *Cavalier to your hand. NL Add a *Holy *Cavalier to your hand at the start of your turn. NL Countdown 2: Lose this effect. NL Banish.",
+    "UPGRADE_DESCRIPTION": "Add a *Holy *Cavalier to your hand. NL Add a *Holy *Cavalier to your hand at the start of your turn. NL Countdown 3: Lose this effect. NL Banish."
   },
   "shadowverse:HolyHector": {
-    "NAME": "圣将军·赫克托",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 获得2点 临时力量. NL 如果 墓地 数量为9以上, 增加2张 *圣骑兵 到手中.",
-    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害. NL 获得2点 临时力量. NL 如果 墓地 数量为9以上, 增加2张 *圣骑兵+ 到手中."
+    "NAME": "Holylord Eachtar",
+    "DESCRIPTION": "Deal !D! damage. NL Gain 2 temporary Strength. NL If you have 9 or more Shadows, add 2 *Holy *Cavalier to your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain 2 temporary Strength. NL If you have 9 or more Shadows, add 2 *Holy *Cavaliers+ to your hand."
   },
   "shadowverse:AcolyteLight": {
-    "NAME": "破邪圣光",
-    "DESCRIPTION": "移除敌人的 格挡. NL 回复移除数量的生命值. NL Ethereal. NL Exhaust.",
-    "UPGRADE_DESCRIPTION":"移除敌人的 格挡. NL 回复移除数量的生命值. NL Exhaust."
+    "NAME": "Acolyte's Light",
+    "DESCRIPTION": "Remove an enemy's Block. NL Heal HP equal to the amount of Block removed. NL Ethereal. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Remove an enemy's Block. NL Heal HP equal to the amount of Block removed. NL Exhaust."
   },
   "shadowverse:TempleOfHeresy": {
-    "NAME": "邪教神殿",
-    "DESCRIPTION": "增加1张 *恶魔崇拜 到抽牌堆中. NL 圣祝 \b 倒计时 6. NL 从耗能为0的 *撒旦 或 *冰狱之王·撒旦 中随机增加1张到手牌中. NL 回合开始时, 护符栏位每有1张诅咒牌,  倒计时 减少1.",
-    "UPGRADE_DESCRIPTION":"Innate. NL 增加1张 *恶魔崇拜 到抽牌堆中. NL 圣祝 \b 倒计时 6. NL 从耗能为0的 *撒旦 或 *冰狱之王·撒旦 中随机增加1张到手牌中. NL 回合开始时, 护符栏位每有1张诅咒牌,  倒计时 减少1."
+    "NAME": "Temple of Heresy",
+    "DESCRIPTION": "Add a *Black *Mass to your draw pile. NL Countdown 6: Randomly add a *Prince *of *Darkness or *Prince *of *Cocytus to your hand and change its cost to 0. NL At the start of your turn, reduce this card's Countdown by 1 for every Curse card in your Amulet zone. NL Banish.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Add a *Black *Mass to your draw pile. NL Countdown 6: Randomly add a *Prince *of *Darkness or *Prince *of *Cocytus to your hand and change its cost to 0. NL At the start of your turn, reduce this card's Countdown by 1 for every Curse card in your Amulet zone. NL Banish."
   },
   "shadowverse:Abdiel": {
-    "NAME": "亚必迭",
-    "DESCRIPTION": "一回合一次, 打出非技能主教牌时, 获得 [E] , 增加1张 *进化点+ 到手中. NL Ethereal.",
-    "UPGRADE_DESCRIPTION":"一回合一次, 打出非技能主教牌时, 获得 [E] , 增加1张 *进化点+ 到手中."
+    "NAME": "Abdiel",
+    "DESCRIPTION": "Once per turn, whenever you play a non-Skill Havencraft card, gain [E] and add a *Evolution *Point+ to your hand. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Once per turn, whenever you play a non-Skill Havencraft card, gain [E] and add a *Evolution *Point+ to your hand."
   },
   "shadowverse:DivineBirdSong": {
-    "NAME": "吟唱:神鸟之笛",
-    "DESCRIPTION": "倒计时 2 NL 增加1张 *壮丽的大神隼 到手中.",
-    "UPGRADE_DESCRIPTION":"倒计时 2 NL 增加1张 *壮丽的大神隼+ 到手中."
+    "NAME": "Divine Birdsong",
+    "DESCRIPTION": "Countdown 2: Add a *Regal *Falcon to your hand.",
+    "UPGRADE_DESCRIPTION": "Countdown 2: Add a *Regal *Falcon+ to your hand."
   },
   "shadowverse:Wilbert": {
-    "NAME": "尊荣骑士·维尔伯特",
-    "DESCRIPTION": "Gain !B! Block. NL 给予自身「受到攻击时, 如果有 格挡 , 对攻击者造成其最大生命值5%（不会低于6点）的伤害.」效果. NL Last_Words 下回合开始时, 增加 !M! 张 *圣骑兵 到手中. NL Exhaust."
+    "NAME": "Wilbert, Grand Knight",
+    "DESCRIPTION": "Gain !B! Block. NL Gain the following effect: Whenever you are attacked, if you have any Block, deal damage equal to 5% of the attacker’s max HP (no less than 6 damage). NL Last_Words: When this card is Exhausted, at the start of your next turn, add !M! *Holy *Cavaliers to your hand. NL Exhaust."
   },
   "shadowverse:Wilbert2": {
-    "NAME": "光璨圣骑士·维尔伯特",
-    "DESCRIPTION": "Gain !B! Block. NL 给予自身「回合结束时, 对全体敌人造成对全体敌人造成自身格挡数量(最大50)点伤害.」效果. NL 增加 !M! 张 *圣骑兵 到手中. NL Exhaust."
+    "NAME": "Wilbert, Luminous Paladin",
+    "DESCRIPTION": "Gain !B! Block. NL Gain the following effect: At the end of your turn, deal damage to all enemies equal to your block (max 50 damage). NL Add !M! *Holy *Cavalier to your hand. NL Exhaust."
   },
   "shadowverse:Indulgence": {
-    "NAME": "赎罪券",
-    "DESCRIPTION": "支付8点金币 Exhaust 1张手牌. NL Exhaust.",
+    "NAME": "Indulgence",
+    "DESCRIPTION": "Lose 8 Gold and Exhaust a card in your hand. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      "没钱啦！"
+      "Not enough Gold!"
     ]
   },
   "shadowverse:Anvelt": {
-    "NAME": "双炮神罚·安维尔特",
-    "DESCRIPTION": "结晶 0 \b倒计时 7 NL 每次获得格挡时 倒计时 减少1. NL  NL --------------------- NL  NL 打出或 倒计时 结束时, Gain !B! Block , 对全体敌人造成 !D! 点伤害2次."
+    "NAME": "Anvelt, Judgment's Cannon",
+    "DESCRIPTION": "Crystallize 0: Countdown 7: Whenever you gain Block, reduce the Countdown of this card by 1. NL NL --------------------- NL NL When you play this card from your hand or its Countdown reaches 0, gain !B! Block and deal !D! damage to all enemies twice."
   },
   "shadowverse:EvilWorship": {
-    "NAME": "恶魔崇拜",
-    "DESCRIPTION": "每回合结束时获得1点 力量 , 失去1点 敏捷. NL Exhaust."
+    "NAME": "Black Mass",
+    "DESCRIPTION": "Gain 1 Strength and lose 1 Dexterity at the end of each turn. NL Exhaust."
   },
   "shadowverse:DirtyPriest": {
-    "NAME": "渎职的神父",
-    "DESCRIPTION": "结晶 0 \b倒计时 2 NL 回合开始时增加1张 *赎罪券 到手中. NL  NL --------------------- NL  NL Gain !B! Block. NL 分别往抽牌堆、手牌、弃牌堆中加入1张 *赎罪券."
+    "NAME": "Shady Priest",
+    "DESCRIPTION": "Crystallize 0: Countdown 2: Add an *Indulgence to your hand at the start of your turn. NL NL --------------------- NL NL Gain !B! Block. NL Add an *Indulgence to your hand, draw pile and discard pile."
   },
   "shadowverse:Tenko": {
-    "NAME": "天狐神社",
-    "DESCRIPTION": "每当回复生命时, 对随机敌人造成 !M! 点伤害."
+    "NAME": "Tenko's Shrine",
+    "DESCRIPTION": "Whenever you heal HP, deal !M! damage to a random enemy."
   },
   "shadowverse:PegasusSculpture": {
-    "NAME": "贝卡萨斯的结晶像",
-    "DESCRIPTION": "倒计时 4 NL 每回合结束时回复1点生命. NL Ethereal.",
-    "UPGRADE_DESCRIPTION":"倒计时 4 NL 每回合结束时回复1点生命."
+    "NAME": "Pegasus Sculpture",
+    "DESCRIPTION": "Countdown 4: Heal 1 HP at the end of your turn. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Countdown 4: Heal 1 HP at the end of your turn."
   },
   "shadowverse:BenevolentBlight": {
-    "NAME": "仁爱光芒",
-    "DESCRIPTION": "对全体敌人造成 !D! 点伤害, 回复 !M! 点生命, 抽1张牌. NL 爆能强化 3 \b翻倍上述效果. NL Exhaust."
+    "NAME": "Benevolent Blight",
+    "DESCRIPTION": "Deal !D! damage to all enemies, heal !M! HP and draw a card. NL Enhance 3: Do this twice. NL Exhaust."
   },
   "shadowverse:RobowingPrecant": {
-    "NAME": "Machina腕祈祷师",
-    "DESCRIPTION": "Machina. NL 造成 !D! 点伤害. NL 增加1张 *修复模式 到手中. NL 如果本回合已使用过 Machina 牌, 给予 !M! 层 中毒."
+    "NAME": "Robowing Precant",
+    "DESCRIPTION": "Machina. NL Deal !D! damage. NL Add a *Repair *Mode to your hand. NL If any other Machina cards were played this turn, apply !M! Poison."
   },
   "shadowverse:HeavenlyKnight": {
-    "NAME": "天耀战骑",
-    "DESCRIPTION": "这张卡受 !M! 倍 敏捷 影响. NL Gain !B! Block. NL 造成等量的伤害."
+    "NAME": "Heavenly Knight",
+    "DESCRIPTION": "Gain !B! Block and deal the same amount of damage. NL (This card is affected by !M! times Dexterity.)"
   },
   "shadowverse:SummitTemple": {
-    "NAME": "峰顶的教会",
-    "DESCRIPTION": "打出和出牌时会将你的 力量 转变为 敏捷.",
-    "UPGRADE_DESCRIPTION":"Innate. NL 打出和出牌时将你的 力量 转变为 敏捷."
+    "NAME": "Summit Temple",
+    "DESCRIPTION": "Whenever you play a card, treat your Strength as having the same value as your Dexterity.",
+    "UPGRADE_DESCRIPTION":"Innate. NL Whenever you play a card, treat your Strength as having the same value as your Dexterity."
   },
   "shadowverse:Charaton": {
-    "NAME": "炎冰祭司·卡拉特",
-    "DESCRIPTION": "造成 !D! 点伤害X次, 获得X点能量. NL X为本场战斗已触发的护符数量.",
+    "NAME": "Charaton, Iceflame Priest",
+    "DESCRIPTION": "Deal !D! damage X times and gain X Energy. X equals the number of Amulet cards played this combat.",
     "EXTENDED_DESCRIPTION": [
-      " NL (造成",
-      " 次伤害. NL 获得 ",
-      " 点能量."
+      " NL (Damage dealt:",
+      " . NL Energy gained: ",
+      " ."
     ]
   },
   "shadowverse:TarnishedGrail": {
-    "NAME": "不洁的圣杯",
-    "DESCRIPTION": "对全体敌人造成 !D! 点伤害. NL 增加2张 *恶魔崇拜 到弃牌堆中. NL 倒计时 1 \b从 *撒旦的仆从 、 *沉默的魔将 、 *狄斯的制裁 、 *阿斯塔罗特的宣判 中随机将3张加入手中."
+    "NAME": "Tarnished Grail",
+    "DESCRIPTION": "Deal !D! damage to all enemies. NL Add 2 *Black *Mass to your discard pile. NL Countdown 1: Randomly add 3 of the following cards to your hand: NL Servant of Darkness NL Silent Rider NL Dis's Damnation NL Astaroth's Reckoning"
   },
   "shadowverse:SkullFane": {
-    "NAME": "白骨圣堂主教",
-    "DESCRIPTION": "被抽到时, 护符栏位中每有一张诅咒耗能减少1. NL 打出护符卡时, 耗能减少1. NL 触发并移除你的所有护符, 每有一张诅咒Gain !B! Block 和 !M! 点 力量."
+    "NAME": "Skullfane",
+    "DESCRIPTION": "When you draw this card, reduce the cost of each Curse card in your Amulet zone by 1. NL Whenever you play an Amulet card, reduce the cost of this card by 1. NL Reduce the Countdown of all your Amulets to 0. For each Curse, gain !B! Block and !M! Strength."
   },
   "shadowverse:Tribunal": {
-    "NAME": "神魔审判所",
-    "DESCRIPTION": "给予随机敌人 !M! 层 虚弱. NL 将1张 *恶魔崇拜 加入抽牌堆. NL 倒计时 2 \b给予随机敌人 !M! 层 易伤. NL 将1张 *净化 加入手中.",
-    "UPGRADE_DESCRIPTION":"给予随机敌人 !M! 层 虚弱. NL 将1张 *恶魔崇拜 加入抽牌堆. NL 倒计时 2 \b给予随机敌人 !M! 层 易伤. NL 将1张 *净化+ 加入手中."
+    "NAME": "Tribunal of Good and Evil",
+    "DESCRIPTION": "Apply !M! Weak to a random enemy. Add a *Black *Mass to your draw pile. NL Countdown 2: Apply !M! Vulnerable to a random enemy. Add a *Purity to your hand.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Weak to a random enemy. Add a *Black *Mass to your draw pile. NL Countdown 2: Apply !M! Vulnerable to a random enemy. Add a *Purity+ to your hand."
   },
   "shadowverse:HealingPrayer": {
-    "NAME": "治愈祷告",
-    "DESCRIPTION": "回复3点生命. NL 使所有护符倒计时减少 !M!. NL Exhaust."
+    "NAME": "Healing Prayer",
+    "DESCRIPTION": "Heal 3 HP. NL Reduce the Countdown of all Amulets by !M!. NL Exhaust."
   },
   "shadowverse:HereticPriest": {
-    "NAME": "邪教神父",
-    "DESCRIPTION": "每当抽到诅咒牌时, 额外抽 !M! 张牌. NL 增加3张 *恶魔崇拜 到弃牌堆中."
+    "NAME": "Heretic Priest",
+    "DESCRIPTION": "Whenever you draw a Curse card, draw !M! additional card(s). NL Add 3 *Black *Mass to your discard pile."
   },
   "shadowverse:DarkOffering": {
-    "NAME": "暗黑供奉",
-    "DESCRIPTION": "选择手中1张诅咒牌或启示录牌或冥河牌置入护符区. NL 如果不可再放置护符, 改为 Exhaust. NL 获得 [E] [E]."
+    "NAME": "Dark Offering",
+    "DESCRIPTION": "Choose a Curse, Apocalypse or Cocytus card in your hand and put it into your Amulet zone. If you cannot, Exhaust it instead. NL Gain [E] [E]."
   },
   "shadowverse:UnlikelyFellowship": {
-    "NAME": "笨拙的信赖",
-    "DESCRIPTION": "Natura. NL 目标本回合失去 !M! 点 力量. NL 选择1张护符减少 !M! 倒计时. NL Exhaust."
+    "NAME": "Unlikely Fellowship",
+    "DESCRIPTION": "Natura. NL An enemy loses !M! Strength this turn. NL Select an Amulet and reduce its Countdown by !M!. NL Exhaust."
   },
   "shadowverse:HeavenFire": {
-    "NAME": "圣祝射击",
-    "DESCRIPTION": "对随机敌人造成 !D! 点伤害. NL 对全体敌人造成 !M! 点伤害. NL 给予自身「一回合一次, 打出护符牌时增加1张 *圣祝射击 到手中」效果. NL Exhaust.",
-    "UPGRADE_DESCRIPTION":"对随机敌人造成 !D! 点伤害. NL 对全体敌人造成 !M! 点伤害. NL 给予自身「一回合一次, 打出护符牌时增加1张 *圣祝射击+ 到手中」效果. NL Exhaust."
+    "NAME": "Haven Fire",
+    "DESCRIPTION": "Deal !D! damage to a random enemy then deal !M! damage to all enemies. NL Gain the following effect: Once per turn, add a *Haven *Fire to your hand whenever you play an Amulet. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to a random enemy then deal !M! damage to all enemies. NL Gain the following effect: Once per turn, add a *Haven *Fire+ to your hand whenever you play an Amulet. NL Exhaust."
   },
   "shadowverse:Selena": {
-    "NAME": "炽熔霜糖·圣里奈",
-    "DESCRIPTION": "Gain !B! Block. NL 如果护符区的护符数量为1以上, 增加1张 *圣祝射击 到手中. NL 2以上, 获得 [E]. NL 3以上, 对全体敌人造成 !D! 点伤害. NL 4以上, 所有护符 倒计时 减少3.",
-    "UPGRADE_DESCRIPTION":"Gain !B! Block. NL 如果护符区的护符数量为1以上, 增加1张 *圣祝射击+ 到手中. NL 2以上, 获得 [E]. NL 3以上, 对全体敌人造成 !D! 点伤害. NL 4以上, 所有护符 倒计时 减少3."
+    "NAME": "Selena, Sugarkiss Assassin",
+    "DESCRIPTION": "Gain !B! Block. NL If you have at least 1 card in your Amulet zone, put a *Haven *Fire into your hand. NL If you have at least 2, gain [E]. NL If you have at least 3, deal !D! damage to all enemies. NL If you have at least 4, reduce the Countdown of all Amulets by 3.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL If you have at least 1 card in your Amulet zone, put a *Haven *Fire+ into your hand. NL If you have at least 2, gain [E]. NL If you have at least 3, deal !D! damage to all enemies. NL If you have at least 4, reduce the Countdown of all Amulets by 3."
   },
   "shadowverse:GoldenCity": {
-    "NAME": "黄金都市",
-    "DESCRIPTION": "瞬念召唤 回合结束时如果剩余能量大于这张牌的耗能, 将这张牌置入到护符区. NL 打出的护符 倒计时 减少1."
+    "NAME": "City of Gold",
+    "DESCRIPTION": "Whenever you play an Amulet card, decrease its Countdown by 1. NL Invocation: At the end of your turn, if you have remaining Energy equal to or more than this card's cost, put this card into your Amulet zone."
   },
   "shadowverse:RobowhipReverend": {
-    "NAME": "Machina鞭僧侣",
-    "DESCRIPTION": "Machina. NL 本回合每回复一次生命, 获得 !M! 点 敏捷. NL 如果手中有其他 Machina 攻击牌, 额外获得 !M! 点 力量. NL Ethereal.",
-    "UPGRADE_DESCRIPTION":"Machina. NL 本回合每回复一次生命, 获得 !M! 点 敏捷. NL 如果手中有其他 Machina 攻击牌, 额外获得 !M! 点 力量."
+    "NAME": "Robowhip Reverend",
+    "DESCRIPTION": "Machina. NL Gain !M! Dexterity equal to HP healed this turn. NL If there are any Machina Attack cards in your hand, gain !M! Strength in addition. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Machina. NL Gain !M! Dexterity equal to HP healed this turn. NL If there are any Machina Attack cards in your hand, gain !M! Strength in addition."
   },
   "shadowverse:HeavenlyAegis": {
-    "NAME": "天耀盾甲",
-    "DESCRIPTION": "将这张牌置入护符区召唤一个 !D! / !B! 的 天耀盾甲. NL 你不会受到 力量 和 敏捷 以外的负面效果影响. NL Exhaust."
+    "NAME": "Heavenly Aegis",
+    "DESCRIPTION": "Put this card into your Amulet zone to summon a !D! / !B! Heavenly Aegis. NL You are not affected by debuffs other than those that affect Strength or Dexterity. NL Exhaust."
   },
   "shadowverse:SalvationLimonia": {
-    "NAME": "莉莫涅姆的救济",
-    "DESCRIPTION": "Machina. NL 选择1张主教攻击牌或Machina攻击牌耗能减少1. NL 如果本场战斗已打出的 *莉莫涅姆的救济 为第5张, 增加1张 *天耀盾甲 到手中. NL Exhaust.",
-    "UPGRADE_DESCRIPTION":"Machina. NL 保留. NL 选择1张主教攻击牌或Machina攻击牌耗能减少1. NL 如果本场战斗已打出的 *莉莫涅姆的救济 为第5张, 增加1张 *天耀盾甲 到手中. NL Exhaust "
+    "NAME": "Salvation Ex Limonia",
+    "DESCRIPTION": "Machina. NL Select a Havencraft Attack card or Machina Attack card in your hand and reduce its cost by 1. NL If this is the 5th time you've played *Salvation *Ex *Limonia this combat, put a *Heavenly *Aegis into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Machina. NL Retain. NL Select a Havencraft Attack card or Machina Attack card in your hand and reduce its cost by 1. NL If this is the 5th time you’ve played *Salvation *Ex *Limonia this combat, put a *Heavenly *Aegis into your hand. NL Exhaust."
   },
   "shadowverse:Limonia": {
-    "NAME": "残缺的圣女·莉莫涅姆",
-    "DESCRIPTION": "Machina. NL 打出 Machina 攻击牌 时, 增加1张 *莉莫涅姆的救济 到手中. NL Ethereal.",
-    "UPGRADE_DESCRIPTION":"Machina. NL 打出 Machina 攻击牌 时, 增加1张 *莉莫涅姆的救济+ 到手中. NL Ethereal."
+    "NAME": "Limonia, Flawed Saint",
+    "DESCRIPTION": "Machina. NL Whenever you play a Machina Attack card, add a *Salvation *Ex *Limonia to your hand. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Machina. NL Whenever you play a Machina Attack card, add a *Salvation *Ex *Limonia+ to your hand. NL Ethereal."
   },
   "shadowverse:Vice": {
-    "NAME": "机指狂人·伊维尔",
-    "DESCRIPTION": "Machina. NL 增加2张本回合耗能为0的 *铁腕女修士 到手中. NL 每当打出 Machina 攻击牌时, 失去2点生命, 获得 !M! 点 力量. NL Ethereal."
+    "NAME": "Vice, Death Grip",
+    "DESCRIPTION": "Machina. NL Add 2 *Ironknuckle *Nun to your hand and change their costs to 0 this turn. NL Whenever you play a Machina card, lose 2 HP and gain !M! Strength. NL Ethereal."
   },
   "shadowverse:KLT": {
-    "NAME": "圣弓使者·库鲁特",
-    "DESCRIPTION": "对全体敌人造成 !D! 点伤害. NL 给予自身「回复生命时, 对全体敌人造成 !M! 点伤害」效果."
+    "NAME": "Kel, Holy Marksman",
+    "DESCRIPTION": "Deal !D! damage to all enemies. NL Gain the following effect: Whenever you heal HP, deal !M! damage to all enemies."
   },
   "shadowverse:TheUntrueGod": {
-    "NAME": "欺瞒之伪神",
-    "DESCRIPTION": "获得 [E] [E]. NL 在你的护符栏位中置入 *恶魔崇拜 直到满为止. NL Exhaust.",
-    "UPGRADE_DESCRIPTION":"获得 [E] [E] [E]. NL 在你的护符栏位中置入 *恶魔崇拜 直到满为止. NL Exhaust."
+    "NAME": "The Untrue God",
+    "DESCRIPTION": "Gain [E] [E]. NL Put copies of *Black *Mass into your Amulet zone until it is full. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain [E] [E] [E]. NL Put copies of *Black *Mass into your Amulet zone until it is full. NL Exhaust."
   },
   "shadowverse:AngelRat": {
-    "NAME": "天翼之鼠",
-    "DESCRIPTION": "Natura. NL 造成 !D! 点伤害. NL 如果护符区的护符数量为2以上, 伤害翻倍. NL 增加1张 *那塔拉的大树 到手中."
+    "NAME": "Saintly Squeaks",
+    "DESCRIPTION": "Natura. NL Deal !D! damage. If you have 2 or more cards in your Amulet zone, double the damage. NL Add a *Naterran *Great *Tree to your hand."
   },
   "shadowverse:MarkUnleashed": {
-    "NAME": "圣痕的执行",
-    "DESCRIPTION": "限定 回复1点生命. NL 造成 !D! 点伤害(本场战斗回复生命次数的 !M! 倍)."
+    "NAME": "Mark Unleashed",
+    "DESCRIPTION": "Heal 1 HP (Limit). NL Deal !D! damage !M! times the amount of HP healed this combat."
   },
   "shadowverse:MarkOfBalance": {
-    "NAME": "纪律的圣痕",
-    "DESCRIPTION": "回复1点生命. NL 回复敌人 !M! 点生命. NL 抽 !M! 张牌. NL Exhaust."
+    "NAME": "Mark of Balance",
+    "DESCRIPTION": "Heal 1 HP. NL The enemy heals !M! HP. NL Draw !M! card(s). NL Exhaust."
   },
   "shadowverse:Marlone": {
-    "NAME": "均衡之光·马龙",
-    "DESCRIPTION": "Gain !B! Block. NL 增加1张 *纪律的圣痕 到手中.",
-    "UPGRADE_DESCRIPTION":"Gain !B! Block. NL 增加1张 *纪律的圣痕+ 到手中."
+    "NAME": "Marlone, Light of Balance",
+    "DESCRIPTION": "Gain !B! Block. NL Add a *Mark *of *Balance to your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add a *Mark *of *Balance+ to your hand."
   },
   "shadowverse:Marlone2": {
-    "NAME": "平稳制定者·马龙",
-    "DESCRIPTION": "对全体敌人造成 !D! 点伤害. NL 手中每有1张攻击牌本伤害减少5点. NL 每有一个敌人本伤害增加 !D! 点."
+    "NAME": "Marlone, Peace Advocate",
+    "DESCRIPTION": "Deal !D! damage to all enemies. NL This damage is reduced by 5 for each Attack card in your hand. NL This damage is increased by !D! for each enemy."
   },
   "shadowverse:HolyShieldLion": {
-    "NAME": "圣盾天狮",
+    "NAME": "Holy Shield Lion",
     "DESCRIPTION": "Gain !B! Block. NL Exhaust."
   },
   "shadowverse:HolyPlateLion": {
-    "NAME": "圣铠天狮",
+    "NAME": "Holy Plate Lion",
     "DESCRIPTION": "Gain !B! Block. NL Exhaust."
   },
   "shadowverse:HolyKingLion": {
-    "NAME": "圣王天狮",
-    "DESCRIPTION": "造成 !D! 点伤害. NL Gain !B! Block. NL Exhaust."
+    "NAME": "Holy King Lion",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Exhaust."
   },
   "shadowverse:LionCrystal": {
-    "NAME": "圣狮结晶",
-    "DESCRIPTION": "爆能强化 2 \b增加1张 Exhaust 且没有爆能效果的 *圣狮结晶 到手中. NL 增加1张 *圣盾天狮 到手中. NL 如果本场战斗已打出的 *圣狮结晶 为3张以上, 改为 *圣铠天狮. NL 如果为6张以上, 改为 *圣王天狮.",
-    "UPGRADE_DESCRIPTION": "爆能强化 2 \b增加1张 Exhaust 且没有爆能效果的 *圣狮结晶+ 到手中. NL 增加1张 *圣盾天狮+ 到手中. NL 如果本场战斗已打出的 *圣狮结晶 为3张以上, 改为 *圣铠天狮+. NL 如果为6张以上, 改为 *圣王天狮+."
+    "NAME": "Holy Lion Crystal",
+    "DESCRIPTION": "Add a *Holy *Shield *Lion to your hand. NL If you've played 3 or more *Holy *Lion *Crystals this combat, add a *Holy *Plate *Lion instead. NL If you’ve played 6 or more, add a *Holy *King *Lion instead. NL Enhance 2: Add a *Holy *Lion *Crystal with Exhaust and without Enhance to your hand.",
+    "UPGRADE_DESCRIPTION": "Add a *Holy *Shield *Lion+ to your hand. NL If you've played 3 or more *Holy *Lion *Crystals this combat, add a *Holy *Plate *Lion+ instead. NL If you’ve played 6 or more, add a *Holy *King *Lion+ instead. NL Enhance 2: Add a *Holy *Lion *Crystal with Exhaust and without Enhance to your hand."
   },
   "shadowverse:LionCrystalCopy": {
-    "NAME": "圣狮结晶",
-    "DESCRIPTION": "增加1张 *圣盾天狮 到手中. NL 如果本场战斗已打出的 *圣狮结晶 为3张以上, 改为 *圣铠天狮. NL 如果为6张以上, 改为 *圣王天狮. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "增加1张 *圣盾天狮+ 到手中. NL 如果本场战斗已打出的 *圣狮结晶 为3张以上, 改为 *圣铠天狮+. NL 如果为6张以上, 改为 *圣王天狮+. NL Exhaust."
+    "NAME": "Holy Lion Crystal",
+    "DESCRIPTION": "Add a *Holy *Shield *Lion to your hand. NL If you've played 3 or more *Holy *Lion *Crystals this combat, add a *Holy *Plate *Lion instead. NL If you’ve played 6 or more, add a *Holy *King *Lion instead. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add a *Holy *Shield *Lion+ to your hand. NL If you've played 3 or more *Holy *Lion *Crystals this combat, add a *Holy *Plate *Lion+ instead. NL If you’ve played 6 or more, add a *Holy *King *Lion+ instead. NL Exhaust."
   },
   "shadowverse:LionTemple": {
-    "NAME": "圣狮神殿",
-    "DESCRIPTION": "每当打出 *圣狮结晶 时, 获得 [E]. NL 这个效果一回合最多触发5次.",
-    "UPGRADE_DESCRIPTION": "增加1张 Exhaust 且没有爆能效果的 *圣狮结晶 到手中. NL 每当打出 *圣狮结晶 时, 获得 [E]. NL 这个效果一回合最多触发5次."
+    "NAME": "Temple of the Holy Lion",
+    "DESCRIPTION": "Whenever you play a *Holy *Lion *Crystal, gain [E]. NL (This effect can activate up to 5 times per turn.)",
+    "UPGRADE_DESCRIPTION": "Add a *Holy *Lion *Crystal with Exhaust and without Enhance to your hand. NL Whenever you play a *Holy *Lion *Crystal, gain [E]. NL (This effect can activate up to 5 times per turn.)"
   },
   "shadowverse:PeaceWeaver": {
-    "NAME": "和平的推动者",
-    "DESCRIPTION": "Gain !B! Block. NL 增加1张 Exhaust 且没有爆能效果的 *圣狮结晶 到手中."
+    "NAME": "Peaceweaver",
+    "DESCRIPTION": "Gain !B! Block. NL Add a *Holy *Lion *Crystal with Exhaust and without Enhance to your hand."
   },
   "shadowverse:PrismSwing": {
-    "NAME": "圣光棱杖击",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 增加1张 Exhaust 且没有爆能效果的 *圣狮结晶 到手中."
+    "NAME": "Prism Swing",
+    "DESCRIPTION": "Deal !D! damage. NL Add a *Holy *Lion *Crystal with Exhaust and without Enhance to your hand."
   },
   "shadowverse:SalvationLion": {
-    "NAME": "救济圣狮",
-    "DESCRIPTION": "Gain !B! Block. NL 获得 !M! 层 多重护甲. NL 增加1张本回合耗能为0 Exhaust 且没有爆能效果的 *圣狮结晶 到手中."
+    "NAME": "Holy Lion of Salvation",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Plated Armor. NL Add a *Holy *Lion *Crystal with Exhaust and without Enhance to your hand. It costs 0 this turn."
   },
   "shadowverse:Munyaru": {
-    "NAME": "森林参谋长·喵鲁",
-    "DESCRIPTION": "Natura. NL 造成 !B! 点伤害. NL 造成 !D! 点伤害. NL Exhaust."
+    "NAME": "Meowskers, Ruff-Tuff Major",
+    "DESCRIPTION": "Natura. NL Deal !B! damage then deal !D! damage. NL Exhaust."
   },
   "shadowverse:SneakAttack": {
-    "NAME": "喵鲁登场",
-    "DESCRIPTION": "Natura · 倒计时 2 NL 回合开始时如果有 那塔拉的大树 倒计时 减1. NL 增加1张 *森林参谋长·喵鲁 到手中.",
-    "UPGRADE_DESCRIPTION": "Natura · 倒计时 2 NL 回合开始时如果有 那塔拉的大树 倒计时 减1. NL 增加1张 *森林参谋长·喵鲁+ 到手中."
+    "NAME": "Snnneak Attack!",
+    "DESCRIPTION": "Natura. NL Countdown 2: If you have the Power *Naterran *Great *Tree, reduce this card's Countdown by 1 at the start of your turn. NL Add a *Meowskers, *Ruff-Tuff *Major to your hand.",
+    "UPGRADE_DESCRIPTION": "Natura. NL Countdown 2: If you have the Power *Naterran *Great *Tree, reduce this card's Countdown by 1 at the start of your turn. NL Add a *Meowskers, *Ruff-Tuff *Major+ to your hand."
   },
   "shadowverse:ErisPrayer": {
-    "NAME": "伊莉斯的祈祷",
-    "DESCRIPTION": "抽 !M! 张牌."
+    "NAME": "Eris's Prayer",
+    "DESCRIPTION": "Draw !M! card(s)."
   },
   "shadowverse:MunyaruRaid": {
-    "NAME": "喵鲁的跃动",
-    "DESCRIPTION": "增加1张 *森林参谋长·喵鲁 到手中.",
-    "UPGRADE_DESCRIPTION": "增加1张 *森林参谋长·喵鲁+ 到手中."
+    "NAME": "Meowskers's Raid",
+    "DESCRIPTION": "Add a *Meowskers, *Ruff-Tuff *Major to your hand.",
+    "UPGRADE_DESCRIPTION": "Add a *Meowskers, *Ruff-Tuff *Major+ to your hand."
   },
   "shadowverse:MajorPrayers": {
-    "NAME": "拥覆的祈愿",
-    "DESCRIPTION": "抉择 NL 增加1张 *森林参谋长·喵鲁 到手中. NL 抽 !M! 张牌. NL 如果护符区的护符数量为2以上, 改为发动2种效果.",
-    "UPGRADE_DESCRIPTION": "抉择 NL 增加1张 *森林参谋长·喵鲁+ 到手中. NL 抽 !M! 张牌. NL 如果护符区的护符数量为2以上, 改为发动2种效果."
+    "NAME": "Major Prayers",
+    "DESCRIPTION": "Choose: Play this card as either a *Eris’s *Prayer or a *Meowskers's *Raid. NL If you have 2 or more cards in your Amulet zone, play this card as both instead.",
+    "UPGRADE_DESCRIPTION": "Choose: Play this card as either a *Eris's *Prayer+ or a *Meowskers's *Raid+. NL If you have 2 or more cards in your Amulet zone, play this card as both instead."
   },
   "shadowverse:RealmOfRepose": {
-    "NAME": "安息的领域",
-    "DESCRIPTION": "圣祝. NL 回合内如果没有打出过攻击牌, 受到的4以上的伤害变为3. NL 倒计时 2 NL 失去这个效果. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "圣祝. NL 回合内如果没有打出过攻击牌, 受到的4以上的伤害变为3. NL 倒计时 2 NL 失去这个效果."
+    "NAME": "Realm of Repose",
+    "DESCRIPTION": "If no Attack cards have been played this turn, any damage you would receive equal to 4 or more becomes 3. NL Countdown 2: Lose this effect. NL Ethereal. NL Banish.",
+    "UPGRADE_DESCRIPTION": "If no Attack cards have been played this turn, any damage you would receive equal to 4 or more becomes 3. NL Countdown 2: Lose this effect. NL Banish."
   },
   "shadowverse:EternalDispair": {
-    "NAME": "悠久的绝望",
-    "DESCRIPTION": "圣祝. NL 回合内如果没有打出过攻击牌, 回复2点生命, 下回合额外抽1张牌. NL 倒计时 3 NL 失去这个效果. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "圣祝. NL 回合内如果没有打出过攻击牌, 回复2点生命, 下回合额外抽1张牌. NL 倒计时 3 NL 失去这个效果."
+    "NAME": "Perpetual Despair",
+    "DESCRIPTION": "If you’ve played no Attack cards this turn, heal 2 HP and draw 1 additional card at the start of your next turn. NL Countdown 3: Lose this effect. NL Ethereal. NL Banish.",
+    "UPGRADE_DESCRIPTION": "If you’ve played no Attack cards this turn, heal 2 HP and draw 1 additional card at the start of your next turn. NL Countdown 3: Lose this effect. NL Banish."
   },
   "shadowverse:Jatelant": {
-    "NAME": "荣华加护神·亚忒朗图",
-    "DESCRIPTION": "根据本场战斗已触发的护符数量获得对应效果. NL 1,4,7,10,13获得 !M! 点金币. NL 2,5,8,11,14对全体敌人造成 !D! 点伤害一次, 回复3点生命. NL 3,6,9,12从本场战斗中已打出的攻击牌中增加1张耗能为0 且 Exhaust 的攻击牌到手中. NL Exhaust.",
+    "NAME": "Jatelant, God of Prosperity",
+    "DESCRIPTION": "Activate one of the following effects based on how many Amulet cards have been played this combat: NL 1, 4, 7, 10 or 13: Gain !M! Gold. NL 2, 5, 8, 11, or 14: Deal !D! damage to all enemies and heal 3 HP. NL 3, 6, 9 or 12: Add an Attack card from your Exhaust pile to your hand and change its cost to 0. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      " NL (已触发",
-      "  张.)"
+      " NL (Amulet cards played:",
+      "  .)"
     ]
   },
   "shadowverse:SomnolentStrength": {
-    "NAME": "虚脱的刚腕",
-    "DESCRIPTION": "圣祝 · 倒计时 2 NL 回合结束时获得 !M! 点 敏捷. NL 倒计时 结束时随机敌人失去 !M! 点力量."
+    "NAME": "Somnolent Strength",
+    "DESCRIPTION": "Countdown 2: Gain !M! Dexterity. A random enemy loses !M! Strength. NL Banish."
   },
   "shadowverse:TheStrength": {
-    "NAME": "《力量》·索菲娜",
-    "DESCRIPTION": "激奏 1 \b放置一张 *虚脱的刚腕 到护符区, Exhaust. NL  NL --------------------- NL  NL 获得 !M! 点 力量 和 敏捷. NL 受到的伤害减少你拥有的 力量 点. NL 如果受到伤害失去生命, 减少1点 力量."
+    "NAME": "VIII. Sofina, Strength",
+    "DESCRIPTION": "Accelerate 1: Put a *Somnolent *Strength into your Amulet zone and Exhaust this card. NL NL --------------------- NL NL Gain !M! Strength and Dexterity. NL You take X less damage. X equals your Strength. NL If you take damage and lose HP, lose 1 Strength."
   },
   "shadowverse:QueenOfHope": {
-    "NAME": "希望女王·莉迪耶尔",
-    "DESCRIPTION": "每当回复生命时, 抽 !M! 张牌."
+    "NAME": "Zoe, Queen of Hope",
+    "DESCRIPTION": "Whenever you heal HP, draw !M! card(s)."
   },
   "shadowverse:SacredCounter": {
-    "NAME": "崇高的反击",
-    "DESCRIPTION": "如果敌人当前意图为攻击且你的 格挡 大于敌人造成的伤害, 造成你的 格挡 的伤害.",
-    "EXTENDED_DESCRIPTION":[ " NL （造成 !D! 点伤害.）"]
+    "NAME": "Holy Counterattack",
+    "DESCRIPTION": "If the enemy's intent is to attack and your Block is greater than the damage the enemy intends to deal, deal damage to the enemy equal to your Block.",
+    "EXTENDED_DESCRIPTION":[ "NL (Deal !D! damage.)"]
   },
   "shadowverse:Muse": {
-    "NAME": "灵鼠族小小骑士",
-    "DESCRIPTION": "Natura. NL 造成 !D! 点伤害, Gain !B! Block. NL 如果在已有 那塔拉的大树 时打出 *那塔拉的大树 , 伤害和 格挡 增加 !M! 点."
+    "NAME": "Meus Knight",
+    "DESCRIPTION": "Natura. NL Deal !D! damage and deal !B! Block. NL Whenever you play a *Naterran *Great *Tree and already have the Power Naterran Great Tree, increase this card's damage and Block by !M!."
   },
   "shadowverse:MusePrincess": {
-    "NAME": "灵鼠公主·蜜尔菲",
-    "DESCRIPTION": "Natura. NL Gain !B! Block. NL  增加1张 *那塔拉的大树 到手中. NL 爆能强化 3 \b改为3张并获得 [E]. NL 本回合打出 *那塔拉的大树 时, 如果手中没有 *灵鼠族小小骑士 , 增加1张到手中."
+    "NAME": "Daffodil, Meus Princess",
+    "DESCRIPTION": "Natura. NL Gain !B! Block. Add a *Naterran *Great *Tree to your hand. NL Enhance 3: Add 3 instead and gain [E]. NL Whenever you play a *Naterran *Great *Tree this turn, if you don't have a *Meus *Knight in your hand, add 1 to your hand."
   },
   "shadowverse:PrimalShipwright": {
-    "NAME": "星界的艇人·诺亚",
-    "DESCRIPTION": "结晶 0 · 倒计时 3 NL 本回合耗能变为0返回手中. NL  NL --------------------- NL  NL 造成 !D! 点伤害. NL (根据 协作 数增加 !M! 点)"
+    "NAME": "Noa, Primal Shipwright",
+    "DESCRIPTION": "Crystallize 0: Countdown 3: Return this card to your hand and change its cost to 0. NL NL --------------------- NL NL Deal !D! damage. This damage is increased according to your Rally count."
   },
   "shadowverse:Garuda": {
-    "NAME": "天空守护者·迦楼罗",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 选择1张护符减少3 倒计时."
+    "NAME": "Winged Sentinel Garuda",
+    "DESCRIPTION": "Deal !D! damage. NL Select 1 Amulet and reduce its Countdown by 3."
   },
   "shadowverse:Garuda2": {
-    "NAME": "烈风翼神·迦楼罗",
-    "DESCRIPTION": "激奏 0 \b选择1张护符减少1 倒计时. NL  NL --------------------- NL  NL 减少所有护符3 倒计时. NL 每因此效果触发1张护符, 给予随机敌人 !D! 点伤害."
+    "NAME": "Garuda, Ruler of Storms",
+    "DESCRIPTION": "Accelerate 0: Select 1 Amulet and reduce its Countdown by 1. NL NL --------------------- NL NL Reduce the Countdown of all Amulets by 3. NL Deal !D! damage to a random enemy for each Amulet that had its Countdown reduced to 0 by this effect."
   },
   "shadowverse:Garuda3": {
-    "NAME": "乐园的双翼·迦楼罗",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 从抽牌堆中随机打出一张耗能为X以下最高耗能的攻击牌和护符牌. NL X为本场战斗已触发的护符数量.",
+    "NAME": "Garuda, Wings of Paradise",
+    "DESCRIPTION": "Deal !D! damage. NL Play a random Attack card and Amulet card from your draw pile with the highest cost equal to X or below. X is the number of Amulet cards played this combat.",
     "EXTENDED_DESCRIPTION": [
-      " NL (已触发",
-      "  张.)"
+      " NL (Amulet cards played:",
+      "  .)"
     ]
   },
   "shadowverse:Jeanne": {
-    "NAME": "圣女贞德",
-    "DESCRIPTION": "对全体敌人造成 !D! 点伤害. NL 获得 !M! 点 敏捷. NL Exhaust."
+    "NAME": "Jeanne d'Arc",
+    "DESCRIPTION": "Deal !D! damage to all enemies. NL Gain !M! Dexterity. NL Exhaust."
   },
   "shadowverse:Jeanne2": {
-    "NAME": "黑暗贞德",
-    "DESCRIPTION": "对全体敌人造成 !D! 点伤害. NL 获得 !M! 点 力量. NL Exhaust."
+    "NAME": "Dark Jeanne",
+    "DESCRIPTION": "Deal !D! damage to all enemies. NL Gain !M! Strength. NL Exhaust."
   },
   "shadowverse:Jeanne3": {
-    "NAME": "希望引导者·贞德",
-    "DESCRIPTION": "对全体敌人造成 !D! 点伤害. NL 回复 !M! 点生命. NL Exhaust."
+    "NAME": "Jeanne, Beacon of Salvation",
+    "DESCRIPTION": "Deal !D! damage to all enemies. NL Heal !M! HP. NL Exhaust."
   },
   "shadowverse:Jeanne4": {
-    "NAME": "绝望的圣女·贞德",
-    "DESCRIPTION": "对全体敌人造成 !D! 点伤害. NL 失去 !M! 点生命. NL 获得2层 再生. NL Exhaust."
+    "NAME": "Jeanne, Despair's Maiden",
+    "DESCRIPTION": "Deal !D! damage to all enemies. NL Lose !M! HP. NL Gain 2 Regen. NL Exhaust."
   },
   "shadowverse:RelicSphere": {
-    "NAME": "遗存的球体",
-    "DESCRIPTION": "给予 !M! 层 虚弱 和 脆弱. NL 消灭生命值为9以下的敌人. NL 如果护符区有 *遗存的女神 改为消灭生命值为27以下的敌人. NL 回合结束时, 如果护符区有 *遗存的角柱 、 *遗存的圆柱 、 *遗存的正多面体 , 则会和它们合体成一个 *遗存的女神.",
-    "UPGRADE_DESCRIPTION": "给予 !M! 层 虚弱 和 脆弱. NL 消灭生命值为9以下的敌人. NL 如果护符区有 *遗存的女神 改为消灭生命值为27以下的敌人. NL 回合结束时, 如果护符区有 *遗存的角柱 、 *遗存的圆柱 、 *遗存的正多面体 , 则会和它们合体成一个 *遗存的女神+."
+    "NAME": "Sphere Relic",
+    "DESCRIPTION": "Apply !M! Weak and Vulnerable. NL Kill an enemy with 9 HP or less. NL If there is a *Relic *Goddess in your Amulet zone, kill an enemy with 27 HP or less instead. NL At the end of your turn, if you also have a *Prism *Relic, *Cylinder *Relic and *Octarelic in your Amulet zone, combine them into a *Relic *Goddess and put it into your Amulet zone.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Weak and Vulnerable. NL Kill an enemy with 9 HP or less. NL If there is a *Relic *Goddess in your Amulet zone, kill an enemy with 27 HP or less instead. NL At the end of your turn, if you also have a *Prism *Relic, *Cylinder *Relic and *Octarelic in your Amulet zone, combine them into a *Relic *Goddess+ and put it into your Amulet zone."
   },
   "shadowverse:RelicPrism": {
-    "NAME": "遗存的角柱",
-    "DESCRIPTION": "回合开始时, 给予随机敌人 !M! 点伤害. NL 如果护符区有 *遗存的女神 改为给予3倍伤害."
+    "NAME": "Prism Relic",
+    "DESCRIPTION": "At the start of your turn, deal !M! damage to a random enemy. NL If there is a *Relic *Goddess in your Amulet zone, triple the damage."
   },
   "shadowverse:RelicTorus": {
-    "NAME": "遗存的圆柱",
-    "DESCRIPTION": "回合开始时, 给予全体敌人 !M! 点伤害. NL 如果护符区有 *遗存的女神 改为给予3倍伤害."
+    "NAME": "Cylinder Relic",
+    "DESCRIPTION": "At the start of your turn, deal !M! damage to all enemies. NL If there is a *Relic *Goddess in your Amulet zone, triple the damage."
   },
   "shadowverse:RelicPlaton": {
-    "NAME": "遗存的正多面体",
-    "DESCRIPTION": "回合开始时, 回复1点生命. NL 如果护符区有 *遗存的女神 改为回复3点生命.",
-    "UPGRADE_DESCRIPTION": "回合开始时, 回复1点生命, Gain !B! Block. NL 如果护符区有 *遗存的女神 改为回复3点生命."
+    "NAME": "Octarelic",
+    "DESCRIPTION": "At the start of your turn, heal 1 HP. NL If there is a *Relic *Goddess in your Amulet zone, heal 3 HP instead.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, heal 1 HP and gain !B! Block. NL If there is a *Relic *Goddess in your Amulet zone, heal 3 HP instead."
   },
   "shadowverse:RelicGod": {
-    "NAME": "遗存的女神",
-    "DESCRIPTION": "将这张牌置入护符区召唤一个 !D! / !B! 的 遗存的女神. NL 这张牌被置入护符区时, 你不会受 力量 和 敏捷 以外的负面效果影响. NL Exhaust."
+    "NAME": "Relic Goddess",
+    "DESCRIPTION": "Put this card into your Amulet zone to summon a !D! / !B! Relic Goddess. NL You are not affected by debuffs other than those that affect Strength or Dexterity. NL Exhaust."
   },
   "shadowverse:Eris": {
-    "NAME": "赎罪司祭·伊莉斯",
-    "DESCRIPTION": "Gain !B! Block. NL 增加1张 *遗存的球体 到手中. NL 给予自身「回合结束时, 从 *遗存的角柱 、 *遗存的圆柱 、 *遗存的正多面体 中随机将1张未存在于护符区的放置到护符区」效果. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL 增加1张 *遗存的球体+ 到手中. NL 给予自身「回合结束时, 从 *遗存的角柱+ 、 *遗存的圆柱+ 、 *遗存的正多面体+ 中随机将1张未存在于护符区的放置到护符区」效果. NL Exhaust."
+    "NAME": "Eris, Atoned Priestess",
+    "DESCRIPTION": "Gain !B! Block. NL Add a *Sphere *Relic to your hand. NL Gain the following effect: At the end of your turn, place one of the following cards into your Amulet zone that isn't there already: NL *Prism *Relic NL *Cylinder *Relic NL *Octarelic NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add a *Sphere *Relic+ to your hand. NL Gain the following effect: At the end of your turn, place one of the following cards into your Amulet zone that isn't there already: NL *Prism *Relic+ NL *Cylinder *Relic+ NL *Octarelic+ NL Exhaust."
   },
   "shadowverse:Saren": {
-    "NAME": "育幼院之主·咲恋",
-    "DESCRIPTION": "造成 !D! 点伤害. NL 选择1张护符减少3 倒计时. NL 如果护符区的护符数量为2以上,  升级 所有手牌. NL 连结爆发 !M! 对全体敌人造成 !D! 点伤害, 如果当前生命值为最大生命值一半以下, 伤害翻倍."
+    "NAME": "Saren, Orphanage Matron",
+    "DESCRIPTION": "Deal !D! damage. NL Select 1 Amulet and reduce its Countdown by 3. NL If you have 2 or more cards in your Amulet zone, upgrade all the cards in your hand. NL Union Burst !M!: Deal !D! damage to all enemies. If your HP is less than half your max HP, double the damage."
   },
   "shadowverse:LorenaWater": {
-    "NAME": "萝蕾娜的圣水",
-    "DESCRIPTION": "回复 !M! 点生命. NL 抽1张牌. NL Exhaust."
+    "NAME": "Lorena's Holy Water",
+    "DESCRIPTION": "Heal !M! HP. NL Draw 1 card. NL Exhaust."
   },
   "shadowverse:LorenaPunch": {
-    "NAME": "萝蕾娜的铁拳",
-    "DESCRIPTION": "造成 !D! 点伤害. NL (此伤害受到的加成取 力量 和 敏捷 中最高值) NL Exhaust."
+    "NAME": "Lorena's Iron Fist",
+    "DESCRIPTION": "Deal !D! Damage. (This damage is multiplied by your Strength or Dexterity, whichever is highest). NL Exhaust."
   },
   "shadowverse:Lorena": {
-    "NAME": "圣光牧师·萝蕾娜",
-    "DESCRIPTION": "Gain !B! Block. NL 抉择 \b从 *萝蕾娜的圣水 和 *萝蕾娜的铁拳 中 选择1张加入手中.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL 抉择 \b从 *萝蕾娜的圣水+ 和 *萝蕾娜的铁拳+ 中 选择1张加入手中."
+    "NAME": "Holy Priest Lorena",
+    "DESCRIPTION": "Gain !B! Block. NL Choose: Put a *Lorena's *Holy *Water or *Lorena's *Iron *Fist into your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Choose: Put a *Lorena's *Holy *Water+ or *Lorena's *Iron *Fist+ into your hand."
   },
   "shadowverse:Lorena2": {
-    "NAME": "传教司祭·萝蕾娜",
-    "DESCRIPTION": "Gain !B! Block. NL 增加1张 *进化点 到手中. NL 增加1张 *萝蕾娜的圣水 和 本回合耗能为0的 *萝蕾娜的铁拳 到手中."
+    "NAME": "Lorena, Iron-Willed Priest",
+    "DESCRIPTION": "Gain !B! Block. NL Put an *Evolution *Point into your hand. NL Put a *Lorena’s *Holy *Water and a *Lorena’s *Iron *Fist into your hand. They cost 0 this turn."
   },
   "shadowverse:ImperialSaint": {
     "NAME": "Imperial Saint",
@@ -3969,8 +3969,8 @@
     "DESCRIPTION": "Deal !D! damage. NL Gain the following effect: Once per turn, whenever you play a card, if it's the 4th card you've played this turn, put a copy of this card into hand and lose this effect. NL Exhaust."
   },
   "shadowverse:Shiro": {
-    "NAME": "被诅咒的双翼·希萝",
-    "DESCRIPTION": "保留. NL 被 保留 时, 每有10点 格挡 这张卡的耗能减少 [E]. NL Gain !B! Block. NL 对全体敌人造成自身 格挡 数量一半的伤害."
+    "NAME": "Shiro, Cursed Wings",
+    "DESCRIPTION": "Retain. NL Whenever this card is Retained, reduce the cost of this card by [E] for every 10 Blocks you have. NL Gain !B! Block. NL Deal damage to all enemies equal to half your Block."
   },
   "shadowverse:TheChariot": {
     "NAME": "VII. Oluon, The Chariot",
@@ -4035,8 +4035,8 @@
     "DESCRIPTION": "When you play your next Attack card, lose 1 HP and all enemies lose !M! HP. NL Enhance 1: Lose 2 HP and all enemies lose !M! HP twice. NL Exhaust."
   },
   "shadowverse:FlowOfDispair": {
-    "NAME": "绝望的奔流",
-    "DESCRIPTION": "消灭一个生命值不足40%(最小为40)的敌人. NL Exhaust."
+    "NAME": "Torrent of Despair",
+    "DESCRIPTION": "Kill an enemy with less than 40% of its max HP (minimum 40 HP). NL Exhaust."
   },
   "shadowverse:BlackArtifact2": {
     "NAME": "New Destruction",
@@ -4088,8 +4088,8 @@
     "UPGRADE_DESCRIPTION": "Disupgrade after playing. NL Deal !D! damage. NL Whenever you play an *Evolution *Point, put 1 random Loot card into your hand."
   },
   "shadowverse:AdherentOfDispair": {
-    "NAME": "绝望的崇拜者",
-    "DESCRIPTION": "如果回合内没有打出过攻击牌, 阻止下一次受到的伤害. NL 可以生效 !M! 次."
+    "NAME": "Adherent of Despair",
+    "DESCRIPTION": "If no Attack cards were played this turn, prevent the next time you would lose HP. NL This effect can be applied !M! times."
   },
   "shadowverse:AdherentOfAnnihilation": {
     "NAME": "Adherent of Annihilation",
@@ -4291,8 +4291,8 @@
     "DESCRIPTION": "Festive. NL Maneuver: Cost 2 or less. NL Deal !D! Damage. NL Deal !M! Damage to all enemies. NL The card exhausted to Maneuver this card will not be returned to the hand. Instead, add 1 copy of this card to your hand and change its cost to 0 until played."
   },
   "shadowverse:AllFeeling": {
-    "NAME": "千箔百面之邪神",
-    "DESCRIPTION": "宴乐 。 NL Exhaust !M! 张牌，抽 !M! 张牌。 NL 增加 !M! 张 *恶魔崇拜 到弃牌堆中。 NL 对全体敌人造成手牌、抽牌堆、弃牌堆、Exhaust堆、护符区中的诅咒牌数量的 !D! 倍伤害。"
+    "NAME": "All-Feeling Divine",
+    "DESCRIPTION": "Festive. NL Exhaust !M! cards in your hand and draw !M! cards. NL Add a *Black *Mass to your discard pile. NL Deal !D! damage times the total number of Curse cards in your hand, draw pile, discard pile, exhausted pile and Amulet zone to all enemies."
   },
   "shadowverse:Paracelise": {
     "NAME": "Paracelise, Demon of Greed",
@@ -4319,9 +4319,9 @@
     "DESCRIPTION": "Draw !M! cards. NL Add !M! *Puppet(s) to your hand."
   },
   "shadowverse:WhiteEagleBaptism": {
-    "NAME": "咏唱：白鹫的洗礼",
-    "DESCRIPTION": "由 *神圣猎鹰 和 *壮丽大神隼 中随机增加1张到手中。 NL 倒计时 2 \b增加1张未因此加入的卡到手中。",
-    "UPGRADE_DESCRIPTION": "由 *神圣猎鹰+ 和 *壮丽大神隼+ 中随机增加1张到手中。 NL 倒计时 2 \b增加1张未因此加入的卡到手中。"
+    "NAME": "White Eagle Baptism",
+    "DESCRIPTION": "Randomly add 1 *Holy *Falcon or *Regal *Falcon to your hand. NL Countdown 2: Add the other card to your hand.",
+    "UPGRADE_DESCRIPTION": "Randomly add 1 *Holy *Falcon+ or *Regal *Falcon+ to your hand. NL Countdown 2: Add the other card to your hand."
   },
   "shadowverse:Faker": {
     "NAME": "Deceptive Shapeshifter",
