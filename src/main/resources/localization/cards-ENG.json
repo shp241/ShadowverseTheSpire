@@ -4076,7 +4076,7 @@
   },
   "shadowverse:AdherentOfElimination": {
     "NAME": "Adherent Of Elimination",
-    "DESCRIPTION": "Deal !D! damage. NL Whenever you play other card,increase !M! damage for this."
+    "DESCRIPTION": "Deal !D! damage. NL Whenever you play another card, increase this damage by !M!."
   },
   "shadowverse:AdherentOfMelody": {
     "NAME": "Adherent of Melody",
