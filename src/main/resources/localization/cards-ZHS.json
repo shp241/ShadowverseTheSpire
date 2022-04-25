@@ -2853,8 +2853,8 @@
   },
   "shadowverse:Octrice": {
     "NAME": "强夺灾杰·奥克托丽丝",
-    "DESCRIPTION": "使敌人失去2点 力量，获得2点 力量。获得 !M! 金币。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "使敌人失去2点 力量，获得2点 力量。获得 !M! 金币。 NL 随机将2张 财宝牌 加入手牌。 NL 消耗 。"
+    "DESCRIPTION": "夺取2点 力量 。获得 !M! 金币。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "夺取2点 力量 。获得 !M! 金币。 NL 随机将2张 财宝牌 加入手牌。 NL 消耗 。"
   },
   "shadowverse:Octrice2": {
     "NAME": "空绝强夺·奥克托丽丝",
@@ -3000,8 +3000,8 @@
   },
   "shadowverse:HonorableThief": {
     "NAME": "诚实的侠客",
-    "DESCRIPTION": "造成 !D! 点伤害，给予 !M! 层 虚弱。 NL 增加一张 *黄金之靴 到手中。 NL 协作 7：升级这张牌。 NL ",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，给予 !M! 层 虚弱。 NL 增加一张 *黄金之靴 到手中。",
+    "DESCRIPTION": "造成 !D! 点伤害，给予 !M! 层 虚弱 。 NL 增加一张 *黄金之靴 到手中。 NL 协作 7：升级这张牌。 NL ",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，给予 !M! 层 虚弱 。 NL 增加一张 *黄金之靴 到手中。",
     "EXTENDED_DESCRIPTION": [
       "（协作数：",
       ")"
@@ -3036,8 +3036,8 @@
   },
   "shadowverse:RadicalGunslinger": {
     "NAME": "激进的神枪手",
-    "DESCRIPTION": "给予 !M! 层 易伤，造成 !D! 点伤害。",
-    "UPGRADE_DESCRIPTION": "打出后解除升级 。 NL 给予 !M! 层 易伤，造成 !D! 点伤害。 NL 增加一张 *顺从的骏马 到手中。"
+    "DESCRIPTION": "给予 !M! 层 易伤 ，造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION": "打出后解除升级 。 NL 给予 !M! 层 易伤 ，造成 !D! 点伤害。 NL 增加一张 *顺从的骏马 到手中。"
   },
   "shadowverse:Mirin": {
     "NAME": "武士梦想家·米琳",
@@ -3151,7 +3151,7 @@
   },
   "shadowverse:Albert2": {
     "NAME": "雷灭卿·阿尔贝尔",
-    "DESCRIPTION": "雷维翁 。 NL 造成 !D! 点伤害。 NL 破坏 1张卡，伤害增加6点。 NL 爆能强化 3 \b额外造成一次伤害，破坏 改为 消耗 手中的攻击牌，伤害增加6点，给予全体敌人2层 易伤 和 虚弱 。"
+    "DESCRIPTION": "雷维翁 。 NL 造成 !D! 点伤害。 NL 破坏 1张卡，伤害增加6点。 NL 爆能强化 3 \b额外造成一次伤害， 破坏 改为 消耗 手中的攻击牌，伤害增加6点，给予全体敌人2层 易伤 和 虚弱 。"
   },
   "shadowverse:LevinScholar": {
     "NAME": "雷维翁的探索者",
@@ -3164,8 +3164,8 @@
   },
   "shadowverse:LevinBeastmaster": {
     "NAME": "雷维翁魔兽使",
-    "DESCRIPTION": "雷维翁 。 NL 获得 !B! 点 格挡 。 NL 将1张圣兽白虎置入手牌。",
-    "UPGRADE_DESCRIPTION": "雷维翁 。 NL 打出后解除升级 。 NL 获得 !B! 点 格挡 。 NL 将3张圣兽白虎置入手牌。"
+    "DESCRIPTION": "雷维翁 。 NL 获得 !B! 点 格挡 。 NL 将1张 *圣兽白虎 置入手牌。",
+    "UPGRADE_DESCRIPTION": "雷维翁 。 NL 打出后解除升级 。 NL 获得 !B! 点 格挡 。 NL 将3张 *圣兽白虎 置入手牌。"
   },
   "shadowverse:WhiteTiger": {
     "NAME": "圣兽白虎",
@@ -3177,8 +3177,8 @@
   },
   "shadowverse:LevinArcher": {
     "NAME": "雷维翁弓箭手",
-    "DESCRIPTION": "雷维翁 。 NL 造成 !D! 点伤害，给予 !M! 层 易伤。",
-    "UPGRADE_DESCRIPTION": "雷维翁 。 NL 打出后解除升级 。 NL 造成 !D! 点伤害，给予 !M! 层 易伤，如果手牌中有其他 雷维翁 牌，重复一次。"
+    "DESCRIPTION": "雷维翁 。 NL 造成 !D! 点伤害，给予 !M! 层 易伤 。",
+    "UPGRADE_DESCRIPTION": "雷维翁 。 NL 打出后解除升级 。 NL 造成 !D! 点伤害，给予 !M! 层 易伤 ，如果手牌中有其他 雷维翁 牌，重复一次。"
   },
   "shadowverse:Lounes": {
     "NAME": "雷维翁见习兵·璐涅丝",
@@ -4343,5 +4343,19 @@
   "shadowverse:Comfort": {
     "NAME": "梦幻款待",
     "DESCRIPTION": "消耗1张牌，造成 !D! 点伤害。 NL 斩杀 时，最大生命值+ !M! 。 NL 消耗 。"
+  },
+  "shadowverse:InsatiableDesire": {
+    "NAME": "无尽之渴望",
+    "DESCRIPTION": "回合开始时额外抽1张卡，失去 [E] 。 NL 无法叠加。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "回合开始时额外抽1张卡。 NL 无法叠加。 NL 消耗 。"
+  },
+  "shadowverse:UnselfishGrace": {
+    "NAME": "无欲之恩宠",
+    "DESCRIPTION": "获得2层 再生 。 NL 倒计时 3 :获得「每当失去生命时，全体敌人减少 !M! 点生命上限」。"
+  },
+  "shadowverse:TheTemperance": {
+    "NAME": "《节制》·卢泽",
+    "DESCRIPTION": "激奏 0 \b增加1张 *无欲之恩宠 到手中， 渴望 则改为 *无尽之渴望 。 NL  NL --------------------- NL  NL 获得1层 无实体 。 NL 每当失去生命时，全体敌人减少 !M! 点生命上限。",
+    "UPGRADE_DESCRIPTION": "激奏 0 \b增加1张 *无欲之恩宠+ 到手中， 渴望 则改为 *无尽之渴望+ 。 NL  NL --------------------- NL  NL 获得1层 无实体 。 NL 每当失去生命时，全体敌人减少 !M! 点生命上限。"
   }
 }

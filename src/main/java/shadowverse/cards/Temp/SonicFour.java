@@ -32,7 +32,7 @@ import shadowverse.characters.Witchcraft;
    
    public SonicFour() {
      super("shadowverse:SonicFour", NAME, "img/cards/SonicFour.png", 0, DESCRIPTION, CardType.SKILL, Witchcraft.Enums.COLOR_BLUE, CardRarity.SPECIAL, CardTarget.ENEMY);
-     this.baseDamage = 8;
+     this.baseDamage = 9;
      this.baseMagicNumber = 1;
      this.magicNumber = this.baseMagicNumber;
      this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);

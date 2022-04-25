@@ -52,7 +52,7 @@ public class GraysonPower extends AbstractPower {
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card.hasTag(AbstractShadowversePlayer.Enums.MACHINE)) {
             flash();
-            addToBot((new DamageAllEnemiesAction(AbstractDungeon.player, this.amount, DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE)));
+            addToBot((new DamageAllEnemiesAction(AbstractDungeon.player, this.amount, DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_DIAGONAL)));
         }
     }
 }

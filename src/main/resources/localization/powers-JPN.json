@@ -1500,5 +1500,18 @@
       "ストライクでないアタックをプレイする度、 #b",
       " の #y筋力 と #y敏捷性 を得る。"
     ]
+  },
+  "shadowverse:TheTemperancePower": {
+    "NAME": "《節制》・ルーゼン",
+    "DESCRIPTIONS": [
+      "HPを失う度、すべての敵のHP最大値を- #b",
+      " する。"
+    ]
+  },
+  "shadowverse:InsatiableDesirePower": {
+    "NAME": "飽きなく切望",
+    "DESCRIPTIONS": [
+      "ターン開始時、追加でカードを #b1 枚引く。"
+    ]
   }
 }

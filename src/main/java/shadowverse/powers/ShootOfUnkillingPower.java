@@ -58,7 +58,7 @@ public class ShootOfUnkillingPower
         addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new MiracleEffect(Color.FOREST.cpy(),Color.WHITE.cpy(),"HEAL_3")));
         addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new DaggerSprayEffect(AbstractDungeon.getMonsters().shouldFlipVfx()), 1.5F));
         for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-            if (!mo.isDeadOrEscaped()) {
+            if (!mo.isDeadOrEscaped()&&!mo.halfDead) {
                 if ((mo.intent == AbstractMonster.Intent.ATTACK||
                         mo.intent == AbstractMonster.Intent.ATTACK_BUFF||
                         mo.intent == AbstractMonster.Intent.ATTACK_DEBUFF||

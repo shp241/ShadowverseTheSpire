@@ -1500,5 +1500,18 @@
       "Whenever you play a non-Strike Attack card, gain #b",
       " #yStrength and #yDexterity ."
     ]
+  },
+  "shadowverse:TheTemperancePower": {
+    "NAME": "XIV. Luzen, Temperance",
+    "DESCRIPTIONS": [
+      "Whenever you lose HP, reduce all enemies max HP by #b",
+      " ."
+    ]
+  },
+  "shadowverse:InsatiableDesirePower": {
+    "NAME": "Insatiable Desire",
+    "DESCRIPTIONS": [
+      "Draw #b1 additional card at the start of your turn."
+    ]
   }
 }

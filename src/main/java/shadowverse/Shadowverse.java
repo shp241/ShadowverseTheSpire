@@ -4,6 +4,7 @@ import basemod.BaseMod;
 import basemod.ReflectionHacks;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
+import com.badlogic.gdx.utils.compression.lzma.Base;
 import shadowverseCharbosses.bosses.KMR.KMR;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
@@ -1129,6 +1130,10 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         reflectedMap.put("Maisha2", new Sfx("sounds/Maisha2.wav"));
         reflectedMap.put("LostSamurai", new Sfx("sounds/LostSamurai.wav"));
         reflectedMap.put("Comfort", new Sfx("sounds/Comfort.wav"));
+        reflectedMap.put("TheTemperance", new Sfx("sounds/TheTemperance.wav"));
+        reflectedMap.put("TheTemperance_Acc", new Sfx("sounds/TheTemperance_Acc.wav"));
+        reflectedMap.put("UnselfishGrace", new Sfx("sounds/UnselfishGrace.wav"));
+        reflectedMap.put("InsatiableDesire", new Sfx("sounds/InsatiableDesire.wav"));
     }
 
     public void receiveEditRelics() {
@@ -2086,6 +2091,9 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard((AbstractCard) new AcidGolem());
         BaseMod.addCard((AbstractCard) new LostSamurai());
         BaseMod.addCard((AbstractCard) new Comfort());
+        BaseMod.addCard((AbstractCard) new InsatiableDesire());
+        BaseMod.addCard((AbstractCard) new UnselfishGrace());
+        BaseMod.addCard((AbstractCard) new TheTemperance());
         logger.info("Success");
     }
 

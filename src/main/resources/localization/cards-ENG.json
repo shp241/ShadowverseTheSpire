@@ -4343,5 +4343,19 @@
   "shadowverse:Comfort": {
     "NAME": "Illusions of Comfort",
     "DESCRIPTION": "Exhaust 1 card in your hand and deal !D! damage. NL If Fatal, increase yor max HP by !M!. NL Exhaust."
+  },
+  "shadowverse:InsatiableDesire": {
+    "NAME": "无尽之渴望",
+    "DESCRIPTION": "回合开始时额外抽1张卡，失去 [E] 。 NL 无法叠加。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "回合开始时额外抽1张卡。 NL 无法叠加。 NL 消耗 。"
+  },
+  "shadowverse:UnselfishGrace": {
+    "NAME": "无欲之恩宠",
+    "DESCRIPTION": "获得2层 再生 。 NL 倒计时 3 :获得「每当失去生命时，全体敌人减少 !M! 点生命上限」。"
+  },
+  "shadowverse:TheTemperance": {
+    "NAME": "《节制》·卢泽",
+    "DESCRIPTION": "激奏 0 \b增加1张 *无欲之恩宠 到手中， 渴望 则改为 *无尽之渴望 。 NL  NL --------------------- NL  NL 获得1层 无实体 。 NL 每当失去生命时，全体敌人减少 !M! 点生命上限。",
+    "UPGRADE_DESCRIPTION": "激奏 0 \b增加1张 *无欲之恩宠+ 到手中， 渴望 则改为 *无尽之渴望+ 。 NL  NL --------------------- NL  NL 获得1层 无实体 。 NL 每当失去生命时，全体敌人减少 !M! 点生命上限。"
   }
 }

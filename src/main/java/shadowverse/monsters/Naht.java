@@ -83,7 +83,7 @@ public class Naht extends CustomMonster implements SpriteCreature {
             this.multiDmg = 10;
             this.backDmg = 12;
             this.minionAmt = 4;
-            this.strAmount = 5;
+            this.strAmount = 4;
             this.debuffAmount = 3;
         } else if (AbstractDungeon.ascensionLevel >= 4) {
             this.heavyDmg = 27;
@@ -97,7 +97,7 @@ public class Naht extends CustomMonster implements SpriteCreature {
             this.multiDmg = 7;
             this.backDmg = 8;
             this.minionAmt = 2;
-            this.strAmount = 3;
+            this.strAmount = 2;
             this.debuffAmount = 2;
         }
         this.damage.add(new DamageInfo(this, this.heavyDmg));
@@ -235,6 +235,9 @@ public class Naht extends CustomMonster implements SpriteCreature {
                 }
                 turnsTaken++;
                 this.next = AbstractDungeon.monsterRng.random(3) + 1;
+                while (this.next==3){
+                    this.next = AbstractDungeon.monsterRng.random(3) + 1;
+                }
                 break;
             default:
                 System.out.println("ERROR: Default Take Turn was called on " + this.name);
@@ -248,6 +251,10 @@ public class Naht extends CustomMonster implements SpriteCreature {
         if (this.initialSpawn) {
             setMove((byte) 1, Intent.ATTACK, (this.damage.get(1)).base, 3, true);
             this.initialSpawn = false;
+            return;
+        }
+        if (this.turnsTaken==2){
+            setMove((byte) 3, Intent.UNKNOWN);
             return;
         }
         if (this.next == 1) {

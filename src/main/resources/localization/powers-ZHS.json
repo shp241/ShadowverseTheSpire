@@ -1500,5 +1500,18 @@
       "每打出非打击攻击牌时，获得 #b",
       " 点 #y力量 和 #y敏捷 。"
     ]
+  },
+  "shadowverse:TheTemperancePower": {
+    "NAME": "《节制》·卢泽",
+    "DESCRIPTIONS": [
+      "每当失去生命时，全体敌人减少 #b",
+      " 点生命上限。"
+    ]
+  },
+  "shadowverse:InsatiableDesirePower": {
+    "NAME": "无尽之渴望",
+    "DESCRIPTIONS": [
+      "每回合开始时，额外抽 #b1 张卡。"
+    ]
   }
 }
