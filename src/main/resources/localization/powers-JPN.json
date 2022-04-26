@@ -1030,73 +1030,73 @@
     ]
   },
   "shadowverse:DiscipleOfUsurpationPower": {
-    "NAME": "强夺的信徒",
+    "NAME": "簒奪の信者",
     "DESCRIPTIONS": [
-      "每当打出 #y财宝 牌时，获得 #b",
-      "点格挡。"
+      "#y財宝カード をプレイする度、 #b",
+      " ブロックを得る。"
     ]
   },
   "shadowverse:ApostleOfUsurpationPower": {
-    "NAME": "强夺的使徒",
+    "NAME": "簒奪の使徒",
     "DESCRIPTIONS": [
-      "每当打出 #y财宝 牌时，对随机敌人造成 #b",
-      "点伤害。"
+      "#y財宝カード をプレイする度、ランダムな敵に #b",
+      " ダメージを与える。"
     ]
   },
   "shadowverse:MarsPower": {
-    "NAME": "沉默的炎将·玛尔斯",
+    "NAME": "静かなる炎将・マーズ",
     "DESCRIPTIONS": [
-      "每当召唤 #y随从 时，使其获得+ #b",
+      "フォロワーを出す度、それを+ #b",
       "/+ #b",
-      "。"
+      " する。"
     ]
   },
   "shadowverse:FortressStrategistPower": {
-    "NAME": "王城司令官",
+    "NAME": "王城の司令",
     "DESCRIPTIONS": [
-      "每当打出技能牌时，随机升级 #b",
-      "张牌。"
+      "スキルをプレイする度、ランダムに #b",
+      "枚のカードをアップグレードする。"
     ]
   },
   "shadowverse:LuminousMagePower": {
-    "NAME": "鲁米那斯法师",
+    "NAME": "ルミナスメイジ",
     "DESCRIPTIONS": [
-      "ターン開始時、将 #b",
-      "张 #y进化点 置入手牌。"
+      "ターン開始時、 #b",
+      "枚の #yEP を手札に加える。"
     ]
   },
   "shadowverse:PrudentGeneralPower": {
-    "NAME": "静寂的元帅",
+    "NAME": "静寂の元帥",
     "DESCRIPTIONS": [
-      "ターン終了時，召唤 #b",
-      "个 #y铁甲骑士。"
+      "ターン終了時， #b",
+      " 体の #yスティールナイト を出す。"
     ]
   },
   "shadowverse:RoyalBannerPower": {
-    "NAME": "皇家御用战旗",
+    "NAME": "王家の御旗",
     "DESCRIPTIONS": [
-      "每当召唤 #y随从 时，使其获得+1/+0。回合开始时这个能力减少 #b1 层。"
+      "フォロワーを出す度、それを+1/+0する。ターン開始時、カウントダウンを #b1 進める。"
     ]
   },
   "shadowverse:LathamPower": {
-    "NAME": "高洁的骑士·雷瑟姆",
+    "NAME": "高潔なる騎士・レイサム",
     "DESCRIPTIONS": [
-      "使用攻击牌时，召唤1个 骑士 。"
+      "アタックをプレイする度、 #yナイト 1体を出す。"
     ]
   },
   "shadowverse:AlwidaPower": {
-    "NAME": "海贼女王·雅尔莉妲",
+    "NAME": "海賊女王・アルビダ",
     "DESCRIPTIONS": [
-      "每回合限 #b",
-      " 次，每当你使用财宝牌，召唤1个 航海家 和1个 维京战士 。"
+      "1ターンに #b",
+      " 度、財宝カードをプレイする度、 #yパイレーツ と #yヴァイキング 1体ずつ出す。"
     ]
   },
   "shadowverse:GloriousCorePower": {
-    "NAME": "荣耀之核",
+    "NAME": "グローリー・コア",
     "DESCRIPTIONS": [
-      "使用 *进化点 时，使所有随从获得+ #b",
+      "*EP をプレイする時、すべてのフォロワーを+ #b",
       "/+ #b",
-      "。"
+      " する。"
     ]
   },
   "shadowverse:GraysonDrawnPower": {
@@ -1279,10 +1279,10 @@
     ]
   },
   "shadowverse:DimensionShiftPower": {
-    "NAME": "次元超越",
+    "NAME": "次元の超越",
     "DESCRIPTIONS": [
-      "追加 #b",
-      " 个额外回合。"
+      "#b",
+      " ターン追加する。"
     ]
   },
   "shadowverse:ImperialSaintPower": {

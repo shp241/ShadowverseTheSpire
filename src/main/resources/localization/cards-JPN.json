@@ -3193,48 +3193,48 @@
     "DESCRIPTION": "機械 。 NL !D! ダメージを与える。 NL エンハンス 2 \b *プロダクトマシン !M! 枚を手札に加える。"
   },
   "shadowverse:StampedingFortress": {
-    "NAME": "虐袭城塞",
+    "NAME": "トランプルフォートレス",
     "DESCRIPTION": "機械 。 NL !D! ダメージを与える，!B! ブロック を得る。",
-    "UPGRADE_DESCRIPTION": "機械 。 NL ダウングレード 。 NL !D! ダメージを与える，!B! ブロック を得る。 NL 如果手牌中有其他 機械 牌，将 !M! 张 *生产機械 置入手牌。"
+    "UPGRADE_DESCRIPTION": "機械 。 NL ダウングレード 。 NL !D! ダメージを与える，!B! ブロック を得る。 NL 手札に他の 機械 カードがあるなら、 *プロダクトマシン !M! 枚を手札に加える。"
   },
   "shadowverse:MeetTheLevinSisters": {
-    "NAME": "レヴィオン姐妹登场！",
-    "DESCRIPTION": "レヴィオン 。 NL チョイス NL 从 *レヴィオン副团长・玛姆 、 *レヴィオン魔法师・蜜姆 、 *レヴィオン武斗家・梅姆 中选择1张加入手中。 NL 廃棄。",
-    "UPGRADE_DESCRIPTION": "レヴィオン 。 NL 将 *レヴィオン副团长・玛姆 、 *レヴィオン魔法师・蜜姆 、 *レヴィオン武斗家・梅姆 加入手牌。 NL 廃棄。"
+    "NAME": "レヴィオンシスターズ登場！！",
+    "DESCRIPTION": "レヴィオン 。 NL チョイス NL *レヴィオンの副団長・マイム 、 *レヴィオンの魔術師・ミイム 、 *レヴィオンの武闘家・メイム から1枚を選択して手札に加える。 NL 廃棄。",
+    "UPGRADE_DESCRIPTION": "レヴィオン 。 NL *レヴィオンの副団長・マイム 、 *レヴィオンの魔術師・ミイム 、 *レヴィオンの武闘家・メイム それぞれ1枚を手札に加える。 NL 廃棄。"
   },
   "shadowverse:Mina": {
-    "NAME": "レヴィオン副团长・玛姆",
-    "DESCRIPTION": "レヴィオン 。 NL !D! ダメージを与える，选择抽牌堆中的1张 レヴィオン 牌，将其置入手牌并在本回合中 保留 。"
+    "NAME": "レヴィオンの副団長・マイム",
+    "DESCRIPTION": "レヴィオン 。 NL !D! ダメージを与える。 NL 山札から レヴィオン カード1枚を手札に加え、それを1ターン 保留 する。"
   },
   "shadowverse:Mona": {
-    "NAME": "レヴィオン魔法师・蜜姆",
-    "DESCRIPTION": "レヴィオン 。 NL !B! ブロック を得る，获得 [E] 。 NL 如果手牌中有其他 レヴィオン 牌，再获得 [E] 。"
+    "NAME": "レヴィオンの魔術師・ミイム",
+    "DESCRIPTION": "レヴィオン 。 NL !B! ブロック と [E] を得る。 NL 手札に他の レヴィオン カードがあるなら、さらに [E] を得る。"
   },
   "shadowverse:Mena": {
-    "NAME": "レヴィオン武斗家・梅姆",
-    "DESCRIPTION": "レヴィオン 。 NL !D! ダメージを与える。 NL 如果手牌中有其他 レヴィオン 牌，给予 !M! 层 易伤 和 虚弱。"
+    "NAME": "レヴィオンの武闘家・メイム",
+    "DESCRIPTION": "レヴィオン 。 NL !D! ダメージを与える。 NL 手札に他の レヴィオン カードがあるなら、 弱体 と 脱力 !M! を与える。"
   },
   "shadowverse:Nahtnaught": {
-    "NAME": "咒箱女王・娜哈特・娜哈特",
-    "DESCRIPTION": "将1张 *暴君谕令 置入手牌。 NL エンハンス 2 \b生成2个 娜哈特的私兵 到敌方。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION": "天賦 。 NL 将1张 *暴君谕令 置入手牌。 NL エンハンス 2 \b生成2个 娜哈特的私兵 到敌方。 NL 廃棄 。"
+    "NAME": "カースドクイーン・ナハト・ナハト",
+    "DESCRIPTION": "*タイラントオーダー 1枚を手札に加える。 NL エンハンス 2 \b ナハトの私兵 2体を出す。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "天賦 。 NL *タイラントオーダー 1枚を手札に加える。 NL エンハンス 2 \b ナハトの私兵 2体を出す。 NL 廃棄 。"
   },
   "shadowverse:TyrantsOrder": {
-    "NAME": "暴君谕令",
-    "DESCRIPTION": "选择1个敌人，对其他敌人造成等同于这个敌人生命值的伤害。 NL （上限 !M! 点）"
+    "NAME": "イラントオーダー",
+    "DESCRIPTION": "他の敵に選択した敵のHP分のダメージを与える。 NL （上限は !M! ）"
   },
   "shadowverse:Leonidas": {
-    "NAME": "列奥尼达",
-    "DESCRIPTION": "三回合后，每召唤一个随从，使其获得+ !M! /+ !M! 。 NL 失去生命时减少1回合。 NL エセリアル 。",
-    "UPGRADE_DESCRIPTION": "三回合后，每召唤一个随从，使其获得+ !M! /+ !M! 。 NL 失去生命时减少1回合。"
+    "NAME": "レオニダス",
+    "DESCRIPTION": "カウントダウン 3：ォロワーを出す度、それを+ !M! /+ !M! する。 NL HPを失う時、カウントダウンを1進める。 NL エセリアル 。",
+    "UPGRADE_DESCRIPTION": "カウントダウン 3：ォロワーを出す度、それを+ !M! /+ !M! する。 NL HPを失う時、カウントダウンを1進める"
   },
   "shadowverse:LevinJustice": {
-    "NAME": "レヴィオン的正义",
-    "DESCRIPTION": "レヴィオン 。 NL 造成本局对战中已打出的 レヴィオン 卡牌两倍的伤害。 NL 将 *レヴィオン公爵・尤里乌斯 置入手牌。",
-    "UPGRADE_DESCRIPTION": "レヴィオン 。 NL 造成本局对战中已打出的 レヴィオン 卡牌两倍的伤害。 NL 将 *レヴィオン公爵・尤里乌斯 置入手牌，其廃棄变为0。",
+    "NAME": "レヴィオンの正義",
+    "DESCRIPTION": "レヴィオン 。 NL この戦闘中にプレイしていた レヴィオン カードの数の2倍のダメージを与える。 NL *レヴィオン公爵・ユリウス 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION": "レヴィオン 。 NL この戦闘中にプレイしていた レヴィオン カードの数の2倍のダメージを与える。 NL コスト0の *レヴィオン公爵・ユリウス 1枚を手札に加える",
     "EXTENDED_DESCRIPTION": [
-      "（造成",
-      "点伤害)"
+      "（",
+      "ダメージを与える)"
     ]
   },
   "shadowverse:YuriusLevinDuke": {
@@ -3242,85 +3242,85 @@
     "DESCRIPTION": "レヴィオン 。 NL トゲ !M! を得る。"
   },
   "shadowverse:CaptainWalfrid": {
-    "NAME": "骑空团总长・瓦佛利特",
-    "DESCRIPTION": "每召唤一个随从，使其获得+ !M! /+ !M! 。 NL 将一张复制品置入弃牌堆。"
+    "NAME": "キャプテン・ヴァルフリート",
+    "DESCRIPTION": "フォロワーを出す度、それを+ !M! /+ !M! する。 NL これの複製1枚を捨札に加える。"
   },
   "shadowverse:Walfrid": {
-    "NAME": "苍空总长・瓦佛利特",
-    "DESCRIPTION": "如果抽牌堆没有非ストライク皇家护卫攻击牌以外的卡，每召唤一个随从，使其获得+ !M! /+ !M! 。 NL 将一张复制品置入弃牌堆。"
+    "NAME": "スカイキャプテン・ヴァルフリート",
+    "DESCRIPTION": "山札にストライク以外のロイヤル・アタックしかいないなら、フォロワーを出す度、それを+ !M! /+ !M! する。 NL これの複製1枚を捨札に加える。"
   },
   "shadowverse:Reinhardt": {
-    "NAME": "改革者・莱恩哈尔特",
-    "DESCRIPTION": "受到攻击时， 筋力 と 敏捷性 を !M! 得る。受到伤害后この能力を失う并回复 5 点生命值。 NL エセリアル 。",
-    "UPGRADE_DESCRIPTION": "受到攻击时， 筋力 と 敏捷性 を !M! 得る。受到伤害后この能力を失う并回复 5 点生命值。"
+    "NAME": "リジェネレーター・ラインハルト",
+    "DESCRIPTION": "攻撃を受ける度、 筋力 と 敏捷性 を !M! 得る。ダメージを受けた場合、この能力を失い、HPを5回復する。 NL エセリアル 。",
+    "UPGRADE_DESCRIPTION": "攻撃を受ける度、 筋力 と 敏捷性 を !M! 得る。ダメージを受けた場合、この能力を失い、HPを5回復する。"
   },
   "shadowverse:Garven": {
-    "NAME": "终击铁腕・加尔瓦",
-    "DESCRIPTION": "!D! ダメージを与える !M! 次。 NL 本局对战中每打出过一个兵种（ 機械 、 自然 、 レヴィオン 、 マナリア 、 AF ）的卡牌便额外造成一次伤害。",
+    "NAME": "終撃の鉄腕・ガルヴァン",
+    "DESCRIPTION": "!D! ダメージを !M! 回与える。 NL この戦闘中にプレイしていたカードの種類によって回数を増やす。",
     "EXTENDED_DESCRIPTION": [
-      "（造成伤害次数：",
-      ")"
+      "（ダメージを",
+      "回与える)"
     ]
   },
   "shadowverse:Kagemitsu": {
     "NAME": "無敗の剣聖・カゲミツ",
-    "DESCRIPTION": "可以升级任意次。 NL !D! ダメージを与える。 NL 廃棄 。 NL 斩杀 时，升级此牌。 NL ラストワード このカードが 廃棄 される時、下回合开始时增加1张当回合消耗为0且升级次数相同的 *ロストサムライ・カゲミツ 到手牌中。"
+    "DESCRIPTION": "何度もアップグレードできる。 NL !D! ダメージを与える。 NL 廃棄 。 NL 致命 時、これをアップグレードする。 NL ラストワード このカードが 廃棄 される時、次のターン開始時、そのターンだけコストが0、かつ同じアップグレード数の *ロストサムライ・カゲミツ 1枚を手札に加える。"
   },
   "shadowverse:LostSamurai": {
     "NAME": "ロストサムライ・カゲミツ",
-    "DESCRIPTION": "可以升级任意次。 NL !D! ダメージを与える。 NL 廃棄 。 NL 如果这张牌升级次数为5次以上，对全体敌人造成10点伤害。 NL 如果为7次以上，则改为20点。"
+    "DESCRIPTION": "何度もアップグレードできる。 NL !D! ダメージを与える。 NL 廃棄 。 NL これのアップグレード数が5回以上なら、敵全体に10ダメージを与える。 NL 7回以上なら、10ではなく20。"
   },
   "shadowverse:Alexander": {
-    "NAME": "亚历山大",
-    "DESCRIPTION": "!D! ダメージを与える !M! 次。 NL エセリアル 。",
-    "UPGRADE_DESCRIPTION": "!D! ダメージを与える !M! 次。"
+    "NAME": "アレクサンダー",
+    "DESCRIPTION": "!D! ダメージを !M! 回与える。 NL エセリアル 。",
+    "UPGRADE_DESCRIPTION": "!D! ダメージを !M! 回与える。"
   },
   "shadowverse:MirrorImage": {
-    "NAME": "分身之术",
-    "DESCRIPTION": "复制手牌中一张攻击牌或能力牌，其获得 廃棄 和 エセリアル 。"
+    "NAME": "分身の術",
+    "DESCRIPTION": "手札のアタック1枚の複製を手札に加える。 NL それは 廃棄 と エセリアル を持つ。"
   },
   "shadowverse:Valse": {
-    "NAME": "魔导狙击手・瓦路兹",
-    "DESCRIPTION": "!D! ダメージを与える。 NL チョイス NL 从 *净化之圣弹 、 *毁灭之魔弹 中选择1张加入手中。",
-    "UPGRADE_DESCRIPTION": "!D! ダメージを与える。 NL チョイス NL 从 *净化之圣弹 、 *毁灭之魔弹 中选择1张加入手中，并使其获得 保留 。"
+    "NAME": "魔導狙撃士・ワルツ",
+    "DESCRIPTION": "!D! ダメージを与える。 NL チョイス NL *浄化の魔弾 、 *必殺の魔弾 から1枚を選択して手札に加える。",
+    "UPGRADE_DESCRIPTION": "!D! ダメージを与える。 NL チョイス NL *浄化の魔弾 、 *必殺の魔弾 から1枚を選択して手札に加える。選択したカードは 保留 を持つ。"
   },
   "shadowverse:HolyPurebomb": {
-    "NAME": "净化之圣弹",
-    "DESCRIPTION": "廃棄 手牌中所有诅咒牌和状态牌。 NL 使目标失去一种 正面效果 。 NL 廃棄 。"
+    "NAME": "浄化の魔弾",
+    "DESCRIPTION": "手札の呪いと状態異常をすべて廃棄する。 NL 敵のバフを1種類除去する。 NL 廃棄 。"
   },
   "shadowverse:FatalSpellbomb": {
-    "NAME": "毁灭之魔弹",
-    "DESCRIPTION": "造成 !D! 点体力流失。 NL 廃棄 。"
+    "NAME": "必殺の魔弾",
+    "DESCRIPTION": "敵はHPを !D! 失う。 NL 廃棄 。"
   },
   "shadowverse:Ernesta": {
-    "NAME": "武器商人・艾尔涅斯塔",
-    "DESCRIPTION": "連携 10：将1张 *恐惧猎犬 加入手牌。",
-    "UPGRADE_DESCRIPTION": "ダウングレード 。 NL 选择1张手牌，将其廃棄，カードを1枚引く。",
+    "NAME": "武器商人・エルネスタ",
+    "DESCRIPTION": "連携 10： *ドレッドハウンド 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION": "ダウングレード 。 NL 手札1枚を廃棄し、カードを1枚引く。",
     "EXTENDED_DESCRIPTION": [
       "（連携数：",
       ")"
     ]
   },
   "shadowverse:DreadHound": {
-    "NAME": "恐惧猎犬",
-    "DESCRIPTION": "造成 !D! 点体力流失，!B! ブロック を得る。 NL 廃棄 。"
+    "NAME": "ドレッドハウンド",
+    "DESCRIPTION": "敵はHPを !D! 失う。 NL !B! ブロック を得る。 NL 廃棄 。"
   },
   "shadowverse:Ilmisuna": {
-    "NAME": "动乱商人・伊尔米斯娜",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 連携 10：抽到时将一张 *EP 置入手牌。",
-    "UPGRADE_DESCRIPTION": "ダウングレード 。 NL !B! ブロック を得る。 NL 选择1张手牌，将其廃棄，カードを1枚引く。",
+    "NAME": "動乱商人・イルミスナ",
+    "DESCRIPTION": "!B! ブロック を得る。 NL 連携 10：これが引かれる時、 *EP 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION": "ダウングレード 。 NL フォロワー1体につき、 !D! ダメージを1回与える。",
     "EXTENDED_DESCRIPTION": [
       "（連携数：",
       ")"
     ]
   },
   "shadowverse:MasterDealer": {
-    "NAME": "首席商贩・阿尔亚斯卡",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 选择1张手牌，廃棄其余的牌，抽等量的牌。"
+    "NAME": "マスターディーラー・アルヤスカ",
+    "DESCRIPTION": "!B! ブロック を得る。 NL 手札1枚を選択し、選択したカード以外のカードをすべて廃棄し、廃棄した数と同じだけカードを引く。"
   },
   "shadowverse:EleganceInAction": {
-    "NAME": "意外失足",
-    "DESCRIPTION": "カードを1枚引く，如果是攻击牌召唤1个 ヘヴィーナイト ，否则随机!D! ダメージを与える。 NL エンハンス 1 \b改为カードを !M! 枚引く。"
+    "NAME": "思わぬ躓き",
+    "DESCRIPTION": "カードを1枚引く。それがアタックなら、 ヘヴィーナイト 1体を出す。そうでないなら、ランダムな敵に !D! ダメージを与える。 NL エンハンス 1 \bこれを !M! 回行う。"
   },
   "shadowverse:BlackenedScripture": {
     "NAME": "漆黒の法典",
@@ -3363,8 +3363,8 @@
     "UPGRADE_DESCRIPTION": "手札1枚を 廃棄 し、それの複製を1枚山札に加える。 NL *マナリアの魔弾 和 *マナリアの防陣 それぞれ1枚を手札に加える。"
   },
   "shadowverse:DuskshadeBat": {
-    "NAME": "幽暗蝙蝠",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 渇望 カードを1枚引く，获得 [E] 。 NL 復讐 或 狂乱 カードを1枚引く，获得 [E] 。"
+    "NAME": "暗闇の蝙蝠",
+    "DESCRIPTION": "!B! ブロック を得る。 NL 渇望 なら、カードを1枚引き、 [E] を得る。 NL 復讐 か 狂乱 なら、カードを1枚引き、 [E] を得る。"
   },
   "shadowverse:Cernunnos": {
     "NAME": "ケルヌンノス",
@@ -3855,13 +3855,13 @@
     "DESCRIPTION": "!B! ブロック を得る。 NL ブラー を1得る。 NL 死を1回だけ回避し、50%のHPを回復して1ターンを追加する。"
   },
   "shadowverse:ShadowCorrosion": {
-    "NAME": "影之侵蚀",
-    "DESCRIPTION": "自然 。 NL 给予敌人「回合开始时，失去本场战斗已打出的 *那塔拉的大树 2倍的生命」效果。 NL 如果敌人已拥有此效果，改为直接造成本场战斗已打出的 *那塔拉的大树 2倍的伤害。 NL 廃棄 。"
+    "NAME": "影の侵食",
+    "DESCRIPTION": "自然 。 NL 敵は「ターン開始時、この戦闘中にプレイしていた *ナテラの大樹 の数かける2のHPを失う」を持つ。 NL 敵がすでにこれを持っているなら、この戦闘中にプレイしていた  *ナテラの大樹 の数かける2のダメージを与える。 NL 廃棄 。"
   },
   "shadowverse:Valdain": {
-    "NAME": "诅咒之影・拜迪",
-    "DESCRIPTION": "自然 。 NL !B! ブロック を得る。 NL 增加1张 *影之侵蚀 到手中。",
-    "UPGRADE_DESCRIPTION": "自然 。 NL !B! ブロック を得る。 NL 增加1张 *影之侵蚀+ 到手中。"
+    "NAME": "呪われし影・ヴァイディ",
+    "DESCRIPTION": "自然 。 NL !B! ブロック を得る。 NL *影の侵食 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION": "自然 。 NL !B! ブロック を得る。 NL *影の侵食+ 1枚を手札に加える"
   },
   "shadowverse:Sukuna": {
     "NAME": "小槌の勇士・スクナ",
@@ -3873,61 +3873,61 @@
   },
   "shadowverse:Ambush": {
     "NAME": "潜伏",
-    "DESCRIPTION": "回合结束时不触发被动效果，获得+1/+0。"
+    "DESCRIPTION": "自動効果を起動せず、+1/+0する。"
   },
   "shadowverse:AmbushAttack": {
-    "NAME": "攻击",
-    "DESCRIPTION": "回合结束时触发被动效果，不能再选择是否 潜伏 。"
+    "NAME": "攻撃",
+    "DESCRIPTION": "自動効果を起動する。再び 潜伏 を選択できない。"
   },
   "shadowverse:Leod": {
-    "NAME": "夜月之刃・里欧德",
-    "DESCRIPTION": "潜伏 ，1/ !M! 。 NL 被动：造成攻击力的5倍伤害并失去1点体力。 NL 打出时增加1张 *隐伏天诛 到手中。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION":"天賦 ・ 潜伏 ，1/ !M! 。 NL 被动：造成攻击力的5倍伤害并失去1点体力。 NL 打出时增加1张 *隐伏天诛 到手中。 NL 廃棄 。"
+    "NAME": "月の刃・リオード",
+    "DESCRIPTION": "潜伏 、1/ !M! 。 NL 自動：攻撃力5倍のダメージを与え、体力を1失う。 NL *隠伏天誅 1枚を手札に加える。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"天賦 ・ 潜伏 、1/ !M! 。 NL 自動：攻撃力5倍のダメージを与え、体力を1失う。 NL *隠伏天誅 1枚を手札に加える。 NL 廃棄 。"
   },
   "shadowverse:VeiledReckoning": {
-    "NAME": "隐伏天诛",
-    "DESCRIPTION": "保留 。 NL !D! ダメージを与える 。 NL 增加1张 *刺客 到手中。 NL 廃棄 。"
+    "NAME": "隠伏天誅",
+    "DESCRIPTION": "保留 。 NL !D! ダメージを与える 。 NL *アサシン 1枚を手札に加える。 NL 廃棄 。"
   },
   "shadowverse:Assassin": {
-    "NAME": "刺客",
-    "DESCRIPTION": "使所有拥有潜伏的随从能够重新潜伏。 NL 廃棄 。"
+    "NAME": "アサシン",
+    "DESCRIPTION": "潜伏 を持つフォロワーは再び潜伏になる。 NL 廃棄 。"
   },
   "shadowverse:Dualblade": {
-    "NAME": "双刀之技",
-    "DESCRIPTION": "随从的攻击可以触发2次。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION":"天賦 。 NL 随从的攻击可以触发2次。 NL 廃棄 。"
+    "NAME": "二刀流",
+    "DESCRIPTION": "フォロワーの自動効果は2回起動できる。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"天賦 。 NL フォロワーの自動効果は2回起動できる。 NL 廃棄 。"
   },
   "shadowverse:Leod2": {
-    "NAME": "月光执行者・里欧德",
-    "DESCRIPTION": "潜伏 ，1/ !M! 。 NL 被动：造成攻击力的5倍伤害并失去1点体力。 NL 回合开始时敵全体に 造成9点伤害。 NL 廃棄 。"
+    "NAME": "月光の執行者・リオード",
+    "DESCRIPTION": "潜伏 、1/ !M! 。 NL 自動：攻撃力5倍のダメージを与え、体力を1失う。 NL ターン開始時、敵全体に9ダメージを与える。 NL 廃棄 。"
   },
   "shadowverse:AmbushBuff": {
-    "NAME": "盗贼的极意",
-    "DESCRIPTION": "回合开始时，给予所有 潜伏 状态的随从+1/+1。"
+    "NAME": "盗賊の極意",
+    "DESCRIPTION": "ターン開始時、 潜伏 状態のフォロワーをすべて+1/+1する。"
   },
   "shadowverse:ShinobiTanuki": {
-    "NAME": "忍者狸猫",
-    "DESCRIPTION": "潜伏 ，1/ !M! 。 NL 被动：获得攻击力的2倍格挡并失去1点体力。 NL 廃棄 。"
+    "NAME": "シノビタヌキ",
+    "DESCRIPTION": "潜伏 、1/ !M! 。 NL 自動：攻撃力2倍のブロックを得、体力を1失う。 NL 廃棄 。"
   },
   "shadowverse:Tsubaki": {
-    "NAME": "妖刀之鬼・椿",
-    "DESCRIPTION": "潜伏 ，1/ !M! 。 NL 被动：造成攻击力的5倍伤害并失去1点体力。 NL 連携 10 获得+1/+1，给予随机敌人1层 易伤 和 虚弱 。",
+    "NAME": "妖刀の鬼・ツバキ",
+    "DESCRIPTION": "潜伏 、1/ !M! 。 NL 自動：攻撃力5倍のダメージを与え、体力を1失う。 NL 連携 10 +1/+1され、ランダムな敵に 弱体 と 脱力 1を与える。",
     "EXTENDED_DESCRIPTION": [
       "（連携数：",
       ")"
     ]
   },
   "shadowverse:ShieldOfFlame": {
-    "NAME": "火遁之术",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 如果有 潜伏 状态的随从改为造成2倍伤害。"
+    "NAME": "火遁の術",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 潜伏 を持つフォロワーがいるなら、ダメージを2倍にする。"
   },
   "shadowverse:ShadowedMemories": {
-    "NAME": "隐伏的记忆",
-    "DESCRIPTION": "!B! ブロック を得る。 NL カードを !M! 枚引く。 NL  如果有 潜伏 状态的随从增加1张 *EP 到手中。"
+    "NAME": "隠伏の記憶",
+    "DESCRIPTION": "!B! ブロック を得る。 NL カードを !M! 枚引く。 NL  潜伏 を持つフォロワーがいるなら、 *EP 1枚を手札に加える。"
   },
   "shadowverse:BladeDance": {
-    "NAME": "白刃剑舞",
-    "DESCRIPTION": "エンハンス 2 给予攻击力最高的随从+2/+0。 NL ランダムな敵に !D! ダメージを与えるX次。 NL （X为攻击力最高的随从的攻击力，最大为10。)"
+    "NAME": "白刃の剣舞",
+    "DESCRIPTION": "エンハンス 2 攻撃力が最も高いフォロワーを+2/+0する。 NL ランダムな敵に !D! ダメージをX回与える。 NL （Xは攻撃力が最も高いフォロワーの攻撃力、上限は10)"
   },
   "shadowverse:NobleShikigami": {
     "NAME": "式神・貴人",
@@ -3973,13 +3973,13 @@
     "DESCRIPTION": "保留 。 NL 保留 される時、10 ブロック につき、このカードのコストを-1する。 NL !B! ブロック を得る。 NL 敵全体に自分の ブロック の半分のダメージを与える。"
   },
   "shadowverse:TheChariot": {
-    "NAME": "《战车》・奥辂昂",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 回合结束时，由「获得 !M! 点 格挡」、「召唤1个 骑士 」、「ランダムな敵に !M! ダメージを与える」之中随机触发1种效果。 NL エンハンス 3 \b改为 *《暴走》战车・奥珞昂 。",
-    "UPGRADE_DESCRIPTION": "!B! ブロック を得る。 NL 回合结束时，由「获得 !M! 点 格挡」、「召唤1个 骑士 」、「ランダムな敵に !M! ダメージを与える」之中随机触发1种效果。 NL エンハンス 3 \b改为 *《暴走》战车・奥珞昂+ 。"
+    "NAME": "《戦車》・オルオーン",
+    "DESCRIPTION": "!B! ブロック を得る。 NL ターン終了時、「 !M! ブロック を得る」、「 ナイト 1体を出す」、「ランダムな敵に !M! ダメージを与える」からランダムに1つが働く。 NL エンハンス 3 \bそれではなく、 *《暴走》する戦車・オルオーン の効果になる。",
+    "UPGRADE_DESCRIPTION": "!B! ブロック を得る。 NL ターン終了時、「 !M! ブロック を得る」、「 ナイト 1体を出す」、「ランダムな敵に !M! ダメージを与える」からランダムに1つが働く。 NL エンハンス 3 \bそれではなく、 *《暴走》する戦車・オルオーン+ の効果になる。"
   },
   "shadowverse:TheChariot_I": {
-    "NAME": "《暴走》战车・奥辂昂",
-    "DESCRIPTION": "回合结束时随机对自己造成最大生命值一半的伤害或ランダムな敵に !M! ダメージを与える。 NL 此行动将执行2次。"
+    "NAME": "《暴走》する戦車・オルオーン",
+    "DESCRIPTION": "「自分のHP最大値の半分のダメージを自分に与える」、「ランダムな敵に !M! ダメージを与える」 NL ターン終了時、上記からランダムに1つが働く。これを2回行う。"
   },
   "shadowverse:CorruptionOfUnkilling": {
     "NAME": "腐食の絶命",
@@ -3987,8 +3987,8 @@
     "UPGRADE_DESCRIPTION":"天賦 。 NL ターン終了時、すべての敵は 筋力 と 敏捷性 を1失う。 NL この能力は3回働き、重複して持たない。 NL 廃棄 。"
   },
   "shadowverse:UltimateHollow": {
-    "NAME": "极意的空绝",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 如果廃棄札中的财宝牌数量为4以上，ダメージを倍にする并!B! ブロック を得る。 NL 此卡视为财宝牌。"
+    "NAME": "極意たる空絶",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 廃棄札にある 財宝カード が4枚以上なら、ダメージを倍にし、 !B! ブロック を得る。 NL このカードは財宝カードとして扱う。"
   },
   "shadowverse:LoathingDesire": {
     "NAME": "憎悪する愛絶",
@@ -3996,8 +3996,8 @@
     "UPGRADE_DESCRIPTION":"HPを1失う。 NL ドレイン を得る。 NL 廃棄 。"
   },
   "shadowverse:ReturningMelody": {
-    "NAME": "重返的奏绝",
-    "DESCRIPTION": "选择 !M! 张攻击牌廃棄，分别增加1张它们的复制品到手中。 NL 如果廃棄札中的攻击牌数量为10以上，随机从其中增加1张耗能为1和耗能为2的攻击牌或能力牌到手中。"
+    "NAME": "舞い戻る奏絶",
+    "DESCRIPTION": "アタックを !M! 枚廃棄し、それの複製をそれぞれ1枚を手札に加える。 NL 廃棄札にあるアタックが10枚以上なら、ランダムにそれからコスト1・コスト2のアタックをそれぞれ1枚を手札に加える。"
   },
   "shadowverse:UnleashTruth": {
     "NAME": "解放の絶尽",
@@ -4023,11 +4023,11 @@
     "DESCRIPTION": "敵は 筋力 を !M! 失う。 NL エンハンス 3 \b次のターン開始時、攻撃予定、かつダメージが0の敵にそのHPの最大値のダメージを与える。 NL 廃棄 。"
   },
   "shadowverse:LightOfHollow": {
-    "NAME": "空绝的残光",
-    "DESCRIPTION": "保留 ・ 融合 ：财宝牌。 NL 融合 后カードを1枚引く。 NL 轮流对敌方!D! ダメージを与える。 NL 如果融合张数为4以上，则ダメージを倍にする。 NL 这张卡视为财宝牌。",
+    "NAME": "空絶の残光",
+    "DESCRIPTION": "保留 ・ 融合 ： 財宝カード 。 NL これに 融合 したら、カードを1枚引く。 NL 敵に !D! ダメージを割り込む。 NL これに融合した数が4以上なら、ダメージを倍にする。 NL このカードは財宝カードとして扱う。",
     "EXTENDED_DESCRIPTION": [
-      " NL (当前已 融合 财宝牌为",
-      "张)"
+      " NL ( 融合 したカードは",
+      "枚)"
     ]
   },
   "shadowverse:WingsOfDesire": {
@@ -4039,16 +4039,16 @@
     "DESCRIPTION": "HPが40%(最低40点)以下の敵を消滅させる 。 NL 廃棄 。"
   },
   "shadowverse:BlackArtifact2": {
-    "NAME": "新约・黑之章",
-    "DESCRIPTION": "保留 ・ AF 。 NL 每当打出带有 廃棄 的攻击牌时耗能减少 [E] 。 NL 敵全体に !D! ダメージを与える。 NL 回合开始时敵全体に 造成 !M! 点伤害，如果有 *新约・白之章 则ダメージを倍にする。 NL 这张卡不能被 廃棄 。"
+    "NAME": "新約・黒の章",
+    "DESCRIPTION": "保留 ・ AF 。 NL 廃棄 を持つアタックをプレイする度、コストを1下げる。 NL 敵全体に !D! ダメージを与える。 NL ターン開始時、敵全体に !M! ダメージを与える。 *新約・白の章 をプレイしていたなら、ダメージを倍にする。 NL 廃棄不能 。"
   },
   "shadowverse:WhiteArtifact2": {
-    "NAME": "新约・白之章",
-    "DESCRIPTION": "保留 ・ AF 。 NL 每当打出带有 廃棄 的攻击牌时耗能减少 [E] 。 NL !B! ブロック を得る。 NL 回合开 !M! ブロックを得る，如果有 *新约・黑之章 则格挡翻倍。 NL 这张卡不能被 廃棄 。"
+    "NAME": "新約・白の章",
+    "DESCRIPTION": "保留 ・ AF 。 NL 廃棄 を持つアタックをプレイする度、コストを1下げる。 NL !B! ブロック を得る。 NL ターン開始時、 !M! ブロックを得る。 *新約・黒の章 をプレイしていたなら、ブロックを倍にする。 NL 廃棄不能 。"
   },
   "shadowverse:SoloOfMelody": {
-    "NAME": "奏绝的独唱",
-    "DESCRIPTION": "廃棄 1张手牌。 NL ランダムな敵に !D! ダメージを与える。 NL 敵全体に 造成 !M! 点伤害。 NL 廃棄 。"
+    "NAME": "奏絶の独唱",
+    "DESCRIPTION": "手札1枚を廃棄する。 NL ランダムな敵に !D! ダメージを与える。 NL 敵全体に !M! ダメージを与える。 NL 廃棄 。"
   },
   "shadowverse:OmenOfCraving": {
     "NAME": "飢餓の絶傑・ギルネリーゼ",
@@ -4079,13 +4079,13 @@
     "DESCRIPTION": "!D! ダメージを与える。 NL 他のカードをプレイする度、ダメージを+ !M! する。"
   },
   "shadowverse:AdherentOfMelody": {
-    "NAME": "奏绝的崇拜者",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 选择1张攻击牌 廃棄 并将1张复制品加入手中。 NL 选择1张 能力牌 廃棄 并将1张复制品加入手中。"
+    "NAME": "奏絶の崇拝者",
+    "DESCRIPTION": "!B! ブロック を得る。 NL アタック1枚を廃棄し、それの複製を手札に加える。 NL パワー1枚を廃棄し、それの複製を手札に加える。"
   },
   "shadowverse:AdherentOfHollow": {
-    "NAME": "空绝的崇拜者",
-    "DESCRIPTION": "打出财宝牌时 升级 这张卡。 NL !D! ダメージを与える。 NL 打出 *EP 时，随机增加1张财宝牌到手中。",
-    "UPGRADE_DESCRIPTION":"打出后解除 升级 。 NL !D! ダメージを与える。 NL 打出 *EP 时，随机增加1张财宝牌到手中。"
+    "NAME": "空絶の崇拝者",
+    "DESCRIPTION": "財宝カード をプレイする時、これを アップグレード する。 NL !D! ダメージを与える。 NL *EP をプレイする時、ランダムな 財宝カード 1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION":"ダウングレード 。 NL !D! ダメージを与える。 NL *EP をプレイする時、ランダムな 財宝カード 1枚を手札に加える。"
   },
   "shadowverse:AdherentOfDispair": {
     "NAME": "絶望の崇拝者",
@@ -4096,59 +4096,59 @@
     "DESCRIPTION": "デバフを与える、カードを !M! 枚引く。"
   },
   "shadowverse:Erika": {
-    "NAME": "忠义剑士・艾莉卡",
-    "DESCRIPTION": " !M! /1。 NL 被动：造成攻击力的4倍伤害并失去1点体力。打出攻击牌或召唤随从或护符时，本回合获得+1/+0。 NL 限定 連携 7 增加1张 *祕藏之技 到手中。",
-    "UPGRADE_DESCRIPTION":" !M! /1。 NL 被动：造成攻击力的4倍伤害并失去1点体力。打出攻击牌或召唤随从或护符时，本回合获得+1/+0。 NL 限定 連携 7 增加1张 *祕藏之技 到手中。 NL 連携 15 增加1张 *艾莉卡的战技 到手中。",
+    "NAME": "忠義の剣士・エリカ",
+    "DESCRIPTION": " !M! /1。 NL 自動：攻撃力4倍のダメージを与え、HPを1失う。アタックをプレイする度、またはフォロワー・アミュレットを出す度、このターンだけ+1/+0する。 NL 限定 連携 7 ： *シークレットスキル 1枚を手札にる。",
+    "UPGRADE_DESCRIPTION":" !M! /1。 NL 自動：攻撃力4倍のダメージを与え、HPを1失う。アタックをプレイする度、またはフォロワー・アミュレットを出す度、このターンだけ+1/+0する。 NL 限定 連携 7 ： *シークレットスキル 1枚を手札にる。 NL 連携 15 *エリカの戦技 1枚を手札に加える。",
     "EXTENDED_DESCRIPTION": [
       "（連携数：",
       ")"
     ]
   },
   "shadowverse:SecretSkill": {
-    "NAME": "祕藏之技",
-    "DESCRIPTION": "回合结束时， 击晕 第一个意图为攻击的敌人。"
+    "NAME": "シークレットスキル",
+    "DESCRIPTION": "ターン終了時、最初の攻撃予定の敵は1ターン スタン になる。"
   },
   "shadowverse:OtherworldGatekeeper": {
     "NAME": "死門を繋ぐ者",
     "DESCRIPTION": "!D! ダメージを与える。 NL 山札からランダムにコスト1以下の ラストワード を持つアタック !M! をプレイする。 NL ラストワード 廃棄 される時、HPを1回復する。"
   },
   "shadowverse:V": {
-    "NAME": "魔导四轮车·V",
-    "DESCRIPTION": "保留 。 NL 操縦 1。 NL 造成 !D! 点伤害 。 NL 从以下效果中随机发动两种： NL 「抽1张牌」 NL 「给予全体敌人4点伤害」 NL 「给予随机敌人 !M! 点伤害」 NL 「获得 !B! 点 格挡 」。",
-    "UPGRADE_DESCRIPTION":"保留 。 NL 操縦 1。 NL 造成 !D! 点伤害 。 NL 从以下效果中随机发动两种： NL 「抽2张牌」 NL 「给予全体敌人6点伤害」 NL 「给予随机敌人 !M! 点伤害」 NL 「获得 !B! 点 格挡 」。"
+    "NAME": "魔導四輪車・V",
+    "DESCRIPTION": "保留 。 NL 操縦 1。 NL !D! ダメージを与える 。 NL 下記の中から、ランダムに2つの能力が働く。  NL 「カードを1枚引く」 NL 「敵全体に4ダメージ」 NL 「ランダムな敵に !M! ダメージ」 NL 「 !B! ブロック を得る 」。",
+    "UPGRADE_DESCRIPTION":"保留 。 NL 操縦 1。 NL !D! ダメージを与える 。 NL 下記の中から、ランダムに2つの能力が働く。  NL 「カードを2枚引く」 NL 「敵全体に6ダメージ」 NL 「ランダムな敵に !M! ダメージ」 NL 「 !B! ブロック を得る 」"
   },
   "shadowverse:DesperadosShot": {
-    "NAME": "亡命射击",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果手中有 *EP ，则 消耗 其中一张并额外ランダムな敵に 造成 !D! 点伤害，下回合开始时增加一张打出前耗能为0的 *魔导四轮车·V 到手中。 NL 消耗 。"
+    "NAME": "デスペラードショット",
+    "DESCRIPTION": "!D! ダメージを与える。 NL 手札に *EP があるなら、1枚を廃棄してランダムな敵に !D! ダメージを与え、次のターン開始時、プレイされるまでコストが0の *魔導四輪車・V 1枚を手札に加える。 NL 廃棄 。"
   },
   "shadowverse:Spector": {
-    "NAME": "幻影拍档·巴妮与巴隆",
-    "DESCRIPTION": " 激奏 0 \b增加1张 *亡命射击 到手中。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 谢幕曲 下回合开始时增加1张打出前耗能为的 *魔导四轮车·V 到手中。 NL 消耗 。"
+    "NAME": "ファントムデュオ・バニー＆バロン",
+    "DESCRIPTION": " アクセラレート 0 \b *デスペラードショット 1枚を手札に加える。 NL  NL --------------------- NL  NL !D! ダメージを与える。 NL ラストワード 次のターン開始時、プレイされるまでコストが0の *魔導四輪車・V 1枚を手札に加える。 NL 廃棄 。"
   },
   "shadowverse:HonoredFrontguardGeneral": {
-    "NAME": "荣耀的铁卫战将",
-    "DESCRIPTION": "可被多次 升级 。 NL 召唤一个+ !M! / !M! 的 铁卫战将 。 NL 消耗 。"
+    "NAME": "栄光のフロントガードジェネラル",
+    "DESCRIPTION": "何度もアップグレードできる。 NL + !M! / !M! の フロントガードジェネラル 1体を出す。 NL 廃棄 。"
   },
   "shadowverse:Aramis": {
-    "NAME": "阿拉密斯",
-    "DESCRIPTION": "打出攻击牌时，获得1点 力量 和 敏捷 并使这张卡的伤害+3。 NL 召唤随从时，使该随从获得+1/+1并使这张卡的伤害+3。 NL 造成 !D! 点伤害。 NL 消耗 。"
+    "NAME": "アラミス",
+    "DESCRIPTION": "アタックをプレイする度、 筋力 と 敏捷性 1を得、これのダメージを+3する。 NL フォロワーを出す度、 筋力 と 敏捷性 1を得、これのダメージを+3する。 NL !D! ダメージを与える。 NL 廃棄 。"
   },
   "shadowverse:Porthos": {
-    "NAME": "波尔多斯",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 回合结束时，ランダムな敵に 造成 !B! 点伤害。 NL 消耗 。"
+    "NAME": "ポルトス",
+    "DESCRIPTION": "!B! ブロック を得る。 NL ターン終了時、ランダムな敵に !B! ダメージを与える。 NL 廃棄 。"
   },
   "shadowverse:Athos": {
-    "NAME": "阿多斯",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果本回合没有完全失去格挡，下回合开始时额外获得 !B! 点格挡。 NL 消耗 。"
+    "NAME": "アトス",
+    "DESCRIPTION": "!B! ブロック を得る。 NL このターン、ブロックを完全に失われていないなら、次のターン開始時、 !B! ブロックを得る。 NL 廃棄 。"
   },
   "shadowverse:DArtagnan": {
-    "NAME": "达达尼昂",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果通过 爆能强化 将这张卡加入手中，这张卡的伤害翻倍。 NL 消耗 。"
+    "NAME": "ダルタニアン",
+    "DESCRIPTION": "!D! ダメージを与える。 NL エンハンス によってこれを手札に加えたら、ダメージは倍になる。 NL 廃棄 。"
   },
   "shadowverse:MusketeersVow": {
-    "NAME": "火枪手的誓言",
-    "DESCRIPTION": "*阿拉密斯 、 *波尔多斯 、 *阿多斯 、 *达达尼昂  NL 抉择 ：选择2张指定的卡加入手中。 NL 爆能强化 4\b改为全部加入手中。如果手中有2张以上的 *EP ， 升级 这些卡。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "*阿拉密斯 、 *波尔多斯 、 *阿多斯 、 *达达尼昂  NL 抉择 ：选择2张指定的卡加入手中。 NL 爆能强化 4\b改为全部加入手中。如果手中有2张以上的 *EP ， 升级 这些卡。 NL 消耗性 !stslib:ex! 。"
+    "NAME": "銃士の誓い",
+    "DESCRIPTION": "*アラミス 、 *ポルトス 、 *アトス 、 *ダルタニアン  NL チョイス ：2枚を選択して手札に加える。 NL エンハンス 4\bチョイスではなく、すべて手札に加える。手札に2枚以上の *EP があるなら、これらをすべて アップグレード する。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "*アラミス 、 *ポルトス 、 *アトス 、 *ダルタニアン  NL チョイス ：2枚を選択して手札に加える。 NL エンハンス 4\bチョイスではなく、すべて手札に加える。手札に2枚以上の *EP があるなら、これらをすべて アップグレード する。 NL あと !stslib:ex! 回使って廃棄する。"
   },
   "shadowverse:Maiser_Story": {
     "NAME": "フォーミュラーヒーロー・マイザー",
@@ -4345,17 +4345,17 @@
     "DESCRIPTION": "カード1枚を廃棄し、 !D! ダメージを与える。 NL 致命 時、最大HPを+ !M! する。 NL 廃棄 。"
   },
   "shadowverse:InsatiableDesire": {
-    "NAME": "无尽之渴望",
-    "DESCRIPTION": "回合开始时额外抽1张卡，失去 [E] 。 NL 无法叠加。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "回合开始时额外抽1张卡。 NL 无法叠加。 NL 消耗 。"
+    "NAME": "飽きなく切望",
+    "DESCRIPTION": "ターン開始時、追加でカードを1枚引き、 [E] を失う。 NL この能力は重複して持たない。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "ターン開始時、追加でカードを1枚引く。 NL この能力は重複して持たない。 NL 廃棄 。"
   },
   "shadowverse:UnselfishGrace": {
-    "NAME": "无欲之恩宠",
-    "DESCRIPTION": "获得2层 再生 。 NL 倒计时 3 :获得「每当失去生命时，全体敌人减少 !M! 点生命上限」。"
+    "NAME": "無欲の恩寵",
+    "DESCRIPTION": "再生 2を得る 。 NL カウントダウン 3 :自分は「HPを失う度、すべての敵のHP最大値を- !M! する」を持つ。"
   },
   "shadowverse:TheTemperance": {
-    "NAME": "《节制》·卢泽",
-    "DESCRIPTION": "激奏 0 \b增加1张 *无欲之恩宠 到手中， 渴望 则改为 *无尽之渴望 。 NL  NL --------------------- NL  NL 获得1层 无实体 。 NL 每当失去生命时，全体敌人减少 !M! 点生命上限。",
-    "UPGRADE_DESCRIPTION": "激奏 0 \b增加1张 *无欲之恩宠+ 到手中， 渴望 则改为 *无尽之渴望+ 。 NL  NL --------------------- NL  NL 获得1层 无实体 。 NL 每当失去生命时，全体敌人减少 !M! 点生命上限。"
+    "NAME": "《節制》・ルーゼン",
+    "DESCRIPTION": "アクセラレート 0 \b *無欲の恩寵 1枚を手札に加える。 渇望 なら、それではなく *飽きなく切望 1枚を手札に加える。 NL  NL --------------------- NL  NL 無形 1を得る。 NL HPを失う度、すべての敵のHP最大値を- !M! する。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "アクセラレート 0 \b *無欲の恩寵+ 1枚を手札に加える。 渇望 なら、それではなく *飽きなく切望+ 1枚を手札に加える。 NL  NL --------------------- NL  NL 無形 1を得る。 NL HPを失う度、すべての敵のHP最大値を- !M! する。 NL 廃棄 。"
   }
 }

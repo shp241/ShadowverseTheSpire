@@ -3212,7 +3212,7 @@
   },
   "shadowverse:Mena": {
     "NAME": "Mena, Levin Duelist",
-    "DESCRIPTION": "Levin. NL Deal !D! damage. NL If you have any other Levin cards in your hand, apply !M! Vulnerable and Weak."
+    "DESCRIPTION": "Levin. NL Deal !D! damage. NL If you have any other Levin cards in your hand, apply !M! Vulnerable and Weak ."
   },
   "shadowverse:Nahtnaught": {
     "NAME": "Nahtnaught, Cursed Queen",
@@ -4292,7 +4292,7 @@
   },
   "shadowverse:AllFeeling": {
     "NAME": "All-Feeling Divine",
-    "DESCRIPTION": "Festive. NL Exhaust !M! cards in your hand and draw !M! cards. NL Add a *Black *Mass to your discard pile. NL Deal !D! damage times the total number of Curse cards in your hand, draw pile, discard pile, exhausted pile and Amulet zone to all enemies."
+    "DESCRIPTION": "Festive. NL Exhaust !M! cards in your hand and draw !M! cards. NL Add !M! *Black *Mass to your discard pile. NL Deal !D! damage times the total number of Curse cards in your hand, draw pile, discard pile, exhausted pile and Amulet zone to all enemies."
   },
   "shadowverse:Paracelise": {
     "NAME": "Paracelise, Demon of Greed",
@@ -4345,17 +4345,17 @@
     "DESCRIPTION": "Exhaust 1 card in your hand and deal !D! damage. NL If Fatal, increase yor max HP by !M!. NL Exhaust."
   },
   "shadowverse:InsatiableDesire": {
-    "NAME": "无尽之渴望",
-    "DESCRIPTION": "回合开始时额外抽1张卡，失去 [E] 。 NL 无法叠加。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "回合开始时额外抽1张卡。 NL 无法叠加。 NL 消耗 。"
+    "NAME": "Insatiable Desire",
+    "DESCRIPTION": "At the start of your turn, draw 1 additional card and lose [E] . NL Not stackable. NL Exhaust .",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, draw 1 additional card. NL Not stackable. NL Exhaust ."
   },
   "shadowverse:UnselfishGrace": {
-    "NAME": "无欲之恩宠",
-    "DESCRIPTION": "获得2层 再生 。 NL 倒计时 3 :获得「每当失去生命时，全体敌人减少 !M! 点生命上限」。"
+    "NAME": "Unselfish Grace",
+    "DESCRIPTION": "Gain 2 Regeneration . NL Countdown 3 :Gain 'Whenever you lose HP, reduce all enemies' max HP by !M! ' ."
   },
   "shadowverse:TheTemperance": {
-    "NAME": "《节制》·卢泽",
-    "DESCRIPTION": "激奏 0 \b增加1张 *无欲之恩宠 到手中， 渴望 则改为 *无尽之渴望 。 NL  NL --------------------- NL  NL 获得1层 无实体 。 NL 每当失去生命时，全体敌人减少 !M! 点生命上限。",
-    "UPGRADE_DESCRIPTION": "激奏 0 \b增加1张 *无欲之恩宠+ 到手中， 渴望 则改为 *无尽之渴望+ 。 NL  NL --------------------- NL  NL 获得1层 无实体 。 NL 每当失去生命时，全体敌人减少 !M! 点生命上限。"
+    "NAME": "XIV. Luzen, Temperance",
+    "DESCRIPTION": "Accelerate 0 \bPut 1 *Unselfish *Grace into your hand. If Avarice is active, replace it with *Insatiable *Desire . NL  NL --------------------- NL  NL Gain 1 Intangible . NL Whenever you lose HP, reduce all enemies' max HP by !M! . NL Exhaust ",
+    "UPGRADE_DESCRIPTION": "Accelerate 0 \bPut 1 *Unselfish *Grace+ into your hand. If Avarice is active, replace it with *Insatiable *Desire+ . NL  NL --------------------- NL  NL Gain 1 Intangible . NL Whenever you lose HP, reduce all enemies' max HP by !M! . NL Exhaust "
   }
 }

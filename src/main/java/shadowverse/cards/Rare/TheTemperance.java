@@ -46,6 +46,7 @@ public class TheTemperance
         super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.POWER, Vampire.Enums.COLOR_SCARLET, CardRarity.RARE, CardTarget.SELF);
         this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
+        this.exhaust = true;
     }
 
 

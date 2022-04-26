@@ -1,6 +1,9 @@
 package shadowverseCharbosses.bosses.KMR;
 
 import basemod.animations.SpriterAnimation;
+import com.badlogic.gdx.graphics.Texture;
+import shadowverse.characters.Nemesis;
+import shadowverse.effect.ShadowverseEnergyOrb;
 import shadowverseCharbosses.actions.util.CharbossTurnstartDrawAction;
 import shadowverseCharbosses.actions.util.DelayedActionAction;
 import shadowverseCharbosses.bosses.AbstractBossDeckArchetype;
@@ -44,14 +47,14 @@ public class KMR
     public static final String NAME = monsterStrings.NAME;
     public static final String[] DIALOG = monsterStrings.DIALOG;
     private boolean secondPhase = true;
+    private static Texture BASE_LAYER = new Texture("img/ui/layer_nemesis.png");
     private SpriterAnimation extra = new SpriterAnimation("img/monsters/KMR/extra/KMR.scml");
 
     public KMR() {
-        super(NAME, ID, 500, -4.0F, -16.0F, 220.0F, 400.0F, null, 0.0F, -20.0F, AbstractPlayer.PlayerClass.IRONCLAD);
-        this.energyOrb = (EnergyOrbInterface) new EnergyOrbRed();
+        super(NAME, ID, 500, -4.0F, -16.0F, 220.0F, 400.0F, null, 0.0F, -20.0F, Nemesis.Enums.Nemesis);
+        this.energyOrb = new ShadowverseEnergyOrb(null, null,null,BASE_LAYER);
         this.energy = new EnemyEnergyManager(5);
         this.animation = new SpriterAnimation("img/monsters/KMR/KMR.scml");
-        this.energyString = "[R]";
         this.type = EnemyType.BOSS;
         this.dialogX = -100.0F * Settings.scale;
         this.dialogY = 10.0F * Settings.scale;

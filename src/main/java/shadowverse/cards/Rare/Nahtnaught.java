@@ -65,8 +65,8 @@ public class Nahtnaught extends CustomCard {
             addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Eh"));
             Henchman h1 = new Henchman(-300 - 185.0F * 1, MathUtils.random(-5.0F, 25.0F));
             Henchman h2 = new Henchman(-300 - 185.0F * 2, MathUtils.random(-5.0F, 25.0F));
-            addToBot(new SpawnMonsterAction(h1, true));
-            addToBot(new SpawnMonsterAction(h2, true));
+            addToBot(new SpawnMonsterAction(h1, false));
+            addToBot(new SpawnMonsterAction(h2, false));
             h1.getMove();
             h2.getMove();
             h1.createIntent();

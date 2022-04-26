@@ -3,6 +3,7 @@ package shadowverse.characters;
 import basemod.animations.AbstractAnimation;
 import basemod.animations.SpriterAnimation;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -23,6 +24,7 @@ import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import shadowverse.cards.Basic.*;
 import shadowverse.cards.Curse.CurseOfPurgation;
+import shadowverse.effect.ShadowverseEnergyOrb;
 import shadowverse.patch.CharacterSelectScreenPatches;
 
 
@@ -45,8 +47,10 @@ public class Nemesis extends AbstractShadowversePlayer{
 
     public static shadowverse.animation.AbstractAnimation bigAnimation = new shadowverse.animation.AbstractAnimation("img/animation/Nemesis/class_808.atlas", "img/animation/Nemesis/class_808.json", com.megacrit.cardcrawl.core.Settings.M_W / 1600.0F, com.megacrit.cardcrawl.core.Settings.M_W / 2.0F, com.megacrit.cardcrawl.core.Settings.M_H / 2.0F, 0F, 0F);
 
+    private static Texture BASE_LAYER = new Texture("img/ui/layer_nemesis.png");
+
     public Nemesis(String name) {
-        super(name, Enums.Nemesis, null, null, null, (AbstractAnimation)new SpriterAnimation(((CharacterSelectScreenPatches.characters[6]).skins[(CharacterSelectScreenPatches.characters[6]).reskinCount]).scmlURL));
+        super(name, Enums.Nemesis, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation)new SpriterAnimation(((CharacterSelectScreenPatches.characters[6]).skins[(CharacterSelectScreenPatches.characters[6]).reskinCount]).scmlURL));
         initializeClass(null, ((CharacterSelectScreenPatches.characters[6]).skins[(CharacterSelectScreenPatches.characters[6]).reskinCount]).SHOULDER1, ((CharacterSelectScreenPatches.characters[6]).skins[(CharacterSelectScreenPatches.characters[6]).reskinCount]).SHOULDER2, ((CharacterSelectScreenPatches.characters[6]).skins[(CharacterSelectScreenPatches.characters[6]).reskinCount]).CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
         bigAnimation.setVisible(false);
         bigAnimation.skeleton.setSkin("skin_01");
