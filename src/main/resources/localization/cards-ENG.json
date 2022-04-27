@@ -3147,7 +3147,7 @@
   },
   "shadowverse:Albert": {
     "NAME": "Albert, Levin Champion",
-    "DESCRIPTION": "Levin. NL Deal !D! damage. NL Enhance 3: Repeat once. Put ALL Levin Attack cards in your draw pile and discard pile into your hand. They cost 0 until played."
+    "DESCRIPTION": "Levin. NL Deal !D! damage. NL Enhance 3: Repeat once. Put ALL Levin Attack cards in your draw pile and discard pile into your hand. They cost 0 this turn."
   },
   "shadowverse:Albert2": {
     "NAME": "Albert, Thunderous Doom",
@@ -3760,7 +3760,7 @@
   },
   "shadowverse:Muse": {
     "NAME": "Meus Knight",
-    "DESCRIPTION": "Natura. NL Deal !D! damage and deal !B! Block. NL Whenever you play a *Naterran *Great *Tree and already have the Power Naterran Great Tree, increase this card's damage and Block by !M!."
+    "DESCRIPTION": "Natura. NL Deal !D! damage and deal !B! Block. NL Whenever you play a *Naterran *Great *Tree and already have the Power Naterran Great Tree, increase this card's damage and Block by !M!. NL Exhaust ."
   },
   "shadowverse:MusePrincess": {
     "NAME": "Daffodil, Meus Princess",
@@ -4020,7 +4020,7 @@
   },
   "shadowverse:ShootOfUnkilling": {
     "NAME": "Annihilating Onslaught",
-    "DESCRIPTION": "An enemy loses !M! Strength. NL Enhance 3: At the start of your next turn, deal damage equal to its max HP to an enemy that intends to attack. NL Exhaust."
+    "DESCRIPTION": "An enemy loses !M! Strength. NL Enhance 3: At the start of your next turn, if an enemy that intends to attack and deals 0 damage, deal damage equal to its max HP. NL Exhaust."
   },
   "shadowverse:LightOfHollow": {
     "NAME": "Remnant of Hollowness",
@@ -4357,5 +4357,9 @@
     "NAME": "XIV. Luzen, Temperance",
     "DESCRIPTION": "Accelerate 0 \bPut 1 *Unselfish *Grace into your hand. If Avarice is active, replace it with *Insatiable *Desire . NL  NL --------------------- NL  NL Gain 1 Intangible . NL Whenever you lose HP, reduce all enemies' max HP by !M! . NL Exhaust ",
     "UPGRADE_DESCRIPTION": "Accelerate 0 \bPut 1 *Unselfish *Grace+ into your hand. If Avarice is active, replace it with *Insatiable *Desire+ . NL  NL --------------------- NL  NL Gain 1 Intangible . NL Whenever you lose HP, reduce all enemies' max HP by !M! . NL Exhaust "
+  },
+  "shadowverse:MadnessCurse": {
+    "NAME": "You've all got mad",
+    "DESCRIPTION": "Add *Madness+ into your hand until your hand is full. NL Exhaust ."
   }
 }

@@ -1134,6 +1134,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         reflectedMap.put("TheTemperance_Acc", new Sfx("sounds/TheTemperance_Acc.wav"));
         reflectedMap.put("UnselfishGrace", new Sfx("sounds/UnselfishGrace.wav"));
         reflectedMap.put("InsatiableDesire", new Sfx("sounds/InsatiableDesire.wav"));
+        reflectedMap.put("MadnessCurse", new Sfx("sounds/MadnessCurse.wav"));
     }
 
     public void receiveEditRelics() {
@@ -1211,6 +1212,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addRelicToCustomPool((AbstractRelic) new ShizuruBOSS(), Royal.Enums.COLOR_YELLOW);
         BaseMod.addRelicToCustomPool((AbstractRelic) new YukariBOSS(), Bishop.Enums.COLOR_WHITE);
         BaseMod.addRelicToCustomPool((AbstractRelic) new ShinobuBOSS(), Necromancer.Enums.COLOR_PURPLE);
+        BaseMod.addRelic((AbstractRelic) new BanShadowverse(), RelicType.SHARED);
     }
 
     class Keywords {
@@ -2094,6 +2096,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard((AbstractCard) new InsatiableDesire());
         BaseMod.addCard((AbstractCard) new UnselfishGrace());
         BaseMod.addCard((AbstractCard) new TheTemperance());
+        BaseMod.addCard((AbstractCard) new MadnessCurse());
         logger.info("Success");
     }
 

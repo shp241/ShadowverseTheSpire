@@ -131,7 +131,7 @@ public class KMR
                 AbstractDungeon.actionManager.addToBottom(new ChangeSpriteAction(extra, this, 2.1F));
                 break;
             case "CALAMITY":
-                this.powers.removeIf(p -> p.type == AbstractPower.PowerType.DEBUFF || p.ID.equals(AbsoluteOnePower.POWER_ID));
+                this.powers.removeIf(p -> p.type == AbstractPower.PowerType.DEBUFF || p.ID.equals(AbsoluteOnePower.POWER_ID) || p.ID.equals(InvinciblePower.POWER_ID));
                 if (AbstractDungeon.ascensionLevel >= 19) {
                     this.maxHealth = 1000;
                 } else if (AbstractDungeon.ascensionLevel >= 4) {
@@ -140,7 +140,7 @@ public class KMR
                     this.maxHealth = 800;
                 }
                 this.halfDead = false;
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) this, (AbstractCreature) this, (AbstractPower) new InvinciblePower((AbstractCreature) this, 200), 200));
+                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) this, (AbstractCreature) this, (AbstractPower) new InvinciblePower((AbstractCreature) this, 500), 500));
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ShoutAction((AbstractCreature) this, DIALOG[2]));
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SFXAction("KMR3"));
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new HealAction((AbstractCreature) this, (AbstractCreature) this, this.maxHealth));

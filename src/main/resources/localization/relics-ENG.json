@@ -10,7 +10,7 @@
     "NAME": "Eleanor, Cosmic Friend",
     "FLAVOR": "I am Eleanor Gloria, Cosmic Flower and friend to you. For the two of us I shall proudly bloom!",
     "DESCRIPTIONS": [
-      "For the first #b3 turns, randomly add #b1 0 cost #yPetrification , #yConjure #yTwosome or #yStaff #yof #yWhirlwinds to your hand."
+      "For the first #b3 turns, randomly add #b1 Exhaustive 0 cost #yPetrification , #yConjure #yTwosome or #yStaff #yof #yWhirlwinds to your hand."
     ]
   },
   "shadowverse:EnchantedLibrary": {
@@ -528,6 +528,13 @@
       "Relic with unknown use.",
       "The world of Rivayle sprang forth from this crucible known as the Lodestone.",
       "At the start of the 1st, 3rd turn, add 1 #yVerdict #yRendered to hand. NL At the start of the 2nd, 4th turn, add 1 #yAbsolute #yDecree to hand. NL At the start of the 5th turn or after, add 1 that you don't have in hand."
+    ]
+  },
+  "shadowverse:BanShadowverse": {
+    "NAME": "You underdog don't deserve to play SV",
+    "FLAVOR": "You underdog don't deserve to play SV.",
+    "DESCRIPTIONS": [
+      "You cannot play any Shadowverse card."
     ]
   }
 }

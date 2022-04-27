@@ -57,9 +57,13 @@ import java.util.ArrayList;
      if (!this.grayscale) {
        this.counter++;
        CardCrawlGame.sound.playA("Eleanor", 0.0F);
-       AbstractCard c = generateCard(AbstractDungeon.cardRandomRng).makeCopy();
-       c.setCostForTurn(0);
-       addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, 1));
+       AbstractCard tmp = generateCard(AbstractDungeon.cardRandomRng).makeCopy();
+       tmp.setCostForTurn(0);
+       tmp.exhaustOnUseOnce = true;
+       tmp.exhaust = true;
+       tmp.initializeDescription();
+       tmp.applyPowers();
+       AbstractDungeon.player.hand.addToTop(tmp);
      } 
      if (this.counter == 3) {
        flash();
