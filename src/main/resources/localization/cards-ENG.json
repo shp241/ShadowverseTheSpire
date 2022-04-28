@@ -463,7 +463,7 @@
   },
   "shadowverse:Behemoth": {
     "NAME": "Gluttonous Behemoth",
-    "DESCRIPTION": "Deal !M! damage to all enemies at the end of your turn."
+    "DESCRIPTION": "Deal !M! damage to all enemies at the end of this turn."
   },
   "shadowverse:DemonOfPurgatory": {
     "NAME": "Demon of Purgatory",
@@ -693,7 +693,7 @@
   },
   "shadowverse:MysterianRite": {
     "NAME": "Mysterian Rite",
-    "DESCRIPTION": "Mysteria. NL This card costs 1 less [E] for each Mysteria card played while in your hand. NL Deal !D! damage. NL Apply !M! Vulnerable. NL Gain !B! Block. NL Ethereal. NL Exhaust."
+    "DESCRIPTION": "Mysteria. NL This card costs 1 for Mysteria card played while in your hand. NL Deal !D! damage. NL Apply !M! Vulnerable. NL Gain !B! Block. NL Ethereal. NL Exhaust."
   },
   "shadowverse:Miranda": {
     "NAME": "Ms. Miranda, Light Mage",
@@ -1291,7 +1291,7 @@
   },
   "shadowverse:WickedRebirth": {
     "NAME": "Wicked Rebirth",
-    "DESCRIPTION": "Destroy 1 card. Add a copy of a random card with Last_Words and an original cost of 1 or less played this combat to your hand. It costs 0 this turn. NL Increase the damage of the next Attack card you play by !M!. NL If you've played 5 or more cards with Last_Words this combat, draw !M! card(s). NL If you've played 10 or more, add 2 copies instead.",
+    "DESCRIPTION": "Destroy 1 card. Add a copy of a random Attack card with Last_Words and an original cost of 1 or less played this combat to your hand. It costs 0 this turn. NL Increase the damage of the next Attack card you play by !M!. NL If you've played 5 or more cards with Last_Words this combat, draw !M! cards. NL If you've played 10 or more, add 2 copies instead.",
     "EXTENDED_DESCRIPTION": [
       " NL (Cards with Last_Words played:",
       " .)"
@@ -1307,7 +1307,7 @@
   },
   "shadowverse:SoulStrike": {
     "NAME": "Soulstrike",
-    "DESCRIPTION": "Deal !D! damage. This card counts as a Strike. NL If you've played 10 or more cards with Last_Words this combat, double the damage. NL Exhaust.",
+    "DESCRIPTION": "Deal !D! damage. NL If you've played 10 or more cards with Last_Words this combat, double the damage. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " NL (Cards with Last_Words played:",
       " .)"
@@ -1344,7 +1344,7 @@
   },
   "shadowverse:Nicola": {
     "NAME": "Nicola, Forbidden Strength",
-    "DESCRIPTION": "Machina. NL Deal !D! damage. NL Last_Words: When this card is Exhausted, add a copy of this card to your hand and increase its damage by !M!. NL If this card's damage has been increased by !M! 4 times, add a *Forbidden *Art to your hand and change this card's damage to !M! instead. NL Exhaust."
+    "DESCRIPTION": "Machina. NL Deal !D! damage. NL Last_Words: When this card is Exhausted, add a copy of this card to your hand and increase its damage by !M!. NL If this card's damage is over 4 times as !M! , add a *Forbidden *Art to your hand and change this card's damage to !M! instead. NL Exhaust."
   },
   "shadowverse:Nicola2": {
     "NAME": "Nicola, Deathless Cyborg",
@@ -2201,8 +2201,8 @@
   },
   "shadowverse:ArtifactScan": {
     "NAME": "Artifact Scan",
-    "DESCRIPTION": "Add 2 AF with the same name from your exhausted pile into your hand. If you’ve played 6 kinds or more AF this combat, change the cost of the added cards to 0 this turn. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Add 2 AF with the same name from your exhausted pile into your hand. If you’ve played 6 kinds or more AF this combat, change the cost of the added cards to 0 this turn."
+    "DESCRIPTION": "Add 2 different kinds of AF from your exhausted pile into your hand. If you’ve played 6 kinds or more AF this combat, change the cost of the added cards to 0 this turn. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Add 2 different kinds of  AF from your exhausted pile into your hand. If you’ve played 6 kinds or more AF this combat, change the cost of the added cards to 0 this turn."
   },
   "shadowverse:Biofabrication": {
     "NAME": "Biofabrication",
@@ -2554,7 +2554,7 @@
     "DESCRIPTION": "AF. NL Gain !B! Block. NL Gain !M! Artifact. NL Exhaust."
   },
   "shadowverse:DefectArtifact": {
-    "NAME": "Defecse Artifact",
+    "NAME": "Defense Artifact",
     "DESCRIPTION": "AF. NL Gain !B! Block. NL Gain !M! Power_Damage_Immune. NL Exhaust."
   },
   "shadowverse:CannonArtifact": {
@@ -3320,7 +3320,7 @@
   },
   "shadowverse:BlackenedScripture": {
     "NAME": "Blackened Scripture",
-    "DESCRIPTION": "Apply !M! Weak and Vulnerable. NL Kill the enemy if its HP is 9 or less."
+    "DESCRIPTION": "Apply !M! Weak and Frail. NL Kill the enemy if its HP is 9 or less."
   },
   "shadowverse:PriestOfTheCudgel": {
     "NAME": "Priest of the Cudgel",
@@ -3433,7 +3433,7 @@
   },
   "shadowverse:OmenOfRepose": {
     "NAME": "Marwynn, Omen of Repose",
-    "DESCRIPTION": "Heal 1 HP and draw 1 more card at the start of your next turn. NL Reduce the Countdown of all Amulets by 1. NL If no Attack cards are played this turn, if you would receive more than 4 damage, that damage becomes 3 instead. NL Both you and the enemy skip your next turn. NL Exhaust."
+    "DESCRIPTION": "Heal 1 HP and draw 1 more card at the start of your next turn. NL Reduce the Countdown of all Amulets by 1. NL If no Attack cards are played this turn, if you would receive more than 4 damage, that damage becomes 3 instead. NL Skip both you and the enemies' turn. NL Exhaust."
   },
   "shadowverse:OmenOfRepose2": {
     "NAME": "Marwynn, Repose of Despair",
@@ -3558,7 +3558,7 @@
   },
   "shadowverse:Charaton": {
     "NAME": "Charaton, Iceflame Priest",
-    "DESCRIPTION": "Deal !D! damage X times and gain X Energy. X equals the number of Amulet cards played this combat.",
+    "DESCRIPTION": "Deal !D! damage X times and gain X Energy. X equals the number of Amulet cards destroyed this combat.",
     "EXTENDED_DESCRIPTION": [
       " NL (Damage dealt:",
       " . NL Energy gained: ",
@@ -3646,7 +3646,7 @@
   },
   "shadowverse:MarkUnleashed": {
     "NAME": "Mark Unleashed",
-    "DESCRIPTION": "Heal 1 HP (Limit). NL Deal !D! damage !M! times the amount of HP healed this combat."
+    "DESCRIPTION": "Heal 1 HP ( Limit ). NL Deal !D! damage !M! times the amount of HP healed this combat."
   },
   "shadowverse:MarkOfBalance": {
     "NAME": "Mark of Balance",
@@ -3735,7 +3735,7 @@
   },
   "shadowverse:Jatelant": {
     "NAME": "Jatelant, God of Prosperity",
-    "DESCRIPTION": "Activate one of the following effects based on how many Amulet cards have been played this combat: NL 1, 4, 7, 10 or 13: Gain !M! Gold. NL 2, 5, 8, 11, or 14: Deal !D! damage to all enemies and heal 3 HP. NL 3, 6, 9 or 12: Add an Attack card from your Exhaust pile to your hand and change its cost to 0. NL Exhaust.",
+    "DESCRIPTION": "Activate one of the following effects based on how many Amulet cards have been destroyed this combat: NL 1, 4, 7, 10 or 13: Gain !M! Gold. NL 2, 5, 8, 11, or 14: Deal !D! damage to all enemies and heal 3 HP. NL 3, 6, 9 or 12: Add an Attack card from your Exhaust pile to your hand and change its cost to 0. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " NL (Amulet cards played:",
       "  .)"
@@ -4110,7 +4110,7 @@
   },
   "shadowverse:OtherworldGatekeeper": {
     "NAME": "Otherworld Gatekeeper",
-    "DESCRIPTION": "Deal !D! damage. NL Play an Attack card with Last_Words that costs !M! from your draw pile. NL Last_Words: When this card is Exhausted, heal 1 HP."
+    "DESCRIPTION": "Deal !D! damage. NL Play !M! Attack card(s) with Last_Words that costs 1 or less from your draw pile. NL Last_Words: When this card is Exhausted, heal 1 HP."
   },
   "shadowverse:V": {
     "NAME": "Val, Trusty Getaway Car",
@@ -4275,8 +4275,8 @@
   },
   "shadowverse:Yukishima": {
     "NAME": "Yukishima, Master Biographer",
-    "DESCRIPTION": "Festive. NL Deal 1 damage to a random enemy for each card you draw. Then, increase the damage and Block of a random Attack card in your hand by 1. NL Enhance 4: Deal damage equal to the amount of cards you've this combat to all enemies.",
-    "UPGRADE_DESCRIPTION": "Festive. NL Add 1 copy of this into your discard pile. NL Deal 1 damage to a random enemy for each card you draw. Then, increase the damage and Block of a random Attack card in your hand by 1. NL Enhance 4: Deal damage equal to the amount of cards you've this combat to all enemies.",
+    "DESCRIPTION": "Festive. NL Deal 1 damage to a random enemy for each card you draw. Then, increase the damage and Block of a random Attack card in your hand by 1. NL Enhance 4: Deal damage equal to the amount of cards you've drawn this combat to all enemies.",
+    "UPGRADE_DESCRIPTION": "Festive. NL Add 1 copy of this into your discard pile. NL Deal 1 damage to a random enemy for each card you draw. Then, increase the damage and Block of a random Attack card in your hand by 1. NL Enhance 4: Deal damage equal to the amount of cards you've drawn this combat to all enemies.",
     "EXTENDED_DESCRIPTION": [
       " NL (Cards drawn: ",
       ")"

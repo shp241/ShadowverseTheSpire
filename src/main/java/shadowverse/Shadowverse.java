@@ -1135,6 +1135,25 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         reflectedMap.put("UnselfishGrace", new Sfx("sounds/UnselfishGrace.wav"));
         reflectedMap.put("InsatiableDesire", new Sfx("sounds/InsatiableDesire.wav"));
         reflectedMap.put("MadnessCurse", new Sfx("sounds/MadnessCurse.wav"));
+        reflectedMap.put("Sekka_L", new Sfx("sounds/Sekka_L.wav"));
+        reflectedMap.put("Hozumi_L", new Sfx("sounds/Hozumi_L.wav"));
+        reflectedMap.put("Cassiopeia_L", new Sfx("sounds/Cassiopeia_L.wav"));
+        reflectedMap.put("DarkGeneral_L", new Sfx("sounds/DarkGeneral_L.wav"));
+        reflectedMap.put("Tsubaki_L", new Sfx("sounds/Tsubaki_L.wav"));
+        reflectedMap.put("Nahtnaught_L", new Sfx("sounds/Nahtnaught_L.wav"));
+        reflectedMap.put("Nahtnaught_L_Eh", new Sfx("sounds/Nahtnaught_L_Eh.wav"));
+        reflectedMap.put("IC_L", new Sfx("sounds/IC_L.wav"));
+        reflectedMap.put("MagnaZero_L", new Sfx("sounds/MagnaZero_L.wav"));
+        reflectedMap.put("TheLovers_L", new Sfx("sounds/TheLovers_L.wav"));
+        reflectedMap.put("TheLovers_L_Eh", new Sfx("sounds/TheLovers_L_Eh.wav"));
+        reflectedMap.put("Aisha_L", new Sfx("sounds/Aisha_L.wav"));
+        reflectedMap.put("SoulGuide_L", new Sfx("sounds/SoulGuide_L.wav"));
+        reflectedMap.put("Aenea_L", new Sfx("sounds/Aenea_L.wav"));
+        reflectedMap.put("Elana_L", new Sfx("sounds/Elana_L.wav"));
+        reflectedMap.put("ResentfulScreaming_L", new Sfx("sounds/ResentfulScreaming_L.wav"));
+        reflectedMap.put("EternalContract_L", new Sfx("sounds/EternalContract_L.wav"));
+        reflectedMap.put("BlackenedScripture", new Sfx("sounds/BlackenedScripture.wav"));
+        reflectedMap.put("BloodPact", new Sfx("sounds/BloodPact.wav"));
     }
 
     public void receiveEditRelics() {

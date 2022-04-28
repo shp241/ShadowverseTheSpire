@@ -2,6 +2,8 @@ package shadowverse.cards.Rare;
 
 
 import basemod.abstracts.CustomCard;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -11,11 +13,13 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
+import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import shadowverse.Shadowverse;
 import shadowverse.action.BurialAction;
 import shadowverse.action.ReanimateAction;
@@ -29,6 +33,7 @@ public class TheLovers extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/TheLovers.png";
+    private static final Texture LEADER_SKIN_VERSION = ImageMaster.loadImage("img/cards/TheLovers_L.png");
 
     public TheLovers() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Necromancer.Enums.COLOR_PURPLE, CardRarity.RARE, CardTarget.SELF);
@@ -36,6 +41,7 @@ public class TheLovers extends CustomCard {
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
+        this.jokePortrait = new TextureAtlas.AtlasRegion(LEADER_SKIN_VERSION, 0, 0, LEADER_SKIN_VERSION.getWidth(), LEADER_SKIN_VERSION.getHeight());
     }
 
 
@@ -68,10 +74,16 @@ public class TheLovers extends CustomCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot((AbstractGameAction) new GainBlockAction(abstractPlayer, this.block));
         if (this.costForTurn == 6 && Shadowverse.Enhance(6)) {
-            addToBot((AbstractGameAction) new SFXAction("TheLoversEH"));
+            if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false)))
+                addToBot((AbstractGameAction) new SFXAction("TheLovers_L_Eh"));
+            else
+                addToBot((AbstractGameAction) new SFXAction("TheLoversEH"));
             addToBot((AbstractGameAction) new ApplyPowerAction(abstractPlayer, abstractPlayer, (AbstractPower) new TheLoversPower(abstractPlayer)));
         } else {
-            addToBot((AbstractGameAction) new SFXAction("TheLovers"));
+            if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false)))
+                addToBot((AbstractGameAction) new SFXAction("TheLovers_L"));
+            else
+                addToBot((AbstractGameAction) new SFXAction("TheLovers"));
             int attackAmt = 0;
             for (AbstractCard c : abstractPlayer.hand.group) {
                 if (c != this && c.type == CardType.ATTACK)

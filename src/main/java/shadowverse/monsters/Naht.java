@@ -112,7 +112,7 @@ public class Naht extends CustomMonster implements SpriteCreature {
         AbstractDungeon.getCurrRoom().playBgmInstantly("StormOverRivayle");
         int baseStrength = 0;
         if (AbstractDungeon.ascensionLevel >= 19) {
-            baseStrength = AbstractDungeon.player.currentHealth / 13;
+            baseStrength = AbstractDungeon.player.currentHealth / 14;
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new InvinciblePower(this, 80)));
         } else {
             baseStrength = AbstractDungeon.player.currentHealth / 16;

@@ -1,6 +1,8 @@
 package shadowverse.cards.Rare;
 
 import basemod.abstracts.CustomCard;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -12,10 +14,12 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
+import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import shadowverse.Shadowverse;
 import shadowverse.cards.Temp.ProductMachine;
 import shadowverse.cards.Temp.TyrantsOrder;
@@ -29,11 +33,13 @@ public class Nahtnaught extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Nahtnaught.png";
+    private static final Texture LEADER_SKIN_VERSION = ImageMaster.loadImage("img/cards/Nahtnaught_L.png");
 
     public Nahtnaught() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.NONE);
         this.exhaust = true;
         this.cardsToPreview = new TyrantsOrder();
+        this.jokePortrait = new TextureAtlas.AtlasRegion(LEADER_SKIN_VERSION, 0, 0, LEADER_SKIN_VERSION.getWidth(), LEADER_SKIN_VERSION.getHeight());
     }
 
     @Override
@@ -62,7 +68,10 @@ public class Nahtnaught extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (Shadowverse.Enhance(2) && this.costForTurn == 2) {
-            addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Eh"));
+            if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false)))
+                addToBot((AbstractGameAction) new SFXAction("Nahtnaught_L_Eh"));
+            else
+                addToBot(new SFXAction(ID.replace("shadowverse:", "") + "_Eh"));
             Henchman h1 = new Henchman(-300 - 185.0F * 1, MathUtils.random(-5.0F, 25.0F));
             Henchman h2 = new Henchman(-300 - 185.0F * 2, MathUtils.random(-5.0F, 25.0F));
             addToBot(new SpawnMonsterAction(h1, false));
@@ -72,7 +81,10 @@ public class Nahtnaught extends CustomCard {
             h1.createIntent();
             h2.createIntent();
         } else {
-            addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+            if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false)))
+                addToBot((AbstractGameAction) new SFXAction("Nahtnaught_L"));
+            else
+                addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         }
         this.addToTop(new MakeTempCardInHandAction(new TyrantsOrder(), 1));
     }
