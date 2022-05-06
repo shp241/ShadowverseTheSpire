@@ -1,0 +1,135 @@
+{
+  "shadowverse:SatanPotion": {
+    "NAME": "병에 든 사악",
+    "DESCRIPTIONS": [
+      "아포칼립스나 코퀴토스 카드 3장중 1장을 골라 얻고 그 비용을 0으로 합니다..",
+      "아포칼립스나 코퀴토스 카드 3장중 2장을 골라 얻고 그 비용을 0으로 합니다."
+    ]
+  },
+  "shadowverse:ElfPotion": {
+    "NAME": "병에 든 요정",
+    "DESCRIPTIONS": [
+      "요정+",
+      " 장을 얻습니다."
+    ]
+  },
+  "shadowverse:BoostPotion": {
+    "NAME": "주문증폭 물약",
+    "DESCRIPTIONS": [
+      "손의 카드를 ",
+      " 번 주문증폭합니다."
+    ]
+  },
+  "shadowverse:EarthPotion": {
+    "NAME": "대지의 정수",
+    "DESCRIPTIONS": [
+      "대지의 정수를 #b",
+      " 얻습니다."
+    ]
+  },
+  "shadowverse:KeepPotion": {
+    "NAME": "마나 보충제",
+    "DESCRIPTIONS": [
+      "턴 종료시 카드를 #b",
+      " 장 골라 이번 전투동안 보존합니다."
+    ]
+  },
+  "shadowverse:CemeteryPotion": {
+    "NAME": "묘지 물약",
+    "DESCRIPTIONS": [
+      "묘지를 #b",
+      " 얻습니다."
+    ]
+  },
+  "shadowverse:ReanimatePotion": {
+    "NAME": "소생 물약",
+    "DESCRIPTIONS": [
+      " #y소생 #b3 .",
+      " #y소생 #b3 . #y소생 #b3 ."
+    ]
+  },
+  "shadowverse:RosePotion": {
+    "NAME": "장미 주스",
+    "DESCRIPTIONS": [
+      "장미의 일격 을 #b",
+      " 장 얻습니다."
+    ]
+  },
+  "shadowverse:NaterranPotion": {
+    "NAME": "농축된 마나",
+    "DESCRIPTIONS": [
+      "나테라의 신목을 #b",
+      " 장 얻습니다."
+    ]
+  },
+  "shadowverse:BatPotion": {
+    "NAME": "병에 든 박쥐",
+    "DESCRIPTIONS": [
+      "숲박쥐+ 를 #b",
+      " 장 얻습니다."
+    ]
+  },
+  "shadowverse:EpitaphPotion": {
+    "NAME": "비문의 영약",
+    "DESCRIPTIONS": [
+      "이후 #b",
+      " 턴 동안 갈망,복수,광란 상태가 됩니다."
+    ]
+  },
+  "shadowverse:ArtifactPotion": {
+    "NAME": "아티팩트의 정수",
+    "DESCRIPTIONS": [
+      "무작위 아티팩트 3장중 1장을 골라 얻고 그 비용을 0으로 만듭니다.",
+      "무작위 아티팩트 3장중 2장을 골라 얻고 그 비용을 0으로 만듭니다."
+    ]
+  },
+  "shadowverse:RevisedPotion": {
+    "NAME": "개량의 물약",
+    "DESCRIPTIONS": [
+      "손에 있는 꼭두각시 인형을 모두 소멸시키고 그만큼 개량형 꼭두각시 인형을 얻습니다."
+    ]
+  },
+  "shadowverse:BuffPotion": {
+    "NAME": "결속의 물약",
+    "DESCRIPTIONS": [
+      "+ #b",
+      " /+ #b",
+      " 를 내 모든 추종자에게 줍니다."
+    ]
+  },
+  "shadowverse:EvolutionPotion": {
+    "NAME": "진화의 물약",
+    "DESCRIPTIONS": [
+      "진화 포인트+ 를 #b",
+      " 장 얻습니다."
+    ]
+  },
+  "shadowverse:MinionPotion": {
+    "NAME": "소환의 물약",
+    "DESCRIPTIONS": [
+      "무작위 추종자를 #b",
+      " 체 소환합니다 ."
+    ]
+  },
+  "shadowverse:ReduceCountDownPotion": {
+    "NAME": "영창의 수정",
+    "DESCRIPTIONS": [
+      "내 모든 마법진의 카운트다운을 #b",
+      " 만큼 감소시킵니다."
+    ]
+  },
+  "shadowverse:IndulgencePotion": {
+    "NAME": "면죄부 물약",
+    "DESCRIPTIONS": [
+      "면죄부를 #b",
+      " 장 얻습니다. "
+    ]
+  },
+  "shadowverse:SacredHealingPotion": {
+    "NAME": "치유 물약",
+    "DESCRIPTIONS": [
+      "체력을 #b",
+      "% 회복합니다."
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "shadowverse:NeutralReward": {
+    "TEXT": [
+      "덱에 중립 카드를 추가"
+    ]
+  },
+  "shadowverse:ClassReward": {
+    "TEXT": [
+      "덱에 카드를 추가"
+    ]
+  },
+  "shadowverse:ChooseToReduceCost": {
+    "TEXT": [
+      "비용 감소"
+    ]
+  },
+  "shadowverse:Burial": {
+    "TEXT": [
+      "장송"
+    ]
+  },
+  "shadowverse:AndrealphusMod": {
+    "TEXT": [
+      " NL 유언: 카드를 1장 뽑습니다. "
+    ]
+  },
+  "shadowverse:PrinceCatacombMod": {
+    "TEXT": [
+      " NL 유언: *스켈레톤 1장을 얻습니다. "
+    ]
+  },
+  "shadowverse:ImmoralDesireMod1": {
+    "TEXT": [
+      " NL 소멸되면 이 카드의 원래 피해량만큼 모든 적에게 피해를 줍니다. "
+    ]
+  },
+  "shadowverse:ImmoralDesireMod2": {
+    "TEXT": [
+      " NL 유언: 소멸되면 이 카드의 방어도만큼 임시 체력을 얻습니다. "
+    ]
+  },
+  "shadowverse:UndyingResolveMod": {
+    "TEXT": [
+      " NL 유언: 사령술 6: 이 카드의 피해량을 2배로 하고, 복사본을 손에 넣습니다."
+    ]
+  },
+  "shadowverse:applyEffect": {
+    "TEXT": [
+      "효과를 적용할 카드를 선택하세요."
+    ]
+  },
+  "shadowverse:MistolinaBayleonAction": {
+    "TEXT": [
+      "소멸시킬 카드를 지정하세요"
+    ]
+  },
+  "shadowverse:EnergyPanelTip": {
+    "TEXT": [
+      "적의 현재 에너지입니다."
+    ],
+    "EXTRA_TEXT": [
+      "에너지"
+    ]
+  },
+  "shadowverse:AmuletText": {
+    "TEXT": [
+      "마법진을 더 놓을수 없다!"
+    ]
+  },
+  "shadowverse:ReduceCountDown": {
+    "TEXT": [
+      "카운트다운을 감소시킬 마법진을 선택하세요."
+    ]
+  },
+  "shadowverse:PlaceCardToAmuletZone": {
+    "TEXT": [
+      "마법진 칸에 넣을 카드를 선택하세요."
+    ]
+  },
+  "shadowverse:Ambush": {
+    "TEXT": [
+      "잠복하거나 공격을 선택할수 있습니다."
+    ]
+  },
+  "shadowverse:Skin": {
+    "TEXT": [
+      "Skin"
+    ]
+  },
+  "shadowverse:Exhaust": {
+    "TEXT": [
+      "소멸"
+    ]
+  },
+  "shadowverse:Ethereal": {
+    "TEXT": [
+      "휘발성"
+    ]
+  },
+  "shadowverse:Retain": {
+    "TEXT": [
+      "보존"
+    ]
+  },
+  "shadowverse:ArtifactTag": {
+    "TEXT": [
+      "AF"
+    ]
+  },
+  "shadowverse:MachineTag": {
+    "TEXT": [
+    ]
+      "기계"
+  }
+}

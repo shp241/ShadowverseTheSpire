@@ -1,0 +1,4366 @@
+{
+  "shadowverse:Strike_W": {
+    "NAME": "타격",
+    "DESCRIPTION": "피해를 !D! 줍니다."
+  },
+  "shadowverse:Strike_N": {
+    "NAME": "타격",
+    "DESCRIPTION": "피해를 !D! 줍니다."
+  },
+  "shadowverse:Strike_Nm": {
+    "NAME": "타격",
+    "DESCRIPTION": "피해를 !D! 줍니다."
+  },
+  "shadowverse:Strike_B": {
+    "NAME": "타격",
+    "DESCRIPTION": "피해를 !D! 줍니다."
+  },
+  "shadowverse:Defend_W": {
+    "NAME": "수비",
+    "DESCRIPTION": "방어도를 !B! 얻습니다."
+  },
+  "shadowverse:Defend_N": {
+    "NAME": "수비",
+    "DESCRIPTION": "방어도를 !B! 얻습니다."
+  },
+  "shadowverse:Defend_Nm": {
+    "NAME": "수비",
+    "DESCRIPTION": "방어도를 !B! 얻습니다."
+  },
+  "shadowverse:Defend_B": {
+    "NAME": "수비",
+    "DESCRIPTION": "방어도를 !B! 얻습니다."
+  },
+  "shadowverse:Insight": {
+    "NAME": "지혜의 빛",
+    "DESCRIPTION": "카드를 1 장 뽑습니다.",
+    "UPGRADE_DESCRIPTION": "보존. NL 카드를 1 장 뽑습니다."
+  },
+  "shadowverse:FieryEmbrace": {
+    "NAME": "광염의 손",
+    "DESCRIPTION": "주문증폭: \b비용이 [E] 감소합니다. NL 적이 체력을 !D! 잃습니다."
+  },
+  "shadowverse:DimensionShift": {
+    "NAME": "차원 초월",
+    "DESCRIPTION": "주문증폭: \b비용이 [E] 감소합니다. NL 보존. NL 소멸. NL 이번 턴 후에 내 턴을 추가로 진행합니다."
+  },
+  "shadowverse:MagicMissile": {
+    "NAME": "마법 화살",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 카드를 1장 뽑습니다."
+  },
+  "shadowverse:FatesHand": {
+    "NAME": "운명의 인도",
+    "DESCRIPTION": "주문증폭: \b비용이 [E] 감소합니다. NL 카드를 !M!장 뽑습니다."
+  },
+  "shadowverse:ZealotOfTruth": {
+    "NAME": "진실의 광신자",
+    "DESCRIPTION": "주문증폭: \b비용이 [E] 감소합니다. NL 피해를 !D! 줍니다."
+  },
+  "shadowverse:MagicOwl": {
+    "NAME": "부엉이 사역마",
+    "DESCRIPTION": "!M! 번 주문증폭합니다. NL 피해를 !D! 줍니다."
+  },
+  "shadowverse:FireChain": {
+    "NAME": "불꽃 연쇄",
+    "DESCRIPTION": "주문증폭: \b1번 반복합니다. NL 무작위 적에게 피해를 !D! 만큼 주문증폭 횟수만큼 줍니다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (피해를",
+      " 번 !D! 만큼 줍니다.)"
+    ]
+  },
+  "shadowverse:GigantChimera": {
+    "NAME": "거대 키마이라",
+    "DESCRIPTION": "주문증폭: \b피해량 +7 . NL 모든 적에게 피해를 !D! 만큼, 가장 체력이 낮은 적부터 각각의 적에게 해당 적의 체력과 방어도만큼 나누어 입힙니다.",
+    "UPGRADE_DESCRIPTION": "Spellboost: \b피해량+9. NL 모든 적에게 피해를 !D! 만큼, 가장 체력이 낮은 적부터 각각의 적에게 해당 적의 체력과 방어도만큼 나누어 입힙니다."
+  },
+  "shadowverse:OmenOfTruth": {
+    "NAME": "진실의 재앙 라이오",
+    "DESCRIPTION": "내 뽑을 카드더미의 모든 카드를 !M!번 주문증폭합니다. NL 힘과 민첩을 1 얻습니다. NL *단도 1장을 손으로 가져옵니다.",
+    "UPGRADE_DESCRIPTION": "선천성 NL 내 뽑을 카드더미의 모든 카드를 !M!번 주문증폭합니다. NL 힘과 민첩을 1 얻습니다. NL *단도 1장을 얻습니다."
+  },
+  "shadowverse:OmenOfTruth2": {
+    "NAME": "허위의 진실 라이오",
+    "DESCRIPTION": "내 뽑을 카드더미의 모든 카드의 비용을 사용하기 전까지 0으로 바꿉니다. NL 이 카드를 뽑으면 *허위의 *위증 1장을 얻습니다."
+  },
+  "shadowverse:DimensionalWitch": {
+    "NAME": "차원의 마녀 도로시",
+    "DESCRIPTION": "주문증폭: \b비용이 [E] 감소합니다. NL 소멸. NL 방어도를 !B! 얻습니다. NL 손에 있는 모든 카드를 소멸시킵니다. 그 다음 카드를 5장 뽑고, 그 카드를 !M! 번 주문증폭합니다."
+  },
+  "shadowverse:DimensionalWitch2": {
+    "NAME": "무한의 마녀 도로시",
+    "DESCRIPTION": "주문증폭: \b비용이 [E] 감소합니다. NL 소멸. NL 방어도를 !B! 얻습니다. NL 손이 가득 차거나 주문증폭이 없는 카드를 뽑을때까지 카드를 뽑습니다. 뽑은 카드들을 !M! 번 주문증폭합니다."
+  },
+  "shadowverse:MysticSeeker": {
+    "NAME": "신탁의 요동 아룰루메이야",
+    "DESCRIPTION": "턴 종료시 이번 턴 3장 이하의 카드를 사용했다면 다음 내 턴 시작에 !M! 번 주문증폭합니다. NL 3장 이상을 사용했다면 NL 다음 내 턴 시작에 카드를 3장 뽑습니다."
+  },
+  "shadowverse:EdictOfTruth": {
+    "NAME": "진실의 규칙",
+    "DESCRIPTION": "보존. NL 손이 가득 찰 때까지 카드를 뽑습니다. NL 소멸. NL 만약 6번 이상 *주문증폭 되었다면 [E] [E]를 얻습니다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (현재 주문증폭: ",
+      " )"
+    ]
+  },
+  "shadowverse:ProphecyOfBoons": {
+    "NAME": "인도의 예언",
+    "DESCRIPTION": "보존. NL 카드를 3장 뽑습니다. NL 소멸. NL 만약 3번 이상 *주문증폭 되었다면 [E]를 얻습니다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (현재 주문증폭: ",
+      " )"
+    ]
+  },
+  "shadowverse:Lou": {
+    "NAME": "신입생 루",
+    "DESCRIPTION": "마나리아. NL 방어도를 !B! 얻습니다. NL 뽑을 카드더미에서 주문증폭을 가진 무작위 카드 한장을 가져옵니다."
+  },
+  "shadowverse:Ogler": {
+    "NAME": "주시자",
+    "DESCRIPTION": "마나리아. NL 주문증폭: \b비용이 [E] 감소합니다. NL 방어도를 !B! 얻습니다."
+  },
+  "shadowverse:TruthsAdjudication": {
+    "NAME": "진실의 선고",
+    "DESCRIPTION": "보존. NL 소멸. NL 방어도를 3X 얻습니다. 무작위 적에게 피해를 3Y 줍니다. 체력을 Z 회복합니다. NL X, Y, Z 는 그 합이 이 카드의 주문증폭과 같도록 무작위로 배분됩니다.",
+    "UPGRADE_DESCRIPTION": "보존. NL 소멸. NL 방어도를 4X 얻습니다. 무작위 적에게 피해를 4Y 줍니다. 체력을 2Z 회복합니다. NL X, Y, Z 는 그 합이 이 카드의 주문증폭과 같도록 무작위로 배분됩니다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (현재 주문증폭: ",
+      " )"
+    ]
+  },
+  "shadowverse:MysterianMissile": {
+    "NAME": "마나리아 마법탄",
+    "DESCRIPTION": "마나리아. NL 휘발성. NL 소멸. NL 피해를 !D! 줍니다. NL 취약을 !M! 부여합니다."
+  },
+  "shadowverse:MysterianCircle": {
+    "NAME": "마나리아 방어진",
+    "DESCRIPTION": "마나리아. NL 휘발성. NL 소멸. NL 방어도를 !B! 얻습니다."
+  },
+  "shadowverse:MysterianKnowledge": {
+    "NAME": "마나리아의 지식",
+    "DESCRIPTION": "마나리아. NL 보존. NL 소멸. NL 이하의 카드중 무작위로 한장을 얻습니다.: NL *마나리아 *마법탄 또는 *마나리아 *방어진.",
+    "UPGRADE_DESCRIPTION": "마나리아. NL 보존. NL 소멸. NL 이하의 카드중 무작위로 한장을 얻습니다.: NL *마나리아 *마법탄+ 또는 *마나리아 *방어진+.",
+  },
+  "shadowverse:CommenceExperiment": {
+    "NAME": "실험 개시",
+    "DESCRIPTION": "대지의 정수를 !M! 얻습니다.",
+    "UPGRADE_DESCRIPTION": "보존. NL 대지의 정수를 !M! 얻습니다."
+  },
+  "shadowverse:MasterMageLevi": {
+    "NAME": "위대한 마법사 레비",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL  대지의 비술: \b 모든 적에게 피해를 !D! 줍니다."
+  },
+  "shadowverse:Concentration": {
+    "NAME": "정신 집중",
+    "DESCRIPTION": "카드를 !M!장 뽑습니다. NL  대지의 비술: \b 카드를 1장 더 뽑고 방어도를 !B! 얻습니다."
+  },
+  "shadowverse:PiousInstructor": {
+    "NAME": "백마법 교사 프로우",
+    "DESCRIPTION": "대지의 정수를 1 얻습니다. NL 대지의 정수를 얻을때 마다 방어도를 !M! 얻습니다."
+  },
+  "shadowverse:ConjureGuardian": {
+    "NAME": "수호골렘 연성",
+    "DESCRIPTION": "소멸. NL 방어도를 !B! 얻습니다."
+  },
+  "shadowverse:GolemAssault": {
+    "NAME": "골렘 출격",
+    "DESCRIPTION": "*수호골렘 *연성을 얻습니다. NL 강화 2 \b*수호골렘 연성을 2장 더 얻습니다. NL  대지의 비술: \b 그 카드들의 비용을 이번 턴동안 0으로 만듭니다.",
+    "UPGRADE_DESCRIPTION": "*수호골렘 *연성+ 을 얻습니다. NL 강화 2 \b*수호골렘 연성+ 을 2장 더 얻습니다. NL  대지의 비술: \b 그 카드들의 비용을 이번 턴동안 0으로 만듭니다.",
+  },
+  "shadowverse:VeridicRitual": {
+    "NAME": "진리의 술법",
+    "DESCRIPTION": "보존. NL 피해를 !D! 줍니다. NL 대지의 비술: \b 카드를 !M! 장 뽑습니다. NL 소멸."
+  },
+  "shadowverse:Clarke": {
+    "NAME": "미지의 탐구자 클락",
+    "DESCRIPTION": " 가속화 0: \b대지의 정수를 1 얻습니다. *진리의 *술법 1장을 얻습니다. NL  NL --------------------- NL  NL [E] [E] [E] [E] [E]를 얻습니다. NL  대지의 비술: \b 손패를 전부 소멸시키고, 소멸된 카드 한장당 방어도를 !B! 얻습니다. 손이 가득 찰 때까지 카드를 뽑습니다."
+  },
+  "shadowverse:Faust": {
+    "NAME": "진실을 밝히는 자 파우스트",
+    "DESCRIPTION": "턴 종료시, 대지의 비술: \b 힘을 !M! 얻고 민첩을 1 얻습니다. NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "턴 종료시, 대지의 비술: \b 힘을 !M! 얻고 민첩을 1 얻습니다. ",
+  },
+  "shadowverse:Faust2": {
+    "NAME": "욕망을 관찰하는 자 파우스트",
+    "DESCRIPTION": "내 턴 종료시 대지의 정수가 2 미만이라면 대지의 정수를 2 얻습니다. NL 이상이라면 대지의 비술 2: \b모든 적에게 피해를 !M! 줍니다. NL 휘발성."
+  },
+  "shadowverse:OrichalcumGolem": {
+    "NAME": "오리하르콘 골렘",
+    "DESCRIPTION": " 가속화 0: \b 대지의 비술 X: \b무작위로 이하의 능력중 하나를 발동합니다. NL '방어도를 6 얻습니다. ', '*진리의 *술법 1장을 얻습니다', '무작위 적에게 피해를 !D! 줍니다' NL 이 효과를 X 번 반복합니다. NL X는 대지의 정수. NL  NL --------------------- NL  NL 방어도를 !B! 얻습니다. NL 다음 내 턴 시작시 대지의 정수를 2 얻습니다.",
+    "UPGRADE_DESCRIPTION": " 가속화 0: \b 대지의 비술 X: \b무작위로 이하의 능력중 하나를 발동합니다. NL '방어도를 8 얻습니다. ', '*진리의 *술법+ 1장을 얻습니다', '무작위 적에게 피해를 !D! 줍니다' NL 이 효과를 X 번 반복합니다. NL X는 대지의 정수. NL  NL --------------------- NL  NL 방어도를 !B! 얻습니다. NL 다음 내 턴 시작시 대지의 정수를 2 얻습니다."
+  },
+  "shadowverse:DwarfAlchemist": {
+    "NAME": "드워프 연금술사",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 대지의 정수를 1 얻습니다.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL 대지의 정수를 1 얻습니다. NL 뽑을 카드더미에서 대지의 비술을 가진 카드 1장을 무작위로 가져옵니다."
+  },
+  "shadowverse:WitchsCauldron": {
+    "NAME": "마녀의 가마솥",
+    "DESCRIPTION": "대지의 정수를 !M! 얻습니다. NL 대지의 비술을 발동할때, NL 카드를 !M! 장 뽑습니다."
+  },
+  "shadowverse:Telescope": {
+    "NAME": "천체망원경",
+    "DESCRIPTION": "대지의 비술: 카드를 !M! 장 뽑고, [E]를 얻습니다. NL 대지의 정수를 !M! 얻습니다.",
+    "UPGRADE_DESCRIPTION": "대지의 비술: 카드를 !M! 장 뽑고, [E]를 얻습니다. NL 대지의 정수를 !M! 얻습니다. NL 이 카드의 복사본을 버린 카드더미에 넣습니다."
+  },
+  "shadowverse:Magisa": {
+    "NAME": "멸권의 마녀 마기사",
+    "DESCRIPTION": "취약을 !M! 부여합니다. NL 대지의 비술: \b방어도를 !B! 얻습니다. NL 대지의 비술 2: \b피해를 !D! 줍니다. NL 대지의 비술 3: \b약화를 !M! 부여합니다. NL 대지의 비술 4: \b힘과 민첩을 3 얻습니다."
+  },
+  "shadowverse:StaffOfWhirlwinds": {
+    "NAME": "분노의 폭풍",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 모든 적에게 피해를 !M! 줍니다."
+  },
+  "shadowverse:ConjureTwosome": {
+    "NAME": "이중연성",
+    "DESCRIPTION": "방어도를 !B! 만큼 두번 얻습니다."
+  },
+  "shadowverse:Petrification": {
+    "NAME": "변성술",
+    "DESCRIPTION": "적이 힘을 !M! 잃습니다. NL 대지의 비술: 대신 내가 불가침을 1 얻습니다. NL 소멸."
+  },
+  "shadowverse:AbsoluteZeroBlade": {
+    "NAME": "아이시클 랜스",
+    "DESCRIPTION": "적의 체력이 10 이하라면 0으로 만듭니다. NL 카드를 1장 뽑습니다. NL 주문증폭: \b 체력 범위 +3.",
+    "UPGRADE_DESCRIPTION": "적의 체력이 10 이하라면 0으로 만듭니다. NL 카드를 1장 뽑습니다. NL 주문증폭: \b 체력 범위 +5.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (현재 주문증폭: ",
+      ")"
+    ]
+  },
+  "shadowverse:Chaos": {
+    "NAME": "혼돈의 방식",
+    "DESCRIPTION": "혼란 상태가 됩니다. 턴 시작시 당신과 모든 적들은 최대 !M! 까지 힘을 얻거나 잃습니다.  NL 이렇게 얻거나 잃은 힘은 턴 종료시 사라집니다."
+  },
+  "shadowverse:ChainLightning": {
+    "NAME": "연쇄하는 벼락",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 손에 다른 카드가 3장 이하였다면, NL 이 카드의 복사본 한장을 얻습니다. NL 소멸."
+  },
+  "shadowverse:Runie": {
+    "NAME": "결의의 예언자 루니",
+    "DESCRIPTION": "주문증폭합니다. NL 주문증폭: \bIf 1번 이상 *주문증폭 되었다면, 카드를 1장 뽑습니다. NL 3회 이상이면 무작위 적에게 피해를 !D! 줍니다. NL 5회 이상이면 무작위 적에게 피해를 !D! 주고 방어도를 !B! 얻고 체력을 3 회복합니다. NL 7회 이상이면 이 카드의 복사본 3장을 얻습니다. NL 소멸.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (현재 주문증폭: ",
+      ")"
+    ]
+  },
+  "shadowverse:Runie2": {
+    "NAME": "운명의 예언자 루니",
+    "DESCRIPTION": "주문증폭합니다. NL 방어도를 !B! 얻습니다. NL 결단: NL *인도의 *예언 또는 *파멸의 *예언 을 손으로 가져옵니다."
+  },
+  "shadowverse:ProphecyOfDoom": {
+    "NAME": "파멸의 예언",
+    "DESCRIPTION": "보존. NL 주문증폭: \b비용이 [E] 감소합니다. NL 대상에게 이하의 효과를 부여합니다: 턴 종료시 체력을 !M! 잃습니다. NL 소멸."
+  },
+  "shadowverse:ForbiddenDarkMage": {
+    "NAME": "Forbidden Darkmage",
+    "DESCRIPTION": "결정화 0: \b대지의 정수를 모두 소모해, 5 이상의 피해를 받으려고 할때 그걸 4로 줄이고, 턴 종료시 카드를 1장 뽑고 체력을 1 회복합니다. 소모한 대지의 정수 하나당 이 효과의 지속시간을 1턴 늘립니다.NL . NL --------------------- NL 피해를 !D! 줍니다.이번 전투에서 사용된 대지의 정수 하나당 피해 +7.",
+    "UPGRADE_DESCRIPTION": "결정화 0: \b대지의 정수를 모두 소모해, 5 이상의 피해를 받으려고 할때 그걸 4로 줄이고, 턴 종료시 카드를 1장 뽑고 체력을 1 회복합니다. 소모한 대지의 정수 하나당 이 효과의 지속시간을 1턴 늘립니다.NL . NL --------------------- NL 피해를 !D! 줍니다.이번 전투에서 사용된 대지의 정수 하나당 피해 +9.",
+  },
+  "shadowverse:RepairMode": {
+    "NAME": "수리 모드",
+    "DESCRIPTION": "보존. NL 기계. NL 체력을 !M! 회복합니다. NL 소멸."
+  },
+  "shadowverse:ProductMachine": {
+    "NAME": "제조용 기계",
+    "DESCRIPTION": "보존. NL 기계. NL 방어도를 !B! 얻습니다. NL 소멸."
+  },
+  "shadowverse:JetBroomWitch": {
+    "NAME": "Jet Broom Witch",
+    "DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL 결단: *제조용 *기계 나 *수리 *모드 를 얻습니다."
+  },
+  "shadowverse:TetrasMettle": {
+    "NAME": "테트라의 반란",
+    "DESCRIPTION": "이번 턴 기계 카드를 사용할 떄마다 카드를 !M! 장 뽑습니다."
+  },
+  "shadowverse:IsabellesConjuration": {
+    "NAME": "이자벨의 영창",
+    "DESCRIPTION": "뽑을 카드 더미에서 공격 카드 !M! 장을 가져옵니다."
+  },
+  "shadowverse:SorceryInSolidarity": {
+    "NAME": "결속의 마법",
+    "DESCRIPTION": "결단: 이하의 카드중 한장을 손에 넣습니다.: NL *이자벨의 *영창 NL *테트라의 *반란 NL 이 카드가 3회 이상 *주문증폭 되었다면, 대신 둘 다 가져옵니다. NL 소멸.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (현재 주문증폭: ",
+      " )"
+    ]
+  },
+  "shadowverse:MechanizedLifeform": {
+    "NAME": "기계 생명체",
+    "DESCRIPTION": "기계. NL 이번 턴 기계 카드를 사용할 떄마다 카드를 !M! 장 뽑습니다."
+  },
+  "shadowverse:MagitechGolem": {
+    "NAME": "기계 마법 골렘",
+    "DESCRIPTION": "기계. NL *수리 *모드 를 얻습니다. NL 이번 턴 기계 카드를 사용할 때마다, 무작위 적에게 피해를 !M! 줍니다."
+  },
+  "shadowverse:MechabookSorcerer": {
+    "NAME": "머신 북 소서러",
+    "DESCRIPTION": "기계. NL 기계 카드를 낼 때마다 [E] 를 얻습니다. NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "기계. NL 기계 카드를 낼 때마다 [E] 를 얻습니다."
+  },
+  "shadowverse:SonicFour": {
+    "NAME": "소닉 포",
+    "DESCRIPTION": "기계. NL 보존. NL 피해를 !D! 줍니다. NL 이하의 효과를 얻습니다: 이번 턴 기계 카드를 4장 이상 사용했다면, 턴 종료시 *소닉 *포 1장을 패로 가져옵니다.(중첩 불가) NL 소멸."
+  },
+  "shadowverse:Tetra": {
+    "NAME": "푸른빛의 반란자 테트라",
+    "DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL *수리 *모드 를 1장 얻습니다. NL *소닉 *포 1장을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL *수리 *모드 를 1장 얻습니다. NL *소닉 *포+ 1장을 얻습니다."
+  },
+  "shadowverse:Tetra2": {
+    "NAME": "이자벨의 친구 테트라",
+    "DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL 인공물을 1 얻습니다. NL 턴 시작시 *소닉 *포 가 손에 없다면, *소닉 *포 1장을 얻습니다."
+  },
+  "shadowverse:Tetra3": {
+    "NAME": "청명한 푸른빛 테트라",
+    "DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL *소닉 *포 2장을 얻습니다. NL [E]를 얻습니다."
+  },
+  "shadowverse:MechastaffSorcerer": {
+    "NAME": "기계 지팡이를 든 마법사",
+    "DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL 손에 다른 기계 카드가 2장 이상 있다면 피해를 !D! 줍니다."
+  },
+  "shadowverse:ArsMagna": {
+    "NAME": "알스 마그나",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 강화 2: 체력을 3 회복합니다. NL  소멸."
+  },
+  "shadowverse:Cagliostro": {
+    "NAME": "개벽의 연금술사 칼리오스트로",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 대지의 정수를 1 얻습니다. NL 대지의 비술: *알스 *마그나 1장을 얻습니다. NL 강화 2: *진화 *포인트 와 *기적 을 하나씩 얻습니다."
+  },
+  "shadowverse:MadcapConjuration": {
+    "NAME": "황당한 접합",
+    "DESCRIPTION": "패를 모두 버립니다. NL 공격 카드를 2장 이상 버렸다면 취약과 약화를 !M! 부여합니다. NL 스킬 카드를 2장 이상 버렸다면 카드를 5장 뽑습니다. NL 파워 카드를 2장 이상 버렸다면 모든 적에게 피해를 !D! 줍니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "패를 모두 버립니다. NL 공격 카드를 2장 이상 버렸다면 취약과 약화를 !M! 부여합니다. NL 스킬 카드를 2장 이상 버렸다면 카드를 5장 뽑습니다. NL 파워 카드를 2장 이상 버렸다면 모든 적에게 피해를 !D! 줍니다.",
+  },
+  "shadowverse:Awakened": {
+    "NAME": "부름받은 금기",
+    "DESCRIPTION": "보존. NL 손이 가득 차있을때만 사용 가능. NL 모든 적에게 피해를 !D! 줍니다. NL 이 카드가 *보존 될 떄마다, 방어도를 !B! 얻습니다."
+  },
+  "shadowverse:Erasmus": {
+    "NAME": "노련한 대마법사 에라스무스",
+    "DESCRIPTION": "내 턴 종료시, 모든 적에게 피해를 !M! 줍니다. NL 대지의 비술: 이 효과를 반복합니다."
+  },
+  "shadowverse:Oz": {
+    "NAME": "오즈의 대마녀",
+    "DESCRIPTION": "패가 8장이 될 때까지 카드를 뽑습니다. NL 뽑은 스킬 카드중 주문 증폭이 없는것들의 비용을 0으로 만듭니다. NL *공허 2장을 뽑을 카드 더미에 섞어넣습니다. NL 턴 종료시 손에 있는 모든 스킬카드를 소멸시킵니다.",
+    "UPGRADE_DESCRIPTION": "패가 8장이 될 때까지 카드를 뽑습니다. NL 뽑은 스킬 카드중 주문 증폭이 없는것들의 비용을 0으로 만듭니다. NL *공허 1장을 뽑을 카드 더미에 섞어넣습니다. NL 턴 종료시 손에 있는 모든 스킬카드를 소멸시킵니다.",
+  },
+  "shadowverse:GrandSummoning": {
+    "NAME": "대소환",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 방어도를 !B! -1 얻습니다. NL 방어도를 !B! -6 얻습니다. NL 대지의 비술: 이번 턴에만 힘을 !M! 얻습니다."
+  },
+  "shadowverse:Shop": {
+    "NAME": "마법 도구 전문점",
+    "DESCRIPTION": "카드를 사용할 떄마다 무작위 적에게 피해를 !M! 줍니다. 뽑을 카드더미와 버린 카드더미에 공격, 상태이상, 저주 카드가 없다면 [E]를 얻습니다. NL 직접소환: 이번 턴이 5턴째 이후라면 이 카드를 손패로 가져오고 비용을 0으로 만든 다음, 버린 카드더미에 공허 2장을 넣습니다.  NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "카드를 사용할 떄마다 무작위 적에게 피해를 !M! 줍니다. 뽑을 카드더미와 버린 카드더미에 공격, 상태이상, 저주 카드가 없다면 [E]를 얻습니다. NL 직접소환: 이번 턴이 5턴째 이후라면 이 카드를 손패로 가져오고 비용을 0으로 만든 다음, 버린 카드더미에 공허 2장을 넣습니다. ",
+  },
+  "shadowverse:NaterranGreatTree": {
+    "NAME": "나테라의 신목",
+    "DESCRIPTION": "자연. NL 나테라의 신목 파워를 얻습니다. NL 유언: 이미 나테라의 신목 파워를 가지고 있었다면 카드를 !M! 장 뽑습니다. "
+  },
+  "shadowverse:Geoelementist": {
+    "NAME": "땅의 원소마법사",
+    "DESCRIPTION": "자연. NL *나테라의 *신목 1장을 가져옵니다.  NL 방어도를 !B! 얻습니다. NL 내 뽑을 카드더미의 카드 수가 내 덱의 절반 이하라면, 방어도를 2배로 얻습니다. "
+  },
+  "shadowverse:Stormelementalist": {
+    "NAME": "폭풍의 원소마법사",
+    "DESCRIPTION": "자연. NL 방어도를 !B! 얻습니다. NL 나테라의 신목 파워를 가지고 있다면, 그걸 제거하고 *나테라의 *신목 1장을 얻고, 판금갑옷을 2 얻고 무작위 적에게 피해를 4 줍니다. "
+  },
+  "shadowverse:Pyromancer": {
+    "NAME": "불의 원소마법사",
+    "DESCRIPTION": "자연. NL 모든 적에게 피해를 !D! 줍니다.  NL 나테라의 신목 파워를 가지고 있다면 그걸 제거하고 *나테라의 *신목 1장을 얻고 피해량을 2배로 합니다. "
+  },
+  "shadowverse:Elementalmana": {
+    "NAME": "원소의 마나",
+    "DESCRIPTION": "자연. NL *나테라의 *신목 1장을 손으로 가져옵니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "자연. NL *나테라의 *신목 1장을 손으로 가져옵니다. "
+  },
+  "shadowverse:ReviveMana": {
+    "NAME": "소생의 마나",
+    "DESCRIPTION": "자연. NL  *나테라의 *신목 1장을 손으로 가져옵니다.  NL 소멸.",
+    "UPGRADE_DESCRIPTION": "자연. NL *나테라의 *신목 1장을 손으로 가져옵니다."
+  },
+  "shadowverse:Riley": {
+    "NAME": "물의 원소마법사 라일리",
+    "DESCRIPTION": "자연. NL 피해를 !D! 줍니다. NL 이번 전투에서 사용한 *나테라의 *신목 1장마다 피해가 5 증가합니다. NL 직접소환: 이번 전투에서 *나테라의 *신목 을 7장 이상 사용했다면, 내 턴 시작시 이 카드를 손으로 가져오고 비용을 0으로 만듭니다.",
+    "UPGRADE_DESCRIPTION": "자연. NL 피해를 !D! 줍니다. NL 이번 전투에서 사용한 *나테라의 *신목 1장마다 피해가 7 증가합니다. NL 직접소환: 이번 전투에서 *나테라의 *신목 을 7장 이상 사용했다면, 내 턴 시작시 이 카드를 손으로 가져오고 비용을 0으로 만듭니다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (*사용한 나테라의 신목: ",
+      ")"
+    ]
+  },
+  "shadowverse:ApexElemental": {
+    "NAME": "극한의 엘리멘탈",
+    "DESCRIPTION": "자연. NL 가속화 0: 피해를 6 줍니다. NL 나테라의 신목 파워를 가지고 있다면 그걸 제거하고 *나테라의 *신목 1장을 얻고, 피해를 9로 증가시킵니다. NL  NL --------------------- NL  NL 모든 적에게 피해를 !D! 줍니다. NL 나테라의 신목 파워를 가지고 있다면 그걸 제거하고 *나테라의 *신목 1장을 얻고, 피해를 2배로 증가시킵니다."
+  },
+  "shadowverse:DualAngle": {
+    "NAME": "융합의 천사",
+    "DESCRIPTION": "기계 · 자연. NL 방어도를 !B! 얻습니다. NL 손에 기계 카드가 2장 이상 있다면 피해를 !D! 줍니다. NL 손에 자연 카드가 2장 이상 있다면 체력을 2 회복합니다. NL 결단: 이하의 카드중 1장을 골라 얻습니다: NL *제조용 *기계 NL *나테라의 *신목"
+  },
+  "shadowverse:Ghios": {
+    "NAME": "프리즘 브라이트 디오스",
+    "DESCRIPTION": "보존. NL 이 카드가 3회 이상 *주문증폭 되었다면 체력이 10 이하인 모든 적의 체력을 0으로 만듭니다. NL 7회 이상 되었다면 방어도를 8 얻고 흐릿함을 1 얻습니다. NL 9회 이상 되었다면 모든 적은 힘을 2 잃습니다. NL 12회 이상 되었다면 비용이 0이 됩니다. NL 피해를 !D! 주고, 방어도를 !B! 얻습니다. NL 소멸.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (현재 주문증폭: ",
+      ")"
+    ]
+  },
+  "shadowverse:OmenOfOne": {
+    "NAME": "유일의 재앙 마젤베인",
+    "DESCRIPTION": "뽑을 카드더미 중복되는 카드가 없다면 이하의 능력을 얻습니다: 내 턴 종료시 힘과 민첩을 2 얻고, 무작위 적에게 피해를 12 줍니다."
+  },
+  "shadowverse:OmenOfOne2": {
+    "NAME": "위대한 유일 마젤베인",
+    "DESCRIPTION": "뽑을 카드더미와 버린 카드더미의 중복되는 카드를 전부 소멸시킵니다. NL 그 다음 뽑을 카드더미와 버린 카드더미에 원래 덱 수의 절반 이상의 카드가 남아있다면 이하의 능력을 얻습니다.NL NL 턴 종료시 이번 턴 2코스트 이하의 카드를 사용했다면 무작위 적에게 피해를 10 줍니다. NL 2코스트 이상인 카드를 사용했다면 모든 적에게 피해를 18 줍니다. NL *위대한 *증명 1장을 패로 가져옵니다."
+  },
+  "shadowverse:RearriveOne": {
+    "NAME": "재림하는 위대",
+    "DESCRIPTION": "무작위 적에게 !D! 줍니다. 내 뽑을 카드더미에 중복되는 카드가 없다면, [E]를 얻고, 카드를 1장 뽑고, *진화 *포인트 2장을 손으로 가져옵니다."
+  },
+  "shadowverse:Mysteria": {
+    "NAME": "마법의 시조 마나리아",
+    "DESCRIPTION": "마나리아. NL 힘을 !M! 얻습니다. NL 이번 전투동안 힘을 !M! 얻습니다. NL 휘발성."
+  },
+  "shadowverse:EarthFall": {
+    "NAME": "지괴",
+    "DESCRIPTION": "모든 적에게 취약과 약화를 !M! 부여합니다. NL 손에 있는 무색이 아닌 카드를 모두 소멸시킵니다. NL 소멸."
+  },
+  "shadowverse:InfernalSurge": {
+    "NAME": "사탄의 파동",
+    "DESCRIPTION": "카드를 !M! 장 뽑습니다. NL 소멸."
+  },
+  "shadowverse:InfernalGaze": {
+    "NAME": "사탄의 안광",
+    "DESCRIPTION": "카드를 1장 뽑습니다. NL 모든 적이 이번 턴동안 힘을 !M! 잃습니다. NL 소멸."
+  },
+  "shadowverse:HeavenFall": {
+    "NAME": "천악",
+    "DESCRIPTION": "카드를 1 장 뽑습니다. NL 불가침을 !M! 얻습니다. NL 소멸."
+  },
+  "shadowverse:Astaroth": {
+    "NAME": "아스타로트의 선고",
+    "DESCRIPTION": "이번 턴 다른 카드를 사용하지 않았어야 사용 가능합니다. NL 모든 적의 체력을 1로 만듭니다. NL 이번 턴 다른 카드를 사용할 수 없습니다. NL 소멸."
+  },
+  "shadowverse:Scorpion": {
+    "NAME": "탐욕적인 스콜피온",
+    "DESCRIPTION": "피해를 !D! 주고 중독을 8 부여합니다. 막히지 않은 피해만큼 체력을 회복합니다. NL 소멸."
+  },
+  "shadowverse:Flamelord": {
+    "NAME": "악의의 염제",
+    "DESCRIPTION": "피해를 !D! 주고 약화를 !M! 부여합니다."
+  },
+  "shadowverse:ViciousCommander": {
+    "NAME": "폭위의 통솔자",
+    "DESCRIPTION": "피해를 !D! 줍니다.",
+    "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL 반복합니다."
+  },
+  "shadowverse:WrathfulIcefiend": {
+    "NAME": "광분의 빙마",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL *진화 *포인트 2장을 손으로 가져옵니다."
+  },
+  "shadowverse:HellBeast": {
+    "NAME": "이단 지옥의 괴수",
+    "DESCRIPTION": "적이 나에게 피해를 2 줄때마다  방어도를 !B! 얻습니다. NL 모든 적에게 취약과 약화를 !M! 부여합니다."
+  },
+  "shadowverse:Behemoth": {
+    "NAME": "탐식의 베히모스",
+    "DESCRIPTION": "이번 턴 종료시 모든 적에게 피해를 !M! 줍니다."
+  },
+  "shadowverse:DemonOfPurgatory": {
+    "NAME": "변옥의 악귀",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 피해를 받을때마다 !M! 만큼 피해를 돌려줍니다."
+  },
+  "shadowverse:Desire": {
+    "NAME": "욕망을 두른 자",
+    "DESCRIPTION": "내 턴 종료시, 이번 턴 입은 가장 큰 피해만큼 체력을 회복합니다."
+  },
+  "shadowverse:Satan": {
+    "NAME": "얼음 지옥의 왕 사탄",
+    "DESCRIPTION": "가속화 1: 무작위 *코퀴토스 카드 4장을 뽑을 카드 더미에 섞어넣습니다. NL 소멸. NL  NL --------------------- NL  NL 내 뽑을 카드 더미를 코퀴토스 덱으로 교체합니다."
+  },
+  "shadowverse:Satanael": {
+    "NAME": "사타니엘",
+    "DESCRIPTION": "내 손을 모두 소멸시키고 소멸된 카드 한장당 방어도를 !B! 얻습니다. NL 서로 다른 코퀴토스 카드와 아포칼립스 카드 6장을 내 손으로 가져오고 보존을 부여합니다. "
+  },
+  "shadowverse:EmbodimentOfCocytus": {
+    "NAME": "얼음 지옥의 현현",
+    "DESCRIPTION": "피해를 6 받습니다. NL 결단: 이하 카드중 1장을 골라 손으로 가져오고 비용을 0으로 만듭니다: NL *욕망을 *두른 *자 , *변옥의 *악귀 , *이단 *지옥의 *괴수 NL 소멸."
+  },
+  "shadowverse:JudgmentWord": {
+    "NAME": "심판의 한마디",
+    "DESCRIPTION": "적이 가진 이로운 효과 하나를 지웁니다. NL(인공물을 우선적으로 지웁니다) NL 소멸."
+  },
+  "shadowverse:Vincent": {
+    "NAME": "평화의 수호자 빈센트",
+    "DESCRIPTION": "턴 시작시 *심판의 *한마디 를 1장 얻습니다. NL 내가 스킬 카드를 사용할 때마다, 그 카드가 이번 턴 3번쨰,6번째,9번째,12번째,15번째,18번째로 사용한 같은 이름의 카드라면, 모든 적에게 피해를 12 줍니다.",
+    "UPGRADE_DESCRIPTION": "선천성. NL 턴 시작시 *심판의 *한마디 를 1장 얻습니다. NL 내가 스킬 카드를 사용할 때마다, 그 카드가 이번 턴 3번쨰,6번째,9번째,12번째,15번째,18번째로 사용한 같은 이름의 카드라면, 모든 적에게 피해를 12 줍니다.",
+  },
+  "shadowverse:Machinus": {
+    "NAME": "강철과 대지의 신",
+    "DESCRIPTION": "기계 · 자연. NL 융합: 기계 또는 자연. NL 피해를 !D! 주고, 방어도를 !B! 얻습니다. NL 융합된 카드 1장마다 피해를 7 늘리고, 뽑을 카드더미에서 자연이나 기계 타입 카드를 무작위로 가져옵니다. NL 기계와 자연 모두가 융합되었다면, 이렇게 가져온 카드들의 비용 -1.",
+    "UPGRADE_DESCRIPTION": "기계 · 자연. NL 융합: 기계 또는 자연. NL 피해를 !D! 주고, 방어도를 !B! 얻습니다. NL 융합된 카드 1장마다 피해를 9 늘리고, 뽑을 카드더미에서 자연이나 기계 타입 카드를 무작위로 가져옵니다. NL 기계와 자연 모두가 융합되었다면, 이렇게 가져온 카드들의 비용 -1.",
+  },
+  "shadowverse:WitchSnap": {
+    "NAME": "마녀의 일격",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 대지의_정수 를 얻습니다."
+  },
+  "shadowverse:GrimoireSorcerer": {
+    "NAME": "마도서술사",
+    "DESCRIPTION": "주문증폭: 비용이 [E] 감소합니다. NL 피해를 !D! 줍니다. NL 2번 주문증폭합니다."
+  },
+  "shadowverse:Aeroelementalist": {
+    "NAME": "바람의 원소마법사",
+    "DESCRIPTION": "자연. NL 피해를 !D! 줍니다. NL 이번 전투에서 *나테라의 *신목 을 2장 이상 사용했다면, 피해량을 2배로 하고 *나테라의 *신목 1장을 얻습니다. "
+  },
+  "shadowverse:Zeus": {
+    "NAME": "지고신 제우스",
+    "DESCRIPTION": "강화 횟수에 제한이 없습니다. NL 이하의 효과중에서 무작위로 하나를 !M! 번 발동합니다.: NL 체력을 5 회복 NL 힘을 3 얻은 후 모든 적의 방어도를 없앱니다. NL 모든 적에게 피해를 !D! 줍니다. NL 모든 적에게 약화를 2, 중독을 부여합니다. NL 방어도를 !B! 얻습니다 NL NL 소멸."
+  },
+  "shadowverse:StarBright": {
+    "NAME": "별빛의 여신",
+    "DESCRIPTION": "손에서 가장 왼쪽에 있는 카드 3장을 복사합니다."
+  },
+  "shadowverse:TheWorld": {
+    "NAME": "《세계》 젤가네이아",
+    "DESCRIPTION": "강화할수 없습니다. NL 방어도를 !B! 얻습니다. NL 내 체력이 최대체력의 75% 이하라면,가장 체력이 높은 적에게 피해를 !D! 주고, 체력을 5 회복하고 카드를 2장 뽑습니다. NL 직접소환: 내 턴 시작에 이번 턴이 5턴째 이후라면, 이 카드를 소멸시키고 *《세계》 *젤가네이아 *뒷면 1장을 얻습니다."
+  },
+  "shadowverse:TheWorld_I": {
+    "NAME": "《세계》 젤가네이아 뒷면",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 턴 종료시 모든 적에게 피해를 20 주고, *화상 2장을 뽑을 카드 더미에 섞어넣습니다.NL 소멸."
+  },
+  "shadowverse:Grimnir": {
+    "NAME": "허무의 곡풍 그림니르",
+    "DESCRIPTION": "무작위 적에게 피해를 !D! 만큼 !M! 번 줍니다."
+  },
+  "shadowverse:SlashOfOne": {
+    "NAME": "유일의 일도",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 공격 카드를 사용하면 이 카드의 비용을 1로 만듭니다. 다른 공격카드를 사용하면 비용을 2로 만듭니다."
+  },
+  "shadowverse:Dis": {
+    "NAME": "디스의 심판",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 체력을 !M! 회복합니다. NL 소멸."
+  },
+  "shadowverse:SilentRider": {
+    "NAME": "침묵의 마왕",
+    "DESCRIPTION": "피해를 !D! 줍니다."
+  },
+  "shadowverse:Servant": {
+    "NAME": "사탄의 하수인",
+    "DESCRIPTION": "방어도를 !B! 얻습니다."
+  },
+  "shadowverse:OldSatan": {
+    "NAME": "사탄",
+    "DESCRIPTION": "내 뽑을 카드더미를 *아포칼립스 *덱 으로 교체합니다."
+  },
+  "shadowverse:BellAngle": {
+    "NAME": "빛나는 종소리의 천사",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 다음 턴 시작에 카드를 2장 뽑습니다."
+  },
+  "shadowverse:Ignorant": {
+    "NAME": "몽매의 술법",
+    "DESCRIPTION": "내 턴 시작에 카드를 !M! 장 뽑고, X번 주문증폭 합니다. X는 1~7 사이에서 무작위로 결정됩니다. 턴 종료시 이렇게 뽑은 카드를 소멸시킵니다. NL 소멸."
+  },
+  "shadowverse:Omniscient": {
+    "NAME": "박리의 폭압",
+    "DESCRIPTION": "이하의 효과를 부여합니다: 턴 종료시, 최대체력의 !M!/10 만큼 최대체력을 잃습니다. NL 소멸."
+  },
+  "shadowverse:TheFool": {
+    "NAME": "《광대》 링클",
+    "DESCRIPTION": " 결단 : 이하의 카드중 1장을 손으로 가져옵니다: NL *몽매의 *술법 NL *박리의 *폭압 NL NL 소멸. NL 휘발성."
+  },
+  "shadowverse:Mother": {
+    "NAME": "세계의 어머니",
+    "DESCRIPTION": "자연. NL 중독을 !M! 부여합니다. NL 이번 전투에서 *나테라의 *신목 을 1장 이상 사용했다면, 중독을 !M! 더 부여합니다. NL 3장 이상 사용했다면 방어도를 !B! 얻습니다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (사용한 *나테라의 *신목: ",
+      ")"
+    ]
+  },
+  "shadowverse:FlameNGlass": {
+    "NAME": "프람 그라스",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 모든 적에게 피해를 !D! 줍니다. NL 소멸."
+  },
+  "shadowverse:FlameNGlass2": {
+    "NAME": "쌍극의 생명 프람 그라스",
+    "DESCRIPTION": "융합: *쌍둥이 *죄수 *프람 이나 *쌍둥이 *죄수 *그라스. NL 1장 이상 융합되었다면, 모든 적에게 취약과 약화를 !M! 부여합니다. NL 피해를 !D! 줍니다. NL 3장 이상 융합되었다면 에너지를 3 얻습니다."
+  },
+  "shadowverse:Flame": {
+    "NAME": "쌍둥이 죄수 프람",
+    "DESCRIPTION": "이번 턴 공격의 피해량을 !M! 만큼 증가시킵니다. NL *쌍둥이 *죄수 *그라스 를 사용했다면, *프람 *그라스 를 1 얻습니다."
+  },
+  "shadowverse:Glass": {
+    "NAME": "쌍둥이 죄수 그라스",
+    "DESCRIPTION": "이번 턴 공격 카드를 사용할 때마다 모든 적에게 피해를 !M! 줍니다. NL *쌍둥이 *죄수 *프람 을 사용했다면, *프람 *그라스 를 1 얻습니다."
+  },
+  "shadowverse:HeavensDoor": {
+    "NAME": "천계의 문",
+    "DESCRIPTION": "턴 시작시 손의 무작위 카드 1장의 비용을 !M! 감소시킵니다. NL 뽑을 카드더미에 중복되는 카드가 없다면, 대신 6 감소시킵니다. NL 직접소환: 턴 종료시 남은 에너지가 2 이상이면 뽑을 카드더미의 이 카드를 소멸시키고 이 효과를 얻습니다."
+  },
+  "shadowverse:Technolord": {
+    "NAME": "기계신",
+    "DESCRIPTION": "가속화 1: 무작위 적들에게 피해를 !D! 만큼 X 번 줍니다. X 는 이번 전투에서 사용한, 스킬카드가 아닌 기계 카드 수. NL  NL --------------------- NL  NL 무작위 기계 3장중 1장을 골라 패로 가져오고 비용을 0으로 합니다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (X는 ",
+      ")"
+    ]
+  },
+  "shadowverse:LegendaryFighterA": {
+    "NAME": "전설의 전사",
+    "DESCRIPTION": "피해를 !D! 만큼 2번 줍니다. NL 소멸."
+  },
+  "shadowverse:LegendaryFighter": {
+    "NAME": "전설의 전사",
+    "DESCRIPTION": "이번 턴동안, 공격 카드를 사용하면 폭주를 1 얻고 이 효과를 잃습니다. 스킬 카드를 사용하면 독 바르기를 1 얻고 이 효과를 잃습니다. 파워 카드를 사용하면 인공물을 1 얻고 이 효과를 잃습니다. 체력을 잃지 않고 이 효과 3개를 모두 발동시키면, 다음 턴 시작에 50의 피해를 2번 주는 전설의 전사 카드를 얻습니다.",
+    "UPGRADE_DESCRIPTION": "선천성. 이번 턴동안, 공격 카드를 사용하면 폭주를 1 얻고 이 효과를 잃습니다. 스킬 카드를 사용하면 독 바르기를 1 얻고 이 효과를 잃습니다. 파워 카드를 사용하면 인공물을 1 얻고 이 효과를 잃습니다. 체력을 잃지 않고 이 효과 3개를 모두 발동시키면, 다음 턴 시작에 50의 피해를 2번 주는 전설의 전사 카드를 얻습니다."
+  },
+  "shadowverse:Gabriel": {
+    "NAME": "신탁의 대천사 가브리엘",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 힘과 민첩을 X 얻습니다.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL 힘과 민첩을 X+1 얻습니다."
+  },
+  "shadowverse:PaperShikigami": {
+    "NAME": "식신 종이인형",
+    "DESCRIPTION": "보존. NL !M! 번 주문증폭합니다. NL 피해를 !D! 줍니다. NL 소멸."
+  },
+  "shadowverse:DemonicShikigami": {
+    "NAME": "식신 폭귀",
+    "DESCRIPTION": "보존. NL !M! 번 주문증폭합니다. NL 피해를 !D! 줍니다. NL 소멸."
+  },
+  "shadowverse:CelestialShikigami": {
+    "NAME": "식신 천후",
+    "DESCRIPTION": "보존. NL !M! 번 주문증폭합니다. NL 방어도를 !B! 얻습니다. NL 소멸."
+  },
+  "shadowverse:Kuon": {
+    "NAME": "음양오행의 시조 쿠온",
+    "DESCRIPTION": "주문증폭: 비용이 [E] 감소합니다. NL 방어도를 !B! 얻습니다. NL *식신 *종이인형, *식신 *폭귀, *식신 *천후 를 손으로 가져옵니다.",
+    "UPGRADE_DESCRIPTION": "주문증폭: 비용이 [E] 감소합니다. NL 방어도를 !B! 얻습니다. NL *식신 *종이인형+, *식신 *폭귀+, *식신 *천후+ 를 손으로 가져옵니다."
+  },
+  "shadowverse:Kuon2": {
+    "NAME": "음양을 통달한 자 쿠온",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 이 카드가 3회 이상 주문증폭 되었다면, [E]를 얻고 *식신 *종이인형 과 *식신 *폭귀 를 가져옵니다. 6번 이상 되었다면 *식신 *종이인형 대신 *식신 *천후 를 가져옵니다. 9회 이상 되었다면 *식신 *폭귀 대신 *식신 *귀인 을 가져옵니다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (주문증폭 횟수: ",
+      ".)"
+    ]
+  },
+  "shadowverse:Owen": {
+    "NAME": "마나리아 기사 오웬",
+    "DESCRIPTION": "마나리아. NL 방어도를 !B! 얻습니다. NL 뽑을 카드더미에서 *마나리아 *기사 *오웬을 제외한 무작위 마나리아 공격 카드 1장을 손으로 가져옵니다."
+  },
+  "shadowverse:Grea": {
+    "NAME": "마나리아 용족 공주 글레어",
+    "DESCRIPTION": "마나리아. NL 방어도를 !B! 얻습니다. NL 결단: 이하의 카드중 한장을 골라 가져옵니다.  NL *글레어의 *이글거리는 *화염 NL *글레어의 *작열하는 *화염 NL NL 버린 카드더미에 화상 1장을 섞어넣습니다.",
+    "UPGRADE_DESCRIPTION": "마나리아. NL 방어도를 !B! 얻습니다. NL 결단: 이하의 카드중 한장을 골라 가져옵니다.  NL *글레어의 *이글거리는 *화염+ NL *글레어의 *작열하는 *화염+ NL NL 버린 카드더미에 화상 1장을 섞어넣습니다."
+  },
+  "shadowverse:Ember": {
+    "NAME": "글레어의 이글거리는 화염",
+    "DESCRIPTION": "마나리아. NL 피해를 !D! 줍니다. NL 보존. NL 소멸."
+  },
+  "shadowverse:Inferno": {
+    "NAME": "글레어의 작열하는 화염",
+    "DESCRIPTION": "마나리아. NL 무작위 적들에게 피해를 !D! 만큼 !M! 번 줍니다. NL 보존. NL 소멸."
+  },
+  "shadowverse:NewGrea": {
+    "NAME": "레그니스 로드 글레어",
+    "DESCRIPTION": "마나리아. NL 방어도를 !B! 얻습니다 and 피해를 !D! 줍니다. NL 뽑을 카드더미에 카드가 2장 이상 있다면 그중 2장을 무작위로 소멸시킵니다. NL 뽑을 카드더미의 카드 수가 원래 덱의 절반 이하라면, 방어도와 피해를 2배로 합니다. NL *파멸의 *화염 1장을 얻습니다. NL *화상 2장을 버린 카드더미에 넣습니다.",
+    "UPGRADE_DESCRIPTION": "마나리아. NL 방어도를 !B! 얻습니다 and 피해를 !D! 줍니다. NL 뽑을 카드더미에 카드가 2장 이상 있다면 그중 2장을 무작위로 소멸시킵니다. NL 뽑을 카드더미의 카드 수가 원래 덱의 절반 이하라면, 방어도와 피해를 2배로 합니다. NL *파멸의 *화염+ 1장을 얻습니다. NL *화상 2장을 버린 카드더미에 넣습니다."
+  },
+  "shadowverse:NewEmber": {
+    "NAME": "파멸의 화염",
+    "DESCRIPTION": "마나리아. NL 모든 적에게 피해를 !D! 나눠서 줍니다. NL 뽑을 카드더미의 카드 수가 원래 덱의 절반 이하였다면 피해량을 2배로 합니다. NL 1/4 이하였다면 대신 3배로 합니다. NL 소멸."
+  },
+  "shadowverse:NewAnne": {
+    "NAME": "마나리아 여왕 앤",
+    "DESCRIPTION": "마나리아. NL 방어도를 !B! 얻습니다 and 피해를 !D! 줍니다. NL 뽑을 카드더미에 카드가 2장 이상 있다면, 그중 2장을 무작위로 소멸시킵니다. NL 만약 뽑을 카드더미의 카드 수가 원래 덱의 절반 이하였다면, *앤의 *대영령 1장을 얻습니다. NL *초월적인 *폭발 1장을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "마나리아. NL 방어도를 !B! 얻습니다 and 피해를 !D! 줍니다. NL 뽑을 카드더미에 카드가 2장 이상 있다면, 그중 2장을 무작위로 소멸시킵니다. NL 만약 뽑을 카드더미의 카드 수가 원래 덱의 절반 이하였다면, *앤의 *대영령+ 1장을 얻습니다. NL *초월적인 *폭발+ 1장을 얻습니다."
+  },
+  "shadowverse:ExceedBurst": {
+    "NAME": "초월적인 폭발",
+    "DESCRIPTION": "마나리아. NL 피해를 !D! 주고 모든 적에게 피해를 !D! 줍니다. NL 뽑을 카드더미의 카드 수가 원래 덱의 절반 이하였다면 피해량을 2배로 합니다. NL 1/4 이하였다면 대신 3배로 합니다. NL 소멸."
+  },
+  "shadowverse:AnnesSorcery": {
+    "NAME": "앤의 대마법",
+    "DESCRIPTION": "마나리아. NL 보존. NL 피해를 !D! 줍니다. 이번 전투에서 사용한 마나리아 카드 하나당 피해량 +5. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "마나리아. NL 보존. NL 피해를 !D! 줍니다. 이번 전투에서 사용한 마나리아 카드 하나당 피해량 +7. NL 소멸"
+  },
+  "shadowverse:AnnesSummoning": {
+    "NAME": "앤의 대영령",
+    "DESCRIPTION": "마나리아. NL 방어도를 !B! 얻습니다. NL 휘발성. NL 소멸."
+  },
+  "shadowverse:Anne": {
+    "NAME": "마나리아 마법 공주 앤",
+    "DESCRIPTION": "마나리아. NL 마나리아 카드를 사용할 때마다 이 카드의 비용을 [E] 감소시킵니다. NL 방어도를 !B! 얻습니다. NL 결단: 이하의 카드중 1장을 골라 얻습니다. NL *앤의 *대영령 또는 *앤의 *대마법",
+    "UPGRADE_DESCRIPTION": "마나리아. NL 마나리아 카드를 사용할 때마다 이 카드의 비용을 [E] 감소시킵니다. NL 방어도를 !B! 얻습니다. NL 결단: 이하의 카드중 1장을 골라 얻습니다. NL *앤의 *대영령+ 또는 *앤의 *대마법+"
+  },
+  "shadowverse:MysterianRite": {
+    "NAME": "마나리아 비술",
+    "DESCRIPTION": "마나리아. NL 손에 있는 동안 마나리아 카드를 사용했으면 비용이 1이 됩니다. NL 피해를 !D! 줍니다. NL 취약을 !M! 부여합니다. NL 방어도를 !B! 얻습니다. NL 휘발성. NL 소멸."
+  },
+  "shadowverse:Miranda": {
+    "NAME": "빛마법 교사 미라",
+    "DESCRIPTION": "마나리아. NL 마나리아 카드를 사용할 때마다 이 카드의 비용을 [E] 감소시킵니다. NL 방어도를 !B! 얻습니다. NL *마나리아 *비술 1장을 손으로 가져옵니다. NL 이하의 카드중 무작위로 1장을 가져옵니다: *마나리아 *마법탄 또는 *마나리아 *방어진",
+    "UPGRADE_DESCRIPTION": "마나리아. NL 마나리아 카드를 사용할 때마다 이 카드의 비용을 [E] 감소시킵니다. NL 방어도를 !B! 얻습니다. NL *마나리아 *비술+ 1장을 손으로 가져옵니다. NL 이하의 카드중 무작위로 1장을 가져옵니다: *마나리아 *마법탄 또는 *마나리아 *방어진",
+  },
+  "shadowverse:Horse": {
+    "NAME": "순종적인 준마",
+    "DESCRIPTION": "힘과 민첩을 !M! 얻습니다."
+  },
+  "shadowverse:Motorbike": {
+    "NAME": "기동 이륜차",
+    "DESCRIPTION": "내 다음 공격이 !M! 피해를 추가로 줍니다."
+  },
+  "shadowverse:Jeep": {
+    "NAME": "마도 장갑차",
+    "DESCRIPTION": "판금갑옷을 !M! 얻습니다."
+  },
+  "shadowverse:RapidFire": {
+    "NAME": "래피드 파이어",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 전투에서 *래피드 *파이어 를 3장 이상 사용했다면 모든 적에게 피해를 !D! 줍니다. NL 소멸."
+  },
+  "shadowverse:Maiser": {
+    "NAME": "가속하는 영웅 마이저",
+    "DESCRIPTION": "*순종적인 *준마 1장을 얻습니다. NL *래피드 *파이어 !M! 장을 얻습니다."
+  },
+  "shadowverse:NaterranFuture": {
+    "NAME": "나테라의 미래",
+    "DESCRIPTION": "자연. NL *나테라의 *신목 !M! 장을 얻습니다. NL 소멸."
+  },
+  "shadowverse:GemLight": {
+    "NAME": "보석의 빛",
+    "DESCRIPTION": "카드 한장을 소멸시킵니다. 무작위 카드 !M!장을 손으로 가져옵니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 카드 한장을 소멸시킵니다. 무작위 카드 !M!장을 손으로 가져옵니다. NL 소멸."
+  },
+  "shadowverse:CrystalBright": {
+    "NAME": "크리스탈의 빛",
+    "DESCRIPTION": "카드 한장을 소멸시킵니다. 무작위 희귀 또는 특별 카드 !M!장을 손으로 가져옵니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 카드 한장을 소멸시킵니다. 무작위 희귀 또는 특별 카드 !M!장을 손으로 가져옵니다. NL 소멸."
+  },
+  "shadowverse:BelphometStatus": {
+    "NAME": "지배자의 폭압",
+    "DESCRIPTION": "보존. NL 기계. NL 피해를 4 받습니다. NL 이 카드가 보존될 때마다, 손에 있는 지배자의 폭압 하나당 피해를 !M! 받습니다.(이것 자체는 제외)"
+  },
+  "shadowverse:ManaForce": {
+    "NAME": "마나의 힘",
+    "DESCRIPTION": "보존. NL 자연. NL 마나 보호막을 해제합니다. NL 소멸."
+  },
+  "shadowverse:Strike_E": {
+    "NAME": "타격",
+    "DESCRIPTION": "피해를 !D! 줍니다."
+  },
+  "shadowverse:Defend_E": {
+    "NAME": "Defend",
+    "DESCRIPTION": "방어도를 !B! 얻습니다."
+  },
+  "shadowverse:Fairy": {
+    "NAME": "요정",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 소멸."
+  },
+  "shadowverse:FairyWhisperer": {
+    "NAME": "요정과 속삭이는 소녀",
+    "DESCRIPTION": "*요정 을 !M! 장 가져옵니다.",
+    "UPGRADE_DESCRIPTION": "*요정+ 을 !M! 장 가져옵니다."
+  },
+  "shadowverse:SylvanJustice": {
+    "NAME": "숲의 응보",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 요정 !M! 장을 얻습니다. "
+  },
+  "shadowverse:NaturesGuidance": {
+    "NAME": "자연의 인도",
+    "DESCRIPTION": "버린 카드더미의 공격이나 파워 카드를 패로 가져옵니다. NL 카드를 !M! 장 뽑습니다.",
+    "EXTENDED_DESCRIPTION": [
+      "버린 카드더미에 공격이나 파워 카드가 없다!"
+    ]
+  },
+  "shadowverse:AirboundBarrage": {
+    "NAME": "대공사격",
+    "DESCRIPTION": "버린 카드더미의 공격이나 파워 카드를 손으로 가져옵니다. NL 피해를 !D! 주고 비행을 제거합니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "버린 카드더미의 공격이나 파워 카드를 손으로 가져옵니다. NL 피해를 !D! 주고 비행을 제거합니다.",
+    "EXTENDED_DESCRIPTION": [
+      "버린 카드더미에 공격이나 파워 카드가 없다!"
+    ]
+  },
+  "shadowverse:PixieMischief": {
+    "NAME": "요정의 장난",
+    "DESCRIPTION": "버린 카드더미의 공격이나 파워 카드를 1장 손으로 가져옵니다. NL 카드를 !M! 장 까지 소멸시킵니다.",
+    "EXTENDED_DESCRIPTION": [
+      "버린 카드더미에 공격이나 파워 카드가 없다!"
+    ]
+  },
+  "shadowverse:FairyCircle": {
+    "NAME": "요정의 윤무",
+    "DESCRIPTION": "*요정 !M! 장을 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "*요정+ !M! 장을 얻습니다. NL 소멸."
+  },
+  "shadowverse:WhirlwindRhinoceroach": {
+    "NAME": "호쾌한 바람 리노세우스",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 전투동안 내 모든 !호쾌한 !바람 !리노세우스 의 피해량을 !M! 증가시킵니다.."
+  },
+  "shadowverse:Rhinoceroach": {
+    "NAME": "리노세우스",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 턴 사용한 카드당 피해가 !M! 증가합니다."
+  },
+  "shadowverse:WoodOfBrambles": {
+    "NAME": "가시나무 숲",
+    "DESCRIPTION": "*요정 2장을 얻습니다. NL 가시를 !M! 얻습니다."
+  },
+  "shadowverse:ElfSong": {
+    "NAME": "요정을 부르는 선율",
+    "DESCRIPTION": "*요정 !M!장을 얻습니다. NL 이번 턴 카드를 2장 이상 사용했다면 힘과 민첩을 1 얻습니다."
+  },
+  "shadowverse:WardOfUnkilling": {
+    "NAME": "불살의 원진",
+    "DESCRIPTION": "카드를 !M! 장 뽑습니다. NL 이번 턴동안 한번에 5 이상의 피해를 받지 않습니다. NL 휘발성."
+  },
+  "shadowverse:OmenOfUnkilling": {
+    "NAME": "불살의 재앙 에즈디아",
+    "DESCRIPTION": "뽑을 카드더미에 카드가 정확히 6장 있어야 사용가능합니다. NL 모든 적의 최대체력을 6으로 만듭니다.",
+    "UPGRADE_DESCRIPTION": "보존. NL 뽑을 카드더미에 카드가 정확히 6장 있어야 사용가능합니다. NL 모든 적의 최대체력을 6으로 만듭니다.",
+    "EXTENDED_DESCRIPTION": [
+      "뽑을 카드더미가 6장이어야 한다."
+    ]
+  },
+  "shadowverse:OmenOfUnkilling2": {
+    "NAME": "절명의 불살 에즈디아",
+    "DESCRIPTION": "턴 종료시 무작위 적이 힘을 6 잃습니다. NL 이 효과는 3턴간 지속되며 중첩도지 않습니다. NL *절명의 *통격 1장을 손으로 가져옵니다."
+  },
+  "shadowverse:AriasWhirlwind": {
+    "NAME": "아리아의 회오리바람",
+    "DESCRIPTION": "모든 적에게 피해를 X 줍니다. NL X는 이번 턴 사용한 카드 수의 !M! 배입니다.(힘에 영향받지 않음) NL *어지러움 2장을 버린 카드더미에 섞어넣습니다."
+  },
+  "shadowverse:Bayle": {
+    "NAME": "빛의 서슬 베일",
+    "DESCRIPTION": "이 카드가 손에 있을때 사용한 공격 카드 1장당 비용을 [E] 감소시킵니다. NL 방어도를 !B! 얻습니다."
+  },
+  "shadowverse:Hero": {
+    "NAME": "영웅의 결의",
+    "DESCRIPTION": "이번 턴 종료시, 카드를 4장 이상 사용했다면 다음 턴 시작에 카드를 !M!장 뽑고, 힘과 민첩을 !M! 얻습니다.NL 8장 이상 사용했다면 효과를 2배로 합니다. NL 소멸."
+  },
+  "shadowverse:WindFall": {
+    "NAME": "순풍의 요정",
+    "DESCRIPTION": "[E]를 얻습니다. NL 카드를 사용할 때마다, 그게 이번 턴 5장째 이후로 사용한 카드라면 카드를 !M! 장 뽑습니다. NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "[E]를 얻습니다. NL 카드를 사용할 때마다, 그게 이번 턴 5장째 이후로 사용한 카드라면 카드를 !M! 장 뽑습니다."
+  },
+  "shadowverse:ElfGuard": {
+    "NAME": "엘프 경비병",
+    "DESCRIPTION": "방어도를 !B! 얻습니다.. NL 이번 턴 카드를 2장 이상 사용했다면, 판금갑옷을 !M! 얻습니다."
+  },
+  "shadowverse:Whisp": {
+    "NAME": "반디 요정",
+    "DESCRIPTION": "보존. NL 이번 턴 카드를 2장 이상 사용하지 않았다면, 피해를 !D! 주고 방어도를 !B! 얻습니다. NL 소멸."
+  },
+  "shadowverse:Aria": {
+    "NAME": "독에 물든 요정 공주 아리아",
+    "DESCRIPTION": "*반디요정 와 *요정 을 얻습니다. NL *반디요정 과 *요정 들이 중독을 2 부여합니다."
+  },
+  "shadowverse:GuardOf기계tree": {
+    "NAME": "기계수의 파수꾼",
+    "DESCRIPTION": "기계. NL 버린 카드더미의 공격이나 파워 카드를 손으로 가져옵니다. 그게 기계 카드였다면 카드를 1장 뽑습니다. NL 방어도를 !B! 얻습니다."
+  },
+  "shadowverse:RoboticBagworm": {
+    "NAME": "기계 도롱이벌레",
+    "DESCRIPTION": "기계. NL 손에 있는 기계 카드 한장의 비용을 이번 턴동안 [E] 감소시킵니다. NL 방어도를 !B! 얻습니다."
+  },
+  "shadowverse:Damian": {
+    "NAME": "나선의 강철 다미안",
+    "DESCRIPTION": "기계. NL 다른 기계 카드를 이번 턴 사용했다면 , 피해를 !D! 줍니다. 모든 적에게 피해를 X 줍니다. X 는 이번 턴 사용한 기계 카드 수의 !M! 배."
+  },
+  "shadowverse:MachineClaw": {
+    "NAME": "머신 클로 엘프",
+    "DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL 이번 턴 다른 기계 카드를 사용했다면 피해를 !D! 줍니다."
+  },
+  "shadowverse:IrongliderElf": {
+    "NAME": "철선의 엘프",
+    "DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL 뽑을 카드 더미에서 무작위 기계 카드 2장을 손으로 가져옵니다."
+  },
+  "shadowverse:Cassiopeia": {
+    "NAME": "카시오페이아",
+    "DESCRIPTION": "무작위 적에게 피해를 !D! 줍니다. 손에 있는 다른 카드의 수만큼 반복합니다."
+  },
+  "shadowverse:Loxis": {
+    "NAME": "황야의 개척자 록서스",
+    "DESCRIPTION": "파워 카드를 사용할 때마다 턴당 3번까지 [E}를 얻고, *순종적인 *준마 , *기동 *이륜차 , *마도 *장갑차 중 이번 턴 이 능력으로 가져오지 않은 카드를 손으로 가져옵니다. NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "파워 카드를 사용할 때마다 턴당 3번까지 [E}를 얻고, *순종적인 *준마 , *기동 *이륜차 , *마도 *장갑차 중 이번 턴 이 능력으로 가져오지 않은 카드를 손으로 가져옵니다."
+  },
+  "shadowverse:NaturalMana": {
+    "NAME": "자연의 마나",
+    "DESCRIPTION": "자연. NL *나테라의 *신목 1장을 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "자연. NL *나테라의 *신목 1장을 얻습니다."
+  },
+  "shadowverse:JusticeMana": {
+    "NAME": "용맹의 마나",
+    "DESCRIPTION": "자연. NL *나테라의 *신목 1장을 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "자연. NL *나테라의 *신목 1장을 얻습니다."
+  },
+  "shadowverse:TechnologyMana": {
+    "NAME": "기술의 마나",
+    "DESCRIPTION": "자연. NL *나테라의 *신목 1장을 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "자연. NL *나테라의 *신목 1장을 얻습니다."
+  },
+  "shadowverse:ScaryTrend": {
+    "NAME": "공포의 트렌트",
+    "DESCRIPTION": "자연. NL *나테라의 *신목 1장을 얻습니다. NL 방어도를 !B! 얻습니다. NL 이번 턴 카드를 2장 이상 사용했다면, *요정 1장을 얻습니다. "
+  },
+  "shadowverse:Packing": {
+    "NAME": "위대한 회귀",
+    "DESCRIPTION": "자연. NL 보존. NL 이번 턴 사용한 카드 수 +2. NL 무작위 버프를 제거합니다.(인공물 우선) NL 취약과 약화를 !M! 부여합니다. NL 소멸. "
+  },
+  "shadowverse:Ladica": {
+    "NAME": "회귀하는 포옹 라티카",
+    "DESCRIPTION": "자연. NL 피해를 !D! 줍니다. 그 다음 손에 *요정 이 있다면 모든 적에게 피해를 !D! 줍니다. NL 나테라의 신목을 사용했다면 *위대한 *회귀 1장을 얻습니다. "
+  },
+  "shadowverse:Ladica2": {
+    "NAME": "만록의 회귀 라티카",
+    "DESCRIPTION": "자연. NL 피해를 !D! 줍니다. NL 카드를 사용할 때, 그게 이번 턴 사용한 첫번째 카드라면 *라티카의 *포옹 1장을 얻습니다. NL 4번째라면 [E]를 얻습니다. NL 8번째라면 이 카드가 피해를 2번 줍니다. NL 12번째라면 힘과 민첩을 3 얻고 피해량을 2배로 합니다."
+  },
+  "shadowverse:VictoryCard": {
+    "NAME": "승리의 카드",
+    "DESCRIPTION": "이 카드를 뽑으면 소멸시키고 전투에서 승리합니다. NL 휘발성."
+  },
+  "shadowverse:TreacherousReversal": {
+    "NAME": "진위의 반전",
+    "DESCRIPTION": "불가침을 1 얻습니다. 이번 턴 카드를 뽑을수 없습니다. NL 모든 적이 모든 버프를 잃습니다.(인공물 우선) NL 손과 뽑을 카드더미, 버린 카드더미를 모두 소멸시키고, 무작위 카드 20장을 뽑을 카드더미에 섞어넣습니다. *승리의 *카드 를 뽑을 카드더미 맨 아래에 놓습니다. NL 소멸."
+  },
+  "shadowverse:TheHanged": {
+    "NAME": "《매달린 남자》 로플러드",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 흐릿함을 1 얻습니다. NL 이번 턴 3장 이상의 카드를 사용했다면 방어도를 !M! 더 얻습니다. NL 강화 3 : 대신 *진위의 *반전 을 손으로 가져옵니다."
+  },
+  "shadowverse:WindFairy": {
+    "NAME": "바람의 요정",
+    "DESCRIPTION": "가속화 0: 버린 카드더미의 공격이나 파워 카드를 손으로 가져오고, *반디요정 1장을 얻습니다. NL NL --------------------- NL NL 피해를 !D! 만큼 2번 줍니다. NL 소멸.",
+    "EXTENDED_DESCRIPTION": [
+      "버린 카드더미에 공격이나 파워 카드가 없다!"
+    ]
+  },
+  "shadowverse:ServantOfUnkilling": {
+    "NAME": "불살의 시종",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 적이 이번 턴 힘을 !M! 잃습니다."
+  },
+  "shadowverse:MarkOfUnkilling": {
+    "NAME": "불살의 각인",
+    "DESCRIPTION": "적이 디버프를 가지고 있다면 힘을 !M! 잃게 합니다. NL 강화 2: 대신 조건없이 힘을 !M! 감소시킵니다. NL 카드를 1장 뽑습니다. NL 소멸."
+  },
+  "shadowverse:ZealotOfUnkilling": {
+    "NAME": "불살의 광신자",
+    "DESCRIPTION": "적이 공격하려고 한다면, 힘을 !M! 감소시킵니다. NL 소멸."
+  },
+  "shadowverse:VarmintHunter": {
+    "NAME": "해로운 짐승 사냥꾼",
+    "DESCRIPTION": "파워 카드를 사용할 때마다 무작위 적에게 피해를 !M! 줍니다. NL *순종적인 *준마 1장을 손으로 가져옵니다."
+  },
+  "shadowverse:Verdant": {
+    "NAME": "심록의 수호자",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 내 다음 턴 시작에 요정을 !M! 장 얻습니다."
+  },
+  "shadowverse:Beast": {
+    "NAME": "분노한 숲의 야수",
+    "DESCRIPTION": "무작위 적에게 피해를 !D! 줍니다. NL 이번 턴 카드를 2장 이상 사용했다면, 피해를 2배로 줍니다."
+  },
+  "shadowverse:Beauty": {
+    "NAME": "상냥한 숲의 미녀",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 이번 턴 카드를 2장 이상 사용했다면, 방어도를 2배로 얻습니다."
+  },
+  "shadowverse:MiracleOfLove": {
+    "NAME": "사랑의 기적",
+    "DESCRIPTION": "결단 : *분노한 *숲의 *야수 또는 *상냥한 *숲의 *미녀 로 사용됩니다. NL 강화 2: 대신 둘 다 사용합니다.",
+    "UPGRADE_DESCRIPTION": "결단 : *분노한 *숲의 *야수+ 또는 *상냥한 *숲의 *미녀+ 로 사용됩니다. NL 강화 2: 대신 둘 다 사용합니다."
+  },
+  "shadowverse:ResolveOfSekka": {
+    "NAME": "셋카의 결의",
+    "DESCRIPTION": "손의 모든 카드를 강화합니다. NL 이번 턴 타격이 아닌 엘프 클래스 공격 카드를 18장 이상 사용했고, 손에 *숙명의 *여우불 *셋카 가 있다면 힘과 민첩을 !M! 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. 손의 모든 카드를 강화합니다. NL 이번 턴 타격이 아닌 엘프 클래스 공격 카드를 18장 이상 사용했고, 손에 *숙명의 *여우불 *셋카 가 있다면 힘과 민첩을 !M! 얻습니다. NL 소멸.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (사용한 비-타격 엘프 공격카드 수: ",
+      ".)"
+    ]
+  },
+  "shadowverse:Sekka": {
+    "NAME": "숙명의 여우불 셋카",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 피해를 !D! 만큼 X번(최대 9번) 줍니다. X는 이번 전투에서 사용한 타격이 아닌 엘프 클래스 공격 카드 수. NL X가 9 이상이라면, *셋카의 *결의 1장을 손으로 가져옵니다.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL 피해를 !D! 만큼 X번(최대 9번) 줍니다. X는 이번 전투에서 사용한 타격이 아닌 엘프 클래스 공격 카드 수. NL X가 9 이상이라면, *셋카의 *결의 1장을 손으로 가져옵니다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (X 는 ",
+      ".)"
+    ]
+  },
+  "shadowverse:ForestFairy": {
+    "NAME": "숲의 요정",
+    "DESCRIPTION": "*요정 이나 *반디요정 을 사용할 떄마다 방어도를 !M! 얻습니다. NL *반디요정 1장을 얻습니다."
+  },
+  "shadowverse:Lisa": {
+    "NAME": "엘프 소녀 리자",
+    "DESCRIPTION": "인공물을 !M! 얻습니다."
+  },
+  "shadowverse:NatureCorroded": {
+    "NAME": "자연의 침식",
+    "DESCRIPTION": "약화와 취약을 !M! 부여합니다. NL *요정 1장을 얻습니다. NL 소멸."
+  },
+  "shadowverse:Genshin": {
+    "NAME": "원시의 악귀",
+    "DESCRIPTION": "매 턴 처름 카드를 사용할 때마다, [E]를 얻고 이번 턴 사용한 카드 수 +2. NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "매 턴 처름 카드를 사용할 때마다, [E]를 얻고 이번 턴 사용한 카드 수 +2."
+  },
+  "shadowverse:GreenWoodGuardian": {
+    "NAME": "밀림의 수호자",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 이번 전투에서 *밀림의 *수호자 를 3장 이상 사용했다면 방어도를 3 더 얻습니다.6장 이상 사용했다면 판금갑옷을 !M! 얻습니다. NL 소멸.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (사용한 *밀림의 *수호자 수:",
+      " )"
+    ]
+  },
+  "shadowverse:CrossCombination": {
+    "NAME": "숲의 협공",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL *밀림의 *수호자 1장을 얻습니다. NL 소멸."
+  },
+  "shadowverse:WoodlandCleaver": {
+    "NAME": "삼림의 파쇄자",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL *밀림의 *수호자 1장을 얻습니다. NL 이번 전투에서 *밀림의 *수호자 를 3장 이상 사용했다면 피해를 2배로 합니다."
+  },
+  "shadowverse:GreenbrierElf": {
+    "NAME": "덩굴 엘프",
+    "DESCRIPTION": "*밀림의 *수호자 1장을 얻습니다. NL *밀림의 *수호자 를 사용할 때마다 무작위 적에게 피해를 !M! 줍니다."
+  },
+  "shadowverse:Lymaga": {
+    "NAME": "숲의 일인자 리마가",
+    "DESCRIPTION": "가속화 0: *밀림의 *수호자 1장을 얻고, 가속화 능력이 없는 *숲의 *일인자 *리마가 1장을 버린 카드더미에 넣습니다. NL NL --------------------- NL NL 피해를 !D! 줍니다. NL 직접소환 : 턴 시작시, 이번 전투동안 *밀림의 *수호자 를 6장 이상 사용했다면 이 카드를 손에 넣고 비용을 0으로 합니다. NL 소멸.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (사용한 *밀림의 *수호자 수:",
+      ".)"
+    ]
+  },
+  "shadowverse:Lymaga_NoAcc": {
+    "NAME": "숲의 일인자 리마가",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 직접소환 : 턴 시작시, 이번 전투동안 *밀림의 *수호자 를 6장 이상 사용했다면 이 카드를 손에 넣고 비용을 0으로 합니다. ",
+    "EXTENDED_DESCRIPTION": [
+      " NL (사용한 *밀림의 *수호자 수:",
+      " )"
+    ]
+  },
+  "shadowverse:WildwoodMatriarch": {
+    "NAME": "원시림의 족장",
+    "DESCRIPTION": "*밀림의 *수호자 를 1장 얻습니다. NL  피해를 !D! 줍니다. 막히지 않은 피해를 입혔다면 손의 모든 *밀림의 *수호자 의 비용을 [E] 감소시킵니다.NL 이번 전투에서 사용한 *밀림의 *수호자 가 3장 이상이라면 피해를 2배로 합니다. "
+  },
+  "shadowverse:Aerin": {
+    "NAME": "얼음수정족 에린",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 체력을 3 회복합니다, NL 강화 3: *진화 *포인트 와 *기적 을 1장씩 얻습니다."
+  },
+  "shadowverse:Metera": {
+    "NAME": "천품의 사수 메테라",
+    "DESCRIPTION": "손에 있는 카드 1장당 피해를 !M! 줍니다. NL 카드를 1장 뽑습니다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (피해를 !D! 줍니다.)"
+    ]
+  },
+  "shadowverse:BlossomTreant": {
+    "NAME": "벚꽃 트렌트",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 다음 턴 시작에 카드를 1장 뽑습니다."
+  },
+  "shadowverse:BeetleWarrior": {
+    "NAME": "풍뎅이 전사r",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 턴 카드를 2장 이상 사용했다면, 피해를 2배로 합니다."
+  },
+  "shadowverse:Rino": {
+    "NAME": "순진한 궁수 리노",
+    "DESCRIPTION": "이번 턴에만 힘을 4 얻고, 사용한 카드 수에 +2합니다. NL 유니온_버스트 !M! 모든 적에게 피해를 !D!, 또는 그 2배를 무작위로 줍니다."
+  },
+  "shadowverse:Irya": {
+    "NAME": "밤을 통치하는 자 이리야 ",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 이하의 효과를 얻습니다 : 스스로에게 피해를 입히면, 턴 시작시 힘과 민첩을 1 얻습니다. 공격 카드를 사용했고 방어도가 1이라도 남아있으면 다음 턴 시작에 방어도를 4 얻습니다. NL 유니온_버스트 !M! 피해를 !D! 주고 체력을 3 회복합니다."
+  },
+  "shadowverse:Kokkoro": {
+    "NAME": "인도하는 무녀 콧코로",
+    "DESCRIPTION": "카드를 2장 뽑습니다. 이번 턴 카드를 2장 이상 사용했다면, 대신 3장 뽑습니다. NL 유니온_버스트 !M! 체력을 3 회복하고 힘과 민첩을 1 얻습니다."
+  },
+  "shadowverse:Amataz": {
+    "NAME": "요정 블레이더 아마츠",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 손에 *요정 이 2장 이상 있다면 방어도를 3 추가로 얻고 판금갑옷을 2 얻습니다. NL 4장 이상 있다면 힘과 민첩을 1 얻습니다. NL 6장 이상 있다면 이번 전투동안 *요정 의 피해량을 !M! 증가시킵니다."
+  },
+  "shadowverse:Amataz2": {
+    "NAME": "리버스 블레이더 아마츠",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 버린 카드더미에 있는 타격이 아닌 엘프 클래스 공격 카드 전부를 손으로 되돌리고 요정 X장을 얻습니다. X는 되돌아온 카드 수.  NL 이번 전투에서 비-타격 엘프 클래스 공격 카드를 10장 이상 사용했다면 방어도를 4 더 얻습니다. NL 20장 이상 사용했다면 모든 적에게 약화와 취약을 3 부여합니다."
+  },
+  "shadowverse:DivineSmithing": {
+    "NAME": "신철 압연법",
+    "DESCRIPTION": "손에 있는 비용이 0인 공격 카드를 모두 강화합니다. NL 강화 1 : 그 카드들에게 보존을 부여합니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 손에 있는 비용이 0인 공격 카드를 모두 강화합니다. NL 강화 1 : 그 카드들에게 보존을 부여합니다. NL 소멸.",
+  },
+  "shadowverse:Cleft": {
+    "NAME": "듀얼 펜서 크리프트",
+    "DESCRIPTION": "기계. NL 이번 턴 카드를 2장 이상 사용했다면, 피해를 X 줍니다. X X는 손에 있는 내 다른 기계의 !D! 배. NL X가 3 이상이라면, 무작위 적에게 피해 !D!."
+  },
+  "shadowverse:TwinAssault": {
+    "NAME": "엘프의 협공",
+    "DESCRIPTION": "무작위 적 둘에게 피해를 X만큼 줍니다. X는 손에 있는 엘프 클래스가 아닌 카드 수."
+  },
+  "shadowverse:Homecoming": {
+    "NAME": "근원으로의 회귀",
+    "DESCRIPTION": "모든 적의 의도를 바꿉니다. NL 손이 가득 찰 때까지 버린 카드더미에서 공격 카드를 손으로 되돌립니다. NL 소멸."
+  },
+  "shadowverse:PixieParadise": {
+    "NAME": "요정의 낙원",
+    "DESCRIPTION": "턴 시작시 *요정 을 !M! 장 얻습니다.",
+    "UPGRADE_DESCRIPTION": "선천성. NL 턴 시작시 *요정 을 !M! 장 얻습니다."
+  },
+  "shadowverse:Lycoris": {
+    "NAME": "맹독을 지닌 공주 리코리스",
+    "DESCRIPTION": "턴 시작시 모든 적에게 중독을 !M! 부여합니다."
+  },
+  "shadowverse:AvatarOfFruition": {
+    "NAME": "새싹의 화신",
+    "DESCRIPTION": "자연. NL *요정 !M! 장을 얻습니다. NL 나테라의 신목을 사용했다면, *요정 을 1장 더 얻고 피해를 !D! 줍니다."
+  },
+  "shadowverse:ThronBurst": {
+    "NAME": "장미의 일격",
+    "DESCRIPTION": "보존. NL 피해를 !D! 줍니다. NL 소멸."
+  },
+  "shadowverse:RoseQueen": {
+    "NAME": "로즈 퀸",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 손의 모든 *요정 들을 소멸시키고, 소멸시킨 만큼 *장미의 *일격 을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL 손의 모든 *요정 들을 소멸시키고, 소멸시킨 만큼 *장미의 *일격+ 을 얻습니다."
+  },
+  "shadowverse:Pamera": {
+    "NAME": "숲의 무녀 파멜라",
+    "DESCRIPTION": "이번 턴 종료시 카드를 4장 이상 사용했다면, 방어도와 힘을 2배로 만듭니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "이번 턴 종료시 카드를 4장 이상 사용했다면, 방어도와 힘을 2배로 만듭니다."
+  },
+  "shadowverse:SkyDevouring": {
+    "NAME": "하늘을 집어삼키는 변종",
+    "DESCRIPTION": "보존. NL 피해를 !D! 줍니다. NL 보존될때마다, 이번 턴 카드를 7장 이상 사용했었다면 피해를 !M! 증가시킵니다."
+  },
+  "shadowverse:Fil": {
+    "NAME": "필",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 이번 전투에서 다른 *필 을 4장 이상 사용했었다면, 내 다음 공격 카드가 2번 사용됩니다. NL 소멸."
+  },
+  "shadowverse:Korwa": {
+    "NAME": "현란한 디자이너 코르와",
+    "DESCRIPTION": "턴 시작시 *필 1장을 얻습니다. 강화 3: *필 3장을 손에 넣고 [E]를 얻습니다. ",
+    "UPGRADE_DESCRIPTION": "선천성. 턴 시작시 *필 1장을 얻습니다. 강화 3: *필 3장을 손에 넣고 [E]를 얻습니다."
+  },
+  "shadowverse:PrimalGigant": {
+    "NAME": "태초의 거인",
+    "DESCRIPTION": "Accelerate 0: 체력을 4 회복합니다. NL NL --------------------- NL NL 방어도를 !B! 얻습니다. NL 이번 전투에서 사용한 공격 카드를 무작위로 손이 가득 찰때까지 가져오고, 비용을 0으로 만들고, 소멸을 부여합니다. NL 소멸."
+  },
+  "shadowverse:ShikigamiSummoning": {
+    "NAME": "식신 소환",
+    "DESCRIPTION": "보존. NL *식신 *종이인형 1장을 얻습니다. NL 뽑을 카드더미의 카드 수가 원래 덱의 절반 이하라면, 대신 *식신 *폭귀 1장을 얻습니다."
+  },
+  "shadowverse:Geass": {
+    "NAME": "기아스",
+    "DESCRIPTION": "이 카드는 카운트다운 10을 가지고 있습니다. NL 이 카드를 뽑을때마다 카운트다운을 1 감소시킵니다. 이 카드의 카운트다운이 0이 되면, 당신은 죽습니다. NL 휘발성.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (카운트다운: ",
+      ".)"
+    ]
+  },
+  "shadowverse:UndyingResentment": {
+    "NAME": "사라지지 않는 원념",
+    "DESCRIPTION": "피해를 !D! 줍니다. 사령술 2: 피해를 !M! 추가로 줍니다."
+  },
+  "shadowverse:SpartoiSergent": {
+    "NAME": "하급 용아병",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 묘지를 !M! 얻습니다."
+  },
+  "shadowverse:Path": {
+    "NAME": "저승으로 향하는 길",
+    "DESCRIPTION": "턴 종료시, 내 묘지가 30 이상이라면 모든 적에게 피해를 !M! 줍니다."
+  },
+  "shadowverse:SoulConversion": {
+    "NAME": "영혼 전환술",
+    "DESCRIPTION": "카드를 1장 파괴합니다. NL 카드를 !M! 장 뽑습니다.",
+    "EXTENDED_DESCRIPTION": [
+      "버린 카드더미에 공격 카드가 없다!"
+    ]
+  },
+  "shadowverse:DemonicProcession": {
+    "NAME": "백귀야행",
+    "DESCRIPTION": "장송 1: 뽑을 카드더미에서 무작위 공격카드 !M! 장을 가져옵니다.",
+    "EXTENDED_DESCRIPTION": [
+      "공격 카드가 없다!"
+    ]
+  },
+  "shadowverse:TrothCurse": {
+    "NAME": "저주받은 충의",
+    "DESCRIPTION": "카드를 1장 파괴합니다. NL 모든 적에게 약화와 취약을 !M! 부여합니다.",
+    "EXTENDED_DESCRIPTION": [
+      "버린 카드더미에 공격 카드가 없다!"
+    ]
+  },
+  "shadowverse:ImpiousResurrection": {
+    "NAME": "불경한 재생",
+    "DESCRIPTION": "카드를 1장 파괴합니다. NL *리치 1장을 얻습니다. ",
+    "UPGRADE_DESCRIPTION": "카드를 1장 파괴합니다. NL *리치+ 1장을 얻습니다.",
+    "EXTENDED_DESCRIPTION": [
+      "버린 카드더미에 공격 카드가 없다!"
+    ]
+  },
+  "shadowverse:Mordecai": {
+    "NAME": "승부사 모르데카이",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 유언: 이 카드가 소멸되면, 이 카드의 복사본을 얻습니다. 턴 종료시까지 그 카드의 비용은 0이 됩니다. "
+  },
+  "shadowverse:LurchingCorpse": {
+    "NAME": "순회하는 언데드",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 유언: 이 카드가 소멸되면, 모든 적에게 약화와 취약을 !M! 부여합니다."
+  },
+  "shadowverse:SpartoiSoldier": {
+    "NAME": "용아병 병사",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 유언: 이 카드가 소멸되면, 묘지를 !M! 얻습니다."
+  },
+  "shadowverse:DeathTyrant": {
+    "NAME": "포악한 사룡",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 사령술 20: 피해를 !M! 추가로 줍니다."
+  },
+  "shadowverse:Minthe": {
+    "NAME": "영혼 파수꾼 민트",
+    "DESCRIPTION": "묘지를 20 얻습니다. NL 내 다음 턴 시작에 묘지를 20 잃습니다. NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "묘지를 20 얻습니다. NL 내 다음 턴 시작에 묘지를 20 얻습니다."
+  },
+  "shadowverse:Fafnir": {
+    "NAME": "주검이 된 용 파프니르",
+    "DESCRIPTION": "사령술 X: 모든 적에게 x만큼의 피해를 !M! 번 줍니다. X 는 내 묘지. NL 버린 카드더미에 *화상 1장을 섞어넣습니다."
+  },
+  "shadowverse:ApostleOfSilence": {
+    "NAME": "침묵의 사도",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 적의 방어도를 없앱니다."
+  },
+  "shadowverse:DiscipleOfSilence": {
+    "NAME": "침묵의 신자",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 모든 적이 이번턴에만 힘을 !M! 잃습니다."
+  },
+  "shadowverse:DeathParty": {
+    "NAME": "죽은 자들의 파티",
+    "DESCRIPTION": "내 턴 종료시, 이하의 효과중 하나를 순서대로 발동합니다. NL 1. 다음 턴 시작에 카드를 1장 뽑습니다. NL 2. 모든 적에게 피해를 6 줍니다. NL 3. 묘지를 3 얻습니다. NL NL 8턴 후 죽습니다.",
+    "UPGRADE_DESCRIPTION": "선천성. NL 내 턴 종료시, 이하의 효과중 하나를 순서대로 발동합니다. NL 1. 다음 턴 시작에 카드를 1장 뽑습니다. NL 2. 모든 적에게 피해를 6 줍니다. NL 3. 묘지를 3 얻습니다. NL NL 8턴 후 죽습니다.",
+  },
+  "shadowverse:FoulTempest": {
+    "NAME": "부식의 폭풍우",
+    "DESCRIPTION": "모든 적에게 피해를 !D! 줍니다. NL 사령술 6: 피해를 3배로 합니다."
+  },
+  "shadowverse:Zombie": {
+    "NAME": "좀비",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 소멸."
+  },
+  "shadowverse:Litch": {
+    "NAME": "리치",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 소멸."
+  },
+  "shadowverse:EternalVow": {
+    "NAME": "영원의 맹세",
+    "DESCRIPTION": "보존. NL 손에 있는 모든 네크로맨서 카드의 비용을 이번 턴에만 [E] 감소시킵니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 손에 있는 모든 네크로맨서 카드의 비용을 이번 전투동안 [E] 감소시킵니다.. NL 소멸."
+  },
+  "shadowverse:Ceres": {
+    "NAME": "영원의 신부 세레스",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 재생과 가시를 !M! 얻습니다. NL *영원의 *맹세 1장을 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL 재생과 가시를 !M! 얻습니다. NL *영원의 *맹세+ 1장을 얻습니다. NL 소멸."
+  },
+  "shadowverse:Ceres2": {
+    "NAME": "영원한 어둠의 신부 세레스",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL *배뎍의 *욕구 1장을 얻습니다. NL 유언: 이 카드가 소멸되면, 무작위 적에게 피해를 !M! 줍니다. NL 소멸."
+  },
+  "shadowverse:Hector": {
+    "NAME": "악마 군단장 헥터",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 턴에만 힘을 2 얻습니다. NL 사령술 3: *좀비 1장을 얻습니다. 이 효과를 손이 가득찰때까지 반복합니다.",
+    "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL 이번 턴에만 힘을 2 얻습니다. NL 사령술 3: *좀비+ 1장을 얻습니다. 이 효과를 손이 가득찰때까지 반복합니다."
+  },
+  "shadowverse:RevenantRam": {
+    "NAME": "양의 혼령",
+    "DESCRIPTION": "자연. NL 유언: 이 카드가 소멸되면 묘지를 1 얻습니다. NL 방어도를 !B! 얻습니다. NL *나테라의 *신목 1장을 얻습니다."
+  },
+  "shadowverse:GhostRider": {
+    "NAME": "유령 기수",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 유언: 이 카드가 소멸되면, 방어도를 !B! 얻습니다."
+  },
+  "shadowverse:ZombieDog": {
+    "NAME": "좀비 독",
+    "DESCRIPTION": "자연. NL 피해를 !D! 주고 방어도를 !B! 얻습니다. NL *나테라의 *신목 을 사용한 상태에서 다시 사용할 때마다, 이 카드의 피해량와 방어도를 !M! 증가시킵니다."
+  },
+  "shadowverse:NecroAnimals": {
+    "NAME": "동물령",
+    "DESCRIPTION": "자연. NL 피해를 !D! 줍니다. NL 유언: 이 카드가 소멸되면, 이하의 효과중 하나를 무작위로 발동합니다: NL 1. *나테라의 *신목 을 얻습니다. NL 2. 방어도를 !B! 얻습니다. NL 3. 무작위 적에게 피해를 !D! 줍니다. NL NL 소멸. NL 휘발성."
+  },
+  "shadowverse:Lubelle": {
+    "NAME": "동물령 파수꾼 루벨",
+    "DESCRIPTION": " *나테라의 *신목 !M! 장과 *동물령 을 얻습니다. NL *나테라의 *신목 을 사용할 때마다 동물령 !M! 장을 얻습니다. NL 휘발성.",
+    "UPGRADE_DESCRIPTION": " *나테라의 *신목 !M! 장과 *동물령 을 얻습니다. NL *나테라의 *신목 을 사용할 때마다 동물령 !M! 장을 얻습니다."
+  },
+  "shadowverse:Thoth": {
+    "NAME": "토트",
+    "DESCRIPTION": "이번 전투에서 유언을 가진 카드를 10장 이상 사용했을 경우, 카드를 사용할 때마다 모든 적에게 피해를 10 줍니다.NL 카드를 뽑습니다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (사용한 유언 카드 수:",
+      " .)"
+    ]
+  },
+  "shadowverse:WickedRebirth": {
+    "NAME": "꺼림칙한 부활",
+    "DESCRIPTION": "카드를 1장 파괴합니다. 이번 전투에서 사용한 비용이 1 이하이고 유언을 가진 무작위 공격 카드 1장을 손으로 가져오고, 이번 턴동안 비용을 0으로 합니다. NL 내가 사용하는 다음 공격의 피해량을 !M! 늘립니다. NL 유언 카드를 5장 이상 사용했다면 카드를 !M! 장 뽑습니다. NL 10장 이상 사용했다면 1장 대신 2장을 가져옵니다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (사용한 유언 카드 수:",
+      " .)"
+    ]
+  },
+  "shadowverse:Chris": {
+    "NAME": "인외마경 크리스토프",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. 이번 전투에서 유언 카드를 5장 이상 사용했다면 *유령 *기수 1장을 얻고 이번 턴 비용을 0으로 만듭니다. NL 10장 이상 사용하면 바리케이드를 얻습니다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (사용한 유언 카드 수:",
+      " .)"
+    ]
+  },
+  "shadowverse:SoulStrike": {
+    "NAME": "혼이 담긴 일도",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 전투에서 유언 카드를 10장 이상 사용했다면, 피해를 2배로 합니다. NL 소멸.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (사용한 유언 카드 수:",
+      " .)"
+    ]
+  },
+  "shadowverse:GloamingTombs": {
+    "NAME": "늘어선 묘지",
+    "DESCRIPTION": "공격 카드를 사용할 때마다 묘지를 !M! 얻습니다.",
+    "UPGRADE_DESCRIPTION": "선천성. NL 공격 카드를 사용할 때마다 묘지를 !M! 얻습니다."
+  },
+  "shadowverse:Ceridwen": {
+    "NAME": "케리드웬",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 소생: 3."
+  },
+  "shadowverse:Ceridwen2": {
+    "NAME": "영겁을 바라는 자 케리드웬",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL [E]를 얻습니다. NL 결단: *찰나의 *극약 또는 *영원의 *비약 1장을 얻습니다."
+  },
+  "shadowverse:DeathBreath": {
+    "NAME": "죽음의 축복",
+    "DESCRIPTION": "좀비 !M! 장을 얻습니다. NL 사령술 6: 방어도를 !B! 얻습니다."
+  },
+  "shadowverse:TheLovers": {
+    "NAME": "《연인》 밀티오",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 장송 2: 소생 X 그리고 소생 Y (X와 Y의 합은 !M!). NL 유언: 이 카드가 소멸되면 카드를 2장 뽑습니다. NL 강화 6: 모든 적의 체력이 6이 되도록 피해를 입힙니다. NL 소멸."
+  },
+  "shadowverse:SpiritCurator": {
+    "NAME": "영혼 감정사",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 장송 1: 카드를 1장 뽑습니다."
+  },
+  "shadowverse:ForbiddenArt": {
+    "NAME": "금절의 일격",
+    "DESCRIPTION": "모든 적에게 피해를 !D! 주고 *공허 1장을 버린 카드더미에 섞어넣습니다. NL 사령술 20: 추가로 !M! 만큼 피해를 더 줍니다. NL 소멸."
+  },
+  "shadowverse:Nicola": {
+    "NAME": "금절 니콜라",
+    "DESCRIPTION": "기계. NL 피해를 !D! 줍니다. NL 유언: 이 카드가 소멸되면, 이 카드의 복사본을 손에 넣고 피해량을 !M! 증가시킵니다. NL 이 카드의 피해가 4번 이상 !M! 만큼 증가했다면 , 피해량을 !M! 으로 바꾸고 *금절의 *일격 1장을 얻습니다. NL 소멸."
+  },
+  "shadowverse:Nicola2": {
+    "NAME": "불멸의 금절 니콜라",
+    "DESCRIPTION": "기계. NL 피해를 !D! 줍니다. NL 이 카드의 복사본을 버린 카드더미에 섞어넣습니다. NL 이 카드의 피해량을 소멸된 내 공격 카드 수의 !M! 배만큼 증가시킵니다. NL 소멸."
+  },
+  "shadowverse:Nicola3": {
+    "NAME": "영속의 기계 니콜라",
+    "DESCRIPTION": "기계. NL 피해를 !D! 줍니다. NL 내 손에 다른 기계 카드가 있다면 중독을 !M! 부여합니다. NL 이번 전투에서 기계 카드를 7장 이상 사용했다면, *금절의 *일격 1장을 손에 넣고 그 비용을 1로 만듭니다."
+  },
+  "shadowverse:Kagero": {
+    "NAME": "한 자루의 혼 카게로우",
+    "DESCRIPTION": "이 카드를 뽑을때, 내 묘지가 10 이상이라면 모든 적에게 취약을 !M! 부여합니다. NL 방어도를 !B! 얻습니다. NL 유언: 이 카드가 소멸되면, 사령술 3: *혼이 *담긴 *일도 를 얻습니다.",
+    "UPGRADE_DESCRIPTION": "이 카드를 뽑을때, 내 묘지가 10 이상이라면 모든 적에게 취약을 !M! 부여합니다. NL 방어도를 !B! 얻습니다. NL 유언: 이 카드가 소멸되면, 사령술 3: *혼이 *담긴 *일도+ 를 얻습니다.""
+  },
+  "shadowverse:WightKing": {
+    "NAME": "망자들의 군주",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 사령술 4: 방어도를 3 더 얻고 판금갑옷을 !M! 얻습니다."
+  },
+  "shadowverse:Wight": {
+    "NAME": "망자",
+    "DESCRIPTION": "공격 카드가 소멸될 때마다 모든 적에게 피해를 !M! 줍니다."
+  },
+  "shadowverse:ImmortalThane": {
+    "NAME": "불사의 대왕",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL *망자 2장을 얻고, 이번 턴동안 비용을 0으로 만듭니다.  NL 유언: 이 카드가 소멸되면 *망자들의 *군주 1장을 얻고 이번 턴동안 비용을 0으로 만듭니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL *망자+ 2장을 얻고, 이번 턴동안 비용을 0으로 만듭니다.  NL 유언: 이 카드가 소멸되면 *망자들의 *군주+ 1장을 얻고 이번 턴동안 비용을 0으로 만듭니다. NL 소멸."
+  },
+  "shadowverse:NecroAssassin": {
+    "NAME": "사령 암살자",
+    "DESCRIPTION": "카드를 1장 파괴합니다. [E] [E] 를 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "카드를 1장 파괴합니다. [E] [E] 를 얻습니다."
+  },
+  "shadowverse:Nephthys": {
+    "NAME": "네프티스",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 내 뽑을 카드 더미에 있는, 서로 비용이 다른 카드들을 무작위로 사용하고 소멸시킵니다."
+  },
+  "shadowverse:EverdarkStrix": {
+    "NAME": "암흑 부엉이",
+    "DESCRIPTION": "장송할때마다 방어도를 !M! 얻습니다."
+  },
+  "shadowverse:CarnivalNecromancer": {
+    "NAME": "카니발 사령술사",
+    "DESCRIPTION": "장송할때마다 카드를 !M! 장 뽑습니다. NL 강화 3: 소생 4."
+  },
+  "shadowverse:HungrySlash": {
+    "NAME": "꼬르륵 베기",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 장송 1: 카드를 !M! 장 뽑습니다."
+  },
+  "shadowverse:InstantPotion": {
+    "NAME": "찰나의 극약",
+    "DESCRIPTION": "장송 1: 피해를 !D! 줍니다. NL 소멸."
+  },
+  "shadowverse:EternalPotion": {
+    "NAME": "영원의 비약",
+    "DESCRIPTION": "소생 !M!. NL 소멸."
+  },
+  "shadowverse:DeadMetalStar": {
+    "NAME": "죽음의 메탈 연주자",
+    "DESCRIPTION": "기계. NL 가속화 1: *제조용 *기계 3장을 얻는다. NL NL --------------------- NL NL 피해를 !D! 주고 방어도를 !B! 얻습니다. NL 유언: 이 카드가 소멸되면, 소생: 3."
+  },
+  "shadowverse:Skeleton": {
+    "NAME": "스켈레톤",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 소멸."
+  },
+  "shadowverse:HinterlandGhoul": {
+    "NAME": "최후의 해골",
+    "DESCRIPTION": "보존. NL 방어도를 !B! 얻습니다. NL *스켈레톤 10장을 얻습니다. NL 이 카드가 보존될때, 묘지가 30 이상이라면 모든 적에게 피해를 !M! 줍니다.",
+    "UPGRADE_DESCRIPTION": "보존. NL 방어도를 !B! 얻습니다. NL *스켈레톤+ 10장을 얻습니다. NL 이 카드가 보존될때, 묘지가 30 이상이라면 모든 적에게 피해를 !M! 줍니다."
+  },
+  "shadowverse:BoneDominator": {
+    "NAME": "유골을 다루는 사령술사",
+    "DESCRIPTION": "가속화 0: 카드를 뽑습니다. 장송 1: 방어도를 !M! 얻습니다. NL NL --------------------- NL NL 방어도를 !B! 얻습니다. NL *최후의 *해골 1장을 얻습니다."
+  },
+  "shadowverse:SowDeathReapLife": {
+    "NAME": "생과 사의 역전",
+    "DESCRIPTION": "소생: X. X 는 이번 턴 수."
+  },
+  "shadowverse:AbsoluteJudgment": {
+    "NAME": "궁극의 판결",
+    "DESCRIPTION": " 적이 취약을 가지고 있지 않다면 취약을 !M! 부여합니다. NL 가지고 있다면 힘을 1 잃게 합니다. NL 버퍼를 1 얻습니다. NL 소멸."
+  },
+  "shadowverse:AbsoluteOne": {
+    "NAME": "궁극의 존재",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 파워 피해 면역을 얻습니다. NL *궁극의 *판결 1장을 다음 내 턴 시작에 얻습니다.NL 소멸."
+  },
+  "shadowverse:EnAcceleratium": {
+    "NAME": "초가속 장치",
+    "DESCRIPTION": "다음 턴 에너지를 !M! 얻습니다."
+  },
+  "shadowverse:ShadowMode": {
+    "NAME": "섀도우 오라",
+    "DESCRIPTION": "불가침을 1 얻습니다."
+  },
+  "shadowverse:EnBlackenedScripture": {
+    "NAME": "칠흑빛 법전",
+    "DESCRIPTION": "취약과 약화를 !M! 부여합니다."
+  },
+  "shadowverse:EnMoonAlmiraj": {
+    "NAME": "월광의 알 미라지",
+    "DESCRIPTION": "피해를 !D! 주고 그와 가해진 피해만큼 체력을 회복합니다. NL 방어도를 !B! 얻습니다."
+  },
+  "shadowverse:RegenerateSpirit": {
+    "NAME": "영혼 재생",
+    "DESCRIPTION": "소생 1. NL 강화 2: 추가로 소생 2. NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "소생 1. NL 강화 2: 추가로 소생 2. "
+  },
+  "shadowverse:BoneChimera": {
+    "NAME": "해골 키메라",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 유언: 이 카드가 소멸되면, *스켈레톤 을 !M! 장 얻습니다."
+  },
+  "shadowverse:LadyGray": {
+    "NAME": "심안의 미망인 레이디 그레이",
+    "DESCRIPTION": "피해를 !D! 주고 가해진 피해의 절반만큼 체력을 회복합니다. NL 소생: 1."
+  },
+  "shadowverse:NecroImpulse": {
+    "NAME": "사령 충격파",
+    "DESCRIPTION": "무작위 적들에게 !D! 만큼의 피해를 4번 줍니다. NL 사령술 10: 힘을 !M! 얻습니다."
+  },
+  "shadowverse:BoneDrone": {
+    "NAME": "해골 드론",
+    "DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL *제조용 *기계 를 얻습니다. NL 유언: 이 카드가 소멸되면 *제조용 *기계 를 얻습니다."
+  },
+  "shadowverse:IrongearCorpsman": {
+    "NAME": "아이언 툴 닥터",
+    "DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL 사령술 6: 이번 전투에서 사용한, 가장 비용이 높은 기계 카드의 복사본을 손으로 가져옵니다."
+  },
+  "shadowverse:ForbiddenAndBalance": {
+    "NAME": "균형과 금절",
+    "DESCRIPTION": "기계. NL 기계 공격 카드를 사용할 때마다 비용 -1. NL 카드를 !M! 장 뽑고 카드 1장을 버립니다."
+  },
+  "shadowverse:GigantSkull": {
+    "NAME": "굉음의 거대 기계 해골",
+    "DESCRIPTION": "기계. NL 모든 적에게 피해를 !D! 줍니다. NL 내 손에 다른 기계 카드가 없다면, *공허 1장을 버린 카드더미에 섞어넣습니다."
+  },
+  "shadowverse:Arcus": {
+    "NAME": "유령 지배인 아카스",
+    "DESCRIPTION": "비용이 1 이하인 공격 카드는 비용이 0이 되고, 사용하면 소멸됩니다.NL 비용이 0인 공격 카드를 사용할 때마다 무작위 적에게 피해 4."
+  },
+  "shadowverse:Manmaru1": {
+    "NAME": "동글이 1호",
+    "DESCRIPTION": "기계. NL 버퍼를 !M! 얻습니다. NL 소멸."
+  },
+  "shadowverse:GenerateNine": {
+    "NAME": "한순간의 행복",
+    "DESCRIPTION": "기계. NL 이번 턴동안 한번에 5 이상의 피해를 받지 않습니다.  NL 강화 4: 손이 가득 찰 때까지 서로 다른 기계 공격 카드를 무작위로 뽑을 카드 더미에서 손으로 가져옵니다. 그 카드들의 비용이 이번 턴 0이 됩니다. NL 휘발성. NL 소멸."
+  },
+  "shadowverse:Aenea": {
+    "NAME": "보랏빛의 저항자 엔네아",
+    "DESCRIPTION": "기계. NL 내 턴 시작에 에너지를 1 잃습니다. 나한테 버퍼가 없다면, *동글이 *1호 를 얻습니다. 버퍼가 있다면 *한순간의 *행복 을 얻습니다. 피해를 받으면 이 능력을 잃습니다. NL *동글이 *1호 를 손으로 가져오고 이번턴 그 비용을 0으로 만듭니다."
+  },
+  "shadowverse:Andrealphus": {
+    "NAME": "안드레알푸스",
+    "DESCRIPTION": "카드를 !M! 장 뽑습니다. 내 손패의 모든 공격 카드들에게 이하의 능력을 부여합니다: 유언: 이 카드가 소멸되면, 카드를 1장 뽑습니다. NL 유언: 이 카드가 소멸되면, 카드를 1장 뽑습니다."
+  },
+  "shadowverse:PrinceCatacomb": {
+    "NAME": "백골의 귀공자",
+    "DESCRIPTION": "피해를 !D! 줍니다. 내 손패의 모든 공격 카드들에게 이하의 능력을 부여합니다 : 유언: 이 카드가 소멸되면 *스켈레톤 1장을 얻습니다. NL 유언: 이 카드가 소멸되면 *스켈레톤 1장을 얻습니다."
+  },
+  "shadowverse:OmenOfSilence": {
+    "NAME": "침묵의 재앙 루르나이",
+    "DESCRIPTION": "사령술 3: 모든 적의 버프를 3 감소시킵니다."
+  },
+  "shadowverse:OmenOfSilence2": {
+    "NAME": "절규의 침묵 루르나이",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 사용할때마다 이 카드의 피해량을 3 증가시킵니다. 이번 전투에서 이 카드를 10번 이상 사용했다면, 대신 무작위 적에게 약화와 취약을 3 부여합니다. NL 유언: 이 카드가 소멸되면, *절규의 *확산 1장을 얻습니다. NL 소멸."
+  },
+  "shadowverse:OmenOfSilence2Copy": {
+    "NAME": "절규의 침묵 루르나이",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 소멸."
+  },
+  "shadowverse:ExpandingScreaming": {
+    "NAME": "절규의 확산",
+    "DESCRIPTION": " 손이 가득 찰때까지, 유언 능력이 없고 정확히 피해를 3 주는 *절규의 *침묵 *루르나이 를 X장 얻습니다. 그 카드들은 이번 턴 비용이 0이 됩니다. X는 이번 전투에서 *절규의 *침묵 *루르나이 를 사용한 횟수. NL 사령술 3: *절규의 *침묵 *루르나이 1장을 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 손이 가득 찰때까지, 유언 능력이 없고 정확히 피해를 3 주는 *절규의 *침묵 *루르나이 를 X장 얻습니다. 그 카드들은 이번 턴 비용이 0이 됩니다. X는 이번 전투에서 *절규의 *침묵 *루르나이 를 사용한 횟수. NL 사령술 3: *절규의 *침묵 *루르나이 1장을 얻습니다. NL 소멸.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (이번 전투에서 사용한 *절규의 *침묵 *루르나이 수:",
+      " .)"
+    ]
+  },
+  "shadowverse:Gremory": {
+    "NAME": "죽음을 보는 소녀 그레모리",
+    "DESCRIPTION": "내 묘지가 내 덱보다 많다면, 이하의 효과를 얻습니다 : 1턴에 1번, 사령술을 사용할때 묘지를 0 소모하고 에너지를 2 얻습니다. NL 직접소환: 내 묘지가 내 덱 수보다 많다면 이 카드를 손으로 가져오고 비용을 0으로 만듭니다. NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "내 묘지가 내 덱보다 많다면, 이하의 효과를 얻습니다 : 1턴에 1번, 사령술을 사용할때 묘지를 0 소모하고 에너지를 2 얻습니다. NL 직접소환: 내 묘지가 내 덱 수보다 많다면 이 카드를 손으로 가져오고 비용을 0으로 만듭니다. N"
+  },
+  "shadowverse:Aisha": {
+    "NAME": "명계의 정점 아이샤",
+    "DESCRIPTION": "직접소환: 내 턴 시작에 묘지가 16 이상이라면, 묘지를 8 소모해 이 카드를 손으로 가져오고 비용을 0으로 만듭니다.. NL 피해를 !D! 줍니다. 사령술 10: 피해를 2배로 합니다."
+  },
+  "shadowverse:Hades": {
+    "NAME": "명계신 하데스",
+    "DESCRIPTION": "가속화 2: 모든 적에게 피해를 !D! 주고 *저승으로 *향하는 *길 효과를 얻습니다. NL NL --------------------- NL NL 방어도를 !B! 얻습니다. NL 유언: 이 카드가 소멸되면,*저승으로 *향하는 *길 효과를 얻고 묘지를 !M! 얻습니다. NL 소멸."
+  },
+  "shadowverse:Mimi": {
+    "NAME": "파수견의 오른팔 미미",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 유언: 이 카드가 소멸되면, 모든 적에게 피해를 !M! 줍니다. NL 소멸."
+  },
+  "shadowverse:Koko": {
+    "NAME": "파수견의 왼팔 코코",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 유언: 이 카드가 소멸되면, 체력을 !M! 회복합니다. NL 소멸."
+  },
+  "shadowverse:Cerberus": {
+    "NAME": "명계의 파수견 케르베로스",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL *파수견의 *왼팔 *코코 와 *파수견의 *오른팔 *미미 를 1장씩 얻습니다.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL *파수견의 *왼팔 *코코+ 와 *파수견의 *오른팔 *미미+ 를 1장씩 얻습니다."
+  },
+  "shadowverse:AttendentOfNight": {
+    "NAME": "어둠의 시종",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 유언: 이 카드가 소멸되면 *리치 를 1장 얻습니다."
+  },
+  "shadowverse:Orthrus": {
+    "NAME": "명계의 투견 오르트로스",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 사령술 3: 추가로 피해를 !M! 줍니다"
+  },
+  "shadowverse:Pudding": {
+    "NAME": "푸딩으로 만들어버리는거야",
+    "DESCRIPTION": "적의 버프를 제거합니다.(인공물 우선). NL 이번 턴에만 힘과 민첩을 !M! 얻습니다. NL 소멸."
+  },
+  "shadowverse:Miyako": {
+    "NAME": "푸딩 유령 미야코",
+    "DESCRIPTION": "체력을 4 잃고 불가침을 얻습니다.NL 유니온_버스트 !M!: *푸딩으로 *만들어버리는거야 1장을 얻습니다. NL 소멸."
+  },
+  "shadowverse:Kyouka": {
+    "NAME": "꼬마 우등생 쿄우카",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 2번 주문증폭합니다. NL 유니온_버스트 !M!: 모든 적에게 피해를 !D! 줍니다."
+  },
+  "shadowverse:FriendsForever": {
+    "NAME": "유대의 공진",
+    "DESCRIPTION": "결단: 이 카드를 *루나의 *결심 이나 *엔네아의 *헌신 으로 사용합니다. NL 사령술 4: 대신 둘 다로 사용합니다. NL 휘발성. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "결단: 이 카드를 *루나의 *결심+ 이나 *엔네아의 *헌신+ 으로 사용합니다. NL 사령술 4: 대신 둘 다로 사용합니다. NL 휘발성. NL 소멸."
+  },
+  "shadowverse:LunaGame": {
+    "NAME": "루나의 결심",
+    "DESCRIPTION": "소생 2, 소생 1 그리고 소생 0."
+  },
+  "shadowverse:AeneaFriendship": {
+    "NAME": "엔네아의 헌신",
+    "DESCRIPTION": "체력을 4 회복하고 *한순간의 *행복 1장을 얻습니다."
+  },
+  "shadowverse:SonataOfSilence": {
+    "NAME": "침묵의 시",
+    "DESCRIPTION": "힘과 민첩, 묘지를 제외하고 내게 걸려있는 모든 효과를 제거합니다. NL 카드를 !M! 장 뽑습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "힘과 민첩, 묘지를 제외하고 내게 걸려있는 모든 효과를 제거합니다. NL 카드를 !M! 장 뽑습니다."
+  },
+  "shadowverse:SoulTaker": {
+    "NAME": "영혼을 먹는 소녀 라라",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL *영혼을 *먹는 *소녀 *라라 를 제외하고, 무작위로 내 버린 카드더미의 공격 카드의 복사본을 1장 손에 넣고, 이번 턴 그 카드의 비용을 0으로 만들고,휘발성과 소멸을 부여합니다."
+  },
+  "shadowverse:OneTailFox": {
+    "NAME": "일미호",
+    "DESCRIPTION": "방어도를 !B! 얻고 피해를 !D! 줍니다. NL 유언: 이 카드가 소멸되면 손의 *여우 *요괴 *긴세츠 와 *공포의 *연회 *긴세츠 라는 이름의 카드의 피해량을 2 증가시킵니다. NL 휘발성. NL 소멸."
+  },
+  "shadowverse:Ginsetsu": {
+    "NAME": "여우 요괴 긴세츠",
+    "DESCRIPTION": "방어도를 !B! 얻고 피해를 !D! 줍니다. NL *일미호 4장을 얻고 이번 턴 비용을 0으로 만듭니다. NL 이 카드가 덱에 있는 동안, 내가 *일미호 를 사용할 때마다 그 카드로 가한 피해만큼 체력을 회복합니다."
+  },
+  "shadowverse:Ginsetsu2": {
+    "NAME": "공포의 연회 긴세츠",
+    "DESCRIPTION": "방어도를 !B! 얻고 피해를 !D! 줍니다. NL *일미호 1장을 손에 넣고 비용을 0으로 만듭니다. 사령술 9: 대신 4장을 손에 넣습니다. NL 이 카드가 덱에 있는 동안 *일미호 의 피해량이 2 증가합니다."
+  },
+  "shadowverse:Ferry": {
+    "NAME": "유령 소녀 페리",
+    "DESCRIPTION": "장송 2: 이번 턴 내가 사용하는 공격 카드가 3회 사용됩니다.  NL 소멸.",
+    "UPGRADE_DESCRIPTION": "장송 2: 이번 턴 내가 사용하는 공격 카드가 3회 사용됩니다."
+  },
+  "shadowverse:StormArrow": {
+    "NAME": "폭풍의 화살",
+    "DESCRIPTION": "내 손에 있는 카드 수의 절반만큼의 피해를 !M! 번 줍니다. NL 카드를 1장 뽑습니다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (피해를 !D! 줍니다.)"
+    ]
+  },
+  "shadowverse:GaleArrow": {
+    "NAME": "바람의 화살",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 턴에만 힘을 1 얻습니다."
+  },
+  "shadowverse:ArisaArrow": {
+    "NAME": "숲지기의 활",
+    "DESCRIPTION": "내 턴 종료시 힘을 1 얻습니다. NL 카운트다운 !M! 유언: 카드를 1장 뽑습니다."
+  },
+  "shadowverse:Arisa": {
+    "NAME": "심록의 궁수 아리사",
+    "DESCRIPTION": " 내가 힘이나 민첩, 방어도를 얻을 때마다 모든 적에게 피해를 !M! 줍니다. NL 결단: *바람의 *화살 이나 *폭풍의 *화살 1장을 얻습니다. NL 이번 턴 카드를 2장 이상 사용했다면 *숲지기의 *활 을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "내가 힘이나 민첩, 방어도를 얻을 때마다 모든 적에게 피해를 !M! 줍니다. NL 결단: *바람의 *화살+ 이나 *폭풍의 *화살+ 1장을 얻습니다. NL 이번 턴 카드를 2장 이상 사용했다면 *숲지기의 *활+ 을 얻습니다."
+  },
+  "shadowverse:NecroTemptation": {
+    "NAME": "루나랑 놀자",
+    "DESCRIPTION": "약화와 취약을 !M! 부여합니다. NL 사령술 8: 네크로맨서 클래스가 아닌 무작위 공격이나 파워 카드 3장중 1장을 골라 손에 넣고, 이번 턴 그 카드의 비용을 0으로 만듭니다. 그 카드가 영구히 덱에 추가됩니다. (제시되는 카드의 희귀도는 상대중인 적에 의해 결정됩니다) NL 소멸."
+  },
+  "shadowverse:LunaDoll": {
+    "NAME": "루나의 인형",
+    "DESCRIPTION": "카운트다운 !M!: 유언: 체력을 !M! 회복하고 카드를 !M! 장 뽑습니다."
+  },
+  "shadowverse:Luna": {
+    "NAME": "영혼의 친구 루나",
+    "DESCRIPTION": "*루나의 *인형 과 *루나랑 *놀자 1장을 얻습니다. 사령술 6: *진화 *포인트 와 *기적 도 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "*루나의 *인형+ 과 *루나랑 *놀자+ 1장을 얻습니다. 사령술 6: *진화 *포인트 와 *기적 도 얻습니다. NL 소멸."
+  },
+  "shadowverse:UnionMagic": {
+    "NAME": "결합의 마법",
+    "DESCRIPTION": "무작위 적에게 피해를 !D! 만큼 X회 줍니다. X는 이번 전투에서 사용한 스킬 카드의 종류 수. NL X가 7 이상이라면 *궁극의 *마법 1장을 얻습니다.NL 휘발성 NL 소멸.",
+    "UPGRADE_DESCRIPTION": "무작위 적에게 피해를 !D! 만큼 X회 줍니다. X는 이번 전투에서 사용한 스킬 카드의 종류 수. NL X가 7 이상이라면 *궁극의 *마법+ 1장을 얻습니다.NL 휘발성 NL 소멸.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (X: !M!.)"
+    ]
+  },
+  "shadowverse:UltimateMagic": {
+    "NAME": "궁극의 마법",
+    "DESCRIPTION": "모든 적에게 피해를 !D! 만큼 줍니다. NL 체력을 !M! 회복합니다. NL 소멸."
+  },
+  "shadowverse:FireBall": {
+    "NAME": "홍련의 마법",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 소멸."
+  },
+  "shadowverse:Isabelle": {
+    "NAME": "탐구의 마술사 이자벨",
+    "DESCRIPTION": "융합: 위치 클래스 공격 카드. NL 융합할때마다, 그게 첫번째 융합이라면 *결합의 *마법 1장을 얻는다. 2번째라면 *지혜의 *빛 을 얻는다.3번째라면 *홍련의 *마법 을 얻는다.NL 방어도를 !B! 얻습니다. 주문증폭하고, *운명의 *인도 를 얻습니다.",
+    "UPGRADE_DESCRIPTION": "융합: 위치 클래스 공격 카드. NL 융합할때마다, 그게 첫번째 융합이라면 *결합의 *마법+ 1장을 얻는다. 2번째라면 *지혜의 *빛+ 을 얻는다.3번째라면 *홍련의 *마법+ 을 얻는다.NL 방어도를 !B! 얻습니다. 주문증폭하고, *운명의 *인도+ 를 얻습니다."
+  },
+  "shadowverse:Strike_V": {
+    "NAME": "타격",
+    "DESCRIPTION": "피해를 !D! 줍니다."
+  },
+  "shadowverse:Defend_V": {
+    "NAME": "수비",
+    "DESCRIPTION": "방어도를 !B! 얻습니다."
+  },
+  "shadowverse:RazoryClaw": {
+    "NAME": "예리한 손톱",
+    "DESCRIPTION": "체력을 2 잃습니다. NL 피해를 !D! 줍니다."
+  },
+  "shadowverse:DarkGeneral": {
+    "NAME": "어둠의 지휘관",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 복수 상태라면 피해가 2배가 됩니다."
+  },
+  "shadowverse:BloodPact": {
+    "NAME": "피의 거래",
+    "DESCRIPTION": "체력을 2 잃습니다. NL 카드를 !M! 장 뽑습니다."
+  },
+  "shadowverse:ForestBat": {
+    "NAME": "숲박쥐",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 소멸."
+  },
+  "shadowverse:SummoningBloodkin": {
+    "NAME": "권속 소환",
+    "DESCRIPTION": "*숲박쥐 !M! 장을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "*숲박쥐+ !M! 장을 얻습니다."
+  },
+  "shadowverse:BloodGarden": {
+    "NAME": "선혈의 화원",
+    "DESCRIPTION": "턴 종료시 체력을 1 잃고 모든 적에게 피해를 !M! 줍니다."
+  },
+  "shadowverse:BloodWolf": {
+    "NAME": "피에 굶주린 늑대",
+    "DESCRIPTION": "체력을 2 잃습니다. NL 피해를 !D! 줍니다."
+  },
+  "shadowverse:SpiderWebImp": {
+    "NAME": "거미줄의 악마",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 복수 상태가 아니라면 체력을 2 잃습니다."
+  },
+  "shadowverse:DemonicAssault": {
+    "NAME": "악마들의 습격",
+    "DESCRIPTION": "무작위 적에게 피해를 !D! 줍니다. NL 복수 상태라면 *어둠의 *지휘관 1장을 얻고 그 비용을 0으로 합니다.ㅋ"
+  },
+  "shadowverse:AntelopeWarrior": {
+    "NAME": "물소 전사",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 광란 상태가 아니라면 체력을 1 잃습니다. NL 광란 상태라면 체력을 3 회복합니다."
+  },
+  "shadowverse:HellSpearWarrior": {
+    "NAME": "마완의 창기사",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 갈망 상태라면 2배의 피해를 줍니다."
+  },
+  "shadowverse:MoonriseWerewolf": {
+    "NAME": "월하의 늑대인간",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 갈망 상태라면 판금갑옷을 2 얻습니다.NL 강화 2: 방어도를 !B! 더 얻습니다. "
+  },
+  "shadowverse:BloodtrothEpitaph": {
+    "NAME": "계약의 비문",
+    "DESCRIPTION": " 복수,광란,갈망 상태가 됩니다. NL 카운트다운 3: 이 효과를 잃습니다.",
+    "UPGRADE_DESCRIPTION": "선천성. NL 복수,광란,갈망 상태가 됩니다. NL 카운트다운 3: 이 효과를 잃습니다."
+  },
+  "shadowverse:Revelation": {
+    "NAME": "묵시록",
+    "DESCRIPTION": "복수 상태라면 비용이 2가 됩니다. NL 모든 적에게 피해를 !D! 줍니다. NL *상처 1장을 버린 카드더미에 섞어넣습니다."
+  },
+  "shadowverse:LadicaEmbrace": {
+    "NAME": "라티카의 포옹",
+    "DESCRIPTION": "무작위 적에게 피해를 !M! 줍니다.. NL 소멸."
+  },
+  "shadowverse:UriasRevelry": {
+    "NAME": "유리아스의 투쟁",
+    "DESCRIPTION": "무작위 적에게 피해를 !M! 줍니다."
+  },
+  "shadowverse:MonoResolve": {
+    "NAME": "모노의 각오",
+    "DESCRIPTION": "손에 있는 카드를 모두 강화시키고 *기적 을 얻습니다."
+  },
+  "shadowverse:GarnetWaltz": {
+    "NAME": "진홍의 왈츠",
+    "DESCRIPTION": "선택: NL 무작위 적에게 피해를 !M! 주거나 손에 있는 카드를 모두 강화하고 *기적 1장을 얻습니다. NL 복수 상태라면 둘 다 발동합니다. NL 소멸."
+  },
+  "shadowverse:Shemyaza": {
+    "NAME": "셰미하자",
+    "DESCRIPTION": "턴 시작시 카드를 3장 뽑습니다. NL 턴 종료시 손의 카드를 모두 소멸시킵니다.",
+    "UPGRADE_DESCRIPTION": "선천성. NL턴 시작시 카드를 3장 뽑습니다. NL 턴 종료시 손의 카드를 모두 소멸시킵니다."
+  },
+  "shadowverse:DarkfeastBat": {
+    "NAME": "어둠을 먹는 박쥐",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 전투동안 체력을 잃거나 스스로에게 피해를 주는 카드를 사용한 만큼 피해량이 6 증가합니다.",
+    "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL 이번 전투동안 체력을 잃거나 스스로에게 피해를 주는 카드를 사용한 만큼 피해량이 8 증가합니다."
+  },
+  "shadowverse:Belphegor": {
+    "NAME": "벨페고르",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 카드를 !M! 장 뽑습니다. NL 복수 상태가 아니라면 그렇게 되도록 피해를 받습니다."
+  },
+  "shadowverse:SexyVampire": {
+    "NAME": "현란의 유혹하는 뱀파이어",
+    "DESCRIPTION": "이 카드를 뽑았을때 복수 상태가 아니라면 이 카드를 소멸시키고, 이번 전투동안 체력이 최대체력의 절반을 넘지 못하게 됩니다.전투 종료시 이 효과로 잃은 체력을 복구합니다. NL 피해를 !D! 주고 체력을 !M! 회복합니다."
+  },
+  "shadowverse:SadisticDemon": {
+    "NAME": "능욕의 악마",
+    "DESCRIPTION": "턴 종료시 체력을 1 잃습니다. NL 턴 시작시 체력을 2 얻습니다. NL 카드의 효과로 체력을 잃을때마다 무작위 적에게 피해를 !M! 줍니다."
+  },
+  "shadowverse:ApostleOfLust": {
+    "NAME": "정념의 사도",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 체력을 2 잃고 카드를 2장 뽑습니다.NL 모든 적들이 체력을 1 잃고 이번 턴에만 힘을 1 얻습니다."
+  },
+  "shadowverse:DiabolicDrain": {
+    "NAME": "악마의 탐식",
+    "DESCRIPTION": "피해를 !D! 주고 체력을 !M! 회복합니다. NL 복수 상태라면 비용이 0이 됩니다."
+  },
+  "shadowverse:Baal": {
+    "NAME": "바알",
+    "DESCRIPTION": "융합: 비용이 1 이하인 뱀파이어 클래스 공격 카드. NL 2장 이상이 융합되었다면 손이 6장이 될때까지 카드를 뽑습니다. NL 5장 이상이 융합되었다면 모든 적에게 피해를 !D! 줍니다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (융합된 카드",
+      " 장.)"
+    ]
+  },
+  "shadowverse:Ravening": {
+    "NAME": "배덕의 마수",
+    "DESCRIPTION": "자연. NL 카드를 뽑을때마다, 갈망 상태라면 무작위 적에게 피해를 3 줍니다.(중첩 불가)",
+    "UPGRADE_DESCRIPTION": "선천성. NL 자연. NL 카드를 뽑을때마다, 갈망 상태라면 무작위 적에게 피해를 3 줍니다.(중첩 불가)"
+  },
+  "shadowverse:LunaticMana": {
+    "NAME": "광기의 마나",
+    "DESCRIPTION": "자연. NL *나테라의 *신목 1장을 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "자연. NL *나테라의 *신목 1장을 얻습니다."
+  },
+  "shadowverse:BearBerserk": {
+    "NAME": "베어 베르세르크",
+    "DESCRIPTION": "체력을 1 잃고, 모든 적이 체력을 1 잃고 내 체력을 2 회복합니다. NL 갈망 상태라면 1번 반복합니다. NL 방어도를 !B! 얻습니다."
+  },
+  "shadowverse:FloodBehemoth": {
+    "NAME": "폭포의 괴수",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 이번 턴 공격당할때마다 모든 적에게 피해를 !M! 줍니다."
+  },
+  "shadowverse:BeastEmpress": {
+    "NAME": "마수의 여제 네레이아",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL *폭포의 *괴수 1장을 얻고 이번 턴 그 비용을 0으로 만듭니다. NL 갈망 상태라면 모든 적이 힘과 민첩을 2 잃습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL *폭포의 *괴수+ 1장을 얻고 이번 턴 그 비용을 0으로 만듭니다. NL 갈망 상태라면 모든 적이 힘과 민첩을 2 잃습니다. NL 소멸."
+  },
+  "shadowverse:CorruptedBat": {
+    "NAME": "변종 박쥐",
+    "DESCRIPTION": "자연. NL 방어도를 !B! 얻습니다. NL *나테라의 *신목 1장을 얻습니다. NL 복수 상태라면 판금갑옷을 2 얻고 이번 턴에만 힘을 1 얻습니다."
+  },
+  "shadowverse:WingsOfLust": {
+    "NAME": "정념의 날개",
+    "DESCRIPTION": "힘과 민첩을 !M! 얻습니다. NL 매 턴 종료시 체력을 1 잃습니다. NL 강화 2: 이번 턴에 흡혈을 얻습니다.. NL 소멸. NL 휘발성."
+  },
+  "shadowverse:Emeralda": {
+    "NAME": "악마 장교 에메랄다",
+    "DESCRIPTION": "취약과 약화를 !M! 부여합니다. 피해를 !D! 줍니다. NL 복수 상태라면 피해를 2배로 합니다."
+  },
+  "shadowverse:Azazel": {
+    "NAME": "타락한 칠흑 아자젤",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 복수 상태라면 피해를 3배로 합니다. NL 내 체력이 최대치의 50% 이상이라면 50%가 됩니다. NL 이번 전투동안 최대체력의 50% 이상으로 회복할수 없습니다. NL 이번 전투동안 한번에 최대체력의 30% 이상 피해를 받지 않습니다. "
+  },
+  "shadowverse:Yurius": {
+    "NAME": "극악무도한 공장 율리우스",
+    "DESCRIPTION": "공격받을때마다 체력을 !M! 회복하고 !M!의 피해를 돌려줍니다. NL 복수 상태이고 받은 공격의 피해가 방어도보다 적다면 다음 턴 시작에 방어도를 6 얻습니다. NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "공격받을때마다 체력을 !M! 회복하고 !M!의 피해를 돌려줍니다. NL 복수 상태이고 받은 공격의 피해가 방어도보다 적다면 다음 턴 시작에 방어도를 6 얻습니다."
+  },
+  "shadowverse:UnleashTheNightmare": {
+    "NAME": "악몽의 시작",
+    "DESCRIPTION": "무작위 공격 카드 !M!장을 뽑을 카드 더미에서 손으로 가져옵니다. NL 이렇게 가져온 기계 카드 한장마다 *제조용 *기계 1장을 얻습니다. NL 이렇게 가져온 비-기계 카드 한장마다 *숲박쥐 를 1장 얻습니다."
+  },
+  "shadowverse:MechashotDevil": {
+    "NAME": "기계 간호사 악마",
+    "DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL 내 손에 기계 카드가 있다면, 턴 시작마다 *제조용 *기계 를 1장 얻습니다. NL 이번 전투동안 스킬이 아닌 기계 카드를 10장 이상 사용했다면, *진화 포인트 와 *기적 을 1장씩 얻습니다."
+  },
+  "shadowverse:ArmoredBat": {
+    "NAME": "강철 박쥐",
+    "DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL 유언: 이 카드가 사용되거나 소멸되면 *제조용 *기계 를 2장 얻습니다. NL 강화 2: 방어도와 판금갑옷을 !M! 얻습니다."
+  },
+  "shadowverse:MechaforgeDevil": {
+    "NAME": "머신 팜 데빌",
+    "DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL *제조용 *기계 와 *수리 *모드 를 1장씩 얻습니다."
+  },
+  "shadowverse:Mono": {
+    "NAME": "붉은 빛의 대항자 모노",
+    "DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL 이번 전투에서 스킬이 아닌 기계 카드를 7장 이상 사용했다면, *퍼스트 *원 을 1장 얻습니다.",
+    "UPGRADE_DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL 이번 전투에서 스킬이 아닌 기계 카드를 7장 이상 사용했다면, *퍼스트 *원+ 을 1장 얻습니다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (",
+      " 사용한 비-스킬 기계 카드.)"
+    ]
+  },
+  "shadowverse:Mono2": {
+    "NAME": "유구한 붉은 빛 모노",
+    "DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL 복수 상태라면 민첩을 1 얻습니다. NL 힘이나 민첩을 얻거나, 한번에 체력을 3 이상 회복하면 손에 있는 모든 카드를 강화하고, 공격의 피해를 2배로 한 다음, 피해를 !D! 줍니다."
+  },
+  "shadowverse:FirstOne": {
+    "NAME": "퍼스트 원",
+    "DESCRIPTION": "기계. NL 이번 전투동안 모든 기계 카드를 강화합니다. NL 버린 카드더미의 모든 *붉은 *빛의 *대항자 *모노 를 소멸시키고, 소멸시킨 만큼 *붉은 *빛의 *대항자 *모노(진화) 를 손에 넣습니다."
+  },
+  "shadowverse:Mono_Unlock": {
+    "NAME": "붉은 빛의 대항자 모노(진화)",
+    "DESCRIPTION": "기계. NL 피해를 !D! 줍니다. NL 방어도를 !B! 얻습니다. NL 체력을 1 잃습니다."
+  },
+  "shadowverse:Slayn": {
+    "NAME": "강철 뱀파이어 슬레이",
+    "DESCRIPTION": "기계. NL 피해를 !D! 줍니다. NL 손에 다른 기계 카드가 4장 이상 있다면 피해를 2배로 합니다. NL 손에 다른 카드가 6장 이상 있었다면 가한 피해만큼 체력을 회복합니다."
+  },
+  "shadowverse:Neun": {
+    "NAME": "미명의 흡혈귀 노인",
+    "DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL 카드를 1장 파괴하고, *제조용 *기계 를 2장 얻습니다. NL 이번 전투에서 스킬이 아닌 기계 카드를 10장 이상 사용했다면 다음번에 기계를 사용할 때 금속화를 2 얻습니다."
+  },
+  "shadowverse:CreepingMadness": {
+    "NAME": "꺼림칙한 침식",
+    "DESCRIPTION": "자연. NL 체력을 1 잃고 카드를 !M!장 뽑습니다.NL *나테라의 *신목 을 사용했었다면 체력을 2 회복하고 [E]를 얻습니다.NL 소멸."
+  },
+  "shadowverse:Cradle": {
+    "NAME": "태동의 마신",
+    "DESCRIPTION": "자연. NL 체력을 3 회복합니다. NL *나테라의 *신목 을 사용했다면 모든 카드를 이번 전투동안 강화합니다. NL 내 턴 시작시 카드를 1장 더 뽑고, 카드를 2장 버리고, 무작위 적에게 피해를 10 줍니다.",
+    "UPGRADE_DESCRIPTION": "자연. NL 선천성. NL Heal 3 HP. 체력을 3 회복합니다. NL *나테라의 *신목 을 사용했다면 모든 카드를 이번 전투동안 강화합니다. NL 내 턴 시작시 카드를 1장 더 뽑고, 카드를 2장 버리고, 무작위 적에게 피해를 10 줍니다."
+  },
+  "shadowverse:RuinwebSpider": {
+    "NAME": "파멸의 실을 엮는 거미",
+    "DESCRIPTION": "자연. NL 결정화 0: 카운트다운 !M!: 이번 턴 후에 내 턴을 추가로 진행합니다. 파워 카드를 사용할 때마다 카운트다운 -1. NL NL --------------------- NL NL 이번 턴 후에 내 턴을 추가로 진행합니다.",
+    "UPGRADE_DESCRIPTION": "자연. NL 선천성. NL 결정화 0: 카운트다운 !M!: 이번 턴 후에 내 턴을 추가로 진행합니다. 파워 카드를 사용할 때마다 카운트다운 -1. NL NL --------------------- NL NL 이번 턴 후에 내 턴을 추가로 진행합니다."
+  },
+  "shadowverse:Aluzard": {
+    "NAME": "영겁의 흡혈귀 알루자드",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 소멸. NL 유언: 이 카드가 소멸되면, 그 피해량을 !M! 만큼 증가시킨 복사본을 다음 내 턴 시작에 얻습니다. NL 이번 전투에서 *영겁의 *흡혈귀 *알루자드 를 2장 이상 사용했었다면, 다음 턴 시작에 *붉은 *송곳니 1장을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL 소멸. NL 유언: 이 카드가 소멸되면, 그 피해량을 !M! 만큼 증가시킨 복사본을 다음 내 턴 시작에 얻습니다. NL 이번 전투에서 *영겁의 *흡혈귀 *알루자드 를 2장 이상 사용했었다면, 다음 턴 시작에 *붉은 *송곳니+ 1장을 얻습니다."
+  },
+  "shadowverse:BloodArts": {
+    "NAME": "붉은 송곳니",
+    "DESCRIPTION": "모든 적에게 피해를 !D! 줍니다. NL 방어도를 !B! 얻습니다. NL 소멸."
+  },
+  "shadowverse:RageCommander": {
+    "NAME": "분노한 사령관 라우라",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 내 다음 공격의 피해가 2배가 됩니다. NL 복수 상태라면 이번 턴 사용하는 모든 공격의 피해가 2배가 됩니다."
+  },
+  "shadowverse:Relinquish": {
+    "NAME": "이성 붕괴",
+    "DESCRIPTION": "힘을 !M! 얻습니다. NL 복수 상태가 아니라면 턴 종료시 힘을 !M! 잃습니다."
+  },
+  "shadowverse:Flauros": {
+    "NAME": "플라우로스",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 유언: 이 카드가 사용되거나 소멸되면 체력을 !M! 회복합니다. NL 직접소환: 내 턴동안 체력을 4 이상 잃었다면, 이 카드를 손에 넣고 그 효과를 발동합니다."
+  },
+  "shadowverse:DevilOfVengeance": {
+    "NAME": "복수의 악마",
+    "DESCRIPTION": "복수 상태에서만 사용 가능. NL 방어도를 !B! 얻습니다."
+  },
+  "shadowverse:OmenOfLust": {
+    "NAME": "정념의 재앙 바나레이크",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 내가 체력을 잃으면 다음 턴 시작에 힘과 민첩을 !M! 얻습니다. NL 광란 상태라면 피해량을 2배로 하고 약화와 취약을 !M! 만큼 부여합니다. "
+  },
+  "shadowverse:OmenOfLust2": {
+    "NAME": "절연의 정념 바나레이크",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL *절연의 *비상 을 1장 얻습니다. NL 광란 상태라면 힘과 민첩을 !M! 얻습니다. NL 유언: 광란 상태라면 유언 능력이 없는 *절연의 *정념 *바나레이크 7장을 뽑을 카드 더미에 섞어넣습니다."
+  },
+  "shadowverse:LustfulDesire": {
+    "NAME": "절연의 정념 바나레이크",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL *절연의 *비상 을 1장 얻습니다. NL 광란 상태라면 힘과 민첩을 !M! 얻습니다."
+  },
+  "shadowverse:ServantOfLust": {
+    "NAME": "정념의 시종",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 체력을 1 잃습니다. NL 유언: 이 카드가 사용되거나 소멸되면, 모든 적이 체력을 !M! 잃습니다."
+  },
+  "shadowverse:DevilSheep": {
+    "NAME": "악마 양",
+    "DESCRIPTION": "카드의 효과로 체력을 잃으면 방어도를 !M! 얻습니다."
+  },
+  "shadowverse:TheBerserker": {
+    "NAME": "울프헤딘 알가비",
+    "DESCRIPTION": "피해를 !D! 주고 방어도를 !B! 얻습니다. NL 체력을 1 잃고 체력을 !M! 회복합니다. NL 광란 상태라면 손의 카드를 모두 강화합니다. NL 이 카드를 사용한 후에 에너지가 2 이상 남아있었다면, 적 하나 대신 적 모두에게 2배의 피해를 줍니다."
+  },
+  "shadowverse:PrisonOfPain": {
+    "NAME": "가학의 독방",
+    "DESCRIPTION": "체력을 1 잃고 카드를 1장 뽑습니다. NL 턴 시작시 체력을 1 잃고 카드를 1장 뽑습니다. NL 카운트다운 !M!: 이 효과를 잃습니다."
+  },
+  "shadowverse:Lilim": {
+    "NAME": "사랑스러운 서큐버스 릴림",
+    "DESCRIPTION": "이번 턴 카드의 효과로 체력을 잃으면 [E]를 얻습니다.NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "이번 턴 카드의 효과로 체력을 잃으면 [E]를 얻습니다."
+  },
+  "shadowverse:ChaosShip": {
+    "NAME": "어둠의 함선",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 비용이 1 이하인 무작위 공격 카드 1장을 뽑을 카드더미에서 가져옵니다. NL 복수 상태라면 1번 더 발동합니다."
+  },
+  "shadowverse:MadnessRevealed": {
+    "NAME": "광기의 발현",
+    "DESCRIPTION": "체력을 4 잃습니다. NL 다음 턴 시작에 체력을 !M! 회복합니다."
+  },
+  "shadowverse:NightFall": {
+    "NAME": "밤의 습격",
+    "DESCRIPTION": "내 턴 시작에 *숲박쥐 1장을 얻습니다. NL 카운트다운 !M!: 이 효과를 잃습니다."
+  },
+  "shadowverse:RestlessParish": {
+    "NAME": "불온한 어둠의 마을",
+    "DESCRIPTION": "체력을 1 잃고 다음 턴 시작에 카드를 !M! 장 더 뽑습니다. NL 강화 1: 결단 : 이 카드를 *광기의 *발현 이나 *밤의 *습격 중 하나로 사용합니다.",
+    "UPGRADE_DESCRIPTION": "체력을 1 잃고 다음 턴 시작에 카드를 !M! 장 더 뽑습니다. NL 강화 1: 결단 : 이 카드를 *광기의 *발현+ 이나 *밤의 *습격+ 중 하나로 사용합니다."
+  },
+  "shadowverse:NightmareTime": {
+    "NAME": "악몽의 시간",
+    "DESCRIPTION": "매 턴 시작시 카드를 !M! 장 더 뽑습니다. NL 체력을 1 잃고 *진화 *포인트 와 *기적 을 1장씩 얻습니다. NL 소멸."
+  },
+  "shadowverse:BloodyNail": {
+    "NAME": "피의 손톱",
+    "DESCRIPTION": "적에게 디버프를 부여할 때마다 그 적에게 피해를 !M! 줍니다. NL 체력을 1 잃고 무작위 적에게 피해를 !D! 줍니다. NL 소멸."
+  },
+  "shadowverse:DreadAura": {
+    "NAME": "공포의 기운",
+    "DESCRIPTION": "카드의 효과로 체력을 잃을 때마다 그 소모량을 0으로 만듭니다. NL 체력을 1 잃고 모든 적에게 피해를 !D! 줍니다. NL 소멸."
+  },
+  "shadowverse:TerrorNight": {
+    "NAME": "두려움의 밤",
+    "DESCRIPTION": "카드를 3장 버립니다. *악몽의 *시간 , *피의 *손톱 , *공포의 *기운 을 1장씩 얻습니다. NL 이번 전투에서 이미 *두려움의 *밤 을 사용했었따면 모든 적에게 피해를 !D! 줍니다. NL 소멸."
+  },
+  "shadowverse:Urias": {
+    "NAME": "종막의 흡혈귀 유리아스",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL *두려움의 *밤 1장을 얻습니다. NL 복수 상태라면 카드를 1장 뽑습니다. NL 광란 상태라면 카드를 1장 뽑습니다.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL *두려움의 *밤+ 1장을 얻습니다. NL 복수 상태라면 카드를 1장 뽑습니다. NL 광란 상태라면 카드를 1장 뽑습니다."
+  },
+  "shadowverse:Jormungand": {
+    "NAME": "요르문간드",
+    "DESCRIPTION": "1턴에 1번 카드의 효과로 체력을 잃으면 모든 적에게 피해를 !M! 줍니다. "
+  },
+  "shadowverse:OldBloodKing": {
+    "NAME": "혈통의 왕",
+    "DESCRIPTION": "*숲박쥐 의 피해량이 !M! 증가합니다."
+  },
+  "shadowverse:NightHorde": {
+    "NAME": "어둠의 무리",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL *숲박쥐 를 2장 얻습니다. NL 이번 전투에서 사용한 *숲박쥐 1장당 이 카드의 피해량이 5 증가합니다.",
+    "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL *숲박쥐 를 2장 얻습니다. NL 이번 전투에서 사용한 *숲박쥐 1장당 이 카드의 피해량이 7 증가합니다."
+  },
+  "shadowverse:Veight": {
+    "NAME": "뱀파이어 귀공자 바이트",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 이번 턴 적에게 공격받을때마다 *숲박쥐 를 1장 얻습니다."
+  },
+  "shadowverse:Vanpi1": {
+    "NAME": "피의 여왕 밤피",
+    "DESCRIPTION": "피해를 !D! 주고 중독을 3 부여합니다. NL 방어도를 !B! 얻습니다. NL *숲박쥐 를 1장 얻습니다. NL 소멸."
+  },
+  "shadowverse:Vanpi2": {
+    "NAME": "친절한 여왕 밤피",
+    "DESCRIPTION": "피해를 !D! 주고 막히지 않은 피해만큼 체력을 회복합니다. NL 방어도를 !B! 얻습니다. NL *숲박쥐 를 1장 얻습니다. NL 소멸."
+  },
+  "shadowverse:Vanpi": {
+    "NAME": "어두운 밤의 공부 밤피",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 모든 캐릭터가 체력을 2 잃습니다. 숲박쥐를 1장 얻습니다. NL 복수 상태라면 대신 결단: *친절한 *여왕 *밤피 또는 *피의 *여왕 *밤피 1장을 얻습니다. 그 카드의 비용이 이번 턴 0이 됩니다.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL 모든 캐릭터가 체력을 2 잃습니다. 숲박쥐를 1장 얻습니다. NL 복수 상태라면 대신 결단: *친절한 *여왕 *밤피+ 또는 *피의 *여왕 *밤피+ 1장을 얻습니다. 그 카드의 비용이 이번 턴 0이 됩니다."
+  },
+  "shadowverse:Volteo": {
+    "NAME": "향락의 지배인 볼테오",
+    "DESCRIPTION": "내 뽑을 카드더미에 중복되는 카드가 없다면: 내 턴 종료시 골드를 !M! 얻고 판금갑옷을 8 얻고 뽑을 카드더미의 공격 카드를 무작위로 2장 사용합니다."
+  },
+  "shadowverse:ShowdownDemon": {
+    "NAME": "쇼다운 데몬",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 카드를 2장 버립니다. NL 무작위로 *기동 *이륜차 또는 *마도 *장갑차 1장을 얻습니다. 그 카드의 비용이 이번 턴 0이 됩니다. NL 다음 내 턴 시작에 카드를 2장 뽑습니다."
+  },
+  "shadowverse:BatNoise": {
+    "NAME": "박쥐의 초음파",
+    "DESCRIPTION": "*숲박쥐 1장을 얻습니다. NL 광란 상태가 아니라면 체력을 1 잃습니다. 광란 상태라면 대신 *숲박쥐+ 를 손에 넣고 카드를 1장 뽑습니다.NL 소멸.",
+    "UPGRADE_DESCRIPTION": "*숲박쥐 1장을 얻습니다. NL 광란 상태가 아니라면 체력을 1 잃습니다. 광란 상태라면 대신 *숲박쥐+ 를 손에 넣고 카드를 1장 뽑습니다."
+  },
+  "shadowverse:ShadowDevil": {
+    "NAME": "음영의 악마 모리아나",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 복수 상태라면 *진화 *포인트 2장과 *기적 1장을 얻습니다."
+  },
+  "shadowverse:MaskedMayhem": {
+    "NAME": "복면의 투사 샤란제아",
+    "DESCRIPTION": "피해를 !D! 주고 중독을 !M! 부여합니다. NL 갈망 상태라면 피해를 2배로 줍니다."
+  },
+  "shadowverse:Ayre": {
+    "NAME": "회백색 표범 아일",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 카드를 !M! 장, 또는 손이 가득 찰 때까지 뽑습니다."
+  },
+  "shadowverse:Lucius": {
+    "NAME": "뱀파이어 학살자 루시우스",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 내 잃은 체력만큼 추가 피해를 줍니다.(최대 19 추가피해) NL 강화 3: 대신 내 현재체력과 최대체력의 차이만큼 피해를 줍니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL 내 잃은 체력만큼 추가 피해를 줍니다.(최대 19 추가피해) NL 강화 3: 대신 내 현재체력과 최대체력의 차이만큼 피해를 줍니다."
+  },
+  "shadowverse:SilverboltHail": {
+    "NAME": "은화살 난사",
+    "DESCRIPTION": "무작위 적에게 피해를 !D! 만큼 !M! 번 줍니다."
+  },
+  "shadowverse:ArkDaemon": {
+    "NAME": "방주의 마신",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 복수 상태라면 내 뽑을 카드더미에서 가장 비용이 높은 공격 카드를 사용합니다. 복수 상태가 아니라면 내 체력이 절반이 되도록 체력을 잃고 [E] [E] 를 얻습니다."
+  },
+  "shadowverse:Archdemon": {
+    "NAME": "몰살의 대악마",
+    "DESCRIPTION": "가속화 0: 카드를 1장 뽑습니다. 이번 전투동안 *몰살의 *대악마 의 비용을 1 감소시킵니다. NL NL ----------------- NL NL 피해를 !D! 줍니다. NL 공격받을때마다, 방어도가 남아있다면 피해를 !M! 도돌려주고 다음 턴 시작에 방어도를!M! 얻습니다."
+  },
+  "shadowverse:Executioner": {
+    "NAME": "마계의 처형인",
+    "DESCRIPTION": "피해를 !D! 주고 방어도를 !B! 얻습니다. NL 내 뽑을 카드 더미에 서로 이름이 다른 카드가 10종류 이상 있다면, 피해량과 방어도를 !M! 증가시킵니다."
+  },
+  "shadowverse:BelphometCard": {
+    "NAME": "아이어론의 지배자 벨포메트",
+    "DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL 내 덱의 모든 기계 카드를 소멸시키고, 소멸시킨 만큼 *살육의 *티시포네 , *흥분의 *알렉트 , *분노의 *메가이라 를 뽑을 카드더미에 넣습니다.",
+    "UPGRADE_DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL 내 덱의 모든 기계 카드를 소멸시키고, 소멸시킨 만큼 *살육의 *티시포네+ , *흥분의 *알렉트+ , *분노의 *메가이라+ 를 뽑을 카드더미에 넣습니다."
+  },
+  "shadowverse:BelphometCard2": {
+    "NAME": "천지의 침략자 벨포메트",
+    "DESCRIPTION": "기계. NL 융합: 기계. NL 방어도를 !B! 얻습니다. NL 융합된 카드 1장당 이하의 효과를 무작위로 발동합니다.: NL *차단의 *촉수 1장을 얻습니다 NL *유린의 *촉수 1장을 얻습니다. NL 힘과 민첩을 3 얻고, 다음 턴 시작에 카드를 3장 추가로 뽑습니다."
+  },
+  "shadowverse:BelphometCard3": {
+    "NAME": "궁극의 창조자 벨포메트",
+    "DESCRIPTION": "기계. NL 융합: 기계. NL 융합할때, 그게 2번째나 4번째 융합이었다면 에너지를 1 소모해 *차단의 *촉수 를 얻습니다. 3번째나 5번째라면 에너지를 1 소모해 *유린의 *촉수 를 얻습니다.  NL NL ---------- NL NL 방어도를 !B! 얻습니다. NL *살육의 *재생 *티시포네 를 얻습니다. 1장 이상 융합되었다면, *흥분의 *재림 *알렉트 를 얻습니다. 2장 이상 융합되었다면, *분노의 *재현 *메가이라 를 얻습니다."
+  },
+  "shadowverse:TisiphoneCard": {
+    "NAME": "살육의 티시포네",
+    "DESCRIPTION": "기계. NL 피해를 !D! 만큼 2번 줍니다."
+  },
+  "shadowverse:MegaeraCard": {
+    "NAME": "분노의 메가이라",
+    "DESCRIPTION": "기계. NL 모든 적에게 피해를 !D! 줍니다. NL 방어도를 !B! 얻습니다."
+  },
+  "shadowverse:AlectorCard": {
+    "NAME": "흥분의 알렉토",
+    "DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL *제조용 *기계 를 2장 얻습니다. NL 힘과 민첩을 !M! 얻습니다."
+  },
+  "shadowverse:AssaultTentacle": {
+    "NAME": "유린의 촉수",
+    "DESCRIPTION": "기계. NL 피해를 !D! 줍니다. NL 유언: 이 카드가 소멸되면, 무작위 적에게 피해를 !M! 줍니다. NL 소멸."
+  },
+  "shadowverse:ArmoredTentacle": {
+    "NAME": "차단의 촉수",
+    "DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL 유언: 이 카드가 소멸되면, 체력을 !M! 회복합니다. NL 소멸."
+  },
+  "shadowverse:NeoTisiphone": {
+    "NAME": "살육의 재생 티시포네",
+    "DESCRIPTION": "기계. NL 피해를 !D! 만큼 2번 줍니다. NL 버퍼를 1 얻습니다. NL 소멸."
+  },
+  "shadowverse:NeoAlector": {
+    "NAME": "흥분의 재림 알렉트",
+    "DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL 금속화를 !M! 얻습니다. NL 다음 턴 시작에 카드를 !M! 장 더 뽑고 힘과 민첩을 !M! 얻습니다. NL 소멸."
+  },
+  "shadowverse:NeoMegaera": {
+    "NAME": "분노의 재현 메가이라",
+    "DESCRIPTION": "기계. NL 흐릿함을 1 얻습니다. NL 다음 내 턴 시작에 체력을 6 회복하고, 손패의 모든 카드를 강화하고, 기적 1장을 얻고, 모든 적에게 피해를 !M! 줍니다. NL 소멸."
+  },
+  "shadowverse:CrimsonWar": {
+    "NAME": "진홍의 전쟁 라우라",
+    "DESCRIPTION": "보존. NL 피해를 !D! 줍니다. NL 이 카드가 갈망 상태에소 보존 될 때마다, 이 카드는 이하의 효과를 순서대로 하나씩 얻습니다. NL 1.막히지 않은 피해만큼 체력을 회복합니다. NL 2. 피해를 2배로 합니다. NL 3. 모든 적에게 !M! 만큼 추가 피해를 줍니다. 복수 상태라면 이 추가 피해가 2배가 됩니다 NL NL 소멸."
+  },
+  "shadowverse:ImmoralDesire": {
+    "NAME": "배덕의 욕구",
+    "DESCRIPTION": "공격 카드를 둘 선택합니다. NL 첫번째 카드에게 이하의 효과를 부여합니다: 유언: 이 카드가 소멸되면 모든 적에게 이 카드의 원래 공격력만큼 피해를 줍니다.NL 두번째 카드에게 이하의 효과를 부여합니다: 유언: 이 카드가 소멸되면, 이 카드의 원래 방어도만큼 임시 체력을 얻습니다.NL (둘을 선택해야 사용 가능) NL 소멸."
+  },
+  "shadowverse:DimensionCut": {
+    "NAME": "차원 절단",
+    "DESCRIPTION": "피해를 !D! 줍니다. 공명 상태라면 추가로 !M! 피해를 줍니다."
+  },
+  "shadowverse:AnalyzeArtifact": {
+    "NAME": "분석의 아티팩트",
+    "DESCRIPTION": "AF. NL 피해를 !D! 줍니다. NL 유언: 이 카드가 소멸되면 카드를 !M! 장 뽑습니다. NL 소멸."
+  },
+  "shadowverse:AncientArtifact": {
+    "NAME": "고대의 아티팩트",
+    "DESCRIPTION": "AF. NL 피해를 !D! 줍니다. NL 소멸."
+  },
+  "shadowverse:MysticArtifact": {
+    "NAME": "신비의 아티팩트",
+    "DESCRIPTION": "AF. NL 방어도를 !B! 얻습니다. NL 카드를 !M! 장 뽑습니다. NL 소멸."
+  },
+  "shadowverse:RadiantArtifact": {
+    "NAME": "빛의 아티팩트",
+    "DESCRIPTION": "AF. NL 피해를 !D! 줍니다. NL 유언: 이 카드가 소멸되면, 공명 상태가 아니라면 카드를 !M! 장 뽑고, 공명 상태라면 뽑을 카드 더미에서 무작위 아티팩트 카드 1장을 가져옵니다. NL 소멸."
+  },
+  "shadowverse:TraceArtifact": {
+    "NAME": "증식의 아티팩트",
+    "DESCRIPTION": "AF. NL 방어도를 !B! 만큼 2번 얻습니다. NL 소멸."
+  },
+  "shadowverse:PrimeArtifact": {
+    "NAME": "프라임 아티팩트",
+    "DESCRIPTION": "AF. NL 피해를 !D! 줍니다. 방어도를 !B! 얻습니다. NL 유언: 이 카드가 소멸되면, 다음 내 턴의 시작에 이 카드의 복사본을 얻습니다. NL 소멸."
+  },
+  "shadowverse:ProtectArtifact": {
+    "NAME": "방어의 아티팩트",
+    "DESCRIPTION": "AF. NL 방어도를 !B! 얻습니다. NL 소멸."
+  },
+  "shadowverse:EnProtectArtifact": {
+    "NAME": "방어의 아티팩트",
+    "DESCRIPTION": "AF. NL 방어도를 !B! 얻습니다. NL 약화를 !M! 부여합니다. NL 소멸."
+  },
+  "shadowverse:EdgeArtifact": {
+    "NAME": "척결의 아티팩트",
+    "DESCRIPTION": "AF. NL 피해를 !D! 줍니다. NL 가해진 피해만큼 체력을 회복합니다. NL 소멸."
+  },
+  "shadowverse:BlitzArtifact": {
+    "NAME": "공습의 아티팩트",
+    "DESCRIPTION": "AF. NL 피해를 !D! 줍니다. NL 유언: 이 카드가 소멸되면, 모든 적에게 피해를 !M! 줍니다. NL 소멸."
+  },
+  "shadowverse:GuardFormGolem": {
+    "NAME": "방어형 골렘",
+    "DESCRIPTION": "AF. NL 방어도를 !B! 얻습니다. NL 강화 2: 방어도를 2배로 얻습니다. NL 소멸."
+  },
+  "shadowverse:StrikeFormGolem": {
+    "NAME": "공격형 골렘",
+    "DESCRIPTION": "AF. NL 이 카드는 타격으로 간주됩니다. NL 피해를 !D! 줍니다. NL 강화 2: 피해를 2배 줍니다. NL 소멸."
+  },
+  "shadowverse:SpineArtifact": {
+    "NAME": "스피네의 아티팩트",
+    "DESCRIPTION": "AF. NL 피해를 !D! 주고 방어도를 !B! 얻습니다. NL 유언: 이 카드가 소멸되면, 공명 상태가 아니라면 카드를 !M! 장 뽑고, 공명 상태라면 뽑을 카드 더미에서 무작위 아티팩트 카드 1장을 가져옵니다. NL 소멸."
+  },
+  "shadowverse:Puppet": {
+    "NAME": "꼭두각시 인형",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 휘발성. NL 소멸."
+  },
+  "shadowverse:MagisteelLion": {
+    "NAME": "마법강철 사자",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL *고대의 *아티팩트 !M! 장을 뽑을 카드 더미에 넣습니다."
+  },
+  "shadowverse:Acceleratium": {
+    "NAME": "가속장치",
+    "DESCRIPTION": "카운트다운 3: 이 능력을 잃습니다. NL 아티팩트 카드를 사용할 때마다 [E]를 얻습니다. NL 아티팩트 카드를 2장 사용할 때마다 *공허 를 버린 카드더미에 섞어넣습니다."
+  },
+  "shadowverse:AugmentationBestowal": {
+    "NAME": "기계 해방",
+    "DESCRIPTION": "이번 턴 아티팩트 카드를 사용할 때마다 [E]를 얻고 카드를 !M! 장 뽑습니다. NL 휘발성. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "이번 턴 아티팩트 카드를 사용할 때마다 [E]를 얻고 카드를 !M! 장 뽑습니다. NL 소멸."
+  },
+  "shadowverse:ParadigmShift": {
+    "NAME": "패러다임 시프트",
+    "DESCRIPTION": "보존. NL 아티팩트 카드를 사용할때마다 비용 -1. NL 결단: *방어의 *아티팩트 , *척결의 *아티팩트 , *공습의 *아티팩트 중 1장을 얻습니다. 그 카드의 비용이 이번 턴 0이 됩니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 아티팩트 카드를 사용할때마다 비용 -1. NL 결단: *방어의 *아티팩트+ , *척결의 *아티팩트+ , *공습의 *아티팩트+ 중 1장을 얻습니다. 그 카드의 비용이 이번 턴 0이 됩니다. NL 소멸."
+  },
+  "shadowverse:Automation": {
+    "NAME": "자동장치",
+    "DESCRIPTION": "결단 2: *분석의 *아티팩트, *고대의 *아티팩트 , *신비의 *아티팩트 , *빛의 *아티팩트 중 선택한것들을 각각 2장씩 뽑을 카드 더미에 넣습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "결단 2: *분석의 *아티팩트, *고대의 *아티팩트 , *신비의 *아티팩트 , *빛의 *아티팩트 중 선택한것들을 각각 2장씩 뽑을 카드 더미에 넣습니다."
+  },
+  "shadowverse:Synchronization": {
+    "NAME": "아티팩트 공명",
+    "DESCRIPTION": "결단: *분석의 *아티팩트, *증식의 *아티팩트, *빛의 *아티팩트 , *패러다임 *시프트 중 1장을 골라 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "결단: *분석의 *아티팩트, *증식의 *아티팩트, *빛의 *아티팩트 , *패러다임 *시프트 중 1장을 골라 얻습니다."
+  },
+  "shadowverse:ArtifactScan": {
+    "NAME": "아니팩트 스캔",
+    "DESCRIPTION": "소멸된 서로 다른 아티팩트 카드를 손으로 가져옵니다. 이번 전투에서 아티팩트 카드를 6종류 이상 사용했다면, 가져온 카드들의 비용을 0으로 만듭니다. NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "소멸된 서로 다른 아티팩트 카드를 손으로 가져옵니다. 이번 전투에서 아티팩트 카드를 6종류 이상 사용했다면, 가져온 카드들의 비용을 0으로 만듭니다."
+  },
+  "shadowverse:Biofabrication": {
+    "NAME": "생명 양산",
+    "DESCRIPTION": "손의 아티팩트 1장을 골라 이번 턴 그 비용을 1 감소시킵니다. NL 선택한 카드의 복사본을 뽑을 카드 더미에 !M! 장 섞어넣습니다. NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "손의 아티팩트 1장을 골라 이번 턴 그 비용을 1 감소시킵니다. NL 선택한 카드의 복사본을 뽑을 카드 더미에 !M! 장 섞어넣습니다."
+  },
+  "shadowverse:Icarus": {
+    "NAME": "이카루스",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL *고대의 *아티팩트 !M! 장을 뽑을 카드 더미에 넣습니다."
+  },
+  "shadowverse:IronStaffMechanic": {
+    "NAME": "강철 지팡이 기계술사",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL *신비의 *아티팩트 !M! 장을 뽑을 카드 더미에 넣습니다."
+  },
+  "shadowverse:KnowerOfHistory": {
+    "NAME": "역사를 아는 자",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL *프라임 *아티팩트 !M! 장을 뽑을 카드 더미에 넣습니다."
+  },
+  "shadowverse:RoboticUser": {
+    "NAME": "무선 로봇 조종사",
+    "DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL *패러다임 *시프트 1장을 얻습니다."
+  },
+  "shadowverse:ArtifactCall": {
+    "NAME": "아티팩트 콜",
+    "DESCRIPTION": "무작위 아티팩트 카드 !M! 장을 뽑을 카드더미에서 가져옵니다. 공명 상태라면 1장 더 가져옵니다."
+  },
+  "shadowverse:NilpotentEntity": {
+    "NAME": "허수 물체",
+    "DESCRIPTION": "카운트다운 1: 이 능력을 잃습니다. NL 4 이상의 피해를 받으려고 하면 피해를 3만 받습니다. NL 손에 아티팩트 카드가 1장 이상 있다면, 그중 무작위로 1장을 소멸시키고 이 카드의 카운트다운에 +1 합니다. NL 휘발성."
+  },
+  "shadowverse:DeusExMachina": {
+    "NAME": "데우스 엑스 마키나",
+    "DESCRIPTION": "아티팩트 카드를 사용할 때 마다 [E]를 얻습니다. NL 턴 종료시 공명 상태라면 다음 턴 시작에 카드를 2장 뽑습니다.NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "아티팩트 카드를 사용할 때 마다 [E]를 얻습니다. NL 턴 종료시 공명 상태라면 다음 턴 시작에 카드를 2장 뽑습니다."
+  },
+  "shadowverse:NewOrder": {
+    "NAME": "이계의 섭리",
+    "DESCRIPTION": "뽑을 카드더미를 소멸시킵니다. NL *신비의 *아티팩트 , *빛의 *아티팩트 , *프라임 *아티팩트 를 10장씩 뽑을 카드 더미에 넣습니다."
+  },
+  "shadowverse:Tolerance": {
+    "NAME": "앱솔루트 톨러런스",
+    "DESCRIPTION": "보존. NL 이 카드가 보존될때마다 이 카드의 비용을, 이번 턴 사용한 공격 카드의 비용 총합+사용한 공격 카드 수만큼 감소시킵니다. NL 피해를 !D! 줍니다. NL 취약과 약화를 !M! 부여합니다."
+  },
+  "shadowverse:Enforcer": {
+    "NAME": "기계병",
+    "DESCRIPTION": "기계. NL 내 손에 다른 기계 카드가 있었다면 피해를 !D! 줍니다. NL 유언: 이 카드가 사용되거나 소멸되면, *수리 *모드 와 *제조용 *기계 를 1장씩 얻습니다."
+  },
+  "shadowverse:MegaEnforcer": {
+    "NAME": "대형 기계병",
+    "DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL 내 손에 다른 기계 카드가 있다면 피해를 !D! 주고 카드를 1장 뽑습니다. NL 다른 기계 카드가 2장 이상 있다면 *진화 *포인트 와 *기적 을 1장씩 얻습니다"
+
+  },
+  "shadowverse:Invasion": {
+    "NAME": "전율의 침략",
+    "DESCRIPTION": "기계. NL 모든 적에게 피해를 !D! 줍니다. NL 강화 3: *차단의 *촉수 1장과 *유린의 *촉수 1장을 얻고, 뽑을 카드 더미에서 무작위 기계 카드를 가져옵니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "기계. NL 모든 적에게 피해를 !D! 줍니다. NL 강화 3: *차단의 *촉수+ 1장과 *유린의 *촉수+ 1장을 얻고, 뽑을 카드 더미에서 무작위 기계 카드를 가져옵니다. NL 소멸."
+  },
+  "shadowverse:Armadillo": {
+    "NAME": "기갑 아르마딜로",
+    "DESCRIPTION": "기계 / 자연. NL 방어도를 !B! 얻습니다. NL 유언: 이 카드가 사용되거나 소멸되면, *제조용 *기계 1장과 *수리 *모드 1장을 얻습니다."
+  },
+  "shadowverse:AerialCraft": {
+    "NAME": "에어리얼 크래프트",
+    "DESCRIPTION": "기계. NL 피해를 !D! 줍니다. NL 이 피해가 막히지 않았다면 이번 턴 내 손의 모든 기계 카드의 비용을 1 감소시킵니다.NL 강화 3: 피해를 2배로 줍니다."
+  },
+  "shadowverse:LasershellTortoise": {
+    "NAME": "광선포 거대 거북",
+    "DESCRIPTION": "기계 / 자연. NL 방어도를 !B! 얻습니다. NL 기계 또는 자연 카드 1장을 선택합니다.그 카드의 비용이 이번 턴 0이 됩니다."
+  },
+  "shadowverse:Bearminator": {
+    "NAME": "종말의 기계 곰",
+    "DESCRIPTION": "기계 / 자연. NL 피해를 !D! 줍니다. NL 내 손의 다른 기계 카드 수만큼 에너지를 얻습니다. NL 이번 턴 종료시 남은 에너지가 있다면 모든 적에게 피해를 !M! 줍니다."
+  },
+  "shadowverse:Prototype": {
+    "NAME": "시제품 기계병",
+    "DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL *증식의 *아티팩트 !M!장을 뽑을 카드 더미에 넣습니다."
+  },
+  "shadowverse:MagnaGiant": {
+    "NAME": "마그나 자이언트",
+    "DESCRIPTION": "기계. NL 가속화 0: 뽑을 카드 더미에서 무작위 기계 카드를 가져옵니다. NL NL --------------------- NL NL 방어도를 !B! 얻습니다. NL 모든 적에게 피해를 !M! 줍니다.(이번 전투에서 사용한 스킬이 아닌 기계 카드 수만큼 줍니다)",
+    "EXTENDED_DESCRIPTION": [
+      " NL (",
+      " 사용한 스킬이 아닌 기계 카드.)"
+    ]
+  },
+  "shadowverse:MagnaZero": {
+    "NAME": "마그나 제로",
+    "DESCRIPTION": "기계. NL 모든 적에게 피해를 !D! 줍니다. NL 이번 전투에서 공명이 10회 이상 켜졌었다면 추가로 !M! 피해를 줍니다. NL If 20번 이상 켜졌었다면 2배의 피해를 줍니다..",
+    "EXTENDED_DESCRIPTION": [
+      " NL ( 공명이 총 ",
+      " 번 켜졌었습니다.)"
+    ]
+  },
+  "shadowverse:Yuwan": {
+    "NAME": "차원의 극복자 유안",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 손에 있는 카드 1장을 소멸시키고, 그 복사본을 뽑을 카드 더미에 넣은 다음 카드를 1장 뽑습니다. NL 이번 전투에서 공명이 5번 이상 켜졌었다면 다음 턴 시작에 무작위 적에게 피해를 !M! 줍니다. NL 10번 이상 켜졌었다면 피해를 1번 더 줍니다.",
+    "UPGRADE_DESCRIPTION":"방어도를 !B! 얻습니다. NL 손에 있는 카드 1장을 소멸시키고, 그 복사본을 뽑을 카드 더미에 넣은 다음 카드를 1장 뽑습니다. NL 이번 전투에서 공명이 5번 이상 켜졌었다면 다음 턴 시작에 무작위 적에게 피해를 !M! 줍니다. NL 10번 이상 켜졌었다면 피해를 1번 더 줍니다. NL *분석의 *아티팩트 1장을 얻습니다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL ( 공명이 총 ",
+      " 번 켜졌었습니다.)"
+    ]
+  },
+  "shadowverse:Paracelsus": {
+    "NAME": "파라켈수스",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 결단: NL *공격형 *골렘 또는 *방어형 *골렘 중 하나를 얻습니다."
+  },
+  "shadowverse:Windup": {
+    "NAME": "태엽 다시감기",
+    "DESCRIPTION": "*꼭두각시 *인형 !M! 장을 얻습니다. NL 공명 상태라면 1장 더 얻습니다."
+  },
+  "shadowverse:PuppeteerStrings": {
+    "NAME": "인형사의 실",
+    "DESCRIPTION": "모든 적에게 피해를 !D! 줍니다. NL *꼭두각시 *인형 !M! 장을 얻습니다."
+  },
+  "shadowverse:InfinityPuppeteer": {
+    "NAME": "완벽주의 인형사",
+    "DESCRIPTION": "뽑을 카드 더미에 *꼭두각시 *인형 !M! 장을 넣습니다. NL 턴 시작시 카드를 1장 더 뽑습니다.",
+    "UPGRADE_DESCRIPTION": "선천성. NL 뽑을 카드 더미에 *꼭두각시 *인형 !M! 장을 넣습니다. NL 턴 시작시 카드를 1장 더 뽑습니다."
+  },
+  "shadowverse:WhiteArtifact": {
+    "NAME": "하얀 파괴의 아티팩트",
+    "DESCRIPTION": "AF / 보존. NL 소멸을 가진 공격 카드가 사용될 때마다, 이 카드의 비용 -1. NL 턴 시작시 방어도를 !M! 얻습니다. NL *검은 *파괴의 *아티팩트 1장을 얻습니다. NL 소멸되지 않습니다."
+  },
+  "shadowverse:BlackArtifact": {
+    "NAME": "검은 파괴의 아티팩트",
+    "DESCRIPTION": "AF / 보존. NL 소멸을 가진 공격 카드가 사용될 때마다, 이 카드의 비용 -1. NL 턴 종료시 모든 적에게 !M! 피해. NL 이번 전투에서 *하얀 *파괴의 *아티팩트 를 사용했었다면 피해를 2배로 줍니다. NL 소멸되지 않습니다."
+  },
+  "shadowverse:OmenOfDestruction": {
+    "NAME": "파괴의 재앙 리셰나",
+    "DESCRIPTION": "인공물을 !M! 얻습니다. NL *하얀 *파괴의 *아티팩트 를 1장 얻습니다.",
+    "UPGRADE_DESCRIPTION": "선천성. NL 인공물을 !M! 얻습니다. NL *하얀 *파괴의 *아티팩트 를 1장 얻습니다."
+  },
+  "shadowverse:OmenOfDestruction2": {
+    "NAME": "종연의 파괴 리셰나",
+    "DESCRIPTION": "인공물을 !M! 얻습니다. NL 결단: *신약 *백의 *노래 , *신약 *흑의 *노래 , *종연의 *독창 중 하나를 골라 얻습니다. NL 소멸된 카드중 공격 카드가 10장 이상이라면, 결단하는 대신 모두 가지고 옵니다. NL 소생 0, 소생 0, 소생 1. NL 소멸."
+  },
+  "shadowverse:Licht": {
+    "NAME": "톱니바퀴를 돌리는 자 리히트",
+    "DESCRIPTION": "*꼭두각시 *인형 을 사용할 때마다 방어도를 !M! 얻습니다. NL *꼭두각시 *인형 을 1장 얻습니다."
+  },
+  "shadowverse:PuppetRoom": {
+    "NAME": "인형의 방",
+    "DESCRIPTION": "카운트다운 !M! \b 이 능력을 잃습니다. NL *꼭두각시 *인형 을 얻습니다. NL 턴 시작시 *꼭두각시 *인형 을 1장 얻습니다."
+  },
+  "shadowverse:Victoria": {
+    "NAME": "빅토리아",
+    "DESCRIPTION": "피해를 !D! 만큼 2번 줍니다. NL 소멸."
+  },
+  "shadowverse:Roid": {
+    "NAME": "로이트",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 소멸."
+  },
+  "shadowverse:HeartlessBattle": {
+    "NAME": "마음없는 결투",
+    "DESCRIPTION": "결단: *빅토리아 또는 *로이드 중 하나를 골라 얻습니다.  NL *꼭두각시 *인형 을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "결단: *빅토리아+ 또는 *로이드+ 중 하나를 골라 얻습니다.  NL *꼭두각시 *인형+ 을 얻습니다."
+  },
+  "shadowverse:YuwanFury": {
+    "NAME": "유안의 분노",
+    "DESCRIPTION": "*신비의 *아티팩트 1장과 *고대의 *아티팩트 1장을 얻습니다. 그 카드들의 비용이 이번 턴 0이 됩니다."
+  },
+  "shadowverse:BelphometCrackdown": {
+    "NAME": "벨포메트의 탄압",
+    "DESCRIPTION": "*살육의 *티시포네 , *흥분의 *알렉트 , *분노의 *메가이라 중 무작위로 1장을 얻습니다. 그 카드에 보존을 부여합니다."
+  },
+  "shadowverse:RebelAgainstFate": {
+    "NAME": "운명을 향한 반란",
+    "DESCRIPTION": "결단: NL 이 카드를 *유안의 *분노 또는 *벨포메트의 *탄압 중 1가지로 사용합니다. NL 공명 상태라면 둘 다 발동합니다. NL 소멸."
+  },
+  "shadowverse:PurgationBlade": {
+    "NAME": "숙청의 검",
+    "DESCRIPTION": "소멸된 카드 수만큼 힘을 얻습니다. NL 소멸."
+  },
+  "shadowverse:Maisha": {
+    "NAME": "숙청의 영웅 메이시아",
+    "DESCRIPTION": "카드를 !M! 장 뽑습니다. NL *숙청의 *검 1장을 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "카드를 !M! 장 뽑습니다. NL *숙청의 *검+ 1장을 얻습니다. NL 소멸."
+  },
+  "shadowverse:Maisha2": {
+    "NAME": "숙청의 그릇 메이시아",
+    "DESCRIPTION": "소멸된 공격 카드 수 만큼 피해를 줍니다. NL 이 카드를 쓰고 남은 에너지가 3 이상이라면, 피해를 !M! 번 줍니다."
+  },
+  "shadowverse:Metaproduction": {
+    "NAME": "제조술",
+    "DESCRIPTION": "뽑을 카드 더미에 *분석의 *아티팩트 1장을 넣습니다. NL 다음 턴 시작에 카드를 !M!장 뽑습니다."
+  },
+  "shadowverse:DeviceTuner": {
+    "NAME": "장치 조율사",
+    "DESCRIPTION": "손에 있는 아티팩트 카드 1장의 복사본을 얻습니다. NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "손에 있는 아티팩트 카드 1장의 복사본을 얻습니다."
+  },
+  "shadowverse:ApostleOfDestruction": {
+    "NAME": "파괴의 사도",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 손에 이쓴ㄴ 카드 한장을 골라 소멸시킵니다. 소멸된 카드의 복사본을 얻고 그 비용을 1 감소시킵니다."
+  },
+  "shadowverse:DiscipleOfDestruction": {
+    "NAME": "파괴의 신자",
+    "DESCRIPTION": "카드를 1장 소멸시킵니다.NL 카드를 !M! 장 뽑습니다."
+  },
+  "shadowverse:StringMaster": {
+    "NAME": "실의 달인",
+    "DESCRIPTION": "1턴에 1번, *꼭두각시 *인형 을 사용하면 *꼭두각시 *인형 2장을 얻습니다."
+  },
+  "shadowverse:Concentrate": {
+    "NAME": "운기조식",
+    "DESCRIPTION": "카드를 1장 뽑습니다. NL 이번 턴 에너지를 남기고 턴을 종료하면, 방어도를 5 얻고 다음 내 턴 시작에 카드를  !M!장 뽑습니다."
+  },
+  "shadowverse:DominateFortress": {
+    "NAME": "거병 요새",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 공명 상태라면 방어도를 2배 얻습니다."
+  },
+  "shadowverse:GadgetUser": {
+    "NAME": "기계장치 개발자",
+    "DESCRIPTION": "카드를 1장 버리고 카드를 !M!장 뽑습니다. NL *고대의 *아티팩트 1장을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "카드를 2장 버리고 카드를 !M!장 뽑습니다. NL *고대의 *아티팩트 1장을 얻습니다."
+  },
+  "shadowverse:Karula": {
+    "NAME": "무예를 통달한 자 카르라",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 에너지를 남기고 이번 턴을 종료하면 힘과 민첩을 !M! 얻고, 무작위 적에게 약화와 취약을 3 부여합니다."
+  },
+  "shadowverse:CurseOfPurgation": {
+    "NAME": "숙청의 저주",
+    "DESCRIPTION": "이 카드가 소멸되면 다시 손으로 돌아옵니다. NL 이 카드가 덱에서 제거되면 죽습니다.NL 카드를 사용할때, 그게 이번 턴 8번째로 사용한 카드라면 턴 종료시까지 이하의 효과를 얻습니다 : 카드를 뽑을 때 마다 체력을 2 잃습니다."
+  },
+  "shadowverse:Uno": {
+    "NAME": "마리오네트 우노",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 흐릿함을 1 얻습니다. NL 소멸."
+  },
+  "shadowverse:Due": {
+    "NAME": "마리오네트 두에",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 턴 시작시, 이 카드와 *마리오네트 *우노 가 둘 다 소멸되어있다면, 둘 다 소멸된 카드 더미에서 지우고 *마리오네트 *트레 1장을 얻습니다. 이번 턴 그 카드의 비용이 0이 됩니다. NL 소멸."
+  },
+  "shadowverse:Tre": {
+    "NAME": "마리오네트 트레",
+    "DESCRIPTION": "피래를 !D! 만큼 2번 줍니다. NL 유언: 이 카드가 소멸되면, *마리오네트 *우노 와 *마리오네트 *두에 를 버린 카드 더미에 넣습니다. NL 소멸."
+  },
+  "shadowverse:Orchid1": {
+    "NAME": "복수의 인형 오르키스",
+    "DESCRIPTION": "손의 꼭두각시 인형 1장을 소멸시키고 *마리오네트 *우노 를 얻습니다. NL 다른 *꼭두각시 *인형 들이 있었다면 전부 소멸시키고, 소멸된 인형 하나당 *마리오네트 *두에 를 1장씩 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "손의 꼭두각시 인형 1장을 소멸시키고 *마리오네트 *우노+ 를 얻습니다. NL 다른 *꼭두각시 *인형 들이 있었다면 전부 소멸시키고, 소멸된 인형 하나당 *마리오네트 *두에+ 를 1장씩 얻습니다.NL 소멸."
+  },
+  "shadowverse:Orchid2": {
+    "NAME": "결의의 인형 오르키스",
+    "DESCRIPTION": "손의 꼭두각시 인형 1장을 소멸시키고 *로이드 를 얻습니다.NL 체력을 3 회복합니다.",
+    "UPGRADE_DESCRIPTION": "손의 꼭두각시 인형 1장을 소멸시키고 *로이드+ 를 얻습니다.NL 체력을 3 회복합니다"
+  },
+  "shadowverse:Orchid": {
+    "NAME": "인형 소녀 오르키스",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 손의 *꼭두각시 *인형 이 2장 이하였다면 3장을 얻습니다.NL 3장 이상이었다면, 결단 : 이 카드를 *복수의 *인형 *오르키스 나 *결의의 *인형 *오르키스 로 사용합니다.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL 손의 *꼭두각시 *인형 이 2장 이하였다면 3장을 얻습니다.NL 3장 이상이었다면, 결단 : 이 카드를 *복수의 *인형 *오르키스+ 나 *결의의 *인형 *오르키스+ 로 사용합니다."
+  },
+  "shadowverse:OrchidNeo": {
+    "NAME": "링크 하트 오르키스",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 결단: *로이드 를 1장 얻고 힘과 민첩을 1씩 얻거나, *마리오네트 *우노 와 *마리오네트 두에 를 1장씩 얻습니다. NL 내 손에 *꼭두각시 *인형 이 있었다면 그중 하나를 소멸시키고 *마리오네트 *트레 를 얻습니다."
+  },
+  "shadowverse:MagiTrainCard": {
+    "NAME": "마도 열차",
+    "DESCRIPTION": "보존 / 탑승: 비용 2 이상. NL 방어도를 !B! 얻습니다. NL 모든 적에게 취약과 약화를 !M! 부여합니다. NL *혼돈의 *지배자 *아이시렌드링 을 제외하고 손의 다른 모든 카드를 소멸시킵니다."
+  },
+  "shadowverse:ICCard": {
+    "NAME": "혼돈의 지배자 아이시렌드링",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL *마도 *열차 를 1장 얻습니다. 사용하기 전까지 그 카드의 비용이 0이 됩니다. NL 이 카드를 사용하고 에너지가 1 이상 남아있다면, *거역의 *대가 를 1장 얻습니다. NL 직접소환 : 턴 시작에 소멸된 공격 카드가 20장 이상이라면 이 카드를 손으로 가져오고 비용을 0으로 만듭니다."
+  },
+  "shadowverse:DeathPenalty": {
+    "NAME": "거역의 대가",
+    "DESCRIPTION": "무작위 적이 이번 턴 힘을 !M! 잃습니다. NL 이 적이 죽으면 10골드를 얻습니다. NL 소멸."
+  },
+  "shadowverse:UnnamedDetermination": {
+    "NAME": "이름없는 결의",
+    "DESCRIPTION": "*진화 *포인트 와 *기적 을 얻습니다. NL 공격 카드가 10장 이상 소멸되었다면 카드를 !M! 장 뽑습니다."
+  },
+  "shadowverse:Noa": {
+    "NAME": "복수의 인형사 노아",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL *꼭두각시 *인형 을 얻습닌다. NL 손에 있는 *꼭두각시 *인형 의 피해량을 !M! 증가시킵니다. "
+  },
+  "shadowverse:MindDivider": {
+    "NAME": "무심으로 베는 자",
+    "DESCRIPTION": "손에 있는 공격 카드 1장당 [E] 를 얻습니다. NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "손에 있는 공격 카드 1장당 [E] 를 얻습니다. "
+  },
+  "shadowverse:Ines": {
+    "NAME": "암운의 무녀 에네스",
+    "DESCRIPTION": "공명이 켜질때마다 모든 적에게 피해를 !M! 줍니다."
+  },
+  "shadowverse:DollsOwner": {
+    "NAME": "인형극사",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL *꼭두각시 *인형 을 !M! 장 얻습니다."
+  },
+  "shadowverse:DestructionRefrain": {
+    "NAME": "파괴의 노랫소리",
+    "DESCRIPTION": "손의 카드 1장을 소멸시킵니다. NL 모든 적에게 !M! 에 소멸된 카드의 비용을 곱한만큼 피해를 줍니다.(최대 10배)."
+  },
+  "shadowverse:Modest": {
+    "NAME": "앱솔루트 모디스트",
+    "DESCRIPTION": "턴 종료시 , 무작위 적에게 이번 전투에서 소멸된 아티팩트 카드의 종류 수의 !M!배만큼 피해를 줍니다."
+  },
+  "shadowverse:Ralmia": {
+    "NAME": "음속의 기계 라라미아",
+    "DESCRIPTION": "기계 / AF. NL 피해를 !D! 줍니다. NL 아티팩트 카드를 사용할 때, 이 효과를 얻습니다: NL 내 남은 에너지가 2 이상이라면, 에너지를 2 소모해 이번 전투에서 소멸된 아티팩트 카드 종류 수를 피해량에 곱합니다."
+  },
+  "shadowverse:Ralmia2": {
+    "NAME": "아스트로 윙 라라미아",
+    "DESCRIPTION": "기계 / AF. NL 피해를 !D! 줍니다. NL 소멸된 아티팩트가 6종류 이상이라면, 모든 적에게 피해를 !M! 줍니다."
+  },
+  "shadowverse:EnRalmia": {
+    "NAME": "음속의 기계 라라미아",
+    "DESCRIPTION": "기계 / AF. NL 피해를 !D! 줍니다. NL 아티팩트 카드를 사용할 때마다 힘을 !M! 얻습니다. 이 카드는 힘의 영향을 4배로 받습니다."
+  },
+  "shadowverse:OmniscientKaiser": {
+    "NAME": "카이저 인사이트",
+    "DESCRIPTION": "가속화 0: 손의 카드 1장을 제외하고 모두 소멸시킵니다. 소멸된 카드만큼 카드를 뽑습니다. NL NL --------------------- NL NL 방어도를 !B! 얻습니다. NL 모든 적에게 피해를 !D! 줍니다. NL 흐릿함을 1 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "가속화 0: 손의 카드 1장을 제외하고 모두 소멸시킵니다. 소멸된 카드 수+1 만큼 카드를 뽑습니다. NL NL --------------------- NL NL 방어도를 !B! 얻습니다. NL 모든 적에게 피해를 !D! 줍니다. NL 흐릿함을 1 얻습니다. NL 소멸."
+  },
+  "shadowverse:Spine": {
+    "NAME": "신비의 수호자 스피네",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL *스피네의 *아티팩트 1장을 얻습니다. NL '아티팩트 카드를 사용할 때마다 무작위 적에게 피해를 !M! 줍니다'의 효과를 얻습니다."
+  },
+  "shadowverse:Spine2": {
+    "NAME": "종말의 파수꾼 스피네",
+    "DESCRIPTION": "가속화 0: *스피네의 *아티팩트 1장을 얻습니다. NL  NL --------------------- NL  NL 방어도를 !B! 얻습니다. NL 결단 2: *척결의 *아티팩트 , *공습의 *아티팩트 , *방어의 *아티팩트 중고른 2장을 얻고 그 비용을 0으로 합니다. NL 소멸된 아티팩트 카드 수가 6종류 이상이라면, 결단하는 대신 3장 모두 얻습니다. NL 소멸."
+  },
+  "shadowverse:Miriam": {
+    "NAME": "반역의 생명 미리암",
+    "DESCRIPTION": "가속화 0: 카드를 1장 파괴하고 *패러다임 *시프트 를 얻습니다. NL  NL --------------------- NL  NL 방어도를 !B! 얻습니다. NL 공명 상태라면 [E]를 얻습니다.  NL 이번 턴 아티팩트 카드가 소멸될 때마다 모든 적에게 피해를 !M! 줍니다."
+  },
+  "shadowverse:CannonHermitCrab": {
+    "NAME": "캐논 소라게",
+    "DESCRIPTION": "자연. NL 캐논_소라게 를 소환합니다."
+  },
+  "shadowverse:MultiarmedArtifact": {
+    "NAME": "다완의 아티팩트",
+    "DESCRIPTION": "AF. NL 방어도를 !B! 얻습니다. NL 서로 다른 아티팩트 6종류가 소멸되어있다면, 추가로 방어도를 !B! 얻고 무작위 적에게 피해를 !D! 줍니다."
+  },
+  "shadowverse:ArtifactImpulse": {
+    "NAME": "아티팩트 충격파",
+    "DESCRIPTION": "소멸된 아티팩트가 5종류 이하라면 *고대의 *아티팩트 1장을 얻습니다.  NL 6종류 이상이면 무작위 적에게 피해를 !D! 줍니다."
+  },
+  "shadowverse:ServantOfDarkness": {
+    "NAME": "암옥의 사자 재스퍼",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL *방어형 *골렘 을 1장 얻고 그 비용을 0으로 합니다.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL *방어형 *골렘 과 *공격형 *골렘 을 1장씩 얻고 그 비용을 0으로 합니다."
+  },
+  "shadowverse:GenesisArtifact": {
+    "NAME": "제네시스 아티팩트",
+    "DESCRIPTION": "AF. NL 방어도를 !B! 얻습니다. NL *가드 *아티팩트 와 *디펜스 *아티팩트 를 얻고 비용을 0으로 합니다. NL 서로 다른 아티팩트 6종류 이상이 소멸되었다면,*캐논 *아티팩트 2장을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "AF. NL 방어도를 !B! 얻습니다. NL *가드 *아티팩트+ 와 *디펜스 *아티팩트+ 를 얻고 비용을 0으로 합니다. NL 서로 다른 아티팩트 6종류 이상이 소멸되었다면,*캐논 *아티팩트+ 2장을 얻습니다."
+  },
+  "shadowverse:GuardArtifact": {
+    "NAME": "가드 아티팩트",
+    "DESCRIPTION": "AF. NL 방어도를 !B! 얻습니다. NL 인공물을 !M! 얻습니다. NL 소멸."
+  },
+  "shadowverse:DefectArtifact": {
+    "NAME": "디펜스 아티팩트",
+    "DESCRIPTION": "AF. NL 방어도를 !B! 얻습니다. NL 파워_피해_면역 을 !M! 얻습니다. NL 소멸."
+  },
+  "shadowverse:CannonArtifact": {
+    "NAME": "캐논 아티팩트",
+    "DESCRIPTION": "AF. NL 피해를 !D! 줍니다. NL 무작위 적에게 손에 있는 아티팩트 카드 수에 !M!을 곱한것 만큼 피해를 줍니다. NL 소멸."
+  },
+  "shadowverse:Zwei": {
+    "NAME": "살육 인형 츠바이",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL *빅토리아 를 얻습니다.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL *빅토리아+ 를 얻습니다."
+  },
+  "shadowverse:Zwei2": {
+    "NAME": "레저넌스 하트 츠바이",
+    "DESCRIPTION": "가속화 1: *꼭두각시 *인형 을 2장 얻습니다. NL  NL --------------------- NL  NL 방어도를 !B! 얻습니다. NL *빅토리아 를 1장 얻습니다. NL *꼭두각시 *인형 을 2장 얻습니다."
+  },
+  "shadowverse:Wretches": {
+    "NAME": "이형",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 유언: 이 카드가 소멸되면 *기동 *이륜차 를 얻습니다. NL 소멸."
+  },
+  "shadowverse:VoidRealize": {
+    "NAME": "이형의 구체화",
+    "DESCRIPTION": "보존. NL *이형 3장을 얻습니다. NL 소멸된 공격카드 수가 20장 이상이라면, 이형이 주는 피해를 2배로 합니다.NL 소멸."
+  },
+  "shadowverse:Illganeau": {
+    "NAME": "방황하는 공허 이르간느",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 유언: 이 카드가 소멸되면, 이 카드의 복사본을 1장 얻고 민첩을 1 얻습니다. NL 민첩이 3 이상이라면 대신 *이형의 *구체화 를 얻습니다.NL 소멸."
+  },
+  "shadowverse:NightVampire": {
+    "NAME": "밤하늘의 흡혈귀",
+    "DESCRIPTION": "*숲박쥐 를 둘 얻습니다. NL 숲박쥐가 주는 피해를 2배로 합니다. NL 광란 상태라면 숲박쥐를 사용할 떄마다 체력을 2 회복하고 대상에게 중독을 2 부여합니다. 아니라면 체력을 1씩 잃습니다. NL 이 카드를 내고 남은 에너지가 3 이상이라면 *어둠을 *먹는 *박쥐 를 1장 버린 카드 더미에 넣습니다.",
+    "UPGRADE_DESCRIPTION": "선천성. NL *숲박쥐 를 둘 얻습니다. NL 숲박쥐가 주는 피해를 2배로 합니다. NL 광란 상태라면 숲박쥐를 사용할 떄마다 체력을 2 회복하고 대상에게 중독을 2 부여합니다. 아니라면 체력을 1씩 잃습니다. NL 이 카드를 내고 남은 에너지가 3 이상이라면 *어둠을 *먹는 *박쥐 를 버린 카드 더미에 넣습니다."
+  },
+  "shadowverse:ShadowCommander": {
+    "NAME": "섀도우 커맨더",
+    "DESCRIPTION": "대상이 하려는 공격과 같은 피해를 입힙니다. NL *섀도우 *솔저 를 1장 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "대상이 하려는 공격의 2배만큼 피해를 입힙니다. NL *섀도우 *솔저 를 1장 얻습니다. NL 소멸."
+  },
+  "shadowverse:ShadowSoldier": {
+    "NAME": "섀도우 솔저",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 흐릿함을 1 얻습니다. NL 소멸."
+  },
+  "shadowverse:BrandOfMorningStar": {
+    "NAME": "재앙의 각인",
+    "DESCRIPTION": "1턴에 1번, 공격 카드를 소멸 시킬 때 마다 *섀도우 *솔저 를 1장 얻습니다. NL 공격 카드가 15장 이상 소멸되었다면, 대신 *섀도우 *커맨더 를 1장 얻습니다.",
+    "UPGRADE_DESCRIPTION": "선천성. 1턴에 1번, 공격 카드를 소멸 시킬 때 마다 *섀도우 *솔저 를 1장 얻습니다. NL 공격 카드가 15장 이상 소멸되었다면, 대신 *섀도우 *커맨더 를 1장 얻습니다."
+  },
+  "shadowverse:TheWheelOfFortune": {
+    "NAME": "《운명의 수레바퀴》슬로스",
+    "DESCRIPTION": "공명 상태가 아니라면 힘과 민첩을 1 얻고 모든 적에게 약화를 3 부여합니다. NL 공명 상태라면 3턴간, 이하의 능력중 아직 발동하지 않은 것을 발동합니다.: NL 힘을 2 잃게 합니다 NL 1턴간 기절시킵니다 NL *분석의 *아티팩트 를 얻습니다. NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "힘과 민첩을 1 얻고 모든 적에게 약화를 3 부여합니다. NL 3턴간, 이하의 능력중 아직 발동하지 않은 것을 발동합니다.: NL 힘을 2 잃게 합니다 NL 1턴간 기절시킵니다 NL *분석의 *아티팩트 를 얻습니다. NL 휘발성."
+  },
+  "shadowverse:Scavenge": {
+    "NAME": "폐품 수집",
+    "DESCRIPTION": "소멸된 공격 카드 !M! 장을 골라 손으로 가져옵니다.NL 소멸."
+  },
+  "shadowverse:EnhancedPuppet": {
+    "NAME": "개량형 꼭두각시 인형",
+    "DESCRIPTION": "이 카드는 *꼭두각시 *인형 으로 취급됩니다. NL 피해를 !D! 줍니다. NL 휘발성. NL 소멸."
+  },
+  "shadowverse:RevisedExperiment": {
+    "NAME": "개량 실험",
+    "DESCRIPTION": "*개량형 *꼭두각시 *인형 1장을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "*개량형 *꼭두각시 *인형+ 1장을 얻습니다."
+  },
+  "shadowverse:Sleipnir": {
+    "NAME": "슬레이프니르",
+    "DESCRIPTION": "보존. NL 탑승: 1. NL 피해를 !D! 주고 방어도를 !B! 얻습니다. NL 약화와 취약을 !M! 부여하고 , 흐릿함을 1 얻습니다."
+  },
+  "shadowverse:Odin": {
+    "NAME": "황혼의 신창 오딘",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 불가침을 1 얻습니다. NL 슬레이프니르 1장을 얻고, 사용하기 전까지 그 비용을 0으로 합니다. NL 소멸."
+  },
+  "shadowverse:SevensForceSorcerer": {
+    "NAME": "세븐 포스 소서러",
+    "DESCRIPTION": "한 턴에 스킬 카드를 7개 사용하면 모든 적을 죽이고 이 효과를 잃습니다.",
+    "UPGRADE_DESCRIPTION": "한 턴에 스킬 카드를 7개 사용하면 모든 적을 죽이고 이 효과를 잃습니다. NL 이번 턴 비용이 1인 스킬카드의 비용이 0이 됩니다."
+  },
+  "shadowverse:EnRadiantAngel": {
+    "NAME": "광명의 천사",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 체력을 !M! 회복합니다. NL 다음 턴 시작에 카드를 1장 뽑습니다."
+  },
+  "shadowverse:EnAncientLionSpirit": {
+    "NAME": "고대의 사자 성령",
+    "DESCRIPTION": "모든 적에게 피해를 !D! 줍니다."
+  },
+  "shadowverse:EnPriestOfTheCudgel": {
+    "NAME": "사교의 사제",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 취약을 !M! 부여합니다. NL 당신의 뽑을 카드더미 맨 위의 카드를 소멸시킵니다."
+  },
+  "shadowverse:EnArdentSister": {
+    "NAME": "열렬한 수녀",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 힘을 !M! 얻습니다."
+  },
+  "shadowverse:EnHeavenlyHound": {
+    "NAME": "천계의 충견",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 판금갑옷을 !M! 얻습니다."
+  },
+  "shadowverse:EnDarkPriest": {
+    "NAME": "암흑 사제",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 약화와 손상을 !M! 부여합니다."
+  },
+  "shadowverse:EnThemisDecree": {
+    "NAME": "테미스의 심판",
+    "DESCRIPTION": "상대방의 뽑을 카드더미에 있는 공격 카드를 모두 소멸시킵니다. NL 소멸."
+  },
+  "shadowverse:KMRGaze": {
+    "NAME": "키무라의 시선",
+    "DESCRIPTION": "이 카드를 뽑을 때 손에 있던 스킬카드의 비용을 이번 턴동안 10 늘립니다. NL 휘발성."
+  },
+  "shadowverse:WUP": {
+    "NAME": "천지침략",
+    "DESCRIPTION": "기계 / 자연. NL 이 카드를 뽑으면 *지배자의 *폭압 2장을 얻습니다. NL 내 덱에 기계나 자연 카드가 없으면 1장 더 얻습니다. NL 휘발성."
+  },
+  "shadowverse:Death": {
+    "NAME": "죽음의 카드",
+    "DESCRIPTION": "내 턴 종료시 뽑을 카드 더미가 비어있다면 죽습니다."
+  },
+  "shadowverse:Altersphere": {
+    "NAME": "차원 왜곡",
+    "DESCRIPTION": "카드를 내면 손에 있는 무작위 카드를 소멸시키고 무작위 카드로 대체합니다. NL 휘발성."
+  },
+  "shadowverse:Rowen": {
+    "NAME": "로웬형",
+    "DESCRIPTION": "턴 종료시 *검은 *용의 *저주 를 얻습니다."
+  },
+  "shadowverse:CurseOfTheBlackDragon": {
+    "NAME": "검은 용의 저주",
+    "DESCRIPTION": "보존. NL 턴 종료시 체력을 1 잃습니다."
+  },
+  "shadowverse:ShadowBahmut": {
+    "NAME": "섀도우 바하무트",
+    "DESCRIPTION": "방어불가능한 !D! 피해를 줍니다. NL 모든 적이 힘과 민첩을 제외한 버프를 모두 잃습니다. NL 모든 하수인을 처치합니다."
+  },
+  "shadowverse:ShiningValkyrie": {
+    "NAME": "샤이닝 발키리",
+    "DESCRIPTION": " *요정 !M! 장을 얻습니다. NL 턴 시작시 *요정 을 얻습니다. NL *요정 을 낼 때마다 힘을 2, 민첩을 1 얻습니다."
+  },
+  "shadowverse:LegendSwordCommander": {
+    "NAME": "레전드 소드 커맨더",
+    "DESCRIPTION": "바리케이드를 얻습니다. NL 금속화를 !M! 얻습니다."
+  },
+  "shadowverse:DeadSoulTaker": {
+    "NAME": "데들리 소울 테이커",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 소멸된 공격 카드 1장을 골라 손에 넣고 비용을 0으로 만듭니다. NL 사령술 10: 손이 가득 찰때까지 이번 전투에서 사용했던 공격 카드를 손으로 가져옵니다. 그 카드들은 비용이 0이 되고 소멸합니다."
+  },
+  "shadowverse:AbyssDoomLord": {
+    "NAME": "어비스 둠 로드",
+    "DESCRIPTION": "손에 있는 카드를 원하는 만큼 소멸시킵니다. NL 피해를 !D! 줍니다. NL 체력이 1이 되도록 피해를 받습니다.  NL 잃은 체력의 2배만큼 피해를 줍니다. NL 다음 턴까지 아무 피해도 받지 않습니다. NL 소멸."
+  },
+  "shadowverse:KMRsPresent": {
+    "NAME": "키무라의 선물",
+    "DESCRIPTION": "보존. NL 결단: *전설의 *카드 1장을 선택해 얻습니다. NL 소멸."
+  },
+  "shadowverse:ShadowversePain": {
+    "NAME": "섀버는 고통",
+    "DESCRIPTION": "섀도우버스 카드를 사용할 때마다 체력을 1 잃습니다."
+  },
+  "shadowverse:Betray": {
+    "NAME": "섀버는 날 배신했다!",
+    "DESCRIPTION": "내 턴 종료시 이 카드를 복사해 버린 카드더미에 넣습니다. NL 소멸."
+  },
+  "shadowverse:CalamityMode": {
+    "NAME": "컬래미티 모드'",
+    "DESCRIPTION": "내 덱을 *컬래미티 *덱 으로 됴체합니다. NL 소멸."
+  },
+  "shadowverse:JusticeTyrant": {
+    "NAME": "저스티스 타이런트",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL *월드 *엘리미네이터 를 4체 소환합니다. NL 상대에게 *진화 *포인트 를 하나 줍니다. NL 상대가 다음 턴 카드를 1장 덜 뽑습니다."
+  },
+  "shadowverse:ShangrilaBreaker": {
+    "NAME": "샹그릴라 브레이커",
+    "DESCRIPTION": "피해를 !D! 만큼 10 번 줍니다. NL 방어도를 !B! 얻습니다."
+  },
+  "shadowverse:CalamityEnd": {
+    "NAME": "컬래미티 엔드",
+    "DESCRIPTION": "상대를 죽입니다."
+  },
+  "shadowverse:EnDeath": {
+    "NAME": "죽음의 카드",
+    "DESCRIPTION": "뽑으면 죽습니다."
+  },
+  "shadowverse:SacredLion": {
+    "NAME": "세이크리드 레오",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 버퍼를 1 얻습니다. NL 이번 턴 공격받을때마다 !M! 만큼 피해를 돌려줍니다. NL 상대방의 손에 *사자의 *축복 1장을 줍니다."
+  },
+  "shadowverse:LionBless": {
+    "NAME": "사자의 축복",
+    "DESCRIPTION": "소멸된 공격 카드 1장을 골라 손으로 가져오고 그 비용을 0으로 만듭니다. NL 적에게 방어도를 24 주고 화염 장벽을 6 줍니다. NL 휘발성. NL 소멸."
+  },
+  "shadowverse:EnHereticalInquiry": {
+    "NAME": "영창:이단심문",
+    "DESCRIPTION": "무작위 저주 !M! 장을 상대의 뽑을 카드 더미에 섞어넣습니다."
+  },
+  "shadowverse:EnAcolyteLight": {
+    "NAME": "파마의 빛",
+    "DESCRIPTION": "적의 방어도가 20이하라면 모든 방어도를 없앱니다. NL 그렇지 않다면 피해를 20 줍니다. NL 줄어든 방어도만큼 체력을 회복합니다."
+  },
+  "shadowverse:EnSacredPlea": {
+    "NAME": "영창:성스러운 소원",
+    "DESCRIPTION": "다음 턴 카드를 !M! 뽑습니다."
+  },
+  "shadowverse:EnLucifer": {
+    "NAME": "루시퍼",
+    "DESCRIPTION": "결단: 체력을 !M! 회복하거나 모든 적에게 피해를 !D! 줍니다."
+  },
+  "shadowverse:EnMagisteelLion": {
+    "NAME": "마법강철 사자",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL *분석의 *아티팩트 2장을 뽑을 카드더미에 섞어넣습니다."
+  },
+  "shadowverse:EnAnalyzeArtifact": {
+    "NAME": "분석의 아티팩트",
+    "DESCRIPTION": "AF. NL 피해를 !D! 줍니다. NL 다음 턴 시작에 카드를 1장 뽑습니다. NL 소멸."
+  },
+  "shadowverse:TheGreatCreation": {
+    "NAME": "위대한 창조",
+    "DESCRIPTION": "힘과 민첩을 !M! 얻습니다. NL *고대의 *아티팩트 1장을 얻습니다."
+  },
+  "shadowverse:EnAncientAmplifier": {
+    "NAME": "고대의 증폭기",
+    "DESCRIPTION": "적에게 이하의 효과를 부여합니다 : 무작위 카드 !M!장을 뽑을 카드더미에 섞어넣습니다. 매 턴 카드를 1장 적게 뽑습니다. NL !M! 턴간 지속됩니다. "
+  },
+  "shadowverse:EnMysticArtifact": {
+    "NAME": "신비의 아티팩트",
+    "DESCRIPTION": "AF. NL 방어도를 !B! 얻습니다. NL 다음 턴 시작에 카드를 1장 뽑습니다."
+  },
+  "shadowverse:EnGenesisArtifact": {
+    "NAME": "제네시스 아티팩트",
+    "DESCRIPTION": "AF. NL 방어도를 !B! 얻습니다. NL *가드 *아티팩트 와 *디펜스 *아티팩트 를 1장씩 얻습니다. NL *캐논 *아티팩트 2장을 얻습니다."
+  },
+  "shadowverse:EnSpineLucille": {
+    "NAME": "신비의 유물 스피네와 루틸",
+    "DESCRIPTION": "AF. NL 모든 적에게 피해를 !D! 줍니다."
+  },
+  "shadowverse:DeathNote": {
+    "NAME": "사신의 수첩",
+    "DESCRIPTION": "카운트다운 !M!: 이 효과를 잃습니다. NL 내 턴 종료시, 내 최대 에너지보다 비용이 낮은, 최대 비용의 공격 카드 하나를 무작위로 사용합니다."
+  },
+  "shadowverse:Strike_R": {
+    "NAME": "타격",
+    "DESCRIPTION": "피해를 !D! 줍니다."
+  },
+  "shadowverse:Defend_R": {
+    "NAME": "수비",
+    "DESCRIPTION": "방어도를 !B! 얻습니다."
+  },
+  "shadowverse:OathlessKnight": {
+    "NAME": "자유 기사",
+    "DESCRIPTION": "피해를 !D! 줍니다 NL 기사 하나를 소환합니다."
+  },
+  "shadowverse:GildedBoots": {
+    "NAME": "황금 신발",
+    "DESCRIPTION": "가장 오른쪽의 추종자에게 !M!번 명령합니다. NL 소멸."
+  },
+  "shadowverse:GildedNecklace": {
+    "NAME": "황금 목걸이",
+    "DESCRIPTION": "가장 오른쪽의 추종자를 NL +1/+ !M!. NL 소멸."
+  },
+  "shadowverse:GildedBlade": {
+    "NAME": "황금 단검",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 소멸."
+  },
+  "shadowverse:GildedGoblet": {
+    "NAME": "황금 잔",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 소멸."
+  },
+  "shadowverse:GrandAcquisition": {
+    "NAME": "완벽한 약탈",
+    "DESCRIPTION": "결단 : *황금 *단검 , *황금 *잔 , *황금 *신발 , *황금 *목걸이 중 하나를 손으로 가져옵니다. NL 강화 3: 고르는 대신 전부 가져오고 [E] [E]를 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "결단 : *황금 *단검 , *황금 *잔 , *황금 *신발 , *황금 *목걸이 중 하나를 손으로 가져옵니다. NL 강화 3: 고르는 대신 전부 가져오고 [E] [E]를 얻습니다."
+  },
+  "shadowverse:SageCommander": {
+    "NAME": "현명한 사령관",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. 모든 추종자에게 +0/+1."
+  },
+  "shadowverse:DanceOfUsurpation": {
+    "NAME": "약탈의 춤",
+    "DESCRIPTION": "모든 적에게 피해를 !D! 줍니다. 무작위 보물 2장을 얻습니다."
+  },
+  "shadowverse:UsurpingSpineblade": {
+    "NAME": "약탈의 사검",
+    "DESCRIPTION": "피해를 !D! 줍니다. 무작위 보물 1장을 얻습니다."
+  },
+  "shadowverse:WeeMerchantsAppraisal": {
+    "NAME": "상인의 감별",
+    "DESCRIPTION": "*진화 *포인트 , *황금 *잔 , *황금 *목걸이 를 1장씩 얻습니다.",
+    "UPGRADE_DESCRIPTION": "*진화 *포인트 , *황금 *잔 , *황금 *목걸이 를 1장씩 얻습니다. NL 카드를 !M! 장 뽑습니다."
+  },
+  "shadowverse:DiscipleOfUsurpation": {
+    "NAME": "약탈의 신자",
+    "DESCRIPTION": "잠복. 1/1. NL 지속 효과: 턴 종료시 공격력의 2배만큼 방어도를 얻고 체력을 1 잃습니다. NL 보물을 사용할 때마다 방어도를 !M! 얻습니다."
+  },
+  "shadowverse:ApostleOfUsurpation": {
+    "NAME": "약탈의 사도",
+    "DESCRIPTION": "보물을 사용할 때마다 무작위 적에게 피해를 !M! 줍니다.",
+    "UPGRADE_DESCRIPTION": "보물을 사용할 때마다 무작위 적에게 피해를 !M! 줍니다.NL 무작위 보물 1장을 얻습니다."
+  },
+  "shadowverse:Octrice": {
+    "NAME": "약탈의 재앙 옥토리스",
+    "DESCRIPTION": "힘을 2 얻습니다. 상대는 힘을 2 잃습니다. 골드를 !M! 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "힘을 2 얻습니다. 상대는 힘을 2 잃습니다. 골드를 !M! 얻습니다. NL 무작위 보물 2장을 얻습니다. NL 소멸."
+  },
+  "shadowverse:Octrice2": {
+    "NAME": "공허의 약탈 옥토리스",
+    "DESCRIPTION": "상대방이 가진 무작위 버프를 하나 얻습니다. NL 골드를 !M! 얻습니다. NL *공허의 *잔광 을 얻습니다. NL 무작위 보물을 1장 얻습니다. NL 연계 8: 이 카드를 뽑을때 *진화 *포인트 를 1장 얻습니다. NL 소멸."
+  },
+  "shadowverse:Mars": {
+    "NAME": "열화의 맹장 마르스",
+    "DESCRIPTION": "추종자를 소환할 때마다 그 추종자를 + !M! /+ !M!. NL 휘발성",
+    "UPGRADE_DESCRIPTION": "선천성. NL 추종자를 소환할 때마다 그 추종자를 + !M! /+ !M!."
+  },
+  "shadowverse:Sera": {
+    "NAME": "여명의 소녀 세라",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. 인공물을 1 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. 인공물을 1 얻습니다. NL 방패 수호자 를 3명 소환하고 체력을 !M! 회복합니다. NL 소멸."
+  },
+  "shadowverse:MistolinaBayleon": {
+    "NAME": "광휘의 상징 미스트리나&베이리온",
+    "DESCRIPTION": "자연. NL 피해를 !D! 주고 방어도를 !B! 얻습니다. NL 손에 파워 카드가 있다면 그중 하나를 소멸시키고, 이번 전투동안 !M! 만큼 추가 피해와 방어도를 얻습니다.소멸된 카드가 *나테라의 *신목 이었다면 [E] [E] 를 얻습니다."
+  },
+  "shadowverse:TemperedMana": {
+    "NAME": "용맹의 마나",
+    "DESCRIPTION": "자연. NL *나테라의 *신목 1장을 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "자연. NL *나테라의 *신목 1장을 얻습니다."
+  },
+  "shadowverse:WhitePaladin": {
+    "NAME": "은백의 성기사",
+    "DESCRIPTION": "방패 수호자 를 셋 소환합니다. NL 소멸."
+  },
+  "shadowverse:EmpressOfSerenity": {
+    "NAME": "평온의 여왕",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. 방패 수호자 를 하나 소환합니다. NL 강화 2: 둘 더 소환합니다."
+  },
+  "shadowverse:ShieldPhalanx": {
+    "NAME": "지키는 자들",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 방패 수호자 와 기사 를 하나씩 소환합니다.NL ",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL 방어도를 !B! 얻습니다. NL 방패 수호자 와 기사 를 하나씩 소환합니다.NL 연계 15: 방패 수호자 대신 최전선의_선봉장 1장을 소환합니다.(제한) NL ",
+    "EXTENDED_DESCRIPTION": [
+      "(연계: ",
+      ")"
+    ]
+  },
+  "shadowverse:DramaticRetreat": {
+    "NAME": "극적인 후퇴",
+    "DESCRIPTION": "카드를 !M! 장 뽑습니다. NL 손에서 공격 카드를 한장 골라 뽑을 카드 더미에 넣습니다. NL 사용하기 전까지 그 카드의 비용이 0이 됩니다.",
+    "EXTENDED_DESCRIPTION": [
+      "공격 카드가 없다!"
+    ]
+  },
+  "shadowverse:CatAdmiral": {
+    "NAME": "고양이 제독",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 연계 7: 1번 반복합니다.. NL ",
+    "UPGRADE_DESCRIPTION": "사용한 후 강화해제 됩니다. NL 피해를 !D! 줍니다. NL 연계 7: 1번 더 줍니다. NL 방패_수호자 와 중갑_기사 를 하나씩 소환합니다. NL ",
+    "EXTENDED_DESCRIPTION": [
+      "(연계: ",
+      ")"
+    ]
+  },
+  "shadowverse:FrenziedCorpsmaster": {
+    "NAME": "박멸의 사령관",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 연계의 2배만큼 피해를 줍니다. NL 가속화 1: 철갑_기사 하나와 중갑_기사 하나를 소환합니다. NL ",
+    "EXTENDED_DESCRIPTION": [
+      "(피해를 ",
+      " 줍니다.)"
+    ]
+  },
+  "shadowverse:FortressStrategist": {
+    "NAME": "왕성의 사령관",
+    "DESCRIPTION": "스킬 카드를 사용하면 손에 있는 공격 카드를 무작위로 !M! 장 강화합니다.",
+    "UPGRADE_DESCRIPTION": "선천성. NL 스킬 카드를 사용하면 손에 있는 공격 카드를 무작위로 !M! 장 강화합니다."
+  },
+  "shadowverse:EvolutionPoint": {
+    "NAME": "진화 포인트",
+    "DESCRIPTION": "휘발성. NL 공격이나 파워 카드를 !M! 장 강화합니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 공격이나 파워 카드를 !M! 장 강화합니다. NL 소멸."
+  },
+  "shadowverse:EnragedGeneral": {
+    "NAME": "격노한 맹장",
+    "DESCRIPTION": "추종자 수 만큼 [E] 를 얻습니다. NL 소멸."
+  },
+  "shadowverse:LuminousMage": {
+    "NAME": "루미너스 마법사",
+    "DESCRIPTION": "턴 시작시 *진화 *포인트 를 !M! 장 얻습니다.",
+    "UPGRADE_DESCRIPTION": "턴 시작시 *진화 *포인트 를 !M! 장 얻습니다. NL 이 카드를 뽑으면 *진화 *포인트 를 얻습니다."
+  },
+  "shadowverse:PrudentGeneral": {
+    "NAME": "심안의 원수",
+    "DESCRIPTION": "휘발성",
+    "UPGRADE_DESCRIPTION": "턴 종료시 철갑_기사 를 !M! 명 소환합니다. "
+  },
+  "shadowverse:DualbladeKnight": {
+    "NAME": "이도류 기사",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL  [E] 를 얻습니다. NL 연계 7: 이 카드를 강화합니다. NL ",
+    "UPGRADE_DESCRIPTION": "사용 후 강화해제 됩니다. NL 피해를 !D! 줍니다. NL [E] [E]를 얻습니다.",
+    "EXTENDED_DESCRIPTION": [
+      "(연계: ",
+      ")"
+    ]
+  },
+  "shadowverse:StrikeproneGuardian": {
+    "NAME": "강철봉을 든 수비병",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 연계 7: 방어도를 !M! 더 얻습니다. NL ",
+    "EXTENDED_DESCRIPTION": [
+      "(연계: ",
+      ")"
+    ]
+  },
+  "shadowverse:MonochromeEndgame": {
+    "NAME": "모노크로 엔드게임",
+    "DESCRIPTION": " 결단: 용맹한_왕_이멜라 나 NL 우아한_여왕_매그너스 를 소환합니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "용맹한_왕_이멜라 NL 와 NL 우아한_여왕_매그너스 를 소환합니다.NL 소멸."
+  },
+  "shadowverse:QueenHemera_Card": {
+    "NAME": "용맹한 왕 이멜라",
+    "DESCRIPTION": "용맹한_왕_이멜라 를 소환합니다. NL 소멸."
+  },
+  "shadowverse:QueenMagnus_Card": {
+    "NAME": "우아한 여왕 매그너스",
+    "DESCRIPTION": "우아한_여왕_매그너스 를 소환합니다. NL 소멸."
+  },
+  "shadowverse:PompousSummons": {
+    "NAME": "제멋대로 호출",
+    "DESCRIPTION": "카드를 2장 뽑습니다. NL 연계 10: !M! 장 더 뽑습니다.",
+    "EXTENDED_DESCRIPTION": [
+      "(연계: ",
+      ")"
+    ]
+  },
+  "shadowverse:FlyingMessengerSquirrel": {
+    "NAME": "날다람쥐 전령",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 카드를 1장 뽑습니다. NL 연계 10: !M! 장 더 뽑습니다.",
+    "EXTENDED_DESCRIPTION": [
+      "(연계: ",
+      ")"
+    ]
+  },
+  "shadowverse:BrothersUnited": {
+    "NAME": "위풍 있는 단결",
+    "DESCRIPTION": "자연. NL 피해를 !D! 줍니다. NL *나테라의 *신목 을 얻습니다. NL 연계 7: 피해를 !M! 더 줍니다. NL ",
+    "EXTENDED_DESCRIPTION": [
+      "(연계: ",
+      ")"
+    ]
+  },
+  "shadowverse:HonorableThief": {
+    "NAME": "정직한 도적",
+    "DESCRIPTION": "피해를 !D! 주고 약화를 !M! 부여합니다. NL *황금 *신발 을 1장 얻습니다. NL 연계 7: 이 카드를 강화합니다. NL ",
+    "UPGRADE_DESCRIPTION": "피해를 !D! 주고 약화를 !M! 부여합니다. NL *황금 *신발 을 1장 얻습니다.",
+    "EXTENDED_DESCRIPTION": [
+      "(연계: ",
+      ")"
+    ]
+  },
+  "shadowverse:FloralFencer": {
+    "NAME": "백화의 세검사",
+    "DESCRIPTION": "피해를 !D! 줍니다.",
+    "UPGRADE_DESCRIPTION": "사용후 강화해제 됩니다. NL 피해를 !D! 줍니다. NL 기사 와 철갑_기사 를 하나씩 소환합니다."
+  },
+  "shadowverse:SunnyDayEncounter": {
+    "NAME": "따사로운 만남",
+    "DESCRIPTION": "자연. NL 공격카드를 !M! 장 뽑습니다. NL 손에 자연 카드가 있다면 *나테라의 *신목 을 얻습니다. NL 연계 7: [E] 를 얻습니다. NL ",
+    "EXTENDED_DESCRIPTION": [
+      "(연계: ",
+      ")"
+    ]
+  },
+  "shadowverse:WarriorWing": {
+    "NAME": "하얀 날개의 전신 아이테르",
+    "DESCRIPTION": "뽑을 카드 더미에서 공격이나 파워 카드 1장을 골라 가져옵니다.",
+    "UPGRADE_DESCRIPTION": "사용후 강화해제 됩니다. NL 뽑을 카드 더미에서 공격이나 파워 카드 1장을 골라 가져옵니다. NL 내 모든 추종자에게 +0/+1."
+  },
+  "shadowverse:Alyaska": {
+    "NAME": "전쟁 상인 아르야스카",
+    "DESCRIPTION": "파워_피해_면역 을 1 얻습니다. NL 피해를 !D! 줍니다. NL 이 카드를 뽑으면 *진화 *포인트 를 1장 얻습니다.",
+    "UPGRADE_DESCRIPTION": "사용후 강화해제 됩니다. NL 파워_피해_면역 을 1 얻습니다. NL 피해를 !D! 줍니다. NL *최후의 *병기 를 1장 얻습니다."
+  },
+  "shadowverse:ExterminusWeapon": {
+    "NAME": "최후의 병기",
+    "DESCRIPTION": "여러번 강화가능합니다. NL 보존 NL 모든 적에게 피해를 !D! 줍니다. NL 보존될때마다 이 카드를 강화합니다. NL 소멸."
+  },
+  "shadowverse:RadicalGunslinger": {
+    "NAME": "과격한 청부업자",
+    "DESCRIPTION": "취약을 !M! 부여하고 피해를 !D! 줍니다.",
+    "UPGRADE_DESCRIPTION": "사용후 강화해제 됩니다. NL 취약을 !M! 부여하고 피해를 !D! 줍니다. NL *순종적인 *준마 를 1장 얻습니다."
+  },
+  "shadowverse:Mirin": {
+    "NAME": "꿈꾸는 사무라이 미림",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 오의 3: 1번 더 줍니다. NL 해방오의 6: 1번 더 줍니다.",
+    "EXTENDED_DESCRIPTION": [
+      "피해를 !D! 줍니다. NL 오의",
+      ": 1번 더 줍니다. NL 해방오의",
+      ": 1번 더 줍니다."
+    ]
+  },
+  "shadowverse:Seofon": {
+    "NAME": "천성검왕 시에테",
+    "DESCRIPTION": "피해를 !D! 주고 카드를 1장 뽑습니다. NL 오의 3: 손에 있는 카드를 모두 강화합니다. NL 해방오의 6: 불가침을 1 얻습니다 (제한).",
+    "EXTENDED_DESCRIPTION": [
+      "피해를 !D! 주고 카드를 1장 뽑습니다. NL 오의 ",
+      ": 손에 있는 카드를 모두 강화합니다. NL 해방오의 (제한) ",
+      ": 불가침을 1 얻습니다."
+    ]
+  },
+  "shadowverse:Eahta": {
+    "NAME": "도신 옥토",
+    "DESCRIPTION": "피해를 !D! 만큼 2번 줍니다. NL 오의 3: 이번 턴 손에 있는 모든 로얄 공격 카드들의 비용이 2 감소합니다. NL 해방오의 9: 이번 전투에서 로얄 공격 카드의 비용이 2 감소합니다(제한).",
+    "EXTENDED_DESCRIPTION": [
+      "피해를 !D! 만큼 2번 줍니다. NL 오의 ",
+      ":이번 턴 손에 있는 모든 로얄 공격 카드들의 비용이 2 감소합니다. NL 해방오의(제한) ",
+      ":이번 전투에서 로얄 공격 카드의 비용이 2 감소합니다(제한)."
+    ]
+  },
+  "shadowverse:StrokeOfConviction": {
+    "NAME": "신념의 섬광",
+    "DESCRIPTION": "결단: NL 신속의쌍검사 둘을 소환하거나,NL 무작위 적에게 피해를 !D! 주거나, NL 모든 추종자들을 +1/+1 합니다. NL NL 강화 2: 3개 모두를 발동합니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "결단: NL 신속의쌍검사 둘을 소환하거나,NL 무작위 적에게 피해를 !D! 주거나, NL 모든 추종자들을 +1/+1 합니다. NL NL 강화 2: 3개 모두를 발동합니다."
+  },
+  "shadowverse:ErikasSleight": {
+    "NAME": "에리카의 검술",
+    "DESCRIPTION": "신속의쌍검사 둘을 소환합니다. NL 소멸."
+  },
+  "shadowverse:MistolinasSwordplay": {
+    "NAME": "미스트리나의 검",
+    "DESCRIPTION": "무작위 적에게 피해를 !D! 줍니다. NL 소멸."
+  },
+  "shadowverse:BayleonsCommand": {
+    "NAME": "베이리온의 호령",
+    "DESCRIPTION": "모든 추종자를 +1/+1. NL 소멸."
+  },
+  "shadowverse:FrontlineInstructor": {
+    "NAME": "최전선의 교관",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. 가장 오른쪽의 추종자에게 +1/+0. NL 연계 10: 대신 모든 추종자에게 +1/+1. (제한).",
+    "EXTENDED_DESCRIPTION": [
+      "(연계:",
+      ")"
+    ]
+  },
+  "shadowverse:RoyalBanner": {
+    "NAME": "왕가의 깃발",
+    "DESCRIPTION": "카운트다운 !M!: 추종자를 소환할 때마다 그 추종자를 +1/+0."
+  },
+  "shadowverse:LuxbladeArriet": {
+    "NAME": "빛의 검 앙리에트",
+    "DESCRIPTION": "여러번 강화 가능. NL +1: 방어도를 !B! 얻습니다. 보존. NL +2: [E] [E]를 얻습니다. 선천성. NL +3: 힘과 민첩을 1 얻습니다. NL +4: 패가 7장이 될때까지 카드를 뽑습니다. NL +5: 체력을 !M! 회복합니다. NL 방어도를 !M! 얻습니다. 소멸.",
+    "EXTENDED_DESCRIPTION": [
+      "방어도를 !B! 얻습니다. 보존. NL ",
+      "[E] [E]를 얻습니다. 선천성. NL ",
+      "힘과 민첩을 1 얻습니다. NL ",
+      "패가 7장이 될때까지 카드를 뽑습니다. NL ",
+      "체력을 !M! 회복합니다. NL ",
+      "방어도를 !M! 얻습니다. 소멸."
+    ]
+  },
+  "shadowverse:Valdain2": {
+    "NAME": "숲의 그림자 바이디",
+    "DESCRIPTION": "자연. NL 융합: *나테라의 *신목. NL 융합된 카드 1장당 이하의 효과중 얻지 않은것을 무작위로 얻습니다: NL 피해량을 2배로 합니다. NL 방어도를 !B! 얻고 힘과 민첩을 1 얻습니다. NL 체력을 5 회복합니다. NL 무작위 적에게 피해를 !M! 줍니다. 나테라의 신목을 사용했다면 1번 반복합니다. NL 피해를 !D! 줍니다.",
+    "EXTENDED_DESCRIPTION": [
+      " Double the damage. NL ",
+      " 방어도를 !B! 얻습니다, 1 Strength and 1 Dexterity. NL ",
+      " Heal 5 HP. NL  ",
+      " 무작위 적에게 피해를 !M! 줍니다. 나테라의 신목을 사용했다면 1번 반복합니다. NL 피해를 !D! 줍니다."
+    ]
+  },
+  "shadowverse:Charlotta": {
+    "NAME": "작은 성기사 샤를로테",
+    "DESCRIPTION": "방어도를 !B! 얻습니다.",
+    "UPGRADE_DESCRIPTION": "사용후 강화해제 됩니다. NL 방어도를 !B! 얻고 민첩을 !M! 얻습니다. NL 파워_피해_면역 을 1 얻습니다."
+  },
+  "shadowverse:Latham": {
+    "NAME": "고결한 기사 레이섬",
+    "DESCRIPTION": "공격 카드를 사용할 때마다 기사 하나를 소환합니다. NL 중첩 불가. NL 휘발성",
+    "UPGRADE_DESCRIPTION": "공격 카드를 사용할 때마다 기사 하나를 소환합니다. NL 중첩 불가."
+  },
+  "shadowverse:Alwida": {
+    "NAME": "해적 여왕 알비다",
+    "DESCRIPTION": " 1턴에 !M! 번, 보물 카드를 사용할 때 마다 해적 과 바이킹 을 하나씩 소환합니다. NL 휘발성",
+    "UPGRADE_DESCRIPTION": "1턴에 !M! 번, 보물 카드를 사용할 때 마다 해적 과 바이킹 을 하나씩 소환합니다."
+  },
+  "shadowverse:Patrick": {
+    "NAME": "코뿔소 기사 패트릭",
+    "DESCRIPTION": "자연. NL 방어도를 !B! 얻습니다. 추종자가 하나 이하로 있다면 [E] [E]를 얻습니다. NL 자연 카드를 1장 뽑고 *나테라의 *신목 을 얻습니다."
+  },
+  "shadowverse:Johann": {
+    "NAME": "강철의 영웅 요한",
+    "DESCRIPTION": "기계. NL 피해를 !D! 줍니다. 이번 턴 기계 카드를 사용할 때마다 방어도를 !M! 얻습니다. NL 기계 카드를 사용할 때마다 비용 -1.",
+    "UPGRADE_DESCRIPTION": "기계. NL 피해를 !D! 줍니다. 이번 턴 기계 카드를 사용할 때마다 방어도를 !M! 얻습니다. NL 기계 카드를 사용할 때마다 비용 -1. NL 보존"
+  },
+  "shadowverse:Grayson": {
+    "NAME": "가속 검사 그레이슨",
+    "DESCRIPTION": "기계. NL 기계 카드를 사용할 때마다 모든 적에게 피해를 !M! 줍니다. NL 이 카드를 뽑으면, 이번 턴 사용한 기계 카드 하나당 [E]를 얻습니다. "
+  },
+  "shadowverse:Albert": {
+    "NAME": "레비온 영웅 알베르",
+    "DESCRIPTION": "레비온. NL 피해를 !D! 줍니다. NL 강화 3: 1번 더 줍니다. 모든 레비온 공격 카드를 뽑을 카드더미와 버린 카드더미에서 손으로 가져오고 이번 턴 그 비용을 0으로 만듭니다."
+  },
+  "shadowverse:Albert2": {
+    "NAME": "뇌멸경 알베르",
+    "DESCRIPTION": "레비온. NL 피해를 !D! 줍니다. NL 카드를 1장 파괴하고 피해를 6 더 줍니다. NL 강화 3: 피해를 1번 더 주고, 1장 파괴하는 대신 손에 있는 카드를 모두 소멸시킵니다. 피해량을 6 증가시킵니다. 모든 적에게 약화와 취약을 2 부여합니다."
+  },
+  "shadowverse:LevinScholar": {
+    "NAME": "레비온 조사단원",
+    "DESCRIPTION": "레비온. NL 방어도를 !B! 얻습니다. NL 레비온 카드를 !M! 장 뽑고 이번 턴 보존시킵니다."
+  },
+  "shadowverse:GloriousCore": {
+    "NAME": "영광의 코어",
+    "DESCRIPTION": "기계. NL 다음에 *진화 *포인트 를 사용하면 모든 추종자를 +1/+1.NL 강화 2: *진화 *포인트 1장을 얻는다.",
+    "UPGRADE_DESCRIPTION": "기계. NL 다음에 *진화 *포인트 를 사용하면 모든 추종자를 +1/+1.NL 강화 2: *진화 *포인트 2장과 *기적 을 얻는다."
+  },
+  "shadowverse:LevinBeastmaster": {
+    "NAME": "레비온 야수 조련사",
+    "DESCRIPTION": "레비온. NL 방어도를 !B! 얻습니다. NL *백호 1장을 얻습니다. ",
+    "UPGRADE_DESCRIPTION": "레비온. NL 사용후 강화해제 됩니다. NL 방어도를 !B! 얻습니다. NL *백호 3장을 얻습니다. "
+  },
+  "shadowverse:WhiteTiger": {
+    "NAME": "백호",
+    "DESCRIPTION": "레비온. NL 방어도를 !B! 얻습니다. NL 소멸. NL 보존."
+  },
+  "shadowverse:Jeno": {
+    "NAME": "레비온 맹장 제노",
+    "DESCRIPTION": "레비온. NL 레비온 카드들의 피해량과 방어도가 !M! 증가합니다."
+  },
+  "shadowverse:LevinArcher": {
+    "NAME": "레비온 궁수",
+    "DESCRIPTION": "레비온. NL 피해를 !D! 주고 취약을 !M! 부여합니다.",
+    "UPGRADE_DESCRIPTION": "레비온. NL 사용후 강화해제 됩니다. NL 피해를 !D! 주고 취약을 !M! 부여합니다. 손에 다른 레비온 카드가 있다면 1번 반복합니다."
+  },
+  "shadowverse:Lounes": {
+    "NAME": "레비온 견습 단원 루네스",
+    "DESCRIPTION": "레비온. NL 피해를 !D! 줍니다. 손의 레비온 카드 1장당 방어도를 !B! 얻습니다. NL 강화 1: 피해를 1번 더 줍니다.",
+    "EXTENDED_DESCRIPTION": [
+      "(다른 레비온 카드: ",
+      ")"
+    ]
+  },
+  "shadowverse:Cybercannoneer": {
+    "NAME": "기계화 포병",
+    "DESCRIPTION": "기계. NL 피해를 !D! 줍니다. NL 강화 2: *제조용 *기계 !M!장을 얻습니다."
+  },
+  "shadowverse:StampedingFortress": {
+    "NAME": "기계화 요새",
+    "DESCRIPTION": "기계. NL 피해를 !D! 주고 방어도를 !B! 얻습니다.",
+    "UPGRADE_DESCRIPTION": "기계. NL 사용후 강화해제 됩니다. NL 피해를 !D! 주고 방어도를 !B! 얻습니다. NL 내 손에 다른 기계 카드가 있다면 *제조용 *기계 를 !M! 장 얻습니다."
+  },
+  "shadowverse:MeetTheLevinSisters": {
+    "NAME": "레비온 시스터즈 등장!",
+    "DESCRIPTION": "레비온. NL 결단: NL *레비온 *부단장 *마임 , *레비온 마법사 *미임 , *레비온 *무투가 *메임 중 1장을 골라 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "레비온. NL Put 1 *레비온 *부단장 *마임 , *레비온 마법사 *미임 , *레비온 *무투가 *메임 을 얻습니다. NL 소멸."
+  },
+  "shadowverse:Mina": {
+    "NAME": "레비온 부단장 마임",
+    "DESCRIPTION": "레비온. NL 피해를 !D! 줍니다. 뽑을 카드 더미에서 레비온 카드 1장을 골라 가져오고, 이번 턴 보존시킵니다."
+  },
+  "shadowverse:Mona": {
+    "NAME": "레비온 마법사 미임",
+    "DESCRIPTION": "레비온. NL 방어도를 !B! 얻고 [E]를 얻습니다. NL 손에 다른 레비온 카드가 있다면 [E] 를 더 얻습니다."
+  },
+  "shadowverse:Mena": {
+    "NAME": "레비온 무투가 메임",
+    "DESCRIPTION": "레비온. NL 피해를 !D! 줍니다. NL 손에 다른 레비온 카드가 있다면 약화와 취약을  !M! 부여합니다."
+  },
+  "shadowverse:Nahtnaught": {
+    "NAME": "시체상자 여왕 나흐트 나흐트",
+    "DESCRIPTION": "*폭군의 *명령 을 1장 얻습니다.  NL 강화 2: 적으로 *나흐트의 *사병 둘을 소환합니다.NL 소멸.",
+    "UPGRADE_DESCRIPTION": "선천성. *폭군의 *명령 을 1장 얻습니다.  NL 강화 2: 적으로 *나흐트의 *사병 둘을 소환합니다.NL 소멸."
+  },
+  "shadowverse:TyrantsOrder": {
+    "NAME": "폭군의 명령",
+    "DESCRIPTION": "적을 하나 선택하고, 다른 적 모두에게 그 적의 체력만큼 피해를 줍니다. NL (최대 !M! 피해)"
+  },
+  "shadowverse:Leonidas": {
+    "NAME": "레오니다스",
+    "DESCRIPTION": "이하의 효과를 3턴 후 얻습니다 :추종자를 소환할 때마다 그 추종자를 + !M! /+ !M!. NL 체력을 잃을 때 마다 이 효과를 1턴 더 일찍 얻습니다. NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "이하의 효과를 3턴 후 얻습니다 :추종자를 소환할 때마다 그 추종자를 + !M! /+ !M!. NL 체력을 잃을 때 마다 이 효과를 1턴 더 일찍 얻습니다."
+  },
+  "shadowverse:LevinJustice": {
+    "NAME": "레비온의 정의",
+    "DESCRIPTION": "레비온. NL 이번 전투에서 사용한 레비온 카드 수의 2배만큼 피해를 줍니다.  NL *레비온 *공작 *율리우스 를 얻습니다.",
+    "UPGRADE_DESCRIPTION": "레비온. NL 이번 전투에서 사용한 레비온 카드 수의 2배만큼 피해를 줍니다.  NL *레비온 *공작 *율리우스 를 얻습니다. 그 카드의 비용이 0이 됩니다.",
+    "EXTENDED_DESCRIPTION": [
+      "(피해를 ",
+      " 줍니다)"
+    ]
+  },
+  "shadowverse:YuriusLevinDuke": {
+    "NAME": "레비온 공장 율리우스",
+    "DESCRIPTION": "레비온. NL Gain !M! Thorns."
+  },
+  "shadowverse:CaptainWalfrid": {
+    "NAME": "함장 발프리트",
+    "DESCRIPTION": "추종자를 소환할 때마다 !M! /+ !M! 합니다. NL 이 카드의 복사본을 버린 카드 더미에 넣습니다."
+  },
+  "shadowverse:Walfrid": {
+    "NAME": "하늘의 함장 발프리트",
+    "DESCRIPTION": "내 뽑을 카드 더미에 타격이 아닌 로얄 클래스 공격 카드만 있다면,추종자를 소환할 때마다 !M! /+ !M!. NL 이 카드의 복사본을 버린 카드더미에 넣습니다"
+  },
+  "shadowverse:Reinhardt": {
+    "NAME": "개혁자 라인하르트",
+    "DESCRIPTION": "공격받을때마다 힘과 민첩을 !M! 얻습니다. 막히지 않은 피해를 받으면 이 효과를 잃고 체력을 5 회복합니다. NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "공격받을때마다 힘과 민첩을 !M! 얻습니다. 막히지 않은 피해를 받으면 이 효과를 잃고 체력을 5 회복합니다."
+  },
+  "shadowverse:Garven": {
+    "NAME": "종격의 강철 팔 가르반",
+    "DESCRIPTION": "피해를 !D! 만큼 !M! 줍니다. NL 이번 전투에서 사용한 카드의 타입 종류만큼 반복합니다. (기계, 자연, 레비온, 마나리아, 아티팩트, 연악).",
+    "EXTENDED_DESCRIPTION": [
+      "(피해를",
+      " 번 줍니다.)"
+    ]
+  },
+  "shadowverse:Kagemitsu": {
+    "NAME": "무패의 검성 카게미츠",
+    "DESCRIPTION": "여러번 강화 가능. NL 피해를 !D! 줍니다. NL 소멸. NL 치명타라면 이 카드를 강화합니다. NL 유언: 다음 턴 비용이 0이고 똑같이 강화된 *로스트 *사무라이 *카게미츠 를 얻습니다."
+  },
+  "shadowverse:LostSamurai": {
+    "NAME": "로스트 사무라이 카게미츠",
+    "DESCRIPTION": "여러번 강화 가능. NL 피해를 !D! 줍니다. NL 소멸. NL +5: 모든 적에게 피해를 10 줍니다. NL +7: 대신 20 줍니다."
+  },
+  "shadowverse:Alexander": {
+    "NAME": "알렉산더",
+    "DESCRIPTION": "피해를 !D! 만큼 !M! 번 줍니다. NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "피해를 !D! 만큼 !M! 번 줍니다."
+  },
+  "shadowverse:MirrorImage": {
+    "NAME": "분신술",
+    "DESCRIPTION": "공격이나 파워 카드 1장을 복사합니다. 복사본에게 소멸과 휘발성을 부여합니다."
+  },
+  "shadowverse:Valse": {
+    "NAME": "마법 저격수 왈츠",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 결단: NL *신성한 *정화의 *탄환 또는 *필살의 *마법 *탄환 중 하나를 골라 얻습니다.",
+    "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL 결단: NL *신성한 *정화의 *탄환 또는 *필살의 *마법 *탄환 중 하나를 골라 얻고 보존시킵니다."
+  },
+  "shadowverse:HolyPurebomb": {
+    "NAME": "신성한 정화의 탄환",
+    "DESCRIPTION": "손에 있는 모든 저주와 상태이상을 소멸시킵니다.NL 상대방의 버프를 하나 제거합니다. NL 소멸."
+  },
+  "shadowverse:FatalSpellbomb": {
+    "NAME": "필살의 마법 탄환",
+    "DESCRIPTION": "적이 체력을 !D! 잃습니다. NL 소멸."
+  },
+  "shadowverse:Ernesta": {
+    "NAME": "무기 상인 에르네스타",
+    "DESCRIPTION": "연계 10: *공포의 *사냥개 를 1장 얻습니다.",
+    "UPGRADE_DESCRIPTION": "사용후 강화해제 됩니다. NL 카드를 1장 골라 소멸시키고 카드를 1장 뽑습니다.",
+    "EXTENDED_DESCRIPTION": [
+      "(연계: ",
+      ")"
+    ]
+  },
+  "shadowverse:DreadHound": {
+    "NAME": "공포의 사냥개",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. 적이 체력을 !D! 잃습니다. NL 소멸."
+  },
+  "shadowverse:Ilmisuna": {
+    "NAME": "웨폰 딜러 이르미스나",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 카드를 1장 골라 소멸시키고 카드를 1장 뽑습니다.",
+    "UPGRADE_DESCRIPTION": "사용후 강화해제 됩니다. NL 피해를 !D! 만큼 내 추종자 수만큼 줍니다."
+  },
+  "shadowverse:MasterDealer": {
+    "NAME": "마스터 딜러 아르야스카",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 손에 있는 카드를 한장 골라, 나머지를 소멸시키고 소멸시킨 만큼 카드를 뽑습니다."
+  },
+  "shadowverse:EleganceInAction": {
+    "NAME": "예기치 못한 넘어짐",
+    "DESCRIPTION": "카드를 1장 뽑습니다.공격카드를 뽑으면 중갑 기사 를 하나 소환합니다. 그 외에는 피해를 !D! 줍니다. NL 강화 1: 대신 카드를 !M! 장 뽑습니다."
+  },
+  "shadowverse:BlackenedScripture": {
+    "NAME": "칠흑색 법전",
+    "DESCRIPTION": "약화와 취약을 !M! 부여합니다. NL 그 적의 체력이 9 이하라면 처치합니다."
+  },
+  "shadowverse:PriestOfTheCudgel": {
+    "NAME": "철퇴의 사제",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 취약을 !M! 부여합니다.",
+    "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL 취약을 !M! 부여합니다. NL 그 적의 체력이 15 이하였다면 처치합니다."
+  },
+  "shadowverse:SacredPlea": {
+    "NAME": "영창:성스러운 소원",
+    "DESCRIPTION": "카운트다운 1: 카드를 !M! 장 뽑습니다."
+  },
+  "shadowverse:HallowedDogma": {
+    "NAME": "신성한 교리",
+    "DESCRIPTION": "내 마법진을 하나 골라 그 카운트다운을 2 감소시킵니다. NL 카드를 !M! 장 뽑습니다.",
+    "EXTENDED_DESCRIPTION": [
+      "카운트다운을 가진 마법진이 없다!!"
+    ]
+  },
+  "shadowverse:ImaginationRealized": {
+    "NAME": "상상의 구현화",
+    "DESCRIPTION": "카드를 3장 뽑습니다. 그 카드들이 이번 턴 0코스트가 됩니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "카드를 3장 뽑습니다. 그 카드들이 이번 전투 0코스트가 됩니다. NL 소멸."
+  },
+  "shadowverse:GuildAssembly": {
+    "NAME": "길드 회의",
+    "DESCRIPTION": "선천성. 여러번 강화 가능. NL 카드를 1장 뽑습니다. NL +1: 1장 더 뽑습니다. NL +2: 방어도를 !B! 얻습니다. NL +3: 힘과 민첩을 2 얻습니다. NL 소멸.",
+    "EXTENDED_DESCRIPTION": [
+      "1장 더 뽑습니다. NL ",
+      "방어도를 !B! 얻습니다. NL ",
+      "힘과 민첩을 2 얻습니다 NL ",
+      "소멸."
+    ]
+  },
+  "shadowverse:MysterianWisdom": {
+    "NAME": "마나리아의 지혜",
+    "DESCRIPTION": "카드 한장을 소멸시킵니다. NL *마나리아 *마법탄 1장과 *마나리아 *방어진 1장을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "카드 한장을 소멸시키고 그 복사본을 뽑을 카드더미에 넣습니다. NL *마나리아 *마법탄 1장과 *마나리아 *방어진 1장을 얻습니다."
+  },
+  "shadowverse:DuskshadeBat": {
+    "NAME": "어둠의 박쥐",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 갈망 상태라면 카드를 1장 뽑고 [E]를 얻습니다. NL 복수와 광란도 똑같이 합니다."
+  },
+  "shadowverse:Cernunnos": {
+    "NAME": "케르눈노스",
+    "DESCRIPTION": "장송 1: 카드를 !M! 장 뽑습니다. NL [E] [E]를 얻습니다 (제한). NL 소생 !M!. 이번 전투에서 사용한 사령술이 20 이상이라면, 대신 소생 5 ."
+  },
+  "shadowverse:MiracleHarvest": {
+    "NAME": "기적의 열매",
+    "DESCRIPTION": "*요정 1장을 얻습니다. NL 이번 전투에서 사용한 요정이 5장 이상이면, 그 요정을 강화합니다. NL 10장 이상이면 카드를 !M! 장 뽑고 [E] 를 얻습니다. (제한).",
+    "UPGRADE_DESCRIPTION": "*요정 1장을 얻습니다. NL 이번 전투에서 사용한 요정이 5장 이상이면, 그 요정을 강화합니다. NL 10장 이상이면 카드를 !M! 장 뽑고 [E][E] 를 얻습니다. (제한)."
+  },
+  "shadowverse:HolyFalcon": {
+    "NAME": "신성한 매",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 소멸."
+  },
+  "shadowverse:RegalFalcon": {
+    "NAME": "거대한 매",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 소멸."
+  },
+  "shadowverse:HolyFlameTiger": {
+    "NAME": "성화의 맹호",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 소멸."
+  },
+  "shadowverse:HolywingDragon": {
+    "NAME": "성스러운 백룡",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 소멸."
+  },
+  "shadowverse:BeastCallAria": {
+    "NAME": "야수 공주의 부름",
+    "DESCRIPTION": "카운트다운 2: *신성한 *매 1장과 *성화의 *맹호 1장을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "카운트다운 2: *신성한 *매+ 1장과 *성화의 *맹호+ 1장을 얻습니다."
+  },
+  "shadowverse:MoriaeEncomium": {
+    "NAME": "우신 예찬",
+    "DESCRIPTION": "카드를 !M! 장 뽑고 뽑을 카드 더미에 *암흑물질 을 1장 넣습니다.NL 카운트다운 1: 무작위 적에게 취약을 !M! 부여합니다."
+  },
+  "shadowverse:ThemisDecree": {
+    "NAME": "테미스의 심판",
+    "DESCRIPTION": "손에 있는 모든 공격 카드를 소멸시킵니다. NL 모든 적에게 약화와 취약을 !M! 부여합니다. NL 소멸."
+  },
+  "shadowverse:HolyEnchanter": {
+    "NAME": "성스러운 갑옷을 입은 자",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. 그 다음 내 방어도만큼 카드를 뽑습니다."
+  },
+  "shadowverse:PunishmentSniper": {
+    "NAME": "심판의 저격수",
+    "DESCRIPTION": "방어도를 !B! 얻고 피해를 !D! 줍니다. NL (피해량은 이번 전투에서 사용한 마법진 수의 !M! 배입니다.)"
+  },
+  "shadowverse:SeraphLapis": {
+    "NAME": "영광의 치천사 라피스",
+    "DESCRIPTION": "카운트다운 1: 전투에서 승리합니다. NL 제거."
+  },
+  "shadowverse:RenascentSeraph": {
+    "NAME": "되살아난 치천사",
+    "DESCRIPTION": "카운트다운 1: *영광의 *치천사 *라피스 를 얻습니다. NL 제거.",
+    "UPGRADE_DESCRIPTION": "카운트다운 1: *영광의 *치천사 *라피스+ 를 얻습니다. NL 제거."
+  },
+  "shadowverse:AwakenedSeraph": {
+    "NAME": "눈을뜬 치천사",
+    "DESCRIPTION": "카운트다운 1: *되살아난 *치천사 를 얻습니다. NL 제거",
+    "UPGRADE_DESCRIPTION": "카운트다운 1: *되살아난 *치천사+ 를 얻습니다. NL 제거"
+  },
+  "shadowverse:EnstatuedSeraph": {
+    "NAME": "봉인된 치천사",
+    "DESCRIPTION": "카운트다운 1: *눈을뜬 *치천사 를 얻습니다. NL 제거",
+    "UPGRADE_DESCRIPTION": "카운트다운 1: *눈을뜬 *치천사+ 를 얻습니다. NL 제거"
+  },
+  "shadowverse:Ra": {
+    "NAME": "광휘의 현현 라",
+    "DESCRIPTION": "턴 종료시 모든 적에게 피해를 !M! 줍니다.NL 이 피해는 매 턴 !M! 만큼 증가합니다."
+  },
+  "shadowverse:OmenOfRepose": {
+    "NAME": "안식의 재앙 마윈",
+    "DESCRIPTION": "체력을 1 회복하고 다음 턴 시작에 카드를 1장 더 뽑습니다. NL 내 모든 마법진의 카운트다운 -1. NL 이번 턴 공격 카드를 사용하지 않았다면 이번 턴 4 이상의 피해를 3으로 받습니다. NL 서로의 턴을 스킵합니다. NL 소멸."
+  },
+  "shadowverse:OmenOfRepose2": {
+    "NAME": "절망의 안식 마윈",
+    "DESCRIPTION": "손에 있는 모든 공격 카드를 소멸시킵니다. NL 모든 적에게 약화와 취약을 4 부여합니다. NL 이 효과를 받은 카드와 적의 수가 합쳐서 4 이상이라면, *절망의 *격류 1장을 얻습니다. NL 소멸."
+  },
+  "shadowverse:Agnes": {
+    "NAME": "복수의 하얀 서슬 아니에스",
+    "DESCRIPTION": "자연. NL 마법진을 사용할때마다 비용 -1. *나테라의 *신목 을 사용할 떄마다 추가로 비용 -1. NL 피해를 !D! 줍니다."
+  },
+  "shadowverse:WhitefangTemple": {
+    "NAME": "영창:백아의 신전",
+    "DESCRIPTION": "카운트다운 6: *성스러운 *백룡 1장을 얻습니다. NL 체력을 회복할때마다 카운트다운 -1. NL 턴 종료시 체력을 1 회복합니다. NL 제거",
+    "UPGRADE_DESCRIPTION": "카운트다운 6: *성스러운 *백룡+ 1장을 얻습니다. NL 체력을 회복할때마다 카운트다운 -1. NL 턴 종료시 체력을 1 회복합니다. NL 제거"
+  },
+  "shadowverse:ElanaPrayer": {
+    "NAME": "에일라의 기도",
+    "DESCRIPTION": "체력을 회복할 때마다 힘과 민첩을 1 얻습니다."
+  },
+  "shadowverse:Elana": {
+    "NAME": "순수한 기도 에일라",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. *에일라의 *기도 1장을 얻습니다. NL 소멸",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. *에일라의 *기도+ 1장을 얻습니다. NL 소멸"
+  },
+  "shadowverse:IronknuckleNun": {
+    "NAME": "강철주먹의 여수도사",
+    "DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL 판금갑옷을 !M! 얻습니다. (제한). NL *수리 *모드 를 얻습니다."
+  },
+  "shadowverse:RadiantAngel": {
+    "NAME": "광명의 천사",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 체력을 !M! 회복합니다. NL 카드를 뽑습니다."
+  },
+  "shadowverse:GodLovingSmite": {
+    "NAME": "신의 사랑으로",
+    "DESCRIPTION": "무작위 적에게 피해를 !D! 줍니다. NL 내 모든 마법진의 카운트다운 -1."
+  },
+  "shadowverse:HolyCavalier": {
+    "NAME": "신의 기병",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 판금갑옷을 !M! 얻습니다. NL 소멸."
+  },
+  "shadowverse:HallowedCave": {
+    "NAME": "동굴 속 성당",
+    "DESCRIPTION": "*신의 *기병 을 얻습니다. NL 턴 시작시 *신의 *기병 을 얻습니다. NL 카운트다운 2: 이 효과를 잃습니다. NL 제거",
+    "UPGRADE_DESCRIPTION": "*신의 *기병 을 얻습니다. NL 턴 시작시 *신의 *기병 을 얻습니다. NL 카운트다운 3: 이 효과를 잃습니다. NL 제거"
+  },
+  "shadowverse:HolyHector": {
+    "NAME": "신의 기사 헥터",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 임시 힘을 2 얻습니다. NL 묘지가 9 이상이라면 *신의 *기병 을 2장 얻습니다.",
+    "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL 임시 힘을 2 얻습니다. NL 묘지가 9 이상이라면 *신의 *기병+ 을 2장 얻습니다."
+  },
+  "shadowverse:AcolyteLight": {
+    "NAME": "파마의 빛",
+    "DESCRIPTION": "적의 방어도를 제거합니다. NL 제거된 방어도 만큼 내 체력을 회복합니다. NL 휘발성. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "적의 방어도를 제거합니다. NL 제거된 방어도 만큼 내 체력을 회복합니다.NL 소멸."
+  },
+  "shadowverse:TempleOfHeresy": {
+    "NAME": "사교의 신전",
+    "DESCRIPTION": "*암흑물질 을 뽑을 카드더미에 넣습니다. NL 카운트다운 6: *사탄 이나 *얼음 *지옥의 *왕 *사탄 중 무작위로 1장을 얻고 그 비용을 0으로 합니다. NL 턴 시작시 마법진 영역에 있는 저주 1장당 카운트다운 -1. NL 제거",
+    "UPGRADE_DESCRIPTION": "선천성. NL *암흑물질 을 뽑을 카드더미에 넣습니다. NL 카운트다운 6: *사탄 이나 *얼음 *지옥의 *왕 *사탄 중 무작위로 1장을 얻고 그 비용을 0으로 합니다. NL 턴 시작시 마법진 영역에 있는 저주 1장당 카운트다운 -1. NL 제거"
+  },
+  "shadowverse:Abdiel": {
+    "NAME": "아브디엘",
+    "DESCRIPTION": "1턴에 1번, 스킬이 아닌 비숍 클래스 카드를 사용하면  [E] 를 얻고 *진화 *포인트+ 를 얻습니다. NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "1턴에 1번, 스킬이 아닌 비숍 클래스 카드를 사용하면  [E] 를 얻고 *진화 *포인트+ 를 얻습니다."
+  },
+  "shadowverse:DivineBirdSong": {
+    "NAME": "영창:신조를 부르는 피리",
+    "DESCRIPTION": "카운트다운 2: *거대한 *매 1장을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "카운트다운 2: *거대한 *매+ 1장을 얻습니다."
+  },
+  "shadowverse:Wilbert": {
+    "NAME": "원대한 성기사 윌버트",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 이하의 능력을 얻습니다: 방어도를 가진채로 공격받을 때 마다, 그 공격자의 최대체력의 5%만큼(최소 6) 피해를 줍니다. NL 유언: 이 카드가 소멸되면 *신의 *기병 !M! 장을 얻습니다. NL 소멸."
+  },
+  "shadowverse:Wilbert2": {
+    "NAME": "찬란한 성기사 윌버트",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 이하의 능력을 얻습니다: 턴 종료시 모든 적에게 내 방어도만큼 피해를 줍니다(최대 50) NL *신의 *기병 을 !M! 장 얻습니다. NL 소멸."
+  },
+  "shadowverse:Indulgence": {
+    "NAME": "면죄부",
+    "DESCRIPTION": "골드를 8 잃고 카드 1장을 소멸시킵니다. NL 소멸.",
+    "EXTENDED_DESCRIPTION": [
+      "골드가 모자란다!"
+    ]
+  },
+  "shadowverse:Anvelt": {
+    "NAME": "신벌의 쌍권총 안베르트",
+    "DESCRIPTION": "결정화 0: 카운트다운 7: 방어도를 얻을때마다 카운트다운 -1. NL NL --------------------- NL NL 이 카드를 사용하거나 카운트다운이 0이 되면 방어도를 !B! 얻고 모든 적에게 피해를 !D! 만큼 2번 줍니다."
+  },
+  "shadowverse:EvilWorship": {
+    "NAME": "암흑물질",
+    "DESCRIPTION": "턴 종료시 힘을 1 얻고 방어도를 1 얻습니다. NL 소멸."
+  },
+  "shadowverse:DirtyPriest": {
+    "NAME": "부패한 성직자",
+    "DESCRIPTION": "결정화 0: 카운트다운 2: 턴 시작시 *면죄부 1장을 얻습니다. NL NL --------------------- NL NL 방어도를 !B! 얻습니다. NL *면죄부 를 손과 뽑을 카드더미, 버린 카드더미에 넣습니다."
+  },
+  "shadowverse:Tenko": {
+    "NAME": "천호의 신사",
+    "DESCRIPTION": "체력을 회복할 때마다 무작위 적에게 피해를 !M! 줍니다."
+  },
+  "shadowverse:PegasusSculpture": {
+    "NAME": "페가수스 수정 조각상",
+    "DESCRIPTION": "카운트다운 4: 턴 종료시 체력을 1 회복합니다.NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "카운트다운 4: 턴 종료시 체력을 1 회복합니다."
+  },
+  "shadowverse:BenevolentBlight": {
+    "NAME": "상냥한 빛",
+    "DESCRIPTION": "모든 적에게 피해를 !D! 주고, 체력을 !M! 회복하고 카드를 1장 뽑습니다. NL 강화 3: 반복합니다. NL 소멸."
+  },
+  "shadowverse:RobowingPrecant": {
+    "NAME": "기계 팔의 여사제",
+    "DESCRIPTION": "기계. NL 피해를 !D! 줍니다. NL *수리 *모드 를 1장 얻습니다. NL 이번 턴 다른 기계 카드가 사용되었다면 중독을 !M! 부여합니다."
+  },
+  "shadowverse:HeavenlyKnight": {
+    "NAME": "천상의 기사",
+    "DESCRIPTION": "방어도를 !B! 얻고 그만큼 피해를 줍니다. NL (이 카드는 민첩의 영향을 !M! 배로 받습니다.)"
+  },
+  "shadowverse:SummitTemple": {
+    "NAME": "최정상의 교회",
+    "DESCRIPTION": "카드를 사용할때, 내 힘이 민첩과 같은것으로 간주합니다.",
+    "UPGRADE_DESCRIPTION":"선천성. NL 카드를 사용할때, 내 힘이 민첩과 같은것으로 간주합니다."
+  },
+  "shadowverse:Charaton": {
+    "NAME": "불과 얼음의 사제 칼트",
+    "DESCRIPTION": "피해를 !D! 만큼 X 번 주고 에너지를 X 얻습니다. X 는 이번 전투에서 사용한 마법진 수.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (피해량:",
+      " . NL 에너지 획득: ",
+      " ."
+    ]
+  },
+  "shadowverse:TarnishedGrail": {
+    "NAME": "오염된 성배",
+    "DESCRIPTION": "모든 적에게 피해를 !D! 줍니다. NL *암흑물질 2장을 버린 카드더미에 넣습니다. NL 카운트다운 1: 이하 목록에서 무작위로 3장을 얻습니다: NL *사탄의 *하수인 NL *침묵의 *마왕  NL *디스의 *심판 NL *아스타로트의 *선고."
+  },
+  "shadowverse:SkullFane": {
+    "NAME": "죽음의 신전",
+    "DESCRIPTION": "이 카드를 뽑으면 마법진 칸에 있는 저주의 비용을 1씩 감소시킵니다. NL 마법진을 사용할 때마다 이 카드의 비용 -1. NL 내 마법진을 모두 파괴합니다. 파괴된 저주 하나당 방어도를 !B! 얻고 힘을 !M! 얻습니다."
+  },
+  "shadowverse:Tribunal": {
+    "NAME": "신마재판소",
+    "DESCRIPTION": "무작위 적에게 약화를 !M! 부여합니다. 뽑을 카드 더미에 *암흑물질 을 넣습니다. NL 카운트다운 2: 무작위 적에게 취약을 !M! 부여합니다. *순수 1장을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "무작위 적에게 약화를 !M! 부여합니다. 뽑을 카드 더미에 *암흑물질 을 넣습니다. NL 카운트다운 2: 무작위 적에게 취약을 !M! 부여합니다. *순수+ 1장을 얻습니다."
+  },
+  "shadowverse:HealingPrayer": {
+    "NAME": "치유의 기도",
+    "DESCRIPTION": "체력을 3 회복합니다. NL 내 모든 마법진의 카운트다운을 !M! 감소시킵니다. NL 소멸."
+  },
+  "shadowverse:HereticPriest": {
+    "NAME": "사교의 사제",
+    "DESCRIPTION": "저주 카드를 뽑으면 카드를 !M! 장 더 뽑습니다. NL  *암흑물질 3장을 버린 카드 더미에 넣습니다."
+  },
+  "shadowverse:DarkOffering": {
+    "NAME": "어둠에 바치는 산제물",
+    "DESCRIPTION": "저주나 아포칼립스, 코퀴토스 카드를 선택해 마법진 칸에 넣습니다. 넣을수 없다면 대신 소멸시킵니다. NL [E] [E] 를 얻습니다."
+  },
+  "shadowverse:UnlikelyFellowship": {
+    "NAME": "서투른 신뢰",
+    "DESCRIPTION": "자연. NL 적이 이번 턴 힘을 !M! 얻습니다. NL 마법진을 선택해 그 카운트다운을 !M! 감소시킵니다. NL 소멸."
+  },
+  "shadowverse:HeavenFire": {
+    "NAME": "헤이븐 파이어",
+    "DESCRIPTION": "무작위 적에게 피해를 !D! 주고 모든 적에게 피해를 !M! 줍니다. NL 이하의 효과를 얻습니다: 매 턴 1번, 마법진을 사용하면 *헤이븐 *파이어 를 얻습니다.NL 소멸.",
+    "UPGRADE_DESCRIPTION": "무작위 적에게 피해를 !D! 주고 모든 적에게 피해를 !M! 줍니다. NL 이하의 효과를 얻습니다: 매 턴 1번, 마법진을 사용하면 *헤이븐 *파이어+ 를 얻습니다.NL 소멸."
+  },
+  "shadowverse:Selena": {
+    "NAME": "달콤한 구원 셀리나",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 마법진 칸이 1칸 이상 차있으면 *헤이븐 *파이어 를 얻습니다. NL 2칸 이상이면 [E]를 얻습니다. NL 3칸 이상이면 모든 적에게 피해를 !D! 줍니다. NL 4칸 이상이면 모든 마법진의 카운트다운을 3 감소시킵니다.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL 마법진 칸이 1칸 이상 차있으면 *헤이븐 *파이어+ 를 얻습니다. NL 2칸 이상이면 [E]를 얻습니다. NL 3칸 이상이면 모든 적에게 피해를 !D! 줍니다. NL 4칸 이상이면 모든 마법진의 카운트다운을 3 감소시킵니다."
+  },
+  "shadowverse:GoldenCity": {
+    "NAME": "황금도시",
+    "DESCRIPTION": "마법진 카드를 사용할 때마다 그 카운트다운 -1. NL 직접소환: 턴 종료시 남은 에너지가 이 카드의 비용 이상이라면, 이 카드를 마법진 칸에 넣습니다."
+  },
+  "shadowverse:RobowhipReverend": {
+    "NAME": "기계 채찍의 승려",
+    "DESCRIPTION": "기계. NL 이번 턴 회복한 체력 !M! 만큼 민첩을 얻습니다.  NL 손에 다른 기계 공격 카드가 있다면 힘도 !M! 얻습니다. NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "기계. NL 이번 턴 회복한 체력 !M! 만큼 민첩을 얻습니다.  NL 손에 다른 기계 공격 카드가 있다면 힘도 !M! 얻습니다."
+  },
+  "shadowverse:HeavenlyAegis": {
+    "NAME": "천상의 아이기스",
+    "DESCRIPTION": "이 카드를 마법진 칸에 넣어 !D! / !B! 천상의 아이기스 를 소환합니다. NL 힘과 민첩이 아닌 모든 디버프에 면역입니다. NL 소멸."
+  },
+  "shadowverse:SalvationLimonia": {
+    "NAME": "리모니움의 구원",
+    "DESCRIPTION": "기계. NL 비숍 클래스나 기계 공격 카드를 선택해 그 비용을 1 감소시킵니다. NL 이번 전투에서 *리모니움의 *구원 을 5번째 사용한거라면 *천상의 *아이기스 1장을 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "기계. NL 보존. NL 비숍 클래스나 기계 공격 카드를 선택해 그 비용을 1 감소시킵니다. NL 이번 전투에서 *리모니움의 *구원 을 5번째 사용한거라면 *천상의 *아이기스 1장을 얻습니다. NL 소멸."
+  },
+  "shadowverse:Limonia": {
+    "NAME": "결락의 성녀 리모니움",
+    "DESCRIPTION": "기계. NL 기계 공격 카드를 사용할 때마다 *리모니움의 *구원 을 얻습니다. NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "기계. NL 기계 공격 카드를 사용할 때마다 *리모니움의 *구원+ 을 얻습니다. NL 휘발성."
+  },
+  "shadowverse:Vice": {
+    "NAME": "기계 손을 가진 자 이빌",
+    "DESCRIPTION": "기계. NL *강철주먹의 여수도사 2장을 얻고 이번 턴 그 비용을 0으로 합니다. NL 기계 카드를 사용할 떄마다 체력을 2 잃고 힘을 !M! 얻습니다. NL 휘발성."
+  },
+  "shadowverse:KLT": {
+    "NAME": "성신궁의 명수 쿠르트",
+    "DESCRIPTION": "모든 적에게 피해를 !D! 줍니다. NL 이하의 효과를 얻습니다: 체력을 회복할 때마다 모든 적에게 피해를 !M! 줍니다."
+  },
+  "shadowverse:TheUntrueGod": {
+    "NAME": "기만의 거짓 신",
+    "DESCRIPTION": " [E] [E] 를 얻습니다. NL 마법진 칸이 가득 찰 때까지 *암흑물질 의 복사본을 채워넣습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "[E] [E] [E] 를 얻습니다. NL 마법진 칸이 가득 찰 때까지 *암흑물질 의 복사본을 채워넣습니다. NL 소멸."
+  },
+  "shadowverse:AngelRat": {
+    "NAME": "천사 쥐",
+    "DESCRIPTION": "자연. NL 피해를 !D! 줍니다. 마법진 칸이 2칸 이상 차있으면 피해를 2배로 줍니다. NL *나테라의 *신목 을 얻습니다."
+  },
+  "shadowverse:MarkUnleashed": {
+    "NAME": "성흔 발동",
+    "DESCRIPTION": "체력을 1 회복합니다( 제한 ). NL 피해를 !D! 만큼 !M! 번, 이번 전투에서 체력을 회복한 만큼 줍니다."
+  },
+  "shadowverse:MarkOfBalance": {
+    "NAME": "규율의 성흔",
+    "DESCRIPTION": "체력을 1 회복합니다.  NL 상대방도 체력을 !M! 회복합니다. NL 카드를 !M! 장 뽑습니다. NL 소멸."
+  },
+  "shadowverse:Marlone": {
+    "NAME": "균형의 빛 머론",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL *규율의 *성흔 을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL *규율의 *성흔+ 을 얻습니다."
+  },
+  "shadowverse:Marlone2": {
+    "NAME": "평온의 제정자 머론",
+    "DESCRIPTION": "모든 적에게 피해를 !D! 줍니다. NL 내 손에 있는 공격 카드 1장당 피해량이 5 줄어듭니다. NL 적 하나당 피해량이 !D! 증가합니다. "
+  },
+  "shadowverse:HolyShieldLion": {
+    "NAME": "성스러운 방패의 사자",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 소멸."
+  },
+  "shadowverse:HolyPlateLion": {
+    "NAME": "성스러운 갑옷의 사자",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 소멸."
+  },
+  "shadowverse:HolyKingLion": {
+    "NAME": "성스러운 왕의 사자",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 방어도를 !B! 얻습니다. NL 소멸."
+  },
+  "shadowverse:LionCrystal": {
+    "NAME": "성사자의 결정",
+    "DESCRIPTION": "*성스러운 *방패의 *사자 1장을 얻습니다. NL *성사자의 *결정 을 이번 전투에서 3장 이상 사용했다면, 대신 *성스러운 *갑옷의 *사자 를 얻습니다. NL 6장 이상 사용했다면 *성스러운 *왕의 *사자 를 얻습니다. NL 강화 2: 강화가 없고 소멸을 가진 *성사자의 *결정 을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "*성스러운 *방패의 *사자+ 1장을 얻습니다. NL *성사자의 *결정 을 이번 전투에서 3장 이상 사용했다면, 대신 *성스러운 *갑옷의 *사자+ 를 얻습니다. NL 6장 이상 사용했다면 *성스러운 *왕의 *사자+ 를 얻습니다. NL 강화 2: 강화가 없고 소멸을 가진 *성사자의 *결정 을 얻습니다."
+  },
+  "shadowverse:LionCrystalCopy": {
+    "NAME": "성사자의 결정",
+    "DESCRIPTION": "*성스러운 *방패의 *사자 1장을 얻습니다. NL *성사자의 *결정 을 이번 전투에서 3장 이상 사용했다면, 대신 *성스러운 *갑옷의 *사자 를 얻습니다. NL 6장 이상 사용했다면 *성스러운 *왕의 *사자 를 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "*성스러운 *방패의 *사자+ 1장을 얻습니다. NL *성사자의 *결정 을 이번 전투에서 3장 이상 사용했다면, 대신 *성스러운 *갑옷의 *사자+ 를 얻습니다. NL 6장 이상 사용했다면 *성스러운 *왕의 *사자+ 를 얻습니다. NL 소멸."
+  },
+  "shadowverse:LionTemple": {
+    "NAME": "성사자의 신전",
+    "DESCRIPTION": "*성사자의 *결정 을 사용할 떄마다 [E] 를 얻습니다. NL (1턴에 최대 5회.)",
+    "UPGRADE_DESCRIPTION": "소멸을 가지고 강화가 없는 *성사자의 *결정 을 얻습니다. NL *성사자의 *결정 을 사용할 떄마다 [E] 를 얻습니다. NL (1턴에 최대 5회.)"
+  },
+  "shadowverse:PeaceWeaver": {
+    "NAME": "평화를 이끄는 자",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 소멸을 가지고 강화가 없는 *성사자의 *결정 을 얻습니다."
+  },
+  "shadowverse:PrismSwing": {
+    "NAME": "무지개빛 스윙",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 소멸을 가지고 강화가 없는 *성사자의 *결정 을 얻습니다."
+  },
+  "shadowverse:SalvationLion": {
+    "NAME": "구원의 성사자",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 판금갑옷을 !M! 얻습니다. NL 소멸을 가지고 강화가 없는 *성사자의 *결정 을 얻습니다.그 카드의 비용이 이번 턴 0이 됩니다."
+  },
+  "shadowverse:Munyaru": {
+    "NAME": "숲의 참모 므냐르",
+    "DESCRIPTION": "자연. NL 피해를 !B! 만큼 준 다음 피해를 !D! 줍니다. NL 소멸."
+  },
+  "shadowverse:SneakAttack": {
+    "NAME": "므냐르 등장",
+    "DESCRIPTION": "자연. NL 카운트다운 2: *나테라의 *신목 을 사용했다면 턴 시작시 카운트다운 -1. NL *숲의 *참모 *므냐르 를 얻습니다.",
+    "UPGRADE_DESCRIPTION": "자연. NL 카운트다운 2: *나테라의 *신목 을 사용했다면 턴 시작시 카운트다운 -1. NL *숲의 *참모 *므냐르+ 를 얻습니다."
+  },
+  "shadowverse:ErisPrayer": {
+    "NAME": "이리스의 기도",
+    "DESCRIPTION": "카드를 !M! 장 뽑습니다."
+  },
+  "shadowverse:MunyaruRaid": {
+    "NAME": "므냐르의 약동",
+    "DESCRIPTION": "*숲의 *참모 *므냐르 를 얻습니다.",
+    "UPGRADE_DESCRIPTION": "*숲의 *참모 *므냐르+ 를 얻습니다."
+  },
+  "shadowverse:MajorPrayers": {
+    "NAME": "감싸안는 염원",
+    "DESCRIPTION": "결단: 이 카드를 *이리스의 *기도 나 *므냐르의 *약동 으로 사용합니다. NL 마법진 칸이 2칸 이상 차있으면 둘 다로 사용합니다.",
+    "UPGRADE_DESCRIPTION": "결단: 이 카드를 *이리스의 *기도+ 나 *므냐르의 *약동+ 으로 사용합니다. NL 마법진 칸이 2칸 이상 차있으면 둘 다로 사용합니다."
+  },
+  "shadowverse:RealmOfRepose": {
+    "NAME": "안식의 영역",
+    "DESCRIPTION": "이번 턴 공격 카드를 사용하지 않았다면, 4 이상의 피해를 3으로 줄여받습니다. NL 카운트다운 2: 이 효과를 잃습니다. NL 휘발성. NL 제거",
+    "UPGRADE_DESCRIPTION": "이번 턴 공격 카드를 사용하지 않았다면, 4 이상의 피해를 3으로 줄여받습니다. NL 카운트다운 2: 이 효과를 잃습니다. NL 제거"
+  },
+  "shadowverse:EternalDispair": {
+    "NAME": "유구의 절망",
+    "DESCRIPTION": "이번 턴 공격 카드를 사용하지 않았다면, 체력을 2 회복하고 다음 턴 시작에 카드를 1장 뽑습니다. NL 카운트다운 3: 이 효과를 잃습니다. NL 휘발성. NL 제거",
+    "UPGRADE_DESCRIPTION": "이번 턴 공격 카드를 사용하지 않았다면, 체력을 2 회복하고 다음 턴 시작에 카드를 1장 뽑습니다. NL 카운트다운 3: 이 효과를 잃습니다. NL 제거"
+  },
+  "shadowverse:Jatelant": {
+    "NAME": "번화의 가호신 야테란투",
+    "DESCRIPTION": "이번 전투에서 파괴된 마법진 수에 따라 이하의 효과를 발동합니다: NL 1, 4, 7, 10, 13: 골드를 !M! 얻습니다. NL 2, 5, 8, 11, 14: 모든 적에게 피해를 !D! 주고 체력을 3 회복합니다.  NL 3, 6, 9, 12: 소멸된 공격 카드를 손으로 가져오고 그 비용을 0으로 만듭니다. NL 소멸.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (사용한 마법진 수:",
+      "  .)"
+    ]
+  },
+  "shadowverse:SomnolentStrength": {
+    "NAME": "허탈의 괴력",
+    "DESCRIPTION": "카운트다운 2: 민첩을 !M! 얻습니다. 무작위 적이 힘을 !M! 잃습니다. NL 제거"
+  },
+  "shadowverse:TheStrength": {
+    "NAME": "《힘》 소피나",
+    "DESCRIPTION": "가속화 1: *허탈의 *괴력 을 마법진 칸에 넣고 이 카드를 소멸시킵니다.NL NL --------------------- NL NL 힘과 민첩을 !M! 얻습니다. NL 피해를 X 적게 받습니다. X 는 내 힘. NL 피해를 받아 체력을 잃으면 힘을 1 잃습니다."
+  },
+  "shadowverse:QueenOfHope": {
+    "NAME": "희망의 여왕 리튜엘",
+    "DESCRIPTION": "체력을 회복할 때마다 카드를 !M! 장 뽑습니다."
+  },
+  "shadowverse:SacredCounter": {
+    "NAME": "성스러운 반격",
+    "DESCRIPTION": "상대가 공격하려고 하고, 그 공격의 피해가 내 방어도보다 낮다면 내 방어도만큼 피해를 줍니다.",
+    "EXTENDED_DESCRIPTION":[ "NL (피해를 !D! 줍니다.)"]
+  },
+  "shadowverse:Muse": {
+    "NAME": "리틀 뮤스 나이트",
+    "DESCRIPTION": "자연. NL 피해를 !D! 주고 방어도를 !B! 얻습니다. NL *나테라의 *신목 을 다시 사용할 때마다 이 카드의 피해량과 방어도가 !M! 증가합니다. NL 소멸 ."
+  },
+  "shadowverse:MusePrincess": {
+    "NAME": "뮤스 프린세스 밀피",
+    "DESCRIPTION": "자연. NL 방어도를 !B! 얻습니다. *나테라의 *신목 을 얻습니다. NL 강화 3: 대신 3장 얻고 [E] 를 얻습니다. NL 이번 턴 *나테라의 *신목 을 사용할 때마다 손에 *리틀 *뮤스 *나이트 가 없다면, 1장 얻습니다."
+  },
+  "shadowverse:PrimalShipwright": {
+    "NAME": "성계의 항해자 노아",
+    "DESCRIPTION": "결정화 0: 카운트다운 3: 이 카드를 손에 넣고 그 비용을 0으로 합니다. NL NL --------------------- NL NL 피해를 !D! 줍니다. 이 피해는 내 연계 수치만큼 증가합니다."
+  },
+  "shadowverse:Garuda": {
+    "NAME": "천공의 수호자 가루라",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 마법진을 하나 골라 카운트다운 -3."
+  },
+  "shadowverse:Garuda2": {
+    "NAME": "열풍 날개의 신 가루라",
+    "DESCRIPTION": "가속화 0: 마법진을 하나 골라 카운트다운 -1. NL NL --------------------- NL NL 내 모든 마법진의 카운트다운 -3. NL 이 효과로 카운트다운이 0이 된 마법진 하나당 무작위 적에게 피해를 !D! 줍니다."
+  },
+  "shadowverse:Garuda3": {
+    "NAME": "낙원의 날개 가루라",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 비용이 X 이하인 무작위 공격 카드와 마법진 카드를 내 뽑을 카드 더미에서 가져옵니다. X는 이번 전투에서 내가 사용한 마법진 수",
+    "EXTENDED_DESCRIPTION": [
+      " NL (사용한 마법진 수:",
+      "  .)"
+    ]
+  },
+  "shadowverse:Jeanne": {
+    "NAME": "잔 다르크",
+    "DESCRIPTION": "모든 적에게 피해를 !D! 줍니다. NL 방어도를 !M! 얻습니다. NL 소멸."
+  },
+  "shadowverse:Jeanne2": {
+    "NAME": "어둠의 잔 다르크",
+    "DESCRIPTION": "모든 적에게 피해를 !D! 줍니다. NL 힘을 !M! 얻습니다. NL 소멸."
+  },
+  "shadowverse:Jeanne3": {
+    "NAME": "희망의 성녀 잔 다르크",
+    "DESCRIPTION": "모든 적에게 피해를 !D! 줍니다. NL 체력을 !M! 회복합니다. NL 소멸."
+  },
+  "shadowverse:Jeanne4": {
+    "NAME": "절망의 성녀 잔 다르크",
+    "DESCRIPTION": "모든 적에게 피해를 !D! 줍니다. NL 체력을 !M! 잃습니다. NL 재생을 2 얻습니다. NL 소멸."
+  },
+  "shadowverse:RelicSphere": {
+    "NAME": "구체 성유물",
+    "DESCRIPTION": "약화와 취약을 !M! 부여합니다. NL  적의 체력이 9 이하라면 처치합니다. NL 마법진 칸에 *성유물의 *여신 이 있었다면 체력이 27 이하일때 처치합니다. NL 턴 종료시 *각기둥 *성유물 , *원기둥 *성유물 , *다면체 *성유물 이 모두 있다면 합체해 *성유물의 *여신 이 되고 마법진 칸에 들어갑니다.",
+    "UPGRADE_DESCRIPTION": "약화와 취약을 !M! 부여합니다. NL  적의 체력이 9 이하라면 처치합니다. NL 마법진 칸에 *성유물의 *여신 이 있었다면 체력이 27 이하일때 처치합니다. NL 턴 종료시 *각기둥 *성유물 , *원기둥 *성유물 , *다면체 *성유물 이 모두 있다면 합체해 *성유물의 *여신+ 이 되고 마법진 칸에 들어갑니다."
+  },
+  "shadowverse:RelicPrism": {
+    "NAME": "각기둥 성유물",
+    "DESCRIPTION": "턴 시작시 무작위 적에게 피해를 !M! 줍니다. NL *성유물의 *여신 이 있다면, 피해를 3배로 줍니다."
+  },
+  "shadowverse:RelicTorus": {
+    "NAME": "원기둥 성유물",
+    "DESCRIPTION": "At the start of your turn, deal !M! damage to all enemies. NL *성유물의 *여신 이 있다면, 피해를 3배로 줍니다."
+  },
+  "shadowverse:RelicPlaton": {
+    "NAME": "다면체 성유물",
+    "DESCRIPTION": "턴 시작시, 체력을 1 회복합니다. NL *성유물의 *여신 이 있다면, 대신 체력을 3 회복합니다.",
+    "UPGRADE_DESCRIPTION": "턴 시작시 체력을 1 회복하고 방어도를 !B! 얻습니다. NL *성유물의 *여신 이 있다면, 대신 체력을 3 회복합니다."
+  },
+  "shadowverse:RelicGod": {
+    "NAME": "성유물의 여신",
+    "DESCRIPTION": "이 카드를 마법진 칸에 !D! / !B! 의 능력치로 소환합니다. NL 힘과 민첩을 제외한 디버프에 면역이 됩니다. NL 소멸."
+  },
+  "shadowverse:Eris": {
+    "NAME": "속죄의 사제 이리스",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL *구체 *성유물 을 얻습니다. NL 이하의 능력을 얻습니다 : 턴 종료시,이하의 목록에서 내 마법진 칸에 아직 없는 것을 무작위로 마법진 칸에 넣습니다.: NL *원기둥 *성유물 , *각기둥 *성유물 , *다면체 *성유물 NL 소멸.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL *구체 *성유물+ 을 얻습니다. NL 이하의 능력을 얻습니다 : 턴 종료시,이하의 목록에서 내 마법진 칸에 아직 없는 것을 무작위로 마법진 칸에 넣습니다.: NL *원기둥 *성유물+ , *각기둥 *성유물+ , *다면체 *성유물 NL 소멸."
+  },
+  "shadowverse:Saren": {
+    "NAME": "구호원의 마마 사렌",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 무작위 마법진을 하나 골라 카운트다운 -3. NL 마법진 칸이 2칸 이상 채워져있다면, 손의 모든 카드를 강화합니다. NL 유니온버스트 !M!: 모든 적에게 피해를 !D! 줍니다. 체력이 절반 이하라면 피해를 2배로 줍니다."
+  },
+  "shadowverse:LorenaWater": {
+    "NAME": "로레나의 성수",
+    "DESCRIPTION": "체력을 !M! 회복합니다. NL 카드를 1장 뽑습니다. NL 소멸."
+  },
+  "shadowverse:LorenaPunch": {
+    "NAME": "로레나의 철권",
+    "DESCRIPTION": "피해를 !D! 줍니다. (힘이나 민첩중 높은쪽에 영향받습니다). NL 소멸."
+  },
+  "shadowverse:Lorena": {
+    "NAME": "신성한 여사제 로레나",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 결단: *로레나의 *성수 또는 *로레나의 *철권 을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL 결단: *로레나의 *성수+ 또는 *로레나의 *철권+ 을 얻습니다."
+  },
+  "shadowverse:Lorena2": {
+    "NAME": "전도하는 여사제 로레나",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 진화 포인트를 얻습니다. NL *로레나의 *성수 와 *로레나의 *철권 을 얻고 이번 턴 그 카드들의 비용을 0으로 합니다."
+  },
+  "shadowverse:ImperialSaint": {
+    "NAME": "임페리얼 세인트",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 흐릿함을 1 얻습니다. NL 이 다음 죽으려고 하면, 체력을 50% 회복하고 추가 턴을 얻습니다."
+  },
+  "shadowverse:ShadowCorrosion": {
+    "NAME": "그림자의 잠식",
+    "DESCRIPTION": "자연. NL 상대에게 이하의 효과를 부여합니다 : 턴 시작시, 이번 전투에서 사용된 *나테라의 *신목 수 만큼 체력을 잃습니다.NL 이미 이 효과를 가지고 있었다면 대신 즉시 그만큼 피해를 입힙니다.NL 소멸."
+  },
+  "shadowverse:Valdain": {
+    "NAME": "저주받은 그림자 바이디",
+    "DESCRIPTION": "자연. NL 방어도를 !B! 얻습니다. NL *그림자의 *잠식 을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "자연. NL 방어도를 !B! 얻습니다. NL *그림자의 *잠식+ 을 얻습니다."
+  },
+  "shadowverse:Sukuna": {
+    "NAME": "작은 망치의 요사 스쿠나",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 전투에서 사용한 서로 다른 이름의 파워 카드 한장당 !M! 만큼 추가 피해를 줍니다."
+  },
+  "shadowverse:TerrorFormer": {
+    "NAME": "땅을 찢어발기는 변종",
+    "DESCRIPTION": "보존. NL 융합: 비용이 1 이상인 엘프 클래스 추종자. NL 2장 이상이 한번에 융합되었다면, 이 카드의 피해량을 !M! 증가시키고 카드를 1장 뽑습니다. NL 피해를 !D! 주고 약화를 2 부여합니다."
+  },
+  "shadowverse:Ambush": {
+    "NAME": "잠복",
+    "DESCRIPTION": "지속 효과를 발동시키지 않습니다. +1/+0 을 얻습니다"
+  },
+  "shadowverse:AmbushAttack": {
+    "NAME": "공격",
+    "DESCRIPTION": "지속 효과를 발동시킵니다. 다시 잠복을 고를수 없습니다."
+  },
+  "shadowverse:Leod": {
+    "NAME": "달의 검 리오드",
+    "DESCRIPTION": "잠복. 1/ !M!. NL *은신의 *천벌 을 1장 얻습니다. NL 지속: 공격력의 5배만큼 무작위 적에게 피해를 주고 체력을 1 잃습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "선천성. 잠복. 1/ !M!. NL *은신의 *천벌 을 1장 얻습니다. NL 지속: 공격력의 5배만큼 무작위 적에게 피해를 주고 체력을 1 잃습니다. NL 소멸."
+  },
+  "shadowverse:VeiledReckoning": {
+    "NAME": "은신의 천벌",
+    "DESCRIPTION": "보존. NL 피해를 !D! 줍니다. NL 암살자 1장을 얻습니다. NL 소멸."
+  },
+  "shadowverse:Assassin": {
+    "NAME": "암살자",
+    "DESCRIPTION": "모든 잠복 추종자가 다시 잠복을 고를수 있게 합니다. NL 소멸."
+  },
+  "shadowverse:Dualblade": {
+    "NAME": "이도류.",
+    "DESCRIPTION": "추종자가 2회 공격 가능합니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION":"선천성. NL 추종자가 2회 공격 가능합니다.NL 소멸."
+  },
+  "shadowverse:Leod2": {
+    "NAME": "월광의 집행자 리오드",
+    "DESCRIPTION": "잠복. 1/ !M!. NL 지속: 공격력의 5배만큼 무작위 적에게 피해를 주고 체력을 1 잃습니다. NL 턴 시작시 모든 적에게 피해를 9 줍니다. NL 소멸."
+  },
+  "shadowverse:AmbushBuff": {
+    "NAME": "도적의 비기",
+    "DESCRIPTION": "턴 시작시 모든 잠복중인 추종자에게 +1/+1."
+  },
+  "shadowverse:ShinobiTanuki": {
+    "NAME": "닌자 너구리",
+    "DESCRIPTION": "잠복. 1/ !M!. NL 지속: 공격력의 2배만큼 방어도를 얻고 체력을 1 잃습니다. NL 소멸."
+  },
+  "shadowverse:Tsubaki": {
+    "NAME": "월혼귀 츠바키",
+    "DESCRIPTION": "잠복. 1/ !M!. NL 지속: 공격력의 5배만큼 무작위 적에게 피해를 주고 체력을 1 잃습니다. NL 연계 10: +1/+1 을 얻고 약화와 취약을 1 부여합니다.",
+    "EXTENDED_DESCRIPTION": [
+      "(연계:",
+      ")"
+    ]
+  },
+  "shadowverse:ShieldOfFlame": {
+    "NAME": "화둔술",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 잠복중인 추종자가 있다면 피해를 2배로 줍니다."
+  },
+  "shadowverse:ShadowedMemories": {
+    "NAME": "은신의 기억",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 카드를 !M! 장 뽑습니다. NL 잠복중인 추종자가 있다면 *진화 *포인트 를 1 얻습니다."
+  },
+  "shadowverse:BladeDance": {
+    "NAME": "하얀 칼날의 검무",
+    "DESCRIPTION": "강화 2: 가장 공격력이 높은 추종자에게 +2/+0. NL 무작위 적에게 피해를 !D! 만큼 X번 줍니다. X는 내 추종자의 공격력중 가장 높은 수치 (최대 10)."
+  },
+  "shadowverse:NobleShikigami": {
+    "NAME": "식신 귀인",
+    "DESCRIPTION": "모든 적에게 피해를 !D! 의, 남은 에너지를 곱한 만큼 줍니다.NL 인공물을 1 얻습니다. NL 휘발성. NL 소멸."
+  },
+  "shadowverse:HarvestSeason": {
+    "NAME": "풍요의 계절",
+    "DESCRIPTION": "카드를 !M! 장 뽑습니다. NL 이번 턴 카드를 2장 이상 사용했다면, 1장 더 뽑습니다."
+  },
+  "shadowverse:RejuvenatingResurrection": {
+    "NAME": "윤회하는 회생",
+    "DESCRIPTION": "버린 카드더미에서 공격 카드를 1장 가져오고, 그 카드를 강화합니다.",
+    "UPGRADE_DESCRIPTION": "버린 카드더미에서 공격이나 파워 카드를 1장 가져오고, 그 카드를 강화합니다."
+  },
+  "shadowverse:MasterCook": {
+    "NAME": "숙달된 요리사",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 카드를 1장 뽑습니다. NL 최대 체력을 !M! 늘립니다. NL 소멸."
+  },
+  "shadowverse:OmnifacedArchdemon": {
+    "NAME": "백면의 대악귀",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 무작위 적에게 피해를 !D! 주고 체력을 !M! 회복합니다. NL 광란 상태라면 2번 더 반복합니다."
+  },
+  "shadowverse:EvilEyeDemon": {
+    "NAME": "사악한 눈의 악마",
+    "DESCRIPTION": "가속화 1: 체력을 1 잃고 피해를 !D! 줍니다. NL NL --------------------- NL NL 모든 적에게 피해를 !M! 줍니다. 이번 전투에서 카드의 효과로 체력을 잃을 때마다 피해량 +3",
+    "UPGRADE_DESCRIPTION":"가속화 1: 체력을 1 잃고 피해를 !D! 줍니다. NL NL --------------------- NL NL 모든 적에게 피해를 !M! 줍니다. 이번 전투에서 카드의 효과로 체력을 잃을 때마다 피해량 +4"
+  },
+  "shadowverse:PhantomBloomPredator": {
+    "NAME": "요괴 꽃 포식자",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 버린 카드더미에 비용이 1 이하인 공격 카드가 있다면, 그중 하나를 손으로 가져오고 !M! 만큼 추가 피해를 줍니다."
+  },
+  "shadowverse:WonderTree": {
+    "NAME": "신비한 나무",
+    "DESCRIPTION": "융합: *요정. NL 턴 시작때 이하의 효과중 하나를 순서대로 발동합니다.: NL 카드를 1장 뽑습니다. NL *요정 을 얻고 방어도를 !M! 얻습니다. NL 체력을 2 회복합니다. NL. 만약 융합되었다면,하나 대신 둘씩 순서대로 발동합니다.",
+    "UPGRADE_DESCRIPTION": "융합: *요정. NL 턴 시작때 이하의 효과중 하나를 순서대로 발동합니다.: NL 카드를 1장 뽑습니다. NL *요정+ 을 얻고 방어도를 !M! 얻습니다. NL 체력을 2 회복합니다. NL. 만약 융합되었다면,하나 대신 둘씩 순서대로 발동합니다."
+  },
+  "shadowverse:Alberta": {
+    "NAME": "섬광의 엘프 아르바타",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 이하의 효과를 얻습니다: 턴당 1번, 4번째로 카드를 사용할 때마다 이 카드의 복사본을 얻고 이 효과를 잃습니다. NL 소멸."
+  },
+  "shadowverse:Shiro": {
+    "NAME": "저주받은 날개 시로",
+    "DESCRIPTION": "보존. NL 보존될때마다, 방어도 10 당 비용 -1. NL 방어도를 !B! 얻습니다. NL 내 방어도의 절반만큼 모든 적에게 피해를 줍니다."
+  },
+  "shadowverse:TheChariot": {
+    "NAME": "《전차》 오르온",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 턴 종료시 이하의 효과중 하나를 발동합니다. NL 방어도를 !M! 얻습니다. NL 기사 를 소환합니다.NL 무작위 적에게 피해를 !M! 줍니다. NL NL 강화 3: 이 카드를  *《폭주전차》 *오르온 으로 사용합니다.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL 턴 종료시 이하의 효과중 하나를 발동합니다. NL 방어도를 !M! 얻습니다. NL 기사 를 소환합니다.NL 무작위 적에게 피해를 !M! 줍니다. NL NL 강화 3: 이 카드를  *《폭주전차》 *오르온+ 으로 사용합니다."
+  },
+  "shadowverse:TheChariot_I": {
+    "NAME": " 《폭주전차》 오르온",
+    "DESCRIPTION": "턴 종료시 무작위 적에게 피해를 !M! 주거나 내 최대체력의 절반만큼 스스로 피해를 받습니다. NL 이 효과를 2회 발동합니다."
+  },
+  "shadowverse:CorruptionOfUnkilling": {
+    "NAME": "부식의 절명",
+    "DESCRIPTION": "턴 종료시 모든 적이 힘과 민첩을 1 잃습니다.  NL 중첩 불가, 3턴간 지속됩니다.NL 소멸.",
+    "UPGRADE_DESCRIPTION": "선천성. 턴 종료시 모든 적이 힘과 민첩을 1 잃습니다.  NL 중첩 불가, 3턴간 지속됩니다.NL 소멸."
+  },
+  "shadowverse:UltimateHollow": {
+    "NAME": "극의의 공허",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 보물 카드가 4장 이상 소멸되었으면 피해를 2배로 주고 방어도를 !B! 얻습니다. NL 이 카드는 보물로 간주됩니다."
+  },
+  "shadowverse:LoathingDesire": {
+    "NAME": "증오의 절연",
+    "DESCRIPTION": "체력을 1 잃습니다. NL 흡혈 을 얻습니다. NL 휘발성. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "체력을 1 잃습니다. NL 흡혈 을 얻습니다. NL 소멸."
+  },
+  "shadowverse:ReturningMelody": {
+    "NAME": "되돌아오는 종연",
+    "DESCRIPTION": "소멸된 공격 카드를 !M! 장 선택해 그 복사본을 1장씩 얻습니다. NL 소멸된 공격 카드가 10장 이상이라면,비용이 1,2인 무작위 공격이나 파워 카드를 1장씩 손으로 가져옵니다. "
+  },
+  "shadowverse:UnleashTruth": {
+    "NAME": "해방된 허위",
+    "DESCRIPTION": " [E] 를 얻습니다. NL 위치 클래스 카드 1장을 뽑을 카드더미에서 가져옵니다. NL 그 카드의 비용이 3 이상이었다면 비용을 1 감소시킵니다.NL 소멸.",
+    "UPGRADE_DESCRIPTION": "선천성. [E] 를 얻습니다. NL 위치 클래스 카드 1장을 뽑을 카드더미에서 가져옵니다. NL 그 카드의 비용이 3 이상이었다면 비용을 1 감소시킵니다. NL 소멸."
+  },
+  "shadowverse:ResentfulScreaming": {
+    "NAME": "원한의 절규",
+    "DESCRIPTION": "힘이나 민첩을 제외한 적의 버프 하나를 지웁니다. (인공물 우선) NL 카드를 소멸시킵니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "힘이나 민첩을 제외한 적의 버프 하나를 지웁니다. (인공물 우선) NL 카드를 소멸시킵니다."
+  },
+  "shadowverse:EvidenceOfOne": {
+    "NAME": "위대한 증명",
+    "DESCRIPTION": "취약과 약화를 !M! 부여합니다. NL 이번 전투에서 *위대한 *유일 *마젤베인 을 사용했었다면 피해를 !D! 줍니다. NL 소멸."
+  },
+  "shadowverse:PerjuryOfTruth": {
+    "NAME": "허위의 위증",
+    "DESCRIPTION": "적이 힘과 민첩을 모두 잃습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "보존. NL 적이 힘과 민첩을 모두 잃습니다. NL 소멸."
+  },
+  "shadowverse:ShootOfUnkilling": {
+    "NAME": "절명의 통격",
+    "DESCRIPTION": "적이 힘을 !M! 잃습니다. NL 강화 3: 내 다음 턴 시작에, 이 적이 공격하려고 했고 피해를 0 입혔다면,이 적의 최대 체력만큼 피해를 줍니다. NL 소멸."
+  },
+  "shadowverse:LightOfHollow": {
+    "NAME": "공허의 잔광",
+    "DESCRIPTION": "보존. 보물. NL 융합: 보물. NL 융합할때마다 카드를 뽑습니다. NL 총 !D! 의 피해를 적들에게 나누어 입힙니다. NL 4장 이상 융합되었다면 피해를 2배로 합니다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (융합 수: ",
+      ")"
+    ]
+  },
+  "shadowverse:WingsOfDesire": {
+    "NAME": "절연의 날개",
+    "DESCRIPTION": "이 다음 공격 카드를 사용하면 체력을 1 잃고 모든 적이 체력을 !M! 잃습니다. NL 강화 2: 체력을 2 잃고 모든 적이 체력을 !M! 의 2배만큼 잃습니다. NL 소멸."
+  },
+  "shadowverse:FlowOfDispair": {
+    "NAME": "절망의 격류",
+    "DESCRIPTION": "체력이 40% 이하인 적을 처치합니다.. NL 소멸."
+  },
+  "shadowverse:BlackArtifact2": {
+    "NAME": "신약 흑의 노래",
+    "DESCRIPTION": "보존 / AF. NL 소멸을 가진 공격 카드를 사용할 때마다 비용 -1. NL 모든 적에게 피해를 !D! 줍니다. NL 턴 시작시 모든 적에게 피해를 !M! 줍니다. If  *신약 *백의 *노래 를 사용했었다면 피해를 2배로 줍니다.NL 소멸 불가."
+  },
+  "shadowverse:WhiteArtifact2": {
+    "NAME": "신약 백의 노래",
+    "DESCRIPTION": "보존 / AF. NL 소멸을 가진 공격 카드를 사용할 때마다 비용 -1. NL 방어도를 !B! 얻습니다. NL 턴 시작시 방어도를 !M! 얻습니다. If *신약 *흑의 *노래 를 사용했었다면 방어도를 2배로 얻습니다.NL 소멸 불가."
+  },
+  "shadowverse:SoloOfMelody": {
+    "NAME": "종연의 독창",
+    "DESCRIPTION": "카드를 1장 소멸시킵니다. NL 무작위 적에게 피해를 !D! 줍니다. NL 모든 적에게 피해를 !M! 줍니다. NL 소멸."
+  },
+  "shadowverse:OmenOfCraving": {
+    "NAME": "결핍의 재앙 기르네리제",
+    "DESCRIPTION": "피해를 !D! 주고 가해진 피해만큼 체력을 회복합니다. NL 방어도를 !B! 얻고 흐릿함을 1 얻습니다. NL 힘을 2 얻습니다. NL 이번 턴이 5턴째 이후라면 카드를 5장 뽑습니다."
+  },
+  "shadowverse:OmenOfCraving2": {
+    "NAME": "갈증의 결핍 기르네리제",
+    "DESCRIPTION": "피해를 !D! 주고 체력을 6 회복합니다. NL 힘을 2 얻고 민첩을 2 잃습니다. NL 직접소환: 이번 턴이 5턴째 이후라면, 이 카드를 손에 넣고 소멸시킨 후, *갈증의 *감로 1장을 얻습니다."
+  },
+  "shadowverse:RavenousSweetness": {
+    "NAME": "갈증의 감로",
+    "DESCRIPTION": "피해를 !D! 주고 체력을 5 회복합니다. NL 적이 힘을 5 잃습니다. NL 카드를 1장 뽑습니다. NL 소멸."
+  },
+  "shadowverse:BirthOfRavenous": {
+    "NAME": "강탄하는 갈증",
+    "DESCRIPTION": "이하의 효과를 얻습니다 : 이번 턴 카드를 3장 이상 사용했다면 다음 턴 카드를 1장 더 뽑습니다. NL 소멸."
+  },
+  "shadowverse:AdherentOfDesire": {
+    "NAME": "절연의 숭배자",
+    "DESCRIPTION": "체력을 1 잃고 피해를 !D! 줍니다. NL 갈망 상태라면 피해량이 !M! 증가합니다. NL 광란 상태라면 모든 적에게 피해를 !M! 줍니다."
+  },
+  "shadowverse:AdherentOfScream": {
+    "NAME": "절규의 숭배자",
+    "DESCRIPTION": "가속화 0: 소생 1. NL NL --------------------- NL NL 방어도를 !B! 얻습니다. 소생 1, 그리고 소생 1."
+  },
+  "shadowverse:AdherentOfElimination": {
+    "NAME": "허위의 숭배자",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 다른 카드를 사용할 때마다 이 카드의 피해량 + !M!."
+  },
+  "shadowverse:AdherentOfMelody": {
+    "NAME": "종연의 숭배자",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 공격 카드를 1장 소멸시키고, 그 카드의 복사본을 얻습니다. NL 파워 카드를 1장 소멸시키고, 그 카드의 복사본을 얻습니다."
+  },
+  "shadowverse:AdherentOfHollow": {
+    "NAME": "공허의 숭배자",
+    "DESCRIPTION": "보물 카드를 사용하면 강화됩니다. NL 피해를 !D! 줍니다. NL *진화 *포인트 를 사용할 때마다 무작위 보물 을 1장 얻습니다.",
+    "UPGRADE_DESCRIPTION": "사용후 강화해제 됩니다. NL 피해를 !D! 줍니다. NL *진화 *포인트 를 사용할 때마다 무작위 보물 을 1장 얻습니다."
+  },
+  "shadowverse:AdherentOfDispair": {
+    "NAME": "절망의 숭배자",
+    "DESCRIPTION": "턴 종료시 이번 턴 공격 카드를 사용하지 않았다면 버퍼를 얻습니다. NL !M! 번 까지 중첩 가능."
+  },
+  "shadowverse:AdherentOfAnnihilation": {
+    "NAME": "절명의 숭배자",
+    "DESCRIPTION": "디버프를 부여할 때마다 카드를 !M! 장 뽑습니다."
+  },
+  "shadowverse:Erika": {
+    "NAME": "충의의 검사 에리카",
+    "DESCRIPTION": " !M! /1. NL 지속: 무작위 적에게 공격력의 4배만큼 피해를 주고 체력을 1 잃습니다.공격 카드를 사용하거나 추종자나 마법진을 소환할 때마다 이번 턴 +1/+0 을 얻습니다. NL 연계 7: *비장의 *검술 을 얻습니다(제한).",
+    "UPGRADE_DESCRIPTION": " !M! /1. NL 지속: 무작위 적에게 공격력의 4배만큼 피해를 주고 체력을 1 잃습니다.공격 카드를 사용하거나 추종자나 마법진을 소환할 때마다 이번 턴 +1/+0 을 얻습니다. NL 연계 7: *비장의 *검술 을 얻습니다(제한). NL 연계 15: *에리카의 *검술 을 얻습니다.",
+    "EXTENDED_DESCRIPTION": [
+      "(연계: ",
+      ")"
+    ]
+  },
+  "shadowverse:SecretSkill": {
+    "NAME": "비장의 검술",
+    "DESCRIPTION": "턴 종료시, 공격하려고 했던 첫번째 적을 기절시킵니다."
+  },
+  "shadowverse:OtherworldGatekeeper": {
+    "NAME": "죽음의 문을 이어주는 자",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 뽑을 카드더미에서 비용이 1 이하이고 유언을 가진 공격 카드 !M! 장을 사용합니다. NL 유언: 이 카드가 소멸되면, 체력을 1 회복합니다."
+  },
+  "shadowverse:V": {
+    "NAME": "마도 사륜차 V",
+    "DESCRIPTION": "보존. NL 탑승: 1. NL 피해를 !D! 줍니다. NL 이하의 목록에서 무작위로 2개를 발동합니다 : NL 카드를 1장 뽑습니다 NL 모든 적에게 피해를 4 줍니다 NL 무작위 적에게 피해를 !M! 줍니다 NL 방어도를 !B! 얻습니다.",
+    "UPGRADE_DESCRIPTION":"보존. NL 탑승: 1. NL 피해를 !D! 줍니다. NL 이하의 목록에서 무작위로 2개를 발동합니다 : NL 카드를 2장 뽑습니다 NL 모든 적에게 피해를 6 줍니다 NL 무작위 적에게 피해를 !M! 줍니다 NL 방어도를 !B! 얻습니다."
+  },
+  "shadowverse:DesperadosShot": {
+    "NAME": "무법자의 탄환",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 손에 *진화 *포인트 가 있었다면 그중 하나를 소멸시키고 무작위 적에게 피해를 !D! 주고 , *마도 *사륜차 *V 를 얻습니다. 그 카드의 비용이 0이 됩니다. NL 소멸."
+  },
+  "shadowverse:Spector": {
+    "NAME": "환상의 2인조 버니 앤 버론",
+    "DESCRIPTION": " 가속화 0: *무법자의 *탄환 을 얻습니다. NL NL --------------------- NL NL 피해를 !D! 줍니다. NL 유언: 다음 턴 시작에 *마도 *사륜차 *V 를 얻습니다.그 카드의 비용이 0이 됩니다. NL 소멸."
+  },
+  "shadowverse:HonoredFrontguardGeneral": {
+    "NAME": "영광을 부르는 최전선의_선봉장",
+    "DESCRIPTION": "여러번 강화가능. NL *최전선의 *선봉장 을 하나 소환하고 + !M! / !M! 합니다. NL 소멸."
+  },
+  "shadowverse:Aramis": {
+    "NAME": "아라미스",
+    "DESCRIPTION": "공격 카드를 사용할 때마다 힘과 민첩을 1 얻고 피해량을 3 늘립니다. NL 추종자를 소환할 때 마다 피해량을 3 늘리고 그 추종자에게 +1/+1 합니다. NL 피해를 !D! 줍니다. NL 소멸."
+  },
+  "shadowverse:Porthos": {
+    "NAME": "포르토스",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 턴 종료시 무작위 적에게 피해를 !B! 줍니다. NL 소멸."
+  },
+  "shadowverse:Athos": {
+    "NAME": "아토스",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 이번 턴 방어도를 모두 잃지 않으면 다음 턴 시작에 방어도를 !B! 얻습니다. NL 소멸."
+  },
+  "shadowverse:DArtagnan": {
+    "NAME": "달타냥",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL *총사의 *맹세 를 강화했다면 피해량을 2배로 합니다. NL 소멸."
+  },
+  "shadowverse:MusketeersVow": {
+    "NAME": "총사의 맹세",
+    "DESCRIPTION": "결단: 이하의 카드중 2장을 골라 얻습니다: NL *아라미스 NL *포르토스 NL *아토스 NL *달타냥 NL NL 강화 4: 대신 4장 모두를 얻습니다. *진화 *포인트 를 2장 이상 가지고 있었다면 얻은 카드들을 강화합니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "결단: 이하의 카드중 2장을 골라 얻습니다: NL *아라미스 NL *포르토스 NL *아토스 NL *달타냥 NL NL 강화 4: 대신 4장 모두를 얻습니다. *진화 *포인트 를 2장 이상 가지고 있었다면 얻은 카드들을 강화합니다. NL 소멸 !stslib:ex!."
+  },
+  "shadowverse:Maiser_Story": {
+    "NAME": "음속질주의 영웅 마이저",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL *기동 *이륜차 를 1장 얻습니다. NL 이번 턴 스킬 카드를 사용할 때마다 모든 적에게 피해를 5 줍니다. NL 소멸."
+  },
+  "shadowverse:Selena_Story": {
+    "NAME": "달콤한 폭격 셀리나",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 다른 공격 카드가 1장 이상 있다면 체력을 4 회복합니다. NL 2장 이상 있다면 카드를 2장 뽑습니다. NL 3장 이상 있다면 힘과 민첩을 1 얻습니다. NL 소멸."
+  },
+  "shadowverse:Illganeau_Story": {
+    "NAME": "깨어난 공허 이르간느",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 모든 적이 힘과 민첩을 1 잃습니다. NL 소멸된 카드 1장당 피해를 !M! 더 줍니다. NL 소멸."
+  },
+  "shadowverse:Sekka_Story": {
+    "NAME": "구미호의 맹화 셋카",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL [E]를 얻고 *진화 *포인트 를 얻습니다. NL 이번 대전에서 타격이 아닌 공격 카드를 18장 이상 사용했다면,힘과 민첩을 !M! 얻습니다. NL 소멸.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (사용한 비-타격 공격 카드: ",
+      ".)"
+    ]
+  },
+  "shadowverse:Dracu_Story": {
+    "NAME": "하늘을 가르는 용인 드라크",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 민첩을 1 얻습니다. NL 민첩이 5 이상이라면 피해를 1번 더 줍니다.NL 소멸."
+  },
+  "shadowverse:Kagero_Story": {
+    "NAME": "비검의 혼 카게로우",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 무작위 적에게 취약을 2 부여합니다. NL 사령술 10: 피해를 !M! 더 줍니다. NL 소멸."
+  },
+  "shadowverse:VerdictWord": {
+    "NAME": "판결의 한마디",
+    "DESCRIPTION": "결단: 이하의 목록에서 내 직업이 아닌 카드를 하나 골라 얻습니다.: NL *음속질주의 *영웅 *마이저 NL *달콤한 *폭격 *셀리나 NL *깨어난 *공허 *이르간느 NL NL 이번 전투에서 *판결의 *한마디 를 2장 이상 사용했다면, 고르는 대신 모두 가져오고 강화시킨 후, 피해량을 2배로 만듭니다. NL 보존. NL 소멸."
+  },
+  "shadowverse:AbsoluteOrder": {
+    "NAME": "절대적 명령",
+    "DESCRIPTION": "결단: 이하의 목록에서 내 직업이 아닌 카드를 하나 골라 얻습니다.: *구미호의 *맹화 *셋카 NL *하늘을 *가르는 *용인 *드라크 NL *비검의 *혼 *카게로우 NL NL 이번 전투에서 *절대적 *명령 을 2장 이상 사용했다면, 고르는 대신 모두 가져오고 강화시킨 후 피해량을 2배로 만듭니다. NL 보존. NL 소멸."
+  },
+  "shadowverse:Skullfather": {
+    "NAME": "해골 아버지",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 힘과 민첩을 1 얻습니다.NL 소멸."
+  },
+  "shadowverse:EnNightmareTime": {
+    "NAME": "악몽의 시작",
+    "DESCRIPTION": "체력을 1 잃습니다. NL 모든 디버프를 제거합니다. NL 매 턴 시작에 카드를 !M! 장 더 뽑습니다. NL 소멸."
+  },
+  "shadowverse:EnBloodyNail": {
+    "NAME": "피의 손톱",
+    "DESCRIPTION": "체력을 1 잃고 피해를 !D! 줍니다. NL 이하의 효과를 부여합니다 : 공격 카드를 사용하면 피해를 1 받습니다. NL 소멸."
+  },
+  "shadowverse:EnDemonStorm": {
+    "NAME": "악마의 폭풍",
+    "DESCRIPTION": "자기자신과 모든 적에게 피해를 !D! 줍니다."
+  },
+  "shadowverse:EnMono": {
+    "NAME": "유구한 붉은빛 모노",
+    "DESCRIPTION": "기계. NL 방어도를 !B! 얻습니다. NL 힘을 2 얻습니다. NL 복수 상태라면 금속화를 !M! 얻습니다."
+  },
+  "shadowverse:EnDemonCommander": {
+    "NAME": "악마 사령관 라우라",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 복수 상태라면 다음 공격 카드가 2회 사용됩니다."
+  },
+  "shadowverse:EnTerrorNight": {
+    "NAME": "두려움의 밤",
+    "DESCRIPTION": "자기자신과 모든 적에게 피해를 !D! 줍니다. NL 다음 턴에 카드를 뽑는 대신 *악몽의 *시작 , *피의 *손톱 , *공포의 *기운 을 얻습니다.(제한)."
+  },
+  "shadowverse:EnBloodPact": {
+    "NAME": "피의 계약",
+    "DESCRIPTION": "체력을 2 잃습니다. NL 다음 턴 카드를 !M! 장 더 뽑습니다."
+  },
+  "shadowverse:Seox": {
+    "NAME": "늑대신 시스",
+    "DESCRIPTION": "피해를 !D! 만큼 2번 줍니다. NL 오의 3: 1번 반복합니다. NL 해방오의 6: 2번 반복합니다."
+  },
+  "shadowverse:EnLonePromise": {
+    "NAME": "약속의 한 송이",
+    "DESCRIPTION": "기계. NL 힘을 1 얻습니다. 체력을 !M! 회복합니다. NL 약화를 !M! 부여합니다."
+  },
+  "shadowverse:Taketsumi": {
+    "NAME": "꽃내장 타케츠미",
+    "DESCRIPTION": "연악. NL 방어도를 !B! 얻습니다. NL *호기로운 *검놀림 을 얻습니다. NL 연계 10: *진화 *포인트 를 얻습니다.",
+    "UPGRADE_DESCRIPTION": "연악. NL 방어도를 !B! 얻습니다. NL *호기로운 *검놀림+ 을 얻습니다. NL 연계 10: *진화 *포인트 를 얻습니다.",
+    "EXTENDED_DESCRIPTION": [
+      "(연계:",
+      ")"
+    ]
+  },
+  "shadowverse:HeroOfTheHunt": {
+    "NAME": "호기로운 검놀림",
+    "DESCRIPTION": "연악. NL 피해를 !D! 줍니다. NL 연계 10: 1턴간 받는 피해를 1 감소시킵니다. NL 소멸. NL ",
+    "EXTENDED_DESCRIPTION": [
+      "(연계:",
+      ")"
+    ]
+  },
+  "shadowverse:Anisage": {
+    "NAME": "인과의 미아 앤서주",
+    "DESCRIPTION": "연악. NL 피해를 !D! 줍니다. NL *망설임 *없는 *의지 를 얻습니다..",
+    "UPGRADE_DESCRIPTION": "연악. NL 피해를 !D! 줍니다. NL *망설임 *없는 *의지+ 를 얻습니다."
+  },
+  "shadowverse:UndyingResolve": {
+    "NAME": "망설임 없는 의지",
+    "DESCRIPTION": "연악. NL 버린 카드더미의 카드 하나를 골라 비용을 1 감소시킵니다. NL 그 카드가 *인과의 *미아 *앤서주 라면  그 카드에게 이하의 효과를 부여합니다 : 유언 : 이 카드가 소멸되면 이 카드의 복사본을 하나 손에 넣고 그 피해량을 2배로 합니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "연악. NL 버린 카드더미의 카드 하나를 골라 비용을 1 감소시키고 소멸시킵니다. NL 그 카드가 *인과의 *미아 *앤서주 라면  그 카드에게 이하의 효과를 부여합니다 : 유언 : 이 카드가 소멸되면 이 카드의 복사본을 하나 손에 넣고 그 피해량을 2배로 합니다. NL 소멸."
+  },
+  "shadowverse:SoulGuide": {
+    "NAME": "영혼들의 안내인",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 카드를 1장 파괴하고 카드를 !M! 장 뽑습니다."
+  },
+  "shadowverse:Krampus": {
+    "NAME": "크람푸스",
+    "DESCRIPTION": "가속화 0: 카드를 1장 파괴합니다. 카드를 뽑고, 묘지를 2 얻고 무작위 적에게 피해를 !M! 줍니다. NL NL --------------------- NL NL 피해를 !D! 줍니다. NL 유언: 이 카드가 사용되거나 소멸되면, 카드를 뽑고 묘지를 2 얻고 무작위 적에게 약화를 !M! 부여합니다.",
+    "EXTENDED_DESCRIPTION": [
+      "버린 카드더미에 공격 카드가 없다!"
+    ]
+  },
+  "shadowverse:Itsurugi": {
+    "NAME": "동경을 향한 비약 이츠루기",
+    "DESCRIPTION": "연악. NL 방어도를 !B! 얻습니다. NL *어린 *늑대의 *분투 를 얻습니다. NL 이하의 효과를 얻습니다: 턴 종료시 체력을 1 회복하고 모든 적에게 피해를 3 줍니다.",
+    "UPGRADE_DESCRIPTION": "연악. NL 방어도를 !B! 얻습니다. NL *어린 *늑대의 *분투+ 를 얻습니다. NL 이하의 효과를 얻습니다: 턴 종료시 체력을 1 회복하고 모든 적에게 피해를 3 줍니다."
+  },
+  "shadowverse:WolflingStruggle": {
+    "NAME": "어린 늑대의 분투",
+    "DESCRIPTION": "연악. NL 피해를 !D! 줍니다. NL 카드를 1장 뽑습니다. NL 소멸."
+  },
+  "shadowverse:Yukishima": {
+    "NAME": "진리의 대문호 유키시마",
+    "DESCRIPTION": "연악. NL 카드를 뽑을때마다 무작위 적에게 피해를 1 주고, 손에 있는 무작위 공격 카드 1장의 피해량을 1 늘립니다. NL 강화 4: 모든 적에게 이번 전투동안 뽑은 카드 수만큼 피해를 줍니다.",
+    "UPGRADE_DESCRIPTION": "연악. NL 이 카드의 복사본을 버린 카드더미에 섞어넣습니다. NL 연악. NL 카드를 뽑을때마다 무작위 적에게 피해를 1 주고, 손에 있는 무작위 공격 카드 1장의 피해량을 1 늘립니다. NL 강화 4: 모든 적에게 이번 전투동안 뽑은 카드 수만큼 피해를 줍니다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (뽑은 카드 수: ",
+      ")"
+    ]
+  },
+  "shadowverse:Hozumi": {
+    "NAME": "현혹의 여주인 호즈미",
+    "DESCRIPTION": "연악. NL 방어도를 !B! 얻습니다. NL 이번 턴 카드를 4장 이상 사용했다면, 손에 있는 모든 카드를 소멸시킵니다. 소멸된 공격 카드 1장당 무작위 공격 카드를 손에 넣고 그 비용을 0으로 만듭니다."
+  },
+  "shadowverse:MagnaSaber": {
+    "NAME": "마그나 세이버",
+    "DESCRIPTION": "연악. NL 탑승: 비용 2 이하. NL 피해를 !D! 줍니다. NL 모든 적에게 피해를 !M! 줍니다. NL 이 카드가 소멸되면 탑승한 카드는 손으로 돌아오지 않고, 대신 이 카드의 복사본을 손에 넣고 그 비용을 0으로 만듭니다."
+  },
+  "shadowverse:AllFeeling": {
+    "NAME": "금박 백면의 사악한 신",
+    "DESCRIPTION": "연악. NL 손의 카드를 !M! 장 소멸시키고 카드를 !M! 장 뽑습니다. NL *암흑물질 !M! 장을 버린 카드 더미에 넣습니다. NL 손, 뽑을 카드더미, 버린 카드더미, 소멸된 카드, 마법진 칸에 있는 저주 카드의 !D! 배만큼 모든 적에게 피해를 줍니다."
+  },
+  "shadowverse:Paracelise": {
+    "NAME": "욕망의 대악마 파라세리제",
+    "DESCRIPTION": "연악. NL 피해를 !D! 주고 카드를 3장 버립니다. NL 직접소환: 턴 종료시 손에 카드가 없다면, 이 카드를 손에 넣고 방어도를 !B! 얻고, 체력을 !M! 회복하고, 모든 적에게 피해를 !M! 주고 다음 턴 카드를 1장 더 뽑습니다."
+  },
+  "shadowverse:ArcticChimera": {
+    "NAME": "극관의 환상수",
+    "DESCRIPTION": "가속화 0: 대지의 비술: 피해를 !D! 주고 카드를 1장 뽑습니다. NL NL --------------------- NL NL 방어도를 !B!만큼 2번 얻습니다. NL 대지의 비술 3: 대신 3번 얻고, 내 방어도만큼 피해를 줍니다. NL 내 대지의 정수가 3 이하라면, 정수를 2 얻고 취약을 2 부여합니다."
+  },
+  "shadowverse:EternalContract": {
+    "NAME": "무제한 계약",
+    "DESCRIPTION": "연악. NL 카드를 !M! 장 뽑습니다. NL 카드를 !M! 장 버립니다."
+  },
+  "shadowverse:Lifetime": {
+    "NAME": "일생을 바친 탐구",
+    "DESCRIPTION": "연악. NL 카드를 1장 버리고 카드를 !M! 장 뽑습니다. NL 이번 전투에서 카드를 15장 이상 뽑았다면 2장 더 뽑습니다. draw 2 more.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (뽑은 카드 수: ",
+      ")"
+    ]
+  },
+  "shadowverse:TriggerPuppeteer": {
+    "NAME": "트리거 마리오네트",
+    "DESCRIPTION": "카드를 !M! 장 뽑습니다. NL *꼭두각시 *인형 !M! 장을 얻습니다."
+  },
+  "shadowverse:WhiteEagleBaptism": {
+    "NAME": "영창 : 흰 독수리의 세례",
+    "DESCRIPTION": "*신성한 *매 나 *거대한 *매 중 하나를 무작위로 얻습니다. NL 카운트다운 2: 얻지 않은 쪽을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "*신성한 *매+ 나 *거대한 *매+ 중 하나를 무작위로 얻습니다. NL 카운트다운 2: 얻지 않은 쪽을 얻습니다."
+  },
+  "shadowverse:Faker": {
+    "NAME": "둔갑의 귀재",
+    "DESCRIPTION": "이 카드가 버려지면 턴 종료시까지 복수 상태가 됩니다. NL 복수 상태라면 이번 턴 사용한 타격이 아닌 공격 카드 1장당 힘과 민첩을 1 얻습니다. NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "이 카드가 버려지면 턴 종료시까지 복수 상태가 됩니다. NL 복수 상태라면 이번 턴 사용한 타격이 아닌 공격 카드 1장당 힘과 민첩을 1 얻습니다."
+  },
+  "shadowverse:RoomServiceDevil": {
+    "NAME": "룸서비스 악마",
+    "DESCRIPTION": "가속화 0: 카드를 1장 버리고 피해를 !M! 줍니다. NL NL --------------------- NL NL 피해를 !D! 줍니다. 내 손에 카드가 2장 이하로 있다면 피해를 1번 더 주고 방어도를 !B! 얻습니다."
+  },
+  "shadowverse:JubilanceWitch": {
+    "NAME": "작렬의 마녀",
+    "DESCRIPTION": "대지의_정수 를 !M! 얻습니다. NL 그 후에 내 대지의_정수 가 3 이상이면 모든 적에게 피해를 !D! 줍니다."
+  },
+  "shadowverse:AcidGolem": {
+    "NAME": "산성 골렘",
+    "DESCRIPTION": "대지의 비술: 피해를 !D! 줍니다. NL 대지의 비술 2: 반복합니다. NL 대지의 비술 3: 반복합니다."
+  },
+  "shadowverse:Comfort": {
+    "NAME": "꿈의 대접",
+    "DESCRIPTION": "카드를 1장 소멸시키고 피해를 !D! 줍니다. NL 치명타라면 최대체력을 !M! 증가시킵니다. NL 소멸."
+  },
+  "shadowverse:InsatiableDesire": {
+    "NAME": "탐욕에 대한 갈망",
+    "DESCRIPTION": "턴 시작시 [E]를 잃고 카드를 1장 더 뽑습니다. NL 중첩 불가. NL 소멸 .",
+    "UPGRADE_DESCRIPTION": "턴 시작시 카드를 1장 더 뽑습니다. NL 중첩 불가. NL 소멸 ."
+  },
+  "shadowverse:UnselfishGrace": {
+    "NAME": "무욕을 향한 은총",
+    "DESCRIPTION": "재생을 2 얻습니다 . NL 카운트다운 3 :이하의 효과를 얻습니다 '체력을 잃을때마다, 모든 적의 최대체력을 !M! 감소시킵니다' ."
+  },
+  "shadowverse:TheTemperance": {
+    "NAME": "《절제》 루젠",
+    "DESCRIPTION": "가속화 0 *무욕을 *향한 *은총 을 얻습니다. 갈망 상태라면 대신 *탐욕에 *대한 *갈망 을 얻습니다. NL  NL --------------------- NL  NL 불가침을 1 얻습니다. NL 체력을 잃을때 마다 모든 적의 최대체력을 !M! 감소시킵니다. NL 소멸 ",
+    "UPGRADE_DESCRIPTION": "가속화 0 *무욕을 *향한 *은총+ 을 얻습니다. 갈망 상태라면 대신 *탐욕에 *대한 *갈망+ 을 얻습니다. NL  NL --------------------- NL  NL 불가침을 1 얻습니다. NL 체력을 잃을때 마다 모든 적의 최대체력을 !M! 감소시킵니다. NL 소멸 "
+  },
+  "shadowverse:MadnessCurse": {
+    "NAME": "미친건 너희다!",
+    "DESCRIPTION": "*광기+ 를 손이 가득 찰 때까지 얻습니다. NL 소멸 ."
+  }
+}

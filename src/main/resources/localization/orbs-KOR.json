@@ -1,0 +1,89 @@
+{
+  "shadowverse:Knight": {
+    "DESCRIPTION": [
+      "#y지속: 피해를 #b",
+      " 만큼 무작위 적에게 주고 체력을 #b1  잃습니다. NL #y발현: 체력이 #b0 이 될때까지 지속 효과를 반복합니다."
+    ],
+    "NAME": "기사"
+  },
+  "shadowverse:HeavyKnight": {
+    "DESCRIPTION": [
+      "#y지속: 무작위 적에게 #y약화 를 #b",
+      " 부여하고 체력을 #b1 잃습니다. NL #y발현: 체력이 #b0 이 될때까지 지속 효과를 반복합니다."
+    ],
+    "NAME": "중갑기사"
+  },
+  "shadowverse:SteelcladKnight": {
+    "DESCRIPTION": [
+      "#y지속: 무작위 적에게 피해를 #b",
+      " 주고 체력을 #b1 잃습니다. NL #y발현: 체력이 #b0 이 될때까지 지속 효과를 반복합니다."
+    ],
+    "NAME": "철갑기사"
+  },
+  "shadowverse:ShieldGuardian": {
+    "DESCRIPTION": [
+      "#y지속: #y방어도 를 #b",
+      " 얻고 체력을 1 잃습니다. NL #y발현: 체력이 #b0 이 될때까지 지속 효과를 반복합니다."
+    ],
+    "NAME": "Shield Guardian"
+  },
+  "shadowverse:FrontguardGeneral": {
+    "DESCRIPTION": [
+      "#y지속: #y방어도 를 #b",
+      " 얻고, 다음 턴 #y방어도 를 #b",
+      " 얻고 턴 종료시 체력을 1 잃습니다 lose #b1 Health by the end of your turn. NL #y발현: 체력이 #b0 이 될때까지 지속 효과를 반복합니다."
+    ],
+    "NAME": "최전선의 선봉장"
+  },
+  "shadowverse:QueenHemera": {
+    "DESCRIPTION": [
+      "#y지속: 방어도를 #b",
+      " 얻고 , 기사를 #b1 명 소환하고 체력을 1 잃습니다. NL #y발현: 체력이 #b0 이 될때까지 지속 효과를 반복합니다."
+    ],
+    "NAME": "용맹한 왕 이멜라"
+  },
+  "shadowverse:QueenMagnus": {
+    "DESCRIPTION": [
+      "#y지속: 무작위 적에게 #b",
+      " 피해를 주고 체력을 1 잃습니다. 다음 턴에 에너지를 얻습니다 . NL #y발현: 체력이 #b0 이 될때까지 지속 효과를 반복하고 , 에너지를 즉시 얻습니다."
+    ],
+    "NAME": "우아한 여왕 매그너스"
+  },
+  "shadowverse:Quickblader": {
+    "DESCRIPTION": [
+      "#y지속: 무작위 적에게 취약을 #b1 부여하고, 피해를 #b",
+      " 주고 체력을 1 잃습니다. NL #y발현: 체력이 #b0 이 될때까지 지속 효과를 반복합니다."
+    ],
+    "NAME": "신속의쌍검사"
+  },
+  "shadowverse:Viking": {
+    "DESCRIPTION": [
+      "#y지속: 무작위 적에게 취약을 #b",
+      " 부여하고 , 피해를 #b",
+      " 부여하고 체력을 1 잃습니다. NL #y발현: 체력이 #b0 이 될때까지 지속 효과를 반복합니다."
+    ],
+    "NAME": "바이킹"
+  },
+  "shadowverse:Pirate": {
+    "DESCRIPTION": [
+      "#y지속: 방어도를 #b",
+      " 얻고 체력을 1 잃습니다. NL #y발현: 체력이 #b0 이 될때까지 지속 효과를 반복합니다."
+    ],
+    "NAME": "해적"
+  },
+  "shadowverse:CannonHermitCrabOrb": {
+    "DESCRIPTION": [
+      "#y지속: 무작위 적에게 피해를 #b",
+      " 주고 방어도를 #b",
+      " 얻고 체력을 1 잃습니다. 공명 상태거나 나테라의 신목을 사용했다면, 공격력과 체력이 절반인 캐논 소라게를 소환합니다.(반올림) . NL #y발현: 체력이 #b0 이 될때까지 지속 효과를 반복합니다."
+    ],
+    "NAME": "캐논 소라게"
+  },
+  "shadowverse:Amulet": {
+    "DESCRIPTION": [
+      "#카운트다운 #b",
+      " :\b"
+    ],
+    "NAME": "마법진: "
+  }
+}
