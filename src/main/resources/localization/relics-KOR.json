@@ -1,540 +1,540 @@
 {
   "shadowverse:FriendOfTruth": {
-    "NAME": "Honest Cohort",
-    "FLAVOR": "Expose yourself to the deepest truths—the qualities, faculties, and reality of this plane.",
+    "NAME": "참된 자",
+    "FLAVOR": "속속들이 드러내라. 본질, 본능, 진실을..",
     "DESCRIPTIONS": [
-      "At the start of each combat, Spellboost all cards in your hand and draw pile #b1 time(s). Put 1 #yShivs into your hand."
+      "매 전투 시작시 손과 뽑을 카드더미의 모든 카드를 1번 #b주문증폭 하고 #b단도 를 1장 얻습니다."
     ]
   },
   "shadowverse:Eleanor": {
-    "NAME": "Eleanor, Cosmic Friend",
-    "FLAVOR": "I am Eleanor Gloria, Cosmic Flower and friend to you. For the two of us I shall proudly bloom!",
+    "NAME": "천외의 꽃 엘레노아",
+    "FLAVOR": "나야말로 천외의 꽃! 그리고 그대의 벗! 둘을 위해 망설임 없이 피어나겠다!",
     "DESCRIPTIONS": [
-      "For the first #b3 turns, randomly add #b1 Exhaustive 0 cost #yPetrification , #yConjure #yTwosome or #yStaff #yof #yWhirlwinds to your hand."
+      "전투 시작 후 3턴간, 턴 시작시 비용이 0이고 소멸을 가진 변성술, 이중연성, 분노의 폭풍중 1장을 무작위로 얻습니다."
     ]
   },
   "shadowverse:EnchantedLibrary": {
-    "NAME": "Enchanted Library",
-    "FLAVOR": "Quiet, please. Noise upsets the books. -A poster in the Enchanted Library ",
+    "NAME": "마법도서관",
+    "FLAVOR": "책이 기분나빠하니 도서관에선 정숙. -마법도서관 벽보",
     "DESCRIPTIONS": [
-      "At the start of the first #b2 turn, put #b1 #yskill into your hand from draw pile."
+      "전투 시작 후 2턴간, 턴 시작시 스킬 카드 #b1 장을 뽑을 카드 더미에서 가져옵니다."
     ]
   },
   "shadowverse:EarthEssenceRelic": {
-    "NAME": "Earth Essence",
-    "FLAVOR": "I daresay the fruits of my research should take my magical abilities to still greater heights! ",
+    "NAME": "대지의 정수",
+    "FLAVOR": "실험으로 도출한 지식이 마법을 발전시킨다.",
     "DESCRIPTIONS": [
-      "At the start of each combat, gain #b1 #yEarth #yEssence."
+      "전투 시작시 대지의 정수를 #b1 얻습니다."
     ]
   },
   "shadowverse:Mysteria": {
-    "NAME": "Mysteria, Magic Founder",
-    "FLAVOR": "It's always around us, and always with you.",
+    "NAME": "마법의 시조 마나리아",
+    "FLAVOR": "정진하세요. 나아가세요. 언제나 마법은 함께 있노라니 ..",
     "DESCRIPTIONS": [
-      "At the start of each combat, add #b1 #yMysteria, #yMagic #yFounder into your draw pile and gain #b",
-      " Strength ."
+      "전투 시작시 마법의 시조 마나리아를 뽑을 카드더미에 넣고, 힘을 #b",
+      " 얻습니다 ."
     ]
   },
   "shadowverse:Genius": {
-    "NAME": "Genius Among Geniuses",
-    "FLAVOR": "You'll lose on turn 8!",
+    "NAME": "초천재",
+    "FLAVOR": "8턴에 당신을 끝내드리죠!",
     "DESCRIPTIONS": [
-      "At the end of the 8th turn, deal #b61 damage to all enemies."
+      "8턴째 종료시 모든 적에게 피해를 #b61 줍니다."
     ]
   },
   "shadowverse:MissLethal": {
-    "NAME": "Missed Lethal",
-    "FLAVOR": "... Anyway, let's clear the board first.",
+    "NAME": "놓쳐버린 킬각",
+    "FLAVOR": "일단 필드정리부터 하자...",
     "DESCRIPTIONS": [
-      "Gain #b1 [E] at the start of your turn. Once a combat, whenever a non-Minion enemy's HP is lower than 1/5th of its max by the start of turn, apply #yIntangible ."
+      "턴 시작시 [E] 를 얻습니다. 전투당 1번, 턴 시작시 하수인이 아닌 적의 체력이 1/5 이하라면 그 적에게 불가침을 1 부여합니다."
     ]
   },
   "shadowverse:Offensive": {
-    "NAME": "Token of 1st",
-    "FLAVOR": "I go first, no need to redraw.",
+    "NAME": "선공",
+    "FLAVOR": "선공은 나다 ! 드로우!",
     "DESCRIPTIONS": [
-      "Gain [E] when you play the first #ySkill card in a combat."
+      "전투에서 처음 스킬 카드를 사용하면 [E] 를 얻습니다."
     ]
   },
   "shadowverse:NeutralBook": {
-    "NAME": "Neutral Book",
-    "FLAVOR": "The story of a nightmare in Wonderland.",
+    "NAME": "중립 책",
+    "FLAVOR": "원더랜드 시절 메타가 적혀있는 악몽같은 그림책입니다.",
     "DESCRIPTIONS": [
-      "Enemies drop an additional Neutral card reward. Activates 3 times per Act."
+      "1막에 3번까지, 적이 추가로 중립 카드 보상을 떨어트립니다."
     ]
   },
   "shadowverse:BlackPinya": {
-    "NAME": "The Black Pinya",
-    "FLAVOR": "Pinya!",
+    "NAME": "블랙 피냐코라타",
+    "FLAVOR": "피냐!",
     "DESCRIPTIONS": [
-      "You feel more talkative.",
-      "@Pinyapipi!@"
+      "더 수다스러워지는듯한 기분이 듭니다.",
+      "@피냐피피!@"
     ]
   },
   "shadowverse:GoldPinya": {
-    "NAME": "The Golden Pinya",
-    "FLAVOR": "Pinya pinya~!",
+    "NAME": "황금 피냐코라타",
+    "FLAVOR": "피냐 피냐~!",
     "DESCRIPTIONS": [
-      "At the start of your turn, randomly put 1 #yDutiful #ySteed, #yBullet #yBike, or #yArcane #yPersonnel #yCarrier into your hand."
+      "턴 시작시, 무작위로 1 #y순종적인 #y준마, #y기동 #y이륜차, #y마도 #y장갑차 중 1장을 얻습니다."
     ]
   },
   "shadowverse:KMR1": {
-    "NAME": "Balance Changes: Defense Buff",
-    "FLAVOR": "To achieve better game balance, we're making changes to the enemies.",
+    "NAME": "밸런스 패치 : 방어",
+    "FLAVOR": "더 좋은 게임 경험을 위해 적을 뜯어고칩니다.",
     "DESCRIPTIONS": [
-      "At the start of each combat, all enemies gain #b8 block ."
+      "매 전투 시작시 모든 적이 방어도를 #b8 얻습니다 ."
     ]
   },
   "shadowverse:KMR2": {
-    "NAME": "Balance Changes: Strength Buff",
-    "FLAVOR": "To achieve better game balance, we're making changes to the enemies.",
+    "NAME": "밸런스 패치 : 힘",
+    "FLAVOR": "더 좋은 게임 경험을 위해 적을 뜯어고칩니다.",
     "DESCRIPTIONS": [
-      "At the start of each combat, all enemies gain #b1 strength ."
+      "전투 시작시 모든 적이 힘을 1 얻습니다."
     ]
   },
   "shadowverse:Offensive2": {
-    "NAME": "Token of 1st",
-    "FLAVOR": "I go first, no need to redraw.",
+    "NAME": "선공",
+    "FLAVOR": "선공은 나다 ! 드로우 !",
     "DESCRIPTIONS": [
-      "Every time you play #b5 cards in one turn, deal #b2 damage to all enemies."
+      "1턴에 카드를 #b5 장 사용할 때마다 모든 적에게 피해를 #b2 줍니다."
     ]
   },
   "shadowverse:SixMark": {
-    "NAME": "Bow of Unkilling",
-    "FLAVOR": "Fear not ruin, one must merely endure eternity.",
+    "NAME": "육련각인",
+    "FLAVOR": "두려워 말거라. 멸망따윈 있을수 없다. 영원히 견디면 된다.",
     "DESCRIPTIONS": [
-      "At the start of your turn, randomly apply 1 Vulnerable, Weak,  #yChoke , -1 #yStrength this turn, #yTalk #yto #ythe #yHand, or Poison to all enemies. Each of these debuffs can be applied only once."
+      "턴 시작시 모든 적에게 무작위로 취약, 약화, 교살, 손절, 중독을 1 부여하거나 힘을 1 감소시킵니다. 각 디버프는 최대 1회까지만 적용됩니다."
     ]
   },
   "shadowverse:ArisaBOSS": {
-    "NAME": "Quintitanias, Aether Bow",
-    "FLAVOR": "Come forth as verdant wind... Be my wings as I invoke thy name! Fly true!",
+    "NAME": "퀸 티타니아",
+    "FLAVOR": "이 화살에 미래를 실어서!",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st . NL Gain [E] whenever you play the #b6th card in a turn."
+      "선공을 대체합니다.1턴에 카드를 6장 사용할 때마다 [E] 를 얻습니다."
     ]
   },
   "shadowverse:NiouKyuu": {
-    "NAME": "Two-Crown Bow",
-    "FLAVOR": "The dignified jewels embedded in this bow gaze into eternity, identifying possible threats to peace. One arrow loosed from its string can put an end to those threats.",
+    "NAME": "이왕궁",
+    "FLAVOR": "영원을 궤뚫어 평화를 지키기 위해 반짝이는 활. 화살 한발로 모든 위협을 없앤다.",
     "DESCRIPTIONS": [
-      "ALL enemies start combat with #b1 #yPinpoint #yPrey ."
+      "전투 시작시 모든 적에게 아스트랄 하우저를 부여합니다."
     ]
   },
   "shadowverse:LymagaWeapon": {
-    "NAME": "Judgment Rising",
-    "FLAVOR": "Those slashed by her supreme blade, Judgment Rising, will be consumed by thorns and returned to the earth.",
+    "NAME": "책만",
+    "FLAVOR": "베이는 자의 몸을 가시덩굴로 뒤덮어 대지와 하나가 되도록 하는 지고의 대검.",
     "DESCRIPTIONS": [
-      "At the start of turn, put a 0 cost #yGreenwood #yGuardian into your hand."
+      "턴 시작시 비용이 0인 밀림의 수호자를 얻습니다."
     ]
   },
   "shadowverse:GlassOfIC": {
-    "NAME": "Iceschillendrig's Glasses",
-    "FLAVOR": "I'll lay Reclamation upon your vessel.",
+    "NAME": "아이시렌드링의 안경",
+    "FLAVOR": "꽤 좋은 육체가 될 것 같군.",
     "DESCRIPTIONS": [
-      "Whenever you lose HP, deal an equal amount of damage to ALL enemies."
+      "체력을 잃을때마다 모든 적도 똑같이 체력을 잃습니다."
     ]
   },
   "shadowverse:KyoukaBOSS": {
-    "NAME": "Cosmo Blue Rod",
-    "FLAVOR": "Cosmo Blue Flash!",
+    "NAME": "코스모 블루 로드",
+    "FLAVOR": "코스모 블루 플래쉬!!",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st . Whenever you play 6 #ySkill cards, the next #ySkill card will be played #btwice ."
+      "선공을 대체합니다. 스킬 카드를 6번 사용하면 폭주를 얻습니다."
     ]
   },
   "shadowverse:Mimori": {
-    "NAME": "Not-So-Ordinary",
-    "FLAVOR": "Nice to meet you! I'm Mimori Amamiya!",
+    "NAME": "평범하지만",
+    "FLAVOR": "만나서 반가워! 난 아마미야 미모리!",
     "DESCRIPTIONS": [
-      "Damage dealt + #b10%, damage taken - #b10%. By the end of your turn, if you have played at least 5 cards, damage dealt + #b10% (Up to 5 times). If you take any unblocked damage, damage dealt - #b10% ."
+      "가하는 피해 +10% , 받는 피해 -10%. 턴 종료시 이번 턴 카드를 5장 이상 사용했다면 가하는 피해를 추가로 +10%(최대 5회 중첩). 막히지 않은 피해를 받으면 가하는 피해 -10% ."
     ]
   },
   "shadowverse:KuonWeapon": {
-    "NAME": "Mitsura Ryakketsu",
-    "FLAVOR": "Calamity approaches! Might wanna run.",
+    "NAME": "밀라약결",
+    "FLAVOR": "시시하니까 그만 죽지 그래?",
     "DESCRIPTIONS": [
-      "At the start of combat, add 1 #yShikigami #ySummons into your hand."
+      "전투 시작시 식신 소환을 1장 얻습니다."
     ]
   },
   "shadowverse:GeassRelic": {
-    "NAME": "Geass: Survive",
-    "FLAVOR": "Survive!",
+    "NAME": "기아스:생존",
+    "FLAVOR": "살아라!",
     "DESCRIPTIONS": [
-      "One time per combat, when you would die, heal 1 HP, remove all of your debuffs, gain #b5 #yStrength and #yDexterity , gain #b25 #yBlock ."
+      "전투당 1번, 죽을것 같을때 체력을 1 회복하고 디버프를 모두 제거한 후, 힘과 민첩을 5 얻고 방어도를 25 얻습니다."
     ]
   },
   "shadowverse:Offensive3": {
-    "NAME": "Token of 1st",
-    "FLAVOR": "I go first, no need to redraw.",
+    "NAME": "선공",
+    "FLAVOR": "선공은 나다 ! 드로우 ! ",
     "DESCRIPTIONS": [
-      "At the start of your turn, #yNecromancy 3: Put 1 #yZombie into your hand."
+      "턴 시작시 사령술 3: 좀비를 1장 얻습니다."
     ]
   },
   "shadowverse:BurialGround": {
-    "NAME": "Burial Grounds",
-    "FLAVOR": "Death is gathering.",
+    "NAME": "공동묘지",
+    "FLAVOR": "죽음은 한도 끝도 없이 모여든다.",
     "DESCRIPTIONS": [
-      "At the end of your turn, gain #b1 #yShadows."
+      "턴 종료시 묘지를 1 얻습니다."
     ]
   },
   "shadowverse:LunaBOSS": {
-    "NAME": "Luna's Friend",
-    "FLAVOR": "Would you like to be Luna's friend?",
+    "NAME": "루나의 친구",
+    "FLAVOR": "루나의 친구가 되어줄래?",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st. At the start of your turn, #yNecromancy 4: Add 1 #yLich to your hand."
+      "선공을 대체합니다. 턴 시작시 사령술 4: 리치를 얻습니다."
     ]
   },
   "shadowverse:Todoroki": {
-    "NAME": "Thunderous Roar",
-    "FLAVOR": "Language breeds both good and evil. Only silence creates equality.",
+    "NAME": "굉",
+    "FLAVOR": "말은 공적과 죄를 낳는다. 침묵만이 평등을 창조한다.",
     "DESCRIPTIONS": [
-      "ALL enemies lose #b1 buff at the start of combat (if the enemy has #yArtifact, it will lose that first)."
+      "모든 적이 전투 시작시 버프를 #b1 개 잃습니다.(인공물 우선)"
     ]
   },
   "shadowverse:TailRelic": {
-    "NAME": "Mask of the Great Fox",
-    "FLAVOR": "We live within a strange story. Life is fleeting, mortals the flickering figures in a shadow play.",
+    "NAME": "여우 요괴의 가면",
+    "FLAVOR": "부질없는 목숨, 모두가 그림자. 부귀영화는 환상, 아아 재미있구나.",
     "DESCRIPTIONS": [
-      "Start each combat with #b1 #yOne-Tailed #yFox added to your draw pile. If you've played #b9 #yOne-Tailed #yFoxes this run, add #b1 #yGinsetsu, #yGreat #yFox to your deck instead."
+      "전투 시작시 #y일미호 1장을 뽑을 카드 더미에 넣습니다.이번 등반중 #y일미호 를 9장 이상 사용했다면, 대신 여우 요괴 긴세츠를 덱에 넣습니다."
     ]
   },
   "shadowverse:InfernalCrown": {
-    "NAME": "Infernal Crown",
-    "FLAVOR": "The dead are but empty vessels. Crude, earthen cups drained by the god of death. Pour, then! Fill the vessel and make it dance.",
+    "NAME": "나락의 왕관",
+    "FLAVOR": "죽은 자는 빈 그릇. 사신이 마시고 난 가련한 빈 잔. 그럼 부어라. 그럼 가득 차 춤춰라.",
     "DESCRIPTIONS": [
-      "#yReanimate #b3 on turn #b2, #yReanimate #b4 on turn #b3, and #yReanimate #b5 on turn #b4."
+      "2턴째에 소생 3. 3턴째에 소생 4. 5턴째에 소생 5."
     ]
   },
   "shadowverse:Alice": {
-    "NAME": "One-of-a-Kind Idol",
-    "FLAVOR": "Alice Kurobane's concert is about to begin!",
+    "NAME": "특별한 아이돌",
+    "FLAVOR": "아리스의 콘서트, 시작할게!",
     "DESCRIPTIONS": [
-      "Whenever a #yNecromancy effect is activated, deal #b3 damage to ALL enemies."
+      "사령술을 발동할 때마다 모든 적에게 피해를 #b3 줍니다."
     ]
   },
   "shadowverse:Offensive4": {
-    "NAME": "Token of 1st",
-    "FLAVOR": "I go first, no need to redraw.",
+    "NAME": "선공",
+    "FLAVOR": "선공은 나다 ! 드로우 !",
     "DESCRIPTIONS": [
-      "At the end of combat, if you are in #yVengeance, heal #b7 HP. Otherwise, heal #b4 HP."
+      "전투 종료시 체력을 4 회복합니다. 복수 상태라면 대신 7 회복합니다."
     ]
   },
   "shadowverse:IriaBOSS": {
-    "NAME": "Vermillion Bite",
-    "FLAVOR": "Submit to the great power of the Vermillion Bite!",
+    "NAME": "버밀리온 바이트",
+    "FLAVOR": "공포에 떨거라 ! 버밀리온 바이트 !",
     "DESCRIPTIONS": [
-      "Lose #b2 life at the start of your turn. Heal #b4 life at the end of your turn."
+      "턴 시작시 체력을 2 잃습니다. 턴 종료시 체력을 4 회복합니다."
     ]
   },
   "shadowverse:LustRelic": {
-    "NAME": "Embracing Wings",
-    "FLAVOR": "Love and mix, ravish and enrapture. Let lust overtake you as you come together with your fellows.",
+    "NAME": "포옹의 날개",
+    "FLAVOR": "호흡조차 잊고, 생명의 의미 또한 망각하며, 테제는 사라져.",
     "DESCRIPTIONS": [
-      "At the start of combat, gain #ySiphon."
+      "전투 시작시 #ySiphon 을 얻습니다."
     ]
   },
   "shadowverse:Lusia": {
-    "NAME": "Don't Waste My Time",
-    "FLAVOR": "Shadowverse is only a tool.",
+    "NAME": "관심 없으니까",
+    "FLAVOR": "섀버는 도구에 불과해.",
     "DESCRIPTIONS": [
-      "Gain [E] when #yVengeance is activated."
+      "복수 상태라면 [E] 를 얻습니다."
     ]
   },
   "shadowverse:Pendant": {
-    "NAME": "Urias's Pendant",
-    "FLAVOR": "Amuse me!",
+    "NAME": "유리아스의 펜던트",
+    "FLAVOR": "나를 즐겁게 해봐라!",
     "DESCRIPTIONS": [
-      "At the start of your turn, gain #b1 Strength if Vengeance is active. If Wrath is active, gain #b7 Block. If Avarice is active, draw #b1 cards."
+      "턴 시작시 복수 상태라면 힘을 1 얻습니다. 광란 상태라면 방어도를 7 얻습니다. 갈망이 켜질때 카드를 1장 뽑습니다."
     ]
   },
   "shadowverse:BerserkRelic": {
-    "NAME": "Tetocalami, Berserker's Cudgel",
-    "FLAVOR": "We’ll string you up, dress you, and devour you to the marrow!",
+    "NAME": "테토카마리",
+    "FLAVOR": "매달고 벗겨서 남김없이 먹겠다!",
     "DESCRIPTIONS": [
-      "Whenever Wrath becomes active, heal #b7 HP."
+      "광란할때마다 체력을 7 호복합니다."
     ]
   },
   "shadowverse:LonePromise": {
-    "NAME": "Lone Promise",
-    "FLAVOR": "In lieu of a vampiric brand, he bestows upon her a crimson parting gift of another kind. The flower, and the lone screw, are a reminder of the glorious dance they shared.",
+    "NAME": "약속의 한 송이",
+    "FLAVOR": "목덜미의 각인을 대신하여... 차가운 피부에게 선물로 전해진 전별의 한 송이. 곁에 있는 나사는 함께 춤추었던 눈부신 추억.",
     "DESCRIPTIONS": [
-      "At the start of your first #b2 turn, add #b1 #yRepair #yMode cards to your hand. At the start of your #b2 turn, draw #b1 additional cards."
+      "첫 2턴간 턴 시작시 수리 모드를 1장 얻습니다. 2턴째 시작에 카드를 1장 뽑습니다."
     ]
   },
   "shadowverse:RevelrySeed": {
-    "NAME": "Seed of Revelry",
-    "FLAVOR": "Don't bore me, okay?",
+    "NAME": "투쟁의 씨앗",
+    "FLAVOR": "나를 지루하게 하지 마라.",
     "DESCRIPTIONS": [
-      "You and all enemies start combat with #b3 Strength."
+      "당신과 적이 힘을 3 얻은채 전투를 시작합니다."
     ]
   },
   "shadowverse:Offensive5": {
-    "NAME": "Token of 1st",
-    "FLAVOR": "I go first, no need to redraw.",
+    "NAME": "선공",
+    "FLAVOR": "선공은 나다! 드로우!",
     "DESCRIPTIONS": [
-      "At the start of combat, draw #b1 card(s) if the total number of cards in your deck is even. Otherwise, increase your Portal Points by #b1. NL Heal #b8 HP and gain #b8 Gold when your Portal Points reach #b8 ."
+      "전투 시작시 내 덱이 홀수라면 카드를 1장 뽑습니다. 짝수라면 네메시스 포인트를 1 얻습니다. 포인트가 8이 되면 체력을 8 회복하고 골드를 8 얻습니다."
     ]
   },
   "shadowverse:NemesisBOSS": {
-    "NAME": "Orchis's Cat Doll",
-    "FLAVOR": "Why do people love other people? Why do they hate them? I know that somewhere in the world the answer is waiting.",
+    "NAME": "오르키스의 고양이 인형",
+    "FLAVOR": "인간은 어째서 인간을 사랑하는 거지? 인간은 어째서 인간을 미워하는 거지? 분명 이 세계 어딘가에... 그 답이 있을 거야.",
     "DESCRIPTIONS": [
-      "Whenever Resonance becomes active for you, gain [E]. Whenever Resonance becomes inactive for you, add 1 #yDazed to your discard pile."
+      "공명 상태가 켜질 때마다 [E]를 얻습니다. 공명 상태가 꺼질때마다 버린 카드더미에 어지러움을 섞어넣습니다."
     ]
   },
   "shadowverse:ArtsMaster": {
-    "NAME": "Haja Indira, Ultimate Way of the Fist",
-    "FLAVOR": "I am, therefore the best of all possible worlds.",
+    "NAME": "파사의 인델라",
+    "FLAVOR": "천지에 내가 있고, 세상에 과오 없다.",
     "DESCRIPTIONS": [
-      "If you have any remaining Energy at the end of your turn, gain #b5 Block, draw #b2 additional cards at the start of your next turn and deal #b5 damage to all enemies."
+      "턴 종료시 남은 에너지가 있다면 방어도를 5 얻고, 다음 턴 시작에 카드를 2장 더 뽑고 모든 적에게 피해를 5 줍니다."
     ]
   },
   "shadowverse:WhiteRelic": {
-    "NAME": "Destruction in White",
-    "FLAVOR": "The urge to destroy is white. People's smiles on the morrow of the apocalypse will be evidence of the unstained righteousness of annihilation.",
+    "NAME": "하얀 파괴의 아티팩트",
+    "FLAVOR": "파괴의 충동은 하얀 것. 기존의 것들을 파괴한 후에 짓는 미소는 더럽혀지지 않는 정의.",
     "DESCRIPTIONS": [
-      "Whenever an Attack card is exhausted, apply #b1 #yWeak to a random enemy. If you also have the #yDestruction #yin #yBlack relic, add #b1 #yDestruction #yin #yWhite card to your hand at the start of combat."
+      "공격 카드가 소멸될 때마다 무작위 적에게 약화를 1 부여합니다. 검은 파괴의 아티팩트 유물도 가지고 있다면, 전투 시작시 하얀 파괴의 아티팩트를 얻습니다."
     ]
   },
   "shadowverse:BlackRelic": {
-    "NAME": "Destruction in Black",
-    "FLAVOR": "The urge to destroy is black. People's smiles on the eve of the apocalypse are the corrupt obstacle hindering the inevitability of annihilation.",
+    "NAME": "검은 파괴의 아티팩트",
+    "FLAVOR": "파괴의 충동은 검은 것. 기존의 것들을 파괴하기 전에 짓는 미소는 더럽혀진 악.",
     "DESCRIPTIONS": [
-      "Whenever an Attack card is exhausted, apply #b1 #yVulnerable to a random enemy. If you also have the #yDestruction #yin #yWhite relic, add #b1 #yDestruction #yin #yWhite card to your hand at the start of combat."
+      "공격 카드가 소멸될 때마다 무작위 적에게 취약을 1 부여합니다. 하얀 파괴의 아티팩트 유물도 가지고 있다면, 전투 시작시 검은 파괴의 아티팩트를 얻습니다."
     ]
   },
   "shadowverse:Knife": {
-    "NAME": "Zecilwenshe's Dagger",
-    "FLAVOR": "I'll win in the end - I always do!",
+    "NAME": "제실웬시의 단검",
+    "FLAVOR": "또 제가 이기겠군요!",
     "DESCRIPTIONS": [
-      "At the end of combat, gain #b1 Infestation Point. Whenever you take damage, lose #b1 Infestation Point. If you have less than #b3 Infestation Points, add 1 #yShiv to your hand at the beginning of combat. If you have #b3 or more Infestation Points, add 1 #yDiscovery instead. If you have #b6 or more Infestation Points, add 1 #yAbsolute #yTolerance instead."
+      "전투 종료시 감염 포인트를 1 얻습니다. 피해를 받을때마다 감염 포인트를 1 잃습니다. 감염 포인트가 3 미만이라면 전투 시작시 단도를 1장 얻습니다.3 이상이라면 발견을 1장 얻습니다. 6 이상이라면 앱솔루트 톨러런스를 1장 얻습니다."
     ]
   },
   "shadowverse:TranquilCog": {
-    "NAME": "Tranquil Cog",
-    "FLAVOR": "Wisdom keeps the universe in motion.",
+    "NAME": "평안의 톱니바퀴",
+    "FLAVOR": "이치란, 맞물리지 않아도 도는 것.",
     "DESCRIPTIONS": [
-      "At the start of your first #b3 turn, draw #b1 additional cards if Resonance is active for you. Otherwise, draw #b2 additional cards."
+      "첫 3턴간, 공명 상태라면 카드를 1장 뽑습니다. 아니라면 2장 뽑습니다."
     ]
   },
   "shadowverse:Offensive6": {
-    "NAME": "Token of 1st",
-    "FLAVOR": "I go first, no need to redraw.",
+    "NAME": "선공",
+    "FLAVOR": "선공은 나다 ! 드로우 !",
     "DESCRIPTIONS": [
-      "Once per combat: Right click to add #b1 #yEvolution #yPoint into your hand. Can be activated #b3 times per combat."
+      "전투당 3번 : 우클릭해서 진화 포인트를 얻을수 있습니다."
     ]
   },
   "shadowverse:OliviasBlessing": {
-    "NAME": "Olivia's Blessing",
-    "FLAVOR": "A new world is our desire!",
+    "NAME": "올리비에의 축복",
+    "FLAVOR": " 아득한 지평선 너머 새로운 세상을 향해!",
     "DESCRIPTIONS": [
-      "Right click to add #b1 #yMiracle and #b1 #yEvolution #yPoint+ to your hand. Can be activated #b3 times per combat."
+      "선공을 대체합니다. 전투당 3번 : 우클릭해서 기적과 진화 포인트+ 를 얻습니다. "
     ]
   },
   "shadowverse:WindGodsBlessing": {
-    "NAME": "Fieran's Blessing",
-    "FLAVOR": "Wind, grant them courage!",
+    "NAME": "페이란의 축복",
+    "FLAVOR": "바람은 언제나 함께 있다.",
     "DESCRIPTIONS": [
-      "At the end of your turn, ALL #yFollowers gain + #b1 /+ #b1 if your Rally count is #b10 or more."
+      "턴 종료시 연계 10: 모든 추종자에게 +1/+1."
     ]
   },
   "shadowverse:Conscription": {
-    "NAME": "Conscription",
-    "FLAVOR": "Quantity over quality.",
+    "NAME": "병사 징집",
+    "FLAVOR": "실력은 됐으니까 머릿수만 채워.",
     "DESCRIPTIONS": [
-      "At the start of your turn, if you don't have any #yFollowers, summon 1 #yKnight."
+      "턴 시작시 추종자가 없다면 기사를 하나 소환합니다."
     ]
   },
   "shadowverse:Spineblade": {
-    "NAME": "Avaritia, Blade of Usurption",
-    "FLAVOR": "Go ahead, hunger. Once the craving overtakes you, claim what is rightfully yours. That is the true way of the world, after all.",
+    "NAME": "아바리티아",
+    "FLAVOR": "영겁의 굶주림이 자기를 발전시킨다. 영원한 갈증이 의지를 만들어 낸다.",
     "DESCRIPTIONS": [
-      "Whenever you play a #yLoot card, draw 1 card."
+      "보물 카드를 사용할 때마다 카드를 1장 뽑습니다."
     ]
   },
   "shadowverse:ValhoreanDealer": {
-    "NAME": "Valhorean Dealer",
-    "FLAVOR": "I'm sorry——Forgive me——",
+    "NAME": "발로나의 상인",
+    "FLAVOR": "죄송합니다─! 용서해주세요─!",
     "DESCRIPTIONS": [
-      "Right click to spend #b30 gold to redraw any number of your hand."
+      "우클릭해서 30골드를 소모하고 카드를 원하는만큼 다시 뽑습니다."
     ]
   },
   "shadowverse:KagemitsuSword": {
-    "NAME": "Enma Yasukuni",
-    "FLAVOR": "Thanks to you, I have drawn my blade from the scabbard called peace.",
+    "NAME": "문마안국",
+    "FLAVOR": "평화라는 검집에서 빼어 들었습니다.저희들 무사는 황송할 따름이옵니다.",
     "DESCRIPTIONS": [
-      "ALL cards that disupgrade will automatically upgrade again after being played."
+      "강화해제를 가진 모든 카드가 사용한 후 자동으로 강화됩니다."
     ]
   },
   "shadowverse:EndlessUsurpation": {
-    "NAME": "Endless Usurpation",
-    "FLAVOR": "Take and take again. Awaken the world to the pain of loss, to grief as deep as Hell. Leave them nothing, that they may know our hatred.",
+    "NAME": "끝없는 약탈",
+    "FLAVOR": "모든 것을 빼앗아도 채워지지 않는다면,공허마저 빼앗겠다.공허의 끝까지 빼앗아 주겠다.",
     "DESCRIPTIONS": [
-      "At the start of your turn, add 1 random #yLoot to hand."
+      "턴 시작시 무작위 보물을 1장 얻습니다."
     ]
   },
   "shadowverse:Durandal": {
-    "NAME": "Durandal the Incorruptible",
-    "FLAVOR": "A holy sword bound to a certain proud hero. Its blade will shine for eternity, never to break or tarnish.",
+    "NAME": "불멸의 성검 듀랑달",
+    "FLAVOR": "긍지 높은 영웅과 계약한 불멸의 성검. 그 검신은 부러지지도 깨지지도 않으며 언제나 은색으로 빛난다.",
     "DESCRIPTIONS": [
-      "At the start of combat, gain 2 #yBuffer ."
+      "전투 시작시 버퍼를 2 얻습니다."
     ]
   },
   "shadowverse:Tree": {
-    "NAME": "Naterran Great Tree",
-    "FLAVOR": "When the Mother begins to sing, all will be decided.",
+    "NAME": "나테라의 신목",
+    "FLAVOR": "세계의 어머니가 노래할 때, 세계는 결단의 순간을 마주한다.",
     "DESCRIPTIONS": [
-      "At the start of combat, add 1 #yNaterran #yGreat #yTree to hand."
+      "전투 시작시 나테라의 신목을 1장 얻습니다."
     ]
   },
   "shadowverse:AlterplaneArbiter": {
-    "NAME": "Cross Craft",
-    "FLAVOR": "New Limited Time Format: Cross Craft! Build decks with cards from 2 different classes!",
+    "NAME": "크로스오버",
+    "FLAVOR": "새로운 포맷:크로스오버 ! 서로 다른 2개의 직업을 섞어보세요!",
     "DESCRIPTIONS": [
-      "Enemies will drop an additional reward of a card belonging to a Shadowverse class other than your own.",
-      "Enemies drop an additional card reward of ",
+      "적이 다른 섀도우버스 클래스의 카드 보상을 추가로 떨어트립니다.",
+      "적이 떨어트릴 카드 보상:",
       " .",
-      "#yRunecraft",
-      "#yForestcraft",
-      "#yShadowcraft",
-      "#yBloodcraft",
-      "#yPortalcraft",
-      "#ySwordcraft",
-      "#yHavencraft"
+      "#y위치",
+      "#y엘프",
+      "#y네크로맨서",
+      "#y뱀파이어",
+      "#y네메시스",
+      "#y로얄",
+      "#y비숍"
     ]
   },
   "shadowverse:Offensive7": {
-    "NAME": "Token of 1st",
-    "FLAVOR": "I go first, no need to redraw.",
+    "NAME": "선공",
+    "FLAVOR": "선공은 나다! 드로우!",
     "DESCRIPTIONS": [
-      "Whenever you draw a #yCurse card, move it to your Amulet zone as a #yCountdown #b3 Amulet with #yBanish. If it's the first time in this combat, draw #b1 card(s)."
+      "저주 카드를 뽑으면 그걸 마법진 칸에 넣고, 제거를 가진 카운트다운 3의 마법진으로 간주합니다. 그게 이번 전투에 처음 발동했다면 카드를 1장 뽑습니다."
     ]
   },
   "shadowverse:Savior": {
-    "NAME": "The Saviors, Spears of Repose",
-    "FLAVOR": "Confront the mind in the depths of repose.",
+    "NAME": "구세주",
+    "FLAVOR": "마주하라. 자각하지 못한다면, 마음과 잠들어라.",
     "DESCRIPTIONS": [
-      "If you played no Attack cards during your turn, start your next turn with #b4 Block."
+      "공격 카드를 사용하지 않으면 다음 턴 방어도를 4 얻습니다."
     ]
   },
   "shadowverse:GrandShield": {
-    "NAME": "Zeno, Paradoxical Shield",
-    "FLAVOR": "Don't fill the world with any more false hope.",
+    "NAME": "역설의 방패 제논",
+    "FLAVOR": "더 이상 이 세상에 있지도 않은 희망을 주지 마라.",
     "DESCRIPTIONS": [
-      "At the start of your turn, add #b1 #yHoly #yCavaliers to your hand."
+      "턴 시작시 신의 기병을 얻습니다."
     ]
   },
   "shadowverse:GrandSword": {
-    "NAME": "Richard, Paradoxical Sword",
-    "FLAVOR": "Hope that is given can only be false.",
+    "NAME": "역리의 검 리샤르",
+    "FLAVOR": "나는 알고 있다. 남에게 줄만한 구원은 존재하지 않는다.",
     "DESCRIPTIONS": [
-      "Once per turn, apply #b2 Thorns whenever you Block."
+      "턴당 1번, 방어도를 얻으면 가시를 2 얻습니다."
     ]
   },
   "shadowverse:BishopBOSS": {
-    "NAME": "Saren's Brilliant Feather",
-    "FLAVOR": "When you spread your wings, your body will no longer be bound by gravity.",
+    "NAME": "글로리어스 페더",
+    "FLAVOR": "그 날개가 퍼득일 때, 몸은 중력에서 해방된다.",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st. Gain 1 Amulet slot. If your HP is less than half of your max HP, start each of your turns with an additional [E]."
+      "선공을 대체합니다. 마법진 칸을 1칸 얻습니다. 내 체력이 50% 이하라면 턴 시작시 [E]를 얻습니다."
     ]
   },
   "shadowverse:HeresyAvatar": {
-    "NAME": "Heresy's Avatar",
-    "FLAVOR": "Utter its name and resolve yourself to madness.",
+    "NAME": "사교의 화신",
+    "FLAVOR": "눈으로 본 자는 망가지며, 입에 담는 자는 미쳐버리는 섬뜩한 이형.",
     "DESCRIPTIONS": [
-      "Whenever you draw a Curse card, apply #b1 #yArtifact. If the drawn Curse card is playable, change its cost to 0."
+      "저주를 뽑을때마다 인공물을 1 얻습니다. 뽑은 저주 카드가 사용 가능하다면 비용을 0으로 만듭니다."
     ]
   },
   "shadowverse:ErisRelic": {
-    "NAME": "Scepter of Atonement",
-    "FLAVOR": "So long as my companions watch over me, I will not err again.",
+    "NAME": "속죄의 지팡이",
+    "FLAVOR": "더는 그르치지 않겠습니다. 저는 혼자가 아니니까요.",
     "DESCRIPTIONS": [
-      "Whenever an Amulet's Countdown reaches 0, gain #b2 #yTemporary #yHP."
+      "마법진의 카운트다운이 0이 될 때마다 임시 체력을 2 얻습니다."
     ]
   },
   "shadowverse:IminaRelic": {
-    "NAME": "Totem of Madness",
-    "FLAVOR": "Speak your praise, mortal. For there is no god but me. —Inscription on a statue.",
+    "NAME": "찬미의 광신상 이미나",
+    "FLAVOR": "고개를 들고 눈을 떴을 때, 사람은 비로소 깨닫는다. 하지만 때는 이미, 늦었다. 사람들은 미친 신에게 매달리며 저도 미치게 해 달라 애원할 것이다. - 순종과 광기 제14항",
     "DESCRIPTIONS": [
-      "At the start of combat, give a random enemy #yTotem #yof #yMadness."
+      "전투 시작시 무작위 적에게 광기의 토템을 1 부여합니다."
     ]
   },
   "shadowverse:KyaruBOSS": {
-    "NAME": "Chaos Grimoire",
-    "FLAVOR": "Are you ready? Grim Burst!",
+    "NAME": "카오스 그리모어",
+    "FLAVOR": "각오는 되었을까? 그림 버스트!",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st. At the start of combat, reduce the max HP of all enemies by #b18% ."
+      "선공을 대체합니다. 전투 시작시 모든 적의 최대체력을 18% 감소시킵니다."
     ]
   },
   "shadowverse:AnneBOSS": {
-    "NAME": "Anne's Spellbook",
-    "FLAVOR": "O, spirit of war! Heed my call!",
+    "NAME": "앤의 마법사",
+    "FLAVOR": "영령이여, 지금 내 앞에 나타나줘!",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st. All #ySkill cards you play count as #yMysteria cards."
+      "선공을 대체합니다. 내가 사용하는 모든 스킬 카드가 마나리아 카드로 간주됩니다."
     ]
   },
   "shadowverse:KokkoroBOSS": {
-    "NAME": "Ames Amulet",
-    "FLAVOR": "Please leave it to me.",
+    "NAME": "아메스 아뮬렛",
+    "FLAVOR": "앞으로 잘 부탁드립니다.",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st. Whenever you play a card, if it's the #b6th card played this turn, gain #b1 #yStrength and #yDexterity. NL HP healed in combat increases by #b50%."
+      "선공을 대페합니다. 카드를 사용할때, 그게 이번 턴 6번째로 사용한 카드라면 힘과 민첩을 1 얻습니다. NL 전투중 회복하는 체력이 50% 증가합니다."
     ]
   },
   "shadowverse:MiyakoBOSS": {
-    "NAME": "Sweet Ghost Pudding",
-    "FLAVOR": "Pudding, pudding~!",
+    "NAME": "유령같이 달달한 고스트 푸딩",
+    "FLAVOR": "푸딩, 푸딩~!",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st. 3 times per combat, at the start of your turn activate #yNecromancy 6: Add 1 #yApparition to hand."
+      "선공을 대체합니다. 전투당 3번, 턴 시작시 사령술 6: 영체화를 얻습니다."
     ]
   },
   "shadowverse:IoBOSS": {
-    "NAME": "Glamour Whip",
-    "FLAVOR": "Yes! You called for your teacher~?",
+    "NAME": "글래머 휩",
+    "FLAVOR": "전부 가르쳐줄게!",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st. Once per combat, when #yFatal, randomly upgrade a card in your deck."
+      "선공을 대체합니다. 전투당 1번, 치명타를 입히면 덱에 있는 무작위 카드를 강화합니다."
     ]
   },
   "shadowverse:RalmiaBOSS": {
-    "NAME": "Omega Drive",
-    "FLAVOR": "Speed Boost!",
+    "NAME": "오메가 드라이브",
+    "FLAVOR": "스피드 부스트!",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st. Once per combat: When #yResonance becomes active, ALL Attack cards in your hand count as #yAF cards. When #yResonance is not active, ALL Attack cards in your hand count as #yMachina cards."
+      "선공을 대체합니다. 공명 상태라면 내 손의 모든 공격 카드가 아티팩트로 간주됩니다. 공명 상태가 아니라면 기계로 간주됩니다."
     ]
   },
   "shadowverse:ShizuruBOSS": {
-    "NAME": "Sacred Blade",
-    "FLAVOR": "Your big sister will always protect you!",
+    "NAME": "세이크리드 블레이드",
+    "FLAVOR": "누나가 계~속 지켜줄게!",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st. Once per combat: Right click to add #b1 #yEvolution #yPoint+ into your hand and gain 10 #yBlock. Can be activated #b2 times per combat. NL At the end of combat, restore #b3 health per activations left."
+      "선공을 대체합니다. 전투당 2번: 우클릭해서 방어도를 10 얻고 진화 포인트+ 를 얻습니다. 전투 종료시 사용하지 않은 횟수당 3만큼 체력을 회복합니다."
     ]
   },
   "shadowverse:YukariBOSS": {
-    "NAME": "Eternal Mug",
-    "FLAVOR": "Ehehe, I wanna go home early to have a drink~",
+    "NAME": "이터널 저그",
+    "FLAVOR": "지금이라면, 얼마든지 마셔버릴 수 있어!",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st. Whenever you heal your HP, gain #bPower #bDamage #bImmune. NL Whenever you draw a #yStatus or #yCurse card, draw #b1 card."
+      "선공을 대체합니다. 체력을 회복할때마다 파워 피해 면역을 얻습니다. NL 상태이상이나 저주를 뽑을 때 마다 카드를 1장 뽑습니다."
     ]
   },
   "shadowverse:ShinobuBOSS": {
-    "NAME": "Grim Soul Rope",
-    "FLAVOR": "Rest in peace.",
+    "NAME": "그림 소울 로브",
+    "FLAVOR": "편안히 잠들어라...",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st. At start of your turn, #yNecromancy 4: Add 1 #ySkullfather to your hand."
+      "선공을 대체합니다. 턴 시작시 사령술 4: 해골 아버지 를 얻습니다."
     ]
   },
   "shadowverse:Bullet": {
-    "NAME": "Mystical Bullet",
-    "FLAVOR": "Think of it as a good luck charm. Do try to keep it close.",
+    "NAME": "신비한 탄환",
+    "FLAVOR": "행운의 부적이라고 생각하고, 늘 가지고 다니세요.",
     "DESCRIPTIONS": [
-      "Relic with unknown use.",
-      "The world of Rivayle sprang forth from this crucible known as the Lodestone.",
-      "At the start of the 1st, 3rd turn, add 1 #yVerdict #yRendered to hand. NL At the start of the 2nd, 4th turn, add 1 #yAbsolute #yDecree to hand. NL At the start of the 5th turn or after, add 1 that you don't have in hand."
+      "알수 없는 용도의 유물입니다.",
+      "일찍이 세상은 평면이었고..대지만이 그곳에 있었다. 대지에는 구르고 있던 돌멩이 하나가 있었을 뿐. 신은 그 돌멩이를 주워 생명을 창조했다.",
+      "1턴, 3턴째 시작에 판결의 한마디 를 얻습니다. 2턴, 4턴째 시작에 절대적 명령을 얻습니다.5턴째 이후에는, 둘 다 얻습니다.(이미 손에 있다면 얻지 않습니다!)."
     ]
   },
   "shadowverse:BanShadowverse": {
-    "NAME": "You underdog don't deserve to play SV",
-    "FLAVOR": "You underdog don't deserve to play SV.",
+    "NAME": "약한 녀석들은 섀버를 할 자격이 없어!",
+    "FLAVOR": "약한 녀석들은 섀버를 할 자격이 없어!",
     "DESCRIPTIONS": [
-      "You cannot play any Shadowverse card."
+      "섀도우버스 카드를 사용할 수 없습니다."
     ]
   }
 }
