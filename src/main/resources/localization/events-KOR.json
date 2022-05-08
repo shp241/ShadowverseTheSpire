@@ -18,123 +18,123 @@
     ]
   },
   "GemFortune": {
-    "NAME": "Gems of Fortune",
+    "NAME": "젬 오브 포츈",
     "DESCRIPTIONS": [
-      "It seems like there is an event taking place ahead. As you come closer, you notice that it's the Gems of Fortune Cup! ~'Sounds~ ~like~ ~it's~ ~another~ ~competition~ ~of~ #y~Luck~ .' NL #r@'So@ #r@I@ #r@see!@ #r@Ain't@ #r@there@ #r@any@ #r@Shadowcraft,@ #r@Runecraft@ #r@or@ #r@Forestcraft?'@ NL NL A man asks you with a smile on his face: NL 'Are you interested in entering #y~Gems~ #y~of~ #y~Fortune~ ? ' ",
+      "이 앞쪽에서 이벤트를 개최하고 있는것 같네요.가까이 다가가보니까.. 젬 오브 포츈 컵입니다!~'보아하니~ ~또~ ~다른~ #y~행운의~ ~도전자가~ ~왔나~ ~보네요~ .' NL #r@'젠장!@ #r@여기에도@ #r@빌어먹을@ #r@위치랑@ #r@엘프랑@ #r@네크밖에@ #r@없어!@  NL NL 한 남자가 당신에게 다가와 웃을을 가득 띄운채 묻습니다.: NL '혹시 #y~젬~ #y~오브~ #y~포츈~ 에 관심 있으신가요? ' ",
       "",
-      "#y'Marvelous!' NL Soon after your reply, the whole stage is shrouded in #p~Thick~ #p~Black~ #p~Smoke~ ... NL NL Just at the time you're about to win, your opponent plays an #y~Arcane~ #y~Item~ #y~Shop~ and kills your leader in one turn. NL NL The match is over and you're back on the track, but somehow you feel a bit #bAngry .",
-      "'What a disappointment...' NL ~'Anyway,~ ~sooner~ ~or~ ~later~ ~you~ ~will~ ~join~ ~us!'~  NL #r@'Hahaha@ #r@Hahahahaha!'@ NL NL The man disappeared, leaving only the disturbing laughter echoing in your ears.",
+      "#y'놀라워요!' NL 대답하자마자 스테이지 전체가 #p~검고~ #p~칙칙한~ #p~안개~ 에 휩싸입니다 ... NL NL 당신이 막 이기려고 할 때, 상대가 #y~마법~ #y~도구~ #y~전문점~ 을 꺼내 1턴만에 당신을 죽여버립니다.NL NL 그랑프리는 끝났고 당신은 여정을 계속하지만, 조금 #b화가 치밀어 오르는군요.",
+      "'실망스럽군요..' NL ~'어쨌든,~ ~이르든~ ~아니면~ ~빠르던~ ~간에~ ~함께하게~ ~되실~ ~겁니다!'~  NL #r@'하하하@ #r@하하하하!'@ NL NL 남자는 기분나쁜 웃음소리를 메아리로 남긴채 사라져버렸습니다.",
       ""
     ],
     "OPTIONS": [
-      "[Attend the match] #gGain #g4 Gem Light, #ggain #g2 Crystal Bright. #rLose #r",
-      " #rMax #rHP.",
-      "[Refuse]",
-      "[Attend the match] #gGain #g3 Gem Light, #ggain #g1 Crystal Bright. #rLose #r",
+      "[참가한다] #g보석의 #g빛 4장을 얻고 , #g크리스탈의 #g빛 2장을 얻습니다. #r최대체력을 #r",
+      " #r잃습니다.",
+      "[거부한다]",
+      "[참가한다] #g보석의 #g빛 3장을 얻고 , #g크리스탈의 #g빛 1장을 얻습니다. #r최대체력을 #r",
       "",
-      "[Leave]"
+      "[떠난다]"
     ]
   },
   "shadowverse:LelouchCollaboration": {
-    "NAME": "CODE GEASS Lelouch of the Rebellion Collaboration",
+    "NAME": "코드 기어스:반역의 를르슈 콜라보",
     "DESCRIPTIONS": [
-      "You ignore the event, but somehow Lelouch casts #rGeass on you !",
-      "#r@Ambush!@ NL Your enemies are not just Lelouch but also Suzaku operating Lancelot, coming out of nowhere!",
-      " #b~Lelouch~ #b~of~ #b~the~ #b~Rebellion~ Campaign in progress. NL Time limited boss Lelouch is waiting for you! NL You have no interest in attending, but as soon as you're trying to leave, a strange desire in your heart drives you to #b~Challenge~ Lelouch..."
+      "이벤트를 무시하고 지나가려고 하는데, 갑자기 를르슈가 당신에게 #r기아스 를 겁니다 !",
+      "#r@기습!@ NL 당신의 적은 를르슈뿐만 아니라 갑자기 랜슬롯에 탄 채 튀어나온 스자쿠까지 있었습니다!",
+      " #b~반역의~ #b~를르슈~ 이벤트가 진행중입니다. NL 한정 보스 를르슈가 기다리고 있군요! NL 당신이 흥미를 잃고 지나가려 하지만, 갑자기 당신의 마음 속에서 를르슈에 #b~도전~ 하고 싶은 마음이 꿈틀거립니다.."
     ],
     "OPTIONS": [
-      "[Challenge] #rChallenge #rthe #rBOSS.",
-      "[Ignore]  Ignore the event",
-      " #rBeing #rcursed #r- #rGeass.",
-      "[Fight]",
-      "[Leave]"
+      "[도전한다] #r보스에 #r도전합니다.",
+      "[무시한다]  이벤트를 무시하고",
+      " #r저주를 #r받습니다 #r- #r기아스.",
+      "[싸운다]",
+      "[떠난다]"
     ]
   },
   "shadowverse:VampiresEvent": {
-    "NAME": "Vampires ? ",
+    "NAME": "뱀파이어 ? ",
     "DESCRIPTIONS": [
-      "In a dark street, you meet some hooded people performing some kind of dark rite.As you approach, they all turn to face you at the same time. The tallest one smiled, showing his long fangs and stretches out a pale, thin hand to you: NL ~'Join~ ~us,~ ~sister.~ ~Let's~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~spire.'~",
-      "Just as the tall man was about to grab your arm and pull you over, he is horrified to find that you are the #y@Lord@ #y@of@ #y@the@ #y@Dark@ . You don't feel any @Resistance@ . This is a unilateral #r@Massacre@ .NL .... NL After an unspecified amount of time, the revelry is over, and there is only you left. You have #y~Killed~ #y~Them~ #y~All~ . You can't get any joy out of it. You feel #rEmpty again...",
-      "You feel bored. You don't think they can't please you. So you give the man a look. The tall man stared at you in horror until you left completely. NL You're alone again."
+      "어두운 거리에서, 당신은 후드를 눌러 쓴 사람들이 흑마법 의식을 거행하는것을 발견했습니다.가까이 다가가자 그들 모두가 일순간 당신을 바라봅니다. 그중 가장 큰 이가 길다란 이빨을 드러내는 미소를 지으며 당신에게 손을 내밉니다.: NL ~'함께하세나~ ~자매여.~ ~첨탑의~ ~따스함을~ ~느껴보자고.'~",
+      "키큰 사내가 당신의 팔을 잡고 잡아당기려는 찰나, 그는 당신이 #y@진정한@ #y@어둠의@ #y@지배자@ 라는걸 알아채고 공포를 느낍니다 . 아무런 @저항도@ 느껴지지 않는군요. 이건 단순한 #r@말살@ 일겁니다.NL .... NL 잠시 후 의식은 끝나고, 당신만이 남아있습니다. 당신이 #y~그들을~ #y~모조리~ #y~죽였습니다~ . 별다른 기쁨은 느껴지지 않는군요. 당신의 내면이 다시 #r공허해 집니다...",
+      "당신은 지루해졌습니다. 별로 재미도 없어보이는군요. 당신이 그들을 바라보자, 키큰 남자는 간신히 진정해서 당신을 떠나가버립니다. NL 다시 혼자가 되었군요.."
     ],
     "OPTIONS": [
-      "[Revel] #gRemove #gall Strick #gcards. #gReplace #gwith #gsame #gamount #gof Razory Claw. #rGain #rBlood #rVial .",
-      "[Ignore] Raise your Max HP by #r10 .",
-      "[Leave]"
+      "[찢어버린다] 타격을 #g모두 #g제거합니다. #g제거한 #g만큼 예리한 손톱을 #g얻습니다. #r피가 #r담긴 #r병을 얻습니다 .",
+      "[무시한다] 최대체력을 #r10 증가시킵니다 .",
+      "[떠난다]"
     ]
   },
   "shadowverse:NaturalMachine": {
-    "NAME": "Blessing of Natur Al'machinus",
+    "NAME": "강철과 대지의 신의 축복",
     "DESCRIPTIONS": [
-      "You come across Natur Al'machinus. NL 'I shall grant you the power of Nature and Machine...'",
-      "You can feel the power surging through your body."
+      "당신은 강철과 대지의 신 앞을 지나갑니다. NL '내가 그대에게 자연과 기계의 힘을 선물하지.....'",
+      "힘이 당신의 몸을 타고 흐르는게 느껴집니다."
     ],
     "OPTIONS": [
-      "[Enhancement Blessing] Choose 3 cards out of 20 Natura cards and Machina cards into your deck.",
-      "[Recovery Blessing] Heal #g",
-      " HP.",
-      "Choose 3 cards.",
-      "[Leave]"
+      "[개량의 축복] 기계와 자연 카드 20장중 3장을 골라 가져갑니다.",
+      "[재생의 축복] 체력을 #g",
+      " 회복합니다.",
+      "카드를 3장 고르세요.",
+      "[떠난다]"
     ]
   },
   "shadowverse:SellCard": {
-    "NAME": "Valhorean Dealer",
+    "NAME": "발로나의 상인",
     "DESCRIPTIONS": [
-      "You see a girl with purple hair sitting next to a pile of goods. NL ",
-      "'Greetings! ~Welcome~ ~to~ ~Varona's~ ~stall!~ NL Is there anything you would like to sell?'",
-      "You give a card to the dealer. NL NL ",
-      "#r@Bang@ NL She hits you right in the face with her gloved fist. NL 'Do you think I'm stupid?! Get lost!' NL ",
-      "'Do you really think I'll pay for this trash?' NL ",
-      "'Well... It's better than nothing, anyway. Here, take this.' NL ",
-      "'I've never seen this before... I'm not sure what the value is. ~How~ ~about~ ~this~ ~much?~' NL ",
-      "'Wow, this one looks great! Give it to me!' NL ",
-      "'Wow! This is some grade-A goods! ... No refunds! ' NL ",
-      "'Oops, ~looks~ ~like~ ~you~ ~have~ ~nothing~ ~to~ ~sell.~ ~Move~ ~along~ ~then.~' NL ",
-      "'Your marketing skills are impressive! NL Weapons improperly distributed at low prices have given rise to an unexpected outcome. NL We need to confirm the results. Let's go to the forefront of the war.' NL 'I'm sorry! Please forgive me!' NL "
+      "당신은 보랏빛 머리의 소녀가 짐무더기 옆에 앉아있는걸 발견합니다.NL ",
+      "'어서오세요! ~발로나~ ~상점입니다!~ NL 뭐 파실만한거 있으신가요?'",
+      "당신은 카드를 상인에게 넘깁니다. NL NL ",
+      "#r@쾅@ NL 상인은 당신의 안면을 장갑 낀 주먹으로 후려칩니다. NL '내가 병신인줄 알아? 꺼져!' NL ",
+      "'이따위 쓰레기를 주고 돈을 받겠다고?' NL ",
+      "'뭐.. 그래. 없는것보단 낫네. 이거라도 가져가.' NL ",
+      "'이런건 본적 없어.... 얼마일지도 모르겠는데. ~이정도로~ ~괜찮을까?~' NL ",
+      "'멋진데 ! 이리 내놔!' NL ",
+      "'A급 상품이야... 환불은 없어요! ' NL ",
+      "'아, ~보아하니~ ~팔만한게~ ~없어~ ~보이네.~ ~그럼~ ~가도~ ~좋아.~' NL ",
+      "'상술이 굉장한데! NL 이렇게 저가에 무기를 팔아치우면 뜻밖의 결과를 낼수도 있지. NL 한번 결과를 확인해보자고. 전쟁터로 가보자.' NL '미안해요! 용서해주세요!' NL "
     ],
     "OPTIONS": [
-      "[Continue]",
-      "[Sell] Choose a card from your deck to sell.",
-      "[Arrest] Gain a special Relic.",
-      "[Lock] Need #yAlyaska .",
-      "[Leave]",
-      "Choose 1 card to sell"
+      "[계속]",
+      "[판다] 덱에서 카드를 한장 팝니다.",
+      "[납치한다] 특별한 유물을 얻습니다.",
+      "[잠김] #y아르야스카 가 필요합니다..",
+      "[떠난다]",
+      "팔 카드를 1장 선택하세요"
     ]
   },
   "Crossover": {
-    "NAME": "Storms Cross Craft",
+    "NAME": "크로스오버",
     "DESCRIPTIONS": [
-      "It seems like there is an event taking place ahead. As you come closer, you notice that it's the Storms Cross Craft Cup! ~'Sounds~ ~like~ ~it's~ ~another~ ~competition~ ~of~ #y~Luck~ .' NL #r@'Wait,@ #r@why@ #r@is@ #r@it@ #r@all@ #r@Swordcraft@ #r@and@ #r@Shadowcraft?!'@ NL NL A man asks you with a smile on his face: NL 'Are you interested in entering the #y~Storms~ #y~Cross~ #y~Craft~ #y~Cup~ ?'",
+      "이 앞쪽에서 이벤트를 개최하고 있는것 같네요.가까이 다가가보니까.. 크로스오버 컵입니다!~'보아하니~ ~또~ ~다른~ #y~행운의~ ~도전자가~ ~왔나~ ~보네요~ .' NL #r@'젠장!@ #r@보이는게@ #r@빌어먹을@ #r@진화@ #r@로넼밖에@ #r@없어!@  NL NL 한 남자가 당신에게 다가와 웃을을 가득 띄운채 묻습니다.: NL '혹시 #y~크로스오버~ 에 관심 있으신가요? ' ",
       "",
-      "#y'Marvelous!' NL Soon after your reply, the whole arena is shrouded in #p~thick~ #p~black~ #p~smoke~ ... NL NL Just as you're about to win, your opponent plays Ladica and kills your leader on turn 5. NL NL The match is over and you're back on the track, but somehow you feel a bit #bAngry .",
-      "'What a disappointment...' NL ~'Anyway,~ ~sooner~ ~or~ ~later~ ~you~ ~will~ ~join~ ~us!'~  NL #r@'Hahaha@ #r@Hahahahaha!'@ NL NL The man disappears, leaving only the disturbing laughter echoing in your ears.",
+      "#y'놀라워요!' NL 대답하자마자 스테이지 전체가 #p~검고~ #p~칙칙한~ #p~안개~ 에 휩싸입니다 ... NL NL 당신이 막 이기려고 할 때, 상대가 라티카를 꺼내 당신을 5턴킬 내버립니다.NL NL 그랑프리는 끝났고 당신은 여정을 계속하지만, 조금 #b화가 치밀어 오르는군요.",
+      "'실망스럽군요..' NL ~'어쨌든,~ ~이르든~ ~아니면~ ~빠르던~ ~간에~ ~함께하게~ ~되실~ ~겁니다!'~  NL #r@'하하하@ #r@하하하하!'@ NL NL 남자는 기분나쁜 웃음소리를 메아리로 남긴채 사라져버렸습니다.",
       ""
     ],
     "OPTIONS": [
-      "[Attend the match] #gGain #gCross #gCraft . #rLose #r",
-      " #rHP.",
-      "[Refuse]",
-      "[Attend the match] #gGain #gCross #gCraft . #rLose #r",
+      "[참가한다] #g크로스 #g오버를 #g얻습니다 . #r체력을 #r",
+      " #r잃습니다.",
+      "[거부한다]",
+      "[참가한다] #g크로스 #g오버를 #g얻습니다 . #r체력을 #r",
       "",
-      "[Leave]"
+      "[떠난다]"
     ]
   },
   "shadowverse:IceschillendrigEvent": {
-    "NAME": "Who is your enemy?",
+    "NAME": "쏴야 할 적은...",
     "DESCRIPTIONS": [
-      "After a time of great strife, you will face a #p~turning~ #p~point~. NL The scales will begin to tip, and the world will begin to tremble.",
-      "So choose wisely. Who is your #r~enemy~ ? NL Who will you lay #b~waste~ to?",
-      "I'm afraid you don't have that right. NL ~Not~ ~for~ ~now,~ ~at~ ~least.~",
-      "(No. That can't be right... ~Right?~ )",
-      "~My!~ NL ~Very~ ~well~ ~then.~"
+      "드디어 여기까지 왔군요. 이제 방아쇠를 당기기만 하면 된답니다. 운명의 탄환은 당신의 손 안에. 장전하세요. 조준하세요. 발사하세요. 두려워 할 필요는 없답니다. 이건 마지막 시련이니까요. 고난 끝에 결단의 시간이 도래했다. 천칭, 기욺, 세계는 흔들린다..",
+      "고르세요. #r~쏴야~ #r~할~ #r~적을~ . ? NL 누가 #b~죽어버려야~ 하나요?",
+      "당신에게 쏠 자격은 없답니다.NL ~적어도~ ~지금은.~",
+      "(아니, 그럴리 없어... ~그렇겠지?~ )",
+      "~아아!~ NL ~그럼~ ~그~ ~적의~ ~이름을.~"
     ],
     "OPTIONS": [
-      "[Continue]",
-      "Shoot #rIceschillendrg ",
-      "No one deserves to die",
-      "Shoot #g------",
-      "[Leave]",
-      "Shoot #gFleauesse"
+      "[계속]",
+      "쏴야할 적은 #r아이시렌드링 ",
+      "아무도 쏴서는 안된다",
+      "쏴야할 적은 #g------ ",
+      "[떠난다]",
+      "쏴야할 적은 #g플로제스"
     ]
   }
 }
