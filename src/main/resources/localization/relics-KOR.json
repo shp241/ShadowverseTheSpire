@@ -229,7 +229,7 @@
     "NAME": "포옹의 날개",
     "FLAVOR": "호흡조차 잊고, 생명의 의미 또한 망각하며, 테제는 사라져.",
     "DESCRIPTIONS": [
-      "전투 시작시 #ySiphon 을 얻습니다."
+      "전투 시작시 #y흡혈 을 얻습니다."
     ]
   },
   "shadowverse:Lusia": {
@@ -383,7 +383,7 @@
     "NAME": "나테라의 신목",
     "FLAVOR": "세계의 어머니가 노래할 때, 세계는 결단의 순간을 마주한다.",
     "DESCRIPTIONS": [
-      "전투 시작시 나테라의 신목을 1장 얻습니다."
+      "턴 시작시 나테라의 신목을 1장 얻습니다."
     ]
   },
   "shadowverse:AlterplaneArbiter": {
