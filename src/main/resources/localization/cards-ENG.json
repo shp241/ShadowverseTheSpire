@@ -725,12 +725,12 @@
     "DESCRIPTION": "Natura. NL Put !M! *Naterran *Great *Tree into your hand. NL Exhaust."
   },
   "shadowverse:GemLight": {
-    "NAME": "Gem Light",
+    "NAME": "Gleaming Gem",
     "DESCRIPTION": "Exhaust 1 card in your hand. Put !M! random cards into your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Retain. NL Exhaust 1 card in your hand. Put !M! random cards into your hand. NL Exhaust."
   },
   "shadowverse:CrystalBright": {
-    "NAME": "Crystal Bright",
+    "NAME": "Radiant Crystal",
     "DESCRIPTION": "Exhaust 1 of your hand. Put !M! random uncommon or rare cards into your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Retain. NL Exhaust 1 of your hand. Put !M! random uncommon or rare cards into your hand. NL Exhaust."
   },
