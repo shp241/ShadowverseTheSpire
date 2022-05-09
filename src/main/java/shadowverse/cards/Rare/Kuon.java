@@ -168,7 +168,8 @@ public class Kuon
                     addToBot((AbstractGameAction)new MakeTempCardInHandAction(new DemonicShikigami()));
                     addToBot((AbstractGameAction)new GainEnergyAction(1));
                 }
-                this.magicNumber = 0;
+                this.baseMagicNumber = 0;
+                this.magicNumber = this.baseMagicNumber;
                 break;
             default:
                 break;

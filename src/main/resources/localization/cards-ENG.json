@@ -3629,7 +3629,7 @@
   },
   "shadowverse:Vice": {
     "NAME": "Vice, Death Grip",
-    "DESCRIPTION": "Machina. NL Add 2 *Ironknuckle *Nun to your hand and change their costs to 0 this turn. NL Whenever you play a Machina card, lose 2 HP and gain !M! Strength. NL Ethereal."
+    "DESCRIPTION": "Machina. NL Add 2 *Ironknuckle *Nun to your hand and change their costs to 0 this turn. NL Whenever you play a Machina Attack card, lose 2 HP and gain !M! Strength. NL Ethereal."
   },
   "shadowverse:KLT": {
     "NAME": "Kel, Holy Marksman",
@@ -4250,8 +4250,8 @@
   },
   "shadowverse:UndyingResolve": {
     "NAME": "Undying Resolve",
-    "DESCRIPTION": "Festive. NL Select a card in your discard pile reduce its cost by 1. NL If that card is *Anisage, *Lost *Forsaken, give it the following effect: Last_Words: When this card is Exhausted, put a copy of it that deals double damage into your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Festive. NL Select a card in your discard pile, reduce its cost by 1 and then Exhaust it. NL If that card is *Anisage, *Lost *Forsaken, give it the following effect: Last_Words: When this card is Exhausted, put a copy of it that deals double damage into your hand. NL Exhaust."
+    "DESCRIPTION": "Festive. NL Select an Attack card in your discard pile reduce its cost by 1. NL If that card is *Anisage, *Lost *Forsaken, give it the following effect: Last_Words: When this card is Exhausted, put a copy of it that deals double damage into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Festive. NL Select an Attack card in your discard pile, reduce its cost by 1 and then Exhaust it. NL If that card is *Anisage, *Lost *Forsaken, give it the following effect: Last_Words: When this card is Exhausted, put a copy of it that deals double damage into your hand. NL Exhaust."
   },
   "shadowverse:SoulGuide": {
     "NAME": "Psychopomp Tour Guide",
@@ -4330,7 +4330,7 @@
   },
   "shadowverse:RoomServiceDevil": {
     "NAME": "Room Service Demon",
-    "DESCRIPTION": "Accelerate 0: Discard 1 card and deal !M! damage. NL NL --------------------- NL NL Deal !D! damage. If there are 2 or less cards in your hand, deal that damage again and gain !B! block."
+    "DESCRIPTION": "Festive / Accelerate 0: Discard 1 card and deal !M! damage. NL NL --------------------- NL NL Deal !D! damage. If there are 2 or less cards in your hand, deal that damage again and gain !B! block."
   },
   "shadowverse:JubilanceWitch": {
     "NAME": "Jubilance Witch",

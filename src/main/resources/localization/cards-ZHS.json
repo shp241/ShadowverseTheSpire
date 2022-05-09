@@ -3069,7 +3069,7 @@
   "shadowverse:StrokeOfConviction": {
     "NAME": "信念之剑闪",
     "DESCRIPTION": "抉择 NL 召唤2个 迅捷的剑士 、 NL 随机对一个敌人造成 !D! 点伤害、 NL 使所有随从获得+1/+1。 NL 爆能强化 2 改为发动全部效果。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "召唤2个 迅捷的剑士 ， NL 随机对一个敌人造成 !D! 点伤害， NL 使所有随从获得+1/+1。 NL 爆能强化 2 改为发动全部效果。"
+    "UPGRADE_DESCRIPTION": "抉择 NL 召唤2个 迅捷的剑士 ， NL 随机对一个敌人造成 !D! 点伤害， NL 使所有随从获得+1/+1。 NL 爆能强化 2 改为发动全部效果。"
   },
   "shadowverse:ErikasSleight": {
     "NAME": "艾莉卡的剑技",
@@ -4250,8 +4250,8 @@
   },
   "shadowverse:UndyingResolve": {
     "NAME": "不惑的意志",
-    "DESCRIPTION": "宴乐 。 NL 选择弃牌堆1张卡，将其本回合耗能-1。 NL 如果选择的是 *因果的迷途之子·安瑟乔 ，则给予其「 谢幕曲 死灵术 6 \b当这张牌被 消耗 时伤害翻倍，然后将1张复制加入手牌」。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "宴乐 。 NL 选择弃牌堆1张卡，将其耗能-1。 NL 如果选择的是 *因果的迷途之子·安瑟乔 ，则给予其「 谢幕曲 死灵术 6 \b当这张牌被 消耗 时伤害翻倍，然后将1张复制加入手牌」。 NL 消耗 。"
+    "DESCRIPTION": "宴乐 。 NL 选择弃牌堆1张攻击牌，将其本回合耗能-1。 NL 如果选择的是 *因果的迷途之子·安瑟乔 ，则给予其「 谢幕曲 死灵术 6 \b当这张牌被 消耗 时伤害翻倍，然后将1张复制加入手牌」。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "宴乐 。 NL 选择弃牌堆1张攻击牌，将其耗能-1。 NL 如果选择的是 *因果的迷途之子·安瑟乔 ，则给予其「 谢幕曲 死灵术 6 \b当这张牌被 消耗 时伤害翻倍，然后将1张复制加入手牌」。 NL 消耗 。"
   },
   "shadowverse:SoulGuide": {
     "NAME": "灵魂向导",
@@ -4330,7 +4330,7 @@
   },
   "shadowverse:RoomServiceDevil": {
     "NAME": "客房服务的恶魔",
-    "DESCRIPTION": "激奏 0 \b丢弃1张牌，造成 !M! 点伤害。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 如果其他手牌数量为2以下，再造成一次伤害，获得 !B! 点 格挡 。"
+    "DESCRIPTION": "宴乐 · 激奏 0 \b丢弃1张牌，造成 !M! 点伤害。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 如果其他手牌数量为2以下，再造成一次伤害，获得 !B! 点 格挡 。"
   },
   "shadowverse:JubilanceWitch": {
     "NAME": "炸裂魔女",

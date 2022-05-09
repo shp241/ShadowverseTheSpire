@@ -27,6 +27,7 @@ public class DiabolicDrain extends CustomCard {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.SKILL, Vampire.Enums.COLOR_SCARLET, CardRarity.UNCOMMON, CardTarget.ENEMY);
         this.baseDamage = 8;
         this.baseMagicNumber = 2;
+        this.magicNumber = this.baseMagicNumber;
     }
 
 

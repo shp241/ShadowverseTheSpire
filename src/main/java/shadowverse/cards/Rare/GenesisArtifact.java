@@ -79,6 +79,10 @@
        AbstractCard d = (AbstractCard)new DefectArtifact();
        g.setCostForTurn(0);
        d.setCostForTurn(0);
+       if (this.upgraded){
+           g.upgrade();
+           d.upgrade();
+       }
        addToBot((AbstractGameAction)new MakeTempCardInHandAction(g));
        addToBot((AbstractGameAction)new MakeTempCardInHandAction(d));
        ArrayList<AbstractCard> list = new ArrayList<>();
@@ -91,7 +95,10 @@
            }
        }
        if (list.size()>=6){
-           addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new CannonArtifact(),2));
+           AbstractCard cannon = new CannonArtifact();
+           if (this.upgraded)
+               cannon.upgrade();
+           addToBot((AbstractGameAction)new MakeTempCardInHandAction(cannon,2));
        }
    }
  

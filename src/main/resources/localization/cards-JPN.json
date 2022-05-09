@@ -1718,7 +1718,7 @@
   },
   "shadowverse:MoonriseWerewolf": {
     "NAME": "月下の人狼",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 渇望 なら プレートアーマー 2を得る。 NL エンハンス 2 \b!B! ブロック を得る。"
+    "DESCRIPTION": "!B! ブロック を得る。 NL 渇望 なら プレートアーマー 2を得る。 NL エンハンス 2 NL !B! ブロック を得る。"
   },
   "shadowverse:BloodtrothEpitaph": {
     "NAME": "契約の碑文",
@@ -1786,7 +1786,7 @@
   "shadowverse:Ravening": {
     "NAME": "背徳の狂獣",
     "DESCRIPTION": "自然 。 NL 渇望 なら、カード引く度、ランダムな敵に引いた枚数かける3のダメージを与える。 NL この能力は重複して持たない。",
-    "UPGRADE_DESCRIPTION": "天賦 / 自然 。 NL 渇望 なら、カード引く度、ランダムな敵に引いた枚数かける4のダメージを与える。 NL この能力は重複して持たない。"
+    "UPGRADE_DESCRIPTION": "天賦 ・ 自然 。 NL 渇望 なら、カード引く度、ランダムな敵に引いた枚数かける4のダメージを与える。 NL この能力は重複して持たない。"
   },
   "shadowverse:LunaticMana": {
     "NAME": "インサニティ・マナ",
@@ -1997,7 +1997,7 @@
   },
   "shadowverse:Veight": {
     "NAME": "吸血貴・ヴァイト",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 攻撃される度、 *フォレストバット 1枚を手札に加える。"
+    "DESCRIPTION": "!B! ブロック を得る。 NL このターン、攻撃される度、 *フォレストバット 1枚を手札に加える。"
   },
   "shadowverse:Vanpi1": {
     "NAME": "ブラッドクイーン・ヴァンピィ",
@@ -2027,7 +2027,7 @@
   },
   "shadowverse:ShadowDevil": {
     "NAME": "シェイドデビル・モリアナ",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 復讐 なら、 *EP 和 *奇跡 それぞれ2枚を手札に加える。"
+    "DESCRIPTION": "!B! ブロック を得る。 NL 復讐 なら、 *EP と *奇跡 それぞれ2枚を手札に加える。"
   },
   "shadowverse:MaskedMayhem": {
     "NAME": "覆面の闘士・シャランゼア",
@@ -2181,8 +2181,8 @@
   },
   "shadowverse:AugmentationBestowal": {
     "NAME": "機構の解放",
-    "DESCRIPTION": "このカード、 AF カードをプレイする度、 [E] を得てカードを !M! 枚引く。 NL エセリアル 。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION": "このカード、 AF カードをプレイする度、 [E] を得てカードを !M! 枚引く。 NL 廃棄 。"
+    "DESCRIPTION": "このターン、 AF カードをプレイする度、 [E] を得てカードを !M! 枚引く。 NL エセリアル 。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "このターン、 AF カードをプレイする度、 [E] を得てカードを !M! 枚引く。 NL 廃棄 。"
   },
   "shadowverse:ParadigmShift": {
     "NAME": "パラダイムシフト",
@@ -2662,7 +2662,7 @@
   },
   "shadowverse:KMRGaze": {
     "NAME": "木村唯人の眼光",
-    "DESCRIPTION": "これが引かれる時、手札にあるスキルのコストはこのターンすべて+10する。 NL エセリアル 。"
+    "DESCRIPTION": "これが引かれる時、手札にあるスキルのコストはこのターンすべて+10される。 NL エセリアル 。"
   },
   "shadowverse:WUP": {
     "NAME": "ナテラ崩壊",
@@ -2718,7 +2718,7 @@
   },
   "shadowverse:CalamityMode": {
     "NAME": "カラミティ・モード",
-    "DESCRIPTION": "分のデッキをカラミティにする。 NL 廃棄 。"
+    "DESCRIPTION": "自分のデッキをカラミティにする。 NL 廃棄 。"
   },
   "shadowverse:JusticeTyrant": {
     "NAME": "ジャスティス・タイラント",
@@ -3324,12 +3324,12 @@
   },
   "shadowverse:BlackenedScripture": {
     "NAME": "漆黒の法典",
-    "DESCRIPTION": "脱力 と 脆弱性 !M! を与える。 NL 敵のHPが9以下の場合、即死させる。"
+    "DESCRIPTION": "脱力 と 脆弱化 !M! を与える。 NL 敵のHPが9以下の場合、即死させる。"
   },
   "shadowverse:PriestOfTheCudgel": {
     "NAME": "鉄槌の僧侶",
     "DESCRIPTION": "!D! ダメージを与える。 NL 弱体 !M! を与える。",
-    "UPGRADE_DESCRIPTION": "!D! ダメージを与える。 NL弱体 !M! を与える。 NL 敵のHPが15以下の場合、即死させる。"
+    "UPGRADE_DESCRIPTION": "!D! ダメージを与える。 NL 弱体 !M! を与える。 NL 敵のHPが15以下の場合、即死させる。"
   },
   "shadowverse:SacredPlea": {
     "NAME": "詠唱：聖なる願い",
@@ -3359,8 +3359,8 @@
   },
   "shadowverse:MysterianWisdom": {
     "NAME": "マナリアの叡智",
-    "DESCRIPTION": "手札1枚を 廃棄 する。 NL *マナリアの魔弾 和 *マナリアの防陣 それぞれ1枚を手札に加える。",
-    "UPGRADE_DESCRIPTION": "手札1枚を 廃棄 し、それの複製を1枚山札に加える。 NL *マナリアの魔弾 和 *マナリアの防陣 それぞれ1枚を手札に加える。"
+    "DESCRIPTION": "手札1枚を 廃棄 する。 NL *マナリアの魔弾 と *マナリアの防陣 それぞれ1枚を手札に加える。",
+    "UPGRADE_DESCRIPTION": "手札1枚を 廃棄 し、それの複製を1枚山札に加える。 NL *マナリアの魔弾 と *マナリアの防陣 それぞれ1枚を手札に加える。"
   },
   "shadowverse:DuskshadeBat": {
     "NAME": "暗闇の蝙蝠",
@@ -4250,8 +4250,8 @@
   },
   "shadowverse:UndyingResolve": {
     "NAME": "惑わぬ意志",
-    "DESCRIPTION": "宴楽 。 NL 捨札にあるカード1枚を選び、それのコストをこのターンだけ-1する。 NL それが *因果の迷い子・アンサージュ なら、さらに「 ラストワード ネクロマンス 6 \bこのカードが 廃棄 される時、ダメージを倍にする。その後、これの複製1枚を手札に加える」を付与する。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION": "宴楽 。 NL 捨札にあるカード1枚を選び、それのコストを-1する。 NL それが *因果の迷い子・アンサージュ なら、さらに「 ラストワード ネクロマンス 6 \bこのカードが 廃棄 される時、ダメージを倍にする。その後、これの複製1枚を手札に加える」を付与する。 NL 廃棄 。"
+    "DESCRIPTION": "宴楽 。 NL 捨札にあるアタック1枚を選び、それのコストをこのターンだけ-1する。 NL それが *因果の迷い子・アンサージュ なら、さらに「 ラストワード ネクロマンス 6 \bこのカードが 廃棄 される時、ダメージを倍にする。その後、これの複製1枚を手札に加える」を付与する。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION": "宴楽 。 NL 捨札にあるアタック1枚を選び、それのコストを-1する。 NL それが *因果の迷い子・アンサージュ なら、さらに「 ラストワード ネクロマンス 6 \bこのカードが 廃棄 される時、ダメージを倍にする。その後、これの複製1枚を手札に加える」を付与する。 NL 廃棄 。"
   },
   "shadowverse:SoulGuide": {
     "NAME": "ソウルガイド",
@@ -4330,7 +4330,7 @@
   },
   "shadowverse:RoomServiceDevil": {
     "NAME": "ルームサービスデビル",
-    "DESCRIPTION": "アクセラレート 0 \bカードを1枚捨て、 !M! ダメージを与える。 NL  NL --------------------- NL  NL !D! ダメージを与える。 NL 他の手札が2枚以下なら、もう一回ダメージを与え、 !B! ブロック を得る。"
+    "DESCRIPTION": "宴楽 ・ アクセラレート 0 \bカードを1枚捨て、 !M! ダメージを与える。 NL  NL --------------------- NL  NL !D! ダメージを与える。 NL 他の手札が2枚以下なら、もう一回ダメージを与え、 !B! ブロック を得る。"
   },
   "shadowverse:JubilanceWitch": {
     "NAME": "炸裂の魔女",
@@ -4361,5 +4361,9 @@
   "shadowverse:MadnessCurse": {
     "NAME": "狂ってるのはお前達だ",
     "DESCRIPTION": "手札が一杯になるまで *狂気+ を手札に加える。 NL 廃棄 。"
+  },
+  "shadowverse:Tenko": {
+    "NAME": "天狐の社",
+    "DESCRIPTION": "HPを回復する度、ランダムな敵 !M! ダメージを与える。"
   }
 }
