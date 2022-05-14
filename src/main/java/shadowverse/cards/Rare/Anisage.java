@@ -61,23 +61,24 @@ public class Anisage
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction("Anisage"));
-        if (upgraded){
-            if (m.currentHealth>this.damage){
+        if (upgraded) {
+            if (m.currentHealth > this.damage) {
                 m.currentHealth -= Math.min(this.damage, m.currentHealth - 1);
                 AbstractDungeon.effectList.add(new FlashAtkImgEffect(m.hb.cX, m.hb.cY, AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
                 m.update();
-            }else {
-                addToBot((AbstractGameAction)new JudgementAction((AbstractCreature)m, this.damage));
+            } else {
+                addToBot((AbstractGameAction) new JudgementAction((AbstractCreature) m, this.damage));
             }
-        }else {
-            addToBot(new DamageAction(m,new DamageInfo(p,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        } else {
+            addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         }
-        addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
-   }
- 
-   
-   public AbstractCard makeCopy() {
-     return (AbstractCard)new Anisage();
-   }
- }
+        if (this.costForTurn > 0 && !freeToPlayOnce)
+            addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+    }
+
+
+    public AbstractCard makeCopy() {
+        return (AbstractCard) new Anisage();
+    }
+}
 

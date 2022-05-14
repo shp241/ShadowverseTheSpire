@@ -62,12 +62,11 @@ public class Nemesis extends AbstractShadowversePlayer{
         for (i = 0; i < 5; i++) {
             starterDeck.add(Strike_Nm.ID);
         }
-        for (i = 0; i < 4; i++) {
+        for (i = 0; i < 5; i++) {
             starterDeck.add(Defend_Nm.ID);
         }
         starterDeck.add(DimensionCut.ID);
         starterDeck.add(MagisteelLion.ID);
-        starterDeck.add(CurseOfPurgation.ID);
         return starterDeck;
     }
 
@@ -81,7 +80,7 @@ public class Nemesis extends AbstractShadowversePlayer{
 
     @Override
     public CharSelectInfo getLoadout() {
-        return new CharSelectInfo(charStrings.NAMES[0], charStrings.TEXT[0], 75, 75, 0, 99, 5,
+        return new CharSelectInfo(charStrings.NAMES[0], charStrings.TEXT[0], 75, 75, 0, 0, 5,
                 (AbstractPlayer)this, getStartingRelics(),
                 getStartingDeck(), false);
     }

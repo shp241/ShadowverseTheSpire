@@ -4245,13 +4245,13 @@
   },
   "shadowverse:Anisage": {
     "NAME": "因果的迷途之子·安瑟乔",
-    "DESCRIPTION": "宴乐 。 NL 造成 !D! 点伤害。 NL 增加1张 *不惑的意志 到手中。",
-    "UPGRADE_DESCRIPTION": "宴乐 。 NL 造成 !D! 点无法格挡的伤害。 NL 增加1张 *不惑的意志+ 到手中。"
+    "DESCRIPTION": "宴乐 。 NL 造成 !D! 点伤害。 NL 如果耗能不为0，增加1张 *不惑的意志 到手中。",
+    "UPGRADE_DESCRIPTION": "宴乐 。 NL 造成 !D! 点无法格挡的伤害。 NL 如果耗能不为0，增加1张 *不惑的意志+ 到手中。"
   },
   "shadowverse:UndyingResolve": {
     "NAME": "不惑的意志",
     "DESCRIPTION": "宴乐 。 NL 选择弃牌堆1张攻击牌，将其本回合耗能-1。 NL 如果选择的是 *因果的迷途之子·安瑟乔 ，则给予其「 谢幕曲 死灵术 6 \b当这张牌被 消耗 时伤害翻倍，然后将1张复制加入手牌」。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "宴乐 。 NL 选择弃牌堆1张攻击牌，将其耗能-1。 NL 如果选择的是 *因果的迷途之子·安瑟乔 ，则给予其「 谢幕曲 死灵术 6 \b当这张牌被 消耗 时伤害翻倍，然后将1张复制加入手牌」。 NL 消耗 。"
+    "UPGRADE_DESCRIPTION": "宴乐 。 NL 选择弃牌堆1张攻击牌，将其下次打出前耗能-1。 NL 如果选择的是 *因果的迷途之子·安瑟乔 ，则给予其「 谢幕曲 死灵术 6 \b当这张牌被 消耗 时伤害翻倍，然后将1张复制加入手牌」。 NL 消耗 。"
   },
   "shadowverse:SoulGuide": {
     "NAME": "灵魂向导",
@@ -4361,5 +4361,19 @@
   "shadowverse:MadnessCurse": {
     "NAME": "真正癫狂的是你们吧",
     "DESCRIPTION": "增加 *疯狂+ 到手中直到满为止。 NL 消耗 。"
+  },
+  "shadowverse:Arthur": {
+    "NAME": "骑士王·亚瑟",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 召唤1个 铁甲骑士 、 骑士 、 重装骑士 、 战盾卫士 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"获得 !B! 点 格挡 。 NL 召唤1个 铁甲骑士 、 骑士 、 重装骑士 、 战盾卫士 。"
+  },
+  "shadowverse:Tweyen": {
+    "NAME": "魔眼狩人·索恩",
+    "DESCRIPTION": "增加敌人受到的伤害20%。 NL 造成 !D! 点伤害。 NL 奥义 3：升级所有手牌，获得2点 力量 。 NL 解放奥义 6：对全体敌人造成 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      "增加敌人受到的伤害20%。 NL 造成 !D! 点伤害。 NL 奥义 ",
+      "：升级所有手牌，获得2点 力量 。 NL 解放奥义 ",
+      "：对全体敌人造成 !D! 点伤害。"
+    ]
   }
 }

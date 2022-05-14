@@ -62,7 +62,7 @@ public class UndyingResolve
                 if (!this.upgraded) {
                     addToBot((AbstractGameAction) new ReduceCostForTurnAction(c, 1));
                 } else {
-                    addToBot((AbstractGameAction) new ReduceCostAction(c));
+                    c.freeToPlayOnce = true;
                 }
                 c.superFlash();
             }

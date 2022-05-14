@@ -1154,6 +1154,10 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         reflectedMap.put("EternalContract_L", new Sfx("sounds/EternalContract_L.wav"));
         reflectedMap.put("BlackenedScripture", new Sfx("sounds/BlackenedScripture.wav"));
         reflectedMap.put("BloodPact", new Sfx("sounds/BloodPact.wav"));
+        reflectedMap.put("Arthur", new Sfx("sounds/Arthur.wav"));
+        reflectedMap.put("Tweyen", new Sfx("sounds/Tweyen.wav"));
+        reflectedMap.put("Tweyen_SA", new Sfx("sounds/Tweyen_SA.wav"));
+        reflectedMap.put("Tweyen_SSA", new Sfx("sounds/Tweyen_SSA.wav"));
     }
 
     public void receiveEditRelics() {
@@ -2116,6 +2120,8 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard((AbstractCard) new UnselfishGrace());
         BaseMod.addCard((AbstractCard) new TheTemperance());
         BaseMod.addCard((AbstractCard) new MadnessCurse());
+        BaseMod.addCard((AbstractCard) new Arthur());
+        BaseMod.addCard((AbstractCard) new Tweyen());
         logger.info("Success");
     }
 

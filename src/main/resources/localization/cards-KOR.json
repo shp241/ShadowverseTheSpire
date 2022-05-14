@@ -4362,5 +4362,19 @@
   "shadowverse:MadnessCurse": {
     "NAME": "미친건 너희다!",
     "DESCRIPTION": "*광기+ 를 손이 가득 찰 때까지 얻습니다. NL 소멸 ."
+  },
+  "shadowverse:Arthur": {
+    "NAME": "Arthur, Knight King",
+    "DESCRIPTION": "Gain !B! Block . NL Summon a Steelclad_Knight , Knight , HeavyKnight and Shield_Guardian . NL Exhaust .",
+    "UPGRADE_DESCRIPTION":"Gain !B! Block . NL Summon a Steelclad_Knight , Knight , HeavyKnight and Shield_Guardian ."
+  },
+  "shadowverse:Tweyen": {
+    "NAME": "Tweyen, Dark Huntress",
+    "DESCRIPTION": "Increase enemy's damage taken by 20% . NL Deal !D! damage. NL Skybound_Art 3: Upgrade all hands and gain 2 Strength . NL Super_Skybound_Art 6: Deal !D! damage to all enemies.",
+    "EXTENDED_DESCRIPTION": [
+      "Increase enemy's damage taken by 20% . NL Deal !D! damage. NL Skybound_Art ",
+      ": Upgrade all hands and gain 2 Strength . NL Super_Skybound_Art ",
+      ": Deal !D! damage to all enemies."
+    ]
   }
 }

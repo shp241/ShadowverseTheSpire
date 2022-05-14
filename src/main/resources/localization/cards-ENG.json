@@ -4245,13 +4245,13 @@
   },
   "shadowverse:Anisage": {
     "NAME": "Anisage, Lost Forsaken",
-    "DESCRIPTION": "Festive. NL Deal !D! damage. NL Add an *Undying *Resolve to your hand.",
-    "UPGRADE_DESCRIPTION": "Festive. NL Deal !D! damage. NL Add an *Undying *Resolve+ to your hand."
+    "DESCRIPTION": "Festive. NL Deal !D! damage. NL If this cost more than 0, add an *Undying *Resolve to your hand.",
+    "UPGRADE_DESCRIPTION": "Festive. NL Deal !D! damage. NL If this cost more than 0, add an *Undying *Resolve+ to your hand."
   },
   "shadowverse:UndyingResolve": {
     "NAME": "Undying Resolve",
-    "DESCRIPTION": "Festive. NL Select an Attack card in your discard pile reduce its cost by 1. NL If that card is *Anisage, *Lost *Forsaken, give it the following effect: Last_Words: When this card is Exhausted, put a copy of it that deals double damage into your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Festive. NL Select an Attack card in your discard pile, reduce its cost by 1 and then Exhaust it. NL If that card is *Anisage, *Lost *Forsaken, give it the following effect: Last_Words: When this card is Exhausted, put a copy of it that deals double damage into your hand. NL Exhaust."
+    "DESCRIPTION": "Festive. NL Select an Attack card in your discard pile reduce its cost by 1 this turn. NL If that card is *Anisage, *Lost *Forsaken, give it the following effect: Last_Words: When this card is Exhausted, put a copy of it that deals double damage into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Festive. NL Select an Attack card in your discard pile, reduce its cost by 1 until played. NL If that card is *Anisage, *Lost *Forsaken, give it the following effect: Last_Words: When this card is Exhausted, put a copy of it that deals double damage into your hand. NL Exhaust."
   },
   "shadowverse:SoulGuide": {
     "NAME": "Psychopomp Tour Guide",
@@ -4361,5 +4361,19 @@
   "shadowverse:MadnessCurse": {
     "NAME": "You've all got mad",
     "DESCRIPTION": "Add *Madness+ into your hand until your hand is full. NL Exhaust ."
+  },
+  "shadowverse:Arthur": {
+    "NAME": "Arthur, Knight King",
+    "DESCRIPTION": "Gain !B! Block . NL Summon a Steelclad_Knight , Knight , HeavyKnight and Shield_Guardian . NL Exhaust .",
+    "UPGRADE_DESCRIPTION":"Gain !B! Block . NL Summon a Steelclad_Knight , Knight , HeavyKnight and Shield_Guardian ."
+  },
+  "shadowverse:Tweyen": {
+    "NAME": "Tweyen, Dark Huntress",
+    "DESCRIPTION": "Increase enemy's damage taken by 20% . NL Deal !D! damage. NL Skybound_Art 3: Upgrade all hands and gain 2 Strength . NL Super_Skybound_Art 6: Deal !D! damage to all enemies.",
+    "EXTENDED_DESCRIPTION": [
+      "Increase enemy's damage taken by 20% . NL Deal !D! damage. NL Skybound_Art ",
+      ": Upgrade all hands and gain 2 Strength . NL Super_Skybound_Art ",
+      ": Deal !D! damage to all enemies."
+    ]
   }
 }
