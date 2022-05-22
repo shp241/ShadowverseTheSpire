@@ -4378,32 +4378,32 @@
     ]
   },
   "shadowverse:CelestialArtifact": {
-    "NAME": "Celestial Artifact",
-    "DESCRIPTION": "AF / Accelerate 0 \bPut 1 AF card from your draw pile into your hand. If there are 6 kinds of AF cards in your exhaust pile, put 1 additionally. NL  NL --------------------- NL  NL Deal !M! damage X times. X equals to the kinds of AF cards in your exhaust pile."
+    "NAME": "신성한 아티팩트",
+    "DESCRIPTION": "AF / 가속화 0 뽑을 카드더미에서 아티팩트 카드 1장을 가져옵니다. 소멸된 아티팩트 카드가 6종류 이상이라면, 1장 더 가져옵니다.  NL ---------------------  NL 피해를 !M! 만큼 X 번 줍니다. X 는 소멸된 아티팩트 타입 카드 종류 수."
   },
   "shadowverse:Yggdrasil": {
-    "NAME": "世界树",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 造成 !D! 点伤害，回复造成伤害的生命。 NL 抉择 :增加1张 *万象的加护 或 *森罗的愤怒 到手中。",
-    "UPGRADE_DESCRIPTION":"获得 !B! 点 格挡 。 NL 造成 !D! 点伤害，回复造成伤害的生命。 NL 抉择 :增加1张 *万象的加护+ 或 *森罗的愤怒+ 到手中。"
+    "NAME": "유그드라실",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 피해를 !D! 주고, 입힌 피해만큼 체력을 회복합니다.  NL 결단 : 이하의 카드중 1장을 골라 얻습니다.  *삼라만상의 *가호 또는 *삼라만상의 *분노 .",
+    "UPGRADE_DESCRIPTION":"방어도를 !B! 얻습니다. NL 피해를 !D! 주고, 입힌 피해만큼 체력을 회복합니다.  NL 결단 : 이하의 카드중 1장을 골라 얻습니다.  *삼라만상의 *가호+ 또는 *삼라만상의 *분노+ ."
   },
   "shadowverse:Yggdrasil2": {
-    "NAME": "创始生命的世界树",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张 *森罗万象的爱 到手中。"
+    "NAME": "생명의 창세수 유그드라실",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL *삼라만상의 *사랑 1장을 얻습니다."
   },
   "shadowverse:BlessingsOfCreation": {
-    "NAME": "万象的加护",
-    "DESCRIPTION": "保留 。 NL 抽 !M! 张牌。 NL 爆能强化 1 \b使本回合已打出卡牌数+2。 NL 消耗 。"
+    "NAME": "삼라만상의 가호",
+    "DESCRIPTION": "보존. NL 카드를 !M! 장 뽑습니다. NL 강화 1: 이번 턴 사용한 카드 수 +2. NL 소멸."
   },
   "shadowverse:WrathOfNature": {
-    "NAME": "森罗的愤怒",
-    "DESCRIPTION": "保留 。 NL 获得1点 力量 。 NL 爆能强化 2 \b使本回合攻击伤害翻倍。 NL 消耗 。"
+    "NAME": "삼라만상의 분노",
+    "DESCRIPTION": "보존. NL 힘을 1 얻습니다. NL 강화 2: 이번 턴 사용하는 공격 카드의 피해를 2배로 합니다. NL 소멸 。"
   },
   "shadowverse:NatureBlessing": {
-    "NAME": "森罗万象的爱",
-    "DESCRIPTION": "保留 。 NL 获得「回合开始时，依顺序触发以下效果，发动3次后消失： NL (1)获得1点 力量 和 敏捷 NL (2)抽 !M! 张牌 NL (3)回复3点生命」。 NL 消耗 。"
+    "NAME": "삼라만상의 사랑",
+    "DESCRIPTION": "보존 NL 자신에게「턴 시작시，이하의 능력중 하나를 순서대로 발동한 후, 각각 1번씩 발동하고 없앱니다： NL (1)힘과 민첩을 1 얻습니다. NL (2)카드를 !M! 장 뽑습니다. NL (3)체력을 3 회복합니다.」。 NL 소멸. "
   },
   "shadowverse:Rola": {
-    "NAME": "极炎龙骑士·洛乐",
-    "DESCRIPTION": "机械 。 NL 获得 !B! 点 格挡 。 NL 如果手中有其他 机械 牌，额外获得 !B! 格挡 。 NL 爆能强化 3 \b如果只有1名敌人，对其造成2次 !D! 点伤害。 NL 否则对全体敌人造成 !D! 点伤害。"
+    "NAME": "극염의 용기병 로라",
+    "DESCRIPTION": "기계 。 NL 방어도를 !B! 얻습니다. NL 손에 다른 기계 카드가 있다면, 추가로 방어도를 !B! 얻습니다. NL 강화 3 적이 하나뿐이라면, 그 적에게 피해를 !D! 만큼 2번 줍니다. NL 둘 이상이라면 대신 모든 적에게 피해를 !D! 줍니다."
   }
 }
