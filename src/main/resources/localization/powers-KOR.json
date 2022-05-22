@@ -1513,5 +1513,16 @@
     "DESCRIPTIONS": [
       "턴 시작시 카드를 1장 더 뽑습니다."
     ]
+  },
+  "shadowverse:YggdrasilPower": {
+    "NAME": "Nature's Blessing",
+    "DESCRIPTIONS": [
+      "At the start of your turn, activate 1 of the following effects which will be removed after activating 3 times in order: NL ",
+      " #g",
+      "(1) Gain #b1 #yStreng and #yDexitery NL ",
+      "(2) Draw #b",
+      " cards NL ",
+      "(3) Heal #b3 HP"
+    ]
   }
 }

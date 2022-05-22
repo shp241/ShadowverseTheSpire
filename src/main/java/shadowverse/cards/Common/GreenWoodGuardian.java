@@ -27,7 +27,7 @@ public class GreenWoodGuardian extends CustomCard {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.COMMON, CardTarget.SELF);
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
-        this.baseBlock = 5;
+        this.baseBlock = 6;
         this.exhaust = true;
     }
 

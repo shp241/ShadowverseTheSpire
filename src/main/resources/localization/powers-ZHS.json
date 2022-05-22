@@ -1513,5 +1513,16 @@
     "DESCRIPTIONS": [
       "每回合开始时，额外抽 #b1 张卡。"
     ]
+  },
+  "shadowverse:YggdrasilPower": {
+    "NAME": "森罗万象的爱",
+    "DESCRIPTIONS": [
+      "回合开始时，依顺序触发以下效果，发动3次后消失: NL ",
+      " #g",
+      "(1) 获得 #b1 点 #y力量 和 #y敏捷 NL ",
+      "(2) 抽 #b",
+      " 张牌 NL ",
+      "(3) 回复 #b3 点生命"
+    ]
   }
 }

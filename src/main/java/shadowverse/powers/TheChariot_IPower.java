@@ -58,8 +58,8 @@
                      addToBot((AbstractGameAction) new VFXAction((AbstractGameEffect) new WeightyImpactEffect(this.owner.hb.cX, this.owner.hb.cY)));
                      addToBot(new DamageAction(this.owner, new DamageInfo(this.owner, this.owner.maxHealth/2, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
                  }else {
-                     AbstractMonster m = AbstractDungeon.getRandomMonster();
-                     if (!m.isDeadOrEscaped()){
+                     AbstractMonster m = AbstractDungeon.getCurrRoom().monsters.getRandomMonster(true);
+                     if (m!=null) {
                          addToBot((AbstractGameAction) new VFXAction((AbstractGameEffect) new WeightyImpactEffect(m.hb.cX, m.hb.cY)));
                          addToBot(new DamageAction(m, new DamageInfo(this.owner, this.amount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
                      }

@@ -117,10 +117,10 @@ public class Erika
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         addToBot((AbstractGameAction)new SFXAction("Erika"));
         addToBot(new MinionSummonAction(new ErikaOrb(this.magicNumber,1,this.makeStatEquivalentCopy())));
-        if (rally()>=15 && this.upgraded){
+        if (rally()>=16 && this.upgraded){
             addToBot((AbstractGameAction)new MakeTempCardInHandAction(new ErikasSleight()));
         }
-        if (rally()>=7 && !triggered){
+        if (rally()>=8 && !triggered){
             triggered = true;
             addToBot((AbstractGameAction)new MakeTempCardInHandAction(new SecretSkill()));
         }

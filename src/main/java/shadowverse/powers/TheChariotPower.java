@@ -60,8 +60,8 @@ public class TheChariotPower extends AbstractPower {
                     addToBot(new MinionSummonAction(new Knight()));
                     break;
                 case 2:
-                    AbstractMonster m = AbstractDungeon.getRandomMonster();
-                    if (!m.isDeadOrEscaped()) {
+                    AbstractMonster m = AbstractDungeon.getCurrRoom().monsters.getRandomMonster(true);
+                    if (m!=null) {
                         addToBot(new DamageAction(m, new DamageInfo(this.owner, this.amount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
                     }
                     break;

@@ -1158,6 +1158,15 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         reflectedMap.put("Tweyen", new Sfx("sounds/Tweyen.wav"));
         reflectedMap.put("Tweyen_SA", new Sfx("sounds/Tweyen_SA.wav"));
         reflectedMap.put("Tweyen_SSA", new Sfx("sounds/Tweyen_SSA.wav"));
+        reflectedMap.put("Yggdrasil", new Sfx("sounds/Yggdrasil.wav"));
+        reflectedMap.put("Yggdrasil2", new Sfx("sounds/Yggdrasil2.wav"));
+        reflectedMap.put("BlessingsOfCreation", new Sfx("sounds/BlessingOfCreation.wav"));
+        reflectedMap.put("WrathOfNature", new Sfx("sounds/WrathOfNature.wav"));
+        reflectedMap.put("NatureBlessing", new Sfx("sounds/NatureBlessing.wav"));
+        reflectedMap.put("Rola", new Sfx("sounds/Rola.wav"));
+        reflectedMap.put("Rola_L", new Sfx("sounds/Rola_L.wav"));
+        reflectedMap.put("Rola_EH", new Sfx("sounds/Rola_Eh.wav"));
+        reflectedMap.put("Rola_L_EH", new Sfx("sounds/Rola_L_EH.wav"));
     }
 
     public void receiveEditRelics() {
@@ -2122,6 +2131,12 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard((AbstractCard) new MadnessCurse());
         BaseMod.addCard((AbstractCard) new Arthur());
         BaseMod.addCard((AbstractCard) new Tweyen());
+        BaseMod.addCard((AbstractCard) new CelestialArtifact());
+        BaseMod.addCard((AbstractCard) new BlessingsOfCreation());
+        BaseMod.addCard((AbstractCard) new WrathOfNature());
+        BaseMod.addCard((AbstractCard) new NatureBlessing());
+        BaseMod.addCard((AbstractCard) new Yggdrasil());
+        BaseMod.addCard((AbstractCard) new Rola());
         logger.info("Success");
     }
 
