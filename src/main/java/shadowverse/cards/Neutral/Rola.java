@@ -52,7 +52,7 @@ public class Rola extends AbstractNeutralCard {
                 Shadowverse.Enhance(3)) {
             setCostForTurn(3);
         } else {
-            if (this.costForTurn!=0){
+            if (this.costForTurn != 0) {
                 setCostForTurn(1);
             }
         }
@@ -61,26 +61,27 @@ public class Rola extends AbstractNeutralCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, this.block));
-        if (p.hand.group.stream().anyMatch(card -> hasTag(AbstractShadowversePlayer.Enums.MACHINE)&&card!=this)){
-            addToBot(new GainBlockAction(p, this.block));
+        for (AbstractCard card : p.hand.group) {
+            if (card.hasTag(AbstractShadowversePlayer.Enums.MACHINE) && card != this)
+                addToBot(new GainBlockAction(p, this.block));
         }
-        if (this.costForTurn==3){
+        if (this.costForTurn == 3) {
             if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false)))
                 addToBot(new SFXAction("Rola_L_EH"));
             else
                 addToBot(new SFXAction("Rola_EH"));
             int count = 0;
-            for (AbstractMonster mo :AbstractDungeon.getCurrRoom().monsters.monsters){
+            for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
                 if (!mo.isDeadOrEscaped())
                     count++;
             }
-            if (count==1){
-                addToBot(new DamageAction(AbstractDungeon.getCurrRoom().monsters.getRandomMonster(true),new DamageInfo(p,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
-                addToBot(new DamageAction(AbstractDungeon.getCurrRoom().monsters.getRandomMonster(true),new DamageInfo(p,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
-            }else {
+            if (count == 1) {
+                addToBot(new DamageAction(AbstractDungeon.getCurrRoom().monsters.getRandomMonster(true), new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+                addToBot(new DamageAction(AbstractDungeon.getCurrRoom().monsters.getRandomMonster(true), new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+            } else {
                 addToBot((AbstractGameAction) new DamageAllEnemiesAction((AbstractCreature) p, DamageInfo.createDamageMatrix(this.damage, true), DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE, true));
             }
-        }else {
+        } else {
             if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false)))
                 addToBot(new SFXAction("Rola_L"));
             else

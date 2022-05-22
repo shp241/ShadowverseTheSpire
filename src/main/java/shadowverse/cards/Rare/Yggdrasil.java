@@ -100,6 +100,7 @@
                  Yggdrasil.this.textureImg = IMG_PATH2;
                  Yggdrasil.this.loadCardImage(IMG_PATH2);
                  Yggdrasil.this.name = cardStrings2.NAME;
+                 Yggdrasil.this.upgradeBaseCost(1);
                  Yggdrasil.this.initializeTitle();
                  Yggdrasil.this.rawDescription = cardStrings2.DESCRIPTION;
                  Yggdrasil.this.initializeDescription();
