@@ -1515,14 +1515,14 @@
     ]
   },
   "shadowverse:YggdrasilPower": {
-    "NAME": "Nature's Blessing",
+    "NAME": "삼라만상의 사랑",
     "DESCRIPTIONS": [
-      "At the start of your turn, activate 1 of the following effects which will be removed after activating 3 times in order: NL ",
+      "턴 시작시, 이하의 효과중 하나를 차례대로 발동하고, 모두 발동하면 사라집니다: NL ",
       " #g",
-      "(1) Gain #b1 #yStreng and #yDexitery NL ",
-      "(2) Draw #b",
-      " cards NL ",
-      "(3) Heal #b3 HP"
+      "(1) #y힘 과  #y민첩 을 #b1 얻습니다 NL ",
+      "(2) 카드를 #b",
+      " 장 뽑습니다 NL ",
+      "(3) 체력을 #b3 회복합니다."
     ]
   }
 }
