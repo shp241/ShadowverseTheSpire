@@ -1295,7 +1295,7 @@
     "NAME": "Shadow's Corrosion",
     "DESCRIPTIONS": [
       "At the start of turn, lose #b",
-      " HP. Whenever you play #b1 #yNaterran #yGreat #yTree, + #b2 damage."
+      " HP. Whenever you play #b1 #yNaterran #yGreat #yTree, + #b3 damage."
     ]
   },
   "shadowverse:DualbladePower": {

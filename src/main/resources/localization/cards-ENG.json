@@ -1897,7 +1897,7 @@
   },
   "shadowverse:RageCommander": {
     "NAME": "Laura, Enraged Commander",
-    "DESCRIPTION": "Deal !D! Damage. NL The next Attack card you play deals double damage. NL If Vengeance is active, all Attack cards you play this turn deal double damage"
+    "DESCRIPTION": "Deal !D! Damage. NL The next Attack card you play deals double damage. NL If Vengeance is active, all Attack cards you play this turn deal double damage."
   },
   "shadowverse:Relinquish": {
     "NAME": "Relinquish Reason",
@@ -3856,7 +3856,7 @@
   },
   "shadowverse:ShadowCorrosion": {
     "NAME": "Shadow's Corrosion",
-    "DESCRIPTION": "Natura. NL Apply the following effect to an enemy: At the start of your turn, lose HP equal to double the number of played *Naterran *Great *Trees played this combat. NL If the enemy already has this effect, deal the same amount of damage directly instead. NL Exhaust."
+    "DESCRIPTION": "Natura. NL Apply the following effect to an enemy: At the start of your turn, lose HP equal to triple the number of played *Naterran *Great *Trees played this combat. NL If the enemy already has this effect, deal the same amount of damage directly instead. NL Exhaust."
   },
   "shadowverse:Valdain": {
     "NAME": "Valdain, Cursed Shadow",
@@ -4381,28 +4381,28 @@
     "DESCRIPTION": "AF / Accelerate 0 \bPut 1 AF card from your draw pile into your hand. If there are 6 kinds of AF cards in your exhaust pile, put 1 additionally. NL  NL --------------------- NL  NL Deal !M! damage X times. X equals to the kinds of AF cards in your exhaust pile."
   },
   "shadowverse:Yggdrasil": {
-    "NAME": "世界树",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 造成 !D! 点伤害，回复造成伤害的生命。 NL 抉择 :增加1张 *万象的加护 或 *森罗的愤怒 到手中。",
-    "UPGRADE_DESCRIPTION":"获得 !B! 点 格挡 。 NL 造成 !D! 点伤害，回复造成伤害的生命。 NL 抉择 :增加1张 *万象的加护+ 或 *森罗的愤怒+ 到手中。"
+    "NAME": "Yggdrasil",
+    "DESCRIPTION": "Gain !B! Block . NL Deal !D! damage and heal your HP equal to the damage dealt. NL Choose :Add 1 *Blessings *Of *Creation or *Wrath *Of *Nature into your hand.",
+    "UPGRADE_DESCRIPTION":"Gain !B! Block . NL Deal !D! damage and heal your HP equal to the damage dealt. NL Choose :Add 1 *Blessings *Of *Creation+ or *Wrath *Of *Nature+ into your hand."
   },
   "shadowverse:Yggdrasil2": {
-    "NAME": "创始生命的世界树",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张 *森罗万象的爱 到手中。"
+    "NAME": "Yggdrasil, Root of Life",
+    "DESCRIPTION": "Gain !B! Block . NL Add 1 *Nature's *Blessing into your hand."
   },
   "shadowverse:BlessingsOfCreation": {
-    "NAME": "万象的加护",
-    "DESCRIPTION": "保留 。 NL 抽 !M! 张牌。 NL 爆能强化 1 \b使本回合已打出卡牌数+2。 NL 消耗 。"
+    "NAME": "Blessings Of Creation",
+    "DESCRIPTION": "Retain . NL Draw !M! cards. NL Enhance 1 :Add 2 to the number of cards played this turn. NL Exhaust ."
   },
   "shadowverse:WrathOfNature": {
-    "NAME": "森罗的愤怒",
-    "DESCRIPTION": "保留 。 NL 获得1点 力量 。 NL 爆能强化 2 \b使本回合攻击伤害翻倍。 NL 消耗 。"
+    "NAME": "Wrath Of Nature",
+    "DESCRIPTION": "Retain . NL Gain 1 Strength . NL Enhance 2 :all Attack cards you play this turn deal double damage. NL Exhaust 。"
   },
   "shadowverse:NatureBlessing": {
-    "NAME": "森罗万象的爱",
-    "DESCRIPTION": "保留 。 NL 获得「回合开始时，依顺序触发以下效果，发动3次后消失： NL (1)获得1点 力量 和 敏捷 NL (2)抽 !M! 张牌 NL (3)回复3点生命」。 NL 消耗 。"
+    "NAME": "Nature's Blessing",
+    "DESCRIPTION": "Retain . NL Gain 'At the start of your turn, activate 1 of the following effects which will be removed after activating 3 times in order. NL (1)Gain 1 Strength and Dexterity NL (2)Draw !M! cards NL (3)Heal 3 HP'. NL Exhaust ."
   },
   "shadowverse:Rola": {
-    "NAME": "极炎龙骑士·洛乐",
-    "DESCRIPTION": "机械 。 NL 获得 !B! 点 格挡 。 NL 如果手中有其他 机械 牌，额外获得 !B! 格挡 。 NL 爆能强化 3 \b如果只有1名敌人，对其造成2次 !D! 点伤害。 NL 否则对全体敌人造成 !D! 点伤害。"
+    "NAME": "Rola, Inferno Dragoon",
+    "DESCRIPTION": "Machina . NL Gain !B! Block . NL If you have any other Machina cards in your hand, gain !B! Block additionally. NL Enhance 3 :If there is only 1 enemy, deal !D! damage 2 times. NL Otherwise, deal !D! damage to all enemies."
   }
 }

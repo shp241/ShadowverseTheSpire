@@ -60,7 +60,7 @@ import shadowverse.powers.ProphecyOfDoomPower;
          treeAmt++;
      }
      if (!abstractMonster.hasPower(ShadowCorrosionPower.POWER_ID)){
-       addToBot((AbstractGameAction) new ApplyPowerAction(abstractMonster,abstractMonster,(AbstractPower)new ShadowCorrosionPower(abstractMonster,treeAmt*2),treeAmt*2));
+       addToBot((AbstractGameAction) new ApplyPowerAction(abstractMonster,abstractMonster,(AbstractPower)new ShadowCorrosionPower(abstractMonster,treeAmt*3),treeAmt*3));
      }else {
        addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, abstractMonster.getPower(ShadowCorrosionPower.POWER_ID).amount, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
        addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new ClawEffect(abstractMonster.hb.cX, abstractMonster.hb.cY, Color.BLACK, Color.PURPLE), 0.6F));

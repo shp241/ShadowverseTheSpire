@@ -49,7 +49,7 @@
      @Override
      public void onUseCard(AbstractCard card, UseCardAction action) {
          if (card instanceof NaterranGreatTree)
-             addToBot((AbstractGameAction)new ApplyPowerAction(this.owner,this.owner,(AbstractPower)new ShadowCorrosionPower(this.owner,2),2));
+             addToBot((AbstractGameAction)new ApplyPowerAction(this.owner,this.owner,(AbstractPower)new ShadowCorrosionPower(this.owner,3),3));
      }
 
      @Override
