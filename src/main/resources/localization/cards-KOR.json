@@ -3407,7 +3407,7 @@
   },
   "shadowverse:PunishmentSniper": {
     "NAME": "심판의 저격수",
-    "DESCRIPTION": "방어도를 !B! 얻고 피해를 !D! 줍니다. NL (피해량은 이번 전투에서 사용한 마법진 수의 !M! 배입니다.)"
+    "DESCRIPTION": "방어도를 !B! 얻고 피해를 !D! 줍니다. NL (피해량은 이번 전투에서 파괴된 마법진 수의 !M! 배입니다.)"
   },
   "shadowverse:SeraphLapis": {
     "NAME": "영광의 치천사 라피스",
@@ -3525,7 +3525,7 @@
   },
   "shadowverse:EvilWorship": {
     "NAME": "암흑물질",
-    "DESCRIPTION": "턴 종료시 힘을 1 얻고 방어도를 1 얻습니다. NL 소멸."
+    "DESCRIPTION": "턴 종료시 힘을 1 얻고 민첩을 1 잃습니다. NL 소멸."
   },
   "shadowverse:DirtyPriest": {
     "NAME": "부패한 성직자",
@@ -3559,7 +3559,7 @@
   },
   "shadowverse:Charaton": {
     "NAME": "불과 얼음의 사제 칼트",
-    "DESCRIPTION": "피해를 !D! 만큼 X 번 주고 에너지를 X 얻습니다. X 는 이번 전투에서 사용한 마법진 수.",
+    "DESCRIPTION": "피해를 !D! 만큼 X 번 주고 에너지를 X 얻습니다. X 는 이번 전투에서 파괴된 마법진 수.",
     "EXTENDED_DESCRIPTION": [
       " NL (피해량:",
       " . NL 에너지 획득: ",
@@ -3738,7 +3738,7 @@
     "NAME": "번화의 가호신 야테란투",
     "DESCRIPTION": "이번 전투에서 파괴된 마법진 수에 따라 이하의 효과를 발동합니다: NL 1, 4, 7, 10, 13: 골드를 !M! 얻습니다. NL 2, 5, 8, 11, 14: 모든 적에게 피해를 !D! 주고 체력을 3 회복합니다.  NL 3, 6, 9, 12: 소멸된 공격 카드를 손으로 가져오고 그 비용을 0으로 만듭니다. NL 소멸.",
     "EXTENDED_DESCRIPTION": [
-      " NL (사용한 마법진 수:",
+      " NL (파괴된 마법진 수:",
       "  .)"
     ]
   },
@@ -3781,9 +3781,9 @@
   },
   "shadowverse:Garuda3": {
     "NAME": "낙원의 날개 가루라",
-    "DESCRIPTION": "피해를 !D! 줍니다. NL 비용이 X 이하인 무작위 공격 카드와 마법진 카드를 내 뽑을 카드 더미에서 가져옵니다. X는 이번 전투에서 내가 사용한 마법진 수",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 비용이 X 이하인 무작위 공격 카드와 마법진 카드를 내 뽑을 카드 더미에서 가져옵니다. X는 이번 전투에서 파괴된 마법진 수",
     "EXTENDED_DESCRIPTION": [
-      " NL (사용한 마법진 수:",
+      " NL (파괴된 마법진 수:",
       "  .)"
     ]
   },
