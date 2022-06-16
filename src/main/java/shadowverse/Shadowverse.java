@@ -1167,6 +1167,11 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         reflectedMap.put("Rola_L", new Sfx("sounds/Rola_L.wav"));
         reflectedMap.put("Rola_EH", new Sfx("sounds/Rola_Eh.wav"));
         reflectedMap.put("Rola_L_EH", new Sfx("sounds/Rola_L_EH.wav"));
+        reflectedMap.put("Vanpi_Select", new Sfx("sounds/Vanpi_Select.wav"));
+        reflectedMap.put("Vanpi_Hurt", new Sfx("sounds/Vanpi_Hurt.wav"));
+        reflectedMap.put("Vanpi_Hurt2", new Sfx("sounds/Vanpi_Hurt2.wav"));
+        reflectedMap.put("Vanpi_Hurt3", new Sfx("sounds/Vanpi_Hurt3.wav"));
+        reflectedMap.put("Vanpi_Hurt4", new Sfx("sounds/Vanpi_Hurt4.wav"));
     }
 
     public void receiveEditRelics() {

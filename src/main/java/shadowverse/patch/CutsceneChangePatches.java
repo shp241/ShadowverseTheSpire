@@ -121,6 +121,10 @@ public class CutsceneChangePatches {
                     customPanels.add(new CutscenePanel("img/scene/io1.png"));
                     customPanels.add(new CutscenePanel("img/scene/io2.png"));
                     customPanels.add(new CutscenePanel("img/scene/io3.png"));
+                }else if ((CharacterSelectScreenPatches.characters[4]).reskinCount == 2){
+                    customPanels.add(new CutscenePanel("img/scene/vanpi1.png"));
+                    customPanels.add(new CutscenePanel("img/scene/vanpi2.png"));
+                    customPanels.add(new CutscenePanel("img/scene/vanpi3.png"));
                 }
             }else if (AbstractDungeon.player instanceof Nemesis){
                 if ((CharacterSelectScreenPatches.characters[6]).reskinCount == 0){
