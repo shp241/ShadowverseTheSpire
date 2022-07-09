@@ -25,6 +25,8 @@ import shadowverse.action.DrawPileToHandAction_Tag;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Nemesis;
 
+import java.util.ArrayList;
+
 
 public class CelestialArtifact extends CustomCard {
     public static final String ID = "shadowverse:CelestialArtifact";
@@ -66,11 +68,13 @@ public class CelestialArtifact extends CustomCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         int count = 0;
+        ArrayList<String> dup = new ArrayList<>();
         for (AbstractCard c : AbstractDungeon.player.exhaustPile.group) {
-            if (c.hasTag(AbstractShadowversePlayer.Enums.ARTIFACT)) {
+            if (c.hasTag(AbstractShadowversePlayer.Enums.ARTIFACT)&&!dup.contains(c.cardID)) {
+                dup.add(c.cardID);
                 count++;
             }
-        }
+        }/**/
         if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
             addToBot((AbstractGameAction) new DrawPileToHandAction_Tag(1, AbstractShadowversePlayer.Enums.ARTIFACT, null));
             if (count>=6)

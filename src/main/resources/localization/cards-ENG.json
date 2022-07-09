@@ -2690,11 +2690,11 @@
   },
   "shadowverse:ShiningValkyrie": {
     "NAME": "Shining Valkyrie",
-    "DESCRIPTION": "Put !M! *Fairy into your hand. NL Put 1 *Fairy into your hand at the start of your turn. NL Whenever you play a *Fairy, gain 2 Strength and 1 Dexterity."
+    "DESCRIPTION": "Put !M! *Fairy into your hand. NL Put 1 *Fairy into your hand at the start of your turn. NL Whenever you play a *Fairy, deal 6 damage to a random enemy, gain 1 Strength and 1 Dexterity."
   },
   "shadowverse:LegendSwordCommander": {
     "NAME": "Legendary Sword Commander",
-    "DESCRIPTION": "You will not lose Block at the start of your turn. NL At the end of your turn, gain !M! Block."
+    "DESCRIPTION": "You will not lose Block at the start of your turn. NL At the end of your turn, gain !M! Block. NL Whenever you play an attack card, deal !M! damage to all enemies."
   },
   "shadowverse:DeadSoulTaker": {
     "NAME": "Departed Soultaker",
@@ -3852,7 +3852,7 @@
   },
   "shadowverse:ImperialSaint": {
     "NAME": "Imperial Saint",
-    "DESCRIPTION": "Gain !B! Block. NL Gain 1 Blur. NL The next time you would die, heal 50% of your max HP and take an extra turn instead."
+    "DESCRIPTION": "Gain !M! temporary HP . NL Gain 1 Blur. NL The next time you would die, heal 50% of your max HP and take an extra turn instead."
   },
   "shadowverse:ShadowCorrosion": {
     "NAME": "Shadow's Corrosion",
@@ -4404,5 +4404,104 @@
   "shadowverse:Rola": {
     "NAME": "Rola, Inferno Dragoon",
     "DESCRIPTION": "Machina. NL Gain !B! Block. NL If you have any other Machina cards in your hand, gain !B! Block additionally. NL Enhance 3: If there is only 1 enemy, deal !D! damage 2 times. NL Otherwise, deal !D! damage to all enemies."
+  },
+  "shadowverse:Orchid_EW": {
+    "NAME": "Orchis, the Limitless",
+    "DESCRIPTION": "Fusion :\b *Puppet . NL Whenever you fusion , add 1 *Puppet which deal 2 additional damage into your hand. NL Gain !B! Block. NL At this turn, your *Puppet deal double damage. NL If this card is fused with at least 1 card, add 1 * Lloyd, *Orchis's *Puppet into your hand. NL If fused with at least 3, upgrade that Roid and gain 5 additional block."
+  },
+  "shadowverse:Roid_EW": {
+    "NAME": " Lloyd, Orchis's Puppet",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block . NL All enemies lose !M! Strength this turn . NL Exhaust ."
+  },
+  "shadowverse:Vanpi_Q": {
+    "NAME": "红血女王·斑比",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 失去1点生命，增加1张 *林地蝙蝠 到手中。 NL 全体敌人失去1点生命，获得1点临时力量。 NL 复仇 或 狂乱 则增加1张带有 消耗 的 *眷属召唤到手中，本回合 *林地蝙蝠 的伤害翻倍，且会给予2层 中毒 并使敌人失去2点生命。"
+  },
+  "shadowverse:Cerberus2": {
+    "NAME": "冥炎狱犬·刻耳柏洛斯",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 葬送 1张牌，增加1张 *守卫犬的左腕·可可 、 *守卫犬的右腕·米米 到手中。 NL 如果本场战斗已打出的 *谢幕曲 牌为10张以上，本回合攻击翻倍。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已打出",
+      " 张 谢幕曲 牌。)"
+    ]
+  },
+  "shadowverse:DivineTreasureHerald": {
+    "NAME": "神器的使者",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。 NL 谢幕曲 ：当这张卡被消耗时，增加1张没有爆能强化的 *神器鸣动 到手中。 NL 消耗 。"
+  },
+  "shadowverse:DivineTreasureGuardian": {
+    "NAME": "神器的守护者",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。 NL 对全体敌人造成 !M! 点伤害。 NL 消耗 。"
+  },
+  "shadowverse:JudgmentSpear": {
+    "NAME": "裁决之枪",
+    "DESCRIPTION": "回合结束时对随机敌人造成 !M! 点伤害。 NL 倒计时 2：失去这个效果。"
+  },
+  "shadowverse:GuiltyShield": {
+    "NAME": "罪恶之盾",
+    "DESCRIPTION": "受到的5以上的伤害变为4。 NL 倒计时 2：失去这个效果。"
+  },
+  "shadowverse:EternalDogma": {
+    "NAME": "永恒教义",
+    "DESCRIPTION": "回合开始时抽1张牌，回复2点生命。 NL 倒计时 2：失去这个效果。"
+  },
+  "shadowverse:SummonDivineTreasure": {
+    "NAME": "神器鸣动",
+    "DESCRIPTION": "抉择 \b: NL *裁决之枪 NL *罪恶之盾 NL *永恒教义 NL 爆能强化 \b2：增加1张 *神器的使者 到手中。 NL  爆能强化 \b3：增加1张 *神器的守护者 到手中。 NL 消耗性  !stslib:ex! 。"
+  },
+  "shadowverse:SummonDivineTreasure_Copy": {
+    "NAME": "神器鸣动",
+    "DESCRIPTION": "抉择 \b: NL *裁决之枪 NL *罪恶之盾 NL *永恒教义 NL 消耗 。"
+  },
+  "shadowverse:Norn": {
+    "NAME": "外界审判者·诺伦",
+    "DESCRIPTION": "每当由非 共鸣 转变为 共鸣 时，获得 [E] 。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION": "每当由非 共鸣 转变为 共鸣 时，获得 [E] 。"
+  },
+  "shadowverse:Cassim": {
+    "NAME": "勇气少年·卡西姆",
+    "DESCRIPTION": "消耗1张手牌，将1张复制品加入抽牌堆，下回合开始时额外抽1张牌。 NL 造成 !D! 点伤害。 NL 本回合每当由非 共鸣 转变为 共鸣 时，对全体敌人造成 !M! 点伤害。"
+  },
+  "shadowverse:Rosa": {
+    "NAME": "解放少女·罗莎",
+    "DESCRIPTION": "消耗1张手牌，将1张复制品加入抽牌堆，下回合开始时额外抽1张牌。 NL 获得 !B! 点格挡。 NL 本回合每当由非 共鸣 转变为 共鸣 时，获得 !M! 点格挡。"
+  },
+  "shadowverse:Craig": {
+    "NAME": "马纳历亚咏唱者·克雷格",
+    "DESCRIPTION": "马纳历亚 。 NL 魔力增幅 耗能减少1。 NL 每当打出 马纳历亚 卡时，耗能减少1。 NL 打出技能牌时对全体敌人造成 !M! 点伤害。 NL 打出 马纳历亚 卡时获得 !M! 点 格挡 。"
+  },
+  "shadowverse:Hanna": {
+    "NAME": "马纳历亚女仆·汉娜",
+    "DESCRIPTION": "马纳历亚 。 NL 获得 !B! 点 格挡 。 NL 抉择 ：从 *马纳历亚的防阵 、 *马纳历亚的魔弹 、 *马纳历亚的秘术 中选择1张加入手中。 NL 随机从抽牌堆中将一张 马纳历亚 攻击牌 ( *马纳历亚女仆·汉娜 除外)加入手中 。",
+    "UPGRADE_DESCRIPTION": "马纳历亚 。 NL 获得 !B! 点 格挡 。 NL 抉择 ：从 *马纳历亚的防阵+ 、 *马纳历亚的魔弹+ 、 *马纳历亚的秘术+ 中选择1张加入手中。 NL 随机从抽牌堆中将一张 马纳历亚 攻击牌 ( *马纳历亚女仆·汉娜 除外)加入手中 。"
+  },
+  "shadowverse:Robopup": {
+    "NAME": "机械犬",
+    "DESCRIPTION": "创造物 。 NL 破坏 1张牌，抽1张牌。 NL 造成 !D! 点伤害。"
+  },
+  "shadowverse:WhirlwindAssault": {
+    "NAME": "豪风来袭",
+    "DESCRIPTION": "瞬念召唤 回合开始时如果上回合已打出的卡牌数为4以上则加入手中。 NL 获得本场战斗中已打出的其他 *豪风来袭 数量的临时力量。 NL 如果已打出5张以上，则本回合攻击伤害翻倍。",
+    "UPGRADE_DESCRIPTION":"固有 · 瞬念召唤 回合开始时如果上回合已打出的卡牌数为4以上则加入手中。 NL 获得本场战斗中已打出的其他 *豪风来袭 数量的临时力量。 NL 如果已打出5张以上，则本回合攻击伤害翻倍。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已打出",
+      " 张 *豪风来袭 。)"
+    ]
+  },
+  "shadowverse:UltimateBahmut": {
+    "NAME": "究极巴哈姆特",
+    "DESCRIPTION": "瞬念召唤 回合开始时如果本场战斗已使用50点以上能量，则加入手中，所有敌人在3回合结束后死亡。 NL 激奏 2：对随机敌人造成 !M! 点伤害，获得2点能量。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已使用",
+      " 点能量。)"
+    ]
+  },
+  "shadowverse:Veight2": {
+    "NAME": "高贵暗夜·拜特",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 失去1点生命，抽1张牌，增加1 *林地蝙蝠 到手中，重复上述2次。 NL 狂乱 或 复仇 则额外获得1点 力量 和 敏捷 。"
+  },
+  "shadowverse:Jeanne5": {
+    "NAME": "救济的圣女·贞德",
+    "DESCRIPTION": "抽1张牌。 NL 对全体敌人造成 !D! 点伤害2次。 NL 回复 !M! 点生命2次。 NL 消耗 。"
   }
 }

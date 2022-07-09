@@ -1,5 +1,4 @@
- package shadowverse.cards.Uncommon;
- 
+package shadowverse.cards.Uncommon;
 
 
 import basemod.abstracts.CustomCard;
@@ -18,40 +17,40 @@ import shadowverse.action.NecromanceAction;
 import shadowverse.characters.Necromancer;
 
 
- public class WightKing extends CustomCard {
-   public static final String ID = "shadowverse:WightKing";
-   public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:WightKing");
-   public static final String NAME = cardStrings.NAME;
-   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-   public static final String IMG_PATH = "img/cards/WightKing.png";
+public class WightKing extends CustomCard {
+    public static final String ID = "shadowverse:WightKing";
+    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:WightKing");
+    public static final String NAME = cardStrings.NAME;
+    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String IMG_PATH = "img/cards/WightKing.png";
 
-   public WightKing() {
-     super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Necromancer.Enums.COLOR_PURPLE, CardRarity.UNCOMMON, CardTarget.SELF);
-     this.baseBlock = 12;
-     this.baseMagicNumber = 2;
-     this.magicNumber = this.baseMagicNumber;
-   }
- 
-   
-   public void upgrade() {
-     if (!this.upgraded) {
-       upgradeName();
-       upgradeBlock(3);
-       upgradeMagicNumber(1);
-     } 
-   }
- 
-   
-   public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new SFXAction("WightKing"));
-     addToBot((AbstractGameAction)new NecromanceAction(4,
-             (AbstractGameAction)new GainBlockAction(abstractPlayer,this.block),
-             new AbstractGameAction[]{(AbstractGameAction)new GainBlockAction(abstractPlayer,this.block+3),(AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new PlatedArmorPower(abstractPlayer,this.magicNumber),this.magicNumber)}));
-   }
- 
-   
-   public AbstractCard makeCopy() {
-     return (AbstractCard)new WightKing();
-   }
- }
+    public WightKing() {
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Necromancer.Enums.COLOR_PURPLE, CardRarity.UNCOMMON, CardTarget.SELF);
+        this.baseBlock = 12;
+        this.baseMagicNumber = 2;
+        this.magicNumber = this.baseMagicNumber;
+    }
+
+
+    public void upgrade() {
+        if (!this.upgraded) {
+            upgradeName();
+            upgradeBlock(3);
+            upgradeMagicNumber(1);
+        }
+    }
+
+
+    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+        addToBot((AbstractGameAction) new SFXAction("WightKing"));
+        addToBot((AbstractGameAction) new NecromanceAction(4,
+                (AbstractGameAction) new GainBlockAction(abstractPlayer, this.block),
+                new AbstractGameAction[]{(AbstractGameAction) new GainBlockAction(abstractPlayer, this.block + 3), (AbstractGameAction) new ApplyPowerAction(abstractPlayer, abstractPlayer, (AbstractPower) new PlatedArmorPower(abstractPlayer, this.magicNumber), this.magicNumber)}));
+    }
+
+
+    public AbstractCard makeCopy() {
+        return (AbstractCard) new WightKing();
+    }
+}
 

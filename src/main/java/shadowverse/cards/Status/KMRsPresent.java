@@ -30,6 +30,7 @@ import java.util.ArrayList;
    private int previewIndex;
    public static ArrayList<AbstractCard> returnChoice() {
      ArrayList<AbstractCard> list = new ArrayList<>();
+     list.add(new UltimateBahmut());
      list.add(new ShadowBahmut());
      list.add(new ShiningValkyrie());
      list.add(new LegendSwordCommander());
@@ -37,6 +38,7 @@ import java.util.ArrayList;
      list.add(new DeadSoulTaker());
      list.add(new AbyssDoomLord());
      list.add(new ImperialSaint());
+     list.add(new SummonDivineTreasure());
      return list;
    }
 

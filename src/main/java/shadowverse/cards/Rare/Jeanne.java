@@ -36,12 +36,14 @@ public class Jeanne extends CustomCard implements BranchableUpgradeCard {
     public static CardStrings cardStrings2 = CardCrawlGame.languagePack.getCardStrings("shadowverse:Jeanne2");
     public static CardStrings cardStrings3 = CardCrawlGame.languagePack.getCardStrings("shadowverse:Jeanne3");
     public static CardStrings cardStrings4 = CardCrawlGame.languagePack.getCardStrings("shadowverse:Jeanne4");
+    public static CardStrings cardStrings5 = CardCrawlGame.languagePack.getCardStrings("shadowverse:Jeanne5");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Jeanne.png";
     public static final String IMG_PATH2 = "img/cards/Jeanne2.png";
     public static final String IMG_PATH3 = "img/cards/Jeanne3.png";
     public static final String IMG_PATH4 = "img/cards/Jeanne4.png";
+    public static final String IMG_PATH5 = "img/cards/Jeanne5.png";
 
 
     public Jeanne() {
@@ -80,6 +82,15 @@ public class Jeanne extends CustomCard implements BranchableUpgradeCard {
                 addToBot((AbstractGameAction)new SFXAction("Jeanne4"));
                 addToBot((AbstractGameAction)new LoseHPAction(p,p,this.magicNumber));
                 addToBot((AbstractGameAction)new ApplyPowerAction(p,p,(AbstractPower)new RegenPower(p,2),2));
+                break;
+            case 4:
+                addToBot(new DrawCardAction(1));
+                addToBot((AbstractGameAction)new SFXAction("ATTACK_HEAVY"));
+                addToBot((AbstractGameAction)new VFXAction((AbstractCreature)p, (AbstractGameEffect)new CleaveEffect(), 0.1F));
+                addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
+                addToBot((AbstractGameAction)new SFXAction("Jeanne5"));
+                addToBot((AbstractGameAction)new HealAction(p,p,this.magicNumber));
+                addToBot((AbstractGameAction)new HealAction(p,p,this.magicNumber));
                 break;
         }
     }
@@ -149,6 +160,23 @@ public class Jeanne extends CustomCard implements BranchableUpgradeCard {
                 Jeanne.this.magicNumber = Jeanne.this.baseMagicNumber;
                 Jeanne.this.initializeTitle();
                 Jeanne.this.rawDescription = cardStrings4.DESCRIPTION;
+                Jeanne.this.initializeDescription();
+            }
+        });
+        list.add(new UpgradeBranch() {
+            @Override
+            public void upgrade() {
+                ++Jeanne.this.timesUpgraded;
+                Jeanne.this.upgraded = true;
+                Jeanne.this.textureImg = IMG_PATH5;
+                Jeanne.this.loadCardImage(IMG_PATH5);
+                Jeanne.this.name = cardStrings3.NAME;
+                Jeanne.this.baseDamage = 12;
+                Jeanne.this.upgradedDamage = true;
+                Jeanne.this.baseMagicNumber = 2;
+                Jeanne.this.magicNumber = Jeanne.this.baseMagicNumber;
+                Jeanne.this.initializeTitle();
+                Jeanne.this.rawDescription = cardStrings3.DESCRIPTION;
                 Jeanne.this.initializeDescription();
             }
         });

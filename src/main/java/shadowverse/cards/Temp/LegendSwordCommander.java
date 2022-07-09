@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.powers.BarricadePower;
 import com.megacrit.cardcrawl.powers.MetallicizePower;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
+import shadowverse.powers.LegendSwordCommanderPower;
 
 public class LegendSwordCommander extends CustomCard {
     public static final String ID = "shadowverse:LegendSwordCommander";
@@ -22,7 +23,7 @@ public class LegendSwordCommander extends CustomCard {
 
     public LegendSwordCommander() {
         super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.SELF);
-        this.magicNumber = this.baseMagicNumber = 10;
+        this.magicNumber = this.baseMagicNumber = 7;
         this.isEthereal = true;
         this.tags.add(AbstractShadowversePlayer.Enums.LEGEND);
     }
@@ -31,7 +32,7 @@ public class LegendSwordCommander extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.upgradeBaseCost(2);
+            upgradeMagicNumber(2);
         }
     }
 
@@ -40,7 +41,7 @@ public class LegendSwordCommander extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         addToBot(new ApplyPowerAction(p, p, new BarricadePower(p)));
-        addToBot(new ApplyPowerAction(p, p, new MetallicizePower(p,this.magicNumber),this.magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new LegendSwordCommanderPower(p,this.magicNumber),this.magicNumber));
     }
 
 

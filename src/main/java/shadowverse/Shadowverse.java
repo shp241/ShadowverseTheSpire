@@ -448,6 +448,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         reflectedMap.put("Mimi", new Sfx("sounds/Mimi.wav"));
         reflectedMap.put("Koko", new Sfx("sounds/Koko.wav"));
         reflectedMap.put("Cerberus", new Sfx("sounds/Cerberus.wav"));
+        reflectedMap.put("Cerberus2", new Sfx("sounds/Cerberus2.wav"));
         reflectedMap.put("AttendentOfNight", new Sfx("sounds/AttendentOfNight.wav"));
         reflectedMap.put("Orthrus", new Sfx("sounds/Orthrus.wav"));
         reflectedMap.put("Miyako", new Sfx("sounds/Miyako.wav"));
@@ -663,6 +664,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         reflectedMap.put("KMR3", new Sfx("sounds/KMR3.wav"));
         reflectedMap.put("Rowen", new Sfx("sounds/Rowen.wav"));
         reflectedMap.put("SevensForceSorcerer", new Sfx("sounds/SevensForceSorcerer.wav"));
+        reflectedMap.put("SevensForceSorcererEff", new Sfx("sounds/SevensForceSorcererEff.wav"));
         reflectedMap.put("ShiningValkyrie", new Sfx("sounds/ShiningValkyrie.wav"));
         reflectedMap.put("DeadSoulTaker", new Sfx("sounds/DeadSoulTaker.wav"));
         reflectedMap.put("AbyssDoomLord", new Sfx("sounds/AbyssDoomLord.wav"));
@@ -900,6 +902,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         reflectedMap.put("Jeanne2", new Sfx("sounds/Jeanne2.wav"));
         reflectedMap.put("Jeanne3", new Sfx("sounds/Jeanne3.wav"));
         reflectedMap.put("Jeanne4", new Sfx("sounds/Jeanne4.wav"));
+        reflectedMap.put("Jeanne5", new Sfx("sounds/Jeanne5.wav"));
         reflectedMap.put("Eris", new Sfx("sounds/Eris.wav"));
         reflectedMap.put("RelicSphere", new Sfx("sounds/RelicSphere.wav"));
         reflectedMap.put("RelicPrism", new Sfx("sounds/RelicPrism.wav"));
@@ -1172,6 +1175,22 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         reflectedMap.put("Vanpi_Hurt2", new Sfx("sounds/Vanpi_Hurt2.wav"));
         reflectedMap.put("Vanpi_Hurt3", new Sfx("sounds/Vanpi_Hurt3.wav"));
         reflectedMap.put("Vanpi_Hurt4", new Sfx("sounds/Vanpi_Hurt4.wav"));
+        reflectedMap.put("Orchid_EW", new Sfx("sounds/Orchid_EW.wav"));
+        reflectedMap.put("Orchid_EW_Eff", new Sfx("sounds/Orchid_EW_Eff.wav"));
+        reflectedMap.put("Vanpi_Q", new Sfx("sounds/Vanpi_Q.wav"));
+        reflectedMap.put("VanpiPower", new Sfx("sounds/VanpiPower.wav"));
+        reflectedMap.put("Norn", new Sfx("sounds/NornPower.wav"));
+        reflectedMap.put("CassimPower", new Sfx("sounds/CassimPower.wav"));
+        reflectedMap.put("Cassim", new Sfx("sounds/Cassim.wav"));
+        reflectedMap.put("Rosa", new Sfx("sounds/RosaPower.wav"));
+        reflectedMap.put("Craig", new Sfx("sounds/Craig.wav"));
+        reflectedMap.put("CraigPower", new Sfx("sounds/CraigPower.wav"));
+        reflectedMap.put("CraigPower2", new Sfx("sounds/CraigPower2.wav"));
+        reflectedMap.put("Hanna", new Sfx("sounds/Hanna.wav"));
+        reflectedMap.put("Veight2", new Sfx("sounds/Veight2.wav"));
+        reflectedMap.put("WhirlwindAssault", new Sfx("sounds/WhirlwindAssault.wav"));
+        reflectedMap.put("TheHanged_L", new Sfx("sounds/TheHanged_L.wav"));
+        reflectedMap.put("TheHanged_L_EH", new Sfx("sounds/TheHanged_L_EH.wav"));
     }
 
     public void receiveEditRelics() {
@@ -2142,6 +2161,21 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard((AbstractCard) new NatureBlessing());
         BaseMod.addCard((AbstractCard) new Yggdrasil());
         BaseMod.addCard((AbstractCard) new Rola());
+        BaseMod.addCard((AbstractCard) new Roid_EW());
+        BaseMod.addCard((AbstractCard) new DivineTreasureGuardian());
+        BaseMod.addCard((AbstractCard) new DivineTreasureHerald());
+        BaseMod.addCard((AbstractCard) new JudgmentSpear());
+        BaseMod.addCard((AbstractCard) new GuiltyShield());
+        BaseMod.addCard((AbstractCard) new EternalDogma());
+        BaseMod.addCard((AbstractCard) new SummonDivineTreasure());
+        BaseMod.addCard((AbstractCard) new Norn());
+        BaseMod.addCard((AbstractCard) new Rosa());
+        BaseMod.addCard((AbstractCard) new Cassim());
+        BaseMod.addCard((AbstractCard) new Craig());
+        BaseMod.addCard((AbstractCard) new Hanna());
+        BaseMod.addCard((AbstractCard) new Robopup());
+        BaseMod.addCard((AbstractCard) new WhirlwindAssault());
+        BaseMod.addCard((AbstractCard) new UltimateBahmut());
         logger.info("Success");
     }
 

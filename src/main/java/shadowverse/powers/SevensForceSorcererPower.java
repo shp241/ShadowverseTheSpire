@@ -4,6 +4,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.common.SuicideAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.actions.watcher.JudgementAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -44,6 +45,7 @@ public class SevensForceSorcererPower extends AbstractPower {
         if (this.amount == 0) {
             flash();
             addToBot((AbstractGameAction)new RemoveSpecificPowerAction(this.owner,this.owner,this));
+            addToBot((AbstractGameAction)new SFXAction("SevensForeSorcererEff"));
             for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                 if (!mo.isDeadOrEscaped()) {
                     addToBot((AbstractGameAction)new JudgementAction((AbstractCreature)mo, 99999));

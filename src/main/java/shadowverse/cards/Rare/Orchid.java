@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
@@ -20,23 +21,29 @@ import com.megacrit.cardcrawl.vfx.combat.ShockWaveEffect;
 import rs.lazymankits.interfaces.cards.BranchableUpgradeCard;
 import rs.lazymankits.interfaces.cards.UpgradeBranch;
 import shadowverse.action.LinkHeartChoiceAction;
+import shadowverse.cards.AbstractRightClickCard2;
 import shadowverse.cards.Temp.*;
 import shadowverse.characters.Nemesis;
+import shadowverse.characters.Vampire;
+import shadowverse.powers.OrchidPower;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Orchid extends CustomCard implements BranchableUpgradeCard{
+public class Orchid extends AbstractRightClickCard2 implements BranchableUpgradeCard{
     public static final String ID = "shadowverse:Orchid";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Orchid");
     public static CardStrings cardStrings2 = CardCrawlGame.languagePack.getCardStrings("shadowverse:OrchidNeo");
+    public static CardStrings cardStrings3 = CardCrawlGame.languagePack.getCardStrings("shadowverse:Orchid_EW");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Orchid.png";
     public static final String IMG_PATH2 = "img/cards/OrchidNeo.png";
+    public static final String IMG_PATH3 = "img/cards/Orchid_EW.png";
     private float rotationTimer;
     private int previewIndex;
     private int previewBranch;
+    private boolean hasFusion = false;
 
 
     public static ArrayList<AbstractCard> returnChoice(){
@@ -57,11 +64,47 @@ public class Orchid extends CustomCard implements BranchableUpgradeCard{
         return list;
     }
 
+    public static ArrayList<AbstractCard> returnEndlessWorld(){
+        ArrayList<AbstractCard> list = new ArrayList<>();
+        list.add(new Roid_EW());
+        list.add(new Puppet());
+        return list;
+    }
+
 
 
     public Orchid() {
         super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.RARE, CardTarget.SELF);
         this.baseBlock = 20;
+    }
+
+    @Override
+    protected void onRightClick() {
+        if (this.chosenBranch() == 2){
+            if (!this.hasFusion && AbstractDungeon.player!=null){
+                addToBot((AbstractGameAction)new SelectCardsInHandAction(9,TEXT[0],true,true, card -> {
+                    return card instanceof Puppet;
+                }, abstractCards -> {
+                    if (abstractCards.size()>0){
+                        AbstractCard pup = new Puppet();
+                        pup.baseDamage += 2;
+                        pup.applyPowers();
+                        addToBot((AbstractGameAction)new MakeTempCardInHandAction(pup));
+                    }
+                    for (AbstractCard c:abstractCards){
+                        this.magicNumber++;
+                        this.applyPowers();
+                        addToBot((AbstractGameAction)new ExhaustSpecificCardAction(c,AbstractDungeon.player.hand));
+                    }
+                }));
+                this.hasFusion = true;
+            }
+        }
+    }
+
+    @Override
+    public void atTurnStart(){
+        hasFusion = false;
     }
 
     public void update() {
@@ -90,6 +133,20 @@ public class Orchid extends CustomCard implements BranchableUpgradeCard{
                             this.rotationTimer = 2.0F;
                             this.cardsToPreview = (AbstractCard)returnLinkHeart().get(previewIndex).makeCopy();
                             if (this.previewIndex == returnLinkHeart().size() - 1) {
+                                this.previewIndex = 0;
+                            } else {
+                                this.previewIndex++;
+                            }
+                        } else {
+                            this.rotationTimer -= Gdx.graphics.getDeltaTime();
+                        }
+                    break;
+                case 2:
+                    if (this.hb.hovered)
+                        if (this.rotationTimer <= 0.0F) {
+                            this.rotationTimer = 2.0F;
+                            this.cardsToPreview = (AbstractCard)returnEndlessWorld().get(previewIndex).makeCopy();
+                            if (this.previewIndex == returnEndlessWorld().size() - 1) {
                                 this.previewIndex = 0;
                             } else {
                                 this.previewIndex++;
@@ -133,6 +190,26 @@ public class Orchid extends CustomCard implements BranchableUpgradeCard{
                 Orchid.this.rawDescription = cardStrings2.DESCRIPTION;
                 Orchid.this.initializeDescription();
                 Orchid.this.previewBranch = 1;
+            }
+        });
+        list.add(new UpgradeBranch() {
+            @Override
+            public void upgrade() {
+                ++Orchid.this.timesUpgraded;
+                Orchid.this.upgraded = true;
+                Orchid.this.textureImg = IMG_PATH3;
+                Orchid.this.loadCardImage(IMG_PATH3);
+                Orchid.this.name = cardStrings3.NAME;
+                Orchid.this.initializeTitle();
+                Orchid.this.upgradeBaseCost(2);
+                Orchid.this.baseBlock = 10;
+                Orchid.this.upgradedBlock = true;
+                Orchid.this.baseMagicNumber = 0;
+                Orchid.this.magicNumber = Orchid.this.baseMagicNumber;
+                Orchid.this.upgradedMagicNumber = true;
+                Orchid.this.rawDescription = cardStrings3.DESCRIPTION;
+                Orchid.this.initializeDescription();
+                Orchid.this.previewBranch = 2;
             }
         });
         return list;
@@ -195,6 +272,20 @@ public class Orchid extends CustomCard implements BranchableUpgradeCard{
                         }
                     } ));
                     addToBot((AbstractGameAction)new LinkHeartChoiceAction());
+                    break;
+                case 2:
+                    addToBot((AbstractGameAction)new SFXAction("Orchid_EW"));
+                    addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new OrchidPower(abstractPlayer)));
+                    AbstractCard roid = new Roid_EW();
+                    if (this.magicNumber > 2){
+                        roid.upgrade();
+                        addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,5));
+                        this.applyPowers();
+                    }
+                    if (this.magicNumber > 0){
+                        addToBot(new MakeTempCardInHandAction(roid));
+                        this.magicNumber = 0;
+                    }
                     break;
                 default:
                     break;

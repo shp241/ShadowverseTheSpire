@@ -5,6 +5,7 @@ import basemod.abstracts.CustomCard;
 import com.badlogic.gdx.Gdx;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
@@ -12,28 +13,38 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.DoubleDamagePower;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.InflameEffect;
+import rs.lazymankits.interfaces.cards.BranchableUpgradeCard;
+import rs.lazymankits.interfaces.cards.UpgradeBranch;
+import shadowverse.action.BurialAction;
+import shadowverse.action.CerberusAction;
 import shadowverse.cards.Temp.Koko;
 import shadowverse.cards.Temp.Mimi;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Necromancer;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class Cerberus
-        extends CustomCard {
+        extends CustomCard implements BranchableUpgradeCard {
     public static final String ID = "shadowverse:Cerberus";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Cerberus");
+    public static CardStrings cardStrings2 = CardCrawlGame.languagePack.getCardStrings("shadowverse:Cerberus2");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Cerberus.png";
+    public static final String IMG_PATH2 = "img/cards/Cerberus2.png";
     private float rotationTimer;
     private int previewIndex;
 
-    public static ArrayList<AbstractCard> returnShikigami() {
+    public static ArrayList<AbstractCard> returnChoice() {
         ArrayList<AbstractCard> list = new ArrayList<>();
         list.add(new Mimi());
         list.add(new Koko());
@@ -47,11 +58,7 @@ public class Cerberus
 
 
     public void upgrade() {
-        if (!this.upgraded) {
-            upgradeName();
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            initializeDescription();
-        }
+        ((UpgradeBranch) ((BranchableUpgradeCard) this).possibleBranches().get(chosenBranch())).upgrade();
     }
 
     public void update() {
@@ -59,8 +66,8 @@ public class Cerberus
         if (this.hb.hovered)
             if (this.rotationTimer <= 0.0F) {
                 this.rotationTimer = 2.0F;
-                this.cardsToPreview = (AbstractCard) returnShikigami().get(previewIndex).makeCopy();
-                if (this.previewIndex == returnShikigami().size() - 1) {
+                this.cardsToPreview = (AbstractCard) returnChoice().get(previewIndex).makeCopy();
+                if (this.previewIndex == returnChoice().size() - 1) {
                     this.previewIndex = 0;
                 } else {
                     this.previewIndex++;
@@ -72,22 +79,87 @@ public class Cerberus
             }
     }
 
-    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new SFXAction("Cerberus"));
-        addToBot((AbstractGameAction) new GainBlockAction(abstractPlayer, this.block));
-        addToBot((AbstractGameAction) new VFXAction((AbstractCreature) abstractPlayer, (AbstractGameEffect) new InflameEffect((AbstractCreature) abstractPlayer), 1.0F));
-        ArrayList<AbstractCard> shikigamiHand = returnShikigami();
-        for (AbstractCard c : shikigamiHand) {
-            if (this.upgraded) {
-                c.upgrade();
+    public void applyPowers() {
+        super.applyPowers();
+        if (chosenBranch() == 1){
+            int count = 0;
+            for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
+                if (c.hasTag(AbstractShadowversePlayer.Enums.LASTWORD))
+                    count++;
             }
-            addToBot((AbstractGameAction) new MakeTempCardInHandAction(c, 1));
+            this.rawDescription = cardStrings2.DESCRIPTION;
+            this.rawDescription += cardStrings2.EXTENDED_DESCRIPTION[0] + count;
+            this.rawDescription += cardStrings2.EXTENDED_DESCRIPTION[1];
+            initializeDescription();
+        }
+    }
+
+    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+        addToBot((AbstractGameAction) new GainBlockAction(abstractPlayer, this.block));
+        switch (chosenBranch()){
+            case 0:
+                addToBot((AbstractGameAction) new SFXAction("Cerberus"));
+                addToBot((AbstractGameAction) new VFXAction((AbstractCreature) abstractPlayer, (AbstractGameEffect) new InflameEffect((AbstractCreature) abstractPlayer), 1.0F));
+                ArrayList<AbstractCard> dog = returnChoice();
+                for (AbstractCard c : dog) {
+                    if (this.upgraded) {
+                        c.upgrade();
+                    }
+                    addToBot((AbstractGameAction) new MakeTempCardInHandAction(c, 1));
+                }
+                break;
+            case 1:
+                addToBot((AbstractGameAction) new SFXAction("Cerberus2"));
+                addToBot((AbstractGameAction) new VFXAction((AbstractCreature) abstractPlayer, (AbstractGameEffect) new InflameEffect((AbstractCreature) abstractPlayer), 1.0F));
+                addToBot(new BurialAction(1,new CerberusAction()));
+                int count = 0;
+                for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
+                    if (c.hasTag(AbstractShadowversePlayer.Enums.LASTWORD))
+                        count++;
+                }
+                if (count>=10){
+                    if (!abstractPlayer.hasPower(DoubleDamagePower.POWER_ID)){
+                        addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new DoubleDamagePower(abstractPlayer,1,false)));
+                    }
+                }
+                break;
         }
     }
 
 
     public AbstractCard makeCopy() {
         return (AbstractCard) new Cerberus();
+    }
+
+    @Override
+    public List<UpgradeBranch> possibleBranches() {
+        ArrayList<UpgradeBranch> list = new ArrayList<UpgradeBranch>();
+        list.add(new UpgradeBranch() {
+            @Override
+            public void upgrade() {
+                ++Cerberus.this.timesUpgraded;
+                Cerberus.this.upgraded = true;
+                Cerberus.this.name = NAME + "+";
+                Cerberus.this.initializeTitle();
+                rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+                initializeDescription();
+            }
+        });
+        list.add(new UpgradeBranch() {
+            @Override
+            public void upgrade() {
+                ++Cerberus.this.timesUpgraded;
+                Cerberus.this.upgraded = true;
+                Cerberus.this.textureImg = IMG_PATH2;
+                Cerberus.this.loadCardImage(IMG_PATH2);
+                Cerberus.this.name = cardStrings2.NAME;
+                Cerberus.this.initializeTitle();
+                Cerberus.this.upgradeBaseCost(1);
+                Cerberus.this.rawDescription = cardStrings2.DESCRIPTION;
+                Cerberus.this.initializeDescription();
+            }
+        });
+        return list;
     }
 }
 

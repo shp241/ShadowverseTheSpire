@@ -52,7 +52,7 @@ public class Baal
     @Override
     protected void onRightClick() {
             if (!this.hasFusion && AbstractDungeon.player!=null){
-                addToBot((AbstractGameAction)new SelectCardsInHandAction(8,TEXT[0],true,true, card -> {
+                addToBot((AbstractGameAction)new SelectCardsInHandAction(9,TEXT[0],true,true, card -> {
                     return card.type==CardType.ATTACK&&card.color== Vampire.Enums.COLOR_SCARLET&&card.cost<2&&card!=this;
                 }, abstractCards -> {
                     for (AbstractCard c:abstractCards){

@@ -48,9 +48,11 @@ public class DiscipleOfSilence
         addToBot((AbstractGameAction) new SFXAction("DiscipleOfSilence"));
         addToBot((AbstractGameAction) new GainBlockAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, this.block));
         for (AbstractMonster m :(AbstractDungeon.getCurrRoom()).monsters.monsters){
-            addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)abstractPlayer, (AbstractPower)new StrengthPower((AbstractCreature)m, -this.magicNumber), -this.magicNumber));
-            if (!m.hasPower("Artifact"))
-                addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)abstractPlayer, (AbstractPower)new GainStrengthPower((AbstractCreature)m, this.magicNumber), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+            if (m!=null && !m.isDeadOrEscaped() && !m.isDying && !m.halfDead){
+                addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)abstractPlayer, (AbstractPower)new StrengthPower((AbstractCreature)m, -this.magicNumber), -this.magicNumber));
+                if (!m.hasPower("Artifact"))
+                    addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)abstractPlayer, (AbstractPower)new GainStrengthPower((AbstractCreature)m, this.magicNumber), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+            }
         }
     }
 

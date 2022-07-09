@@ -84,6 +84,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
     public int amuletCount = 0;
     public int healCount = 0;
     public int totalDrawAmt = 0;
+    public int costUsedAmt = 0;
 
     public AbstractShadowversePlayer(String name, PlayerClass playerClass, String[] orbTextures, String orbVfxPath, float[] layerSpeeds, AbstractAnimation animation) {
         super(name, playerClass, orbTextures, orbVfxPath, layerSpeeds, animation);
@@ -107,10 +108,12 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
         this.amuletCount = 0;
         this.healCount = 0;
         this.totalDrawAmt = 0;
+        this.costUsedAmt = 0;
     }
 
     public void useCard(AbstractCard c, AbstractMonster monster, int energyOnUse) {
         super.useCard(c, monster, energyOnUse);
+        costUsedAmt += c.costForTurn;
         if (!this.hasPower(Cemetery.POWER_ID))
             this.powers.add((AbstractPower) new Cemetery(this, 0));
     }

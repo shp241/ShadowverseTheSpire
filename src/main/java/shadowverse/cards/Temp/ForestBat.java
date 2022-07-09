@@ -29,6 +29,7 @@ import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Vampire;
 import shadowverse.powers.EpitaphPower;
 import shadowverse.powers.NightVampirePower;
+import shadowverse.powers.VanpiPower;
 import shadowverse.powers.WrathPower;
 import shadowverse.stance.Vengeance;
 
@@ -60,8 +61,7 @@ import shadowverse.stance.Vengeance;
    }
 
    public void applyPowers() {
-     AbstractShadowversePlayer w = (AbstractShadowversePlayer) AbstractDungeon.player;
-     if(w.hasPower(NightVampirePower.POWER_ID)){
+     if(AbstractDungeon.player.hasPower(NightVampirePower.POWER_ID)){
        int realBaseDamage = this.baseDamage;
        this.baseDamage = this.baseDamage * 2;
        super.applyPowers();
@@ -73,8 +73,7 @@ import shadowverse.stance.Vengeance;
    }
 
    public void calculateCardDamage(AbstractMonster mo) {
-     AbstractShadowversePlayer w = (AbstractShadowversePlayer)AbstractDungeon.player;
-     if(w.hasPower(NightVampirePower.POWER_ID)){
+     if(AbstractDungeon.player.hasPower(NightVampirePower.POWER_ID) || AbstractDungeon.player.hasPower(VanpiPower.POWER_ID)){
        int realBaseDamage = this.baseDamage;
        this.baseDamage = this.baseDamage * 2;
        super.calculateCardDamage(mo);
@@ -99,6 +98,11 @@ import shadowverse.stance.Vengeance;
        }else {
          addToBot((AbstractGameAction)new LoseHPAction(abstractPlayer,abstractPlayer,1));
        }
+     }
+     if (abstractPlayer.hasPower(VanpiPower.POWER_ID)){
+       addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractMonster, (AbstractCreature)abstractPlayer, (AbstractPower)new PoisonPower((AbstractCreature)abstractMonster, (AbstractCreature)abstractPlayer, 2)));
+       addToBot(new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,2, DamageInfo.DamageType.HP_LOSS)));
+       addToBot(new SFXAction("VanpiPower"));
      }
    }
  

@@ -4,6 +4,7 @@
  import basemod.abstracts.CustomCard;
  import com.badlogic.gdx.graphics.Color;
  import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
+ import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
  import com.megacrit.cardcrawl.actions.AbstractGameAction;
  import com.megacrit.cardcrawl.actions.animations.VFXAction;
  import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -12,6 +13,7 @@
  import com.megacrit.cardcrawl.cards.AbstractCard;
  import com.megacrit.cardcrawl.characters.AbstractPlayer;
  import com.megacrit.cardcrawl.core.CardCrawlGame;
+ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
  import com.megacrit.cardcrawl.localization.CardStrings;
  import com.megacrit.cardcrawl.monsters.AbstractMonster;
  import com.megacrit.cardcrawl.powers.BlurPower;
@@ -34,7 +36,8 @@
 
    public ImperialSaint() {
      super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.POWER, Bishop.Enums.COLOR_WHITE, CardRarity.SPECIAL, CardTarget.SELF);
-     this.baseBlock = 50;
+     this.baseMagicNumber = 50;
+     this.magicNumber = this.baseMagicNumber;
      this.tags.add(AbstractShadowversePlayer.Enums.LEGEND);
    }
  
@@ -42,16 +45,14 @@
    public void upgrade() {
      if (!this.upgraded) {
        upgradeName();
-       upgradeBaseCost(3);
+       upgradeMagicNumber(10);
      } 
    }
-
-
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
        addToBot((AbstractGameAction)new SFXAction("ImperialSaint"));
        addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new BorderFlashEffect(Color.GOLD, true),1.0f));
-       addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
+       addToBot((AbstractGameAction)new AddTemporaryHPAction(AbstractDungeon.player,AbstractDungeon.player,this.magicNumber));
        addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,new BlurPower(abstractPlayer,1),1));
        addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractMonster,new ImperialSaintPower(abstractPlayer)));
    }

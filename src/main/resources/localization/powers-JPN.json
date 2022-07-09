@@ -1019,7 +1019,7 @@
   "shadowverse:ShiningValkyriePower": {
     "NAME": "シャイニングヴァルキリー",
     "DESCRIPTIONS": [
-      "ターン開始時、 #yフェアリー を #b1枚手札に加える。 #yフェアリー をプレイしする度、 筋力 #b2 と 敏捷性  #b1 を得る。"
+      "ターン開始時、 #yフェアリー を #b1枚手札に加える。 #yフェアリー をプレイしする度、ランダムな敵に #b6 ダメージを与え、 筋力 #b1 と 敏捷性  #b1 を得る。"
     ]
   },
   "shadowverse:AbyssDoomLordPower": {
@@ -1523,6 +1523,74 @@
       "(2) カードを #b",
       " 枚引く NL ",
       "(3) HPを #b3 回復する"
+    ]
+  },
+  "shadowverse:OrchidPower": {
+    "NAME": "エンドレスワールド・オーキス",
+    "DESCRIPTIONS": [
+      "このターン、 #y操り人形 のダメージは倍になる。"
+    ]
+  },
+  "shadowverse:VanpiPower": {
+    "NAME": "紅き血の女王・ヴァンピィ",
+    "DESCRIPTIONS": [
+      "このターン、 #yフォレストバット のダメージは倍になり、 #y毒 #b2 を与え、敵はHP #b2 を失う。"
+    ]
+  },
+  "shadowverse:GuiltyShieldPower": {
+    "NAME": "ギルティ・シールド",
+    "DESCRIPTIONS": [
+      "自分への #b5 以上のダメージは #b4 になる。あと #b",
+      " ターン続く。"
+    ]
+  },
+  "shadowverse:JudgementSpearPower": {
+    "NAME": "ジャッジメント・スピア",
+    "DESCRIPTIONS": [
+      "ターン終了時にランダムな敵に #b",
+      " ダメージを与える。あと #b",
+      " ターン続く。"
+    ]
+  },
+  "shadowverse:EternalDogmaPower": {
+    "NAME": "エターナル・ドグマ",
+    "DESCRIPTIONS": [
+      "ターン開始時、追加でカードを #b1 引き、HPを #b2 回復する。あと #b",
+      " ターン続く。"
+    ]
+  },
+  "shadowverse:NornPower": {
+    "NAME": "外界の審判者・ノルン",
+    "DESCRIPTIONS": [
+      "#y共鳴 になる度、 [E] を得る。"
+    ]
+  },
+  "shadowverse:CassimPower": {
+    "NAME": "勇気の少年・カシム",
+    "DESCRIPTIONS": [
+      "このターン、 #y共鳴 になる度、敵全体に #b",
+      " ダメージを与える。ターン開始時、追加でカードを #b1 枚引く。"
+    ]
+  },
+  "shadowverse:RosaPower": {
+    "NAME": "解放の少女・ローザ",
+    "DESCRIPTIONS": [
+      "このターン、 #y共鳴 になる度、 #b",
+      " ブロックを得る。ターン開始時、追加でカードを #b1 枚引く。"
+    ]
+  },
+  "shadowverse:LegendSwordCommanderPower": {
+    "NAME": "伝説の剣",
+    "DESCRIPTIONS": [
+      "ターン終了時に #b",
+      " ブロックを得る。アタックをプレイする度、敵全体に #b",
+      " ダメージを与える。"
+    ]
+  },
+  "shadowverse:UltimateBahmutPower": {
+    "NAME": "アルティメットバハムート",
+    "DESCRIPTIONS": [
+      "ターン終了時にカウントダウンを #b1 進める。カウントダウンが0になる時、即死する。"
     ]
   }
 }

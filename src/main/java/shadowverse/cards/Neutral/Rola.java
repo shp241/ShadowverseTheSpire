@@ -62,8 +62,10 @@ public class Rola extends AbstractNeutralCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, this.block));
         for (AbstractCard card : p.hand.group) {
-            if (card.hasTag(AbstractShadowversePlayer.Enums.MACHINE) && card != this)
+            if (card.hasTag(AbstractShadowversePlayer.Enums.MACHINE) && card != this) {
                 addToBot(new GainBlockAction(p, this.block));
+                break;
+            }
         }
         if (this.costForTurn == 3) {
             if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false)))
