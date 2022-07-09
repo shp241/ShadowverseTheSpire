@@ -4407,101 +4407,101 @@
   },
   "shadowverse:Orchid_EW": {
     "NAME": "Orchis, the Limitless",
-    "DESCRIPTION": "Fusion :\b *Puppet . NL Whenever you fusion , add 1 *Puppet which deal 2 additional damage into your hand. NL Gain !B! Block. NL At this turn, your *Puppet deal double damage. NL If this card is fused with at least 1 card, add 1 * Lloyd, *Orchis's *Puppet into your hand. NL If fused with at least 3, upgrade that Roid and gain 5 additional block."
+    "DESCRIPTION": "Fusion: *Puppets. NL Whenever cards are fused to this card, add 1 *Puppet that deals 2 additional damage to your hand. NL Gain !B! Block. NL *Puppets deal double damage this turn. NL If this card is fused with at least 1 card, add a *Lloyd, *Orchis's *Puppet into your hand. NL If fused with at least 3, upgrade the added card and gain 5 additional Block."
   },
   "shadowverse:Roid_EW": {
-    "NAME": " Lloyd, Orchis's Puppet",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block . NL All enemies lose !M! Strength this turn . NL Exhaust ."
+    "NAME": "Lloyd, Orchis's Puppet",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL All enemies lose !M! Strength this turn. NL Exhaust."
   },
   "shadowverse:Vanpi_Q": {
-    "NAME": "红血女王·斑比",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 失去1点生命，增加1张 *林地蝙蝠 到手中。 NL 全体敌人失去1点生命，获得1点临时力量。 NL 复仇 或 狂乱 则增加1张带有 消耗 的 *眷属召唤到手中，本回合 *林地蝙蝠 的伤害翻倍，且会给予2层 中毒 并使敌人失去2点生命。"
+    "NAME": "Vania, Crimson Majesty",
+    "DESCRIPTION": "Gain !B! Block. NL Lose 1 HP and add a *Forest *Bat to your hand. NL All enemies lose 1 HP and gain 1 Temporary Strength. NL If Wrath or Vengeance is active, add a *Summon *Bloodkin to your hand, double the damage dealt by *Forest *Bats this turn, apply 2 layers of Poison to all enemies and all enemies lose 2 HP."
   },
   "shadowverse:Cerberus2": {
-    "NAME": "冥炎狱犬·刻耳柏洛斯",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 葬送 1张牌，增加1张 *守卫犬的左腕·可可 、 *守卫犬的右腕·米米 到手中。 NL 如果本场战斗已打出的 *谢幕曲 牌为10张以上，本回合攻击翻倍。",
+    "NAME": "Cerberus, Infernal Hound",
+    "DESCRIPTION": "Gain !B! Block. NL Burial_Rite 1: Put a *Coco, *Left *Paw *Hellhound and a *Mimi, *Right *Paw *Hellhond into your hand. NL If 10 or more cards with Last_Words have been played this combat, double your Strength this turn.",
     "EXTENDED_DESCRIPTION": [
-      " NL (已打出",
-      " 张 谢幕曲 牌。)"
+      " NL (",
+      " cards with Last_Words played.)"
     ]
   },
   "shadowverse:DivineTreasureHerald": {
-    "NAME": "神器的使者",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。 NL 谢幕曲 ：当这张卡被消耗时，增加1张没有爆能强化的 *神器鸣动 到手中。 NL 消耗 。"
+    "NAME": "Divine Treasure Herald",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Last_Words: When this card is exhausted, add a *Summon *Divine *Treasure without Enhance to your hand. NL Exhaust."
   },
   "shadowverse:DivineTreasureGuardian": {
-    "NAME": "神器的守护者",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。 NL 对全体敌人造成 !M! 点伤害。 NL 消耗 。"
+    "NAME": "Divine Treasure Guardian",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Deal !M! damage to all enemies. NL Exhaust."
   },
   "shadowverse:JudgmentSpear": {
-    "NAME": "裁决之枪",
-    "DESCRIPTION": "回合结束时对随机敌人造成 !M! 点伤害。 NL 倒计时 2：失去这个效果。"
+    "NAME": "Spear of Judgment",
+    "DESCRIPTION": "Deal !M! damage to a random enemy at the end of your turn. NL Countdown 2: Lose this effect."
   },
   "shadowverse:GuiltyShield": {
-    "NAME": "罪恶之盾",
-    "DESCRIPTION": "受到的5以上的伤害变为4。 NL 倒计时 2：失去这个效果。"
+    "NAME": "Shield of Transgression",
+    "DESCRIPTION": "If you would take 5 or more damage, that damage becomes 4. NL Countdown 2: Lose this effect."
   },
   "shadowverse:EternalDogma": {
-    "NAME": "永恒教义",
-    "DESCRIPTION": "回合开始时抽1张牌，回复2点生命。 NL 倒计时 2：失去这个效果。"
+    "NAME": "Eternal Dogma",
+    "DESCRIPTION": "At the start of your turn, heal 2 HP and draw a card. NL Countdown 2: Lose this effect."
   },
   "shadowverse:SummonDivineTreasure": {
-    "NAME": "神器鸣动",
-    "DESCRIPTION": "抉择 \b: NL *裁决之枪 NL *罪恶之盾 NL *永恒教义 NL 爆能强化 \b2：增加1张 *神器的使者 到手中。 NL  爆能强化 \b3：增加1张 *神器的守护者 到手中。 NL 消耗性  !stslib:ex! 。"
+    "NAME": "Summon Divine Treasure",
+    "DESCRIPTION": "Choose: Play this card as one following: NL *Judgment *Spear NL *Shield *of *Transgression NL *Eternal *Dogma NL Enhance 2: Then add a *Divine *Treasure *Herald to your hand. NL Enhance 3: Then add a *Divine *Treasure *Guardian to your hand. NL Exhaust."
   },
   "shadowverse:SummonDivineTreasure_Copy": {
-    "NAME": "神器鸣动",
-    "DESCRIPTION": "抉择 \b: NL *裁决之枪 NL *罪恶之盾 NL *永恒教义 NL 消耗 。"
+    "NAME": "Summon Divine Treasure",
+    "DESCRIPTION": "Choose: Play this card as one following: NL *Judgment *Spear NL *Shield *of *Transgression NL *Eternal *Dogma NL Exhaust."
   },
   "shadowverse:Norn": {
-    "NAME": "外界审判者·诺伦",
-    "DESCRIPTION": "每当由非 共鸣 转变为 共鸣 时，获得 [E] 。 NL 虚无 。",
-    "UPGRADE_DESCRIPTION": "每当由非 共鸣 转变为 共鸣 时，获得 [E] 。"
+    "NAME": "Norn, Arbiter of Worlds",
+    "DESCRIPTION": "Gain [E] whenever Resonance becomes active. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Gain [E] whenever Resonance becomes active."
   },
   "shadowverse:Cassim": {
-    "NAME": "勇气少年·卡西姆",
-    "DESCRIPTION": "消耗1张手牌，将1张复制品加入抽牌堆，下回合开始时额外抽1张牌。 NL 造成 !D! 点伤害。 NL 本回合每当由非 共鸣 转变为 共鸣 时，对全体敌人造成 !M! 点伤害。"
+    "NAME": "Cassim, the Courageous",
+    "DESCRIPTION": "Exhaust a card in your hand, add a copy of the exhausted card to your draw pile and draw a card at the start of your next turn. NL Deal !D! damage. NL Whenever Resonance becomes active this turn, deal !M! damage to all enemies."
   },
   "shadowverse:Rosa": {
-    "NAME": "解放少女·罗莎",
-    "DESCRIPTION": "消耗1张手牌，将1张复制品加入抽牌堆，下回合开始时额外抽1张牌。 NL 获得 !B! 点格挡。 NL 本回合每当由非 共鸣 转变为 共鸣 时，获得 !M! 点格挡。"
+    "NAME": "Rosa, Unfettered Maiden",
+    "DESCRIPTION": "Exhaust a card in your hand, add a copy of the exhausted card to your draw pile and draw a card at the start of your next turn. NL Gain !B! Block. NL Whenever Resonance becomes active this turn, gain !M! Block."
   },
   "shadowverse:Craig": {
-    "NAME": "马纳历亚咏唱者·克雷格",
-    "DESCRIPTION": "马纳历亚 。 NL 魔力增幅 耗能减少1。 NL 每当打出 马纳历亚 卡时，耗能减少1。 NL 打出技能牌时对全体敌人造成 !M! 点伤害。 NL 打出 马纳历亚 卡时获得 !M! 点 格挡 。"
+    "NAME": "Craig, Mysterian Chanter",
+    "DESCRIPTION": "Mysteria. NL Spellboost: Reduce the cost of this card by 1. NL Whenever you play a Mysteria card, reduce the cost of this card by 1. NL Whenever you play a Skill card, deal !M! damage to all enemies. NL Whenever you play a Mysteria card, gain !M! Block."
   },
   "shadowverse:Hanna": {
-    "NAME": "马纳历亚女仆·汉娜",
-    "DESCRIPTION": "马纳历亚 。 NL 获得 !B! 点 格挡 。 NL 抉择 ：从 *马纳历亚的防阵 、 *马纳历亚的魔弹 、 *马纳历亚的秘术 中选择1张加入手中。 NL 随机从抽牌堆中将一张 马纳历亚 攻击牌 ( *马纳历亚女仆·汉娜 除外)加入手中 。",
-    "UPGRADE_DESCRIPTION": "马纳历亚 。 NL 获得 !B! 点 格挡 。 NL 抉择 ：从 *马纳历亚的防阵+ 、 *马纳历亚的魔弹+ 、 *马纳历亚的秘术+ 中选择1张加入手中。 NL 随机从抽牌堆中将一张 马纳历亚 攻击牌 ( *马纳历亚女仆·汉娜 除外)加入手中 。"
+    "NAME": "Hanna, Mysterian Maid",
+    "DESCRIPTION": "Mysteria. NL Gain !B! Block. Choose: Add 1 of the following cards to your hand: NL *Mysterian *Missile NL *Mysterian *Circle *Mysterian *Rite NL Add a random Mysteria card (excluding Hanna, Mysterian Maid) from your draw pile to your hand.",
+    "UPGRADE_DESCRIPTION": "Mysteria. NL Gain !B! Block. Choose: Add 1 of the following cards to your hand: NL *Mysterian *Missile+ NL *Mysterian *Circle+ *Mysterian *Rite+ NL Add a random Mysteria card (excluding *Hanna, *Mysterian *Maid) from your draw pile to your hand."
   },
   "shadowverse:Robopup": {
-    "NAME": "机械犬",
-    "DESCRIPTION": "创造物 。 NL 破坏 1张牌，抽1张牌。 NL 造成 !D! 点伤害。"
+    "NAME": "Robopup",
+    "DESCRIPTION": "AF. NL Destroy a card and draw a card. NL Deal !D! damage."
   },
   "shadowverse:WhirlwindAssault": {
-    "NAME": "豪风来袭",
-    "DESCRIPTION": "瞬念召唤 回合开始时如果上回合已打出的卡牌数为4以上则加入手中。 NL 获得本场战斗中已打出的其他 *豪风来袭 数量的临时力量。 NL 如果已打出5张以上，则本回合攻击伤害翻倍。",
-    "UPGRADE_DESCRIPTION":"固有 · 瞬念召唤 回合开始时如果上回合已打出的卡牌数为4以上则加入手中。 NL 获得本场战斗中已打出的其他 *豪风来袭 数量的临时力量。 NL 如果已打出5张以上，则本回合攻击伤害翻倍。",
+    "NAME": "Whirlwind Assault",
+    "DESCRIPTION": "Invocation: If you played 4 or more cards during your last turn, add this card to your hand. NL Gain Temporary Strength equal to the number of *Whirlwind *Assaults played this combat. NL If you've played 5 or more, double all damage you deal this turn.",
+    "UPGRADE_DESCRIPTION":"Innate. NL Invocation: If you played 4 or more cards during your last turn, add this card to your hand. NL Gain Temporary Strength equal to the number of *Whirlwind *Assaults played this combat. NL If you've played 5 or more, double all damage you deal this turn.",
     "EXTENDED_DESCRIPTION": [
-      " NL (已打出",
-      " 张 *豪风来袭 。)"
+      " NL (",
+      " *Whirlwind *Assaults played.)"
     ]
   },
   "shadowverse:UltimateBahmut": {
-    "NAME": "究极巴哈姆特",
-    "DESCRIPTION": "瞬念召唤 回合开始时如果本场战斗已使用50点以上能量，则加入手中，所有敌人在3回合结束后死亡。 NL 激奏 2：对随机敌人造成 !M! 点伤害，获得2点能量。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。",
+    "NAME": "Ultimate Bahamut",
+    "DESCRIPTION": "Invocation: At the start of your turn, if you've used 50 or more Energy this combat, add this card to your hand and kill all enemies after 3 turns. NL Accelerate 2: Deal !M! damage to a random enemy. Then, gain 2 Energy. NL NL --------------------- NL NL Deal !D! damage.",
     "EXTENDED_DESCRIPTION": [
-      " NL (已使用",
-      " 点能量。)"
+      " NL (",
+      " Energy used.)"
     ]
   },
   "shadowverse:Veight2": {
-    "NAME": "高贵暗夜·拜特",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 失去1点生命，抽1张牌，增加1 *林地蝙蝠 到手中，重复上述2次。 NL 狂乱 或 复仇 则额外获得1点 力量 和 敏捷 。"
+    "NAME": "Veight, Twilit Highborn",
+    "DESCRIPTION": "Gain !B! Block. NL Lose 1 HP, draw a card and add a *Forest *Bat into your hand. Do this twice. NL If Wrath or Vengeance is active, gain 1 Strength and Dexterity."
   },
   "shadowverse:Jeanne5": {
-    "NAME": "救济的圣女·贞德",
-    "DESCRIPTION": "抽1张牌。 NL 对全体敌人造成 !D! 点伤害2次。 NL 回复 !M! 点生命2次。 NL 消耗 。"
+    "NAME": "Jeanne, Salvation's Maiden",
+    "DESCRIPTION": "Draw a card. NL Deal !D! damage to all enemies twice. NL Heal !M! HP twice. NL Exhaust."
   }
 }
