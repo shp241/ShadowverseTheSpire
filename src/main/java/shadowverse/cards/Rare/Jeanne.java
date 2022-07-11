@@ -170,13 +170,13 @@ public class Jeanne extends CustomCard implements BranchableUpgradeCard {
                 Jeanne.this.upgraded = true;
                 Jeanne.this.textureImg = IMG_PATH5;
                 Jeanne.this.loadCardImage(IMG_PATH5);
-                Jeanne.this.name = cardStrings3.NAME;
+                Jeanne.this.name = cardStrings5.NAME;
                 Jeanne.this.baseDamage = 12;
                 Jeanne.this.upgradedDamage = true;
                 Jeanne.this.baseMagicNumber = 2;
                 Jeanne.this.magicNumber = Jeanne.this.baseMagicNumber;
                 Jeanne.this.initializeTitle();
-                Jeanne.this.rawDescription = cardStrings3.DESCRIPTION;
+                Jeanne.this.rawDescription = cardStrings5.DESCRIPTION;
                 Jeanne.this.initializeDescription();
             }
         });

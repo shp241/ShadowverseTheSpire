@@ -1524,5 +1524,73 @@
       " cards NL ",
       "3. Heal #b3 HP"
     ]
+  },
+  "shadowverse:OrchidPower": {
+    "NAME": "无尽世界·奥琪丝",
+    "DESCRIPTIONS": [
+      "本回合你打出的 #y悬丝傀儡 伤害翻倍。"
+    ]
+  },
+  "shadowverse:VanpiPower": {
+    "NAME": "红血女王·斑比",
+    "DESCRIPTIONS": [
+      "本回合你打出的 #y林地蝙蝠 伤害翻倍，且会给予 #b2 层 #y中毒 ，并使敌人失去 #b2 点生命。"
+    ]
+  },
+  "shadowverse:GuiltyShieldPower": {
+    "NAME": "罪恶之盾",
+    "DESCRIPTIONS": [
+      "受到的 #b5 以上的伤害变为 #b4 。 #b",
+      " 回合后失去这个效果。"
+    ]
+  },
+  "shadowverse:JudgementSpearPower": {
+    "NAME": "裁决之枪",
+    "DESCRIPTIONS": [
+      "回合结束时对随机敌人造成 #b",
+      " 点伤害。 #b",
+      " 回合后失去这个效果。"
+    ]
+  },
+  "shadowverse:EternalDogmaPower": {
+    "NAME": "永恒教义",
+    "DESCRIPTIONS": [
+      "回合开始时额外抽 #b1 张牌，回复 #b2 点生命。 #b",
+      " 回合后失去这个效果。"
+    ]
+  },
+  "shadowverse:NornPower": {
+    "NAME": "外界审判者·诺伦",
+    "DESCRIPTIONS": [
+      "每当由 #非共鸣 转变为 #y共鸣 时，获得 [E] 。"
+    ]
+  },
+  "shadowverse:CassimPower": {
+    "NAME": "勇气少年·卡西姆",
+    "DESCRIPTIONS": [
+      "本回合每当由 #非共鸣 转变为 #y共鸣 时，对全体敌人造成 #b",
+      " 点伤害。回合开始时额外抽 #b1 张牌。"
+    ]
+  },
+  "shadowverse:RosaPower": {
+    "NAME": "解放少女·罗莎",
+    "DESCRIPTIONS": [
+      "本回合每当由 #非共鸣 转变为 #y共鸣 时，获得 #b",
+      " 点格挡。回合开始时额外抽 #b1 张牌。"
+    ]
+  },
+  "shadowverse:LegendSwordCommanderPower": {
+    "NAME": "传说之剑",
+    "DESCRIPTIONS": [
+      "回合结束时获得 #b",
+      " 点格挡。打出攻击牌时对全体敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "shadowverse:UltimateBahmutPower": {
+    "NAME": "究极巴哈姆特",
+    "DESCRIPTIONS": [
+      "每回合结束减少 #b1 倒计时。倒计时结束时死亡。"
+    ]
   }
 }

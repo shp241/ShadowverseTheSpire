@@ -20,13 +20,9 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import shadowverse.Shadowverse;
 import shadowverse.action.InvocationAction;
-import shadowverse.cards.Uncommon.WhirlwindAssault;
 import shadowverse.characters.AbstractShadowversePlayer;
-import shadowverse.characters.Royal;
-import shadowverse.powers.NextTurnV;
 import shadowverse.powers.UltimateBahmutPower;
 
-import java.util.ArrayList;
 
 public class UltimateBahmut extends CustomCard {
     public static final String ID = "shadowverse:UltimateBahmut";
@@ -76,7 +72,6 @@ public class UltimateBahmut extends CustomCard {
             addToBot(new GainEnergyAction(2));
         }else {
             addToBot((AbstractGameAction) new DamageAction((AbstractCreature) m, new DamageInfo((AbstractCreature) p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-            addToBot((AbstractGameAction) new ApplyPowerAction(p,p,new NextTurnV(p,1)));
         }
     }
 

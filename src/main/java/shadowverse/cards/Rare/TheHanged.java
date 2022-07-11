@@ -70,7 +70,7 @@
      AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
      if (this.costForTurn == 3 && Shadowverse.Enhance(3)) {
          if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false))) {
-             addToBot((AbstractGameAction) new SFXAction("TheHanged_L_EX"));
+             addToBot((AbstractGameAction) new SFXAction("TheHanged_L_EH"));
          }else {
              addToBot((AbstractGameAction)new SFXAction("TheHanged2"));
          }
