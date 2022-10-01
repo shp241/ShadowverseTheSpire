@@ -4,6 +4,7 @@ import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.actions.watcher.SkipEnemiesTurnAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -71,6 +72,9 @@ public class RuinwebSpider
             addToBot((AbstractGameAction)new SkipEnemiesTurnAction());
             for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                 addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new EntangleEffect(abstractPlayer.hb.cX - 70.0F * Settings.scale, abstractPlayer.hb.cY + 10.0F * Settings.scale, mo.hb.cX, mo.hb.cY), 0.5F));
+            }
+            if(Shadowverse.Accelerate(this)){
+                addToBot(new MakeTempCardInDiscardAction(this.makeSameInstanceOf(),1));
             }
         }
     }

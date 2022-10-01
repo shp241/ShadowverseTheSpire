@@ -8,6 +8,8 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import shadowverse.cards.Status.Ghost;
+import shadowverse.cards.Status.GiantGhost;
 
 public class Cemetery extends AbstractPower {
     public static final String POWER_ID = "shadowverse:Cemetery";
@@ -30,9 +32,11 @@ public class Cemetery extends AbstractPower {
 
     @Override
     public void onAfterUseCard(AbstractCard card, UseCardAction action) {
-        this.amount += 1;
-        this.updateDescription();
-        AbstractDungeon.onModifyPower();
+        if (!(card instanceof Ghost) && !(card instanceof GiantGhost)){
+            this.amount += 1;
+            this.updateDescription();
+            AbstractDungeon.onModifyPower();
+        }
     }
 
     public void stackPower(int stackAmount) {

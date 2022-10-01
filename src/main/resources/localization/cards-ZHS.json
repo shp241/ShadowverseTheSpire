@@ -4503,5 +4503,78 @@
       " NL (已使用",
       " 点能量。)"
     ]
+  },
+  "shadowverse:Vyrmedea": {
+    "NAME": "人造的代言者·薇米蒂亚",
+    "DESCRIPTION": "创造物 。 NL 获得 !B! 点 格挡 。 NL 葬送 1 张牌，增加1张本回合耗能为0的 *锋锐的创造物 到手中。 NL 如果消耗堆中的创造物种类为6以上，回合结束时获得1点 力量 和 敏捷 及1层 残影 。"
+  },
+  "shadowverse:Chastity": {
+    "NAME": "至高无上·贞洁",
+    "DESCRIPTION": "保留 。 NL 每当打出带有 消耗 的攻击牌时耗能减少 [E] 。 NL 给予 !M! 层 易伤 和 虚弱 。 NL 获得 !B! 点 格挡 。 NL 抽牌直到满7张为止。"
+  },
+  "shadowverse:Zerk": {
+    "NAME": "器械支配者·吉尔克",
+    "DESCRIPTION": "激奏 0 ： 破坏 1张 创造物 牌，回复2点生命，抽1张牌。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 随机从消耗堆中将3张 创造物 牌本回合耗能变为0并加入手中。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"激奏 0 ： 破坏 1张 创造物 牌，回复2点生命，抽1张牌。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 随机从消耗堆中将3张 创造物 牌本回合耗能变为0并加入手中。"
+  },
+  "shadowverse:ANewDiscovery": {
+    "NAME": "发掘遗物",
+    "DESCRIPTION": "抉择 ： NL *迅袭的创造物 NL *守御的创造物 NL 增加1张所选本回合耗能为0的卡牌到手中。 NL 爆能强化 3 ：改为全部加入手中。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"抉择 ： NL *迅袭的创造物+ NL *守御的创造物+ NL 增加1张所选本回合耗能为0的卡牌到手中。 NL 爆能强化 3 ：改为全部加入手中。 NL 消耗 。"
+  },
+  "shadowverse:MagicalPawn": {
+    "NAME": "奇幻士兵",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果消耗堆中的 *奇幻士兵 数量为8以上，伤害增加4点。 NL 消耗 。"
+  },
+  "shadowverse:MagicalStrategy": {
+    "NAME": "奇幻战略",
+    "DESCRIPTION": "增加1张 *奇幻士兵 到手中，抽1张牌。 NL 如果消耗堆中的 *奇幻士兵 数量为8以上，改为增加2张并额外抽1张牌。",
+    "UPGRADE_DESCRIPTION":"增加1张 *奇幻士兵+ 到手中，抽1张牌。 NL 如果消耗堆中的 *奇幻士兵 数量为8以上，改为增加2张并额外抽1张牌。"
+  },
+  "shadowverse:MagicalRook": {
+    "NAME": "奇幻城堡",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加 !M! 张 *奇幻士兵 到手中。"
+  },
+  "shadowverse:MagicalKnight": {
+    "NAME": "奇幻骑士",
+    "DESCRIPTION": "每当打出 *奇幻士兵 时，耗能减少1。 NL 造成 !D! 点 伤害 。 NL 增加2张 *奇幻士兵 到手中。"
+  },
+  "shadowverse:MysticQueen": {
+    "NAME": "神秘皇后·梅迪",
+    "DESCRIPTION": "每回合一次，打出攻击牌时增加1张 *奇幻战略 到手中。 NL 打出技能牌时增加1张 *奇幻士兵 到手中。",
+    "UPGRADE_DESCRIPTION":"增加1张 *奇幻士兵 到手中。 NL 每回合一次，打出攻击牌时增加1张 *奇幻战略 到手中。 NL 打出技能牌时增加1张 *奇幻士兵 到手中。"
+  },
+  "shadowverse:MysticKing": {
+    "NAME": "神秘国王",
+    "DESCRIPTION": "保留 。 NL 如果消耗堆中的 *奇幻士兵 数量为8以上且这张牌被保留，则耗能减少4。 NL 获得 !B! 点 格挡 。 NL 增加4张 *奇幻士兵 到手中。 NL 本回合 *奇幻士兵 造成的伤害+ !M! 并翻倍。"
+  },
+  "shadowverse:Ghost": {
+    "NAME": "怨灵",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 打出此卡不会获得 墓地 。 NL 消耗 。"
+  },
+  "shadowverse:GiantGhost": {
+    "NAME": "巨型狂灵",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 打出此卡不会获得 墓地 。 NL 消耗 。"
+  },
+  "shadowverse:MasqueradeGhost": {
+    "NAME": "假面亡魂",
+    "DESCRIPTION": "造成 !D! 点伤害，增加1张 *怨灵 到手中。 NL 本回合 *怨灵 造成的伤害增加 !M! 点，且当被消耗时增加1张 *巨型狂灵 到手中。 NL 谢幕曲 ：下回合开始时增加1张耗能为0且没有 谢幕曲 的 *假面亡魂 到手中。 NL 消耗 。"
+  },
+  "shadowverse:MasqueradeGhost_Copy": {
+    "NAME": "假面亡魂",
+    "DESCRIPTION": "造成 !D! 点伤害，增加1张 *怨灵 到手中。 NL 本回合 *怨灵 造成的伤害增加 !M! 点，且当被消耗时增加1张 *巨型狂灵 到手中。 NL 消耗 。"
+  },
+  "shadowverse:Baccherus": {
+    "NAME": "小鬼怪·帕克鲁斯",
+    "DESCRIPTION": "如果手中有 *巨型狂灵 ，抽1张卡。 NL 造成 !D! 点伤害，增加1张 *怨灵 到手中。 NL 谢幕曲 ：当被消耗时增加1张耗能为0且没有 谢幕曲 的 *小鬼怪·帕克鲁斯 到手中。 NL 消耗 。"
+  },
+  "shadowverse:Baccherus_Copy": {
+    "NAME": "小鬼怪·帕克鲁斯",
+    "DESCRIPTION": "如果手中有 *巨型狂灵 ，抽1张卡。 NL 造成 !D! 点伤害，增加1张 *怨灵 到手中。 NL  NL 消耗 。"
+  },
+  "shadowverse:TrickDullahan": {
+    "NAME": "诡计杜拉罕",
+    "DESCRIPTION": "获得 !B! 点 格挡。 NL 死灵术 1；抽1张牌，增加1张 *怨灵 到手中。",
+    "UPGRADE_DESCRIPTION":"获得 !B! 点 格挡。 NL 增加2张 *怨灵 到手中。 NL 死灵术 1；抽1张牌，增加1张 *怨灵 到手中。"
   }
 }

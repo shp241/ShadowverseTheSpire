@@ -1592,5 +1592,43 @@
     "DESCRIPTIONS": [
       "每回合结束减少 #b1 倒计时。倒计时结束时死亡。"
     ]
+  },
+  "shadowverse:VyrmedeaPower": {
+    "NAME": "人造的代言者·薇米蒂亚",
+    "DESCRIPTIONS": [
+      "回合结束时获得 #b",
+      " 点 #y力量 和 #y敏捷 及 #b1 层 #y残影 。"
+    ]
+  },
+  "shadowverse:MysticQueenPower": {
+    "NAME": "神秘皇后·梅迪",
+    "DESCRIPTIONS": [
+      "每回合一次，打出攻击牌时增加 #b",
+      " 张 #y奇幻战略 到手中。打出技能牌时增加 #b",
+      " 张带有消耗的 #y奇幻士兵 到手中。"
+    ]
+  },
+  "shadowverse:MysticKingPower": {
+    "NAME": "神秘国王",
+    "DESCRIPTIONS": [
+      "#y奇幻士兵 造成的伤害提高 #b",
+      " 点并翻倍。"
+    ]
+  },
+  "shadowverse:CraigPower": {
+    "NAME": "马纳历亚咏唱者·克雷格",
+    "DESCRIPTIONS": [
+      "打出技能牌时对全体敌人造成 #b",
+      " 点伤害。打出马纳历亚牌时获得 #b",
+      " 点格挡。"
+    ]
+  },
+  "shadowverse:MasqueradeGhostPower": {
+    "NAME": "假面亡魂",
+    "DESCRIPTIONS": [
+      "#y奇幻士兵 造成的伤害提高 #b",
+      " 点并翻倍。",
+      " 点并翻倍。 NL 回合开始时增加 #b1 张耗能为0且没有谢幕曲的 #y假面亡魂 到手中。"
+    ]
   }
 }

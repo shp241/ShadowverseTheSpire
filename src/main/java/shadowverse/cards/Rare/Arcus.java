@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.stance.StanceAuraEffect;
+import shadowverse.cards.Status.Ghost;
 import shadowverse.characters.Necromancer;
 import shadowverse.powers.ArcusPower;
 
@@ -27,6 +28,7 @@ public class Arcus extends CustomCard {
 
     public Arcus() {
         super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.POWER, Necromancer.Enums.COLOR_PURPLE, CardRarity.RARE, CardTarget.SELF);
+        this.cardsToPreview = new Ghost();
     }
 
 

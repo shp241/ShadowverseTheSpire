@@ -61,7 +61,7 @@ import shadowverse.stance.Vengeance;
    }
 
    public void applyPowers() {
-     if(AbstractDungeon.player.hasPower(NightVampirePower.POWER_ID)){
+     if(AbstractDungeon.player.hasPower(NightVampirePower.POWER_ID) || AbstractDungeon.player.hasPower(VanpiPower.POWER_ID)){
        int realBaseDamage = this.baseDamage;
        this.baseDamage = this.baseDamage * 2;
        super.applyPowers();

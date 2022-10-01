@@ -24,7 +24,7 @@ import shadowverse.characters.Nemesis;
 
    public ProtectArtifact() {
      super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.SPECIAL, CardTarget.SELF);
-     this.baseBlock = 30;
+     this.baseBlock = 24;
      this.exhaust = true;
      this.tags.add(AbstractShadowversePlayer.Enums.ARTIFACT);
    }
@@ -33,7 +33,7 @@ import shadowverse.characters.Nemesis;
    public void upgrade() {
      if (!this.upgraded) {
        upgradeName();
-       upgradeDamage(2);
+       upgradeBlock(2);
      }
    }
 

@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.common.SuicideAction;
+import com.megacrit.cardcrawl.actions.watcher.JudgementAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -37,7 +38,9 @@ public class UltimateBahmutPower extends AbstractPower {
             if (this.amount == 1) {
                 addToBot((AbstractGameAction) new RemoveSpecificPowerAction(this.owner, this.owner, this));
                 if (this.owner instanceof AbstractMonster){
-                    addToBot(new SuicideAction((AbstractMonster) this.owner));
+                    if (!this.owner.isDeadOrEscaped()) {
+                        addToBot((AbstractGameAction)new JudgementAction((AbstractCreature)this.owner, 99999));
+                    }
                 }
             } else {
                 addToBot((AbstractGameAction) new ReducePowerAction(this.owner, this.owner, this, 1));

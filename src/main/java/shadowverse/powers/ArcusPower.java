@@ -1,15 +1,14 @@
 package shadowverse.powers;
 
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import shadowverse.cards.Status.Ghost;
 import shadowverse.cards.Uncommon.Mordecai;
 
 public class ArcusPower extends AbstractPower{
@@ -42,7 +41,7 @@ public class ArcusPower extends AbstractPower{
         if (card.type == AbstractCard.CardType.ATTACK && card.costForTurn==0&&!(card instanceof Mordecai)) {
             flash();
             action.exhaustCard = true;
-            addToBot((AbstractGameAction)new DamageRandomEnemyAction(new DamageInfo(this.owner, 4, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+            addToBot(new MakeTempCardInHandAction(new Ghost()));
         }
     }
 }

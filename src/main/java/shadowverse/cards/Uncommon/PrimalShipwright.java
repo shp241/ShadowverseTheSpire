@@ -112,6 +112,9 @@ public class PrimalShipwright
             addToBot((AbstractGameAction)new SFXAction("PrimalShipwright"));
             calculateCardDamage(abstractMonster);
             addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+            if(Shadowverse.Accelerate(this)){
+                addToBot(new MakeTempCardInDiscardAction(this.makeSameInstanceOf(),1));
+            }
         }
     }
 
