@@ -41,7 +41,7 @@ import shadowverse.characters.Elf;
 
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new SelectCardsInHandAction(1,TEXT[0],false,false, card -> {
+     addToBot((AbstractGameAction)new SelectCardsInHandAction(1,TEXT[0],false,true, card -> {
        return card.hasTag(AbstractShadowversePlayer.Enums.MACHINE);
      }, abstractCards ->{
        for (AbstractCard c:abstractCards){

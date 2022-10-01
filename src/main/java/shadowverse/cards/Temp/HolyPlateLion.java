@@ -22,7 +22,7 @@ import shadowverse.characters.Bishop;
 
    public HolyPlateLion() {
      super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.SPECIAL, CardTarget.SELF);
-     this.baseBlock = 10;
+     this.baseBlock = 8;
      this.exhaust = true;
    }
  

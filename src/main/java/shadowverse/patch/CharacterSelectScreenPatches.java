@@ -68,13 +68,13 @@ public class CharacterSelectScreenPatches {
     public static ArrayList<AbstractGameEffect> char_effectsQueue_toRemove = new ArrayList<>();
 
     public static AbstractSkinCharacter[] characters = new AbstractSkinCharacter[]{
-            (AbstractSkinCharacter) new AbstractWitchSkin(),
-            (AbstractSkinCharacter) new AbstractElfSkin(),
-            (AbstractSkinCharacter) new AbstractNecroSkin(),
-            (AbstractSkinCharacter) new AbstractRoyalSkin(),
-            (AbstractSkinCharacter) new AbstractVampireSkin(),
-            (AbstractSkinCharacter) new AbstractBishopSkin(),
-            (AbstractSkinCharacter) new AbstractNemesisSkin()
+             new AbstractWitchSkin(),
+             new AbstractElfSkin(),
+             new AbstractNecroSkin(),
+             new AbstractRoyalSkin(),
+             new AbstractVampireSkin(),
+             new AbstractBishopSkin(),
+             new AbstractNemesisSkin()
     };
 
     public static Color BLACK_OUTLINE_COLOR = new Color(0.0F, 0.0F, 0.0F, 0.5F);

@@ -1199,6 +1199,13 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         reflectedMap.put("MasqueradeGhostPower", new Sfx("sounds/MasqueradeGhostPower.wav"));
         reflectedMap.put("Baccherus", new Sfx("sounds/Baccherus.wav"));
         reflectedMap.put("TrickDullahan", new Sfx("sounds/TrickDullahan.wav"));
+        reflectedMap.put("Nobilis", new Sfx("sounds/Nobilis.wav"));
+        reflectedMap.put("Slade", new Sfx("sounds/Slade.wav"));
+        reflectedMap.put("MaliciousBlader", new Sfx("sounds/MaliciousBlader.wav"));
+        reflectedMap.put("Waltz", new Sfx("sounds/Waltz.wav"));
+        reflectedMap.put("Waltz_Acc", new Sfx("sounds/Waltz_Acc.wav"));
+        reflectedMap.put("Cernunnos_L", new Sfx("sounds/Cernunnos_L.wav"));
+        reflectedMap.put("Ameth_Selected", new Sfx("sounds/Ameth_Selected.wav"));
     }
 
     public void receiveEditRelics() {
@@ -2199,6 +2206,11 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard( new MasqueradeGhost());
         BaseMod.addCard( new Baccherus());
         BaseMod.addCard( new TrickDullahan());
+        BaseMod.addCard( new Nobilis());
+        BaseMod.addCard( new Slade());
+        BaseMod.addCard( new MaliciousBlader());
+        BaseMod.addCard( new Waltz());
+        BaseMod.addCard( new FullMoonLeap());
         logger.info("Success");
     }
 

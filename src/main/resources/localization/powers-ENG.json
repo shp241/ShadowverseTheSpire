@@ -1592,5 +1592,43 @@
     "DESCRIPTIONS": [
       "每回合结束减少 #b1 倒计时。倒计时结束时死亡。"
     ]
+  },
+  "shadowverse:VyrmedeaPower": {
+    "NAME": "人造の代弁者・ヴァーミディア",
+    "DESCRIPTIONS": [
+      "ターン終了時に #b",
+      " の #y筋力 、 #y敏捷性 と #yブラー を得る。"
+    ]
+  },
+  "shadowverse:MysticQueenPower": {
+    "NAME": "ミスティッククイーン・メイティ",
+    "DESCRIPTIONS": [
+      "1ターンに1度、アタックをプレイする時、 #b",
+      " 枚の廃棄を持つ #yマジカルストラテジー を手札に加える。スキルをプレイする時、 #b",
+      " 枚の #yマジカルポーン を手札に加える。"
+    ]
+  },
+  "shadowverse:MysticKingPower": {
+    "NAME": "ミスティックキング",
+    "DESCRIPTIONS": [
+      "#yマジカルポーン のダメージは+ #b",
+      " され、さらに倍になる。"
+    ]
+  },
+  "shadowverse:CraigPower": {
+    "NAME": "マナリアの詠唱者・クレイグ",
+    "DESCRIPTIONS": [
+      "スキルをプレイする度、敵全体に #b",
+      " ダメージを与える。マナリアカードをプレイする度、 #b",
+      " ブロックを得る。"
+    ]
+  },
+  "shadowverse:MasqueradeGhostPower": {
+    "NAME": "マスカレードゴースト",
+    "DESCRIPTIONS": [
+      "#yゴースト のダメージは+ #b",
+      " される。",
+      " される。 NL ターン開始時、コスト0かつラストワードを持たない #yマスカレードゴースト 1枚を手札に加える。"
+    ]
   }
 }
