@@ -1592,5 +1592,44 @@
     "DESCRIPTIONS": [
       "턴 종료시 카운트다운이 #b1 진행됩니다. 카운트다운이 0이 되면, 즉사합니다. "
     ]
+  },
+    "shadowverse:VyrmedeaPower": {
+    "NAME": "인조인간 대변자 바미디아",
+    "DESCRIPTIONS": [
+      "턴 종료시 힘과 민첩과 잔상을 #b",
+      " 얻습니다. "
+    ]
+  },
+  "shadowverse:MysticQueenPower": {
+    "NAME": "미스틱 퀸 메이티",
+    "DESCRIPTIONS": [
+      "매 턴 1회, 공격 카드를 사용하면 매지컬 스트래티지를 #b",
+      " 장 얻고, 스킬 카드를 사용하면 매지컬 폰을 #b",
+      " 장 얻습니다. "
+    ]
+  },
+  "shadowverse:MysticKingPower": {
+    "NAME": "미스틱 킹",
+    "DESCRIPTIONS": [
+      "매지컬 폰이 주는 피해가 #b",
+      " 배가 됩니다."
+    ]
+  },
+  "shadowverse:CraigPower": {
+    "NAME": "마나리아 영창사 크레이그",
+    "DESCRIPTIONS": [
+      "스킬 카드를 사용할때마다 모든 적에게 피해를 #b",
+      " 주고, 마나리아 카드를 사용할 때마다 방어도를 #b",
+      " 얻는다. "
+    ]
+  },
+  "shadowverse:MasqueradeGhostPower": {
+    "NAME": "마스커레이드 고스트",
+    "DESCRIPTIONS": [
+      "매지컬 폰의 피해량이 #b",
+      " 배가 되고, ",
+      " 배가 된다. NL 다음 턴 시작시 비용이 0이고 유언이 없는 마스커레이드 고스트를 얻는다. "
+    ]
   }
+
 }
