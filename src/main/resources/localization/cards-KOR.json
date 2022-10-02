@@ -4504,5 +4504,78 @@
   "shadowverse:Jeanne5": {
     "NAME": "구원의 성녀 잔 다르크",
     "DESCRIPTION": "카드를 1장 뽑습니다. NL 모든 적에게 피해를 !D! 만큼 2번 줍니다. NL 체력을 !M! 만큼 2번 회복합니다. NL 소멸."
+  },
+  "shadowverse:Vyrmedea": {
+    "NAME": "인조인간 대변자 바미디아",
+    "DESCRIPTION": "AF NL 방어도를 !B! 얻습니다. NL 장송 1: 이번 턴동안 비용이 0인 척결의 아티팩트를 1장 얻습니다. NL 소멸된 아티팩트의 종류가 6종류 이상이라면, 라운드 종료시 힘과 민첩, 잔상을 1씩 얻습니다."
+  },
+  "shadowverse:Chastity": {
+    "NAME": "앱솔루트 체이스트",
+    "DESCRIPTION": "보존 NL 소멸을 가진 공격 카드를 사용할 때마다 비용이 [E] 감소합니다. NL 취약과 약화를 !M! 부여합니다. NL 방어도를 !B! 얻습니다. NL 손패가 7장이 될 때까지 카드를 뽑습니다."
+  },
+  "shadowverse:Zerk": {
+    "NAME": "장치 관리자 지르크",
+    "DESCRIPTION": "가속화 0 ： 아티팩트 1장을 파괴하고, 카드를 1장 뽑고, 체력을 2 회복합니다. NL  NL --------------------- NL  NL 방어도를 !B! 얻습니다. NL 소멸된 아티팩트 3종류를 손으로 가져오고 이번 턴 비용을 0으로 만듭니다. NL 소멸",
+    "UPGRADE_DESCRIPTION":"가속화 0 ： 아티팩트 1장을 파괴하고, 카드를 1장 뽑고, 체력을 2 회복합니다. NL  NL --------------------- NL  NL 방어도를 !B! 얻습니다. NL 소멸된 아티팩트 3종류를 손으로 가져오고 이번 턴 비용을 0으로 만듭니다."
+  },
+  "shadowverse:ANewDiscovery": {
+    "NAME": "유물 발굴",
+    "DESCRIPTION": "결단 ： NL *공습의 아티팩트 NL *방어의 아티팩트 NL 결단으로 선택한 카드를 손에 넣고 이번 턴 비용을 0으로 만듭니다. NL 강화3 : 결단하지 않고 모두 가져옵니다. NL 소멸",
+    "UPGRADE_DESCRIPTION":"결단 ： NL *공습의 아티팩트+ NL *방어의 아티팩트+ NL 결단으로 선택한 카드를 손에 넣고 이번 턴 비용을 0으로 만듭니다. NL 강화3 : 결단하지 않고 모두 가져옵니다. NL 소멸"
+  },
+  "shadowverse:MagicalPawn": {
+    "NAME": "매지컬 폰",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 소멸된 *매지컬 *폰 이 8장 이상이라면 피해를 4 추가로 줍니다. NL 소멸"
+  },
+  "shadowverse:MagicalStrategy": {
+    "NAME": "매지컬 스트래티지",
+    "DESCRIPTION": "*매지컬 *폰 을  1장 얻고 카드를 1장 뽑습니다. NL 소멸된 *매지컬 *폰 이 8장 이상이라면, 대신 2장 얻고 2장 뽑습니다.",
+    "UPGRADE_DESCRIPTION":"*매지컬 *폰+ 을  1장 얻고 카드를 1장 뽑습니다. NL 소멸된 *매지컬 *폰 이 8장 이상이라면, 대신 2장 얻고 2장 뽑습니다."
+  },
+  "shadowverse:MagicalRook": {
+    "NAME": "매지컬 룩",
+    "DESCRIPTION": "방어도를 !B! 얻습니다。 NL *매지컬 *폰 을  !M! 장 얻습니다."
+  },
+  "shadowverse:MagicalKnight": {
+    "NAME": "매지컬 나이트",
+    "DESCRIPTION": "*매지컬 *폰 을 사용할 때마다 비용이 1 감소합니다. NL 피해를 !D! 줍니다. NL *매지컬 *폰 2장을 얻습니다."
+  },
+  "shadowverse:MysticQueen": {
+    "NAME": "미스틱 퀸 메이티",
+    "DESCRIPTION": "매 턴마다 1번, 공격 카드를 사용하면 *매지컬 *스트래티지 1장을 손에 넣습니다.  NL 스킬 카드를 사용하면 *매지컬 *폰 1장을 얻습니다.",
+    "UPGRADE_DESCRIPTION":"*매지컬 *폰 1장을 얻습니다. NL 매 턴마다 1번, 공격 카드를 사용하면 *매지컬 *스트래티지 1장을 손에 넣습니다.  NL 스킬 카드를 사용하면 *매지컬 *폰 1장을 얻습니다. "
+  },
+  "shadowverse:MysticKing": {
+    "NAME": "미스틱 킹",
+    "DESCRIPTION": "보존 NL 소멸된 *매지컬 *폰 이 8장 이상일때 이 카드가 보존될 때마다 비용 -4. NL 방어도를 !B! 얻습니다. NL *매지컬 *폰 을 4장 얻습니다. NL 이번 턴 *매지컬 *폰 이 주는 피해를  !M! 배로 늘립니다."
+  },
+  "shadowverse:Ghost": {
+    "NAME": "유령",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 이 카드는 사용해도 묘지를 얻지 못합니다. NL 소멸."
+  },
+  "shadowverse:GiantGhost": {
+    "NAME": "자이언트 고스트",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 이 카드는 사용해도 묘지를 얻지 못합니다. NL 소멸."
+  },
+  "shadowverse:MasqueradeGhost": {
+    "NAME": "마스커레이드 고스트",
+    "DESCRIPTION": "피해를 !D! 주고, *유령 1장을 얻습니다. NL 이번 턴 *유령 의 피해량이  !M! 증가하고, 소멸시킬 때마다 *자이언트 *고스트 를 얻습니다. NL 유언 : 다음 턴 시작에 비용이 0이고 유언이 없는 *마스커레이드 *고스트 를 얻습니다. NL 소멸"
+  },
+  "shadowverse:MasqueradeGhost_Copy": {
+    "NAME": "마스커레이드 고스트",
+    "DESCRIPTION": "피해를 !D! 주고, *유령 1장을 얻습니다. NL 이번 턴 *유령 의 피해량이  !M! 증가하고, 소멸시킬 때마다 *자이언트 *고스트 를 얻습니다. NL 소멸"
+  },
+  "shadowverse:Baccherus": {
+    "NAME": "쁘띠 고스트 바케루스",
+    "DESCRIPTION": "손에 *자이언트 *고스트 가 있다면 카드를 1장 뽑는다. NL 피해를 !D! 주고, *유령 을 1장 얻는다. NL 유언: 비용이 0이고 유언이 없는 *쁘띠 *고스트 *바케루스를 얻는다. NL 소멸"
+  },
+  "shadowverse:Baccherus_Copy": {
+    "NAME": "쁘띠 고스트 바케루스",
+    "DESCRIPTION": "손에 *자이언트 *고스트 가 있다면 카드를 1장 뽑는다. NL 피해를 !D! 주고, *유령 을 1장 얻는다.  NL 소멸"
+  },
+  "shadowverse:TrickDullahan": {
+    "NAME": "트릭 듀라한",
+    "DESCRIPTION": "방어도를 !B! 점 얻는다. NL 사령술 1 : 카드를 1장 뽑고 *유령 을 1장 얻는다.",
+    "UPGRADE_DESCRIPTION":"방어도를 !B! 점 얻는다. NL *유령 2장을 얻는다. NL 사령술 1 : 카드를 1장 뽑고 *유령 을 1장 얻는다."
   }
 }
