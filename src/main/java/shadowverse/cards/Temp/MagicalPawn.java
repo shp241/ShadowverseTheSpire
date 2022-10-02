@@ -83,8 +83,10 @@ public class MagicalPawn extends CustomCard {
         if (count > 8) {
             int realBaseDamage = this.baseDamage;
             this.baseDamage = this.baseDamage + 4;
-            this.baseDamage = this.baseDamage + AbstractDungeon.player.getPower(MysticKingPower.POWER_ID).amount;
-            this.baseDamage *= 2;
+            if (AbstractDungeon.player.hasPower(MysticKingPower.POWER_ID)){
+                this.baseDamage = this.baseDamage + AbstractDungeon.player.getPower(MysticKingPower.POWER_ID).amount;
+                this.baseDamage *= 2;
+            }
             super.calculateCardDamage(mo);
             this.baseDamage = realBaseDamage;
             this.isDamageModified = (this.damage != this.baseDamage);
