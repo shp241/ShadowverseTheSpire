@@ -176,8 +176,8 @@
   },
   "shadowverse:Faust": {
     "NAME": "Truthseeker Faust",
-    "DESCRIPTION": "By the end of your turn, Earth_Rite: \b Gain !M! Strength and 1 Dexterity. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "By the end of your turn, Earth_Rite: \b Gain !M! Strength and 1 Dexterity."
+    "DESCRIPTION": "At the end of each of your turns, Earth_Rite: \b Gain !M! Strength and 1 Dexterity. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "At the end of each of your turns, Earth_Rite: \b Gain !M! Strength and 1 Dexterity."
   },
   "shadowverse:Faust2": {
     "NAME": "Faust, Overzealous Observer",
@@ -185,8 +185,8 @@
   },
   "shadowverse:OrichalcumGolem": {
     "NAME": "Orichalcum Golem",
-    "DESCRIPTION": " Accelerate 0: \b Earth_Rite X: \bRandomly activate 1 of the following effects. NL 'Gain 6 Block ', 'Put 1 *Veridic Ritual into your hand', 'Deal !D! damage to a random enemy' NL Repeat X times. NL X equal to the value of Earth_Essence. NL  NL --------------------- NL  NL Gain !B! Block. NL Gain 2 Earth_Essence next turn.",
-    "UPGRADE_DESCRIPTION": " Accelerate 0: \b Earth_Rite X: \bRandomly activate 1 of the following effects. NL 'Gain 8 Block ', 'Put 1 *Veridic Ritual+ into your hand', 'Deal !D! damage to a random enemy' NL Repeat X times. NL X equal to the value of Earth_Essence. NL  NL --------------------- NL  NL Gain !B! Block. NL Gain 2 Earth_Essence next turn."
+    "DESCRIPTION": "Accelerate 0: Earth_Rite X: Randomly activate 1 of the following effects and repeat X times. X equals the value of Earth_Essence: NL Gain 6 Block NL Put 1 *Veridic *Ritual into your hand NL Deal !D! damage to a random enemy. NL NL --------------------- NL NL Gain !B! Block. NL Gain 2 Earth_Essence next turn.",
+    "UPGRADE_DESCRIPTION": " Accelerate 0: Earth_Rite X: Randomly activate 1 of the following effects and repeat X times. X equals the value of Earth_Essence: NL Gain 8 Block NL Put 1 *Veridic *Ritual+ into your hand NL Deal !D! damage to a random enemy. NL NL --------------------- NL NL Gain !B! Block. NL Gain 2 Earth_Essence next turn."
   },
   "shadowverse:DwarfAlchemist": {
     "NAME": "Dwarf Alchemist",
@@ -278,9 +278,9 @@
   },
   "shadowverse:SorceryInSolidarity": {
     "NAME": "Sorcery in Solidarity",
-    "DESCRIPTION": "Choose: Put 1 of the following cards into your hand: NL *Isabelle's *Conjuration NL *Tetra's *Mettle NL If *Spellboosted at least 3 times, put both into your hand. NL Exhaust.",
+    "DESCRIPTION": "Choose: Play this card as either an NL *Isabelle's *Conjuration or a *Tetra's *Mettle. NL If this card has been *Spellboosted at least 3 times, play this card as both instead. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Current Spellboosts: ",
+      " NL (Current times Spellboosted: ",
       " )"
     ]
   },
@@ -342,7 +342,7 @@
   "shadowverse:Oz": {
     "NAME": "Wizardess of Oz",
     "DESCRIPTION": "Draw cards until you have 8 cards in your hand. NL Change the cost of all Skill cards without Spellboost to 0. NL Put 2 *Void into your draw pile. NL Exhaust all Skill cards in your hand at the end of your turn.",
-    "UPGRADE_DESCRIPTION": "Draw cards until you have 8 cards in your hand. NL Change the cost of all Skill card without Spellboost  to 0. NL Put 1 *Void into your draw pile. NL Exhaust all Skill cards in your hand at the end of your turn."
+    "UPGRADE_DESCRIPTION": "Draw cards until you have 8 cards in your hand. NL Change the cost of all Skill cards without Spellboost  to 0. NL Put 1 *Void into your draw pile. NL Exhaust all Skill cards in your hand at the end of your turn."
   },
   "shadowverse:GrandSummoning": {
     "NAME": "Grand Summoning",
@@ -4064,7 +4064,7 @@
   },
   "shadowverse:BirthOfRavenous": {
     "NAME": "Birth of the Ravenous",
-    "DESCRIPTION": "Gain the following effect: If you played 3 or more cards this turn, draw 1 additional card next turn. NL Exhaust."
+    "DESCRIPTION": "Gain the following effect: If you have 3 or less cards in your hand, draw 1 additional card next turn. NL Exhaust."
   },
   "shadowverse:AdherentOfDesire": {
     "NAME": "Adherent of Desire",
@@ -4505,98 +4505,98 @@
     "DESCRIPTION": "Draw a card. NL Deal !D! damage to all enemies twice. NL Heal !M! HP twice. NL Exhaust."
   },
   "shadowverse:Vyrmedea": {
-    "NAME": "人造の代弁者・ヴァーミディア",
-    "DESCRIPTION": "アーティファクト 。 NL !B! ブロック を得る。 NL カード1枚を 葬送 し、このターンだけコスト0の *エッジアーティファクト 1枚を手札に加える。 NL 廃棄札にあるアーティファクトの種類が6以上なら、ターン終了時に 筋力 、 敏捷性 と ブラー 1枚を得る。"
+    "NAME": "Vyrmedea, Synthetic Voice",
+    "DESCRIPTION": "AF. NL Gain !B! Block. NL Burial_Rite 1: Put a *Keenedge *Artifact into your hand and change its cost to 0 until the end of the turn. NL If you have 6 or more different AF cards in your exhausted pile, gain 1 Stregth, 1 Dexterity and 1 Blur at the end of the turn."
   },
   "shadowverse:Chastity": {
-    "NAME": "アブソリュート・チェイスト",
-    "DESCRIPTION": "保留 。 NL 廃棄 を持つアタックをプレイする度、コストを1下げる。 NL 弱体 と 脱力 を !M! 与える。 NL !B! ブロック を得る。 NL 手札が7枚になるまでカードを引く。"
+    "NAME": "Absolute Chastity",
+    "DESCRIPTION": "Retain. NL Whenever you Exhaust a card, reduce the cost of this card by 1. NL Give an enemy !M! Weak and Vulnerable. NL Gain !B! Block. NL Draw until you have 7 cards in your hand."
   },
   "shadowverse:Zerk": {
-    "NAME": "ドミネートデバイス・ジルク",
-    "DESCRIPTION": "アクセラレート 0 ： アーティファクト カード1枚を 破壊 し、HPを2回復し、カード1枚を引く。 NL  NL --------------------- NL  NL !B! ブロック を得る。 NL ランダムに廃棄札から アーティファクト カード3枚までこのターンだけコスト0にして手札に加える。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION":"アクセラレート 0 ： アーティファクト カード1枚を 破壊 し、HPを2回復し、カード1枚を引く。 NL  NL --------------------- NL  NL !B! ブロック を得る。 NL ランダムに廃棄札から アーティファクト カード3枚までこのターンだけコスト0にして手札に加える。"
+    "NAME": "Zerk, Artifact Dominator",
+    "DESCRIPTION": "Accelerate 0: Destroy an AF card in your hand, heal 2 HP and draw a card. NL NL --------------------- NL NL Gai !B! Block. NL Add up to 3 random AF cards in your exhausted pile to your hand and change their costs to 0 until the end of the turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Accelerate 0: Destroy an AF card in your hand, heal 2 HP and draw a card. NL NL --------------------- NL NL Gai !B! Block. NL Add up to 3 random AF cards in your exhausted pile to your hand and change their costs to 0 until the end of the turn. "
   },
   "shadowverse:ANewDiscovery": {
-    "NAME": "遺物の発掘",
-    "DESCRIPTION": "チョイス ： NL *ブリッツアーティファクト NL *プロテクトアーティファクト NL 選択したカード1枚をこのターンだけコスト0にして手札に加える。 NL エンハンス 3 ：チョイスではなく1枚ずつ手札に加える。 NL 廃棄 。",
-    "UPGRADE_DESCRIPTION":"チョイス ： NL *ブリッツアーティファクト+ NL *プロテクトアーティファクト+ NL 選択したカード1枚をこのターンだけコスト0にして手札に加える。 NL エンハンス 3 ：チョイスではなく1枚ずつ手札に加える。 NL 廃棄 。"
+    "NAME": "A New Discovery",
+    "DESCRIPTION": "Choose: Add an *Airstike *Artifact or a *Barrier *Artifact to your hand and change its cost to 0 until the end of the turn. NL Enhance 3: Add both instead. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose: Add an *Airstike *Artifact+ or a *Barrier *Artifact+ to your hand and change its cost to 0 until the end of the turn. NL Enhance 3: Add both instead. NL Exhaust."
   },
   "shadowverse:MagicalPawn": {
-    "NAME": "マジカルポーン",
-    "DESCRIPTION": "!D! ダメージを与える。 NL 廃棄札にある *マジカルポーン の数が8以上なら、ダメージを+4する。 NL 廃棄 。"
+    "NAME": "Magical Pawn",
+    "DESCRIPTION": "Deal !D! damage. NL If there are 8 or more *Magical *Pawns in your exhausted pile, deal an additional 4 damage. NL Exhaust."
   },
   "shadowverse:MagicalStrategy": {
-    "NAME": "マジカルストラテジー",
-    "DESCRIPTION": "*マジカルポーン 1枚を手札に加え、カード1枚を引く。 NL 廃棄札にある *マジカルポーン の数が8以上なら、1枚ではなく2枚、さらに追加で1枚を引く。",
-    "UPGRADE_DESCRIPTION":"*マジカルポーン+ 1枚を手札に加え、カード1枚を引く。 NL 廃棄札にある *マジカルポーン の数が8以上なら、1枚ではなく2枚、さらに追加で1枚を引く"
+    "NAME": "Magical Strategy",
+    "DESCRIPTION": "Add a *Magical *Pawn to your hand and draw a card. NL If the number of *Magical *Pawns in your exhausted pile is 8 or more, add 2 *Magical Pawns* to your hand and draw 2 cards instead.",
+    "UPGRADE_DESCRIPTION": "Add a *Magical *Pawn+ to your hand and draw a card. NL If the number of *Magical *Pawns in your exhausted pile is 8 or more, add 2 *Magical Pawns* to your hand and draw 2 cards instead."
   },
   "shadowverse:MagicalRook": {
-    "NAME": "マジカルルーク",
-    "DESCRIPTION": "!B! ブロック を得る。 NL *マジカルポーン !M! 枚を手札に加える。"
+    "NAME": "Magical Rook",
+    "DESCRIPTION": "Gain !B! Block. NL Put !M! *Magical *Pawns into your hand."
   },
   "shadowverse:MagicalKnight": {
-    "NAME": "マジカルナイト",
-    "DESCRIPTION": "*マジカルポーン をプレイする度、コストを-1する。 NL !D! ダメージを与える。 NL *マジカルポーン 2枚を手札に加える。"
+    "NAME": "Magical Knight",
+    "DESCRIPTION": "Whenever you play a *Magical *Pawn, reduce the cost of this card by 1. NL Deal !D! damage. NL Add 2 *Magical *Pawns to your hand."
   },
   "shadowverse:MysticQueen": {
-    "NAME": "ミスティッククイーン・メイティ",
-    "DESCRIPTION": "1ターンに1度、アタックをプレイする時、廃棄を持つ *マジカルストラテジー 1枚を手札に加える。 NL スキルをプレイする時、 *マジカルポーン 1枚を手札に加える。",
-    "UPGRADE_DESCRIPTION":"*マジカルポーン 1枚を手札に加える。 NL 1ターンに1度、アタックをプレイする時、廃棄を持つ *マジカルストラテジー 1枚を手札に加える。 NL スキルをプレイする時、 *マジカルポーン 1枚を手札に加える。"
+    "NAME": "Milady, Mystic Queen",
+    "DESCRIPTION": "Once per turn, whenever you play an Attack card, add a *Magical *Strategy with Exhaust to your hand. NL Once per turn, whenever you play a Skill card, add a *Magical *Pawn to your hand.",
+    "UPGRADE_DESCRIPTION": "Add a *Magical *Pawn to your hand. Once per turn, whenever you play an Attack card, add a *Magical *Strategy with Exhaust to your hand. NL Once per turn, whenever you play a Skill card, add a *Magical *Pawn to your hand."
   },
   "shadowverse:MysticKing": {
-    "NAME": "ミスティックキング",
-    "DESCRIPTION": "保留 。 NL 廃棄札にある *マジカルポーン の数が8以上なら、保留される度、これのコストを-4する。 NL !B! ブロック を得る。 NL *マジカルポーン 4枚を手札に加える。 NL このターン、 *マジカルポーン が与えるダメージは+ !M! され、さらに倍になる。"
+    "NAME": "Mystic King",
+    "DESCRIPTION": "Retain. NL If you have 8 or more *Magical *Pawns in your exhausted pile, reduce the cost of this card by 4 each time you Retain it. NL Gain !B! Block. NL Add 4 *Magical *Pawns to your hand. NL Until the end of this turn, *Magical *Pawns do additional !M! damage."
   },
   "shadowverse:Ghost": {
-    "NAME": "ゴースト",
-    "DESCRIPTION": "!D! ダメージを与える。 NL このカードをプレイしても 墓場 は増えない。 NL 廃棄 。"
+    "NAME": "Ghost",
+    "DESCRIPTION": "Deal !D! damage. NL Playing this card does not produce a Shadow. NL Exhaust."
   },
   "shadowverse:GiantGhost": {
-    "NAME": "ジャイアントゴースト",
-    "DESCRIPTION": "!B! ブロック を得る 。 NL このカードをプレイしても 墓場 は増えない。 NL 廃棄 。"
+    "NAME": "Gargantuan Ghost",
+    "DESCRIPTION": "Gain !B! Block. NL Playig this card does not produce a Shadow. NL Exhaust."
   },
   "shadowverse:MasqueradeGhost": {
-    "NAME": "マスカレードゴースト",
-    "DESCRIPTION": "!D! ダメージを与え、 *ゴースト 1枚を手札に加える。 NL このターン、 *ゴースト が与えるダメージは+ !M! され、かつ廃棄される時に *ジャイアントゴースト 1枚を手札に加える。 NL ラストワード ：次のターン開始時、コスト0かつ ラストワード を持たない *マスカレードゴースト 1枚を手札に加える。 NL 廃棄 。"
+    "NAME": "Masquerade Ghost",
+    "DESCRIPTION": "Deal !D! damage and put a *Ghost into your hand. NL Until the end of this turn, *Ghosts deal !M! additional damage. NL Until the end of this turn, whenever a *Ghost is exhausted, add a *Gargantuan *Ghost to your hand. NL Last_Words: At the start of your next turn, put a 0 cost *Masquerade *Ghost without Last_Words into your hand. NL Exhaust."
   },
   "shadowverse:MasqueradeGhost_Copy": {
-    "NAME": "マスカレードゴースト",
-    "DESCRIPTION": "!D! ダメージを与え、 *ゴースト 1枚を手札に加える。 NL このターン、 *ゴースト が与えるダメージは+ !M! され、かつ廃棄される時に *ジャイアントゴースト 1枚を手札に加える。 NL 廃棄 。"
+    "NAME": "Masquerade Ghost",
+    "DESCRIPTION": "Deal !D! damage and put a *Ghost into your hand. NL Until the end of this turn, *Ghosts deal !M! additional damage. NL Until the end of this turn, whenever a *Ghost is exhausted, add a *Gargantuan *Ghost to your hand. NL Exhaust."
   },
   "shadowverse:Baccherus": {
-    "NAME": "プチゴースト・バケルス",
-    "DESCRIPTION": "手札に *ジャイアントゴースト があるなら、カード1枚を引く。 NL !D! ダメージを与え、 *ゴースト 1枚を手札に加える。 NL ラストワード ：これが廃棄される時、コスト0かつ ラストワード を持たない *プチゴースト・バケルス 1枚を手札に加える。 NL 廃棄 。"
+    "NAME": "Baccherus, Peppy Ghostie",
+    "DESCRIPTION": "If you have a *Gargantuan *Ghost in your hand, draw a card. NL Deal !D! damage and put a *Ghost into your hand. NL Last_Words: When this card is exhausted, put a 0 cost *Baccherus, *Peppy *Ghostie without Last_Words into your hand. NL Exhaust."
   },
   "shadowverse:Baccherus_Copy": {
-    "NAME": "プチゴースト・バケルス",
-    "DESCRIPTION": "手札に *ジャイアントゴースト があるなら、カード1枚を引く。 NL !D! ダメージを与え、 *ゴースト 1枚を手札に加える。 NL 廃棄 。"
+    "NAME": "Baccherus, Peppy Ghostie",
+    "DESCRIPTION": "If you have a *Gargantuan *Ghost in your hand, draw a card. NL Deal !D! damage and put a *Ghost into your hand. NL Exhaust."
   },
   "shadowverse:TrickDullahan": {
-    "NAME": "トリックデュラハン",
-    "DESCRIPTION": "!B! ブロック を得る。 NL ネクロマンス 1：カード1枚を引き、 *ゴースト 1枚を手札に加える。",
-    "UPGRADE_DESCRIPTION":"!B! ブロック を得る。 NL *ゴースト 2枚を手札に加える。 NL ネクロマンス 1：カード1枚を引き、 *ゴースト 1枚を手札に加える。"
+    "NAME": "Trick Dullahan",
+    "DESCRIPTION": "Gain !B! Block. NL Necromancy 1: Draw card and add a *Ghost to your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add 2 *Ghosts to your hand. NL Necromancy 1: Draw a card and add a *Ghost to your hand."
   },
   "shadowverse:Nobilis": {
-    "NAME": "黒百合の女王・ノワリス",
-    "DESCRIPTION": "!D! ダメージを与える。 NL *フェアリー 2枚を手札に加える。 NL 手札にあるすべての *フェアリー は「ダメージは+4され、さらに ラストワード ：敵全体に 毒 4を与える」を持つ。",
-    "UPGRADE_DESCRIPTION":"!D! ダメージを与える。 NL *フェアリー 2枚を手札に加える。 NL 手札にあるすべての *フェアリー は「ダメージは+4され、さらに ラストワード ：敵全体に 毒 4を与える」を持つ。 NL [E] を得る。"
+    "NAME": "Nobilis, Sable-Lily Queen",
+    "DESCRIPTION": "Deal !D! damage. NL Add 2 *Fairies to your hand. NL Give all *Fairies in your hand the following effects: NL This card deals 4 additional damage. NL Last_Words: Apply 4 Poison to all enemies.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add 2 *Fairies to your hand. NL Give all *Fairies in your hand the following effects: NL This card deals 4 additional damage. NL Last_Words: Apply 4 Poison to all enemies. NL Gain [E]."
   },
   "shadowverse:Slade": {
-    "NAME": "ブロッサムウルフ・スレイド",
-    "DESCRIPTION": "!B! ブロック を得る。 NL 手札にあるエルフアタック1枚のコストをターン終了まで-1する。"
+    "NAME": "Slade, Blossoming Wolf",
+    "DESCRIPTION": "Gain !B! Block. NL Reduce the cost of another Forestcraft Attack card in your hand by 1 until the end of turn."
   },
   "shadowverse:MaliciousBlader": {
-    "NAME": "マリシャスブレイダー",
-    "DESCRIPTION": "!D! ダメージを与える。 NL ランダムに山札からコスト1のヴァンパイアアタックを手札に加える。"
+    "NAME": "Malicious Blader",
+    "DESCRIPTION": "Deal !D! damage. Add a random 1 cost Bloodcraft Attack card from your draw pile to your hand."
   },
   "shadowverse:Waltz": {
-    "NAME": "月下の狼王・ヴァルツ",
-    "DESCRIPTION": "アクセラレート 1：次のターン終了まで 復讐 になる。 NL 次のターン開始時、追加でカード1枚を引く。 NL  NL --------------------- NL  NL この戦闘中、自分は 復讐 になる。 NL !D! ダメージを与える。",
-    "UPGRADE_DESCRIPTION": "アクセラレート 1：次のターン終了まで 復讐 になる。 NL 次のターン開始時、追加でカード1枚を引く。 NL  NL --------------------- NL  NL この戦闘中、自分は 復讐 になる。 NL !D! ダメージを3回与える。"
+    "NAME": "Waltz, Moonlight Wolf-King",
+    "DESCRIPTION": "Accelerate 1: Activate Vengeance until the start of your next turn. NL At the start of your next turn, draw 1 additional card. NL NL --------------------- NL NL Deal !D! damage. Vengeance is now active for you until the end of this combat.",
+    "UPGRADE_DESCRIPTION": "Accelerate 1: Activate Vengeance until the start of your next turn. NL At the start of your next turn, draw 1 additional card. NL NL --------------------- NL NL Deal !D! damage 3 times. Vengeance is now active for you until the end of this combat."
   },
   "shadowverse:FullMoonLeap": {
-    "NAME": "月下の跳躍",
-    "DESCRIPTION": "筋力 !M! を得る。 NL 他の手札の枚数が2以下なら、次のアタックダメージを倍にする。"
+    "NAME": "Full Moon Leap",
+    "DESCRIPTION": "Gain !M! Strength. If you have 2 or less cards in your hand, double the damage of the next Attack card you play."
   }
 }

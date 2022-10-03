@@ -1526,109 +1526,109 @@
     ]
   },
   "shadowverse:OrchidPower": {
-    "NAME": "无尽世界·奥琪丝",
+    "NAME": "Orchis, the Limitless",
     "DESCRIPTIONS": [
-      "本回合你打出的 #y悬丝傀儡 伤害翻倍。"
+      "#yPuppets deal double damage this turn."
     ]
   },
   "shadowverse:VanpiPower": {
-    "NAME": "红血女王·斑比",
+    "NAME": "Vania, Crimson Majesty",
     "DESCRIPTIONS": [
-      "本回合你打出的 #y林地蝙蝠 伤害翻倍，且会给予 #b2 层 #y中毒 ，并使敌人失去 #b2 点生命。"
+      "This turn, #yForest #yBats deal double damage, apply #b2 Poison and cause enemies to lose #b2 HP."
     ]
   },
   "shadowverse:GuiltyShieldPower": {
-    "NAME": "罪恶之盾",
+    "NAME": "Shield of Transgression",
     "DESCRIPTIONS": [
-      "受到的 #b5 以上的伤害变为 #b4 。 #b",
-      " 回合后失去这个效果。"
+      "Any damage you take greater than #b5 becomes #b4. Countdown #b",
+      ": Lose this effect."
     ]
   },
   "shadowverse:JudgementSpearPower": {
-    "NAME": "裁决之枪",
+    "NAME": "Spear of Judgment",
     "DESCRIPTIONS": [
-      "回合结束时对随机敌人造成 #b",
-      " 点伤害。 #b",
-      " 回合后失去这个效果。"
+      "At the end of your turn, deal #b",
+      "damage to a radom enemy. Countdown #b",
+      ": Lose this effect."
     ]
   },
   "shadowverse:EternalDogmaPower": {
-    "NAME": "永恒教义",
+    "NAME": "Eternal Dogma",
     "DESCRIPTIONS": [
-      "回合开始时额外抽 #b1 张牌，回复 #b2 点生命。 #b",
-      " 回合后失去这个效果。"
+      "Draw #b1 additional card at the start of your turn and heal #b2 HP. Countdown #b",
+      ": Lose this effect."
     ]
   },
   "shadowverse:NornPower": {
-    "NAME": "外界审判者·诺伦",
+    "NAME": "Norn, Arbiter of Worlds",
     "DESCRIPTIONS": [
-      "每当由 #非共鸣 转变为 #y共鸣 时，获得 [E] 。"
+      "Wheever Resonance becomes active for you, gain [E]."
     ]
   },
   "shadowverse:CassimPower": {
-    "NAME": "勇气少年·卡西姆",
+    "NAME": "Cassim, the Courageous",
     "DESCRIPTIONS": [
-      "本回合每当由 #非共鸣 转变为 #y共鸣 时，对全体敌人造成 #b",
-      " 点伤害。回合开始时额外抽 #b1 张牌。"
+      "Whenever Resonance becomes active for you, deal #b",
+      "damage to all enemies. Draw #b1 additional card at the start of your next turn."
     ]
   },
   "shadowverse:RosaPower": {
-    "NAME": "解放少女·罗莎",
+    "NAME": "Rose, Unfettered Maiden",
     "DESCRIPTIONS": [
-      "本回合每当由 #非共鸣 转变为 #y共鸣 时，获得 #b",
-      " 点格挡。回合开始时额外抽 #b1 张牌。"
+      "Whenever Resonance becomes active for you, gain #b",
+      "Block. Draw #b1 additional card at the start of your next turn."
     ]
   },
   "shadowverse:LegendSwordCommanderPower": {
-    "NAME": "传说之剑",
+    "NAME": "Legendary Sword Commander",
     "DESCRIPTIONS": [
-      "回合结束时获得 #b",
-      " 点格挡。打出攻击牌时对全体敌人造成 #b",
-      " 点伤害。"
+      "At the end of your turn, gain #b",
+      "Block. Whenever you play an Attack card, deal #b",
+      "damage to all enemies."
     ]
   },
   "shadowverse:UltimateBahmutPower": {
-    "NAME": "究极巴哈姆特",
+    "NAME": "Ultimate Bahamut",
     "DESCRIPTIONS": [
-      "每回合结束减少 #b1 倒计时。倒计时结束时死亡。"
+      "At the end of each turn, decrease this countdown by #b1. Die when the countdown reaches 0."
     ]
   },
   "shadowverse:VyrmedeaPower": {
-    "NAME": "人造の代弁者・ヴァーミディア",
+    "NAME": "Vyrmedea, Synthetic Voice",
     "DESCRIPTIONS": [
-      "ターン終了時に #b",
-      " の #y筋力 、 #y敏捷性 と #yブラー を得る。"
+      "At the end of the turn, gain #b",
+      "Strength, Dexterity and Blur."
     ]
   },
   "shadowverse:MysticQueenPower": {
-    "NAME": "ミスティッククイーン・メイティ",
+    "NAME": "Milady, Mystic Queen",
     "DESCRIPTIONS": [
-      "1ターンに1度、アタックをプレイする時、 #b",
-      " 枚の廃棄を持つ #yマジカルストラテジー を手札に加える。スキルをプレイする時、 #b",
-      " 枚の #yマジカルポーン を手札に加える。"
+      "Once per turn, whenever you play an Attack card, add #b",
+      "#yMagical #yStrategy to your hand. Once per turn, whenever you play a Skill card, add #b",
+      "#yMagical #yPawn to your hand."
     ]
   },
   "shadowverse:MysticKingPower": {
-    "NAME": "ミスティックキング",
+    "NAME": "Mystic King",
     "DESCRIPTIONS": [
-      "#yマジカルポーン のダメージは+ #b",
-      " され、さらに倍になる。"
+      "*Magical *Paws deal double damage and #b",
+      "additional damage."
     ]
   },
   "shadowverse:CraigPower": {
-    "NAME": "マナリアの詠唱者・クレイグ",
+    "NAME": "Craig, Mysterian Chanter",
     "DESCRIPTIONS": [
-      "スキルをプレイする度、敵全体に #b",
-      " ダメージを与える。マナリアカードをプレイする度、 #b",
-      " ブロックを得る。"
+      "Whenever you play a Skill card, deal #b",
+      "damage. Wheever you play a Mysteria card, gain #b",
+      "Block."
     ]
   },
   "shadowverse:MasqueradeGhostPower": {
-    "NAME": "マスカレードゴースト",
+    "NAME": "Masquerade Ghost",
     "DESCRIPTIONS": [
-      "#yゴースト のダメージは+ #b",
-      " される。",
-      " される。 NL ターン開始時、コスト0かつラストワードを持たない #yマスカレードゴースト 1枚を手札に加える。"
+      "#yGhosts deal #b",
+      "additional damage.",
+      "NL At the begining of your turn, put a 0 cost #yMasquerade #yGhost without Last Words into your hand."
     ]
   }
 }

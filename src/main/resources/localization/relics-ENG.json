@@ -531,10 +531,10 @@
     ]
   },
   "shadowverse:BanShadowverse": {
-    "NAME": "You underdog don't deserve to play SV",
-    "FLAVOR": "You underdog don't deserve to play SV.",
+    "NAME": "The Weak Don't Deserve to Play Shadowverse",
+    "FLAVOR": "The weak don't deserve to play Shadowverse.",
     "DESCRIPTIONS": [
-      "You cannot play any Shadowverse card."
+      "You cannot play any Shadowverse cards."
     ]
   }
 }
