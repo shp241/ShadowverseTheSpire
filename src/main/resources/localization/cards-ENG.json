@@ -4514,8 +4514,8 @@
   },
   "shadowverse:Zerk": {
     "NAME": "Zerk, Artifact Dominator",
-    "DESCRIPTION": "Accelerate 0: Destroy an AF card in your hand, heal 2 HP and draw a card. NL NL --------------------- NL NL Gai !B! Block. NL Add up to 3 random AF cards in your exhausted pile to your hand and change their costs to 0 until the end of the turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Accelerate 0: Destroy an AF card in your hand, heal 2 HP and draw a card. NL NL --------------------- NL NL Gai !B! Block. NL Add up to 3 random AF cards in your exhausted pile to your hand and change their costs to 0 until the end of the turn. "
+    "DESCRIPTION": "Accelerate 0: Destroy an AF card in your discard pile, heal 2 HP and draw a card. NL NL --------------------- NL NL Gai !B! Block. NL Add up to 3 random AF cards in your exhausted pile to your hand and change their costs to 0 until the end of the turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Accelerate 0: Destroy an AF card in your discard pile, heal 2 HP and draw a card. NL NL --------------------- NL NL Gai !B! Block. NL Add up to 3 random AF cards in your exhausted pile to your hand and change their costs to 0 until the end of the turn. "
   },
   "shadowverse:ANewDiscovery": {
     "NAME": "A New Discovery",
@@ -4588,7 +4588,8 @@
   },
   "shadowverse:MaliciousBlader": {
     "NAME": "Malicious Blader",
-    "DESCRIPTION": "Deal !D! damage. Add a random 1 cost Bloodcraft Attack card from your draw pile to your hand."
+    "DESCRIPTION": "Deal !D! damage. Add a random 1 cost Bloodcraft Attack card from your draw pile to your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Add a random 1 cost Bloodcraft Attack card from your draw pile to your hand. NL Gain [E]."
   },
   "shadowverse:Waltz": {
     "NAME": "Waltz, Moonlight Wolf-King",
