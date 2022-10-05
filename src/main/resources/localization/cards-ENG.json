@@ -1481,7 +1481,7 @@
   },
   "shadowverse:Arcus": {
     "NAME": "Arcus, Ghostly Manager",
-    "DESCRIPTION": "Attack cards with a cost of 1 or less become 0 cost and Exhaust when played. NL Deal 4 damage to a random enemy whenever an Attack card with 0 cost is played."
+    "DESCRIPTION": "Attack cards with a cost of 1 or less become 0 cost and Exhaust when played. NL Whenever you play an Attack card that costs 0, put a *Ghost into your hand."
   },
   "shadowverse:Manmaru1": {
     "NAME": "Roly-Poly Mk I",
