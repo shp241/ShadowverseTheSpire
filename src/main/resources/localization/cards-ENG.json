@@ -1461,7 +1461,7 @@
   },
   "shadowverse:NecroImpulse": {
     "NAME": "Necroimpulse",
-    "DESCRIPTION": "Deal !D! damage to a random enemy 4 times. NL Necromancy 10: Gain !M! Strength."
+    "DESCRIPTION": "Add 4 *Ghosts to your hand. NL Necromancy 10: Gain !M! Strength."
   },
   "shadowverse:BoneDrone": {
     "NAME": "Bone Drone",
