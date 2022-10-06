@@ -4599,5 +4599,18 @@
   "shadowverse:FullMoonLeap": {
     "NAME": "月下の跳躍",
     "DESCRIPTION": "筋力 !M! を得る。 NL 他の手札の枚数が2以下なら、次のアタックダメージを倍にする。"
+  },
+  "shadowverse:BanCardView": {
+    "NAME": "",
+    "DESCRIPTION": "点击查看此体系包含卡",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "随从",
+      "进化",
+      "财宝",
+      "雷维翁",
+      "机械自然",
+      "潜伏"
+    ]
   }
 }

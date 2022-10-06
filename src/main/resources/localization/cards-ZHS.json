@@ -3901,7 +3901,7 @@
     "DESCRIPTION": "使所有拥有潜伏的随从能够重新潜伏。 NL 消耗 。"
   },
   "shadowverse:Dualblade": {
-    "NAME": "双刀之技",
+    "NAME": "双刃之技",
     "DESCRIPTION": "随从的攻击可以触发2次。 NL 消耗 。",
     "UPGRADE_DESCRIPTION":"固有 。 NL 随从的攻击可以触发2次。 NL 消耗 。"
   },
@@ -4598,5 +4598,18 @@
   "shadowverse:FullMoonLeap": {
     "NAME": "月下纵身",
     "DESCRIPTION": "获得 !M! 点 力量 。 NL 如果其他手牌数量为2以下，下一次攻击伤害翻倍。"
+  },
+  "shadowverse:BanCardView": {
+    "NAME": "",
+    "DESCRIPTION": "点击查看此体系包含卡",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "随从",
+      "进化",
+      "财宝",
+      "雷维翁",
+      "机械自然",
+      "潜伏"
+      ]
   }
 }

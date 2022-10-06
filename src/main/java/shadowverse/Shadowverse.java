@@ -4,7 +4,9 @@ import basemod.BaseMod;
 import basemod.ReflectionHacks;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
+import shadowverse.helper.BanCardHelper;
 import shadowverse.cards.Status.*;
+import shadowverse.helper.ViewBanCardScreen;
 import shadowverseCharbosses.bosses.KMR.KMR;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
@@ -59,6 +61,14 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
     public static Properties ShadowverseDefaults = new Properties();
     public static Map<String, String> tempmusic = new HashMap<>();
 
+    public static int allGroupNumber = 6;
+    public static int banGroupNumber = 5;
+    public static boolean[] groupActive;
+
+    public static boolean banCards=true;
+
+    public static ViewBanCardScreen banCardScreen;
+    public static ViewBanCardScreen banCardGroupScreen;
     public static boolean Enhance(int EH) {
         boolean res = false;
         if (EnergyPanel.getCurrentEnergy() >= EH) {
@@ -127,6 +137,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
     }
 
     public void receivePostInitialize() {
+        BanCardHelper.init();
         loadSettings();
         BaseMod.addEvent(PinyaEvent.ID, PinyaEvent.class);
         BaseMod.addEvent(GemFortune.ID, GemFortune.class, TheCity.ID);
@@ -2254,6 +2265,9 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
 
     public static void clearSettings() {
         saveSettings();
+    }
+    static {
+        groupActive = new boolean[allGroupNumber];
     }
 }
 

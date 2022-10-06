@@ -22,14 +22,15 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
+import shadowverse.Shadowverse;
+import shadowverse.helper.BanCardHelper;
 import shadowverse.cards.Basic.*;
-import shadowverse.cards.Common.*;
 import shadowverse.effect.ShadowverseEnergyOrb;
 import shadowverse.patch.CharacterSelectScreenPatches;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
-import static com.codedisaster.steamworks.SteamFriends.OverlayDialog.Settings;
 
 public class Royal extends AbstractShadowversePlayer {
     public static class Enums {
@@ -54,7 +55,7 @@ public class Royal extends AbstractShadowversePlayer {
     private static Texture BASE_LAYER = new Texture("img/ui/layer_royal.png");
 
     public Royal(String name) {
-        super(name, Enums.Royal, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation) new SpriterAnimation(((CharacterSelectScreenPatches.characters[3]).skins[(CharacterSelectScreenPatches.characters[3]).reskinCount]).scmlURL));
+        super(name, Enums.Royal, new ShadowverseEnergyOrb(null, null, null, BASE_LAYER), (AbstractAnimation) new SpriterAnimation(((CharacterSelectScreenPatches.characters[3]).skins[(CharacterSelectScreenPatches.characters[3]).reskinCount]).scmlURL));
         initializeClass(null, ((CharacterSelectScreenPatches.characters[3]).skins[(CharacterSelectScreenPatches.characters[3]).reskinCount]).SHOULDER1, ((CharacterSelectScreenPatches.characters[3]).skins[(CharacterSelectScreenPatches.characters[3]).reskinCount]).SHOULDER2, ((CharacterSelectScreenPatches.characters[3]).skins[(CharacterSelectScreenPatches.characters[3]).reskinCount]).CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
         bigAnimation.setVisible(false);
     }
@@ -169,6 +170,31 @@ public class Royal extends AbstractShadowversePlayer {
     public void damage(DamageInfo info) {
         super.damage(info);
         ((CharacterSelectScreenPatches.characters[3]).skins[(CharacterSelectScreenPatches.characters[3]).reskinCount]).playHurtSound(lastDamageTaken);
+    }
+
+    @Override
+    public ArrayList<AbstractCard> getCardPool(ArrayList<AbstractCard> tmpPool) {
+        int presize;
+        if (!CardCrawlGame.loadingSave && AbstractDungeon.floorNum < 2) {
+            int roll;
+            Shadowverse.groupActive = new boolean[Shadowverse.allGroupNumber];
+            Shadowverse.groupActive[0] = true;
+            tmpPool.addAll(BanCardHelper.royalCardGroupPool.get(0));
+            for (int i = 0; i < Shadowverse.banGroupNumber; i++) {
+                for(roll = AbstractDungeon.cardRng.random(Shadowverse.allGroupNumber); Shadowverse.groupActive[roll]; roll = AbstractDungeon.cardRng.random(Shadowverse.allGroupNumber)) {
+                }
+                Shadowverse.groupActive[roll] = true;
+                tmpPool.addAll((Collection) shadowverse.helper.BanCardHelper.royalCardGroupPool.get(roll));
+            }
+        } else {
+            tmpPool.addAll(BanCardHelper.royalCardGroupPool.get(0));
+            for (presize = 0; presize < Shadowverse.allGroupNumber; ++presize) {
+                if (Shadowverse.groupActive[presize]) {
+                    tmpPool.addAll((Collection) BanCardHelper.royalCardGroupPool.get(presize));
+                }
+            }
+        }
+        return tmpPool;
     }
 
     public static shadowverse.animation.AbstractAnimation getBigAnimation() {

@@ -4599,5 +4599,18 @@
   "shadowverse:FullMoonLeap": {
     "NAME": "Full Moon Leap",
     "DESCRIPTION": "Gain !M! Strength. If you have 2 or less cards in your hand, double the damage of the next Attack card you play."
+  },
+  "shadowverse:BanCardView": {
+    "NAME": "",
+    "DESCRIPTION": "点击查看此体系包含卡",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "随从",
+      "进化",
+      "财宝",
+      "雷维翁",
+      "机械自然",
+      "潜伏"
+    ]
   }
 }
