@@ -74,7 +74,7 @@
     ],
     "NAME": "Megaera, the Indignant",
     "DIALOG": [
-      "~Wave~ ~Cannon~ ~Iraliae,~ ~limiters~ ~removed.~"
+      "~Charge~ ~complete.~ ~Wave~ ~Cannon~ ~Iraliae,~ ~standby.~"
     ]
   },
   "shadowverse:Tisiphone": {
@@ -121,7 +121,7 @@
     ],
     "NAME": "Alecto, the Dissonant",
     "DIALOG": [
-      "~Particle~ ~Mace~ ~Kotaehge,~ ~fully~ ~charged.~"
+      "~Activating~ ~Particle~ ~Mace~ ~Kotaehge.~"
     ]
   },
   "shadowverse:Lelouch": {
