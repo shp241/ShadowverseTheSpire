@@ -23,7 +23,7 @@ public class BanCardView extends CustomCard {
     private int code;
 
     public BanCardView(int code) {
-        super(ID, EXTENDED_DESCRIPTION[code], getImg(code), -2, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.ENEMY);
+        super(ID, EXTENDED_DESCRIPTION[code], getImg(code), -2, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.ENEMY);
         this.code = code;
     }
 
