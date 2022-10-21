@@ -307,7 +307,7 @@
     "UPGRADE_DESCRIPTION": "Machina. NL Gain !B! Block. NL Put a *Repair *Mode into your hand. NL Put a *Delta *Cannon+ into your hand."
   },
   "shadowverse:Tetra2": {
-    "NAME": "Tetra, Friend of Isabelle",
+    "NAME": "Tetra, Isabelle's Confidante",
     "DESCRIPTION": "Machina. NL Gain !B! Block. NL Gain 1 Artifact. NL If you do not have a *Delta *Cannon in your hand at the start of your turn, put a *Delta *Cannon into your hand."
   },
   "shadowverse:Tetra3": {
@@ -1347,7 +1347,7 @@
     "DESCRIPTION": "Machina. NL Deal !D! damage. NL Last_Words: When this card is Exhausted, add a copy of this card to your hand and increase its damage by !M!. NL If this card's damage is over 4 times as !M! , add a *Forbidden *Art to your hand and change this card's damage to !M! instead. NL Exhaust."
   },
   "shadowverse:Nicola2": {
-    "NAME": "Nicola, Deathless Cyborg",
+    "NAME": "Nicola, Forever Forbidden",
     "DESCRIPTION": "Machina. NL Deal !D! damage. NL Add a copy of this card to your discard pile. NL Increase this card's damage by !M! times the number of Attack cards in your exhausted pile. NL Exhaust."
   },
   "shadowverse:Nicola3": {

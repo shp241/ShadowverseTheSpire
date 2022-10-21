@@ -48,7 +48,7 @@
       "~Useless!~ ~Worthless!~ ~Powerless!~",
       "~The~ ~sheer~ ~hubris~ ~of~ ~opposing~ ~me!~",
       "~Do~ ~you~ ~have~ ~what~ ~it~ ~takes?~",
-      "@Your@ @body@ @is@ @mine@ @now!@",
+      "@I@ @take@ @claim@ @of@ @your@ @flesh!@",
       "@This@ @world@ @will@ @be@ @remade@ @in@ @my@ @image!@",
       "~Bow~ ~before~ ~your~ ~god!~",
       "~You~ ~dare~ ~look~ ~me~ ~in~ ~the~ ~eye?~",
@@ -74,7 +74,7 @@
     ],
     "NAME": "Megaera, the Indignant",
     "DIALOG": [
-      "~Wave~ ~Cannon~ ~Iraliae,~ ~limiters~ ~removed.~"
+      "~Charge~ ~complete.~ ~Wave~ ~Cannon~ ~Iraliae,~ ~standby.~"
     ]
   },
   "shadowverse:Tisiphone": {
@@ -98,7 +98,7 @@
     "NAME": "Vincent",
     "DIALOG": [
       "~I~ ~don't~ ~need~ ~a~ ~gun.~ ~Not~ ~when~ ~I~ ~have~ ~my~ ~words.~",
-      "~Silence!~",
+      "~You~ ~might~ ~die~ ~from~ ~this.~",
       "Open yer ears! @Justice@ @himself@ @is@ @speakin'.@",
       "~See~ ~ya~ ~'round,~ ~slick.~",
       "~My~ ~arms,~ ~enraptured~ ~with~ ~ice.~",
@@ -121,7 +121,7 @@
     ],
     "NAME": "Alecto, the Dissonant",
     "DIALOG": [
-      "~Particle~ ~Mace~ ~Kotaehge,~ ~fully~ ~charged.~"
+      "~Activating~ ~Particle~ ~Mace~ ~Kotaehge.~"
     ]
   },
   "shadowverse:Lelouch": {
@@ -165,7 +165,7 @@
     "DIALOG": [
       "~I~ ~apologize~ ~in~ ~advance~ ~if~ ~I~ ~crush~ ~your~ ~spirit.~",
       "@Do@ @not@ @disappoint@ @me!@",
-      "~I~ ~am~ ~a~ #y~God!~ ~I'm~ ~the~ #y~Superior!~ ~I~ ~am~ ~the~ #y~Apex~ ~of~ #y~Mankind!~"
+      "~I~ ~am~ ~a~ #y~God!~ ~I~ ~am~ #y~Superior!~ ~I~ ~am~ ~the~ #y~Apex~ ~of~ #y~Mankind!~"
     ]
   },
   "shadowverse:Naht": {
@@ -188,8 +188,8 @@
     "NAME": "Zecilwenshe",
     "DIALOG": [
       "~The~ ~infesation~ ~evolves!~",
-      "~My~ ~future~ ~victory~ ~awaits!~",
-      "~I~ ~am~ ~the~ ~epitome~ ~of~ ~victory!~",
+      "~Yes,~ ~kill~ ~me!~ ~My~ ~future~ ~victory~ ~awaits!~",
+      "~Aw,~ ~are~ ~you~ ~runnin'~ ~out~ ~of~ ~blood~ ~already?~",
       "~I'll~ ~win~ ~in~ ~the~ ~end!~ ~I~ ~always~ ~do!~"
     ]
   },
