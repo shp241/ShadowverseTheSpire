@@ -3000,8 +3000,8 @@
   },
   "shadowverse:HonorableThief": {
     "NAME": "Honorable Thief",
-    "DESCRIPTION": "Deal !D! damage and apply !M! Weak. NL Add 1 *Gilded *Boots to your hand. NL Rally 7: Upgrade this card. NL ",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage and apply !M! Weak. NL Add 1 *Gilded *Boots to your hand.",
+    "DESCRIPTION": "Deal !D! damage and apply !M! Weak. NL Add 1 *Glittering *Gold to your hand. NL Rally 7: Upgrade this card. NL ",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage and apply !M! Weak. NL Add 1 *Glittering *Gold to your hand.",
     "EXTENDED_DESCRIPTION": [
       "(Rally: ",
       ")"

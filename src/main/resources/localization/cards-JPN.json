@@ -3004,8 +3004,8 @@
   },
   "shadowverse:HonorableThief": {
     "NAME": "オネストシーフ",
-    "DESCRIPTION": "!D! ダメージを与え、 脱力 !M! を与える。 NL *黄金の靴 1枚を手札に加える。 NL 連携 7：これを アップグレード する。 NL ",
-    "UPGRADE_DESCRIPTION": "!D! ダメージを与え、 脱力 !M! を与える。 NL *黄金の靴 1枚を手札に加える。",
+    "DESCRIPTION": "!D! ダメージを与え、 脱力 !M! を与える。 NL *闪耀的金币 1枚を手札に加える。 NL 連携 7：これを アップグレード する。 NL ",
+    "UPGRADE_DESCRIPTION": "!D! ダメージを与え、 脱力 !M! を与える。 NL *闪耀的金币 1枚を手札に加える。",
     "EXTENDED_DESCRIPTION": [
       "（連携数：",
       ")"

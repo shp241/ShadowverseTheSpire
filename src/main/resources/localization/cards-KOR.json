@@ -3001,8 +3001,8 @@
   },
   "shadowverse:HonorableThief": {
     "NAME": "정직한 도적",
-    "DESCRIPTION": "피해를 !D! 주고 약화를 !M! 부여합니다. NL *황금 *신발 을 1장 얻습니다. NL 연계 7: 이 카드를 강화합니다. NL ",
-    "UPGRADE_DESCRIPTION": "피해를 !D! 주고 약화를 !M! 부여합니다. NL *황금 *신발 을 1장 얻습니다.",
+    "DESCRIPTION": "피해를 !D! 주고 약화를 !M! 부여합니다. NL *闪耀的金币 을 1장 얻습니다. NL 연계 7: 이 카드를 강화합니다. NL ",
+    "UPGRADE_DESCRIPTION": "피해를 !D! 주고 약화를 !M! 부여합니다. NL *闪耀的金币 을 1장 얻습니다.",
     "EXTENDED_DESCRIPTION": [
       "(연계: ",
       ")"
