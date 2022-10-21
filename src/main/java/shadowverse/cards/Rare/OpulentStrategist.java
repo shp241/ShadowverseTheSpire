@@ -26,15 +26,15 @@ public class OpulentStrategist extends CustomCard {
     public static final String IMG_PATH = "img/cards/OpulentStrategist.png";
 
     public OpulentStrategist() {
-        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.SELF);
-        this.magicNumber = this.baseMagicNumber = 3;
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.SELF);
+        this.magicNumber = this.baseMagicNumber = 6;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.upgradeMagicNumber(6);
+            this.upgradeMagicNumber(3);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
