@@ -132,10 +132,10 @@ public class BanCardHelper {
                     this.add(new ShieldOfFlame());
                     this.add(new ShadowedMemories());
                     this.add(new Dualblade());
-                    this.add(new GracefulManeuver());
                     this.add(new Leod());
                     this.add(new AmbushBuff());
                     this.add(new Tsubaki());
+                    this.add(new GracefulManeuver());
                 }
             });
             //金币
