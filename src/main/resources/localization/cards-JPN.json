@@ -4613,7 +4613,51 @@
       "财宝",
       "雷维翁",
       "机械自然",
-      "潜伏"
+      "潜伏",
+      "金币"
     ]
+  },
+  "shadowverse:GlitteringGold": {
+    "NAME": "闪耀的金币",
+    "DESCRIPTION": "宴乐 ， 保留 ， 消耗 。 NL 获得 !B! 点 格挡 。 NL 如果已使用的次数为： NL 0,3,6：获得 [E] NL 1,4,7：获得5金币 NL 2,5,8：回复2点生命"
+  },
+  "shadowverse:NightOnTheTown": {
+    "NAME": "盗贼群起",
+    "DESCRIPTION": "宴乐 。 NL 造成 !D! 点伤害。 NL 增加一张消耗为0的 *闪耀的金币 到手中。",
+    "UPGRADE_DESCRIPTION":"宴乐 。 NL 造成 !D! 点伤害。 NL 增加一张 *闪耀的金币 到手中，使手牌中所有 *闪耀的金币 消耗变为0。"
+  },
+  "shadowverse:JiemonThiefLord": {
+    "NAME": "天下大侠客·治右卫门",
+    "DESCRIPTION": "宴乐 。 NL 增加一张 *闪耀的金币 到手中，每当你使用 *闪耀的金币 时，获得 [E] ，对所有敌人造成4点伤害。",
+    "UPGRADE_DESCRIPTION":"宴乐 。 NL 增加一张 *闪耀的金币 到手中，每当你使用 *闪耀的金币 时，获得 [E] ，对所有敌人造成4点伤害。 NL 回合开始时，将一张 *闪耀的金币 置入手牌。"
+  },
+  "shadowverse:OpulentStrategist": {
+    "NAME": "千金武装大参谋",
+    "DESCRIPTION": "从3张技能牌中选择1张加入你的手牌。 NL 每当你使用技能牌时，依次触发： NL 回复2点生命。 NL 抽一张牌。 NL 所有随从+1/+1。 NL （总计3次）",
+    "UPGRADE_DESCRIPTION":"从3张技能牌中选择1张加入你的手牌，这张牌在本回合耗能变为0。 NL 每当你使用技能牌时，依次触发： NL 回复2点生命。 NL 抽一张牌。 NL 所有随从+1/+1。 NL （总计9次）"
+  },
+  "shadowverse:SuaveBandit": {
+    "NAME": "高雅的侠客",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 增加一张 *闪耀的金币 到手中。",
+    "UPGRADE_DESCRIPTION":"打出后解除升级 。 NL 造成 !D! 点伤害两次。 NL 增加两张 *闪耀的金币 到手中。"
+  },
+  "shadowverse:FrontDeskFrog": {
+    "NAME": "账房蛙",
+    "DESCRIPTION": "宴乐 。 NL 召唤一个 账房蛙 。",
+    "UPGRADE_DESCRIPTION":"宴乐 。 NL 增加一张 *闪耀的金币 和一张 *进化点 到手中。 NL 召唤一个 账房蛙 。"
+  },
+  "shadowverse:MasterfulMusician": {
+    "NAME": "绝顶艺者",
+    "DESCRIPTION": "宴乐 。 NL 召唤一个 绝顶艺者 。",
+    "UPGRADE_DESCRIPTION":"宴乐 。 NL 给予 !M! 层 易伤 ，造成 !D! 点伤害。 NL 召唤一个 绝顶艺者 。"
+  },
+  "shadowverse:NobleShieldmaiden": {
+    "NAME": "贵族盾兵",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 召唤一个 铁卫战将 。 NL 激奏 1 \b  增加一张 *闪耀的金币 到手中，召唤一个 铁甲骑士 。"
+  },
+  "shadowverse:GracefulManeuver": {
+    "NAME": "绚丽的美技",
+    "DESCRIPTION": "随从现在会攻击所有敌人。 NL 召唤一个X/X的 骑士 。",
+    "UPGRADE_DESCRIPTION":"随从现在会攻击所有敌人。 NL 召唤一个X+1/X+1的 骑士 。"
   }
 }

@@ -49,7 +49,6 @@ public class BanCardHelper {
                     this.add(new Erika());
                     this.add(new Kagemitsu());
                     this.add(new MonochromeEndgame());
-                    this.add(new Taketsumi());
                 }
             });
             //随从
@@ -133,9 +132,24 @@ public class BanCardHelper {
                     this.add(new ShieldOfFlame());
                     this.add(new ShadowedMemories());
                     this.add(new Dualblade());
+                    this.add(new GracefulManeuver());
                     this.add(new Leod());
                     this.add(new AmbushBuff());
                     this.add(new Tsubaki());
+                }
+            });
+            //金币
+            royalCardGroupPool.add(new ArrayList<AbstractCard>() {
+                {
+                    this.add(new FrontDeskFrog());
+                    this.add(new SuaveBandit());
+                    this.add(new HonorableThief());
+                    this.add(new NightOnTheTown());
+                    this.add(new MasterfulMusician());
+                    this.add(new NobleShieldmaiden());
+                    this.add(new JiemonThiefLord());
+                    this.add(new Taketsumi());
+                    this.add(new OpulentStrategist());
                 }
             });
         }

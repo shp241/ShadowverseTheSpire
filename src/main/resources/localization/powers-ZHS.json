@@ -1630,5 +1630,25 @@
       " 点。",
       " 点。 NL 回合开始时增加 #b1 张耗能为0且没有谢幕曲的 #y假面亡魂 到手中。"
     ]
+  },
+  "shadowverse:JiemonThiefLordPower": {
+    "NAME": "天下大侠客·治右卫门",
+    "DESCRIPTIONS": [
+      "每当你使用 #y闪耀的金币 时，获得 [E] ，对所有敌人造成4点伤害。"
+    ]
+  },
+  "shadowverse:GiveGoldPower": {
+    "NAME": "天下大侠客·治右卫门",
+    "DESCRIPTIONS": [
+      "回合开始时，将一张 #y闪耀的金币 置入手牌。"
+    ]
+  },
+  "shadowverse:OpulentStrategistPower": {
+    "NAME": "千金武装大参谋",
+    "DESCRIPTIONS": [
+      "使用技能牌时，回复2点生命，层数-1并切换。",
+      "使用技能牌时，所有随从获得+1/+1，层数-1并切换。",
+      "使用技能牌时，抽一张牌，层数-1并切换。"
+    ]
   }
 }

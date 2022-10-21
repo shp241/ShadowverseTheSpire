@@ -17,6 +17,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import shadowverse.cards.Temp.GildedBoots;
+import shadowverse.cards.Temp.GlitteringGold;
 import shadowverse.cards.Temp.NaterranGreatTree;
 import shadowverse.characters.Royal;
 import shadowverse.orbs.AmbushMinion;
@@ -34,7 +35,7 @@ public class HonorableThief extends CustomCard {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
         this.baseDamage = 3;
         this.magicNumber = this.baseMagicNumber = 1;
-        this.cardsToPreview = new GildedBoots();
+        this.cardsToPreview = new GlitteringGold();
     }
 
 

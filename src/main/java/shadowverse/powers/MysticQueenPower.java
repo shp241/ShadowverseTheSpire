@@ -56,20 +56,24 @@ import shadowverse.cards.Uncommon.MagicalStrategy;
      if (!skillPlayed){
        if (card.type == AbstractCard.CardType.SKILL){
          addToBot(new SFXAction("MysticQueenPower"));
-         addToBot(new MakeTempCardInHandAction(new MagicalPawn()));
+         for(int i = 0; i < this.amount; i++) {
+           addToBot(new MakeTempCardInHandAction(new MagicalPawn()));
+         }
          skillPlayed = true;
        }
      }
      if (!attackPlayed){
        if (card.type == AbstractCard.CardType.ATTACK){
          addToBot(new SFXAction("MysticQueenPower"));
-         AbstractCard tmp = new MagicalStrategy();
-         tmp.exhaustOnUseOnce = true;
-         tmp.exhaust = true;
-         tmp.rawDescription += " NL "+TEXT+" 。";
-         tmp.initializeDescription();
-         tmp.applyPowers();
-         AbstractDungeon.player.hand.addToTop(tmp);
+         for(int i = 0; i < this.amount; i++){
+           AbstractCard tmp = new MagicalStrategy();
+           tmp.exhaustOnUseOnce = true;
+           tmp.exhaust = true;
+           tmp.rawDescription += " NL "+TEXT+" 。";
+           tmp.initializeDescription();
+           tmp.applyPowers();
+           AbstractDungeon.player.hand.addToTop(tmp);
+         }
          attackPlayed = true;
        }
      }

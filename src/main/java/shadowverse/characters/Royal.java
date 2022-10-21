@@ -181,7 +181,7 @@ public class Royal extends AbstractShadowversePlayer {
             Shadowverse.groupActive[0] = true;
             tmpPool.addAll(BanCardHelper.royalCardGroupPool.get(0));
             for (int i = 0; i < Shadowverse.banGroupNumber; i++) {
-                for(roll = AbstractDungeon.cardRng.random(Shadowverse.allGroupNumber); Shadowverse.groupActive[roll]; roll = AbstractDungeon.cardRng.random(Shadowverse.allGroupNumber)) {
+                for (roll = AbstractDungeon.cardRng.random(Shadowverse.allGroupNumber - 1); Shadowverse.groupActive[roll]; roll = AbstractDungeon.cardRng.random(Shadowverse.allGroupNumber - 1)) {
                 }
                 Shadowverse.groupActive[roll] = true;
                 tmpPool.addAll((Collection) shadowverse.helper.BanCardHelper.royalCardGroupPool.get(roll));

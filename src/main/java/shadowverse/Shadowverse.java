@@ -61,7 +61,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
     public static Properties ShadowverseDefaults = new Properties();
     public static Map<String, String> tempmusic = new HashMap<>();
 
-    public static int allGroupNumber = 6;
+    public static int allGroupNumber = 8;
     public static int banGroupNumber = 5;
     public static boolean[] groupActive;
 
@@ -1217,6 +1217,17 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         reflectedMap.put("Waltz_Acc", new Sfx("sounds/Waltz_Acc.wav"));
         reflectedMap.put("Cernunnos_L", new Sfx("sounds/Cernunnos_L.wav"));
         reflectedMap.put("Ameth_Selected", new Sfx("sounds/Ameth_Selected.wav"));
+        reflectedMap.put("JiemonThiefLord", new Sfx("sounds/JiemonThiefLord.wav"));
+        reflectedMap.put("NobleShieldmaiden", new Sfx("sounds/NobleShieldmaiden.wav"));
+        reflectedMap.put("NobleShieldmaiden_Acc", new Sfx("sounds/NobleShieldmaiden_Acc.wav"));
+        reflectedMap.put("FrontDeskFrog", new Sfx("sounds/FrontDeskFrog.wav"));
+        reflectedMap.put("NightOnTheTown", new Sfx("sounds/NightOnTheTown.wav"));
+        reflectedMap.put("SuaveBandit", new Sfx("sounds/SuaveBandit.wav"));
+        reflectedMap.put("SuaveBandit_Ev", new Sfx("sounds/SuaveBandit_Ev.wav"));
+        reflectedMap.put("OpulentStrategist", new Sfx("sounds/OpulentStrategist.wav"));
+        reflectedMap.put("OpulentStrategist_Pow", new Sfx("sounds/OpulentStrategist_Pow.wav"));
+        reflectedMap.put("MasterfulMusician", new Sfx("sounds/MasterfulMusician.wav"));
+        reflectedMap.put("MasterfulMusician_Ev", new Sfx("sounds/MasterfulMusician_Ev.wav"));
     }
 
     public void receiveEditRelics() {
@@ -2222,6 +2233,15 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard( new MaliciousBlader());
         BaseMod.addCard( new Waltz());
         BaseMod.addCard( new FullMoonLeap());
+        BaseMod.addCard( new GlitteringGold());
+        BaseMod.addCard( new FrontDeskFrog());
+        BaseMod.addCard( new SuaveBandit());
+        BaseMod.addCard( new NightOnTheTown());
+        BaseMod.addCard( new MasterfulMusician());
+        BaseMod.addCard( new NobleShieldmaiden());
+        BaseMod.addCard( new JiemonThiefLord());
+        BaseMod.addCard( new OpulentStrategist());
+        BaseMod.addCard( new GracefulManeuver());
         logger.info("Success");
     }
 

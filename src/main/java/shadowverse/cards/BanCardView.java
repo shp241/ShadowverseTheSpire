@@ -28,7 +28,7 @@ public class BanCardView extends CustomCard {
     }
 
     private static String getImg(int code) {
-        String[] imgs = {"Erika","Mars","Seofon","Octrice","Albert","MistolinaBayleon","Leod"};
+        String[] imgs = {"Erika","Mars","Seofon","Octrice","Albert","MistolinaBayleon","Leod","JiemonThiefLord"};
         return "img/cards/" + imgs[code] + ".png";
     }
 

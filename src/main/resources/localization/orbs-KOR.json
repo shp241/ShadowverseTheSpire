@@ -85,5 +85,19 @@
       " :\b"
     ],
     "NAME": "마법진: "
+  },
+  "shadowverse:FrontDeskFrogOrb": {
+    "DESCRIPTION": [
+      "#y被动： 在你的回合结束时，对随机敌人造成 #b",
+      " 点伤害并失去 #b1 点生命值，将一张 #y闪耀的金币 置入手牌。 NL #y激发： 重复被动效果直到生命值为 #b0 。"
+    ],
+    "NAME": "账房蛙"
+  },
+  "shadowverse:MasterfulMusicianOrb": {
+    "DESCRIPTION": [
+      "#y被动： 在你的回合结束时，对随机敌人造成 #b",
+      " 点伤害并失去 #b1 点生命值。 NL #y激发： 重复被动效果直到生命值为 #b0 。 NL 使用 #y闪耀的金币 时 #y号令 此随从一次。"
+    ],
+    "NAME": "绝顶艺者"
   }
 }
