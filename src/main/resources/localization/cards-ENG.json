@@ -2906,7 +2906,7 @@
   "shadowverse:CatAdmiral": {
     "NAME": "Cat Admiral",
     "DESCRIPTION": "Deal !D! damage. NL Rally 7: Repeat 1 time. NL ",
-    "UPGRADE_DESCRIPTION": "Disupgrade after played. NL Deal !D! damage. NL Rally 7: Repeat 1 time. NL Summon 1 Shield_Guardian and 1 Heavy_Knight. NL ",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Rally 7: Repeat 1 time. NL Summon 1 Shield_Guardian and 1 Heavy_Knight. NL (Disupgrades once played.)",
     "EXTENDED_DESCRIPTION": [
       "(Rally: ",
       ")"
@@ -2947,7 +2947,7 @@
   "shadowverse:DualbladeKnight": {
     "NAME": "Dualblade Knight",
     "DESCRIPTION": "Deal !D! damage. NL Gain [E]. NL Rally 7: Upgrade this card. NL ",
-    "UPGRADE_DESCRIPTION": "Disupgrade after playing. NL Deal !D! damage. NL Gain [E] [E].",
+    "UPGRADE_DESCRIPTION": "NL Deal !D! damage. NL Gain [E] [E]. NL (Disupgrades once played.)",
     "EXTENDED_DESCRIPTION": [
       "(Rally: ",
       ")"
@@ -3010,7 +3010,7 @@
   "shadowverse:FloralFencer": {
     "NAME": "Floral Fencer",
     "DESCRIPTION": "Deal !D! damage.",
-    "UPGRADE_DESCRIPTION": "Disupgrade after playing. NL Deal !D! damage. NL Summon 1 Knight NL and 1 Steelclad_Knight."
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Summon 1 Knight NL and 1 Steelclad_Knight. NL (Disupgrades once played.)"
   },
   "shadowverse:SunnyDayEncounter": {
     "NAME": "Sunny Day Encounter",
@@ -3023,12 +3023,12 @@
   "shadowverse:WarriorWing": {
     "NAME": "Aether of the Warrior Wing",
     "DESCRIPTION": "Select 1 Attack or Power card from your draw pile to put into hand.",
-    "UPGRADE_DESCRIPTION": "Disupgrade after playing. NL Select 1 Attack or Power card from your draw pile to put into hand. NL All *Followers gain +0/+1."
+    "UPGRADE_DESCRIPTION": "Select 1 Attack or Power card from your draw pile to put into hand. NL All *Followers gain +0/+1. NL (Disupgrades once played.)"
   },
   "shadowverse:Alyaska": {
     "NAME": "Alyaska, War Hawker",
     "DESCRIPTION": "Gain 1 Power_Damage_Immune. NL Deal !D! damage. NL Add 1 *Evolution *Point to hand whenever you draw this card.",
-    "UPGRADE_DESCRIPTION": "Disupgrade after playing. NL Gain 1 Power_Damage_Immune. NL Deal !D! damage. NL Add 1 *Exterminus *Weapon to hand."
+    "UPGRADE_DESCRIPTION": "Gain 1 Power_Damage_Immune. NL Deal !D! damage. NL Add 1 *Exterminus *Weapon to hand. NL (Disupgrades once played.)"
   },
   "shadowverse:ExterminusWeapon": {
     "NAME": "Exterminus Weapon",
@@ -3037,7 +3037,7 @@
   "shadowverse:RadicalGunslinger": {
     "NAME": "Radical Gunslinger",
     "DESCRIPTION": "Apply !M! Vulnerable and deal !D! damage.",
-    "UPGRADE_DESCRIPTION": "Disupgrade after playing. NL Apply !M! Vulnerable and deal !D! damage. NL Add 1 *Dutiful *Steed to your hand."
+    "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable and deal !D! damage. NL Add 1 *Dutiful *Steed to your hand. NL (Disupgrades once played.)"
   },
   "shadowverse:Mirin": {
     "NAME": "Mirin, Samurai Dreamer",
@@ -3120,7 +3120,7 @@
   "shadowverse:Charlotta": {
     "NAME": "Charlotta, Tiny Justice",
     "DESCRIPTION": "Gain !B! Block.",
-    "UPGRADE_DESCRIPTION": "Disupgrade after playing. NL Gain !B! Block and !M! Dexterity. NL Gain 1 Power_Damage_Immune."
+    "UPGRADE_DESCRIPTION": "NL Gain !B! Block and !M! Dexterity. NL Gain 1 Power_Damage_Immune. NL (Disupgrades once played.)"
   },
   "shadowverse:Latham": {
     "NAME": "Latham, Honorable Knight",
@@ -3165,7 +3165,7 @@
   "shadowverse:LevinBeastmaster": {
     "NAME": "Levin Beastmaster",
     "DESCRIPTION": "Levin. NL Gain !B! Block. NL Add 1 *White *Tiger to your hand.",
-    "UPGRADE_DESCRIPTION": "Levin. NL Disupgrade after playing. NL Gain !B! Block. NL Add 3 *White *Tigers to your hand."
+    "UPGRADE_DESCRIPTION": "Levin. NL Gain !B! Block. NL Add 3 *White *Tigers to your hand. NL (Disupgrades once played.)"
   },
   "shadowverse:WhiteTiger": {
     "NAME": "White Tiger",
@@ -3178,7 +3178,7 @@
   "shadowverse:LevinArcher": {
     "NAME": "Levin Archer",
     "DESCRIPTION": "Levin. NL Deal !D! damage and apply !M! Vulnerable.",
-    "UPGRADE_DESCRIPTION": "Levin. NL Disupgrade after playing. NL Deal !D! damage and apply !M! Vulnerable. If you have any other Levin cards in hand, repeat once."
+    "UPGRADE_DESCRIPTION": "Levin. NL Deal !D! damage and apply !M! Vulnerable. If you have any other Levin cards in hand, repeat once. NL (Disupgrades once played.)"
   },
   "shadowverse:Lounes": {
     "NAME": "Lounes, Levin Apprentice",
@@ -3195,7 +3195,7 @@
   "shadowverse:StampedingFortress": {
     "NAME": "Stampeding Fortress",
     "DESCRIPTION": "Machina. NL Deal !D! damage and gain !B! Block.",
-    "UPGRADE_DESCRIPTION": "Machina. NL Disupgrade after playing. NL Deal !D! damage and gain !B! Block. NL If you have any other Machina cards in your hand, put !M! *Assembly *Droids into your hand."
+    "UPGRADE_DESCRIPTION": "Machina. NL Deal !D! damage and gain !B! Block. NL If you have any other Machina cards in your hand, put !M! *Assembly *Droids into your hand. NL (Disupgrades once played.)"
   },
   "shadowverse:MeetTheLevinSisters": {
     "NAME": "Meet The Levin Sisters!",
@@ -3295,7 +3295,7 @@
   "shadowverse:Ernesta": {
     "NAME": "Ernesta, Weapons Hawker",
     "DESCRIPTION": "Rally 10: Put 1 *Dread *Hound into your hand.",
-    "UPGRADE_DESCRIPTION": "Disupgrade after playing. NL Select 1 card in your hand, Exhaust it and draw 1 card.",
+    "UPGRADE_DESCRIPTION": "Select 1 card in your hand, Exhaust it and draw 1 card. NL (Disupgrades once played.)",
     "EXTENDED_DESCRIPTION": [
       "(Rally: ",
       ")"
@@ -3308,7 +3308,7 @@
   "shadowverse:Ilmisuna": {
     "NAME": "Ilmisuna, Arms Dealer",
     "DESCRIPTION": "Gain !B! Block. NL Select 1 card in your hand, Exhaust it and draw 1 card.",
-    "UPGRADE_DESCRIPTION": "Disupgrade after playing. NL Deal !D! damage times the number of your *Followers."
+    "UPGRADE_DESCRIPTION": "Deal !D! damage times the number of your *Followers. NL (Disupgrades once played.)"
   },
   "shadowverse:MasterDealer": {
     "NAME": "Alyaska, Master Dealer",
@@ -4085,7 +4085,7 @@
   "shadowverse:AdherentOfHollow": {
     "NAME": "Adherent Of Hollowness",
     "DESCRIPTION": "Whenever you play a Loot card, upgrad this card. NL Deal !D! damage. NL Whenever you play an *Evolution *Point, put 1 random Loot card into your hand.",
-    "UPGRADE_DESCRIPTION": "Disupgrade after playing. NL Deal !D! damage. NL Whenever you play an *Evolution *Point, put 1 random Loot card into your hand."
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Whenever you play an *Evolution *Point, put 1 random Loot card into your hand. NL (Disupgrades once played.)"
   },
   "shadowverse:AdherentOfDispair": {
     "NAME": "Adherent of Despair",
@@ -4602,59 +4602,59 @@
   },
   "shadowverse:BanCardView": {
     "NAME": "",
-    "DESCRIPTION": "点击查看此体系包含卡",
+    "DESCRIPTION": "Click to View Included Cards",
     "EXTENDED_DESCRIPTION": [
-      "基本",
-      "随从",
-      "进化",
-      "财宝",
+      "Basic",
+      "Followers",
+      "Evolution",
+      "Treasure",
       "雷维翁",
-      "机械自然",
-      "潜伏",
-      "金币"
+      "Machina & Natura",
+      "Hidden",
+      "Gold"
     ]
   },
   "shadowverse:GlitteringGold": {
-    "NAME": "闪耀的金币",
-    "DESCRIPTION": "宴乐 ， 保留 ， 消耗 。 NL 获得 !B! 点 格挡 。 NL 如果已使用的次数为： NL 0,3,6：获得 [E] NL 1,4,7：获得5金币 NL 2,5,8：回复2点生命"
+    "NAME": "Glittering Gold",
+    "DESCRIPTION": "Festive. NL Retain. NL Gain !B! Block. NL If you've played 0, 3 or 6 *Glittering *Golds this combat, gain [E]. If you've played 1, 4 or 7, gain 5 gold. If you've played 2, 5 or 8, heal 2 HP. NL Exhaust."
   },
   "shadowverse:NightOnTheTown": {
-    "NAME": "盗贼群起",
-    "DESCRIPTION": "宴乐 。 NL 造成 !D! 点伤害。 NL 增加一张消耗为0的 *闪耀的金币 到手中。",
-    "UPGRADE_DESCRIPTION":"宴乐 。 NL 造成 !D! 点伤害。 NL 增加一张 *闪耀的金币 到手中，使手牌中所有 *闪耀的金币 消耗变为0。"
+    "NAME": "Night On the Town",
+    "DESCRIPTION": "Festive. NL Deal !D! damage. NL Add a 0 cost *Glittering *Gold to your hand.",
+    "UPGRADE_DESCRIPTION":"Festive. NL Deal !D! damage. NL Add a *Glittering *Gold to your hand, then reduce the cost of all *Glittering *Golds in your hand to 0."
   },
   "shadowverse:JiemonThiefLord": {
-    "NAME": "天下大侠客·治右卫门",
-    "DESCRIPTION": "宴乐 。 NL 增加一张 *闪耀的金币 到手中，每当你使用 *闪耀的金币 时，获得 [E] ，对所有敌人造成4点伤害。",
-    "UPGRADE_DESCRIPTION":"宴乐 。 NL 增加一张 *闪耀的金币 到手中，每当你使用 *闪耀的金币 时，获得 [E] ，对所有敌人造成4点伤害。 NL 回合开始时，将一张 *闪耀的金币 置入手牌。"
+    "NAME": "Jiemon, Thief Lord",
+    "DESCRIPTION": "Festive. NL Add a *Glittering *Gold to your hand. NL Whenever you play a *Glittering *Gold, gain [E] and deal 4 damage to all enemies.",
+    "UPGRADE_DESCRIPTION":"Festive. NL Add a *Glittering *Gold to your hand. NL Whenever you play a *Glittering *Gold, gain [E] and deal 4 damage to all enemies. NL At the start of your turn, add a *Glittering *Gold to your hand."
   },
   "shadowverse:OpulentStrategist": {
-    "NAME": "千金武装大参谋",
-    "DESCRIPTION": "从3张技能牌中选择1张加入你的手牌。 NL 每当你使用技能牌时，依次触发： NL 回复2点生命。 NL 抽一张牌。 NL 所有随从+1/+1。 NL （总计3次）",
-    "UPGRADE_DESCRIPTION":"从3张技能牌中选择1张加入你的手牌，这张牌在本回合耗能变为0。 NL 每当你使用技能牌时，依次触发： NL 回复2点生命。 NL 抽一张牌。 NL 所有随从+1/+1。 NL （总计9次）"
+    "NAME": "Opulent Strategist",
+    "DESCRIPTION": "Choose 1 of 3 Skill cards to add to your hand. NL Whenever you play a Skill card, activate one of the following effects in order: NL Heal 2 HP. NL Draw a card. NL Give +1/+1 to all allied *Followers. NL (Can be activated up to 3 times.) ",
+    "UPGRADE_DESCRIPTION":"Choose 1 of 3 Skill cards to add to your hand and change its cost to 0 until the end of turn. NL Whenever you play a Skill card, activate one of the following effects in order: NL Heal 2 HP. NL Draw a card. NL Give +1/+1 to all allied Followers. NL (Can be activated up to 9 times.) "
   },
   "shadowverse:SuaveBandit": {
-    "NAME": "高雅的侠客",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 增加一张 *闪耀的金币 到手中。",
-    "UPGRADE_DESCRIPTION":"打出后解除升级 。 NL 造成 !D! 点伤害两次。 NL 增加两张 *闪耀的金币 到手中。"
+    "NAME": "Suave Bandit",
+    "DESCRIPTION": "Deal !D! damage. NL Add a *Glittering *Gold to your hand.",
+    "UPGRADE_DESCRIPTION":"Deal !D! damage twice. Add 2 *Glittering *Gold to your hand. NL (Disupgrades once played.)"
   },
   "shadowverse:FrontDeskFrog": {
-    "NAME": "账房蛙",
-    "DESCRIPTION": "宴乐 。 NL 召唤一个 账房蛙 。",
-    "UPGRADE_DESCRIPTION":"宴乐 。 NL 增加一张 *闪耀的金币 和一张 *进化点 到手中。 NL 召唤一个 账房蛙 。"
+    "NAME": "Front Desk Frog",
+    "DESCRIPTION": "Festive. NL Summon a Front_Desk_Frog",
+    "UPGRADE_DESCRIPTION":"Festive. NL Add a *Glittering *Gold and an *Evolution *Point to your hand. NL Summon a Front_Desk_Frog"
   },
   "shadowverse:MasterfulMusician": {
-    "NAME": "绝顶艺者",
-    "DESCRIPTION": "宴乐 。 NL 召唤一个 绝顶艺者 。",
-    "UPGRADE_DESCRIPTION":"宴乐 。 NL 给予 !M! 层 易伤 ，造成 !D! 点伤害。 NL 召唤一个 绝顶艺者 。"
+    "NAME": "Masterful Musician",
+    "DESCRIPTION": "Festive. NL Summon a Masterful_Musician",
+    "UPGRADE_DESCRIPTION":"Festive. NL Apply !M! Vulnerable, then deal !D! damage. NL Summon a Masterful_Musician"
   },
   "shadowverse:NobleShieldmaiden": {
-    "NAME": "贵族盾兵",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 召唤一个 铁卫战将 。 NL 激奏 1 \b  增加一张 *闪耀的金币 到手中，召唤一个 铁甲骑士 。"
+    "NAME": "Noble Shieldmaiden",
+    "DESCRIPTION": "Accelerate 1: Add a *Glittering *Gold to your hand. Summon a Steelclad_Knight NL NL --------------------- NL NL Gain !B! Block. NL Summon a Frontguard_General"
   },
   "shadowverse:GracefulManeuver": {
-    "NAME": "绚丽的美技",
-    "DESCRIPTION": "随从现在会攻击所有敌人。 NL 召唤一个X/X的 骑士 。",
-    "UPGRADE_DESCRIPTION":"随从现在会攻击所有敌人。 NL 召唤一个X+1/X+1的 骑士 。"
+    "NAME": "Graceful Maneuver",
+    "DESCRIPTION": "Your *Followers will now attack all enemies. NL Summon an X/X Knight.",
+    "UPGRADE_DESCRIPTION":"Your *Followers will now attack all enemies. NL Summon an X+1/X+1 Knight."
   }
 }

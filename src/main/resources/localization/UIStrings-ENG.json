@@ -119,14 +119,14 @@
   },
   "ViewBanCardScreen": {
     "TEXT": [
-      "本场战斗中会出现的卡牌",
-      "返回"
+      "Cards That Will Appear in this Combat",
+      "Back"
     ]
   },
   "ViewBanCardOption": {
     "TEXT": [
-      "卡池",
-      "查看本场战斗可以出现的卡牌."
+      "Card Pool",
+      "Check the cards that will appear in this combat."
     ]
   }
 }
