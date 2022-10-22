@@ -1604,8 +1604,8 @@
     "NAME": "Milady, Mystic Queen",
     "DESCRIPTIONS": [
       "Once per turn, whenever you play an Attack card, add #b",
-      "#yMagical #yStrategy to your hand. Once per turn, whenever you play a Skill card, add #b",
-      "#yMagical #yPawn to your hand."
+      " #yMagical #yStrategy to your hand. Once per turn, whenever you play a Skill card, add #b",
+      " #yMagical #yPawn to your hand."
     ]
   },
   "shadowverse:MysticKingPower": {
