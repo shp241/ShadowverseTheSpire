@@ -4588,7 +4588,7 @@
   },
   "shadowverse:MaliciousBlader": {
     "NAME": "恶意的剑士",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 从抽牌堆中随机抽取1张耗能为1的吸血鬼攻击牌。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 从抽牌堆中随机抽取1张耗能为1的吸血鬼攻击牌。 NL 获得 [E] 。"
   },
   "shadowverse:Waltz": {
     "NAME": "月下狼王·华兹",

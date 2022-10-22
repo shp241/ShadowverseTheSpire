@@ -4588,8 +4588,7 @@
   },
   "shadowverse:MaliciousBlader": {
     "NAME": "Malicious Blader",
-    "DESCRIPTION": "Deal !D! damage. Add a random 1 cost Bloodcraft Attack card from your draw pile to your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Add a random 1 cost Bloodcraft Attack card from your draw pile to your hand. NL Gain [E]."
+    "DESCRIPTION": "Deal !D! damage. Add a random 1 cost Bloodcraft Attack card from your draw pile to your hand. NL Gain [E].",
   },
   "shadowverse:Waltz": {
     "NAME": "Waltz, Moonlight Wolf-King",
@@ -4608,7 +4607,7 @@
       "Followers",
       "Evolution",
       "Treasure",
-      "雷维翁",
+      "Levin",
       "Machina & Natura",
       "Hidden",
       "Gold"
