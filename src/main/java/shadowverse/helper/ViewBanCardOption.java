@@ -71,13 +71,13 @@ public class ViewBanCardOption {
                     AbstractDungeon.closeCurrentScreen();
                     CardCrawlGame.sound.play("DECK_CLOSE", 0.05F);
                 } else if (AbstractDungeon.screen == AbstractDungeon.CurrentScreen.DEATH) {
-                    AbstractDungeon.previousScreen = AbstractDungeon.CurrentScreen.DEATH;
-                    AbstractDungeon.deathScreen.hide();
-                    this.openScreen();
+//                    AbstractDungeon.previousScreen = AbstractDungeon.CurrentScreen.DEATH;
+//                    AbstractDungeon.deathScreen.hide();
+//                    this.openScreen();
                 } else if (AbstractDungeon.screen == AbstractDungeon.CurrentScreen.BOSS_REWARD) {
-                    AbstractDungeon.previousScreen = AbstractDungeon.CurrentScreen.BOSS_REWARD;
-                    AbstractDungeon.bossRelicScreen.hide();
-                    this.openScreen();
+//                    AbstractDungeon.previousScreen = AbstractDungeon.CurrentScreen.BOSS_REWARD;
+//                    AbstractDungeon.bossRelicScreen.hide();
+//                    this.openScreen();
                 } else if (AbstractDungeon.screen == AbstractDungeon.CurrentScreen.SHOP) {
                     AbstractDungeon.overlayMenu.cancelButton.hide();
                     AbstractDungeon.previousScreen = AbstractDungeon.CurrentScreen.SHOP;
@@ -85,6 +85,8 @@ public class ViewBanCardOption {
                 } else if (AbstractDungeon.screen == AbstractDungeon.CurrentScreen.MAP && !AbstractDungeon.dungeonMapScreen.dismissable) {
                     AbstractDungeon.previousScreen = AbstractDungeon.CurrentScreen.MAP;
                     this.openScreen();
+                }else if (AbstractDungeon.screen == AbstractDungeon.CurrentScreen.NEOW_UNLOCK){
+
                 } else if (AbstractDungeon.screen != AbstractDungeon.CurrentScreen.SETTINGS && AbstractDungeon.screen != AbstractDungeon.CurrentScreen.MAP) {
                     if (AbstractDungeon.screen == AbstractDungeon.CurrentScreen.INPUT_SETTINGS) {
                         if (AbstractDungeon.previousScreen != null) {
@@ -94,9 +96,9 @@ public class ViewBanCardOption {
                         AbstractDungeon.closeCurrentScreen();
                         this.openScreen();
                     } else if (AbstractDungeon.screen == AbstractDungeon.CurrentScreen.CARD_REWARD) {
-                        AbstractDungeon.previousScreen = AbstractDungeon.CurrentScreen.CARD_REWARD;
-                        AbstractDungeon.dynamicBanner.hide();
-                        this.openScreen();
+//                        AbstractDungeon.previousScreen = AbstractDungeon.CurrentScreen.CARD_REWARD;
+//                        AbstractDungeon.dynamicBanner.hide();
+//                        this.openScreen();
                     } else if (AbstractDungeon.screen == AbstractDungeon.CurrentScreen.GRID) {
                         AbstractDungeon.previousScreen = AbstractDungeon.CurrentScreen.GRID;
                         AbstractDungeon.gridSelectScreen.hide();

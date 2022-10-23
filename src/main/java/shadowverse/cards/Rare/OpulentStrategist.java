@@ -27,14 +27,12 @@ public class OpulentStrategist extends CustomCard {
 
     public OpulentStrategist() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.POWER, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.SELF);
-        this.magicNumber = this.baseMagicNumber = 6;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.upgradeMagicNumber(3);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
@@ -45,7 +43,7 @@ public class OpulentStrategist extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         addToBot(new OpulentStrategistAction(this.upgraded));
-        addToBot(new ApplyPowerAction(p, p, new OpulentStrategistPower(p, this.magicNumber), this.magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new OpulentStrategistPower(p, 1), 1));
     }
 
 

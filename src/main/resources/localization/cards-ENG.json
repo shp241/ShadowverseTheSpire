@@ -3216,8 +3216,8 @@
   },
   "shadowverse:Nahtnaught": {
     "NAME": "Nahtnaught, Cursed Queen",
-    "DESCRIPTION": "Put 1 *Tyrant's *Order intoto your hand. NL Enhance 2: Summon 2 Naht's_Henchmen as enemies. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Innate. Put 1 *Tyrant's *Order intoto your hand. NL Enhance 2: Summon 2 Naht's_Henchmen as enemies. NL Exhaust."
+    "DESCRIPTION": "Put 1 *Tyrant's *Order intoto your hand, Gain !M! Strength . NL Enhance 2: Summon 2 Naht's_Henchmen as enemies. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. Put 1 *Tyrant's *Order intoto your hand, Gain !M! Strength . NL Enhance 2: Summon 2 Naht's_Henchmen as enemies. NL Exhaust."
   },
   "shadowverse:TyrantsOrder": {
     "NAME": "Tyrant's Order",
@@ -4629,8 +4629,8 @@
   },
   "shadowverse:OpulentStrategist": {
     "NAME": "Opulent Strategist",
-    "DESCRIPTION": "Choose 1 of 3 Skill cards to add to your hand. NL Whenever you play a Skill card, activate one of the following effects in order: NL Heal 2 HP. NL Draw a card. NL Give +1/+1 to all allied *Followers. NL (Can be activated up to 3 times.) ",
-    "UPGRADE_DESCRIPTION":"Choose 1 of 3 Skill cards to add to your hand and change its cost to 0 until the end of turn. NL Whenever you play a Skill card, activate one of the following effects in order: NL Heal 2 HP. NL Draw a card. NL Give +1/+1 to all allied Followers. NL (Can be activated up to 9 times.) "
+    "DESCRIPTION": "Choose 1 of 5 Skill cards to add to your hand. NL Whenever you play a Skill card, activate one of the following effects in order: NL Gain 3 Block. NL Draw a card. NL Give +1/+1 to all allied *Followers.",
+    "UPGRADE_DESCRIPTION":"Choose 1 of 5 Skill cards to add to your hand and change its cost to 0 until the end of game. NL Whenever you play a Skill card, activate one of the following effects in order: NL Gain 3 Block. NL Draw a card. NL Give +1/+1 to all allied Followers."
   },
   "shadowverse:SuaveBandit": {
     "NAME": "Suave Bandit",

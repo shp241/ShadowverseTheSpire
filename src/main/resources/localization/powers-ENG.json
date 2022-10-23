@@ -1646,7 +1646,7 @@
   "shadowverse:OpulentStrategistPower": {
     "NAME": "Opulent Strategist",
     "DESCRIPTIONS": [
-      "Whenever you play a Skill card, if it's the 1st time, heal 2 HP.",
+      "Whenever you play a Skill card, if it's the 1st time, gain 3 Block.",
       "Whenever you play a Skill card, if it's the 2nd time, draw a card.",
       "Whenever you play a Skill card, if it's the 3rd time, give +1/+1 to all allied #yFollowers."
     ]

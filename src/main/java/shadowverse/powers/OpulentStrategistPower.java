@@ -47,16 +47,20 @@ public class OpulentStrategistPower extends AbstractPower {
         if (card.type == AbstractCard.CardType.SKILL) {
             flash();
             addToBot(new SFXAction("OpulentStrategist_Pow"));
-            if (this.amount % 3 == 0) {
-                AbstractDungeon.actionManager.addToBottom(new HealAction(AbstractDungeon.player, AbstractDungeon.player, 2));
+            if (this.amount % 3 == 1) {
+                AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, 3));
             } else if (this.amount % 3 == 2) {
                 addToBot((AbstractGameAction) new DrawCardAction(1));
             } else {
                 AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(1, 1, true));
             }
-            this.amount -= 1;
-            if (this.amount == 0) {
-                addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
+            this.amount += 1;
+            if (this.amount > 3) {
+                if (this.amount % 3 == 0) {
+                    this.amount = 3;
+                } else {
+                    this.amount = this.amount % 3;
+                }
             }
             updateDescription();
         }

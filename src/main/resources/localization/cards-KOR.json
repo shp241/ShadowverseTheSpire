@@ -3217,8 +3217,8 @@
   },
   "shadowverse:Nahtnaught": {
     "NAME": "시체상자 여왕 나흐트 나흐트",
-    "DESCRIPTION": "*폭군의 *명령 을 1장 얻습니다.  NL 강화 2: 적으로 *나흐트의 *사병 둘을 소환합니다. NL 소멸.",
-    "UPGRADE_DESCRIPTION": "선천성. *폭군의 *명령 을 1장 얻습니다.  NL 강화 2: 적으로 *나흐트의 *사병 둘을 소환합니다. NL 소멸."
+    "DESCRIPTION": "*폭군의 *명령 을 1장 얻습니다. 힘과 !M! 얻습니다.  NL 강화 2: 적으로 *나흐트의 *사병 둘을 소환합니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "선천성. *폭군의 *명령 을 1장 얻습니다. 힘과 !M! 얻습니다. NL 강화 2: 적으로 *나흐트의 *사병 둘을 소환합니다. NL 소멸."
   },
   "shadowverse:TyrantsOrder": {
     "NAME": "폭군의 명령",
@@ -4630,8 +4630,8 @@
   },
   "shadowverse:OpulentStrategist": {
     "NAME": "千金武装大参谋",
-    "DESCRIPTION": "从3张技能牌中选择1张加入你的手牌。 NL 每当你使用技能牌时，依次触发： NL 回复2点生命。 NL 抽一张牌。 NL 所有随从+1/+1。 NL （总计3次）",
-    "UPGRADE_DESCRIPTION":"从3张技能牌中选择1张加入你的手牌，这张牌在本回合耗能变为0。 NL 每当你使用技能牌时，依次触发： NL 回复2点生命。 NL 抽一张牌。 NL 所有随从+1/+1。 NL （总计9次）"
+    "DESCRIPTION": "从5张技能牌中选择1张加入你的手牌。 NL 每当你使用技能牌时，依次触发： NL 获得3点 格挡 。 NL 抽一张牌。 NL 所有随从+1/+1。",
+    "UPGRADE_DESCRIPTION":"从5张技能牌中选择1张加入你的手牌，这张牌在本局对战中耗能变为0。 NL 每当你使用技能牌时，依次触发： NL 获得3点 格挡 。 NL 抽一张牌。 NL 所有随从+1/+1。"
   },
   "shadowverse:SuaveBandit": {
     "NAME": "高雅的侠客",

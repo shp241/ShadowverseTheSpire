@@ -31,9 +31,10 @@ public class OpulentStrategistAction extends AbstractGameAction {
                 if (AbstractDungeon.cardRewardScreen.discoveryCard != null) {
                     AbstractCard disCard = AbstractDungeon.cardRewardScreen.discoveryCard.makeStatEquivalentCopy();
                     if (this.upgraded) {
-                        disCard.setCostForTurn(0);
+                        disCard.cost = 0;
+                        disCard.costForTurn = 0;
+                        disCard.isCostModified = true;
                     }
-
                     disCard.current_x = -1000.0F * Settings.xScale;
                     if (AbstractDungeon.player.hand.size() < 10) {
                         AbstractDungeon.effectList.add(new ShowCardAndAddToHandEffect(disCard, (float)Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
@@ -54,7 +55,7 @@ public class OpulentStrategistAction extends AbstractGameAction {
     private ArrayList<AbstractCard> generateCardChoices() {
         ArrayList<AbstractCard> derp = new ArrayList();
 
-        while(derp.size() != 3) {
+        while(derp.size() != 5) {
             boolean dupe = false;
             AbstractCard tmp = null;
             tmp = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.SKILL);
