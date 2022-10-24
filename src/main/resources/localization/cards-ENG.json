@@ -3043,8 +3043,8 @@
     "NAME": "Mirin, Samurai Dreamer",
     "DESCRIPTION": "Deal !D! damage. NL Skybound_Art 3: Repeat 1 time. NL Super_Skybound_Art 6: Repeat 1 more time.",
     "EXTENDED_DESCRIPTION": [
-      "Deal !D! damage. NL Skybound_Art",
-      ": Repeat 1 time. NL Super_Skybound_Art",
+      "Deal !D! damage. NL Skybound_Art ",
+      ": Repeat 1 time. NL Super_Skybound_Art ",
       ": Repeat 1 more time."
     ]
   },
