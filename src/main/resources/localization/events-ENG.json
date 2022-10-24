@@ -51,10 +51,10 @@
     ]
   },
   "shadowverse:VampiresEvent": {
-    "NAME": "Vampires ? ",
+    "NAME": "Vampires...?",
     "DESCRIPTIONS": [
-      "In a dark street, you meet some hooded people performing some kind of dark rite.As you approach, they all turn to face you at the same time. The tallest one smiled, showing his long fangs and stretches out a pale, thin hand to you: NL ~'Join~ ~us,~ ~sister.~ ~Let's~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~spire.'~",
-      "Just as the tall man was about to grab your arm and pull you over, he is horrified to find that you are the #y@Lord@ #y@of@ #y@the@ #y@Dark@ . You don't feel any @Resistance@ . This is a unilateral #r@Massacre@ .NL .... NL After an unspecified amount of time, the revelry is over, and there is only you left. You have #y~Killed~ #y~Them~ #y~All~ . You can't get any joy out of it. You feel #rEmpty again...",
+      "In a dark street, you meet some hooded people performing some kind of dark rite. As you approach, they all turn to face you at the same time. The tallest one smiled, showing his long fangs and stretches out a pale, thin hand to you: NL ~'Join~ ~us,~ ~bloodkin.~ ~Let's~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~spire.'~",
+      "Just as the tall man was about to grab your arm and pull you over, he is horrified to find that you are the #y@Lord@ #y@of@ #y@the@ #y@Dark@ . You don't feel any @Resistance@ . This is a unilateral #r@Massacre@ . NL .... NL After an unspecified amount of time, the revelry is over, and there is only you left. You have #y~Killed~ #y~Them~ #y~All~ . You don't get any joy out of it. You feel #rEmpty again...",
       "You feel bored. You don't think they can't please you. So you give the man a look. The tall man stared at you in horror until you left completely. NL You're alone again."
     ],
     "OPTIONS": [
