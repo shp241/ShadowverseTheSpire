@@ -425,7 +425,7 @@
         "distress call"
         "distress_call"
       ],
-      "DESCRIPTION": "#yDistress #yCall effects activate when at least one of the following conditions is met: NL You have taken damage since the end of your last turn. NL Your current HP is no greater than 1/4th of your max HP. NL You are currently affliced with a debuff (such as #yWeak or #yVulnerable). NL You have a #yCurse in your hand or #yStatus that is not an #yEvolution #yPoint."
+      "DESCRIPTION": "#yDistress #yCall effects activate when at least one of the following conditions is met: NL You have taken damage since the end of your last turn. NL Your current HP is no greater than 1/4th of your max HP. NL You are currently afflicted with a debuff (such as #yWeak or #yVulnerable). NL You have a #yCurse in your hand or #yStatus that is not an #yEvolution #yPoint."
     }
   ]
 }
