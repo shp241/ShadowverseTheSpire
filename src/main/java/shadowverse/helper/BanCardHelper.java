@@ -39,7 +39,6 @@ public class BanCardHelper {
                     this.add(new RadicalGunslinger());
                     this.add(new PrudentGeneral());
                     this.add(new TheChariot());
-                    this.add(new Alexander());
                     this.add(new Nahtnaught());
                     this.add(new Spector());
                     this.add(new MusketeersVow());
@@ -150,6 +149,21 @@ public class BanCardHelper {
                     this.add(new JiemonThiefLord());
                     this.add(new Taketsumi());
                     this.add(new OpulentStrategist());
+                }
+            });
+            //英雄
+            royalCardGroupPool.add(new ArrayList<AbstractCard>() {
+                {
+                    this.add(new MorgensternMaid());
+                    this.add(new FlameSoldier());
+                    this.add(new MachKnight());
+                    this.add(new ReturnFromTheBrink());
+                    this.add(new AmerroSpearKnight());
+                    this.add(new HeroicEntry());
+                    this.add(new ValiantFencer());
+                    this.add(new HeroOfAntiquity());
+                    this.add(new Alexander());
+                    this.add(new Arthur());
                 }
             });
         }

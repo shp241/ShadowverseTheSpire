@@ -62,7 +62,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
     public static Properties ShadowverseDefaults = new Properties();
     public static Map<String, String> tempmusic = new HashMap<>();
 
-    public static int allGroupNumber = 8;
+    public static int allGroupNumber = 9;
     public static int banGroupNumber = 5;
     public static boolean[] groupActive;
 
@@ -1230,7 +1230,14 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("OpulentStrategist", new Sfx(voicePath+"OpulentStrategist.wav"));
             reflectedMap.put("OpulentStrategist_Pow", new Sfx(voicePath+"OpulentStrategist_Pow.wav"));
             reflectedMap.put("MasterfulMusician", new Sfx(voicePath+"MasterfulMusician.wav"));
-            reflectedMap.put("MasterfulMusician_Ev", new Sfx(voicePath+"MasterfulMusician_Ev.wav"));
+            reflectedMap.put("AmerroSpearKnight", new Sfx(voicePath+"AmerroSpearKnight.wav"));
+            reflectedMap.put("HeroicEntry", new Sfx(voicePath+"HeroicEntry.wav"));
+            reflectedMap.put("ValiantFencer", new Sfx(voicePath+"ValiantFencer.wav"));
+            reflectedMap.put("ValiantFencer_EH", new Sfx(voicePath+"ValiantFencer_EH.wav"));
+            reflectedMap.put("HeroOfAntiquity", new Sfx(voicePath+"HeroOfAntiquity.wav"));
+            reflectedMap.put("MorgensternMaid", new Sfx(voicePath+"MorgensternMaid.wav"));
+            reflectedMap.put("FlameSoldier", new Sfx(voicePath+"FlameSoldier.wav"));
+            reflectedMap.put("MachKnight", new Sfx(voicePath+"MachKnight.wav"));
         }
     }
 
@@ -2246,6 +2253,17 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard( new JiemonThiefLord());
         BaseMod.addCard( new OpulentStrategist());
         BaseMod.addCard( new GracefulManeuver());
+        BaseMod.addCard( new MorgensternMaid());
+        BaseMod.addCard( new MorgensternMaid1());
+        BaseMod.addCard( new MorgensternMaid2());
+        BaseMod.addCard( new MorgensternMaid3());
+        BaseMod.addCard( new FlameSoldier());
+        BaseMod.addCard( new MachKnight());
+        BaseMod.addCard( new ReturnFromTheBrink());
+        BaseMod.addCard( new AmerroSpearKnight());
+        BaseMod.addCard( new HeroicEntry());
+        BaseMod.addCard( new ValiantFencer());
+        BaseMod.addCard( new HeroOfAntiquity());
         logger.info("Success");
     }
 

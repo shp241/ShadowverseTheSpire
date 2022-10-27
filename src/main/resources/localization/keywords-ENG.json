@@ -412,6 +412,18 @@
         "masterful_musician"
       ],
       "DESCRIPTION": "3/3 NL Passive: At the end of your turn, deal damage equal to 2 times Attack to a random enemy and lose 1 Health. NL When #yEvoked, repeat passive effects until Health reaches 0. NL Whenever you play a #yGlittering #yGold, #yCommand this #yFollower."
+    },
+    {
+      "NAMES": [
+        "英雄"
+      ],
+      "DESCRIPTION": "兵种。以 #y危难 作为关键词，英雄就是要在其他人危难时出手！"
+    },
+    {
+      "NAMES": [
+        "危难"
+      ],
+      "DESCRIPTION": "满足以下条件中的至少一条时获得本效果。拥有本效果时打出的某些牌将被增强。 NL 自上个自己的回合结束后受到过伤害； NL 生命值不大于总生命值的1/4； NL 拥有负面效果（ #y虚弱 、#y易伤 等）； NL 手牌中有 #y诅咒 牌或非 #y进化点 的 #y状态 牌。"
     }
   ]
 }

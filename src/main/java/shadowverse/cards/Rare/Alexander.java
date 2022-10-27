@@ -8,8 +8,12 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
+import shadowverse.action.MinionBuffAction;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 
 public class Alexander extends CustomCard {
@@ -24,6 +28,7 @@ public class Alexander extends CustomCard {
         super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ENEMY);
         this.baseDamage = 2;
         this.baseMagicNumber = this.magicNumber = 14;
+        this.tags.add(AbstractShadowversePlayer.Enums.HERO);
         this.isEthereal = true;
     }
 
@@ -35,6 +40,38 @@ public class Alexander extends CustomCard {
             initializeDescription();
             this.upgradeDamage(1);
             this.isEthereal = false;
+        }
+    }
+
+    public boolean inDanger() {
+        AbstractPlayer p = AbstractDungeon.player;
+        if (p.currentHealth <= p.maxHealth / 4) {
+            return true;
+        }
+        if (p instanceof AbstractShadowversePlayer) {
+            if (((AbstractShadowversePlayer) p).wrathLastTurn > 1) {
+                return true;
+            }
+        }
+        for (AbstractPower pow : p.powers) {
+            if (pow.type == AbstractPower.PowerType.DEBUFF) {
+                return true;
+            }
+        }
+        for (AbstractCard c : p.hand.group) {
+            if (c.type == CardType.CURSE || (c.type == CardType.STATUS && !"shadowverse:EvolutionPoint".equals(c.cardID))) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public void triggerWhenDrawn() {
+        super.triggerWhenDrawn();
+        if (inDanger()) {
+            this.costForTurn -= 2;
+            this.isCostModified = true;
         }
     }
 

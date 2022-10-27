@@ -31,7 +31,7 @@ import shadowverse.stance.Vengeance;
 
 import java.util.Iterator;
 
-public abstract class AbstractShadowversePlayer extends CustomPlayer{
+public abstract class AbstractShadowversePlayer extends CustomPlayer {
 
     public static class Enums {
         @SpireEnum
@@ -69,7 +69,10 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
         public static AbstractCard.CardTags MINION;
         @SpireEnum
         public static AbstractCard.CardTags FES;
-
+        @SpireEnum
+        public static AbstractCard.CardTags HERO;
+        @SpireEnum
+        public static AbstractCard.CardTags LUMINOUS;
     }
 
     public int earthCount = 0;
@@ -79,6 +82,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
     public int wrathCount = 0;
     public int drawAmt = 0;
     public int wrathThisTurn = 0;
+    public int wrathLastTurn = 0;
     public int resonanceCount = 0;
     public int necromanceCount = 0;
     public int amuletCount = 0;
@@ -121,14 +125,17 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
     public void damage(DamageInfo info) {
         super.damage(info);
         int amt = info.output;
-            if (info.owner == this && amt>=0) {
+        if (amt > 0) {
+            wrathLastTurn++;
+        }
+        if (info.owner == this && amt >= 0) {
             wrathCount++;
             wrathThisTurn++;
             if (wrathCount >= 7 && !this.hasPower(WrathPower.POWER_ID)) {
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction(this, this, (AbstractPower) new WrathPower(this)));
             }
         }
-        if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT && this.currentHealth <= this.maxHealth / 2.0F&& !(this instanceof Nemesis)) {
+        if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT && this.currentHealth <= this.maxHealth / 2.0F && !(this instanceof Nemesis)) {
             AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ChangeStanceAction((AbstractStance) new Vengeance()));
         }
     }
@@ -139,17 +146,17 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
         totalDrawAmt++;
         if (!this.hasPower(AvaricePower.POWER_ID))
             this.drawAmt++;
-        if (this.drawAmt > 5){
-            this.drawAmt=0;
+        if (this.drawAmt > 5) {
+            this.drawAmt = 0;
             AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction(this, this, (AbstractPower) new AvaricePower(this)));
         }
     }
 
     @Override
     public void applyStartOfTurnPreDrawCards() {
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new TreAction());
+        AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new TreAction());
         super.applyStartOfTurnPreDrawCards();
-        this.drawAmt=0;
+        this.drawAmt = 0;
         this.wrathThisTurn = 0;
     }
 
@@ -161,7 +168,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
 
     public void applyStartOfCombatLogic() {
         super.applyStartOfCombatLogic();
-        if ((this.currentHealth <= this.maxHealth / 2.0F||this.maxHealth==1)&& !(this instanceof Nemesis)) {
+        if ((this.currentHealth <= this.maxHealth / 2.0F || this.maxHealth == 1) && !(this instanceof Nemesis)) {
             AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ChangeStanceAction((AbstractStance) new Vengeance()));
         }
     }
@@ -175,18 +182,19 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer{
     public void applyEndOfTurnTriggers() {
         super.applyEndOfTurnTriggers();
         AbstractDungeon.actionManager.addToBottom(new RemoveMinionAction());
+        wrathLastTurn = 0;
     }
 
 
     @Override
-    public void heal(int healAmount){
+    public void heal(int healAmount) {
         healCount++;
         super.heal(healAmount);
-        if (this.currentHealth > this.maxHealth / 2&&!this.hasPower(VengeanceHealthPower.POWER_ID)&&!this.hasPower(ExitVengeancePower.POWER_ID))
-            AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ChangeStanceAction((AbstractStance)new NeutralStance()));
+        if (this.currentHealth > this.maxHealth / 2 && !this.hasPower(VengeanceHealthPower.POWER_ID) && !this.hasPower(ExitVengeancePower.POWER_ID))
+            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ChangeStanceAction((AbstractStance) new NeutralStance()));
     }
 
-    public static shadowverse.animation.AbstractAnimation getBigAnimation(){
+    public static shadowverse.animation.AbstractAnimation getBigAnimation() {
         return null;
     }
 }

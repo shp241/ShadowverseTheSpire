@@ -3276,8 +3276,8 @@
   },
   "shadowverse:Alexander": {
     "NAME": "亚历山大",
-    "DESCRIPTION": "造成 !D! 点伤害 !M! 次。 NL 虚无 。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害 !M! 次。"
+    "DESCRIPTION": "英雄 NL 造成 !D! 点伤害 !M! 次。 NL 抽到这张牌时， 危难 ：在本回合内消耗-2。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION": "英雄 NL 造成 !D! 点伤害 !M! 次。 NL 抽到这张牌时， 危难 ：在本回合内消耗-2。 "
   },
   "shadowverse:MirrorImage": {
     "NAME": "分身之术",
@@ -4372,8 +4372,8 @@
   },
   "shadowverse:Arthur": {
     "NAME": "骑士王·亚瑟",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 召唤1个 铁甲骑士 、 骑士 、 重装骑士 、 战盾卫士 。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION":"获得 !B! 点 格挡 。 NL 召唤1个 铁甲骑士 、 骑士 、 重装骑士 、 战盾卫士 。"
+    "DESCRIPTION": "英雄 NL 获得 !B! 点 格挡 。 NL 召唤1个 铁甲骑士 、 骑士 、 重装骑士 、 战盾卫士 。 NL 危难 ：所有随从获得+2/+2。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"英雄 NL 获得 !B! 点 格挡 。 NL 召唤1个 铁甲骑士 、 骑士 、 重装骑士 、 战盾卫士 。 NL 危难 ：所有随从获得+2/+2。"
   },
   "shadowverse:Tweyen": {
     "NAME": "魔眼狩人·索恩",
@@ -4610,7 +4610,8 @@
       "雷维翁",
       "机械自然",
       "潜伏",
-      "金币"
+      "金币",
+      "英雄"
       ]
   },
   "shadowverse:GlitteringGold": {
@@ -4649,11 +4650,58 @@
   },
   "shadowverse:NobleShieldmaiden": {
     "NAME": "贵族盾兵",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 召唤一个 铁卫战将 。 NL 激奏 1 \b  增加一张 *闪耀的金币 到手中，召唤一个 铁甲骑士 。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 召唤一个 铁卫战将 。 NL 激奏 1 \b增加一张 *闪耀的金币 到手中，召唤一个 铁甲骑士 。"
   },
   "shadowverse:GracefulManeuver": {
     "NAME": "绚丽的美技",
     "DESCRIPTION": "随从现在会攻击所有敌人。 NL 召唤一个X/X的 骑士 。",
     "UPGRADE_DESCRIPTION":"随从现在会攻击所有敌人。 NL 召唤一个X+1/X+1的 骑士 。"
+  },
+  "shadowverse:MorgensternMaid": {
+    "NAME": "战斗女仆",
+    "DESCRIPTION": "抉择 ： NL 获得 !B! 点 格挡 和1层 易伤 ； NL 抽 !M! 张牌，获得1层 脆弱 ； NL 对所有敌人造成 !D! 点伤害，对自己造成2点伤害。"
+  },
+  "shadowverse:MorgensternMaid1": {
+    "NAME": "收拾",
+    "DESCRIPTION": "获得 !B! 点 格挡 和1层 易伤 。"
+  },
+  "shadowverse:MorgensternMaid2": {
+    "NAME": "采购",
+    "DESCRIPTION": "抽 !M! 张牌，获得1层 脆弱 。"
+  },
+  "shadowverse:MorgensternMaid3": {
+    "NAME": "战斗",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害，对自己造成2点伤害。"
+  },
+  "shadowverse:FlameSoldier": {
+    "NAME": "火炎战士",
+    "DESCRIPTION": "英雄 NL 造成 !D! 点伤害。 NL 危难 ：对所有敌人再造成 !D! 点伤害。"
+  },
+  "shadowverse:MachKnight": {
+    "NAME": "音速骑士",
+    "DESCRIPTION": "英雄 NL 造成 !D! 点伤害。 NL 危难 ：获得等同于造成伤害的 格挡 ，获得 [E] 。",
+    "UPGRADE_DESCRIPTION":"英雄 NL 造成 !D! 点伤害。 NL 危难 ：获得等同于造成伤害的 格挡 ，获得 [E] [E] 。"
+  },
+  "shadowverse:ReturnFromTheBrink": {
+    "NAME": "绝地生还",
+    "DESCRIPTION": "随机复制 !M! 张本回合已使用过的攻击牌，其在本回合内耗能变为0且具有 虚无 、 消耗 。"
+  },
+  "shadowverse:AmerroSpearKnight": {
+    "NAME": "锐枪骑士·埃米罗斯",
+    "DESCRIPTION": "获得1点 力量 ，造成 !D! 点伤害。 NL  危难 ：从3张 英雄 牌中选择1张加入你的手牌。",
+    "UPGRADE_DESCRIPTION":"获得1点 力量 ，造成 !D! 点伤害两次。 NL  危难 ：从3张 英雄 牌中选择1张加入你的手牌，这张牌在本回合中耗能-1。"
+  },
+  "shadowverse:HeroicEntry": {
+    "NAME": "英雄到来！",
+    "DESCRIPTION": "英雄 NL 抽牌直至7张，造成 !D! 点伤害，手牌中每有一张 英雄 牌，重复一次。 NL 危难 ：在造成伤害前将一张 在本回合中耗能为0且具有 消耗 的 *音速骑士 置入手牌。",
+    "UPGRADE_DESCRIPTION":"英雄 NL 抽牌直至7张，造成 !D! 点伤害，手牌中每有一张 英雄 牌，重复一次。 NL 使手牌中所有 英雄 牌获得 保留。 NL 危难 ：在造成伤害前将一张 在本回合中耗能为0且具有 消耗 的 *音速骑士 置入手牌。"
+  },
+  "shadowverse:ValiantFencer": {
+    "NAME": "骁勇剑士",
+    "DESCRIPTION": "英雄 NL 获得 !B! 点 格挡 ，给予所有敌人1层 虚弱。 NL 危难 ：重复一次。 NL 爆能强化 3 \b抽牌直至 !M! 张，手牌中所有英雄牌本回合耗能变为0。"
+  },
+  "shadowverse:HeroOfAntiquity": {
+    "NAME": "远古英雄",
+    "DESCRIPTION": "英雄 NL 获得 !B! 点 格挡 ，造成 !D! 点伤害。 NL 危难 ：本局对战中， 格挡 不再在你的回合开始时消失。"
   }
 }

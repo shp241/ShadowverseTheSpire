@@ -1,11 +1,13 @@
 package shadowverse.cards.Rare;
 
-
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import com.megacrit.cardcrawl.actions.watcher.WallopAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -14,35 +16,32 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import shadowverse.action.MinionBuffAction;
-import shadowverse.action.MinionSummonAction;
+import com.megacrit.cardcrawl.powers.BarricadePower;
+import com.megacrit.cardcrawl.powers.VulnerablePower;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
-import shadowverse.orbs.*;
 
-
-public class Arthur extends CustomCard {
-    public static final String ID = "shadowverse:Arthur";
+public class HeroOfAntiquity extends CustomCard {
+    public static final String ID = "shadowverse:HeroOfAntiquity";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String IMG_PATH = "img/cards/Arthur.png";
+    public static final String IMG_PATH = "img/cards/HeroOfAntiquity.png";
 
-    public Arthur() {
-        super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.SELF);
-        this.baseBlock = 18;
-        this.exhaust = true;
+
+    public HeroOfAntiquity() {
+        super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ENEMY);
+        this.baseDamage = 15;
+        this.baseBlock = 15;
         this.tags.add(AbstractShadowversePlayer.Enums.HERO);
     }
-
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.exhaust = false;
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            initializeDescription();
+            upgradeDamage(5);
+            upgradeBlock(5);
         }
     }
 
@@ -71,22 +70,18 @@ public class Arthur extends CustomCard {
 
 
     @Override
-    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+    public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
-        addToBot(new GainBlockAction(abstractPlayer,this.block));
-        addToBot(new MinionSummonAction(new SteelcladKnight()));
-        addToBot(new MinionSummonAction(new Knight()));
-        addToBot(new MinionSummonAction(new HeavyKnight()));
-        addToBot(new MinionSummonAction(new ShieldGuardian()));
+        addToBot((AbstractGameAction) new GainBlockAction(p, this.block));
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
         if (inDanger()) {
-            addToBot(new MinionBuffAction(2, 2, true));
+            addToBot((AbstractGameAction) new ApplyPowerAction(p, p, (AbstractPower) new BarricadePower(p)));
         }
     }
 
-
     @Override
     public AbstractCard makeCopy() {
-        return new Arthur();
+        return new HeroOfAntiquity();
     }
 }
 

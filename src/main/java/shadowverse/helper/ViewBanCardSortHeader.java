@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.screens.compendium.CardLibSortHeader;
 import com.megacrit.cardcrawl.screens.mainMenu.SortHeaderButton;
+import shadowverse.characters.Royal;
 
 import java.util.Comparator;
 
@@ -35,16 +36,16 @@ public class ViewBanCardSortHeader extends CardLibSortHeader {
     private float scrollY;
 
     public ViewBanCardSortHeader(ViewBanCardScreen masterDeckView) {
-        super((CardGroup)null);
+        super((CardGroup) null);
         this.masterDeckView = masterDeckView;
         this.buttons[0] = new SortHeaderButton(TEXT[5], START_X, 0.0F, this);
         this.buttons[0].setActive(true);
         float HB_W = this.buttons[0].hb.width;
-        float leftSideOffset = (float) Settings.WIDTH / 2.0F - HB_W * (float)this.buttons.length / 2.0F;
+        float leftSideOffset = (float) Settings.WIDTH / 2.0F - HB_W * (float) this.buttons.length / 2.0F;
 
-        for(int i = 0; i < this.buttons.length; ++i) {
+        for (int i = 0; i < this.buttons.length; ++i) {
             SortHeaderButton button = this.buttons[i];
-            button.hb.move(leftSideOffset + HB_W * (float)i + HB_W / 2.0F, button.hb.cY);
+            button.hb.move(leftSideOffset + HB_W * (float) i + HB_W / 2.0F, button.hb.cY);
         }
 
     }
@@ -53,7 +54,7 @@ public class ViewBanCardSortHeader extends CardLibSortHeader {
         button.setActive(true);
         if (button == this.buttons[0]) {
             if (isAscending) {
-                this.masterDeckView.setSortOrder((Comparator)null);
+                this.masterDeckView.setSortOrder((Comparator) null);
             } else {
                 this.masterDeckView.setSortOrder(PURE_REVERSE);
             }
@@ -84,22 +85,11 @@ public class ViewBanCardSortHeader extends CardLibSortHeader {
     }
 
     public void render(SpriteBatch sb) {
-        switch (AbstractDungeon.player.chosenClass) {
-            case IRONCLAD:
-                sb.setColor(IRONCLAD_COLOR);
-                break;
-            case THE_SILENT:
-                sb.setColor(SILENT_COLOR);
-                break;
-            case DEFECT:
-                sb.setColor(DEFECT_COLOR);
-                break;
-            default:
-                sb.setColor(BAR_COLOR);
+        if (AbstractDungeon.player.chosenClass == Royal.Enums.Royal) {
+            sb.setColor(BAR_COLOR);
+            sb.draw(ImageMaster.COLOR_TAB_BAR, (float) Settings.WIDTH / 2.0F - 667.0F, this.scrollY - 51.0F, 667.0F, 51.0F, 1334.0F, 102.0F, Settings.scale, Settings.scale, 0.0F, 0, 0, 1334, 102, false, false);
+            super.render(sb);
         }
-
-        sb.draw(ImageMaster.COLOR_TAB_BAR, (float)Settings.WIDTH / 2.0F - 667.0F, this.scrollY - 51.0F, 667.0F, 51.0F, 1334.0F, 102.0F, Settings.scale, Settings.scale, 0.0F, 0, 0, 1334, 102, false, false);
-        super.render(sb);
     }
 
     public void updateScrollPosition(float y) {
@@ -107,7 +97,7 @@ public class ViewBanCardSortHeader extends CardLibSortHeader {
         SortHeaderButton[] var2 = this.buttons;
         int var3 = var2.length;
 
-        for(int var4 = 0; var4 < var3; ++var4) {
+        for (int var4 = 0; var4 < var3; ++var4) {
             SortHeaderButton button = var2[var4];
             button.updateScrollPosition(this.scrollY);
         }
