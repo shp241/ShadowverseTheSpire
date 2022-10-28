@@ -9,10 +9,9 @@ import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDiscardEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToHandEffect;
 import shadowverse.cards.Common.FlameSoldier;
 import shadowverse.cards.Common.MachKnight;
-import shadowverse.cards.Rare.Alexander;
-import shadowverse.cards.Rare.Arthur;
-import shadowverse.cards.Rare.HeroOfAntiquity;
-import shadowverse.cards.Rare.ValiantFencer;
+import shadowverse.cards.Rare.*;
+import shadowverse.cards.Uncommon.Hero;
+import shadowverse.cards.Uncommon.Maisha;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -58,7 +57,19 @@ public class AmerroSpearKnightAction extends AbstractGameAction {
 
     private ArrayList<AbstractCard> generateCardChoices() {
         ArrayList<AbstractCard> derp = new ArrayList();
-        AbstractCard[] heros = {new FlameSoldier(), new MachKnight(), new ValiantFencer(), new HeroOfAntiquity(), new Alexander(), new Arthur()};
+        AbstractCard[] heros = {
+                new FlameSoldier(),
+                new MachKnight(),
+                new ValiantFencer(),
+                new HeroOfAntiquity(),
+                new Alexander(),
+                new Arthur(),
+                new Maiser(),
+                new Hero(),
+                new Maisha(),
+                new Johann(),
+                new Albert()
+        };
         while (derp.size() != 3) {
             boolean dupe = false;
             int roll = AbstractDungeon.cardRng.random(heros.length) - 1;

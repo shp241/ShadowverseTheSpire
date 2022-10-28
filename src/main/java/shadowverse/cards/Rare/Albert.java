@@ -43,6 +43,7 @@ public class Albert extends CustomCard implements BranchableUpgradeCard {
     public Albert() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ENEMY);
         this.tags.add(AbstractShadowversePlayer.Enums.LEVIN);
+        this.tags.add(AbstractShadowversePlayer.Enums.HERO);
         this.baseDamage = 12;
     }
 

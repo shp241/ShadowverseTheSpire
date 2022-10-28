@@ -43,27 +43,68 @@ public class GlitteringGold extends CustomCard {
         }
     }
 
-    @Override
-    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        AbstractDungeon.effectList.add(new RainingGoldEffect(10, true));
-        AbstractDungeon.effectsQueue.add(new SpotlightPlayerEffect());
-        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
+    public int used(){
         int s = 0;
         for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
             if (Objects.equals(c.cardID, ID) && c != this) {
                 s += 1;
             }
         }
+        return s;
+    }
+
+    @Override
+    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+        AbstractDungeon.effectList.add(new RainingGoldEffect(10, true));
+        AbstractDungeon.effectsQueue.add(new SpotlightPlayerEffect());
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
+        int s = used();
         if (s == 0 || s == 3 || s == 6) {
             this.addToTop(new GainEnergyAction(1));
         } else if (s == 1 || s == 4 || s == 7) {
             AbstractDungeon.player.gainGold(5);
         } else if (s == 2 || s == 5 || s == 8) {
             AbstractDungeon.actionManager.addToBottom(new HealAction(abstractPlayer, AbstractDungeon.player, 2));
+        } else {
+            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
         }
         addToBot(new MinionOrderAction("shadowverse:MasterfulMusicianOrb"));
     }
 
+    @Override
+    public void applyPowers() {
+        super.applyPowers();
+        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0];
+        int s = used();
+        if (s == 0 || s == 3 || s == 6) {
+            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[1];
+        } else if (s == 1 || s == 4 || s == 7) {
+            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[2];
+        } else if (s == 2 || s == 5 || s == 8) {
+            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[3];
+        } else {
+            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[4];
+        }
+        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[5] + s + cardStrings.EXTENDED_DESCRIPTION[6];
+        this.initializeDescription();
+    }
+
+    @Override
+    public void onMoveToDiscard() {
+        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0];
+        int s = used();
+        if (s == 0 || s == 3 || s == 6) {
+            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[1];
+        } else if (s == 1 || s == 4 || s == 7) {
+            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[2];
+        } else if (s == 2 || s == 5 || s == 8) {
+            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[3];
+        } else {
+            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[4];
+        }
+        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[5] + s + cardStrings.EXTENDED_DESCRIPTION[6];
+        this.initializeDescription();
+    }
 
     @Override
     public AbstractCard makeCopy() {

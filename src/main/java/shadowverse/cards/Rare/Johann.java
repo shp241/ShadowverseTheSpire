@@ -27,6 +27,7 @@ public class Johann extends CustomCard {
     public Johann() {
         super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.RARE, CardTarget.ENEMY);
         this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
+        this.tags.add(AbstractShadowversePlayer.Enums.HERO);
         this.baseDamage = 18;
         this.magicNumber = this.baseMagicNumber = 3;
     }

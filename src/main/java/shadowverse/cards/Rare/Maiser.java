@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.cards.Temp.Horse;
 import shadowverse.cards.Temp.RapidFire;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Witchcraft;
 
 
@@ -29,6 +30,7 @@ import shadowverse.characters.Witchcraft;
      this.baseMagicNumber = 2;
      this.magicNumber = this.baseMagicNumber;
      this.cardsToPreview = (AbstractCard)new RapidFire();
+     this.tags.add(AbstractShadowversePlayer.Enums.HERO);
    }
  
 

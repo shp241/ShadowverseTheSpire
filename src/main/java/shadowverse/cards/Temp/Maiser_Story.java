@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 import shadowverse.characters.Witchcraft;
 import shadowverse.powers.MaiserPower;
@@ -31,6 +32,7 @@ public class Maiser_Story extends CustomCard {
         this.baseDamage = 12;
         this.exhaust = true;
         this.cardsToPreview = new Motorbike();
+        this.tags.add(AbstractShadowversePlayer.Enums.HERO);
     }
 
 

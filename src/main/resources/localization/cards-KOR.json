@@ -718,7 +718,7 @@
   },
   "shadowverse:Maiser": {
     "NAME": "가속하는 영웅 마이저",
-    "DESCRIPTION": "*순종적인 *준마 1장을 얻습니다. NL *래피드 *파이어 !M! 장을 얻습니다."
+    "DESCRIPTION": "英雄 NL *순종적인 *준마 1장을 얻습니다. NL *래피드 *파이어 !M! 장을 얻습니다."
   },
   "shadowverse:NaterranFuture": {
     "NAME": "나테라의 미래",
@@ -832,7 +832,7 @@
   },
   "shadowverse:Hero": {
     "NAME": "영웅의 결의",
-    "DESCRIPTION": "이번 턴 종료시, 카드를 4장 이상 사용했다면 다음 턴 시작에 카드를 !M!장 뽑고, 힘과 민첩을 !M! 얻습니다. NL 8장 이상 사용했다면 효과를 2배로 합니다. NL 소멸."
+    "DESCRIPTION": "英雄 NL 이번 턴 종료시, 카드를 4장 이상 사용했다면 다음 턴 시작에 카드를 !M!장 뽑고, 힘과 민첩을 !M! 얻습니다. NL 8장 이상 사용했다면 효과를 2배로 합니다. NL 소멸."
   },
   "shadowverse:WindFall": {
     "NAME": "순풍의 요정",
@@ -2378,12 +2378,12 @@
   },
   "shadowverse:Maisha": {
     "NAME": "숙청의 영웅 메이시아",
-    "DESCRIPTION": "카드를 !M! 장 뽑습니다. NL *숙청의 *검 1장을 얻습니다. NL 소멸.",
-    "UPGRADE_DESCRIPTION": "카드를 !M! 장 뽑습니다. NL *숙청의 *검+ 1장을 얻습니다. NL 소멸."
+    "DESCRIPTION": "英雄 NL 카드를 !M! 장 뽑습니다. NL *숙청의 *검 1장을 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "英雄 NL 카드를 !M! 장 뽑습니다. NL *숙청의 *검+ 1장을 얻습니다. NL 소멸."
   },
   "shadowverse:Maisha2": {
     "NAME": "숙청의 그릇 메이시아",
-    "DESCRIPTION": "소멸된 공격 카드 수 만큼 피해를 줍니다. NL 이 카드를 쓰고 남은 에너지가 3 이상이라면, 피해를 !M! 번 줍니다."
+    "DESCRIPTION": "英雄 NL 소멸된 공격 카드 수 만큼 피해를 줍니다. NL 이 카드를 쓰고 남은 에너지가 3 이상이라면, 피해를 !M! 번 줍니다."
   },
   "shadowverse:Metaproduction": {
     "NAME": "제조술",
@@ -3139,7 +3139,7 @@
   },
   "shadowverse:Johann": {
     "NAME": "강철의 영웅 요한",
-    "DESCRIPTION": "기계. NL 피해를 !D! 줍니다. 이번 턴 기계 카드를 사용할 때마다 방어도를 !M! 얻습니다. NL 기계 카드를 사용할 때마다 비용 -1.",
+    "DESCRIPTION": "기계. 英雄 NL 피해를 !D! 줍니다. 이번 턴 기계 카드를 사용할 때마다 방어도를 !M! 얻습니다. NL 기계 카드를 사용할 때마다 비용 -1.",
     "UPGRADE_DESCRIPTION": "기계. NL 피해를 !D! 줍니다. 이번 턴 기계 카드를 사용할 때마다 방어도를 !M! 얻습니다. NL 기계 카드를 사용할 때마다 비용 -1. NL 보존"
   },
   "shadowverse:Grayson": {
@@ -3148,11 +3148,11 @@
   },
   "shadowverse:Albert": {
     "NAME": "레비온 영웅 알베르",
-    "DESCRIPTION": "레비온. NL 피해를 !D! 줍니다. NL 강화 3: 1번 더 줍니다. 모든 레비온 공격 카드를 뽑을 카드더미와 버린 카드더미에서 손으로 가져오고 이번 턴 그 비용을 0으로 만듭니다."
+    "DESCRIPTION": "레비온. 英雄 NL 피해를 !D! 줍니다. NL 강화 3: 1번 더 줍니다. 모든 레비온 공격 카드를 뽑을 카드더미와 버린 카드더미에서 손으로 가져오고 이번 턴 그 비용을 0으로 만듭니다."
   },
   "shadowverse:Albert2": {
     "NAME": "뇌멸경 알베르",
-    "DESCRIPTION": "레비온. NL 피해를 !D! 줍니다. NL 카드를 1장 파괴하고 피해를 6 더 줍니다. NL 강화 3: 피해를 1번 더 주고, 1장 파괴하는 대신 손에 있는 카드를 모두 소멸시킵니다. 피해량을 6 증가시킵니다. 모든 적에게 약화와 취약을 2 부여합니다."
+    "DESCRIPTION": "레비온. 英雄 NL 피해를 !D! 줍니다. NL 카드를 1장 파괴하고 피해를 6 더 줍니다. NL 강화 3: 피해를 1번 더 주고, 1장 파괴하는 대신 손에 있는 카드를 모두 소멸시킵니다. 피해량을 6 증가시킵니다. 모든 적에게 약화와 취약을 2 부여합니다."
   },
   "shadowverse:LevinScholar": {
     "NAME": "레비온 조사단원",
@@ -3273,8 +3273,8 @@
   },
   "shadowverse:Alexander": {
     "NAME": "알렉산더",
-    "DESCRIPTION": "피해를 !D! 만큼 !M! 번 줍니다. NL 휘발성.",
-    "UPGRADE_DESCRIPTION": "피해를 !D! 만큼 !M! 번 줍니다."
+    "DESCRIPTION": "英雄 。 NL 造成 !D! 点伤害 !M! 次。 NL 抽到这张牌时， 危难 ：在本回合内消耗-2。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION": "英雄 。 NL 造成 !D! 点伤害 !M! 次。 NL 抽到这张牌时， 危难 ：在本回合内消耗-2。 "
   },
   "shadowverse:MirrorImage": {
     "NAME": "분신술",
@@ -4153,7 +4153,7 @@
   },
   "shadowverse:Maiser_Story": {
     "NAME": "음속질주의 영웅 마이저",
-    "DESCRIPTION": "피해를 !D! 줍니다. NL *기동 *이륜차 를 1장 얻습니다. NL 이번 턴 스킬 카드를 사용할 때마다 모든 적에게 피해를 5 줍니다. NL 소멸."
+    "DESCRIPTION": "英雄 NL 피해를 !D! 줍니다. NL *기동 *이륜차 를 1장 얻습니다. NL 이번 턴 스킬 카드를 사용할 때마다 모든 적에게 피해를 5 줍니다. NL 소멸."
   },
   "shadowverse:Selena_Story": {
     "NAME": "달콤한 폭격 셀리나",
@@ -4365,8 +4365,8 @@
   },
   "shadowverse:Arthur": {
     "NAME": "기사왕 아서",
-    "DESCRIPTION": "방어도를 !B! 얻습니다 . NL 철갑_기사 , 기사 , 중갑_기사 그리고 방패_수호자 를 소환합니다. NL 소멸.",
-    "UPGRADE_DESCRIPTION":"방어도를 !B! 얻습니다 . NL 철갑_기사 , 기사 , 중갑_기사 그리고 방패_수호자 를 소환합니다."
+    "DESCRIPTION": "英雄 。 NL 获得 !B! 点 格挡 。 NL 召唤1个 铁甲骑士 、 骑士 、 重装骑士 、 战盾卫士 。 NL 危难 ：所有随从获得+2/+2。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"英雄 。 NL 获得 !B! 点 格挡 。 NL 召唤1个 铁甲骑士 、 骑士 、 重装骑士 、 战盾卫士 。 NL 危难 ：所有随从获得+2/+2。"
   },
   "shadowverse:Tweyen": {
     "NAME": "마안의 사냥꾼 송",
@@ -4617,7 +4617,16 @@
   },
   "shadowverse:GlitteringGold": {
     "NAME": "闪耀的金币",
-    "DESCRIPTION": "宴乐 ， 保留 ， 消耗 。 NL 获得 !B! 点 格挡 。 NL 如果已使用的次数为： NL 0,3,6：获得 [E] NL 1,4,7：获得5金币 NL 2,5,8：回复2点生命"
+    "DESCRIPTION": "宴乐 ， 保留 ， 消耗 。 NL 获得 !B! 点 格挡 。 NL 如果已使用的次数为： NL 0,3,6：获得 [E] 。 NL 1,4,7：获得5金币。 NL 2,5,8：回复2点生命。 NL 更多：再获得 !D! 点 格挡 。",
+    "EXTENDED_DESCRIPTION": [
+      "宴乐 ， 保留 ， 消耗 。 NL 获得 !B! 点 格挡 。 NL ",
+      "获得 [E] 。",
+      "获得5金币。",
+      "回复2点生命。",
+      "再获得 !D! 点 格挡 。",
+      " NL （目前已使用的张数为：",
+      "张）"
+    ]
   },
   "shadowverse:NightOnTheTown": {
     "NAME": "盗贼群起",

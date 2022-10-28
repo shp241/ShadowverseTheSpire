@@ -718,7 +718,7 @@
   },
   "shadowverse:Maiser": {
     "NAME": "Maiser, Neighborhood Hero",
-    "DESCRIPTION": "Put 1 *Dutiful *Steed into your hand. NL Put !M! *Rapid *Fire into your hand."
+    "DESCRIPTION": "Heroic. NL Put 1 *Dutiful *Steed into your hand. NL Put !M! *Rapid *Fire into your hand."
   },
   "shadowverse:NaterranFuture": {
     "NAME": "Naterra's Future",
@@ -832,7 +832,7 @@
   },
   "shadowverse:Hero": {
     "NAME": "Heroic Resolve",
-    "DESCRIPTION": "At the end of your turn, if at least 4 cards were played this turn, !M! more cards at the start of your next turn. Gain !M! Dexterity and Strength. NL If at least 8 cards were played, double the effect. NL Exhaust."
+    "DESCRIPTION": "Heroic. NL At the end of your turn, if at least 4 cards were played this turn, !M! more cards at the start of your next turn. Gain !M! Dexterity and Strength. NL If at least 8 cards were played, double the effect. NL Exhaust."
   },
   "shadowverse:WindFall": {
     "NAME": "Windfall Fay",
@@ -2377,12 +2377,12 @@
   },
   "shadowverse:Maisha": {
     "NAME": "Maisha, Hero of Purgation",
-    "DESCRIPTION": "Draw !M! Cards. NL Add 1 *Purgation’s *Blade to your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Draw !M! Cards. NL Add 1 *Purgation’s *Blade+ to your hand. NL Exhaust."
+    "DESCRIPTION": "Heroic. NL Draw !M! Cards. NL Add 1 *Purgation’s *Blade to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Heroic. NL Draw !M! Cards. NL Add 1 *Purgation’s *Blade+ to your hand. NL Exhaust."
   },
   "shadowverse:Maisha2": {
     "NAME": "Maisha, Purgation's Vessel",
-    "DESCRIPTION": "Deal damage equal to the number of Attacks in your exhausted pile. NL If you have 3 Energy or more when you play this card, deal !M! times the damage."
+    "DESCRIPTION": "Heroic. NL Deal damage equal to the number of Attacks in your exhausted pile. NL If you have 3 Energy or more when you play this card, deal !M! times the damage."
   },
   "shadowverse:Metaproduction": {
     "NAME": "Metaproduction",
@@ -3138,7 +3138,7 @@
   },
   "shadowverse:Johann": {
     "NAME": "Johann, Ironforged Hero",
-    "DESCRIPTION": "Machina. NL Deal !D! damage. Whenever you play a Machina card this turn, gain !M! Block. NL Whenever you play a Machina card, subtract 1 from this card's cost.",
+    "DESCRIPTION": "Machina. Heroic. NL Deal !D! damage. Whenever you play a Machina card this turn, gain !M! Block. NL Whenever you play a Machina card, subtract 1 from this card's cost.",
     "UPGRADE_DESCRIPTION": "Machina. NL Deal !D! damage. Whenever you play a Machina card this turn, gain !M! Block. NL Whenever you play a Machina card, subtract 1 from this card's cost. NL Retain"
   },
   "shadowverse:Grayson": {
@@ -3147,11 +3147,11 @@
   },
   "shadowverse:Albert": {
     "NAME": "Albert, Levin Champion",
-    "DESCRIPTION": "Levin. NL Deal !D! damage. NL Enhance 3: Repeat once. Put ALL Levin Attack cards in your draw pile and discard pile into your hand. They cost 0 this turn."
+    "DESCRIPTION": "Levin. Heroic. NL Deal !D! damage. NL Enhance 3: Repeat once. Put ALL Levin Attack cards in your draw pile and discard pile into your hand. They cost 0 this turn."
   },
   "shadowverse:Albert2": {
     "NAME": "Albert, Thunderous Doom",
-    "DESCRIPTION": "Levin. NL Deal !D! damage. NL Destroy 1 card. This card does an additional 6 damage. NL Enhance 3: Deal damage 1 more time, Exhaust all the Attack cards in your hand instead of Destroying 1. This card does an additional 6 damage. Apply 2 Vulnerable and Weak to ALL enemies."
+    "DESCRIPTION": "Levin. Heroic. NL Deal !D! damage. NL Destroy 1 card. This card does an additional 6 damage. NL Enhance 3: Deal damage 1 more time, Exhaust all the Attack cards in your hand instead of Destroying 1. This card does an additional 6 damage. Apply 2 Vulnerable and Weak to ALL enemies."
   },
   "shadowverse:LevinScholar": {
     "NAME": "Levin Scholar",
@@ -3272,8 +3272,8 @@
   },
   "shadowverse:Alexander": {
     "NAME": "Alexander",
-    "DESCRIPTION": "Deal !D! damage !M! times. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times."
+    "DESCRIPTION": "英雄 。 NL 造成 !D! 点伤害 !M! 次。 NL 抽到这张牌时， 危难 ：在本回合内消耗-2。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION": "英雄 。 NL 造成 !D! 点伤害 !M! 次。 NL 抽到这张牌时， 危难 ：在本回合内消耗-2。 "
   },
   "shadowverse:MirrorImage": {
     "NAME": "Mirror Image",
@@ -4152,7 +4152,7 @@
   },
   "shadowverse:Maiser_Story": {
     "NAME": "Maiser, Accelerated Hero",
-    "DESCRIPTION": "Deal !D! damage. NL Put a *Bullet *Bike into your hand. NL Deal 5 damage to ALL enemies whenever you play Skill cards this turn. NL Exhaust."
+    "DESCRIPTION": "Heroic. NL Deal !D! damage. NL Put a *Bullet *Bike into your hand. NL Deal 5 damage to ALL enemies whenever you play Skill cards this turn. NL Exhaust."
   },
   "shadowverse:Selena_Story": {
     "NAME": "Selena, Sugar-Sweet Ending",
@@ -4364,8 +4364,8 @@
   },
   "shadowverse:Arthur": {
     "NAME": "Arthur, Knight King",
-    "DESCRIPTION": "Gain !B! Block. NL Summon a Steelclad_Knight, Knight, Heavy_Knight and Shield_Guardian. NL Exhaust.",
-    "UPGRADE_DESCRIPTION":"Gain !B! Block. NL Summon a Steelclad_Knight, Knight, Heavy_Knight and Shield_Guardian."
+    "DESCRIPTION": "英雄 。 NL 获得 !B! 点 格挡 。 NL 召唤1个 铁甲骑士 、 骑士 、 重装骑士 、 战盾卫士 。 NL 危难 ：所有随从获得+2/+2。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"英雄 。 NL 获得 !B! 点 格挡 。 NL 召唤1个 铁甲骑士 、 骑士 、 重装骑士 、 战盾卫士 。 NL 危难 ：所有随从获得+2/+2。"
   },
   "shadowverse:Tweyen": {
     "NAME": "Tweyen, Dark Huntress",
@@ -4616,7 +4616,16 @@
   },
   "shadowverse:GlitteringGold": {
     "NAME": "Glittering Gold",
-    "DESCRIPTION": "Festive. NL Retain. NL Gain !B! Block. NL If you've played 0, 3 or 6 *Glittering *Golds this combat, gain [E]. If you've played 1, 4 or 7, gain 5 gold. If you've played 2, 5 or 8, heal 2 HP. NL Exhaust."
+    "DESCRIPTION": "宴乐 ， 保留 ， 消耗 。 NL 获得 !B! 点 格挡 。 NL 如果已使用的次数为： NL 0,3,6：获得 [E] 。 NL 1,4,7：获得5金币。 NL 2,5,8：回复2点生命。 NL 更多：再获得 !D! 点 格挡 。",
+    "EXTENDED_DESCRIPTION": [
+      "宴乐 ， 保留 ， 消耗 。 NL 获得 !B! 点 格挡 。 NL ",
+      "获得 [E] 。",
+      "获得5金币。",
+      "回复2点生命。",
+      "再获得 !D! 点 格挡 。",
+      " NL （目前已使用的张数为：",
+      "张）"
+    ]
   },
   "shadowverse:NightOnTheTown": {
     "NAME": "Night On the Town",

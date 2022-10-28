@@ -718,7 +718,7 @@
   },
   "shadowverse:Maiser": {
     "NAME": "疾速英雄·麦哲",
-    "DESCRIPTION": "增加1张 *顺从的骏马 到手中。 NL 增加 !M! 张 *迅枪连击 到手中。"
+    "DESCRIPTION": "英雄 。 NL 增加1张 *顺从的骏马 到手中。 NL 增加 !M! 张 *迅枪连击 到手中。"
   },
   "shadowverse:NaterranFuture": {
     "NAME": "那塔拉的未来",
@@ -832,7 +832,7 @@
   },
   "shadowverse:Hero": {
     "NAME": "英雄的觉悟",
-    "DESCRIPTION": "回合结束时，如果本回合已使用的卡牌数为4以上，则下回合额外抽 !M! 张牌，获得 !M! 点 敏捷 和 力量 。 NL 如果为8张以上，则这个数量翻倍。 NL 消耗 。"
+    "DESCRIPTION": "英雄 。 NL 回合结束时，如果本回合已使用的卡牌数为4以上，则下回合额外抽 !M! 张牌，获得 !M! 点 敏捷 和 力量 。 NL 如果为8张以上，则这个数量翻倍。 NL 消耗 。"
   },
   "shadowverse:WindFall": {
     "NAME": "扬风妖精",
@@ -2381,12 +2381,12 @@
   },
   "shadowverse:Maisha": {
     "NAME": "肃清的英雄·梅西亚",
-    "DESCRIPTION": "抽 !M! 张牌。 NL 增加1张 *肃清的一刀 到手中。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "抽 !M! 张牌。 NL 增加1张 *肃清的一刀+ 到手中。 NL 消耗 。"
+    "DESCRIPTION": "英雄 。 NL 抽 !M! 张牌。 NL 增加1张 *肃清的一刀 到手中。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "英雄 。 NL 抽 !M! 张牌。 NL 增加1张 *肃清的一刀+ 到手中。 NL 消耗 。"
   },
   "shadowverse:Maisha2": {
     "NAME": "肃清之器·梅西亚",
-    "DESCRIPTION": "造成消耗堆中攻击牌数量的伤害。 NL 如果剩余能量为3以上时打出这张牌，改为造成 !M! 倍伤害。"
+    "DESCRIPTION": "英雄 。 NL 造成消耗堆中攻击牌数量的伤害。 NL 如果剩余能量为3以上时打出这张牌，改为造成 !M! 倍伤害。"
   },
   "shadowverse:Metaproduction": {
     "NAME": "创造术",
@@ -3142,7 +3142,7 @@
   },
   "shadowverse:Johann": {
     "NAME": "纯铁英雄·约翰",
-    "DESCRIPTION": "机械 。 NL 造成 !D! 点伤害。本回合中使用机械牌时获得 !M! 点 格挡 。 NL 每打出一张 机械 牌耗能-1。",
+    "DESCRIPTION": "机械 ， 英雄 。 NL 造成 !D! 点伤害。本回合中使用机械牌时获得 !M! 点 格挡 。 NL 每打出一张 机械 牌耗能-1。",
     "UPGRADE_DESCRIPTION": "机械 。 NL 造成 !D! 点伤害。本回合中使用机械牌时获得 !M! 点 格挡 。 NL 每打出一张 机械 牌耗能-1。 NL 保留"
   },
   "shadowverse:Grayson": {
@@ -3151,11 +3151,11 @@
   },
   "shadowverse:Albert": {
     "NAME": "雷维翁英雄·阿尔贝尔",
-    "DESCRIPTION": "雷维翁 。 NL 造成 !D! 点伤害。 NL 爆能强化 3 \b额外造成一次伤害，将所有抽牌堆、弃牌堆中的 雷维翁 攻击牌置入手牌，这些牌本回合消耗变为0。"
+    "DESCRIPTION": "雷维翁 ，英雄 。 NL 造成 !D! 点伤害。 NL 爆能强化 3 \b额外造成一次伤害，将所有抽牌堆、弃牌堆中的 雷维翁 攻击牌置入手牌，这些牌本回合消耗变为0。"
   },
   "shadowverse:Albert2": {
     "NAME": "雷灭卿·阿尔贝尔",
-    "DESCRIPTION": "雷维翁 。 NL 造成 !D! 点伤害。 NL 破坏 1张卡，伤害增加6点。 NL 爆能强化 3 \b额外造成一次伤害， 破坏 改为 消耗 手中的攻击牌，伤害增加6点，给予全体敌人2层 易伤 和 虚弱 。"
+    "DESCRIPTION": "雷维翁 ，英雄 。 NL 造成 !D! 点伤害。 NL 破坏 1张卡，伤害增加6点。 NL 爆能强化 3 \b额外造成一次伤害， 破坏 改为 消耗 手中的攻击牌，伤害增加6点，给予全体敌人2层 易伤 和 虚弱 。"
   },
   "shadowverse:LevinScholar": {
     "NAME": "雷维翁的探索者",
@@ -3276,8 +3276,8 @@
   },
   "shadowverse:Alexander": {
     "NAME": "亚历山大",
-    "DESCRIPTION": "英雄 NL 造成 !D! 点伤害 !M! 次。 NL 抽到这张牌时， 危难 ：在本回合内消耗-2。 NL 虚无 。",
-    "UPGRADE_DESCRIPTION": "英雄 NL 造成 !D! 点伤害 !M! 次。 NL 抽到这张牌时， 危难 ：在本回合内消耗-2。 "
+    "DESCRIPTION": "英雄 。 NL 造成 !D! 点伤害 !M! 次。 NL 抽到这张牌时， 危难 ：在本回合内消耗-2。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION": "英雄 。 NL 造成 !D! 点伤害 !M! 次。 NL 抽到这张牌时， 危难 ：在本回合内消耗-2。 "
   },
   "shadowverse:MirrorImage": {
     "NAME": "分身之术",
@@ -4160,7 +4160,7 @@
   },
   "shadowverse:Maiser_Story": {
     "NAME": "音速英雄·麦哲",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 增加1张 *机动二轮车 到手中。 NL 本回合每打出1张技能牌，对全体敌人造成5点伤害。 NL 消耗 。"
+    "DESCRIPTION": "英雄 。 NL 造成 !D! 点伤害。 NL 增加1张 *机动二轮车 到手中。 NL 本回合每打出1张技能牌，对全体敌人造成5点伤害。 NL 消耗 。"
   },
   "shadowverse:Selena_Story": {
     "NAME": "爆燃霜糖·圣里奈",
@@ -4372,8 +4372,8 @@
   },
   "shadowverse:Arthur": {
     "NAME": "骑士王·亚瑟",
-    "DESCRIPTION": "英雄 NL 获得 !B! 点 格挡 。 NL 召唤1个 铁甲骑士 、 骑士 、 重装骑士 、 战盾卫士 。 NL 危难 ：所有随从获得+2/+2。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION":"英雄 NL 获得 !B! 点 格挡 。 NL 召唤1个 铁甲骑士 、 骑士 、 重装骑士 、 战盾卫士 。 NL 危难 ：所有随从获得+2/+2。"
+    "DESCRIPTION": "英雄 。 NL 获得 !B! 点 格挡 。 NL 召唤1个 铁甲骑士 、 骑士 、 重装骑士 、 战盾卫士 。 NL 危难 ：所有随从获得+2/+2。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"英雄 。 NL 获得 !B! 点 格挡 。 NL 召唤1个 铁甲骑士 、 骑士 、 重装骑士 、 战盾卫士 。 NL 危难 ：所有随从获得+2/+2。"
   },
   "shadowverse:Tweyen": {
     "NAME": "魔眼狩人·索恩",
@@ -4616,7 +4616,16 @@
   },
   "shadowverse:GlitteringGold": {
   "NAME": "闪耀的金币",
-  "DESCRIPTION": "宴乐 ， 保留 ， 消耗 。 NL 获得 !B! 点 格挡 。 NL 如果已使用的次数为： NL 0,3,6：获得 [E] NL 1,4,7：获得5金币 NL 2,5,8：回复2点生命"
+  "DESCRIPTION": "宴乐 ， 保留 ， 消耗 。 NL 获得 !B! 点 格挡 。 NL 如果已使用的次数为： NL 0,3,6：获得 [E] 。 NL 1,4,7：获得5金币。 NL 2,5,8：回复2点生命。 NL 更多：再获得 !D! 点 格挡 。",
+  "EXTENDED_DESCRIPTION": [
+      "宴乐 ， 保留 ， 消耗 。 NL 获得 !B! 点 格挡 。 NL ",
+      "获得 [E] 。",
+      "获得5金币。",
+      "回复2点生命。",
+      "再获得 !D! 点 格挡 。",
+      " NL （目前已使用的张数为：",
+      "张）"
+  ]
   },
   "shadowverse:NightOnTheTown": {
     "NAME": "侠客群起",
@@ -4675,12 +4684,12 @@
   },
   "shadowverse:FlameSoldier": {
     "NAME": "火炎战士",
-    "DESCRIPTION": "英雄 NL 造成 !D! 点伤害。 NL 危难 ：对所有敌人再造成 !D! 点伤害。"
+    "DESCRIPTION": "英雄 。 NL 造成 !D! 点伤害。 NL 危难 ：对所有敌人再造成 !D! 点伤害。"
   },
   "shadowverse:MachKnight": {
     "NAME": "音速骑士",
-    "DESCRIPTION": "英雄 NL 造成 !D! 点伤害。 NL 危难 ：获得等同于造成伤害的 格挡 ，获得 [E] 。",
-    "UPGRADE_DESCRIPTION":"英雄 NL 造成 !D! 点伤害。 NL 危难 ：获得等同于造成伤害的 格挡 ，获得 [E] [E] 。"
+    "DESCRIPTION": "英雄 。 NL 造成 !D! 点伤害。 NL 危难 ：获得等同于造成伤害的 格挡 ，获得 [E] 。",
+    "UPGRADE_DESCRIPTION":"英雄 。 NL 造成 !D! 点伤害。 NL 危难 ：获得等同于造成伤害的 格挡 ，获得 [E] [E] 。"
   },
   "shadowverse:ReturnFromTheBrink": {
     "NAME": "绝地生还",
@@ -4693,15 +4702,15 @@
   },
   "shadowverse:HeroicEntry": {
     "NAME": "英雄到来！",
-    "DESCRIPTION": "英雄 NL 抽牌直至7张，造成 !D! 点伤害，手牌中每有一张 英雄 牌，重复一次。 NL 危难 ：在造成伤害前将一张 在本回合中耗能为0且具有 消耗 的 *音速骑士 置入手牌。",
-    "UPGRADE_DESCRIPTION":"英雄 NL 抽牌直至7张，造成 !D! 点伤害，手牌中每有一张 英雄 牌，重复一次。 NL 使手牌中所有 英雄 牌获得 保留。 NL 危难 ：在造成伤害前将一张 在本回合中耗能为0且具有 消耗 的 *音速骑士 置入手牌。"
+    "DESCRIPTION": "英雄 。 NL 抽牌直至7张，造成 !D! 点伤害，手牌中每有一张 英雄 牌，重复一次。 NL 危难 ：在造成伤害前将一张 在本回合中耗能为0且具有 消耗 的 *音速骑士 置入手牌。",
+    "UPGRADE_DESCRIPTION":"英雄 。 NL 抽牌直至7张，造成 !D! 点伤害，手牌中每有一张 英雄 牌，重复一次。 NL 使手牌中所有 英雄 牌获得 保留。 NL 危难 ：在造成伤害前将一张 在本回合中耗能为0且具有 消耗 的 *音速骑士 置入手牌。"
   },
   "shadowverse:ValiantFencer": {
     "NAME": "骁勇剑士",
-    "DESCRIPTION": "英雄 NL 获得 !B! 点 格挡 ，给予所有敌人1层 虚弱。 NL 危难 ：重复一次。 NL 爆能强化 3 \b抽牌直至 !M! 张，手牌中所有英雄牌本回合耗能变为0。"
+    "DESCRIPTION": "英雄 。 NL 获得 !B! 点 格挡 ，给予所有敌人1层 虚弱。 NL 危难 ：重复一次。 NL 爆能强化 3 \b抽牌直至 !M! 张，手牌中所有英雄牌本回合耗能变为0。"
   },
   "shadowverse:HeroOfAntiquity": {
     "NAME": "远古英雄",
-    "DESCRIPTION": "英雄 NL 获得 !B! 点 格挡 ，造成 !D! 点伤害。 NL 危难 ：本局对战中， 格挡 不再在你的回合开始时消失。"
+    "DESCRIPTION": "英雄 。 NL 获得 !B! 点 格挡 ，造成 !D! 点伤害。 NL 危难 ：本局对战中， 格挡 不再在你的回合开始时消失。"
   }
 }

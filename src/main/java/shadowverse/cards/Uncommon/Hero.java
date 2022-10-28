@@ -12,7 +12,8 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import shadowverse.characters.Elf;
+ import shadowverse.characters.AbstractShadowversePlayer;
+ import shadowverse.characters.Elf;
 import shadowverse.powers.HeroicResolve;
 
 
@@ -28,6 +29,7 @@ import shadowverse.powers.HeroicResolve;
      this.baseMagicNumber = 1;
      this.magicNumber = this.baseMagicNumber;
      this.exhaust = true;
+     this.tags.add(AbstractShadowversePlayer.Enums.HERO);
    }
  
    

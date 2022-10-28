@@ -21,6 +21,7 @@ import com.megacrit.cardcrawl.vfx.combat.ViolentAttackEffect;
 import rs.lazymankits.interfaces.cards.BranchableUpgradeCard;
 import rs.lazymankits.interfaces.cards.UpgradeBranch;
 import shadowverse.cards.Temp.PurgationBlade;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Nemesis;
 
 import java.util.ArrayList;
@@ -42,6 +43,7 @@ public class Maisha
         this.exhaust = true;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
+        this.tags.add(AbstractShadowversePlayer.Enums.HERO);
     }
 
 
