@@ -3272,8 +3272,8 @@
   },
   "shadowverse:Alexander": {
     "NAME": "Alexander",
-    "DESCRIPTION": "英雄 。 NL 造成 !D! 点伤害 !M! 次。 NL 抽到这张牌时， 危难 ：在本回合内消耗-2。 NL 虚无 。",
-    "UPGRADE_DESCRIPTION": "英雄 。 NL 造成 !D! 点伤害 !M! 次。 NL 抽到这张牌时， 危难 ：在本回合内消耗-2。 "
+    "DESCRIPTION": "Heroic. NL Deal !D! damage !M! times. NL When you draw this call, Distress_Call: This card costs 2 less this turn. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Heroic. NL Deal !D! damage !M! times. NL When you draw this call, Distress_Call: This card costs 2 less this turn."
   },
   "shadowverse:MirrorImage": {
     "NAME": "Mirror Image",
@@ -4364,8 +4364,8 @@
   },
   "shadowverse:Arthur": {
     "NAME": "Arthur, Knight King",
-    "DESCRIPTION": "英雄 。 NL 获得 !B! 点 格挡 。 NL 召唤1个 铁甲骑士 、 骑士 、 重装骑士 、 战盾卫士 。 NL 危难 ：所有随从获得+2/+2。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION":"英雄 。 NL 获得 !B! 点 格挡 。 NL 召唤1个 铁甲骑士 、 骑士 、 重装骑士 、 战盾卫士 。 NL 危难 ：所有随从获得+2/+2。"
+    "DESCRIPTION": "Heroic. NL Gain !B! Block. NL Summon a Knight, Steelclad_Knight, Heavy_Knight and Shield_Guardian. NL Distress_Call: All Followers gain +2/+2. NL Exhaust.",
+    "UPGRADE_DESCRIPTION":"Heroic. NL Gain !B! Block. NL Summon a Knight, Steelclad_Knight, Heavy_Knight and Shield_Guardian. NL Distress_Call: All Followers gain +2/+2."
   },
   "shadowverse:Tweyen": {
     "NAME": "Tweyen, Dark Huntress",
@@ -4616,15 +4616,15 @@
   },
   "shadowverse:GlitteringGold": {
     "NAME": "Glittering Gold",
-    "DESCRIPTION": "Festive / Retain / Exhaustive . NL Gain !B! Block . NL If *Glittering *Gold has been played: NL 0,3,6 times in this combat：Gain [E] . NL 1,4,7：Gain 5 gold. NL 2,5,8：Heal 2 HP. NL More：Gain more !D! Block .",
+    "DESCRIPTION": "Festive / Retain / Exhaust. NL Gain !B! Block. NL If *Glittering *Gold has been played: NL 0, 3, or 6 times this combat: Gain [E]. NL 1, 4, or 7 times: Gain 5 gold. NL 2, 5 or 8 times: Heal 2 HP. NL 9 or more times: Gain more !D! Block.",
     "EXTENDED_DESCRIPTION": [
-      "Festive / Retain / Exhaustive . NL Gain !B! Block . NL ",
-      "Gain [E] .",
+      "Festive / Retain / Exhaust. NL Gain !B! Block. NL ",
+      "Gain [E].",
       "Gain 5 gold.",
       "Heal 2 HP.",
-      "Gain more !D! Block .",
-      " NL （ *Glittering *Gold was played",
-      " times）"
+      "Gain !D! more Block.",
+      " NL (*Glittering *Gold was played",
+      " times)"
     ]
   },
   "shadowverse:NightOnTheTown": {
