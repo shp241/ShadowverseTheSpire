@@ -4616,15 +4616,15 @@
   },
   "shadowverse:GlitteringGold": {
     "NAME": "Glittering Gold",
-    "DESCRIPTION": "宴乐 ， 保留 ， 消耗 。 NL 获得 !B! 点 格挡 。 NL 如果已使用的次数为： NL 0,3,6：获得 [E] 。 NL 1,4,7：获得5金币。 NL 2,5,8：回复2点生命。 NL 更多：再获得 !D! 点 格挡 。",
+    "DESCRIPTION": "Festive / Retain / Exhaustive . NL Gain !B! Block . NL If *Glittering *Gold has been played: NL 0,3,6 times in this combat：Gain [E] . NL 1,4,7：Gain 5 gold. NL 2,5,8：Heal 2 HP. NL More：Gain more !D! Block .",
     "EXTENDED_DESCRIPTION": [
-      "宴乐 ， 保留 ， 消耗 。 NL 获得 !B! 点 格挡 。 NL ",
-      "获得 [E] 。",
-      "获得5金币。",
-      "回复2点生命。",
-      "再获得 !D! 点 格挡 。",
-      " NL （目前已使用的张数为：",
-      "张）"
+      "Festive / Retain / Exhaustive . NL Gain !B! Block . NL ",
+      "Gain [E] .",
+      "Gain 5 gold.",
+      "Heal 2 HP.",
+      "Gain more !D! Block .",
+      " NL （ *Glittering *Gold was played",
+      " times）"
     ]
   },
   "shadowverse:NightOnTheTown": {

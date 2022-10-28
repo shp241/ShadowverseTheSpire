@@ -12,6 +12,7 @@
  import com.megacrit.cardcrawl.cards.DamageInfo;
  import com.megacrit.cardcrawl.characters.AbstractPlayer;
  import com.megacrit.cardcrawl.core.CardCrawlGame;
+ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
  import com.megacrit.cardcrawl.localization.CardStrings;
  import com.megacrit.cardcrawl.monsters.AbstractMonster;
  import shadowverse.action.ChoiceAction2;
@@ -23,6 +24,7 @@
  import shadowverse.characters.Necromancer;
  import shadowverse.characters.Witchcraft;
  import shadowverse.powers.MasqueradeGhostPower;
+ import shadowverse.powers.NextTurnMasqueradeGhostPower;
 
  import java.util.ArrayList;
 
@@ -50,7 +52,6 @@
      this.baseDamage = 12;
      this.baseMagicNumber = 4;
      this.magicNumber = this.baseMagicNumber;
-     this.exhaust = true;
      this.tags.add(AbstractShadowversePlayer.Enums.LASTWORD);
    }
  
@@ -78,11 +79,16 @@
          this.rotationTimer -= Gdx.graphics.getDeltaTime();
        }
    }
-   
-   public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+
+     @Override
+     public void triggerOnExhaust() {
+         addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new NextTurnMasqueradeGhostPower(AbstractDungeon.player)));
+     }
+
+     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      addToBot(new SFXAction("MasqueradeGhost"));
      addToBot(new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
-     addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new MasqueradeGhostPower(abstractPlayer,1,true)));
+     addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new MasqueradeGhostPower(abstractPlayer,1,false)));
      addToBot(new MakeTempCardInHandAction(new Ghost()));
    }
  

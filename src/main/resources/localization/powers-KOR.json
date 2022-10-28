@@ -1631,6 +1631,12 @@
       " 배가 된다. NL 다음 턴 시작시 비용이 0이고 유언이 없는 마스커레이드 고스트를 얻는다. "
     ]
   },
+  "shadowverse:NextTurnMasqueradeGhostPower": {
+    "NAME": "마스커레이드 고스트",
+    "DESCRIPTIONS": [
+      " 배가 된다. NL 다음 턴 시작시 비용이 0이고 유언이 없는 마스커레이드 고스트를 얻는다. "
+    ]
+  },
   "shadowverse:JiemonThiefLordPower": {
     "NAME": "天下大侠客·治右卫门",
     "DESCRIPTIONS": [

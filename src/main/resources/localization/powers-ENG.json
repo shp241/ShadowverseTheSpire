@@ -1631,6 +1631,12 @@
       "At the begining of your turn, put a 0 cost #yMasquerade #yGhost without Last Words into your hand."
     ]
   },
+  "shadowverse:NextTurnMasqueradeGhostPower": {
+    "NAME": "Masquerade Ghost : Last Word",
+    "DESCRIPTIONS": [
+      "At the begining of your turn, put a 0 cost #yMasquerade #yGhost without Last Words into your hand."
+    ]
+  },
   "shadowverse:JiemonThiefLordPower": {
     "NAME": "Jiemon, Thief Lord",
     "DESCRIPTIONS": [

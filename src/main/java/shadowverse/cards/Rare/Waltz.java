@@ -46,7 +46,7 @@ public class Waltz
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(12);
+            upgradeDamage(5);
             this.textureImg = IMG_PATH_EV;
             this.loadCardImage(IMG_PATH_EV);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;

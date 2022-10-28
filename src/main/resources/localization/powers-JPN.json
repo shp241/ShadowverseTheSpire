@@ -1631,6 +1631,12 @@
       " される。 NL ターン開始時、コスト0かつラストワードを持たない #yマスカレードゴースト 1枚を手札に加える。"
     ]
   },
+  "shadowverse:NextTurnMasqueradeGhostPower": {
+    "NAME": "マスカレードゴースト:ラストワード",
+    "DESCRIPTIONS": [
+      "ターン開始時、コスト0かつラストワードを持たない #yマスカレードゴースト 1枚を手札に加える。"
+    ]
+  },
   "shadowverse:JiemonThiefLordPower": {
     "NAME": "天下大侠客·治右卫门",
     "DESCRIPTIONS": [

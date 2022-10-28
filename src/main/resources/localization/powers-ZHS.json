@@ -1631,6 +1631,12 @@
       " 点。 NL 回合开始时增加 #b1 张耗能为0且没有谢幕曲的 #y假面亡魂 到手中。"
     ]
   },
+  "shadowverse:NextTurnMasqueradeGhostPower": {
+    "NAME": "假面亡魂:谢幕曲",
+    "DESCRIPTIONS": [
+      "回合开始时增加 #b1 张耗能为0且没有谢幕曲的 #y假面亡魂 到手中。"
+    ]
+  },
   "shadowverse:JiemonThiefLordPower": {
     "NAME": "天下大侠客·治右卫门",
     "DESCRIPTIONS": [

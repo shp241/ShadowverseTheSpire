@@ -39,7 +39,7 @@ public class MysticKing extends CustomCard {
     public static final String IMG_PATH = "img/cards/MysticKing.png";
 
     public MysticKing() {
-        super(ID, NAME, IMG_PATH, 8, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.RARE, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 7, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.RARE, CardTarget.SELF);
         this.baseBlock = 55;
         this.baseMagicNumber = 4;
         this.magicNumber = this.baseMagicNumber;
