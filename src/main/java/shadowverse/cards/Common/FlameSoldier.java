@@ -29,7 +29,7 @@ public class FlameSoldier extends CustomCard {
 
     public FlameSoldier() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
-        this.baseDamage = 8;
+        this.baseDamage = 7;
         this.isMultiDamage = true;
         this.tags.add(AbstractShadowversePlayer.Enums.HERO);
     }
@@ -48,7 +48,7 @@ public class FlameSoldier extends CustomCard {
             return true;
         }
         if (p instanceof AbstractShadowversePlayer) {
-            if (((AbstractShadowversePlayer) p).wrathLastTurn > 1) {
+            if (((AbstractShadowversePlayer) p).wrathLastTurn > 0) {
                 return true;
             }
         }

@@ -113,6 +113,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
         this.healCount = 0;
         this.totalDrawAmt = 0;
         this.costUsedAmt = 0;
+        this.wrathLastTurn = 0;
     }
 
     public void useCard(AbstractCard c, AbstractMonster monster, int energyOnUse) {

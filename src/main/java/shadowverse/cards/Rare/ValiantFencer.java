@@ -111,7 +111,7 @@ public class ValiantFencer extends CustomCard {
             return true;
         }
         if (p instanceof AbstractShadowversePlayer) {
-            if (((AbstractShadowversePlayer) p).wrathLastTurn > 1) {
+            if (((AbstractShadowversePlayer) p).wrathLastTurn > 0) {
                 return true;
             }
         }
@@ -138,12 +138,12 @@ public class ValiantFencer extends CustomCard {
         }
         addToBot((AbstractGameAction) new GainBlockAction(p, this.block));
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            this.addToBot(new ApplyPowerAction(mo, p, new WeakPower(mo, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+            this.addToBot(new ApplyPowerAction(mo, p, new WeakPower(mo, 1, false), 1, true, AbstractGameAction.AttackEffect.NONE));
         }
         if (inDanger()) {
             addToBot((AbstractGameAction) new GainBlockAction(p, this.block));
             for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-                this.addToBot(new ApplyPowerAction(mo, p, new WeakPower(mo, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+                this.addToBot(new ApplyPowerAction(mo, p, new WeakPower(mo, 1, false), 1, true, AbstractGameAction.AttackEffect.NONE));
             }
         }
         if (Shadowverse.Enhance(ENHANCE) && this.costForTurn == ENHANCE) {

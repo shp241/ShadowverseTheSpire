@@ -49,7 +49,7 @@ public class Alexander extends CustomCard {
             return true;
         }
         if (p instanceof AbstractShadowversePlayer) {
-            if (((AbstractShadowversePlayer) p).wrathLastTurn > 1) {
+            if (((AbstractShadowversePlayer) p).wrathLastTurn > 0) {
                 return true;
             }
         }

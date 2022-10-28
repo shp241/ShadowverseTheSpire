@@ -25,9 +25,10 @@ public class MorgensternMaid1 extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/MorgensternMaid.png";
 
-    public MorgensternMaid1(){
+    public MorgensternMaid1() {
         this(false);
     }
+
     public MorgensternMaid1(boolean upgraded) {
         super(ID, NAME, IMG_PATH, -2, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.SELF);
         this.baseBlock = 10;
@@ -47,6 +48,7 @@ public class MorgensternMaid1 extends CustomCard {
     @Override
     public void onChoseThisOption() {
         AbstractPlayer p = AbstractDungeon.player;
+        this.applyPowers();
         addToBot((AbstractGameAction) new GainBlockAction(p, this.block));
         addToBot((AbstractGameAction) new ApplyPowerAction(p, p, (AbstractPower) new VulnerablePower(p, 1, false)));
     }

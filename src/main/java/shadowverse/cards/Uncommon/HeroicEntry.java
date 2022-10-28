@@ -32,8 +32,7 @@ public class HeroicEntry extends CustomCard {
 
     public HeroicEntry() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
-        this.cardsToPreview = (AbstractCard)new MachKnight();
-        this.baseDamage = 4;
+        this.cardsToPreview = (AbstractCard) new MachKnight();
         this.tags.add(AbstractShadowversePlayer.Enums.HERO);
         this.isMultiDamage = true;
     }
@@ -53,7 +52,7 @@ public class HeroicEntry extends CustomCard {
             return true;
         }
         if (p instanceof AbstractShadowversePlayer) {
-            if (((AbstractShadowversePlayer) p).wrathLastTurn > 1) {
+            if (((AbstractShadowversePlayer) p).wrathLastTurn > 0) {
                 return true;
             }
         }
@@ -76,7 +75,7 @@ public class HeroicEntry extends CustomCard {
         if (abstractPlayer.hand.group.size() < 7) {
             addToBot((AbstractGameAction) new DrawCardAction(7 - abstractPlayer.hand.group.size()));
         }
-        if(inDanger()){
+        if (inDanger()) {
             AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
             c.exhaustOnUseOnce = true;
             c.exhaust = true;
@@ -86,9 +85,14 @@ public class HeroicEntry extends CustomCard {
             c.isCostModified = true;
             c.initializeDescription();
             c.applyPowers();
-            addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, 1));
+            addToBot((AbstractGameAction) new MakeTempCardInHandAction(c, 1));
         }
-        addToBot((AbstractGameAction) new HeroicEntryAction(this.upgraded, inDanger(), this.multiDamage, this.damageTypeForTurn));
+        ArrayList<AbstractMonster> m = AbstractDungeon.getCurrRoom().monsters.monsters;
+        int[] tmp = new int[m.size()];
+        for (int i = 0; i < m.size(); i++) {
+            tmp[i] = 4;
+        }
+        addToBot((AbstractGameAction) new HeroicEntryAction(this.upgraded, inDanger(), tmp, this.damageTypeForTurn));
     }
 
     @Override

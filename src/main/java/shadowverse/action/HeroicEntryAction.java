@@ -45,13 +45,12 @@ public class HeroicEntryAction extends AbstractGameAction {
             }
         }
         for (int i = 0; i < this.damage.length; i++) {
-            this.damage[i] *= s;
+            addToBot(new VFXAction(p, new CleaveEffect(), 0.0F));
+            addToBot(new DamageAllEnemiesAction(p, this.damage, this.damageType, AbstractGameAction.AttackEffect.NONE, true));
         }
-        addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
-        addToBot(new DamageAllEnemiesAction(p, this.damage, this.damageType, AbstractGameAction.AttackEffect.NONE));
         if (upgraded) {
             for (AbstractCard c : p.hand.group) {
-                if (c.hasTag(HERO)) {
+                if (c.hasTag(HERO) && !c.retain && !c.selfRetain) {
                     c.retain = true;
                     c.rawDescription += " NL " + TEXT;
                     c.initializeDescription();

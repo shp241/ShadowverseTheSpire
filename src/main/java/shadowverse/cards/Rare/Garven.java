@@ -37,7 +37,7 @@ public class Garven extends CustomCard {
     }
 
     public int types() {
-        int[] t = {0, 0, 0, 0, 0, 0, 0, 0};
+        int[] t = {0, 0, 0, 0, 0, 0, 0};
         AbstractCard.CardTags[] type = {
                 AbstractShadowversePlayer.Enums.MACHINE,
                 AbstractShadowversePlayer.Enums.NATURAL,

@@ -28,7 +28,7 @@ public class MachKnight extends CustomCard {
 
     public MachKnight() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
-        this.baseDamage = 8;
+        this.baseDamage = 5;
         this.magicNumber = this.baseMagicNumber = 1;
         this.tags.add(AbstractShadowversePlayer.Enums.HERO);
     }
@@ -50,7 +50,7 @@ public class MachKnight extends CustomCard {
             return true;
         }
         if (p instanceof AbstractShadowversePlayer) {
-            if (((AbstractShadowversePlayer) p).wrathLastTurn > 1) {
+            if (((AbstractShadowversePlayer) p).wrathLastTurn > 0) {
                 return true;
             }
         }

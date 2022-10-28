@@ -47,6 +47,7 @@ public class MorgensternMaid2 extends CustomCard {
     @Override
     public void onChoseThisOption() {
         AbstractPlayer p = AbstractDungeon.player;
+        this.applyPowers();
         addToBot((AbstractGameAction) new DrawCardAction(this.magicNumber));
         addToBot((AbstractGameAction) new ApplyPowerAction(p, p, (AbstractPower) new FrailPower(p, 1, false)));
     }

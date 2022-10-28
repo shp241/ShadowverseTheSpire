@@ -46,6 +46,7 @@ public class MorgensternMaid3 extends CustomCard {
     @Override
     public void onChoseThisOption() {
         AbstractPlayer p = AbstractDungeon.player;
+        this.applyPowers();
         addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
         addToBot(new DamageAction(p, new DamageInfo(p, 2, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
     }

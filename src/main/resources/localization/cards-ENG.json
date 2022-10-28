@@ -4702,8 +4702,8 @@
   },
   "shadowverse:HeroicEntry": {
     "NAME": "Heroic Entry",
-    "DESCRIPTION": "Heroic. NL Draw up to 7 cards and deal !D! damage. Repeat once for each Heroic card in your hand. NL Distress_Call: Before dealing damage, add a *Mach *Knight to your hand and change its cost to 0 this turn.",
-    "UPGRADE_DESCRIPTION":"Heroic. NL Draw up to 7 cards and deal !D! damage. Repeat once for each Heroic card in your hand. Then, give all Heroic cards in your hand Retain. NL Distress_Call: Before dealing damage, add a *Mach *Knight to your hand and change its cost to 0 this turn."
+    "DESCRIPTION": "Heroic. NL Draw up to 7 cards and deal 4 damage. Repeat once for each Heroic card in your hand. NL Distress_Call: Before dealing damage, add a *Mach *Knight to your hand and change its cost to 0 this turn.",
+    "UPGRADE_DESCRIPTION":"Heroic. NL Draw up to 7 cards and deal 4 damage. Repeat once for each Heroic card in your hand. Then, give all Heroic cards in your hand Retain. NL Distress_Call: Before dealing damage, add a *Mach *Knight to your hand and change its cost to 0 this turn."
   },
   "shadowverse:ValiantFencer": {
     "NAME": "Valiant Fencer",

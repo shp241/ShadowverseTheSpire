@@ -40,8 +40,8 @@ public class HeroOfAntiquity extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(5);
-            upgradeBlock(5);
+            upgradeDamage(3);
+            upgradeBlock(3);
         }
     }
 
@@ -51,7 +51,7 @@ public class HeroOfAntiquity extends CustomCard {
             return true;
         }
         if (p instanceof AbstractShadowversePlayer) {
-            if (((AbstractShadowversePlayer) p).wrathLastTurn > 1) {
+            if (((AbstractShadowversePlayer) p).wrathLastTurn > 0) {
                 return true;
             }
         }
