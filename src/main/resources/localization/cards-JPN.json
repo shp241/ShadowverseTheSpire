@@ -718,7 +718,7 @@
   },
   "shadowverse:Maiser": {
     "NAME": "アクセルヒーロー・マイザー",
-    "DESCRIPTION": "英雄 NL *従順な駿馬 1枚を手札に加える。 NL *ラピッドファイア !M! 枚を手札に加える。"
+    "DESCRIPTION": "ヒーロー NL *従順な駿馬 1枚を手札に加える。 NL *ラピッドファイア !M! 枚を手札に加える。"
   },
   "shadowverse:NaterranFuture": {
     "NAME": "ナテラの未来",
@@ -3142,8 +3142,8 @@
   },
   "shadowverse:Johann": {
     "NAME": "純鉄の英雄・ヨハン",
-    "DESCRIPTION": "機械 ， 英雄 。 NL !D! ダメージを与える。 NL このターン、 機械 カードをプレイする度、 !M! ブロックを得る。 NL 機械 をプレイする度、これのコストを1減らす。",
-    "UPGRADE_DESCRIPTION": "機械 ・ 保留 。 NL !D! ダメージを与える。 NL このターン、 機械 カードをプレイする度、 !M! ブロックを得る。 NL 機械 をプレイする度、これのコストを1減らす"
+    "DESCRIPTION": "機械 ・ ヒーロー 。 NL !D! ダメージを与える。 NL このターン、 機械 カードをプレイする度、 !M! ブロックを得る。 NL 機械 をプレイする度、これのコストを1減らす。",
+    "UPGRADE_DESCRIPTION": "機械 ・ ヒーロー ・ 保留 。 NL !D! ダメージを与える。 NL このターン、 機械 カードをプレイする度、 !M! ブロックを得る。 NL 機械 をプレイする度、これのコストを1減らす"
   },
   "shadowverse:Grayson": {
     "NAME": "アクセルブレーダー・グレイソン",
@@ -3276,8 +3276,8 @@
   },
   "shadowverse:Alexander": {
     "NAME": "アレクサンダー",
-    "DESCRIPTION": "英雄 。 NL 造成 !D! 点伤害 !M! 次。 NL 抽到这张牌时， 危难 ：在本回合内消耗-2。 NL 虚无 。",
-    "UPGRADE_DESCRIPTION": "英雄 。 NL 造成 !D! 点伤害 !M! 次。 NL 抽到这张牌时， 危难 ：在本回合内消耗-2。 "
+    "DESCRIPTION": "ヒーロー 。 NL !D! ダメージを !M! 回与える。 NL これが引かれた時、 ピンチ ：このターンだけコストを-2する。 NL エセリアル 。",
+    "UPGRADE_DESCRIPTION": "ヒーロー 。 NL !D! ダメージを !M! 回与える。 NL これが引かれた時、 ピンチ ：このターンだけコストを-2する。"
   },
   "shadowverse:MirrorImage": {
     "NAME": "分身の術",
@@ -4376,8 +4376,8 @@
   },
   "shadowverse:Arthur": {
     "NAME": "騎士王・アーサー",
-    "DESCRIPTION": "英雄 。 NL 获得 !B! 点 格挡 。 NL 召唤1个 铁甲骑士 、 骑士 、 重装骑士 、 战盾卫士 。 NL 危难 ：所有随从获得+2/+2。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION":"英雄 。 NL 获得 !B! 点 格挡 。 NL 召唤1个 铁甲骑士 、 骑士 、 重装骑士 、 战盾卫士 。 NL 危难 ：所有随从获得+2/+2。"
+    "DESCRIPTION": "ヒーロー 。 NL !B! ブロック を得る。 NL スティールナイト 、 ナイト 、 ヘヴィーナイト 、 シールドガーディアン 1体ずつ場に出す。 NL ピンチ ：フォロワーをすべて+2/+2する。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"ヒーロー 。 NL !B! ブロック を得る。 NL スティールナイト 、 ナイト 、 ヘヴィーナイト 、 シールドガーディアン 1体ずつ場に出す。 NL ピンチ ：フォロワーをすべて+2/+2する"
   },
   "shadowverse:Tweyen": {
     "NAME": "魔眼の狩人・ソーン",
