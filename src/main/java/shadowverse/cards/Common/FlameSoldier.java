@@ -30,6 +30,7 @@ public class FlameSoldier extends CustomCard {
     public FlameSoldier() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
         this.baseDamage = 8;
+        this.isMultiDamage = true;
         this.tags.add(AbstractShadowversePlayer.Enums.HERO);
     }
 

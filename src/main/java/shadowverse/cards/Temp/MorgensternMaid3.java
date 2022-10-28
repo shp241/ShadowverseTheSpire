@@ -28,6 +28,7 @@ public class MorgensternMaid3 extends CustomCard {
     public MorgensternMaid3(boolean upgraded) {
         super(ID, NAME, IMG_PATH, -2, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
         this.baseDamage = 5;
+        this.isMultiDamage = true;
         if (upgraded) {
             this.upgrade();
         }

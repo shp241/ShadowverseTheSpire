@@ -35,6 +35,7 @@ public class HeroicEntry extends CustomCard {
         this.cardsToPreview = (AbstractCard)new MachKnight();
         this.baseDamage = 4;
         this.tags.add(AbstractShadowversePlayer.Enums.HERO);
+        this.isMultiDamage = true;
     }
 
     @Override

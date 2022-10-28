@@ -72,7 +72,7 @@ public class AmerroSpearKnightAction extends AbstractGameAction {
         };
         while (derp.size() != 3) {
             boolean dupe = false;
-            int roll = AbstractDungeon.cardRng.random(heros.length) - 1;
+            int roll = AbstractDungeon.cardRandomRng.random(heros.length - 1);
             AbstractCard tmp = heros[roll];
             Iterator var5 = derp.iterator();
             while (var5.hasNext()) {
