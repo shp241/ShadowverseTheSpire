@@ -44,7 +44,7 @@ public class HeroicEntryAction extends AbstractGameAction {
                 s++;
             }
         }
-        for (int i = 0; i < this.damage.length; i++) {
+        for (int i = 0; i < s; i++) {
             addToBot(new VFXAction(p, new CleaveEffect(), 0.0F));
             addToBot(new DamageAllEnemiesAction(p, this.damage, this.damageType, AbstractGameAction.AttackEffect.NONE, true));
         }
