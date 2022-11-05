@@ -3,6 +3,7 @@ package shadowverse.helper;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import shadowverse.cards.Common.*;
 import shadowverse.cards.Rare.*;
+import shadowverse.cards.Temp.MistolinasSwordplay;
 import shadowverse.cards.Uncommon.*;
 
 import java.util.ArrayList;
@@ -10,6 +11,7 @@ import java.util.ArrayList;
 public class BanCardHelper {
     private static boolean init;
     public static ArrayList<ArrayList<AbstractCard>> royalCardGroupPool = new ArrayList();
+    public static ArrayList<ArrayList<AbstractCard>> witchCardGroupPool = new ArrayList<>();
 
     public BanCardHelper() {
     }
@@ -166,6 +168,127 @@ public class BanCardHelper {
                     this.add(new Arthur());
                 }
             });
+//
+//            //基本
+//            witchCardGroupPool.add(new ArrayList<AbstractCard>(){
+//                {
+//                    this.add(new ChainLightning());
+//                    this.add(new Concentration());
+//                    this.add(new ConjureTwosome());
+//                    this.add(new MistolinasSwordplay());
+//                    this.add(new StaffOfWhirlwinds());
+//                    this.add(new MysterianKnowledge());
+//                    this.add(new Petrification());
+//                    this.add(new Clarke());
+//                    this.add(new GolemAssault());
+//                    this.add(new Kyouka(0));
+//                    this.add(new SorceryInSolidarity());
+//                    this.add(new Isabelle());
+//                    this.add(new Maiser());
+//                    this.add(new Vincent());
+//                    this.add(new TheFool());
+//                }
+//            });
+//            //增幅
+//            witchCardGroupPool.add(new ArrayList<AbstractCard>(){
+//                {
+//                    this.add(new FatesHand());
+//                    this.add(new MagicOwl());
+//                    this.add(new TruthsAdjudication());
+//                    this.add(new ZealotOfTruth());
+//                    this.add(new DimensionShift());
+//                    this.add(new EdictOfTruth());
+//                    this.add(new FireChain());
+//                    this.add(new GrimoireSorcerer());
+//                    this.add(new DimensionalWitch());
+//                    this.add(new Ghios());
+//                    this.add(new GigantChimera());
+//                    this.add(new Kuon());
+//                    this.add(new Runie());
+//                }
+//            });
+//            //土法
+//            witchCardGroupPool.add(new ArrayList<AbstractCard>(){
+//                {
+//                    this.add(new CommenceExperiment());
+//                    this.add(new DwarfAlchemist());
+//                    this.add(new JubilanceWitch());
+//                    this.add(new WitchSnap());
+//                    this.add(new AcidGolem());
+//                    this.add(new Cagliostro());
+//                    this.add(new GrandSummoning());
+//                    this.add(new PiousInstructor());
+//                    this.add(new MasterMageLevi());
+//                    this.add(new Telescope());
+//                    this.add(new WitchsCauldron());
+//                    this.add(new ArcticChimera());
+//                    this.add(new Erasmus());
+//                    this.add(new ForbiddenDarkMage());
+//                    this.add(new Magisa());
+//                    this.add(new OrichalcumGolem());
+//                    this.add(new Faust());
+//                }
+//            });
+//            //自然机械
+//            witchCardGroupPool.add(new ArrayList<AbstractCard>(){
+//                {
+//                    this.add(new Aeroelementalist());
+//                    this.add(new Elementalmana());
+//                    this.add(new Geoelementist());
+//                    this.add(new MechanizedLifeform());
+//                    this.add(new MechastaffSorcerer());
+//                    this.add(new MagitechGolem());
+//                    this.add(new MechabookSorcerer());
+//                    this.add(new Pyromancer());
+//                    this.add(new Riley());
+//                    this.add(new ApexElemental());
+//                    this.add(new Tetra());
+//                }
+//            });
+//            //马纳历亚
+//            witchCardGroupPool.add(new ArrayList<AbstractCard>(){
+//                {
+//                    this.add(new Lou());
+//                    this.add(new MysterianWisdom());
+//                    this.add(new Ogler());
+//                    this.add(new Owen());
+//                    this.add(new Hanna());
+//                    this.add(new Anne());
+//                    this.add(new Craig());
+//                    this.add(new Grea());
+//                    this.add(new Miranda());
+//                }
+//            });
+//            //象棋
+//            witchCardGroupPool.add(new ArrayList<AbstractCard>(){
+//                {
+//                    this.add(new MagicalRook());
+//                    this.add(new MagicalKnight());
+//                    this.add(new Check());
+//                    this.add(new MagicalStrategy());
+//                    this.add(new MysticQueen());
+//                    this.add(new Blitz());
+//                    this.add(new MysticKing());
+//                }
+//            });
+//            //其他
+//            witchCardGroupPool.add(new ArrayList<AbstractCard>(){
+//                {
+//                    this.add(new AdherentOfAnnihilation());
+//                    this.add(new Shop());
+//                    this.add(new UnleashTruth());
+//                    this.add(new GuildAssembly());
+//                    this.add(new ImaginationRealized());
+//                    this.add(new MadcapConjuration());
+//                    this.add(new Lifetime());
+//                    this.add(new Chaos());
+//                    this.add(new Awakened());
+//                    this.add(new MysticSeeker());
+//                    this.add(new OmenOfTruth());
+//                    this.add(new Oz());
+//                    this.add(new Yukishima());
+//                }
+//            });
         }
     }
 }

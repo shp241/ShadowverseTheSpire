@@ -23,7 +23,7 @@
    public static final String IMG_PATH = "img/cards/Homecoming.png";
 
    public Homecoming() {
-     super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.SKILL, Elf.Enums.COLOR_GREEN, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
+     super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.SKILL, Elf.Enums.COLOR_GREEN, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
      this.exhaust = true;
    }
  
@@ -31,7 +31,7 @@
    public void upgrade() {
      if (!this.upgraded) {
          upgradeName();
-         upgradeBaseCost(2);
+         upgradeBaseCost(1);
      } 
    }
 

@@ -8,7 +8,7 @@
   "shadowverse:EarthEssence": {
     "NAME": "Earth Essence",
     "DESCRIPTIONS": [
-      "If the number of #yEarth #yEssence reaches #b5, you can't play any #yAttack or #yPower cards. NL The maximum of #yEarth #yEssence is #b5.",
+      "Some cards can spend #yEarth #yEssence to active #yEarth #yRite which has more powerful effect.",
       "My Earth Essence is full!"
     ]
   },
@@ -1611,8 +1611,8 @@
   "shadowverse:MysticKingPower": {
     "NAME": "Mystic King",
     "DESCRIPTIONS": [
-      "*Magical *Paws deal double damage and #b",
-      "additional damage."
+      "#yMagical #yPaws deal double damage and #b",
+      " additional damage. When you lose all of your #rtemporary #rHP , you lose this game."
     ]
   },
   "shadowverse:CraigPower": {
@@ -1657,6 +1657,23 @@
       "Whenever you play a Skill card, if it's the 3rd time, give +1/+1 to all allied #yFollowers.",
       " NL Triggered #b",
       " times this turn."
+    ]
+  },
+  "shadowverse:CosmosFangPower": {
+    "NAME": "Cosmos Fang",
+    "DESCRIPTIONS": [
+      "At the start of your turn, deal damage equal to your current block to a random enemy. Then lose this effect."
+    ]
+  },
+  "shadowverse:BlitzPower": {
+    "NAME": "Blitz",
+    "DESCRIPTIONS": [
+      "Gain the following effect: At the start of your turn, activate 1 of the following effects in order until all 3 have been activated once. NL ",
+      " #g",
+      "(1) Add #b2 #yMagical #yPawn into your hand. NL ",
+      "(2) Add #b1 #yMagical #yRook which cost 0 and have Exhaust into your hand",
+      ". NL ",
+      "(3) Add #b1 #yMagical #yKnight which cost 0 and have Exhaust into your hand."
     ]
   }
 }

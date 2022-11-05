@@ -901,7 +901,7 @@
   },
   "shadowverse:Packing": {
     "NAME": "위대한 회귀",
-    "DESCRIPTION": "자연. NL 보존. NL 이번 턴 사용한 카드 수 +2. NL 무작위 버프를 제거합니다.(인공물 우선) NL 취약과 약화를 !M! 부여합니다. NL 소멸. "
+    "DESCRIPTION": "保留 。 NL *マジカルポーン をプレイする度、コストを-1する。 NL !B! 仮HP を得る。 NL *マジカルポーン 4枚を手札に加える。 NL *マジカルポーン が与えるダメージは+ !M! され、さらに倍になる。 NL 仮HPがなくなった時、敗北する。 NL 廃棄 。"
   },
   "shadowverse:Ladica": {
     "NAME": "회귀하는 포옹 라티카",
@@ -4713,5 +4713,39 @@
   "shadowverse:HeroOfAntiquity": {
     "NAME": "远古英雄",
     "DESCRIPTION": "英雄 NL 获得 !B! 点 格挡 ，造成 !D! 点伤害。 NL 危难 ：本局对战中， 格挡 不再在你的回合开始时消失。"
+  },
+  "shadowverse:CosmosFang": {
+    "NAME": "波斯菊之牙",
+    "DESCRIPTION": "获得 !B! 点 格挡 和1层 残影 。 NL 使弃牌堆中X张非打击精灵攻击牌返回抽牌堆。X为手牌上限减去手牌张数。 NL 之后获得4X点格挡和X点 力量 。 NL 下个回合开始时，对随机敌人造成剩余格挡数值的等量伤害。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"获得 !B! 点 格挡 和1层 残影 。 NL 改变敌人的意图。 NL 使弃牌堆中X张非打击精灵攻击牌返回抽牌堆。X为手牌上限减去手牌张数。 NL 之后获得4(X+Y)点格挡和X+Y点 力量 。Y为敌人的数量。 NL 下个回合开始时，对随机敌人造成剩余格挡数值的等量伤害。 NL 消耗 。"
+  },
+  "shadowverse:Blitz": {
+    "NAME": "ブリッツ",
+    "DESCRIPTION": "自分は「ターン開始時、下記の能力が順に1つ働く。3回働くとこの能力は失われる。 NL *マジカルポーン 2枚を手札に加える。 NL (2) コスト0かつ廃棄を持つ *マジカルルーク 1枚を手札に加える。 NL (3)コスト0かつ廃棄を持つ *マジカルナイト 1枚を手札に加える。 NL 廃棄 。"
+  },
+  "shadowverse:Check": {
+    "NAME": "체크",
+    "DESCRIPTION": "*매지컬 *폰 을  !M! 장 얻습니다."
+  },
+  "shadowverse:GemstoneWingy": {
+    "NAME": "炫彩瑰石·纹奇",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果本场战斗已打出5张以上拥有倒数的护符，则获得1层 残影 和 钢笔尖 。"
+  },
+  "shadowverse:DiamondMaster": {
+    "NAME": "璀钻大师",
+    "DESCRIPTION": "获得 !B! 点 格挡。 NL 如果有 残影 ，则格挡在回合开始时不再消失。 NL 如果有 钢笔尖 ，则本回合攻击伤害翻倍。 NL 如果同时拥有两者，对全体敌人造成格挡等量伤害。",
+    "EXTENDED_DESCRIPTION":[ " NL （造成 !D! 点伤害。）"]
+  },
+  "shadowverse:SapphirePriestess": {
+    "NAME": "蓝宝石祭司",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果有护符存在护符区，抽1张牌。 NL 如果手中只有1张攻击牌，则获得1层 残影 和 钢笔尖 。"
+  },
+  "shadowverse:BejeweledShrine": {
+    "NAME": "宝石圣堂",
+    "DESCRIPTION": "抽1张卡。 NL 回合开始时，从「获得1层 残影 」、「获得1层 钢笔尖 」中随机发动1种效果。 NL 回合结束时，如果同时拥有有格挡不会消失和翻倍伤害类的效果，则获得1点 力量 和 敏捷 。 NL 如果本场战斗已打出5张以上拥有倒数的护符，则由1改为3。"
+  },
+  "shadowverse:ImpiousBishop": {
+    "NAME": "恶沉的神父",
+    "DESCRIPTION": "结晶 0 \b倒计时 2 NL 回合开始时增加1张 *赎罪券 到手中。 NL  NL --------------------- NL  NL 打出或倒计时结束时获得 !B! 点 格挡 ，回复3点生命。 NL 打出时下回合开始时获得 !B! 点 格挡 。 NL 将2张 *赎罪券 加入弃牌堆。"
   }
 }

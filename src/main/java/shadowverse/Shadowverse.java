@@ -1238,6 +1238,11 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("MorgensternMaid", new Sfx(voicePath+"MorgensternMaid.wav"));
             reflectedMap.put("FlameSoldier", new Sfx(voicePath+"FlameSoldier.wav"));
             reflectedMap.put("MachKnight", new Sfx(voicePath+"MachKnight.wav"));
+            reflectedMap.put("CosmosFang", new Sfx(voicePath+"CosmosFang.wav"));
+            reflectedMap.put("GemstoneWingy", new Sfx(voicePath+"GemstoneWingy.wav"));
+            reflectedMap.put("SapphirePriestess", new Sfx(voicePath+"SapphirePriestess.wav"));
+            reflectedMap.put("ImpiousBishop", new Sfx(voicePath+"ImpiousBishop.wav"));
+            reflectedMap.put("ImpiousBishop_Acc", new Sfx(voicePath+"ImpiousBishop_Acc.wav"));
         }
     }
 
@@ -2264,6 +2269,14 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard( new HeroicEntry());
         BaseMod.addCard( new ValiantFencer());
         BaseMod.addCard( new HeroOfAntiquity());
+        BaseMod.addCard( new CosmosFang());
+        BaseMod.addCard( new Blitz());
+        BaseMod.addCard( new Check());
+        BaseMod.addCard( new GemstoneWingy());
+        BaseMod.addCard( new DiamondMaster());
+        BaseMod.addCard( new SapphirePriestess());
+        BaseMod.addCard( new BejeweledShrine());
+        BaseMod.addCard( new ImpiousBishop());
         logger.info("Success");
     }
 

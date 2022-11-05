@@ -52,7 +52,7 @@ import shadowverse.characters.Bishop;
    public void calculateCardDamage(AbstractMonster mo) {
      super.calculateCardDamage(mo);
      this.rawDescription = cardStrings.DESCRIPTION;
-     this.rawDescription += cardStrings.UPGRADE_DESCRIPTION;
+     this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0];
      initializeDescription();
    }
 

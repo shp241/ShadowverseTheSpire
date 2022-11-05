@@ -2698,7 +2698,7 @@
   },
   "shadowverse:LegendSwordCommander": {
     "NAME": "传说之剑指挥官",
-    "DESCRIPTION": "回合开始时， 格挡 不会消失。 NL 回合结束时，获得 !M! 点 格挡 。 NL 打出攻击牌时，对全体敌人造成 !D! 点伤害"
+    "DESCRIPTION": "回合开始时， 格挡 不会消失。 NL 回合结束时，获得 !M! 点 格挡 。 NL 打出攻击牌时，对全体敌人造成 !M! 点伤害"
   },
   "shadowverse:DeadSoulTaker": {
     "NAME": "死亡狩魂者",
@@ -4546,7 +4546,7 @@
   },
   "shadowverse:MysticKing": {
     "NAME": "神秘国王",
-    "DESCRIPTION": "保留 。 NL 如果消耗堆中的 *奇幻士兵 数量为8以上且这张牌被保留，则耗能减少4。 NL 获得 !B! 点 格挡 。 NL 增加4张 *奇幻士兵 到手中。 NL 本回合 *奇幻士兵 造成的伤害+ !M! 并翻倍。"
+    "DESCRIPTION": "保留 。 NL 每打出 *奇幻士兵 ，耗能-1。 NL 获得 !B! 点 临时生命 。 NL 增加4张 *奇幻士兵 到手中。 NL *奇幻士兵 造成的伤害+ !M! 并翻倍。 NL 当失去所有 临时生命 时，你将败北。 NL 消耗 。"
   },
   "shadowverse:Ghost": {
     "NAME": "怨灵",
@@ -4712,5 +4712,39 @@
   "shadowverse:HeroOfAntiquity": {
     "NAME": "远古英雄",
     "DESCRIPTION": "英雄 。 NL 获得 !B! 点 格挡 ，造成 !D! 点伤害。 NL 危难 ：本局对战中， 格挡 不再在你的回合开始时消失。"
+  },
+  "shadowverse:CosmosFang": {
+    "NAME": "波斯菊之牙",
+    "DESCRIPTION": "获得 !B! 点 格挡 和1层 残影 。 NL 使弃牌堆中X张非打击精灵攻击牌返回抽牌堆。X为手牌上限减去手牌张数。 NL 之后获得4X点格挡和X点 力量 。 NL 下个回合开始时，对随机敌人造成剩余格挡数值的等量伤害。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"获得 !B! 点 格挡 和1层 残影 。 NL 改变敌人的意图。 NL 使弃牌堆中X张非打击精灵攻击牌返回抽牌堆。X为手牌上限减去手牌张数。 NL 之后获得4(X+Y)点格挡和X+Y点 力量 。Y为敌人的数量。 NL 下个回合开始时，对随机敌人造成剩余格挡数值的等量伤害。 NL 消耗 。"
+  },
+  "shadowverse:Blitz": {
+    "NAME": "闪击",
+    "DESCRIPTION": "获得「回合开始时，依顺序触发以下效果，发动3次后消失： NL 增加2张 *奇幻士兵 到手中。 NL (2) 增加1张耗能为0且带有消耗的 *奇幻城堡 到手中。 NL (3)增加1张耗能为0且带有消耗的 *奇幻骑士 到手中。 NL 消耗 。"
+  },
+  "shadowverse:Check": {
+    "NAME": "将军",
+    "DESCRIPTION": "增加 !M! 张 *奇幻士兵 到手中。"
+  },
+  "shadowverse:GemstoneWingy": {
+    "NAME": "炫彩瑰石·纹奇",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果本场战斗已打出5张以上拥有倒数的护符，则获得1层 残影 和 钢笔尖 。"
+  },
+  "shadowverse:DiamondMaster": {
+    "NAME": "璀钻大师",
+    "DESCRIPTION": "获得 !B! 点 格挡。 NL 如果有 残影 ，则格挡在回合开始时不再消失。 NL 如果有 钢笔尖 ，则本回合攻击伤害翻倍。 NL 如果同时拥有两者，对全体敌人造成格挡等量伤害。",
+    "EXTENDED_DESCRIPTION":[ " NL （造成 !D! 点伤害。）"]
+  },
+  "shadowverse:SapphirePriestess": {
+    "NAME": "蓝宝石祭司",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果有护符存在护符区，抽1张牌。 NL 如果手中只有1张攻击牌，则获得1层 残影 和 钢笔尖 。"
+  },
+  "shadowverse:BejeweledShrine": {
+    "NAME": "宝石圣堂",
+    "DESCRIPTION": "抽1张卡。 NL 回合开始时，从「获得1层 残影 」、「获得1层 钢笔尖 」中随机发动1种效果。 NL 回合结束时，如果同时拥有有格挡不会消失和翻倍伤害类的效果，则获得1点 力量 和 敏捷 。 NL 如果本场战斗已打出5张以上拥有倒数的护符，则由1改为3。"
+  },
+  "shadowverse:ImpiousBishop": {
+    "NAME": "恶沉的神父",
+    "DESCRIPTION": "结晶 0 \b倒计时 2 NL 回合开始时增加1张 *赎罪券 到手中。 NL  NL --------------------- NL  NL 打出或倒计时结束时获得 !B! 点 格挡 ，回复3点生命。 NL 打出时下回合开始时获得 !B! 点 格挡 。 NL 将2张 *赎罪券 加入弃牌堆。"
   }
 }
