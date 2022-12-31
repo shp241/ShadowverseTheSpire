@@ -17,11 +17,12 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
+import shadowverse.cards.AbstractEnhanceCard;
 import shadowverse.characters.Vampire;
 
 
 public class Lucius
-        extends CustomCard {
+        extends AbstractEnhanceCard {
     public static final String ID = "shadowverse:Lucius";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Lucius");
     public static final String NAME = cardStrings.NAME;
@@ -29,7 +30,7 @@ public class Lucius
     public static final String IMG_PATH = "img/cards/Lucius.png";
 
     public Lucius() {
-        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Vampire.Enums.COLOR_SCARLET, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Vampire.Enums.COLOR_SCARLET, CardRarity.UNCOMMON, CardTarget.ENEMY,3);
         this.exhaust = true;
         this.baseDamage = 0;
     }
@@ -42,17 +43,6 @@ public class Lucius
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
-    }
-
-    @Override
-    public void update() {
-        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
-                Shadowverse.Enhance(3)) {
-            setCostForTurn(3);
-        } else {
-            setCostForTurn(0);
-        }
-        super.update();
     }
 
     public void applyPowers() {
@@ -95,15 +85,25 @@ public class Lucius
         this.isDamageModified = (this.damage != this.baseDamage);
     }
 
-    public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        if (this.costForTurn == 3 && Shadowverse.Enhance(3)) {
-            addToBot((AbstractGameAction)new SFXAction("Lucius_EH"));
-        }else {
-            addToBot((AbstractGameAction) new SFXAction("Lucius"));
-        }
-        addToBot((AbstractGameAction)new WaitAction(0.8F));
-        calculateCardDamage(abstractMonster);
-        addToBot((AbstractGameAction) new DamageAction((AbstractCreature) abstractMonster, new DamageInfo((AbstractCreature) p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+    @Override
+    public void exEnhanceUse(AbstractPlayer p, AbstractMonster m) {
+
+    }
+
+    @Override
+    public void enhanceUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction("Lucius_EH"));
+        addToBot(new WaitAction(0.8F));
+        calculateCardDamage(m);
+        addToBot( new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+    }
+
+    @Override
+    public void baseUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot( new SFXAction("Lucius"));
+        addToBot(new WaitAction(0.8F));
+        calculateCardDamage(m);
+        addToBot( new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
     }
 
 

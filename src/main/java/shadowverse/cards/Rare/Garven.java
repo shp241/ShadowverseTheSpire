@@ -45,7 +45,9 @@ public class Garven extends CustomCard {
                 AbstractShadowversePlayer.Enums.MYSTERIA,
                 AbstractShadowversePlayer.Enums.ARTIFACT,
                 AbstractShadowversePlayer.Enums.HERO,
-                AbstractShadowversePlayer.Enums.LUMINOUS
+                AbstractShadowversePlayer.Enums.LUMINOUS,
+                AbstractShadowversePlayer.Enums.CONDEMNED,
+                AbstractShadowversePlayer.Enums.CHESS
         };
         for (int i = 0; i < t.length; i++) {
             for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {

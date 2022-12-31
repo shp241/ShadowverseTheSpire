@@ -206,32 +206,32 @@ public class Garuda extends CustomCard implements BranchableUpgradeCard{
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new VFXAction((AbstractCreature)abstractPlayer, (AbstractGameEffect)new ShockWaveEffect(abstractPlayer.hb.cX, abstractPlayer.hb.cY, Settings.BLUE_TEXT_COLOR, ShockWaveEffect.ShockWaveType.ADDITIVE), 0.2F));
+        addToBot(new VFXAction(abstractPlayer, new ShockWaveEffect(abstractPlayer.hb.cX, abstractPlayer.hb.cY, Settings.BLUE_TEXT_COLOR, ShockWaveEffect.ShockWaveType.ADDITIVE), 0.2F));
         if (!this.upgraded){
-            addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-            addToBot((AbstractGameAction)new SFXAction("Garuda"));
-            addToBot((AbstractGameAction)new ReduceCountDownAction(3));
+            addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+            addToBot(new SFXAction("Garuda"));
+            addToBot(new ReduceCountDownAction(3));
         }else {
             switch (chosenBranch()){
                 case 0:
-                    addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-                    addToBot((AbstractGameAction)new SFXAction("Garuda"));
-                    addToBot((AbstractGameAction)new ReduceCountDownAction(3));
+                    addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+                    addToBot(new SFXAction("Garuda"));
+                    addToBot(new ReduceCountDownAction(3));
                     break;
                 case 1:
                     if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
-                        addToBot((AbstractGameAction)new SFXAction("Garuda2_Acc"));
-                        addToBot((AbstractGameAction)new ReduceCountDownAction(1));
+                        addToBot(new SFXAction("Garuda2_Acc"));
+                        addToBot(new ReduceCountDownAction(1));
                     }else {
-                        addToBot((AbstractGameAction)new SFXAction("Garuda2"));
-                        addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect) new WhirlwindEffect(new Color(1.0F, 0.9F, 0.4F, 1.0F), true)));
-                        addToBot((AbstractGameAction)new Garuda2Action(3,this.damage));
+                        addToBot(new SFXAction("Garuda2"));
+                        addToBot(new VFXAction( new WhirlwindEffect(new Color(1.0F, 0.9F, 0.4F, 1.0F), true)));
+                        addToBot(new Garuda2Action(3,this.damage));
                     }
                     break;
                 case 2:
-                    addToBot((AbstractGameAction)new SFXAction("Garuda3"));
-                    addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-                    addToBot((AbstractGameAction)new Garuda3Action());
+                    addToBot(new SFXAction("Garuda3"));
+                    addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+                    addToBot(new Garuda3Action());
                     break;
                 default:
                     break;

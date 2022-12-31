@@ -68,7 +68,7 @@ public class AmerroSpearKnight extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
-        addToBot((AbstractGameAction) new ApplyPowerAction(p, p, (AbstractPower) new StrengthPower(p, 1), 1));
+        addToBot( new ApplyPowerAction(p, p,  new StrengthPower(p, 1), 1));
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
         if (upgraded) {
             addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));

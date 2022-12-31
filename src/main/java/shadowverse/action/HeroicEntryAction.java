@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -23,17 +24,13 @@ public class HeroicEntryAction extends AbstractGameAction {
     private static final String TEXT = CardCrawlGame.languagePack.getUIString("shadowverse:Retain").TEXT[0];
     boolean upgraded;
     boolean inDanger;
-    int[] damage;
-    DamageInfo.DamageType damageType;
 
 
-    public HeroicEntryAction(boolean upgraded, boolean inDanger, int[] damage, DamageInfo.DamageType damageType) {
+    public HeroicEntryAction(boolean upgraded, boolean inDanger) {
         this.actionType = ActionType.DAMAGE;
         this.duration = Settings.ACTION_DUR_FAST;
         this.upgraded = upgraded;
         this.inDanger = inDanger;
-        this.damage = damage;
-        this.damageType = damageType;
     }
 
     public void update() {
@@ -45,8 +42,8 @@ public class HeroicEntryAction extends AbstractGameAction {
             }
         }
         for (int i = 0; i < s; i++) {
-            addToBot(new VFXAction(p, new CleaveEffect(), 0.0F));
-            addToBot(new DamageAllEnemiesAction(p, this.damage, this.damageType, AbstractGameAction.AttackEffect.NONE, true));
+            addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
+            addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(4, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE, true));
         }
         if (upgraded) {
             for (AbstractCard c : p.hand.group) {

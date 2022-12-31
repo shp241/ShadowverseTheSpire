@@ -47,9 +47,6 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
         @SpireEnum
         public static AbstractCard.CardTags FUSION;
         @SpireEnum
-        public static AbstractCard.CardTags ENHANCE;
-
-        @SpireEnum
         public static AbstractCard.CardTags SPELL_BOOST;
         @SpireEnum
         public static AbstractCard.CardTags SPELL_BOOST_ATTACK;
@@ -73,6 +70,10 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
         public static AbstractCard.CardTags HERO;
         @SpireEnum
         public static AbstractCard.CardTags LUMINOUS;
+        @SpireEnum
+        public static AbstractCard.CardTags CONDEMNED;
+        @SpireEnum
+        public static AbstractCard.CardTags CHESS;
     }
 
     public int earthCount = 0;
@@ -89,6 +90,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
     public int healCount = 0;
     public int totalDrawAmt = 0;
     public int costUsedAmt = 0;
+    public int skullFaneAccCount = 0;
 
     public AbstractShadowversePlayer(String name, PlayerClass playerClass, String[] orbTextures, String orbVfxPath, float[] layerSpeeds, AbstractAnimation animation) {
         super(name, playerClass, orbTextures, orbVfxPath, layerSpeeds, animation);
@@ -114,6 +116,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
         this.totalDrawAmt = 0;
         this.costUsedAmt = 0;
         this.wrathLastTurn = 0;
+        this.skullFaneAccCount = 0;
     }
 
     public void useCard(AbstractCard c, AbstractMonster monster, int energyOnUse) {

@@ -1,11 +1,14 @@
 package shadowverse.action;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -13,9 +16,11 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.cardManip.ExhaustCardEffect;
+import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import shadowverse.powers.CarnivalNecromancerPower;
 import shadowverse.powers.Cemetery;
 import shadowverse.powers.EverdarkStrixPower;
+import shadowverse.powers.MyroelPower;
 
 import java.util.ArrayList;
 
@@ -73,15 +78,15 @@ public class BurialAction extends AbstractGameAction {
                 if (null!=action){
                     addToBot(action);
                 }
-                addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p, (AbstractPower)new Cemetery((AbstractCreature)p, 1), 1));
+                addToBot(new ApplyPowerAction(p, p, new Cemetery(p, 1), 1));
                 if (this.p.hasPower(CarnivalNecromancerPower.POWER_ID)){
                     int drawAmt = 0;
                     for (AbstractPower power:this.p.powers){
                         if (power instanceof CarnivalNecromancerPower)
                             drawAmt = power.amount;
                     }
-                    addToBot((AbstractGameAction)new SFXAction("CarnivalNecromancerPower"));
-                    addToBot((AbstractGameAction)new DrawCardAction(drawAmt));
+                    addToBot(new SFXAction("CarnivalNecromancerPower"));
+                    addToBot(new DrawCardAction(drawAmt));
                 }
                 if (this.p.hasPower(EverdarkStrixPower.POWER_ID)){
                     int blockAmt = 0;
@@ -89,7 +94,7 @@ public class BurialAction extends AbstractGameAction {
                         if (power instanceof EverdarkStrixPower)
                             blockAmt = power.amount;
                     }
-                    addToBot((AbstractGameAction)new GainBlockAction(this.p,blockAmt));
+                    addToBot(new GainBlockAction(this.p,blockAmt));
                 }
                 this.isDone = true;
                 return;
@@ -109,15 +114,15 @@ public class BurialAction extends AbstractGameAction {
             if (null!=action){
                 addToBot(action);
             }
-            addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p, (AbstractPower)new Cemetery((AbstractCreature)p, 1), 1));
+            addToBot(new ApplyPowerAction(p, p, new Cemetery(p, 1), 1));
             if (this.p.hasPower(CarnivalNecromancerPower.POWER_ID)){
                 int drawAmt = 0;
                 for (AbstractPower power:this.p.powers){
                     if (power instanceof CarnivalNecromancerPower)
                         drawAmt = power.amount;
                 }
-                addToBot((AbstractGameAction)new SFXAction("CarnivalNecromancerPower"));
-                addToBot((AbstractGameAction)new DrawCardAction(drawAmt));
+                addToBot(new SFXAction("CarnivalNecromancerPower"));
+                addToBot(new DrawCardAction(drawAmt));
             }
             if (this.p.hasPower(EverdarkStrixPower.POWER_ID)){
                 int blockAmt = 0;
@@ -125,7 +130,19 @@ public class BurialAction extends AbstractGameAction {
                     if (power instanceof EverdarkStrixPower)
                         blockAmt = power.amount;
                 }
-                addToBot((AbstractGameAction)new GainBlockAction(this.p,blockAmt));
+                addToBot(new GainBlockAction(this.p,blockAmt));
+            }
+            for (AbstractPower pow : this.p.powers){
+                if (pow instanceof MyroelPower){
+                    for (int i=0;i<this.amount;i++){
+                        if (pow.amount >= this.amount){
+                            pow.amount --;
+                            pow.updateDescription();
+                            addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
+                            addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(10, true), DamageInfo.DamageType.THORNS, AttackEffect.FIRE, true));
+                        }
+                    }
+                }
             }
             this.isDone = true;
         }

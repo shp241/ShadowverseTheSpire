@@ -13,11 +13,12 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.action.DivineSmithingAction;
+import shadowverse.cards.AbstractEnhanceCard;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Elf;
 
 public class DivineSmithing
-        extends CustomCard {
+        extends AbstractEnhanceCard {
     public static final String ID = "shadowverse:DivineSmithing";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:DivineSmithing");
     public static final String NAME = cardStrings.NAME;
@@ -25,8 +26,7 @@ public class DivineSmithing
     public static final String IMG_PATH = "img/cards/DivineSmithing.png";
 
     public DivineSmithing() {
-        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Elf.Enums.COLOR_GREEN, CardRarity.UNCOMMON, CardTarget.SELF);
-        this.tags.add(AbstractShadowversePlayer.Enums.ENHANCE);
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Elf.Enums.COLOR_GREEN, CardRarity.UNCOMMON, CardTarget.SELF,1);
         this.exhaust = true;
     }
 
@@ -40,24 +40,20 @@ public class DivineSmithing
         }
     }
 
+
     @Override
-    public void update() {
-        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
-                Shadowverse.Enhance(1)) {
-            setCostForTurn(1);
-        } else {
-            setCostForTurn(0);
-        }
-        super.update();
+    public void exEnhanceUse(AbstractPlayer p, AbstractMonster m) {
+
     }
 
-    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new SFXAction("DivineSmithing"));
-        if (this.costForTurn == 1 && Shadowverse.Enhance(1)) {
-            addToBot((AbstractGameAction) new DivineSmithingAction(true));
-        } else {
-            addToBot((AbstractGameAction) new DivineSmithingAction(false));
-        }
+    @Override
+    public void enhanceUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new DivineSmithingAction(true));
+    }
+
+    @Override
+    public void baseUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new DivineSmithingAction(false));
     }
 
 

@@ -1,7 +1,6 @@
 package shadowverse.cards.Rare;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
@@ -15,7 +14,6 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.EntangleEffect;
 import shadowverse.Shadowverse;
 import shadowverse.characters.AbstractShadowversePlayer;
@@ -66,22 +64,20 @@ public class RuinwebSpider
     }
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.POWER) {
-            addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new RuinwebSpiderPower(abstractPlayer,this.magicNumber),this.magicNumber));
+        if (Shadowverse.Accelerate( this) && this.type == CardType.POWER) {
+            addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new RuinwebSpiderPower(abstractPlayer,this.magicNumber),this.magicNumber));
         } else {
-            addToBot((AbstractGameAction)new SkipEnemiesTurnAction());
+            addToBot(new SkipEnemiesTurnAction());
             for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-                addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new EntangleEffect(abstractPlayer.hb.cX - 70.0F * Settings.scale, abstractPlayer.hb.cY + 10.0F * Settings.scale, mo.hb.cX, mo.hb.cY), 0.5F));
+                addToBot(new VFXAction(new EntangleEffect(abstractPlayer.hb.cX - 70.0F * Settings.scale, abstractPlayer.hb.cY + 10.0F * Settings.scale, mo.hb.cX, mo.hb.cY), 0.5F));
             }
-            if(Shadowverse.Accelerate(this)){
-                addToBot(new MakeTempCardInDiscardAction(this.makeSameInstanceOf(),1));
-            }
+            addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
         }
     }
 
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new RuinwebSpider();
+        return  new RuinwebSpider();
     }
 }
 

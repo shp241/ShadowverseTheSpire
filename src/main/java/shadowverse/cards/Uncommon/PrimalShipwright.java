@@ -106,15 +106,13 @@ public class PrimalShipwright
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         if (this.type==CardType.POWER && this.costForTurn == 0){
-            addToBot((AbstractGameAction)new SFXAction("PrimalShipwright_Acc"));
+            addToBot(new SFXAction("PrimalShipwright_Acc"));
         }else {
             this.crystalize = false;
-            addToBot((AbstractGameAction)new SFXAction("PrimalShipwright"));
+            addToBot(new SFXAction("PrimalShipwright"));
             calculateCardDamage(abstractMonster);
-            addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-            if(Shadowverse.Accelerate(this)){
-                addToBot(new MakeTempCardInDiscardAction(this.makeSameInstanceOf(),1));
-            }
+            addToBot(new DamageAction(abstractMonster, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+            addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
         }
     }
 

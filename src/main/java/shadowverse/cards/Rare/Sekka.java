@@ -38,7 +38,7 @@ public class Sekka extends CustomCard {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.RARE, CardTarget.ENEMY);
         this.baseDamage = 1;
         this.baseBlock = 3;
-        this.cardsToPreview = (AbstractCard) new ResolveOfSekka();
+        this.cardsToPreview = new ResolveOfSekka();
         this.jokePortrait = new TextureAtlas.AtlasRegion(LEADER_SKIN_VERSION, 0, 0, LEADER_SKIN_VERSION.getWidth(), LEADER_SKIN_VERSION.getHeight());
     }
 
@@ -69,11 +69,11 @@ public class Sekka extends CustomCard {
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false))) {
-            addToBot((AbstractGameAction) new SFXAction("Sekka_L"));
+            addToBot(new SFXAction("Sekka_L"));
         }else {
-            addToBot((AbstractGameAction) new SFXAction("Sekka"));
+            addToBot(new SFXAction("Sekka"));
         }
-        addToBot((AbstractGameAction) new GainBlockAction(abstractPlayer, this.block));
+        addToBot(new GainBlockAction(abstractPlayer, this.block));
         int count = 0;
         for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
             if (c.type == CardType.ATTACK && !(c.hasTag(CardTags.STRIKE)) && c.color == Elf.Enums.COLOR_GREEN) {
@@ -82,19 +82,19 @@ public class Sekka extends CustomCard {
         }
         count--;
         if (count >= 9) {
-            addToBot((AbstractGameAction) new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy(), 1));
+            addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy(), 1));
             count = 9;
         }
         for (int i = 0; i < count; i++) {
             if (!abstractMonster.isDeadOrEscaped()) {
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new VFXAction((AbstractGameEffect) new FireballEffect(abstractPlayer.hb.cX, abstractPlayer.hb.cY, abstractMonster.hb.cX, abstractMonster.hb.cY), 0.2F));
-                addToBot((AbstractGameAction) new DamageAction((AbstractCreature) abstractMonster, new DamageInfo((AbstractCreature) abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+                AbstractDungeon.actionManager.addToBottom(new VFXAction(new FireballEffect(abstractPlayer.hb.cX, abstractPlayer.hb.cY, abstractMonster.hb.cX, abstractMonster.hb.cY), 0.2F));
+                addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
             }
         }
     }
 
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new Sekka();
+        return new Sekka();
     }
 }

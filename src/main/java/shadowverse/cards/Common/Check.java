@@ -8,7 +8,9 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import shadowverse.action.DrawPileToHandAction_Tag_NOREPEAT;
 import shadowverse.cards.Temp.MagicalPawn;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Witchcraft;
 
 public class Check extends CustomCard {
@@ -21,8 +23,9 @@ public class Check extends CustomCard {
     public Check() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Witchcraft.Enums.COLOR_BLUE, CardRarity.COMMON, CardTarget.NONE);
         this.cardsToPreview = new MagicalPawn();
-        this.baseMagicNumber = 3;
+        this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
+        this.tags.add(AbstractShadowversePlayer.Enums.CHESS);
     }
 
 
@@ -36,6 +39,7 @@ public class Check extends CustomCard {
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy(),this.magicNumber));
+        addToBot(new DrawPileToHandAction_Tag_NOREPEAT(2,AbstractShadowversePlayer.Enums.CHESS,null,this));
     }
 
 

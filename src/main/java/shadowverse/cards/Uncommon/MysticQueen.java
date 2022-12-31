@@ -19,6 +19,7 @@ import com.megacrit.cardcrawl.powers.ConfusionPower;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.ShockWaveEffect;
 import shadowverse.cards.Temp.MagicalPawn;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Witchcraft;
 import shadowverse.powers.ChaosPower;
 import shadowverse.powers.MysticQueenPower;
@@ -34,6 +35,7 @@ public class MysticQueen
     public MysticQueen() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.POWER, Witchcraft.Enums.COLOR_BLUE, CardRarity.UNCOMMON, CardTarget.SELF);
         this.cardsToPreview = new MagicalPawn();
+        this.tags.add(AbstractShadowversePlayer.Enums.CHESS);
     }
 
 

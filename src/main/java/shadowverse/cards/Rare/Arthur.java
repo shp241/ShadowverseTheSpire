@@ -79,7 +79,7 @@ public class Arthur extends CustomCard {
         addToBot(new MinionSummonAction(new HeavyKnight()));
         addToBot(new MinionSummonAction(new ShieldGuardian()));
         if (inDanger()) {
-            addToBot(new MinionBuffAction(2, 2, true));
+            addToBot(new MinionBuffAction(1, 1, true));
         }
     }
 

@@ -63,9 +63,7 @@ public class DirtyPriest
             addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
             addToBot((AbstractGameAction)new MakeTempCardInDrawPileAction(this.cardsToPreview,1,true,true,false));
             addToBot((AbstractGameAction)new MakeTempCardInDiscardAction(this.cardsToPreview,1));
-            if(Shadowverse.Accelerate(this)){
-                addToBot(new MakeTempCardInDiscardAction(this.makeSameInstanceOf(),1));
-            }
+            addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
         }
     }
 

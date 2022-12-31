@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.PoisonPower;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Elf;
 import shadowverse.characters.Witchcraft;
 import shadowverse.powers.MysticKingPower;
@@ -34,6 +35,7 @@ public class MagicalPawn extends CustomCard {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.SPECIAL, CardTarget.ENEMY);
         this.baseDamage = 4;
         this.exhaust = true;
+        this.tags.add(AbstractShadowversePlayer.Enums.CHESS);
     }
 
 

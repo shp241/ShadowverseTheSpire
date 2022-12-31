@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.cards.Temp.ForestBat;
 import shadowverse.cards.Temp.MagicalPawn;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Vampire;
 import shadowverse.characters.Witchcraft;
 import shadowverse.powers.EpitaphPower;
@@ -33,6 +34,7 @@ public class MagicalStrategy
         this.cardsToPreview = new MagicalPawn();
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
+        this.tags.add(AbstractShadowversePlayer.Enums.CHESS);
     }
 
 

@@ -49,15 +49,18 @@ public class LurchingCorpse extends CustomCard {
     @Override
     public void triggerOnExhaust() {
         for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-            addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)mo, (AbstractCreature)AbstractDungeon.player, (AbstractPower)new WeakPower((AbstractCreature)mo, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
-            addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)mo, (AbstractCreature)AbstractDungeon.player, (AbstractPower)new VulnerablePower((AbstractCreature)mo, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+            if (mo != null && !mo.isDeadOrEscaped()) {
+                addToBot(new ApplyPowerAction( mo,  AbstractDungeon.player, (AbstractPower) new WeakPower( mo, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+                addToBot(new ApplyPowerAction( mo,  AbstractDungeon.player, (AbstractPower) new VulnerablePower( mo, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+
+            }
         }
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (m != null)
-            addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new ClawEffect(m.hb.cX, m.hb.cY, Color.DARK_GRAY, Color.WHITE), 0.1F));
-        addToBot((AbstractGameAction)new DamageAction((AbstractCreature)m, new DamageInfo((AbstractCreature)p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+            addToBot(new VFXAction((AbstractGameEffect) new ClawEffect(m.hb.cX, m.hb.cY, Color.DARK_GRAY, Color.WHITE), 0.1F));
+        addToBot(new DamageAction( m, new DamageInfo( p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
     }
 
     public AbstractCard makeCopy() {

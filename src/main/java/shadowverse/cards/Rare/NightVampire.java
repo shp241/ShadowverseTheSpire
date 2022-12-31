@@ -2,6 +2,8 @@ package shadowverse.cards.Rare;
 
 
 import basemod.abstracts.CustomCard;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
@@ -12,10 +14,12 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
+import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import com.megacrit.cardcrawl.vfx.stance.StanceAuraEffect;
 import shadowverse.cards.Temp.Fairy;
 import shadowverse.cards.Temp.ForestBat;
@@ -32,10 +36,13 @@ public class NightVampire extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/NightVampire.png";
+    private static final Texture LEADER_SKIN_VERSION = ImageMaster.loadImage("img/cards/NightVampire_L.png");
 
     public NightVampire() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.POWER, Vampire.Enums.COLOR_SCARLET, CardRarity.RARE, CardTarget.SELF);
-        this.cardsToPreview = (AbstractCard) new ForestBat();
+        this.cardsToPreview = new ForestBat();
+        this.jokePortrait = new TextureAtlas.AtlasRegion(LEADER_SKIN_VERSION, 0, 0, LEADER_SKIN_VERSION.getWidth(), LEADER_SKIN_VERSION.getHeight());
+
     }
 
 
@@ -50,7 +57,11 @@ public class NightVampire extends CustomCard {
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new SFXAction("NightVampire"));
+        if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false))) {
+            addToBot((AbstractGameAction) new SFXAction("NightVampire_L"));
+        }else {
+            addToBot((AbstractGameAction) new SFXAction("NightVampire"));
+        }
         AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
         addToBot((AbstractGameAction) new MakeTempCardInHandAction(c, 2));
         if (!abstractPlayer.hasPower(NightVampirePower.POWER_ID))
@@ -62,7 +73,7 @@ public class NightVampire extends CustomCard {
 
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new NightVampire();
+        return new NightVampire();
     }
 }
 

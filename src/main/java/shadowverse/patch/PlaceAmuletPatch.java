@@ -31,18 +31,18 @@ public class PlaceAmuletPatch {
             if (p instanceof Bishop || p instanceof Royal ||
                     ((AbstractDungeon.player.hasRelic(PrismaticShard.ID)|| (AbstractDungeon.player.hasRelic(AlterplaneArbiter.ID)))&&AbstractDungeon.player instanceof AbstractShadowversePlayer)){
                 if (c instanceof AbstractAmuletCard || (c instanceof AbstractCrystalizeCard && c.type== AbstractCard.CardType.POWER)){
-                    AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new RealWaitAction(0.6F));
-                    AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new PlaceAmulet(c,p.hand));
+                    AbstractDungeon.actionManager.addToBottom(new RealWaitAction(0.6F));
+                    AbstractDungeon.actionManager.addToBottom(new PlaceAmulet(c,p.hand));
                 }
                 if (c instanceof AbstractNoCountDownAmulet && !c.hasTag(AbstractShadowversePlayer.Enums.MINION)){
                     if (c instanceof NaterranGreatTree){
                         if (!p.hasPower(NaterranTree.POWER_ID)){
-                            AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new RealWaitAction(0.6F));
-                            AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new PlaceAmulet(c,p.hand));
+                            AbstractDungeon.actionManager.addToBottom(new RealWaitAction(0.6F));
+                            AbstractDungeon.actionManager.addToBottom(new PlaceAmulet(c,p.hand));
                         }
                     }else {
-                        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new RealWaitAction(0.6F));
-                        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new PlaceAmulet(c,p.hand));
+                        AbstractDungeon.actionManager.addToBottom(new RealWaitAction(0.6F));
+                        AbstractDungeon.actionManager.addToBottom(new PlaceAmulet(c,p.hand));
                     }
                 }
             }

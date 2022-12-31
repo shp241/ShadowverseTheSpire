@@ -44,21 +44,21 @@ public class KarulaPower
     }
 
     public void atStartOfTurnPostDraw() {
-        addToBot((AbstractGameAction)new RemoveSpecificPowerAction(this.owner,this.owner,this));
+        addToBot(new RemoveSpecificPowerAction(this.owner,this.owner,this));
     }
 
     @Override
     public void atEndOfTurn(boolean isPlayer) {
         if (isPlayer){
             if (EnergyPanel.getCurrentEnergy()>0){
-                addToBot((AbstractGameAction)new SFXAction("KarulaPower"));
-                addToBot((AbstractGameAction)new ApplyPowerAction(this.owner,this.owner,(AbstractPower)new StrengthPower(this.owner,this.amount),this.amount));
-                addToBot((AbstractGameAction)new ApplyPowerAction(this.owner,this.owner,(AbstractPower)new DexterityPower(this.owner,this.amount),this.amount));
-                AbstractCreature m = (AbstractCreature) AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
+                addToBot(new SFXAction("KarulaPower"));
+                addToBot(new ApplyPowerAction(this.owner,this.owner,(AbstractPower)new StrengthPower(this.owner,this.amount),this.amount));
+                addToBot(new ApplyPowerAction(this.owner,this.owner,(AbstractPower)new DexterityPower(this.owner,this.amount),this.amount));
+                AbstractCreature m = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
                 if (m != null){
-                    addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new VerticalImpactEffect(m.hb.cX + m.hb.width / 4.0F, m.hb.cY - m.hb.height / 4.0F)));
-                    addToBot((AbstractGameAction)new ApplyPowerAction(m,this.owner,(AbstractPower)new VulnerablePower(m,3,false),3));
-                    addToBot((AbstractGameAction)new ApplyPowerAction(m,this.owner,(AbstractPower)new WeakPower(m,3,false),3));
+                    addToBot(new VFXAction(new VerticalImpactEffect(m.hb.cX + m.hb.width / 4.0F, m.hb.cY - m.hb.height / 4.0F)));
+                    addToBot(new ApplyPowerAction(m,this.owner,(AbstractPower)new VulnerablePower(m,3,false),3));
+                    addToBot(new ApplyPowerAction(m,this.owner,(AbstractPower)new WeakPower(m,3,false),3));
                 }
             }
         }

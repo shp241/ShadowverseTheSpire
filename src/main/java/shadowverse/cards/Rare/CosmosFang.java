@@ -33,7 +33,7 @@ import java.util.ArrayList;
 
    public CosmosFang() {
      super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.RARE, CardTarget.ALL);
-     this.baseBlock = 20;
+     this.baseBlock = 18;
      this.exhaust = true;
    }
  
@@ -41,7 +41,7 @@ import java.util.ArrayList;
    public void upgrade() {
      if (!this.upgraded) {
        upgradeName();
-       upgradeBlock(6);
+       upgradeBlock(4);
        this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
        initializeDescription();
      } 
@@ -57,7 +57,7 @@ import java.util.ArrayList;
        return card.color==Elf.Enums.COLOR_GREEN&&card.type==CardType.ATTACK&&!card.hasTag(CardTags.STRIKE);
      },11-p.hand.group.size(),abstractCards -> {
        for (AbstractCard ca:abstractCards){
-         addToBot(new GainBlockAction(p,4));
+         addToBot(new GainBlockAction(p,3));
          addToBot(new ApplyPowerAction(p,p,new StrengthPower(p,1),1));
        }
      }));
@@ -65,7 +65,7 @@ import java.util.ArrayList;
        for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters){
          if (!mo.isDeadOrEscaped()){
            rollIntent(mo);
-           addToBot(new GainBlockAction(p,4));
+           addToBot(new GainBlockAction(p,3));
            addToBot(new ApplyPowerAction(p,p,new StrengthPower(p,1),1));
          }
        }

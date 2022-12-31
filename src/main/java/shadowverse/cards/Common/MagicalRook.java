@@ -29,6 +29,7 @@ public class MagicalRook extends CustomCard {
         this.cardsToPreview = new MagicalPawn();
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
+        this.tags.add(AbstractShadowversePlayer.Enums.CHESS);
     }
 
 

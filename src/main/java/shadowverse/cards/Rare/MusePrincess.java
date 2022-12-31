@@ -1,87 +1,74 @@
- package shadowverse.cards.Rare;
+package shadowverse.cards.Rare;
 
 
- import basemod.abstracts.CustomCard;
- import com.megacrit.cardcrawl.actions.AbstractGameAction;
- import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
- import com.megacrit.cardcrawl.actions.common.GainBlockAction;
- import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
- import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
- import com.megacrit.cardcrawl.actions.utility.SFXAction;
- import com.megacrit.cardcrawl.cards.AbstractCard;
- import com.megacrit.cardcrawl.characters.AbstractPlayer;
- import com.megacrit.cardcrawl.core.AbstractCreature;
- import com.megacrit.cardcrawl.core.CardCrawlGame;
- import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
- import com.megacrit.cardcrawl.localization.CardStrings;
- import com.megacrit.cardcrawl.monsters.AbstractMonster;
- import com.megacrit.cardcrawl.powers.AbstractPower;
- import com.megacrit.cardcrawl.rooms.AbstractRoom;
- import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
- import shadowverse.Shadowverse;
- import shadowverse.cards.Temp.Fil;
- import shadowverse.cards.Temp.NaterranGreatTree;
- import shadowverse.cards.Uncommon.Muse;
- import shadowverse.characters.AbstractShadowversePlayer;
- import shadowverse.characters.Bishop;
- import shadowverse.characters.Elf;
- import shadowverse.powers.FilPower;
- import shadowverse.powers.MusePrincessPower;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import shadowverse.cards.AbstractEnhanceCard;
+import shadowverse.cards.Temp.NaterranGreatTree;
+import shadowverse.cards.Uncommon.Muse;
+import shadowverse.characters.AbstractShadowversePlayer;
+import shadowverse.characters.Bishop;
+import shadowverse.powers.MusePrincessPower;
 
 
- public class MusePrincess extends CustomCard {
-   public static final String ID = "shadowverse:MusePrincess";
-   public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:MusePrincess");
-   public static final String NAME = cardStrings.NAME;
-   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-   public static final String IMG_PATH = "img/cards/MusePrincess.png";
+public class MusePrincess extends AbstractEnhanceCard {
+    public static final String ID = "shadowverse:MusePrincess";
+    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:MusePrincess");
+    public static final String NAME = cardStrings.NAME;
+    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String IMG_PATH = "img/cards/MusePrincess.png";
 
-   public MusePrincess() {
-     super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.SELF);
-     this.tags.add(AbstractShadowversePlayer.Enums.ENHANCE);
-     this.tags.add(AbstractShadowversePlayer.Enums.NATURAL);
-     this.baseBlock = 9;
-     this.cardsToPreview = (AbstractCard)new Muse();
-   }
- 
-   
-   public void upgrade() {
-     if (!this.upgraded) {
-       upgradeName();
-       upgradeBlock(5);
-     } 
-   }
+    public MusePrincess() {
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.SELF, 3);
+        this.tags.add(AbstractShadowversePlayer.Enums.ENHANCE);
+        this.tags.add(AbstractShadowversePlayer.Enums.NATURAL);
+        this.baseBlock = 9;
+        this.cardsToPreview = new Muse();
+    }
 
-     @Override
-     public void update() {
-         if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
-                 Shadowverse.Enhance(3)) {
-             setCostForTurn(3);
-         } else {
-             if (this.costForTurn>1){
-                 setCostForTurn(2);
-             }
-         }
-         super.update();
-     }
-   
-   public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-       addToBot((AbstractGameAction) new GainBlockAction(abstractPlayer,this.block));
-       if (!abstractPlayer.hasPower(MusePrincessPower.POWER_ID))
-           addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new MusePrincessPower((AbstractCreature)abstractPlayer)));
-       if (Shadowverse.Enhance(3) && this.costForTurn == 3 ){
-           addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new NaterranGreatTree(),3));
-           addToBot((AbstractGameAction)new GainEnergyAction(1));
-           addToBot((AbstractGameAction)new SFXAction("MusePrincess_EH"));
-       }else {
-           addToBot((AbstractGameAction)new SFXAction("MusePrincess"));
-           addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new NaterranGreatTree()));
-       }
-   }
- 
-   
-   public AbstractCard makeCopy() {
-     return (AbstractCard)new MusePrincess();
-   }
- }
+
+    public void upgrade() {
+        if (!this.upgraded) {
+            upgradeName();
+            upgradeBlock(5);
+        }
+    }
+
+
+    public AbstractCard makeCopy() {
+        return new MusePrincess();
+    }
+
+    @Override
+    public void exEnhanceUse(AbstractPlayer p, AbstractMonster m) {
+
+    }
+
+    @Override
+    public void enhanceUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new GainBlockAction(p, this.block));
+        if (!p.hasPower(MusePrincessPower.POWER_ID))
+            addToBot(new ApplyPowerAction(p, p, new MusePrincessPower(p)));
+        addToBot(new MakeTempCardInHandAction(new NaterranGreatTree(), 3));
+        addToBot(new GainEnergyAction(1));
+        addToBot(new SFXAction("MusePrincess_EH"));
+    }
+
+    @Override
+    public void baseUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new GainBlockAction(p, this.block));
+        if (!p.hasPower(MusePrincessPower.POWER_ID))
+            addToBot(new ApplyPowerAction(p, p, new MusePrincessPower(p)));
+        addToBot(new SFXAction("MusePrincess"));
+        addToBot(new MakeTempCardInHandAction(new NaterranGreatTree()));
+    }
+}
 

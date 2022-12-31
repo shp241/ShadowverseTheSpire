@@ -139,6 +139,10 @@ public class CutsceneChangePatches {
                     customPanels.add(new CutscenePanel("img/scene/ameth1.png"));
                     customPanels.add(new CutscenePanel("img/scene/nemesis2.png"));
                     customPanels.add(new CutscenePanel("img/scene/ameth3.png"));
+                }else if ((CharacterSelectScreenPatches.characters[6]).reskinCount == 3){
+                    customPanels.add(new CutscenePanel("img/scene/kaiser1.png"));
+                    customPanels.add(new CutscenePanel("img/scene/nemesis2.png"));
+                    customPanels.add(new CutscenePanel("img/scene/kaiser3.png"));
                 }
             }else if (AbstractDungeon.player instanceof Bishop){
                 if ((CharacterSelectScreenPatches.characters[5]).reskinCount == 0){

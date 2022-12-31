@@ -45,8 +45,11 @@ import shadowverse.characters.Bishop;
 
    public void applyPowers() {
      super.applyPowers();
-     AbstractShadowversePlayer w = (AbstractShadowversePlayer) AbstractDungeon.player;
-     int amt = w.amuletCount;
+     int amt = 0;
+     if (AbstractDungeon.player instanceof AbstractShadowversePlayer){
+       AbstractShadowversePlayer w = (AbstractShadowversePlayer) AbstractDungeon.player;
+       amt = w.amuletCount;
+     }
      this.rawDescription = cardStrings.DESCRIPTION;
      this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0]+amt;
      this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[1]+amt;
@@ -56,12 +59,14 @@ import shadowverse.characters.Bishop;
 
 
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new SFXAction("Charaton"));
-     AbstractShadowversePlayer w = (AbstractShadowversePlayer) AbstractDungeon.player;
-     addToBot((AbstractGameAction)new GainEnergyAction(w.amuletCount));
-     addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new BlizzardEffect(w.amuletCount, AbstractDungeon.getMonsters().shouldFlipVfx()), 0.5F));
-     for (int i =0;i<w.amuletCount;i++){
-       addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+     addToBot(new SFXAction("Charaton"));
+     if (abstractPlayer instanceof AbstractShadowversePlayer){
+       AbstractShadowversePlayer w = (AbstractShadowversePlayer) AbstractDungeon.player;
+       addToBot(new GainEnergyAction(w.amuletCount));
+       addToBot(new VFXAction(new BlizzardEffect(w.amuletCount, AbstractDungeon.getMonsters().shouldFlipVfx()), 0.5F));
+       for (int i =0;i<w.amuletCount;i++){
+         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+       }
      }
    }
  

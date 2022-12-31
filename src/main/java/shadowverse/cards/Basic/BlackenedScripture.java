@@ -38,8 +38,8 @@ public class BlackenedScripture
     private static final Texture LEADER_SKIN_VERSION = ImageMaster.loadImage("img/cards/BlackenedScripture_L.png");
 
     public BlackenedScripture() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Bishop.Enums.COLOR_WHITE, CardRarity.BASIC, CardTarget.ENEMY);
-        this.baseMagicNumber = 2;
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Bishop.Enums.COLOR_WHITE, CardRarity.BASIC, CardTarget.ENEMY);
+        this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.jokePortrait = new TextureAtlas.AtlasRegion(LEADER_SKIN_VERSION, 0, 0, LEADER_SKIN_VERSION.getWidth(), LEADER_SKIN_VERSION.getHeight());
     }
@@ -61,7 +61,7 @@ public class BlackenedScripture
             addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) m, (AbstractCreature) p, (AbstractPower) new WeakPower((AbstractCreature) m, this.magicNumber, false), this.magicNumber));
             addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) m, (AbstractCreature) p, (AbstractPower) new FrailPower((AbstractCreature) m, this.magicNumber, false), this.magicNumber));
         }
-        addToBot((AbstractGameAction) new JudgementAction((AbstractCreature) m, 9));
+        addToBot((AbstractGameAction) new JudgementAction((AbstractCreature) m, 6));
     }
 
 

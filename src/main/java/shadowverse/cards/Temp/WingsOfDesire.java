@@ -1,24 +1,16 @@
 package shadowverse.cards.Temp;
 
-import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.StrengthPower;
-import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import shadowverse.Shadowverse;
-import shadowverse.characters.Elf;
+import shadowverse.cards.AbstractEnhanceCard;
 import shadowverse.characters.Vampire;
-import shadowverse.powers.ShootOfUnkillingPower;
 import shadowverse.powers.WingsOfDesirePower;
 
-public class WingsOfDesire extends CustomCard {
+public class WingsOfDesire extends AbstractEnhanceCard {
     public static final String ID = "shadowverse:WingsOfDesire";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:WingsOfDesire");
     public static final String NAME = cardStrings.NAME;
@@ -26,7 +18,7 @@ public class WingsOfDesire extends CustomCard {
     public static final String IMG_PATH = "img/cards/WingsOfDesire.png";
 
     public WingsOfDesire() {
-        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Vampire.Enums.COLOR_SCARLET, CardRarity.SPECIAL, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Vampire.Enums.COLOR_SCARLET, CardRarity.SPECIAL, CardTarget.SELF, 1);
         this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
@@ -41,24 +33,20 @@ public class WingsOfDesire extends CustomCard {
     }
 
     @Override
-    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (this.costForTurn == 1 && Shadowverse.Enhance(1)) {
-            addToBot((AbstractGameAction)new SFXAction("WingsOfDesire_EH"));
-            addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,new WingsOfDesirePower(abstractPlayer,1,this.magicNumber),1));
-        }else {
-            addToBot((AbstractGameAction)new SFXAction("WingsOfDesire"));
-        }
-        addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,new WingsOfDesirePower(abstractPlayer,1,this.magicNumber),1));
+    public void exEnhanceUse(AbstractPlayer p, AbstractMonster m) {
+
     }
 
     @Override
-    public void update() {
-        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
-                Shadowverse.Enhance(1)){
-            setCostForTurn(1);
-        }else {
-            setCostForTurn(0);
-        }
-        super.update();
+    public void enhanceUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction("WingsOfDesire_EH"));
+        addToBot(new ApplyPowerAction(p, p, new WingsOfDesirePower(p, 1, this.magicNumber), 1));
+        addToBot(new ApplyPowerAction(p, p, new WingsOfDesirePower(p, 1, this.magicNumber), 1));
+    }
+
+    @Override
+    public void baseUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction("WingsOfDesire"));
+        addToBot(new ApplyPowerAction(p, p, new WingsOfDesirePower(p, 1, this.magicNumber), 1));
     }
 }

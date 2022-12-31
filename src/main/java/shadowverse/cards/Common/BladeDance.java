@@ -18,13 +18,14 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.action.MinionBuffAction;
+import shadowverse.cards.AbstractEnhanceCard;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 import shadowverse.orbs.Minion;
 import shadowverse.powers.DualbladePower;
 
 public class BladeDance
-        extends CustomCard {
+        extends AbstractEnhanceCard {
     public static final String ID = "shadowverse:BladeDance";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:BladeDance");
     public static final String NAME = cardStrings.NAME;
@@ -32,7 +33,7 @@ public class BladeDance
     public static final String IMG_PATH = "img/cards/BladeDance.png";
 
     public BladeDance() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ALL_ENEMY);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ALL_ENEMY, 2);
         this.baseDamage = 3;
     }
 
@@ -45,44 +46,57 @@ public class BladeDance
     }
 
     @Override
-    public void update() {
-        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
-                Shadowverse.Enhance(2)) {
-            setCostForTurn(2);
-        } else {
-            setCostForTurn(1);
-        }
-        super.update();
+    public void exEnhanceUse(AbstractPlayer p, AbstractMonster m) {
+
     }
 
-    public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
+    @Override
+    public void enhanceUse(AbstractPlayer p, AbstractMonster m) {
         int atk = 0;
         AbstractOrb target = null;
-        for (AbstractOrb o:p.orbs){
-            if (o instanceof Minion){
-                if (((Minion) o).attack>atk){
+        for (AbstractOrb o : p.orbs) {
+            if (o instanceof Minion) {
+                if (((Minion) o).attack > atk) {
                     atk = ((Minion) o).attack;
                     target = o;
                 }
             }
         }
-        if (this.costForTurn == 2 && Shadowverse.Enhance(2) && target!=null) {
-            atk+=2;
-            AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(2, 0, (Minion)target));
-            addToBot((AbstractGameAction)new SFXAction("BladeDance_EH"));
-        }else {
-            addToBot((AbstractGameAction)new SFXAction("BladeDance"));
+        if (target != null) {
+            atk += 2;
+            AbstractDungeon.actionManager.addToBottom(new MinionBuffAction(2, 0, (Minion) target));
+            addToBot(new SFXAction("BladeDance_EH"));
         }
-        if (atk>10)
-            atk=10;
+        if (atk > 10)
+            atk = 10;
         for (int i = 0; i < atk; i++) {
-            addToBot((AbstractGameAction)new AttackDamageRandomEnemyAction((AbstractCard)this, AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+            addToBot(new AttackDamageRandomEnemyAction(this, AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        }
+    }
+
+    @Override
+    public void baseUse(AbstractPlayer p, AbstractMonster m) {
+        int atk = 0;
+        AbstractOrb target = null;
+        for (AbstractOrb o : p.orbs) {
+            if (o instanceof Minion) {
+                if (((Minion) o).attack > atk) {
+                    atk = ((Minion) o).attack;
+                    target = o;
+                }
+            }
+        }
+        addToBot(new SFXAction("BladeDance"));
+        if (atk > 10)
+            atk = 10;
+        for (int i = 0; i < atk; i++) {
+            addToBot(new AttackDamageRandomEnemyAction(this, AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         }
     }
 
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new BladeDance();
+        return new BladeDance();
     }
 }
 

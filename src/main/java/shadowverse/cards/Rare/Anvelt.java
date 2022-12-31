@@ -63,16 +63,14 @@ public class Anvelt
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         if (this.type==CardType.POWER && this.costForTurn == 0){
-            addToBot((AbstractGameAction)new SFXAction("Anvelt_Acc"));
+            addToBot(new SFXAction("Anvelt_Acc"));
         }else {
-            addToBot((AbstractGameAction)new SFXAction("Anvelt"));
-            addToBot((AbstractGameAction)new GainBlockAction(p,this.block));
-            addToBot((AbstractGameAction)new VFXAction((AbstractCreature)p, (AbstractGameEffect)new SweepingBeamEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, AbstractDungeon.player.flipHorizontal), 0.4F));
-            addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-            addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-            if(Shadowverse.Accelerate(this)){
-                addToBot(new MakeTempCardInDiscardAction(this.makeSameInstanceOf(),1));
-            }
+            addToBot(new SFXAction("Anvelt"));
+            addToBot(new GainBlockAction(p,this.block));
+            addToBot(new VFXAction(p, new SweepingBeamEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, AbstractDungeon.player.flipHorizontal), 0.4F));
+            addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+            addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+            addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
         }
     }
 
@@ -89,11 +87,11 @@ public class Anvelt
     @Override
     public void onEvoke(AmuletOrb paramOrb) {
         AbstractPlayer p = AbstractDungeon.player;
-        addToBot((AbstractGameAction)new SFXAction("Anvelt"));
-        addToBot((AbstractGameAction)new GainBlockAction(p,this.block));
-        addToBot((AbstractGameAction)new VFXAction((AbstractCreature)p, (AbstractGameEffect)new SweepingBeamEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, AbstractDungeon.player.flipHorizontal), 0.4F));
-        addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        addToBot(new SFXAction("Anvelt"));
+        addToBot(new GainBlockAction(p,this.block));
+        addToBot(new VFXAction(p, new SweepingBeamEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, AbstractDungeon.player.flipHorizontal), 0.4F));
+        addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
     }
 
     @Override

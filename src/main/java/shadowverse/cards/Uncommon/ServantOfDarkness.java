@@ -49,7 +49,7 @@ public class ServantOfDarkness
         if (this.hb.hovered)
             if (this.rotationTimer <= 0.0F) {
                 this.rotationTimer = 2.0F;
-                this.cardsToPreview = (AbstractCard) returnChoice().get(previewIndex).makeCopy();
+                this.cardsToPreview =  returnChoice().get(previewIndex).makeCopy();
                 if (this.previewIndex == returnChoice().size() - 1) {
                     this.previewIndex = 0;
                 } else {
@@ -71,16 +71,16 @@ public class ServantOfDarkness
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("ServantOfDarkness"));
-        addToBot((AbstractGameAction) new GainBlockAction(abstractPlayer, this.block));
-        AbstractCard g = (AbstractCard)new GuardFormGolem();
+        addToBot(new SFXAction("ServantOfDarkness"));
+        addToBot( new GainBlockAction(abstractPlayer, this.block));
+        AbstractCard g = new GuardFormGolem();
         g.cost = 0;
         g.costForTurn = 0;
         g.isCostModified = true;
         g.applyPowers();
         abstractPlayer.hand.addToTop(g);
         if (this.upgraded){
-            AbstractCard s = (AbstractCard)new StrikeFormGolem();
+            AbstractCard s = new StrikeFormGolem();
             s.cost = 0;
             s.costForTurn = 0;
             s.isCostModified = true;
@@ -91,7 +91,7 @@ public class ServantOfDarkness
 
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new ServantOfDarkness();
+        return  new ServantOfDarkness();
     }
 }
 

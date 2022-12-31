@@ -1,23 +1,18 @@
 package shadowverse.cards.Temp;
 
-import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DoubleDamagePower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
-import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import shadowverse.Shadowverse;
+import shadowverse.cards.AbstractEnhanceCard;
 import shadowverse.characters.Elf;
 
-public class WrathOfNature extends CustomCard {
+public class WrathOfNature extends AbstractEnhanceCard {
     public static final String ID = "shadowverse:WrathOfNature";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:WrathOfNature");
     public static final String NAME = cardStrings.NAME;
@@ -25,7 +20,7 @@ public class WrathOfNature extends CustomCard {
     public static final String IMG_PATH = "img/cards/WrathOfNature.png";
 
     public WrathOfNature() {
-        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Elf.Enums.COLOR_GREEN, CardRarity.SPECIAL, CardTarget.NONE);
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Elf.Enums.COLOR_GREEN, CardRarity.SPECIAL, CardTarget.NONE, 2);
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.selfRetain = true;
@@ -41,23 +36,21 @@ public class WrathOfNature extends CustomCard {
     }
 
     @Override
-    public void update() {
-        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT&&
-                Shadowverse.Enhance(2)){
-            setCostForTurn(2);
-        }else {
-            setCostForTurn(0);
-        }
-        super.update();
+    public void exEnhanceUse(AbstractPlayer p, AbstractMonster m) {
+
     }
 
+    @Override
+    public void enhanceUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction("WrathOfNature"));
+        addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber), this.magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new DoubleDamagePower(p, 1, false), 1));
+    }
 
-    public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction) new SFXAction("WrathOfNature"));
-        addToBot(new ApplyPowerAction(p,p,new StrengthPower(p,this.magicNumber),this.magicNumber));
-        if (this.costForTurn==2){
-            addToBot((AbstractGameAction)new ApplyPowerAction(p, p, new DoubleDamagePower(p, 1, false), 1));
-        }
+    @Override
+    public void baseUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction("WrathOfNature"));
+        addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber), this.magicNumber));
     }
 
 

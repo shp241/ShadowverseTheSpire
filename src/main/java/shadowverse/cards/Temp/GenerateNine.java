@@ -17,12 +17,13 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.action.GenerateNineAction;
+import shadowverse.cards.AbstractEnhanceCard;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Necromancer;
 import shadowverse.powers.IzudiaPower;
 
 
-public class GenerateNine extends CustomCard {
+public class GenerateNine extends AbstractEnhanceCard {
     public static final String ID = "shadowverse:GenerateNine";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:GenerateNine");
     public static final String NAME = cardStrings.NAME;
@@ -30,7 +31,7 @@ public class GenerateNine extends CustomCard {
     public static final String IMG_PATH = "img/cards/GenerateNine.png";
 
     public GenerateNine() {
-        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Necromancer.Enums.COLOR_PURPLE, CardRarity.SPECIAL, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Necromancer.Enums.COLOR_PURPLE, CardRarity.SPECIAL, CardTarget.SELF,4);
         this.exhaust = true;
         this.isEthereal = true;
         this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
@@ -44,24 +45,21 @@ public class GenerateNine extends CustomCard {
     }
 
     @Override
-    public void update() {
-        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
-                Shadowverse.Enhance(4)) {
-            setCostForTurn(4);
-        } else {
-            setCostForTurn(0);
-        }
-        super.update();
+    public void exEnhanceUse(AbstractPlayer p, AbstractMonster m) {
+
     }
 
-    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, (AbstractPower) new IzudiaPower((AbstractCreature) abstractPlayer, 1), 1));
-        if (this.costForTurn == 4 && Shadowverse.Enhance(4)) {
-            addToBot((AbstractGameAction)new GenerateNineAction());
-            addToBot((AbstractGameAction) new SFXAction("GenerateNine_EH"));
-        }else {
-            addToBot((AbstractGameAction) new SFXAction("GenerateNine"));
-        }
+    @Override
+    public void enhanceUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new GenerateNineAction());
+        addToBot(new SFXAction("GenerateNine_EH"));
+        addToBot(new ApplyPowerAction(p, p, new IzudiaPower(p, 1), 1));
+    }
+
+    @Override
+    public void baseUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction("GenerateNine"));
+        addToBot(new ApplyPowerAction(p, p, new IzudiaPower(p, 1), 1));
     }
 
 

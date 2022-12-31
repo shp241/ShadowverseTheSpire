@@ -50,8 +50,8 @@ public class MegaEnforcer
 
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("MegaEnforcer"));
-        addToBot((AbstractGameAction)new GainBlockAction(p,this.block));
+        addToBot(new SFXAction("MegaEnforcer"));
+        addToBot(new GainBlockAction(p,this.block));
         int mCount = 0;
         for (AbstractCard c : p.hand.group) {
             if (c.hasTag(AbstractShadowversePlayer.Enums.MACHINE)&&c!=this){
@@ -59,19 +59,19 @@ public class MegaEnforcer
             }
         }
         if (mCount>0){
-            addToBot((AbstractGameAction)new DrawCardAction(1));
-            addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new SmallLaserEffect(abstractMonster.hb.cX, abstractMonster.hb.cY, p.hb.cX, p.hb.cY), 0.1F));
-            addToBot((AbstractGameAction) new DamageAction((AbstractCreature) abstractMonster, new DamageInfo((AbstractCreature) p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+            addToBot(new DrawCardAction(1));
+            addToBot(new VFXAction(new SmallLaserEffect(abstractMonster.hb.cX, abstractMonster.hb.cY, p.hb.cX, p.hb.cY), 0.1F));
+            addToBot( new DamageAction(abstractMonster, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
         }
         if (mCount>1){
-            addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new EvolutionPoint()));
-            addToBot((AbstractGameAction)new MakeTempCardInHandAction((AbstractCard)new Miracle()));
+            addToBot(new MakeTempCardInHandAction(new EvolutionPoint()));
+            addToBot(new MakeTempCardInHandAction(new Miracle()));
         }
     }
 
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new MegaEnforcer();
+        return  new MegaEnforcer();
     }
 }
 

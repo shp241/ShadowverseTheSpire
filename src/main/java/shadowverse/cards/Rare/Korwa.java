@@ -18,24 +18,24 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
+import shadowverse.cards.AbstractEnhanceCard;
 import shadowverse.cards.Temp.Fil;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Elf;
 import shadowverse.powers.FilPower;
 
 
-public class Korwa extends CustomCard {
+public class Korwa extends AbstractEnhanceCard {
     public static final String ID = "shadowverse:Korwa";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Korwa");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Korwa.png";
-    private boolean doubleCheck = false;
 
     public Korwa() {
-        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.POWER, Elf.Enums.COLOR_GREEN, CardRarity.RARE, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.POWER, Elf.Enums.COLOR_GREEN, CardRarity.RARE, CardTarget.SELF,3);
         this.tags.add(AbstractShadowversePlayer.Enums.ENHANCE);
-        this.cardsToPreview = (AbstractCard) new Fil();
+        this.cardsToPreview = new Fil();
     }
 
 
@@ -49,31 +49,29 @@ public class Korwa extends CustomCard {
     }
 
     @Override
-    public void update() {
-        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
-                Shadowverse.Enhance(3)) {
-            setCostForTurn(3);
-        } else {
-            if (this.costForTurn>1){
-                setCostForTurn(2);
-            }
-        }
-        super.update();
+    public void exEnhanceUse(AbstractPlayer p, AbstractMonster m) {
+
     }
 
-    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new SFXAction("Korwa"));
-        if (!abstractPlayer.hasPower("shadowverse:FilPower"))
-            addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, (AbstractPower) new FilPower((AbstractCreature) abstractPlayer)));
-        if (Shadowverse.Enhance(3) && this.costForTurn == 3) {
-            addToBot((AbstractGameAction) new MakeTempCardInHandAction((AbstractCard) new Fil(), 3));
-            addToBot((AbstractGameAction) new GainEnergyAction(1));
-        }
+    @Override
+    public void enhanceUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction("Korwa"));
+        if (!p.hasPower("shadowverse:FilPower"))
+            addToBot(new ApplyPowerAction(p, p, new FilPower(p)));
+        addToBot(new MakeTempCardInHandAction(new Fil(), 3));
+        addToBot(new GainEnergyAction(1));
+    }
+
+    @Override
+    public void baseUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction("Korwa"));
+        if (!p.hasPower("shadowverse:FilPower"))
+            addToBot(new ApplyPowerAction(p, p, new FilPower(p)));
     }
 
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new Korwa();
+        return new Korwa();
     }
 }
 

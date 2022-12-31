@@ -3,15 +3,20 @@ package shadowverse.orbs;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
+import com.evacipated.cardcrawl.mod.stslib.powers.abstracts.TwoAmountPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import shadowverse.action.ReturnAmuletToDiscardAction;
 import shadowverse.action.StasisEvokeIfRoomInHandAction;
@@ -22,6 +27,7 @@ import shadowverse.cards.Uncommon.GoldenCity;
 import shadowverse.cards.Uncommon.PrimalShipwright;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.effect.AddCardToStasisEffect;
+import shadowverse.powers.UnerielPower;
 import shadowverse.relics.ErisRelic;
 
 public class AmuletOrb extends AbstractOrb {
@@ -37,7 +43,7 @@ public class AmuletOrb extends AbstractOrb {
     private AbstractGameEffect stasisStartEffect;
 
     public AmuletOrb(AbstractCard card) {
-        this(card, (CardGroup) null);
+        this(card,  null);
     }
 
     public AmuletOrb(AbstractCard card, CardGroup source) {
@@ -114,13 +120,21 @@ public class AmuletOrb extends AbstractOrb {
             this.evokeAmount--;
             updateDescription();
         }
-        if (this.passiveAmount <= 0 && !(this.amulet instanceof AbstractNoCountDownAmulet))
-            AbstractDungeon.actionManager.addToTop((AbstractGameAction) new StasisEvokeIfRoomInHandAction(this));
+        if (this.passiveAmount <= 0 && !(this.amulet instanceof AbstractNoCountDownAmulet)){
+            AbstractDungeon.actionManager.addToTop( new StasisEvokeIfRoomInHandAction(this));
+            if (AbstractDungeon.player.hasPower(UnerielPower.POWER_ID)){
+                AbstractPower uPower = AbstractDungeon.player.getPower(UnerielPower.POWER_ID);
+                for (int i = 0; i < uPower.amount; i++){
+                    AbstractDungeon.actionManager.addToBottom(new SFXAction("UnerielPower2"));
+                    AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(AbstractDungeon.player, DamageInfo.createDamageMatrix(((TwoAmountPower)uPower).amount2, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true));
+                }
+            }
+        }
     }
 
     public void onEvoke() {
         if ((this.amulet instanceof AbstractAmuletCard || this.amulet instanceof AbstractCrystalizeCard) && !this.amulet.hasTag(AbstractShadowversePlayer.Enums.AMULET_FOR_ONECE) && !(this.amulet instanceof PrimalShipwright))
-            AbstractDungeon.actionManager.addToTop((AbstractGameAction)new ReturnAmuletToDiscardAction(this.amulet));
+            AbstractDungeon.actionManager.addToTop(new ReturnAmuletToDiscardAction(this.amulet));
         if (this.passiveAmount <= 0 && !(this.amulet instanceof AbstractNoCountDownAmulet)) {
             if (this.amulet instanceof AbstractAmuletCard){
                 ((AbstractAmuletCard) this.amulet).onEvoke(this);
@@ -128,7 +142,7 @@ public class AmuletOrb extends AbstractOrb {
                     ((AbstractShadowversePlayer)AbstractDungeon.player).amuletCount++;
                 }
                 if (AbstractDungeon.player.hasRelic(ErisRelic.ID)){
-                    AbstractDungeon.actionManager.addToBottom(((AbstractGameAction)new AddTemporaryHPAction(AbstractDungeon.player,AbstractDungeon.player,2)));
+                    AbstractDungeon.actionManager.addToBottom((new AddTemporaryHPAction(AbstractDungeon.player,AbstractDungeon.player,2)));
                 }
                 this.amulet.superFlash(Color.GOLDENROD);
             }
@@ -138,7 +152,7 @@ public class AmuletOrb extends AbstractOrb {
                     ((AbstractShadowversePlayer)AbstractDungeon.player).amuletCount++;
                 }
                 if (AbstractDungeon.player.hasRelic(ErisRelic.ID)){
-                    AbstractDungeon.actionManager.addToBottom(((AbstractGameAction)new AddTemporaryHPAction(AbstractDungeon.player,AbstractDungeon.player,2)));
+                    AbstractDungeon.actionManager.addToBottom((new AddTemporaryHPAction(AbstractDungeon.player,AbstractDungeon.player,2)));
                 }
                 this.amulet.superFlash(Color.GOLDENROD);
             }
@@ -153,32 +167,41 @@ public class AmuletOrb extends AbstractOrb {
             source.removeCard(this.amulet);
             switch (source.type) {
                 case HAND:
-                    this.stasisStartEffect = (AbstractGameEffect)new AddCardToStasisEffect(this.amulet, this, this.amulet.current_x, this.amulet.current_y, !selfStasis);
+                    this.stasisStartEffect = new AddCardToStasisEffect(this.amulet, this, this.amulet.current_x, this.amulet.current_y, !selfStasis);
                     break;
                 case DRAW_PILE:
-                    this.stasisStartEffect = (AbstractGameEffect)new AddCardToStasisEffect(this.amulet, this, AbstractDungeon.overlayMenu.combatDeckPanel.current_x + 100.0F * Settings.scale, AbstractDungeon.overlayMenu.combatDeckPanel.current_y + 100.0F * Settings.scale, !selfStasis);
+                    this.stasisStartEffect = new AddCardToStasisEffect(this.amulet, this, AbstractDungeon.overlayMenu.combatDeckPanel.current_x + 100.0F * Settings.scale, AbstractDungeon.overlayMenu.combatDeckPanel.current_y + 100.0F * Settings.scale, !selfStasis);
                     break;
                 case DISCARD_PILE:
-                    this.stasisStartEffect = (AbstractGameEffect)new AddCardToStasisEffect(this.amulet, this, AbstractDungeon.overlayMenu.discardPilePanel.current_x - 100.0F * Settings.scale, AbstractDungeon.overlayMenu.discardPilePanel.current_y + 100.0F * Settings.scale, !selfStasis);
+                    this.stasisStartEffect = new AddCardToStasisEffect(this.amulet, this, AbstractDungeon.overlayMenu.discardPilePanel.current_x - 100.0F * Settings.scale, AbstractDungeon.overlayMenu.discardPilePanel.current_y + 100.0F * Settings.scale, !selfStasis);
                     break;
                 case EXHAUST_PILE:
                     this.amulet.unfadeOut();
-                    this.stasisStartEffect = (AbstractGameEffect)new AddCardToStasisEffect(this.amulet, this, AbstractDungeon.overlayMenu.discardPilePanel.current_x - 100.0F * Settings.scale, AbstractDungeon.overlayMenu.exhaustPanel.current_y + 100.0F * Settings.scale, !selfStasis);
+                    this.stasisStartEffect = new AddCardToStasisEffect(this.amulet, this, AbstractDungeon.overlayMenu.discardPilePanel.current_x - 100.0F * Settings.scale, AbstractDungeon.overlayMenu.exhaustPanel.current_y + 100.0F * Settings.scale, !selfStasis);
                     break;
                 default:
-                    this.stasisStartEffect = (AbstractGameEffect)new AddCardToStasisEffect(this.amulet, this, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F, !selfStasis);
+                    this.stasisStartEffect = new AddCardToStasisEffect(this.amulet, this, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F, !selfStasis);
                     break;
             }
         } else {
-            this.stasisStartEffect = (AbstractGameEffect)new AddCardToStasisEffect(this.amulet.makeStatEquivalentCopy(), this, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F, !selfStasis);
+            this.stasisStartEffect = new AddCardToStasisEffect(this.amulet.makeStatEquivalentCopy(), this, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F, !selfStasis);
         }
         AbstractDungeon.effectsQueue.add(this.stasisStartEffect);
         this.amulet.retain = false;
         if (!(this.amulet instanceof GoldenCity)){
             for (AbstractOrb o:AbstractDungeon.player.orbs){
                 if (o instanceof AmuletOrb){
-                    if (((AmuletOrb) o).amulet instanceof GoldenCity && this.passiveAmount>0){
+                    if (((AmuletOrb) o).amulet instanceof GoldenCity && this.passiveAmount > 0){
                         this.onStartOfTurn();
+                    }
+                }
+            }
+            if (AbstractDungeon.player.hasPower(UnerielPower.POWER_ID)){
+                AbstractPower uPower = AbstractDungeon.player.getPower(UnerielPower.POWER_ID);
+                for (int i = 0; i < uPower.amount; i++){
+                    if (this.passiveAmount > 0){
+                        this.onStartOfTurn();
+                        AbstractDungeon.actionManager.addToBottom(new SFXAction("UnerielPower"));
                     }
                 }
             }

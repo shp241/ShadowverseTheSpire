@@ -2,12 +2,16 @@ package shadowverse.patch;
 
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePostfixPatch;
+import com.megacrit.cardcrawl.actions.common.ReduceCostAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import shadowverse.cards.AbstractAmuletCard;
 import shadowverse.cards.AbstractCrystalizeCard;
 import shadowverse.cards.AbstractNoCountDownAmulet;
+import shadowverse.cards.Uncommon.ExecutorOfTheOath;
 import shadowverse.orbs.AmuletOrb;
 
 public class AmuletOrbPatch {
@@ -49,6 +53,11 @@ public class AmuletOrbPatch {
                         if (((AmuletOrb) o).amulet instanceof AbstractNoCountDownAmulet){
                             ((AbstractNoCountDownAmulet)(((AmuletOrb) o).amulet)).onHeal(healAmount,(AmuletOrb)o);
                         }
+                    }
+                }
+                for (AbstractCard ca : ((AbstractPlayer) c).hand.group){
+                    if (ca instanceof ExecutorOfTheOath){
+                        AbstractDungeon.actionManager.addToBottom(new ReduceCostAction(ca));
                     }
                 }
             }

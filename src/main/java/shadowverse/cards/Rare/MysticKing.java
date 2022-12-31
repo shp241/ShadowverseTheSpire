@@ -17,6 +17,7 @@ import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 import com.megacrit.cardcrawl.vfx.combat.MiracleEffect;
 import shadowverse.cards.Temp.MagicalPawn;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Witchcraft;
 import shadowverse.powers.MysticKingPower;
 
@@ -36,6 +37,7 @@ public class MysticKing extends CustomCard {
         this.selfRetain = true;
         this.exhaust = true;
         this.cardsToPreview = new MagicalPawn();
+        this.tags.add(AbstractShadowversePlayer.Enums.CHESS);
     }
 
 

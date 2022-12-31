@@ -2404,7 +2404,8 @@
   },
   "shadowverse:StringMaster": {
     "NAME": "실의 달인",
-    "DESCRIPTION": "1턴에 1번, *꼭두각시 *인형 을 사용하면 *꼭두각시 *인형 2장을 얻습니다."
+    "DESCRIPTION": "1턴에 1번, *꼭두각시 *인형 을 사용하면 *꼭두각시 *인형 2장을 얻습니다.",
+    "UPGRADE_DESCRIPTION":"每当打出 *悬丝傀儡 时，增加2张 *悬丝傀儡 到手中。 NL （一回合仅限一次） NL 爆能强化 2:额外增加2张 *悬丝傀儡 到手中。"
   },
   "shadowverse:Concentrate": {
     "NAME": "운기조식",
@@ -2421,7 +2422,7 @@
   },
   "shadowverse:Karula": {
     "NAME": "무예를 통달한 자 카르라",
-    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 에너지를 남기고 이번 턴을 종료하면 힘과 민첩을 !M! 얻고, 무작위 적에게 약화와 취약을 3 부여합니다."
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 강화 2: *진화 *포인트 와 *기적 을 얻습니다. NL 에너지를 남기고 이번 턴을 종료하면 힘과 민첩을 !M! 얻고, 무작위 적에게 약화와 취약을 3 부여합니다."
   },
   "shadowverse:CurseOfPurgation": {
     "NAME": "숙청의 저주",
@@ -2547,8 +2548,7 @@
   },
   "shadowverse:GenesisArtifact": {
     "NAME": "제네시스 아티팩트",
-    "DESCRIPTION": "AF. NL 방어도를 !B! 얻습니다. NL *가드 *아티팩트 와 *디펜스 *아티팩트 를 얻고 비용을 0으로 합니다. NL 서로 다른 아티팩트 6종류 이상이 소멸되었다면,*캐논 *아티팩트 2장을 얻습니다.",
-    "UPGRADE_DESCRIPTION": "AF. NL 방어도를 !B! 얻습니다. NL *가드 *아티팩트+ 와 *디펜스 *아티팩트+ 를 얻고 비용을 0으로 합니다. NL 서로 다른 아티팩트 6종류 이상이 소멸되었다면,*캐논 *아티팩트+ 2장을 얻습니다."
+    "DESCRIPTION": "AF. NL 방어도를 !B! 얻습니다. NL *가드 *아티팩트 와 *디펜스 *아티팩트 를 얻고 비용을 0으로 합니다. NL 서로 다른 아티팩트 6종류 이상이 소멸되었다면,*캐논 *아티팩트 !M! 장을 얻습니다."
   },
   "shadowverse:GuardArtifact": {
     "NAME": "가드 아티팩트",
@@ -3257,7 +3257,7 @@
   },
   "shadowverse:Garven": {
     "NAME": "종격의 강철 팔 가르반",
-    "DESCRIPTION": "피해를 !D! 만큼 !M! 줍니다. NL 이번 전투에서 사용한 카드의 타입 종류만큼 반복합니다. (기계, 자연, 레비온, 마나리아, 아티팩트, 연악).",
+    "DESCRIPTION": "피해를 !D! 만큼 !M! 줍니다. NL 이번 전투에서 사용한 카드의 타입 종류만큼 반복합니다.",
     "EXTENDED_DESCRIPTION": [
       "(피해를",
       " 번 줍니다.)"
@@ -3321,7 +3321,7 @@
   },
   "shadowverse:BlackenedScripture": {
     "NAME": "칠흑색 법전",
-    "DESCRIPTION": "약화와 취약을 !M! 부여합니다. NL 그 적의 체력이 9 이하라면 처치합니다."
+    "DESCRIPTION": "약화와 취약을 !M! 부여합니다. NL 그 적의 체력이 6 이하라면 처치합니다."
   },
   "shadowverse:PriestOfTheCudgel": {
     "NAME": "철퇴의 사제",
@@ -4365,8 +4365,8 @@
   },
   "shadowverse:Arthur": {
     "NAME": "기사왕 아서",
-    "DESCRIPTION": "英雄 。 NL 获得 !B! 点 格挡 。 NL 召唤1个 铁甲骑士 、 骑士 、 重装骑士 、 战盾卫士 。 NL 危难 ：所有随从获得+2/+2。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION":"英雄 。 NL 获得 !B! 点 格挡 。 NL 召唤1个 铁甲骑士 、 骑士 、 重装骑士 、 战盾卫士 。 NL 危难 ：所有随从获得+2/+2。"
+    "DESCRIPTION": "英雄 。 NL 获得 !B! 点 格挡 。 NL 召唤1个 铁甲骑士 、 骑士 、 重装骑士 、 战盾卫士 。 NL 危难 ：所有随从获得+1/+1。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"英雄 。 NL 获得 !B! 点 格挡 。 NL 召唤1个 铁甲骑士 、 骑士 、 重装骑士 、 战盾卫士 。 NL 危难 ：所有随从获得+1/+1。"
   },
   "shadowverse:Tweyen": {
     "NAME": "마안의 사냥꾼 송",
@@ -4716,8 +4716,8 @@
   },
   "shadowverse:CosmosFang": {
     "NAME": "波斯菊之牙",
-    "DESCRIPTION": "获得 !B! 点 格挡 和1层 残影 。 NL 使弃牌堆中X张非打击精灵攻击牌返回抽牌堆。X为手牌上限减去手牌张数。 NL 之后获得4X点格挡和X点 力量 。 NL 下个回合开始时，对随机敌人造成剩余格挡数值的等量伤害。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION":"获得 !B! 点 格挡 和1层 残影 。 NL 改变敌人的意图。 NL 使弃牌堆中X张非打击精灵攻击牌返回抽牌堆。X为手牌上限减去手牌张数。 NL 之后获得4(X+Y)点格挡和X+Y点 力量 。Y为敌人的数量。 NL 下个回合开始时，对随机敌人造成剩余格挡数值的等量伤害。 NL 消耗 。"
+    "DESCRIPTION": "获得 !B! 点 格挡 和1层 残影 。 NL 使弃牌堆中X张非打击精灵攻击牌返回抽牌堆。X为手牌上限减去手牌张数。 NL 之后获得3X点格挡和X点 力量 。 NL 下个回合开始时，对随机敌人造成剩余格挡数值的等量伤害。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"获得 !B! 点 格挡 和1层 残影 。 NL 改变敌人的意图。 NL 使弃牌堆中X张非打击精灵攻击牌返回抽牌堆。X为手牌上限减去手牌张数。 NL 之后获得3(X+Y)点格挡和X+Y点 力量 。Y为敌人的数量。 NL 下个回合开始时，对随机敌人造成剩余格挡数值的等量伤害。 NL 消耗 。"
   },
   "shadowverse:Blitz": {
     "NAME": "ブリッツ",
@@ -4747,5 +4747,211 @@
   "shadowverse:ImpiousBishop": {
     "NAME": "恶沉的神父",
     "DESCRIPTION": "结晶 0 \b倒计时 2 NL 回合开始时增加1张 *赎罪券 到手中。 NL  NL --------------------- NL  NL 打出或倒计时结束时获得 !B! 点 格挡 ，回复3点生命。 NL 打出时下回合开始时获得 !B! 点 格挡 。 NL 将2张 *赎罪券 加入弃牌堆。"
+  },
+  "shadowverse:Magachiyo": {
+    "NAME": "剪定的罪人·祸千代",
+    "DESCRIPTION": "八狱 NL 造成 !D! 点 伤害 。 NL 使本回合中已使用的卡片张数+1。 NL 如果本场战斗已经使用的卡片数为4张以上的回合为3以上，则获得2点 力量 和 敏捷 ，并且手牌所有 八狱 攻击牌基础数值+ !M! 。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已达成 ",
+      " 个回合。)"
+    ]
+  },
+  "shadowverse:LeafshadeAssassin": {
+    "NAME": "根际刺客",
+    "DESCRIPTION": "八狱 NL 获得 !B! 点 格挡 。 NL 使本回合中已使用的卡片张数+1。 NL 本回合出牌时，若为本回合已使用的第4张及以上时，对随机敌人造成 !M! 点伤害。"
+  },
+  "shadowverse:VerdantLieutenant": {
+    "NAME": "叶脉舍弟头",
+    "DESCRIPTION": "八狱 NL 造成 !D! 点伤害，获得 !B! 点 格挡 。 NL 使本回合中已使用的卡片张数+1。 NL 本回合出牌时，若为本回合已使用的第4张及以上时， 升级 手中的这张牌并抽1张牌。",
+    "UPGRADE_DESCRIPTION":"八狱 NL 造成 !D! 点伤害，获得 !B! 点 格挡 。 NL 使本回合中已使用的卡片张数+1。 NL 打出后 解除升级 。"
+  },
+  "shadowverse:BuddingInitiate": {
+    "NAME": "新芽组员",
+    "DESCRIPTION": "八狱 NL 造成 !D! 点伤害。 NL 如果本回合已使用的卡牌数(不包含这张牌)为2以上，则将1张 八狱 卡从抽牌堆加入手中。"
+  },
+  "shadowverse:WardenOfBalms": {
+    "NAME": "芳气看守",
+    "DESCRIPTION": "八狱 NL 结晶 0 \b下回合开始时额外抽1张卡。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 ，对全体敌人 !M! 点伤害。 NL 重复上述1次。"
+  },
+  "shadowverse:Wimael": {
+    "NAME": "香风执行者·威默尔",
+    "DESCRIPTION": "八狱 · 保留 NL 每当被保留时，耗能减少1。 NL 每当被抽到时，增加1张复制品到手中。 NL 造成 !D! 点伤害。"
+  },
+  "shadowverse:BenevolentElf": {
+    "NAME": "恩眷精灵",
+    "DESCRIPTION": "本回合结束时，消灭所有生命值为6以下的敌人。如果你的生命值为最大生命值，改为消灭生命值为18以下的敌人。",
+    "UPGRADE_DESCRIPTION":"增加4点最大生命值，回复4点生命。 NL 本回合结束时，消灭所有生命值为6以下的敌人。如果你的生命值为最大生命值，改为消灭生命值为18以下的敌人。"
+  },
+  "shadowverse:Simael": {
+    "NAME": "破式执行者·修玛尔",
+    "DESCRIPTION": "八狱 NL 魔力增幅  \b耗能减少1 [E] 。 NL 造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。"
+  },
+  "shadowverse:WardenOfTheArcane": {
+    "NAME": "异术看守",
+    "DESCRIPTION": "八狱 NL 发动 !M! 次 魔力增幅 。 NL 获得 !M! 层 土之印记 。 NL 获得 !B! 点 格挡 。 NL 对全体敌人造成5点伤害。"
+  },
+  "shadowverse:BladeRain": {
+    "NAME": "剑雨",
+    "DESCRIPTION": "魔力增幅  \b耗能减少1 [E] 。 NL 获得 !M! 点 力量 和 敏捷 。 NL 对随机敌人造成9点伤害。 NL 消耗 。"
+  },
+  "shadowverse:AstrologicalSorcerer": {
+    "NAME": "天体术师",
+    "DESCRIPTION": "获得1层 土之印记 。 NL 获得 !B! 点 格挡 。 NL 增加1张 *观星望远镜 到手中。 NL 如果本场战斗已消耗的 土之印记 数量为7以上，本回合受到的伤害减少2。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已消耗 ",
+      " 层 土之印记 。)"
+    ]
+  },
+  "shadowverse:VolunteerTestSubject": {
+    "NAME": "沉没的实验体",
+    "DESCRIPTION": "八狱 NL 获得 !B! 点 格挡 。 NL 如果本场战斗已打出的 *沉没的实验体 数量为3以上，造成 !D! 点伤害。 NL 5以上，伤害额外+9。 NL 谢幕曲 被 消耗 时，抽1张牌。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已打出 ",
+      " 张 *沉没的实验体 。)"
+    ]
+  },
+  "shadowverse:DevotedResearcher": {
+    "NAME": "热衷的研究者",
+    "DESCRIPTION": "八狱 NL 获得 !B! 点 格挡 。 NL 增加1张耗能为0的 *沉没的实验体 到手中。 NL 爆能强化 2:额外增加1张。"
+  },
+  "shadowverse:ObsessiveScholar": {
+    "NAME": "忘我的才女",
+    "DESCRIPTION": "八狱 · 融合 ： 非技能牌 。 NL  造成 !D! 点伤害。 NL 增加1张耗能为0的 *沉没的实验体 到手中。 NL 如果已 融合 ，随机从抽牌堆中将1张 八狱 牌加入手中。"
+  },
+  "shadowverse:Sephie": {
+    "NAME": "沉溺的罪人·瑟霏",
+    "DESCRIPTION": "八狱 · 保留 · 融合 ： 非技能牌 。 NL 如果一次 融合 2张以上且剩余能量为1以上，消耗1点能量增加1张耗能为0的 *沉没的实验体 到手中。 NL 如果 融合 对象包含 八狱 牌，则无需消耗能量。 NL  NL --------------------- NL  NL 造成 !D! 点伤害，增加1张耗能为0的 *沉没的实验体 到手中。 NL 如果本场战斗已打出的 *沉没的实验体 数量为5以上，手牌中的 *沉没实验体 造成的伤害+ !M! 。"
+  },
+  "shadowverse:SkullFish": {
+    "NAME": "骸骨鱼",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 谢幕曲 : 死灵术 2 对全体敌人造成 !M! 点伤害。 NL 消耗 。"
+  },
+  "shadowverse:GhastlyBanishment": {
+    "NAME": "亡魂泯灭",
+    "DESCRIPTION": "增加2张 *怨灵 到手中。 NL 爆能强化 3 :对全体敌人造成 !D! 点伤害。 NL (消耗堆中状态牌数量的 !M! 倍)"
+  },
+  "shadowverse:Istyndet": {
+    "NAME": "敕令的罪人·伊苏丹忒",
+    "DESCRIPTION": "八狱 NL 获得 !B! 点 格挡 。 NL 如果本场战斗已打出的 谢幕曲 牌数量为10以上，给予全体敌人1层 易伤 和 虚弱 ， 消耗 手中所有非技能牌。 NL 谢幕曲 : 墓地 +3。",
+    "UPGRADE_DESCRIPTION":"八狱 NL 获得 !B! 点 格挡 。 NL 增加1张本回合耗能为0的 *骸骨鱼 到手中。 NL 如果本场战斗已打出的 谢幕曲 牌数量为10以上，给予全体敌人1层 易伤 和 虚弱 ， 消耗 手中所有非技能牌。 NL 谢幕曲 :被消耗时 墓地 +3。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已打出 ",
+      " 张 谢幕曲 牌。)"
+    ]
+  },
+  "shadowverse:AbyssalColonel_Crystalize": {
+    "NAME": "结晶:深渊上校",
+    "DESCRIPTION": "八狱 · 保留 NL 倒计时 !M! : 消耗 这张牌。 NL 谢幕曲 :被消耗时，增加1张耗能为0的 *深渊上校 到手中。",
+    "UPGRADE_DESCRIPTION":"八狱 · 保留 NL 倒计时 !M! : 消耗 这张牌。 NL 谢幕曲 :被消耗时，增加1张耗能为0的 *深渊上校+ 到手中。"
+  },
+  "shadowverse:AbyssalColonel_Temp": {
+    "NAME": "深渊上校",
+    "DESCRIPTION": "八狱 NL 造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。 NL 谢幕曲 :被 消耗 时，给予随机敌人1层 易伤 和 虚弱 ，回复3点生命。 NL 消耗 。"
+  },
+  "shadowverse:AbyssalColonel": {
+    "NAME": "深渊上校",
+    "DESCRIPTION": "八狱 · 结晶 1 NL 增加1张 *结晶:深渊上校 到手中。 NL  NL --------------------- NL  NL 。 NL 获得 !B! 点 格挡 。 NL 谢幕曲 :被 消耗 时，给予随机敌人1层 易伤 和 虚弱 ，回复3点生命。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"八狱 · 结晶 1 NL 增加1张 *结晶:深渊上校+ 到手中。 NL  NL --------------------- NL  NL 。 NL 获得 !B! 点 格挡 。 NL 谢幕曲 :被 消耗 时，给予随机敌人1层 易伤 和 虚弱 ，回复3点生命。 NL 消耗 。"
+  },
+  "shadowverse:UnderworldLieutenant": {
+    "NAME": "冥府中尉",
+    "DESCRIPTION": "八狱 NL 获得 !B! 点 格挡 。 NL 增加 !M! 张本回合耗能为0且带有消耗的 *尸魂士兵 到手中。 NL 谢幕曲 :被 消耗 时，给予全体敌人6点伤害。"
+  },
+  "shadowverse:FallenSergeant": {
+    "NAME": "奈落军曹",
+    "DESCRIPTION": "八狱 NL 获得 !B! 点 格挡 。 NL 谢幕曲 :被 消耗 时，随机从抽牌堆中增加1张 八狱 牌到手中。"
+  },
+  "shadowverse:WardenOfCorpses": {
+    "NAME": "形骸看守",
+    "DESCRIPTION": "八狱 NL 葬送 1张牌，对全体敌人造成 !D! 点伤害。 NL 抽2张牌。"
+  },
+  "shadowverse:Myroel": {
+    "NAME": "灭尸执行者·米萝尔",
+    "DESCRIPTION": "八狱 NL 获得「每当 葬送 时，对全体敌人造成10点伤害。(一回合上限3次)」效果。 NL 葬送 2张牌 ， 亡者召还 1,2 。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION":"八狱 NL 获得「每当 葬送 时，对全体敌人造成10点伤害。(一回合上限3次)」效果。 NL 葬送 2张牌 ， 亡者召还 1,2 。"
+  },
+  "shadowverse:DeathScytheHound": {
+    "NAME": "死镰猎犬",
+    "DESCRIPTION": "对全体敌人造成 !D! 点伤害。 NL 死灵术 8 再造成一次伤害。"
+  },
+  "shadowverse:Garodeth": {
+    "NAME": "罗刹的罪人·葛洛达特",
+    "DESCRIPTION": "八狱 NL 失去1点生命。 NL  对全体敌人造成 !M! 点伤害。 NL 造成 !D! 点伤害。如果本回合因自己失去生命的次数为3以上，此伤害变为4倍。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (本回合因自己失去生命的次数为 ",
+      " 。)"
+    ]
+  },
+  "shadowverse:ViciousBlitzer": {
+    "NAME": "猛袭的特攻队长",
+    "DESCRIPTION": "八狱 NL 自己和全体敌人失去1点生命2次。 NL 造成 !D! 点伤害。"
+  },
+  "shadowverse:SteamrollingTank": {
+    "NAME": "威迫的防卫队长",
+    "DESCRIPTION": "八狱 NL 本回合每当因自己失去生命时，获得 !M! 点 格挡 。(一回合上限8次) NL 失去1点生命。 NL 获得 !B! 点格挡。"
+  },
+  "shadowverse:RagingCommander": {
+    "NAME": "愤激的副总长",
+    "DESCRIPTION": "八狱 NL 本回合每当因自己失去生命时，对全体敌人造成 !M! 点伤害。(一回合上限8次) NL 失去1点生命，随机将一张 八狱 牌从抽牌堆中加入手中。 NL 造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION":"八狱 NL 本回合每当因自己失去生命时，对全体敌人造成 !M! 点伤害。(一回合上限8次) NL 失去1点生命，随机将一张 八狱 牌从抽牌堆中加入手中，重复上述2次。 NL 造成 !D! 点伤害。"
+  },
+  "shadowverse:Genomuel": {
+    "NAME": "蛇殿执行者·盖诺姆尔",
+    "DESCRIPTION": "八狱 NL 回合开始时，全体敌人失去3点 力量 和 敏捷 ,9点最大生命值。 NL 此效果持续3回合，无法重复叠加。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION":"八狱 · 固有 NL 回合开始时，全体敌人失去3点 力量 和 敏捷 ,9点最大生命值。 NL 此效果持续3回合，无法重复叠加。 NL 虚无 。"
+  },
+  "shadowverse:WardenOfDecay": {
+    "NAME": "腐朽看守",
+    "DESCRIPTION": "八狱 NL 获得 !B! 点 格挡 。 NL 复仇 则全体敌人失去3点 力量 和 敏捷 ，回复3点生命，抽2张牌。 NL 消耗 。"
+  },
+  "shadowverse:Erralde": {
+    "NAME": "结盟的罪人·艾路拉戴",
+    "DESCRIPTION": "八狱 NL 给予全体敌人2层 易伤 和 虚弱。 NL 获得「回合结束时，如果本回合打出过 八狱 牌或耗能为2以上的攻击牌，回复2点生命，下回合开始时额外抽1张牌」效果。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION":"八狱 NL 给予全体敌人2层 易伤 和 虚弱。 NL 获得「回合结束时，如果本回合打出过 八狱 牌或耗能为2以上的攻击牌，回复2点生命，下回合开始时额外抽1张牌」效果。"
+  },
+  "shadowverse:ExecutorOfTheOath": {
+    "NAME": "誓约干部",
+    "DESCRIPTION": "八狱 NL 每当回复生命时，耗能减少 [E] 。 NL 获得 !B! 点 格挡 。"
+  },
+  "shadowverse:AgentOfTheCommandments": {
+    "NAME": "戒律间谍",
+    "DESCRIPTION": "八狱 NL 造成 !D! 点伤害。 NL 本回合及下回合结束时回复1点生命。",
+    "UPGRADE_DESCRIPTION":"八狱 NL 造成 !D! 点伤害。 NL 本回合及下回合结束时回复1点生命。 NL 随机从抽牌堆中增加1张 八狱 牌到手中。"
+  },
+  "shadowverse:WardenOfTheWings": {
+    "NAME": "飞翔看守",
+    "DESCRIPTION": "八狱 NL 造成 !D!点伤害。 NL 随机从抽牌堆中增加1张有 倒计时 且耗能为1的护符到手中。 NL 如果本场战斗已触发的护符数量为5以上，获得1点能量。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已触发的护符数量为 ",
+      " 。"
+    ]
+  },
+  "shadowverse:SkullFane2": {
+    "NAME": "俱灭之白骨圣堂教主",
+    "DESCRIPTION": "激奏 0 :选择1张护符减少1 倒计时 。 NL 如果因此触发护符，则这张卡不进入弃牌堆。 NL  NL --------------------- NL  NL 回合结束时，如果本场战斗已 激奏 4次以上 *俱灭之白骨圣堂教主，耗能减少3。 NL  对全体敌人造成 !D! 点伤害。 NL 触发并移除你的所有护符，每有一张诅咒获得 !B! 点 格挡 和 !M! 点 力量 。"
+  },
+  "shadowverse:Cutthroat": {
+    "NAME": "机锋的罪人·卡托斯洛德",
+    "DESCRIPTION": "八狱 NL 如果抽牌堆中没有除 八狱 牌以外的重复卡牌，获得「每当以 爆能强化 打出卡牌时，获得X点能量。X为该  爆能强化 的数值-1。」效果。 NL 造成 !D! 点伤害。 NL 爆能强化 3:改为造成5倍伤害。 NL 爆能强化 4:改为造成6倍伤害。"
+  },
+  "shadowverse:IronforgedRightHand": {
+    "NAME": "熔铁亲信",
+    "DESCRIPTION": "八狱 NL 造成 !D! 点伤害。 NL 爆能强化 2:额外对全体敌人造成 !M! 点伤害。 NL 爆能强化 3:增加1张 *进化点 和 *奇迹 到手中。"
+  },
+  "shadowverse:SmeltworkBodyguard": {
+    "NAME": "精炼保镖",
+    "DESCRIPTION": "八狱 NL 获得 !B! 点 格挡 。 NL 爆能强化 2:额外获得 !M! 点 格挡 并抽2张牌。"
+  },
+  "shadowverse:BlackrustUnderling": {
+    "NAME": "镀黑小卒",
+    "DESCRIPTION": "八狱 NL 造成 !D! 点伤害。 NL 爆能强化 2:额外造成1次伤害。 NL 爆能强化 3:额外造成2次伤害。"
+  },
+  "shadowverse:WardenOfTrigger": {
+    "NAME": "击针看守",
+    "DESCRIPTION": "八狱 · 机械 NL 获得 !B! 点 格挡，抽1张牌。 NL 回合结束时回复1点生命。 NL 当以0耗能打出这张卡时，给予随机敌人1层 易伤 和 虚弱 。"
+  },
+  "shadowverse:Kyrzael": {
+    "NAME": "弹哭执行者·克里萨尔",
+    "DESCRIPTION": "八狱 · 机械 NL 造成 !D! 点 伤害。 NL 增加2张本回合耗能为0的 *击针看守 到手中。 NL 手中每有1张其他 机械 牌，获得2层 金属化 。"
   }
 }

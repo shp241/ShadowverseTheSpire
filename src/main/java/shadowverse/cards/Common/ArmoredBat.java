@@ -1,28 +1,22 @@
 package shadowverse.cards.Common;
 
-import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
+
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.PlatedArmorPower;
-import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
-import shadowverse.Shadowverse;
+import shadowverse.cards.AbstractEnhanceCard;
 import shadowverse.cards.Temp.ProductMachine;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Vampire;
 
 public class ArmoredBat
-        extends CustomCard {
+        extends AbstractEnhanceCard {
     public static final String ID = "shadowverse:ArmoredBat";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:ArmoredBat");
     public static final String NAME = cardStrings.NAME;
@@ -30,11 +24,10 @@ public class ArmoredBat
     public static final String IMG_PATH = "img/cards/ArmoredBat.png";
 
     public ArmoredBat() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Vampire.Enums.COLOR_SCARLET, CardRarity.COMMON, CardTarget.SELF);
-        this.tags.add(AbstractShadowversePlayer.Enums.ENHANCE);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Vampire.Enums.COLOR_SCARLET, CardRarity.COMMON, CardTarget.SELF, 2);
         this.baseBlock = 1;
         this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
-        this.cardsToPreview = (AbstractCard)new ProductMachine();
+        this.cardsToPreview = (AbstractCard) new ProductMachine();
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(AbstractShadowversePlayer.Enums.LASTWORD);
@@ -49,36 +42,34 @@ public class ArmoredBat
         }
     }
 
-    @Override
-    public void update() {
-        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
-                Shadowverse.Enhance(2)) {
-            setCostForTurn(2);
-        } else {
-            if (this.costForTurn!=0){
-                setCostForTurn(1);
-            }
-        }
-        super.update();
-    }
 
     @Override
     public void triggerOnExhaust() {
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy(),2));
-    }
-
-    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new GainBlockAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, this.block));
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy(),2));
-        if (this.costForTurn == 2 && Shadowverse.Enhance(2)) {
-            addToBot((AbstractGameAction) new GainBlockAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, this.magicNumber));
-            addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new PlatedArmorPower(abstractPlayer,this.magicNumber),this.magicNumber));
-        }
+        addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy(), 2));
     }
 
 
     public AbstractCard makeCopy() {
         return (AbstractCard) new ArmoredBat();
+    }
+
+    @Override
+    public void exEnhanceUse(AbstractPlayer p, AbstractMonster m) {
+
+    }
+
+    @Override
+    public void enhanceUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new GainBlockAction(p, p, this.block));
+        addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy(), 2));
+        addToBot(new GainBlockAction(p, p, this.magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new PlatedArmorPower(p, this.magicNumber), this.magicNumber));
+    }
+
+    @Override
+    public void baseUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new GainBlockAction(p, p, this.block));
+        addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy(), 2));
     }
 }
 

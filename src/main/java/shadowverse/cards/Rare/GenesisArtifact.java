@@ -42,6 +42,8 @@
    public GenesisArtifact() {
      super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.RARE, CardTarget.SELF);
      this.baseBlock = 8;
+     this.baseMagicNumber = 1;
+     this.magicNumber = this.baseMagicNumber;
      this.tags.add(AbstractShadowversePlayer.Enums.ARTIFACT);
    }
 
@@ -50,7 +52,7 @@
          if (this.hb.hovered)
              if (this.rotationTimer <= 0.0F) {
                  this.rotationTimer = 2.0F;
-                 this.cardsToPreview = (AbstractCard)returnChoice().get(previewIndex).makeCopy();
+                 this.cardsToPreview = returnChoice().get(previewIndex).makeCopy();
                  if (this.previewIndex == returnChoice().size() - 1) {
                      this.previewIndex = 0;
                  } else {
@@ -67,24 +69,19 @@
      if (!this.upgraded) {
        upgradeName();
        upgradeBlock(2);
-       this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-       initializeDescription();
+       upgradeMagicNumber(1);
      }
    }
 
 
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-       addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
-       AbstractCard g = (AbstractCard)new GuardArtifact();
-       AbstractCard d = (AbstractCard)new DefectArtifact();
+       addToBot(new GainBlockAction(abstractPlayer,this.block));
+       AbstractCard g = new GuardArtifact();
+       AbstractCard d = new DefectArtifact();
        g.setCostForTurn(0);
        d.setCostForTurn(0);
-       if (this.upgraded){
-           g.upgrade();
-           d.upgrade();
-       }
-       addToBot((AbstractGameAction)new MakeTempCardInHandAction(g));
-       addToBot((AbstractGameAction)new MakeTempCardInHandAction(d));
+       addToBot(new MakeTempCardInHandAction(g));
+       addToBot(new MakeTempCardInHandAction(d));
        ArrayList<AbstractCard> list = new ArrayList<>();
        ArrayList<String> dup = new ArrayList<>();
        for (AbstractCard c: abstractPlayer.exhaustPile.group){
@@ -96,15 +93,13 @@
        }
        if (list.size()>=6){
            AbstractCard cannon = new CannonArtifact();
-           if (this.upgraded)
-               cannon.upgrade();
-           addToBot((AbstractGameAction)new MakeTempCardInHandAction(cannon,2));
+           addToBot(new MakeTempCardInHandAction(cannon,this.magicNumber));
        }
    }
  
    
    public AbstractCard makeCopy() {
-     return (AbstractCard)new GenesisArtifact();
+     return new GenesisArtifact();
    }
  }
 

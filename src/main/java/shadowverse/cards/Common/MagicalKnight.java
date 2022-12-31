@@ -27,6 +27,7 @@ public class MagicalKnight extends CustomCard {
         super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.COMMON, CardTarget.ENEMY);
         this.baseDamage = 6;
         this.cardsToPreview = new MagicalPawn();
+        this.tags.add(AbstractShadowversePlayer.Enums.CHESS);
     }
 
 

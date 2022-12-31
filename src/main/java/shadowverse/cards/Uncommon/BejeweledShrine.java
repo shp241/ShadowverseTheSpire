@@ -1,6 +1,7 @@
 package shadowverse.cards.Uncommon;
 
 import basemod.abstracts.CustomCard;
+import com.evacipated.cardcrawl.mod.stslib.actions.defect.EvokeSpecificOrbAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -10,6 +11,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.powers.*;
 import shadowverse.cards.AbstractAmuletCard;
 import shadowverse.cards.AbstractCrystalizeCard;
@@ -40,6 +42,13 @@ public class BejeweledShrine extends CustomCard implements AbstractNoCountDownAm
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new DrawCardAction(1));
+        for (AbstractOrb o : abstractPlayer.orbs){
+            if (o instanceof AmuletOrb){
+                if (((AmuletOrb) o).amulet instanceof BejeweledShrine){
+                    addToBot(new EvokeSpecificOrbAction(o));
+                }
+            }
+        }
     }
 
     @Override

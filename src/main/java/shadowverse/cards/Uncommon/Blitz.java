@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.cards.Common.MagicalKnight;
 import shadowverse.cards.Common.MagicalRook;
 import shadowverse.cards.Temp.MagicalPawn;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Witchcraft;
 import shadowverse.powers.BlitzPower;
 import shadowverse.powers.MysticQueenPower;
@@ -39,6 +40,7 @@ public class Blitz
     public Blitz() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.SKILL, Witchcraft.Enums.COLOR_BLUE, CardRarity.UNCOMMON, CardTarget.SELF);
         this.exhaust = true;
+        this.tags.add(AbstractShadowversePlayer.Enums.CHESS);
     }
 
 

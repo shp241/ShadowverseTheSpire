@@ -17,12 +17,13 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
+import shadowverse.cards.AbstractEnhanceCard;
 import shadowverse.cards.Temp.ProductMachine;
 import shadowverse.cards.Temp.WhiteTiger;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 
-public class Cybercannoneer extends CustomCard {
+public class Cybercannoneer extends AbstractEnhanceCard {
     public static final String ID = "shadowverse:Cybercannoneer";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Cybercannoneer");
     public static final String NAME = cardStrings.NAME;
@@ -31,7 +32,7 @@ public class Cybercannoneer extends CustomCard {
 
 
     public Cybercannoneer() {
-        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY,2);
         this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
         this.baseDamage = 9;
         this.baseMagicNumber = this.magicNumber = 2;
@@ -47,25 +48,21 @@ public class Cybercannoneer extends CustomCard {
     }
 
     @Override
-    public void update() {
-        if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
-                Shadowverse.Enhance(2)) {
-            setCostForTurn(2);
-        } else {
-            if (this.costForTurn!=0){
-                setCostForTurn(1);
-            }
-        }
-        super.update();
+    public void exEnhanceUse(AbstractPlayer p, AbstractMonster m) {
+
     }
 
     @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    public void enhanceUse(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        if (Shadowverse.Enhance(2) && this.costForTurn == 2) {
-            this.addToTop(new MakeTempCardInHandAction(new ProductMachine(), this.magicNumber));
-        }
+        this.addToBot(new MakeTempCardInHandAction(new ProductMachine(), this.magicNumber));
+    }
+
+    @Override
+    public void baseUse(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction(ID.replace("shadowverse:", "")));
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
     }
 
     @Override
