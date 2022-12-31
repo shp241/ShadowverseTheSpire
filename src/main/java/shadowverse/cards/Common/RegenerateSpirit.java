@@ -20,7 +20,6 @@ public class RegenerateSpirit
 
     public RegenerateSpirit() {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Necromancer.Enums.COLOR_PURPLE, CardRarity.COMMON, CardTarget.NONE, 2);
-        this.tags.add(AbstractShadowversePlayer.Enums.ENHANCE);
         this.isEthereal = true;
     }
 

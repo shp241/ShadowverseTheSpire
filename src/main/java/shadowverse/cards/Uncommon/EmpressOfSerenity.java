@@ -23,7 +23,6 @@ public class EmpressOfSerenity extends AbstractEnhanceCard {
     public EmpressOfSerenity() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.SELF, 2);
         this.baseBlock = 6;
-        this.tags.add(AbstractShadowversePlayer.Enums.ENHANCE);
     }
 
     @Override

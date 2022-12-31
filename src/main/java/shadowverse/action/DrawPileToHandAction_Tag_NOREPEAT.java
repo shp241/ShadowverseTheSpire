@@ -76,11 +76,6 @@ import shadowverse.characters.AbstractShadowversePlayer;
                                  card.type = AbstractCard.CardType.ATTACK;
                              }
                              card.applyPowers();
-                         }else if (card.hasTag(AbstractShadowversePlayer.Enums.ENHANCE)){
-                             if (Shadowverse.Enhance(2)) {
-                                 card.setCostForTurn(2);
-                                 card.applyPowers();
-                             }
                          }
                          AbstractDungeon.player.hand.refreshHandLayout();
                          AbstractDungeon.player.hand.applyPowers();

@@ -83,44 +83,5 @@ public class BounceActionM extends AbstractGameAction {
             this.p.hand.refreshHandLayout();
         }
         tickDuration();
-        if (this.isDone)
-            for (AbstractCard c : AbstractDungeon.player.hand.group){
-                if (c.hasTag(AbstractShadowversePlayer.Enums.ACCELERATE)&&!(c.cardID=="shadowverse:Satan")&&!(c.cardID=="shadowverse:Technolord")){
-                    if (Shadowverse.Accelerate((AbstractCard)c)) {
-                        c.setCostForTurn(0);
-                        c.type = AbstractCard.CardType.SKILL;
-                    } else {
-                        c.type = AbstractCard.CardType.ATTACK;
-                    }
-                    c.applyPowers();
-                }else if (c.cardID=="shadowverse:Technolord"){
-                    if (Shadowverse.Accelerate((AbstractCard)c)) {
-                        c.setCostForTurn(1);
-                        c.type = AbstractCard.CardType.SKILL;
-                    } else {
-                        c.type = AbstractCard.CardType.ATTACK;
-                    }
-                    c.applyPowers();
-                }
-                else if (c.hasTag(AbstractShadowversePlayer.Enums.ENHANCE)&&!(c.cardID=="shadowverse:TheHanged")&&!(c.cardID=="shadowverse:Aerin")&&!(c.cardID=="shadowverse:Korwa")){
-                    if (Shadowverse.Enhance(2)) {
-                        c.setCostForTurn(2);
-                        c.applyPowers();
-                    }
-                }else if (c.hasTag(AbstractShadowversePlayer.Enums.CRYSTALLIZE)){
-                    if (Shadowverse.Accelerate((AbstractCard)c)) {
-                        c.setCostForTurn(0);
-                        c.type = AbstractCard.CardType.POWER;
-                    } else {
-                        c.type = AbstractCard.CardType.ATTACK;
-                    }
-                    c.applyPowers();
-                }else if (c.cardID=="shadowverse:TheHanged"||c.cardID=="shadowverse:Aerin"||c.cardID=="shadowverse:Korwa"){
-                    if (Shadowverse.Enhance(3)) {
-                        c.setCostForTurn(3);
-                        c.applyPowers();
-                    }
-                }
-            }
     }
 }

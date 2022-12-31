@@ -28,7 +28,6 @@ public class MusePrincess extends AbstractEnhanceCard {
 
     public MusePrincess() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.SELF, 3);
-        this.tags.add(AbstractShadowversePlayer.Enums.ENHANCE);
         this.tags.add(AbstractShadowversePlayer.Enums.NATURAL);
         this.baseBlock = 9;
         this.cardsToPreview = new Muse();

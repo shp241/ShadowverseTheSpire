@@ -59,28 +59,6 @@ import shadowverse.characters.AbstractShadowversePlayer;
                          card.current_y = CardGroup.DRAW_PILE_Y;
                          this.p.drawPile.removeCard(card);
                          AbstractDungeon.player.hand.addToTop(card);
-                         if (card.hasTag(AbstractShadowversePlayer.Enums.ACCELERATE)) {
-                             if (Shadowverse.Accelerate((AbstractCard)card)) {
-                                 card.setCostForTurn(0);
-                                 card.type = AbstractCard.CardType.SKILL;
-                             } else {
-                                 card.type = AbstractCard.CardType.ATTACK;
-                             }
-                             card.applyPowers();
-                         } else if (card.hasTag(AbstractShadowversePlayer.Enums.CRYSTALLIZE)) {
-                             if (Shadowverse.Accelerate((AbstractCard)card)) {
-                                 card.setCostForTurn(0);
-                                 card.type = AbstractCard.CardType.POWER;
-                             } else {
-                                 card.type = AbstractCard.CardType.ATTACK;
-                             }
-                             card.applyPowers();
-                         }else if (card.hasTag(AbstractShadowversePlayer.Enums.ENHANCE)){
-                             if (Shadowverse.Enhance(2)) {
-                                 card.setCostForTurn(2);
-                                 card.applyPowers();
-                             }
-                         }
                          AbstractDungeon.player.hand.refreshHandLayout();
                          AbstractDungeon.player.hand.applyPowers();
                      }

@@ -34,7 +34,6 @@ public class Korwa extends AbstractEnhanceCard {
 
     public Korwa() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.POWER, Elf.Enums.COLOR_GREEN, CardRarity.RARE, CardTarget.SELF,3);
-        this.tags.add(AbstractShadowversePlayer.Enums.ENHANCE);
         this.cardsToPreview = new Fil();
     }
 
