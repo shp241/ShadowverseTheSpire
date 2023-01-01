@@ -114,19 +114,19 @@
   },
   "shadowverse:NobilisMod": {
     "TEXT": [
-      " NL 유언:  Apply 4 poison to all the enemies when Exhausted. "
+      " NL 유언:  모든 적에게 중독을 4 부여합니다. "
     ]
   },
   "ViewBanCardScreen": {
     "TEXT": [
-      "本场战斗中会出现的卡牌",
-      "返回"
+      "이번 게임에서 나올수 있는 카드",
+      "돌아가기"
     ]
   },
   "ViewBanCardOption": {
     "TEXT": [
-      "卡池",
-      "查看本场战斗可以出现的卡牌."
+      "카드풀",
+      "이번 게임에서 사용가능한 카드를 살펴보세요"
     ]
   }
 }
