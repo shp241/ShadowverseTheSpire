@@ -4717,8 +4717,8 @@
   },
   "shadowverse:CosmosFang": {
     "NAME": "Cosmos Fang",
-    "DESCRIPTION": "Gain !B! Block and 1 Blur . NL Return X non-strike Forestcraft Attack cards in your discard piles to your draw pile, X equal to your max hand - your hand. NL Then Gain 3X Block and X Strength . NL At the start of your next turn, deal damage equal to your current block to a random enemy. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block and 1 Blur . NL Change the intent of ALL enemies. NL Return X non-strike Forestcraft Attack cards in your discard piles to your draw pile, X equal to your max hand - your hand. NL Then Gain 3(X+Y) Block and X+Y Strength . Y equal to the amount of enemies. NL At the start of your next turn, deal damage equal to your current block to a random enemy. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block and 1 Blur. NL Return X non-strike Forestcraft Attack cards in your discard pile to your draw pile. X equals your max hand size minus the number of cards in your hand. NL Then, gain 3X Block and X Strength. NL At the start of your next turn, deal damage equal to your current Block to a random enemy. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block and 1 Blur. NL Change the intent of ALL enemies. NL Return X non-strike Forestcraft Attack cards in your discard pile to your draw pile. X equals your max hand size minus the number of cards in your hand. NL Then, gain 3(X+Y) Block and X+Y Strength. Y equal to the amount of enemies. NL At the start of your next turn, deal damage equal to your current Block to a random enemy. NL Exhaust."
   },
   "shadowverse:Blitz": {
     "NAME": "Blitz",
@@ -4730,30 +4730,30 @@
   },
   "shadowverse:GemstoneWingy": {
     "NAME": "Wingy, Chirpy Gemstone",
-    "DESCRIPTION": "Gain !B! Block . NL If you have played 5 or more amulets with countdown, gain 1 blur and double your next attack damage."
+    "DESCRIPTION": "Gain !B! Block. NL If you have played 5 or more amulets with Countdown, gain 1 Blur and double your next attack damage."
   },
   "shadowverse:DiamondMaster": {
     "NAME": "Diamond Master",
-    "DESCRIPTION": "Gain !B! Block . NL If you have blur , you will not lose Block at the start of your turn. NL If your next attack damage is doubled, double your attack damage this turn. NL If both are activated, deal damage to all enemies equal to your block.",
+    "DESCRIPTION": "Gain !B! Block. NL If you have Blur, you will not lose Block at the start of your turn. NL If your next attack damage is doubled, double your attack damage this turn. NL If both of the previous effects are activated, deal damage to all enemies equal to your Block.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deal !D! damage)"
     ]
   },
   "shadowverse:SapphirePriestess": {
     "NAME": "Sapphire Priestess",
-    "DESCRIPTION": "Gain !B! Block . NL If there have amulet in your amulet zone, draw 1 card. NL If there is only 1 attack in your hand, gain 1 blur and double your next attack damage."
+    "DESCRIPTION": "Gain !B! Block. NL If you have an amulet in your amulet zone, draw 1 card. NL If there is only 1 Attack card in your hand, gain 1 Blur and double your next attack damage."
   },
   "shadowverse:BejeweledShrine": {
     "NAME": "Bejeweled Shrine",
-    "DESCRIPTION": "Draw 1 card. NL At start of your turn, randomly active 1 effect from next: gain 1 blur or double your next attack damage. NL At the end of your turn, if you have both effect of not lose block and double damage, gain 1 Strength and Dexterity. NL If you have played 5 or more amulets with countdown, gain 3 instead of 1."
+    "DESCRIPTION": "Draw 1 card. NL At start of your turn, randomly gain 1 Blur or double your next attack damage. NL At the end of your turn, if both of the previous effects are active, you do not lose your Block and double damage and gain 1 Strength and Dexterity. NL If you have played 5 or more amulets with Countdown, gain 3 instead of 1."
   },
   "shadowverse:ImpiousBishop": {
     "NAME": "Impious Bishop",
-    "DESCRIPTION": "Crystalize 0 :\b Countdown 2 NL  Add an *Indulgence to your hand at the start of your turn. NL  NL --------------------- NL  NL When you play this card from your hand or its Countdown reaches 0, gain !B! block and heal 3. NL When you play this card from your hand, gain !B! block next turn. NL Put 2 *Indulgence into your discard pile."
+    "DESCRIPTION": "Crystalize 0: Countdown 2 NL  Add an *Indulgence to your hand at the start of your turn. NL NL --------------------- NL NL When you play this card from your hand or its Countdown reaches 0, gain !B! Block and heal 3 HP. NL When you play this card from your hand, gain !B! Block next turn. NL Put 2 *Indulgence into your discard pile."
   },
   "shadowverse:Magachiyo": {
     "NAME": "Magachiyo, Barbed Convict",
-    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Add 1 to the number of cards played this turn.  NL If you played at least 4 cards in 3 or more rounds, gain 2 Strength and Dexterity and add + !M! for condemned attack cards in hand.",
+    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Add 1 to the number of cards played this turn.  NL If you played at least 4 cards in 3 or more rounds, gain 2 Strength and Dexterity and add plus !M! to Condemned Attack cards in hand.",
     "EXTENDED_DESCRIPTION": [
       " NL (You played 4 card for ",
       " rounds. )"
@@ -4765,49 +4765,49 @@
   },
   "shadowverse:VerdantLieutenant": {
     "NAME": "Verdant Lieutenant",
-    "DESCRIPTION": "Condemned NL Deal !D! Damage, and gain !B! Block. NL Add 1 to the number of cards played this turn.  NL When you play card, if at least 4 cards were played this turn, upgrade this card in hand and draw 1 card. ",
-    "UPGRADE_DESCRIPTION":"Condemned NL Deal !D! damage, and gain !B! Block.  NL Add 1 to the number of cards played this turn. NL Disupgrades once played."
+    "DESCRIPTION": "Condemned NL Deal !D! Damage and gain !B! Block. NL Add 1 to the number of cards played this turn.  NL When you play a card, if at least 4 cards were played this turn, upgrade this card in your hand and draw 1 card. ",
+    "UPGRADE_DESCRIPTION":"Condemned NL Deal !D! damage and gain !B! Block.  NL Add 1 to the number of cards played this turn. NL Disupgrades once played."
   },
   "shadowverse:BuddingInitiate": {
     "NAME": "Budding Initiate",
-    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL If you played at least 2 card this turn, Put a random Condemned card from your draw pile into your hand. "
+    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL If you played at least 2 cards this turn, Put a random Condemned card from your draw pile into your hand. "
   },
   "shadowverse:WardenOfBalms": {
     "NAME": "Warden of Balms",
-    "DESCRIPTION": "Condemned NL Crystallize  0 \b Next turn, draw 1 more card. NL  NL --------------------- NL  NL Gain !B! Block, and deal !M! damage to all enemy. NL Repeat this once more."
+    "DESCRIPTION": "Condemned NL Crystallize 0: Next turn, draw 1 more card. NL NL --------------------- NL NL Gain !B! Block and deal !M! damage to all enemy. NL Repeat this once."
   },
   "shadowverse:Wimael": {
     "NAME": "Wimael, Redolent Enforcer",
-    "DESCRIPTION": "Condemned · Retain NL Reduce cost by 1 whenever this retained.  NL Whenever you draw this, put copy of this card in your hand. NL Deal !D! damage. "
+    "DESCRIPTION": "Condemned · Retain NL Reduce the cost of this card by 1 whenever it is Retained.  NL When you draw this card, put copy of this card in your hand. NL Deal !D! damage. "
   },
   "shadowverse:BenevolentElf": {
     "NAME": "Benevolent Elf",
-    "DESCRIPTION": "At the end of turn, kill all enemy less than 6 HP. If your HP is max, Kill all enemy less than 18 HP.",
-    "UPGRADE_DESCRIPTION":"Gain 4 max HP and heal 4 HP. NL At the end of turn, kill all enemy less than 6 HP. If your HP is max, Kill all enemy less than 18 HP. "
+    "DESCRIPTION": "At the end of your turn, kill all enemies with less than 6 HP. If you are at max HP, kill all enemies with less than 18 HP instead.",
+    "UPGRADE_DESCRIPTION":"Gain 4 max HP and heal 4 HP. NL At the end of turn, kill all enemies with less than 6 HP. If you are at max HP, kill all enemies with less than 18 HP instead."
   },
   "shadowverse:Simael": {
     "NAME": "Simael, Cleansing Enforcer",
-    "DESCRIPTION": "Condemned NL Spellboost: \bCosts 1 less [E]. NL Deal !D! Damage. NL Gain !B! Block."
+    "DESCRIPTION": "Condemned NL Spellboost: Reduce the cost of this card by 1 [E]. NL Deal !D! Damage. NL Gain !B! Block."
   },
   "shadowverse:WardenOfTheArcane": {
     "NAME": "Warden of the Arcane",
-    "DESCRIPTION": "Condemned NL Spellboost !M! time. NL Gain !M! Earth_Essence. NL Gain !B! Block. NL Deal 5 Damage to all enemy."
+    "DESCRIPTION": "Condemned NL Spellboost !M! time(s). NL Gain !M! Earth_Essence. NL Gain !B! Block. NL Deal 5 Damage to all enemies."
   },
   "shadowverse:BladeRain": {
     "NAME": "It's Raining Blades!",
-    "DESCRIPTION": "Spellboost: \bCosts 1 less [E]. NL Gain !M! Strength and Dexterity. NL Deal 9 damage to random enemy. NL Banish."
+    "DESCRIPTION": "Spellboost: Reduce the cost of this card by 1 [E]. NL Gain !M! Strength and Dexterity. NL Deal 9 damage to random enemy. NL Banish."
   },
   "shadowverse:AstrologicalSorcerer": {
     "NAME": "Astrological Sorcerer",
-    "DESCRIPTION": "Gain 1 Earth_Essence. NL Gain !B! Block. NL Put 1 *Starseer's *Telescope in hand.   NL If you consumed at least 7 Earth_Essence, Damage you recieve this turn reduced by 2.",
+    "DESCRIPTION": "Gain 1 Earth_Essence. NL Gain !B! Block. NL Put a *Starseer's *Telescope into your hand. NL If you've consumed at least 7 Earth_Essence, reduce all damage received this turn by 2.",
     "EXTENDED_DESCRIPTION": [
       " NL (Consumed ",
-      " essence.)"
+      " Earth_Essence.)"
     ]
   },
   "shadowverse:VolunteerTestSubject": {
     "NAME": "Volunteer Test Subject",
-    "DESCRIPTION": "Condemned NL Gain !B! block. NL If you played at least 3 *Volunteer *Test *Subject, deal !D! damage. NL If 5 or more, +9 damage.  NL Last_Words: Draw card when this card banish. NL banish.",
+    "DESCRIPTION": "Condemned NL Gain !B! block. NL If you played at least 3 *Volunteer *Test *Subject, deal !D! damage. NL If you've played 5 or more, deal 9 more damage.  NL Last_Words: When this card is banished, draw a card. NL Banish.",
     "EXTENDED_DESCRIPTION": [
       " NL (Played ",
       " *Volunteed *Test *Subject. )"
@@ -4815,15 +4815,15 @@
   },
   "shadowverse:DevotedResearcher": {
     "NAME": "Devoted Researcher",
-    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Put 1 *Volunteer *Test *Subject with 0 cost. NL Enhance 2:Put 2 instead 1."
+    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Put a *Volunteer *Test *Subject into your hand and change its cost to 0. NL Enhance 2: Put 2 instead."
   },
   "shadowverse:ObsessiveScholar": {
     "NAME": "Obsessive Scholar",
-    "DESCRIPTION": "Condemned · Fusion ： Non-strike attack card. NL  Deal !D! Damage. NL Put 1 *Volunteer *Test *Subject with 0 cost. NL If this card is fused, Put a random Condemned card from your draw pile into your hand."
+    "DESCRIPTION": "Condemned NL Fusion: Non-Strike Attack cards. NL Deal !D! Damage. NL Put a *Volunteer *Test *Subject into your hand and change its cost to 0. NL If any cards have been fused to this card, put a random Condemned card from your draw pile into your hand."
   },
   "shadowverse:Sephie": {
     "NAME": "Sephie, Depraved Convict",
-    "DESCRIPTION": "Condemned · Retain · Fusion ： Non-strike attack card. NL  Whenever cards are fused to this card, if 2 or more card have fused at once and you have more than 1 energy, use 1 energy and put 1 *Volunteer *Test *Subject with 0 cost. If condemned card are fused, do not use energy. NL  NL --------------------- NL  NL Deal !D! Damage, and put  1 *Volunteer *Test *Subject with 0 cost. NL If you played at least 5 *Volunteer *Test *Subject, + !M! damage for every *Volunteer *Test *Subject in hand."
+    "DESCRIPTION": "Condemned · Retain NL Fusion: Non-Strike Attack cards. NL Whenever cards are fused to this card, if 2 or more card have fused at once and you have more than 1 energy, use 1 energy and put a *Volunteer *Test *Subject into your hand and change its cost to 0. If a Condemned card was fused, do not use energy. NL NL --------------------- NL NL Deal !D! Damage, and put a *Volunteer *Test *Subject into your hand and change its cost to 0. NL If you played at least 5 *Volunteer *Test *Subject, add !M! damage for every *Volunteer *Test *Subject in your hand."
   },
   "shadowverse:SkullFish": {
     "NAME": "Skullfish",
@@ -4831,55 +4831,55 @@
   },
   "shadowverse:GhastlyBanishment": {
     "NAME": "Ghastly Banishment",
-    "DESCRIPTION": "Put 2 *Ghost in hand. NL Enhance 3 :Deal !D! Damage to all enemy. NL ( !M! times of banished status cards)"
+    "DESCRIPTION": "Put 2 *Ghost in hand. NL Enhance 3: Deal !D! Damage to all enemy. NL ( !M! times Banished status cards.)"
   },
   "shadowverse:Istyndet": {
     "NAME": "Istyndet, Soul Convict",
-    "DESCRIPTION": "Condemned NL Gain !B! Block. NL If you've played 10 or more cards with Last_Words this combat, apply 1 Weak and Vulnerable to all enemy, and vanish all non-skill card in hand.  NL Last_Word: Shadow+3.",
-    "UPGRADE_DESCRIPTION":"Condemned NL Gain !B! Block.  NL Put 1 *Skullfish with 0 cost in hand.  NL If you've played 10 or more cards with Last_Words this combat, apply 1 Weak and Vulnerable to all enemy, and vanish all non-skill card in hand.  NL Last_Word: Shadow+3.",
+    "DESCRIPTION": "Condemned NL Gain !B! Block. NL If you've played 10 or more cards with Last_Words this combat, apply 1 Weak and Vulnerable to all enemies and Banish all non-skill cards in your hand.  NL Last_Words: Gain 3 Shadows.",
+    "UPGRADE_DESCRIPTION":"Condemned NL Gain !B! Block. NL Put a *Skullfish into your hand and change its cost to 0.  NL If you've played 10 or more cards with Last_Words this combat, apply 1 Weak and Vulnerable to all enemies and Banish all non-skill cards in your hand.  NL Last_Word: Gain 3 Shadows",
     "EXTENDED_DESCRIPTION": [
       " NL (Played ",
-      " lastword cards.)"
+      " cards with Last_Words.)"
     ]
   },
   "shadowverse:AbyssalColonel_Crystalize": {
-    "NAME": "Crystalize:Abyssal Colonel",
-    "DESCRIPTION": "Condemned · Retain NL Countdown !M! : This card banish. NL Lastword :When banished, Put 0 cost *Abyssal *Colonel in hand.",
-    "UPGRADE_DESCRIPTION":"Condemned · Retain NL Countdown !M! : This card banish. NL Lastword :When banished, Put 0 cost *Abyssal *Colonel+ in hand."
+    "NAME": "Abyssal Colonel Crystalized",
+    "DESCRIPTION": "Condemned · Retain NL Countdown !M! : Banish this card. NL Last_Words: When this card is banished, put a *Abyssal *Colonel into your hand and change its cost to 0.",
+    "UPGRADE_DESCRIPTION":"Condemned · Retain NL Countdown !M! : TBanish this card. NL Last_Words: When this card is banished, put a *Abyssal *Colonel+ into your hand and change its cost to 0."
   },
   "shadowverse:AbyssalColonel_Temp": {
     "NAME": "Abyssal Colonel",
-    "DESCRIPTION": "Condemned NL Deal !D! Damage NL Gain !B! Block. NL Last_Word : Apply 1 Weak and Vulnerable to random enemy, and Heal 3 HP. NL Banish."
+    "DESCRIPTION": "Condemned NL Deal !D! Damage NL Gain !B! Block. NL Last_Words: Apply 1 Weak and Vulnerable to a random enemy and heal 3 HP. NL Banish."
   },
   "shadowverse:AbyssalColonel": {
     "NAME": "Abyssal Colonel",
-    "DESCRIPTION": "Condemned · Crystallize  1 NL Put 1  *Crystallize:Abyssal *Colonel in hand. NL  NL --------------------- NL  NL Deal !D! Damage NL Gain !B! Block. NL Last_Word : Apply 1 Weak and Vulnerable to random enemy, and Heal 3 HP. NL Banish.",
-    "UPGRADE_DESCRIPTION":"Condemned ·  Crystallize  1 NL Put 1  *Crystallize:Abyssal *Colonel+ in hand. NL  NL --------------------- NL  NL Deal !D! Damage NL Gain !B! Block. NL Last_Word : Apply 1 Weak and Vulnerable to random enemy, and Heal 3 HP. NL Banish."
+    "DESCRIPTION": "Condemned NL Crystallize 1: Put an *Abyssal *Colonel *Crystalized into your hand. NL NL --------------------- NL  NL Deal !D! Damage NL Gain !B! Block. NL Last_Words: Apply 1 Weak and Vulnerable to a random enemy and heal 3 HP. NL Banish.",
+    "UPGRADE_DESCRIPTION":"Condemned NL Crystallize 1: Put an *Abyssal *Colonel *Crystalized+ into your hand. NL NL --------------------- NL  NL Deal !D! Damage NL Gain !B! Block. NL Last_Words: Apply 1 Weak and Vulnerable to a random enemy and heal 3 HP. NL Banish."
   },
   "shadowverse:UnderworldLieutenant": {
     "NAME": "Underworld Lieutenant",
-    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Put !M! *Spartoi *Sergeant that cost 0 this turn  into hand. NL Last_Word: When Banished, deal 6 damage to all enemy."
+    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Put !M! *Spartoi *Sergeant into your hand. It costs 0 this turn. NL Last_Words: When this card is Banished, deal 6 damage to all enemies."
   },
   "shadowverse:FallenSergeant": {
     "NAME": "Fallen Sergeant",
-    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Last_Word :When banished, Put a random Condemned card from your draw pile into your hand."
+    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Last_Words: When this card is Banished, put a random Condemned card from your draw pile into your hand."
   },
   "shadowverse:WardenOfCorpses": {
     "NAME": "Warden of Corpses",
-    "DESCRIPTION": "Condemned NL Burial_Rite 1:Deal !D! Damage to all enemy.  NL Draw 2 cards."
+    "DESCRIPTION": "Condemned NL Burial_Rite 1: Deal !D! Damage to all enemies. NL Draw 2 cards."
   },
   "shadowverse:Myroel": {
     "NAME": "Myroel, Death Enforcer",
-    "DESCRIPTION": "Condemned NL Gain「Whenever you perform Burial_Rite, deal 10 damage to all enemy. (for 3 times for each turn.)」. NL Burial_Rite 2 : Reanimate 1,2 NL Banish. ",
-    "UPGRADE_DESCRIPTION":"Condemned NL Gain「Whenever you perform Burial_Rite, deal 10 damage to all enemy. (for 3 times for each turn.)」. NL Burial_Rite 2 : Reanimate 1,2"
+    "DESCRIPTION": "Condemned NL Gain the following effect: Whenever you perform Burial_Rite, deal 10 damage to all enemies (up to 3 times per turn). NL Burial_Rite 2: Reanimate 1 and Reanimate 2. NL Banish. ",
+    "UPGRADE_DESCRIPTION":"Condemned NL Gain the following effect: Whenever you perform Burial_Rite, deal 10 damage to all enemies (up to 3 times per turn). NL Burial_Rite 2: Reanimate 1 and Reanimate 2. "
   },
   "shadowverse:DeathScytheHound": {
     "NAME": "Deathscythe Hound",
-    "DESCRIPTION": "Deal !D! Damage to all enemy. NL Necromancy 8 : Repeat this. "
+    "DESCRIPTION": "Deal !D! Damage to all enemies. NL Necromancy 8: Repeat the previous effect once. "
   },
   "shadowverse:Garodeth": {
     "NAME": "Garodeth, Insurgent Convict",
-    "DESCRIPTION": "Condemned NL Lose 1 HP. NL  Deal !M! Damage to all enemy. NL Deal !D! damage. If you lost HP at least 3 times this turn, this damage quadruple. ",
+    "DESCRIPTION": "Condemned NL Lose 1 HP. NL  Deal !M! Damage to all enemies. NL Deal !D! damage. If you lost HP at least 3 times this turn, deal 4 times the damage. ",
     "EXTENDED_DESCRIPTION": [
       " NL (You lost HP ",
       " times this turn)"
@@ -4887,78 +4887,78 @@
   },
   "shadowverse:ViciousBlitzer": {
     "NAME": "Vicious Blitzer",
-    "DESCRIPTION": "Condemned NL Every charcater lost 1 HP 2 times. NL Deal !D! Damage."
+    "DESCRIPTION": "Condemned NL You and all enemies lose 1 HP 2 times. NL Deal !D! Damage."
   },
   "shadowverse:SteamrollingTank": {
     "NAME": "Steamrolling Tank",
-    "DESCRIPTION": "Condemned NL Whenever you lost HP, Gain !M! Block. (For 8 time in each turn) NL Lose 1 HP. NL Gain !B! Block."
+    "DESCRIPTION": "Condemned NL Whenever you lose HP, gain !M! Block. (Up to 8 times per turn) NL Lose 1 HP. NL Gain !B! Block."
   },
   "shadowverse:RagingCommander": {
     "NAME": "Raging Commander",
-    "DESCRIPTION": "Condemned NL This turn, whenever you lose HP, Deal !M! damage to all enemy. (Up to 8 time for each turn) NL Lose 1 HP, Put a random Condemned card from your draw pile into your hand. NL Deal !D! Damage.",
-    "UPGRADE_DESCRIPTION":"Condemned NL This turn, whenever you lose HP, Deal !M! damage to all enemy. (Up to 8 time for each turn) NL Lose 1 HP, Put a random Condemned card from your draw pile into your hand. And repeat this. NL Deal !D! Damage."
+    "DESCRIPTION": "Condemned NL This turn, whenever you lose HP, deal !M! damage to all enemies. (Up to 8 times per turn) NL Lose 1 HP and put a random Condemned card from your draw pile into your hand. NL Deal !D! Damage.",
+    "UPGRADE_DESCRIPTION":"Condemned NL This turn, whenever you lose HP, deal !M! damage to all enemies. (Up to 8 times per turn) NL Lose 1 HP and put a random Condemned card from your draw pile into your hand. Repeat this effect once. NL Deal !D! Damage."
   },
   "shadowverse:Genomuel": {
     "NAME": "Genomuel, Wyrm Enforcer",
-    "DESCRIPTION": "Condemned NL At the start of turn, every enemy lose 3 Strength and Dexterity, and 9 Max HP.  NL This ability triggers 3 time and disapper.  NL Ethereal",
-    "UPGRADE_DESCRIPTION":"Condemned · Innate NL At the start of turn, every enemy lose 3 Strength and Dexterity, and 9 Max HP.  NL This ability triggers 3 time and disapper.  NL Ethereal."
+    "DESCRIPTION": "Condemned NL At the start of your turn, all enemies lose 3 Strength and Dexterity and 9 max HP. This effect is removed after activating 3 times. NL Ethereal",
+    "UPGRADE_DESCRIPTION":"Condemned · Innate NL At the start of your turn, all enemies lose 3 Strength and Dexterity and 9 max HP. This effect is removed after activating 3 times. NL Ethereal"
   },
   "shadowverse:WardenOfDecay": {
     "NAME": "Warden of Decay",
-    "DESCRIPTION": "Condemned NL Gain !B! Block NL If Vengeance is active, all enemy lose 3 Strength and Dexterity, and you heal 3 HP and draw 2 cards. NL Banish. "
+    "DESCRIPTION": "Condemned NL Gain !B! Block NL If Vengeance is active, all enemies lose 3 Strength and Dexterity and you heal 3 HP and draw 2 cards. NL Banish. "
   },
   "shadowverse:Erralde": {
     "NAME": "Erralde, Troth Convict",
-    "DESCRIPTION": "Condemned NL Apply 2 Weak and Vulnerable to all enemy.  NL Gain「At the end of each turn, if you played cost 2 or more card or condemned card this turn, heal 2 HP and draw 1 card next turn.」. NL Ethereal",
-    "UPGRADE_DESCRIPTION":"Condemned NL Apply 2 Weak and Vulnerable to all enemy.  NL Gain「At the end of each turn, if you played cost 2 or more card or condemned card this turn, heal 2 HP and draw 1 card next turn.」."
+    "DESCRIPTION": "Condemned NL Apply 2 Weak and Vulnerable to all enemies. NL Gain the following effect: At the end of each of your turns, if you played a Condemned card that cost 2 or more this turn, heal 2 HP and draw a card next turn. NL Ethereal",
+    "UPGRADE_DESCRIPTION":"Condemned NL Apply 2 Weak and Vulnerable to all enemies. NL Gain the following effect: At the end of each of your turns, if you played a Condemned card that cost 2 or more this turn, heal 2 HP and draw a card next turn."
   },
   "shadowverse:ExecutorOfTheOath": {
     "NAME": "Executor of the Oath",
-    "DESCRIPTION": "Condemned NL Whenevet you healed, reduce its cost by [E].  NL Gain !B! Block. "
+    "DESCRIPTION": "Condemned NL Whenever you heal HP, reduce the cost of this card by [E]. NL Gain !B! Block. "
   },
   "shadowverse:AgentOfTheCommandments": {
     "NAME": "Agent of the Commandments",
-    "DESCRIPTION": "Condemned NL Deal !D! Damage.  NL At the end of this turn and next turn, Heal 1 HP. ",
-    "UPGRADE_DESCRIPTION":"Condemned NL Deal !D! Damage.  NL At the end of this turn and next turn, Heal 1 HP. NL Put a random Condemned card from your draw pile into your hand. "
+    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL At the end of this turn and next turn, heal 1 HP. ",
+    "UPGRADE_DESCRIPTION":"Condemned NL Deal !D! Damage. NL At the end of this turn and next turn, heal 1 HP. NL Put a random Condemned card from your draw pile into your hand. "
   },
   "shadowverse:WardenOfTheWings": {
     "NAME": "Warden of the Wings",
-    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Put a random 1-cost card with Countdown from your draw pile into your hand. NL If 5 or more Amulet triggerd in this combat, gain 1 energy. ",
+    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Put a random 1-cost card with Countdown from your draw pile into your hand. NL If 5 or more amulets triggered during this combat, gain 1 Energy. ",
     "EXTENDED_DESCRIPTION": [
-      " NL (Amulet triggered: ",
+      " NL (Amulets triggered: ",
       " ."
     ]
   },
   "shadowverse:Uneriel": {
     "NAME": "Uneriel, Winged Enforcer",
-    "DESCRIPTION": "Condemned NL Gain !B! Block. NL If 5 or more Amulet triggerd in this combat, gain 2 energy.  NL This turn, whenever you play amulet, reduce its countdown by 1. whenever amulet's countdown become 0, Deal !M! damage to all enemy."
+    "DESCRIPTION": "Condemned NL Gain !B! Block. NL If 5 or more amulets triggered during this combat, gain 2 Energy. NL This turn, whenever you play an amulet, reduce its Countdown by 1. Whenever an amulet's Countdown becomes 0, deal !M! damage to all enemies."
   },
   "shadowverse:SkullFane2": {
     "NAME": "Skullfane, the Defiled",
-    "DESCRIPTION": "Accelerate 0 :Select 1 Amulet and reduce its Countdown by 1. NL If its countdown became 0, return this card to hand. NL  NL --------------------- NL  NL At the and of your turn, If you Accelerated *Skullfane, *the *Defiled more than 4 in this combat, -3 its cost.  NL  Deal !D! damage to all enemy. NL Reduce the Countdown of all your Amulets to 0. For each Curse, gain !B! Block and !M! Strength. "
+    "DESCRIPTION": "Accelerate 0: Select 1 Amulet and reduce its Countdown by 1. NL If its Countdown then becomes 0, return this card to your hand. NL NL --------------------- NL NL At the and of your turn, If you Accelerated *Skullfane, *the *Defiled more than 4 in this combat, subtract 3 from its cost.  NL Deal !D! damage to all enemies. NL Reduce the Countdown of all your amulets to 0. For each Curse, gain !B! Block and !M! Strength. "
   },
   "shadowverse:Cutthroat": {
     "NAME": "Cutthroat, Discord Convict",
-    "DESCRIPTION": "Condemned NL If there are no duplicate cards in your draw pile(exclude Condemned card), Gain「Whenever you trigger Enhance, gain X energy. equals the Enhance cost minus 1. 」 NL Deal !D! Damage. NL Enhance 3:Deal 5 times damage. NL Enhance 4:Deal 6 times damage."
+    "DESCRIPTION": "Condemned NL If there are no duplicate cards in your draw pile (excluding Condemned cards), gain the following effect: Whenever you play a card with Enhance, gain X Energy. X equals the Enhance cost minus 1. NL Deal !D! Damage. NL Enhance 3: Deal 5 times the damage. NL Enhance 4: Deal 6 times the damage."
   },
   "shadowverse:IronforgedRightHand": {
     "NAME": "Ironforged Right Hand",
-    "DESCRIPTION": "Condemned NL Deal !D! Damage.  NL Enhance 2:Deal !M! to all enemy.  NL Enhance 3: Add 1 *Evolution *Point and 1 *Miracle to your hand."
+    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Enhance 2: Deal !M! to all enemies. NL Enhance 3: Add 1 *Evolution *Point and 1 *Miracle to your hand."
   },
   "shadowverse:SmeltworkBodyguard": {
     "NAME": "Smeltwork Bodyguard",
-    "DESCRIPTION": "Condemned NL Gain !B! block. NL Enhance 2:Gain !M! more block and draw 2 cards."
+    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Enhance 2: Gain !M! more Block and draw 2 cards."
   },
   "shadowverse:BlackrustUnderling": {
     "NAME": "Blackrust Underling",
-    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Enhance 2:Deal once more. NL Enhance 3:Deal twice more."
+    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Enhance 2: Deal this damage again. NL Enhance 3: Deal this damage two more times."
   },
   "shadowverse:WardenOfTrigger": {
     "NAME": "Warden of the Trigger",
-    "DESCRIPTION": "Condemned · Machina NL Gain !B! Block and draw 1 card. NL At the end of your turn, Heal 1 HP.  NL If this card added in hand by 0 cost, Apply 1 Weak and Vulnerable to random enemy. NL Exhaust . "
+    "DESCRIPTION": "Condemned · Machina NL Gain !B! Block and draw 1 card. NL At the end of your turn, heal 1 HP. NL If this card is added to your hand with its cost changed to 0, apply 1 Weak and Vulnerable to a random enemy. NL Exhaust. "
   },
   "shadowverse:Kyrzael": {
     "NAME": "Kyrzael, Killshot Enforcer",
-    "DESCRIPTION": "Condemned · Machina NL Deal !D! 点 Damage. NL Add 2 *Warden *of *the *Trigger in your hand, and make its cost 0. NL Gain 2 Metallicize for each Machina in your hand. "
+    "DESCRIPTION": "Condemned · Machina NL Deal !D! Damage. NL Add 2 *Warden *of *the *Trigger to your hand and change their costs to 0. NL Gain 2 Metallicize for each Machina card in your hand. "
   }
 }
