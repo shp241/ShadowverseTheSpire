@@ -209,11 +209,11 @@
     ],
     "NAME": "Taketsumi",
     "DIALOG": [
-      "@もてなしてやるよ、存分に！@",
-      "~そら、大詰めだ~",
-      "~俺の見せ場だ~",
-      "~いっちょうやるか~",
-      "~盛り上げるぜ~"
+      "@Time@ @to@ @roll@ @out@ @the@ @red@ @carpet,@ @huh?@",
+      "~It's~ ~curtains~ ~for~ ~you!~",
+      "~Now's~ ~my~ ~time~ ~to~ ~shine!~",
+      "~Time~ ~for~ ~a~ ~little~ ~warm-up.~",
+      "~What~ ~do~ ~you~ ~say~ ~we~ ~liven~ ~things~ ~up?~"
     ]
   }
 }
