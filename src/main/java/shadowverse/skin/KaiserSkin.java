@@ -9,7 +9,7 @@ public class KaiserSkin extends AbstractSkin{
     private static final String SHOULDER = "img/character/Nemesis/shoulder4.png";
     private static final String SKIN_CORPSE = "img/character/Nemesis/corpse4.png";
     private static final String SCML = "img/character/Nemesis/Kaiser/Kaiser.scml";
-    public static final String SELECTED = "Kaiser_Selected";
+    public static final String SELECTED = "Kaiser_Select";
     public static final String HURT_SOUND1 = "Kaiser_Hurt";
     public static final String HURT_SOUND2 = "Kaiser_Hurt2";
     public static final String HURT_SOUND3 = "Kaiser_Hurt3";

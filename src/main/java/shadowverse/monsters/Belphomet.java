@@ -12,14 +12,12 @@ import com.megacrit.cardcrawl.actions.utility.HideHealthBarAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.MonsterStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.*;
-import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 import com.megacrit.cardcrawl.vfx.combat.InflameEffect;
 import com.megacrit.cardcrawl.vfx.combat.LaserBeamEffect;
@@ -104,8 +102,8 @@ public class Belphomet extends CustomMonster {
             this.strAmt = 4;
             this.debuffAmount = 3;
         }
-        this.damage.add(new DamageInfo((AbstractCreature)this, this.beamDmg));
-        this.damage.add(new DamageInfo((AbstractCreature)this, this.hyperBeamDmg));
+        this.damage.add(new DamageInfo(this, this.beamDmg));
+        this.damage.add(new DamageInfo(this, this.hyperBeamDmg));
     }
 
     @Override
@@ -114,14 +112,14 @@ public class Belphomet extends CustomMonster {
         AbstractDungeon.scene.fadeOutAmbiance();
         AbstractDungeon.getCurrRoom().playBgmInstantly("Aiolon");
         if (AbstractDungeon.ascensionLevel >= 19) {
-            AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)this, (AbstractCreature)this, (AbstractPower)new RegenerateMonsterPower(this, 15)));
-            AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)this, (AbstractCreature)this, (AbstractPower)new ArtifactPower((AbstractCreature)this, 2)));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new RegenerateMonsterPower(this, 15)));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new ArtifactPower(this, 2)));
         } else {
-            AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)this, (AbstractCreature)this, (AbstractPower)new RegenerateMonsterPower(this, 10)));
-            AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)this, (AbstractCreature)this, (AbstractPower)new ArtifactPower((AbstractCreature)this, 1)));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new RegenerateMonsterPower(this, 10)));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new ArtifactPower(this, 1)));
         }
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)this, (AbstractCreature)this, (AbstractPower)new BarricadePower((AbstractCreature)this)));
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new GainBlockAction((AbstractCreature)this, (AbstractCreature)this, 25));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new BarricadePower(this)));
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(this, this, 25));
     }
 
     @Override
@@ -130,97 +128,97 @@ public class Belphomet extends CustomMonster {
         AbstractCard c = (AbstractCard)new BelphometStatus();
         switch (this.nextMove) {
             case 1:
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new TalkAction((AbstractCreature)this, DIALOG[2]));
-                addToBot((AbstractGameAction)new SFXAction("Belphomet3"));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)this, (AbstractCreature)this, (AbstractPower)new ManaBarrier((AbstractCreature) this)));
+                AbstractDungeon.actionManager.addToBottom(new TalkAction(this, DIALOG[2]));
+                addToBot(new SFXAction("Belphomet3"));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new ManaBarrier( this)));
                 AbstractMonster m1 = new chushou1(this.spawnX + -185.0F * 1, MathUtils.random(-5.0F, 25.0F));
                 AbstractMonster m2 = new chushou2(this.spawnX + -185.0F * 2, MathUtils.random(-5.0F, 25.0F));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new SFXAction("MONSTER_COLLECTOR_SUMMON"));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new SpawnMonsterAction(m1, true));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new SpawnMonsterAction(m2, true));
+                AbstractDungeon.actionManager.addToBottom(new SFXAction("MONSTER_COLLECTOR_SUMMON"));
+                AbstractDungeon.actionManager.addToBottom(new SpawnMonsterAction(m1, true));
+                AbstractDungeon.actionManager.addToBottom(new SpawnMonsterAction(m2, true));
                 this.enemySlots.put(Integer.valueOf(1), m1);
                 this.enemySlots.put(Integer.valueOf(2), m2);
                 if (AbstractDungeon.ascensionLevel >= 19) {
-                    AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m1, (AbstractCreature)this, (AbstractPower)new ArtifactPower((AbstractCreature)m1, 3)));
-                    AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m2, (AbstractCreature)this, (AbstractPower)new ArtifactPower((AbstractCreature)m2, 3)));
+                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m1, this, new ArtifactPower(m1, 3)));
+                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m2, this, new ArtifactPower(m2, 3)));
                 } else {
-                    AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m1, (AbstractCreature)this, (AbstractPower)new ArtifactPower((AbstractCreature)m1, 2)));
-                    AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m2, (AbstractCreature)this, (AbstractPower)new ArtifactPower((AbstractCreature)m2, 2)));
+                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m1, this, new ArtifactPower(m1, 2)));
+                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m2, this, new ArtifactPower(m2, 2)));
                 }
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m1, (AbstractCreature)this, (AbstractPower)new chushouExplosionPower((AbstractCreature)m1, 12)));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m2, (AbstractCreature)this, (AbstractPower)new chushouHealPower((AbstractCreature)m2, 80)));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m1, this, new chushouExplosionPower(m1, 12)));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m2, this, new chushouHealPower(m2, 80)));
                 this.initialSpawn = false;
                 break;
             case 2:
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new TalkAction((AbstractCreature)this, DIALOG[5]));
-                addToBot((AbstractGameAction)new SFXAction("Belphomet6"));
+                AbstractDungeon.actionManager.addToBottom(new TalkAction(this, DIALOG[5]));
+                addToBot(new SFXAction("Belphomet6"));
                 for (i = 0;i<3;i++){
-                    AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new DamageAction((AbstractCreature)AbstractDungeon.player, this.damage
+                    AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage
                             .get(0), AbstractGameAction.AttackEffect.NONE, true));
-                    AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new SFXAction("ATTACK_MAGIC_BEAM_SHORT", 0.5F));
-                    AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new VFXAction((AbstractGameEffect)new BorderFlashEffect(Color.SKY)));
+                    AbstractDungeon.actionManager.addToBottom(new SFXAction("ATTACK_MAGIC_BEAM_SHORT", 0.5F));
+                    AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.SKY)));
                     if (Settings.FAST_MODE) {
-                        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new VFXAction((AbstractGameEffect)new SmallLaserEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, this.hb.cX, this.hb.cY), 0.1F));
+                        AbstractDungeon.actionManager.addToBottom(new VFXAction(new SmallLaserEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, this.hb.cX, this.hb.cY), 0.1F));
                     } else {
-                        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new VFXAction((AbstractGameEffect)new SmallLaserEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, this.hb.cX, this.hb.cY), 0.3F));
+                        AbstractDungeon.actionManager.addToBottom(new VFXAction(new SmallLaserEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, this.hb.cX, this.hb.cY), 0.3F));
                     }
                 }
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new MakeTempCardInHandAction(c, 1));
+                AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(c, 1));
                 break;
             case 3:
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new TalkAction((AbstractCreature)this, DIALOG[3]));
-                addToBot((AbstractGameAction)new SFXAction("Belphomet4"));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new GainBlockAction((AbstractCreature)this, (AbstractCreature)this, this.blockAmt));
+                AbstractDungeon.actionManager.addToBottom(new TalkAction(this, DIALOG[3]));
+                addToBot(new SFXAction("Belphomet4"));
+                AbstractDungeon.actionManager.addToBottom(new GainBlockAction(this, this, this.blockAmt));
                 for (AbstractMonster m : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                     if (!m.isDead && !m.isDying && !m.isEscaping)
-                        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)this, (AbstractPower)new StrengthPower((AbstractCreature)m, this.strAmt), this.strAmt));
+                        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, this, new StrengthPower(m, this.strAmt), this.strAmt));
                 }
                 if (!this.hasPower("shadowverse:ManaBarrier")){
-                    AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)this, (AbstractCreature)this, (AbstractPower)new ManaBarrier((AbstractCreature) this)));
+                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new ManaBarrier( this)));
                 }
                 break;
             case 4:
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new TalkAction((AbstractCreature)this, DIALOG[0]));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)this, (AbstractPower)new WeakPower((AbstractCreature)AbstractDungeon.player, this.debuffAmount, true), this.debuffAmount));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)this, (AbstractPower)new VulnerablePower((AbstractCreature)AbstractDungeon.player, this.debuffAmount, true), this.debuffAmount));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)this, (AbstractPower)new FrailPower((AbstractCreature)AbstractDungeon.player, this.debuffAmount, true), this.debuffAmount));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new MakeTempCardInHandAction(c, 3));
+                AbstractDungeon.actionManager.addToBottom(new TalkAction(this, DIALOG[0]));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new WeakPower(AbstractDungeon.player, this.debuffAmount, true), this.debuffAmount));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new VulnerablePower(AbstractDungeon.player, this.debuffAmount, true), this.debuffAmount));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new FrailPower(AbstractDungeon.player, this.debuffAmount, true), this.debuffAmount));
+                AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(c, 3));
                 break;
             case 5:
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new TalkAction((AbstractCreature)this, DIALOG[4]));
-                addToBot((AbstractGameAction)new SFXAction("Belphomet5"));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new VFXAction((AbstractGameEffect)new LaserBeamEffect(this.hb.cX, this.hb.cY + 60.0F * Settings.scale), 1.5F));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new DamageAction((AbstractCreature)AbstractDungeon.player, this.damage
+                AbstractDungeon.actionManager.addToBottom(new TalkAction(this, DIALOG[4]));
+                addToBot(new SFXAction("Belphomet5"));
+                AbstractDungeon.actionManager.addToBottom(new VFXAction(new LaserBeamEffect(this.hb.cX, this.hb.cY + 60.0F * Settings.scale), 1.5F));
+                AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage
                         .get(1), AbstractGameAction.AttackEffect.NONE));
                 break;
             case 6:
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new TalkAction((AbstractCreature)this, DIALOG[1]));
-                addToBot((AbstractGameAction)new SFXAction("Belphomet2"));
+                AbstractDungeon.actionManager.addToBottom(new TalkAction(this, DIALOG[1]));
+                addToBot(new SFXAction("Belphomet2"));
                 for (Map.Entry<Integer, AbstractMonster> m : this.enemySlots.entrySet()) {
-                    if (((AbstractMonster)m.getValue()).isDying) {
+                    if ((m.getValue()).isDying) {
                         int rand = AbstractDungeon.aiRng.random(0, 99);
                         if (rand < 50){
                             AbstractMonster newMonster = new chushou2(this.spawnX + -185.0F * ((Integer)m.getKey()).intValue(), MathUtils.random(-5.0F, 25.0F));
                             int key = ((Integer)m.getKey()).intValue();
                             this.enemySlots.put(Integer.valueOf(key), newMonster);
-                            AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new SpawnMonsterAction(newMonster, true));
+                            AbstractDungeon.actionManager.addToBottom(new SpawnMonsterAction(newMonster, true));
                             if (AbstractDungeon.ascensionLevel >= 19) {
-                                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)newMonster, (AbstractCreature)this, (AbstractPower)new ArtifactPower((AbstractCreature)newMonster, 3)));
+                                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(newMonster, this, new ArtifactPower(newMonster, 3)));
                             } else {
-                                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)newMonster, (AbstractCreature)this, (AbstractPower)new ArtifactPower((AbstractCreature)newMonster, 2)));
+                                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(newMonster, this, new ArtifactPower(newMonster, 2)));
                             }
-                            AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)newMonster, (AbstractCreature)this, (AbstractPower)new chushouHealPower((AbstractCreature)newMonster, 80)));
+                            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(newMonster, this, new chushouHealPower(newMonster, 80)));
                         }else {
                             AbstractMonster newMonster = new chushou1(this.spawnX + -185.0F * ((Integer)m.getKey()).intValue(), MathUtils.random(-5.0F, 25.0F));
                             int key = ((Integer)m.getKey()).intValue();
                             this.enemySlots.put(Integer.valueOf(key), newMonster);
-                            AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new SpawnMonsterAction(newMonster, true));
+                            AbstractDungeon.actionManager.addToBottom(new SpawnMonsterAction(newMonster, true));
                             if (AbstractDungeon.ascensionLevel >= 19) {
-                                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)newMonster, (AbstractCreature)this, (AbstractPower)new ArtifactPower((AbstractCreature)newMonster, 3)));
+                                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(newMonster, this, new ArtifactPower(newMonster, 3)));
                             } else {
-                                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)newMonster, (AbstractCreature)this, (AbstractPower)new ArtifactPower((AbstractCreature)newMonster, 2)));
+                                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(newMonster, this, new ArtifactPower(newMonster, 2)));
                             }
-                            AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)newMonster, (AbstractCreature)this, (AbstractPower)new chushouExplosionPower((AbstractCreature)newMonster, 12)));
+                            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(newMonster, this, new chushouExplosionPower(newMonster, 12)));
                         }
                     }
                 }
@@ -230,7 +228,7 @@ public class Belphomet extends CustomMonster {
                 break;
         }
         this.turnsTaken++;
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new RollMoveAction(this));
+        AbstractDungeon.actionManager.addToBottom(new RollMoveAction(this));
     }
 
     @Override
@@ -248,19 +246,19 @@ public class Belphomet extends CustomMonster {
             return;
         }
         if (i <= 65 && i>=40 && !lastMove((byte)2)) {
-            setMove((byte)2, Intent.ATTACK_DEBUFF, ((DamageInfo)this.damage.get(0)).base, 3, true);
+            setMove((byte)2, Intent.ATTACK_DEBUFF, (this.damage.get(0)).base, 3, true);
             return;
         }
         if (!lastMove((byte)3)) {
             setMove((byte)3, AbstractMonster.Intent.DEFEND_BUFF);
         } else {
-            setMove((byte)5, AbstractMonster.Intent.ATTACK, ((DamageInfo)this.damage.get(1)).base);
+            setMove((byte)5, AbstractMonster.Intent.ATTACK, (this.damage.get(1)).base);
         }
     }
 
     private boolean isMinionDead() {
         for (Map.Entry<Integer, AbstractMonster> m : this.enemySlots.entrySet()) {
-            if (((AbstractMonster)m.getValue()).isDying)
+            if ((m.getValue()).isDying)
                 return true;
         }
         return false;
@@ -273,9 +271,9 @@ public class Belphomet extends CustomMonster {
         for (AbstractMonster m : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
             if (m.isDying || m.isDead)
                 continue;
-            AbstractDungeon.actionManager.addToTop((AbstractGameAction)new HideHealthBarAction((AbstractCreature)m));
-            AbstractDungeon.actionManager.addToTop((AbstractGameAction)new SuicideAction(m));
-            AbstractDungeon.actionManager.addToTop((AbstractGameAction)new VFXAction((AbstractCreature)m, (AbstractGameEffect)new InflameEffect((AbstractCreature)m), 0.2F));
+            AbstractDungeon.actionManager.addToTop(new HideHealthBarAction(m));
+            AbstractDungeon.actionManager.addToTop(new SuicideAction(m));
+            AbstractDungeon.actionManager.addToTop(new VFXAction(m, new InflameEffect(m), 0.2F));
         }
         onBossVictoryLogic();
         onFinalBossVictoryLogic();

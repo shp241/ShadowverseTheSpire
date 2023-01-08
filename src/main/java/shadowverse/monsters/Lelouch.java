@@ -11,17 +11,14 @@ import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.actions.utility.ShakeScreenAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.MonsterStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
-import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.ExplosionSmallEffect;
 import com.megacrit.cardcrawl.vfx.combat.LaserBeamEffect;
 import shadowverse.powers.*;
@@ -90,8 +87,8 @@ public class Lelouch extends CustomMonster {
             this.strAmt = 3;
             this.checkmateAmt = 25;
         }
-        this.damage.add(new DamageInfo((AbstractCreature)this, aDmg));
-        this.damage.add(new DamageInfo((AbstractCreature)this, bDmg));
+        this.damage.add(new DamageInfo(this, aDmg));
+        this.damage.add(new DamageInfo(this, bDmg));
     }
 
     @Override
@@ -99,68 +96,68 @@ public class Lelouch extends CustomMonster {
         CardCrawlGame.music.unsilenceBGM();
         AbstractDungeon.scene.fadeOutAmbiance();
         AbstractDungeon.getCurrRoom().playBgmInstantly("BOSS_BEYOND");
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)this, (AbstractCreature)this, (AbstractPower)new KMFPower((AbstractCreature)this,this.guardAmt)));
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)this, (AbstractCreature)this, (AbstractPower)new CommanderPower((AbstractCreature)this)));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new KMFPower(this,this.guardAmt)));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this, this, new CommanderPower(this)));
         AbstractMonster m = new Lancelot(-130 + -185.0F * 1, MathUtils.random(-10.0F, 20.0F));
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new SpawnMonsterAction(m, false));
+        AbstractDungeon.actionManager.addToBottom(new SpawnMonsterAction(m, false));
         if (AbstractDungeon.ascensionLevel >= 19) {
-            AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)this, (AbstractPower)new ArtifactPower((AbstractCreature)m, 3)));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, this, new ArtifactPower(m, 3)));
         } else {
-            AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)this, (AbstractPower)new ArtifactPower((AbstractCreature)m, 2)));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, this, new ArtifactPower(m, 2)));
         }
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)this, (AbstractPower)new BetterFlightPower((AbstractCreature)m, 1), 1));
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)this, (AbstractPower)new CurseOfGeass((AbstractCreature)m)));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, this, new BetterFlightPower(m, 1), 1));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, this, new CurseOfGeass(m)));
     }
 
     @Override
     public void takeTurn() {
         switch (this.nextMove) {
             case 1:
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ShoutAction((AbstractCreature)this, DIALOG[0], 1.0F, 2.0F));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new SFXAction("Lelouch_GEASS"));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)this, (AbstractPower)new GeassPower((AbstractCreature)AbstractDungeon.player)));
+                AbstractDungeon.actionManager.addToBottom(new ShoutAction(this, DIALOG[0], 1.0F, 2.0F));
+                AbstractDungeon.actionManager.addToBottom( new SFXAction("Lelouch_GEASS"));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new GeassPower(AbstractDungeon.player)));
                 break;
             case 2:
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new TalkAction((AbstractCreature)this, DIALOG[1]));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ShakeScreenAction(0.3F, ScreenShake.ShakeDur.LONG, ScreenShake.ShakeIntensity.LOW));
-                setMove(SHOOT,(byte)3, Intent.ATTACK,((DamageInfo)this.damage.get(0)).base,5,true);
+                AbstractDungeon.actionManager.addToBottom(new TalkAction(this, DIALOG[1]));
+                AbstractDungeon.actionManager.addToBottom(new ShakeScreenAction(0.3F, ScreenShake.ShakeDur.LONG, ScreenShake.ShakeIntensity.LOW));
+                setMove(SHOOT,(byte)3, Intent.ATTACK,(this.damage.get(0)).base,5,true);
                 shootCheck = true;
                 break;
             case 3:
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ShoutAction((AbstractCreature)this, DIALOG[2], 1.0F, 2.0F));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new VFXAction((AbstractGameEffect)new LaserBeamEffect(this.hb.cX, this.hb.cY + 60.0F * Settings.scale), 0.5F));
+                AbstractDungeon.actionManager.addToBottom(new ShoutAction(this, DIALOG[2], 1.0F, 2.0F));
+                AbstractDungeon.actionManager.addToBottom(new VFXAction(new LaserBeamEffect(this.hb.cX, this.hb.cY + 60.0F * Settings.scale), 0.5F));
                 for (int i=0;i<5;i++){
-                    AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new DamageAction((AbstractCreature)AbstractDungeon.player, this.damage
+                    AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage
                             .get(0), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
                 }
                 shootCheck = false;
                 break;
             case 4:
-                addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new ExplosionSmallEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY), 0.1F));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new DamageAction((AbstractCreature)AbstractDungeon.player, this.damage
+                addToBot(new VFXAction(new ExplosionSmallEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY), 0.1F));
+                AbstractDungeon.actionManager.addToBottom(new DamageAction(AbstractDungeon.player, this.damage
                         .get(1), AbstractGameAction.AttackEffect.FIRE));
                 break;
             case 5:
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new TalkAction((AbstractCreature)this, DIALOG[3]));
-                addToBot((AbstractGameAction)new SFXAction("FatalOrder"));
+                AbstractDungeon.actionManager.addToBottom(new TalkAction(this, DIALOG[3]));
+                addToBot(new SFXAction("FatalOrder"));
                 for (AbstractMonster m : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                     if (!m.isDead && !m.isDying && !m.isEscaping){
-                        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new GainBlockAction((AbstractCreature)m, (AbstractCreature)this, this.blockAmt));
-                        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)m, (AbstractCreature)this, (AbstractPower)new StrengthPower((AbstractCreature)m, this.strAmt), this.strAmt));
+                        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(m, this, this.blockAmt));
+                        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, this, new StrengthPower(m, this.strAmt), this.strAmt));
                     }
                 }
                 break;
             case 6:
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new TalkAction((AbstractCreature)this, DIALOG[4]));
-                addToBot((AbstractGameAction)new SFXAction("Lelouch_Checkmate"));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)this, (AbstractPower)new CheckmatePower((AbstractCreature)AbstractDungeon.player,this.checkmateAmt,this)));
+                AbstractDungeon.actionManager.addToBottom(new TalkAction(this, DIALOG[4]));
+                addToBot(new SFXAction("Lelouch_Checkmate"));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, this, new CheckmatePower(AbstractDungeon.player,this.checkmateAmt,this)));
                 break;
             default:
                 System.out.println("ERROR: Default Take Turn was called on " + this.name);
                 break;
         }
         if (!shootCheck){
-            AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new RollMoveAction(this));
+            AbstractDungeon.actionManager.addToBottom(new RollMoveAction(this));
         }
     }
 
@@ -182,7 +179,7 @@ public class Lelouch extends CustomMonster {
         if (!lastMove((byte)5)){
             setMove((byte)5, Intent.DEFEND_BUFF);
         }else {
-            setMove((byte)4, AbstractMonster.Intent.ATTACK, ((DamageInfo)this.damage.get(1)).base);
+            setMove((byte)4, AbstractMonster.Intent.ATTACK, (this.damage.get(1)).base);
         }
     }
 

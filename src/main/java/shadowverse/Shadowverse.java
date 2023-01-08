@@ -160,6 +160,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addBoss(TheBeyond.ID, Belphomet.ID, "img/monsters/UI/Belphomet.png", "img/monsters/UI/Belphomet_Outline.png");
         BaseMod.addBoss(TheBeyond.ID, VincentBOSS.ID, "img/monsters/UI/VincentBOSS.png", "img/monsters/UI/VincentBOSS_Outline.png");
         BaseMod.addBoss(TheBeyond.ID, Naht.ID, "img/monsters/UI/Naht.png", "img/monsters/UI/Naht_Outline.png");
+        BaseMod.addBoss(TheBeyond.ID, TaketsumiBOSS.ID,"img/monsters/UI/Taketsumi.png", "img/monsters/UI/Taketsumi_Outline.png");
         BaseMod.addBoss(TheCity.ID, shadowverseCharbosses.bosses.Urias.Urias.ID,"img/monsters/UI/Urias.png", "img/monsters/UI/Urias_Outline.png");
         BaseMod.addMonster(Megaera.ID, () -> new Megaera());
         BaseMod.addEliteEncounter(TheBeyond.ID, new MonsterInfo(Megaera.ID, 1.5F));
@@ -191,6 +192,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         tempmusic.put("StormOverRivayle","sounds/StormOverRivayle.mp3");
         tempmusic.put("IceschillendrigBgm","sounds/IschellendrigBgm.mp3");
         tempmusic.put("UriasBgm","sounds/UriasBgm.mp3");
+        tempmusic.put("Ametsuchi","sounds/Ametsuchi.mp3");
         HashMap<String, Sfx> reflectedMap = getSoundsMap();
         String voicePath = "sounds/";
         if(!Loader.isModLoaded("ShadowverseTheSpireEnglishVoicePack")){
@@ -1302,6 +1304,10 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Kaiser_Hurt2", new Sfx(voicePath+"Kaiser_Hurt2.wav"));
             reflectedMap.put("Kaiser_Hurt3", new Sfx(voicePath+"Kaiser_Hurt3.wav"));
             reflectedMap.put("Kaiser_Hurt4", new Sfx(voicePath+"Kaiser_Hurt4.wav"));
+            reflectedMap.put("Taketsumi_Start", new Sfx(voicePath+"Taketsumi_Start.wav"));
+            reflectedMap.put("Taketsumi_A1", new Sfx(voicePath+"Taketsumi_A1.wav"));
+            reflectedMap.put("Taketsumi_A2", new Sfx(voicePath+"Taketsumi_A2.wav"));
+            reflectedMap.put("Taketsumi_A3", new Sfx(voicePath+"Taketsumi_A3.wav"));
         }
     }
 

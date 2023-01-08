@@ -1742,5 +1742,11 @@
     "DESCRIPTIONS": [
       "每当以 #y爆能强化 打出卡牌时，获得X点能量。X为该爆能强化的数值 #b-1 。"
     ]
+  },
+  "shadowverse:TaketsumiPower": {
+    "NAME": "大蜘蛛之力",
+    "DESCRIPTIONS": [
+      "死亡时，减少 #y武祇 #b80 点最大生命值。"
+    ]
   }
 }

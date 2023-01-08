@@ -1742,5 +1742,11 @@
     "DESCRIPTIONS": [
       "ードを #yエンハンス でプレイしたとき、自分のPPをX回復。Xはその #yエンハンス の値 #b-1 である。"
     ]
+  },
+  "shadowverse:TaketsumiPower": {
+    "NAME": "大蜘蛛の力",
+    "DESCRIPTIONS": [
+      "消滅された時、 #yタケツミ の最大HPを #b80 減らす。"
+    ]
   }
 }
