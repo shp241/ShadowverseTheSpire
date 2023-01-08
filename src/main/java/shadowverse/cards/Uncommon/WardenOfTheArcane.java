@@ -4,6 +4,7 @@ import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -42,6 +43,7 @@ public class WardenOfTheArcane
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new SpellBoostAction(abstractPlayer,this,abstractPlayer.hand.group));
+        addToBot(new GainBlockAction(abstractPlayer,this.block));
         addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new EarthEssence(abstractPlayer,this.magicNumber)));
         addToBot(new DamageAllEnemiesAction(abstractPlayer, DamageInfo.createDamageMatrix(5, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true));
     }

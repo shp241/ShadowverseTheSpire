@@ -30,6 +30,7 @@ public abstract class AbstractEnhanceCard extends CustomCard {
 
     @Override
     public void update() {
+        super.update();
         if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT) {
             if (Shadowverse.Enhance(exEnhanceCost)) {
                 setCostForTurn(exEnhanceCost);
@@ -38,7 +39,6 @@ public abstract class AbstractEnhanceCard extends CustomCard {
             } else {
                 setCostForTurn(baseCost);
             }
-            super.update();
         }
     }
 

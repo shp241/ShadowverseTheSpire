@@ -32,7 +32,7 @@
 
    public Kyrzael() {
      super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.RARE, CardTarget.ENEMY);
-     this.baseDamage = 25;
+     this.baseDamage = 20;
      this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
      this.tags.add(AbstractShadowversePlayer.Enums.CONDEMNED);
      this.cardsToPreview = new WardenOfTrigger();
@@ -52,10 +52,18 @@
        addToBot(new VFXAction(new HeartBuffEffect(p.hb.cX, p.hb.cY)));
        addToBot(new VFXAction(new BorderFlashEffect(Color.BLUE, true)));
        addToBot(new DamageAction(m,new DamageInfo(p,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-       AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
-       c.setCostForTurn(0);
-       addToBot(new MakeTempCardInHandAction(c,2));
-       int amt = 4;
+       AbstractCard tmp = this.cardsToPreview.makeStatEquivalentCopy();
+       tmp.setCostForTurn(0);
+       tmp.costForTurn=0;
+       tmp.isCostModified = true;
+       tmp.exhaustOnUseOnce = true;
+       tmp.exhaust = true;
+       tmp.rawDescription += " NL "+TEXT+" 。";
+       tmp.initializeDescription();
+       tmp.applyPowers();
+       p.hand.addToTop(tmp);
+       p.hand.addToTop(tmp);
+       int amt = 0;
        for (AbstractCard ca : p.hand.group){
            if (ca != this && ca.hasTag(AbstractShadowversePlayer.Enums.MACHINE)){
                amt += 2;

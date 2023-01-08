@@ -31,7 +31,7 @@ public class AgentOfTheCommandments
 
     public AgentOfTheCommandments() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.COMMON, CardTarget.ENEMY);
-        this.baseDamage = 9;
+        this.baseDamage = 8;
         this.tags.add(AbstractShadowversePlayer.Enums.CONDEMNED);
     }
 

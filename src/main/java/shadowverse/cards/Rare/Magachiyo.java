@@ -1,6 +1,5 @@
 package shadowverse.cards.Rare;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -9,22 +8,17 @@ import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
-import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.GrandFinalEffect;
-import shadowverse.cards.AbstractEndTurnInvocationCard;
-import shadowverse.cards.Temp.Puppet;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Elf;
 
-public class Magachiyo extends AbstractEndTurnInvocationCard {
+public class Magachiyo extends AbstractCard {
     public static final String ID = "shadowverse:Magachiyo";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Magachiyo");
     public static final String NAME = cardStrings.NAME;
@@ -84,9 +78,10 @@ public class Magachiyo extends AbstractEndTurnInvocationCard {
     }
 
     @Override
-    public void atEndOfTurn(boolean isPlayer) {
+    public void triggerOnEndOfPlayerTurn() {
         if (AbstractDungeon.actionManager.cardsPlayedThisTurn.size()>=4){
             this.count++;
         }
     }
+
 }

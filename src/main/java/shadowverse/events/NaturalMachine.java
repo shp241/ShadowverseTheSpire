@@ -171,7 +171,8 @@ public class NaturalMachine extends AbstractImageEvent {
                             gold.addToBottom(new MagnaGiant());
                             gold.addToBottom(new MagnaZero());
                             gold.addToBottom(new Ralmia());
-
+                            blue.addToBottom(new WardenOfTrigger());
+                            gold.addToBottom(new Kyrzael());
                         }
                         if (p.chosenClass != Royal.Enums.Royal) {
                             white.addToBottom(new Cybercannoneer());
