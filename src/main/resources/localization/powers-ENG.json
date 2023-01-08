@@ -1662,7 +1662,7 @@
   "shadowverse:CosmosFangPower": {
     "NAME": "Cosmos Fang",
     "DESCRIPTIONS": [
-      "At the start of your turn, deal damage equal to your current block to a random enemy. Then lose this effect."
+      "At the start of your turn, deal damage equal to your current block to a random enemy. Then, lose this effect."
     ]
   },
   "shadowverse:BlitzPower": {
@@ -1677,76 +1677,76 @@
     ]
   },
   "shadowverse:LeafshadeAssassinPower": {
-    "NAME": "根际刺客",
+    "NAME": "Leafshade Assassin",
     "DESCRIPTIONS": [
-      "本回合出牌时，若为本回合已使用的第4张及以上时，对随机敌人造成 #b",
-      " 点伤害。重复上述 #b",
-      " 次。"
+      "When you play a card, if it's at least the 4th card played this turn, deal #b",
+      " Damage to a random enemy. Repeat #b",
+      " times."
     ]
   },
   "shadowverse:BenevolentElf": {
-    "NAME": "恩眷精灵",
+    "NAME": "Benevolent Elf",
     "DESCRIPTIONS": [
-      "本回合结束时，消灭所有生命值为 #b6 以下的敌人。如果你的生命值为最大生命值，改为消灭生命值为 #b18 以下的敌人。"
+      "At the end of your turn, kill all enemies with #b6 HP or less. If you are at max HP, kill all enemies with #b18 HP or less instead."
     ]
   },
   "shadowverse:AstrologicalSorcererPower": {
-    "NAME": "天体术师",
+    "NAME": "Astrological Sorcerer",
     "DESCRIPTIONS": [
-      "本回合受到的伤害减少 #b2 。"
+      "Reduce all damage taken this turn by #b2."
     ]
   },
   "shadowverse:MyroelPower": {
-    "NAME": "灭尸执行者·米萝尔",
+    "NAME": "Myroel, Death Enforcer",
     "DESCRIPTIONS": [
-      "每当 #y葬送 时，对全体敌人造成 #b10 点伤害。一回合上限为3次。"
+      "Whenever you perform #yBurial #yRite, deal #b10 damage to all enemies (up to 3 times per turn)."
     ]
   },
   "shadowverse:SteamrollingTankPower": {
-    "NAME": "威迫的防卫队长",
+    "NAME": "Steamrolling Tank",
     "DESCRIPTIONS": [
-      "每当因自己失去生命时，获得 #b",
-      " 点 格挡 。(一回合上限8次)"
+      "Whenever you lose HP during your turn, gain #b",
+      " Block. (Up to 8 times per turn.)"
     ]
   },
   "shadowverse:RagingCommanderPower": {
-    "NAME": "愤激的副总长",
+    "NAME": "Raging Commander",
     "DESCRIPTIONS": [
-      "每当因自己失去生命时，对全体敌人造成 #b",
-      " 点伤害。(一回合上限8次)"
+      "Whenever you lose HP during your turn, deal #b",
+      " Damage to all enemies. (Up to 8 times per turn.)"
     ]
   },
   "shadowverse:GenomuelPower": {
-    "NAME": "蛇殿执行者·盖诺姆尔",
+    "NAME": "Genomuel, Wyrm Enforcer",
     "DESCRIPTIONS": [
-      "接下来 #b",
-      " 个回合开始时，全体敌人失去 #b3 点 #y力量 和 #y敏捷 ， #b9 点最大生命值。(无法重复叠加)"
+      "Activations Left: #b",
+      " At the start of your turn, all enemies lose #b3 #yStrength and #yDexterity and #b9 max HP. (This effect cannot stack.)"
     ]
   },
   "shadowverse:ErraldePower": {
-    "NAME": "结盟的罪人·艾路拉戴",
+    "NAME": "Erralde, Troth Convict",
     "DESCRIPTIONS": [
-      "如果本回合打出过 #y八狱 牌或耗能为2以上的攻击牌，则回合结束时回复 #b2 点生命，下回合开始时额外抽 #b1 张牌。"
+      "If you played a #yCondemned card or a card that cost 2 or more this turn, heal #b2 HP and draw #b1 card at the start of your next turn."
     ]
   },
   "shadowverse:UnerielPower": {
-    "NAME": "翼天执行者·乌努尔",
+    "NAME": "Uneriel, Winged Enforcer",
     "DESCRIPTIONS": [
-      "本回合内，打出的护符 #y倒计时 减少 #b",
-      " ;每触发1张护符，对全体敌人造成 #b",
-      " 点伤害。"
+      "During this turn, the #yCountdown of your amulets is reduced by #b",
+      " . Whenever an amulet is triggered, deal #b",
+      " damage to all enemies."
     ]
   },
   "shadowverse:CutthroatPower": {
-    "NAME": "机锋的罪人·卡托斯瑞德",
+    "NAME": "Cutthroat, Discord Convict",
     "DESCRIPTIONS": [
-      "每当以 #y爆能强化 打出卡牌时，获得X点能量。X为该爆能强化的数值 #b-1 。"
+      "Whenever you play a card with its #yEnhance effect, gain X Energy. X equals the cost of the #yEnhance effect minus 1."
     ]
   },
   "shadowverse:TaketsumiPower": {
-    "NAME": "大蜘蛛の力",
+    "NAME": "Power of the Great Spider",
     "DESCRIPTIONS": [
-      "When killed, reduce #b80 max HP from #yTaketsumi ."
+      "When killed, #yTaketsumi loses #b80 max HP."
     ]
   }
 }

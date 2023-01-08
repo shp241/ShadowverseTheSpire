@@ -4722,7 +4722,7 @@
   },
   "shadowverse:Blitz": {
     "NAME": "Blitz",
-    "DESCRIPTION": "Gain the following effect: At the start of your turn, activate 1 of the following effects in order until all 3 have been activated once:  NL Add 2 *Magical *Pawn into your hand. NL Add 1 *Magical *Rook which cost 0 and have Exhaust into your hand.  NL Add 1 *Magical *Knight which cost 0 and have Exhaust into your hand. NL Exhaust."
+    "DESCRIPTION": "Gain the following effect: At the start of your turn, activate 1 of the following effects in order until all 3 have been activated once:  NL Add 2 *Magical *Pawn into your hand. NL Add 1 *Magical *Rook to your hand, give it Exhaust and change its cost to 0. NL Add 1 *Magical *Knight to your hand, give it Exhaust and change its cost to 0. NL Exhaust."
   },
   "shadowverse:Check": {
     "NAME": "Check",
@@ -4909,7 +4909,7 @@
   },
   "shadowverse:Erralde": {
     "NAME": "Erralde, Troth Convict",
-    "DESCRIPTION": "Condemned NL Apply 2 Weak and Vulnerable to all enemies. NL Gain the following effect: At the end of each of your turns, if you played a Condemned card that cost 2 or more this turn, heal 2 HP and draw a card next turn. NL Ethereal",
+    "DESCRIPTION": "Condemned NL Apply 2 Weak and Vulnerable to all enemies. NL Gain the following effect: At the end of each of your turns, if you played a Condemned card or a card that cost 2 or more this turn, heal 2 HP and draw a card next turn. NL Ethereal",
     "UPGRADE_DESCRIPTION":"Condemned NL Apply 2 Weak and Vulnerable to all enemies. NL Gain the following effect: At the end of each of your turns, if you played a Condemned card that cost 2 or more this turn, heal 2 HP and draw a card next turn."
   },
   "shadowverse:ExecutorOfTheOath": {
