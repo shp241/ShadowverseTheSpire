@@ -4951,7 +4951,7 @@
   },
   "shadowverse:WardenOfTrigger": {
     "NAME": "击针看守",
-    "DESCRIPTION": "八狱 · 机械 NL 获得 !B! 点 格挡，抽1张牌。 NL 回合结束时回复1点生命。 NL 当以0耗能打出这张卡时，给予随机敌人1层 易伤 和 虚弱 。"
+    "DESCRIPTION": "八狱 · 机械 NL 获得 !B! 点 格挡，抽1张牌。 NL 回合结束时回复1点生命。 NL 当以0耗能打出这张卡时，给予随机敌人1层 易伤 和 虚弱 。 NL 消耗 。"
   },
   "shadowverse:Kyrzael": {
     "NAME": "弹哭执行者·克里萨尔",

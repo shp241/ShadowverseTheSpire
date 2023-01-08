@@ -28,8 +28,8 @@ import com.megacrit.cardcrawl.powers.*;
 import com.megacrit.cardcrawl.vfx.combat.InflameEffect;
 import com.megacrit.cardcrawl.vfx.combat.VerticalImpactEffect;
 import shadowverse.powers.HeroOfTheHuntPower;
+import shadowverse.powers.TaketsumiPower;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class TaketsumiBOSS extends CustomMonster implements SpriteCreature {
@@ -72,15 +72,15 @@ public class TaketsumiBOSS extends CustomMonster implements SpriteCreature {
     }
 
     public TaketsumiBOSS() {
-        super(NAME, ID, 2000, 0.0F, -30F, 340.0F, 420.0F, null, 60.0F, 130.0F);
+        super(NAME, ID, 1600, 0.0F, -30F, 340.0F, 420.0F, null, 60.0F, 130.0F);
         this.animation = new SpriterAnimation("img/monsters/Taketsumi/Taketsumi.scml");
         this.dialogX = -100.0F * Settings.scale;
         this.dialogY = 10.0F * Settings.scale;
         this.type = EnemyType.BOSS;
         if (AbstractDungeon.ascensionLevel >= 9) {
-            setHp(2500);
-        } else {
             setHp(2000);
+        } else {
+            setHp(1600);
         }
         if (AbstractDungeon.ascensionLevel >= 19) {
             this.heavyDmg = 35;
@@ -152,6 +152,7 @@ public class TaketsumiBOSS extends CustomMonster implements SpriteCreature {
                     addToBot(new SpawnMonsterAction(m, true));
                     addToBot(new ApplyPowerAction(m,this,new StrengthPower(m,strAmount),strAmount));
                     addToBot(new ApplyPowerAction(m,this,new RegenerateMonsterPower(m,strAmount),strAmount));
+                    addToBot(new ApplyPowerAction(m,this, new TaketsumiPower(m,this)));
                     this.enemySlots.put(i, m);
                 }else {
                     if (enemySlots.get(i).isDying){
@@ -159,6 +160,7 @@ public class TaketsumiBOSS extends CustomMonster implements SpriteCreature {
                         addToBot(new SpawnMonsterAction(m, true));
                         addToBot(new ApplyPowerAction(m,this,new StrengthPower(m,strAmount),strAmount));
                         addToBot(new ApplyPowerAction(m,this,new RegenerateMonsterPower(m,strAmount),strAmount));
+                        addToBot(new ApplyPowerAction(m,this, new TaketsumiPower(m,this)));
                         this.enemySlots.put(i, m);
                     }
                 }
@@ -174,7 +176,7 @@ public class TaketsumiBOSS extends CustomMonster implements SpriteCreature {
             case 2:
                 addToBot(new ShoutAction(this, DIALOG[2], 1.0F, 2.0F));
                 addToBot(new SFXAction("HeroOfTheHunt"));
-                addToBot(new DamageAction(AbstractDungeon.player,new DamageInfo(this,this.damage.get(0).base, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+                addToBot(new DamageAction(AbstractDungeon.player,this.damage.get(0), AbstractGameAction.AttackEffect.SLASH_HEAVY));
                 addToBot(new VFXAction(new VerticalImpactEffect(AbstractDungeon.player.hb.cX + AbstractDungeon.player.hb.width / 4.0F, AbstractDungeon.player.hb.cY - AbstractDungeon.player.hb.height / 4.0F)));
                 addToBot(new ApplyPowerAction(this,this,new HeroOfTheHuntPower(this,1)));
                 break;
@@ -182,10 +184,10 @@ public class TaketsumiBOSS extends CustomMonster implements SpriteCreature {
                 addToBot(new ShoutAction(this, DIALOG[3], 1.0F, 2.0F));
                 addToBot(new SFXAction("Taketsumi_A1"));
                 for (int i = 0;i < 8; i++){
-                    addToBot(new DamageAction(AbstractDungeon.player,new DamageInfo(this,this.damage.get(1).base, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+                    addToBot(new DamageAction(AbstractDungeon.player,this.damage.get(1), AbstractGameAction.AttackEffect.SLASH_HEAVY));
                 }
                 addToBot(new MakeTempCardInDiscardAction(new Wound(),debuffAmount));
-                addToBot(new ApplyPowerAction(AbstractDungeon.player,this,new DexterityPower(AbstractDungeon.player,debuffAmount),debuffAmount));
+                addToBot(new ApplyPowerAction(AbstractDungeon.player,this,new DexterityPower(AbstractDungeon.player,-debuffAmount),-debuffAmount));
                 break;
             case 4:
                 addToBot(new ShoutAction(this, DIALOG[4], 1.0F, 2.0F));

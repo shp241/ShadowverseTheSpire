@@ -4955,7 +4955,7 @@
   },
   "shadowverse:WardenOfTrigger": {
     "NAME": "撃針の看守",
-    "DESCRIPTION": "八獄 · 機械 NL !B! ブロック を得、カード1枚を引く。 NL ターン終了時にHPを1回復する。 NL コスト0でこれをプレイする時、ランダムな敵に 弱体化 と 脱力 1を与える。"
+    "DESCRIPTION": "八獄 · 機械 NL !B! ブロック を得、カード1枚を引く。 NL ターン終了時にHPを1回復する。 NL コスト0でこれをプレイする時、ランダムな敵に 弱体化 と 脱力 1を与える。 NL 廃棄 。"
   },
   "shadowverse:Kyrzael": {
     "NAME": "弾哭の執行者・キルザエル",

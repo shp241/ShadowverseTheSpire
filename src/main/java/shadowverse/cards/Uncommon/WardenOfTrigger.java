@@ -27,9 +27,10 @@ public class WardenOfTrigger
 
     public WardenOfTrigger() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.UNCOMMON, CardTarget.SELF);
-        this.baseBlock = 7;
+        this.baseBlock = 8;
         this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
         this.tags.add(AbstractShadowversePlayer.Enums.CONDEMNED);
+        this.exhaust = true;
     }
 
 

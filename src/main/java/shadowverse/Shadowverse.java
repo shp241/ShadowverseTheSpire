@@ -151,6 +151,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addMonster(Lelouch.ID, () -> new Lelouch());
         BaseMod.addMonster(KMR.ID, KMR::new);
         BaseMod.addMonster(Naht.ID, Naht::new);
+        BaseMod.addMonster(TaketsumiBOSS.ID, TaketsumiBOSS::new);
         BaseMod.addMonster(shadowverseCharbosses.bosses.Urias.Urias.ID, shadowverseCharbosses.bosses.Urias.Urias::new);
         BaseMod.addEvent(LelouchCollaboration.ID, LelouchCollaboration.class, TheBeyond.ID);
         BaseMod.addBoss(TheEnding.ID, KMR.ID, "img/monsters/UI/KMR.png", "img/monsters/UI/KMR_Outline.png");
