@@ -1638,9 +1638,9 @@
     ]
   },
   "shadowverse:JiemonThiefLordPower": {
-    "NAME": "天下の大泥棒・ジエモン",
+    "NAME": "천하의 대도둑 지에몬",
     "DESCRIPTIONS": [
-      "#y輝く金貨 をプレイする度、 [E] を得、敵全体に4ダメージを与える。"
+      "#y찬란한 금화를 사용할 때마다, [E] 를 얻고 모든 적에게 피해를 4 준다."
     ]
   },
   "shadowverse:GiveGoldPower": {
@@ -1744,9 +1744,9 @@
     ]
   },
   "shadowverse:TaketsumiPower": {
-    "NAME": "大蜘蛛の力",
+    "NAME": "대거미의 힘",
     "DESCRIPTIONS": [
-      "消滅された時、 #yタケツミ の最大HPを #b80 減らす。"
+      "소멸될때 타케츠미의 최대 HP를 80 줄인다."
     ]
   }
 }
