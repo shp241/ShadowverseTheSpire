@@ -4741,7 +4741,7 @@
   },
   "shadowverse:SapphirePriestess": {
     "NAME": "Sapphire Priestess",
-    "DESCRIPTION": "Gain !B! Block. NL If you have an amulet in your amulet zone, draw 1 card. NL If there is only 1 Attack card in your hand, gain 1 Blur and double your next attack damage."
+    "DESCRIPTION": "Gain !B! Block. NL If you have an Amulet in your Amulet Zone, draw 1 card. NL If there is only 1 Attack card in your hand, gain 1 Blur and double your next attack damage."
   },
   "shadowverse:BejeweledShrine": {
     "NAME": "Bejeweled Shrine",
@@ -4901,7 +4901,7 @@
   "shadowverse:Genomuel": {
     "NAME": "Genomuel, Wyrm Enforcer",
     "DESCRIPTION": "Condemned NL At the start of your turn, all enemies lose 3 Strength and Dexterity and 9 max HP. This effect is removed after activating 3 times. NL Ethereal",
-    "UPGRADE_DESCRIPTION":"Condemned · Innate NL At the start of your turn, all enemies lose 3 Strength and Dexterity and 9 max HP. This effect is removed after activating 3 times. NL Ethereal"
+    "UPGRADE_DESCRIPTION":"Condemned / Innate NL At the start of your turn, all enemies lose 3 Strength and Dexterity and 9 max HP. This effect is removed after activating 3 times. NL Ethereal"
   },
   "shadowverse:WardenOfDecay": {
     "NAME": "Warden of Decay",
@@ -4923,7 +4923,7 @@
   },
   "shadowverse:WardenOfTheWings": {
     "NAME": "Warden of the Wings",
-    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Put a random 1-cost card with Countdown from your draw pile into your hand. NL If 5 or more amulets triggered during this combat, gain 1 Energy. ",
+    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Put a random 1-cost card with Countdown from your draw pile into your hand. NL If 5 or more Amulets triggered during this combat, gain 1 Energy. ",
     "EXTENDED_DESCRIPTION": [
       " NL (Amulets triggered: ",
       " ."
@@ -4931,7 +4931,7 @@
   },
   "shadowverse:Uneriel": {
     "NAME": "Uneriel, Winged Enforcer",
-    "DESCRIPTION": "Condemned NL Gain !B! Block. NL If 5 or more amulets triggered during this combat, gain 2 Energy. NL This turn, whenever you play an amulet, reduce its Countdown by 1. Whenever an amulet's Countdown becomes 0, deal !M! damage to all enemies."
+    "DESCRIPTION": "Condemned NL Gain !B! Block. NL If 5 or more Amulets triggered during this combat, gain 2 Energy. NL This turn, whenever you play an Amulet, reduce its Countdown by 1. Whenever an Amulet's Countdown becomes 0, deal !M! damage to all enemies."
   },
   "shadowverse:SkullFane2": {
     "NAME": "Skullfane, the Defiled",
