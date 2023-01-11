@@ -4778,7 +4778,7 @@
   },
   "shadowverse:Wimael": {
     "NAME": "Wimael, Redolent Enforcer",
-    "DESCRIPTION": "Condemned · Retain NL Reduce the cost of this card by 1 whenever it is Retained.  NL When you draw this card, put copy of this card in your hand. NL Deal !D! damage. "
+    "DESCRIPTION": "Condemned / Retain NL Reduce the cost of this card by 1 whenever it is Retained.  NL When you draw this card, put copy of this card in your hand. NL Deal !D! damage. "
   },
   "shadowverse:BenevolentElf": {
     "NAME": "Benevolent Elf",
@@ -4823,7 +4823,7 @@
   },
   "shadowverse:Sephie": {
     "NAME": "Sephie, Depraved Convict",
-    "DESCRIPTION": "Condemned · Retain NL Fusion: Non-Strike Attack cards. NL Whenever cards are fused to this card, if 2 or more card have fused at once and you have more than 1 energy, use 1 energy and put a *Volunteer *Test *Subject into your hand and change its cost to 0. If a Condemned card was fused, do not use energy. NL NL --------------------- NL NL Deal !D! Damage, and put a *Volunteer *Test *Subject into your hand and change its cost to 0. NL If you played at least 5 *Volunteer *Test *Subject, add !M! damage for every *Volunteer *Test *Subject in your hand."
+    "DESCRIPTION": "Condemned / Retain NL Fusion: Non-Strike Attack cards. NL Whenever cards are fused to this card, if 2 or more card have fused at once and you have more than 1 energy, use 1 energy and put a *Volunteer *Test *Subject into your hand and change its cost to 0. If a Condemned card was fused, do not use energy. NL NL --------------------- NL NL Deal !D! Damage, and put a *Volunteer *Test *Subject into your hand and change its cost to 0. NL If you played at least 5 *Volunteer *Test *Subject, add !M! damage for every *Volunteer *Test *Subject in your hand."
   },
   "shadowverse:SkullFish": {
     "NAME": "Skullfish",
@@ -4844,7 +4844,7 @@
   },
   "shadowverse:AbyssalColonel_Crystalize": {
     "NAME": "Abyssal Colonel Crystalized",
-    "DESCRIPTION": "Condemned · Retain NL Countdown !M! : Banish this card. NL Last_Words: When this card is banished, put a *Abyssal *Colonel into your hand and change its cost to 0.",
+    "DESCRIPTION": "Condemned / Retain NL Countdown !M! : Banish this card. NL Last_Words: When this card is banished, put a *Abyssal *Colonel into your hand and change its cost to 0.",
     "UPGRADE_DESCRIPTION":"Condemned · Retain NL Countdown !M! : TBanish this card. NL Last_Words: When this card is banished, put a *Abyssal *Colonel+ into your hand and change its cost to 0."
   },
   "shadowverse:AbyssalColonel_Temp": {
@@ -4955,10 +4955,10 @@
   },
   "shadowverse:WardenOfTrigger": {
     "NAME": "Warden of the Trigger",
-    "DESCRIPTION": "Condemned · Machina NL Gain !B! Block and draw 1 card. NL At the end of your turn, heal 1 HP. NL If this card is added to your hand with its cost changed to 0, apply 1 Weak and Vulnerable to a random enemy. NL Exhaust. "
+    "DESCRIPTION": "Condemned / Machina NL Gain !B! Block and draw 1 card. NL At the end of your turn, heal 1 HP. NL If this card is added to your hand with its cost changed to 0, apply 1 Weak and Vulnerable to a random enemy. NL Exhaust. "
   },
   "shadowverse:Kyrzael": {
     "NAME": "Kyrzael, Killshot Enforcer",
-    "DESCRIPTION": "Condemned · Machina NL Deal !D! Damage. NL Add 2 *Warden *of *the *Trigger to your hand and change their costs to 0. NL Gain 2 Metallicize for each Machina card in your hand. "
+    "DESCRIPTION": "Condemned / Machina NL Deal !D! Damage. NL Add 2 *Warden *of *the *Trigger to your hand and change their costs to 0. NL Gain 2 Metallicize for each Machina card in your hand. "
   }
 }
