@@ -4530,8 +4530,8 @@
   },
   "shadowverse:MagicalStrategy": {
     "NAME": "Magical Strategy",
-    "DESCRIPTION": "Add a *Magical *Pawn to your hand and draw a card. NL If the number of *Magical *Pawns in your exhausted pile is 8 or more, add 2 *Magical Pawns* to your hand and draw 2 cards instead.",
-    "UPGRADE_DESCRIPTION": "Add a *Magical *Pawn+ to your hand and draw a card. NL If the number of *Magical *Pawns in your exhausted pile is 8 or more, add 2 *Magical Pawns* to your hand and draw 2 cards instead."
+    "DESCRIPTION": "Add a *Magical *Pawn to your hand and draw a card. NL If the number of *Magical *Pawns in your exhausted pile is 8 or more, add 2 *Magical *Pawns to your hand and draw 2 cards instead.",
+    "UPGRADE_DESCRIPTION": "Add a *Magical *Pawn+ to your hand and draw a card. NL If the number of *Magical *Pawns in your exhausted pile is 8 or more, add 2 *Magical *Pawn+ to your hand and draw 2 cards instead."
   },
   "shadowverse:MagicalRook": {
     "NAME": "Magical Rook",
