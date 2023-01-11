@@ -473,7 +473,7 @@
     ]
   },
   "shadowverse:KokkoroBOSS": {
-    "NAME": "Ames Amulet",
+    "NAME": "Ameth Amulet",
     "FLAVOR": "Please leave it to me.",
     "DESCRIPTIONS": [
       "Replaces #yToken #yof #y1st. Whenever you play a card, if it's the #b6th card played this turn, gain #b1 #yStrength and #yDexterity. NL HP healed in combat increases by #b50%."
@@ -515,7 +515,7 @@
     ]
   },
   "shadowverse:ShinobuBOSS": {
-    "NAME": "Grim Soul Rope",
+    "NAME": "Grim Soul Robe",
     "FLAVOR": "Rest in peace.",
     "DESCRIPTIONS": [
       "Replaces #yToken #yof #y1st. At start of your turn, #yNecromancy 4: Add 1 #ySkullfather to your hand."
