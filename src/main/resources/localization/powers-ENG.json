@@ -1684,7 +1684,7 @@
       " times."
     ]
   },
-  "shadowverse:BenevolentElf": {
+  "shadowverse:BenevolentElfPower": {
     "NAME": "Benevolent Elf",
     "DESCRIPTIONS": [
       "At the end of your turn, kill all enemies with #b6 HP or less. If you are at max HP, kill all enemies with #b18 HP or less instead."
