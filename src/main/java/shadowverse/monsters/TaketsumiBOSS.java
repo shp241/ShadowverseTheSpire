@@ -78,24 +78,24 @@ public class TaketsumiBOSS extends CustomMonster implements SpriteCreature {
         this.dialogY = 10.0F * Settings.scale;
         this.type = EnemyType.BOSS;
         if (AbstractDungeon.ascensionLevel >= 9) {
-            setHp(2000);
-        } else {
             setHp(1600);
+        } else {
+            setHp(1200);
         }
         if (AbstractDungeon.ascensionLevel >= 19) {
-            this.heavyDmg = 35;
+            this.heavyDmg = 30;
             this.multiDmg = 3;
             this.strAmount = 3;
             this.debuffAmount = 2;
             this.blockAmount = 20;
         } else if (AbstractDungeon.ascensionLevel >= 4) {
-            this.heavyDmg = 32;
+            this.heavyDmg = 30;
             this.multiDmg = 2;
             this.strAmount = 2;
             this.debuffAmount = 2;
             this.blockAmount = 18;
         } else {
-            this.heavyDmg = 30;
+            this.heavyDmg = 28;
             this.multiDmg = 2;
             this.strAmount = 2;
             this.debuffAmount = 1;
@@ -127,25 +127,25 @@ public class TaketsumiBOSS extends CustomMonster implements SpriteCreature {
                 AbstractMonster m = null;
                 switch (rnd){
                     case 0:
-                        m = new Cultist(this.spawnX - 50 - 75.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
+                        m = new Cultist(this.spawnX - 50 - 85.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
                         break;
                     case 1:
-                        m = new SlaverBlue(this.spawnX - 50 - 75.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
+                        m = new SlaverBlue(this.spawnX - 50 - 85.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
                         break;
                     case 2:
-                        m = new SlaverRed(this.spawnX - 50 - 75.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
+                        m = new SlaverRed(this.spawnX - 50 - 85.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
                         break;
                     case 3:
-                        m = new JawWorm(this.spawnX - 50 - 75.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
+                        m = new JawWorm(this.spawnX - 50 - 85.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
                         break;
                     case 4:
-                        m = new SnakePlant(this.spawnX - 50 - 75.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
+                        m = new SnakePlant(this.spawnX - 50 - 85.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
                         break;
                     case 5:
-                        m = new Healer(this.spawnX - 50 - 75.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
+                        m = new Healer(this.spawnX - 50 - 85.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
                         break;
                     case 6:
-                        m = new Mugger(this.spawnX - 50 - 75.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
+                        m = new Mugger(this.spawnX - 50 - 85.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
                         break;
                 }
                 if (enemySlots.get(i) == null){
@@ -170,7 +170,7 @@ public class TaketsumiBOSS extends CustomMonster implements SpriteCreature {
             case 1:
                 addToBot(new ShoutAction(this, DIALOG[1], 1.0F, 2.0F));
                 addToBot(new SFXAction("Taketsumi_A3"));
-                addToBot(new MakeTempCardInDrawPileAction(new Dazed(),5,true,true,false));
+                addToBot(new MakeTempCardInDrawPileAction(new Dazed(),4,true,true,false));
                 addToBot(new ApplyPowerAction(AbstractDungeon.player,this,new WeakPower(AbstractDungeon.player,debuffAmount,true)));
                 break;
             case 2:

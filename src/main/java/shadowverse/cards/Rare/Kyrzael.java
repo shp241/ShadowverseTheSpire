@@ -54,7 +54,13 @@
        addToBot(new DamageAction(m,new DamageInfo(p,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
        AbstractCard tmp = this.cardsToPreview.makeStatEquivalentCopy();
        tmp.setCostForTurn(0);
-       addToBot(new MakeTempCardInHandAction(tmp,2));
+       tmp.costForTurn = 0;
+       tmp.isCostModified = true;
+       tmp.exhaustOnUseOnce = true;
+       tmp.exhaust = true;
+       tmp.rawDescription += " NL " + TEXT + " 。";
+       tmp.initializeDescription();
+       tmp.applyPowers();
        int amt = 4;
        for (AbstractCard ca : p.hand.group){
            if (ca != this && ca.hasTag(AbstractShadowversePlayer.Enums.MACHINE)){
@@ -62,6 +68,20 @@
            }
        }
        addToBot(new ApplyPowerAction(p,p,new MetallicizePower(p,amt),amt));
+       addToBot(new AbstractGameAction() {
+           @Override
+           public void update() {
+               p.hand.addToTop(tmp);
+               isDone = true;
+           }
+       });
+       addToBot(new AbstractGameAction() {
+           @Override
+           public void update() {
+               p.hand.addToTop(tmp);
+               isDone = true;
+           }
+       });
    }
  
    

@@ -91,6 +91,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
     public int totalDrawAmt = 0;
     public int costUsedAmt = 0;
     public int skullFaneAccCount = 0;
+    public int magachiyoCount = 0;
 
     public AbstractShadowversePlayer(String name, PlayerClass playerClass, String[] orbTextures, String orbVfxPath, float[] layerSpeeds, AbstractAnimation animation) {
         super(name, playerClass, orbTextures, orbVfxPath, layerSpeeds, animation);
@@ -117,6 +118,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
         this.costUsedAmt = 0;
         this.wrathLastTurn = 0;
         this.skullFaneAccCount = 0;
+        this.magachiyoCount = 0;
     }
 
     public void useCard(AbstractCard c, AbstractMonster monster, int energyOnUse) {
@@ -158,7 +160,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
 
     @Override
     public void applyStartOfTurnPreDrawCards() {
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new TreAction());
+        AbstractDungeon.actionManager.addToBottom(new TreAction());
         super.applyStartOfTurnPreDrawCards();
         this.drawAmt = 0;
         this.wrathThisTurn = 0;
@@ -187,6 +189,9 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
         super.applyEndOfTurnTriggers();
         AbstractDungeon.actionManager.addToBottom(new RemoveMinionAction());
         wrathLastTurn = 0;
+        if (AbstractDungeon.actionManager.cardsPlayedThisTurn.size() > 3){
+            magachiyoCount++;
+        }
     }
 
 

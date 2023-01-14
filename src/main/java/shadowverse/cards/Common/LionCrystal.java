@@ -42,7 +42,7 @@ public class LionCrystal extends AbstractEnhanceCard {
         if (this.hb.hovered)
             if (this.rotationTimer <= 0.0F) {
                 this.rotationTimer = 2.0F;
-                this.cardsToPreview = (AbstractCard) returnChoice().get(previewIndex).makeCopy();
+                this.cardsToPreview = returnChoice().get(previewIndex).makeCopy();
                 if (this.previewIndex == returnChoice().size() - 1) {
                     this.previewIndex = 0;
                 } else {
@@ -75,11 +75,6 @@ public class LionCrystal extends AbstractEnhanceCard {
         } else if (count > 2) {
             this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
         }
-    }
-
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-
     }
 
     @Override

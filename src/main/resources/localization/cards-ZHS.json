@@ -2547,7 +2547,7 @@
   "shadowverse:ServantOfDarkness": {
     "NAME": "暗狱使者·贾斯珀",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张 *防御型巨像 到手中。",
-    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张耗能为0的 *防御型巨像 到手中。 NL 增加1张耗能为0的 *攻击型巨像 到手中。"
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张的 *防御型巨像 到手中。 NL 增加1张 *攻击型巨像 到手中。"
   },
   "shadowverse:GenesisArtifact": {
     "NAME": "创世的创造物",
@@ -4927,7 +4927,11 @@
   },
   "shadowverse:Uneriel": {
     "NAME": "翼天执行者·乌努尔",
-    "DESCRIPTION": "八狱 NL 获得 !B! 点 格挡 。 NL 如果本场战斗已触发的护符数量为5以上，获得2点能量。 NL 本回合内，打出的护符 倒计时 减少1;每触发1张护符，对全体敌人造成 !M! 点伤害。"
+    "DESCRIPTION": "八狱 NL 获得 !B! 点 格挡 。 NL 如果本场战斗已触发的护符数量为5以上，获得2点能量。 NL 本回合内，打出的护符 倒计时 减少1;每触发1张护符，对全体敌人造成 !M! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已触发的护符数量为 ",
+      " 。"
+    ]
   },
   "shadowverse:SkullFane2": {
     "NAME": "俱灭之白骨圣堂教主",
@@ -4951,7 +4955,7 @@
   },
   "shadowverse:WardenOfTrigger": {
     "NAME": "击针看守",
-    "DESCRIPTION": "八狱 · 机械 NL 获得 !B! 点 格挡，抽1张牌。 NL 回合结束时回复1点生命。 NL 当以0耗能打出这张卡时，给予随机敌人1层 易伤 和 虚弱 。 NL 消耗 。"
+    "DESCRIPTION": "八狱 · 机械 NL 获得 !B! 点 格挡，抽1张牌。 NL 回合结束时回复1点生命。 NL 当以0耗能打出这张卡时，给予随机敌人1层 易伤 和 虚弱 。"
   },
   "shadowverse:Kyrzael": {
     "NAME": "弹哭执行者·克里萨尔",

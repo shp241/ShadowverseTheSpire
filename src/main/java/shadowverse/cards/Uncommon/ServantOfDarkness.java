@@ -40,7 +40,7 @@ public class ServantOfDarkness
     }
 
     public ServantOfDarkness() {
-        super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.UNCOMMON, CardTarget.ALL);
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.UNCOMMON, CardTarget.ALL);
         this.baseBlock = 3;
     }
 
@@ -64,6 +64,7 @@ public class ServantOfDarkness
         if (!this.upgraded) {
             upgradeName();
             upgradeBlock(1);
+            upgradeBaseCost(0);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }

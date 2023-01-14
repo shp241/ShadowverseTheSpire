@@ -87,7 +87,6 @@ public class HeroicEntry extends CustomCard {
             c.applyPowers();
             addToBot((AbstractGameAction) new MakeTempCardInHandAction(c, 1));
         }
-        ArrayList<AbstractMonster> m = AbstractDungeon.getCurrRoom().monsters.monsters;
         addToBot( new HeroicEntryAction(this.upgraded, inDanger()));
     }
 

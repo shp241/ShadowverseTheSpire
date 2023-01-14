@@ -38,13 +38,13 @@ public class GemFortune extends AbstractImageEvent {
     public GemFortune() {
         super(NAME, "test", "img/event/GemFortune.png");
         this.body = INTRO_BODY_M;
-        this.hpLoss = MathUtils.ceil(AbstractDungeon.player.maxHealth * 0.3F);
+        this.hpLoss = MathUtils.ceil(AbstractDungeon.player.maxHealth * 0.2F);
         if (this.hpLoss >= AbstractDungeon.player.maxHealth)
             this.hpLoss = AbstractDungeon.player.maxHealth - 1;
         if (AbstractDungeon.ascensionLevel >= 15) {
-            this.imageEventText.setDialogOption(OPTIONS[3] + this.hpLoss + OPTIONS[1], (AbstractCard)new CrystalBright());
+            this.imageEventText.setDialogOption(OPTIONS[3] + this.hpLoss + OPTIONS[1], new CrystalBright());
         } else {
-            this.imageEventText.setDialogOption(OPTIONS[0] + this.hpLoss + OPTIONS[1], (AbstractCard)new CrystalBright());
+            this.imageEventText.setDialogOption(OPTIONS[0] + this.hpLoss + OPTIONS[1], new CrystalBright());
         }
         this.imageEventText.setDialogOption(OPTIONS[2]);
     }
@@ -90,13 +90,13 @@ public class GemFortune extends AbstractImageEvent {
         }
         for (int i = 0; i < amount; i++) {
             GemLight gemLight = new GemLight();
-            cards.add(((AbstractCard)gemLight).cardID);
-            AbstractDungeon.effectList.add(new ShowCardAndObtainEffect((AbstractCard)gemLight, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
+            cards.add((gemLight).cardID);
+            AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(gemLight, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
         }
         for (int i = 0;i < amount2 ; i++){
             CrystalBright crystalBright = new CrystalBright();
-            cards.add(((AbstractCard)crystalBright).cardID);
-            AbstractDungeon.effectList.add(new ShowCardAndObtainEffect((AbstractCard)crystalBright, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
+            cards.add((crystalBright).cardID);
+            AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(crystalBright, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
         }
         logMetricObtainCardsLoseMapHP("GemFortune", "Became a Ghost", cards, this.hpLoss);
     }

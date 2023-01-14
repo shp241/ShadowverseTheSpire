@@ -49,9 +49,9 @@ public class RagingCommander
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction("RagingCommander"));
         if (p.hasPower(RagingCommanderPower.POWER_ID)){
-            addToBot(new ApplyPowerAction(p,p,new RagingCommanderPower(p,this.magicNumber,0)));
+            addToBot(new ApplyPowerAction(p,p,new RagingCommanderPower(p,this.magicNumber,0),this.magicNumber));
         }else {
-            addToBot(new ApplyPowerAction(p,p,new RagingCommanderPower(p,this.magicNumber,8)));
+            addToBot(new ApplyPowerAction(p,p,new RagingCommanderPower(p,this.magicNumber,8),this.magicNumber));
         }
         addToBot(new LoseHPAction(p, p, 1));
         addToBot(new DamageAction(m,new DamageInfo(p,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));

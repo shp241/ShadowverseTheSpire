@@ -24,7 +24,6 @@ public class Magachiyo extends AbstractCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Magachiyo.png";
-    private int count = 0;
 
     public Magachiyo() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.RARE, CardTarget.ENEMY);
@@ -45,8 +44,12 @@ public class Magachiyo extends AbstractCard {
 
     public void applyPowers() {
         super.applyPowers();
+        int count = 0;
+        if (AbstractDungeon.player instanceof AbstractShadowversePlayer){
+            count = ((AbstractShadowversePlayer) AbstractDungeon.player).magachiyoCount;
+        }
         this.rawDescription = cardStrings.DESCRIPTION;
-        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + this.count;
+        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + count;
         this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[1];
         initializeDescription();
     }
@@ -56,7 +59,11 @@ public class Magachiyo extends AbstractCard {
         AbstractDungeon.actionManager.cardsPlayedThisTurn.add(this);
         addToBot(new VFXAction(new GrandFinalEffect(), 0.5F));
         addToBot(new SFXAction("Magachiyo"));
-        if (this.count >= 3){
+        int count = 0;
+        if (AbstractDungeon.player instanceof AbstractShadowversePlayer){
+            count = ((AbstractShadowversePlayer) AbstractDungeon.player).magachiyoCount;
+        }
+        if (count >= 3){
             addToBot(new DamageAction(m, new DamageInfo(p, this.damage*2, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
             addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, 2), 2));
             addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, 2), 2));
@@ -75,13 +82,6 @@ public class Magachiyo extends AbstractCard {
 
     public AbstractCard makeCopy() {
         return new Magachiyo();
-    }
-
-    @Override
-    public void triggerOnEndOfPlayerTurn() {
-        if (AbstractDungeon.actionManager.cardsPlayedThisTurn.size()>=4){
-            this.count++;
-        }
     }
 
 }

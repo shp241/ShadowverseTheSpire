@@ -66,7 +66,7 @@ public class AbyssalColonel
     }
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (this.type == CardType.POWER && this.costForTurn == 0) {
+        if (this.type == CardType.POWER && this.costForTurn == 1) {
             addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy(),1));
         } else {
             addToBot(new GainBlockAction(abstractPlayer, this.block));

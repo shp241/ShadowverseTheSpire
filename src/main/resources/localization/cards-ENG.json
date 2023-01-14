@@ -2542,8 +2542,8 @@
   },
   "shadowverse:ServantOfDarkness": {
     "NAME": "Carnelia, Servant of Darkness",
-    "DESCRIPTION": "Gain !B! Block. NL Add 1 *Guardform *Golem to your hand and change its cost to 0.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add 1 *Guardform *Golem to your hand and change its cost to 0. NL Add 1 *Strikeform *Golem to your hand and change its cost to 0."
+    "DESCRIPTION": "Gain !B! Block. NL Add 1 *Guardform *Golem to your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add 1 *Guardform *Golem to your hand. NL Add 1 *Strikeform *Golem to your hand."
   },
   "shadowverse:GenesisArtifact": {
     "NAME": "Genesis Artifact",
@@ -4827,7 +4827,7 @@
   },
   "shadowverse:SkullFish": {
     "NAME": "Skullfish",
-    "DESCRIPTION": "Deal !D! Damage. NL Last_Word: Necromancy 2 : Deal !M! Damage to all enemy. NL Banish."
+    "DESCRIPTION": "Deal !D! Damage. NL Last_Words: Necromancy 2 : Deal !M! Damage to all enemy. NL Banish."
   },
   "shadowverse:GhastlyBanishment": {
     "NAME": "Ghastly Banishment",
@@ -4931,7 +4931,11 @@
   },
   "shadowverse:Uneriel": {
     "NAME": "Uneriel, Winged Enforcer",
-    "DESCRIPTION": "Condemned NL Gain !B! Block. NL If 5 or more Amulets triggered during this combat, gain 2 Energy. NL This turn, whenever you play an Amulet, reduce its Countdown by 1. Whenever an Amulet's Countdown becomes 0, deal !M! damage to all enemies."
+    "DESCRIPTION": "Condemned NL Gain !B! Block. NL If 5 or more Amulets triggered during this combat, gain 2 Energy. NL This turn, whenever you play an Amulet, reduce its Countdown by 1. Whenever an Amulet's Countdown becomes 0, deal !M! damage to all enemies.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Amulets triggered: ",
+      " ."
+    ]
   },
   "shadowverse:SkullFane2": {
     "NAME": "Skullfane, the Defiled",
@@ -4955,7 +4959,7 @@
   },
   "shadowverse:WardenOfTrigger": {
     "NAME": "Warden of the Trigger",
-    "DESCRIPTION": "Condemned / Machina NL Gain !B! Block and draw 1 card. NL At the end of your turn, heal 1 HP. NL If this card is added to your hand with its cost changed to 0, apply 1 Weak and Vulnerable to a random enemy. NL Exhaust. "
+    "DESCRIPTION": "Condemned / Machina NL Gain !B! Block and draw 1 card. NL At the end of your turn, heal 1 HP. NL If this card is added to your hand with its cost changed to 0, apply 1 Weak and Vulnerable to a random enemy. "
   },
   "shadowverse:Kyrzael": {
     "NAME": "Kyrzael, Killshot Enforcer",

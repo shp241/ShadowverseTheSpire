@@ -24,7 +24,7 @@ public class Simael
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Simael.png";
-    public static final int BASE_COST = 9;
+    public static final int BASE_COST = 8;
 
     public Simael() {
         super(ID, NAME, IMG_PATH, BASE_COST, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.RARE, CardTarget.ENEMY);

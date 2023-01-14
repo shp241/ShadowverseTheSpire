@@ -19,6 +19,7 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import shadowverse.Shadowverse;
 import shadowverse.characters.AbstractShadowversePlayer;
+import shadowverse.powers.CutthroatPower;
 
 
 public class Rola extends AbstractNeutralCard {
@@ -72,6 +73,9 @@ public class Rola extends AbstractNeutralCard {
                 addToBot(new SFXAction("Rola_L_EH"));
             else
                 addToBot(new SFXAction("Rola_EH"));
+            if (p.hasPower(CutthroatPower.POWER_ID)){
+                addToBot(new GainEnergyAction(2));
+            }
             int count = 0;
             for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
                 if (!mo.isDeadOrEscaped())

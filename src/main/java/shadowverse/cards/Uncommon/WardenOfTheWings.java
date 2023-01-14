@@ -36,7 +36,7 @@ public class WardenOfTheWings extends CustomCard {
 
     public WardenOfTheWings() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.ENEMY);
-        this.baseBlock = 12;
+        this.baseDamage = 12;
         this.tags.add(AbstractShadowversePlayer.Enums.CONDEMNED);
     }
 

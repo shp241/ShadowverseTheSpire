@@ -45,9 +45,9 @@ public class SteamrollingTank
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction("SteamrollingTank"));
         if (p.hasPower(SteamrollingTankPower.POWER_ID)){
-            addToBot(new ApplyPowerAction(p,p,new SteamrollingTankPower(p,this.magicNumber,0)));
+            addToBot(new ApplyPowerAction(p,p,new SteamrollingTankPower(p,this.magicNumber,0),this.magicNumber));
         }else {
-            addToBot(new ApplyPowerAction(p,p,new SteamrollingTankPower(p,this.magicNumber,8)));
+            addToBot(new ApplyPowerAction(p,p,new SteamrollingTankPower(p,this.magicNumber,8),this.magicNumber));
         }
         addToBot(new LoseHPAction(p, p, 1));
         addToBot(new GainBlockAction(p,this.block));

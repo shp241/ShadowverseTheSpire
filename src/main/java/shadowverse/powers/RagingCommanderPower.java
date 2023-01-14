@@ -22,7 +22,7 @@ public class RagingCommanderPower extends TwoAmountPower {
         this.ID = POWER_ID;
         this.owner = owner;
         this.amount = amount;
-        this.amount = amount2;
+        this.amount2 = amount2;
         this.type = PowerType.BUFF;
         updateDescription();
         loadRegion("anger");
@@ -36,7 +36,6 @@ public class RagingCommanderPower extends TwoAmountPower {
             addToBot(new DamageAllEnemiesAction(this.owner, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true));
         }
     }
-
 
 
     @Override

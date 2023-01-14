@@ -26,7 +26,7 @@ public class SteamrollingTankPower extends TwoAmountPower {
         this.ID = POWER_ID;
         this.owner = owner;
         this.amount = amount;
-        this.amount = amount2;
+        this.amount2 = amount2;
         this.type = PowerType.BUFF;
         updateDescription();
         loadRegion("dexterity");
@@ -40,8 +40,6 @@ public class SteamrollingTankPower extends TwoAmountPower {
             addToBot(new GainBlockAction(this.owner,this.amount));
         }
     }
-
-
 
     @Override
     public void atStartOfTurn() {

@@ -35,24 +35,18 @@ public class HeroicEntryAction extends AbstractGameAction {
 
     public void update() {
         AbstractPlayer p = AbstractDungeon.player;
-        int s = 1;
+        addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
+        addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(4, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE, true));
         for (AbstractCard c : p.hand.group) {
             if (c.hasTag(HERO)) {
-                s++;
+                addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
+                addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(4, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE, true));
             }
-        }
-        for (int i = 0; i < s; i++) {
-            addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
-            addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(4, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE, true));
-        }
-        if (upgraded) {
-            for (AbstractCard c : p.hand.group) {
-                if (c.hasTag(HERO) && !c.retain && !c.selfRetain) {
-                    c.retain = true;
-                    c.rawDescription += " NL " + TEXT;
-                    c.initializeDescription();
-                    c.applyPowers();
-                }
+            if (upgraded && !c.retain && !c.selfRetain) {
+                c.retain = true;
+                c.rawDescription += " NL " + TEXT;
+                c.initializeDescription();
+                c.applyPowers();
             }
         }
         this.tickDuration();
