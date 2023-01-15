@@ -4966,53 +4966,53 @@
     "DESCRIPTION": "Condemned / Machina NL Deal !D! Damage. NL Add 2 *Warden *of *the *Trigger to your hand and change their costs to 0. NL Gain 2 Metallicize for each Machina card in your hand. "
   },
   "shadowverse:DreadPirateFlag": {
-    "NAME": "战栗的海贼旗",
-    "DESCRIPTION": "对随机敌人造成 !D! 点伤害。 NL 此卡视为财宝牌。 NL 消耗 。"
+    "NAME": "Dread Pirate's Flag",
+    "DESCRIPTION": "Deal !D! Damage to a random enemy. NL (This card is considered a Loot card.) NL Exhaust."
   },
   "shadowverse:TidalGunner": {
-    "NAME": "潮流炮手",
-    "DESCRIPTION": "八狱 NL 造成 !D! 点伤害。 NL 增加1张 *黄金之杯 到手中。 NL 如果消耗堆中的 财宝牌 数量为7以上，改为增加1张 *战栗的海贼旗 到手中。 NL 本回合内，每打出1张 财宝牌 ，对随机敌人造成 !M! 点伤害。"
+    "NAME": "Tidal Gunner",
+    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Put a *Gilded *Goblet into your hand. NL If there are 7 or more Loot cards in your exhaust pile, put a *Dread Pirate's *Flag instead. NL During this turn, deal !M! Damage to a random enemy for each Loot card played."
   },
   "shadowverse:DeepSeaScout": {
-    "NAME": "深海斥候",
-    "DESCRIPTION": "八狱 NL 造成 !D! 点伤害。 NL 增加1张 *黄金之靴 到手中。 NL 如果消耗堆中的 财宝牌 数量为7以上，改为增加1张 *战栗的海贼旗 到手中。 NL 本回合内，每打出1张 财宝牌 ，抽1张牌。"
+    "NAME": "Deep-Sea Scout",
+    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Put a *Gilded *Boots into your hand. NL If there are 7 or more Loot cards in your exhaust pile, put a *Dread Pirate's *Flag instead. NL During this turn, draw a card for each Loot card played."
   },
   "shadowverse:StormWrackedFirstMate": {
-    "NAME": "怒涛副船长",
-    "DESCRIPTION": "八狱 NL 获得 !B! 点 格挡 。 NL 增加1张 *黄金首饰 到手中。 NL 如果消耗堆中的 财宝牌 数量为7以上，改为增加1张 *战栗的海贼旗 到手中。 NL 本回合内，每打出1张 财宝牌 ，召唤1个 加农炮水手 。"
+    "NAME": "Storm-Wracked First Mate",
+    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Put a *Gilded *Necklace into your hand. NL If there are 7 or more Loot cards in your exhaust pile, put a *Dread Pirate's *Flag instead. NL During this turn, whenever you play a Loot card, summon a Cannoneer."
   },
   "shadowverse:Barbaros": {
-    "NAME": "出航的罪人·芭芭萝丝",
-    "DESCRIPTION": "八狱 · 融合 : 财宝牌 NL 融合时， 升级 这张牌。 NL 造成 !D! 点伤害。 NL 增加1张 *战栗的海贼旗 到手中。 NL 如果消耗堆中的 财宝牌 数量为7以上，获得2点能量。 NL 爆能强化 3:伤害翻倍。",
-    "UPGRADE_DESCRIPTION":"八狱 · 融合 : 财宝牌 NL 造成 !D! 点伤害。 NL 增加1张 *战栗的海贼旗 到手中。 NL 如果消耗堆中的 财宝牌 数量为7以上，获得2点能量。 NL 爆能强化 3:伤害翻倍。 NL 打出后解除升级 。"
+    "NAME": "Barbaros, Briny Convict",
+    "DESCRIPTION": "Condemned / Fusion: Loot cards. NL When a card is fused to this card, upgrade this card. NL Deal !D! Damage. NL Add a *Dread *Pirate's *Flag to your hand. NL If there are 7 or more Loot cards in your exhaust pile, gain 2 Energy. NL Enhance 3: Double the damage.",
+    "UPGRADE_DESCRIPTION":"Condemned / Fusion: Loot cards. NL Deal !D! Damage. NL Add a *Dread *Pirate's *Flag to your hand. NL If there are 7 or more Loot cards in your exhaust pile, gain 2 Energy. NL Enhance 3: Double the damage. NL (Disupgrades once played.)"
   },
   "shadowverse:Radiel": {
-    "NAME": "武皇执行者·雷帝尔",
-    "DESCRIPTION": "八狱 NL 造成 !D! 点伤害。 NL 协作 20：改为造成3次伤害。 NL 给予 !M! 层 易伤 和 虚弱。 NL 如果手牌、抽牌堆、弃牌堆、消耗堆中已 升级 的攻击牌或能力牌数量为7以上，改为给予全体敌人负面效果。",
+    "NAME": "Radiel, Valorous Enforcer",
+    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Rally 20: Triple the damage. NL Apply !M! Weak and Vulnerable. If the total number of upgraded Attack or Power cards in your draw, discard or exhaust pile is 7 or more, apply these debuffs to all enemies instead.",
     "EXTENDED_DESCRIPTION": [
-      " NL （协作数：",
+      " NL (Rally Count: ",
       ")"
     ]
   },
   "shadowverse:WardenOfHonor": {
-    "NAME": "尽忠的看守",
-    "DESCRIPTION": "八狱 · 结晶 0 NL 下回合开始时额外抽1张牌，增加1张复制品到弃牌堆中。 NL  NL --------------------- NL  NL  升级 这张牌，获得 !B! 点 格挡 2次。 NL 增加1张复制品到消耗堆中。",
-    "UPGRADE_DESCRIPTION":"八狱 · 结晶 0 NL 下回合开始时额外抽1张牌，增加1张复制品到弃牌堆中。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 2次。 NL 增加1张复制品到消耗堆中。 NL 打出后解除升级 。"
+    "NAME": "Warden of Honor",
+    "DESCRIPTION": "Condemned / Crystalize 0: Draw a card at the start of your next turn. Add a copy of this card to your discard pile. NL NL --------------------- NL NL Upgrade this card and gain !B! Block twice. NL Add a copy of this card to your exhaust pile.",
+    "UPGRADE_DESCRIPTION":"Condemned / Crystalize 0: Draw a card at the start of your next turn. Add a copy of this card to your discard pile. NL NL --------------------- NL NL Gain !B! Block twice. NL Add a copy of this card to your discard pile. NL (Disupgrades once played.)"
   },
   "shadowverse:IronwroughtDefender": {
-    "NAME": "铁壁守卫者",
-    "DESCRIPTION": "英雄 。 NL 获得 !B! 点 格挡 3次。 NL 危难 ：再获得1次 格挡 。"
+    "NAME": "Ironwrought Defender",
+    "DESCRIPTION": "Heroic. NL Gain !B! Block 3 times. NL Distress_Call: Gain Block 1 more time."
   },
   "shadowverse:Windslasher": {
-    "NAME": "驭风斩击者",
-    "DESCRIPTION": "英雄 。 NL 造成 !D! 点伤害。 NL 选择弃牌堆中的1张 英雄 牌，将其本回合耗能变为0加入手中。 NL 随机从抽牌堆中将1张 英雄 牌加入手中。 NL 危难 ：这张牌本回合耗能变为0。"
+    "NAME": "Windslasher",
+    "DESCRIPTION": "Heroic. NL Deal !D! Damage. NL Choose a Heroic card in your discard pile and add it to your hand. It costs 0 this turn. NL Add a random Heroic card from your draw pile to your hand. NL Distress_Call: This card costs 0 this turn."
   },
   "shadowverse:GeneralMaximus": {
-    "NAME": "极限将军",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 选择抽牌堆中最多3张非技能牌消耗。 NL 如果消耗了1张，召唤1个 骑士 。 NL 如果消耗了2张，召唤1个 战盾卫士 。 NL 如果消耗了3张，召唤1个 铁甲骑士 。"
+    "NAME": "General Maximus",
+    "DESCRIPTION": "Deal !D! Damage. NL You may Exhaust up to 3 non-Skill cards from your draw pile. NL If at least 1 card was Exhausted, summon a Knight. NL If at least 2 cards were Exhausted, summon a Shield_Guardian. NL If at least 3 cards were Exhausted, summon a Steelclad_Knight."
   },
   "shadowverse:OliviaSylvia": {
-    "NAME": "庭园追忆·奥莉薇与希尔薇娅",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加2张 *进化点 到手中。 NL 对全体敌人造成 !D! 点伤害，消耗堆中每有1张 *进化点 ，伤害增加 !M! 点。 NL 获得X点能量，X为消耗堆中的 *进化点 数量。"
+    "NAME": "Olivia & Sylvia, Wardens",
+    "DESCRIPTION": "Gain !B! Block. NL Add 2 *Evolution *Point to your hand. NL Deal !D! Damage to all enemies. Deal !M! additional damage for each *Evolution *Point in your exhaust pile. NL Gain X Energy. X equals the number of *Evolution *Point in your exhaust pile."
   }
 }

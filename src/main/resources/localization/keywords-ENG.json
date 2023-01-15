@@ -436,9 +436,9 @@
     },
     {
       "NAMES": [
-        "加农炮水手"
+        "Cannoneer"
       ],
-      "DESCRIPTION": "1/1 NL 被动： 在你的回合结束时，对随机敌人造成3倍攻击力的伤害并失去1点生命值。 NL 激发： 重复被动效果直到生命值为0 。 NL 当生命值到达0时，增加1张黄金之靴到手中。"
+      "DESCRIPTION": "1/1 NL Passive: At the end of your turn, deal damage equal to 3 times Attack to a random enemy and lose 1 Health. NL When #yEvoked, repeat passive effects until Health reaches 0. NL When Health reaches 0, put a #yGilded #yBoots into your hand."
     }
   ]
 }

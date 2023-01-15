@@ -1750,24 +1750,24 @@
     ]
   },
   "shadowverse:TidalGunnerPower": {
-    "NAME": "潮流炮手",
+    "NAME": "Tidal Gunner",
     "DESCRIPTIONS": [
-      "本回合内，每当打出 #y财宝 牌时，对随机敌人造成 #b",
-      " 点伤害。"
+      "Whenever you play a #yLoot card this turn, deal #b",
+      " Damage to a random enemy."
     ]
   },
   "shadowverse:DeepSeaScoutPower": {
-    "NAME": "深海斥候",
+    "NAME": "Deep-Sea Scout",
     "DESCRIPTIONS": [
-      "本回合内，每当打出 #y财宝 牌时，抽 #b",
-      " 张牌。"
+      "Whenever you play a #yLoot card this turn, draw #b",
+      " card(s)."
     ]
   },
   "shadowverse:StormWrackedFirstMatePower": {
-    "NAME": "怒涛副船长",
+    "NAME": "Storm-Wracked First Mate",
     "DESCRIPTIONS": [
-      "本回合内，每当打出 #y财宝 牌时，召唤 #b",
-      " 个 #y加农炮水手 。"
+      "Whenever you play a #yLoot card this turn, summon #b",
+      " #yCannoneer."
     ]
   }
 }
