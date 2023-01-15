@@ -23,13 +23,11 @@ public class KaiserSkin extends AbstractSkin{
         this.SHOULDER2 = SHOULDER;
         this.CORPSE = SKIN_CORPSE;
         this.scmlURL = SCML;
+        this.select = SELECTED;
         this.hurt = HURT_SOUND1;
         this.hurt2 = HURT_SOUND2;
         this.hurt3 = HURT_SOUND3;
         this.hurt4 = HURT_SOUND4;
     }
 
-    @Override
-    public void playHurtSound(int lastDamageTaken) {
-    }
 }
