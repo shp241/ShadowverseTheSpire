@@ -19,6 +19,7 @@ public class StormWrackedFirstMatePower extends AbstractPower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings("shadowverse:StormWrackedFirstMatePower");
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
+    private int count = 5;
 
     public StormWrackedFirstMatePower(AbstractCreature owner, int amount) {
         this.name = NAME;
@@ -45,10 +46,13 @@ public class StormWrackedFirstMatePower extends AbstractPower {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (card.hasTag(AbstractShadowversePlayer.Enums.GILDED)) {
+        if (card.hasTag(AbstractShadowversePlayer.Enums.GILDED) && count > 0) {
             flash();
             addToBot(new SFXAction("StormWrackedFirstMatePower"));
-            addToBot(new MinionSummonAction(new Cannoneer()));
+            for (int i=0;i<this.amount;i++){
+                addToBot(new MinionSummonAction(new Cannoneer()));
+            }
+            count--;
         }
     }
 

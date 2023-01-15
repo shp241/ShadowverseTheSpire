@@ -27,7 +27,7 @@ public class DreadPirateFlag extends CustomCard {
     public static final String IMG_PATH = "img/cards/DreadPirateFlag.png";
 
     public DreadPirateFlag() {
-        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.ALL_ENEMY);
         this.baseDamage = 12;
         this.exhaust = true;
         this.tags.add(AbstractShadowversePlayer.Enums.GILDED);

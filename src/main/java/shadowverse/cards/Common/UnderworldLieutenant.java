@@ -3,6 +3,7 @@ package shadowverse.cards.Common;
 
 import basemod.abstracts.CustomCard;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -16,6 +17,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToHandEffect;
 import com.megacrit.cardcrawl.vfx.combat.BiteEffect;
 import shadowverse.action.NecromanceAction;
 import shadowverse.characters.AbstractShadowversePlayer;
@@ -69,7 +71,7 @@ public class UnderworldLieutenant
         addToBot(new AbstractGameAction() {
             @Override
             public void update() {
-                p.hand.addToTop(tmp);
+                AbstractDungeon.effectList.add(new ShowCardAndAddToHandEffect(tmp, MathUtils.random((float) Settings.WIDTH * 0.2F, (float)Settings.WIDTH * 0.8F), MathUtils.random((float)Settings.HEIGHT * 0.3F, (float)Settings.HEIGHT * 0.7F)));
                 isDone = true;
             }
         });
@@ -77,7 +79,7 @@ public class UnderworldLieutenant
             addToBot(new AbstractGameAction() {
                 @Override
                 public void update() {
-                    p.hand.addToTop(tmp);
+                    AbstractDungeon.effectList.add(new ShowCardAndAddToHandEffect(tmp, MathUtils.random((float) Settings.WIDTH * 0.2F, (float)Settings.WIDTH * 0.8F), MathUtils.random((float)Settings.HEIGHT * 0.3F, (float)Settings.HEIGHT * 0.7F)));
                     isDone = true;
                 }
             });

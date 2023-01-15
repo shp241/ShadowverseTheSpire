@@ -82,7 +82,7 @@ public class StormWrackedFirstMate extends CustomCard {
         }else {
             addToBot(new MakeTempCardInHandAction(new GildedNecklace(),1));
         }
-        addToBot(new ApplyPowerAction(p, p, new StormWrackedFirstMatePower(p, this.magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new StormWrackedFirstMatePower(p, 1)));
     }
 
 

@@ -23,6 +23,7 @@ import shadowverse.cards.Temp.GildedBoots;
 import shadowverse.cards.Temp.GildedGoblet;
 import shadowverse.cards.Temp.GildedNecklace;
 import shadowverse.cards.Uncommon.UltimateHollow;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 import shadowverse.orbs.AmbushMinion;
 import shadowverse.orbs.Minion;
@@ -93,14 +94,14 @@ public class AdherentOfHollow extends CustomCard {
 
     @Override
     public void triggerOnOtherCardPlayed(AbstractCard c) {
-        if (!this.upgraded && (c instanceof GildedNecklace || c instanceof GildedBoots || c instanceof GildedGoblet || c instanceof GildedBlade || c instanceof LightOfHollow || c instanceof UltimateHollow)) {
+        if (!this.upgraded && c.hasTag(AbstractShadowversePlayer.Enums.GILDED)) {
             this.superFlash();
             this.upgrade();
-            addToBot((AbstractGameAction)new SFXAction("AdherentOfHollow_Ev"));
+            addToBot(new SFXAction("AdherentOfHollow_Ev"));
         } else if (c instanceof EvolutionPoint) {
             AbstractCard c1 = returnProphecy().get(AbstractDungeon.cardRandomRng.random(3));
             addToBot(new MakeTempCardInHandAction(c1));
-            addToBot((AbstractGameAction)new SFXAction("AdherentOfHollow_Eff"));
+            addToBot(new SFXAction("AdherentOfHollow_Eff"));
         }
     }
 

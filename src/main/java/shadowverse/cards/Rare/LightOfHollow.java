@@ -66,7 +66,7 @@ public class LightOfHollow
     protected void onRightClick() {
         if (!this.hasFusion && AbstractDungeon.player!=null){
             addToBot(new SelectCardsInHandAction(9,TEXT[0],true,true,card -> {
-                return card.hasTag(AbstractShadowversePlayer.Enums.GILDED);
+                return card.hasTag(AbstractShadowversePlayer.Enums.GILDED) && card!=this;
             }, abstractCards -> {
                 if (abstractCards.size()>0){
                     addToBot(new DrawCardAction(1));

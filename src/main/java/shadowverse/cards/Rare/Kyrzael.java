@@ -3,6 +3,7 @@
 
  import basemod.abstracts.CustomCard;
  import com.badlogic.gdx.graphics.Color;
+ import com.badlogic.gdx.math.MathUtils;
  import com.megacrit.cardcrawl.actions.AbstractGameAction;
  import com.megacrit.cardcrawl.actions.animations.VFXAction;
  import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -13,10 +14,13 @@
  import com.megacrit.cardcrawl.cards.DamageInfo;
  import com.megacrit.cardcrawl.characters.AbstractPlayer;
  import com.megacrit.cardcrawl.core.CardCrawlGame;
+ import com.megacrit.cardcrawl.core.Settings;
+ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
  import com.megacrit.cardcrawl.localization.CardStrings;
  import com.megacrit.cardcrawl.monsters.AbstractMonster;
  import com.megacrit.cardcrawl.powers.MetallicizePower;
  import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
+ import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToHandEffect;
  import com.megacrit.cardcrawl.vfx.combat.HeartBuffEffect;
  import shadowverse.cards.Uncommon.WardenOfTrigger;
  import shadowverse.characters.AbstractShadowversePlayer;
@@ -72,14 +76,14 @@
        addToBot(new AbstractGameAction() {
            @Override
            public void update() {
-               p.hand.addToTop(tmp);
+               AbstractDungeon.effectList.add(new ShowCardAndAddToHandEffect(tmp, MathUtils.random((float) Settings.WIDTH * 0.2F, (float)Settings.WIDTH * 0.8F), MathUtils.random((float)Settings.HEIGHT * 0.3F, (float)Settings.HEIGHT * 0.7F)));
                isDone = true;
            }
        });
        addToBot(new AbstractGameAction() {
            @Override
            public void update() {
-               p.hand.addToTop(tmp);
+               AbstractDungeon.effectList.add(new ShowCardAndAddToHandEffect(tmp, MathUtils.random((float) Settings.WIDTH * 0.2F, (float)Settings.WIDTH * 0.8F), MathUtils.random((float)Settings.HEIGHT * 0.3F, (float)Settings.HEIGHT * 0.7F)));
                isDone = true;
            }
        });

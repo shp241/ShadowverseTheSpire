@@ -84,7 +84,7 @@ public class DeepSeaScout extends CustomCard {
         }else {
             addToBot(new MakeTempCardInHandAction(new GildedBoots(),1));
         }
-        addToBot(new ApplyPowerAction(p, p, new DeepSeaScoutPower(p, this.magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new DeepSeaScoutPower(p, 1)));
     }
 
 
