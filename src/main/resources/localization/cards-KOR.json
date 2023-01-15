@@ -4850,8 +4850,8 @@
   },
   "shadowverse:AbyssalColonel": {
     "NAME": "심연의 대령",
-    "DESCRIPTION": "팔옥 · 결정화 1 NL 결정화:심연의 대령을 손에 넣는다. NL  NL --------------------- NL  NL 。 NL 방어도를 !B! 얻는다. NL 유언 : 무작위 적에게 취약과 약화를 3 부여하고 체력을 3 회복한다. NL 소멸.",
-    "UPGRADE_DESCRIPTION":"팔옥 · 결정화 1 NL 결정화:심연의 대령+ 을 손에 넣는다. NL  NL --------------------- NL  NL 。 NL 방어도를 !B! 얻는다. NL 유언 : 무작위 적에게 취약과 약화를 3 부여하고 체력을 3 회복한다. NL 소멸. "
+    "DESCRIPTION": "팔옥 · 결정화 1 NL 결정화:심연의 대령을 손에 넣는다. NL  NL --------------------- NL  NL 피해를 !D! 준다. NL 방어도를 !B! 얻는다. NL 유언 : 무작위 적에게 취약과 약화를 3 부여하고 체력을 3 회복한다. NL 소멸.",
+    "UPGRADE_DESCRIPTION":"팔옥 · 결정화 1 NL 결정화:심연의 대령+ 을 손에 넣는다. NL  NL --------------------- NL  NL 피해를 !D! 준다. NL 방어도를 !B! 얻는다. NL 유언 : 무작위 적에게 취약과 약화를 3 부여하고 체력을 3 회복한다. NL 소멸. "
   },
   "shadowverse:UnderworldLieutenant": {
     "NAME": "명계의 중위",
