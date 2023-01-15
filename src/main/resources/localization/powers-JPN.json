@@ -1750,24 +1750,24 @@
     ]
   },
   "shadowverse:TidalGunnerPower": {
-    "NAME": "潮流炮手",
+    "NAME": "潮流の砲手",
     "DESCRIPTIONS": [
-      "本回合内，每当打出 #y财宝 牌时，对随机敌人造成 #b",
-      " 点伤害。"
+      "このターン、 #y財宝カード をプレイする度、ランダムな敵に #b",
+      " ダメージを与える。"
     ]
   },
   "shadowverse:DeepSeaScoutPower": {
-    "NAME": "深海斥候",
+    "NAME": "深海の斥候",
     "DESCRIPTIONS": [
-      "本回合内，每当打出 #y财宝 牌时，抽 #b",
-      " 张牌。"
+      "このターン、 #y財宝カード をプレイする度、カードを #b",
+      " 枚引く。"
     ]
   },
   "shadowverse:StormWrackedFirstMatePower": {
-    "NAME": "怒涛副船长",
+    "NAME": "怒涛の副船長",
     "DESCRIPTIONS": [
-      "本回合内，每当打出 #y财宝 牌时，召唤 #b",
-      " 个 #y加农炮水手 。"
+      "このターン、 #y財宝カード をプレイする度、 #yキャノンクルー #b",
+      " 体を出す。"
     ]
   }
 }
