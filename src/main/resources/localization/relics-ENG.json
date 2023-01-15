@@ -348,7 +348,7 @@
     "NAME": "Avaritia, Blade of Usurption",
     "FLAVOR": "Go ahead, hunger. Once the craving overtakes you, claim what is rightfully yours. That is the true way of the world, after all.",
     "DESCRIPTIONS": [
-      "Whenever you play a #yLoot card, draw 1 card."
+      "At the start of your turn, add 1 random #yLoot to hand."
     ]
   },
   "shadowverse:ValhoreanDealer": {
@@ -363,13 +363,6 @@
     "FLAVOR": "Thanks to you, I have drawn my blade from the scabbard called peace.",
     "DESCRIPTIONS": [
       "ALL cards that disupgrade will automatically upgrade again after being played."
-    ]
-  },
-  "shadowverse:EndlessUsurpation": {
-    "NAME": "Endless Usurpation",
-    "FLAVOR": "Take and take again. Awaken the world to the pain of loss, to grief as deep as Hell. Leave them nothing, that they may know our hatred.",
-    "DESCRIPTIONS": [
-      "At the start of your turn, add 1 random #yLoot to hand."
     ]
   },
   "shadowverse:Durandal": {

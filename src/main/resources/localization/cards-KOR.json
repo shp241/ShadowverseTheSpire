@@ -4961,5 +4961,55 @@
   "shadowverse:Kyrzael": {
     "NAME": "탄곡의 집행자 키르자엘",
     "DESCRIPTION": "팔옥 · 기계 NL 피해를 !D! 준다. NL 비용이 0인 *격침의 *간수 2장을 얻는다. NL 손에 있는 다른 기계 카드 1장당 금속화를 2 얻는다."
+  },
+  "shadowverse:DreadPirateFlag": {
+    "NAME": "战栗的海贼旗",
+    "DESCRIPTION": "对随机敌人造成 !D! 点伤害。 NL 此卡视为财宝牌。 NL 消耗 。"
+  },
+  "shadowverse:TidalGunner": {
+    "NAME": "潮流炮手",
+    "DESCRIPTION": "八狱 NL 造成 !D! 点伤害。 NL 增加1张 *黄金之杯 到手中。 NL 如果消耗堆中的 财宝牌 数量为7以上，改为增加1张 *战栗的海贼旗 到手中。 NL 本回合内，每打出1张 财宝牌 ，对随机敌人造成 !M! 点伤害。"
+  },
+  "shadowverse:DeepSeaScout": {
+    "NAME": "深海斥候",
+    "DESCRIPTION": "八狱 NL 造成 !D! 点伤害。 NL 增加1张 *黄金之靴 到手中。 NL 如果消耗堆中的 财宝牌 数量为7以上，改为增加1张 *战栗的海贼旗 到手中。 NL 本回合内，每打出1张 财宝牌 ，抽1张牌。"
+  },
+  "shadowverse:StormWrackedFirstMate": {
+    "NAME": "怒涛副船长",
+    "DESCRIPTION": "八狱 NL 获得 !B! 点 格挡 。 NL 增加1张 *黄金首饰 到手中。 NL 如果消耗堆中的 财宝牌 数量为7以上，改为增加1张 *战栗的海贼旗 到手中。 NL 本回合内，每打出1张 财宝牌 ，召唤1个 加农炮水手 。"
+  },
+  "shadowverse:Barbaros": {
+    "NAME": "出航的罪人·芭芭萝丝",
+    "DESCRIPTION": "八狱 · 融合 : 财宝牌 NL 融合时， 升级 这张牌。 NL 造成 !D! 点伤害。 NL 增加1张 *战栗的海贼旗 到手中。 NL 如果消耗堆中的 财宝牌 数量为7以上，获得2点能量。 NL 爆能强化 3:伤害翻倍。",
+    "UPGRADE_DESCRIPTION":"八狱 · 融合 : 财宝牌 NL 造成 !D! 点伤害。 NL 增加1张 *战栗的海贼旗 到手中。 NL 如果消耗堆中的 财宝牌 数量为7以上，获得2点能量。 NL 爆能强化 3:伤害翻倍。 NL 打出后解除升级 。"
+  },
+  "shadowverse:Radiel": {
+    "NAME": "武皇执行者·雷帝尔",
+    "DESCRIPTION": "八狱 NL 造成 !D! 点伤害。 NL 协作 20：改为造成3次伤害。 NL 给予 !M! 层 易伤 和 虚弱。 NL 如果手牌、抽牌堆、弃牌堆、消耗堆中已 升级 的攻击牌或能力牌数量为7以上，改为给予全体敌人负面效果。",
+    "EXTENDED_DESCRIPTION": [
+      " NL （协作数：",
+      ")"
+    ]
+  },
+  "shadowverse:WardenOfHonor": {
+    "NAME": "尽忠的看守",
+    "DESCRIPTION": "八狱 · 结晶 0 NL 下回合开始时额外抽1张牌，增加1张复制品到弃牌堆中。 NL  NL --------------------- NL  NL  升级 这张牌，获得 !B! 点 格挡 2次。 NL 增加1张复制品到消耗堆中。",
+    "UPGRADE_DESCRIPTION":"八狱 · 结晶 0 NL 下回合开始时额外抽1张牌，增加1张复制品到弃牌堆中。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 2次。 NL 增加1张复制品到消耗堆中。 NL 打出后解除升级 。"
+  },
+  "shadowverse:IronwroughtDefender": {
+    "NAME": "铁壁守卫者",
+    "DESCRIPTION": "英雄 。 NL 获得 !B! 点 格挡 3次。 NL 危难 ：再获得1次 格挡 。"
+  },
+  "shadowverse:Windslasher": {
+    "NAME": "驭风斩击者",
+    "DESCRIPTION": "英雄 。 NL 造成 !D! 点伤害。 NL 选择弃牌堆中的1张 英雄 牌，将其本回合耗能变为0加入手中。 NL 随机从抽牌堆中将1张 英雄 牌加入手中。 NL 危难 ：这张牌本回合耗能变为0。"
+  },
+  "shadowverse:GeneralMaximus": {
+    "NAME": "极限将军",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 选择抽牌堆中最多3张非技能牌消耗。 NL 如果消耗了1张，召唤1个 骑士 。 NL 如果消耗了2张，召唤1个 战盾卫士 。 NL 如果消耗了3张，召唤1个 铁甲骑士 。"
+  },
+  "shadowverse:OliviaSylvia": {
+    "NAME": "庭园追忆·奥莉薇与希尔薇娅",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加2张 *进化点 到手中。 NL 对全体敌人造成 !D! 点伤害，消耗堆中每有1张 *进化点 ，伤害增加 !M! 点。 NL 获得X点能量，X为消耗堆中的 *进化点 数量。"
   }
 }

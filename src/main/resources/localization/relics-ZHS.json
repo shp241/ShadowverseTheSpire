@@ -348,7 +348,7 @@
     "NAME": "阿瓦利提亚",
     "FLAVOR": "饱受饥饿吧。 NL 当你感到饥寒交迫时，就去掠夺吧。 NL 如此一来，世界将会继续运转。",
     "DESCRIPTIONS": [
-      "使用 财宝牌 时，抽1张牌。"
+      "回合开始时，随机获得1张 财宝牌 。"
     ]
   },
   "shadowverse:ValhoreanDealer": {
@@ -363,13 +363,6 @@
     "FLAVOR": "自名为和平的剑鞘中，感谢您让吾拔出此刀。 ——不败剑圣·景光",
     "DESCRIPTIONS": [
       "所有 打出后解除升级 的卡牌在打出后自动升级。"
-    ]
-  },
-  "shadowverse:EndlessUsurpation": {
-    "NAME": "无尽劫掠",
-    "FLAVOR": "掠夺一切，取回所有吧。那些奇珍异宝打从一开始就属于我们。那，我们就不客气地全部收下了。",
-    "DESCRIPTIONS": [
-      "回合开始时，随机获得1张 财宝牌 。"
     ]
   },
   "shadowverse:Durandal": {

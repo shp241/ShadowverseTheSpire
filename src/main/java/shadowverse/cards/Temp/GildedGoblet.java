@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 
 public class GildedGoblet  extends CustomCard {
@@ -21,6 +22,7 @@ public class GildedGoblet  extends CustomCard {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.NONE);
         this.baseBlock = 3;
         this.exhaust = true;
+        this.tags.add(AbstractShadowversePlayer.Enums.GILDED);
     }
 
 

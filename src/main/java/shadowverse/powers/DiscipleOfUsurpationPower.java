@@ -54,7 +54,7 @@ public class DiscipleOfUsurpationPower extends AbstractPower {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (card instanceof GildedBlade || card instanceof GildedBoots || card instanceof GildedGoblet || card instanceof GildedNecklace || card instanceof UltimateHollow || card instanceof LightOfHollow) {
+        if (card.hasTag(AbstractShadowversePlayer.Enums.GILDED)) {
             flash();
             addToBot(new SFXAction("DiscipleOfUsurpation_Pow"));
             addToBot(new GainBlockAction(this.owner,this.amount));

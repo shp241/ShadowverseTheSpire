@@ -1,5 +1,6 @@
 package shadowverse.cards.Common;
 
+import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
@@ -14,7 +15,7 @@ import shadowverse.action.DrawPileToHandAction_Tag;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Elf;
 
-public class BuddingInitiate extends AbstractCard {
+public class BuddingInitiate extends CustomCard {
     public static final String ID = "shadowverse:BuddingInitiate";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:BuddingInitiate");
     public static final String NAME = cardStrings.NAME;

@@ -15,6 +15,7 @@ import shadowverse.cards.Temp.GildedBlade;
 import shadowverse.cards.Temp.GildedBoots;
 import shadowverse.cards.Temp.GildedGoblet;
 import shadowverse.cards.Temp.GildedNecklace;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 
 public class UltimateHollow extends CustomCard {
@@ -28,6 +29,7 @@ public class UltimateHollow extends CustomCard {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ENEMY);
         this.baseDamage = 6;
         this.baseBlock = 12;
+        this.tags.add(AbstractShadowversePlayer.Enums.GILDED);
     }
 
 
@@ -42,15 +44,15 @@ public class UltimateHollow extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new SFXAction("UltimateHollow"));
+        addToBot(new SFXAction("UltimateHollow"));
         int hasGilded = 0;
         for (AbstractCard card:abstractPlayer.exhaustPile.group){
-            if (card instanceof GildedBlade || card instanceof GildedBoots || card instanceof GildedGoblet || card instanceof GildedNecklace || card instanceof UltimateHollow)
+            if (card.hasTag(AbstractShadowversePlayer.Enums.GILDED))
                 hasGilded++;
         }
         if (hasGilded>=4){
             addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage*2, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-            addToBot((AbstractGameAction) new GainBlockAction(abstractPlayer,this.block));
+            addToBot(new GainBlockAction(abstractPlayer,this.block));
         }else {
             addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         }

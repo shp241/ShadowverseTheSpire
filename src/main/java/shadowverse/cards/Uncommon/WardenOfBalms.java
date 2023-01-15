@@ -1,5 +1,6 @@
 package shadowverse.cards.Uncommon;
 
+import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
@@ -17,7 +18,7 @@ import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Elf;
 import shadowverse.relics.KagemitsuSword;
 
-public class WardenOfBalms extends AbstractCard {
+public class WardenOfBalms extends CustomCard {
     public static final String ID = "shadowverse:WardenOfBalms";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:WardenOfBalms");
     public static final String NAME = cardStrings.NAME;

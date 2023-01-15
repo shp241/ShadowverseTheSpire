@@ -28,6 +28,7 @@ import shadowverse.cards.Temp.GildedBoots;
 import shadowverse.cards.Temp.GildedGoblet;
 import shadowverse.cards.Temp.GildedNecklace;
 import shadowverse.cards.Uncommon.UltimateHollow;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Elf;
 import shadowverse.characters.Royal;
 
@@ -50,6 +51,7 @@ public class LightOfHollow
         this.baseMagicNumber = 0;
         this.magicNumber = this.baseMagicNumber;
         this.selfRetain = true;
+        this.tags.add(AbstractShadowversePlayer.Enums.GILDED);
     }
 
 
@@ -63,14 +65,14 @@ public class LightOfHollow
     @Override
     protected void onRightClick() {
         if (!this.hasFusion && AbstractDungeon.player!=null){
-            addToBot((AbstractGameAction)new SelectCardsInHandAction(9,TEXT[0],true,true,card -> {
-                return card instanceof GildedBlade || card instanceof GildedBoots || card instanceof GildedGoblet || card instanceof GildedNecklace || card instanceof UltimateHollow;
+            addToBot(new SelectCardsInHandAction(9,TEXT[0],true,true,card -> {
+                return card.hasTag(AbstractShadowversePlayer.Enums.GILDED);
             }, abstractCards -> {
                 if (abstractCards.size()>0){
-                    addToBot((AbstractGameAction)new DrawCardAction(1));
+                    addToBot(new DrawCardAction(1));
                 }
                 for (AbstractCard c:abstractCards){
-                    addToBot((AbstractGameAction) new ExhaustSpecificCardAction(c,AbstractDungeon.player.hand));
+                    addToBot( new ExhaustSpecificCardAction(c,AbstractDungeon.player.hand));
                     this.baseMagicNumber++;
                     this.magicNumber = this.baseMagicNumber;
                     applyPowers();
@@ -98,7 +100,7 @@ public class LightOfHollow
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("LightOfHollow"));
+        addToBot(new SFXAction("LightOfHollow"));
         int dmg = this.damage;
         if (this.magicNumber>=4){
             dmg = dmg*2;
@@ -122,7 +124,7 @@ public class LightOfHollow
             }
             amountOfweakestMonster = weakestMonster.currentHealth + weakestMonster.currentBlock;
             if (leftDamage < amountOfweakestMonster) {
-                addToBot((AbstractGameAction)new DamageAction((AbstractCreature)weakestMonster, new DamageInfo((AbstractCreature)abstractPlayer, leftDamage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+                addToBot(new DamageAction(weakestMonster, new DamageInfo(abstractPlayer, leftDamage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
                 leftDamage = 0;
                 continue;
             } else if (leftDamage >= amountOfweakestMonster) {
@@ -133,12 +135,12 @@ public class LightOfHollow
                     }
                 }
                 if (count <= 1) {
-                    addToBot((AbstractGameAction)new DamageAction((AbstractCreature)weakestMonster, new DamageInfo((AbstractCreature)abstractPlayer, leftDamage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+                    addToBot(new DamageAction(weakestMonster, new DamageInfo(abstractPlayer, leftDamage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
                     leftDamage = 0;
                     continue;
                 }
                 if (!weakestMonster.isDead || !weakestMonster.isDeadOrEscaped()) {
-                    addToBot((AbstractGameAction)new DamageAction((AbstractCreature)weakestMonster, new DamageInfo((AbstractCreature)abstractPlayer, amountOfweakestMonster, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+                    addToBot(new DamageAction(weakestMonster, new DamageInfo(abstractPlayer, amountOfweakestMonster, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
                     leftDamage -= amountOfweakestMonster;
                     (AbstractDungeon.getMonsters()).monsters.remove(weakestMonster);
                     weakestMonster = null;

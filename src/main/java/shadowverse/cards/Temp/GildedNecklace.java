@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.action.MinionBuffAction;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 
 public class GildedNecklace extends CustomCard {
@@ -23,6 +24,7 @@ public class GildedNecklace extends CustomCard {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.SPECIAL, CardTarget.NONE);
         this.exhaust = true;
         this.magicNumber = this.baseMagicNumber = 1;
+        this.tags.add(AbstractShadowversePlayer.Enums.GILDED);
     }
 
 

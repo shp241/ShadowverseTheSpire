@@ -348,7 +348,7 @@
     "NAME": "아바리티아",
     "FLAVOR": "영겁의 굶주림이 자기를 발전시킨다. 영원한 갈증이 의지를 만들어 낸다.",
     "DESCRIPTIONS": [
-      "보물 카드를 사용할 때마다 카드를 1장 뽑습니다."
+      "턴 시작시 무작위 보물을 1장 얻습니다."
     ]
   },
   "shadowverse:ValhoreanDealer": {
@@ -363,13 +363,6 @@
     "FLAVOR": "평화라는 검집에서 빼어 들었습니다.저희들 무사는 황송할 따름이옵니다.",
     "DESCRIPTIONS": [
       "강화해제를 가진 모든 카드가 사용한 후 자동으로 강화됩니다."
-    ]
-  },
-  "shadowverse:EndlessUsurpation": {
-    "NAME": "끝없는 약탈",
-    "FLAVOR": "모든 것을 빼앗아도 채워지지 않는다면,공허마저 빼앗겠다.공허의 끝까지 빼앗아 주겠다.",
-    "DESCRIPTIONS": [
-      "턴 시작시 무작위 보물을 1장 얻습니다."
     ]
   },
   "shadowverse:Durandal": {

@@ -74,6 +74,8 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
         public static AbstractCard.CardTags CONDEMNED;
         @SpireEnum
         public static AbstractCard.CardTags CHESS;
+        @SpireEnum
+        public static AbstractCard.CardTags GILDED;
     }
 
     public int earthCount = 0;

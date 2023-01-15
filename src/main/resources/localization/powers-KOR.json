@@ -1748,5 +1748,26 @@
     "DESCRIPTIONS": [
       "소멸될때 타케츠미의 최대 HP를 80 줄인다."
     ]
+  },
+  "shadowverse:TidalGunnerPower": {
+    "NAME": "潮流炮手",
+    "DESCRIPTIONS": [
+      "本回合内，每当打出 #y财宝 牌时，对随机敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "shadowverse:DeepSeaScoutPower": {
+    "NAME": "深海斥候",
+    "DESCRIPTIONS": [
+      "本回合内，每当打出 #y财宝 牌时，抽 #b",
+      " 张牌。"
+    ]
+  },
+  "shadowverse:StormWrackedFirstMatePower": {
+    "NAME": "怒涛副船长",
+    "DESCRIPTIONS": [
+      "本回合内，每当打出 #y财宝 牌时，召唤 #b",
+      " 个 #y加农炮水手 。"
+    ]
   }
 }

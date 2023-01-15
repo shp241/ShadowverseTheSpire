@@ -99,5 +99,12 @@
       " damage to a random enemy and lose #b1 Health. NL Command this Follower whenever you play a #yGlittering #yGold. NL #yEvoked: Repeat passive effects until Health reaches #b0."
     ],
     "NAME": "Masterful Musician"
+  },
+  "shadowverse:Cannoneer": {
+    "DESCRIPTION": [
+      "#y被动： 在你的回合结束时，对随机敌人造成 #b",
+      " 点伤害并失去 #b1 点生命值。 NL #y激发： 重复被动效果直到生命值为 #b0 。 NL 当生命值到达 #b0 时，增加1张 #y黄金之靴 到手中。"
+    ],
+    "NAME": "加农炮水手"
   }
 }

@@ -1,5 +1,6 @@
 package shadowverse.cards.Rare;
 
+import basemod.abstracts.CustomCard;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
@@ -21,7 +22,7 @@ import shadowverse.Shadowverse;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Elf;
 
-public class Wimael extends AbstractCard {
+public class Wimael extends CustomCard {
     public static final String ID = "shadowverse:Wimael";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Wimael");
     public static final String NAME = cardStrings.NAME;
@@ -58,7 +59,7 @@ public class Wimael extends AbstractCard {
         addToBot(new VFXAction(new WhirlwindEffect(new Color(1.0F, 0.9F, 0.4F, 1.0F), true)));
         for (int i = 0; i < 4; i++) {
             if (m != null)
-                addToTop((AbstractGameAction) new VFXAction(new ThrowDaggerEffect(m.hb.cX, m.hb.cY),0.2F));
+                addToTop(new VFXAction(new ThrowDaggerEffect(m.hb.cX, m.hb.cY),0.2F));
         }
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
     }

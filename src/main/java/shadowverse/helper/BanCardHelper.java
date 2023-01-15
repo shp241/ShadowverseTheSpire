@@ -65,6 +65,9 @@ public class BanCardHelper {
                     this.add(new Arthur());
                     this.add(new Mars());
                     this.add(new CaptainWalfrid());
+                    this.add(new GeneralMaximus());
+                    this.add(new WardenOfHonor());
+                    this.add(new Radiel());
                 }
             });
             //进化
@@ -95,6 +98,10 @@ public class BanCardHelper {
                     this.add(new DanceOfUsurpation());
                     this.add(new Octrice());
                     this.add(new Alwida());
+                    this.add(new DeepSeaScout());
+                    this.add(new TidalGunner());
+                    this.add(new StormWrackedFirstMate());
+                    this.add(new Barbaros());
                 }
             });
             //雷维翁
@@ -165,6 +172,8 @@ public class BanCardHelper {
                     this.add(new HeroOfAntiquity());
                     this.add(new Alexander());
                     this.add(new Arthur());
+                    this.add(new IronwroughtDefender());
+                    this.add(new Windslasher());
                 }
             });
 //

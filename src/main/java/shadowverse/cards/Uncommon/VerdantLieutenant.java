@@ -1,5 +1,6 @@
 package shadowverse.cards.Uncommon;
 
+import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -16,7 +17,7 @@ import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Elf;
 import shadowverse.relics.KagemitsuSword;
 
-public class VerdantLieutenant extends AbstractCard {
+public class VerdantLieutenant extends CustomCard {
     public static final String ID = "shadowverse:VerdantLieutenant";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:VerdantLieutenant");
     public static final String NAME = cardStrings.NAME;

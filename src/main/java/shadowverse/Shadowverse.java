@@ -1309,6 +1309,19 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Taketsumi_A1", new Sfx(voicePath+"Taketsumi_A1.wav"));
             reflectedMap.put("Taketsumi_A2", new Sfx(voicePath+"Taketsumi_A2.wav"));
             reflectedMap.put("Taketsumi_A3", new Sfx(voicePath+"Taketsumi_A3.wav"));
+            reflectedMap.put("TidalGunner", new Sfx(voicePath+"TidalGunner.wav"));
+            reflectedMap.put("TidalGunnerPower", new Sfx(voicePath+"TidalGunnerPower.wav"));
+            reflectedMap.put("DeepSeaScout", new Sfx(voicePath+"DeepSeaScout.wav"));
+            reflectedMap.put("DeepSeaScoutPower", new Sfx(voicePath+"DeepSeaScoutPower.wav"));
+            reflectedMap.put("StormWrackedFirstMate", new Sfx(voicePath+"StormWrackedFirstMate.wav"));
+            reflectedMap.put("StormWrackedFirstMatePower", new Sfx(voicePath+"StormWrackedFirstMatePower.wav"));
+            reflectedMap.put("Barbaros", new Sfx(voicePath+"Barbaros.wav"));
+            reflectedMap.put("Barbaros_Eh", new Sfx(voicePath+"Barbaros_Eh.wav"));
+            reflectedMap.put("Radiel", new Sfx(voicePath+"Radiel.wav"));
+            reflectedMap.put("IronwroughtDefender", new Sfx(voicePath+"IronwroughtDefender.wav"));
+            reflectedMap.put("Windslasher", new Sfx(voicePath+"Windslasher.wav"));
+            reflectedMap.put("GeneralMaximus", new Sfx(voicePath+"GeneralMaximus.wav"));
+            reflectedMap.put("OliviaSylvia", new Sfx(voicePath+"OliviaSylvia.wav"));
         }
     }
 
@@ -1369,7 +1382,6 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addRelicToCustomPool( new KagemitsuSword(), Royal.Enums.COLOR_YELLOW);
         BaseMod.addRelicToCustomPool( new Spineblade(), Royal.Enums.COLOR_YELLOW);
         BaseMod.addRelicToCustomPool( new Durandal(), Royal.Enums.COLOR_YELLOW);
-        BaseMod.addRelicToCustomPool( new EndlessUsurpation(), Royal.Enums.COLOR_YELLOW);
         BaseMod.addRelicToCustomPool( new Offensive7(), Bishop.Enums.COLOR_WHITE);
         BaseMod.addRelicToCustomPool( new GrandShield(), Bishop.Enums.COLOR_WHITE);
         BaseMod.addRelicToCustomPool( new GrandSword(), Bishop.Enums.COLOR_WHITE);
@@ -2383,6 +2395,17 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard( new BlackrustUnderling());
         BaseMod.addCard( new WardenOfTrigger());
         BaseMod.addCard( new Kyrzael());
+        BaseMod.addCard( new DreadPirateFlag());
+        BaseMod.addCard( new TidalGunner());
+        BaseMod.addCard( new DeepSeaScout());
+        BaseMod.addCard( new StormWrackedFirstMate());
+        BaseMod.addCard( new Barbaros());
+        BaseMod.addCard( new Radiel());
+        BaseMod.addCard( new WardenOfHonor());
+        BaseMod.addCard( new IronwroughtDefender());
+        BaseMod.addCard( new Windslasher());
+        BaseMod.addCard( new GeneralMaximus());
+        BaseMod.addCard( new OliviaSylvia());
         logger.info("Success");
     }
 

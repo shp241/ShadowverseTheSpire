@@ -1,5 +1,6 @@
 package shadowverse.cards.Rare;
 
+import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -18,7 +19,7 @@ import com.megacrit.cardcrawl.vfx.combat.GrandFinalEffect;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Elf;
 
-public class Magachiyo extends AbstractCard {
+public class Magachiyo extends CustomCard {
     public static final String ID = "shadowverse:Magachiyo";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Magachiyo");
     public static final String NAME = cardStrings.NAME;

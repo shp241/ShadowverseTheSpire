@@ -1,5 +1,6 @@
 package shadowverse.cards.Common;
 
+import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
@@ -13,7 +14,7 @@ import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Elf;
 import shadowverse.powers.LeafshadeAssassinPower;
 
-public class LeafshadeAssassin extends AbstractCard {
+public class LeafshadeAssassin extends CustomCard {
     public static final String ID = "shadowverse:LeafshadeAssassin";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:LeafshadeAssassin");
     public static final String NAME = cardStrings.NAME;
