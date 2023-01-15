@@ -4971,15 +4971,15 @@
   },
   "shadowverse:TidalGunner": {
     "NAME": "Tidal Gunner",
-    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Put a *Gilded *Goblet into your hand. NL If there are 7 or more Loot cards in your exhaust pile, put a *Dread Pirate's *Flag instead. NL During this turn, deal !M! Damage to a random enemy for each Loot card played."
+    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Put a *Gilded *Goblet into your hand. NL If there are 7 or more Loot cards in your exhaust pile, put a *Dread *Pirate's *Flag instead. NL During this turn, deal !M! Damage to a random enemy for each Loot card played."
   },
   "shadowverse:DeepSeaScout": {
     "NAME": "Deep-Sea Scout",
-    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Put a *Gilded *Boots into your hand. NL If there are 7 or more Loot cards in your exhaust pile, put a *Dread Pirate's *Flag instead. NL During this turn, draw a card for each Loot card played."
+    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Put a *Gilded *Boots into your hand. NL If there are 7 or more Loot cards in your exhaust pile, put a *Dread *Pirate's *Flag instead. NL During this turn, draw a card for each Loot card played."
   },
   "shadowverse:StormWrackedFirstMate": {
     "NAME": "Storm-Wracked First Mate",
-    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Put a *Gilded *Necklace into your hand. NL If there are 7 or more Loot cards in your exhaust pile, put a *Dread Pirate's *Flag instead. NL During this turn, whenever you play a Loot card, summon a Cannoneer."
+    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Put a *Gilded *Necklace into your hand. NL If there are 7 or more Loot cards in your exhaust pile, put a *Dread *Pirate's *Flag instead. NL During this turn, whenever you play a Loot card, summon a Cannoneer."
   },
   "shadowverse:Barbaros": {
     "NAME": "Barbaros, Briny Convict",
