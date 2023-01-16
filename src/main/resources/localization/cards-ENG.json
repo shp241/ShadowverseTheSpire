@@ -952,7 +952,7 @@
   },
   "shadowverse:Beast": {
     "NAME": "Irate Forest Beast",
-    "DESCRIPTION": "Deal !D! damage to a random enemy. NL If at least 2 other cards were played this turn, Double the damage."
+    "DESCRIPTION": "Deal !D! damage to a random enemy. NL If at least 2 other cards were played this turn, double the damage."
   },
   "shadowverse:Beauty": {
     "NAME": "Gentle Forest Beauty",
@@ -960,8 +960,8 @@
   },
   "shadowverse:MiracleOfLove": {
     "NAME": "Miracle Of Love",
-    "DESCRIPTION": "Choose: Play this card as either an *Irate *Forest *Beast or a *Gentle *Forest *Beauty. NL Enhance 2: Play this card as both.",
-    "UPGRADE_DESCRIPTION": "Choose: Play this card as either an *Irate *Forest *Beast+ or a *Gentle *Forest *Beauty+. NL Enhance 2: Play this card as both instead."
+    "DESCRIPTION": "Choose: Play this card as either an *Irate *Forest *Beast or a *Gentle *Forest *Beauty. NL Enhance 2: Gain !B! Block. If at least 2 other cards were played this turn, gain double the Block. Deal !D! damage to a random enemy. If at least 2 other cards were played this turn, double the damage.",
+    "UPGRADE_DESCRIPTION": "Choose: Play this card as either an *Irate *Forest *Beast+ or a *Gentle *Forest *Beauty+. NL Enhance 2: Gain !B! Block. If at least 2 other cards were played this turn, gain double the Block. Deal !D! damage to a random enemy. If at least 2 other cards were played this turn, double the damage."
   },
   "shadowverse:ResolveOfSekka": {
     "NAME": "Resolve of the Nine-Tailed Fox",
@@ -1051,7 +1051,7 @@
   },
   "shadowverse:BlossomTreant": {
     "NAME": "Blossom Treant",
-    "DESCRIPTION": "Gain !B!  Block. NL Next turn,Draw 1 card."
+    "DESCRIPTION": "Gain !B! Block. NL Draw a card at the start of your next turn."
   },
   "shadowverse:BeetleWarrior": {
     "NAME": "Beetle Warrior",
@@ -3963,8 +3963,8 @@
   },
   "shadowverse:WonderTree": {
     "NAME": "Tree of Wonders",
-    "DESCRIPTION": "Fusion: *Fairies. NL At the start of your turn, activate 1 of the following effects in order: NL Draw 1 additional card NL Add a *Fairy into your hand and Gain !M! Block NL Heal 2 HP NL. If at least 1 card is fused to this card, activate 2 effects instead.",
-    "UPGRADE_DESCRIPTION": "Fusion: *Fairies. NL At the start of your turn, activate 1 of the following effects in order: NL Draw 1 additional card NL Add a *Fairy+ into your hand and Gain !M! Block NL Heal 2 HP NL. If at least 1 card is fused to this card, activate 2 effects instead."
+    "DESCRIPTION": "Fusion: *Fairies. NL At the start of your turn, activate 1 of the following effects in order: NL Draw 1 additional card. NL Add a *Fairy into your hand and gain !M! Block. NL Heal 2 HP. NL If at least 1 card is fused to this card, activate 2 effects instead.",
+    "UPGRADE_DESCRIPTION": "Fusion: *Fairies. NL At the start of your turn, activate 1 of the following effects in order: NL Draw 1 additional card. NL Add a *Fairy+ into your hand and gain !M! Block. NL Heal 2 HP. NL If at least 1 card is fused to this card, activate 2 effects instead."
   },
   "shadowverse:Alberta": {
     "NAME": "Alberta, the Autumnblade",
@@ -4761,7 +4761,7 @@
   },
   "shadowverse:LeafshadeAssassin": {
     "NAME": "Leafshade Assassin",
-    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Add 1 to the number of cards played this turn. NL If at least 4 cards were played this turn, deal !M! damage to random enemy. "
+    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Add 1 to the number of cards played this turn. NL Whenever you play a card this  turn, if it's at least the 4th card you've played this turn, deal !M! damage to random enemy."
   },
   "shadowverse:VerdantLieutenant": {
     "NAME": "Verdant Lieutenant",
