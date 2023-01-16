@@ -4,7 +4,7 @@
     "DESCRIPTIONS": [
       "You walk past a strange statue that looks like a chubby cat... NL Suddenly you hear a voice whispering from behind you: NL ~'Hang~ ~on~ ~a~ ~minute.'~",
       "You turn around and see the statue staring at you! NL As you walk over to take a closer look, you find that it is not a statue, but KMR, the producer, who is dressed in a Pinya costume! NL NL ~'Could~ ~you~ ~show~ ~me~ ~your~ ~account~ ~and~ ~share~ ~your~ ~comments~ ~on~ ~the~ ~environment~ ~please?'~",
-      "~'Oh,~ ~the~ ~heat~ ~of~ ~summer~ ~continues.~ ~Are~ ~you~ ~doing~ ~alright?'~ NL He mechanically reach out his hand and puts some #ySeer's #yGlobe into your crate. NL NL ~'It~ ~may~ ~be~ ~sudden,~ ~but~ ~please~ ~take~ ~these~ ~Seer's~ ~Globes~ ~as~ ~a~ ~gift.'~ NL While he is talking with you, you feel that the Gold in your pocket is vanishing! NL All of a sudden, the glass he is drinking from falls down and smashes to pieces on the ground. You run away, hearing the echo of laughter and the sound of the broken glass. NL NL The next thing you know, you're all alone with the Seer's Globes in your hand.",
+      "~'Oh,~ ~the~ ~heat~ ~of~ ~summer~ ~continues.~ ~Are~ ~you~ ~doing~ ~alright?'~ NL He mechanically reach out his hand and puts some #ySeer's #yGlobes into your crate. NL NL ~'It~ ~may~ ~be~ ~sudden,~ ~but~ ~please~ ~take~ ~these~ ~Seer's~ ~Globes~ ~as~ ~a~ ~gift.'~ NL While he is talking with you, you feel that the Gold in your pocket is vanishing! NL All of a sudden, the glass he is drinking from falls down and smashes to pieces on the ground. You run away, hearing the echo of laughter and the sound of the broken glass. NL NL The next thing you know, you're all alone with the Seer's Globes in your hand.",
       "~'Golden~ ~Pinya?~ @Are@ @you@ @sure@ @about@ @that?@ ~Ah,~ ~of~ ~course...~ ~Okey.~ ~I~ ~can~ ~do~ ~that...~ ~Let~ ~me~ ~see...'~ NL NL He shakes one of his arms and your account is suddenly in his hand! NL NL ~'Yeah.~ ~This~ ~is~ ~goooood.'~",
       "~'Wait.~ ~Wait~ ~a~ ~second.~ ~Please~ ~wait.~ ~Wait.~ ~Wait~ ~a~ ~second.'~ NL NL You think you made the right choice."
     ],
@@ -38,7 +38,7 @@
   "shadowverse:LelouchCollaboration": {
     "NAME": "CODE GEASS Lelouch of the Rebellion Collaboration",
     "DESCRIPTIONS": [
-      "You ignore the event, but somehow Lelouch casts #rGeass on you !",
+      "You ignore the event, but somehow Lelouch casts #rGeass on you!",
       "#r@Ambush!@ NL Your enemies are not just Lelouch but also Suzaku operating Lancelot, coming out of nowhere!",
       " #b~Lelouch~ #b~of~ #b~the~ #b~Rebellion~ Campaign in progress. NL Time limited boss Lelouch is waiting for you! NL You have no interest in attending, but as soon as you're trying to leave, a strange desire in your heart drives you to #b~Challenge~ Lelouch..."
     ],
@@ -58,7 +58,7 @@
       "You feel bored. You don't think they can't please you. So you give the man a look. The tall man stared at you in horror until you left completely. NL You're alone again."
     ],
     "OPTIONS": [
-      "[Revel] #gRemove #gall Strick #gcards. #gReplace #gwith #gsame #gamount #gof Razory Claw. #rGain #rBlood #rVial .",
+      "[Revel] #gRemove #gall Strike #gcards. #gReplace #gwith #gsame #gamount #gof Razory Claw. #rGain #rBlood #rVial .",
       "[Ignore] Raise your Max HP by #r10 .",
       "[Leave]"
     ]

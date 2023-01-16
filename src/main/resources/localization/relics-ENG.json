@@ -32,7 +32,7 @@
     "FLAVOR": "It's always around us, and always with you.",
     "DESCRIPTIONS": [
       "At the start of each combat, add #b1 #yMysteria, #yMagic #yFounder into your draw pile and gain #b",
-      " Strength ."
+      " Strength."
     ]
   },
   "shadowverse:Genius": {
@@ -46,7 +46,7 @@
     "NAME": "Missed Lethal",
     "FLAVOR": "... Anyway, let's clear the board first.",
     "DESCRIPTIONS": [
-      "Gain #b1 [E] at the start of your turn. Once a combat, whenever a non-Minion enemy's HP is lower than 1/5th of its max by the start of turn, apply #yIntangible ."
+      "Gain #b1 [E] at the start of your turn. Once a combat, whenever a non-Minion enemy's HP is lower than 1/5th of its max by the start of turn, apply #yIntangible."
     ]
   },
   "shadowverse:Offensive": {
@@ -82,14 +82,14 @@
     "NAME": "Balance Changes: Defense Buff",
     "FLAVOR": "To achieve better game balance, we're making changes to the enemies.",
     "DESCRIPTIONS": [
-      "At the start of each combat, all enemies gain #b8 block ."
+      "At the start of each combat, all enemies gain #b8 Block."
     ]
   },
   "shadowverse:KMR2": {
-    "NAME": "Balance Changes: Strength Buff",
+    "NAME": "Balance Changes: Attack Buff",
     "FLAVOR": "To achieve better game balance, we're making changes to the enemies.",
     "DESCRIPTIONS": [
-      "At the start of each combat, all enemies gain #b1 strength ."
+      "At the start of each combat, all enemies gain #b1 Strength."
     ]
   },
   "shadowverse:Offensive2": {
@@ -110,14 +110,14 @@
     "NAME": "Quintitanias, Aether Bow",
     "FLAVOR": "Come forth as verdant wind... Be my wings as I invoke thy name! Fly true!",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st . NL Gain [E] whenever you play the #b6th card in a turn."
+      "Replaces #yToken #yof #y1st. NL Gain [E] whenever you play the #b6th card in a turn."
     ]
   },
   "shadowverse:NiouKyuu": {
     "NAME": "Two-Crown Bow",
     "FLAVOR": "The dignified jewels embedded in this bow gaze into eternity, identifying possible threats to peace. One arrow loosed from its string can put an end to those threats.",
     "DESCRIPTIONS": [
-      "ALL enemies start combat with #b1 #yPinpoint #yPrey ."
+      "ALL enemies start combat with #b1 #yPinpoint #yPrey."
     ]
   },
   "shadowverse:LymagaWeapon": {
@@ -138,14 +138,14 @@
     "NAME": "Cosmo Blue Rod",
     "FLAVOR": "Cosmo Blue Flash!",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st . Whenever you play 6 #ySkill cards, the next #ySkill card will be played #btwice ."
+      "Replaces #yToken #yof #y1st. Whenever you play 6 #ySkill cards, the next #ySkill card will be played twice."
     ]
   },
   "shadowverse:Mimori": {
     "NAME": "Not-So-Ordinary",
     "FLAVOR": "Nice to meet you! I'm Mimori Amamiya!",
     "DESCRIPTIONS": [
-      "Damage dealt + #b10%, damage taken - #b10%. By the end of your turn, if you have played at least 5 cards, damage dealt + #b10% (Up to 5 times). If you take any unblocked damage, damage dealt - #b10% ."
+      "Damage dealt + #b10%, damage taken - #b10%. By the end of your turn, if you have played at least 5 cards, damage dealt + #b10% (Up to 5 times). If you take any unblocked damage, damage dealt - #b10%."
     ]
   },
   "shadowverse:KuonWeapon": {
@@ -159,7 +159,7 @@
     "NAME": "Geass: Survive",
     "FLAVOR": "Survive!",
     "DESCRIPTIONS": [
-      "One time per combat, when you would die, heal 1 HP, remove all of your debuffs, gain #b5 #yStrength and #yDexterity , gain #b25 #yBlock ."
+      "One time per combat, when you would die, heal 1 HP, remove all of your debuffs, gain #b5 #yStrength and #yDexterity, and gain #b25 #yBlock."
     ]
   },
   "shadowverse:Offensive3": {
@@ -229,7 +229,7 @@
     "NAME": "Embracing Wings",
     "FLAVOR": "Love and mix, ravish and enrapture. Let lust overtake you as you come together with your fellows.",
     "DESCRIPTIONS": [
-      "At the start of combat, gain #ySiphon."
+      "At the start of combat, gain #yDrain."
     ]
   },
   "shadowverse:Lusia": {
@@ -271,7 +271,7 @@
     "NAME": "Token of 1st",
     "FLAVOR": "I go first, no need to redraw.",
     "DESCRIPTIONS": [
-      "At the start of combat, draw #b1 card(s) if the total number of cards in your deck is even. Otherwise, increase your Portal Points by #b1. NL Heal #b8 HP and gain #b8 Gold when your Portal Points reach #b8 ."
+      "At the start of combat, draw #b1 card(s) if the total number of cards in your deck is even. Otherwise, increase your Portal Points by #b1. NL Heal #b8 HP and gain #b8 Gold when your Portal Points reach #b8."
     ]
   },
   "shadowverse:NemesisBOSS": {
@@ -369,7 +369,7 @@
     "NAME": "Durandal the Incorruptible",
     "FLAVOR": "A holy sword bound to a certain proud hero. Its blade will shine for eternity, never to break or tarnish.",
     "DESCRIPTIONS": [
-      "At the start of combat, gain 2 #yBuffer ."
+      "At the start of combat, gain 2 #yBuffer."
     ]
   },
   "shadowverse:Tree": {
@@ -399,7 +399,7 @@
     "NAME": "Token of 1st",
     "FLAVOR": "I go first, no need to redraw.",
     "DESCRIPTIONS": [
-      "Whenever you draw a #yCurse card, move it to your Amulet zone as a #yCountdown #b3 Amulet with #yBanish. If it's the first time in this combat, draw #b1 card(s)."
+      "Whenever you draw a #yCurse card, move it to your Amulet zone as a #yCountdown #b3 Amulet with #yBanish. If it's the first time this combat, draw #b1 card(s)."
     ]
   },
   "shadowverse:Savior": {
@@ -488,7 +488,7 @@
   },
   "shadowverse:RalmiaBOSS": {
     "NAME": "Omega Drive",
-    "FLAVOR": "Speed Boost!",
+    "FLAVOR": "Limiters disengaged!",
     "DESCRIPTIONS": [
       "Replaces #yToken #yof #y1st. Once per combat: When #yResonance becomes active, ALL Attack cards in your hand count as #yAF cards. When #yResonance is not active, ALL Attack cards in your hand count as #yMachina cards."
     ]
@@ -502,7 +502,7 @@
   },
   "shadowverse:YukariBOSS": {
     "NAME": "Eternal Mug",
-    "FLAVOR": "Ehehe, I wanna go home early to have a drink~",
+    "FLAVOR": "Ehehe, I wanna go home early and have a drink~",
     "DESCRIPTIONS": [
       "Replaces #yToken #yof #y1st. Whenever you heal your HP, gain #bPower #bDamage #bImmune. NL Whenever you draw a #yStatus or #yCurse card, draw #b1 card."
     ]
