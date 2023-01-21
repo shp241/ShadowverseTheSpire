@@ -30,7 +30,6 @@ public class WardenOfTrigger
         this.baseBlock = 7;
         this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
         this.tags.add(AbstractShadowversePlayer.Enums.CONDEMNED);
-        this.exhaust = true;
     }
 
 

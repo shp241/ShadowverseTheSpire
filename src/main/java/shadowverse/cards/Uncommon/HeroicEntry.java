@@ -1,10 +1,10 @@
 package shadowverse.cards.Uncommon;
 
 import basemod.abstracts.CustomCard;
-import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsInHandAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
+import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -14,13 +14,12 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import shadowverse.action.HeroicEntryAction;
+import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import shadowverse.cards.Common.MachKnight;
-import shadowverse.cards.Temp.NaterranGreatTree;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 
-import java.util.ArrayList;
+import static shadowverse.characters.AbstractShadowversePlayer.Enums.HERO;
 
 public class HeroicEntry extends CustomCard {
     public static final String ID = "shadowverse:HeroicEntry";
@@ -32,7 +31,7 @@ public class HeroicEntry extends CustomCard {
 
     public HeroicEntry() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.SKILL, Royal.Enums.COLOR_YELLOW, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
-        this.cardsToPreview = (AbstractCard) new MachKnight();
+        this.cardsToPreview = new MachKnight();
         this.tags.add(AbstractShadowversePlayer.Enums.HERO);
         this.isMultiDamage = true;
     }
@@ -70,24 +69,49 @@ public class HeroicEntry extends CustomCard {
     }
 
     @Override
-    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+    public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
-        if (abstractPlayer.hand.group.size() < 7) {
-            addToBot((AbstractGameAction) new DrawCardAction(7 - abstractPlayer.hand.group.size()));
+        if (p.hand.group.size() < 7) {
+            addToBot(new DrawCardAction(7 - p.hand.group.size()));
         }
         if (inDanger()) {
-            AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
-            c.exhaustOnUseOnce = true;
-            c.exhaust = true;
-            c.isEthereal = true;
-            c.rawDescription += " NL " + TEXT + " 。";
-            c.costForTurn = 0;
-            c.isCostModified = true;
-            c.initializeDescription();
-            c.applyPowers();
-            addToBot((AbstractGameAction) new MakeTempCardInHandAction(c, 1));
+            addToBot(new AbstractGameAction() {
+                @Override
+                public void update() {
+                    AbstractCard c = cardsToPreview.makeStatEquivalentCopy();
+                    c.exhaustOnUseOnce = true;
+                    c.exhaust = true;
+                    c.isEthereal = true;
+                    c.rawDescription += " NL " + TEXT + " 。";
+                    c.costForTurn = 0;
+                    c.isCostModified = true;
+                    c.initializeDescription();
+                    c.applyPowers();
+                    p.hand.addToTop(c);
+                    this.isDone = true;
+                }
+            });
         }
-        addToBot( new HeroicEntryAction(this.upgraded, inDanger()));
+        addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
+        addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(4, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE, true));
+        addToBot(new AbstractGameAction() {
+            @Override
+            public void update() {
+                for (AbstractCard c : p.hand.group) {
+                    if (c.hasTag(HERO)) {
+                        addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
+                        addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(4, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE, true));
+                    }
+                    if (upgraded && !c.retain && !c.selfRetain) {
+                        c.retain = true;
+                        c.rawDescription += " NL " + TEXT;
+                        c.initializeDescription();
+                        c.applyPowers();
+                    }
+                }
+                this.isDone = true;
+            }
+        });
     }
 
     @Override

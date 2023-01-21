@@ -76,6 +76,9 @@ public class Barbaros
                         this.upgrade();
                         this.superFlash();
                     }
+                    for (AbstractCard c : abstractCards){
+                        addToBot(new ExhaustSpecificCardAction(c,AbstractDungeon.player.hand));
+                    }
                 }));
             this.hasFusion = true;
         }

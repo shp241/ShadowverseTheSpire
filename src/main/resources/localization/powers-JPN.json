@@ -1757,7 +1757,7 @@
     ]
   },
   "shadowverse:DeepSeaScoutPower": {
-    "NAME": "深海の斥候",
+    "NAME": "海原の斥候",
     "DESCRIPTIONS": [
       "このターン、 #y財宝カード をプレイする度、カードを #b",
       " 枚引く。"

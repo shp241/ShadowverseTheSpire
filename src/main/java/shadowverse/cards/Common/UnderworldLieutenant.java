@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -59,31 +60,32 @@ public class UnderworldLieutenant
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, this.block));
-        AbstractCard tmp = this.cardsToPreview.makeStatEquivalentCopy();
-        tmp.setCostForTurn(0);
-        tmp.costForTurn = 0;
-        tmp.isCostModified = true;
-        tmp.exhaustOnUseOnce = true;
-        tmp.exhaust = true;
-        tmp.rawDescription += " NL " + TEXT + " 。";
-        tmp.initializeDescription();
-        tmp.applyPowers();
         addToBot(new AbstractGameAction() {
             @Override
             public void update() {
-                AbstractDungeon.effectList.add(new ShowCardAndAddToHandEffect(tmp, MathUtils.random((float) Settings.WIDTH * 0.2F, (float)Settings.WIDTH * 0.8F), MathUtils.random((float)Settings.HEIGHT * 0.3F, (float)Settings.HEIGHT * 0.7F)));
-                isDone = true;
+                for (int i = 0 ; i < magicNumber ; i++ ){
+                    AbstractCard tmp = cardsToPreview.makeStatEquivalentCopy();
+                    tmp.setCostForTurn(0);
+                    tmp.costForTurn = 0;
+                    tmp.isCostModified = true;
+                    tmp.exhaustOnUseOnce = true;
+                    tmp.exhaust = true;
+                    tmp.rawDescription += " NL " + TEXT + " 。";
+                    tmp.initializeDescription();
+                    tmp.applyPowers();
+                    tmp.lighten(true);
+                    tmp.setAngle(0.0F);
+                    tmp.drawScale = 0.12F;
+                    tmp.targetDrawScale = 0.75F;
+                    tmp.current_x = Settings.WIDTH / 2.0F;
+                    tmp.current_y = Settings.HEIGHT / 2.0F;
+                    p.hand.addToTop(tmp);
+                }
+                p.hand.refreshHandLayout();
+                p.hand.applyPowers();
+                this.isDone = true;
             }
         });
-        if (upgraded) {
-            addToBot(new AbstractGameAction() {
-                @Override
-                public void update() {
-                    AbstractDungeon.effectList.add(new ShowCardAndAddToHandEffect(tmp, MathUtils.random((float) Settings.WIDTH * 0.2F, (float)Settings.WIDTH * 0.8F), MathUtils.random((float)Settings.HEIGHT * 0.3F, (float)Settings.HEIGHT * 0.7F)));
-                    isDone = true;
-                }
-            });
-        }
     }
 
 

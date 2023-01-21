@@ -17,8 +17,8 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.MonsterStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.monsters.city.Centurion;
 import com.megacrit.cardcrawl.monsters.city.Healer;
-import com.megacrit.cardcrawl.monsters.city.Mugger;
 import com.megacrit.cardcrawl.monsters.city.SnakePlant;
 import com.megacrit.cardcrawl.monsters.exordium.Cultist;
 import com.megacrit.cardcrawl.monsters.exordium.JawWorm;
@@ -72,13 +72,13 @@ public class TaketsumiBOSS extends CustomMonster implements SpriteCreature {
     }
 
     public TaketsumiBOSS() {
-        super(NAME, ID, 1600, 0.0F, -30F, 340.0F, 420.0F, null, 60.0F, 130.0F);
+        super(NAME, ID, 1200, 0.0F, -30F, 340.0F, 420.0F, null, 60.0F, 130.0F);
         this.animation = new SpriterAnimation("img/monsters/Taketsumi/Taketsumi.scml");
         this.dialogX = -100.0F * Settings.scale;
         this.dialogY = 10.0F * Settings.scale;
         this.type = EnemyType.BOSS;
         if (AbstractDungeon.ascensionLevel >= 9) {
-            setHp(1600);
+            setHp(1440);
         } else {
             setHp(1200);
         }
@@ -145,7 +145,7 @@ public class TaketsumiBOSS extends CustomMonster implements SpriteCreature {
                         m = new Healer(this.spawnX - 50 - 85.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
                         break;
                     case 6:
-                        m = new Mugger(this.spawnX - 50 - 85.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
+                        m = new Centurion(this.spawnX - 50 - 85.0F * (i + enemySlots.size()), MathUtils.random(-5.0F, 25.0F));
                         break;
                 }
                 if (enemySlots.get(i) == null){

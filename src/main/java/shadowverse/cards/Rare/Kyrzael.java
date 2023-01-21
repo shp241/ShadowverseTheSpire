@@ -3,24 +3,20 @@
 
  import basemod.abstracts.CustomCard;
  import com.badlogic.gdx.graphics.Color;
- import com.badlogic.gdx.math.MathUtils;
  import com.megacrit.cardcrawl.actions.AbstractGameAction;
  import com.megacrit.cardcrawl.actions.animations.VFXAction;
  import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
  import com.megacrit.cardcrawl.actions.common.DamageAction;
- import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
  import com.megacrit.cardcrawl.actions.utility.SFXAction;
  import com.megacrit.cardcrawl.cards.AbstractCard;
  import com.megacrit.cardcrawl.cards.DamageInfo;
  import com.megacrit.cardcrawl.characters.AbstractPlayer;
  import com.megacrit.cardcrawl.core.CardCrawlGame;
  import com.megacrit.cardcrawl.core.Settings;
- import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
  import com.megacrit.cardcrawl.localization.CardStrings;
  import com.megacrit.cardcrawl.monsters.AbstractMonster;
  import com.megacrit.cardcrawl.powers.MetallicizePower;
  import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
- import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToHandEffect;
  import com.megacrit.cardcrawl.vfx.combat.HeartBuffEffect;
  import shadowverse.cards.Uncommon.WardenOfTrigger;
  import shadowverse.characters.AbstractShadowversePlayer;
@@ -57,15 +53,6 @@
        addToBot(new VFXAction(new HeartBuffEffect(p.hb.cX, p.hb.cY)));
        addToBot(new VFXAction(new BorderFlashEffect(Color.BLUE, true)));
        addToBot(new DamageAction(m,new DamageInfo(p,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-       AbstractCard tmp = this.cardsToPreview.makeStatEquivalentCopy();
-       tmp.setCostForTurn(0);
-       tmp.costForTurn = 0;
-       tmp.isCostModified = true;
-       tmp.exhaustOnUseOnce = true;
-       tmp.exhaust = true;
-       tmp.rawDescription += " NL " + TEXT + " 。";
-       tmp.initializeDescription();
-       tmp.applyPowers();
        int amt = 4;
        for (AbstractCard ca : p.hand.group){
            if (ca != this && ca.hasTag(AbstractShadowversePlayer.Enums.MACHINE)){
@@ -76,15 +63,27 @@
        addToBot(new AbstractGameAction() {
            @Override
            public void update() {
-               AbstractDungeon.effectList.add(new ShowCardAndAddToHandEffect(tmp, MathUtils.random((float) Settings.WIDTH * 0.2F, (float)Settings.WIDTH * 0.8F), MathUtils.random((float)Settings.HEIGHT * 0.3F, (float)Settings.HEIGHT * 0.7F)));
-               isDone = true;
-           }
-       });
-       addToBot(new AbstractGameAction() {
-           @Override
-           public void update() {
-               AbstractDungeon.effectList.add(new ShowCardAndAddToHandEffect(tmp, MathUtils.random((float) Settings.WIDTH * 0.2F, (float)Settings.WIDTH * 0.8F), MathUtils.random((float)Settings.HEIGHT * 0.3F, (float)Settings.HEIGHT * 0.7F)));
-               isDone = true;
+               for (int i = 0 ; i < 2 ; i++ ){
+                   AbstractCard tmp = cardsToPreview.makeStatEquivalentCopy();
+                   tmp.setCostForTurn(0);
+                   tmp.costForTurn = 0;
+                   tmp.isCostModified = true;
+                   tmp.exhaustOnUseOnce = true;
+                   tmp.exhaust = true;
+                   tmp.rawDescription += " NL " + TEXT + " 。";
+                   tmp.initializeDescription();
+                   tmp.applyPowers();
+                   tmp.lighten(true);
+                   tmp.setAngle(0.0F);
+                   tmp.drawScale = 0.12F;
+                   tmp.targetDrawScale = 0.75F;
+                   tmp.current_x = Settings.WIDTH / 2.0F;
+                   tmp.current_y = Settings.HEIGHT / 2.0F;
+                   p.hand.addToTop(tmp);
+               }
+               p.hand.refreshHandLayout();
+               p.hand.applyPowers();
+               this.isDone = true;
            }
        });
    }

@@ -129,6 +129,8 @@ public class SkullFane
         switch (chosenBranch()){
             case 0:
                 addToBot(new SFXAction("SkullFane"));
+                addToBot(new VFXAction(new HeartMegaDebuffEffect()));
+                addToBot(new SkullFaneAction(this.magicNumber, this.block));
                 break;
             case 1:
                 if (Shadowverse.Accelerate(this) && this.type == CardType.SKILL) {
@@ -136,14 +138,14 @@ public class SkullFane
                     addToBot(new SkullFaneAccAction(this));
                 }else {
                     addToBot(new SFXAction("SkullFane2"));
+                    addToBot(new VFXAction(new HeartMegaDebuffEffect()));
+                    addToBot(new SkullFaneAction(this.magicNumber, this.block));
                     addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.damage, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE, true));
                 }
                 break;
             default:
                 break;
         }
-        addToBot(new VFXAction(new HeartMegaDebuffEffect()));
-        addToBot(new SkullFaneAction(this.magicNumber, this.block));
     }
 
 

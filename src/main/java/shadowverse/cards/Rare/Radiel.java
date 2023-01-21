@@ -107,16 +107,6 @@ public class Radiel extends CustomCard {
         this.initializeDescription();
     }
 
-    @Override
-    public void onMoveToDiscard() {
-        if (this.upgraded) {
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-        } else {
-            this.rawDescription = cardStrings.DESCRIPTION;
-        }
-        this.initializeDescription();
-    }
-
 
     @Override
     public AbstractCard makeCopy() {

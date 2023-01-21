@@ -4970,7 +4970,7 @@
     "DESCRIPTION": "八狱 NL 造成 !D! 点伤害。 NL 增加1张 *黄金之杯 到手中。 NL 如果消耗堆中的 财宝牌 数量为7以上，改为增加1张 *战栗的海贼旗 到手中。 NL 本回合内，每打出1张 财宝牌 ，对随机敌人造成 !M! 点伤害。"
   },
   "shadowverse:DeepSeaScout": {
-    "NAME": "深海斥候",
+    "NAME": "海原斥候",
     "DESCRIPTION": "八狱 NL 造成 !D! 点伤害。 NL 增加1张 *黄金之靴 到手中。 NL 如果消耗堆中的 财宝牌 数量为7以上，改为增加1张 *战栗的海贼旗 到手中。 NL 本回合内，每打出1张 财宝牌 ，抽1张牌。"
   },
   "shadowverse:StormWrackedFirstMate": {
