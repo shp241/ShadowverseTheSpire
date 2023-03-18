@@ -101,12 +101,12 @@ public class HeroicEntry extends CustomCard {
                     if (c.hasTag(HERO)) {
                         addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
                         addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(4, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE, true));
-                    }
-                    if (upgraded && !c.retain && !c.selfRetain) {
-                        c.retain = true;
-                        c.rawDescription += " NL " + TEXT;
-                        c.initializeDescription();
-                        c.applyPowers();
+                        if (upgraded && !c.retain && !c.selfRetain) {
+                            c.retain = true;
+                            c.rawDescription += " NL " + TEXT;
+                            c.initializeDescription();
+                            c.applyPowers();
+                        }
                     }
                 }
                 this.isDone = true;

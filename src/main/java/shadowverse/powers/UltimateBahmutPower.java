@@ -38,7 +38,7 @@ public class UltimateBahmutPower extends AbstractPower {
             if (this.amount == 1) {
                 addToBot((AbstractGameAction) new RemoveSpecificPowerAction(this.owner, this.owner, this));
                 if (this.owner instanceof AbstractMonster){
-                    if (!this.owner.isDeadOrEscaped()) {
+                    if (this.owner != null && !this.owner.isDeadOrEscaped()) {
                         addToBot((AbstractGameAction)new JudgementAction((AbstractCreature)this.owner, 99999));
                     }
                 }

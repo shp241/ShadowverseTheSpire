@@ -8,6 +8,7 @@ import com.evacipated.cardcrawl.modthespire.Loader;
 import shadowverse.helper.BanCardHelper;
 import shadowverse.cards.Status.*;
 import shadowverse.helper.ViewBanCardScreen;
+import shadowverse.relics.Alice;
 import shadowverseCharbosses.bosses.KMR.KMR;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
@@ -1322,6 +1323,23 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Windslasher", new Sfx(voicePath+"Windslasher.wav"));
             reflectedMap.put("GeneralMaximus", new Sfx(voicePath+"GeneralMaximus.wav"));
             reflectedMap.put("OliviaSylvia", new Sfx(voicePath+"OliviaSylvia.wav"));
+            reflectedMap.put("SacredSheep", new Sfx(voicePath+"SacredSheep.wav"));
+            reflectedMap.put("Judith", new Sfx(voicePath+"Judith.wav"));
+            reflectedMap.put("Judith3", new Sfx(voicePath+"Judith3.wav"));
+            reflectedMap.put("Judith4", new Sfx(voicePath+"Judith4.wav"));
+            reflectedMap.put("Judith5", new Sfx(voicePath+"Judith5.wav"));
+            reflectedMap.put("Judith6", new Sfx(voicePath+"Judith6.wav"));
+            reflectedMap.put("Judith7", new Sfx(voicePath+"Judith7.wav"));
+            reflectedMap.put("Ceridwen3", new Sfx(voicePath+"Ceridwen3.wav"));
+            reflectedMap.put("Ceridwen3_Acc", new Sfx(voicePath+"Ceridwen3_Acc.wav"));
+            reflectedMap.put("Kali", new Sfx(voicePath+"Kali.wav"));
+            reflectedMap.put("DancingMiniSoulDevil", new Sfx(voicePath+"DancingMiniSoulDevil.wav"));
+            reflectedMap.put("DancingMiniSoulDevil-Eff", new Sfx(voicePath+"DancingMiniSoulDevil_Eff.wav"));
+            reflectedMap.put("Signa", new Sfx(voicePath+"Signa.wav"));
+            reflectedMap.put("Signa_Eff", new Sfx(voicePath+"Signa_Eff.wav"));
+            reflectedMap.put("Yuzuki", new Sfx(voicePath+"Yuzuki.wav"));
+            reflectedMap.put("CrimsonVirtue", new Sfx(voicePath+"CrimsonVirtue.wav"));
+            reflectedMap.put("Alice", new Sfx(voicePath+"Alice.wav"));
         }
     }
 
@@ -2406,6 +2424,16 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard( new Windslasher());
         BaseMod.addCard( new GeneralMaximus());
         BaseMod.addCard( new OliviaSylvia());
+        BaseMod.addCard( new SacredSheep());
+        BaseMod.addCard( new Judith());
+        BaseMod.addCard( new Kali());
+        BaseMod.addCard( new DancingMiniSoulDevil());
+        BaseMod.addCard( new Signa());
+        BaseMod.addCard( new Yuzuki());
+        BaseMod.addCard( new ScorpionOfTheDepths());
+        BaseMod.addCard( new CrimsonVirtue());
+        BaseMod.addCard( new Seox());
+        BaseMod.addCard( new shadowverse.cards.Neutral.Alice());
         logger.info("Success");
     }
 

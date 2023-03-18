@@ -1769,5 +1769,12 @@
       "Whenever you play a #yLoot card this turn, summon #b",
       " #yCannoneer (Up to 5 times)."
     ]
+  },
+  "shadowverse:AgentOfTheCommandmentsPower": {
+    "NAME": "Agent Of The Commandments",
+    "DESCRIPTIONS": [
+      "At the end of your turn, heal #b",
+      " ."
+    ]
   }
 }

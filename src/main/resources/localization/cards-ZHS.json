@@ -513,7 +513,11 @@
   },
   "shadowverse:Zeus": {
     "NAME": "至高之神·宙斯",
-    "DESCRIPTION": "可以被多次 升级 。 NL 从下列能力之中，随机发动1种能力。此行动将进行 !M! X次。 NL 「回复5点生命值」 NL 「移除所有敌人的格挡并获得3点力量」 NL 「对全体敌人造成 !D! 点伤害」 NL 「全体敌人获得2层 虚弱 和4层 中毒」 NL 「获得 !B! 点 格挡」 NL 消耗 。"
+    "DESCRIPTION": "可以被多次 升级 。 NL 从下列能力之中，随机发动1种能力。 NL 此行动将进行X+ !M! +本场战斗已升级攻击牌次数次。 NL 「回复5点生命值」「移除所有敌人的格挡并获得3点力量」 NL 「对全体敌人造成 !D! 点伤害」「获得 !B! 点 格挡」 NL 「全体敌人获得2层 虚弱 和4层 中毒」  NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "本场战斗已升级 ",
+      " 张攻击牌。"
+    ]
   },
   "shadowverse:StarBright": {
     "NAME": "星辉女神",
@@ -529,7 +533,11 @@
   },
   "shadowverse:Grimnir": {
     "NAME": "虚无的嚎风·格里姆尼尔",
-    "DESCRIPTION": "对随机敌人造成 !D! 点伤害 !M! 次。"
+    "DESCRIPTION": "对随机敌人造成 !D! 点伤害。 NL 如果本场战斗已升级5张以上的攻击牌，改为对随机敌人造成 !D! 点伤害 !M! 次。",
+    "EXTENDED_DESCRIPTION": [
+      "本场战斗已升级 ",
+      " 张攻击牌。"
+    ]
   },
   "shadowverse:SlashOfOne": {
     "NAME": "唯我的一刀",
@@ -1803,8 +1811,7 @@
   },
   "shadowverse:BeastEmpress": {
     "NAME": "魔兽女帝·涅蕾雅",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张本回合耗能为0的 *水源魔兽 到手中。 NL 渴望 全体敌人失去2点 力量 和 敏捷 。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张本回合耗能为0的 *水源魔兽+ 到手中。 NL 渴望 全体敌人失去2点 力量 和 敏捷 。 NL 消耗 。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张本回合耗能为0的 *水源魔兽 到手中。 NL 渴望 则升级这张 *水源魔兽 ，全体敌人失去2点 力量 和 敏捷 。 NL 消耗 。"
   },
   "shadowverse:CorruptedBat": {
     "NAME": "躁狂蝙蝠",
@@ -4226,7 +4233,7 @@
     "NAME": "血之契约",
     "DESCRIPTION": "失去2点生命。 NL 下回合额外抽 !M! 张牌。"
   },
-  "shadowverse:Seox": {
+  "shadowverse:EnSeox": {
     "NAME": "神狼·希斯",
     "DESCRIPTION": "造成 !D! 点伤害2次。 NL 奥义 3 \b再造成2次伤害。 NL 解放奥义 6 \b再造成2次伤害。"
   },
@@ -4279,7 +4286,11 @@
   },
   "shadowverse:WolflingStruggle": {
     "NAME": "幼狼的奋战",
-    "DESCRIPTION": "宴乐 。 NL 造成 !D! 点伤害。 NL 抽1张牌。 NL 消耗 。"
+    "DESCRIPTION": "宴乐 。 NL 造成 !D! 点伤害。 NL 如果本场战斗中已升级攻击牌的次数为5以上，改为造成4倍伤害。 NL 抽1张牌。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "本场战斗已升级 ",
+      " 张攻击牌。"
+    ]
   },
   "shadowverse:Yukishima": {
     "NAME": "真理的大文豪·幸岛",
@@ -4910,7 +4921,7 @@
   },
   "shadowverse:ExecutorOfTheOath": {
     "NAME": "誓约干部",
-    "DESCRIPTION": "八狱 NL 每当回复生命时，耗能减少 [E] 。 NL 获得 !B! 点 格挡 。"
+    "DESCRIPTION": "八狱 NL 每当回复生命时，耗能减少 [E] 。 NL 获得 !B! 点 格挡 。 NL 回复2点生命。"
   },
   "shadowverse:AgentOfTheCommandments": {
     "NAME": "戒律间谍",
@@ -5010,5 +5021,74 @@
   "shadowverse:OliviaSylvia": {
     "NAME": "庭园追忆·奥莉薇与希尔薇娅",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加2张 *进化点 到手中。 NL 对全体敌人造成 !D! 点伤害，消耗堆中每有1张 *进化点 ，伤害增加 !M! 点。 NL 获得X点能量，X为消耗堆中的 *进化点 数量。"
+  },
+  "shadowverse:SacredSheep": {
+    "NAME": "圣启梦羊",
+    "DESCRIPTION": "下3次受到的伤害为0。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION":"下3次受到的伤害为0。"
+  },
+  "shadowverse:Judith": {
+    "NAME": "万物见证者·洁蒂丝",
+    "DESCRIPTION": "这张卡视为所有种类。 NL 造成 !D! 点伤害。 NL 爆能强化 1:给予 !M! 层 易伤 。 NL 爆能强化 2:抽 !M! 张牌。 NL 爆能强化 3:回复2点生命。 NL 爆能强化4 :下次受到的伤害为0。 NL 爆能强化 5:再造成 !D! 点伤害。"
+  },
+  "shadowverse:Ceridwen3": {
+    "NAME": "双魂的永恒·关德温",
+    "DESCRIPTION": "结晶 0 : 葬送 1张牌，抽1张牌，对随机敌人造成4点伤害。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 亡者召还 4 ，并再将1张耗能为0，且带有 虚无 和 消耗 ，伤害和格挡为0的复制品加入手中。"
+  },
+  "shadowverse:Kali": {
+    "NAME": "迦梨",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 渴望 则增加1张 *进化点 到手中。"
+  },
+  "shadowverse:DancingMiniSoulDevil": {
+    "NAME": "舞踏迷你灵魔",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 手中其他攻击牌升级时，这张牌自动 升级 。"
+  },
+  "shadowverse:Signa": {
+    "NAME": "封印的凶狼·希古娜",
+    "DESCRIPTION": "对全体敌人造成 !D! 点伤害。 NL 获得1层残影。 NL 手中其他攻击牌升级时，这张牌自动 升级 。",
+    "UPGRADE_DESCRIPTION":"对全体敌人造成 !D! 点伤害。 NL 获得1层残影。 NL 如果本场战斗已升级3张以上攻击牌，额外对全体敌人造成 !M! 点伤害。 NL 如果已升级7张以上，获得1点 力量 和 敏捷 。",
+    "EXTENDED_DESCRIPTION": [
+      "本场战斗已升级 ",
+      " 张攻击牌。"
+    ]
+  },
+  "shadowverse:Yuzuki": {
+    "NAME": "鲜血领主·夕月",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果本场战斗已升级3张以上攻击牌，给予2层 易伤 并抽1张牌。 NL 如果已升级5张以上，给予2层 虚弱 并抽1张牌。",
+    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害2次。 NL 增加1张 *进化点 到手中。 NL 如果本场战斗已升级3张以上攻击牌，给予2层 易伤 并抽1张牌。 NL 如果已升级5张以上，给予2层 虚弱 并抽1张牌。",
+    "EXTENDED_DESCRIPTION": [
+      "本场战斗已升级 ",
+      " 张攻击牌。"
+    ]
+  },
+  "shadowverse:ScorpionOfTheDepths": {
+    "NAME": "沼泽地的大蝎",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 复仇 则增加1张 *进化点 到手中。"
+  },
+  "shadowverse:CrimsonVirtue": {
+    "NAME": "血红仁义",
+    "DESCRIPTION": "造成 !D! 点伤害，抽1张牌。 NL 如果本场战斗已升级5张以上攻击牌，额外造成一次伤害。",
+    "EXTENDED_DESCRIPTION": [
+      "本场战斗已升级 ",
+      " 张攻击牌。"
+    ]
+  },
+  "shadowverse:Seox": {
+    "NAME": "神狼·希斯",
+    "DESCRIPTION": "升级时降低奥义数。 NL 造成 !D! 点伤害2次。 NL 奥义 3:再造成2次伤害。 NL 解放奥义 6:再造成2次伤害。",
+    "EXTENDED_DESCRIPTION": [
+      "造成 !D! 点伤害2次。 NL 奥义 ",
+      ":再造成2次伤害。 NL 限定 解放奥义 ",
+      ":再造成2次伤害。"
+    ]
+  },
+  "shadowverse:Alice": {
+    "NAME": "奇幻之梦·爱丽丝",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果本场战斗已升级3张以上攻击牌，升级这张牌并发现2张卡。 NL 如果已升级7张以上，造成的伤害翻倍。",
+    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害，获得1点能量。 NL 如果本场战斗已升级3张以上攻击牌，发现2张卡。 NL 如果已升级7张以上，造成的伤害翻倍。",
+    "EXTENDED_DESCRIPTION": [
+      "本场战斗已升级 ",
+      " 张攻击牌。"
+    ]
   }
 }

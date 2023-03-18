@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -45,6 +46,7 @@ public class ExecutorOfTheOath extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         addToBot(new SFXAction("ExecutorOfTheOath"));
         addToBot(new GainBlockAction(p,this.block));
+        addToBot(new HealAction(p,p,2));
         this.cost = 4;
     }
 

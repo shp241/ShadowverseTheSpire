@@ -1,7 +1,6 @@
 package shadowverse.cards.Common;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -11,6 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.cards.AbstractCrystalizeCard;
 import shadowverse.cards.Curse.Indulgence;
@@ -56,14 +56,16 @@ public class DirtyPriest
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         if (this.type==CardType.POWER && this.costForTurn == 0){
-            addToBot((AbstractGameAction)new SFXAction("DirtyPriest_Acc"));
+            addToBot(new SFXAction("DirtyPriest_Acc"));
         }else {
-            addToBot((AbstractGameAction)new SFXAction("DirtyPriest"));
-            addToBot((AbstractGameAction)new GainBlockAction(p,this.block));
-            addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
-            addToBot((AbstractGameAction)new MakeTempCardInDrawPileAction(this.cardsToPreview,1,true,true,false));
-            addToBot((AbstractGameAction)new MakeTempCardInDiscardAction(this.cardsToPreview,1));
-            addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
+            addToBot(new SFXAction("DirtyPriest"));
+            addToBot(new GainBlockAction(p,this.block));
+            addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+            addToBot(new MakeTempCardInDrawPileAction(this.cardsToPreview,1,true,true,false));
+            addToBot(new MakeTempCardInDiscardAction(this.cardsToPreview,1));
+            if (EnergyPanel.getCurrentEnergy() < 4){
+                addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
+            }
         }
     }
 
@@ -74,7 +76,7 @@ public class DirtyPriest
 
     @Override
     public void onStartOfTurn(AmuletOrb paramOrb) {
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+        addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
     }
 
     @Override

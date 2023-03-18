@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.NextTurnBlockPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.cards.AbstractCrystalizeCard;
 import shadowverse.cards.Curse.Indulgence;
@@ -57,14 +58,16 @@ public class ImpiousBishop
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         if (this.type==CardType.POWER && this.costForTurn == 0){
-            addToBot((AbstractGameAction)new SFXAction("ImpiousBishop_Acc"));
+            addToBot(new SFXAction("ImpiousBishop_Acc"));
         }else {
-            addToBot((AbstractGameAction)new SFXAction("ImpiousBishop"));
-            addToBot((AbstractGameAction)new GainBlockAction(p,this.block));
+            addToBot(new SFXAction("ImpiousBishop"));
+            addToBot(new GainBlockAction(p,this.block));
             addToBot(new ApplyPowerAction(p,p,new NextTurnBlockPower(p,this.block),this.block));
             addToBot(new HealAction(p,p,3));
-            addToBot((AbstractGameAction)new MakeTempCardInDiscardAction(this.cardsToPreview,2));
-            addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
+            addToBot(new MakeTempCardInDiscardAction(this.cardsToPreview,2));
+            if (EnergyPanel.getCurrentEnergy() < 4){
+                addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
+            }
         }
     }
 
@@ -75,13 +78,13 @@ public class ImpiousBishop
 
     @Override
     public void onStartOfTurn(AmuletOrb paramOrb) {
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+        addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
     }
 
     @Override
     public void onEvoke(AmuletOrb paramOrb) {
-        addToBot((AbstractGameAction)new SFXAction("ImpiousBishop"));
-        addToBot((AbstractGameAction)new GainBlockAction(AbstractDungeon.player,this.block));
+        addToBot(new SFXAction("ImpiousBishop"));
+        addToBot(new GainBlockAction(AbstractDungeon.player,this.block));
         addToBot(new HealAction(AbstractDungeon.player,AbstractDungeon.player,3));
     }
 

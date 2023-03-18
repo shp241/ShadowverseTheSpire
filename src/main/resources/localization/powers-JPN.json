@@ -1769,5 +1769,12 @@
       "このターン、 #y財宝カード をプレイする度、 #yキャノンクルー #b",
       " 体を出す(上限は5回)。"
     ]
+  },
+  "shadowverse:AgentOfTheCommandmentsPower": {
+    "NAME": "戒律の諜報員",
+    "DESCRIPTIONS": [
+      "ターン終了時、HPを #b",
+      " 回復する。"
+    ]
   }
 }

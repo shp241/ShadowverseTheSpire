@@ -43,8 +43,8 @@ import shadowverse.characters.Witchcraft;
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new SFXAction("MasterMageLevi"));
-     addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+     addToBot(new SFXAction("MasterMageLevi"));
+     addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
      boolean powerExists = false;
      for (AbstractPower pow : abstractPlayer.powers) {
        if (pow.ID.equals("shadowverse:EarthEssence")) {
@@ -56,8 +56,8 @@ import shadowverse.characters.Witchcraft;
          if (abstractPlayer instanceof  AbstractShadowversePlayer){
              ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
          }
-       addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)abstractPlayer, DamageInfo.createDamageMatrix(this.damage, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true));
-       addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new EarthEssence((AbstractCreature)abstractPlayer, -this.magicNumber), -this.magicNumber));
+       addToBot(new DamageAllEnemiesAction(abstractPlayer, DamageInfo.createDamageMatrix(this.damage, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true));
+       addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new EarthEssence(abstractPlayer, -this.magicNumber), -this.magicNumber));
      } 
    }
  

@@ -38,8 +38,8 @@ public class DeepSeaScout extends CustomCard {
     }
 
     public DeepSeaScout() {
-        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
-        this.baseDamage = 4;
+        super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Royal.Enums.COLOR_YELLOW, CardRarity.COMMON, CardTarget.ENEMY);
+        this.baseDamage = 6;
         this.tags.add(AbstractShadowversePlayer.Enums.CONDEMNED);
     }
 

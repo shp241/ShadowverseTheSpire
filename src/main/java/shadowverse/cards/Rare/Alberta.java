@@ -32,7 +32,7 @@ import shadowverse.powers.AlbertaPower;
 
    public Alberta() {
      super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.RARE, CardTarget.ENEMY);
-     this.baseDamage = 8;
+     this.baseDamage = 6;
      this.exhaust = true;
    }
  

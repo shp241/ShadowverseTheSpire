@@ -4219,7 +4219,7 @@
     "NAME": "피의 계약",
     "DESCRIPTION": "체력을 2 잃습니다. NL 다음 턴 카드를 !M! 장 더 뽑습니다."
   },
-  "shadowverse:Seox": {
+  "shadowverse:EnSeox": {
     "NAME": "늑대신 시스",
     "DESCRIPTION": "피해를 !D! 만큼 2번 줍니다. NL 오의 3: 1번 반복합니다. NL 해방오의 6: 2번 반복합니다."
   },

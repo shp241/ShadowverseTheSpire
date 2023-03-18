@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.cards.Temp.AbyssalColonel_Crystalize;
 import shadowverse.characters.AbstractShadowversePlayer;
@@ -71,7 +72,9 @@ public class AbyssalColonel
         } else {
             addToBot(new GainBlockAction(abstractPlayer, this.block));
             addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
-            addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
+            if (EnergyPanel.getCurrentEnergy() < 8){
+                addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
+            }
         }
     }
 

@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
@@ -30,6 +31,7 @@ public class WardenOfHonor
         this.baseBlock = 9;
         this.tags.add(AbstractShadowversePlayer.Enums.CONDEMNED);
         this.tags.add(AbstractShadowversePlayer.Enums.CRYSTALLIZE);
+        this.exhaust = true;
     }
 
 
@@ -39,15 +41,6 @@ public class WardenOfHonor
             upgradeBlock(3);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
-        }
-    }
-
-    public void degrade() {
-        if (this.upgraded) {
-            this.rawDescription = cardStrings.DESCRIPTION;
-            initializeDescription();
-            this.superFlash();
-            this.applyPowers();
         }
     }
 
@@ -73,13 +66,15 @@ public class WardenOfHonor
             this.upgrade();
             addToBot(new GainBlockAction(abstractPlayer, this.block));
             addToBot(new GainBlockAction(abstractPlayer, this.block));
-            addToBot(new ExhaustSpecificCardAction(this,abstractPlayer.hand));
+            AbstractCard copy = this.makeCopy();
+            if(abstractPlayer.hasRelic(KagemitsuSword.ID)){
+                copy.upgrade();
+            }
+            addToBot(new MakeTempCardInDiscardAction(copy,1));
         }
-        this.degrade();
-        if(abstractPlayer.hasRelic(KagemitsuSword.ID)){
-            this.upgrade();
+        if (EnergyPanel.getCurrentEnergy() < 4){
+            addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
         }
-        addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
 
     }
 

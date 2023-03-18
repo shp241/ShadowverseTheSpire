@@ -1769,5 +1769,12 @@
       "本回合内，每当打出 #y财宝 牌时，召唤 #b",
       " 个 #y加农炮水手 (上限为5次)。"
     ]
+  },
+  "shadowverse:AgentOfTheCommandmentsPower": {
+    "NAME": "戒律间谍",
+    "DESCRIPTIONS": [
+      "回合结束时，恢复 #b",
+      " 点生命值。"
+    ]
   }
 }

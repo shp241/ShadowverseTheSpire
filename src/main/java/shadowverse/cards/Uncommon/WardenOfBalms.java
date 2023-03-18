@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Elf;
@@ -64,7 +65,9 @@ public class WardenOfBalms extends CustomCard {
             addToBot(new GainBlockAction(p, this.block));
             addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.magicNumber, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true));
             addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.magicNumber, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true));
-            addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
+            if (EnergyPanel.getCurrentEnergy() < 6){
+                addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
+            }
         }
     }
 

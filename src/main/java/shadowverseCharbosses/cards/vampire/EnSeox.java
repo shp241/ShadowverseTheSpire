@@ -23,7 +23,7 @@ import java.util.ArrayList;
 public class EnSeox extends AbstractBossCard {
     public static final String ID = "shadowverse:EnSeox";
 
-    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Seox");
+    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:EnSeox");
 
     public static final String IMG_PATH = "img/cards/Seox.png";
 
@@ -38,15 +38,15 @@ public class EnSeox extends AbstractBossCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (AbstractDungeon.actionManager.turn>5){
-            addToBot((AbstractGameAction)new SFXAction("Seox_SSA"));
+            addToBot(new SFXAction("Seox_SSA"));
         }else if (AbstractDungeon.actionManager.turn>2){
-            addToBot((AbstractGameAction)new SFXAction("Seox_SA"));
+            addToBot(new SFXAction("Seox_SA"));
         }else {
-            addToBot((AbstractGameAction)new SFXAction("Seox"));
+            addToBot(new SFXAction("Seox"));
         }
         for (int i=0;i<this.magicNumber;i++){
-            addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new ClawEffect(p.hb.cX, p.hb.cY, Color.SCARLET, Color.ORANGE), 0.1F));
-            addToBot((AbstractGameAction)new DamageAction((AbstractCreature)p, new DamageInfo((AbstractCreature)m, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+            addToBot(new VFXAction((AbstractGameEffect)new ClawEffect(p.hb.cX, p.hb.cY, Color.SCARLET, Color.ORANGE), 0.1F));
+            addToBot(new DamageAction(p, new DamageInfo(m, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
         }
     }
 

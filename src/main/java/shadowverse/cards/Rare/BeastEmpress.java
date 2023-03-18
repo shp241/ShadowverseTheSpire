@@ -41,27 +41,25 @@ public class BeastEmpress
         if (!this.upgraded) {
             upgradeName();
             upgradeBlock(5);
-            this.cardsToPreview.upgrade();
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            initializeDescription();
         }
     }
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new SFXAction("BeastEmpress"));
-        addToBot((AbstractGameAction) new GainBlockAction(abstractPlayer, this.block));
+        addToBot(new SFXAction("BeastEmpress"));
+        addToBot(new GainBlockAction(abstractPlayer, this.block));
         AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
         c.setCostForTurn(0);
-        addToBot((AbstractGameAction) new MakeTempCardInHandAction(c));
         if (abstractPlayer.hasPower(EpitaphPower.POWER_ID) || abstractPlayer.hasPower(AvaricePower.POWER_ID)) {
+            c.upgrade();
             for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                 if (!mo.isDeadOrEscaped()) {
-                    addToBot((AbstractGameAction) new ApplyPowerAction(mo, abstractPlayer, (AbstractPower) new StrengthPower(mo, -2), -2));
-                    addToBot((AbstractGameAction) new ApplyPowerAction(mo, abstractPlayer, (AbstractPower) new DexterityPower(mo, -2), -2));
+                    addToBot(new ApplyPowerAction(mo, abstractPlayer, new StrengthPower(mo, -2), -2));
+                    addToBot(new ApplyPowerAction(mo, abstractPlayer, new DexterityPower(mo, -2), -2));
                 }
             }
         }
+        addToBot(new MakeTempCardInHandAction(c));
     }
 
 

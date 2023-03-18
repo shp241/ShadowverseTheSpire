@@ -4220,7 +4220,7 @@
     "NAME": "Blood Pact",
     "DESCRIPTION": "Lose 2 HP. NL Draw !M! additional cards next turn."
   },
-  "shadowverse:Seox": {
+  "shadowverse:EnSeox": {
     "NAME": "Seox, Heavenly Howl",
     "DESCRIPTION": "Deal !D! damage twice. NL Skybound_Art 3: Repeat this 1 time. NL Super_Skybound_Art 6: Repeat this 2 times."
   },
@@ -4836,7 +4836,7 @@
   "shadowverse:Istyndet": {
     "NAME": "Istyndet, Soul Convict",
     "DESCRIPTION": "Condemned NL Gain !B! Block. NL If you've played 10 or more cards with Last_Words this combat, apply 1 Weak and Vulnerable to all enemies and Banish all non-skill cards in your hand.  NL Last_Words: Gain 3 Shadows.",
-    "UPGRADE_DESCRIPTION":"Condemned NL Gain !B! Block. NL Put a *Skullfish into your hand and change its cost to 0.  NL If you've played 10 or more cards with Last_Words this combat, apply 1 Weak and Vulnerable to all enemies and Banish all non-skill cards in your hand.  NL Last_Word: Gain 3 Shadows",
+    "UPGRADE_DESCRIPTION":"Condemned NL Gain !B! Block. NL Put a *Skullfish into your hand and change its cost to 0.  NL If you've played 10 or more cards with Last_Words this combat, apply 1 Weak and Vulnerable to all enemies and Banish all non-skill cards in your hand.  NL Last_Words: Gain 3 Shadows",
     "EXTENDED_DESCRIPTION": [
       " NL (Played ",
       " cards with Last_Words.)"

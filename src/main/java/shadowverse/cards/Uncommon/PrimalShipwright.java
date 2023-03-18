@@ -112,7 +112,9 @@ public class PrimalShipwright
             addToBot(new SFXAction("PrimalShipwright"));
             calculateCardDamage(abstractMonster);
             addToBot(new DamageAction(abstractMonster, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-            addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
+            if (EnergyPanel.getCurrentEnergy() < 6){
+                addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
+            }
         }
     }
 

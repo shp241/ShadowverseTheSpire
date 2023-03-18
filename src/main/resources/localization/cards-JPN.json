@@ -4226,7 +4226,7 @@
     "NAME": "血の取引",
     "DESCRIPTION": "HPを2失う。 NL 次のターン、追加でカードを !M! 枚引く。"
   },
-  "shadowverse:Seox": {
+  "shadowverse:EnSeox": {
     "NAME": "神狼・シス",
     "DESCRIPTION": "!D! ダメージを2回与える。 NL 奥義 3 \bもう2回ダメージを与える。 NL 解放奥義 6 \bもう2回ダメージを与える。"
   },

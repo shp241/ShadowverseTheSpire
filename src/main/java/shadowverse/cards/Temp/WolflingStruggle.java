@@ -11,10 +11,10 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.characters.AbstractShadowversePlayer;
-import shadowverse.characters.Royal;
 import shadowverse.characters.Vampire;
 
 
@@ -27,7 +27,7 @@ public class WolflingStruggle extends CustomCard {
 
     public WolflingStruggle() {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Vampire.Enums.COLOR_SCARLET, CardRarity.SPECIAL, CardTarget.ENEMY);
-        this.baseDamage = 4;
+        this.baseDamage = 2;
         this.exhaust = true;
         this.tags.add(AbstractShadowversePlayer.Enums.FES);
     }
@@ -37,16 +37,34 @@ public class WolflingStruggle extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(3);
+            upgradeDamage(2);
         }
     }
 
 
+    public void applyPowers() {
+        super.applyPowers();
+        int count = 0;
+        if (AbstractDungeon.player instanceof AbstractShadowversePlayer){
+            count = ((AbstractShadowversePlayer) AbstractDungeon.player).upgradedThisCombat;
+        }
+        this.rawDescription = cardStrings.DESCRIPTION;
+        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + count;
+        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[1];
+        initializeDescription();
+    }
+
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("WolflingStruggle"));
+        addToBot(new SFXAction("WolflingStruggle"));
         addToBot(new DrawCardAction(1));
-        addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        int dmg = this.damage;
+        if (abstractPlayer instanceof AbstractShadowversePlayer){
+            if (((AbstractShadowversePlayer) abstractPlayer).upgradedThisCombat >= 5){
+                dmg *= 4;
+            }
+        }
+        addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, dmg, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
     }
 
 
