@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.powers.BufferPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import shadowverse.Shadowverse;
+import shadowverse.cards.Status.EvolutionPoint;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Nemesis;
 import shadowverse.powers.CutthroatPower;
@@ -87,6 +88,7 @@ public class Judith extends CustomCard {
             addToBot(new HealAction(p,p,2));
             addToBot(new ApplyPowerAction(p,p,new BufferPower(p,1),1));
             addToBot(new DamageAction(m,new DamageInfo(p,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+            addToBot(new MakeTempCardInHandAction(new EvolutionPoint()));
             if (p.hasPower(CutthroatPower.POWER_ID)){
                 addToBot(new GainEnergyAction(4));
             }

@@ -1563,7 +1563,6 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard( new HeavensDoor());
         BaseMod.addCard( new Technolord());
         BaseMod.addCard( new LegendaryFighterA());
-
         BaseMod.addCard( new Gabriel());
         BaseMod.addCard( new Kuon());
         BaseMod.addCard( new PaperShikigami());

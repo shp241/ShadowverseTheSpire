@@ -44,31 +44,17 @@ public class Yuzuki extends CustomCard {
         }
     }
 
-
-    public void applyPowers() {
-        super.applyPowers();
-        int count = 0;
-        if (AbstractDungeon.player instanceof AbstractShadowversePlayer) {
-            count = ((AbstractShadowversePlayer) AbstractDungeon.player).upgradedThisCombat;
-        }
-        this.rawDescription = cardStrings.DESCRIPTION;
-        if (this.upgraded)
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + count;
-        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[1];
-        initializeDescription();
-    }
-
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         addToBot(new SFXAction("Yuzuki"));
         addToBot(new DamageAction(abstractMonster, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
         if (this.upgraded){
             addToBot(new DamageAction(abstractMonster, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
-            addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeSameInstanceOf()));
+            addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
         }
         int count = 0;
-        if (AbstractDungeon.player instanceof AbstractShadowversePlayer) {
-            count = ((AbstractShadowversePlayer) AbstractDungeon.player).upgradedThisCombat;
+        for (AbstractCard c : AbstractDungeon.player.exhaustPile.group) {
+            if (c instanceof EvolutionPoint)
+                count++;
         }
         if (count > 2){
             addToBot(new ApplyPowerAction(abstractMonster,p,new VulnerablePower(abstractMonster,2,false),2));

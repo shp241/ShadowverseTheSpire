@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.ThrowDaggerEffect;
+import shadowverse.cards.Status.EvolutionPoint;
 import shadowverse.characters.AbstractShadowversePlayer;
 
 public class Grimnir extends AbstractNeutralCard{
@@ -36,26 +37,14 @@ public class Grimnir extends AbstractNeutralCard{
             upgradeName();
         }
     }
-
-    public void applyPowers() {
-        super.applyPowers();
-        int count = 0;
-        if (AbstractDungeon.player instanceof AbstractShadowversePlayer) {
-            count = ((AbstractShadowversePlayer) AbstractDungeon.player).upgradedThisCombat;
-        }
-        this.rawDescription = cardStrings.DESCRIPTION;
-        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + count;
-        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[1];
-        initializeDescription();
-    }
-    
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new SFXAction("Grimnir"));
         addToBot( new AttackDamageRandomEnemyAction(this, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         int count = 0;
-        if (AbstractDungeon.player instanceof AbstractShadowversePlayer) {
-            count = ((AbstractShadowversePlayer) AbstractDungeon.player).upgradedThisCombat;
+        for (AbstractCard c : AbstractDungeon.player.exhaustPile.group) {
+            if (c instanceof EvolutionPoint)
+                count++;
         }
         if (count > 4){
             for (int i = 0; i < this.magicNumber-1; i++) {

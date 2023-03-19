@@ -8,6 +8,7 @@
  import com.megacrit.cardcrawl.actions.common.DamageAction;
  import com.megacrit.cardcrawl.actions.common.GainBlockAction;
  import com.megacrit.cardcrawl.actions.common.LoseHPAction;
+ import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
  import com.megacrit.cardcrawl.actions.utility.SFXAction;
  import com.megacrit.cardcrawl.cards.AbstractCard;
  import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -18,6 +19,7 @@
  import com.megacrit.cardcrawl.monsters.AbstractMonster;
  import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
  import com.megacrit.cardcrawl.vfx.combat.ClawEffect;
+ import shadowverse.cards.Status.EvolutionPoint;
  import shadowverse.characters.Vampire;
 
 
@@ -32,6 +34,7 @@
    public DancingMiniSoulDevil() {
      super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Vampire.Enums.COLOR_SCARLET, CardRarity.COMMON, CardTarget.SELF);
      this.baseBlock = 9;
+     this.cardsToPreview = new EvolutionPoint();
    }
  
    
@@ -47,10 +50,17 @@
        addToBot(new SFXAction("DancingMiniSoulDevil"));
        addToBot(new GainBlockAction(p,this.block));
    }
- 
- 
-   
-   public AbstractCard makeCopy() {
+
+     @Override
+     public void triggerOnOtherCardPlayed(AbstractCard c) {
+         if (c instanceof EvolutionPoint && !this.upgraded){
+             this.upgrade();
+             addToBot(new SFXAction("DancingMiniSoulDevil_Eff"));
+             addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+         }
+     }
+
+     public AbstractCard makeCopy() {
      return (AbstractCard)new DancingMiniSoulDevil();
    }
  }

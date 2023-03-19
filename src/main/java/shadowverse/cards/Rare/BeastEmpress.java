@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import shadowverse.cards.Common.FloodBehemoth;
+import shadowverse.cards.Status.EvolutionPoint;
 import shadowverse.characters.Vampire;
 import shadowverse.powers.AvaricePower;
 import shadowverse.powers.EpitaphPower;
@@ -51,7 +52,7 @@ public class BeastEmpress
         AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
         c.setCostForTurn(0);
         if (abstractPlayer.hasPower(EpitaphPower.POWER_ID) || abstractPlayer.hasPower(AvaricePower.POWER_ID)) {
-            c.upgrade();
+            addToBot(new MakeTempCardInHandAction(new EvolutionPoint()));
             for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                 if (!mo.isDeadOrEscaped()) {
                     addToBot(new ApplyPowerAction(mo, abstractPlayer, new StrengthPower(mo, -2), -2));

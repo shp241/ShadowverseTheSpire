@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import shadowverse.cards.Status.EvolutionPoint;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Vampire;
 
@@ -41,26 +42,18 @@ public class WolflingStruggle extends CustomCard {
         }
     }
 
-
-    public void applyPowers() {
-        super.applyPowers();
-        int count = 0;
-        if (AbstractDungeon.player instanceof AbstractShadowversePlayer){
-            count = ((AbstractShadowversePlayer) AbstractDungeon.player).upgradedThisCombat;
-        }
-        this.rawDescription = cardStrings.DESCRIPTION;
-        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + count;
-        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[1];
-        initializeDescription();
-    }
-
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new SFXAction("WolflingStruggle"));
         addToBot(new DrawCardAction(1));
         int dmg = this.damage;
+        int count = 0;
+        for (AbstractCard c : AbstractDungeon.player.exhaustPile.group) {
+            if (c instanceof EvolutionPoint)
+                count++;
+        }
         if (abstractPlayer instanceof AbstractShadowversePlayer){
-            if (((AbstractShadowversePlayer) abstractPlayer).upgradedThisCombat >= 5){
+            if (count >= 5){
                 dmg *= 4;
             }
         }

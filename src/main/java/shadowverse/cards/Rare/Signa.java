@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -18,6 +19,7 @@ import com.megacrit.cardcrawl.powers.BlurPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
+import shadowverse.cards.Status.EvolutionPoint;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Vampire;
 
@@ -47,20 +49,6 @@ public class Signa
         }
     }
 
-    public void applyPowers() {
-        super.applyPowers();
-        int count = 0;
-        if (AbstractDungeon.player instanceof AbstractShadowversePlayer) {
-            count = ((AbstractShadowversePlayer) AbstractDungeon.player).upgradedThisCombat;
-        }
-        this.rawDescription = cardStrings.DESCRIPTION;
-        if (this.upgraded)
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + count;
-        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[1];
-        initializeDescription();
-    }
-
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction("Signa"));
         addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
@@ -68,8 +56,9 @@ public class Signa
         addToBot(new ApplyPowerAction(p,p,new BlurPower(p,1),1));
         if (this.upgraded){
             int count = 0;
-            if (AbstractDungeon.player instanceof AbstractShadowversePlayer) {
-                count = ((AbstractShadowversePlayer) AbstractDungeon.player).upgradedThisCombat;
+            for (AbstractCard c : AbstractDungeon.player.exhaustPile.group) {
+                if (c instanceof EvolutionPoint)
+                    count++;
             }
             if (count > 2){
                 addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
@@ -82,6 +71,15 @@ public class Signa
         }
     }
 
+
+    @Override
+    public void triggerOnOtherCardPlayed(AbstractCard c) {
+        if (c instanceof EvolutionPoint && !this.upgraded){
+            this.upgrade();
+            addToBot(new SFXAction("Signa_Eff"));
+            addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+        }
+    }
 
     public AbstractCard makeCopy() {
         return (AbstractCard) new Signa();

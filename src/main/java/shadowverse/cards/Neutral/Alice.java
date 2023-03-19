@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.unique.DiscoveryAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import com.megacrit.cardcrawl.actions.watcher.ForeignInfluenceAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -16,6 +17,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import shadowverse.cards.Status.EvolutionPoint;
 import shadowverse.characters.AbstractShadowversePlayer;
 
 
@@ -42,31 +44,19 @@ public class Alice
         }
     }
 
-    public void applyPowers() {
-        super.applyPowers();
-        int count = 0;
-        if (AbstractDungeon.player instanceof AbstractShadowversePlayer) {
-            count = ((AbstractShadowversePlayer) AbstractDungeon.player).upgradedThisCombat;
-        }
-        this.rawDescription = cardStrings.DESCRIPTION;
-        if (this.upgraded)
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + count;
-        this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[1];
-        initializeDescription();
-    }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction("Alice"));
         int dmg = this.damage;
         int count = 0;
-        if (AbstractDungeon.player instanceof AbstractShadowversePlayer) {
-            count = ((AbstractShadowversePlayer) AbstractDungeon.player).upgradedThisCombat;
+        for (AbstractCard c : AbstractDungeon.player.exhaustPile.group) {
+            if (c instanceof EvolutionPoint)
+                count++;
         }
         if (count > 2){
             this.upgrade();
-            addToBot(new DiscoveryAction());
-            addToBot(new DiscoveryAction());
+            addToBot(new ForeignInfluenceAction(false));
+            addToBot(new ForeignInfluenceAction(false));
         }
         if (count > 6){
             dmg *= 2;

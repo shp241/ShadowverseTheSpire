@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.action.ZeusAction;
+import shadowverse.cards.Status.EvolutionPoint;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Witchcraft;
 
@@ -40,8 +41,9 @@ public class Zeus extends AbstractNeutralCard{
     public void applyPowers() {
         super.applyPowers();
         int count = 0;
-        if (AbstractDungeon.player instanceof AbstractShadowversePlayer){
-            count = ((AbstractShadowversePlayer) AbstractDungeon.player).upgradedThisCombat;
+        for (AbstractCard c : AbstractDungeon.player.exhaustPile.group) {
+            if (c instanceof EvolutionPoint)
+                count++;
         }
         this.rawDescription = cardStrings.DESCRIPTION;
         this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + count;
@@ -58,8 +60,9 @@ public class Zeus extends AbstractNeutralCard{
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new SFXAction("Zeus"));
         int count = 0;
-        if (abstractPlayer instanceof AbstractShadowversePlayer){
-            count = ((AbstractShadowversePlayer) abstractPlayer).upgradedThisCombat;
+        for (AbstractCard c : AbstractDungeon.player.exhaustPile.group) {
+            if (c instanceof EvolutionPoint)
+                count++;
         }
         addToBot(new ZeusAction(abstractPlayer,this.multiDamage,this.block,this.damageTypeForTurn,this.freeToPlayOnce,this.energyOnUse+this.magicNumber+count));
     }
