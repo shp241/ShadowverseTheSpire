@@ -11,6 +11,7 @@ public class BanCardHelper {
     private static boolean init;
     public static ArrayList<ArrayList<AbstractCard>> royalCardGroupPool = new ArrayList();
     public static ArrayList<ArrayList<AbstractCard>> witchCardGroupPool = new ArrayList<>();
+    public static ArrayList<ArrayList<AbstractCard>> vampireCardGroupPool = new ArrayList<>();
 
     public BanCardHelper() {
     }

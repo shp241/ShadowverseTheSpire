@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import shadowverse.cards.Rare.Aluzard;
+import shadowverse.cards.Status.EvolutionPoint;
 import shadowverse.cards.Temp.BloodArts;
 
 
@@ -46,9 +47,9 @@ import shadowverse.cards.Temp.BloodArts;
    
    public void atStartOfTurn() {
      flash();
-     addToBot((AbstractGameAction)new RemoveSpecificPowerAction(this.owner, this.owner, this));
+     addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
      c.baseDamage += c.magicNumber;
-     addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, this.amount));
+     addToBot(new MakeTempCardInHandAction(c, this.amount));
      int count = 0;
      for (AbstractCard c: AbstractDungeon.actionManager.cardsPlayedThisCombat){
        if (c instanceof Aluzard){
@@ -56,10 +57,11 @@ import shadowverse.cards.Temp.BloodArts;
        }
      }
      if (count>=2){
-       AbstractCard card = (AbstractCard)new BloodArts();
+       AbstractCard card = new BloodArts();
        if (this.upgraded)
          card.upgrade();
-       addToBot((AbstractGameAction)new MakeTempCardInHandAction(card.makeStatEquivalentCopy(),this.amount));
+       addToBot(new MakeTempCardInHandAction(card.makeStatEquivalentCopy(),this.amount));
+       addToBot(new MakeTempCardInHandAction(new EvolutionPoint(),this.amount));
      }
    }
    

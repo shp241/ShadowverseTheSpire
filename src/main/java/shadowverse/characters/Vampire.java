@@ -22,15 +22,18 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
+import shadowverse.Shadowverse;
 import shadowverse.cards.Basic.DarkGeneral;
 import shadowverse.cards.Basic.Defend_V;
 import shadowverse.cards.Basic.RazoryClaw;
 import shadowverse.cards.Basic.Strike_V;
 import shadowverse.cards.Rare.NightVampire;
 import shadowverse.effect.ShadowverseEnergyOrb;
+import shadowverse.helper.BanCardHelper;
 import shadowverse.patch.CharacterSelectScreenPatches;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
 public class Vampire extends AbstractShadowversePlayer{
     public static class Enums
@@ -170,4 +173,29 @@ public class Vampire extends AbstractShadowversePlayer{
         return bigAnimation;
     }
 
+
+//    @Override
+//    public ArrayList<AbstractCard> getCardPool(ArrayList<AbstractCard> tmpPool) {
+//        int presize;
+//        if (!CardCrawlGame.loadingSave && AbstractDungeon.floorNum < 2) {
+//            int roll;
+//            Shadowverse.groupActive = new boolean[Shadowverse.allGroupNumber];
+//            Shadowverse.groupActive[0] = true;
+//            tmpPool.addAll(BanCardHelper.vampireCardGroupPool.get(0));
+//            for (int i = 0; i < Shadowverse.banGroupNumber; i++) {
+//                for (roll = AbstractDungeon.cardRng.random(Shadowverse.allGroupNumber - 1); Shadowverse.groupActive[roll]; roll = AbstractDungeon.cardRng.random(Shadowverse.allGroupNumber - 1)) {
+//                }
+//                Shadowverse.groupActive[roll] = true;
+//                tmpPool.addAll((Collection) shadowverse.helper.BanCardHelper.vampireCardGroupPool.get(roll));
+//            }
+//        } else {
+//            tmpPool.addAll(BanCardHelper.vampireCardGroupPool.get(0));
+//            for (presize = 0; presize < Shadowverse.allGroupNumber; ++presize) {
+//                if (Shadowverse.groupActive[presize]) {
+//                    tmpPool.addAll((Collection) BanCardHelper.vampireCardGroupPool.get(presize));
+//                }
+//            }
+//        }
+//        return tmpPool;
+//    }
 }

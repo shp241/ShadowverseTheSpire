@@ -33,7 +33,7 @@ public class Aluzard
         this.baseDamage = 6;
         this.baseMagicNumber = 5;
         this.magicNumber = this.baseMagicNumber;
-        this.cardsToPreview = (AbstractCard) new BloodArts();
+        this.cardsToPreview = new BloodArts();
         this.tags.add(AbstractShadowversePlayer.Enums.LASTWORD);
         this.exhaust = true;
     }
@@ -52,17 +52,17 @@ public class Aluzard
 
     @Override
     public void triggerOnExhaust() {
-        addToBot((AbstractGameAction)new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,(AbstractPower)new NextAluzard(AbstractDungeon.player,1,this,this.upgraded)));
+        addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new NextAluzard(AbstractDungeon.player,1,this,this.upgraded)));
     }
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new SFXAction("Aluzard"));
-        addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        addToBot( new SFXAction("Aluzard"));
+        addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
     }
 
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new Aluzard();
+        return new Aluzard();
     }
 }
 

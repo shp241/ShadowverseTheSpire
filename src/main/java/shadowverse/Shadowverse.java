@@ -1340,6 +1340,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Yuzuki", new Sfx(voicePath+"Yuzuki.wav"));
             reflectedMap.put("CrimsonVirtue", new Sfx(voicePath+"CrimsonVirtue.wav"));
             reflectedMap.put("Alice", new Sfx(voicePath+"Alice.wav"));
+            reflectedMap.put("DestructiveSuccubus", new Sfx(voicePath+"DestructiveSuccubus.wav"));
         }
     }
 
@@ -2433,6 +2434,8 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard( new CrimsonVirtue());
         BaseMod.addCard( new Seox());
         BaseMod.addCard( new shadowverse.cards.Neutral.Alice());
+        BaseMod.addCard( new CrimsonDesire());
+        BaseMod.addCard( new DestructiveSuccubus());
         logger.info("Success");
     }
 

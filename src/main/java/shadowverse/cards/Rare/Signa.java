@@ -22,6 +22,7 @@ import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import shadowverse.cards.Status.EvolutionPoint;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Vampire;
+import shadowverse.relics.KagemitsuSword;
 
 
 public class Signa
@@ -37,6 +38,7 @@ public class Signa
         this.baseDamage = 3;
         this.baseMagicNumber = 9;
         this.magicNumber = this.baseMagicNumber;
+        this.cardsToPreview = new EvolutionPoint();
     }
 
 
@@ -49,24 +51,45 @@ public class Signa
         }
     }
 
+    public void degrade() {
+        if (this.upgraded) {
+            degradeName();
+            this.rawDescription = cardStrings.DESCRIPTION;
+            initializeDescription();
+            this.superFlash();
+            this.applyPowers();
+        }
+    }
+
+    public void degradeName() {
+        --this.timesUpgraded;
+        this.upgraded = false;
+        this.name = NAME;
+        this.initializeTitle();
+    }
+
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction("Signa"));
         addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
         addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.damage, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE, true));
-        addToBot(new ApplyPowerAction(p,p,new BlurPower(p,1),1));
-        if (this.upgraded){
+        addToBot(new ApplyPowerAction(p, p, new BlurPower(p, 1), 1));
+        if (this.upgraded) {
             int count = 0;
             for (AbstractCard c : AbstractDungeon.player.exhaustPile.group) {
                 if (c instanceof EvolutionPoint)
                     count++;
             }
-            if (count > 2){
+            if (count > 2) {
                 addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
                 addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.magicNumber, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE, true));
             }
-            if (count > 6){
-                addToBot(new ApplyPowerAction(p,p,new StrengthPower(p,1),1));
-                addToBot(new ApplyPowerAction(p,p,new DexterityPower(p,1),1));
+            if (count > 6) {
+                addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, 1), 1));
+                addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, 1), 1));
+            }
+            this.degrade();
+            if (p.hasRelic(KagemitsuSword.ID)) {
+                this.upgrade();
             }
         }
     }
@@ -74,7 +97,7 @@ public class Signa
 
     @Override
     public void triggerOnOtherCardPlayed(AbstractCard c) {
-        if (c instanceof EvolutionPoint && !this.upgraded){
+        if (c instanceof EvolutionPoint && !this.upgraded) {
             this.upgrade();
             addToBot(new SFXAction("Signa_Eff"));
             addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
