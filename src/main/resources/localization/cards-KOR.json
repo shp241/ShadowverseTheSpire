@@ -5049,7 +5049,7 @@
   },
   "shadowverse:CrimsonVirtue": {
     "NAME": "붉은 절조",
-    "DESCRIPTION": "피해를 !D! 주고 카드를 1장 뽑습니다.  NL 소멸된 진화 포인트가 5장 이상이면 피해를 한번 더 줍니다. "
+    "DESCRIPTION": "피해를 !D! 주고 카드를 !M! 장 뽑습니다.  NL 소멸된 진화 포인트가 5장 이상이면 피해를 한번 더 줍니다. "
   },
   "shadowverse:Seox": {
     "NAME": "늑대신 시스",
