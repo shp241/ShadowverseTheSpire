@@ -1,5 +1,6 @@
 package shadowverse.patch;
 
+import shadowverse.cards.Uncommon.OrchidExaminationHall;
 import shadowverseCharbosses.actions.RealWaitAction;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePostfixPatch;
@@ -31,6 +32,11 @@ public class PlaceAmuletPatch {
             if (p instanceof Bishop || p instanceof Royal ||
                     ((AbstractDungeon.player.hasRelic(PrismaticShard.ID)|| (AbstractDungeon.player.hasRelic(AlterplaneArbiter.ID)))&&AbstractDungeon.player instanceof AbstractShadowversePlayer)){
                 if (c instanceof AbstractAmuletCard || (c instanceof AbstractCrystalizeCard && c.type== AbstractCard.CardType.POWER)){
+                    if (c instanceof OrchidExaminationHall){
+                        if (c.costForTurn == 1){
+                            return;
+                        }
+                    }
                     AbstractDungeon.actionManager.addToBottom(new RealWaitAction(0.6F));
                     AbstractDungeon.actionManager.addToBottom(new PlaceAmulet(c,p.hand));
                 }

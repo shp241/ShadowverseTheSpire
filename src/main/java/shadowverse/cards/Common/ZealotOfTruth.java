@@ -25,7 +25,7 @@
    public static final int BASE_COST = 6;
    
    public ZealotOfTruth() {
-     super("shadowverse:ZealotOfTruth", NAME, "img/cards/ZealotOfTruth.png", 6, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.COMMON, CardTarget.ENEMY);
+     super(ID, NAME, IMG_PATH, 6, DESCRIPTION, CardType.ATTACK, Witchcraft.Enums.COLOR_BLUE, CardRarity.COMMON, CardTarget.ENEMY);
      this.baseDamage = 24;
      this.tags.add(AbstractShadowversePlayer.Enums.SPELL_BOOST);
    }
@@ -34,8 +34,8 @@
    public void triggerOnOtherCardPlayed(AbstractCard c) {
      if (c.type == CardType.SKILL) {
        flash();
-       addToBot((AbstractGameAction)new SFXAction("spell_boost"));
-       addToBot((AbstractGameAction)new ReduceCostAction((AbstractCard)this));
+       addToBot(new SFXAction("spell_boost"));
+       addToBot(new ReduceCostAction(this));
      } 
    }
  
@@ -50,15 +50,15 @@
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new SFXAction("ZealotOfTruth"));
-     addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+     addToBot(new SFXAction("ZealotOfTruth"));
+     addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
      this.cost = 6;
    }
  
  
    
    public AbstractCard makeCopy() {
-     return (AbstractCard)new ZealotOfTruth();
+     return new ZealotOfTruth();
    }
  }
 

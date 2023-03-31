@@ -60,8 +60,8 @@ public class Vyrmedea
             addToBot(new ApplyPowerAction(p,p,new VyrmedeaPower(p,1),1));
         }
         addToBot(new SFXAction("Vyrmedea"));
-        addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new BorderFlashEffect(Color.YELLOW, true)));
-        addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new MiracleEffect(Color.LIGHT_GRAY.cpy(),Color.GOLD.cpy(),"HEAL_3")));
+        addToBot(new VFXAction(new BorderFlashEffect(Color.YELLOW, true)));
+        addToBot(new VFXAction(new MiracleEffect(Color.LIGHT_GRAY.cpy(),Color.GOLD.cpy(),"HEAL_3")));
         addToBot(new GainBlockAction(p,this.block));
         AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
         c.setCostForTurn(0);

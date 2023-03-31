@@ -50,20 +50,20 @@ public class Cernunnos extends CustomCard {
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new BurialAction(1, (AbstractGameAction) new DrawCardAction(this.magicNumber)));
+        addToBot(new BurialAction(1, new DrawCardAction(this.magicNumber)));
         if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false)))
-            addToBot((AbstractGameAction) new SFXAction("Cernunnos_L"));
+            addToBot(new SFXAction("Cernunnos_L"));
         else
-            addToBot((AbstractGameAction) new SFXAction("Cernunnos"));
+            addToBot(new SFXAction("Cernunnos"));
         if (!this.triggered) {
             this.triggered = true;
-            addToBot((AbstractGameAction) new GainEnergyAction(2));
+            addToBot(new GainEnergyAction(2));
         }
         if (this.costForTurn > 0) {
-            addToBot((AbstractGameAction) new ReanimateAction(this.magicNumber));
+            addToBot(new ReanimateAction(this.magicNumber));
             if (abstractPlayer instanceof AbstractShadowversePlayer) {
                 if (((AbstractShadowversePlayer) abstractPlayer).necromanceCount >= 20) {
-                    addToBot((AbstractGameAction) new ReanimateAction(5));
+                    addToBot(new ReanimateAction(5));
                 }
             }
         }

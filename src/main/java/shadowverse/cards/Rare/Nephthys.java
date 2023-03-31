@@ -40,10 +40,10 @@ import shadowverse.characters.Necromancer;
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-       addToBot((AbstractGameAction)new SFXAction("Nephthys"));
-       addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
-       addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new BorderFlashEffect(Color.PURPLE, true),1.0f));
-       addToBot((AbstractGameAction)new NephthysAction());
+       addToBot(new SFXAction("Nephthys"));
+       addToBot(new GainBlockAction(abstractPlayer,this.block));
+       addToBot(new VFXAction(new BorderFlashEffect(Color.PURPLE, true),1.0f));
+       addToBot(new NephthysAction());
    }
  
    

@@ -45,11 +45,11 @@ public class Ferry extends CustomCard {
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new VFXAction((AbstractCreature)abstractPlayer, (AbstractGameEffect)new VerticalAuraEffect(Color.BLACK, abstractPlayer.hb.cX, abstractPlayer.hb.cY), 0.33F));
-        addToBot((AbstractGameAction)new VFXAction((AbstractCreature)abstractPlayer, (AbstractGameEffect)new VerticalAuraEffect(Color.PURPLE, abstractPlayer.hb.cX, abstractPlayer.hb.cY), 0.33F));
-        addToBot((AbstractGameAction) new SFXAction("Ferry"));
+        addToBot(new VFXAction(abstractPlayer, (AbstractGameEffect)new VerticalAuraEffect(Color.BLACK, abstractPlayer.hb.cX, abstractPlayer.hb.cY), 0.33F));
+        addToBot(new VFXAction(abstractPlayer, (AbstractGameEffect)new VerticalAuraEffect(Color.PURPLE, abstractPlayer.hb.cX, abstractPlayer.hb.cY), 0.33F));
+        addToBot( new SFXAction("Ferry"));
         if (!abstractPlayer.hasPower("shadowverse:FerryPower"))
-            addToBot((AbstractGameAction)new BurialAction(2,(AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, (AbstractPower) new FerryPower((AbstractCreature) abstractPlayer))));
+            addToBot(new BurialAction(2, new ApplyPowerAction( abstractPlayer,  abstractPlayer, new FerryPower( abstractPlayer))));
     }
 
 

@@ -76,6 +76,8 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
         public static AbstractCard.CardTags CHESS;
         @SpireEnum
         public static AbstractCard.CardTags GILDED;
+        @SpireEnum
+        public static AbstractCard.CardTags ACADEMIC;
     }
 
     public int earthCount = 0;
@@ -94,6 +96,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
     public int costUsedAmt = 0;
     public int skullFaneAccCount = 0;
     public int magachiyoCount = 0;
+    public int burialCount = 0;
 
     public AbstractShadowversePlayer(String name, PlayerClass playerClass, String[] orbTextures, String orbVfxPath, float[] layerSpeeds, AbstractAnimation animation) {
         super(name, playerClass, orbTextures, orbVfxPath, layerSpeeds, animation);
@@ -121,6 +124,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
         this.wrathLastTurn = 0;
         this.skullFaneAccCount = 0;
         this.magachiyoCount = 0;
+        this.burialCount = 0;
     }
 
     public void useCard(AbstractCard c, AbstractMonster monster, int energyOnUse) {

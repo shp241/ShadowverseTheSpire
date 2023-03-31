@@ -2,7 +2,6 @@
 
 
  import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
  import com.megacrit.cardcrawl.actions.common.GainBlockAction;
  import com.megacrit.cardcrawl.actions.utility.SFXAction;
@@ -23,7 +22,7 @@ import shadowverse.characters.Necromancer;
    public static final String IMG_PATH = "img/cards/SpiritCurator.png";
 
    public SpiritCurator() {
-     super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Necromancer.Enums.COLOR_PURPLE, CardRarity.COMMON, CardTarget.NONE);
+     super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Necromancer.Enums.COLOR_PURPLE, CardRarity.COMMON, CardTarget.SELF);
      this.baseBlock = 6;
    }
  
@@ -37,9 +36,9 @@ import shadowverse.characters.Necromancer;
 
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-       addToBot((AbstractGameAction)new SFXAction("SpiritCurator"));
-       addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
-     addToBot((AbstractGameAction)new BurialAction(1,(AbstractGameAction)new DrawCardAction(1)));
+       addToBot(new SFXAction("SpiritCurator"));
+       addToBot(new GainBlockAction(abstractPlayer,this.block));
+     addToBot(new BurialAction(1,new DrawCardAction(1)));
    }
  
    

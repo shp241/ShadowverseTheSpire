@@ -2,7 +2,6 @@ package shadowverse.cards.Uncommon;
 
 import basemod.abstracts.CustomCard;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsInHandAction;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
@@ -39,16 +38,16 @@ public class ApostleOfDestruction
     }
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("ApostleOfDestruction"));
-        addToBot((AbstractGameAction)new GainBlockAction(p,this.block));
-        addToBot((AbstractGameAction)new SelectCardsInHandAction(1,TEXT[0],false,false,card -> {
+        addToBot(new SFXAction("ApostleOfDestruction"));
+        addToBot(new GainBlockAction(p,this.block));
+        addToBot(new SelectCardsInHandAction(1,TEXT[0],false,false,card -> {
             return true;
         }, abstractCards ->{
             for (AbstractCard c:abstractCards){
-                addToBot((AbstractGameAction)new ExhaustSpecificCardAction(c,p.hand));
+                addToBot(new ExhaustSpecificCardAction(c,p.hand));
                 AbstractCard card = c.makeStatEquivalentCopy();
-                addToBot((AbstractGameAction)new ReduceCostAction(card));
-                addToBot((AbstractGameAction)new MakeTempCardInHandAction(card));
+                addToBot(new ReduceCostAction(card));
+                addToBot(new MakeTempCardInHandAction(card));
             }
         } ));
     }

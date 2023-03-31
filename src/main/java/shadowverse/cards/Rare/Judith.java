@@ -44,6 +44,7 @@ public class Judith extends CustomCard {
         this.tags.add(AbstractShadowversePlayer.Enums.LEVIN);
         this.tags.add(AbstractShadowversePlayer.Enums.MYSTERIA);
         this.tags.add(AbstractShadowversePlayer.Enums.GILDED);
+        this.tags.add(AbstractShadowversePlayer.Enums.ACADEMIC);
         this.tags.add(CardTags.STRIKE);
     }
 

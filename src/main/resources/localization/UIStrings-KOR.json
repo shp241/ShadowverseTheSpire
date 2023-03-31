@@ -128,5 +128,10 @@
       "카드풀",
       "이번 게임에서 사용가능한 카드를 살펴보세요"
     ]
+  },
+  "shadowverse:UnseenStrengthMod": {
+    "TEXT": [
+      " NL 造成的伤害无法被格挡。"
+    ]
   }
 }

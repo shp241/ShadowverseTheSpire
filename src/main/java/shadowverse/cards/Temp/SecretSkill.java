@@ -41,7 +41,7 @@ public class SecretSkill extends CustomCard implements AbstractNoCountDownAmulet
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("SecretSkill"));
+        addToBot(new SFXAction("SecretSkill"));
     }
 
     @Override
@@ -58,9 +58,9 @@ public class SecretSkill extends CustomCard implements AbstractNoCountDownAmulet
     public void endOfTurn(AmuletOrb paramOrb) {
         for (AbstractMonster m : (AbstractDungeon.getCurrRoom()).monsters.monsters){
             if (m.getIntentDmg()>0){
-                addToBot((AbstractGameAction)new SFXAction("SecretSkill_Eff"));
-                addToBot((AbstractGameAction)new StunMonsterAction(m,AbstractDungeon.player));
-                addToBot((AbstractGameAction)new EvokeSpecificOrbAction(paramOrb));
+                addToBot(new SFXAction("SecretSkill_Eff"));
+                addToBot(new StunMonsterAction(m,AbstractDungeon.player));
+                addToBot(new EvokeSpecificOrbAction(paramOrb));
                 break;
             }
         }

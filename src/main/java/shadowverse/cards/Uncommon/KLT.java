@@ -52,9 +52,9 @@ public class KLT extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("KLT"));
+        addToBot(new SFXAction("KLT"));
         addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot(new ApplyPowerAction(p,p,(AbstractPower)new DDKPower(p,this.magicNumber),this.magicNumber));
+        addToBot(new ApplyPowerAction(p,p,new DDKPower(p,this.magicNumber),this.magicNumber));
     }
 
 

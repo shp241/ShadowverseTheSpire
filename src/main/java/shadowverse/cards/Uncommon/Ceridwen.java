@@ -25,6 +25,7 @@ import shadowverse.action.ReanimateAction;
 import shadowverse.cards.Temp.EternalPotion;
 import shadowverse.cards.Temp.InstantPotion;
 import shadowverse.characters.Necromancer;
+import shadowverse.powers.MementoPower;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -108,11 +109,15 @@ public class Ceridwen extends CustomCard implements BranchableUpgradeCard {
                 AbstractCard instant = new InstantPotion();
                 addToBot(new GainEnergyAction(1));
                 addToBot(new ChoiceAction2(eternal, instant));
+                break;
             case 2:
                 if (this.type==CardType.POWER && this.costForTurn == 0){
                     addToBot(new SFXAction("Ceridwen3_Acc"));
                     addToBot(new BurialAction(1,new DrawCardAction(1)));
                     addToBot(new DamageRandomEnemyAction(new DamageInfo(abstractPlayer,4, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.FIRE));
+                    if (abstractPlayer.hasPower(MementoPower.POWER_ID)){
+                        addToBot(new DamageRandomEnemyAction(new DamageInfo(abstractPlayer,4, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.FIRE));
+                    }
                 }else {
                     addToBot(new SFXAction("Ceridwen3"));
                     addToBot(new GainBlockAction(abstractPlayer, this.block));

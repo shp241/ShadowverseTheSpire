@@ -1341,6 +1341,55 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("CrimsonVirtue", new Sfx(voicePath+"CrimsonVirtue.wav"));
             reflectedMap.put("Alice", new Sfx(voicePath+"Alice.wav"));
             reflectedMap.put("DestructiveSuccubus", new Sfx(voicePath+"DestructiveSuccubus.wav"));
+            reflectedMap.put("Erralde_Acc", new Sfx(voicePath+"Erralde_Acc.wav"));
+            reflectedMap.put("Castelle", new Sfx(voicePath+"Castelle.wav"));
+            reflectedMap.put("VerdantPrayer", new Sfx(voicePath+"VerdantPrayer.wav"));
+            reflectedMap.put("MysterianParty", new Sfx(voicePath+"MysterianParty.wav"));
+            reflectedMap.put("Amaryllis", new Sfx(voicePath+"Amaryllis.wav"));
+            reflectedMap.put("AmaryllisPower", new Sfx(voicePath+"AmaryllisPower.wav"));
+            reflectedMap.put("CurseOfSuffering", new Sfx(voicePath+"CurseOfSuffering.wav"));
+            reflectedMap.put("MachSpeedMaron", new Sfx(voicePath+"MachSpeedMaron.wav"));
+            reflectedMap.put("BadGirlLife", new Sfx(voicePath+"BadGirlLife.wav"));
+            reflectedMap.put("Lou_Bishop", new Sfx(voicePath+"Lou_Bishop.wav"));
+            reflectedMap.put("OrchidExaminationHall", new Sfx(voicePath+"OrchidExaminationHall.wav"));
+            reflectedMap.put("BambeautyExaminationHall", new Sfx(voicePath+"BambeautyExaminationHall.wav"));
+            reflectedMap.put("MumExaminationHall", new Sfx(voicePath+"MumExaminationHall.wav"));
+            reflectedMap.put("PlumExaminationHall", new Sfx(voicePath+"PlumExaminationHall.wav"));
+            reflectedMap.put("Gruinne", new Sfx(voicePath+"Gruinne.wav"));
+            reflectedMap.put("Grea3", new Sfx(voicePath+"Grea3.wav"));
+            reflectedMap.put("GhostHunter", new Sfx(voicePath+"GhostHunter.wav"));
+            reflectedMap.put("Leeds", new Sfx(voicePath+"Leeds.wav"));
+            reflectedMap.put("Leeds_L", new Sfx(voicePath+"Leeds_L.wav"));
+            reflectedMap.put("DemonEyeGangster", new Sfx(voicePath+"DemonEyeGangster.wav"));
+            reflectedMap.put("Arka", new Sfx(voicePath+"Arka.wav"));
+            reflectedMap.put("Vulgus", new Sfx(voicePath+"Vulgus.wav"));
+            reflectedMap.put("PureflowerMaiden", new Sfx(voicePath+"PureflowerMaiden.wav"));
+            reflectedMap.put("PureflowerMaidenpPower", new Sfx(voicePath+"PureflowerMaidenPower.wav"));
+            reflectedMap.put("Kira", new Sfx(voicePath+"Kira.wav"));
+            reflectedMap.put("Verdilia", new Sfx(voicePath+"Verdilia.wav"));
+            reflectedMap.put("CyclicalGuidance", new Sfx(voicePath+"CyclicalGuidance.wav"));
+            reflectedMap.put("CyclicalGuidance_Eh", new Sfx(voicePath+"CyclicalGuidance_Eh.wav"));
+            reflectedMap.put("SumoMechanic", new Sfx(voicePath+"SumoMechanic.wav"));
+            reflectedMap.put("Gioffre", new Sfx(voicePath+"Gioffre.wav"));
+            reflectedMap.put("UnseenStrength", new Sfx(voicePath+"UnseenStrength.wav"));
+            reflectedMap.put("Lyelth", new Sfx(voicePath+"Lyelth.wav"));
+            reflectedMap.put("Lucius_N", new Sfx(voicePath+"Lucius_N.wav"));
+            reflectedMap.put("BellWitch", new Sfx(voicePath+"BellWitch.wav"));
+            reflectedMap.put("Anne3", new Sfx(voicePath+"Anne3.wav"));
+            reflectedMap.put("Memento", new Sfx(voicePath+"Memento.wav"));
+            reflectedMap.put("PureflameLady", new Sfx(voicePath+"PureflameLady.wav"));
+            reflectedMap.put("PureflameLadyPower", new Sfx(voicePath+"PureflameLadyPower.wav"));
+            reflectedMap.put("Galom", new Sfx(voicePath+"Galom.wav"));
+            reflectedMap.put("Elluvia", new Sfx(voicePath+"Elluvia.wav"));
+            reflectedMap.put("RoboticsReporter", new Sfx(voicePath+"RoboticsReporter.wav"));
+            reflectedMap.put("Filly", new Sfx(voicePath+"Filly.wav"));
+            reflectedMap.put("FillyPower", new Sfx(voicePath+"FillyPower.wav"));
+            reflectedMap.put("FillyPower2", new Sfx(voicePath+"FillyPower2.wav"));
+            reflectedMap.put("CorpseKingCommand", new Sfx(voicePath+"CorpseKingCommand.wav"));
+            reflectedMap.put("Cornelius", new Sfx(voicePath+"Cornelius.wav"));
+            reflectedMap.put("AnneAndGrea", new Sfx(voicePath+"AnneAndGrea.wav"));
+            reflectedMap.put("AnneAndGrea_Eh", new Sfx(voicePath+"AnneAndGrea_Eh.wav"));
+            reflectedMap.put("MajesticSorcery", new Sfx(voicePath+"MajesticSorcery.wav"));
         }
     }
 
@@ -1419,6 +1468,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addRelicToCustomPool( new YukariBOSS(), Bishop.Enums.COLOR_WHITE);
         BaseMod.addRelicToCustomPool( new ShinobuBOSS(), Necromancer.Enums.COLOR_PURPLE);
         BaseMod.addRelic(new BanShadowverse(), RelicType.SHARED);
+        BaseMod.addRelic(new Enlightenment(), RelicType.SHARED);
     }
 
     class Keywords {
@@ -2436,6 +2486,43 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard( new shadowverse.cards.Neutral.Alice());
         BaseMod.addCard( new CrimsonDesire());
         BaseMod.addCard( new DestructiveSuccubus());
+        BaseMod.addCard( new Castelle());
+        BaseMod.addCard( new VerdantPrayer());
+        BaseMod.addCard( new MysterianParty());
+        BaseMod.addCard( new CurseOfSuffering());
+        BaseMod.addCard( new Amaryllis());
+        BaseMod.addCard( new FellTransformation());
+        BaseMod.addCard( new MachSpeedMaron());
+        BaseMod.addCard( new BadGirlLife());
+        BaseMod.addCard( new Lou_Bishop());
+        BaseMod.addCard( new OrchidExaminationHall());
+        BaseMod.addCard( new BambeautyExaminationHall());
+        BaseMod.addCard( new MumExaminationHall());
+        BaseMod.addCard( new PlumExaminationHall());
+        BaseMod.addCard( new Gruinne());
+        BaseMod.addCard( new GhostHunter());
+        BaseMod.addCard( new Leeds());
+        BaseMod.addCard( new DemonEyeGangster());
+        BaseMod.addCard( new Arka());
+        BaseMod.addCard( new Vulgus());
+        BaseMod.addCard( new PureflowerMaiden());
+        BaseMod.addCard( new Kira());
+        BaseMod.addCard( new CyclicalGuidance());
+        BaseMod.addCard( new Verdant());
+        BaseMod.addCard( new SumoMechanic());
+        BaseMod.addCard( new Gioffre());
+        BaseMod.addCard( new Lucius_N());
+        BaseMod.addCard( new BellWitch());
+        BaseMod.addCard( new Memento());
+        BaseMod.addCard( new PureflameLady());
+        BaseMod.addCard( new Galom());
+        BaseMod.addCard( new Elluvia());
+        BaseMod.addCard( new RoboticsReporter());
+        BaseMod.addCard( new Filly());
+        BaseMod.addCard( new CorpseKingCommand());
+        BaseMod.addCard( new Cornelius());
+        BaseMod.addCard( new MajesticSorcery());
+        BaseMod.addCard( new AnneAndGrea());
         logger.info("Success");
     }
 

@@ -19,6 +19,7 @@ import shadowverse.action.BurialAction;
 import shadowverse.action.ReanimateAction;
 import shadowverse.cards.AbstractEnhanceCard;
 import shadowverse.characters.Necromancer;
+import shadowverse.powers.MementoPower;
 import shadowverse.powers.TheLoversPower;
 
 
@@ -88,6 +89,12 @@ public class TheLovers extends AbstractEnhanceCard {
             int rand2 = this.magicNumber - rand;
             addToBot(new ReanimateAction(rand));
             addToBot(new ReanimateAction(rand2));
+            if (p.hasPower(MementoPower.POWER_ID)){
+                int rand3 = AbstractDungeon.cardRandomRng.random(this.magicNumber);
+                int rand4 = this.magicNumber - rand;
+                addToBot(new ReanimateAction(rand3));
+                addToBot(new ReanimateAction(rand4));
+            }
         }
     }
 

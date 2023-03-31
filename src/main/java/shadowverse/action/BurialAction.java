@@ -17,10 +17,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.cardManip.ExhaustCardEffect;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
-import shadowverse.powers.CarnivalNecromancerPower;
-import shadowverse.powers.Cemetery;
-import shadowverse.powers.EverdarkStrixPower;
-import shadowverse.powers.MyroelPower;
+import shadowverse.characters.AbstractShadowversePlayer;
+import shadowverse.powers.*;
 
 import java.util.ArrayList;
 
@@ -74,9 +72,14 @@ public class BurialAction extends AbstractGameAction {
                 for (AbstractCard c:cardToRemove){
                     this.p.hand.removeCard(c);
                 }
+                if (this.p instanceof AbstractShadowversePlayer){
+                    ((AbstractShadowversePlayer) this.p).burialCount++;
+                }
                 returnCards();
                 if (null!=action){
                     addToBot(action);
+                    if (this.p.hasPower(MementoPower.POWER_ID))
+                        addToBot(action);
                 }
                 addToBot(new ApplyPowerAction(p, p, new Cemetery(p, 1), 1));
                 if (this.p.hasPower(CarnivalNecromancerPower.POWER_ID)){
@@ -108,11 +111,16 @@ public class BurialAction extends AbstractGameAction {
                     AbstractDungeon.actionManager.cardsPlayedThisCombat.add(c);
                 }
             }
+            if (this.p instanceof AbstractShadowversePlayer){
+                ((AbstractShadowversePlayer) this.p).burialCount++;
+            }
             returnCards();
             AbstractDungeon.handCardSelectScreen.wereCardsRetrieved = true;
             AbstractDungeon.handCardSelectScreen.selectedCards.group.clear();
             if (null!=action){
                 addToBot(action);
+                if (this.p.hasPower(MementoPower.POWER_ID))
+                    addToBot(action);
             }
             addToBot(new ApplyPowerAction(p, p, new Cemetery(p, 1), 1));
             if (this.p.hasPower(CarnivalNecromancerPower.POWER_ID)){

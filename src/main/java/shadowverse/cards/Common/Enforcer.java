@@ -48,7 +48,7 @@ public class Enforcer
         if (this.hb.hovered)
             if (this.rotationTimer <= 0.0F) {
                 this.rotationTimer = 2.0F;
-                this.cardsToPreview = (AbstractCard)returnChoice().get(previewIndex).makeCopy();
+                this.cardsToPreview = returnChoice().get(previewIndex).makeCopy();
                 if (this.previewIndex == returnChoice().size() - 1) {
                     this.previewIndex = 0;
                 } else {
@@ -68,19 +68,19 @@ public class Enforcer
 
     @Override
     public void triggerOnExhaust(){
-        AbstractCard product = (AbstractCard)new ProductMachine();
-        AbstractCard repair = (AbstractCard)new RepairMode();
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(product));
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(repair));
+        AbstractCard product = new ProductMachine();
+        AbstractCard repair = new RepairMode();
+        addToBot(new MakeTempCardInHandAction(product));
+        addToBot(new MakeTempCardInHandAction(repair));
     }
 
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("Enforcer"));
-        AbstractCard product = (AbstractCard)new ProductMachine();
-        AbstractCard repair = (AbstractCard)new RepairMode();
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(product));
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(repair));
+        addToBot(new SFXAction("Enforcer"));
+        AbstractCard product = new ProductMachine();
+        AbstractCard repair = new RepairMode();
+        addToBot(new MakeTempCardInHandAction(product));
+        addToBot(new MakeTempCardInHandAction(repair));
         boolean mCheck = false;
         for (AbstractCard c:p.hand.group){
             if (c.hasTag(AbstractShadowversePlayer.Enums.MACHINE)&&c!=this){
@@ -89,13 +89,13 @@ public class Enforcer
             }
         }
         if (mCheck){
-            addToBot((AbstractGameAction) new DamageAction((AbstractCreature) abstractMonster, new DamageInfo((AbstractCreature) p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+            addToBot( new DamageAction(abstractMonster, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         }
     }
 
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new Enforcer();
+        return  new Enforcer();
     }
 }
 

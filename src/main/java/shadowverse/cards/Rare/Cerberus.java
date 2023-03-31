@@ -95,22 +95,22 @@ public class Cerberus
     }
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new GainBlockAction(abstractPlayer, this.block));
+        addToBot(new GainBlockAction(abstractPlayer, this.block));
         switch (chosenBranch()){
             case 0:
-                addToBot((AbstractGameAction) new SFXAction("Cerberus"));
-                addToBot((AbstractGameAction) new VFXAction((AbstractCreature) abstractPlayer, (AbstractGameEffect) new InflameEffect((AbstractCreature) abstractPlayer), 1.0F));
+                addToBot(new SFXAction("Cerberus"));
+                addToBot(new VFXAction(abstractPlayer, new InflameEffect(abstractPlayer), 1.0F));
                 ArrayList<AbstractCard> dog = returnChoice();
                 for (AbstractCard c : dog) {
                     if (this.upgraded) {
                         c.upgrade();
                     }
-                    addToBot((AbstractGameAction) new MakeTempCardInHandAction(c, 1));
+                    addToBot(new MakeTempCardInHandAction(c, 1));
                 }
                 break;
             case 1:
-                addToBot((AbstractGameAction) new SFXAction("Cerberus2"));
-                addToBot((AbstractGameAction) new VFXAction((AbstractCreature) abstractPlayer, (AbstractGameEffect) new InflameEffect((AbstractCreature) abstractPlayer), 1.0F));
+                addToBot(new SFXAction("Cerberus2"));
+                addToBot(new VFXAction(abstractPlayer, new InflameEffect(abstractPlayer), 1.0F));
                 addToBot(new BurialAction(1,new CerberusAction()));
                 int count = 0;
                 for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {

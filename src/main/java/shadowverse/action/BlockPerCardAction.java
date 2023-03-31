@@ -14,7 +14,7 @@
    
    public BlockPerCardAction(int blockAmount) {
      this.blockPerCard = blockAmount;
-     setValues((AbstractCreature)AbstractDungeon.player, (AbstractCreature)AbstractDungeon.player);
+     setValues(AbstractDungeon.player, AbstractDungeon.player);
      this.actionType = ActionType.BLOCK;
    }
    
@@ -24,9 +24,9 @@
        cardsToExhaust.add(c);
      }
      for (AbstractCard c : cardsToExhaust)
-       addToTop((AbstractGameAction)new GainBlockAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)AbstractDungeon.player, this.blockPerCard)); 
+       addToTop(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, this.blockPerCard)); 
      for (AbstractCard c : cardsToExhaust)
-       addToTop((AbstractGameAction)new ExhaustSpecificCardAction(c, AbstractDungeon.player.hand)); 
+       addToTop(new ExhaustSpecificCardAction(c, AbstractDungeon.player.hand)); 
      this.isDone = true;
    }
  }

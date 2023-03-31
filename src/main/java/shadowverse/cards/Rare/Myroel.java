@@ -18,6 +18,7 @@ import shadowverse.action.BurialAction;
 import shadowverse.action.ReanimateAction;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Necromancer;
+import shadowverse.powers.MementoPower;
 import shadowverse.powers.MyroelPower;
 
 public class Myroel extends CustomCard {
@@ -62,6 +63,10 @@ public class Myroel extends CustomCard {
             addToBot( new BurialAction(2, null));
             addToBot( new ReanimateAction(1));
             addToBot( new ReanimateAction(2));
+            if (abstractPlayer.hasPower(MementoPower.POWER_ID)){
+                addToBot( new ReanimateAction(1));
+                addToBot( new ReanimateAction(2));
+            }
         }
     }
 

@@ -51,11 +51,11 @@ public class EternalContract
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         if ((UnlockTracker.betaCardPref.getBoolean(this.cardID, false)))
-            addToBot((AbstractGameAction) new SFXAction("EternalContract_L"));
+            addToBot(new SFXAction("EternalContract_L"));
         else
-            addToBot((AbstractGameAction) new SFXAction("EternalContract"));
-        addToBot((AbstractGameAction) new DrawCardAction((AbstractCreature) p, this.magicNumber));
-        addToBot((AbstractGameAction) new DiscardAction((AbstractCreature) p, (AbstractCreature) p, this.magicNumber, false));
+            addToBot(new SFXAction("EternalContract"));
+        addToBot(new DrawCardAction(p, this.magicNumber));
+        addToBot(new DiscardAction(p, p, this.magicNumber, false));
     }
 
 

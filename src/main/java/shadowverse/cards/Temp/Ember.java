@@ -47,8 +47,8 @@ import shadowverse.characters.Witchcraft;
      if (AbstractDungeon.player instanceof AbstractShadowversePlayer) {
        ((AbstractShadowversePlayer) AbstractDungeon.player).mysteriaCount++;
      }
-     addToBot((AbstractGameAction)new SFXAction("Ember"));
-     addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+     addToBot(new SFXAction("Ember"));
+     addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
    }
  
    

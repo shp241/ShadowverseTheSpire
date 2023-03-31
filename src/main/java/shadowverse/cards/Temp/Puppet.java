@@ -2,6 +2,7 @@ package shadowverse.cards.Temp;
 
 
 import basemod.abstracts.CustomCard;
+import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
@@ -13,6 +14,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import shadowverse.cardmods.UnseenStrengthMod;
 import shadowverse.characters.Nemesis;
 import shadowverse.powers.OrchidPower;
 
@@ -68,7 +70,7 @@ public class Puppet
         if (abstractPlayer.hasPower(OrchidPower.POWER_ID)) {
             addToBot(new SFXAction("Orchid_EW_Eff"));
         }
-        addToBot((AbstractGameAction) new DamageAction((AbstractCreature) abstractMonster, new DamageInfo((AbstractCreature) abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, CardModifierManager.hasModifier(this, UnseenStrengthMod.ID)? DamageInfo.DamageType.HP_LOSS:this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
     }
 
 

@@ -128,5 +128,10 @@
       "Card Pool",
       "Check the cards that will appear in this combat."
     ]
+  },
+  "shadowverse:UnseenStrengthMod": {
+    "TEXT": [
+      " NL 造成的伤害无法被格挡。"
+    ]
   }
 }

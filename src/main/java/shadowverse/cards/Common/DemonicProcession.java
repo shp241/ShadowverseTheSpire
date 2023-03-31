@@ -52,7 +52,7 @@
      }
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-       addToBot((AbstractGameAction)new BurialAction(1,(AbstractGameAction)new DrawPileToHandAction(this.magicNumber, AbstractCard.CardType.ATTACK)));
+       addToBot(new BurialAction(1,new DrawPileToHandAction(this.magicNumber, AbstractCard.CardType.ATTACK)));
    }
  
    

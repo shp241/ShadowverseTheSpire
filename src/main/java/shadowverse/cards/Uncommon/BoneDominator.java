@@ -1,7 +1,6 @@
 package shadowverse.cards.Uncommon;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
@@ -40,7 +39,7 @@ public class BoneDominator
         this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(AbstractShadowversePlayer.Enums.ACCELERATE);
-        this.cardsToPreview = (AbstractCard) new HinterlandGhoul();
+        this.cardsToPreview = new HinterlandGhoul();
     }
 
 
@@ -76,20 +75,20 @@ public class BoneDominator
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
-        if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
-            addToBot((AbstractGameAction) new SFXAction("BoneDominator_Acc"));
-            addToBot((AbstractGameAction) new DrawCardAction(1));
-            addToBot((AbstractGameAction) new BurialAction(1, (AbstractGameAction) new GainBlockAction(abstractPlayer, this.magicNumber)));
+        if (Shadowverse.Accelerate(this) && this.type == CardType.SKILL) {
+            addToBot(new SFXAction("BoneDominator_Acc"));
+            addToBot(new DrawCardAction(1));
+            addToBot(new BurialAction(1, new GainBlockAction(abstractPlayer, this.magicNumber)));
         } else {
-            addToBot((AbstractGameAction) new SFXAction("BoneDominator"));
-            addToBot((AbstractGameAction) new GainBlockAction(abstractPlayer, this.block));
-            addToBot((AbstractGameAction) new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+            addToBot(new SFXAction("BoneDominator"));
+            addToBot(new GainBlockAction(abstractPlayer, this.block));
+            addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
         }
     }
 
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new BoneDominator();
+        return new BoneDominator();
     }
 }
 

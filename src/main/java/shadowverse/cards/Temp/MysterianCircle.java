@@ -21,7 +21,7 @@ public class MysterianCircle extends CustomCard {
     public static final String IMG_PATH = "img/cards/MysterianCircle.png";
 
     public MysterianCircle() {
-        super("shadowverse:MysterianCircle", NAME, "img/cards/MysterianCircle.png", 0, DESCRIPTION, CardType.SKILL, Witchcraft.Enums.COLOR_BLUE, CardRarity.SPECIAL, CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Witchcraft.Enums.COLOR_BLUE, CardRarity.SPECIAL, CardTarget.SELF);
         this.baseBlock = 4;
         this.exhaust = true;
         this.isEthereal = true;
@@ -41,7 +41,7 @@ public class MysterianCircle extends CustomCard {
         if (AbstractDungeon.player instanceof AbstractShadowversePlayer) {
             ((AbstractShadowversePlayer) AbstractDungeon.player).mysteriaCount++;
         }
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new GainBlockAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, this.block));
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
     }
 
 

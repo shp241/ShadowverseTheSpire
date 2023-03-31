@@ -62,32 +62,32 @@ public class OmenOfOne
                 }
                 if (deckCheck) {
                     AbstractDungeon.effectsQueue.add(new SpotlightPlayerEffect());
-                    addToBot((AbstractGameAction) new SFXAction("OmenOfOne"));
-                    addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, (AbstractPower) new OmenOfOnePower((AbstractCreature) abstractPlayer)));
+                    addToBot(new SFXAction("OmenOfOne"));
+                    addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new OmenOfOnePower(abstractPlayer)));
                 }
                 break;
             case 1:
                 AbstractDungeon.effectsQueue.add(new SpotlightPlayerEffect());
-                addToBot((AbstractGameAction) new SFXAction("OmenOfOne2"));
+                addToBot(new SFXAction("OmenOfOne2"));
                 ArrayList<String> tmp2 = new ArrayList<>();
                 for (AbstractCard c : abstractPlayer.drawPile.group) {
                     if (tmp2.contains(c.cardID)) {
-                        addToBot((AbstractGameAction)new ExhaustSpecificCardAction(c,abstractPlayer.drawPile));
+                        addToBot(new ExhaustSpecificCardAction(c,abstractPlayer.drawPile));
                     }else {
                         tmp2.add(c.cardID);
                     }
                 }
                 for (AbstractCard card : abstractPlayer.discardPile.group){
                     if (tmp2.contains(card.cardID)) {
-                        addToBot((AbstractGameAction)new ExhaustSpecificCardAction(card,abstractPlayer.discardPile));
+                        addToBot(new ExhaustSpecificCardAction(card,abstractPlayer.discardPile));
                     }else {
                         tmp2.add(card.cardID);
                     }
                 }
                 if(tmp2.size()>=abstractPlayer.masterDeck.size()/2){
-                    addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,new OmenOfOnePower2(abstractPlayer)));
+                    addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new OmenOfOnePower2(abstractPlayer)));
                 }
-                addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+                addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
                 break;
         }
 

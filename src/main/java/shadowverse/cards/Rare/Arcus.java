@@ -42,13 +42,13 @@ public class Arcus extends CustomCard {
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         AbstractDungeon.effectsQueue.add(new StanceAuraEffect("Divinity"));
-        addToBot((AbstractGameAction) new SFXAction("Arcus"));
+        addToBot(new SFXAction("Arcus"));
         for (AbstractCard c:abstractPlayer.hand.group){
             if (c.type == AbstractCard.CardType.ATTACK && c.cost==1)
                 c.setCostForTurn(-9);
         }
         if (!abstractPlayer.hasPower("shadowverse:ArcusPower"))
-            addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, (AbstractPower) new ArcusPower((AbstractCreature) abstractPlayer)));
+            addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new ArcusPower(abstractPlayer)));
     }
 
 

@@ -34,12 +34,14 @@ import java.util.List;
    public static final String ID = "shadowverse:Anne";
    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Anne");
    public static CardStrings cardStrings2 = CardCrawlGame.languagePack.getCardStrings("shadowverse:NewAnne");
+   public static CardStrings cardStrings3 = CardCrawlGame.languagePack.getCardStrings("shadowverse:Anne3");
    public static final String NAME = cardStrings.NAME;
    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
    public static final String IMG_PATH = "img/cards/Anne.png";
    public static final String IMG_PATH2 = "img/cards/NewAnne.png";
+   public static final String IMG_PATH3 = "img/cards/Anne3.png";
    public static final int BASE_COST = 6;
-   private boolean branch2 = false;
+   private boolean branch1 = true;
 
    private float rotationTimer;
    private int previewIndex;
@@ -61,19 +63,19 @@ import java.util.List;
      if (chosenBranch()==0){
        if (c.hasTag(AbstractShadowversePlayer.Enums.MYSTERIA)||(AbstractDungeon.player.hasRelic(AnneBOSS.ID)&&c.type==CardType.SKILL)) {
          flash();
-         addToBot((AbstractGameAction)new SFXAction("spell_boost"));
-         addToBot((AbstractGameAction)new ReduceCostAction((AbstractCard)this));
+         addToBot(new SFXAction("spell_boost"));
+         addToBot(new ReduceCostAction(this));
        }
      }
    }
 
    public void update() {
      super.update();
-     if (!branch2){
+     if (branch1){
        if (this.hb.hovered)
          if (this.rotationTimer <= 0.0F) {
            this.rotationTimer = 2.0F;
-           this.cardsToPreview = (AbstractCard)returnChoice().get(previewIndex).makeCopy();
+           this.cardsToPreview = returnChoice().get(previewIndex).makeCopy();
            if (this.previewIndex == returnChoice().size() - 1) {
              this.previewIndex = 0;
            } else {
@@ -96,23 +98,23 @@ import java.util.List;
      ((AbstractShadowversePlayer)abstractPlayer).mysteriaCount++;
      switch (chosenBranch()){
        case 0:
-         AbstractCard a = (AbstractCard)new AnnesSummoning();
-         AbstractCard b = (AbstractCard)new AnnesSorcery();
-         addToBot((AbstractGameAction)new SFXAction("Anne"));
-         addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)abstractPlayer,this.block));
+         AbstractCard a = new AnnesSummoning();
+         AbstractCard b = new AnnesSorcery();
+         addToBot(new SFXAction("Anne"));
+         addToBot(new GainBlockAction(abstractPlayer,this.block));
          if (this.upgraded){
            a.upgrade();
            b.upgrade();
          }
-         addToBot((AbstractGameAction)new ChoiceAction2(new AbstractCard[] { a, b }));
+         addToBot(new ChoiceAction2(new AbstractCard[] { a, b }));
          this.cost = BASE_COST;
          break;
        case 1:
          int drawPileAmt = abstractPlayer.drawPile.group.size();
          int masterDeckAmt = AbstractDungeon.player.masterDeck.group.size();
          if (drawPileAmt <= masterDeckAmt/2){
-           AbstractCard as = (AbstractCard)new AnnesSummoning();
-           addToBot((AbstractGameAction)new MakeTempCardInHandAction(as,1));
+           AbstractCard as = new AnnesSummoning();
+           addToBot(new MakeTempCardInHandAction(as,1));
          }
          if (drawPileAmt>=2){
            int rand = AbstractDungeon.cardRandomRng.random(drawPileAmt-1);
@@ -124,21 +126,26 @@ import java.util.List;
                break;
              }
            }
-           addToBot((AbstractGameAction)new ExhaustSpecificCardAction(abstractPlayer.drawPile.group.get(rand),abstractPlayer.drawPile));
-           addToBot((AbstractGameAction)new ExhaustSpecificCardAction(abstractPlayer.drawPile.group.get(rand2),abstractPlayer.drawPile));
+           addToBot(new ExhaustSpecificCardAction(abstractPlayer.drawPile.group.get(rand),abstractPlayer.drawPile));
+           addToBot(new ExhaustSpecificCardAction(abstractPlayer.drawPile.group.get(rand2),abstractPlayer.drawPile));
          }
          AbstractCard c = this.cardsToPreview;
-         addToBot((AbstractGameAction)new SFXAction("NewAnne"));
-         addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)abstractPlayer,this.block));
-         addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-         addToBot((AbstractGameAction)new MakeTempCardInHandAction(c,1));
+         addToBot(new SFXAction("NewAnne"));
+         addToBot(new GainBlockAction(abstractPlayer,this.block));
+         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+         addToBot(new MakeTempCardInHandAction(c,1));
+         break;
+       case 2:
+         addToBot(new SFXAction("Anne3"));
+         addToBot(new GainBlockAction(abstractPlayer,this.block));
+         addToBot(new MakeTempCardInHandAction(new AnnesSummoning()));
          break;
      }
    }
  
    
    public AbstractCard makeCopy() {
-     return (AbstractCard)new Anne();
+     return new Anne();
    }
 
    @Override
@@ -172,12 +179,33 @@ import java.util.List;
          Anne.this.initializeTitle();
          Anne.this.rawDescription = cardStrings2.DESCRIPTION;
          Anne.this.initializeDescription();
-         Anne.this.cardsToPreview = (AbstractCard)new ExceedBurst();
+         Anne.this.cardsToPreview = new ExceedBurst();
          Anne.this.rarity = CardRarity.RARE;
          Anne.this.setDisplayRarity(Anne.this.rarity);
          Anne.this.target = CardTarget.ENEMY;
          Anne.this.upgradeBaseCost(1);
-         Anne.this.branch2 = true;
+         Anne.this.branch1 = false;
+       }
+     });
+     list.add(new UpgradeBranch() {
+       @Override
+       public void upgrade() {
+         ++Anne.this.timesUpgraded;
+         Anne.this.upgraded = true;
+         Anne.this.textureImg = IMG_PATH3;
+         Anne.this.loadCardImage(IMG_PATH3);
+         Anne.this.name = cardStrings3.NAME;
+         Anne.this.baseBlock = 9;
+         Anne.this.upgradedBlock = true;
+         Anne.this.initializeTitle();
+         Anne.this.rawDescription = cardStrings3.DESCRIPTION;
+         Anne.this.initializeDescription();
+         Anne.this.cardsToPreview = new AnnesSummoning();
+         Anne.this.rarity = CardRarity.RARE;
+         Anne.this.setDisplayRarity(Anne.this.rarity);
+         Anne.this.upgradeBaseCost(1);
+         Anne.this.tags.add(AbstractShadowversePlayer.Enums.ACADEMIC);
+         Anne.this.branch1 = false;
        }
      });
      return list;

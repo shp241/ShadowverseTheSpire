@@ -11,7 +11,6 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.status.Burn;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -19,6 +18,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rs.lazymankits.interfaces.cards.BranchableUpgradeCard;
 import rs.lazymankits.interfaces.cards.UpgradeBranch;
 import shadowverse.action.ChoiceAction2;
+import shadowverse.cards.Status.EvolutionPoint;
 import shadowverse.cards.Temp.Ember;
 import shadowverse.cards.Temp.Inferno;
 import shadowverse.cards.Temp.NewEmber;
@@ -34,14 +34,16 @@ import java.util.List;
    public static final String ID = "shadowverse:Grea";
    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Grea");
    public static CardStrings cardStrings2 = CardCrawlGame.languagePack.getCardStrings("shadowverse:NewGrea");
+   public static CardStrings cardStrings3 = CardCrawlGame.languagePack.getCardStrings("shadowverse:NewGrea3");
    public static final String NAME = cardStrings.NAME;
    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
    public static final String IMG_PATH = "img/cards/Grea.png";
    public static final String IMG_PATH2 = "img/cards/NewGrea.png";
+   public static final String IMG_PATH3 = "img/cards/Grea3.png";
 
    private float rotationTimer;
    private int previewIndex;
-   private boolean branch2 = false;
+   private boolean branch1 = true;
 
    public static ArrayList<AbstractCard> returnChoice() {
      ArrayList<AbstractCard> list = new ArrayList<>();
@@ -63,11 +65,11 @@ import java.util.List;
 
    public void update() {
      super.update();
-     if (!branch2){
+     if (branch1){
        if (this.hb.hovered)
          if (this.rotationTimer <= 0.0F) {
            this.rotationTimer = 2.0F;
-           this.cardsToPreview = (AbstractCard)returnChoice().get(previewIndex).makeCopy();
+           this.cardsToPreview = returnChoice().get(previewIndex).makeCopy();
            if (this.previewIndex == returnChoice().size() - 1) {
              this.previewIndex = 0;
            } else {
@@ -87,16 +89,16 @@ import java.util.List;
      }
      switch (chosenBranch()){
        case 0:
-         AbstractCard a = (AbstractCard)new Ember();
-         AbstractCard b = (AbstractCard)new Inferno();
-         addToBot((AbstractGameAction)new SFXAction("Grea"));
-         addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)abstractPlayer,this.block));
+         AbstractCard a = new Ember();
+         AbstractCard b = new Inferno();
+         addToBot(new SFXAction("Grea"));
+         addToBot(new GainBlockAction(abstractPlayer,this.block));
          if (this.upgraded){
            a.upgrade();
            b.upgrade();
          }
-         addToBot((AbstractGameAction)new ChoiceAction2(new AbstractCard[] { a, b }));
-         addToBot((AbstractGameAction)new MakeTempCardInDiscardAction((AbstractCard)new Burn(), 1));
+         addToBot(new ChoiceAction2(new AbstractCard[] { a, b }));
+         addToBot(new MakeTempCardInDiscardAction(new Burn(), 1));
          break;
        case 1:
          int drawPileAmt = abstractPlayer.drawPile.group.size();
@@ -115,21 +117,29 @@ import java.util.List;
                break;
              }
            }
-           addToBot((AbstractGameAction)new ExhaustSpecificCardAction(abstractPlayer.drawPile.group.get(rand),abstractPlayer.drawPile));
-           addToBot((AbstractGameAction)new ExhaustSpecificCardAction(abstractPlayer.drawPile.group.get(rand2),abstractPlayer.drawPile));
+           addToBot(new ExhaustSpecificCardAction(abstractPlayer.drawPile.group.get(rand),abstractPlayer.drawPile));
+           addToBot(new ExhaustSpecificCardAction(abstractPlayer.drawPile.group.get(rand2),abstractPlayer.drawPile));
          }
-         addToBot((AbstractGameAction)new SFXAction("NewGrea"));
-         addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)abstractPlayer,this.block));
-         addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
-         addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy(),1));
-         addToBot((AbstractGameAction)new MakeTempCardInDiscardAction((AbstractCard)new Burn(), 2));
+         addToBot(new SFXAction("NewGrea"));
+         addToBot(new GainBlockAction(abstractPlayer,this.block));
+         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+         addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy(),1));
+         addToBot(new MakeTempCardInDiscardAction(new Burn(), 2));
+         break;
+       case 2:
+         addToBot(new SFXAction("Grea3"));
+         addToBot(new GainBlockAction(abstractPlayer,this.block));
+         addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+         if (abstractPlayer.hand.group.stream().anyMatch(card -> card.hasTag(AbstractShadowversePlayer.Enums.MYSTERIA) && card != this)){
+           addToBot(new MakeTempCardInHandAction(new EvolutionPoint()));
+         }
          break;
      }
    }
  
    
    public AbstractCard makeCopy() {
-     return (AbstractCard)new Grea();
+     return new Grea();
    }
 
    @Override
@@ -161,9 +171,27 @@ import java.util.List;
          Grea.this.initializeTitle();
          Grea.this.rawDescription = cardStrings2.DESCRIPTION;
          Grea.this.initializeDescription();
-         Grea.this.cardsToPreview = (AbstractCard)new NewEmber();
+         Grea.this.cardsToPreview = new NewEmber();
          Grea.this.target = CardTarget.ENEMY;
-         Grea.this.branch2 = true;
+         Grea.this.branch1 = false;
+       }
+     });
+     list.add(new UpgradeBranch() {
+       @Override
+       public void upgrade() {
+         ++Grea.this.timesUpgraded;
+         Grea.this.upgraded = true;
+         Grea.this.textureImg = IMG_PATH3;
+         Grea.this.loadCardImage(IMG_PATH3);
+         Grea.this.name = cardStrings3.NAME;
+         Grea.this.initializeTitle();
+         Grea.this.rawDescription = cardStrings3.DESCRIPTION;
+         Grea.this.initializeDescription();
+         Grea.this.baseBlock = 9;
+         Grea.this.upgradedBlock = true;
+         Grea.this.tags.add(AbstractShadowversePlayer.Enums.ACADEMIC);
+         Grea.this.cardsToPreview = new Ember();
+         Grea.this.branch1 = false;
        }
      });
      return list;

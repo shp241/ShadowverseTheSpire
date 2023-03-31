@@ -43,8 +43,8 @@ public class DDKPower extends AbstractPower {
     @Override
     public int onHeal(int healAmount) {
         flash();
-        addToBot((AbstractGameAction)new SFXAction("DDK"));
-        addToBot((AbstractGameAction)new DamageAllEnemiesAction(this.owner, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        addToBot(new SFXAction("DDK"));
+        addToBot(new DamageAllEnemiesAction(this.owner, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         return healAmount;
     }
 
