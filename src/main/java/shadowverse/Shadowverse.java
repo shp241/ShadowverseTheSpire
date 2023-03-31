@@ -2508,7 +2508,7 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard( new PureflowerMaiden());
         BaseMod.addCard( new Kira());
         BaseMod.addCard( new CyclicalGuidance());
-        BaseMod.addCard( new Verdant());
+        BaseMod.addCard( new Verdilia());
         BaseMod.addCard( new SumoMechanic());
         BaseMod.addCard( new Gioffre());
         BaseMod.addCard( new Lucius_N());

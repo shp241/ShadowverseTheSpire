@@ -1,8 +1,6 @@
 package shadowverse.cards.Rare;
 
 
-import basemod.abstracts.CustomCard;
-import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
@@ -15,15 +13,11 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
-import com.megacrit.cardcrawl.vfx.combat.ClawEffect;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import shadowverse.cards.AbstractVehicleCard;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Nemesis;
-import shadowverse.powers.BearminatorPower;
-
 
 public class MagnaSaber extends AbstractVehicleCard {
     public static final String ID = "shadowverse:MagnaSaber";
@@ -36,6 +30,7 @@ public class MagnaSaber extends AbstractVehicleCard {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.RARE, CardTarget.ENEMY);
         this.baseDamage = 12;
         this.tags.add(AbstractShadowversePlayer.Enums.FES);
+        this.tags.add(AbstractShadowversePlayer.Enums.MACHINE);
         this.baseMagicNumber = 18;
         this.magicNumber = this.baseMagicNumber;
         this.predicate = card -> card.type == CardType.ATTACK && card.costForTurn <= 2;
@@ -77,7 +72,7 @@ public class MagnaSaber extends AbstractVehicleCard {
         if (c.costForTurn <= 2 && c.type == CardType.ATTACK && !this.maneuver) {
             this.maneuver = true;
             flash();
-            addToBot((AbstractGameAction) new ExhaustSpecificCardAction(c, AbstractDungeon.player.hand));
+            addToBot( new ExhaustSpecificCardAction(c, AbstractDungeon.player.hand));
             this.cardsToPreview = c.makeStatEquivalentCopy();
             applyPowers();
         }
@@ -88,7 +83,7 @@ public class MagnaSaber extends AbstractVehicleCard {
         if (this.cardsToPreview != null) {
             AbstractCard c = this.makeStatEquivalentCopy();
             c.freeToPlayOnce = true;
-            addToBot((AbstractGameAction) new MakeTempCardInHandAction(c));
+            addToBot( new MakeTempCardInHandAction(c));
             this.cardsToPreview = null;
             applyPowers();
             this.maneuver = false;
@@ -96,11 +91,11 @@ public class MagnaSaber extends AbstractVehicleCard {
     }
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new SFXAction("MagnaSaber"));
-        addToBot((AbstractGameAction) new DamageAction((AbstractCreature) abstractMonster, new DamageInfo((AbstractCreature) abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        addToBot((AbstractGameAction) new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.magicNumber, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE));
-        addToBot((AbstractGameAction) new SFXAction("ATTACK_HEAVY"));
-        addToBot((AbstractGameAction) new VFXAction((AbstractCreature) abstractPlayer, (AbstractGameEffect) new CleaveEffect(), 0.1F));
+        addToBot( new SFXAction("MagnaSaber"));
+        addToBot( new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        addToBot( new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.magicNumber, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE));
+        addToBot( new SFXAction("ATTACK_HEAVY"));
+        addToBot( new VFXAction(abstractPlayer, new CleaveEffect(), 0.1F));
     }
 
 

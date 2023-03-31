@@ -110,7 +110,13 @@ public class OrchidExaminationHall extends AbstractAmuletCard {
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         if (this.costForTurn == 1){
-            addToBot(new ChooseOneAction(returnChoice()));
+            ArrayList<AbstractCard> list = returnChoice();
+            if (upgraded){
+                for (AbstractCard c : list){
+                    c.upgrade();
+                }
+            }
+            addToBot(new ChooseOneAction(list));
         }else {
             addToBot(new HealAction(AbstractDungeon.player, AbstractDungeon.player, 1));
         }

@@ -34,7 +34,7 @@ import java.util.List;
    public static final String ID = "shadowverse:Grea";
    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Grea");
    public static CardStrings cardStrings2 = CardCrawlGame.languagePack.getCardStrings("shadowverse:NewGrea");
-   public static CardStrings cardStrings3 = CardCrawlGame.languagePack.getCardStrings("shadowverse:NewGrea3");
+   public static CardStrings cardStrings3 = CardCrawlGame.languagePack.getCardStrings("shadowverse:Grea3");
    public static final String NAME = cardStrings.NAME;
    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
    public static final String IMG_PATH = "img/cards/Grea.png";
