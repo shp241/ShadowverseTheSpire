@@ -131,7 +131,7 @@
   },
   "shadowverse:UnseenStrengthMod": {
     "TEXT": [
-      " NL 造成的伤害无法被格挡。"
+      " NL 이 피해는 방어할 수 없다."
     ]
   }
 }
