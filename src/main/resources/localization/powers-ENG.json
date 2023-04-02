@@ -1778,50 +1778,50 @@
     ]
   },
   "shadowverse:AmaryllisPower": {
-    "NAME": "童话公主·阿玛莉莉丝",
+    "NAME": "Amaryllis, the Princess",
     "DESCRIPTIONS": [
-      "(1)回复 #b1 点生命 NL ",
-      "(2)下回合开始时额外抽 #b1 张牌 NL ",
-      "(3)抽牌堆发动 #b1 次 #y魔力增幅 NL ",
-      "受到伤害且未完全失去临时生命时，随机从下述中发动1种效果: NL ",
-      "造成的所有伤害增加 #b1 点。"
+      "(1)Heal #b1 HP. NL ",
+      "(2)Draw #b1 more card next turn. NL ",
+      "(3)Spellboost your draw pile once NL ",
+      "When you take damage and still have Temporary HP, Randomly trigger 1 of the following effects:: NL ",
+      "You deal #b1 more damage.。"
     ]
   },
   "shadowverse:CurseOfSufferingPower": {
-    "NAME": "痛苦",
+    "NAME": "Curse of Suffering",
     "DESCRIPTIONS": [
-      "回合结束时，自己和全体敌人受到 #b1 点生命流失伤害。此效果持续 #b",
-      " 回合"
+      "At the end of your turn, you and ALL enemies lose 1 HP. This effect is removed after activating #b",
+      " times."
     ]
   },
   "shadowverse:PureflowerMaidenPower": {
-    "NAME": "纯真的花少女",
+    "NAME": "Pureflower Maiden",
     "DESCRIPTIONS": [
-      "本回合内，回复生命时，抽 #b1 张牌(仅限1次)。获得 #y力量 或 #y敏捷 时，抽 #b1 张牌(仅限1次)。"
+      "Whenever you heal HP this turn, draw a card.(once). Whenever you gain Strength or Dexterity, draw a card.(once) "
     ]
   },
   "shadowverse:MementoPower": {
-    "NAME": "夜想教镰·玫美丹特",
+    "NAME": "Memento, the Grim Teacher",
     "DESCRIPTIONS": [
-      "每当 #y葬送 时，重复1次 #y葬送 以外的效果。"
+      "Whenever you perform Burial Rite, activate its other ability once more."
     ]
   },
   "shadowverse:PureflameLadyPower": {
-    "NAME": "净火千金",
+    "NAME": "Pureflame Lady",
     "DESCRIPTIONS": [
       "本回合内，获得 #y力量 或 #y敏捷 时，抽 #b1 张牌(上限为10次)。"
     ]
   },
   "shadowverse:ElluviaPower": {
-    "NAME": "华丽淑女·耶伦毕菈",
+    "NAME": "Elluvia, Graceful Lady",
     "DESCRIPTIONS": [
-      "回复生命时，获得 #b1 点 #y力量 和 #y敏捷 。"
+      "Whenever you heal HP, gain 1 Strength and Dexterity."
     ]
   },
   "shadowverse:FillyPower": {
-    "NAME": "幻想使役者·霏璃",
+    "NAME": "Filly, Mythmaster",
     "DESCRIPTIONS": [
-      "本回合内，打出 #y妖精 时获得 [E] 。 打出的牌若为本回合已使用的第 #b3 张，获得手牌数×3的格挡;若为第 #b6 张，抽2张牌;若为第9张，增加1张本回合耗能为0且带有消耗的 #y噬天异种 到手中。"
+      "This turn, whenever you play a #yFairy, gain [E]. If you played 3 cards this turn, gain Block equal to triple the number of cards in your hand,  NL If you played 6 cards, draw 2 cards. NL If you played 9 cards, add Sky Devouring Horror with 0 cost and Exhaust to your hand."
     ]
   }
 }
