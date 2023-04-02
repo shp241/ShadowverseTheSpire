@@ -4909,8 +4909,8 @@
   },
   "shadowverse:Erralde": {
     "NAME": "Erralde, Troth Convict",
-    "DESCRIPTION": "Condemned NL Apply 2 Weak and Vulnerable to all enemies. NL Gain the following effect: At the end of each of your turns, if you played a Condemned card or a card that cost 2 or more this turn, heal 2 HP and draw a card next turn. NL Ethereal",
-    "UPGRADE_DESCRIPTION":"Condemned NL Apply 2 Weak and Vulnerable to all enemies. NL Gain the following effect: At the end of each of your turns, if you played a Condemned card that cost 2 or more this turn, heal 2 HP and draw a card next turn."
+    "DESCRIPTION": "Condemned NL Accelerate 0: Heal 2 HP. if you played a Condemned card or a card that cost 2 or more this turn, draw a card next turn. NL --------------------- NL Apply 2 Weak and Vulnerable to all enemies. NL Gain the following effect: At the end of each of your turns, if you played a Condemned card or a card that cost 2 or more this turn, heal 2 HP and draw a card next turn. NL Ethereal",
+    "UPGRADE_DESCRIPTION":"Condemned NL Accelerate 0: Heal 2 HP. if you played a Condemned card or a card that cost 2 or more this turn, draw a card next turn. NL --------------------- NL Apply 2 Weak and Vulnerable to all enemies. NL Gain the following effect: At the end of each of your turns, if you played a Condemned card that cost 2 or more this turn, heal 2 HP and draw a card next turn."
   },
   "shadowverse:ExecutorOfTheOath": {
     "NAME": "Executor of the Oath",
@@ -5016,273 +5016,273 @@
     "DESCRIPTION": "Gain !B! Block. NL Add 2 *Evolution *Point to your hand. NL Deal !D! Damage to all enemies. Deal !M! additional damage for each *Evolution *Point in your exhaust pile. NL Gain X Energy. X equals the number of *Evolution *Point in your exhaust pile."
   },
   "shadowverse:SacredSheep": {
-    "NAME": "圣启梦羊",
-    "DESCRIPTION": "下3次受到的伤害为0。 NL 虚无 。",
-    "UPGRADE_DESCRIPTION":"下3次受到的伤害为0。"
+    "NAME": "Sacred Sheep",
+    "DESCRIPTION": "The next 3 damage you take becomes 0. NL Ethereal.",
+    "UPGRADE_DESCRIPTION":"The next 3 damage you take becomes 0."
   },
   "shadowverse:Judith": {
-    "NAME": "万物见证者·洁蒂丝",
-    "DESCRIPTION": "这张卡视为所有种类。 NL 造成 !D! 点伤害。 NL 爆能强化 1:给予 !M! 层 易伤 。 NL 爆能强化 2:抽 !M! 张牌。 NL 爆能强化 3:回复2点生命。 NL 爆能强化4 :下次受到的伤害为0。 NL 爆能强化 5:再造成 !D! 点伤害。"
+    "NAME": "Judith, Cosmic Observer",
+    "DESCRIPTION": "This card is treated as having every Trait. NL Deal !D! damage. NL Enhance 1: Apply !M! Vulnerable. NL Enhance 2: Draw !M! cards. NL Enhance 3: Heal 2 HP. NL Enhance 4: Prevent the next time you would take damage。 NL Enhance 5: Deal !D! damage again. "
   },
   "shadowverse:Ceridwen3": {
-    "NAME": "双魂的永恒·关德温",
-    "DESCRIPTION": "结晶 0 : 葬送 1张牌，抽1张牌，对随机敌人造成4点伤害。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 亡者召还 4 ，并再将1张耗能为0，且带有 虚无 和 消耗 ，伤害和格挡为0的复制品加入手中。"
+    "NAME": "Ceridwen, Eternal Duality",
+    "DESCRIPTION": " Crystallize 0 : Burial_Rite 1 : Draw a card, and deal 4 damage to a random enemy. NL  NL --------------------- NL  NL Gain !B! Block. NL Reanimate 4, and gain another copy of that card with costs 0 and Exhaust and Ethereal. That copy's Damage and Block become 0."
   },
   "shadowverse:Kali": {
-    "NAME": "迦梨",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 渴望 则增加1张 *进化点 到手中。"
+    "NAME": "Kali",
+    "DESCRIPTION": "Deal !D! damage. NL Add 1 *Evolution *Point if Avarice is active."
   },
   "shadowverse:DancingMiniSoulDevil": {
-    "NAME": "舞踏迷你灵魔",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 打出 *进化点 时， 升级 这张牌并增加1张 *进化点 到手中。",
-    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 打出后解除升级 。"
+    "NAME": "Dancing Mini Soul Devil",
+    "DESCRIPTION": "Gain !B! Block. NL When you play *Evolution *Point, upgrade this card in your hand and add 1  *Evolution *Point.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Disupgrades once played."
   },
   "shadowverse:Signa": {
-    "NAME": "封印的凶狼·希古娜",
-    "DESCRIPTION": "对全体敌人造成 !D! 点伤害。 NL 获得1层残影。 NL 打出 *进化点 时， 升级 这张牌并增加1张 *进化点 到手中。",
-    "UPGRADE_DESCRIPTION":"对全体敌人造成 !D! 点伤害。 NL 获得1层残影。 NL 如果消耗堆中 *进化点 数量为3以上，额外对全体敌人造成 !M! 点伤害。 NL 如果为7张以上，获得1点 力量 和 敏捷 。 NL 打出后解除升级 。"
+    "NAME": "Signa, Sealed Madwolf",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Gain 1 Blur. NL When you play *Evolution *Point, upgrade this card in your hand and add 1  *Evolution *Point.",
+    "UPGRADE_DESCRIPTION":"Deal !D! damage to ALL enemies.  NL Gain 1 Blur. NL If there are 3 or more *Evolution *Points in your exhaust pile, deal !M! more damage to ALL enemies. NL If there are 7 or more, gain 1 Strength and Dexterity. NL Disupgrades once played. "
   },
   "shadowverse:Yuzuki": {
-    "NAME": "鲜血领主·夕月",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果消耗堆中 *进化点 数量为3以上，给予2层 易伤 并抽1张牌。 NL 如果已升级5张以上，给予2层 虚弱 并抽1张牌。",
-    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害2次。 NL 增加1张 *进化点 到手中。 NL 如果消耗堆中 *进化点 数量为3以上，给予2层 易伤 并抽1张牌。 NL 如果为7张以上，给予2层 虚弱 并抽1张牌。"
+    "NAME": "Yuzuki, Bloodlord",
+    "DESCRIPTION": "Deal !D! damage. NL If there are 3 or more *Evolution *Points in your exhaust pile, apply 2 Vulnerable and draw a card. NL If there are 5 or more, apply 2 Weak and draw a card.",
+    "UPGRADE_DESCRIPTION":"Deal !D! damage twice. NL Add 1 *Evolution *Point in your hand. NL If there are 3 or more *Evolution *Points in your exhaust pile, apply 2 Vulnerable and draw a card. NL If there are 5 or more, apply 2 Weak and draw a card."
   },
   "shadowverse:ScorpionOfTheDepths": {
-    "NAME": "沼泽地的大蝎",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 复仇 则增加1张 *进化点 到手中。"
+    "NAME": "Scorpion of the Depths",
+    "DESCRIPTION": "Deal !D! Damage. NL Add 1 *Evolution *Point to your hand if Vengeance is active."
   },
   "shadowverse:CrimsonVirtue": {
-    "NAME": "血红仁义",
-    "DESCRIPTION": "造成 !D! 点伤害，抽1张牌。 NL 如果消耗堆中 *进化点 数量为5以上，额外造成一次伤害。"
+    "NAME": "Crimson Virtue",
+    "DESCRIPTION": "Deal !D! damage and draw a card. NL  If there are 5 or more *Evolution *Points in your exhaust pile, apply this effect once more."
   },
   "shadowverse:Seox": {
-    "NAME": "神狼·希斯",
-    "DESCRIPTION": "升级时降低奥义数。 NL 造成 !D! 点伤害2次。 NL 奥义 3:再造成2次伤害。 NL 解放奥义 6:再造成2次伤害。",
+    "NAME": "Seox, Heavenly Howl",
+    "DESCRIPTION": "Reduce Skybound_Art when upgraded. NL Deal !D! damage twice. NL Skybound_Art 3: Deal !D! damage 4 times. NL Super_Skybound_Art 6: Deal !D! damage 6 times.",
     "EXTENDED_DESCRIPTION": [
-      "造成 !D! 点伤害2次。 NL 奥义 ",
-      ":再造成2次伤害。 NL 限定 解放奥义 ",
-      ":再造成2次伤害。"
+      "Deal !D! damage twice. NL Skybound_Art",
+      ": Deal !D! damage 4 times. NL Super_Skybound_Art ",
+      ": Deal !D! damage 6 times."
     ]
   },
   "shadowverse:Alice": {
-    "NAME": "奇幻之梦·爱丽丝",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果本场战斗已升级3张以上攻击牌，升级这张牌并发现2张攻击牌。 NL 如果已升级7张以上，造成的伤害翻倍。",
-    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害，获得1点能量。 NL 如果本场战斗已升级3张以上攻击牌，发现2张攻击牌。 NL 如果已升级7张以上，造成的伤害翻倍。"
+    "NAME": "Alice, Wandering Dreamer",
+    "DESCRIPTION": "Deal !D! damage. NL If you have upgraded more than 3 Attack cards this combat，upgrade this card and draw 2 cards. NL If you have upgraded more than 7 Attack cards, double the damage. ",
+    "UPGRADE_DESCRIPTION":"Deal !D! damage and gain 1 Energy. NL If you have upgraded more than 3 Attack cards in this combat draw 2 cards. NL If you have upgraded more than 7 Attack cards, double the damage. "
   },
   "shadowverse:CrimsonDesire": {
-    "NAME": "红之渴望",
-    "DESCRIPTION": "失去2点生命。 NL 增加1张 *进化点 和 *奇迹 到手中。"
+    "NAME": "Crimson Desire",
+    "DESCRIPTION": "Lose 2 HP. NL Put 1 *Evolution *Point and 1 *Miracle into your hand."
   },
   "shadowverse:DestructiveSuccubus": {
-    "NAME": "破灭的魅魔",
-    "DESCRIPTION": "可被多次 升级 。 NL 对全体敌人造成 !D! 点伤害。 NL 复仇 则获得 !B! 点 格挡2次。"
+    "NAME": "Destructive Succubus",
+    "DESCRIPTION": "Can be upgraded multiple times. NL Deal !D! damage to ALL enemies. NL Gain !B! Block twice if Vengeance is active."
   },
   "shadowverse:VerdantPrayer": {
-    "NAME": "新绿的显现",
-    "DESCRIPTION": "学园  NL 增加1张 *进化点 和 奇迹 到手中。 NL 如果本场战斗已打出的非 打击 精灵攻击牌数量为20以上，获得 !M! 点 力量 和 敏捷 ，1层 残影 和 人工制品 。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "保留 · 学园 NL 增加1张 *进化点 和 奇迹 到手中。 NL 如果本场战斗已打出的非 打击 精灵攻击牌数量为20以上，获得 !M! 点 力量 和 敏捷 ，1层 残影 和 人工制品 。 NL 消耗 。",
+    "NAME": "Verdant Prayer",
+    "DESCRIPTION": "Academic NL Add 1 *Evolution *Point and 1 *Miracle into your hand. NL If you played 20 or more non-strike Forestcraft Attack cards played in this combat, gain !M! Strength and Dexterity, 1 Blur and 1 Artifact. NL Exhaust. ",
+    "UPGRADE_DESCRIPTION": "Retain · Academic NL Add 1 *Evolution *Point and 1 *Miracle into your hand. NL If you played 20 or more non-strike Forestcraft Attack cards in this combat, gain !M! Strength and Dexterity, 1 Blur and Artifact. NL Exhaust. ",
     "EXTENDED_DESCRIPTION": [
-      " NL (X为",
+      " NL (X is ",
       " 。)"
     ]
   },
   "shadowverse:Castelle": {
-    "NAME": "嫩绿的新生·卡诗黛儿",
-    "DESCRIPTION": "学园 NL 获得 !B! 点 格挡 ，造成 !D! 点伤害。 NL 如果X为10以上，则增加一张 *新绿的显现 到手中(X为本场战斗已打出的非 打击 精灵攻击牌数量)。",
-    "UPGRADE_DESCRIPTION": "学园 NL 获得 !B! 点 格挡 ， 造成 !D! 点伤害。 NL 如果X为10以上，则增加一张 *新绿的显现+ 到手中(X为本场战斗已打出的非 打击 精灵攻击牌数量)。",
+    "NAME": "Castelle, Budding Mage",
+    "DESCRIPTION": "Academic NL Gain !B! Block, deal !D! damage. NL If X is 10 or more. put 1 *Verdant *Prayer into hand.(X is non-strike Forestcraft Attack cards played in this combat)",
+    "UPGRADE_DESCRIPTION": "Academic NL Gain !B! block, deal !D! damage. NL If X is 10 or more. put 1 *Verdant *Prayer+ into hand.(X is non-strike Forestcraft Attack cards played in this combat)",
     "EXTENDED_DESCRIPTION": [
-      " NL (X为",
-      " 。)"
+      " NL (X is",
+      " .)"
     ]
   },
   "shadowverse:MysterianParty": {
-    "NAME": "马纳历亚派对",
-    "DESCRIPTION": "马纳历亚 · 学园 NL 随机从抽牌堆中增加1张 马纳历亚 牌到手中。 NL 如果本场战斗已打出的 马纳历亚 牌数量为10以上，额外获得1点 力量 和 敏捷 。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "马纳历亚 · 学园 NL 随机从抽牌堆中增加1张 马纳历亚 牌到手中。 NL 如果本场战斗已打出的 马纳历亚 牌数量为10以上，额外获得1点 力量 和 敏捷 。",
+    "NAME": "Mysterian Party",
+    "DESCRIPTION": "Mysteria · Academic NL Put 1 random Mysteria card from your draw pile to your hand. NL If you played 10 or more Mysteria cards this combat, gain 1 Strength and Dexterity. NL Exhaust. ",
+    "UPGRADE_DESCRIPTION": "Mysteria · Academic NL Put 1 random Mysteria card from your draw pile to your hand. NL If you played 10 or more Mysteria cards this combat, gain 1 Strength and Dexterity.",
     "EXTENDED_DESCRIPTION": [
-      " NL (已打出",
-      " 张 马纳历亚 牌。)"
+      " NL (Played ",
+      " Mysteria cards this combat. )"
     ]
   },
   "shadowverse:CurseOfSuffering": {
-    "NAME": "痛苦",
-    "DESCRIPTION": "回合结束时，自己和体敌人流失1点生命。 NL 此效果持续3个回合。 NL 消耗 。"
+    "NAME": "Curse of Suffering",
+    "DESCRIPTION": "At the end of your turn, you and ALL enemies lose 1 HP. NL This effect is removed after activating 3 times. NL Exhaust. "
   },
   "shadowverse:Amaryllis": {
-    "NAME": "童话公主·阿玛莉莉丝",
-    "DESCRIPTION": "学园 NL 获得 !B! 点 临时生命 。 NL 增加1张 *痛苦 到手中。 NL 获得「受到伤害且未完全失去临时生命时，从下述中随机发动1种能力: NL (1)回复1点生命 NL (2)下回合开始时额外抽1张牌 NL (3)抽牌堆发动1次 魔力增幅 」效果。",
-    "UPGRADE_DESCRIPTION": "学园 NL 获得 !B! 点 临时生命 。 NL 增加1张 *痛苦 到手中。 NL 造成的所有伤害增加1点。 NL 获得「受到伤害且未完全失去临时生命时，从下述中随机发动1种能力: NL (1)回复1点生命 NL (2)下回合开始时额外抽1张牌 NL (3)抽牌堆发动1次 魔力增幅 」效果。"
+    "NAME": "Amaryllis, the Princess",
+    "DESCRIPTION": "Academic NL Gain !B! Temporary HP. NL Add 1 *Curse *of *Suffering in hand. NL Gain following effect: When you take damage and still have Temporary HP, Randomly trigger 1 of the following effects: NL (1)Heal 1 HP. NL (2)Draw 1 more card next turn. NL (3)Spellboost your draw pile once.",
+    "UPGRADE_DESCRIPTION": "Academic NL Gain !B! Temporary HP. NL Add 1 *Curse *of *Suffering in hand. NL You deal +1 more damage. NL Gain following effect: When you take damage and doesn't loss all Temporary HP, Trigger 1 following effect at randomly: NL (1)Heal 1 HP. NL (2)Draw 1 more card next turn. NL (3)Spellboost your draw pile once."
   },
   "shadowverse:FellTransformation": {
-    "NAME": "剧变为恶",
-    "DESCRIPTION": "消耗 1张手牌，增加1张 *丛林蝙蝠 到手中。",
-    "UPGRADE_DESCRIPTION": "消耗 1张手牌，增加1张 *丛林蝙蝠+ 到手中。"
+    "NAME": "Fell Transformation",
+    "DESCRIPTION": "Exhaust 1 card. Put 1 *Forest *Bat in your hand.",
+    "UPGRADE_DESCRIPTION": "Exhaust 1 card. Put 1 *Forest *Bat+ in your hand."
   },
   "shadowverse:MachSpeedMaron": {
-    "NAME": "神速跑腿·玛萝",
-    "DESCRIPTION": "学园 NL 未 复仇 不能打出这张牌。 NL 造成 !D! 点伤害。"
+    "NAME": "Mach-Speed Maron",
+    "DESCRIPTION": "Academic NL Can only be played if Vengeance is active.  NL Deal !D! damage."
   },
   "shadowverse:BadGirlLife": {
-    "NAME": "不良少女的校园生活",
-    "DESCRIPTION": "学园 NL 丢弃1张 校园 攻击牌，抽2张牌。 NL 复仇 则增加1张 *进化点 到手中。",
-    "UPGRADE_DESCRIPTION": "学园 NL 丢弃1张 攻击牌，抽2张牌。 NL 复仇 则增加1张 *进化点 到手中。"
+    "NAME": "Bad-Girl Life",
+    "DESCRIPTION": "Academic NL Discard 1 Academic attack card, and draw 2 cards. NL Add 1 *Evolution *Point to your hand if Vengeance is active. ",
+    "UPGRADE_DESCRIPTION": "Academic NL Discard 1 attack card, and draw 2 cards. NL Add 1 *Evolution *Point to your hand if Vengeance is active."
   },
   "shadowverse:Lou_Bishop": {
-    "NAME": "优雅修炼·露",
-    "DESCRIPTION": "学园 NL 造成 !D! 点伤害。 NL 如果 力量 或 敏捷 大于0，回复1点生命，额外对随机敌人造成 !D! 点伤害。"
+    "NAME": "Lou, Lady-in-Training",
+    "DESCRIPTION": "Academic NL Deal !D! damage. NL Heal 1 HP and deal !D! damage to a random enemy whenever you gain Strength or Dexterity. "
   },
   "shadowverse:OrchidExaminationHall": {
-    "NAME": "奥琪朵的试场",
-    "DESCRIPTION": "圣祝 · 学园 NL 回复1点生命。 NL 倒计时 1:回复1点生命。 NL 爆能强化 1:改为 抉择  NL *班布蒂的试场 NL *麻姆的试场 NL *蒲拉慕的试场",
-    "UPGRADE_DESCRIPTION": "圣祝 · 学园 NL 回复1点生命。 NL 倒计时 1:回复1点生命。 NL 爆能强化 1:改为 抉择  NL *班布蒂的试场+ NL *麻姆的试场+ NL *蒲拉慕的试场+"
+    "NAME": "Orchid's Examination Hall",
+    "DESCRIPTION": "圣祝 · Academic NL Heal 1 HP. NL Countdown 1: Heal 1 HP. NL Enhance 1: Choose:  NL *Bambeauty's Examination Hall NL *Mum's Examination Hall NL *Plum's Examination Hall",
+    "UPGRADE_DESCRIPTION": "圣祝 · Academic NL Heal 1 HP. NL Countdown 1: Heal 1 HP. NL Enhance 1: Choose:  NL *Bambeauty's Examination Hall+ NL *Mum's Examination Hall+ NL *Plum's Examination Hall+"
   },
   "shadowverse:BambeautyExaminationHall": {
-    "NAME": "班布蒂的试场",
-    "DESCRIPTION": "圣祝 · 学园 NL 回复1点生命，抽 !M! 张牌。 NL 倒计时 1:回复1点生命，抽 !M! 张牌。"
+    "NAME": "Bambeauty's Examination Hall",
+    "DESCRIPTION": "圣祝 · Academic NL Heal 1 HP, draw !M! cards. NL Countdown 1: Heal 1 HP, draw !M! cards."
   },
   "shadowverse:MumExaminationHall": {
-    "NAME": "麻姆的试场",
-    "DESCRIPTION": "圣祝 · 学园 NL 回复1点生命，对随机敌人造成 !M! 点伤害。 NL 倒计时 1:回复1点生命，对随机敌人造成 !M! 点伤害。"
+    "NAME": "Mum's Examination Hall",
+    "DESCRIPTION": "圣祝 · Academic NL Heal 1 HP, deal !M! damage to a random enemy. NL Countdown 1: Heal 1 HP, deal !M! damage to a random enemy."
   },
   "shadowverse:PlumExaminationHall": {
-    "NAME": "蒲拉慕的试场",
-    "DESCRIPTION": "圣祝 · 学园 NL 回复 !M! 点生命。 NL 倒计时 1:回复 !M! 点生命。"
+    "NAME": "Plum's Examination Hall",
+    "DESCRIPTION": "圣祝 · Academic NL Heal !M! HP. NL Countdown 1: Heal !M! HP."
   },
   "shadowverse:Gruinne": {
-    "NAME": "鲁纳尔的教会长·葛芮妮",
-    "DESCRIPTION": "学园 NL 获得 !B! 点 格挡 。 NL 获得 !M! 层 土之印记 。 NL 此后，如果 土之印 为3以上，增加1张 *真理的术式 到手中。",
-    "UPGRADE_DESCRIPTION": "学园 NL 获得 !B! 点 格挡 ，全体敌人本回合失去1点 力量 。 NL 获得 !M! 层 土之印记 。 NL 此后，如果 土之印 为3以上，增加1张 *真理的术式 到手中。"
+    "NAME": "Gruinne, Leonardian Provost",
+    "DESCRIPTION": "Academic NL Gain !B! Block. NL Gain !M! Earth_Essence. NL Then if you have 3 or more Earth_Essence add *Veridic *Ritual in hand.",
+    "UPGRADE_DESCRIPTION": "Academic NL Gain !B! Block, All enemies lose 1 Strength this turn. NL Gain !M! Earth_Essence. NL Then if you have 3 or more Earth_Essence add *Veridic *Ritual in hand."
   },
   "shadowverse:Grea3": {
-    "NAME": "缔结之红莲·古蕾娅",
-    "DESCRIPTION": "马纳历亚 · 学园 。 NL 获得 !B! 点 格挡 。 NL 增加1张 *古蕾娅的炎热之术 到手中。 NL 如果手中有其他 马纳历亚 牌，增加1张 *进化点 到手中。"
+    "NAME": "Grea, Crimson Promise",
+    "DESCRIPTION": "Mysteria · Academic 。 NL Gain !B! Block. NL Put 1 *Grea's Ember in hand. NL If you have other Mysteria card in hand, Put 1 *Evolution Point."
   },
   "shadowverse:GhostHunter": {
-    "NAME": "狩灵少女",
-    "DESCRIPTION": "学园 NL 葬送 1张牌，增加1张 *怨灵 到手中。"
+    "NAME": "GhostHunter",
+    "DESCRIPTION": "Academic NL Burial_Rite 1: Add 1 *Ghost to your hand."
   },
   "shadowverse:Leeds": {
-    "NAME": "恋咒术师·莉姿",
-    "DESCRIPTION": "学园 NL 获得 !B! 点 格挡 。 NL 葬送 1张牌，对随机敌人造成 !D! 点伤害。 NL 如果本场战斗已 葬送 次数为5以上，额外获得 !B! 点 格挡 。 NL 谢幕曲 :被消耗时抽1张牌。",
+    "NAME": "Leeds, Pining Witch",
+    "DESCRIPTION": "Academic NL Gain !B! Block. NL Burial_Rite 1: Deal !D! damage to a random enemy. NL If you Burial Rited 5 or more times this combat, gain !B! more Block. NL Last_Words: Draw a card. ",
     "EXTENDED_DESCRIPTION": [
-      " NL (已 葬送 ",
-      " 次。)"
+      " NL (Burial Rited",
+      " times.)"
     ]
   },
   "shadowverse:DemonEyeGangster": {
-    "NAME": "魔眼太妹",
-    "DESCRIPTION": "学园 NL 获得 !B! 点 格挡 。 NL 复仇 则移除目标所有 格挡 。",
-    "UPGRADE_DESCRIPTION": "学园 NL 获得 !B! 点 格挡 。 NL 复仇 则移除目标所有 格挡 。 NL 限定 复仇 则 击晕 目标。"
+    "NAME": "Demon-Eyed Gangster",
+    "DESCRIPTION": "Academic NL Gain !B! Block. NL Remove an enemy's Block if Vengeance is active.",
+    "UPGRADE_DESCRIPTION": "Academic NL Gain !B! block. NL Remove an enemy's Block if Vengeance is active. NL Stun the enemy if Vengeance is active.(Limit)"
   },
   "shadowverse:Arka": {
-    "NAME": "凶轮手·亚琉嘉",
-    "DESCRIPTION": "学园 NL 造成 !D! 点伤害 。 NL 复仇 则再造成1次伤害。 NL 未 复仇 ，则失去2点生命。",
-    "UPGRADE_DESCRIPTION": "学园 NL 造成 !D! 点伤害 ，回复2点生命。 NL 复仇 则再造成1次伤害，回复2点生命。 NL 未 复仇 ，则失去2点生命。"
+    "NAME": "Arka, Sin Spinner",
+    "DESCRIPTION": "Academic NL Deal !D! damage. NL Deal !D! damage again if Vengeance is active. NL Lose 2 HP if Vengeance is not active.",
+    "UPGRADE_DESCRIPTION": "Academic NL Deal !D! damage and heal 2 HP. NL Repeat this if Vengeance is active. NL Lose 2 HP if Vengeance is not active."
   },
   "shadowverse:Vulgus": {
-    "NAME": "逢魔校长·沃露嘉丝",
-    "DESCRIPTION": "学园 NL 获得 !B! 点 格挡 。 NL 复仇 则下次攻击伤害翻倍。 NL 自己的生命值变为最大生命值的一半（当前生命值小于最大生命值的一半则不会变动）。 NL 本场战斗中生命值不能高于最大生命值的一半。 NL 本场战斗中自己受到的伤害不会超过最大生命值一半的30%。"
+    "NAME": "Vulgus, Infernal Headmistress",
+    "DESCRIPTION": "Academic NL Gain !B! Block. NL Double next attack's damage if Vengeance is active. NL If your HP is above 50% of your max HP, set your HP to half your max HP. NL You cannot have more HP than that amount this combat. NL You do not take more than 30% of your max HP as damage at a time for the rest of combat."
   },
   "shadowverse:Kira": {
-    "NAME": "恒心少女·琪蓝",
-    "DESCRIPTION": "学园 NL 获得 !B! 点 格挡 。 NL 随机从抽牌堆中将一张 学园 牌加入手中 。"
+    "NAME": "Kira, Resilient Maiden",
+    "DESCRIPTION": "Academic NL Gain !B! Block. NL Put a random Academic card from your draw pile to your hand."
   },
   "shadowverse:CyclicalGuidance": {
-    "NAME": "久远的指引",
-    "DESCRIPTION": "学园 NL 对随机敌人造成 !D! 点伤害，重复4次。 NL 爆能强化 5:每次伤害增加24。",
-    "UPGRADE_DESCRIPTION":"学园 · 保留 NL 对随机敌人造成 !D! 点伤害，重复4次。 NL 爆能强化 5:每次伤害增加24。"
+    "NAME": "Cyclical Guidance",
+    "DESCRIPTION": "Academic NL Deal !D! damage to a random enemy 4 times. NL Enhance 5: Deal 24 damage instead.",
+    "UPGRADE_DESCRIPTION":"Academic · Retain NL Deal !D! damage to a random enemy 4 times. NL Enhance 5: Deal 24 damage instead."
   },
   "shadowverse:Verdilia": {
-    "NAME": "异端指导者·贝尔狄莉雅",
-    "DESCRIPTION": "学园 · 融合 : 学园 牌 NL 与这张牌融合时，回复1点生命。 NL 获得 !B! 点 格挡 。 NL 如果手中有其他 学园 牌，获得1点 力量 和 敏捷 。 NL 如果已 融合 ，增加1张 *久远的指引 到手中。",
-    "UPGRADE_DESCRIPTION":"学园 · 融合 : 学园 牌 NL 与这张牌融合时，回复1点生命。 NL 获得 !B! 点 格挡 。 NL 如果手中有其他 学园 牌，获得1点 力量 和 敏捷 。 NL 如果已 融合 ，增加1张 *久远的指引+ 到手中。"
+    "NAME": "Verdilia, Rogue Professor",
+    "DESCRIPTION": "Academic · Fusion : Academic cards NL Whenever cards are fused to this card, heal 1 HP. NL Gain !B! Block. NL If you have any other Academic cards in hand, gain 1 Strength and Dexterity. NL If this card is fused, add *Cyclical *Guidance in hand.",
+    "UPGRADE_DESCRIPTION":"Academic · Fusion : Academic cards NL Whenever cards are fused to this card, heal 1 HP. NL Gain !B! Block. NL If you have any other Academic cards in hand, gain 1 Strength and Dexterity. NL If this card is fused, add *Cyclical *Guidance+ in hand."
   },
   "shadowverse:SumoMechanic": {
-    "NAME": "相扑机师",
-    "DESCRIPTION": "学园 · 机械 NL 获得 !B! 点 格挡 。 NL 谢幕曲 打出或被消耗时，增加1张 *生产器械 到手中。 NL 如果消耗堆中的 机械 牌数量为10以上，额外获得 !B! 点 格挡 。"
+    "NAME": "Sumo Mechanic",
+    "DESCRIPTION": "Academic · Machina NL Gain !B! Block. NL Last_Words: When this card is played or exhausted, put 1 *Assembly *Droid in hand. NL If 10 or more Machina cards are in your exhaust pile, gain !B! more Block. "
   },
   "shadowverse:Gioffre": {
-    "NAME": "勤学工匠·霍弗乐",
-    "DESCRIPTION": "学园 · 机械 NL 获得 !B! 点 格挡 。 NL 谢幕曲 打出或被消耗时，增加1张 *生产器械 到手中。 NL 如果消耗堆中的 机械 牌数量为5以上，增加1张本回合耗能为0且带有 消耗 的 *机械生命体 到手中。"
+    "NAME": "Gioffre, Diligent Engineer",
+    "DESCRIPTION": "Academic · Machina NL Gain !B! Block. NL Last_Words: When this card is played or exhausted, put 1 *Assembly *Droid in hand. NL If 10 or more Machina cards are in your exhaust pile, add *Mechanized *Lifeform with 0 cost and Exhaust to your hand."
   },
   "shadowverse:LyelthMarionette": {
-    "NAME": "雷琉的人偶",
-    "DESCRIPTION": "学园 · 保留 NL 这张卡也视为 *悬丝傀儡 。 NL 造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。 NL 消耗 。"
+    "NAME": "Lyelth's Marionette",
+    "DESCRIPTION": "Academic · Retain NL This card will be treated as a *Puppet. NL Deal !D! damage. NL Gain !B! Block. NL Exhaust. "
   },
   "shadowverse:UnseenStrength": {
-    "NAME": "不可视的技巧",
-    "DESCRIPTION": "学园 NL 选择手中1张 *悬丝傀儡 赋予「造成的伤害无法格挡」效果。 NL 如果消耗堆中的攻击牌数量为10张以上，获得2点 力量 和 敏捷。 NL 20张以上， 升级 这张 *悬丝傀儡 。",
-    "UPGRADE_DESCRIPTION":"学园 · 保留 NL 选择手中1张 *悬丝傀儡 赋予「造成的伤害无法格挡」效果。 NL 如果消耗堆中的攻击牌数量为10张以上，获得2点 力量 和 敏捷。 NL 20张以上， 升级 这张 *悬丝傀儡 。"
+    "NAME": "Unseen Strength",
+    "DESCRIPTION": "Academic NL Give a *Puppet in your hand the  following effect 「This damage is unblockable」. NL If there are 10 or more Attack cards in your Exhaust pile, gain 2 Strength and Dexterity. NL If there are 20 or more, upgrade that *Puppet.",
+    "UPGRADE_DESCRIPTION":"Academic · Retain NL Give a *Puppet in hand following effect 「This damage is unblockable」. NL If there are 10 or more Attack cards in your Exhaust pile, gain 2 Strength and Dexterity. NL If there are 20 or more, upgrade that *Puppet."
   },
   "shadowverse:Lyelth": {
-    "NAME": "无缪偶像·雷琉",
-    "DESCRIPTION": "学园 NL 获得 !B! 点 格挡 。 NL 选择1张手牌消耗，并将1张复制品加入抽牌堆。 NL 增加1张 *雷琉的人偶 和 *不可视的技巧 到手中。",
-    "UPGRADE_DESCRIPTION":"学园 NL 获得 !B! 点 格挡 。 NL 选择1张手牌消耗，并将1张复制品加入抽牌堆。 NL 增加1张 *雷琉的人偶 和 *不可视的技巧+ 到手中。 NL 增加1张 *改良型·悬丝傀儡 到手中。"
+    "NAME": "Lyelth, Immaculate Idol",
+    "DESCRIPTION": "Academic NL Gain !B! Block. NL Exhaust a card in hand, then put a copy of that card into your draw pile. NL Add a *Lyelth's *Marionette and *Unseen *Strength to your hand.",
+    "UPGRADE_DESCRIPTION":"Academic NL Gain !B! Block. NL Exhaust a card in hand, then put a copy of that card into your draw pile. NL Add a *Lyelth's *Marionette and *Unseen *Strength to your hand. NL Add an *Enhanced *Puppet to your hand."
   },
   "shadowverse:Lucius_N": {
-    "NAME": "传奇教师·路西乌斯",
-    "DESCRIPTION": "学园 NL 造成 !D! 点伤害 。 NL 根据当前角色触发以下效果: NL 精灵·巫师:获得1点能量 NL 死灵术士·复仇者:增加2张 *怨灵 到手中 NL 皇家护卫:给予2层 易伤 NL 吸血鬼·主教:回复3点生命",
-    "UPGRADE_DESCRIPTION":"学园 NL 造成 !D! 点伤害 。 NL 根据当前角色触发以下效果: NL 精灵·巫师:获得1点能量 NL 死灵术士·复仇者:增加2张 *怨灵 到手中 NL 皇家护卫:给予2层 易伤 NL 吸血鬼·主教:回复3点生命 NL 根据目标敌人类型触发以下效果: NL 普通则额外造成4点伤害，精英则获得1点能量 NL 首领则增加2张 *古老的创造物 到手中。"
+    "NAME": "Lucius, Travelled Trainer",
+    "DESCRIPTION": "Academic NL Deal !D! damage. NL If your class is Forestcraft or Runecraft, gain 1 energy. if Shadowcraft or Portalcraft, add 2 *Ghosts to your hand. If Swordcraft, apply 2 Vulnerable. If Havencraft or Bloodcraft, Heal 3 HP.",
+    "UPGRADE_DESCRIPTION":"Academic NL Deal !D! damage. NL If your class is Forestcraft or Runecraft, gain 1 energy. if Shadowcraft or Portalcraft, add 2 *Ghosts to your hand. If Swordcraft, apply 2 Vulnerable. If Havencraft or Bloodcraft, Heal 3 HP. NL If this is a normal enemy combat, deal 4 more damage. If you this is an Elite combat, gain 1 energy. If this is in a Boss combat, add 2 *Ancient Artifacts in hand."
   },
   "shadowverse:BellWitch": {
-    "NAME": "手铃魔术师",
-    "DESCRIPTION": "学园 · 马纳历亚 NL 获得 !B! 点 格挡。 NL 增加1张 *马纳历亚的魔弹 和 *马纳历亚的防阵 到手中。"
+    "NAME": "Bell Witch",
+    "DESCRIPTION": "Academic · Mysteria NL Gain !B! Block. NL Add *Mysterian *Missile and *Mysterian *Circle to your hand."
   },
   "shadowverse:Anne3": {
-    "NAME": "光艳之魔导·安",
-    "DESCRIPTION": "学园 · 马纳历亚 NL 获得 !B! 点 格挡。 NL 增加1张 *安的大英灵 到手中。"
+    "NAME": "Anne, Brilliant Mage",
+    "DESCRIPTION": "Academic · Mysteria NL Gain !B! Block. NL Add 1 *Anne's *Summoning to your hand."
   },
   "shadowverse:Memento": {
-    "NAME": "夜想教镰·玫美丹特",
-    "DESCRIPTION": "学园 NL 每当 葬送 时，重复1次 葬送 以外的效果。"
+    "NAME": "Memento, the Grim Teacher",
+    "DESCRIPTION": "Academic NL Whenever you perform Burial Rite, activate its other ability once more."
   },
   "shadowverse:PureflowerMaiden": {
-    "NAME": "纯真的花少女",
-    "DESCRIPTION": "学园 NL 获得 !B! 点 格挡 。 NL 本回合内，回复生命时，抽1张牌(仅限1次)。获得 力量 或 敏捷 时，抽1张牌(仅限1次)。"
+    "NAME": "Pureflower Maiden",
+    "DESCRIPTION": "Academic NL Gain !B! Block. NL Whenever you heal HP this turn, draw a card.(once) whenever you gain Strength or Dexterity, draw a card.(once)"
   },
   "shadowverse:PureflameLady": {
-    "NAME": "净火千金",
-    "DESCRIPTION": "学园 NL 获得 !B! 点 格挡 。 NL 本回合内，获得 力量 或 敏捷 时，对全体敌人造成2点伤害(上限为10次)。 NL 回复1点生命。"
+    "NAME": "Pureflame Lady",
+    "DESCRIPTION": "Academic NL Gain !B! Block. NL Whenever you gain Strength or Dexterity, deal 2 damage to all enemies.(Max. 10 times)。 NL Heal 1 HP."
   },
   "shadowverse:Galom": {
-    "NAME": "帝拳·荷洛穆",
-    "DESCRIPTION": "学园 NL 对全体敌人造成 !D! 点伤害。 NL 未 复仇 则失去2点生命。 NL 复仇 则伤害翻倍。"
+    "NAME": "Galom, Empress Fist",
+    "DESCRIPTION": "Academic NL Deal !D! damage to ALL enemies. NL Lose 2 HP if Vengeance is not active. NL Double the damage if Vengeance is active."
   },
   "shadowverse:Elluvia": {
-    "NAME": "华丽淑女·耶伦毕菈",
-    "DESCRIPTION": "学园 NL 回复生命时，获得1点 力量 和 敏捷 。 NL 虚无 。",
-    "UPGRADE_DESCRIPTION":"学园 NL 回复生命时，获得1点 力量 和 敏捷 。"
+    "NAME": "Elluvia, Graceful Lady",
+    "DESCRIPTION": "Academic NL Whenever you heal HP, gain 1 Strength and Dexterity. NL Ethereal.",
+    "UPGRADE_DESCRIPTION":"Academic NL Whenever you heal HP, gain 1 Strength and Dexterity."
   },
   "shadowverse:RoboticsReporter": {
-    "NAME": "玩具记者",
-    "DESCRIPTION": "学园 · 机械 NL 获得 !B! 点 格挡 。 NL 增加3张 *生产器械 到手中。"
+    "NAME": "Robotics Reporter",
+    "DESCRIPTION": "Academic · Machina NL Gain !B! Block. NL Add 3 *Assembly *Droids to your hand."
   },
   "shadowverse:Filly": {
-    "NAME": "幻想使役者·霏璃",
-    "DESCRIPTION": "学园 NL 本回合内，打出 *妖精 时获得1点能量`。 NL 打出的牌若为本回合已使用的第3张，获得手牌数×3的格挡。 NL 若为第6张，抽2张牌。 NL 若为第9张，增加1张本回合耗能为0且带有消耗的 *噬天异种 到手中。",
-    "UPGRADE_DESCRIPTION":"学园 · 保留 NL 本回合内，打出 *妖精 时获得1点能量`。 NL 打出的牌若为本回合已使用的第3张，获得手牌数×3的格挡。 NL 若为第6张，抽2张牌。 NL 若为第9张，增加1张本回合耗能为0且带有消耗的 *噬天异种 到手中。"
+    "NAME": "Filly, Mythmaster",
+    "DESCRIPTION": "Academic NL This turn, whenever you play a *Fairy, gain 1 Energy. NL If you played 3 cards this turn, gain Block equal to triple the number of cards in your hand,  NL If you played 6 cards, draw 2 cards. NL If you played 9 cards, add *Sky *Devouring *Horror with 0 cost and Exhaust to your hand.",
+    "UPGRADE_DESCRIPTION":"Academic · Retain NL Academic NL This turn, whenever you play a *Fairy, gain 1 Energy. NL If you played 3 cards this turn, gain Block equal to triple the number of cards in your hand ,  NL If you played 6 cards, draw 2 cards. NL If you played 9 cards, add *Sky *Devouring *Horror with 0 cost and Exhaust to your hand."
   },
   "shadowverse:Cornelius": {
-    "NAME": "尸术王·科里内路司",
-    "DESCRIPTION": "学园 NL 获得 !B! 点 格挡 。 NL 给予全体敌人2层 易伤 和 虚弱 。 NL 随机增加4张不同的耗能为1的非死灵术士攻击牌到手中。",
-    "UPGRADE_DESCRIPTION":"学园 NL 获得 !B! 点 格挡 。 NL 给予全体敌人2层 易伤 和 虚弱 。 NL 随机增加4张不同的耗能为1的非死灵术士攻击牌到手中。 NL 增加1张 *王之尸术 到手中。"
+    "NAME": "Cornelius, the Corpse King",
+    "DESCRIPTION": "Academic NL Gain !B! Block. NL Apply 2 Weak and Vulnerable to ALL enemies. NL Add 4 different non-Shadowcraft Attack cards with 1 cost to your hand.",
+    "UPGRADE_DESCRIPTION":"Academic NL Gain !B! Block. NL Apply 2 Weak and Vulnerable to ALL enemies. NL Add 4 different non-Shadowcraft Attack cards with 1 cost to your hand. NL Add 1 *Corpse *King's *Command to your hand."
   },
   "shadowverse:CorpseKingCommand": {
-    "NAME": "王之尸术",
-    "DESCRIPTION": "学园 NL 获得1层 残影 。 NL 死灵术 10:本回合攻击伤害翻倍。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION":"学园 · 保留 NL 获得1层 残影 。 NL 死灵术 10:本回合攻击伤害翻倍。 NL 消耗 。"
+    "NAME": "Corpse King's Command ",
+    "DESCRIPTION": "Academic NL Gain 1 Blur. NL Necromancy 10: You deal double damage this turn. NL Exhaust. ",
+    "UPGRADE_DESCRIPTION":"Academic · Retain NL Gain 1 Blur. NL Necromancy 10: You deal double damage this turn. NL Exhaust. "
   },
   "shadowverse:AnneAndGrea": {
-    "NAME": "马纳历亚的双姬·安&古蕾娅",
-    "DESCRIPTION": "马纳历亚 NL 对全体敌人造成 !D! 点伤害。 NL 增加1张 *双姬的大魔法 到手中。 NL 爆能强化 3:额外增加1张 *安的大英灵 到手中，并使因这张卡加入手中的全部卡牌耗能-3。",
-    "UPGRADE_DESCRIPTION":"马纳历亚 NL 对全体敌人造成 !D! 点伤害。 NL 增加1张 *双姬的大魔法+ 到手中。 NL 爆能强化 3:额外增加1张 *安的大英灵 到手中，并使因这张卡加入手中的全部卡牌耗能-3。"
+    "NAME": "Anne & Grea, Royal Duo",
+    "DESCRIPTION": "Mysteria NL Deal !D! damage to ALL enemies. NL Add 1 *Majestic *Sorcery to your hand. NL Enhance 3: Add 1 *Anne's *Summoning to your hand, then reduce their costs by 3.",
+    "UPGRADE_DESCRIPTION":"Mysteria NL Deal !D! damage to ALL enemies. NL Add 1 *Majestic *Sorcery+ in hand. NL Enhance 3: Add 1 *Anne's *Summoning to your hand, then reduce their costs by 3."
   },
   "shadowverse:MajesticSorcery": {
-    "NAME": "双姬的大魔法",
-    "DESCRIPTION": "马纳历亚 NL 魔力增幅 耗能减少1。 NL 每当打出 马纳历亚 牌时，耗能减少1。 NL 对全体敌人造成 !D! 点伤害。 NL 本场战斗每打出1种 马纳历亚 攻击牌，额外造成1次伤害。",
+    "NAME": "Majestic Sorcery",
+    "DESCRIPTION": "Mysteria NL Spellboost: Costs 1 less Energy. NL Costs 1 less Energy for each Mysteria card played. NL Deal !D! damage to ALL enemies. NL Repeat for each Mysteria card you played this combat.",
     "EXTENDED_DESCRIPTION": [
-      " NL (已打出",
-      "种不同种类的 马纳历亚 攻击牌。)"
+      " NL (Played",
+      "Mysteria cards.)"
     ]
   }
 }
